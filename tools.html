@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools | Maxwell Howe GIS</title>
+    <meta name="description" content="GIS tools and web apps built by Maxwell Howe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">maxwell howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html" class="active">Tools</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <section class="section page-top">
+        <div class="section-header fade-in">
+            <div class="section-label">// Tools</div>
+            <h1 class="section-title">Web Tools &amp; Apps</h1>
+            <p class="section-desc">Interactive tools and applications I've built. New tools are added as they're developed — check back often.</p>
+        </div>
+
+        <div class="tools-grid fade-in">
+            <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="tool-card" style="text-decoration:none; color:inherit;">
+                <div class="tool-icon" style="background:rgba(94,234,212,0.1); color:var(--accent-teal);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Mapzimus Idea Board</h3>
+                <p>Scoring and correlation engine for viral infographic map ideas. Filter by geography, format, category, and multi-dimensional scores.</p>
+                <span class="tool-status status-live"><span class="dot"></span> Live</span>
+            </a>
+
+            <div class="tool-card">
+                <div class="tool-icon" style="background:rgba(135,195,255,0.1); color:var(--accent-blue);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>Interactive Map Viewer</h3>
+                <p>A dedicated space for hosting and sharing interactive web maps built with Leaflet and Mapbox GL JS. Each map gets its own shareable URL.</p>
+                <span class="tool-status status-soon"><span class="dot"></span> Coming Soon</span>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon" style="background:rgba(165,180,252,0.1); color:var(--accent-indigo);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <h3>Data Explorer</h3>
+                <p>Upload a CSV or GeoJSON file and instantly visualize it on an interactive map with filtering, styling, and export capabilities.</p>
+                <span class="tool-status status-soon"><span class="dot"></span> Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-band">
+        <div class="section">
+            <div class="contact-content fade-in">
+                <div class="section-label">// Have an idea?</div>
+                <h2>Suggest a Tool</h2>
+                <p>Have an idea for a GIS tool or web app? I'm always looking for useful things to build.</p>
+                <a href="mailto:mhowe.gis@gmail.com?subject=Tool%20Idea" class="btn btn-secondary">Send an Idea</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Maxwell Howe &middot; Built with purpose, not a page builder.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
