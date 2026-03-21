@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Mapzimus | Maxwell Howe GIS</title>
+    <meta name="description" content="Mapzimus — a scoring and correlation engine for viral infographic map ideas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">maxwell howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="mapzimus.html" class="active">@Mapzimus</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <section class="section mapzimus-hero">
+        <div class="hero-badge" style="margin-bottom:24px;"><span class="dot"></span> Custom-built tool</div>
+        <h1><span>@Mapzimus</span> Idea Board</h1>
+        <p>A custom platform for managing, scoring, and correlating viral infographic map ideas. Built from scratch to systematize the creative process behind maps that go viral.</p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="btn btn-primary">Launch Board</a>
+            <a href="https://github.com/mapzimus" target="_blank" class="btn btn-secondary">View on GitHub</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header fade-in">
+            <div class="section-label">// What It Does</div>
+            <h2 class="section-title">A Systematic Approach to Viral Maps</h2>
+            <p class="section-desc">Most viral maps happen by accident. Mapzimus makes it repeatable by scoring ideas across multiple dimensions before a single pixel is placed.</p>
+        </div>
+
+        <div class="feature-detail-grid fade-in">
+            <div class="feature-detail-card">
+                <h3><span style="color:var(--accent-teal);">01</span> Multi-Dimensional Scoring</h3>
+                <p>Every idea is scored on V-Score, emotional impact, clarity, surprise, and more. Drag sliders to filter by score ranges and stack multiple dimensions for precision targeting.</p>
+            </div>
+            <div class="feature-detail-card">
+                <h3><span style="color:var(--accent-teal);">02</span> Geographic Filtering</h3>
+                <p>Filter ideas by state-level geography to find story angles tied to specific regions. Useful for targeting local audiences or finding patterns unique to certain areas.</p>
+            </div>
+            <div class="feature-detail-card">
+                <h3><span style="color:var(--accent-teal);">03</span> Data Correlation Engine</h3>
+                <p>Pick any variable and find every idea it connects to — both direct usage and joinable relationships. Reveals hidden connections between datasets and story angles.</p>
+            </div>
+            <div class="feature-detail-card">
+                <h3><span style="color:var(--accent-teal);">04</span> Format Analysis</h3>
+                <p>Browse ideas by output format — scatter plots, choropleth maps, bivariate visualizations, bar charts, treemaps — to match the right visual form to each story.</p>
+            </div>
+            <div class="feature-detail-card">
+                <h3><span style="color:var(--accent-teal);">05</span> Type Classification</h3>
+                <p>Ideas are classified as MAP, XREF, CHART, or RANK — each with distinct visual treatment. Filter by type to focus on specific visualization approaches.</p>
+            </div>
+            <div class="feature-detail-card">
+                <h3><span style="color:var(--accent-teal);">06</span> Status Tracking</h3>
+                <p>Track each idea from initial concept through In Progress, Built, and Published stages. Notes and annotations persist for ongoing editorial context.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-band">
+        <div class="section">
+            <div class="section-header fade-in">
+                <div class="section-label">// Tech Stack</div>
+                <h2 class="section-title">Built From Scratch</h2>
+                <p class="section-desc">No frameworks, no dependencies. Pure HTML, CSS, and JavaScript with the Web Crypto API for access control.</p>
+            </div>
+            <div class="feature-detail-grid fade-in">
+                <div class="feature-detail-card">
+                    <h3>Vanilla JS</h3>
+                    <p>Zero framework overhead. Custom state management, dynamic rendering, and real-time filtering without React, Vue, or Angular.</p>
+                </div>
+                <div class="feature-detail-card">
+                    <h3>CSS Custom Properties</h3>
+                    <p>Full dark theme with semantic color tokens, type-specific badge colors, and responsive layouts using CSS Grid and Flexbox.</p>
+                </div>
+                <div class="feature-detail-card">
+                    <h3>Web Crypto API</h3>
+                    <p>SHA-256 password hashing for access control. Session persistence via sessionStorage. No backend required.</p>
+                </div>
+                <div class="feature-detail-card">
+                    <h3>GitHub Pages</h3>
+                    <p>Hosted for free on GitHub Pages with instant deploys on push. No servers to maintain, no hosting costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header fade-in">
+            <div class="section-label">// 14 Categories</div>
+            <h2 class="section-title">Every Angle Covered</h2>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;" class="fade-in">
+            <span class="feature-pill">Agriculture</span>
+            <span class="feature-pill">Climate</span>
+            <span class="feature-pill">Crime</span>
+            <span class="feature-pill">Demographics</span>
+            <span class="feature-pill">Economics</span>
+            <span class="feature-pill">Education</span>
+            <span class="feature-pill">Energy</span>
+            <span class="feature-pill">Environment</span>
+            <span class="feature-pill">Health</span>
+            <span class="feature-pill">Housing</span>
+            <span class="feature-pill">Infrastructure</span>
+            <span class="feature-pill">Politics</span>
+            <span class="feature-pill">Recreation</span>
+            <span class="feature-pill">Transportation</span>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Maxwell Howe &middot; Built with purpose, not a page builder.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

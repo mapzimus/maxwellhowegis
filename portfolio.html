@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Maxwell Howe GIS</title>
+    <meta name="description" content="GIS projects by Maxwell Howe — spatial analysis, remote sensing, cartography, and web mapping.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">maxwell howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <section class="section page-top">
+        <div class="section-header fade-in">
+            <div class="section-label">// Portfolio</div>
+            <h1 class="section-title">Selected Work</h1>
+            <p class="section-desc">Interactive maps, spatial analyses, remote sensing, and database design spanning topics from food access to emergency management.</p>
+        </div>
+        <div class="filter-bar fade-in" id="filterBar"></div>
+        <div class="project-grid fade-in" id="projectGrid"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Maxwell Howe &middot; Built with purpose, not a page builder.</p>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-thumb" id="modalThumb"></div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        renderFilters('filterBar', 'projectGrid');
+        renderProjectGrid('projectGrid');
+    });
+</script>
+</body>
+</html>
