@@ -13,7 +13,7 @@ const projects = [
         year: "2025",
         course: "GPH955 — GIS Project Implementation",
         thumb: "images/projects/lynn.png",
-        liveUrl: null,
+        liveUrl: "lynn.html",
         repoUrl: null
     },
     {
