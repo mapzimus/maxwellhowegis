@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Absenteeism in Lynn | Maxwell Howe GIS</title>
+    <meta name="description" content="GIS analysis of chronic absenteeism in Lynn Public Schools — geocoding, distance analysis, and R-based statistical modeling.">
+    <meta property="og:title" content="Chronic Absenteeism in Lynn Public Schools — Maxwell Howe">
+    <meta property="og:description" content="Geocoded student addresses and analyzed the relationship between distance from school and chronic absenteeism at Lynn English High School.">
+    <meta property="og:image" content="images/projects/lynn.png">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <section class="section project-hero">
+        <div class="section-label">// Capstone Project</div>
+        <h1>Chronic Absenteeism in <span class="gradient">Lynn Public Schools</span></h1>
+        <div class="project-meta">
+            <span>GPH955 — GIS Project Implementation</span>
+            <span>&middot;</span>
+            <span>2025</span>
+            <span>&middot;</span>
+            <span>MS Capstone</span>
+        </div>
+        <div class="project-desc">
+            <p>I work at Lynn English High School as a math teacher. The district doesn't provide buses at the high school level — most students walk. For my capstone project in the MS program, I wanted to find out if the distance a student lives from school has any measurable impact on whether they show up.</p>
+            <p style="margin-top:16px;">I geocoded student addresses across the district and correlated each student's distance from school with their absenteeism record. I wrote scripts in R to run the full analysis — scatter plots, violin plots, box plots, KDE heatmaps, hexbin maps, and distance band breakdowns. I also broke the data down by grade level, ethnicity, ML status, and SPED status to look for patterns across subgroups.</p>
+            <p style="margin-top:16px;">The result: an extremely slight negative correlation. Distance alone is not a strong predictor of attendance. But the maps tell a much richer story about where students live, where the hotspots are, and how absenteeism patterns vary across demographics.</p>
+        </div>
+        <div class="project-tools">
+            <span class="feature-pill">R</span>
+            <span class="feature-pill">ggplot2</span>
+            <span class="feature-pill">ggmap</span>
+            <span class="feature-pill">sf</span>
+            <span class="feature-pill">Geocoding</span>
+            <span class="feature-pill">ArcGIS Pro</span>
+            <span class="feature-pill">Leaflet</span>
+            <span class="feature-pill">Statistical Analysis</span>
+        </div>
+        <a href="portfolio.html" class="btn btn-secondary" style="margin-top:8px;">&larr; Back to Portfolio</a>
+    </section>
+
+    <section class="section gallery-section">
+        <div class="section-header fade-in">
+            <div class="section-label">// 20 Maps & Visualizations</div>
+            <h2 class="section-title">Project Gallery</h2>
+        </div>
+        <div class="gallery-grid fade-in" id="galleryGrid"></div>
+    </section>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+    <img src="" alt="" id="lightboxImg">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2026 Maxwell Howe &middot; Built with purpose, not a page builder.</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+const galleryImages = [
+    { src: "images/projects/lynn/Screenshot 2025-04-23 114504.png", caption: "Study Area Map — All LPS Schools" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 140855.png", caption: "Student Distribution — Citywide (No Labels)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 140910.png", caption: "Student Distribution — Citywide (Labeled)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 140954.png", caption: "Student Distribution — 1 Mile Radius (Road Overlay)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 141004.png", caption: "Student Distribution — Zoomed 1 Mile Radius" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 141213.png", caption: "KDE Heatmap of Student Addresses" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 141302.png", caption: "Student Density — Raw Counts per 150m Grid Cell" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 141822.png", caption: "Distribution of Student Distances to Lynn English" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 141901.png", caption: "Absenteeism Hotspots — 20% or Higher" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 142402.png", caption: "Absenteeism by Distance Quintile (Box Plots)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 142434.png", caption: "Citywide Mapped Absenteeism — Color by Absence Rate" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 142537.png", caption: "Mapped Absenteeism — Zoomed Near LEHS" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 142625.png", caption: "Hexbin Map of Absenteeism — 100m Hexagons" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 142700.png", caption: "Absenteeism Hotspots Citywide — Hexgrid >20%" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 142938.png", caption: "Absenteeism by ML Status (Hexbin Comparison)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 143128.png", caption: "Absenteeism by SPED Status (Hexbin Comparison)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 143259.png", caption: "Absence Distribution by Grade Level (Box Plots)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 143325.png", caption: "Absenteeism by Grade Level (4-Panel Hexbin Map)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 143430.png", caption: "Absence Distribution by Ethnicity (Box Plots)" },
+    { src: "images/projects/lynn/Screenshot 2025-04-23 143504.png", caption: "Absenteeism by Ethnicity (6-Panel Hexbin Map)" }
+];
+
+// Render gallery
+const grid = document.getElementById('galleryGrid');
+galleryImages.forEach((img, i) => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.innerHTML = `<img src="${img.src}" alt="${img.caption}" loading="lazy"><div class="gallery-caption">${String(i+1).padStart(2,'0')} — ${img.caption}</div>`;
+    item.addEventListener('click', () => openLightbox(i));
+    grid.appendChild(item);
+});
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightboxImg');
+const lbCounter = document.getElementById('lightboxCounter');
+let currentIdx = 0;
+
+function openLightbox(idx) {
+    currentIdx = idx;
+    updateLightbox();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+function updateLightbox() {
+    lbImg.src = galleryImages[currentIdx].src;
+    lbImg.alt = galleryImages[currentIdx].caption;
+    lbCounter.textContent = `${currentIdx + 1} / ${galleryImages.length} — ${galleryImages[currentIdx].caption}`;
+}
+
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxPrev').addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length;
+    updateLightbox();
+});
+document.getElementById('lightboxNext').addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIdx = (currentIdx + 1) % galleryImages.length;
+    updateLightbox();
+});
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') { currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length; updateLightbox(); }
+    if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % galleryImages.length; updateLightbox(); }
+});
+</script>
+</body>
+</html>

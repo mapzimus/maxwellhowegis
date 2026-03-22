@@ -69,7 +69,14 @@ function renderProjectGrid(gridId, filter = 'all', limit = null) {
     `).join('');
 
     grid.querySelectorAll('.project-card').forEach(card => {
-        card.addEventListener('click', () => openModal(Number(card.dataset.id)));
+        card.addEventListener('click', () => {
+            const p = projects.find(pr => pr.id === Number(card.dataset.id));
+            if (p && p.liveUrl && !p.liveUrl.startsWith('http')) {
+                window.location.href = p.liveUrl;
+            } else {
+                openModal(Number(card.dataset.id));
+            }
+        });
     });
 }
 
