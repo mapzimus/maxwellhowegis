@@ -12,7 +12,7 @@ const projects = [
         tools: ["R", "ggplot2", "Geocoding", "ArcGIS Pro", "Leaflet", "Statistical Analysis"],
         year: "2025",
         course: "GPH955 — GIS Project Implementation",
-        thumb: "images/projects/lynn.png",
+        thumb: "images/projects/lynn-thumb.png",
         liveUrl: "lynn.html",
         repoUrl: null
     },
