@@ -81,19 +81,27 @@
     </div>
 </section>
 
-<!-- MAPZIMUS — callout with live counter -->
+<!-- MAPZIMUS — callout with screenshot and live counter -->
 <section class="featured-band">
-    <div class="section fade-in" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
-        <div style="flex:1; min-width:280px;">
-            <div class="section-label">// Side Project</div>
-            <h2 style="font-size:22px; margin-top:8px;">Mapzimus Idea Board</h2>
-            <p style="color:var(--text-secondary); margin-top:8px; max-width:520px;">A tool I built for managing and scoring infographic map ideas. Filter by geography, format, and category.</p>
+    <div class="section fade-in">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px; margin-bottom:24px;">
+            <div style="flex:1; min-width:280px;">
+                <div class="section-label">// Side Project</div>
+                <h2 style="font-size:22px; margin-top:8px;">Mapzimus Idea Board</h2>
+                <p style="color:var(--text-secondary); margin-top:8px; max-width:520px;">A custom tool I built for managing and scoring infographic map ideas. Filter by geography, format, category, and multi-dimensional scores.</p>
+                <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+                    <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">Launch Board</a>
+                    <a href="mapzimus.html" class="btn btn-secondary" style="font-size:0.85rem;">Learn More &rarr;</a>
+                </div>
+            </div>
+            <div class="idea-counter fade-in" id="ideaCounter">
+                <div class="idea-counter-number" id="ideaCount">—</div>
+                <div class="idea-counter-label">ideas tracked</div>
+            </div>
         </div>
-        <div class="idea-counter fade-in" id="ideaCounter">
-            <div class="idea-counter-number" id="ideaCount">—</div>
-            <div class="idea-counter-label">ideas tracked</div>
-        </div>
-        <a href="mapzimus.html" class="btn btn-secondary">Learn More &rarr;</a>
+        <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" style="display:block; border-radius:10px; overflow:hidden; border:1px solid var(--border); transition:transform 0.2s ease, box-shadow 0.2s ease;">
+            <img src="images/ideaboard-preview.png" alt="Mapzimus Idea Board — browse, filter, and score infographic map ideas" style="width:100%; display:block; border-radius:10px;" loading="lazy">
+        </a>
     </div>
 </section>
 
