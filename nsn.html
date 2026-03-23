@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Shore Nostalgia | Maxwell Howe</title>
+    <meta name="description" content="North Shore Nostalgia — retro video game store on eBay. 100% positive feedback.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ===== NSN RETRO THEME OVERRIDE ===== */
+        .nsn-page { background: #0b0025; min-height: 100vh; }
+        .nsn-page .nav { background: rgba(11, 0, 37, 0.95); border-bottom: 1px solid rgba(138, 43, 226, 0.3); }
+
+        /* Starfield background */
+        .nsn-hero {
+            position: relative;
+            text-align: center;
+            padding: 80px 24px 48px;
+            overflow: hidden;
+            background: linear-gradient(180deg, #0b0025 0%, #1a0042 40%, #2d1068 100%);
+        }
+        .nsn-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(1px 1px at 30% 65%, rgba(255,255,255,0.6) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 50% 10%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(1px 1px at 70% 40%, rgba(255,255,255,0.5) 0%, transparent 100%),
+                radial-gradient(1px 1px at 90% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 15% 85%, rgba(255,255,255,0.6) 0%, transparent 100%),
+                radial-gradient(1px 1px at 45% 50%, rgba(255,255,255,0.4) 0%, transparent 100%),
+                radial-gradient(1px 1px at 80% 15%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(1px 1px at 60% 90%, rgba(255,255,255,0.5) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 25% 35%, rgba(255,255,255,0.7) 0%, transparent 100%);
+            pointer-events: none;
+            animation: twinkle 4s ease-in-out infinite alternate;
+        }
+        @keyframes twinkle {
+            0% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        .nsn-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid rgba(138, 43, 226, 0.6);
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+        }
+        .nsn-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            color: #fff;
+            text-shadow: 0 0 20px rgba(138, 43, 226, 0.8), 0 0 40px rgba(138, 43, 226, 0.4);
+            margin-bottom: 12px;
+            line-height: 1.4;
+            position: relative;
+        }
+        .nsn-subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        /* Stats bar */
+        .nsn-stats {
+            display: flex;
+            gap: 32px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+            position: relative;
+        }
+        .nsn-stat {
+            text-align: center;
+        }
+        .nsn-stat-value {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.1rem;
+            color: #00ff88;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+        .nsn-stat-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* CTA buttons */
+        .nsn-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .nsn-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .nsn-btn-primary {
+            background: linear-gradient(135deg, #8b2ae2, #5b1fb0);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
+        }
+        .nsn-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 28px rgba(138, 43, 226, 0.6);
+        }
+        .nsn-btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .nsn-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+
+        /* Listings section */
+        .nsn-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .nsn-section-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.65rem;
+            color: rgba(138, 43, 226, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 8px;
+        }
+        .nsn-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .nsn-section-desc {
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 32px;
+            max-width: 600px;
+        }
+
+        /* Listings grid */
+        .nsn-listings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .nsn-listing-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .nsn-listing-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(138, 43, 226, 0.5);
+            box-shadow: 0 8px 32px rgba(138, 43, 226, 0.2);
+        }
+        .nsn-listing-img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: contain;
+            background: #fff;
+        }
+        .nsn-listing-info {
+            padding: 14px;
+        }
+        .nsn-listing-title {
+            font-size: 0.85rem;
+            color: #fff;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .nsn-listing-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #00ff88;
+            margin-top: 8px;
+        }
+        .nsn-listing-shipping {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: 2px;
+        }
+
+        /* Loading / empty state */
+        .nsn-loading {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 24px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .nsn-loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid rgba(138, 43, 226, 0.2);
+            border-top-color: #8b2ae2;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* About band */
+        .nsn-about-band {
+            background: rgba(138, 43, 226, 0.06);
+            border-top: 1px solid rgba(138, 43, 226, 0.15);
+            border-bottom: 1px solid rgba(138, 43, 226, 0.15);
+        }
+        .nsn-about-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        .nsn-about-content p {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+        .nsn-about-content a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        .nsn-about-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer override */
+        .nsn-page .footer {
+            background: #0b0025;
+            border-top: 1px solid rgba(138, 43, 226, 0.15);
+        }
+        .nsn-page .footer p {
+            color: rgba(255, 255, 255, 0.35);
+        }
+    </style>
+</head>
+<body class="nsn-page">
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="nsn.html" class="active">NSN (eBay)</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <div class="nsn-hero">
+        <img src="images/nsn-logo.png" alt="North Shore Nostalgia" class="nsn-logo" onerror="this.style.display='none'">
+        <h1 class="nsn-title">North Shore Nostalgia</h1>
+        <p class="nsn-subtitle">Retro video games, consoles, and accessories on eBay</p>
+
+        <div class="nsn-stats">
+            <div class="nsn-stat">
+                <div class="nsn-stat-value">100%</div>
+                <div class="nsn-stat-label">Positive Feedback</div>
+            </div>
+            <div class="nsn-stat">
+                <div class="nsn-stat-value">913+</div>
+                <div class="nsn-stat-label">Items Sold</div>
+            </div>
+            <div class="nsn-stat">
+                <div class="nsn-stat-value">53</div>
+                <div class="nsn-stat-label">Followers</div>
+            </div>
+        </div>
+
+        <div class="nsn-cta">
+            <a href="https://www.ebay.com/str/maxvalueprogames" target="_blank" class="nsn-btn nsn-btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Visit Store on eBay
+            </a>
+            <a href="https://www.ebay.com/str/maxvalueprogames#items" target="_blank" class="nsn-btn nsn-btn-secondary">
+                Browse All Listings
+            </a>
+        </div>
+    </div>
+
+    <!-- ACTIVE LISTINGS -->
+    <div class="nsn-section">
+        <div class="nsn-section-label">// Currently Listed</div>
+        <h2 class="nsn-section-title">Active Listings</h2>
+        <p class="nsn-section-desc">Live items from the North Shore Nostalgia eBay store. Click any item to view it on eBay.</p>
+        <div class="nsn-listings-grid" id="nsnListings">
+            <div class="nsn-loading">
+                <div class="nsn-loading-spinner"></div>
+                <p>Loading listings from eBay...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT BAND -->
+    <div class="nsn-about-band">
+        <div class="nsn-about-content">
+            <div class="nsn-section-label" style="margin-bottom:12px;">// About the Store</div>
+            <p>North Shore Nostalgia is a side venture run by <a href="about.html">Maxwell Howe</a>. I buy, test, and resell retro video games, consoles, and accessories — mostly from the NES through PS2 era. Every item is tested, cleaned, and shipped with care. Based on the North Shore of Massachusetts.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Maxwell Howe</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+// Fetch active eBay listings via RSS-to-JSON proxy
+(function loadListings() {
+    const grid = document.getElementById('nsnListings');
+    if (!grid) return;
+
+    // eBay provides RSS feeds for seller listings
+    const sellerUrl = 'https://www.ebay.com/sch/i.html?_ssn=maxvalueprogames&_rss=1';
+    const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(sellerUrl);
+
+    fetch(proxyUrl)
+        .then(r => r.json())
+        .then(data => {
+            if (data.status === 'ok' && data.items && data.items.length > 0) {
+                grid.innerHTML = '';
+                data.items.forEach(item => {
+                    // Extract price from description if available
+                    const priceMatch = item.description ? item.description.match(/\$[\d,.]+/) : null;
+                    const price = priceMatch ? priceMatch[0] : '';
+
+                    // Extract image from description or enclosure
+                    let img = '';
+                    if (item.thumbnail) {
+                        img = item.thumbnail;
+                    } else if (item.enclosure && item.enclosure.link) {
+                        img = item.enclosure.link;
+                    } else if (item.description) {
+                        const imgMatch = item.description.match(/src="([^"]+)"/);
+                        if (imgMatch) img = imgMatch[1];
+                    }
+
+                    const card = document.createElement('a');
+                    card.href = item.link || '#';
+                    card.target = '_blank';
+                    card.className = 'nsn-listing-card';
+                    card.innerHTML = `
+                        ${img ? `<img src="${img}" alt="" class="nsn-listing-img" loading="lazy">` : ''}
+                        <div class="nsn-listing-info">
+                            <div class="nsn-listing-title">${item.title || 'Untitled'}</div>
+                            ${price ? `<div class="nsn-listing-price">${price}</div>` : ''}
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            } else {
+                showFallback(grid);
+            }
+        })
+        .catch(() => showFallback(grid));
+
+    function showFallback(el) {
+        el.innerHTML = `
+            <div class="nsn-loading" style="grid-column:1/-1;">
+                <p style="margin-bottom:16px;">Listings load directly from eBay — visit the store to browse.</p>
+                <a href="https://www.ebay.com/str/maxvalueprogames" target="_blank" class="nsn-btn nsn-btn-primary" style="display:inline-flex;">
+                    Visit Store on eBay
+                </a>
+            </div>
+        `;
+    }
+})();
+</script>
+</body>
+</html>
