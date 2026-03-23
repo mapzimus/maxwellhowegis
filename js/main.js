@@ -91,15 +91,29 @@ function openModal(id) {
         ? `<img src="${p.thumb}" alt="${p.title}">`
         : `<div class="placeholder-map">${typePlaceholders[p.type] || '\u{1F5FA}'}</div>`;
 
+    const galleryHTML = p.gallery && p.gallery.length > 0 ? `
+        <div class="modal-section-title">Project Gallery</div>
+        <div class="modal-gallery">
+            ${p.gallery.map((img, i) => `
+                <div class="modal-gallery-item" data-index="${i}">
+                    <img src="${img.src}" alt="${img.caption}" loading="lazy">
+                    <span class="modal-gallery-caption">${img.caption}</span>
+                </div>
+            `).join('')}
+        </div>
+    ` : '';
+
     document.getElementById('modalBody').innerHTML = `
         <h2>${p.title}</h2>
         <div class="modal-meta">
             <span><span class="project-type-badge ${typeClasses[p.type]}" style="position:static;">${typeLabels[p.type]}</span></span>
+            ${p.groupProject ? '<span class="group-badge">Group Project</span>' : ''}
             <span>${p.category}</span>
             <span>${p.year}</span>
             ${p.course ? `<span>${p.course}</span>` : ''}
         </div>
         <div class="modal-description">${p.description}</div>
+        ${galleryHTML}
         <div class="modal-section-title">Tools & Technologies</div>
         <div class="modal-tools">
             ${p.tools.map(t => `<span class="modal-tool">${t}</span>`).join('')}
@@ -110,8 +124,66 @@ function openModal(id) {
         </div>
     `;
 
+    // Gallery lightbox
+    if (p.gallery && p.gallery.length > 0) {
+        document.querySelectorAll('.modal-gallery-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openGalleryLightbox(p.gallery, parseInt(item.dataset.index));
+            });
+        });
+    }
+
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
+}
+
+// ===== GALLERY LIGHTBOX =====
+function openGalleryLightbox(gallery, startIndex) {
+    let current = startIndex;
+    const lb = document.createElement('div');
+    lb.className = 'gallery-lightbox';
+    lb.innerHTML = `
+        <button class="gallery-lb-close">&times;</button>
+        <button class="gallery-lb-nav gallery-lb-prev">&lsaquo;</button>
+        <button class="gallery-lb-nav gallery-lb-next">&rsaquo;</button>
+        <div class="gallery-lb-content">
+            <img src="${gallery[current].src}" alt="${gallery[current].caption}">
+            <div class="gallery-lb-caption">${gallery[current].caption}</div>
+            <div class="gallery-lb-counter">${current + 1} / ${gallery.length}</div>
+        </div>
+    `;
+    document.body.appendChild(lb);
+
+    const img = lb.querySelector('img');
+    const caption = lb.querySelector('.gallery-lb-caption');
+    const counter = lb.querySelector('.gallery-lb-counter');
+
+    function show(i) {
+        current = i;
+        img.src = gallery[current].src;
+        img.alt = gallery[current].caption;
+        caption.textContent = gallery[current].caption;
+        counter.textContent = `${current + 1} / ${gallery.length}`;
+    }
+
+    lb.querySelector('.gallery-lb-prev').addEventListener('click', (e) => {
+        e.stopPropagation();
+        show((current - 1 + gallery.length) % gallery.length);
+    });
+    lb.querySelector('.gallery-lb-next').addEventListener('click', (e) => {
+        e.stopPropagation();
+        show((current + 1) % gallery.length);
+    });
+    lb.querySelector('.gallery-lb-close').addEventListener('click', () => lb.remove());
+    lb.addEventListener('click', (e) => { if (e.target === lb) lb.remove(); });
+
+    function onKey(e) {
+        if (e.key === 'ArrowLeft') show((current - 1 + gallery.length) % gallery.length);
+        if (e.key === 'ArrowRight') show((current + 1) % gallery.length);
+        if (e.key === 'Escape') { lb.remove(); document.removeEventListener('keydown', onKey); }
+    }
+    document.addEventListener('keydown', onKey);
 }
 
 function closeModal() {
