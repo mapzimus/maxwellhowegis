@@ -1257,3 +1257,121 @@ main { flex: 1; }
     .modal-gallery { grid-template-columns: repeat(2, 1fr); }
     .gallery-lb-nav { font-size: 28px; padding: 6px 12px; }
 }
+
+/* ===== OUTLINE BUTTON ===== */
+.btn-outline {
+    background: transparent;
+    color: var(--accent-blue);
+    border: 1px solid rgba(135, 195, 255, 0.3);
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+.btn-outline:hover {
+    background: rgba(135, 195, 255, 0.08);
+    border-color: var(--accent-blue);
+}
+
+/* ===== ABOUT CONTACT BAR ===== */
+.about-contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+.about-contact-bar .contact-link {
+    font-size: 0.9rem;
+}
+.about-contact-note {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-left: auto;
+}
+@media (max-width: 768px) {
+    .about-contact-bar { gap: 12px; }
+    .about-contact-note { margin-left: 0; width: 100%; }
+}
+
+/* ===== MAPZIMUS SOCIAL BUTTONS ===== */
+.mapzimus-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 32px;
+}
+.mapzimus-social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+.mapzimus-social-btn svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+.mapzimus-instagram {
+    background: linear-gradient(135deg, #833AB4, #E1306C, #F77737);
+    color: #fff;
+}
+.mapzimus-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(225, 48, 108, 0.3);
+}
+.mapzimus-reddit {
+    background: #FF4500;
+    color: #fff;
+}
+.mapzimus-reddit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 69, 0, 0.3);
+}
+.mapzimus-x {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+.mapzimus-x:hover {
+    transform: translateY(-2px);
+    border-color: var(--text-muted);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+}
+
+/* ===== MAP CARDS GRID ===== */
+.mapzimus-map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.mapzimus-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 24px;
+    color: var(--text-muted);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    font-size: 0.95rem;
+}
+.mapzimus-empty-state a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+.mapzimus-empty-state a:hover {
+    text-decoration: underline;
+}
