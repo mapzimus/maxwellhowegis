@@ -325,6 +325,71 @@ main { flex: 1; }
     margin-top: 4px;
 }
 
+/* ===== COMPACT HERO ===== */
+.hero.hero-compact {
+    min-height: auto;
+    padding: 160px 0 80px;
+}
+.hero.hero-compact h1 {
+    font-size: clamp(36px, 6vw, 60px);
+    margin-bottom: 12px;
+}
+.hero-subtitle {
+    font-size: clamp(15px, 1.8vw, 18px) !important;
+    color: var(--text-muted) !important;
+    letter-spacing: 0.02em;
+    margin: 0 auto 32px !important;
+}
+
+/* ===== FEATURED PROJECT (Home) ===== */
+.featured-project {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+.featured-project-img {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    display: block;
+    transition: border-color 0.2s;
+}
+.featured-project-img:hover {
+    border-color: var(--accent-blue);
+}
+.featured-project-img img {
+    width: 100%; height: auto; display: block;
+}
+.featured-project-badge {
+    position: absolute; top: 12px; left: 12px;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(8px);
+    color: var(--accent-teal);
+    font-size: 12px; font-weight: 600;
+    padding: 4px 12px; border-radius: 6px;
+    border: 1px solid rgba(94,234,212,0.2);
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase; letter-spacing: 0.05em;
+}
+.featured-project-text h2 {
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+.featured-project-text p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    .featured-project {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
 /* ===== PROJECT CARDS ===== */
 .project-grid {
     display: grid;
