@@ -23,11 +23,23 @@ const projects = [
         type: "analysis",
         tags: ["R", "Random Forest", "Census ACS", "Cluster Analysis"],
         summary: "Analyzed 150,000 rows of client data for the Salem Pantry using R — identified underserved areas and used random forest modeling to find similar populations statewide.",
-        description: "I worked with the Salem Pantry, a non-profit food pantry in Salem, MA, to analyze over 150,000 rows of their client data. The goal was to figure out who's using the pantry, where they're coming from, and where the coverage gaps are. I cleaned and organized all the data, then used R with packages like sf, tmap, tidycensus, tigris, randomForest, ranger, caret, leaflet, and ggplot2 to run the analysis. I mapped dry zones — areas with less pantry coverage — and used random forest analysis and statistical regression to identify other parts of Massachusetts with similar socioeconomic profiles (based on census tract data like income, household size, language, and race). The results were presented to the Salem Pantry board to help guide decisions about outreach and potential expansion.",
+        description: "A group project where our team worked with the Salem Pantry, a non-profit food pantry in Salem, MA, to analyze over 150,000 rows of their client data. The goal was to figure out who's using the pantry, where they're coming from, and where the coverage gaps are. We cleaned and organized all the data, then used R with packages like sf, tmap, tidycensus, tigris, randomForest, ranger, caret, leaflet, and ggplot2 to run the analysis. We mapped dry zones — areas with less pantry coverage — and used random forest analysis and statistical regression to identify other parts of Massachusetts with similar socioeconomic profiles (based on census tract data like income, household size, language, and race). The results were presented to the Salem Pantry board to help guide decisions about outreach and potential expansion.",
         tools: ["R", "sf", "tmap", "tidycensus", "randomForest", "ArcGIS Pro", "Census ACS"],
         year: "2024",
         course: "GPH953 — Seminar in GIS Applications",
-        thumb: "images/projects/salem-pantry.png",
+        thumb: "images/projects/salem-pantry-thumb.png",
+        gallery: [
+            { src: "images/projects/salem-pantry/image2.png", caption: "Salem Pantry Mobile Locations" },
+            { src: "images/projects/salem-pantry/image8.png", caption: "Pantry-using Households by Cluster" },
+            { src: "images/projects/salem-pantry/image10.png", caption: "Pantry Users per Census Block Group" },
+            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113405.png", caption: "Spatial Analysis Overview" },
+            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113509.png", caption: "Coverage Analysis" },
+            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113555.png", caption: "Demographic Breakdown" },
+            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113627.png", caption: "Random Forest Results" },
+            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113700.png", caption: "Statewide Similarity Analysis" },
+            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113723.png", caption: "Final Recommendations" }
+        ],
+        groupProject: true,
         liveUrl: null,
         repoUrl: null
     },
@@ -42,7 +54,19 @@ const projects = [
         tools: ["Landsat 8/9", "TerrSet", "PANSHARPEN", "True Color Composites", "Multitemporal Analysis"],
         year: "2024",
         course: "GPH910 — Digital Image Processing",
-        thumb: "images/projects/change-analysis.png",
+        thumb: "images/projects/granite-state-thumb.png",
+        gallery: [
+            { src: "images/projects/granite-state/image1.png", caption: "New Hampshire Fall Foliage — Study Area" },
+            { src: "images/projects/granite-state/image5.png", caption: "Concord — True Color Composite" },
+            { src: "images/projects/granite-state/image10.png", caption: "Concord — Multitemporal Change Detection" },
+            { src: "images/projects/granite-state/image14.png", caption: "Manchester — Change Detection" },
+            { src: "images/projects/granite-state/image15.png", caption: "Nashua — Change Detection" },
+            { src: "images/projects/granite-state/Screenshot 2025-05-30 114843.png", caption: "Landsat Imagery Analysis" },
+            { src: "images/projects/granite-state/Screenshot 2025-05-30 114920.png", caption: "Band Composite Comparison" },
+            { src: "images/projects/granite-state/Screenshot 2025-05-30 114936.png", caption: "Pansharpened Imagery" },
+            { src: "images/projects/granite-state/Screenshot 2025-05-30 115012.png", caption: "Urban Expansion Results" },
+            { src: "images/projects/granite-state/Screenshot 2025-05-30 115047.png", caption: "Final Analysis" }
+        ],
         liveUrl: null,
         repoUrl: null
     },
@@ -58,6 +82,16 @@ const projects = [
         year: "2025",
         course: "GPH904 — GIS Research",
         thumb: "images/projects/ev-research.png",
+        gallery: [
+            { src: "images/projects/ev-research/Slide1.PNG", caption: "Title Slide" },
+            { src: "images/projects/ev-research/Slide3.PNG", caption: "Research Overview" },
+            { src: "images/projects/ev-research/Slide5.PNG", caption: "Literature Review" },
+            { src: "images/projects/ev-research/Slide7.PNG", caption: "Spatial Optimization Techniques" },
+            { src: "images/projects/ev-research/Slide10.PNG", caption: "Proposed GIS Methodology for MA" },
+            { src: "images/projects/ev-research/Slide12.PNG", caption: "Equity Analysis" },
+            { src: "images/projects/ev-research/Slide14.PNG", caption: "Current MA Landscape" },
+            { src: "images/projects/ev-research/Slide16.PNG", caption: "Conclusions" }
+        ],
         liveUrl: null,
         repoUrl: null
     },
@@ -72,7 +106,17 @@ const projects = [
         tools: ["ArcGIS Pro", "Census ACS Data", "MassGIS", "Bivariate Mapping"],
         year: "2024",
         course: "GPH952 — Spatial Database Design & Analysis",
-        thumb: "images/projects/education.png",
+        thumb: "images/projects/education-thumb.png",
+        gallery: [
+            { src: "images/projects/education/image11.png", caption: "Study Area — Massachusetts Municipalities" },
+            { src: "images/projects/education/image15.png", caption: "% Population with at Least a Bachelor's Degree" },
+            { src: "images/projects/education/image20.png", caption: "Median Household Income by Municipality" },
+            { src: "images/projects/education/image25.png", caption: "Bivariate Map — Master's Degree vs. Income" },
+            { src: "images/projects/education/image26.png", caption: "Bivariate Map — PhD vs. Income" },
+            { src: "images/projects/education/image27.png", caption: "Scatter Plot — % No High School vs. Income" },
+            { src: "images/projects/education/image28.png", caption: "Scatter Plot — % High School vs. Income" },
+            { src: "images/projects/education/image30.png", caption: "Scatter Plot — % Bachelor's vs. Income" }
+        ],
         liveUrl: null,
         repoUrl: null
     },
@@ -87,7 +131,13 @@ const projects = [
         tools: ["ArcGIS Pro", "CAD", "UAV / Drone Imagery", "Trimble GPS", "Georeferencing"],
         year: "2024",
         course: "GPH946 — Computer Cartography",
-        thumb: "images/projects/central-campus.png",
+        thumb: "images/projects/central-campus-thumb.png",
+        gallery: [
+            { src: "images/projects/central-campus/Screenshot 2025-05-30 114432.png", caption: "CAD Utility As-Built Drawing" },
+            { src: "images/projects/central-campus/Screenshot 2025-05-30 114524.png", caption: "Drone Orthomosaic — Central Campus" },
+            { src: "images/projects/central-campus/Screenshot 2025-05-30 114605.png", caption: "Drone Imagery Overlaid in ArcGIS Pro" }
+        ],
+        groupProject: true,
         liveUrl: null,
         repoUrl: null
     },
@@ -102,7 +152,12 @@ const projects = [
         tools: ["SQL", "ArcGIS Pro", "Geodatabase Design", "Georeferencing", "OCR"],
         year: "2024",
         course: "GPH952 — Spatial Database Design & Analysis",
-        thumb: "images/projects/lynnfield.png",
+        thumb: "images/projects/lynnfield/CemMap.png",
+        gallery: [
+            { src: "images/projects/lynnfield/CemMap.png", caption: "Lynnfield, MA Cemeteries Overview" },
+            { src: "images/projects/lynnfield/Screenshot 2025-05-30 115155.png", caption: "Database and Spatial Features in ArcGIS Pro" }
+        ],
+        groupProject: true,
         liveUrl: null,
         repoUrl: null
     },
@@ -117,7 +172,11 @@ const projects = [
         tools: ["Python", "arcpy", "ArcGIS Pro", "MassGIS", "FEMA Flood Data", "Network Analysis"],
         year: "2024",
         course: "GPH960 — Software Design & Programming in GIS",
-        thumb: "images/projects/salem-evacuation.png",
+        thumb: "images/projects/evacuation-thumb.png",
+        gallery: [
+            { src: "images/projects/evacuation/Screenshot 2025-05-30 114045.png", caption: "Flood Zone & Traffic Network Analysis" },
+            { src: "images/projects/evacuation/Screenshot 2025-05-30 114112.png", caption: "arcpy Evacuation Route Script" }
+        ],
         liveUrl: null,
         repoUrl: null
     }
