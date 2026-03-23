@@ -175,13 +175,15 @@ function openGalleryLightbox(gallery, startIndex) {
         e.stopPropagation();
         show((current + 1) % gallery.length);
     });
-    lb.querySelector('.gallery-lb-close').addEventListener('click', () => lb.remove());
-    lb.addEventListener('click', (e) => { if (e.target === lb) lb.remove(); });
+    function cleanup() { lb.remove(); document.removeEventListener('keydown', onKey); }
+
+    lb.querySelector('.gallery-lb-close').addEventListener('click', cleanup);
+    lb.addEventListener('click', (e) => { if (e.target === lb) cleanup(); });
 
     function onKey(e) {
         if (e.key === 'ArrowLeft') show((current - 1 + gallery.length) % gallery.length);
         if (e.key === 'ArrowRight') show((current + 1) % gallery.length);
-        if (e.key === 'Escape') { lb.remove(); document.removeEventListener('keydown', onKey); }
+        if (e.key === 'Escape') cleanup();
     }
     document.addEventListener('keydown', onKey);
 }
@@ -204,18 +206,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// ===== COUNTER ANIMATION =====
-function animateCounters() {
-    document.querySelectorAll('[data-target]').forEach(el => {
-        const target = parseInt(el.dataset.target);
-        const duration = 1500;
-        const start = performance.now();
-        function tick(now) {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            el.textContent = Math.round(target * eased);
-            if (progress < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-    });
-}

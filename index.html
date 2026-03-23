@@ -80,13 +80,17 @@
     </div>
 </section>
 
-<!-- MAPZIMUS — smaller callout -->
+<!-- MAPZIMUS — callout with live counter -->
 <section class="featured-band">
     <div class="section fade-in" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
-        <div>
+        <div style="flex:1; min-width:280px;">
             <div class="section-label">// Side Project</div>
             <h2 style="font-size:22px; margin-top:8px;">Mapzimus Idea Board</h2>
             <p style="color:var(--text-secondary); margin-top:8px; max-width:520px;">A tool I built for managing and scoring infographic map ideas. Filter by geography, format, and category.</p>
+        </div>
+        <div class="idea-counter fade-in" id="ideaCounter">
+            <div class="idea-counter-number" id="ideaCount">—</div>
+            <div class="idea-counter-label">ideas tracked</div>
         </div>
         <a href="mapzimus.html" class="btn btn-secondary">Learn More &rarr;</a>
     </div>
@@ -173,6 +177,31 @@
             });
         }
     });
+
+    // Live idea counter — fetches count from Mapzimus board data
+    (function loadIdeaCount() {
+        const el = document.getElementById('ideaCount');
+        if (!el) return;
+        fetch('https://raw.githubusercontent.com/mapzimus/mapzimus-board/main/data.js')
+            .then(r => r.text())
+            .then(text => {
+                // Count entries by matching id: fields at the start of objects
+                const matches = text.match(/"id"\s*:/g) || text.match(/id\s*:/g);
+                const count = matches ? matches.length : 0;
+                if (count > 0) animateCounter(el, count);
+            })
+            .catch(() => { el.textContent = '—'; });
+    })();
+
+    function animateCounter(el, target) {
+        let current = 0;
+        const step = Math.max(1, Math.floor(target / 60));
+        const interval = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(interval); }
+            el.textContent = current.toLocaleString();
+        }, 16);
+    }
 </script>
 </body>
 </html>
