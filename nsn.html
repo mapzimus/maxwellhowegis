@@ -321,10 +321,46 @@
         <h2 class="nsn-section-title">Active Listings</h2>
         <p class="nsn-section-desc">Live items from the North Shore Nostalgia eBay store. Click any item to view it on eBay.</p>
         <div class="nsn-listings-grid" id="nsnListings">
-            <div class="nsn-loading">
-                <div class="nsn-loading-spinner"></div>
-                <p>Loading listings from eBay...</p>
-            </div>
+            <a href="https://www.ebay.com/itm/127762134179" target="_blank" class="nsn-listing-card">
+                <img src="https://i.ebayimg.com/images/g/QLMAAeSwH~dpvwDo/s-l300.webp" alt="Super Mario 64 DS" class="nsn-listing-img" loading="lazy">
+                <div class="nsn-listing-info">
+                    <div class="nsn-listing-title">Super Mario 64 DS (Nintendo DS, 2004) CIB Complete W/ Manual &amp; Inserts</div>
+                    <div class="nsn-listing-price">$33.99</div>
+                    <div class="nsn-listing-shipping">Free shipping</div>
+                </div>
+            </a>
+            <a href="https://www.ebay.com/itm/127761857715" target="_blank" class="nsn-listing-card">
+                <img src="https://i.ebayimg.com/images/g/1P0AAeSwTfppvsm2/s-l300.webp" alt="New Super Mario Bros." class="nsn-listing-img" loading="lazy">
+                <div class="nsn-listing-info">
+                    <div class="nsn-listing-title">New Super Mario Bros. (Nintendo DS, 2006) CIB Complete W/ Manual &amp; Inserts</div>
+                    <div class="nsn-listing-price">$31.99</div>
+                    <div class="nsn-listing-shipping">Free shipping</div>
+                </div>
+            </a>
+            <a href="https://www.ebay.com/itm/127762136085" target="_blank" class="nsn-listing-card">
+                <img src="https://i.ebayimg.com/images/g/HiAAAeSw4oFpvwFG/s-l300.webp" alt="Diddy Kong Racing" class="nsn-listing-img" loading="lazy">
+                <div class="nsn-listing-info">
+                    <div class="nsn-listing-title">Diddy Kong Racing (Nintendo DS, 2007) CIB Complete W/ Manual &amp; Inserts</div>
+                    <div class="nsn-listing-price">$25.99</div>
+                    <div class="nsn-listing-shipping">Free shipping</div>
+                </div>
+            </a>
+            <a href="https://www.ebay.com/itm/127761855769" target="_blank" class="nsn-listing-card">
+                <img src="https://i.ebayimg.com/images/g/pZ8AAeSwCc1pvsie/s-l300.webp" alt="Mario Kart DS" class="nsn-listing-img" loading="lazy">
+                <div class="nsn-listing-info">
+                    <div class="nsn-listing-title">Mario Kart DS (Nintendo DS, 2005) CIB Complete W/ Manual &amp; Inserts</div>
+                    <div class="nsn-listing-price">$25.99</div>
+                    <div class="nsn-listing-shipping">Free shipping</div>
+                </div>
+            </a>
+            <a href="https://www.ebay.com/itm/127762129530" target="_blank" class="nsn-listing-card">
+                <img src="https://i.ebayimg.com/images/g/PsEAAeSwTgFpvv~v/s-l300.webp" alt="Mario Party DS" class="nsn-listing-img" loading="lazy">
+                <div class="nsn-listing-info">
+                    <div class="nsn-listing-title">Mario Party DS (Nintendo DS, 2007) CIB Complete W/ Manual &amp; Inserts</div>
+                    <div class="nsn-listing-price">$24.99</div>
+                    <div class="nsn-listing-shipping">Free shipping</div>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -342,67 +378,5 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script>
-// Fetch active eBay listings via RSS-to-JSON proxy
-(function loadListings() {
-    const grid = document.getElementById('nsnListings');
-    if (!grid) return;
-
-    // eBay provides RSS feeds for seller listings
-    const sellerUrl = 'https://www.ebay.com/sch/i.html?_ssn=maxvalueprogames&_rss=1';
-    const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(sellerUrl);
-
-    fetch(proxyUrl)
-        .then(r => r.json())
-        .then(data => {
-            if (data.status === 'ok' && data.items && data.items.length > 0) {
-                grid.innerHTML = '';
-                data.items.forEach(item => {
-                    // Extract price from description if available
-                    const priceMatch = item.description ? item.description.match(/\$[\d,.]+/) : null;
-                    const price = priceMatch ? priceMatch[0] : '';
-
-                    // Extract image from description or enclosure
-                    let img = '';
-                    if (item.thumbnail) {
-                        img = item.thumbnail;
-                    } else if (item.enclosure && item.enclosure.link) {
-                        img = item.enclosure.link;
-                    } else if (item.description) {
-                        const imgMatch = item.description.match(/src="([^"]+)"/);
-                        if (imgMatch) img = imgMatch[1];
-                    }
-
-                    const card = document.createElement('a');
-                    card.href = item.link || '#';
-                    card.target = '_blank';
-                    card.className = 'nsn-listing-card';
-                    card.innerHTML = `
-                        ${img ? `<img src="${img}" alt="" class="nsn-listing-img" loading="lazy">` : ''}
-                        <div class="nsn-listing-info">
-                            <div class="nsn-listing-title">${item.title || 'Untitled'}</div>
-                            ${price ? `<div class="nsn-listing-price">${price}</div>` : ''}
-                        </div>
-                    `;
-                    grid.appendChild(card);
-                });
-            } else {
-                showFallback(grid);
-            }
-        })
-        .catch(() => showFallback(grid));
-
-    function showFallback(el) {
-        el.innerHTML = `
-            <div class="nsn-loading" style="grid-column:1/-1;">
-                <p style="margin-bottom:16px;">Listings load directly from eBay — visit the store to browse.</p>
-                <a href="https://www.ebay.com/str/maxvalueprogames" target="_blank" class="nsn-btn nsn-btn-primary" style="display:inline-flex;">
-                    Visit Store on eBay
-                </a>
-            </div>
-        `;
-    }
-})();
-</script>
 </body>
 </html>
