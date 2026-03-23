@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxwell Howe | GIS Portfolio</title>
-    <meta name="description" content="GIS Portfolio of Maxwell Howe — interactive maps, spatial analysis, and data visualization.">
+    <meta name="description" content="GIS Portfolio of Maxwell Howe — spatial analysis, remote sensing, and cartography.">
     <meta property="og:title" content="Maxwell Howe — GIS Portfolio">
     <meta property="og:description" content="GIS analyst and cartographer. Spatial analysis, remote sensing, and Python/R-based geoprocessing.">
     <meta property="og:type" content="website">
@@ -31,70 +31,47 @@
     </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero" id="hero">
+<!-- HERO — compact, gets out of the way fast -->
+<section class="hero hero-compact" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
     <div class="hero-content">
-        <div class="hero-badge"><span class="dot"></span> Open to GIS opportunities</div>
-        <h1>GIS Analyst & <span class="gradient">Cartographer</span></h1>
-        <p>MS in Geo-Information Science. Spatial analysis, remote sensing, and Python/R-based geoprocessing. Currently building @Mapzimus.</p>
+        <h1>Maxwell Howe</h1>
+        <p class="hero-subtitle">GIS Analyst &middot; Cartographer &middot; MS Geo-Information Science</p>
         <div class="hero-actions">
             <a href="portfolio.html" class="btn btn-primary">View Projects</a>
-            <a href="mapzimus.html" class="btn btn-secondary">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                @Mapzimus
-            </a>
-        </div>
-        <div class="hero-stats">
-            <div class="hero-stat">
-                <div class="number" data-target="8">0</div>
-                <div class="label">Projects</div>
-            </div>
-            <div class="hero-stat">
-                <div class="number" data-target="6">0</div>
-                <div class="label">GIS Courses</div>
-            </div>
-            <div class="hero-stat">
-                <div class="number" data-target="1">0</div>
-                <div class="label">MS Degree</div>
-            </div>
+            <a href="about.html" class="btn btn-secondary">About Me</a>
         </div>
     </div>
 </section>
 
-<!-- FEATURED: MAPZIMUS -->
-<section class="featured-band">
-    <div class="section featured-grid fade-in">
-        <div class="featured-text">
-            <div class="tag">Featured Tool</div>
-            <h2>Mapzimus Idea Board</h2>
-            <p>A custom-built platform for managing, scoring, and correlating infographic map ideas. Filter by geography, format, category, and multi-dimensional scoring to find the best topics.</p>
-            <div class="feature-pills">
-                <span class="feature-pill">Multi-dimensional scoring</span>
-                <span class="feature-pill">Geographic filtering</span>
-                <span class="feature-pill">Data correlation engine</span>
-                <span class="feature-pill">14 category tags</span>
+<!-- FEATURED PROJECT: LYNN -->
+<section class="section">
+    <div class="featured-project fade-in">
+        <a href="lynn.html" class="featured-project-img">
+            <img src="images/projects/lynn/Screenshot 2025-04-23 142434.png" alt="Mapped absenteeism at Lynn English High School">
+            <span class="featured-project-badge">Capstone Project</span>
+        </a>
+        <div class="featured-project-text">
+            <div class="section-label">// Featured</div>
+            <h2>Chronic Absenteeism in Lynn Public Schools</h2>
+            <p>Geocoded student addresses and analyzed the relationship between distance from school and chronic absenteeism at Lynn English High School. Built in R with 20 maps and statistical visualizations.</p>
+            <div class="project-tags" style="margin-top:16px;">
+                <span class="project-tag">R</span>
+                <span class="project-tag">Geocoding</span>
+                <span class="project-tag">ggplot2</span>
+                <span class="project-tag">Statistical Analysis</span>
             </div>
-            <a href="mapzimus.html" class="btn btn-primary">Learn More</a>
-        </div>
-        <div class="featured-preview">
-            <div style="text-align:center; padding:40px;">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--accent-teal); margin-bottom:16px;">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-                </svg>
-                <p style="color: var(--text-muted); font-size:14px;">Interactive idea management platform</p>
-            </div>
+            <a href="lynn.html" class="btn btn-primary" style="margin-top:24px;">View Full Project &rarr;</a>
         </div>
     </div>
 </section>
 
-<!-- RECENT PROJECTS -->
+<!-- MORE PROJECTS -->
 <section class="section">
     <div class="section-header fade-in">
-        <div class="section-label">// Recent Work</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-desc">Selected graduate and professional GIS work.</p>
+        <div class="section-label">// Work</div>
+        <h2 class="section-title">More Projects</h2>
     </div>
     <div class="recent-row fade-in" id="recentGrid"></div>
     <div style="text-align:center; margin-top:40px;" class="fade-in">
@@ -102,7 +79,19 @@
     </div>
 </section>
 
-<!-- CONTACT STRIP -->
+<!-- MAPZIMUS — smaller callout -->
+<section class="featured-band">
+    <div class="section fade-in" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
+        <div>
+            <div class="section-label">// Side Project</div>
+            <h2 style="font-size:22px; margin-top:8px;">Mapzimus Idea Board</h2>
+            <p style="color:var(--text-secondary); margin-top:8px; max-width:520px;">A tool I built for managing and scoring infographic map ideas. Filter by geography, format, and category.</p>
+        </div>
+        <a href="mapzimus.html" class="btn btn-secondary">Learn More &rarr;</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
 <section class="contact-band">
     <div class="section">
         <div class="contact-content fade-in">
@@ -127,9 +116,8 @@
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-    <p>&copy; 2026 Maxwell Howe &middot; Built with purpose, not a page builder.</p>
+    <p>&copy; 2026 Maxwell Howe</p>
 </footer>
 
 <!-- MODAL -->
@@ -144,17 +132,41 @@
 <script src="js/projects.js"></script>
 <script src="js/main.js"></script>
 <script>
-    // Show 3 featured projects on home page
     document.addEventListener('DOMContentLoaded', () => {
-        renderProjectGrid('recentGrid', 'all', 3);
-        // Counter animation
-        const heroObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) { animateCounters(); heroObserver.unobserve(entry.target); }
+        // Show projects 2-4 (skip Lynn since it's featured above)
+        const grid = document.getElementById('recentGrid');
+        if (grid) {
+            const skip = [1]; // skip Lynn (id:1), it's the featured project
+            const show = projects.filter(p => !skip.includes(p.id)).slice(0, 3);
+            grid.innerHTML = show.map(p => `
+                <div class="project-card" data-id="${p.id}">
+                    <div class="project-thumb">
+                        ${p.thumb
+                            ? `<img src="${p.thumb}" alt="${p.title}" loading="lazy">`
+                            : `<div class="placeholder-map">${typePlaceholders[p.type] || '🗺'}</div>`
+                        }
+                        <span class="project-type-badge ${typeClasses[p.type]}">${typeLabels[p.type]}</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>${p.title}</h3>
+                        <p>${p.summary}</p>
+                        <div class="project-tags">
+                            ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            grid.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const p = projects.find(pr => pr.id === Number(card.dataset.id));
+                    if (p && p.liveUrl && !p.liveUrl.startsWith('http')) {
+                        window.location.href = p.liveUrl;
+                    } else {
+                        openModal(Number(card.dataset.id));
+                    }
+                });
             });
-        }, { threshold: 0.5 });
-        const stats = document.querySelector('.hero-stats');
-        if (stats) heroObserver.observe(stats);
+        }
     });
 </script>
 </body>
