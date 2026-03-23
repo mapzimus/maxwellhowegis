@@ -1375,3 +1375,27 @@ main { flex: 1; }
 .mapzimus-empty-state a:hover {
     text-decoration: underline;
 }
+
+/* ===== IDEA COUNTER ===== */
+.idea-counter {
+    text-align: center;
+    padding: 16px 32px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(94, 234, 212, 0.04);
+    min-width: 120px;
+}
+.idea-counter-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--accent-teal);
+    line-height: 1;
+}
+.idea-counter-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
