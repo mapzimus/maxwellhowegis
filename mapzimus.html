@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@Mapzimus | Maxwell Howe GIS</title>
-    <meta name="description" content="Mapzimus — a scoring and idea management tool for infographic maps.">
+    <meta name="description" content="Mapzimus — infographic maps, spatial data visualization, and a custom-built idea management tool.">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -28,105 +28,85 @@
 </nav>
 
 <main>
-    <section class="section mapzimus-hero">
-        <div class="hero-badge" style="margin-bottom:24px;"><span class="dot"></span> Custom-built tool</div>
-        <h1><span>@Mapzimus</span> Idea Board</h1>
-        <p>A custom platform for managing, scoring, and correlating infographic map ideas. Built from scratch to organize the process of picking and prioritizing map topics.</p>
-        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-            <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="btn btn-primary">Launch Board</a>
-            <a href="https://github.com/mapzimus" target="_blank" class="btn btn-secondary">View on GitHub</a>
+    <!-- SOCIAL LINKS — big and prominent -->
+    <section class="section page-top" style="text-align:center;">
+        <h1><span class="gradient">@Mapzimus</span></h1>
+        <p style="color:var(--text-muted); margin-top:8px; font-size:1.05rem;">Infographic maps and spatial data visualizations.</p>
+        <div class="mapzimus-socials">
+            <a href="https://www.instagram.com/mapzimus" target="_blank" class="mapzimus-social-btn mapzimus-instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                Follow on Instagram
+            </a>
+            <a href="https://www.reddit.com/user/mapzimus" target="_blank" class="mapzimus-social-btn mapzimus-reddit">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                r/MapPorn
+            </a>
+            <a href="https://x.com/mapzimus" target="_blank" class="mapzimus-social-btn mapzimus-x">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                Follow on X
+            </a>
         </div>
     </section>
 
+    <!-- MAP CARDS — will be populated as maps are created -->
     <section class="section">
         <div class="section-header fade-in">
-            <div class="section-label">// What It Does</div>
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-desc">Score ideas across multiple dimensions, filter by geography and format, and find connections between datasets — all before building anything.</p>
+            <div class="section-label">// Maps</div>
+            <h2 class="section-title">Published Maps</h2>
+            <p class="section-desc">Infographic maps created for Instagram and Reddit. More coming soon.</p>
         </div>
-
-        <div class="feature-detail-grid fade-in">
-            <div class="feature-detail-card">
-                <h3><span style="color:var(--accent-teal);">01</span> Multi-Dimensional Scoring</h3>
-                <p>Every idea is scored on V-Score, emotional impact, clarity, surprise, and more. Drag sliders to filter by score ranges and stack multiple dimensions for precision targeting.</p>
-            </div>
-            <div class="feature-detail-card">
-                <h3><span style="color:var(--accent-teal);">02</span> Geographic Filtering</h3>
-                <p>Filter ideas by state-level geography to find story angles tied to specific regions. Useful for targeting local audiences or finding patterns unique to certain areas.</p>
-            </div>
-            <div class="feature-detail-card">
-                <h3><span style="color:var(--accent-teal);">03</span> Data Correlation Engine</h3>
-                <p>Pick any variable and find every idea it connects to — both direct usage and joinable relationships. Reveals hidden connections between datasets and story angles.</p>
-            </div>
-            <div class="feature-detail-card">
-                <h3><span style="color:var(--accent-teal);">04</span> Format Analysis</h3>
-                <p>Browse ideas by output format — scatter plots, choropleth maps, bivariate visualizations, bar charts, treemaps — to match the right visual form to each story.</p>
-            </div>
-            <div class="feature-detail-card">
-                <h3><span style="color:var(--accent-teal);">05</span> Type Classification</h3>
-                <p>Ideas are classified as MAP, XREF, CHART, or RANK — each with distinct visual treatment. Filter by type to focus on specific visualization approaches.</p>
-            </div>
-            <div class="feature-detail-card">
-                <h3><span style="color:var(--accent-teal);">06</span> Status Tracking</h3>
-                <p>Track each idea from initial concept through In Progress, Built, and Published stages. Notes and annotations persist for ongoing editorial context.</p>
+        <div class="mapzimus-map-grid fade-in" id="mapCards">
+            <!-- Map cards will go here as they're created -->
+            <div class="mapzimus-empty-state">
+                <p>Maps are on the way. Follow <a href="https://www.instagram.com/mapzimus" target="_blank">@mapzimus</a> to see them first.</p>
             </div>
         </div>
     </section>
 
+    <!-- IDEA BOARD TOOL -->
     <section class="featured-band">
         <div class="section">
             <div class="section-header fade-in">
-                <div class="section-label">// Tech Stack</div>
-                <h2 class="section-title">Built From Scratch</h2>
-                <p class="section-desc">No frameworks, no dependencies. Pure HTML, CSS, and JavaScript with the Web Crypto API for access control.</p>
+                <div class="section-label">// The Tool Behind the Maps</div>
+                <h2 class="section-title">Mapzimus Idea Board</h2>
+                <p class="section-desc">A custom platform for managing, scoring, and correlating infographic map ideas. Built from scratch to organize the process of picking and prioritizing map topics.</p>
+            </div>
+            <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:40px;" class="fade-in">
+                <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="btn btn-primary">Launch Board</a>
+                <a href="https://github.com/mapzimus" target="_blank" class="btn btn-secondary">View on GitHub</a>
             </div>
             <div class="feature-detail-grid fade-in">
                 <div class="feature-detail-card">
-                    <h3>Vanilla JS</h3>
-                    <p>Zero framework overhead. Custom state management, dynamic rendering, and real-time filtering without React, Vue, or Angular.</p>
+                    <h3><span style="color:var(--accent-teal);">01</span> Multi-Dimensional Scoring</h3>
+                    <p>Every idea is scored on V-Score, emotional impact, clarity, surprise, and more. Drag sliders to filter by score ranges and stack multiple dimensions for precision targeting.</p>
                 </div>
                 <div class="feature-detail-card">
-                    <h3>CSS Custom Properties</h3>
-                    <p>Full dark theme with semantic color tokens, type-specific badge colors, and responsive layouts using CSS Grid and Flexbox.</p>
+                    <h3><span style="color:var(--accent-teal);">02</span> Geographic Filtering</h3>
+                    <p>Filter ideas by state-level geography to find story angles tied to specific regions. Useful for targeting local audiences or finding patterns unique to certain areas.</p>
                 </div>
                 <div class="feature-detail-card">
-                    <h3>Web Crypto API</h3>
-                    <p>SHA-256 password hashing for access control. Session persistence via sessionStorage. No backend required.</p>
+                    <h3><span style="color:var(--accent-teal);">03</span> Data Correlation Engine</h3>
+                    <p>Pick any variable and find every idea it connects to — both direct usage and joinable relationships. Reveals hidden connections between datasets and story angles.</p>
                 </div>
                 <div class="feature-detail-card">
-                    <h3>GitHub Pages</h3>
-                    <p>Hosted for free on GitHub Pages with instant deploys on push. No servers to maintain, no hosting costs.</p>
+                    <h3><span style="color:var(--accent-teal);">04</span> Format Analysis</h3>
+                    <p>Browse ideas by output format — scatter plots, choropleth maps, bivariate visualizations, bar charts, treemaps — to match the right visual form to each story.</p>
+                </div>
+                <div class="feature-detail-card">
+                    <h3><span style="color:var(--accent-teal);">05</span> Type Classification</h3>
+                    <p>Ideas are classified as MAP, XREF, CHART, or RANK — each with distinct visual treatment. Filter by type to focus on specific visualization approaches.</p>
+                </div>
+                <div class="feature-detail-card">
+                    <h3><span style="color:var(--accent-teal);">06</span> Status Tracking</h3>
+                    <p>Track each idea from initial concept through In Progress, Built, and Published stages. Notes and annotations persist for ongoing editorial context.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-header fade-in">
-            <div class="section-label">// 14 Categories</div>
-            <h2 class="section-title">Every Angle Covered</h2>
-        </div>
-        <div style="display:flex; flex-wrap:wrap; gap:10px;" class="fade-in">
-            <span class="feature-pill">Agriculture</span>
-            <span class="feature-pill">Climate</span>
-            <span class="feature-pill">Crime</span>
-            <span class="feature-pill">Demographics</span>
-            <span class="feature-pill">Economics</span>
-            <span class="feature-pill">Education</span>
-            <span class="feature-pill">Energy</span>
-            <span class="feature-pill">Environment</span>
-            <span class="feature-pill">Health</span>
-            <span class="feature-pill">Housing</span>
-            <span class="feature-pill">Infrastructure</span>
-            <span class="feature-pill">Politics</span>
-            <span class="feature-pill">Recreation</span>
-            <span class="feature-pill">Transportation</span>
         </div>
     </section>
 </main>
 
 <footer class="footer">
-    <p>&copy; 2026 Maxwell Howe &middot; Built with purpose, not a page builder.</p>
+    <p>&copy; 2026 Maxwell Howe</p>
 </footer>
 
 <script src="js/main.js"></script>
