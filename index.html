@@ -32,10 +32,16 @@
     </div>
 </nav>
 
-<!-- HERO — compact, gets out of the way fast -->
-<section class="hero hero-compact" id="hero">
+<!-- HERO — full viewport with animated topo contour canvas -->
+<section class="hero" id="hero">
+    <div class="hero-canvas-wrap">
+        <canvas id="heroCanvas"></canvas>
+    </div>
     <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
+    <span class="hero-coord top-left">42.36°N 71.06°W</span>
+    <span class="hero-coord top-right">BOSTON, MA</span>
+    <span class="hero-coord bottom-left">WGS 84 · EPSG:4326</span>
+    <span class="hero-coord bottom-right">© 2026 MH</span>
     <div class="hero-content">
         <h1>Maxwell Howe</h1>
         <p class="hero-subtitle">GIS Analyst &middot; Cartographer &middot; MS Geo-Information Science</p>
@@ -47,8 +53,10 @@
     </div>
 </section>
 
+<div class="topo-divider"></div>
+
 <!-- FEATURED PROJECT: LYNN -->
-<section class="section">
+<section class="section parallax-section">
     <div class="featured-project fade-in">
         <a href="lynn.html" class="featured-project-img">
             <img src="images/projects/lynn-thumb.png" alt="Hexbin map of absenteeism in Lynn Public Schools">
@@ -75,65 +83,52 @@
         <div class="section-label">// Work</div>
         <h2 class="section-title">More Projects</h2>
     </div>
-    <div class="recent-row fade-in" id="recentGrid"></div>
+    <div class="recent-row fade-in fade-in-stagger" id="recentGrid"></div>
     <div style="text-align:center; margin-top:40px;" class="fade-in">
         <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
     </div>
 </section>
 
-<!-- MAPZIMUS — callout with screenshot and live counter -->
-<section class="featured-band">
-    <div class="section fade-in">
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px; margin-bottom:24px;">
-            <div style="flex:1; min-width:280px;">
-                <div class="section-label">// Side Project</div>
-                <h2 style="font-size:22px; margin-top:8px;">Mapzimus Idea Board</h2>
-                <p style="color:var(--text-secondary); margin-top:8px; max-width:520px;">A custom tool I built for managing and scoring infographic map ideas. Filter by geography, format, category, and multi-dimensional scores.</p>
-                <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
-                    <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">Launch Board</a>
-                    <a href="mapzimus.html" class="btn btn-secondary" style="font-size:0.85rem;">Learn More &rarr;</a>
+<div class="topo-divider"></div>
+
+<!-- WHAT I'M BUILDING — combined tools + mapzimus -->
+<section class="section parallax-section">
+    <div class="section-header fade-in">
+        <div class="section-label">// Building</div>
+        <h2 class="section-title">What I'm Building</h2>
+        <p class="section-desc">Interactive tools and platforms for GIS, cartography, and data visualization.</p>
+    </div>
+    <div class="building-grid fade-in fade-in-stagger">
+        <!-- Cakemapper -->
+        <a href="https://mapzimus.github.io/cakemapper/" target="_blank" class="building-card">
+            <img src="images/ideaboard-preview.png" alt="Cakemapper — US state map coloring tool" class="building-card-img" loading="lazy" style="background:var(--bg-card);">
+            <div class="building-card-body">
+                <h3>Cakemapper</h3>
+                <p>Interactive US state map coloring tool. Click states, build legends, quick-fill regions, and export as PNG or GeoJSON. Shareable via URL.</p>
+                <div class="building-card-footer">
+                    <span class="tool-status status-live"><span class="dot"></span> Live</span>
                 </div>
             </div>
-            <div class="idea-counter fade-in" id="ideaCounter">
-                <div class="idea-counter-number" id="ideaCount">—</div>
-                <div class="idea-counter-label">ideas tracked</div>
+        </a>
+        <!-- Mapzimus Idea Board -->
+        <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="building-card">
+            <img src="images/ideaboard-preview.png" alt="Mapzimus Idea Board — browse, filter, and score infographic map ideas" class="building-card-img" loading="lazy">
+            <div class="building-card-body">
+                <h3>Mapzimus Idea Board</h3>
+                <p>A custom scoring and correlation engine for infographic map ideas. Filter by geography, format, category, and multi-dimensional scores.</p>
+                <div class="building-card-footer">
+                    <span class="tool-status status-live"><span class="dot"></span> Live</span>
+                    <span class="building-card-counter" id="ideaCount">—</span>
+                </div>
             </div>
-        </div>
-        <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" style="display:block; border-radius:10px; overflow:hidden; border:1px solid var(--border); transition:transform 0.2s ease, box-shadow 0.2s ease;">
-            <img src="images/ideaboard-preview.png" alt="Mapzimus Idea Board — browse, filter, and score infographic map ideas" style="width:100%; display:block; border-radius:10px;" loading="lazy">
         </a>
     </div>
-</section>
-
-<!-- TOOLS SHOWCASE -->
-<section class="section">
-    <div class="section-header fade-in">
-        <div class="section-label">// Tools</div>
-        <h2 class="section-title">Tools I've Built</h2>
-        <p class="section-desc">Interactive web apps for GIS and data visualization.</p>
-    </div>
-    <div class="tools-grid fade-in" style="max-width:800px; margin:0 auto;">
-        <a href="https://mapzimus.github.io/cakemapper/" target="_blank" class="tool-card" style="text-decoration:none; color:inherit;">
-            <div class="tool-icon" style="background:rgba(135,195,255,0.1); color:var(--accent-blue);">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3>Cakemapper</h3>
-            <p>Interactive US state map coloring tool. Click states, build legends, quick-fill regions, and export as PNG or GeoJSON. Shareable via URL.</p>
-            <span class="tool-status status-live"><span class="dot"></span> Live</span>
-        </a>
-        <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="tool-card" style="text-decoration:none; color:inherit;">
-            <div class="tool-icon" style="background:rgba(94,234,212,0.1); color:var(--accent-teal);">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>Mapzimus Idea Board</h3>
-            <p>Scoring and correlation engine for infographic map ideas. Filter by geography, format, category, and multi-dimensional scores.</p>
-            <span class="tool-status status-live"><span class="dot"></span> Live</span>
-        </a>
-    </div>
-    <div style="text-align:center; margin-top:32px;" class="fade-in">
+    <div style="text-align:center;" class="fade-in">
         <a href="tools.html" class="btn btn-secondary">View All Tools</a>
     </div>
 </section>
+
+<div class="topo-divider"></div>
 
 <!-- CONTACT -->
 <section class="contact-band">
@@ -179,6 +174,7 @@
 
 <script src="js/projects.js"></script>
 <script src="js/main.js"></script>
+<script src="js/hero-canvas.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         // Show projects 2-4 (skip Lynn since it's featured above)
@@ -215,6 +211,18 @@
                 });
             });
         }
+
+        // Staggered animation observer
+        const staggerEls = document.querySelectorAll('.fade-in-stagger');
+        const staggerObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    staggerObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        staggerEls.forEach(el => staggerObs.observe(el));
     });
 
     // Live idea counter — fetches count from Mapzimus board data
@@ -224,23 +232,14 @@
         fetch('https://raw.githubusercontent.com/mapzimus/mapzimus-board/main/data.js')
             .then(r => r.text())
             .then(text => {
-                // Count entries by matching id: fields at the start of objects
                 const matches = text.match(/"id"\s*:/g) || text.match(/id\s*:/g);
                 const count = matches ? matches.length : 0;
-                if (count > 0) animateCounter(el, count);
+                if (count > 0) {
+                    el.textContent = count.toLocaleString() + ' ideas';
+                }
             })
             .catch(() => { el.textContent = '—'; });
     })();
-
-    function animateCounter(el, target) {
-        let current = 0;
-        const step = Math.max(1, Math.floor(target / 60));
-        const interval = setInterval(() => {
-            current += step;
-            if (current >= target) { current = target; clearInterval(interval); }
-            el.textContent = current.toLocaleString();
-        }, 16);
-    }
 </script>
 </body>
 </html>
