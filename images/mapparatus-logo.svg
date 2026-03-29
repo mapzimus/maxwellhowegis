@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Outer hexagon - dark teal -->
+  <polygon points="100,5 185,52.5 185,147.5 100,195 15,147.5 15,52.5" fill="#1a6e7a"/>
+  <!-- Inner hexagon - medium teal -->
+  <polygon points="100,30 165,65 165,135 100,170 35,135 35,65" fill="#2a9baa"/>
+  <!-- Location pin - white -->
+  <g transform="translate(100,88)">
+    <path d="M0,-40 C-22,-40 -35,-22 -35,0 C-35,18 0,52 0,52 C0,52 35,18 35,0 C35,-22 22,-40 0,-40 Z" fill="white"/>
+    <circle cx="0" cy="-2" r="12" fill="#2a9baa"/>
+  </g>
+</svg>
