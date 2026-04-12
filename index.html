@@ -15,6 +15,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
 <!-- NAV -->
 <nav class="nav">
     <div class="nav-inner">
@@ -38,10 +40,10 @@
         <canvas id="heroCanvas"></canvas>
     </div>
     <div class="hero-bg"></div>
-    <span class="hero-coord top-left">42.36°N 71.06°W</span>
-    <span class="hero-coord top-right">BOSTON, MA</span>
-    <span class="hero-coord bottom-left">WGS 84 · EPSG:4326</span>
-    <span class="hero-coord bottom-right">© 2026 MH</span>
+    <span class="hero-coord top-left" aria-hidden="true">42.36°N 71.06°W</span>
+    <span class="hero-coord top-right" aria-hidden="true">BOSTON, MA</span>
+    <span class="hero-coord bottom-left" aria-hidden="true">WGS 84 · EPSG:4326</span>
+    <span class="hero-coord bottom-right" aria-hidden="true">© 2026 MH</span>
     <div class="hero-content">
         <h1>Maxwell Howe</h1>
         <p class="hero-subtitle">GIS Analyst &middot; Cartographer &middot; MS Geo-Information Science</p>
@@ -51,7 +53,13 @@
             <a href="about.html" class="btn btn-outline">Available for Freelance &amp; GIS Work</a>
         </div>
     </div>
+    <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
 </section>
+
+<main id="main-content">
 
 <div class="topo-divider"></div>
 
@@ -159,8 +167,19 @@
     </div>
 </section>
 
+</main>
+
 <footer class="footer">
-    <p>&copy; 2026 Maxwell Howe</p>
+    <div class="footer-inner">
+        <p>&copy; 2026 Maxwell Howe</p>
+        <ul class="footer-links">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="https://github.com/mapzimus" target="_blank">GitHub</a></li>
+        </ul>
+    </div>
 </footer>
 
 <!-- MODAL -->
@@ -201,12 +220,21 @@
                 </div>
             `).join('');
             grid.querySelectorAll('.project-card').forEach(card => {
-                card.addEventListener('click', () => {
+                card.setAttribute('role', 'button');
+                card.setAttribute('tabindex', '0');
+                const handleActivate = () => {
                     const p = projects.find(pr => pr.id === Number(card.dataset.id));
                     if (p && p.liveUrl && !p.liveUrl.startsWith('http')) {
                         window.location.href = p.liveUrl;
                     } else {
                         openModal(Number(card.dataset.id));
+                    }
+                };
+                card.addEventListener('click', handleActivate);
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        handleActivate();
                     }
                 });
             });
