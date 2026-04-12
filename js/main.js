@@ -1,6 +1,6 @@
 // ===== SHARED SITE JS =====
 
-// Hamburger menu
+// Hamburger menu + Active nav + Scroll fade-in
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
@@ -11,7 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    // Scroll fade-in
+    // Active nav state — highlight current page
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+
+    // Scroll fade-in (lowered threshold for more reliable triggering)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -19,8 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Hide scroll indicator on scroll
+    const scrollInd = document.querySelector('.scroll-indicator');
+    if (scrollInd) {
+        let hidden = false;
+        window.addEventListener('scroll', () => {
+            if (!hidden && window.scrollY > 100) {
+                scrollInd.style.opacity = '0';
+                scrollInd.style.transition = 'opacity 0.5s ease';
+                hidden = true;
+            }
+        }, { passive: true });
+    }
 });
 
 // ===== PROJECT RENDERING =====
@@ -69,12 +91,22 @@ function renderProjectGrid(gridId, filter = 'all', limit = null) {
     `).join('');
 
     grid.querySelectorAll('.project-card').forEach(card => {
-        card.addEventListener('click', () => {
+        // Keyboard accessibility
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        const handleActivate = () => {
             const p = projects.find(pr => pr.id === Number(card.dataset.id));
             if (p && p.liveUrl && !p.liveUrl.startsWith('http')) {
                 window.location.href = p.liveUrl;
             } else {
                 openModal(Number(card.dataset.id));
+            }
+        };
+        card.addEventListener('click', handleActivate);
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleActivate();
             }
         });
     });
