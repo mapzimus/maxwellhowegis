@@ -681,9 +681,9 @@ body.admin-unlocked .topnav-nav a[data-admin-link="true"]::before {
 
 /* ----- ADMIN ITEMS hidden when locked ----- */
 [data-audience="admin"] { display: none !important; }
-body.admin-unlocked [data-audience="admin"] { display: revert !important; }
-body.admin-unlocked main > section[data-audience="admin"] { display: none; }
-body.admin-unlocked main > section[data-audience="admin"].active { display: block; }
+body.admin-unlocked [data-audience="admin"]:not(section) { display: revert !important; }
+body.admin-unlocked main > section[data-audience="admin"] { display: none !important; }
+body.admin-unlocked main > section[data-audience="admin"].active { display: block !important; }
 body.admin-unlocked .topnav-nav .nav-group[data-audience="admin"] { display: flex !important; }
 body.admin-unlocked .topnav-nav .nav-group[data-audience="admin"] ul li[data-audience="admin"] { display: list-item !important; }
 
@@ -3336,7 +3336,10 @@ Full source lists and tier-by-tier findings live alongside this file in <code>re
           e.preventDefault();
           e.stopImmediatePropagation();
           promptUnlock(function () {
-            window.location.hash = '#' + id;
+            // After unlock, re-trigger click so the original tab handler runs.
+            // Admin handler will pass through this time (unlocked), original
+            // handler will call showSection().
+            setTimeout(function () { a.click(); }, 0);
           });
         }
       }, true);
