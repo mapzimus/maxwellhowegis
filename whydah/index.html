@@ -1186,13 +1186,13 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <div class="hero-grid">
 <figure>
 <div class="video-embed-wrap" style="padding-bottom: 75%;">
-<iframe src="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-56.08,47.18,1225" title="Live North Atlantic wind - earth.nullschool.net" loading="eager" allowfullscreen referrerpolicy="no-referrer"></iframe>
+<div class="cam-thumb" data-cam-src="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-56.08,47.18,1225" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg,#1a1410 0%,#3d2817 100%); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-direction:column;"><div style="color:#f5ecd9; font-size:14px; margin-bottom:10px;">earth.nullschool.net live wind/weather globe</div><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px;">&#9654; Load 3D globe</div></div>
 </div>
 <figcaption><a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-56.08,47.18,1225" target="_blank" rel="noopener">earth.nullschool.net</a> - live wind, currents, weather. Click "earth" in the bottom-left corner to switch the layer.</figcaption>
 </figure>
 <figure>
 <div class="video-embed-wrap" style="padding-bottom: 75%;">
-<iframe src="https://www.marinetraffic.com/en/ais/embed/zoom:4/centery:38/centerx:-50/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false" title="Live North Atlantic shipping - MarineTraffic" loading="eager"></iframe>
+<div class="cam-thumb" data-cam-src="https://www.marinetraffic.com/en/ais/embed/zoom:4/centery:38/centerx:-50/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg,#1a3a5f 0%,#3d6584 100%); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-direction:column;"><div style="color:#f5ecd9; font-size:14px; margin-bottom:10px;">MarineTraffic - Live Ship Tracker</div><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px; box-shadow:0 2px 8px rgba(0,0,0,0.4);">&#9654; Load live map</div></div>
 </div>
 <figcaption><a href="https://www.marinetraffic.com/en/ais/home/centerx:-50/centery:38/zoom:4" target="_blank" rel="noopener">MarineTraffic</a> - live merchant ships, AIS feed. Pan and zoom to follow individual vessels.</figcaption>
 </figure>
@@ -1819,7 +1819,7 @@ Rediker reads pirates as people pushing back against unfair work and a brutal ec
 <h3>The Whydah flythrough - interactive 3D tour</h3>
 <div class="card">
 <p>A 19-stop, 3D globe flythrough of the Bellamy story, from his birthplace in Devon to the modern Salem museum. Each stop shows a photo and a "why this matters" caption while the camera does a slow 180-degree pan around the location. Hit play to start, or jump to any stop via the "All stops" button.</p>
-<iframe src="flythrough.html" style="width:100%; height:650px; border:1px solid #c4b590; border-radius:4px; margin: 0.8em 0; display: block;" loading="lazy" title="Whydah Flythrough - 3D Geographic Tour"></iframe>
+<div class="cam-thumb" data-cam-src="flythrough.html" style="position:relative; width:100%; height:650px; background:linear-gradient(135deg,#3d2817 0%,#6b4f2c 100%); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-direction:column; border:1px solid #c4b590; border-radius:4px;"><div style="color:#f5ecd9; font-size:18px; margin-bottom:14px; text-shadow:0 1px 3px rgba(0,0,0,0.5);">3D Whydah Flythrough Tour</div><div style="color:#f5ecd9; font-size:13px; margin-bottom:18px; opacity:0.8; max-width:400px; text-align:center; padding:0 20px;">19 stops, full 3D globe, ~5-minute auto-tour. Heavy to load - opens on demand.</div><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:12px 28px; border-radius:24px; font-weight:bold; font-size:15px; box-shadow:0 2px 8px rgba(0,0,0,0.4);">&#9654; Load the flythrough</div></div>
 <p class="meta">If the embedded view feels cramped, <a href="flythrough.html" target="_blank" rel="noopener">open in a new tab</a> for the full-screen experience.</p>
 </div>
 
@@ -2090,13 +2090,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <div class="card">
 <p>The whole Atlantic and beyond, live from <a href="https://www.marinetraffic.com/en/ais/home/centerx:0/centery:25/zoom:2" target="_blank" rel="noopener">MarineTraffic.com</a>. Zoom out to see global shipping density. Zoom into chokepoints (Suez, Malacca, Red Sea, Panama) to watch traffic queue through.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid #c4b590; border-radius: 3px; margin-top: 0.5em; background: #e6d9b8;">
-<iframe
-  src="https://www.marinetraffic.com/en/ais/embed/zoom:2/centery:25/centerx:0/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false"
-  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-  title="MarineTraffic global live ship tracker"
-  loading="lazy"
-  allowfullscreen>
-</iframe>
+<div class="cam-thumb" data-cam-src="https://www.marinetraffic.com/en/ais/embed/zoom:2/centery:25/centerx:0/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg,#1a3a5f 0%,#3d6584 100%); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-direction:column;"><div style="color:#f5ecd9; font-size:14px; margin-bottom:10px; text-shadow:0 1px 2px rgba(0,0,0,0.6);">MarineTraffic - Global live ship tracker</div><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px;">&#9654; Click to load</div></div>
 </div>
 <p class="meta" style="margin-top: 0.8em;"><strong>Quick jumps:</strong> <a href="https://www.marinetraffic.com/en/ais/home/centerx:-70.88/centery:42.52/zoom:12" target="_blank" rel="noopener">Salem Harbor</a> · <a href="https://www.marinetraffic.com/en/ais/home/centerx:-69.957/centery:41.891/zoom:14" target="_blank" rel="noopener">Wellfleet (wreck site, 41.891N 69.957W)</a> · <a href="https://www.marinetraffic.com/en/ais/home/centerx:32/centery:30/zoom:6" target="_blank" rel="noopener">Suez</a> · <a href="https://www.marinetraffic.com/en/ais/home/centerx:103/centery:3/zoom:6" target="_blank" rel="noopener">Malacca</a> · <a href="https://www.marinetraffic.com/en/ais/home/centerx:42/centery:14/zoom:5" target="_blank" rel="noopener">Red Sea / Bab-el-Mandeb</a> · <a href="https://www.marinetraffic.com/en/ais/home/centerx:-80/centery:9/zoom:8" target="_blank" rel="noopener">Panama</a> · <a href="https://www.marinetraffic.com/en/ais/home/centerx:-12/centery:25/zoom:4" target="_blank" rel="noopener">Bellamy's Atlantic</a></p>
 </div>
@@ -2131,7 +2125,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <div class="card">
 <h4><a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-56.08,47.18,1225" target="_blank" rel="noopener">earth.nullschool.net - live wind, currents, weather</a></h4>
 <div class="video-embed-wrap" style="padding-bottom: 70%;">
-<iframe src="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-56.08,47.18,1225" title="earth.nullschool.net - live North Atlantic wind" loading="lazy" allowfullscreen referrerpolicy="no-referrer"></iframe>
+<div class="cam-thumb" data-cam-src="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-56.08,47.18,1225" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg,#1a1410 0%,#3d2817 100%); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-direction:column;"><div style="color:#f5ecd9; font-size:14px; margin-bottom:10px;">earth.nullschool.net live wind/weather globe</div><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px;">&#9654; Load 3D globe</div></div>
 </div>
 <p class="meta" style="margin-top: 0.6em;">Live wind over the North Atlantic right now, centered on the same water Bellamy sailed. Click "earth" in the bottom-left to switch layer (try <em>Ocean -&gt; Currents</em> to see the Gulf Stream and the North Atlantic Gyre rolling in real time). The single best way to make the trade-wind &amp; gyre lecture (S5) land. <strong>If the embed shows blank above</strong>, nullschool may be blocking the iframe - just click the heading link to open in a new tab.</p>
 <p class="meta">Use in: <strong>S5</strong> (the triangle's physics) and <strong>S11</strong> (chokepoint comparison).</p>
@@ -2232,7 +2226,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <div class="card">
 <h4>Watch: The longitude problem and Harrison's clocks</h4>
 <div class="video-embed-wrap">
-<iframe src="https://www.youtube-nocookie.com/embed/zlRxWJ_kGEA" title="The Longitude Problem - Harrison clocks" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="cam-thumb" data-cam-src="https://www.youtube-nocookie.com/embed/zlRxWJ_kGEA?autoplay=1" style="position:absolute; top:0; left:0; width:100%; height:100%; background:#1a1410 url('https://img.youtube.com/vi/zlRxWJ_kGEA/hqdefault.jpg') center/cover no-repeat; cursor:pointer; display:flex; align-items:center; justify-content:center;"><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px;">&#9654; Click to play</div></div>
 </div>
 <p class="meta">Why this matters for us: the Whydah grounded at Wellfleet on the night of April 26, 1717, in a nor'easter, in the dark, on a lee shore. They could not verify their east-west position. A 16-year-old pilot (John Julian) was navigating with a backstaff. This video is the fastest way for a student to feel <em>why</em> Session 13 frames the wreck partly as a longitude-problem disaster.</p>
 </div>
@@ -2249,7 +2243,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <div class="card">
 <h4>Watch: Why all world maps are wrong (Vox, Johnny Harris)</h4>
 <div class="video-embed-wrap">
-<iframe src="https://www.youtube-nocookie.com/embed/kIID5FDi2JQ" title="Why all world maps are wrong - Vox" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="cam-thumb" data-cam-src="https://www.youtube-nocookie.com/embed/kIID5FDi2JQ?autoplay=1" style="position:absolute; top:0; left:0; width:100%; height:100%; background:#1a1410 url('https://img.youtube.com/vi/kIID5FDi2JQ/hqdefault.jpg') center/cover no-repeat; cursor:pointer; display:flex; align-items:center; justify-content:center;"><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px;">&#9654; Click to play</div></div>
 </div>
 <p class="meta">Six minutes. Hits the Mercator-vs-Africa moment, the 1973 Gall-Peters controversy, and the trade-offs every projection makes. Show this in S2 or S3 alongside the Moll 1719 close-read.</p>
 </div>
@@ -2367,13 +2361,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <div class="card">
 <p>Live ship tracking from <a href="https://www.marinetraffic.com/en/ais/home/centerx:-70.88/centery:42.52/zoom:12" target="_blank" rel="noopener">MarineTraffic.com</a>. The same harbor that ran the triangle trade in 1717 — what's moving through it today?</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid #c4b590; border-radius: 3px; margin-top: 0.5em; background: #e6d9b8;">
-<iframe
-  src="https://www.marinetraffic.com/en/ais/embed/zoom:12/centery:42.52/centerx:-70.88/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false"
-  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-  title="MarineTraffic live view of Salem Harbor"
-  loading="lazy"
-  allowfullscreen>
-</iframe>
+<div class="cam-thumb" data-cam-src="https://www.marinetraffic.com/en/ais/embed/zoom:12/centery:42.52/centerx:-70.88/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg,#1a3a5f 0%,#3d6584 100%); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-direction:column;"><div style="color:#f5ecd9; font-size:14px; margin-bottom:10px; text-shadow:0 1px 2px rgba(0,0,0,0.6);">MarineTraffic - Salem Harbor</div><div style="background:rgba(245,236,217,0.92); color:#2a1d0f; padding:10px 22px; border-radius:24px; font-weight:bold; font-size:14px;">&#9654; Click to load</div></div>
 </div>
 <p class="meta" style="margin-top: 0.8em;">Pan and zoom to explore. Click any ship for details. Try zooming out to see Boston Harbor, the broader Massachusetts coast, and the North Atlantic shipping lanes.</p>
 </div>
