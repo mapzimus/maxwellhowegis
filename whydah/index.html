@@ -843,6 +843,16 @@ a:hover { color: var(--brass-glow); }
 .session-card-header { color: var(--oxblood); }
 .timeline { border-left: 3px solid var(--oxblood); }
 .timeline-event::before { background: var(--brass); border: 2px solid var(--page-cream); box-shadow: 0 0 0 2px var(--oxblood); }
+/* DARK-MODE CONTRAST DEFAULTS - applies to section text not inside cards */
+main > section > p,
+main > section > ul > li,
+main > section > ol > li,
+main > section > dl > dt,
+main > section > dl > dd,
+main > section > div:not(.card):not(.salem-callout):not(.person-card):not(.factor-box):not(.tool-card):not(.session-card):not(.hero-strip):not(.unit-plan-decisions):not(.critique):not(.caveat):not(.kid-summary) > p,
+main > section > div:not(.card):not(.salem-callout):not(.person-card):not(.factor-box):not(.tool-card):not(.session-card):not(.hero-strip):not(.unit-plan-decisions):not(.critique):not(.caveat):not(.kid-summary) > ul > li,
+main > section h4 { color: var(--ink-cream); }
+main > section h4 { color: var(--brass-glow); font-weight: 600; }
 .timeline-title { color: var(--brass-glow); }
 .timeline-desc { color: var(--ink-cream); }
 .artifact-map .artifact-use { color: var(--ink-cream); }
@@ -1704,8 +1714,18 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 </div>
 
 <div class="salem-callout">
-<h4>The other reason the wreck happened on this coast — Hanna's "hostile shore" framing.</h4>
-<p>Mark G. Hanna (<em>Pirate Nests</em>, 2015; <em>Piracy in Colonial North America</em>, 2020) gives a political-economy explanation alongside the navigational one. Through the 1690s and into the early 1700s, ports from Newport to Boston to Charleston quietly tolerated and profited from "their" pirates — fencing prizes, refitting ships, looking the other way. Then the <strong>Treaty of Utrecht (1713)</strong> ended the war, the new Piracy Acts arrived, and royal officials began enforcing them in the colonies. <strong>By April 1717 Bellamy was attacking the very New England coast that, fifteen years earlier, would have welcomed him as a supplier of contraband and silver.</strong> The wreck happened not just because the longitude problem was unsolved, but because the political-economy ground had shifted under his career. The same Cape Cod that had previously been a market was now a hostile shore — and the surviving crew were tried in a Boston that had only just decided pirates were the enemy.</p>
+<h4>Why Cape Cod, specifically? Hanna's "hostile shore" theory.</h4>
+<p>Historian Mark Hanna says the wreck wasn't just bad luck and bad weather — it was politics. For years before 1717, port towns from Newport to Boston to Charleston quietly welcomed pirates: buying their stolen goods, fixing their ships, and looking the other way. Then in <strong>1713</strong>, the Treaty of Utrecht ended the war between England and Spain, and new laws made it a serious crime to help pirates. The same coastal towns that used to roll out the red carpet now had to arrest them.</p>
+<p><strong>By April 1717, Bellamy was attacking the very coast that, fifteen years earlier, would have welcomed him.</strong> So the wreck happened for two reasons stacked on top of each other: Bellamy didn't have the navigation tools to find his way (the longitude problem) AND he was on a shore that had recently turned hostile. The Boston judges who sentenced his crew had only just decided pirates were the enemy.</p>
+<p class="meta">Sources: Mark G. Hanna, <em>Pirate Nests and the Rise of the British Empire, 1570-1740</em> (UNC Press, 2015) and "Piracy in Colonial North America," <em>Oxford Research Encyclopedia of American History</em> (2020).</p>
+<details style="margin-top:0.8em; background:rgba(245,236,217,0.06); border:1px solid var(--brass); border-radius:4px; padding:0.6em 1em;">
+<summary style="cursor:pointer; font-family:Georgia,serif; color:var(--brass-glow); font-weight:600; padding:0.3em 0;">ðŸ“š Going deeper: the academic debate</summary>
+<div style="padding:0.6em 0 0.3em; color:var(--ink-cream); font-size:0.95em; line-height:1.55;">
+<p>Hanna's argument is the major scholarly counterweight to <strong>Marcus Rediker</strong>'s <em>Villains of All Nations</em> (2004), which reads pirates as a working-class proto-democracy resisting authority from below. Rediker is right at the lower-deck level: pirate crews voted on captains, signed Articles, and were unusually multi-racial. Hanna is right at the shore level: the same crews depended on elite merchants and governors who profited from their stolen goods. <strong>The most academically honest Bellamy narrative holds both at once</strong> â€” pirate crews internally democratic AND on-shore sponsors as merchant elites AND, once elite protection ended, Bellamy died on a coast that had turned hostile.</p>
+<p>Pair this section with <strong>Anderson 1995's "episodic piracy" framing</strong> and the Rediker working-class-counter-society reading for the moral-complexity capstone in S17.</p>
+<p>Free public version of Hanna's argument: <a href="https://www.neh.gov/humanities/2017/winter/feature/lot-what-known-about-pirates-not-true-and-lot-what-true-not-known" target="_blank" rel="noopener" style="color:var(--brass-glow);">"A Lot of What Is Known About Pirates Is Not True"</a>, <em>NEH Humanities</em>, Winter 2017. Classroom-assignable, no paywall.</p>
+</div>
+</details>
 <p class="meta" style="margin-top: 0.4em;">Use in S13 (the wreck as multi-causal) and S17 (the moral-complexity capstone). Pair with Anderson 1995's "episodic piracy" framing and Rediker's working-class-counter-society reading — the most academically honest Bellamy narrative holds all three at once: pirate <em>crews</em> were internally democratic and multi-racial, AND their on-shore <em>sponsors</em> were merchant elites, AND once the elite-protection ended Bellamy died on a coast that had turned hostile. Hanna's free public essay: "<a href="https://www.neh.gov/humanities/2017/winter/feature/lot-what-known-about-pirates-not-true-and-lot-what-true-not-known" target="_blank" rel="noopener">A Lot of What Is Known About Pirates Is Not True</a>," <em>NEH Humanities</em> Winter 2017.</p>
 </div>
 
@@ -1715,13 +1735,14 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <div class="card">
 <h4>Thomas Davis on the wreck (Trials, p. 318)</h4>
 <blockquote style="border-left: 4px solid var(--accent); padding-left: 1em; margin: 0.6em 0; font-family: Georgia, serif; font-style: italic; color: var(--text);">"The Ship being at an Anchor, they cut their Cables and ran a shoar, in a quarter of an hour after the Ship struck, the Main-mast was carried by the board, and in the Morning She was beat to pieces. About Sixteen Prisoners drown'd, Crumpstey Mast of the Pink being one, and One hundred and forty-four in all."</blockquote>
+<div style="margin: 0.4em 0 0.7em; padding:0.5em 0.8em; background:rgba(245,236,217,0.1); border-left:3px solid var(--brass); color:var(--ink-cream); font-size:0.95em; line-height:1.5;"><strong style="color:var(--brass-glow);">In plain English:</strong> The ship was anchored when the storm hit. The pirates cut the anchor ropes on purpose to try to beach her. Fifteen minutes after she hit ground, the main mast snapped off. By morning, the ship was destroyed. About 16 prisoners drowned, including Captain Crumpstey from the Mary Anne. 144 people died total.</div>
 <p>Two things in this quote rewrite the popular story. <strong>(1)</strong> The Whydah was anchored when the storm hit — Bellamy's crew deliberately <strong>cut their own cables</strong> to try to beach her, rather than being driven uncontrolled onto the bar. <strong>(2)</strong> Captain Andrew Crumpstey of the Mary Anne was aboard the Whydah and drowned — primary confirmation, ending earlier ambiguity about his fate.</p>
 <p class="meta">Davis was Welsh, from Carmarthenshire, age 22 at trial. Captured December 1716 from the merchant ship <em>St. Michael</em> by Bellamy's <em>Sultana</em> and Louis Lebous's <em>Postillion</em> jointly; held at Blanco until January 1717. Acquitted at trial as a forced man. In custody by 29 April 1717 — three days after the wreck.</p>
 </div>
 
 <div class="card">
 <h4>Peter Cornelius Hoof on the treasure (Trials, p. 319)</h4>
-<blockquote style="border-left: 4px solid var(--accent); padding-left: 1em; margin: 0.6em 0; font-family: Georgia, serif; font-style: italic; color: var(--text);">"The money taken in the Whido, which was reported to Amount to 20000 or 30000 Pounds, was counted over in the Cabin, and put up in bags, Fifty pounds to every Man's share, there being 180 Men on Board… Their Money was kept in Chests between Decks without any guard, but none was to take any without the Quarter Masters leave."</blockquote>
+<blockquote style="border-left: 4px solid var(--accent); padding-left: 1em; margin: 0.6em 0; font-family: Georgia, serif; font-style: italic; color: var(--text);">"The money taken in the Whido, which was reported to Amount to 20000 or 30000 Pounds, was counted over in the Cabin, and put up in bags, Fifty pounds to every Man's share, there being 180 Men on Board… Their Money was kept in Chests between Decks without any guard, but none was to take any without the Quarter Masters leave." <span style="display:block; margin-top:0.6em; padding:0.5em 0.8em; background:rgba(245,236,217,0.1); border-left:3px solid var(--brass); color:var(--ink-cream); font-size:0.95em; line-height:1.5;"><strong style="color:var(--brass-glow);">In plain English:</strong> The money on the Whydah was about &pound;20,000-30,000 pounds sterling - a fortune. They counted it in the captain's cabin and put it in bags. Every man on board got &pound;50 - fair shares, no matter your rank. There were 180 men aboard at the count. The money sat in chests between decks with no guard, but you couldn't grab any without the Quartermaster's permission.</span></blockquote>
 <ul>
 <li><strong>£20,000–30,000 sterling</strong> — Hoof's contemporaneous figure. More grounded than the breathless weight numbers in popular accounts.</li>
 <li><strong>£50 per man, even share</strong> — primary-source confirmation of Bellamy's flat distribution. The pirate-democracy claim has at least this much documentary support.</li>
@@ -1732,7 +1753,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 
 <div class="card">
 <h4>James Dunavan on the Mary Anne pirates and the Common Prayer Book (Trials)</h4>
-<blockquote style="border-left: 4px solid var(--accent); padding-left: 1em; margin: 0.6em 0; font-family: Georgia, serif; font-style: italic; color: var(--text);">"…the Pinks Company could not see the Shoar till they were among the Breakers… the Prisoners at the Bar or some of them… Cryed out saying, For God's sake let us go down into the Hould &amp; Die together. And the whole pinks Company tarry'd on Board her all that Night: And in their Distress the Prisoners ask'd the Deponent to Read to them the Common-Prayer Book…"</blockquote>
+<blockquote style="border-left: 4px solid var(--accent); padding-left: 1em; margin: 0.6em 0; font-family: Georgia, serif; font-style: italic; color: var(--text);">"…the Pinks Company could not see the Shoar till they were among the Breakers… the Prisoners at the Bar or some of them… Cryed out saying, For God's sake let us go down into the Hould &amp; Die together. And the whole pinks Company tarry'd on Board her all that Night: And in their Distress the Prisoners ask'd the Deponent to Read to them the Common-Prayer Book…"</blockquote><div style="margin: 0.4em 0 0.7em; padding:0.5em 0.8em; background:rgba(245,236,217,0.1); border-left:3px solid var(--brass); color:var(--ink-cream); font-size:0.95em; line-height:1.5;"><strong style="color:var(--brass-glow);">In plain English:</strong> The Mary Anne crew couldn't see the shore until they were already in the breaking waves. Some of the pirates yelled, "For God's sake let us go down into the hold and die together." Everyone stayed on the boat all night. Scared, the pirates asked their captives to read prayers aloud from the Common Prayer Book.</div>
 <p>Two notable additions. <strong>(1)</strong> The Mary Anne pirates — facing storm, shore, and certain capture — asked to die in the hold together, then asked their captives to read them Anglican prayer through the night. Useful for any session on what pirates actually believed about death and dying. <strong>(2)</strong> The deposition lists three vessels visible before grounding ("the Pirate Ship, Snow and Sloop") — Bellamy's fleet at the moment of the storm was at least <strong>four vessels</strong> (Whydah + Anne Galley snow + Mary Anne pink + Fisher sloop), corroborating the four-ships table above.</p>
 </div>
 
@@ -1846,7 +1867,7 @@ Rediker reads pirates as people pushing back against unfair work and a brutal ec
 <p class="meta">If the embedded view feels cramped, <a href="flythrough.html" target="_blank" rel="noopener">open in a new tab</a> for the full-screen experience.</p>
 </div>
 
-<h4>How this was custom-built - a GIS teaching artifact</h4>
+<details style="margin:0.8em 0; background:rgba(245,236,217,0.06); border:1px solid var(--brass); border-radius:4px; padding:0.5em 1em;"><summary style="cursor:pointer; font-family:Georgia,serif; color:var(--brass-glow); font-weight:600; padding:0.4em 0; font-size:1.05em;">ðŸ”¬ Going deeper: how this 3D flythrough was custom-built (GIS teaching artifact)</summary><div style="padding:0.4em 0;">
 <div class="card">
 <p class="meta">This isn't a Google Earth tour or a museum video. It is a custom 3D web map built from scratch using the same open-source GIS toolkit students would use to make their own. Walking through how it works is itself a Session 14 or 15 lesson on how spatial storytelling gets made.</p>
 
@@ -1864,6 +1885,8 @@ Rediker reads pirates as people pushing back against unfair work and a brutal ec
 
 <p class="meta">Total stack: MapLibre GL JS + Esri World Imagery + ~600 lines of vanilla HTML/CSS/JS. No paid services. No build step. One self-contained file. Lives at <code>flythrough.html</code> alongside <code>whydah-dashboard.html</code> in the repo.</p>
 </div>
+</div>
+</details>
 
 <h4>The 19 stops</h4>
 <div class="card">
