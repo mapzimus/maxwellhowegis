@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1082,6 +1082,66 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
   main > section[id] { display: block !important; }
   main > section[id].active > h2 { animation: none !important; }
 }
+
+/* Reusable course-essential badges (replaces inline styles) */
+.badge-essential {
+  display: inline-block;
+  background: var(--brass);
+  color: #1a1108;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.65em;
+  letter-spacing: 1.5px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-weight: 600;
+}
+.badge-essential-mini {
+  display: inline-block;
+  background: var(--brass);
+  color: #1a1108;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-size: 0.55em;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  margin-right: 0.4em;
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-weight: 600;
+}
+.card.essential, .week-block.essential { border-left: 4px solid var(--brass); }
+
+/* Social-justice cross-cutting thread — sub-bullet treatment */
+.thread-cross-cutting {
+  list-style: none;
+  margin-top: 0.6em;
+  padding: 0.5em 0.8em;
+  border-left: 3px solid var(--oxblood);
+  background: rgba(139, 58, 30, 0.08);
+  border-radius: 0 3px 3px 0;
+  font-size: 0.95em;
+}
+
+/* Tighten <details> "Going deeper" wrappers — gentle reading affordance */
+details > summary {
+  list-style: none;
+  position: relative;
+  padding-left: 1.2em;
+  user-select: none;
+}
+details > summary::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  font-size: 0.85em;
+  color: var(--brass);
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+details[open] > summary::before { transform: rotate(90deg); }
+details > summary::-webkit-details-marker { display: none; }
 </style>
 </head>
 <body>
@@ -1160,15 +1220,15 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <p>This is the planning and teaching dashboard for the LEAP4Ed Summer 2026 middle-school unit on the <strong>Whydah Gally</strong> - a slave ship captured by pirate Sam Bellamy in 1717, lost in a storm off Wellfleet 10 weeks later, and rediscovered by Barry Clifford in 1984. The first authenticated Golden Age pirate wreck.</p>
 <p>The unit runs five weeks (July 6 - August 6, 2026) at Collins Middle School, Salem. Two sections of about 20 students each, ages 11-13, 90 minutes per session. Every student keeps a <strong>Voyage Journal</strong> across 16 instructional sessions and a field trip, then builds a <strong>final project</strong> in a format they pick from a 13-option menu, presented at a public Showcase on August 6.</p>
 <p>The unit''s spine is cartography: students learn to read and make maps before they get deep into the history. From there it opens out into the Atlantic trade Bellamy sailed through, the moral complexity of why people chose piracy in the first place, and the modern chokepoints (Suez, Malacca, Panama) where the same logic plays out today.</p>
-<p class="meta">Use the tabs above to navigate. <strong>Plan</strong> covers the unit at a glance and per-session deliverables. <strong>Story</strong> covers the historical content. <strong>Reference</strong> holds sources, the glossary, and our confidence-tier methodology.</p>
+<p class="meta">Use the tabs above to navigate. <strong>Plan</strong> shows the unit at a glance and what students make each session. <strong>Story</strong> holds the history. <strong>Reference</strong> holds the sources, the glossary, and how we rate them green / yellow / red for confidence.</p>
 </div>
 <div class="card" style="border-left: 4px solid var(--brass);">
-<h3 style="margin-top:0;"><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:2px 8px; border-radius:3px; font-size:0.65em; letter-spacing:1.5px; vertical-align:middle; margin-right:0.5em; font-family:'IM Fell English SC',Georgia,serif;">COURSE-ESSENTIAL</span>Driving question</h3>
+<h3 style="margin-top:0;"><span class="badge-essential">COURSE-ESSENTIAL</span>Driving question</h3>
 <p style="font-size:1.15em; font-family:Georgia,serif; font-style:italic; color:var(--accent); margin:0.3em 0 1em 0;">
 "Why would a person choose piracy in 1717 — and how would they want you to tell their story?"
 </p>
 
-<h4><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:1px 6px; border-radius:2px; font-size:0.55em; letter-spacing:1px; vertical-align:middle; margin-right:0.4em; font-family:'IM Fell English SC',Georgia,serif;">ESSENTIAL</span>Four supporting questions (one per week)</h4>
+<h4><span class="badge-essential-mini">ESSENTIAL</span>Four supporting questions (one per week)</h4>
 <ol style="margin-top:0.3em;">
 <li>How do people use maps and navigation to exercise power — in 1717 and today?</li>
 <li>What do Atlantic trade routes tell us about who benefits and who suffers from global commerce, then and now?</li>
@@ -1176,7 +1236,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <li>Whose stories get mapped, and whose get buried — across time?</li>
 </ol>
 
-<h4><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:1px 6px; border-radius:2px; font-size:0.55em; letter-spacing:1px; vertical-align:middle; margin-right:0.4em; font-family:'IM Fell English SC',Georgia,serif;">ESSENTIAL</span>Three threads running through the whole unit</h4>
+<h4><span class="badge-essential-mini">ESSENTIAL</span>Three threads running through the whole unit</h4>
 <ol style="margin-top:0.3em;">
 <li><strong>Cartography and navigation.</strong> Maps are the tool. We learn to read and make them first. The Whydah story holds together on cartography too: Cyprian Southack's 1717 salvage map is what Barry Clifford used in 1984 to find the wreck.</li>
 <li><strong>The Whydah's Atlantic world.</strong> The ship's journey carries everything else: trade, slavery, piracy, the wreck, the recovery.</li>
@@ -1186,11 +1246,11 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <h4>How we're holding the moral complexity</h4>
 <p style="margin-top:0.3em;">The Whydah's crew were escaping real brutality <em>and</em> they stole for a living. The Ship's Articles were democratic <em>and</em> they were a mutiny. A member of Parliament funded the ship as a slaver. We want students to understand these choices without glorifying or condemning them — no flattening either direction.</p>
 
-<h4><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:1px 6px; border-radius:2px; font-size:0.55em; letter-spacing:1px; vertical-align:middle; margin-right:0.4em; font-family:'IM Fell English SC',Georgia,serif;">ESSENTIAL</span>Voyage Journal + final project</h4>
+<h4><span class="badge-essential-mini">ESSENTIAL</span>Voyage Journal + final project</h4>
 <p style="margin-top:0.3em;">Students keep a <strong>Voyage Journal</strong> across the whole unit — one deliverable per session, 16+ artifacts accumulated by Week 5 (maps, writing, analysis cards, sketches, character notes). The <strong>final project</strong> is a new piece built from the Journal: students pick a perspective and a format (13 options), and every final project cites at least 3–4 Journal entries as source material.</p>
 <p style="margin-top:0.3em;">See the <a href="#voyage-journal">Voyage Journal</a> tab for session-by-session deliverables and the full final project format menu.</p>
 
-<h4><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:1px 6px; border-radius:2px; font-size:0.55em; letter-spacing:1px; vertical-align:middle; margin-right:0.4em; font-family:'IM Fell English SC',Georgia,serif;">ESSENTIAL</span>Field trips</h4>
+<h4><span class="badge-essential-mini">ESSENTIAL</span>Field trips</h4>
 <ul>
 <li><strong>Field Trip 1 (Week 2, Thursday July 16):</strong> Two-section rotation. Section A morning at Real Pirates Salem (Whydah scavenger hunt); Section B morning at Salem Maritime NHS (the <em>Friendship</em> replica East Indiaman + Derby Wharf + Custom House). Swap at lunch. Walking distance between sites. Curator-led at Real Pirates if we can swing it through Frank Cutietta.</li>
 <li><strong>Field Trip 2:</strong> TBD</li>
@@ -1199,7 +1259,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 
 <div class="hero-strip">
 <div class="card" style="border-left: 4px solid var(--brass);">
-<h3 style="margin-top:0;"><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:2px 8px; border-radius:3px; font-size:0.65em; letter-spacing:1.5px; vertical-align:middle; margin-right:0.5em; font-family:'IM Fell English SC',Georgia,serif;">COURSE-ESSENTIAL</span>The 5-week arc</h3>
+<h3 style="margin-top:0;"><span class="badge-essential">COURSE-ESSENTIAL</span>The 5-week arc</h3>
 <p>Each week has its own focus and Key Student Question. The Three Threads (cartography &middot; Atlantic world &middot; modern oceans) run through every week, with the social-justice lens cutting across all of them.</p>
 <table style="width:100%; border-collapse: collapse; font-size: 0.93em; margin-top: 0.6em;">
 <thead><tr style="background: var(--page-cream-2); color: var(--ink-warm); text-align: left;">
@@ -1235,7 +1295,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <figcaption><a href="https://www.marinetraffic.com/en/ais/home/centerx:-50/centery:38/zoom:4" target="_blank" rel="noopener">MarineTraffic</a> - live merchant ships, AIS feed. Pan and zoom to follow individual vessels.</figcaption>
 </figure>
 </div>
-<p class="hero-jumps">For the full GIS toolkit, head to the <a href="#maps-geo">Maps &amp; Tools</a> tab. For projections, latitude, and longitude, see <a href="#projections">Projections &amp; Coordinates</a>.</p>
+<p class="hero-jumps">For the full mapping toolkit, head to the <a href="#maps-geo">Maps &amp; Tools</a> tab. For projections, latitude, and longitude, see <a href="#projections">Projections &amp; Coordinates</a>.</p>
 </div>
 </section>
 
@@ -1244,7 +1304,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <p class="meta">Every session produces one deliverable. By Week 5 each student has 16+ artifacts accumulated in their Voyage Journal. The Journal is the raw material the final project draws on.</p>
 
 <div class="card">
-<h3 style="margin-top:0;"><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:2px 8px; border-radius:3px; font-size:0.65em; letter-spacing:1.5px; vertical-align:middle; margin-right:0.5em; font-family:'IM Fell English SC',Georgia,serif;">COURSE-ESSENTIAL</span>How the Journal and the final project work together</h3>
+<h3 style="margin-top:0;"><span class="badge-essential">COURSE-ESSENTIAL</span>How the Journal and the final project work together</h3>
 <p>The Voyage Journal is a running binder — physical or digital, student choice — that grows one entry per session. Every entry is small and finishable in a single class period: a map, a short reflection, a T-chart, an analysis card. The goal is to build up raw material across the whole unit.</p>
 <p>The final project is a new piece in a format the student picks from the menu below, built from the Journal. Every final project has to cite at least 3–4 Journal entries as source material. The Journal is the evidence of process; the final project is the synthesis they present.</p>
 <p>At the Showcase, final projects get presented; Journals lay open on tables for visitors to flip through.</p>
@@ -1279,7 +1339,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <div class="week-block">
 <div class="week-header"><h3 style="margin:0;">Week 4 — The Wreck &amp; Recovery</h3><span class="week-dates">July 27–30</span></div>
 <div class="session-row"><span class="session-num">S13 · Mon</span><span class="session-title">Wreck site map<span class="session-focus">Google Earth with bathymetry, plus a written land acknowledgment for Punonakanit Wampanoag territory</span></span></div>
-<div class="session-row"><span class="session-num">S14 · Tue</span><span class="session-title">Grid-archaeology exercise<span class="session-focus">Map a simulated "dig square" using grid coordinates — the direct ancestor of GIS</span></span></div>
+<div class="session-row"><span class="session-num">S14 · Tue</span><span class="session-title">Grid-archaeology exercise<span class="session-focus">Map a simulated "dig square" using grid coordinates — the same way archaeologists really record a wreck site</span></span></div>
 <div class="session-row"><span class="session-num">S15 · Wed</span><span class="session-title">Artifact analysis card<span class="session-focus">One Whydah object (coin, pipe, ship's bell, King's shoe) — what it tells us, what we can't know from it</span></span></div>
 <div class="session-row"><span class="session-num">S16 · Thu</span><span class="session-title">Perspective + format pitch<span class="session-focus">One-paragraph justification: who they're telling the story from, what format they'll use, and 3–4 Journal entries they'll draw on</span></span></div>
 </div>
@@ -1292,7 +1352,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <div class="session-row"><span class="session-num">Show · Thu</span><span class="session-title">Public Showcase<span class="session-focus">Final projects presented; Journals displayed gallery-walk; closing circle</span></span></div>
 </div>
 
-<h3><span style="display:inline-block; background:var(--brass); color:#1a1108; padding:2px 8px; border-radius:3px; font-size:0.65em; letter-spacing:1.5px; vertical-align:middle; margin-right:0.5em; font-family:'IM Fell English SC',Georgia,serif;">COURSE-ESSENTIAL</span>Final project format menu (13 options)</h3>
+<h3><span class="badge-essential">COURSE-ESSENTIAL</span>Final project format menu (13 options)</h3>
 <p class="meta">Students pick one — or pitch their own with approval.</p>
 
 <table>
@@ -1591,7 +1651,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <li><strong>Marked the wreck's location on his New England chart</strong></li>
 <li>That 267-year-old map is how Barry Clifford found the Whydah in 1984</li>
 </ul>
-<div class="perspective-use">For the project: THE cartographer character. A GIS/mapmaker POV at the heart of the story. His 1717 map preserved the site for three centuries.</div>
+<div class="perspective-use">For the project: THE cartographer character. A mapmaker's perspective at the heart of the story. His 1717 chart preserved the wreck's location for three centuries.</div>
 </div>
 
 <div class="person-card">
@@ -1634,7 +1694,7 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <li>Preached the Nov 15, 1717 execution sermon at Boston Common</li>
 <li>Published "Instructions to the Living, from the Condition of the Dead" (1717) — an existing primary source</li>
 </ul>
-<div class="perspective-use">For the project: Salem-familiar name. Puritan moral framing vs. the democratic pirate crew he was trying to save. Direct tie to Salem kids' prior knowledge.</div>
+<div class="perspective-use">For the project: a Salem-familiar name. Puritan minister calling the pirate crew sinners — but the crew had elected their captain and shared their pay. Two very different ideas of what makes someone "good." A direct tie to what Salem kids already know.</div>
 </div>
 
 <div class="person-card">
@@ -1740,9 +1800,9 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
 <p><strong>By April 1717, Bellamy was attacking the very coast that, fifteen years earlier, would have welcomed him.</strong> So the wreck happened for two reasons stacked on top of each other: Bellamy didn't have the navigation tools to find his way (the longitude problem) AND he was on a shore that had recently turned hostile. The Boston judges who sentenced his crew had only just decided pirates were the enemy.</p>
 <p class="meta">Sources: Mark G. Hanna, <em>Pirate Nests and the Rise of the British Empire, 1570-1740</em> (UNC Press, 2015) and "Piracy in Colonial North America," <em>Oxford Research Encyclopedia of American History</em> (2020).</p>
 <details style="margin-top:0.8em; background:rgba(245,236,217,0.06); border:1px solid var(--brass); border-radius:4px; padding:0.6em 1em;">
-<summary style="cursor:pointer; font-family:Georgia,serif; color:var(--brass-glow); font-weight:600; padding:0.3em 0;">ðŸ“š Going deeper: the academic debate</summary>
+<summary style="cursor:pointer; font-family:Georgia,serif; color:var(--brass-glow); font-weight:600; padding:0.3em 0;">Going deeper: the academic debate</summary>
 <div style="padding:0.6em 0 0.3em; color:var(--ink-cream); font-size:0.95em; line-height:1.55;">
-<p>Hanna's argument is the major scholarly counterweight to <strong>Marcus Rediker</strong>'s <em>Villains of All Nations</em> (2004), which reads pirates as a working-class proto-democracy resisting authority from below. Rediker is right at the lower-deck level: pirate crews voted on captains, signed Articles, and were unusually multi-racial. Hanna is right at the shore level: the same crews depended on elite merchants and governors who profited from their stolen goods. <strong>The most academically honest Bellamy narrative holds both at once</strong> â€” pirate crews internally democratic AND on-shore sponsors as merchant elites AND, once elite protection ended, Bellamy died on a coast that had turned hostile.</p>
+<p>Hanna's argument is the major scholarly counterweight to <strong>Marcus Rediker</strong>'s <em>Villains of All Nations</em> (2004), which reads pirates as a working-class proto-democracy resisting authority from below. Rediker is right at the lower-deck level: pirate crews voted on captains, signed Articles, and were unusually multi-racial. Hanna is right at the shore level: the same crews depended on elite merchants and governors who profited from their stolen goods. <strong>The most academically honest Bellamy narrative holds both at once</strong> —” pirate crews internally democratic AND on-shore sponsors as merchant elites AND, once elite protection ended, Bellamy died on a coast that had turned hostile.</p>
 <p>Pair this section with <strong>Anderson 1995's "episodic piracy" framing</strong> and the Rediker working-class-counter-society reading for the moral-complexity capstone in S17.</p>
 <p>Free public version of Hanna's argument: <a href="https://www.neh.gov/humanities/2017/winter/feature/lot-what-known-about-pirates-not-true-and-lot-what-true-not-known" target="_blank" rel="noopener" style="color:var(--brass-glow);">"A Lot of What Is Known About Pirates Is Not True"</a>, <em>NEH Humanities</em>, Winter 2017. Classroom-assignable, no paywall.</p>
 </div>
@@ -1879,7 +1939,7 @@ Rediker reads pirates as people pushing back against unfair work and a brutal ec
 <div style="font-size: 0.74em; font-weight: bold; letter-spacing: 1.5px; color: var(--oxblood); margin-bottom: 0.3em; text-transform: uppercase;">The Gist</div>
 <p style="margin: 0; font-size: 1em; line-height: 1.55;">The cartography side of the story. Start with the <strong>3D Whydah Flythrough</strong> — fly between all 19 stops in the Bellamy story on a real globe. Then real maps from 1717, the navigation tools the Whydah's 16-year-old pilot would have used, and live webcams of the same Cape Cod beaches today. Click any &#9654; "Click to load" tile to start a live cam.</p>
 </div>
-<p class="meta">This is where we lean hardest on the GIS side. Weeks 1, 3, and 4 all come out of here — what navigators in 1717 actually had, what didn't exist yet, and why the Atlantic trade was shaped the way it was.</p>
+<p class="meta">This is where we lean hardest on cartography. Weeks 1, 3, and 4 all come out of here — what navigators in 1717 actually had, what didn't exist yet, and why the Atlantic trade was shaped the way it was.</p>
 
 <h3>The Whydah flythrough - interactive 3D tour</h3>
 <div class="card">
@@ -1888,9 +1948,9 @@ Rediker reads pirates as people pushing back against unfair work and a brutal ec
 <p class="meta">If the embedded view feels cramped, <a href="flythrough.html" target="_blank" rel="noopener">open in a new tab</a> for the full-screen experience.</p>
 </div>
 
-<details style="margin:0.8em 0; background:rgba(245,236,217,0.06); border:1px solid var(--brass); border-radius:4px; padding:0.5em 1em;"><summary style="cursor:pointer; font-family:Georgia,serif; color:var(--brass-glow); font-weight:600; padding:0.4em 0; font-size:1.05em;">ðŸ”¬ Going deeper: how this 3D flythrough was custom-built (GIS teaching artifact)</summary><div style="padding:0.4em 0;">
+<details style="margin:0.8em 0; background:rgba(245,236,217,0.06); border:1px solid var(--brass); border-radius:4px; padding:0.5em 1em;"><summary style="cursor:pointer; font-family:Georgia,serif; color:var(--brass-glow); font-weight:600; padding:0.4em 0; font-size:1.05em;">Going deeper: how this 3D flythrough was custom-built (a behind-the-scenes look at digital cartography)</summary><div style="padding:0.4em 0;">
 <div class="card">
-<p class="meta">This isn't a Google Earth tour or a museum video. It is a custom 3D web map built from scratch using the same open-source GIS toolkit students would use to make their own. Walking through how it works is itself a Session 14 or 15 lesson on how spatial storytelling gets made.</p>
+<p class="meta">This isn't a Google Earth tour or a museum video. It is a custom 3D web map built from scratch using the same open-source mapping toolkit students would use to make their own. Walking through how it works is itself a Session 14 or 15 lesson on how a story gets told through maps.</p>
 
 <p><strong>1. Coordinates from primary sources.</strong> Every one of the 19 stops has a real lat-lon pulled from the research-findings reference. Some are documented to within a few meters (Old State House: 42.359N, 71.058W). Others are <em>approximate</em> by necessity. The Whydah wreck site is given as the publicly cited area off Marconi Beach because the exact coordinates are restricted under Clifford's federal salvage permit.</p>
 
@@ -1934,7 +1994,7 @@ Rediker reads pirates as people pushing back against unfair work and a brutal ec
 <tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">13</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Jeremiah's Gutter</strong><br><span class="meta">Southack's whaleboat passage</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">41.79N<br>69.985W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">A 1.5-mile tidal cut Southack used to shortcut the outer Cape. Today the gutter is gone, severed by Route 6's rotary.</td></tr>
 <tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">14</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Old State House, Boston</strong><br><span class="meta">Vice-Admiralty Court, Oct 1717</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">42.359N<br>71.058W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">Where the Atlantic legal system reached out. Bellamy died at sea; his crew died here. Same Salem Witch Trials establishment, 25 years on.</td></tr>
 <tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">15</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Charlestown gallows site</strong><br><span class="meta">Six executions, Nov 15, 1717</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">42.378N<br>71.063W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">The gallows location was chosen at the low-tide mark. Geography tells you who could hang you. Site now buried under harbor fill.</td></tr>
-<tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">16</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Wellfleet wreck site, 1984</strong><br><span class="meta">Clifford rediscovers the Whydah</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">41.892N<br>69.962W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">The Whydah comes back, 267 years later. Clifford reading a 1717 chart and modeling sand drift IS GIS work.</td></tr>
+<tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">16</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Wellfleet wreck site, 1984</strong><br><span class="meta">Clifford rediscovers the Whydah</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">41.892N<br>69.962W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">The Whydah comes back, 267 years later. Clifford read a 1717 chart, modeled how the sand had moved in 267 years, and used that to find a wreck nobody had been able to find. That's cartography doing real work.</td></tr>
 <tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">17</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Whydah Pirate Museum</strong><br><span class="meta">West Yarmouth, MA</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">41.654N<br>70.224W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">Where 200,000+ artifacts live now. Every coin was held by a pirate. Every bone fragment was a person.</td></tr>
 <tr><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">18</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;"><strong>Real Pirates Salem</strong><br><span class="meta">285 Derby Street, opened 2022</span></td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0; font-variant-numeric: tabular-nums;">42.520N<br>70.882W</td><td style="padding: 6px 8px; border-bottom: 1px solid #d4c5a0;">The Whydah arrives in Salem - the city our students live in. Their connection to the story.</td></tr>
 <tr><td style="padding: 6px 8px;">19</td><td style="padding: 6px 8px;"><strong>Salem Maritime NHS</strong><br><span class="meta">Derby Wharf, Custom House</span></td><td style="padding: 6px 8px; font-variant-numeric: tabular-nums;">42.521N<br>70.886W</td><td style="padding: 6px 8px;">The coda. Same waterfront sent the Grand Turk to Mauritius two generations later. Bellamy to Haraden to Derby is one Atlantic story.</td></tr>
@@ -2174,7 +2234,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <p><strong>The Whydah's final voyage fits this pattern:</strong> after the Caribbean, Bellamy was heading north up the American coast — riding the Gulf Stream toward the westerlies — when the nor'easter caught him off Cape Cod.</p>
 <p>S5 move: open the wind map before plotting the trade triangle. "Why is it shaped like a triangle?" has a physical answer, not just an economic one.</p>
 </div>
-<h3>GIS toolkit - free tools we can pull into class</h3>
+<h3>Mapping toolkit — free tools we can pull into class</h3>
 <p class="meta">Beyond MarineTraffic. Each one of these has a teaching use; none of them require a login or a paid account.</p>
 
 <div class="salem-callout" style="margin-bottom: 1em;">
@@ -3018,7 +3078,7 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <p class="reflect-q">Reflection: Why does evidence matter for the story you tell?</p>
 <button class="session-expand">+ Show details</button>
 <div class="session-detail">
-<p><strong>Activities:</strong> 1717: Gov. Samuel Shute dispatches Cyprian Southack (1662–1745), cartographer + naval militia commander, to salvage. Recovers little but marks wreck on his New England chart. 1984: Barry Clifford finds the wreck using Southack's 267-year-old map. Grid-based excavation method = direct ancestor of GIS. Students map the recovery grid on Google Earth - same grid logic Clifford used in 1984.</p>
+<p><strong>Activities:</strong> 1717: Gov. Samuel Shute dispatches Cyprian Southack (1662–1745), cartographer + naval militia commander, to salvage. Recovers little but marks wreck on his New England chart. 1984: Barry Clifford finds the wreck using Southack's 267-year-old map. Grid-based excavation is how archaeologists really record a wreck — every coin, bone, and bell logged by its square. Students map the recovery grid on Google Earth — the same grid logic Clifford used in 1984.</p>
 <p><strong>Vocab:</strong> archaeology · grid · provenance · cartographer</p>
 </div>
 </div>
