@@ -65,10 +65,16 @@ function renderFilters(containerId, gridId) {
     });
 }
 
-function renderProjectGrid(gridId, filter = 'all', limit = null) {
+// Renders only projects matching a given era ("current" or "school")
+function renderProjectSection(gridId, era) {
+    renderProjectGrid(gridId, 'all', null, era);
+}
+
+function renderProjectGrid(gridId, filter = 'all', limit = null, era = null) {
     const grid = document.getElementById(gridId);
     if (!grid) return;
     let filtered = filter === 'all' ? [...projects] : projects.filter(p => p.type === filter);
+    if (era) filtered = filtered.filter(p => p.era === era);
     if (limit) filtered = filtered.slice(0, limit);
 
     grid.innerHTML = filtered.map(p => `
@@ -96,7 +102,10 @@ function renderProjectGrid(gridId, filter = 'all', limit = null) {
         card.setAttribute('tabindex', '0');
         const handleActivate = () => {
             const p = projects.find(pr => pr.id === Number(card.dataset.id));
-            if (p && p.liveUrl && !p.liveUrl.startsWith('http')) {
+            if (!p) return;
+            if (p.liveUrl && p.liveUrl.startsWith('http')) {
+                window.open(p.liveUrl, '_blank', 'noopener');
+            } else if (p.liveUrl) {
                 window.location.href = p.liveUrl;
             } else {
                 openModal(Number(card.dataset.id));
