@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Projects | Maxwell Howe GIS</title>
+    <meta name="description" content="Side projects by Maxwell Howe — howe2math, DOKtor, and the Whydah GIS curriculum unit.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="side-projects.html" class="active">Side Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="main-content">
+    <section class="section page-top">
+        <div class="section-header fade-in">
+            <div class="section-label">// Side Projects</div>
+            <h1 class="section-title">Beyond GIS</h1>
+            <p class="section-desc">Independent builds outside the core GIS portfolio. Each one started as a problem I actually had — and kept going until it was useful.</p>
+        </div>
+    </section>
+
+    <!-- howe2math -->
+    <section class="side-project-section fade-in">
+        <div class="section">
+            <div class="side-project-header">
+                <div>
+                    <div class="section-label">// EdTech SaaS</div>
+                    <h2 class="side-project-title">howe2math</h2>
+                    <a href="https://howe2math.com" target="_blank" rel="noopener" class="side-project-live-link">
+                        howe2math.com
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </div>
+                <span class="tool-status status-live" style="align-self:flex-start;"><span class="dot"></span> Live</span>
+            </div>
+
+            <div class="side-project-body">
+                <p>Generating high-quality, standards-aligned practice materials is one of the most time-consuming parts of teaching math. howe2math automates it. The platform handles everything from problem bank design to payment processing to email delivery — built to solve a problem I deal with every day.</p>
+
+                <p>The stack is FastAPI on the backend, PostgreSQL via Neon for the database, Cloudflare R2 for file storage, Stripe for payments, Clerk for authentication, Railway for hosting, and Resend for transactional email. Every component was chosen deliberately — serverless-friendly, cost-effective at low traffic, and replaceable without rewriting everything around it.</p>
+
+                <p style="color:var(--text-muted); font-size:15px;">The architecture that built howe2math — relational database design, REST API structure, working with structured data at scale — transfers directly to GIS data pipelines and web mapping backends. The problems are the same; the data just has coordinates.</p>
+
+                <div class="stack-pills">
+                    <span class="stack-pill">FastAPI</span>
+                    <span class="stack-pill">PostgreSQL (Neon)</span>
+                    <span class="stack-pill">Cloudflare R2</span>
+                    <span class="stack-pill">Stripe</span>
+                    <span class="stack-pill">Clerk</span>
+                    <span class="stack-pill">Railway</span>
+                    <span class="stack-pill">Resend</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="topo-divider"></div>
+
+    <!-- DOKtor -->
+    <section class="side-project-section fade-in">
+        <div class="section">
+            <div class="side-project-header">
+                <div>
+                    <div class="section-label">// Within howe2math</div>
+                    <h2 class="side-project-title">DOKtor</h2>
+                    <p style="color:var(--text-muted); font-size:14px; margin-top:4px; font-family:'JetBrains Mono',monospace;">Depth of Knowledge Classifier</p>
+                </div>
+                <span class="tool-status status-live" style="align-self:flex-start;"><span class="dot"></span> Live</span>
+            </div>
+
+            <div class="side-project-body">
+                <p>DOKtor is a standalone public-facing tool within the howe2math ecosystem. Teachers upload or photograph a math problem and DOKtor returns a Depth of Knowledge (DOK) level classification with confidence scores across all four levels.</p>
+
+                <p>The UI leans into a medical theme — "Diagnosis," "Examine," "Prescription" — which turned out to fit the use case well. A teacher submits a problem, DOKtor examines it, and returns a structured classification with confidence breakdowns.</p>
+
+                <div class="methodology-block">
+                    <div class="section-label" style="margin-bottom:12px;">// Methodology</div>
+                    <div class="methodology-grid">
+                        <div>
+                            <p class="methodology-label">Training data</p>
+                            <p class="methodology-value">~2,800 Algebra 1 problems, individually classified</p>
+                        </div>
+                        <div>
+                            <p class="methodology-label">Ground truth</p>
+                            <p class="methodology-value">Published teacher edition DOK labels — used as accuracy benchmark, not reproduced in output</p>
+                        </div>
+                        <div>
+                            <p class="methodology-label">Accuracy</p>
+                            <p class="methodology-value">Improved beyond initial baseline; ongoing evaluation</p>
+                        </div>
+                        <div>
+                            <p class="methodology-label">Expansion pipeline</p>
+                            <p class="methodology-value">Geometry and Algebra 2 (~8,400+ problems) in progress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="topo-divider"></div>
+
+    <!-- Whydah Curriculum -->
+    <section class="side-project-section fade-in">
+        <div class="section">
+            <div class="side-project-header">
+                <div>
+                    <div class="section-label">// GIS Curriculum</div>
+                    <h2 class="side-project-title">Samuel Bellamy &amp; the Whydah</h2>
+                    <p style="color:var(--text-muted); font-size:14px; margin-top:4px; font-family:'JetBrains Mono',monospace;">GIS-Integrated Curriculum Unit</p>
+                </div>
+                <span class="tool-status status-live" style="align-self:flex-start;"><span class="dot"></span> Live</span>
+            </div>
+
+            <div class="side-project-body">
+                <p>A GIS-integrated curriculum unit for middle schoolers built around the story of Samuel Bellamy and the Whydah — the most significant pirate shipwreck in American archaeological history. The unit connects to the <em>Real Pirates</em> traveling exhibition at the Peabody Essex Museum in Salem and uses the wreck's discovery as a vehicle for teaching how spatial thinking evolves across centuries.</p>
+
+                <p>The cartographic thread at the center of the unit is what makes it work: Cyprian Southack's 1717 chart of the wreck site was used in the immediate aftermath of the sinking to coordinate salvage efforts. Barry Clifford used that same chart — updated with modern bathymetric data and sonar survey techniques — to locate the wreck in 1984. The 267-year chain from Southack's hand-drawn survey to Clifford's sonar grid is a GIS story told without calling it one.</p>
+
+                <p>Currently in active development for an upcoming summer engagement.</p>
+
+                <div class="stack-pills">
+                    <span class="stack-pill">GIS Integration</span>
+                    <span class="stack-pill">Historical Cartography</span>
+                    <span class="stack-pill">Middle School</span>
+                    <span class="stack-pill">Maritime History</span>
+                    <span class="stack-pill">Spatial Thinking</span>
+                </div>
+
+                <div style="margin-top:28px;">
+                    <a href="whydah/" class="btn btn-primary">View Curriculum &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <p>&copy; 2026 Maxwell Howe</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="side-projects.html">Side Projects</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/mapzimus" target="_blank">GitHub</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

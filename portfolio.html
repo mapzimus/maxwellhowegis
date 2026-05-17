@@ -17,10 +17,11 @@
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">Maxwell Howe</a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="portfolio.html" class="active">Portfolio</a></li>
-            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="portfolio.html" class="active">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="side-projects.html">Side Projects</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="tools.html">Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -31,12 +32,28 @@
 <main id="main-content">
     <section class="section page-top">
         <div class="section-header fade-in">
-            <div class="section-label">// Portfolio</div>
+            <div class="section-label">// Projects</div>
             <h1 class="section-title">Selected Work</h1>
-            <p class="section-desc">Interactive maps, spatial analyses, remote sensing, and database design spanning topics from food access to emergency management.</p>
+            <p class="section-desc">Post-graduation builds, independent analysis, and academic coursework across spatial analysis, web mapping, cartography, and remote sensing.</p>
         </div>
-        <div class="filter-bar fade-in" id="filterBar"></div>
-        <div class="project-grid fade-in fade-in-stagger" id="projectGrid"></div>
+
+        <!-- RECENT & ACTIVE -->
+        <div class="portfolio-era-section fade-in">
+            <div class="section-label">// Recent &amp; Active</div>
+            <h2 class="section-title" style="font-size:24px; margin-bottom:6px;">Post-Graduation Work</h2>
+            <p class="portfolio-era-desc">Self-directed projects built after completing the MS program — tools, analyses, and curriculum developed independently.</p>
+            <div class="project-grid fade-in-stagger" id="currentGrid"></div>
+        </div>
+
+        <div class="topo-divider"></div>
+
+        <!-- ACADEMIC COURSEWORK -->
+        <div class="portfolio-era-section fade-in">
+            <div class="section-label">// Academic Coursework</div>
+            <h2 class="section-title" style="font-size:24px; margin-bottom:6px;">MS GIS — Salem State University</h2>
+            <p class="portfolio-era-desc">Graduate coursework completed 2023–2025. Covers spatial analysis, remote sensing, database design, cartography, and GIS programming.</p>
+            <div class="project-grid fade-in-stagger" id="schoolGrid"></div>
+        </div>
     </section>
 </main>
 
@@ -45,9 +62,11 @@
         <p>&copy; 2026 Maxwell Howe</p>
         <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="mapzimus.html">@Mapzimus</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="side-projects.html">Side Projects</a></li>
             <li><a href="tools.html">Tools</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="https://github.com/mapzimus" target="_blank">GitHub</a></li>
         </ul>
     </div>
@@ -65,8 +84,8 @@
 <script src="js/main.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        renderFilters('filterBar', 'projectGrid');
-        renderProjectGrid('projectGrid');
+        renderProjectSection('currentGrid', 'current');
+        renderProjectSection('schoolGrid', 'school');
     });
 </script>
 </body>
