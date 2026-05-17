@@ -1,8 +1,10 @@
 // ===== PROJECT DATA =====
-// To update: edit this file, add screenshots to /images/projects/
+// era: "current"  → post-graduation, self-directed work (shown first)
+// era: "school"   → MS GIS coursework at Salem State, 2023–2025
 const projects = [
     {
         id: 1,
+        era: "school",
         title: "Chronic Absenteeism in Lynn Public Schools",
         category: "Spatial Analysis",
         type: "analysis",
@@ -18,6 +20,7 @@ const projects = [
     },
     {
         id: 2,
+        era: "school",
         title: "Salem Pantry: Mapping Food Access",
         category: "Spatial Analysis",
         type: "analysis",
@@ -45,6 +48,7 @@ const projects = [
     },
     {
         id: 3,
+        era: "school",
         title: "Growth in the Granite State",
         category: "Remote Sensing",
         type: "remote",
@@ -72,6 +76,7 @@ const projects = [
     },
     {
         id: 4,
+        era: "school",
         title: "Optimal EV Charging Station Siting",
         category: "Research",
         type: "analysis",
@@ -97,6 +102,7 @@ const projects = [
     },
     {
         id: 5,
+        era: "school",
         title: "Mapping Education and Wealth in Massachusetts",
         category: "Spatial Analysis",
         type: "analysis",
@@ -122,6 +128,7 @@ const projects = [
     },
     {
         id: 6,
+        era: "school",
         title: "Central Campus Mapping",
         category: "Cartography",
         type: "map",
@@ -143,6 +150,7 @@ const projects = [
     },
     {
         id: 7,
+        era: "school",
         title: "Lynnfield Cemetery Spatial Database",
         category: "Database Design",
         type: "web",
@@ -163,6 +171,7 @@ const projects = [
     },
     {
         id: 8,
+        era: "school",
         title: "Emergency Evacuation Route Planning",
         category: "Web App",
         type: "web",
@@ -182,6 +191,7 @@ const projects = [
     },
     {
         id: 9,
+        era: "current",
         title: "The Whydah Gally — A Pirate Story Told Spatially",
         category: "Web Mapping",
         type: "web",
@@ -194,6 +204,82 @@ const projects = [
         thumb: "images/projects/whydah-thumb.png",
         liveUrl: "whydah/",
         repoUrl: "https://github.com/mapzimus/Whydah-Unit"
+    },
+    {
+        id: 10,
+        era: "current",
+        title: "African Urbanization Project",
+        category: "Spatial Analysis",
+        type: "analysis",
+        tags: ["R", "sf", "tmap", "terra", "UN Data", "WorldPop"],
+        summary: "GIS analysis tracing African continental population projections from emerging megacity clusters down to a Kinshasa case study. Built in R using UN World Urbanization Prospects and WorldPop data.",
+        description: "A self-directed spatial analysis examining urbanization patterns across Africa. Starting from continental population projections (UN World Urbanization Prospects), the project identifies emerging megacity clusters, then zooms into Kinshasa as a case study for accelerated urban growth dynamics. Built in R using sf for spatial data handling, terra for raster processing, and tmap for cartographic output. The analysis spans continental, regional, and city-scale lenses — a multi-resolution approach to understanding one of the fastest urbanizing regions on Earth.",
+        tools: ["R", "sf", "terra", "tmap", "UN World Urbanization Prospects", "WorldPop"],
+        year: "2025–2026",
+        thumb: null,
+        liveUrl: null,
+        repoUrl: null
+    },
+    {
+        id: 11,
+        era: "current",
+        title: "Zillow / MHI Near Commuter Rail",
+        category: "Spatial Analysis",
+        type: "analysis",
+        tags: ["R", "Zillow", "MBTA", "Housing Data", "Transit"],
+        summary: "R-based spatial analysis comparing Zillow housing prices and median household income to MBTA commuter rail stop proximity across Eastern Massachusetts.",
+        description: "A spatial analysis combining three datasets — Zillow home value data, Census median household income (ACS), and MBTA commuter rail stop locations — to understand how proximity to commuter rail correlates with housing costs and income levels across Eastern Massachusetts. Built in R using sf, tidycensus, and tidyverse. The analysis reveals clear spatial patterns: stops near Boston show strong price premiums that fade with distance, while some outer stops show weaker correlation — suggesting the MBTA's reach as an economic driver has real geographic limits.",
+        tools: ["R", "sf", "tidycensus", "Zillow Data", "MBTA GTFS", "Census ACS"],
+        year: "2025–2026",
+        thumb: null,
+        liveUrl: null,
+        repoUrl: null
+    },
+    {
+        id: 12,
+        era: "current",
+        title: "TappyMaps",
+        category: "Web App",
+        type: "tool",
+        tags: ["JavaScript", "Map Design", "Geography Games", "GIS App"],
+        summary: "A lightweight GIS application for map design — drag, color, and export custom maps. Includes geography games and a sharing gallery. Live at tappymaps.com.",
+        description: "TappyMaps is a web-based GIS application built around three pillars: map designer, geography games, and a sharing gallery. The map designer lets users build and style custom maps using geographic data — no desktop GIS software required. Geography games add an educational layer. Finished maps can be exported and shared. Part of the Mapparatus organization umbrella.",
+        tools: ["JavaScript", "GeoJSON", "Canvas API", "Web APIs"],
+        year: "2025–2026",
+        thumb: null,
+        liveUrl: "https://tappymaps.com",
+        repoUrl: null
+    },
+    {
+        id: 13,
+        era: "current",
+        title: "Geopuesto",
+        category: "Web App",
+        type: "tool",
+        tags: ["JavaScript", "Leaflet", "Geo Utility"],
+        summary: "Antipodal point calculator — enter any location and find its exact geographic opposite on Earth. Clean, focused geo-utility tool.",
+        description: "Geopuesto calculates antipodal points — the geographic opposite of any location on Earth's surface. Enter coordinates or click a map, and Geopuesto computes and displays the antipode with coordinates and a split-view map. A focused, single-purpose geo-utility.",
+        tools: ["JavaScript", "Leaflet", "GitHub Pages"],
+        year: "2025–2026",
+        thumb: null,
+        liveUrl: "geopuesto/",
+        repoUrl: null
+    },
+    {
+        id: 14,
+        era: "current",
+        title: "OptiTrek",
+        category: "Web App",
+        type: "tool",
+        tags: ["Route Optimization", "GIS", "In Development"],
+        summary: "Road trip optimization tool applying geospatial route planning algorithms. Currently in active development.",
+        description: "OptiTrek is a road trip planning tool that applies geospatial route optimization to the problem of visiting multiple destinations efficiently. Currently in development.",
+        tools: ["Route Optimization", "Geospatial APIs", "JavaScript"],
+        year: "2026",
+        thumb: null,
+        liveUrl: null,
+        repoUrl: null,
+        status: "development"
     }
 ];
 
@@ -203,6 +289,7 @@ const categories = [
     { key: "map", label: "Cartography" },
     { key: "analysis", label: "Spatial Analysis" },
     { key: "web", label: "Web App / Database" },
+    { key: "tool", label: "Tools" },
     { key: "remote", label: "Remote Sensing" }
 ];
 
@@ -211,6 +298,7 @@ const typeLabels = {
     analysis: "ANALYSIS",
     viz: "VIZ",
     web: "WEB / DB",
+    tool: "TOOL",
     remote: "REMOTE"
 };
 
@@ -219,6 +307,7 @@ const typeClasses = {
     analysis: "type-analysis",
     viz: "type-viz",
     web: "type-web",
+    tool: "type-tool",
     remote: "type-remote"
 };
 
@@ -227,5 +316,6 @@ const typePlaceholders = {
     analysis: "\u{1F4CA}",
     viz: "\u{1F4C8}",
     web: "\u{1F310}",
+    tool: "\u{1F527}",
     remote: "\u{1F6F0}"
 };

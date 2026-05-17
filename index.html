@@ -22,10 +22,11 @@
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">Maxwell Howe</a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="mapzimus.html">@Mapzimus</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="side-projects.html">Side Projects</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="tools.html">Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -45,11 +46,11 @@
     <span class="hero-coord bottom-right" aria-hidden="true">© 2026 MH</span>
     <div class="hero-content">
         <h1>Maxwell Howe</h1>
-        <p class="hero-subtitle">GIS Analyst &middot; Cartographer &middot; MS Geo-Information Science</p>
+        <p class="hero-subtitle">GIS Professional &middot; Spatial Builder &middot; Translator of Data</p>
         <div class="hero-actions">
             <a href="portfolio.html" class="btn btn-primary">View Projects</a>
-            <a href="mapzimus.html" class="btn btn-secondary">@Mapzimus</a>
-            <a href="about.html" class="btn btn-outline">Available for Freelance &amp; GIS Work</a>
+            <a href="side-projects.html" class="btn btn-secondary">Side Projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
         </div>
     </div>
     <div class="scroll-indicator" aria-hidden="true">
@@ -84,11 +85,24 @@
     </div>
 </section>
 
+<!-- CURRENTLY BUILDING -->
+<section class="section">
+    <div class="currently-building-callout fade-in">
+        <div class="section-label">// Currently Building</div>
+        <div class="building-pills">
+            <a href="https://tappymaps.com" target="_blank" rel="noopener" class="building-pill status-live">TappyMaps <span class="dot"></span></a>
+            <a href="https://howe2math.com" target="_blank" rel="noopener" class="building-pill status-live">howe2math <span class="dot"></span></a>
+            <a href="whydah/" class="building-pill status-live">Whydah Curriculum <span class="dot"></span></a>
+            <span class="building-pill status-dev">OptiTrek — in dev</span>
+        </div>
+    </div>
+</section>
+
 <!-- MORE PROJECTS -->
 <section class="section">
     <div class="section-header fade-in">
         <div class="section-label">// Work</div>
-        <h2 class="section-title">More Projects</h2>
+        <h2 class="section-title">Recent Projects</h2>
     </div>
     <div class="recent-row fade-in fade-in-stagger" id="recentGrid"></div>
     <div style="text-align:center; margin-top:40px;" class="fade-in">
@@ -172,10 +186,12 @@
     <div class="footer-inner">
         <p>&copy; 2026 Maxwell Howe</p>
         <ul class="footer-links">
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="mapzimus.html">@Mapzimus</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="side-projects.html">Side Projects</a></li>
             <li><a href="tools.html">Tools</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="https://github.com/mapzimus" target="_blank">GitHub</a></li>
         </ul>
     </div>
@@ -195,11 +211,10 @@
 <script src="js/hero-canvas.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // Show projects 2-4 (skip Lynn since it's featured above)
+        // Show 3 recent/active (post-grad) projects
         const grid = document.getElementById('recentGrid');
         if (grid) {
-            const skip = [1]; // skip Lynn (id:1), it's the featured project
-            const show = projects.filter(p => !skip.includes(p.id)).slice(0, 3);
+            const show = projects.filter(p => p.era === 'current').slice(0, 3);
             grid.innerHTML = show.map(p => `
                 <div class="project-card" data-id="${p.id}">
                     <div class="project-thumb">
