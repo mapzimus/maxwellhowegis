@@ -104,48 +104,9 @@
         <div class="section-label">// Work</div>
         <h2 class="section-title">Recent Projects</h2>
     </div>
-    <div class="recent-row fade-in fade-in-stagger" id="recentGrid"></div>
+    <div class="project-grid fade-in fade-in-stagger" id="recentGrid"></div>
     <div style="text-align:center; margin-top:40px;" class="fade-in">
         <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
-    </div>
-</section>
-
-<div class="topo-divider"></div>
-
-<!-- WHAT I'M BUILDING — combined tools + mapzimus -->
-<section class="section parallax-section">
-    <div class="section-header fade-in">
-        <div class="section-label">// Building</div>
-        <h2 class="section-title">What I'm Building</h2>
-        <p class="section-desc">Interactive tools and platforms for GIS, cartography, and data visualization.</p>
-    </div>
-    <div class="building-grid fade-in fade-in-stagger">
-        <!-- Mapparatus -->
-        <a href="https://mapzimus.github.io/cakemapper/" target="_blank" class="building-card">
-            <img src="images/mapparatus-preview.svg" alt="Mapparatus — simple maps, simple tools" class="building-card-img" loading="lazy" style="background:var(--bg-card);">
-            <div class="building-card-body">
-                <h3>Mapparatus</h3>
-                <p>Simple maps, simple tools. Interactive US state map coloring tool. Click states, build legends, quick-fill regions, and export as PNG or GeoJSON.</p>
-                <div class="building-card-footer">
-                    <span class="tool-status status-live"><span class="dot"></span> Live</span>
-                </div>
-            </div>
-        </a>
-        <!-- Mapzimus Idea Board -->
-        <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="building-card">
-            <img src="images/ideaboard-preview.png" alt="Mapzimus Idea Board — browse, filter, and score infographic map ideas" class="building-card-img" loading="lazy">
-            <div class="building-card-body">
-                <h3>Mapzimus Idea Board</h3>
-                <p>A custom scoring and correlation engine for infographic map ideas. Filter by geography, format, category, and multi-dimensional scores.</p>
-                <div class="building-card-footer">
-                    <span class="tool-status status-live"><span class="dot"></span> Live</span>
-                    <span class="building-card-counter" id="ideaCount">—</span>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div style="text-align:center;" class="fade-in">
-        <a href="tools.html" class="btn btn-secondary">View All Tools</a>
     </div>
 </section>
 
@@ -266,22 +227,6 @@
         }, { threshold: 0.15 });
         staggerEls.forEach(el => staggerObs.observe(el));
     });
-
-    // Live idea counter — fetches count from Mapzimus board data
-    (function loadIdeaCount() {
-        const el = document.getElementById('ideaCount');
-        if (!el) return;
-        fetch('https://raw.githubusercontent.com/mapzimus/mapzimus-board/main/data.js')
-            .then(r => r.text())
-            .then(text => {
-                const matches = text.match(/"id"\s*:/g) || text.match(/id\s*:/g);
-                const count = matches ? matches.length : 0;
-                if (count > 0) {
-                    el.textContent = count.toLocaleString() + ' ideas';
-                }
-            })
-            .catch(() => { el.textContent = '—'; });
-    })();
 </script>
 </body>
 </html>
