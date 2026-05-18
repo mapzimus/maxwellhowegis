@@ -488,6 +488,34 @@ main { flex: 1; }
 .type-web { background: rgba(135,195,255,0.15); color: var(--accent-blue); border: 1px solid rgba(135,195,255,0.25); }
 .type-remote { background: rgba(251,191,36,0.15); color: var(--accent-amber); border: 1px solid rgba(251,191,36,0.25); }
 
+.project-status-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.status-dev { background: rgba(251,191,36,0.15); color: var(--accent-amber); border: 1px solid rgba(251,191,36,0.3); }
+.status-planned { background: rgba(255,255,255,0.06); color: var(--text-muted); border: 1px solid rgba(255,255,255,0.12); }
+
+.project-thumb.thumb-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d0d1a;
+}
+.project-thumb.thumb-logo img {
+    object-fit: contain;
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}
+
 .project-info { padding: 20px; }
 
 .project-info h3 {
