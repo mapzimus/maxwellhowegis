@@ -77,14 +77,22 @@ function renderProjectGrid(gridId, filter = 'all', limit = null, era = null) {
     if (era) filtered = filtered.filter(p => p.era === era);
     if (limit) filtered = filtered.slice(0, limit);
 
-    grid.innerHTML = filtered.map(p => `
+    grid.innerHTML = filtered.map(p => {
+        const statusBadge = p.status === 'development'
+            ? `<span class="project-status-badge status-dev">In Dev</span>`
+            : p.status === 'planned'
+            ? `<span class="project-status-badge status-planned">Planned</span>`
+            : '';
+        const thumbClass = p.thumbStyle === 'logo' ? ' thumb-logo' : '';
+        return `
         <div class="project-card" data-id="${p.id}">
-            <div class="project-thumb">
+            <div class="project-thumb${thumbClass}">
                 ${p.thumb
                     ? `<img src="${p.thumb}" alt="${p.title}" loading="lazy">`
                     : `<div class="placeholder-map">${typePlaceholders[p.type] || '\u{1F5FA}'}</div>`
                 }
                 <span class="project-type-badge ${typeClasses[p.type]}">${typeLabels[p.type]}</span>
+                ${statusBadge}
             </div>
             <div class="project-info">
                 <h3>${p.title}</h3>
@@ -93,8 +101,8 @@ function renderProjectGrid(gridId, filter = 'all', limit = null, era = null) {
                     ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
                 </div>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 
     grid.querySelectorAll('.project-card').forEach(card => {
         // Keyboard accessibility

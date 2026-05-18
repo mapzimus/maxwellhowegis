@@ -172,48 +172,8 @@
 <script src="js/hero-canvas.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // Show 3 recent/active (post-grad) projects
-        const grid = document.getElementById('recentGrid');
-        if (grid) {
-            const show = projects.filter(p => p.era === 'current').slice(0, 3);
-            grid.innerHTML = show.map(p => `
-                <div class="project-card" data-id="${p.id}">
-                    <div class="project-thumb">
-                        ${p.thumb
-                            ? `<img src="${p.thumb}" alt="${p.title}" loading="lazy">`
-                            : `<div class="placeholder-map">${typePlaceholders[p.type] || '🗺'}</div>`
-                        }
-                        <span class="project-type-badge ${typeClasses[p.type]}">${typeLabels[p.type]}</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>${p.title}</h3>
-                        <p>${p.summary}</p>
-                        <div class="project-tags">
-                            ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-            grid.querySelectorAll('.project-card').forEach(card => {
-                card.setAttribute('role', 'button');
-                card.setAttribute('tabindex', '0');
-                const handleActivate = () => {
-                    const p = projects.find(pr => pr.id === Number(card.dataset.id));
-                    if (p && p.liveUrl && !p.liveUrl.startsWith('http')) {
-                        window.location.href = p.liveUrl;
-                    } else {
-                        openModal(Number(card.dataset.id));
-                    }
-                };
-                card.addEventListener('click', handleActivate);
-                card.addEventListener('keydown', (e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        handleActivate();
-                    }
-                });
-            });
-        }
+        // Show first 3 current-era projects using the shared renderer (includes badges, logo handling)
+        renderProjectGrid('recentGrid', 'all', 3, 'current');
 
         // Staggered animation observer
         const staggerEls = document.querySelectorAll('.fade-in-stagger');
