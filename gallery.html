@@ -20,7 +20,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Projects</a></li>
             <li><a href="gallery.html" class="active">Map Gallery</a></li>
-            <li><a href="side-projects.html">Independent Work</a></li>
+            <li><a href="side-projects.html">Beyond GIS</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu">
@@ -34,46 +34,50 @@
         <div class="section-header fade-in">
             <div class="section-label">// Map Gallery</div>
             <h1 class="section-title">Map Gallery</h1>
-            <p class="section-desc">Cartographic work — infographic maps, spatial visualizations, and print output. Gallery grows as new maps are produced.</p>
+            <p class="section-desc">Cartographic work — hover to read, click to enlarge. Gallery grows as new maps are produced.</p>
         </div>
-
-        <div class="gallery-map-grid fade-in fade-in-stagger">
-
-            <div class="gallery-card">
-                <a href="lynn.html">
-                    <img src="images/projects/lynn-thumb.png" alt="Hexbin absenteeism map — Lynn Public Schools" class="gallery-card-img" loading="lazy">
-                </a>
-                <div class="gallery-card-body">
-                    <h3>Chronic Absenteeism — Lynn Public Schools</h3>
-                    <p>20 maps: geocoded student addresses, KDE heatmaps, hexbin grids, subgroup breakdowns by grade, ethnicity, ML, and SPED status.</p>
-                    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px;">
-                        <span class="project-tag">R</span>
-                        <span class="project-tag">ArcGIS Pro</span>
-                        <span class="project-tag">Spatial Analysis</span>
-                    </div>
-                    <a href="lynn.html" class="gallery-card-link">View project &rarr;</a>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="gallery-card-img-wrap">
-                    <img src="images/projects/veins-of-ma.png" alt="Veins of the Commonwealth — Massachusetts transportation network map" class="gallery-card-img" loading="lazy">
-                </div>
-                <div class="gallery-card-body">
-                    <h3>Veins of the Commonwealth</h3>
-                    <p>Massachusetts transportation network rendered as a circulatory system — roads, rail, and waterways layered to reveal the structural logic of how the state moves.</p>
-                    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px;">
-                        <span class="project-tag">ArcGIS Pro</span>
-                        <span class="project-tag">Cartography</span>
-                        <span class="project-tag">GPH946</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <p class="fade-in" style="color:var(--text-muted); font-size:14px; margin-top:32px;">More maps added as they're finished.</p>
     </section>
+
+    <!-- Full-bleed collage wall -->
+    <div class="gallery-wall-section">
+        <div class="gallery-wall" id="galleryWall">
+
+            <div class="gallery-wall-item"
+                 data-title="Chronic Absenteeism — Lynn Public Schools"
+                 data-caption="20 maps produced for my MS capstone: geocoded student addresses, KDE heatmaps, hexbin grids, and subgroup breakdowns by grade, ethnicity, ML, and SPED status."
+                 data-link="lynn.html">
+                <img src="images/projects/lynn-thumb.png" alt="Hexbin absenteeism map — Lynn Public Schools" loading="lazy">
+                <div class="gallery-wall-overlay">
+                    <h3>Chronic Absenteeism — Lynn Public Schools</h3>
+                    <p>20 maps: geocoded student addresses, KDE heatmaps, hexbin grids, subgroup breakdowns.</p>
+                    <div class="gallery-wall-tags">
+                        <span class="gallery-wall-tag">R</span>
+                        <span class="gallery-wall-tag">ArcGIS Pro</span>
+                        <span class="gallery-wall-tag">Spatial Analysis</span>
+                        <span class="gallery-wall-tag">Capstone</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-wall-project-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-wall-item"
+                 data-title="Veins of the Commonwealth"
+                 data-caption="Massachusetts transportation network rendered as a circulatory system — roads, rail, and waterways layered to reveal the structural logic of how the state moves. GPH946 Computer Cartography final project.">
+                <img src="images/projects/veins-of-ma.png" alt="Veins of the Commonwealth — Massachusetts transportation network" loading="lazy">
+                <div class="gallery-wall-overlay">
+                    <h3>Veins of the Commonwealth</h3>
+                    <p>MA transportation network as a circulatory system — roads, rail, and waterways.</p>
+                    <div class="gallery-wall-tags">
+                        <span class="gallery-wall-tag">ArcGIS Pro</span>
+                        <span class="gallery-wall-tag">Cartography</span>
+                        <span class="gallery-wall-tag">GPH946</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p class="gallery-wall-note">More maps added as they're finished — follow <a href="https://www.instagram.com/mapzimus" target="_blank" rel="noopener">@Mapzimus</a> for new drops.</p>
+    </div>
 
     <div class="topo-divider"></div>
 
@@ -99,7 +103,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Projects</a></li>
             <li><a href="gallery.html">Map Gallery</a></li>
-            <li><a href="side-projects.html">Independent Work</a></li>
+            <li><a href="side-projects.html">Beyond GIS</a></li>
             <li><a href="tools.html">Tools</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -109,5 +113,58 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.gallery-wall-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            const title = item.dataset.title || img.alt;
+            const caption = item.dataset.caption || '';
+
+            // Build lightbox with safe DOM methods (no innerHTML)
+            const lb = document.createElement('div');
+            lb.className = 'gallery-lb-overlay';
+
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'gallery-lb-x';
+            closeBtn.setAttribute('aria-label', 'Close');
+            closeBtn.textContent = '×';
+
+            const lbImg = document.createElement('img');
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+
+            const info = document.createElement('div');
+            info.className = 'gallery-lb-info';
+
+            const titleEl = document.createElement('h3');
+            titleEl.textContent = title;
+            info.appendChild(titleEl);
+
+            if (caption) {
+                const capEl = document.createElement('p');
+                capEl.textContent = caption;
+                info.appendChild(capEl);
+            }
+
+            lb.appendChild(closeBtn);
+            lb.appendChild(lbImg);
+            lb.appendChild(info);
+            document.body.appendChild(lb);
+            document.body.style.overflow = 'hidden';
+
+            function close() {
+                lb.remove();
+                document.body.style.overflow = '';
+                document.removeEventListener('keydown', onKey);
+            }
+            lb.addEventListener('click', e => { if (e.target === lb) close(); });
+            closeBtn.addEventListener('click', close);
+            function onKey(e) { if (e.key === 'Escape') close(); }
+            document.addEventListener('keydown', onKey);
+        });
+    });
+});
+</script>
 </body>
 </html>
