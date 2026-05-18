@@ -109,15 +109,7 @@ function renderProjectGrid(gridId, filter = 'all', limit = null, era = null) {
         card.setAttribute('role', 'button');
         card.setAttribute('tabindex', '0');
         const handleActivate = () => {
-            const p = projects.find(pr => pr.id === Number(card.dataset.id));
-            if (!p) return;
-            if (p.liveUrl && p.liveUrl.startsWith('http')) {
-                window.open(p.liveUrl, '_blank', 'noopener');
-            } else if (p.liveUrl) {
-                window.location.href = p.liveUrl;
-            } else {
-                openModal(Number(card.dataset.id));
-            }
+            openModal(Number(card.dataset.id));
         };
         card.addEventListener('click', handleActivate);
         card.addEventListener('keydown', (e) => {
