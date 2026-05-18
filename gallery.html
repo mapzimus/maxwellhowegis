@@ -38,45 +38,179 @@
         </div>
     </section>
 
-    <!-- Full-bleed collage wall -->
-    <div class="gallery-wall-section">
-        <div class="gallery-wall" id="galleryWall">
+    <!-- Masonry map wall -->
+    <div class="gallery-masonry-section">
+        <div class="gallery-masonry" id="galleryMasonry">
 
-            <div class="gallery-wall-item"
-                 data-title="Chronic Absenteeism — Lynn Public Schools"
-                 data-caption="20 maps produced for my MS capstone: geocoded student addresses, KDE heatmaps, hexbin grids, and subgroup breakdowns by grade, ethnicity, ML, and SPED status."
-                 data-link="lynn.html">
-                <img src="images/projects/lynn-thumb.png" alt="Hexbin absenteeism map — Lynn Public Schools" loading="lazy">
-                <div class="gallery-wall-overlay">
-                    <h3>Chronic Absenteeism — Lynn Public Schools</h3>
-                    <p>20 maps: geocoded student addresses, KDE heatmaps, hexbin grids, subgroup breakdowns.</p>
-                    <div class="gallery-wall-tags">
-                        <span class="gallery-wall-tag">R</span>
-                        <span class="gallery-wall-tag">ArcGIS Pro</span>
-                        <span class="gallery-wall-tag">Spatial Analysis</span>
-                        <span class="gallery-wall-tag">Capstone</span>
-                    </div>
-                    <a href="lynn.html" class="gallery-wall-project-link" onclick="event.stopPropagation()">View full project &rarr;</a>
-                </div>
-            </div>
-
-            <div class="gallery-wall-item"
+            <div class="gallery-brick"
                  data-title="Veins of the Commonwealth"
                  data-caption="Massachusetts transportation network rendered as a circulatory system — roads, rail, and waterways layered to reveal the structural logic of how the state moves. GPH946 Computer Cartography final project.">
                 <img src="images/projects/veins-of-ma.png" alt="Veins of the Commonwealth — Massachusetts transportation network" loading="lazy">
-                <div class="gallery-wall-overlay">
+                <div class="gallery-brick-label">Veins of the Commonwealth</div>
+                <div class="gallery-brick-overlay">
                     <h3>Veins of the Commonwealth</h3>
-                    <p>MA transportation network as a circulatory system — roads, rail, and waterways.</p>
-                    <div class="gallery-wall-tags">
-                        <span class="gallery-wall-tag">ArcGIS Pro</span>
-                        <span class="gallery-wall-tag">Cartography</span>
-                        <span class="gallery-wall-tag">GPH946</span>
+                    <p>MA transportation network as a circulatory system — roads, rail, and waterways layered to reveal how the state moves.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">ArcGIS Pro</span>
+                        <span class="gallery-brick-tag">Cartography</span>
+                        <span class="gallery-brick-tag">GPH946</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Chronic Absenteeism — Lynn Public Schools"
+                 data-caption="One of 20 maps from my MS capstone: hexbin grid of student absence rates across Lynn, MA. Geocoded student addresses and correlated distance from school with chronic absenteeism. Built in R."
+                 data-link="lynn.html">
+                <img src="images/projects/lynn-thumb.png" alt="Hexbin absenteeism map — Lynn Public Schools" loading="lazy">
+                <div class="gallery-brick-label">Chronic Absenteeism — Lynn</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Chronic Absenteeism — Lynn Public Schools</h3>
+                    <p>One of 20 maps from my MS capstone. Geocoded student addresses, hexbin grids, KDE heatmaps, and subgroup breakdowns.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">ggplot2</span>
+                        <span class="gallery-brick-tag">Geocoding</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Growth in the Granite State"
+                 data-caption="Multitemporal Landsat 8/9 change detection — urbanization shifts across Concord, Manchester, and Nashua, NH pansharpened to 15m and layered as a false-color multitemporal composite.">
+                <img src="images/projects/granite-state-thumb.png" alt="Granite State — NH change detection" loading="lazy">
+                <div class="gallery-brick-label">Growth in the Granite State</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Growth in the Granite State</h3>
+                    <p>Landsat 8/9 multitemporal change detection across Concord, Manchester, and Nashua, NH. Pansharpened to 15m resolution.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">Landsat 8/9</span>
+                        <span class="gallery-brick-tag">TerrSet</span>
+                        <span class="gallery-brick-tag">Change Detection</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Salem Pantry: Mapping Food Access"
+                 data-caption="Coverage gap analysis for the Salem Pantry — 150,000+ client records spatially analyzed to identify underserved areas and model statewide similarity populations using random forest.">
+                <img src="images/projects/salem-pantry-thumb.png" alt="Salem Pantry food access map" loading="lazy">
+                <div class="gallery-brick-label">Salem Pantry: Food Access</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Salem Pantry: Mapping Food Access</h3>
+                    <p>150,000+ client records analyzed. Coverage gaps mapped, statewide similarity modeled via random forest using Census ACS data.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">Random Forest</span>
+                        <span class="gallery-brick-tag">Census ACS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Education &amp; Wealth in Massachusetts"
+                 data-caption="Bivariate choropleth correlating median household income to educational attainment across Massachusetts municipalities. My first GIS project, built in ArcGIS Pro with Census ACS data.">
+                <img src="images/projects/education-thumb.png" alt="Education and wealth bivariate map — Massachusetts" loading="lazy">
+                <div class="gallery-brick-label">Education &amp; Wealth in MA</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Education &amp; Wealth in Massachusetts</h3>
+                    <p>Bivariate choropleth — median household income vs. educational attainment across MA municipalities. First GIS project.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">ArcGIS Pro</span>
+                        <span class="gallery-brick-tag">Census ACS</span>
+                        <span class="gallery-brick-tag">Bivariate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Salem Emergency Evacuation Routes"
+                 data-caption="arcpy-based route planning tool weighting FEMA flood zone data and traffic volume to identify safest and most dangerous evacuation paths from Salem, MA in a sea-rise flood scenario.">
+                <img src="images/projects/evacuation-thumb.png" alt="Salem evacuation route map" loading="lazy">
+                <div class="gallery-brick-label">Salem Evacuation Routes</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Salem Emergency Evacuation Routes</h3>
+                    <p>arcpy network analysis weighted by FEMA flood zones and traffic volume — safest evacuation paths in a sea-rise scenario.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">Python</span>
+                        <span class="gallery-brick-tag">arcpy</span>
+                        <span class="gallery-brick-tag">Network Analysis</span>
+                        <span class="gallery-brick-tag">FEMA</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="SSU Central Campus Survey"
+                 data-caption="Salem State University central campus mapped by combining CAD utility drawings, drone orthomosaics, and Trimble GPS ground verification — integrating traditional surveying with modern geospatial methods.">
+                <img src="images/projects/central-campus-thumb.png" alt="SSU Central Campus survey map" loading="lazy">
+                <div class="gallery-brick-label">SSU Central Campus</div>
+                <div class="gallery-brick-overlay">
+                    <h3>SSU Central Campus Survey</h3>
+                    <p>CAD drawings + drone orthomosaics + Trimble GPS ground-truthing combined into a single campus basemap.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">UAV</span>
+                        <span class="gallery-brick-tag">Trimble GPS</span>
+                        <span class="gallery-brick-tag">CAD</span>
+                        <span class="gallery-brick-tag">ArcGIS Pro</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynnfield Cemetery Spatial Database"
+                 data-caption="~4,000 grave cards and ~1,000 lot cards digitized, georeferenced, and linked to a SQL geodatabase for Forest Hill and Willow cemeteries in Lynnfield, MA.">
+                <img src="images/projects/lynnfield/CemMap.png" alt="Lynnfield cemeteries overview map" loading="lazy">
+                <div class="gallery-brick-label">Lynnfield Cemetery Database</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Lynnfield Cemetery Spatial Database</h3>
+                    <p>4,000+ grave cards digitized into a queryable SQL geodatabase. Historic cemetery maps georeferenced in ArcGIS Pro.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">SQL</span>
+                        <span class="gallery-brick-tag">Geodatabase</span>
+                        <span class="gallery-brick-tag">Georeferencing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="The Whydah Gally"
+                 data-caption="19-stop 3D globe flythrough tracing the Whydah from slave ship to pirate flagship to 1717 shipwreck to 1984 recovery. Built with MapLibre GL JS for the LEAP4Ed Summer 2026 curriculum."
+                 data-link="whydah/#maps-geo">
+                <img src="images/projects/whydah-thumb.png" alt="Whydah Gally project map" loading="lazy">
+                <div class="gallery-brick-label">The Whydah Gally</div>
+                <div class="gallery-brick-overlay">
+                    <h3>The Whydah Gally</h3>
+                    <p>19-stop 3D globe flythrough — slave ship, pirate flagship, 1717 wreck, 1984 recovery. MapLibre GL JS curriculum dashboard.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">MapLibre GL JS</span>
+                        <span class="gallery-brick-tag">3D Globe</span>
+                        <span class="gallery-brick-tag">Curriculum</span>
+                    </div>
+                    <a href="whydah/#maps-geo" class="gallery-brick-link" onclick="event.stopPropagation()">View project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Optimal EV Charging Station Siting"
+                 data-caption="GIS-AHP multi-criteria analysis reviewing global EV deployment literature and proposing a spatial methodology for Massachusetts — covering equity, network analysis, and location-allocation models.">
+                <img src="images/projects/ev-research.png" alt="EV charging station siting research map" loading="lazy">
+                <div class="gallery-brick-label">EV Charging Station Siting</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Optimal EV Charging Station Siting</h3>
+                    <p>GIS-AHP MCDM framework for MA EV deployment — reviewing global literature and proposing an equity-aware spatial methodology.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">GIS-AHP</span>
+                        <span class="gallery-brick-tag">MCDM</span>
+                        <span class="gallery-brick-tag">Network Analysis</span>
                     </div>
                 </div>
             </div>
 
         </div>
-        <p class="gallery-wall-note">More maps added as they're finished — follow <a href="https://www.instagram.com/mapzimus" target="_blank" rel="noopener">@Mapzimus</a> for new drops.</p>
+        <p class="gallery-masonry-note">More maps added as they're finished — follow <a href="https://www.instagram.com/mapzimus" target="_blank" rel="noopener">@Mapzimus</a> for new drops.</p>
     </div>
 
     <div class="topo-divider"></div>
@@ -115,13 +249,14 @@
 <script src="js/main.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.gallery-wall-item').forEach(item => {
-        item.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-brick').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (e.target.classList.contains('gallery-brick-link') || e.target.closest('.gallery-brick-link')) return;
+
             const img = item.querySelector('img');
             const title = item.dataset.title || img.alt;
             const caption = item.dataset.caption || '';
 
-            // Build lightbox with safe DOM methods (no innerHTML)
             const lb = document.createElement('div');
             lb.className = 'gallery-lb-overlay';
 
@@ -133,6 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const lbImg = document.createElement('img');
             lbImg.src = img.src;
             lbImg.alt = img.alt;
+            lbImg.addEventListener('click', e => e.stopPropagation());
 
             const info = document.createElement('div');
             info.className = 'gallery-lb-info';
