@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynn Data Dive | Maxwell Howe GIS</title>
+    <meta name="description" content="An interactive data exploration of Lynn English High School — every public DESE dataset, the 26 Massachusetts Gateway Cities, and original geospatial research, in one place.">
+    <meta property="og:title" content="Lynn Data Dive — Maxwell Howe">
+    <meta property="og:description" content="Demographics, MCAS, ELL pipeline, graduation, college outcomes, finance, teacher workforce, discipline, community context, maps, and cross-domain correlation analysis for Lynn English High School and the 26 MA Gateway Cities.">
+    <meta property="og:image" content="../images/projects/lynn-thumb.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maxwellhowegis.com/Lynn-data-dive/">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Page-specific: the dashboard iframe section */
+        .dashboard-wrap {
+            position: relative;
+            width: 100%;
+            background: #fafafa;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .dashboard-frame {
+            width: 100%;
+            height: calc(100vh - 80px);
+            min-height: 700px;
+            border: none;
+            display: block;
+        }
+        .dashboard-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: #0A1F44;
+            color: white;
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
+        }
+        .dashboard-toolbar .badge {
+            background: #FFB81C;
+            color: #0A1F44;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+        .dashboard-toolbar a {
+            color: #FFB81C;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .dashboard-toolbar a:hover { text-decoration: underline; }
+        .dashboard-loading {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #455A64;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .dashboard-loading-spinner {
+            width: 36px; height: 36px;
+            margin: 0 auto 14px;
+            border: 3px solid #e0e0e0;
+            border-top-color: #0A1F44;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @media (max-width: 768px) {
+            .dashboard-frame {
+                height: calc(100vh - 120px);
+            }
+        }
+    </style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Projects</a></li>
+            <li><a href="../gallery.html">Map Gallery</a></li>
+            <li><a href="../side-projects.html">Beyond GIS</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="main-content">
+
+    <section class="section project-hero">
+        <div class="section-label">// Interactive Data Dashboard</div>
+        <h1>Lynn <span class="gradient">Data Dive</span></h1>
+        <div class="project-meta">
+            <span>Built 2026</span>
+            <span>&middot;</span>
+            <span>Original analysis &middot; Maxwell Howe</span>
+            <span>&middot;</span>
+            <span>Updated when DESE releases new data</span>
+        </div>
+        <div class="project-desc">
+            <p>An interactive, public exploration of every dataset that touches Lynn English High School and the 26 Massachusetts Gateway Cities. MCAS, enrollment, demographics, attendance, discipline, finance, teacher workforce, AP, graduation, college outcomes, community context — pulled from MA DESE, US Census ACS, and original geospatial research, integrated in one place.</p>
+            <p style="margin-top:16px;">DESE publishes these in separate Power BI dashboards and downloadable CSVs. <strong>Putting them together at the school level is the difference between a stack of separate facts and a coherent picture of one school.</strong> A correlation lab on top lets you cross-reference any two metrics across all 26 gateway-city high schools.</p>
+            <p style="margin-top:16px;">The dashboard also embeds my prior <a href="../lynn.html">chronic absenteeism capstone</a> as its Catchment Research page, with all underlying student address data kept private.</p>
+        </div>
+        <div class="project-tools">
+            <span class="feature-pill">Python</span>
+            <span class="feature-pill">Streamlit</span>
+            <span class="feature-pill">Plotly</span>
+            <span class="feature-pill">GeoPandas</span>
+            <span class="feature-pill">MA DESE E2C Hub</span>
+            <span class="feature-pill">US Census ACS</span>
+            <span class="feature-pill">MassGIS</span>
+            <span class="feature-pill">Cross-domain Correlation</span>
+        </div>
+    </section>
+
+    <div class="dashboard-toolbar">
+        <span><span class="badge">LIVE</span> &nbsp; Dashboard renders below — 17 sections + maps + correlation lab</span>
+        <span>
+            <a href="https://lehs-data-dive-xxs7apjjjctcjaswhlzgeu.streamlit.app/" target="_blank" rel="noopener">Open in new tab ↗</a>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/mapzimus/lehs-data-dive" target="_blank" rel="noopener">View source on GitHub</a>
+        </span>
+    </div>
+
+    <div class="dashboard-wrap">
+        <div class="dashboard-loading" id="dashboardLoading">
+            <div class="dashboard-loading-spinner"></div>
+            Loading dashboard…
+        </div>
+        <iframe
+            class="dashboard-frame"
+            id="dashboardFrame"
+            src="https://lehs-data-dive-xxs7apjjjctcjaswhlzgeu.streamlit.app/?embed=true"
+            onload="document.getElementById('dashboardLoading').style.display='none'"
+            allow="fullscreen"
+            title="LEHS Data Dive — interactive dashboard">
+        </iframe>
+    </div>
+
+</main>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
