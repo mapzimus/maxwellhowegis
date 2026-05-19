@@ -367,6 +367,133 @@ body.maps-page {
     opacity: 0.95;
 }
 
+/* ============================================================================
+   Help button + modal (controls hint)
+   ============================================================================ */
+.help-button {
+    position: absolute;
+    bottom: 28px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--lehs-navy);
+    color: var(--lehs-gold);
+    border: none;
+    box-shadow: 0 3px 12px rgba(10, 31, 68, 0.35);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 40;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.help-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 18px rgba(10, 31, 68, 0.45);
+}
+
+.help-modal {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 31, 68, 0.55);
+    backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 20px;
+}
+.help-modal.open { display: flex; }
+
+.help-modal-inner {
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 28px 32px 24px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    color: var(--lehs-navy);
+}
+.help-modal-inner h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.help-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    color: #607D8B;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+.help-modal-close:hover { color: var(--lehs-navy); }
+
+.help-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.help-section {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 14px;
+    margin-top: 4px;
+    font-size: 13px;
+}
+.help-section strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #607D8B;
+}
+.help-section .help-row { margin-bottom: 6px; }
+
+.help-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+}
+.help-key {
+    display: inline-block;
+    min-width: 130px;
+    padding: 4px 10px;
+    background: #F0F4F8;
+    border: 1px solid #d0d8e0;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--lehs-navy);
+    text-align: center;
+    box-shadow: 0 1px 0 #d0d8e0;
+}
+.help-footer {
+    margin-top: 18px;
+    text-align: right;
+}
+.help-got-it {
+    padding: 8px 22px;
+    background: var(--lehs-navy);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.help-got-it:hover { background: #1a3a6b; }
+
 /* Hover tooltip floating over the map */
 .map-tooltip {
     position: absolute;
