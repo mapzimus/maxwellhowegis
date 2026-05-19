@@ -494,6 +494,28 @@ body.maps-page {
 }
 .help-got-it:hover { background: #1a3a6b; }
 
+/* PNG export button */
+.export-png-btn {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 9px 14px;
+    background: white;
+    color: var(--lehs-navy);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+.export-png-btn:hover {
+    background: var(--lehs-navy);
+    color: white;
+    border-color: var(--lehs-navy);
+}
+
 /* Hover tooltip floating over the map */
 .map-tooltip {
     position: absolute;
