@@ -288,6 +288,7 @@ const map = new maplibregl.Map({
     minZoom: 6,
     maxZoom: 18,
     attributionControl: false,
+    preserveDrawingBuffer: true,  // required for PNG export via toDataURL()
 });
 map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "top-right");
 map.addControl(new maplibregl.AttributionControl({
@@ -868,6 +869,109 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(openHelp, 800);  // brief delay so the map renders first
         }
     } catch (e) {}
+
+    // PNG export — captures the current map canvas + a tasteful caption
+    const exportBtn = document.getElementById("exportPngBtn");
+    if (exportBtn) {
+        exportBtn.addEventListener("click", () => {
+            const m = getMetric(state.metric);
+            const canvas = map.getCanvas();
+            // Composite caption onto a new canvas so the PNG has metric/credit
+            const out = document.createElement("canvas");
+            out.width = canvas.width;
+            out.height = canvas.height + 80;
+            const ctx = out.getContext("2d");
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(0, 0, out.width, out.height);
+            ctx.drawImage(canvas, 0, 0);
+            // Caption strip
+            ctx.fillStyle = "#0A1F44";
+            ctx.fillRect(0, canvas.height, out.width, 80);
+            ctx.fillStyle = "#FFB81C";
+            ctx.font = "bold 22px Inter, sans-serif";
+            ctx.fillText("MA Education Atlas", 22, canvas.height + 32);
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "16px Inter, sans-serif";
+            ctx.fillText(`${m.label}  ·  level: ${state.level}  ·  ${state.classify}  ·  palette: ${state.palette}`, 22, canvas.height + 58);
+            ctx.font = "12px Inter, sans-serif";
+            ctx.fillStyle = "rgba(255,255,255,0.7)";
+            ctx.textAlign = "right";
+            ctx.fillText("maxwellhowegis.com/ma-atlas", out.width - 22, canvas.height + 58);
+            // Trigger download
+            const slug = `ma-atlas_${state.metric}_${state.level}_${new Date().toISOString().slice(0,10)}.png`;
+            const a = document.createElement("a");
+            a.href = out.toDataURL("image/png");
+            a.download = slug;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        });
+    }
+
+    // URL state — read on load, write on every state change
+    function applyUrlState() {
+        const params = new URLSearchParams(window.location.hash.slice(1));
+        const level    = params.get("level");
+        const metric   = params.get("metric");
+        const palette  = params.get("palette");
+        const classify = params.get("classify");
+        const view     = params.get("view");
+        let dirty = false;
+        if (level && ["muni", "district", "tract"].includes(level)) {
+            state.level = level;
+            const sel = document.getElementById("levelSelect");
+            if (sel) sel.value = level;
+            dirty = true;
+        }
+        if (metric && METRICS.find(m => m.id === metric && m.levels.includes(state.level))) {
+            state.metric = metric;
+            const sel = document.getElementById("metricSelect");
+            if (sel) sel.value = metric;
+            dirty = true;
+        }
+        if (palette && PALETTES[palette]) {
+            state.palette = palette;
+            const sel = document.getElementById("paletteSelect");
+            if (sel) sel.value = palette;
+            dirty = true;
+        }
+        if (classify && ["continuous", "quantile", "equal", "jenks"].includes(classify)) {
+            state.classify = classify;
+            const radio = document.querySelector(`input[name="classify"][value="${classify}"]`);
+            if (radio) radio.checked = true;
+            dirty = true;
+        }
+        if (view && VIEWS[view]) {
+            map.flyTo({ ...VIEWS[view], duration: 0 });
+        }
+        if (dirty && typeof applyChoropleth === "function") {
+            populateMetricSelect();
+            applyChoropleth();
+            updateLegend();
+            if (typeof updateMetricSummary === "function") updateMetricSummary();
+        }
+    }
+    function writeUrlState() {
+        const params = new URLSearchParams();
+        params.set("level", state.level);
+        params.set("metric", state.metric);
+        params.set("palette", state.palette);
+        params.set("classify", state.classify);
+        const hash = "#" + params.toString();
+        if (window.location.hash !== hash) {
+            history.replaceState(null, "", hash);
+        }
+    }
+    // Apply URL state on initial load (after a tick so app is wired)
+    setTimeout(applyUrlState, 50);
+    // Write on user changes
+    ["levelSelect", "metricSelect", "paletteSelect"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener("change", () => setTimeout(writeUrlState, 10));
+    });
+    document.querySelectorAll('input[name="classify"]').forEach(el => {
+        el.addEventListener("change", () => setTimeout(writeUrlState, 10));
+    });
 });
 
 function buildPopupHtml(p, kind) {
@@ -1090,27 +1194,33 @@ function populateMetricSelect(searchTerm = "") {
     updateMetricSummary();
 }
 
+// Palettes considered color-vision-deficiency (CVD) safe — flagged for users
+// who need them. Viridis-family use perceptually-uniform luminance so they
+// remain interpretable for protanopia/deuteranopia/tritanopia.
+const CVD_SAFE = new Set(["Viridis", "Inferno", "Plasma", "Cividis", "YlGnBu", "BuPu"]);
+
 function populatePaletteSelect() {
     const sel = document.getElementById("paletteSelect");
     sel.innerHTML = "";
-    const seq = Object.keys(PALETTES).filter(n => PALETTES[n].type === "seq");
-    const div = Object.keys(PALETTES).filter(n => PALETTES[n].type === "div");
-    const grpSeq = document.createElement("optgroup");
-    grpSeq.label = "Sequential";
-    seq.forEach(n => {
-        const o = document.createElement("option");
-        o.value = n; o.textContent = n;
-        grpSeq.appendChild(o);
-    });
-    sel.appendChild(grpSeq);
-    const grpDiv = document.createElement("optgroup");
-    grpDiv.label = "Diverging";
-    div.forEach(n => {
-        const o = document.createElement("option");
-        o.value = n; o.textContent = n;
-        grpDiv.appendChild(o);
-    });
-    sel.appendChild(grpDiv);
+    const allNames = Object.keys(PALETTES);
+    const cvd = allNames.filter(n => CVD_SAFE.has(n));
+    const seq = allNames.filter(n => PALETTES[n].type === "seq" && !CVD_SAFE.has(n));
+    const div = allNames.filter(n => PALETTES[n].type === "div" && !CVD_SAFE.has(n));
+
+    const addGroup = (label, names) => {
+        if (!names.length) return;
+        const grp = document.createElement("optgroup");
+        grp.label = label;
+        names.forEach(n => {
+            const o = document.createElement("option");
+            o.value = n; o.textContent = n;
+            grp.appendChild(o);
+        });
+        sel.appendChild(grp);
+    };
+    addGroup("Color-blind safe (perceptually uniform)", cvd);
+    addGroup("Sequential", seq);
+    addGroup("Diverging", div);
     sel.value = state.palette;
 }
 
