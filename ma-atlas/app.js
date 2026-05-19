@@ -117,10 +117,10 @@ const state = {
     showAcademicOutline: false,
     showVoctechOverlay: false,
     showCharterOverlay: false,
-    showLynnSchools: true,
+    showLynnSchools: false,        // atlas is statewide — Lynn-specific layers default off
     showAllMaSchools: false,
-    showLynnTown: true,
-    showGatewayHighlight: true,
+    showLynnTown: false,            // atlas is statewide — Lynn outline default off
+    showGatewayHighlight: true,     // gateway cities are a statewide-meaningful concept
     studentGroup: "all",
 };
 
@@ -838,10 +838,36 @@ function row(label, value, kind = "num") {
     return `<div class="popup-row"><span class="label">${label}</span><span class="value">${fmt(+value, kind)}</span></div>`;
 }
 
-// Wire close button (added once on load)
+// Wire close button + help modal (added once on load)
 document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("featurePanelClose");
     if (closeBtn) closeBtn.addEventListener("click", closeFeaturePanel);
+
+    // Help modal — opens via "?" button, auto-shows once on first visit
+    const helpBtn   = document.getElementById("helpButton");
+    const helpModal = document.getElementById("helpModal");
+    const helpClose = document.getElementById("helpModalClose");
+    const helpDone  = document.getElementById("helpGotIt");
+    const openHelp  = () => { helpModal.classList.add("open"); helpModal.setAttribute("aria-hidden", "false"); };
+    const closeHelp = () => { helpModal.classList.remove("open"); helpModal.setAttribute("aria-hidden", "true"); };
+    if (helpBtn)   helpBtn.addEventListener("click", openHelp);
+    if (helpClose) helpClose.addEventListener("click", closeHelp);
+    if (helpDone)  helpDone.addEventListener("click", () => {
+        try { localStorage.setItem("ma-atlas-help-seen", "1"); } catch (e) {}
+        closeHelp();
+    });
+    helpModal.addEventListener("click", e => {
+        if (e.target === helpModal) closeHelp();   // click backdrop
+    });
+    document.addEventListener("keydown", e => {
+        if (e.key === "Escape") closeHelp();
+    });
+    // Auto-show once per browser
+    try {
+        if (!localStorage.getItem("ma-atlas-help-seen")) {
+            setTimeout(openHelp, 800);  // brief delay so the map renders first
+        }
+    } catch (e) {}
 });
 
 function buildPopupHtml(p, kind) {
