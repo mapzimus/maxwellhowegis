@@ -270,6 +270,21 @@ const projects = [
         status: "planned"
     },
     {
+        id: 16,
+        era: "current",
+        title: "Massachusetts Education Atlas",
+        category: "Web Mapping",
+        type: "map",
+        tags: ["MapLibre GL JS", "Vector Tiles", "MassGIS", "MA DESE", "Choropleth", "Jenks"],
+        summary: "Statewide interactive web map of every public school and school district in Massachusetts. 351 municipalities, 274 academic districts, 78 charters, 26 regional vocational, 1,700 schools — 40+ joined education and demographic metrics, ArcGIS-style layer panel, palette + classification controls, hover + sticky side panel.",
+        description: "A standalone GIS portfolio piece — and the only place I've seen Massachusetts academic school district boundaries actually rendered as polygons. MassGIS publishes a 'CCUV' shapefile that contains only charters, vocational, collaboratives, and historic unions — NOT the regular town/regional districts. So I built those: dissolved MA towns by their dominant academic district code (derived from the public-schools point file) to get 274 academic district polygons that no published map shows. Voc-tech and charter districts geographically OVERLAP academic ones (Northeast Metro Voc-Tech covers 9 towns; Boston charters serve city-wide), so all three are independent toggleable layers with distinct styling. Choropleth supports any of 40+ joined metrics — demographics, MCAS, graduation, AP, postsecondary plans, finance per-pupil categories, teacher workforce — with 12 ColorBrewer palettes, Fisher-Jenks natural breaks (default), 3D extrusion, hover tooltips, and a sticky right-side feature-detail panel. Vector tiles via OpenFreeMap (no API key). Data sourced via jsDelivr from the lehs-data-dive repo so refreshes flow automatically.",
+        tools: ["MapLibre GL JS", "OpenFreeMap (vector tiles)", "MassGIS", "MA DESE E2C Hub", "US Census ACS", "GeoPandas", "Pure JavaScript"],
+        year: "2026",
+        thumb: "images/projects/ma-atlas-thumb.png",
+        liveUrl: "ma-atlas/",
+        repoUrl: "https://github.com/mapzimus/maxwellhowegis"
+    },
+    {
         id: 15,
         era: "current",
         title: "Lynn Data Dive",
