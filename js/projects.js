@@ -280,7 +280,7 @@ const projects = [
         description: "A standalone GIS portfolio piece — and the only place I've seen Massachusetts academic school district boundaries actually rendered as polygons. MassGIS publishes a 'CCUV' shapefile that contains only charters, vocational, collaboratives, and historic unions — NOT the regular town/regional districts. So I built those: dissolved MA towns by their dominant academic district code (derived from the public-schools point file) to get 274 academic district polygons that no published map shows. Voc-tech and charter districts geographically OVERLAP academic ones (Northeast Metro Voc-Tech covers 9 towns; Boston charters serve city-wide), so all three are independent toggleable layers with distinct styling. Choropleth supports any of 40+ joined metrics — demographics, MCAS, graduation, AP, postsecondary plans, finance per-pupil categories, teacher workforce — with 12 ColorBrewer palettes, Fisher-Jenks natural breaks (default), 3D extrusion, hover tooltips, and a sticky right-side feature-detail panel. Vector tiles via OpenFreeMap (no API key). Data sourced via jsDelivr from the lehs-data-dive repo so refreshes flow automatically.",
         tools: ["MapLibre GL JS", "OpenFreeMap (vector tiles)", "MassGIS", "MA DESE E2C Hub", "US Census ACS", "GeoPandas", "Pure JavaScript"],
         year: "2026",
-        thumb: "images/projects/ma-atlas-thumb.png",
+        thumb: null,
         liveUrl: "ma-atlas/",
         repoUrl: "https://github.com/mapzimus/maxwellhowegis"
     },
@@ -295,7 +295,7 @@ const projects = [
         description: "DESE publishes Lynn English data across half a dozen separate Power BI dashboards, statewide bulk downloads, and federal datasets — none of which are joined. The Lynn Data Dive integrates every relevant public source (MA DESE E2C Hub's 22 datasets, US Census ACS, MassGIS, EPA EJScreen, NCES) into a single Streamlit app, then adds a cross-domain Correlation Lab that lets you pick any two metrics and see how they relate across the 26 Gateway City high schools. Sections include School Profile, Academic Performance (MCAS with full E/M/PM/NM distribution), ELL Pipeline (the central narrative thread — Lynn English is ~42% ELL), College & Career Readiness, Success After HS, Teachers & Workforce, Finance, Discipline & Climate, Community Context, Lynn District & Sibling Schools (LEHS vs Lynn Classical, Lynn Tech, etc.), Gateway Peer Comparison, and a Maps section with four tabs (Lynn Schools, Lynn Demographics with tract-level Census ACS, MA Statewide Districts, Gateway Cities). A Catchment Research page embeds the privacy-safe aggregated outputs of the prior chronic absenteeism capstone. The whole pipeline is reproducible — when DESE releases new data each fall, a single refresh command pulls everything and the dashboard auto-redeploys.",
         tools: ["Python", "Streamlit", "Plotly", "Pandas", "GeoPandas", "MA DESE E2C Hub", "US Census ACS", "MassGIS"],
         year: "2026",
-        thumb: "images/projects/lynn-thumb.png",
+        thumb: null,
         liveUrl: "Lynn-data-dive/",
         repoUrl: "https://github.com/mapzimus/lehs-data-dive"
     },
