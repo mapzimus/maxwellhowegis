@@ -164,6 +164,53 @@ function activeColumn(metricId = state.metric, year = state.year, level = state.
     return metricId;
 }
 
+// Is the active metric year-keyed for the active level?
+function isYearKeyed(metricId = state.metric, level = state.level) {
+    const idx = YEAR_KEYED_INDEX[level] || {};
+    return Boolean(idx[metricId] && idx[metricId].size > 0);
+}
+
+// Available years for the active metric/level. Returns an array.
+function availableYears(metricId = state.metric, level = state.level) {
+    const idx = YEAR_KEYED_INDEX[level] || {};
+    const set = idx[metricId];
+    return set ? [...set].sort((a, b) => a - b) : [];
+}
+
+// ─── YEAR ANIMATION (slideshow) ──────────────────────────────────────────────
+let _yearAnimTimer = null;
+const YEAR_ANIM_INTERVAL_MS = 900;
+
+function startYearAnimation() {
+    if (state.playing) return;
+    const years = availableYears();
+    if (years.length < 2) return;
+    state.playing = true;
+    const btn = document.getElementById("yearPlay");
+    if (btn) { btn.textContent = "⏸"; btn.classList.add("playing"); btn.title = "Pause slideshow"; }
+    _yearAnimTimer = setInterval(() => {
+        const yrs = availableYears();
+        if (yrs.length < 2) { stopYearAnimation(); return; }
+        const idx = yrs.indexOf(state.year);
+        const nextIdx = (idx + 1) % yrs.length;
+        state.year = yrs[nextIdx];
+        const slider = document.getElementById("yearSlider");
+        if (slider) slider.value = state.year;
+        const label = document.getElementById("yearLabel");
+        if (label) label.textContent = state.year;
+        applyChoropleth();
+        updateLegend();
+        updateMetricSummary();
+    }, YEAR_ANIM_INTERVAL_MS);
+}
+
+function stopYearAnimation() {
+    state.playing = false;
+    if (_yearAnimTimer) { clearInterval(_yearAnimTimer); _yearAnimTimer = null; }
+    const btn = document.getElementById("yearPlay");
+    if (btn) { btn.textContent = "▶"; btn.classList.remove("playing"); btn.title = "Play slideshow"; }
+}
+
 // ─── FORMATTERS ──────────────────────────────────────────────────────────────
 function fmt(value, kind) {
     if (value == null || !isFinite(value)) return "—";
@@ -349,6 +396,7 @@ map.on("load", async () => {
             fetch(SOURCES.maSchools).then(r => r.json()).catch(() => ({ type: "FeatureCollection", features: [] })),
         ]);
         GEO_DATA = { tract: tracts, district: academic, muni: munis };
+        buildYearKeyedIndex();
 
         // Sub-collections of CCUV by type, for separate styling
         const voctech = {
@@ -1251,7 +1299,9 @@ function buildPopupHtml(p, kind) {
 function applyChoropleth() {
     const { level, metric, palette, classify } = state;
     const m = getMetric(metric);
-    const paint = paintExpression(metric, palette, classify, level);
+    // Year-aware: paint uses year-keyed column when available
+    const col = activeColumn(metric, state.year, level);
+    const paint = paintExpression(col, palette, classify, level);
     const layerMap = { muni: "muni-fill", district: "district-fill", tract: "tract-fill" };
     Object.entries(layerMap).forEach(([lvl, layerId]) => {
         if (!map.getLayer(layerId)) return;
@@ -1484,11 +1534,27 @@ function wireUI() {
         applyChoropleth();
         updateLegend();
     });
-    // Year slider — scaffolded; live data wiring requires year-keyed
-    // geojson columns (planned). For now the slider just updates the label.
-    document.getElementById("yearSlider").addEventListener("input", e => {
-        document.getElementById("yearLabel").textContent = e.target.value;
+    // Year slider — live wired to year-keyed geojson columns.
+    const yearSlider = document.getElementById("yearSlider");
+    const yearLabel  = document.getElementById("yearLabel");
+    yearSlider.addEventListener("input", e => {
+        state.year = parseInt(e.target.value, 10);
+        yearLabel.textContent = e.target.value;
+        // Stop animation if user manually drags
+        if (state.playing) stopYearAnimation();
+        applyChoropleth();
+        updateLegend();
+        updateMetricSummary();
     });
+
+    // Year animation (play / pause)
+    const playBtn = document.getElementById("yearPlay");
+    if (playBtn) {
+        playBtn.addEventListener("click", () => {
+            if (state.playing) stopYearAnimation();
+            else startYearAnimation();
+        });
+    }
     // Student-group filter — scaffolded; activates when group-sliced columns
     // are baked into the geojson properties.
     document.getElementById("groupSelect").addEventListener("change", e => {
