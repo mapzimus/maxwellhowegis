@@ -111,6 +111,8 @@ const state = {
     palette: "Viridis",
     classify: "jenks",    // Fisher-Jenks natural breaks — standard cartographic default
     extrude3d: false,
+    compareMode: false,
+    metricB: "per_pupil",  // default "right side" metric when compare mode is on
     labels: true,
     townLabels: true,
     showMuniOutline: true,
@@ -972,6 +974,174 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('input[name="classify"]').forEach(el => {
         el.addEventListener("change", () => setTimeout(writeUrlState, 10));
     });
+
+    // ── COMPARE MODE — side-by-side split with synced pan/zoom ──────────────
+    const compareToggle = document.getElementById("compareToggle");
+    const mapsWrap      = document.getElementById("mapsWrap");
+    const labelA        = document.getElementById("compareLabelA");
+    const labelB        = document.getElementById("compareLabelB");
+    const metricSelectB = document.getElementById("metricSelectB");
+    let mapB = null;
+    let syncingFromA = false;
+    let syncingFromB = false;
+
+    // Populate the B-side metric dropdown with the same options as the primary
+    function populateMetricSelectB() {
+        const sel = metricSelectB;
+        sel.innerHTML = "";
+        const candidates = METRICS.filter(m => m.levels.includes(state.level));
+        const categories = [...new Set(candidates.map(m => m.cat))];
+        categories.forEach(cat => {
+            const grp = document.createElement("optgroup");
+            grp.label = cat;
+            candidates.filter(m => m.cat === cat).forEach(m => {
+                const opt = document.createElement("option");
+                opt.value = m.id;
+                opt.textContent = m.label;
+                grp.appendChild(opt);
+            });
+            sel.appendChild(grp);
+        });
+        const availIds = candidates.map(m => m.id);
+        if (!availIds.includes(state.metricB)) state.metricB = availIds[0];
+        sel.value = state.metricB;
+    }
+
+    function updateCompareLabels() {
+        labelA.textContent = getMetric(state.metric).label;
+        // labelB has the dropdown inside it — just update its dropdown
+        if (metricSelectB) metricSelectB.value = state.metricB;
+    }
+
+    function ensureMapB() {
+        if (mapB) return Promise.resolve(mapB);
+        return new Promise(resolve => {
+            mapB = new maplibregl.Map({
+                container: "mapB",
+                style: "https://tiles.openfreemap.org/styles/positron",
+                center: map.getCenter(),
+                zoom: map.getZoom(),
+                bearing: map.getBearing(),
+                pitch: map.getPitch(),
+                minZoom: 6,
+                maxZoom: 18,
+                attributionControl: false,
+            });
+            mapB.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "top-right");
+
+            mapB.on("load", () => {
+                // Add same data sources by reading from mapA — much faster than re-fetching
+                ["tracts", "schools", "town", "districts", "ccuv-voctech", "ccuv-charter",
+                 "municipalities", "ma-schools", "lynn-only", "gateway-only"].forEach(sid => {
+                    const srcA = map.getSource(sid);
+                    if (srcA && srcA._data) {
+                        mapB.addSource(sid, { type: "geojson", data: srcA._data, generateId: true });
+                    }
+                });
+
+                // Add the three choropleth fill layers (just the active level shows)
+                ["muni", "district", "tract"].forEach(lvl => {
+                    const sourceId = { muni: "municipalities", district: "districts", tract: "tracts" }[lvl];
+                    if (!mapB.getSource(sourceId)) return;
+                    mapB.addLayer({
+                        id: `${lvl}-fill-b`,
+                        type: "fill",
+                        source: sourceId,
+                        paint: {
+                            "fill-color": NO_DATA_COLOR,
+                            "fill-opacity": 0.78,
+                        },
+                        layout: { visibility: lvl === state.level ? "visible" : "none" },
+                    });
+                    // Subtle outline
+                    mapB.addLayer({
+                        id: `${lvl}-outline-b`,
+                        type: "line",
+                        source: sourceId,
+                        paint: { "line-color": "#37474F", "line-width": 0.4, "line-opacity": 0.45 },
+                        layout: { visibility: lvl === state.level ? "visible" : "none" },
+                    });
+                });
+
+                applyChoroplethB();
+
+                // Sync moves bi-directionally (with anti-recursion guards)
+                map.on("move", () => {
+                    if (syncingFromB) return;
+                    syncingFromA = true;
+                    mapB.jumpTo({
+                        center: map.getCenter(),
+                        zoom: map.getZoom(),
+                        bearing: map.getBearing(),
+                        pitch: map.getPitch(),
+                    });
+                    syncingFromA = false;
+                });
+                mapB.on("move", () => {
+                    if (syncingFromA) return;
+                    syncingFromB = true;
+                    map.jumpTo({
+                        center: mapB.getCenter(),
+                        zoom: mapB.getZoom(),
+                        bearing: mapB.getBearing(),
+                        pitch: mapB.getPitch(),
+                    });
+                    syncingFromB = false;
+                });
+
+                resolve(mapB);
+            });
+        });
+    }
+
+    function applyChoroplethB() {
+        if (!mapB || !mapB.isStyleLoaded()) return;
+        const { level, palette, classify } = state;
+        const paint = paintExpression(state.metricB, palette, classify, level);
+        ["muni", "district", "tract"].forEach(lvl => {
+            const fillId = `${lvl}-fill-b`;
+            const outId = `${lvl}-outline-b`;
+            if (mapB.getLayer(fillId)) {
+                mapB.setLayoutProperty(fillId, "visibility", lvl === level ? "visible" : "none");
+                if (lvl === level) mapB.setPaintProperty(fillId, "fill-color", paint);
+            }
+            if (mapB.getLayer(outId)) {
+                mapB.setLayoutProperty(outId, "visibility", lvl === level ? "visible" : "none");
+            }
+        });
+    }
+
+    // Expose so the level-change handler can re-apply to mapB too
+    window._applyChoroplethB = applyChoroplethB;
+
+    if (compareToggle) {
+        compareToggle.addEventListener("change", async e => {
+            state.compareMode = e.target.checked;
+            if (state.compareMode) {
+                mapsWrap.classList.add("compare");
+                map.resize();
+                populateMetricSelectB();
+                updateCompareLabels();
+                await ensureMapB();
+                applyChoroplethB();
+                mapB.resize();
+            } else {
+                mapsWrap.classList.remove("compare");
+                map.resize();
+                if (mapB) mapB.resize();
+            }
+        });
+    }
+
+    if (metricSelectB) {
+        metricSelectB.addEventListener("change", e => {
+            state.metricB = e.target.value;
+            applyChoroplethB();
+        });
+    }
+
+    // (The applyChoropleth function itself now calls window._applyChoroplethB
+    // and updates compareLabelA after each repaint, so no extra hook needed.)
 });
 
 function buildPopupHtml(p, kind) {
@@ -1053,6 +1223,13 @@ function applyChoropleth() {
         }
     });
     if (state.extrude3d) refresh3D();
+    // Compare mode: keep mapB in sync (same level/palette/classify, separate metric)
+    if (state.compareMode && typeof window._applyChoroplethB === "function") {
+        window._applyChoroplethB();
+    }
+    // Update compare labels (no-op when compare mode is off)
+    const labelA = document.getElementById("compareLabelA");
+    if (labelA) labelA.textContent = m.label;
 }
 
 function refresh3D() {

@@ -516,6 +516,69 @@ body.maps-page {
     border-color: var(--lehs-navy);
 }
 
+/* ============================================================================
+   Compare mode — side-by-side maps with sync
+   ============================================================================ */
+.maps-wrap {
+    position: absolute;
+    inset: 0;
+}
+.maps-wrap.compare #map {
+    right: 50%;
+}
+.maps-wrap.compare .map-container-b {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+}
+.maps-wrap.compare .compare-mid {
+    display: block !important;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: calc(50% - 2px);
+    width: 4px;
+    background: var(--lehs-gold);
+    box-shadow: 0 0 8px rgba(10, 31, 68, 0.4);
+    z-index: 30;
+    pointer-events: none;
+}
+.maps-wrap.compare .compare-bdrop-label-a,
+.maps-wrap.compare .compare-bdrop-label-b {
+    display: block !important;
+    position: absolute;
+    top: 12px;
+    z-index: 25;
+    padding: 8px 14px;
+    background: rgba(10, 31, 68, 0.92);
+    color: white;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    backdrop-filter: blur(4px);
+}
+.maps-wrap.compare .compare-bdrop-label-a {
+    left: calc(50% - 6px);
+    transform: translateX(-100%);
+}
+.maps-wrap.compare .compare-bdrop-label-b {
+    left: calc(50% + 6px);
+}
+.select-input-b {
+    width: 220px;
+    margin-left: 8px;
+    padding: 5px 8px;
+    font-size: 12px;
+    background: white;
+    color: var(--lehs-navy);
+    border: 1px solid var(--panel-border);
+    border-radius: 5px;
+}
+
 /* Hover tooltip floating over the map */
 .map-tooltip {
     position: absolute;
