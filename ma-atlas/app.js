@@ -156,6 +156,7 @@ function buildYearKeyedIndex() {
 
 // Track group-keyed schema after data loads: { level: { baseMetric: Set<group_code> } }
 const GROUP_KEYED_INDEX = { muni: {}, district: {}, tract: {} };
+const KNOWN_GROUPS = new Set(["hl","baa","as","wh","ell","fmrell","li","swd","hn"]);
 
 // Updates the helper note under the student-group dropdown to tell the
 // user whether the active metric supports group filtering or will fall
@@ -178,8 +179,6 @@ function updateGroupNote() {
 }
 
 function buildGroupKeyedIndex() {
-    const KNOWN_GROUPS = new Set(["hl", "baa", "as", "wh", "ell", "fmrell",
-                                    "li", "swd", "hn"]);
     for (const level of ["muni", "district", "tract"]) {
         const fc = GEO_DATA[level];
         if (!fc || !fc.features.length) continue;
