@@ -128,6 +128,42 @@ const state = {
 
 let GEO_DATA = null;  // populated after load
 
+// Year-keyed schema introspection. After load, for each (level, baseMetric)
+// pair we record which years actually have data — drives the slider availability
+// and lets us fall back to latest when a metric isn't year-keyed.
+const YEAR_KEYED_INDEX = {
+    /* level: { baseMetric: Set<int years> } */
+    muni: {}, district: {}, tract: {},
+};
+const YEAR_KEYED_RANGE = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+
+function buildYearKeyedIndex() {
+    for (const level of ["muni", "district", "tract"]) {
+        const fc = GEO_DATA[level];
+        if (!fc || !fc.features.length) continue;
+        const sample = fc.features[0].properties;
+        const idx = {};
+        for (const key of Object.keys(sample)) {
+            const m = key.match(/^(.+)__(\d{4})$/);
+            if (!m) continue;
+            const base = m[1], year = parseInt(m[2], 10);
+            if (!idx[base]) idx[base] = new Set();
+            idx[base].add(year);
+        }
+        YEAR_KEYED_INDEX[level] = idx;
+    }
+}
+
+// Resolve the active column name for state.metric + state.year.
+// Returns the year-keyed column if it exists, otherwise the base column
+// (latest-year value).
+function activeColumn(metricId = state.metric, year = state.year, level = state.level) {
+    const idx = YEAR_KEYED_INDEX[level] || {};
+    const years = idx[metricId];
+    if (years && years.has(year)) return `${metricId}__${year}`;
+    return metricId;
+}
+
 // ─── FORMATTERS ──────────────────────────────────────────────────────────────
 function fmt(value, kind) {
     if (value == null || !isFinite(value)) return "—";
@@ -143,7 +179,9 @@ function getValuesForLevel(level, metricId) {
     if (!GEO_DATA) return [];
     const fc = GEO_DATA[level];
     if (!fc || !fc.features) return [];
-    return fc.features.map(f => f.properties[metricId])
+    // Year-aware: read year-keyed column when available, else fall back to latest.
+    const col = activeColumn(metricId, state.year, level);
+    return fc.features.map(f => f.properties[col])
                         .filter(v => v != null && isFinite(+v))
                         .map(v => +v);
 }
