@@ -154,10 +154,62 @@ function buildYearKeyedIndex() {
     }
 }
 
-// Resolve the active column name for state.metric + state.year.
-// Returns the year-keyed column if it exists, otherwise the base column
-// (latest-year value).
+// Track group-keyed schema after data loads: { level: { baseMetric: Set<group_code> } }
+const GROUP_KEYED_INDEX = { muni: {}, district: {}, tract: {} };
+
+// Updates the helper note under the student-group dropdown to tell the
+// user whether the active metric supports group filtering or will fall
+// back to All Students.
+function updateGroupNote() {
+    const noteEl = document.querySelector("#groupSelect ~ .year-note");
+    if (!noteEl) return;
+    if (state.studentGroup === "all") {
+        noteEl.textContent = "Select a group to filter outcomes (MCAS, graduation, AP, chronic absent).";
+        return;
+    }
+    const gIdx = GROUP_KEYED_INDEX[state.level] || {};
+    const supported = gIdx[state.metric] && gIdx[state.metric].has(state.studentGroup);
+    if (supported) {
+        noteEl.textContent = `✓ Showing ${getMetric(state.metric).label} for the ${state.studentGroup.toUpperCase()} student group only.`;
+    } else {
+        noteEl.textContent = `⚠ The active metric isn't group-sliced. Falling back to All Students. (Group filter works on MCAS, graduation, AP, and chronic absent metrics.)`;
+    }
+}
+
+function buildGroupKeyedIndex() {
+    const KNOWN_GROUPS = new Set(["hl", "baa", "as", "wh", "ell", "fmrell",
+                                    "li", "swd", "hn"]);
+    for (const level of ["muni", "district", "tract"]) {
+        const fc = GEO_DATA[level];
+        if (!fc || !fc.features.length) continue;
+        const sample = fc.features[0].properties;
+        const idx = {};
+        for (const key of Object.keys(sample)) {
+            const m = key.match(/^(.+)__([a-z]+)$/);
+            if (!m) continue;
+            const base = m[1], code = m[2];
+            if (!KNOWN_GROUPS.has(code)) continue;  // skip year suffixes (numeric)
+            if (!idx[base]) idx[base] = new Set();
+            idx[base].add(code);
+        }
+        GROUP_KEYED_INDEX[level] = idx;
+    }
+}
+
+// Resolve the active column name for state.metric + state.year + state.studentGroup.
+// Precedence: group-keyed > year-keyed > base column.
+// (Combined year × group isn't stored — too many columns for too little gain.)
 function activeColumn(metricId = state.metric, year = state.year, level = state.level) {
+    // Group filter — overrides year (group-keyed columns are latest-year only)
+    const grp = state.studentGroup;
+    if (grp && grp !== "all") {
+        const gIdx = GROUP_KEYED_INDEX[level] || {};
+        if (gIdx[metricId] && gIdx[metricId].has(grp)) {
+            return `${metricId}__${grp}`;
+        }
+        // Group requested but no group-keyed data — fall through to year/base
+    }
+    // Year-keyed lookup
     const idx = YEAR_KEYED_INDEX[level] || {};
     const years = idx[metricId];
     if (years && years.has(year)) return `${metricId}__${year}`;
@@ -397,6 +449,7 @@ map.on("load", async () => {
         ]);
         GEO_DATA = { tract: tracts, district: academic, muni: munis };
         buildYearKeyedIndex();
+        buildGroupKeyedIndex();
 
         // Sub-collections of CCUV by type, for separate styling
         const voctech = {
@@ -1564,10 +1617,15 @@ function wireUI() {
             else startYearAnimation();
         });
     }
-    // Student-group filter — scaffolded; activates when group-sliced columns
-    // are baked into the geojson properties.
+    // Student-group filter — repaints choropleth using the metric__group
+    // column when available. Falls back to base column if the active metric
+    // doesn't have group-sliced data (a hint shows under the dropdown).
     document.getElementById("groupSelect").addEventListener("change", e => {
         state.studentGroup = e.target.value;
+        applyChoropleth();
+        updateLegend();
+        updateMetricSummary();
+        updateGroupNote();
     });
     document.getElementById("paletteSelect").addEventListener("change", e => {
         state.palette = e.target.value;
