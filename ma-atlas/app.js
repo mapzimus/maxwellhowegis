@@ -762,6 +762,15 @@ function openFeaturePanel(p, kind) {
     body.innerHTML = buildPanelHtml(p, kind);
     panel.classList.add("open");
     panel.setAttribute("aria-hidden", "false");
+
+    // On mobile, the control drawer would cover the bottom-sheet detail
+    // panel — auto-close it so the detail panel has room
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        const ctrl = document.getElementById("controlPanel");
+        const bd   = document.getElementById("panelBackdrop");
+        if (ctrl) ctrl.classList.remove("open");
+        if (bd)   bd.classList.remove("open");
+    }
 }
 
 function closeFeaturePanel() {
@@ -1622,9 +1631,42 @@ function wireUI() {
         });
     });
 
-    document.getElementById("panelToggle").addEventListener("click", () => {
-        document.getElementById("controlPanel").classList.toggle("collapsed");
+    // Panel open/close — supports both desktop (.collapsed slide-out) and
+    // mobile (.open slide-in drawer with backdrop)
+    const panel    = document.getElementById("controlPanel");
+    const fab      = document.getElementById("panelFab");
+    const toggle   = document.getElementById("panelToggle");
+    const backdrop = document.getElementById("panelBackdrop");
+    const isMobile = () => window.matchMedia("(max-width: 768px)").matches;
+
+    function openPanel() {
+        panel.classList.add("open");
+        panel.classList.remove("collapsed");
+        if (backdrop) backdrop.classList.add("open");
+    }
+    function closePanel() {
+        panel.classList.remove("open");
+        if (isMobile()) panel.classList.add("collapsed");
+        if (backdrop) backdrop.classList.remove("open");
+    }
+    function togglePanel() {
+        if (isMobile()) {
+            (panel.classList.contains("open") ? closePanel : openPanel)();
+        } else {
+            panel.classList.toggle("collapsed");
+        }
+    }
+
+    if (toggle)   toggle.addEventListener("click", togglePanel);
+    if (fab)      fab.addEventListener("click", togglePanel);
+    if (backdrop) backdrop.addEventListener("click", closePanel);
+
+    // On mobile, after a quick-view button or a layer toggle, auto-close
+    // the drawer so the user actually sees the map move
+    document.querySelectorAll(".view-btn").forEach(b => {
+        b.addEventListener("click", () => { if (isMobile()) closePanel(); });
     });
+
 }
 
 function setActiveView(view) {
