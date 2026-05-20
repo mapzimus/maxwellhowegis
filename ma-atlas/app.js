@@ -167,10 +167,11 @@ function updateGroupNote() {
         noteEl.textContent = "Select a group to filter outcomes (MCAS, graduation, AP, chronic absent).";
         return;
     }
+    const grp = state.studentGroup.toLowerCase();
     const gIdx = GROUP_KEYED_INDEX[state.level] || {};
-    const supported = gIdx[state.metric] && gIdx[state.metric].has(state.studentGroup);
+    const supported = gIdx[state.metric] && gIdx[state.metric].has(grp);
     if (supported) {
-        noteEl.textContent = `✓ Showing ${getMetric(state.metric).label} for the ${state.studentGroup.toUpperCase()} student group only.`;
+        noteEl.textContent = `✓ Showing ${getMetric(state.metric).label} for the ${state.studentGroup} student group only.`;
     } else {
         noteEl.textContent = `⚠ The active metric isn't group-sliced. Falling back to All Students. (Group filter works on MCAS, graduation, AP, and chronic absent metrics.)`;
     }
@@ -200,9 +201,11 @@ function buildGroupKeyedIndex() {
 // Precedence: group-keyed > year-keyed > base column.
 // (Combined year × group isn't stored — too many columns for too little gain.)
 function activeColumn(metricId = state.metric, year = state.year, level = state.level) {
-    // Group filter — overrides year (group-keyed columns are latest-year only)
-    const grp = state.studentGroup;
-    if (grp && grp !== "all") {
+    // Group filter — overrides year (group-keyed columns are latest-year only).
+    // HTML option values are uppercase (ELL, HL); data suffixes are lowercase
+    // (__ell, __hl). Normalize before lookup.
+    const grp = (state.studentGroup || "all").toLowerCase();
+    if (grp !== "all") {
         const gIdx = GROUP_KEYED_INDEX[level] || {};
         if (gIdx[metricId] && gIdx[metricId].has(grp)) {
             return `${metricId}__${grp}`;
