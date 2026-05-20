@@ -161,7 +161,7 @@ const GROUP_KEYED_INDEX = { muni: {}, district: {}, tract: {} };
 // user whether the active metric supports group filtering or will fall
 // back to All Students.
 function updateGroupNote() {
-    const noteEl = document.querySelector("#groupSelect ~ .year-note");
+    const noteEl = document.getElementById("groupNote");
     if (!noteEl) return;
     if (state.studentGroup === "all") {
         noteEl.textContent = "Select a group to filter outcomes (MCAS, graduation, AP, chronic absent).";
@@ -998,26 +998,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const helpModal = document.getElementById("helpModal");
     const helpClose = document.getElementById("helpModalClose");
     const helpDone  = document.getElementById("helpGotIt");
-    const openHelp  = () => { helpModal.classList.add("open"); helpModal.setAttribute("aria-hidden", "false"); };
-    const closeHelp = () => { helpModal.classList.remove("open"); helpModal.setAttribute("aria-hidden", "true"); };
-    if (helpBtn)   helpBtn.addEventListener("click", openHelp);
-    if (helpClose) helpClose.addEventListener("click", closeHelp);
-    if (helpDone)  helpDone.addEventListener("click", () => {
-        try { localStorage.setItem("ma-atlas-help-seen", "1"); } catch (e) {}
-        closeHelp();
-    });
-    helpModal.addEventListener("click", e => {
-        if (e.target === helpModal) closeHelp();   // click backdrop
-    });
-    document.addEventListener("keydown", e => {
-        if (e.key === "Escape") closeHelp();
-    });
-    // Auto-show once per browser
-    try {
-        if (!localStorage.getItem("ma-atlas-help-seen")) {
-            setTimeout(openHelp, 800);  // brief delay so the map renders first
-        }
-    } catch (e) {}
+    if (helpModal) {
+        const openHelp  = () => { helpModal.classList.add("open"); helpModal.setAttribute("aria-hidden", "false"); };
+        const closeHelp = () => { helpModal.classList.remove("open"); helpModal.setAttribute("aria-hidden", "true"); };
+        if (helpBtn)   helpBtn.addEventListener("click", openHelp);
+        if (helpClose) helpClose.addEventListener("click", closeHelp);
+        if (helpDone)  helpDone.addEventListener("click", () => {
+            try { localStorage.setItem("ma-atlas-help-seen", "1"); } catch (e) {}
+            closeHelp();
+        });
+        helpModal.addEventListener("click", e => {
+            if (e.target === helpModal) closeHelp();   // click backdrop
+        });
+        document.addEventListener("keydown", e => {
+            if (e.key === "Escape") closeHelp();
+        });
+        // Auto-show once per browser
+        try {
+            if (!localStorage.getItem("ma-atlas-help-seen")) {
+                setTimeout(openHelp, 800);  // brief delay so the map renders first
+            }
+        } catch (e) {}
+    }
 
     // PNG export — captures the current map canvas + a tasteful caption
     const exportBtn = document.getElementById("exportPngBtn");
