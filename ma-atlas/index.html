@@ -119,6 +119,11 @@
             <button class="export-png-btn" id="exportPngBtn" type="button">
                 ⤓ Export current view as PNG
             </button>
+
+            <label class="toggle-row" style="margin-top:14px;">
+                <input type="checkbox" id="compareToggle">
+                <span><strong>Compare two metrics</strong> — split-screen with pan/zoom synced</span>
+            </label>
         </div>
 
         <!-- REFERENCE LAYERS -->
@@ -193,8 +198,16 @@
         </div>
     </aside>
 
-    <!-- MAP -->
-    <div id="map" class="map-container"></div>
+    <!-- MAP — single by default, splits into two halves when compare is on -->
+    <div class="maps-wrap" id="mapsWrap">
+        <div id="map" class="map-container"></div>
+        <div id="mapB" class="map-container map-container-b" style="display:none;"></div>
+        <div class="compare-mid" id="compareMid" style="display:none;" aria-hidden="true"></div>
+        <div class="compare-bdrop-label compare-bdrop-label-a" id="compareLabelA" style="display:none;"></div>
+        <div class="compare-bdrop-label compare-bdrop-label-b" id="compareLabelB" style="display:none;">
+            <select id="metricSelectB" class="select-input select-input-b"></select>
+        </div>
+    </div>
 
     <!-- LEGEND -->
     <div class="legend" id="legend">
