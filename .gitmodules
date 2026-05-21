@@ -1,0 +1,3 @@
+[submodule "ma-atlas"]
+	path = ma-atlas
+	url = https://github.com/mapzimus/ma-education-atlas.git
