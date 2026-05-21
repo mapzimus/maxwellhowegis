@@ -280,7 +280,7 @@ const projects = [
         description: "A standalone GIS portfolio piece — and the only place I've seen Massachusetts academic school district boundaries actually rendered as polygons. MassGIS publishes a 'CCUV' shapefile that contains only charters, vocational, collaboratives, and historic unions — NOT the regular town/regional districts. So I built those: dissolved MA towns by their dominant academic district code (derived from the public-schools point file) to get 274 academic district polygons that no published map shows. Voc-tech and charter districts geographically OVERLAP academic ones (Northeast Metro Voc-Tech covers 9 towns; Boston charters serve city-wide), so all three are independent toggleable layers with distinct styling. Choropleth supports any of 40+ joined metrics — demographics, MCAS, graduation, AP, postsecondary plans, finance per-pupil categories, teacher workforce — with 12 ColorBrewer palettes, Fisher-Jenks natural breaks (default), 3D extrusion, hover tooltips, and a sticky right-side feature-detail panel. Vector tiles via OpenFreeMap (no API key). Data sourced via jsDelivr from the lehs-data-dive repo so refreshes flow automatically.",
         tools: ["MapLibre GL JS", "OpenFreeMap (vector tiles)", "MassGIS", "MA DESE E2C Hub", "US Census ACS", "GeoPandas", "Pure JavaScript"],
         year: "2026",
-        thumb: null,
+        thumb: "images/projects/ma-atlas-preview.png",
         liveUrl: "ma-atlas/",
         repoUrl: "https://github.com/mapzimus/maxwellhowegis"
     },
