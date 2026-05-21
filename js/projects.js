@@ -238,38 +238,6 @@ const projects = [
         status: "development"
     },
     {
-        id: 12,
-        era: "current",
-        title: "African Urbanization Project",
-        category: "Spatial Analysis",
-        type: "analysis",
-        tags: ["R", "sf", "tmap", "terra", "UN Data", "WorldPop"],
-        summary: "GIS analysis tracing African continental population projections from emerging megacity clusters down to a Kinshasa case study. In progress.",
-        description: "A self-directed spatial analysis examining urbanization patterns across Africa. Starting from continental population projections (UN World Urbanization Prospects), the project identifies emerging megacity clusters, then zooms into Kinshasa as a case study for accelerated urban growth dynamics. Built in R using sf for spatial data handling, terra for raster processing, and tmap for cartographic output.",
-        tools: ["R", "sf", "terra", "tmap", "UN World Urbanization Prospects", "WorldPop"],
-        year: "2026",
-        thumb: null,
-        liveUrl: null,
-        repoUrl: null,
-        status: "planned"
-    },
-    {
-        id: 13,
-        era: "current",
-        title: "Zillow / MHI Near Commuter Rail",
-        category: "Spatial Analysis",
-        type: "analysis",
-        tags: ["R", "Zillow", "MBTA", "Housing Data", "Transit"],
-        summary: "Spatial analysis correlating Zillow home values and median household income to MBTA commuter rail stop proximity across Eastern Massachusetts. In progress.",
-        description: "A spatial analysis combining three datasets — Zillow home value data, Census median household income (ACS), and MBTA commuter rail stop locations — to understand how proximity to commuter rail correlates with housing costs and income levels across Eastern Massachusetts. Built in R using sf, tidycensus, and tidyverse.",
-        tools: ["R", "sf", "tidycensus", "Zillow Data", "MBTA GTFS", "Census ACS"],
-        year: "2026",
-        thumb: null,
-        liveUrl: null,
-        repoUrl: null,
-        status: "planned"
-    },
-    {
         id: 16,
         era: "current",
         title: "Massachusetts Education Atlas",
@@ -296,7 +264,7 @@ const projects = [
         tools: ["Python", "Streamlit", "Plotly", "Pandas", "GeoPandas", "MA DESE E2C Hub", "US Census ACS", "MassGIS"],
         year: "2026",
         thumb: null,
-        liveUrl: "https://lehs-data-dive.streamlit.app",
+        liveUrl: "https://lynn-data-dive.streamlit.app",
         repoUrl: "https://github.com/mapzimus/lehs-data-dive"
     },
     {
