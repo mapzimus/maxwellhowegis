@@ -217,7 +217,7 @@ const projects = [
         description: "Geopuesto calculates antipodal points — the geographic opposite of any location on Earth's surface. Enter coordinates or click a map, and Geopuesto computes and displays the antipode with coordinates and a split-view map. A focused, single-purpose geo-utility.",
         tools: ["JavaScript", "Leaflet", "GitHub Pages"],
         year: "2025–2026",
-        thumb: null,
+        thumb: "images/projects/geopuesto-thumb.png",
         liveUrl: "geopuesto/",
         repoUrl: null
     },
@@ -232,7 +232,7 @@ const projects = [
         description: "Optitrek is an algorithmic road-trip optimizer for the United States. It takes the 2015 Randal Olson 'optimal US road trip' — 50 hand-picked stops, genetic algorithm, Google Maps API — and rebuilds it with 2026 tools. Instead of just ordering hand-picked stops, Optitrek solves both the selection AND the ordering across ~400 NPS units (Tier 1, current) growing to ~100,000 POIs (Tier 2+) using Google OR-Tools constrained TSP, a self-hosted OSRM routing engine on the US-only OSM extract, and a Neon PostGIS spatial database. Three-tier build: Tier 1 proves the algorithm with an NPS-only optimal loop covering all 48 contiguous states + D.C. (planned blog post + interactive map); Tier 2 ships a configurable web app on Railway; Tier 3 is a full consumer product with accounts, Amtrak rail routing, a community trip gallery, and presets. Current status: Phase 1 (data ingest) is running live — 466 NPS units in PostGIS with every required state covered. Phases 2–4 (OSRM distance matrix, OR-Tools solver, Folium visualization) are coded and unit-tested (17 passing), pending end-to-end run on the routing host.",
         tools: ["Python 3.11+", "PostGIS / Neon", "Google OR-Tools", "OSRM (self-hosted, US extract)", "Folium", "NPS API", "Census TIGER", "Docker", "FastAPI (planned)"],
         year: "2026",
-        thumb: null,
+        thumb: "images/projects/optitrek-thumb.png",
         liveUrl: null,
         repoUrl: "https://github.com/mapzimus/optitrek",
         status: "development"
@@ -263,7 +263,7 @@ const projects = [
         description: "DESE publishes Lynn English data across half a dozen separate Power BI dashboards, statewide bulk downloads, and federal datasets — none of which are joined. The Lynn Data Dive integrates every relevant public source (MA DESE E2C Hub's 22 datasets, US Census ACS, MassGIS, EPA EJScreen, NCES) into a single Streamlit app, then adds a cross-domain Correlation Lab that lets you pick any two metrics and see how they relate across the 26 Gateway City high schools. Sections include School Profile, Academic Performance (MCAS with full E/M/PM/NM distribution), ELL Pipeline (the central narrative thread — Lynn English is ~42% ELL), College & Career Readiness, Success After HS, Teachers & Workforce, Finance, Discipline & Climate, Community Context, Lynn District & Sibling Schools (LEHS vs Lynn Classical, Lynn Tech, etc.), Gateway Peer Comparison, and a Maps section with four tabs (Lynn Schools, Lynn Demographics with tract-level Census ACS, MA Statewide Districts, Gateway Cities). A Catchment Research page embeds the privacy-safe aggregated outputs of the prior chronic absenteeism capstone. The whole pipeline is reproducible — when DESE releases new data each fall, a single refresh command pulls everything and the dashboard auto-redeploys.",
         tools: ["Python", "Streamlit", "Plotly", "Pandas", "GeoPandas", "MA DESE E2C Hub", "US Census ACS", "MassGIS"],
         year: "2026",
-        thumb: null,
+        thumb: "images/projects/lynn-data-dive-thumb.png",
         liveUrl: "https://lynn-data-dive.streamlit.app",
         repoUrl: "https://github.com/mapzimus/lehs-data-dive"
     },
