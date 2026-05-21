@@ -135,7 +135,14 @@ const YEAR_KEYED_INDEX = {
     /* level: { baseMetric: Set<int years> } */
     muni: {}, district: {}, tract: {},
 };
-const YEAR_KEYED_RANGE = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+// Extended to 1994 so enrollment can show the long view; metrics without
+// older year-keyed columns gracefully gray those years out via per-metric
+// availability lookups in availableYears().
+const YEAR_KEYED_RANGE = (function () {
+    const arr = [];
+    for (let y = 1994; y <= 2026; y++) arr.push(y);
+    return arr;
+})();
 
 function buildYearKeyedIndex() {
     for (const level of ["muni", "district", "tract"]) {
@@ -1711,3 +1718,70 @@ function toggle3D() {
     map.setLayoutProperty(flatLayer, "visibility", "none");
     map.easeTo({ pitch: 55, bearing: -20, duration: 900 });
 }
+
+// ─── CSV EXPORT ──────────────────────────────────────────────────────────────
+// Export the currently-active layer's features (with the active metric column
+// + all year-keyed variants where applicable) as a CSV the user can open in
+// Excel / Google Sheets.
+
+function _csvEscape(v) {
+    if (v === null || v === undefined) return "";
+    const s = String(v);
+    if (/[",\n]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+    return s;
+}
+
+function featuresToCsv(features, primaryMetric) {
+    if (!features || !features.length) return "";
+    // Build column set: prioritize identity cols, then primary metric, then everything else
+    const idCols = ["DIST_CODE", "DIST_NAME", "dist_display",
+                     "ORG8CODE", "ORG_NAME", "TOWN", "town_display",
+                     "GEOID", "NAMELSAD", "TYPE", "NAME"];
+    const seen = new Set();
+    const cols = [];
+    idCols.forEach(c => {
+        if (features[0].properties && c in features[0].properties && !seen.has(c)) {
+            cols.push(c); seen.add(c);
+        }
+    });
+    if (primaryMetric && !seen.has(primaryMetric)) {
+        cols.push(primaryMetric); seen.add(primaryMetric);
+    }
+    // Append all remaining property keys
+    const otherKeys = new Set();
+    features.forEach(f => {
+        if (!f.properties) return;
+        Object.keys(f.properties).forEach(k => { if (!seen.has(k)) otherKeys.add(k); });
+    });
+    [...otherKeys].sort().forEach(k => { cols.push(k); seen.add(k); });
+
+    const lines = [cols.join(",")];
+    features.forEach(f => {
+        const p = f.properties || {};
+        lines.push(cols.map(c => _csvEscape(p[c])).join(","));
+    });
+    return lines.join("\n");
+}
+
+function downloadCurrentLayerCsv() {
+    if (typeof GEO_DATA !== "object" || !GEO_DATA) return;
+    const lvl = state.level;
+    const fc = GEO_DATA[lvl];
+    if (!fc || !fc.features || !fc.features.length) return;
+    const metricCol = (typeof activeColumn === "function")
+        ? activeColumn(state.metric, state.year, lvl)
+        : state.metric;
+    const csv = featuresToCsv(fc.features, metricCol);
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `ma-atlas_${lvl}_${state.metric}.csv`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("exportCsvBtn");
+    if (btn) btn.addEventListener("click", downloadCurrentLayerCsv);
+});
