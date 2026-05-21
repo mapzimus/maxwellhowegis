@@ -588,6 +588,25 @@ body.maps-page {
     border: 1px solid var(--panel-border);
     border-radius: 5px;
 }
+.compare-bdrop-label-b #levelSelectB {
+    width: 150px;
+    margin-right: 4px;
+}
+
+.export-csv-btn {
+    width: 100%;
+    padding: 9px 12px;
+    background: var(--lehs-navy);
+    color: var(--lehs-gold);
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.export-csv-btn:hover { background: #1a3a6b; }
+.export-csv-btn:active { transform: translateY(1px); }
 
 /* Hover tooltip floating over the map */
 .map-tooltip {
@@ -1032,6 +1051,28 @@ body.maps-page {
     .maplibregl-ctrl-bottom-right {
         right: 12px !important;
         bottom: 78px !important;
+    }
+
+    /* Compare mode (split-screen) is unusable on a phone — hide the toggle
+       row entirely below 768px to keep the panel uncluttered. */
+    .compare-row, label[for="compareToggle"] { display: none !important; }
+    .compare-bdrop-label-a, .compare-bdrop-label-b { display: none !important; }
+
+    /* Bigger, more discoverable FAB on mobile + soft pulse on first paint
+       so the user notices the affordance. */
+    .panel-fab {
+        width: 52px;
+        height: 52px;
+        box-shadow: 0 6px 18px rgba(10, 31, 68, 0.45);
+        animation: fab-pulse 1.6s ease-out 0.4s 2;
+    }
+    @keyframes fab-pulse {
+        0%   { box-shadow: 0 6px 18px rgba(10, 31, 68, 0.45),
+                            0 0 0 0 rgba(255, 184, 28, 0.55); }
+        70%  { box-shadow: 0 6px 18px rgba(10, 31, 68, 0.45),
+                            0 0 0 14px rgba(255, 184, 28, 0); }
+        100% { box-shadow: 0 6px 18px rgba(10, 31, 68, 0.45),
+                            0 0 0 0 rgba(255, 184, 28, 0); }
     }
 }
 

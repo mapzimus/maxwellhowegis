@@ -108,7 +108,7 @@
             <label class="form-label" style="margin-top:12px;">Year</label>
             <div class="year-slider-row">
                 <button class="year-play" id="yearPlay" type="button" title="Play slideshow">▶</button>
-                <input type="range" id="yearSlider" min="2017" max="2026" step="1" value="2026" class="year-slider">
+                <input type="range" id="yearSlider" min="1994" max="2026" step="1" value="2026" class="year-slider">
                 <span class="year-label" id="yearLabel">2026</span>
             </div>
             <div class="year-note">Click ▶ to animate through years. Year-keyed for: demographics, MCAS, graduation, AP, per-pupil (2017–2026). Other metrics show latest available year regardless of slider.</div>
@@ -201,6 +201,18 @@
             </label>
         </div>
 
+        <!-- DOWNLOAD CSV -->
+        <div class="panel-section">
+            <h2 class="panel-h2">Download</h2>
+            <button id="exportCsvBtn" type="button" class="export-csv-btn">
+                ⬇ Export this layer as CSV
+            </button>
+            <div class="form-label" style="margin-top:6px; font-size:11px; color:#607D8B;">
+                Exports the active layer's features (everything visible on the map),
+                including the active metric column. CSV opens in Excel / Google Sheets.
+            </div>
+        </div>
+
         <!-- ATTRIBUTION -->
         <div class="panel-section panel-footer">
             <div class="attribution">
@@ -218,6 +230,11 @@
         <div class="compare-mid" id="compareMid" style="display:none;" aria-hidden="true"></div>
         <div class="compare-bdrop-label compare-bdrop-label-a" id="compareLabelA" style="display:none;"></div>
         <div class="compare-bdrop-label compare-bdrop-label-b" id="compareLabelB" style="display:none;">
+            <select id="levelSelectB" class="select-input select-input-b" title="Level for side B">
+                <option value="muni">Municipality</option>
+                <option value="district">School District</option>
+                <option value="tract">Census Tract (Lynn only)</option>
+            </select>
             <select id="metricSelectB" class="select-input select-input-b"></select>
         </div>
     </div>
