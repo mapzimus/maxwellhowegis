@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Optitrek card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0e17;
+    --bg-card: #1a2236;
+    --bg-card-2: #131a2a;
+    --border: #2a3550;
+    --text-primary: #e8ecf4;
+    --text-muted: #9aa3b7;
+    --accent-amber: #fbbf24;
+    --accent-amber-soft: rgba(251,191,36,0.16);
+    --accent-amber-dim: rgba(251,191,36,0.32);
+    --accent-indigo: #a5b4fc;
+    --land: #1f2a42;
+    --land-edge: #2f3d5e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1600px;
+    height: 1000px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+  .card {
+    position: relative;
+    width: 1600px;
+    height: 1000px;
+    background:
+      radial-gradient(1200px 800px at 75% 35%, rgba(251,191,36,0.06), transparent 60%),
+      radial-gradient(900px 700px at 18% 78%, rgba(165,180,252,0.05), transparent 60%),
+      linear-gradient(140deg, #0a0e17 0%, #111827 60%, #0a0e17 100%);
+    overflow: hidden;
+  }
+  /* faint grid */
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+  /* map */
+  #map-wrap {
+    position: absolute;
+    inset: 60px 60px 220px 60px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  svg { width: 100%; height: 100%; display: block; }
+  .state-land {
+    fill: var(--land);
+    stroke: var(--land-edge);
+    stroke-width: 0.8;
+  }
+  .route-line {
+    fill: none;
+    stroke: var(--accent-amber);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-dasharray: 6 8;
+    opacity: 0.92;
+    filter: drop-shadow(0 0 8px rgba(251,191,36,0.35));
+  }
+  .route-node {
+    fill: var(--accent-amber);
+    stroke: rgba(10,14,23,0.85);
+    stroke-width: 2;
+    filter: drop-shadow(0 0 6px rgba(251,191,36,0.55));
+  }
+  .route-node-halo {
+    fill: rgba(251,191,36,0.12);
+  }
+  /* header chrome */
+  .badges {
+    position: absolute;
+    top: 36px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 12px; align-items: center;
+    z-index: 5;
+  }
+  .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: rgba(26,34,54,0.7);
+    color: var(--text-muted);
+    backdrop-filter: blur(6px);
+  }
+  .badge.dev {
+    color: var(--accent-amber);
+    background: var(--accent-amber-soft);
+    border-color: var(--accent-amber-dim);
+  }
+  .badge .dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent-amber);
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 0 0 8px var(--accent-amber);
+  }
+  /* footer panel */
+  .footer-panel {
+    position: absolute;
+    left: 60px; right: 60px; bottom: 60px;
+    height: 140px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(26,34,54,0.85), rgba(19,26,42,0.85));
+    backdrop-filter: blur(8px);
+    padding: 26px 36px;
+    display: flex; flex-direction: column; justify-content: center;
+    z-index: 5;
+  }
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--accent-amber);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--text-primary);
+    display: flex; align-items: baseline; gap: 22px;
+  }
+  .title .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-muted);
+    letter-spacing: 0;
+  }
+  .tags {
+    position: absolute;
+    right: 36px; top: 50%;
+    transform: translateY(-50%);
+    display: flex; flex-wrap: wrap; gap: 8px;
+    justify-content: flex-end;
+    max-width: 540px;
+  }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(165,180,252,0.10);
+    border: 1px solid rgba(165,180,252,0.20);
+    color: var(--accent-indigo);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grid"></div>
+
+  <div id="map-wrap">
+    <svg id="map" viewBox="0 0 1480 740" preserveAspectRatio="xMidYMid meet"></svg>
+  </div>
+
+  <div class="badges">
+    <span class="badge dev"><span class="dot"></span>IN DEVELOPMENT</span>
+    <span class="badge">Tier 1 · Phase 1 Live</span>
+  </div>
+
+  <div class="footer-panel">
+    <div class="label">// Optimal US Road Trip</div>
+    <div class="title">
+      Optitrek
+      <span class="subtitle">Constrained TSP across 466 NPS units · 48 states + DC</span>
+    </div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">OR-Tools</span>
+      <span class="tag">PostGIS</span>
+      <span class="tag">OSRM</span>
+      <span class="tag">Folium</span>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script>
+(async () => {
+  const W = 1480, H = 740;
+  const svg = d3.select('#map').attr('width', W).attr('height', H);
+  const us = await fetch('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(r => r.json());
+  // Exclude AK + HI + PR for a clean contiguous frame
+  const states = topojson.feature(us, us.objects.states);
+  states.features = states.features.filter(f => !['02','15','72'].includes(f.id));
+  const projection = d3.geoAlbersUsa().fitSize([W, H], states);
+  const path = d3.geoPath(projection);
+  svg.append('g').selectAll('path').data(states.features).join('path')
+     .attr('class','state-land').attr('d', path);
+
+  // Synthetic NPS-style route: a curated 14-point loop touching most regions.
+  // Coordinates are [lon, lat] of real iconic NPS units, picked for visual coverage.
+  const stops = [
+    [-122.4486, 37.8199], // Golden Gate (SF area)
+    [-119.5383, 37.8651], // Yosemite
+    [-117.0794, 34.0083], // Joshua Tree
+    [-112.1129, 36.1069], // Grand Canyon
+    [-110.5885, 44.4280], // Yellowstone
+    [-103.4591, 43.8791], // Mt Rushmore
+    [-93.0900, 44.9778],  // Twin Cities / Mississippi NRRA
+    [-87.6298, 41.8781],  // Chicago / Pullman NM
+    [-83.0458, 42.3314],  // Detroit / River Rouge NHL
+    [-78.4767, 38.4767],  // Shenandoah
+    [-79.0193, 35.9132],  // Great Smoky (Sugarlands)
+    [-80.4139, 25.2866],  // Everglades / Royal Palm
+    [-90.0490, 35.1495],  // Memphis area / Lower Miss
+    [-95.3698, 29.7604],  // Houston / Big Thicket area
+  ];
+
+  const pts = stops.map(c => projection(c)).filter(p => p);
+  // Closed loop, smooth curve
+  const lineGen = d3.line().curve(d3.curveCardinalClosed.tension(0.55));
+  svg.append('path')
+     .datum(pts)
+     .attr('class','route-line')
+     .attr('d', lineGen);
+  // Halos + nodes
+  const g = svg.append('g');
+  g.selectAll('circle.halo').data(pts).join('circle')
+     .attr('class','route-node-halo')
+     .attr('cx', d => d[0]).attr('cy', d => d[1]).attr('r', 14);
+  g.selectAll('circle.node').data(pts).join('circle')
+     .attr('class','route-node')
+     .attr('cx', d => d[0]).attr('cy', d => d[1]).attr('r', 5.5);
+
+  window.__cardReady = true;
+})();
+</script>
+</body>
+</html>
