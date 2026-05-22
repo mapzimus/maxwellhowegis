@@ -21,9 +21,12 @@ jobs:
       - name: Wake Lynn Data Dive
         run: |
           echo "Pinging Streamlit app at $(date -u)"
-          # -L follows redirects, -s silent, -o /dev/null discards body,
-          # -w prints just the status code, --max-time caps the wait.
-          status=$(curl -L -s -o /dev/null -w "%{http_code}" --max-time 60 \
+          # Don't follow redirects — Streamlit issues a session-cookie
+          # redirect chain that loops a fresh curl. Any HTTP response
+          # (200/303/etc.) still resets Streamlit's inactivity timer,
+          # which is the whole point of this job.
+          status=$(curl -s -o /dev/null -w "%{http_code}" --max-time 60 \
+            -A "GitHubActions-KeepAlive/1.0 (maxwellhowegis.com)" \
             "https://lynn-data-dive.streamlit.app/?keepalive=1")
           echo "Status: $status"
           # Accept any 2xx/3xx as a successful wake. A 503 here often means
