@@ -264,7 +264,7 @@ const projects = [
         tools: ["Python", "Streamlit", "Plotly", "Pandas", "GeoPandas", "MA DESE E2C Hub", "US Census ACS", "MassGIS"],
         year: "2026",
         thumb: "images/projects/lynn-data-dive-thumb.png",
-        liveUrl: "https://lynn-data-dive.streamlit.app",
+        liveUrl: "Lynn-data-dive/",
         repoUrl: "https://github.com/mapzimus/lehs-data-dive"
     },
     {
