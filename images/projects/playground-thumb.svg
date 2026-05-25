@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" role="img" aria-label="Geopuesto Playground thumbnail — a sphere with two named points A and B, their great circle, and the four named equidistant points">
+  <!-- Background: deep instrument-panel dark (matches playground's stripped scientific aesthetic) -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#15191f"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </radialGradient>
+    <linearGradient id="orthoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F26522"/>
+      <stop offset="100%" stop-color="#00BFA5"/>
+    </linearGradient>
+    <linearGradient id="bisectorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="340" fill="url(#bgGrad)"/>
+
+  <!-- Faint lat/lon grid lines suggesting a sphere graticule (CRT instrument feel) -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.08" fill="none">
+    <line x1="0" y1="60"  x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="340"/>
+    <line x1="200" y1="0" x2="200" y2="340"/>
+    <line x1="300" y1="0" x2="300" y2="340"/>
+    <line x1="400" y1="0" x2="400" y2="340"/>
+    <line x1="500" y1="0" x2="500" y2="340"/>
+  </g>
+
+  <!-- Sphere outline (great-circle equator profile + meridian profiles) -->
+  <g transform="translate(300 170)" fill="none" stroke-width="1.5">
+    <!-- Equatorial outline circle -->
+    <circle r="125" stroke="#ffffff" stroke-opacity="0.25"/>
+    <!-- Tilted meridian outlines for 3D feel -->
+    <ellipse rx="125" ry="50"  stroke="#ffffff" stroke-opacity="0.12"/>
+    <ellipse rx="125" ry="80"  stroke="#ffffff" stroke-opacity="0.10"/>
+    <ellipse rx="125" ry="110" stroke="#ffffff" stroke-opacity="0.08"/>
+    <ellipse rx="50"  ry="125" stroke="#ffffff" stroke-opacity="0.12"/>
+    <ellipse rx="80"  ry="125" stroke="#ffffff" stroke-opacity="0.10"/>
+    <ellipse rx="110" ry="125" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- A→B great circle (orthodrome) — orange-to-teal gradient = the playground hero feature -->
+    <path d="M -118 -38 Q 0 -130, 118 38" stroke="url(#orthoGrad)" stroke-width="3.5" filter="url(#glow)"/>
+    <!-- Perpendicular bisector great circle — purple dashed (the locus of equidistant points) -->
+    <path d="M -50 110 Q 0 -10, 60 -110" stroke="url(#bisectorGrad)" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <!-- Point A — orange filled circle -->
+    <circle cx="-118" cy="-38" r="7" fill="#F26522" stroke="#0a0e14" stroke-width="2"/>
+    <text x="-128" y="-50" font-family="IBM Plex Mono, Consolas, monospace" font-size="13" font-weight="700" fill="#F26522" text-anchor="end">A</text>
+
+    <!-- Point B — teal filled circle -->
+    <circle cx="118" cy="38" r="7" fill="#00BFA5" stroke="#0a0e14" stroke-width="2"/>
+    <text x="128" y="50" font-family="IBM Plex Mono, Consolas, monospace" font-size="13" font-weight="700" fill="#00BFA5" text-anchor="start">B</text>
+
+    <!-- Geomate M (midpoint of A→B arc, near surface midpoint) — blue diamond -->
+    <g transform="translate(0 -2) rotate(45)">
+      <rect x="-6" y="-6" width="12" height="12" fill="#3b82f6" stroke="#0a0e14" stroke-width="1.5"/>
+    </g>
+    <text x="0" y="-18" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#3b82f6" text-anchor="middle">M</text>
+
+    <!-- Geomate −M (antipodal midpoint, the IP showcase) — blue diamond outline -->
+    <g transform="translate(0 80) rotate(45)">
+      <rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    </g>
+    <text x="0" y="105" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#3b82f6" text-anchor="middle">−M</text>
+
+    <!-- n (north pole of A−B great circle) — yellow diamond, small -->
+    <g transform="translate(-58 60) rotate(45)">
+      <rect x="-4" y="-4" width="8" height="8" fill="#fbbf24"/>
+    </g>
+    <text x="-58" y="78" font-family="IBM Plex Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#fbbf24" text-anchor="middle">n</text>
+
+    <!-- −n (south pole of A−B great circle) — yellow diamond outline -->
+    <g transform="translate(58 -60) rotate(45)">
+      <rect x="-4" y="-4" width="8" height="8" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+    </g>
+    <text x="58" y="-65" font-family="IBM Plex Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#fbbf24" text-anchor="middle">−n</text>
+  </g>
+
+  <!-- Corner brackets (echoes Mission Control / instrument-panel aesthetic) -->
+  <g stroke="#F26522" stroke-width="2" fill="none">
+    <path d="M 16 16 L 16 32 M 16 16 L 32 16"/>
+    <path d="M 584 16 L 568 16 M 584 16 L 584 32"/>
+    <path d="M 16 324 L 16 308 M 16 324 L 32 324"/>
+    <path d="M 584 324 L 584 308 M 584 324 L 568 324"/>
+  </g>
+
+  <!-- Title strip (bottom) -->
+  <g font-family="IBM Plex Mono, Consolas, monospace">
+    <text x="300" y="320" font-size="13" font-weight="600" fill="#00BFA5" text-anchor="middle" letter-spacing="0.3em">SPHERICAL GEOMETRY · SANDBOX</text>
+  </g>
+</svg>
