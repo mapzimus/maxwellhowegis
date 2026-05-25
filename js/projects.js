@@ -212,14 +212,30 @@ const projects = [
         title: "Geopuesto",
         category: "Web App",
         type: "tool",
-        tags: ["JavaScript", "Leaflet", "Geo Utility"],
-        summary: "Antipodal point calculator — enter any location and find its exact geographic opposite on Earth. A clean, focused geo-utility tool.",
-        description: "Geopuesto calculates antipodal points — the geographic opposite of any location on Earth's surface. Enter coordinates or click a map, and Geopuesto computes and displays the antipode with coordinates and a split-view map. A focused, single-purpose geo-utility.",
-        tools: ["JavaScript", "Leaflet", "GitHub Pages"],
+        tags: ["JavaScript", "Leaflet", "Antipodes", "Spherical Geometry", "Real-time APIs"],
+        summary: "Antipodal observation system — click anywhere on Earth and see what's on the exact opposite side. Live weather, recent earthquakes, satellites overhead, internet radio playing right now, ISS position, Mapillary photos, and 15+ more data layers. Plus 'Your Personal Equator' — the great circle of cities exactly equidistant from you and your antipode.",
+        description: "Geopuesto started as a one-line antipode calculator and grew into a full-screen Mission Control–style discovery tool. Click a map (or use coordinates / search / 'use my location' / a curated quick-pick), and Geopuesto computes the antipode and assembles 20+ enrichment modules about the place on the other side: Wikipedia, Wikimedia Commons photo gallery, Google Street View embed, recent Sentinel-2 satellite imagery, current weather + air quality, sunrise/sunset, country details, ISS and satellite passes overhead, live aircraft (OpenSky) and vessels (AISStream), recent USGS earthquakes, geomagnetic activity + aurora forecast (NOAA SWPC), active Smithsonian-tracked volcanoes, magnetic declination, internet radio stations in the antipode's country, and Mapillary community street-level photos. The 'Your Personal Equator' module renders the great circle perpendicular to the antipodal axis on both maps and surfaces every GeoNames city within a configurable tolerance band — ~10,007 km from you and from your antipode by construction. Modules priority-sort dynamically: an M5+ quake in the past 24h, aurora visible at the antipode's latitude, an active volcano within 250 km, or the ISS overhead all float to the top automatically. Sibling research-grade geometry tool lives at /geopuesto/playground/.",
+        tools: ["JavaScript", "Leaflet", "GeoNames", "Open-Meteo", "NOAA", "USGS", "OpenSky", "AISStream", "Mapillary", "Sentinel-2 (CDSE)", "GitHub Pages"],
         year: "2025–2026",
         thumb: "images/projects/geopuesto-thumb.png",
         liveUrl: "geopuesto/",
-        repoUrl: null
+        repoUrl: "https://github.com/mapzimus/geopuesto"
+    },
+    {
+        id: 12,
+        era: "current",
+        title: "Geopuesto Playground",
+        category: "Web App",
+        type: "tool",
+        tags: ["JavaScript", "Spherical Geometry", "Polyhedra", "Geomates", "Curves Suite", "Sandbox"],
+        summary: "Research-grade sandbox for spherical geometry on Earth's surface. Two-Point Mode (A→B great circle + the four named equidistant points), Polyhedra Suite (Platonic + Archimedean solids wrapped on a sphere with a spin slider), Curves Suite (loxodromes, small-circles-at-distance-d, Fibonacci spheres, geodesics), and the 'Geomates' midpoint pair — the IP showcase.",
+        description: "Geopuesto's sibling app: stripped, instrument-style interface focused on the underlying geometry. Two-Point Mode lets you pick A and B and renders the great-circle (orthodrome), perpendicular bisector, and four named equidistant points (M = midpoint of A→B arc, −M = its antipode, n = north pole of the A–B great circle, −n = its south pole). The 'Geomate' pair (M, −M) is a paired-discovery feature: two surface points each exactly equidistant from A and from B, computed without iteration. Polyhedra Suite wraps Platonic solids (tetra/cube/octa/icosa/dodeca), Archimedean ones (cuboctahedron, truncated icosahedron a.k.a. the soccer ball / C60), and special cases (rhombic triacontahedron, Stella Octangula, geodesic, n-prism / n-antiprism, Fibonacci sphere — 6 to 1000 points) around the sphere with vertex 0 anchored at any point and a 0–360° spin slider that rotates the wireframe in real time. Curves Suite ships small-circle-at-distance-d (the locus of points exactly d km from anchor — a 'ring of cities at d km from here'), loxodromes (constant-bearing rhumb lines, intersected against small circles), with isoazimuthal curves and portolan windroses on deck. Cross-track / along-track / Voronoi readouts. Share-link state encoding (A, B, anchor, shape, spinDeg restore from URL hash) and GeoJSON export of the current configuration.",
+        tools: ["JavaScript", "Leaflet", "Pure-JS spherical math kernel", "Three.js–free", "GitHub Pages"],
+        year: "2026",
+        thumb: null,  // TODO: replace with a screenshot of the playground actually rendering — meanwhile the type-tool emoji placeholder shows
+        liveUrl: "geopuesto/playground/",
+        repoUrl: "https://github.com/mapzimus/geopuesto",
+        status: "development"
     },
     {
         id: 11,
