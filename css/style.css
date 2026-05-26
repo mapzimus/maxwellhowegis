@@ -2349,3 +2349,138 @@ main { flex: 1; }
 @media (max-width: 420px) {
     .gallery-masonry { columns: 1; }
 }
+
+/* ===== FIELD NOTES ===== */
+.fn-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 32px 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+.fn-chip {
+    appearance: none;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.fn-chip:hover {
+    color: var(--text-primary);
+    border-color: var(--border-light);
+}
+.fn-chip.is-active {
+    background: var(--accent-blue);
+    color: var(--bg-primary);
+    border-color: var(--accent-blue);
+}
+
+.fn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fn-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    transition: all var(--transition);
+}
+.fn-card:hover {
+    border-color: var(--border-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.fn-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+}
+.fn-meta time { color: var(--accent-blue); }
+.fn-meta-sep { opacity: 0.5; }
+
+.fn-title {
+    font-size: clamp(20px, 2.4vw, 26px);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px 0;
+    line-height: 1.25;
+}
+.fn-title a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+.fn-title a:hover { color: var(--accent-blue); }
+
+.fn-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+.fn-tag {
+    appearance: none;
+    background: rgba(135, 195, 255, 0.08);
+    color: var(--accent-blue);
+    border: 1px solid rgba(135, 195, 255, 0.18);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.fn-tag:hover {
+    background: rgba(135, 195, 255, 0.18);
+    border-color: var(--accent-blue);
+}
+
+.fn-summary {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 18px 0;
+}
+
+.fn-cta {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent-blue);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: transform var(--transition);
+}
+.fn-cta:hover {
+    color: var(--accent-indigo);
+    transform: translateX(2px);
+}
+
+.fn-empty {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 60px 0;
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+    .fn-card { padding: 22px 20px; }
+}
