@@ -282,22 +282,6 @@ const projects = [
         thumb: "images/projects/lynn-data-dive-thumb.png",
         liveUrl: "Lynn-data-dive/",
         repoUrl: "https://github.com/mapzimus/lehs-data-dive"
-    },
-    {
-        id: 14,
-        era: "current",
-        title: "The Whydah Gally — A Pirate Story Told Spatially",
-        category: "Web Mapping",
-        type: "web",
-        tags: ["MapLibre GL JS", "Custom Dashboard", "Primary-Source Research", "Curriculum Design", "3D Globe Tour"],
-        summary: "A custom 19-stop 3D globe flythrough and curriculum dashboard for a 5-week middle-school PBL unit on the 1717 Whydah Gally pirate shipwreck. Built end-to-end in vanilla JS.",
-        description: "Built for the LEAP4Ed Summer 2026 program in Salem, MA — a comprehensive teaching dashboard for 7th-graders on the Whydah Gally story (slave ship, pirate flagship, wreck, modern recovery). Includes a custom 3D globe flythrough built with MapLibre GL JS that flies between 19 chronological waypoints with photo and caption overlays plus a 15-second slow pan at each location. Other features: primary-source quote integration from the 1718 Trials of Eight Persons; the Hanna counter-thesis on colonial 'pirate nests' alongside the Rediker working-class reading; live USGS coastal-cam embeds at the Marconi Beach wreck site; and a researched cast of period figures. Vanilla HTML/CSS/JS — no build step, no API keys.",
-        tools: ["MapLibre GL JS", "Esri World Imagery", "Vanilla JavaScript", "USGS Coastal Cams", "Primary-Source Research", "Curriculum Design"],
-        year: "2026",
-        course: "LEAP4Ed Summer 2026 — Whydah PBL Curriculum",
-        thumb: "images/projects/whydah-thumb.png",
-        liveUrl: "whydah/#maps-geo",
-        repoUrl: "https://github.com/mapzimus/Whydah-Unit"
     }
 ];
 
