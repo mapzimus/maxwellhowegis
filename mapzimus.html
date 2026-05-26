@@ -75,13 +75,13 @@
 
     <div class="topo-divider"></div>
 
-    <!-- IDEA BOARD TOOL -->
+    <!-- VIRAL MAP IDEA GENERATION -->
     <section class="featured-band parallax-section">
         <div class="section">
             <div class="section-header fade-in">
                 <div class="section-label">// The Tool Behind the Maps</div>
-                <h2 class="section-title">Mapzimus Idea Board</h2>
-                <p class="section-desc">A custom platform for managing, scoring, and correlating infographic map ideas. Built from scratch to organize the process of picking and prioritizing map topics.</p>
+                <h2 class="section-title">Viral Map Idea Generation</h2>
+                <p class="section-desc">A custom scoring engine that ranks 19,852 candidate map ideas by predicted virality. The V-Score is the centerpiece — a weighted composite of seven dimensions, calibrated across five iterations against what actually performs on Reddit and Twitter.</p>
             </div>
             <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:40px;" class="fade-in">
                 <a href="https://mapzimus.github.io/mapzimus-board/" target="_blank" class="btn btn-primary">Launch Board</a>
@@ -89,28 +89,43 @@
             </div>
             <div class="feature-detail-grid fade-in fade-in-stagger">
                 <div class="feature-detail-card">
-                    <h3><span style="color:var(--accent-teal);">01</span> Multi-Dimensional Scoring</h3>
-                    <p>Every idea is scored on V-Score, emotional impact, clarity, surprise, and more. Drag sliders to filter by score ranges and stack multiple dimensions for precision targeting.</p>
+                    <h3><span style="color:var(--accent-teal);">01</span> Why a score at all</h3>
+                    <p>A database of 19,852 candidate map ideas is useless without ranking. Gut-picking doesn't scale, and "interesting" is too lossy a signal. The V-Score is a 0–100 virality estimate computed from seven weighted dimensions, with a data-readiness penalty and a format bonus — designed to surface the ideas that are <em>both</em> worth making <em>and</em> ready to make.</p>
                 </div>
                 <div class="feature-detail-card">
-                    <h3><span style="color:var(--accent-teal);">02</span> Geographic Filtering</h3>
-                    <p>Filter ideas by state-level geography to find story angles tied to specific regions. Useful for targeting local audiences or finding patterns unique to certain areas.</p>
+                    <h3><span style="color:var(--accent-teal);">02</span> The formula (v5)</h3>
+                    <p>Each idea is hand-scored 0–100 on seven dimensions. The raw score is a weighted sum, normalized by the sum of weights (11.75) back to a 0–100 range, then multiplied by a data-readiness penalty and offset by a format bonus.</p>
+                    <pre style="background:rgba(0,0,0,0.25); padding:12px 14px; border-radius:8px; font-family:'JetBrains Mono',monospace; font-size:12px; line-height:1.5; overflow-x:auto; margin-top:12px; color:var(--text-secondary);">raw = emotional·2 + relatability·2
+    + clarity·1.25 + surprise·1.5
+    + tension·1.5 + visual·2.0
+    + originality·1.5
+
+vs  = ⌊raw / 11.75 · penalty⌋ + bonus
+
+penalty = 1 − 0.5·(1 − data_ready/100)
+bonus   = +3 choropleth, +2 bivariate/dot</pre>
                 </div>
                 <div class="feature-detail-card">
-                    <h3><span style="color:var(--accent-teal);">03</span> Data Correlation Engine</h3>
-                    <p>Pick any variable and find every idea it connects to — both direct usage and joinable relationships. Reveals hidden connections between datasets and story angles.</p>
+                    <h3><span style="color:var(--accent-teal);">03</span> Calibrating the weights</h3>
+                    <p>The first four versions of the V-Score treated all dimensions roughly equally. They were wrong. v5 reweighted against observed engagement:</p>
+                    <ul style="margin:8px 0 0 0; padding-left:18px; color:var(--text-secondary); font-size:14px; line-height:1.6;">
+                        <li><strong style="color:#10b981;">Visual → 2.0</strong> — highest correlation with engagement, the #1 scroll-stopper.</li>
+                        <li><strong style="color:#a855f7;">Tension → 1.5</strong> — controversy drives shares and comments.</li>
+                        <li><strong style="color:#f472b6;">Originality → 1.5</strong> — uniqueness prevents scroll-past.</li>
+                        <li><strong style="color:#fb923c;">Clarity → 1.25</strong> — knocked down: low variance across ideas means it barely differentiates winners.</li>
+                    </ul>
                 </div>
                 <div class="feature-detail-card">
-                    <h3><span style="color:var(--accent-teal);">04</span> Format Analysis</h3>
-                    <p>Browse ideas by output format — scatter plots, choropleth maps, bivariate visualizations, bar charts, treemaps — to match the right visual form to each story.</p>
+                    <h3><span style="color:var(--accent-teal);">04</span> The data-readiness penalty</h3>
+                    <p>Earlier versions let half-baked ideas outrank shovel-ready ones just because they scored high on emotion or surprise. v5 steepened the penalty: an idea with data_ready = 60 only earns 80% of its raw score; data_ready = 20 cuts it to 60%. The result is a leaderboard biased toward what can actually ship this week, not what would be cool if you had three months and an unreleased dataset.</p>
                 </div>
                 <div class="feature-detail-card">
-                    <h3><span style="color:var(--accent-teal);">05</span> Type Classification</h3>
-                    <p>Ideas are classified as MAP, XREF, CHART, or RANK — each with distinct visual treatment. Filter by type to focus on specific visualization approaches.</p>
+                    <h3><span style="color:var(--accent-teal);">05</span> The format bonus</h3>
+                    <p>Two visual formats have a proven track record on Reddit and Twitter map subs: <strong>choropleths</strong> (+3) and <strong>bivariate / dot maps</strong> (+2). v5 added these as explicit additive bonuses on top of the normalized score — recognizing that "how it's drawn" can be as decisive as "what it shows." A mediocre choropleth often outperforms a brilliant scatter plot in the wild.</p>
                 </div>
                 <div class="feature-detail-card">
-                    <h3><span style="color:var(--accent-teal);">06</span> Status Tracking</h3>
-                    <p>Track each idea from initial concept through In Progress, Built, and Published stages. Notes and annotations persist for ongoing editorial context.</p>
+                    <h3><span style="color:var(--accent-teal);">06</span> What the board does with it</h3>
+                    <p>Beyond the score itself, the board filters 19,852 ideas by geography, topic, output format, type (MAP / XREF / CHART / RANK), and bonus category. The correlation engine surfaces ideas that share datasets or joinable variables. Status tracks each idea from concept through In Progress, Built, and Published. The whole system is one human (me) trying to be honest with myself about which idea is actually worth making next.</p>
                 </div>
             </div>
         </div>
