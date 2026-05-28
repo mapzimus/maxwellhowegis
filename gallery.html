@@ -336,6 +336,257 @@
                 </div>
             </div>
 
+            <div class="gallery-brick"
+                 data-title="Optitrek: Olson 2015 vs OR-Tools 2026"
+                 data-caption="Same 50 US landmarks, same Google distance matrix Randy Olson used in his viral 2015 ‘optimal road trip’ — but solved with Google OR-Tools’ constraint-based VRP. Result: 2.32 hours saved off 224 driving hours (~1% improvement). 44 of 50 edges agree between the two solvers; the disagreement concentrates in dense Midwest clusters where small re-orderings shave minutes.">
+                <img src="images/gallery/optitrek-olson-diff.jpg" alt="Side-by-side route comparison — Olson 2015 genetic algorithm vs OR-Tools 2026 VRP solver" loading="lazy">
+                <div class="gallery-brick-label">Optitrek: Olson vs OR-Tools</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Optitrek: Olson 2015 vs OR-Tools 2026</h3>
+                    <p>Same 50 landmarks, same distance matrix, two different optimizers — OR-Tools’ VRP shaved 2.32 hours off Olson’s genetic-algorithm tour.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">Optitrek</span>
+                        <span class="gallery-brick-tag">OR-Tools</span>
+                        <span class="gallery-brick-tag">Python</span>
+                        <span class="gallery-brick-tag">Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Optitrek: Four-Way Route Overlay"
+                 data-caption="All four Optitrek routing solutions plotted on the same map — Olson 2015, OR-Tools capped, OR-Tools uncapped, and the OSRM-routed variant. Same 50 stops; the divergence between lines is where solver philosophy and routing engine disagree on the right path between two waypoints.">
+                <img src="images/gallery/optitrek-route-overlay.png" alt="Four routing solutions overlaid on the same 50-stop tour" loading="lazy">
+                <div class="gallery-brick-label">Optitrek: Four-Way Overlay</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Optitrek: Four-Way Route Overlay</h3>
+                    <p>Four solver/router combinations plotted on the same 50 stops — divergence shows where they disagree.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">Optitrek</span>
+                        <span class="gallery-brick-tag">Folium</span>
+                        <span class="gallery-brick-tag">Routing</span>
+                        <span class="gallery-brick-tag">Comparison</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Optitrek: OSRM Western Parks Proof"
+                 data-caption="Validation tour for the Optitrek routing pipeline — eight Western US parks (Yellowstone, Bryce, Zion, Grand Canyon, and more) routed against a self-hosted OSRM US extract. 2,800 miles, 59.3 hours of driving across 8 legs. Proof that the self-hosted router returns geometrically correct paths.">
+                <img src="images/gallery/optitrek-osrm-proof.png" alt="Eight-stop Western US parks loop routed on self-hosted OSRM" loading="lazy">
+                <div class="gallery-brick-label">Optitrek: OSRM Proof</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Optitrek: OSRM Western Parks Proof</h3>
+                    <p>8-stop western parks loop routed on self-hosted OSRM — 2,800 mi / 59.3 hours. Pipeline validation.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">Optitrek</span>
+                        <span class="gallery-brick-tag">OSRM</span>
+                        <span class="gallery-brick-tag">Self-Hosted</span>
+                        <span class="gallery-brick-tag">Routing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn: KDE Heatmap of Student Addresses"
+                 data-caption="Kernel density estimate of geocoded student home addresses around Lynn English High School. Darker = higher relative density. Built in R with ggplot2 over a Stadia Maps basemap. One of 20 maps from my MS capstone."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-kde-heatmap.png" alt="KDE heatmap of student addresses around Lynn English High School" loading="lazy">
+                <div class="gallery-brick-label">Lynn: KDE Heatmap</div>
+                <div class="gallery-brick-overlay">
+                    <h3>KDE Heatmap of Student Addresses</h3>
+                    <p>Kernel density of geocoded student home addresses around LEHS — built in R + ggplot2 + Stadia basemap.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">ggplot2</span>
+                        <span class="gallery-brick-tag">KDE</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn: Absenteeism Hexbin with Neighborhood Labels"
+                 data-caption="100-meter hexagonal bins of chronic-absence rate around Lynn English HS, anchored with Lynn neighborhood landmarks (Central Square Historic District, East Avenue, Lynnway, Summer Street) so the patterns connect to physical places, not just coordinates."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-hexbin-neighborhoods.png" alt="Hexbin absence rate map of Lynn with neighborhood landmark labels" loading="lazy">
+                <div class="gallery-brick-label">Lynn: Hexbin w/ Neighborhoods</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Absenteeism Hexbin — Neighborhood Context</h3>
+                    <p>100m hexagonal bins of absence rate with Lynn neighborhood landmarks for geographic context.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">Hexbin</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                        <span class="gallery-brick-tag">Lynn</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn: Absenteeism by Ethnicity (Small Multiples)"
+                 data-caption="Six-panel small-multiple comparison of absenteeism distribution by self-reported ethnicity (Asian, Black, Hispanic, Indigenous, Multiracial, White) within 3 square miles of Lynn English HS. Same scale, same filter, same basemap across all six panels — only the data changes."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-absenteeism-by-ethnicity.png" alt="Six-panel small multiples of absenteeism by ethnicity around Lynn English HS" loading="lazy">
+                <div class="gallery-brick-label">Lynn: Ethnicity Panels</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Absenteeism by Ethnicity — Small Multiples</h3>
+                    <p>Six-panel small multiples — absenteeism distribution by ethnicity within 3 miles of LEHS.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">Small Multiples</span>
+                        <span class="gallery-brick-tag">Equity</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn: Citywide Absenteeism"
+                 data-caption="Citywide view of mapped absenteeism for Lynn English HS students — each dot is a student address, colored by their personal absence rate (0–100%). Darker reds indicate students missing more school. R + ggmap with Stadia basemap."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-citywide-absenteeism.png" alt="Citywide absenteeism dot map for Lynn English HS students" loading="lazy">
+                <div class="gallery-brick-label">Lynn: Citywide Absenteeism</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Citywide Absenteeism — Mapped by Address</h3>
+                    <p>Every LEHS student plotted by home address, colored by personal absence rate. Darker = higher absenteeism.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">Dot Map</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                        <span class="gallery-brick-tag">Lynn</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn: Absenteeism by Grade Level"
+                 data-caption="Four-panel small multiples of hexbin absenteeism broken out by grade level (9, 10, 11, 12) — same scale, same filter, same area, only the grade changes. Patterns hold roughly across grades but density shifts subtly between underclassmen and seniors."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-absenteeism-by-grade.png" alt="Four-panel small multiples of absenteeism hexbins by grade level at LEHS" loading="lazy">
+                <div class="gallery-brick-label">Lynn: Grade-Level Panels</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Absenteeism by Grade Level (Hexbin)</h3>
+                    <p>Four-panel small multiples — absence rate hexbins by grade (9, 10, 11, 12).</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">Hexbin</span>
+                        <span class="gallery-brick-tag">Small Multiples</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn: Absenteeism by Multilingual Learner Status"
+                 data-caption="Side-by-side hexbin comparison of absenteeism patterns between Multilingual Learner (ML) and Non-ML students around Lynn English HS. Maps the geographic dimension of the multilingual learner achievement gap."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-absenteeism-ml-status.png" alt="Side-by-side hexbin map: ML vs non-ML student absenteeism around Lynn English HS" loading="lazy">
+                <div class="gallery-brick-label">Lynn: ML vs Non-ML</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Absenteeism by ML Status</h3>
+                    <p>Multilingual Learner vs Non-ML absenteeism — the achievement gap rendered geographically.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">R</span>
+                        <span class="gallery-brick-tag">Hexbin</span>
+                        <span class="gallery-brick-tag">Equity</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn Public Schools — Study Area"
+                 data-caption="Reference map of every Lynn Public Schools site — elementary, middle, high, charter, vocational, and parochial — inside the Lynn city boundary. Built in ArcGIS Pro using WGS 1984 Web Mercator. The foundation map every other capstone analysis builds on."
+                 data-link="lynn.html">
+                <img src="images/gallery/lynn-lps-study-area.png" alt="Reference map of all Lynn Public Schools sites within the Lynn city boundary" loading="lazy">
+                <div class="gallery-brick-label">Lynn: LPS Study Area</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Lynn Public Schools — Study Area</h3>
+                    <p>Reference map of every LPS site within the Lynn city boundary — foundation for the capstone.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">ArcGIS Pro</span>
+                        <span class="gallery-brick-tag">Reference Map</span>
+                        <span class="gallery-brick-tag">Capstone</span>
+                        <span class="gallery-brick-tag">Lynn</span>
+                    </div>
+                    <a href="lynn.html" class="gallery-brick-link" onclick="event.stopPropagation()">View full project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Lynn, Massachusetts — Minimalist Street Network"
+                 data-caption="Black-on-white rendering of Lynn’s full road network at 1:90,000 scale, geo-located at 70°57&prime;55&Prime;W / 42°27&prime;42&Prime;N. OSM data styled as a print piece — a hometown portrait in line work.">
+                <img src="images/gallery/lynn-street-minimal.png" alt="Minimalist black-on-white street network map of Lynn, Massachusetts" loading="lazy">
+                <div class="gallery-brick-label">Lynn — Street Network</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Lynn, Massachusetts — Street Network</h3>
+                    <p>Minimalist black-on-white road network of Lynn at 1:90,000 — OSM data styled for print.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">OSM</span>
+                        <span class="gallery-brick-tag">Print Cartography</span>
+                        <span class="gallery-brick-tag">Minimalism</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Salem Antipodal Ring"
+                 data-caption="Every point on this ring around Salem, MA has a matching antipode on the exact opposite side of the globe. Geometric exploration of antipodal correspondence — output from the Geopuesto playground.">
+                <img src="images/gallery/salem-antipodal-ring.png" alt="Geometric ring showing antipodal correspondence around Salem, MA" loading="lazy">
+                <div class="gallery-brick-label">Salem Antipodal Ring</div>
+                <div class="gallery-brick-overlay">
+                    <h3>Salem Antipodal Ring</h3>
+                    <p>Antipodal correspondence around Salem, MA — every point on the ring has a matching point on the opposite side of the globe.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">Geopuesto</span>
+                        <span class="gallery-brick-tag">Geometry</span>
+                        <span class="gallery-brick-tag">Playground</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="Massachusetts EV Chargers — 2025 Tiered View"
+                 data-caption="Updated 2025 distribution of Tier 1, 2, and 3 EV chargers across Massachusetts, refreshed from the original GPH904 research baseline. ArcGIS Pro layout with the standard cartographic furniture.">
+                <img src="images/gallery/ma-chargers-2025.png" alt="2025 Massachusetts EV charger locations classified by tier" loading="lazy">
+                <div class="gallery-brick-label">MA EV Chargers — 2025</div>
+                <div class="gallery-brick-overlay">
+                    <h3>MA EV Chargers — 2025 Tiered View</h3>
+                    <p>2025 update of MA EV charger distribution with Tier 1/2/3 classification — refreshed from GPH904 research.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">ArcGIS Pro</span>
+                        <span class="gallery-brick-tag">EV Infrastructure</span>
+                        <span class="gallery-brick-tag">2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-brick"
+                 data-title="TappyMaps Demo: US Uninsured Rate"
+                 data-caption="Choropleth demo from TappyMaps, an interactive cartography tool I’m building — state-level US uninsured rates in 5 quantile bins from 2023 Census data. The map renders as a shareable card."
+                 data-link="tools.html">
+                <img src="images/gallery/tappymaps-uninsured-rate.png" alt="TappyMaps choropleth of US uninsured rate by state" loading="lazy">
+                <div class="gallery-brick-label">TappyMaps: Uninsured Rate</div>
+                <div class="gallery-brick-overlay">
+                    <h3>TappyMaps Demo: US Uninsured Rate</h3>
+                    <p>State-level US uninsured rate, 5 quantile bins, 2023 Census data — rendered as a TappyMaps share card.</p>
+                    <div class="gallery-brick-tags">
+                        <span class="gallery-brick-tag">TappyMaps</span>
+                        <span class="gallery-brick-tag">Choropleth</span>
+                        <span class="gallery-brick-tag">Census</span>
+                        <span class="gallery-brick-tag">Tool Demo</span>
+                    </div>
+                    <a href="tools.html" class="gallery-brick-link" onclick="event.stopPropagation()">See the tool &rarr;</a>
+                </div>
+            </div>
+
         </div>
         <p class="gallery-masonry-note">More maps added as they're finished — follow <a href="https://www.instagram.com/mapzimus" target="_blank" rel="noopener">@Mapzimus</a> for new drops.</p>
     </div>
@@ -379,6 +630,19 @@
 <script src="js/main.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+    // Shuffle bricks (Fisher–Yates) so the gallery feels alive on every visit.
+    // Brief reorder flash is acceptable (no fade-in chosen).
+    const masonry = document.getElementById('galleryMasonry');
+    if (masonry) {
+        const bricks = Array.from(masonry.children);
+        for (let i = bricks.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [bricks[i], bricks[j]] = [bricks[j], bricks[i]];
+        }
+        // appendChild on an existing node moves it — no duplicates.
+        bricks.forEach(b => masonry.appendChild(b));
+    }
+
     document.querySelectorAll('.gallery-brick').forEach(item => {
         item.addEventListener('click', (e) => {
             if (e.target.classList.contains('gallery-brick-link') || e.target.closest('.gallery-brick-link')) return;
