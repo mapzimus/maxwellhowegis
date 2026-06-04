@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthodromes & Antipodal Geometry | Field Notes — Maxwell Howe</title>
+    <meta name="description" content="What if any city on Earth were the North Pole? A geometry explainer on great circles, personal equators, and their history in cartography — companion to the Geopuesto dashboard.">
+    <meta property="og:title" content="Orthodromes & Antipodal Geometry — Maxwell Howe">
+    <meta property="og:description" content="What if any city on Earth were the North Pole? A geometry explainer on great circles, personal equators, and their 1,800-year history in cartography.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://maxwellhowegis.com/field-notes/orthodromes/">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="../../index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../portfolio.html">Projects</a></li>
+            <li><a href="../../gallery.html">Map Gallery</a></li>
+            <li><a href="../../side-projects.html">Beyond GIS</a></li>
+            <li><a href="../" class="active">Field Notes</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="main-content">
+
+    <!-- ===== ARTICLE HEADER ===== -->
+    <header class="fn-article-header fade-in">
+        <nav class="fn-breadcrumb" aria-label="Breadcrumb">
+            <a href="../">Field Notes</a>
+            <span class="fn-breadcrumb-sep">›</span>
+            <span>Orthodromes &amp; Antipodal Geometry</span>
+        </nav>
+
+        <div class="section-label">// build · research · geometry</div>
+        <h1 class="fn-article-title">Orthodromes &amp; Antipodal Geometry</h1>
+
+        <div class="fn-article-meta">
+            <time datetime="2026-05-24">May 24, 2026</time>
+            <span class="fn-article-meta-sep">·</span>
+            <span>interactive · ~15 min read</span>
+        </div>
+
+        <div class="fn-tags" style="margin-top: 12px;">
+            <span class="fn-tag">#build</span>
+            <span class="fn-tag">#research</span>
+            <span class="fn-tag">#geometry</span>
+        </div>
+    </header>
+
+    <!-- ===== ARTICLE BODY ===== -->
+    <article class="fn-article-body fade-in">
+
+        <p class="fn-article-lead">
+            Pick any city on Earth. Treat it as if it were the North Pole. Once you do that, the geometry locks in automatically — there's a unique axis, a unique antipode, and one great circle perpendicular to both. That circle is the city's <em>personal equator</em>. This is a written companion to the interactive dashboard: the geometry behind the tool, the history behind the geometry, and the reasoning behind the build decisions.
+        </p>
+
+        <h2>The Question</h2>
+
+        <p>
+            The standard equator exists because we chose the geographic poles as our reference axis. That choice is arbitrary — Earth doesn't rotate around the poles because the poles are special; the poles are just whatever points happen to be on the rotation axis. If you picked a different axis, you'd get a different equator.
+        </p>
+
+        <p>
+            So what happens if you treat a specific city as the "North Pole" of a personal coordinate system? What is that city's equator? Where are its tropics? The answer is a well-defined geometric object — the <em>antipodal equatorial orthodrome</em> — and it has a surprisingly long history in mathematics and cartography.
+        </p>
+
+        <h2>What Is a Great Circle?</h2>
+
+        <p>
+            A <strong>great circle</strong> (orthodrome) is any circle on the surface of a sphere whose plane passes through the center of that sphere. It's the largest circle you can draw on a sphere, and it defines the shortest path between any two points on the surface — what geometers call a <em>geodesic</em>. Pilots route along great circles. Seismic waves follow them. The equator is one. Every meridian is one. There are infinitely many.
+        </p>
+
+        <p>
+            The key property for our purposes: given any diameter of a sphere (a line through the center connecting two antipodal points), there is exactly one great circle whose plane is perpendicular to that diameter. One diameter, one great circle. That great circle is the personal equator of the points at each end of the diameter.
+        </p>
+
+        <!-- Fig 1 -->
+        <div class="fn-diagram">
+            <svg viewBox="0 0 580 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing a sphere with a city point, its antipode, the axis connecting them, and the resulting personal equator great circle">
+                <defs>
+                    <radialGradient id="sg1" cx="38%" cy="32%" r="62%">
+                        <stop offset="0%" stop-color="#1a2236"/>
+                        <stop offset="100%" stop-color="#080c14"/>
+                    </radialGradient>
+                    <clipPath id="sc1">
+                        <circle cx="275" cy="170" r="142"/>
+                    </clipPath>
+                </defs>
+
+                <!-- Sphere body -->
+                <circle cx="275" cy="170" r="142" fill="url(#sg1)" stroke="#2a3550" stroke-width="1.5"/>
+
+                <!-- Standard equator reference — faint, horizontal -->
+                <ellipse cx="275" cy="170" rx="142" ry="30" fill="none" stroke="#2a3550" stroke-width="1.2" stroke-dasharray="5 4"/>
+
+                <!-- Personal equator — teal, tilted perpendicular to city-antipode axis
+                     Axis runs from upper-left (city) to lower-right (antipode) at ~45°.
+                     Perpendicular direction is ~-45° from horizontal, so rotate -45. -->
+                <ellipse cx="275" cy="170" rx="142" ry="56" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-dasharray="160 20" stroke-dashoffset="10" transform="rotate(-45, 275, 170)" opacity="0.25"/>
+                <ellipse cx="275" cy="170" rx="142" ry="56" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-dasharray="140 40" transform="rotate(-45, 275, 170)"/>
+
+                <!-- Axis line — dashed, through city and antipode -->
+                <line x1="160" y1="60" x2="390" y2="280" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="7 5"/>
+
+                <!-- City dot -->
+                <circle cx="176" cy="76" r="9" fill="#fbbf24" stroke="#080c14" stroke-width="2"/>
+                <!-- Antipode dot -->
+                <circle cx="374" cy="264" r="9" fill="#fb7185" stroke="#080c14" stroke-width="2"/>
+
+                <!-- ⊥ mark at sphere center -->
+                <text x="285" y="167" fill="#a5b4fc" font-family="Inter, sans-serif" font-size="15" opacity="0.7">⊥</text>
+
+                <!-- Labels — city -->
+                <line x1="176" y1="76" x2="108" y2="50" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
+                <text x="58" y="46" fill="#fbbf24" font-family="Inter, sans-serif" font-size="13" font-weight="600">City (P)</text>
+
+                <!-- Labels — antipode -->
+                <line x1="374" y1="264" x2="440" y2="290" stroke="#fb7185" stroke-width="1" opacity="0.5"/>
+                <text x="445" y="294" fill="#fb7185" font-family="Inter, sans-serif" font-size="13" font-weight="600">Antipode (P′)</text>
+
+                <!-- Labels — personal equator -->
+                <text x="426" y="155" fill="#5eead4" font-family="Inter, sans-serif" font-size="12" font-weight="500">Personal</text>
+                <text x="426" y="172" fill="#5eead4" font-family="Inter, sans-serif" font-size="12" font-weight="500">equator</text>
+
+                <!-- Labels — standard equator -->
+                <text x="18" y="178" fill="#4a5a74" font-family="Inter, sans-serif" font-size="11">Standard</text>
+                <text x="18" y="192" fill="#4a5a74" font-family="Inter, sans-serif" font-size="11">equator</text>
+
+                <!-- Label — axis -->
+                <text x="308" y="154" fill="#a5b4fc" font-family="JetBrains Mono, monospace" font-size="10" transform="rotate(45, 308, 154)" opacity="0.8">axis PP′</text>
+            </svg>
+            <p class="fn-diagram-caption">
+                FIG. 1 — A city P (amber) and its antipode P′ (rose) define an axis through the sphere's center. The unique great circle perpendicular to that axis (teal) is P's personal equator. The standard geographic equator is shown for reference (gray dashed).
+            </p>
+        </div>
+
+        <h2>The Personal Equator</h2>
+
+        <p>
+            Given any point P on a sphere, find its antipode P′ by inverting the coordinates through the center: if P is at latitude φ and longitude λ, then P′ is at latitude −φ and longitude λ ± 180°. The line PP′ is a diameter of the sphere. The plane through the sphere's center perpendicular to PP′ intersects the sphere in a great circle. That great circle is P's <strong>personal equator</strong> — the antipodal equatorial orthodrome.
+        </p>
+
+        <p>
+            This construction is entirely symmetrical: P and P′ are interchangeable. The personal equator of Boston is the same circle as the personal equator of Boston's antipode (which happens to be in the Indian Ocean south of Reunion Island). The circle doesn't belong to either point; it belongs to the axis.
+        </p>
+
+        <p>
+            Every point on the personal equator is equidistant from P and P′, measured along the sphere's surface. This mirrors exactly how every point on the geographic equator is equidistant from the North and South Poles. The geometry is identical — you've just rotated the whole frame of reference.
+        </p>
+
+        <h2>The History</h2>
+
+        <p>
+            The concept of treating a non-standard axis as the "poles" of a coordinate system is not new. It appears in at least two major branches of historical mathematics.
+        </p>
+
+        <div class="fn-research">
+            <div class="fn-research-label">Historical Context — 2nd Century AD</div>
+            <p>
+                <strong>Ptolemy's oblique sphere.</strong> In the <em>Almagest</em> (c. 150 AD), Ptolemy developed a model for predicting the apparent positions of stars as seen from different latitudes on Earth. The celestial sphere appears tilted relative to your local horizon — the angle depends on your latitude. To handle this mathematically, Ptolemy worked with a sphere whose reference axis was the ecliptic poles (the axis perpendicular to Earth's orbital plane), not the geographic poles. The great circle perpendicular to that axis — the ecliptic — played the role of the "equator." The same construction: pick an axis, find the perpendicular great circle. Ptolemy called this the "oblique sphere" because the equator-equivalent appeared tilted from any observer not on the ecliptic.
+            </p>
+        </div>
+
+        <div class="fn-research">
+            <div class="fn-research-label">Historical Context — 20th Century Cartography</div>
+            <p>
+                <strong>Oblique Mercator projections.</strong> The standard Mercator projection treats the geographic equator as its central great circle and wraps a tangent cylinder around it. When you need to map a region that runs diagonally — the Alaska Panhandle, a satellite ground track, a flight corridor between two distant cities — you use a different great circle as the central line. An <em>oblique Mercator</em> chooses any great circle as its "equator," computes the full personal coordinate system around the perpendicular axis, and applies the standard Mercator mathematics in that rotated frame. The entire infrastructure of oblique cylindrical projections is built on the antipodal equatorial orthodrome, even if it isn't named that way.
+            </p>
+        </div>
+
+        <!-- Fig 2 -->
+        <div class="fn-diagram">
+            <svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two spheres comparing standard equator placement versus a tilted personal equator">
+                <defs>
+                    <radialGradient id="sg2a" cx="38%" cy="32%" r="60%">
+                        <stop offset="0%" stop-color="#1a2236"/>
+                        <stop offset="100%" stop-color="#080c14"/>
+                    </radialGradient>
+                    <radialGradient id="sg2b" cx="38%" cy="32%" r="60%">
+                        <stop offset="0%" stop-color="#1a2236"/>
+                        <stop offset="100%" stop-color="#080c14"/>
+                    </radialGradient>
+                </defs>
+
+                <!-- ---- LEFT GLOBE: Standard equator ---- -->
+                <circle cx="130" cy="130" r="100" fill="url(#sg2a)" stroke="#2a3550" stroke-width="1.5"/>
+                <!-- Standard horizontal equator -->
+                <ellipse cx="130" cy="130" rx="100" ry="24" fill="none" stroke="#5eead4" stroke-width="2.5"/>
+                <!-- N pole -->
+                <circle cx="130" cy="30" r="5" fill="#87c3ff"/>
+                <!-- S pole -->
+                <circle cx="130" cy="230" r="5" fill="#87c3ff"/>
+                <!-- Axis line -->
+                <line x1="130" y1="25" x2="130" y2="235" stroke="#a5b4fc" stroke-width="1.2" stroke-dasharray="5 4"/>
+                <!-- Labels -->
+                <text x="130" y="18" fill="#87c3ff" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">N</text>
+                <text x="130" y="248" fill="#87c3ff" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">S</text>
+                <text x="238" y="134" fill="#5eead4" font-family="Inter, sans-serif" font-size="11" font-weight="500">equator</text>
+                <text x="130" y="268" fill="#7d8ba0" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Standard</text>
+
+                <!-- Divider -->
+                <line x1="262" y1="30" x2="262" y2="230" stroke="#2a3550" stroke-width="1" stroke-dasharray="4 4"/>
+
+                <!-- ---- RIGHT GLOBE: Personal equator ---- -->
+                <circle cx="390" cy="130" r="100" fill="url(#sg2b)" stroke="#2a3550" stroke-width="1.5"/>
+
+                <!-- City point — upper-left area of right globe -->
+                <!-- Direction 135° standard math: x=390+100*cos(135°)=390-70.7≈319, y=130-100*sin(135°)=130-70.7≈59 -->
+                <circle cx="319" cy="59" r="7" fill="#fbbf24" stroke="#080c14" stroke-width="1.5"/>
+                <!-- Antipode — lower-right -->
+                <circle cx="461" cy="201" r="7" fill="#fb7185" stroke="#080c14" stroke-width="1.5"/>
+                <!-- Tilted axis -->
+                <line x1="310" y1="50" x2="470" y2="210" stroke="#a5b4fc" stroke-width="1.2" stroke-dasharray="5 4"/>
+                <!-- Personal equator: perpendicular to 45° down-right axis → rotate -45° -->
+                <ellipse cx="390" cy="130" rx="100" ry="30" fill="none" stroke="#5eead4" stroke-width="2.5" transform="rotate(-45, 390, 130)"/>
+
+                <!-- Labels -->
+                <text x="300" y="48" fill="#fbbf24" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="end">City (P)</text>
+                <text x="480" y="210" fill="#fb7185" font-family="Inter, sans-serif" font-size="11" font-weight="600">P′</text>
+                <text x="390" y="268" fill="#7d8ba0" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Oblique / Personal</text>
+            </svg>
+            <p class="fn-diagram-caption">
+                FIG. 2 — Left: the standard configuration — geographic poles define the axis, the equator is horizontal. Right: an oblique configuration — any city P defines the axis, and its personal equator (teal) is perpendicular to PP′. Oblique Mercator projections use exactly this setup.
+            </p>
+        </div>
+
+        <h2>Building This</h2>
+
+        <h3>Why a companion to Geopuesto, not a feature inside it</h3>
+
+        <div class="fn-callout">
+            <div class="fn-callout-label">Build Note</div>
+            <p>
+                Geopuesto answers one question: <em>what is at my antipode?</em> The orthodromes dashboard answers a different question: <em>what geometric structure connects me to my antipode?</em> These are related but distinct — one is about a destination, the other is about a relationship. Combining them into a single tool would require a shared UI that serves neither purpose well. Keeping them separate means each can be designed for its own question. The dashboard links to Geopuesto; Geopuesto links back. They're companions, not subfeatures.
+            </p>
+        </div>
+
+        <h3>Why 3D over a flat map</h3>
+
+        <div class="fn-callout">
+            <div class="fn-callout-label">Build Note</div>
+            <p>
+                Great circles are deceptive on flat maps. On a Mercator projection, a great-circle route between two cities appears as a curve — it looks like the "wrong" path even though it's the shortest one. Only on a gnomonic projection do great circles appear as straight lines, but gnomonic projections distort area and can't show more than a hemisphere. A 3D globe avoids all of this: the personal equator is drawn as it actually exists on the curved surface, and you can rotate the globe to inspect it from any angle without projection artifacts.
+            </p>
+        </div>
+
+        <h3>Scope: one concept, done well</h3>
+
+        <div class="fn-callout">
+            <div class="fn-callout-label">Build Note</div>
+            <p>
+                The original scope included several related ideas — rhumb lines, loxodromes, the full family of oblique projections. All of those got cut. A narrower explainer that handles one concept thoroughly is more useful than a broader one that handles several concepts superficially. The personal equator construction is rich enough on its own: you can draw the geometry, trace the history, and let the reader actually interact with it before moving on to anything else.
+            </p>
+        </div>
+
+    </article>
+
+    <!-- ===== FOOTER CTA ===== -->
+    <div class="fn-article-footer">
+        <div class="fn-article-cta">
+            <div class="section-label" style="margin-bottom: 12px;">// interactive</div>
+            <h2>Open the Dashboard</h2>
+            <p>Pick any city and draw its personal equator on a live 3D globe.</p>
+            <!-- TODO: confirm correct path once geopuesto submodule great-circles dir is verified -->
+            <a href="/geopuesto/great-circles/" class="btn btn-primary">Open the dashboard →</a>
+        </div>
+        <a href="../" class="fn-back-link">← Back to Field Notes</a>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <p>&copy; 2026 Maxwell Howe</p>
+        <ul class="footer-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../portfolio.html">Projects</a></li>
+            <li><a href="../../gallery.html">Map Gallery</a></li>
+            <li><a href="../../side-projects.html">Beyond GIS</a></li>
+            <li><a href="../">Field Notes</a></li>
+            <li><a href="../../tools.html">Tools</a></li>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../feedback.html">Ideas</a></li>
+            <li><a href="../../links.html">Links</a></li>
+            <li><a href="https://github.com/mapzimus" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

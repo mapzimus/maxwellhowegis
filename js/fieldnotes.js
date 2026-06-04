@@ -18,13 +18,13 @@
 const fieldNotes = [
     {
         id: 1,
+        slug: "orthodromes",
         date: "2026-05-24",
         title: "Orthodromes & Antipodal Geometry",
         tags: ["build", "research", "geometry"],
-        summary: "What if any city on Earth were the North Pole? Every point on a sphere has a unique \"personal equator\" — the orthodrome (great circle) perpendicular to the axis through that point and its antipode. This is a research-and-explainer companion to Geopuesto: it walks through spherical geometry from first principles, traces the concept's long history in cartography and astronomy (formally: the antipodal equatorial orthodrome, used since Ptolemy's \"oblique sphere\" and behind every oblique Mercator projection), and lets you draw any city's personal equator on a 3D globe. Geopuesto explores what's at the antipode; this explores the geometry behind it.",
+        summary: "What if any city on Earth were the North Pole? Every point on a sphere has a unique \"personal equator\" — the orthodrome (great circle) perpendicular to the axis through that point and its antipode. This is a research-and-explainer companion to Geopuesto: it walks through spherical geometry from first principles, traces the concept's long history in cartography and astronomy (formally: the antipodal equatorial orthodrome, used since Ptolemy's \"oblique sphere\" and behind every oblique Mercator projection), and lets you draw any city's personal equator on a 3D globe.",
         readingTime: "interactive · ~15 min read",
-        liveUrl: "great-circles/",
-        // No body — the dashboard itself IS the field note.
+        dashboardUrl: "/geopuesto/great-circles/", // TODO: confirm path in geopuesto submodule
         externalLabel: "Open the dashboard"
     }
 ];
