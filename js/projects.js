@@ -282,6 +282,22 @@ const projects = [
         liveUrl: null,
         repoUrl: "https://github.com/mapzimus/optitrek",
         status: "development"
+    },
+    {
+        id: 17,
+        era: "current",
+        title: "Bug Wars",
+        category: "Game",
+        type: "tool",
+        tags: ["HTML5 Canvas", "JavaScript", "RTS", "Game Dev", "In Development"],
+        summary: "A browser real-time strategy game shrunk down to a backyard. Command an ant colony — workers gather on their own, idle soldiers defend the nest, and you train four kinds of ants to smash the rival red colony before they smash you. A single-player vertical slice built from scratch in vanilla JS + HTML5 Canvas.",
+        description: "Bug Wars is an Age-of-Empires-style real-time strategy game scaled to a backyard, where blades of grass are forests and the enemy is a rival ant colony. This is a playable single-player vertical slice — the first build of a much larger design (16 planned factions) — focused on nailing the core RTS loop with one faction: the Ants. Drag-select your units and right-click to move or attack; workers harvest food autonomously and idle fighters defend home on their own. Spend food to train Workers, Soldiers (tanky frontline), Fire Ants (fast, with a venom damage-over-time), and Leafcutters (slow siege units that shred buildings). An escalating-wave AI marches the red colony on your nest; win by destroying theirs first. Built with no game engine and no build step — a fixed-timestep simulation with separation-steering movement, drawn entirely with canvas paths, and every balance value exposed in a single config file. More factions, a tech tree, and hero units are designed and waiting.",
+        tools: ["HTML5 Canvas", "Vanilla JavaScript", "CSS", "GitHub Pages"],
+        year: "2026",
+        thumb: "images/projects/bugwars-preview.jpg",
+        liveUrl: "bugwars/",
+        repoUrl: null,
+        status: "development"
     }
 ];
 
