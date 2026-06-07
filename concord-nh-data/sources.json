@@ -299,6 +299,22 @@
     {"name": "OpenCellID cell towers", "url": "https://opencellid.org/", "note": "Crowd-sourced cell-tower locations (free API token). FCC ASR is the regulatory alternative."}
   ],
 
+  "school_sources": [
+    {"key": "concord_school_district", "leaid": "3302460", "note": "Concord School District (SAU 8) — serves most of the city."},
+    {"key": "merrimack_valley_school_district", "leaid": "3304760", "note": "Merrimack Valley School District (SAU 46) — serves Penacook (N. Concord) + Boscawen, Loudon, Salisbury, Webster."},
+    {"key": "district_boundaries", "source": "Census TIGERweb School/MapServer (0 unified, 1 secondary, 2 elementary)", "note": "download_schools.py -> school_districts.geojson (the two) + school_districts_region.geojson."},
+    {"key": "public_schools", "source": "NCES EDGE Public_School_Locations_Current", "note": "Pulled by LEAID (full districts) AND regional bbox."},
+    {"key": "private_schools", "source": "NCES EDGE Private_School_Locations_Current", "note": "Regional bbox; includes St. Paul's School."},
+    {"key": "colleges", "source": "NCES EDGE Postsecondary_School_Locations_Current (IPEDS)", "note": "Regional bbox; includes NHTI and UNH Franklin Pierce School of Law."},
+    {"key": "enrollment", "source": "Urban Institute Education Data API (CCD)", "note": "District + per-school enrollment -> CSV (db tier). API is slow; has retry."}
+  ],
+
+  "knowledge_sources": [
+    {"key": "notable_people", "source": "Wikipedia Category:People from Concord, New Hampshire (+subcats) + Wikidata", "note": "~148 notable inhabitants with bios -> CSV (db) + centroid pins (map+db)."},
+    {"key": "wikidata_facts", "source": "Wikidata Q28249 (Concord, NH)", "note": "All structured statements -> JSON + flattened CSV (db)."},
+    {"key": "history", "source": "Wikipedia full-text extracts", "note": "Concord, Penacook, St. Paul's, NHTI, UNH Law, NH State House, etc. -> history.json (db)."}
+  ],
+
   "business_layer_sources": [
     {"source": "OpenStreetMap", "note": "download_businesses.py — comprehensive Overpass union of shop/office/craft/commercial-amenity/tourism/healthcare/fitness. No deps."},
     {"source": "Overture Places", "note": "download_businesses.py --overture — densest free redistributable POI set."},

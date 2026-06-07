@@ -14,9 +14,21 @@ concord-nh-data/
 │   ├── download_external.py    29 federal + state ArcGIS layers, clipped to Concord
 │   ├── download_osm.py         OpenStreetMap themes via Overpass
 │   ├── download_apis.py        non-ArcGIS APIs (Census, USGS, EPA, CDC, transit, NREL…)
-│   └── download_businesses.py  every-business point layer (OSM + Overture)
+│   ├── download_businesses.py  every-business point layer (OSM + Overture)
+│   ├── download_schools.py     Concord SD + Merrimack Valley SD (Penacook), colleges, enrollment
+│   ├── download_knowledge.py   notable inhabitants, Wikidata facts, Wikipedia history
+│   ├── build_layer_index.py    generates docs/LAYER_INDEX.md (validation checklist)
+│   └── run_all.py              run every downloader + per-layer feature-count report
+├── docs/
+│   ├── MEGA_MAP_SPEC.md        mega-map + database architecture & validation protocol
+│   ├── ACCOUNTS_NEEDED.md      datasets needing a free account/key, to do one by one
+│   └── LAYER_INDEX.md          per-dataset validation checklist (165 datasets, generated)
 └── data/                ← output (git-ignored; reproducible from the scripts)
 ```
+
+**Two-tier model:** every dataset is tagged `map+db` (renders on the mega map *and*
+stored in the DB) or `db` (reference/bulk tables joined to map layers). See
+`docs/MEGA_MAP_SPEC.md`. One-command full pull + report: `python3 run_all.py`.
 
 ## Quick start
 
