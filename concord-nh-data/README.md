@@ -128,9 +128,31 @@ to `data/apis/`:
 | `airnow` | EPA AirNow current AQI | GeoJSON | AIRNOW_API_KEY |
 | `purpleair` | PurpleAir sensors in bbox | GeoJSON | PURPLEAIR_API_KEY |
 
-`python3 download_apis.py` runs the keyless ones; add `--all` to include the
-key-gated AirNow/PurpleAir. (`developer.nrel.gov` must be reachable for the NREL
-sources — some sandboxes block it.)
+**"Living" / outside-the-box open data** (same script, mostly keyless):
+
+| Key | Source | Output | Key? |
+|---|---|---|---|
+| `noaa_weather_alerts` | NWS active weather alerts (NH) | GeoJSON | no |
+| `usgs_earthquakes` | USGS quakes M2+ within 100 km (since 1900) | GeoJSON | no |
+| `gbif_species` | GBIF species occurrences in bbox | GeoJSON | no |
+| `inaturalist` | iNaturalist observations in bbox | GeoJSON | no |
+| `wikidata_landmarks` | Geotagged Wikidata items (SPARQL) | GeoJSON | no |
+| `wikipedia_nearby` | Geotagged Wikipedia articles (10 km) | GeoJSON | no |
+| `openaq` | OpenAQ air-quality monitor locations | GeoJSON | OPENAQ_API_KEY |
+| `nasa_firms` | VIIRS active fire/thermal detections (7 d) | GeoJSON | FIRMS_MAP_KEY |
+| `mapillary` | Street-level image points in bbox | GeoJSON | MAPILLARY_TOKEN |
+
+`python3 download_apis.py` runs the keyless ones (20 sources total); add `--all`
+to include the key-gated ones (AirNow, PurpleAir, OpenAQ, FIRMS, Mapillary).
+(`developer.nrel.gov` must be reachable for the NREL sources — some sandboxes
+block it.)
+
+Even more — bulk/raster/derived sources that aren't a one-call API (documented in
+`sources.json` → `advanced_sources_manual`): **OpenAddresses**, Microsoft/Google
+**building footprints**, NWS **AHPS flood gauges**, NOAA **NCEI climate normals**,
+**OpenRouteService isochrones** (walk/drive-time from the road net), **historical
+maps** (Sanborn / USGS topoView), satellite indices (**NDVI / nighttime lights /
+urban heat** via Microsoft Planetary Computer), **GTFS-Realtime**, OpenCellID.
 
 ## 5. "Every business" point layer  (`download_businesses.py`)
 

@@ -341,6 +341,207 @@ def pvwatts() -> str:
 
 
 # --------------------------------------------------------------------------- #
+# "Living" / outside-the-box open sources (keyless unless noted)
+# --------------------------------------------------------------------------- #
+def _wkt_bbox() -> str:
+    """Counter-clockwise polygon WKT of the Concord bbox (for GBIF)."""
+    w, s, e, n = BBOX["xmin"], BBOX["ymin"], BBOX["xmax"], BBOX["ymax"]
+    return f"POLYGON(({w} {s},{e} {s},{e} {n},{w} {n},{w} {s}))"
+
+
+def noaa_weather_alerts() -> str:
+    """Active NWS weather alerts for New Hampshire -> GeoJSON (api.weather.gov)."""
+    url = "https://api.weather.gov/alerts/active?area=NH"
+    data = get_json(url, headers={"Accept": "application/geo+json"})
+    feats = data.get("features", []) or []
+    p = save_json(fc(feats), "noaa_weather_alerts_nh.geojson")
+    return f"{p}  ({len(feats)} active NH alerts; some are zone-based w/ null geometry)"
+
+
+def usgs_earthquakes() -> str:
+    """USGS earthquakes within 100 km of Concord (M2+ since 1900) -> GeoJSON."""
+    url = ("https://earthquake.usgs.gov/fdsnws/event/1/query?"
+           + urllib.parse.urlencode({"format": "geojson", "latitude": LAT, "longitude": LON,
+                                     "maxradiuskm": 100, "minmagnitude": 2,
+                                     "starttime": "1900-01-01"}))
+    data = get_json(url)
+    feats = data.get("features", []) or []
+    p = save_json(fc(feats), "usgs_earthquakes.geojson")
+    return f"{p}  ({len(feats)} quakes M2+ within 100km)"
+
+
+def gbif_species() -> str:
+    """GBIF species occurrences within the Concord bbox -> GeoJSON (keyless)."""
+    feats, offset, limit, cap = [], 0, 300, 9000
+    while offset < cap:
+        url = ("https://api.gbif.org/v1/occurrence/search?"
+               + urllib.parse.urlencode({"geometry": _wkt_bbox(), "hasCoordinate": "true",
+                                         "limit": limit, "offset": offset}))
+        d = get_json(url)
+        for r in d.get("results", []):
+            lat, lon = r.get("decimalLatitude"), r.get("decimalLongitude")
+            if lat is None or lon is None:
+                continue
+            feats.append(pt(lon, lat, {
+                "species": r.get("species"), "scientificName": r.get("scientificName"),
+                "kingdom": r.get("kingdom"), "class": r.get("class"),
+                "eventDate": r.get("eventDate"), "basisOfRecord": r.get("basisOfRecord"),
+                "datasetName": r.get("datasetName"), "gbifID": r.get("gbifID")}))
+        if d.get("endOfRecords") or not d.get("results"):
+            break
+        offset += limit
+    p = save_json(fc(feats), "gbif_species_occurrences.geojson")
+    return f"{p}  ({len(feats)} occurrences; capped at {cap})"
+
+
+def inaturalist() -> str:
+    """iNaturalist research-grade observations in the Concord bbox -> GeoJSON (keyless)."""
+    feats, page, per = [], 1, 200
+    while page <= 15:
+        url = ("https://api.inaturalist.org/v1/observations?"
+               + urllib.parse.urlencode({"swlat": BBOX["ymin"], "swlng": BBOX["xmin"],
+                                         "nelat": BBOX["ymax"], "nelng": BBOX["xmax"],
+                                         "geo": "true", "per_page": per, "page": page}))
+        d = get_json(url)
+        results = d.get("results", [])
+        if not results:
+            break
+        for r in results:
+            g = r.get("geojson") or {}
+            c = g.get("coordinates")
+            if not c:
+                continue
+            taxon = r.get("taxon") or {}
+            feats.append(pt(c[0], c[1], {
+                "species": taxon.get("name"), "common": taxon.get("preferred_common_name"),
+                "iconic_taxon": taxon.get("iconic_taxon_name"),
+                "observed_on": r.get("observed_on"), "quality": r.get("quality_grade"),
+                "user": (r.get("user") or {}).get("login"), "uri": r.get("uri")}))
+        if len(results) < per:
+            break
+        page += 1
+    p = save_json(fc(feats), "inaturalist_observations.geojson")
+    return f"{p}  ({len(feats)} observations)"
+
+
+def wikidata_landmarks() -> str:
+    """Wikidata items with coordinates inside the Concord bbox -> GeoJSON (keyless)."""
+    w, s, e, n = BBOX["xmin"], BBOX["ymin"], BBOX["xmax"], BBOX["ymax"]
+    sparql = f"""
+SELECT ?item ?itemLabel ?coord ?typeLabel WHERE {{
+  SERVICE wikibase:box {{
+    ?item wdt:P625 ?coord.
+    bd:serviceParam wikibase:cornerSouthWest "Point({w} {s})"^^geo:wktLiteral.
+    bd:serviceParam wikibase:cornerNorthEast "Point({e} {n})"^^geo:wktLiteral.
+  }}
+  OPTIONAL {{ ?item wdt:P31 ?type. }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}"""
+    url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode(
+        {"query": sparql, "format": "json"})
+    d = get_json(url, headers={"Accept": "application/sparql-results+json"})
+    feats = []
+    for b in d.get("results", {}).get("bindings", []):
+        wkt = b.get("coord", {}).get("value", "")
+        if not wkt.startswith("Point("):
+            continue
+        lon, lat = (float(x) for x in wkt[6:-1].split())
+        feats.append(pt(lon, lat, {
+            "wikidata": b.get("item", {}).get("value"),
+            "label": b.get("itemLabel", {}).get("value"),
+            "type": b.get("typeLabel", {}).get("value")}))
+    p = save_json(fc(feats), "wikidata_landmarks.geojson")
+    return f"{p}  ({len(feats)} geotagged Wikidata items)"
+
+
+def wikipedia_nearby() -> str:
+    """Geotagged Wikipedia articles within 10km of Concord -> GeoJSON (keyless)."""
+    url = ("https://en.wikipedia.org/w/api.php?"
+           + urllib.parse.urlencode({"action": "query", "list": "geosearch",
+                                     "gscoord": f"{LAT}|{LON}", "gsradius": 10000,
+                                     "gslimit": 500, "format": "json"}))
+    d = get_json(url)
+    feats = []
+    for r in d.get("query", {}).get("geosearch", []):
+        feats.append(pt(r["lon"], r["lat"], {
+            "title": r.get("title"), "pageid": r.get("pageid"),
+            "dist_m": r.get("dist"),
+            "url": "https://en.wikipedia.org/?curid=" + str(r.get("pageid"))}))
+    p = save_json(fc(feats), "wikipedia_articles.geojson")
+    return f"{p}  ({len(feats)} geotagged articles within 10km)"
+
+
+def openaq() -> str:
+    """OpenAQ air-quality monitoring locations in the Concord bbox -> GeoJSON.
+
+    OpenAQ v3 requires a free API key (header X-API-Key). Set OPENAQ_API_KEY.
+    """
+    key = env("OPENAQ_API_KEY")
+    if not key:
+        return "SKIPPED (OpenAQ v3 needs a free key — set OPENAQ_API_KEY)"
+    bbox = f"{BBOX['xmin']},{BBOX['ymin']},{BBOX['xmax']},{BBOX['ymax']}"
+    url = "https://api.openaq.org/v3/locations?" + urllib.parse.urlencode(
+        {"bbox": bbox, "limit": 1000})
+    d = get_json(url, headers={"X-API-Key": key})
+    feats = []
+    for r in d.get("results", []):
+        c = r.get("coordinates") or {}
+        if c.get("latitude") is None:
+            continue
+        feats.append(pt(c["longitude"], c["latitude"], r))
+    p = save_json(fc(feats), "openaq_locations.geojson")
+    return f"{p}  ({len(feats)} monitoring locations)"
+
+
+def nasa_firms() -> str:
+    """NASA FIRMS active fire/thermal detections (last 7 days) -> GeoJSON.
+
+    Requires a free MAP_KEY. Set FIRMS_MAP_KEY (https://firms.modaps.eosdis.nasa.gov/api/).
+    """
+    key = env("FIRMS_MAP_KEY")
+    if not key:
+        return "SKIPPED (set FIRMS_MAP_KEY)"
+    area = f"{BBOX['xmin']},{BBOX['ymin']},{BBOX['xmax']},{BBOX['ymax']}"
+    url = f"https://firms.modaps.eosdis.nasa.gov/api/area/csv/{key}/VIIRS_SNPP_NRT/{area}/7"
+    text = get_text(url)
+    rows = list(csv.DictReader(io.StringIO(text)))
+    feats = []
+    for r in rows:
+        try:
+            feats.append(pt(float(r["longitude"]), float(r["latitude"]), r))
+        except (KeyError, ValueError):
+            continue
+    p = save_json(fc(feats), "nasa_firms_fires.geojson")
+    return f"{p}  ({len(feats)} thermal detections, last 7 days)"
+
+
+def mapillary() -> str:
+    """Mapillary street-level image points in the Concord bbox -> GeoJSON.
+
+    Requires a free client token. Set MAPILLARY_TOKEN (https://mapillary.com/dashboard/developers).
+    """
+    tok = env("MAPILLARY_TOKEN")
+    if not tok:
+        return "SKIPPED (set MAPILLARY_TOKEN)"
+    bbox = f"{BBOX['xmin']},{BBOX['ymin']},{BBOX['xmax']},{BBOX['ymax']}"
+    url = ("https://graph.mapillary.com/images?"
+           + urllib.parse.urlencode({"access_token": tok, "bbox": bbox,
+                                     "fields": "id,captured_at,compass_angle,geometry",
+                                     "limit": 2000}))
+    d = get_json(url)
+    feats = []
+    for r in d.get("data", []):
+        g = r.get("geometry") or {}
+        c = g.get("coordinates")
+        if not c:
+            continue
+        feats.append(pt(c[0], c[1], {"id": r.get("id"), "captured_at": r.get("captured_at"),
+                                     "compass_angle": r.get("compass_angle")}))
+    p = save_json(fc(feats), "mapillary_images.geojson")
+    return f"{p}  ({len(feats)} street-level image points)"
+
+
+# --------------------------------------------------------------------------- #
 # Registry / CLI
 # --------------------------------------------------------------------------- #
 Source = Dict[str, Any]
@@ -354,10 +555,21 @@ REGISTRY: List[Source] = [
     {"key": "nrel_ev",           "fn": nrel_ev,           "key_req": "none (DEMO_KEY)"},
     {"key": "tnm_products",      "fn": tnm_products,      "key_req": "none"},
     {"key": "pvwatts",           "fn": pvwatts,           "key_req": "none (DEMO_KEY)"},
+    # "living" / outside-the-box open data
+    {"key": "noaa_weather_alerts", "fn": noaa_weather_alerts, "key_req": "none"},
+    {"key": "usgs_earthquakes",    "fn": usgs_earthquakes,    "key_req": "none"},
+    {"key": "gbif_species",        "fn": gbif_species,        "key_req": "none"},
+    {"key": "inaturalist",         "fn": inaturalist,         "key_req": "none"},
+    {"key": "wikidata_landmarks",  "fn": wikidata_landmarks,  "key_req": "none"},
+    {"key": "wikipedia_nearby",    "fn": wikipedia_nearby,    "key_req": "none"},
+    # key-gated
     {"key": "airnow",            "fn": airnow,            "key_req": "AIRNOW_API_KEY"},
     {"key": "purpleair",         "fn": purpleair,         "key_req": "PURPLEAIR_API_KEY"},
+    {"key": "openaq",            "fn": openaq,            "key_req": "OPENAQ_API_KEY"},
+    {"key": "nasa_firms",        "fn": nasa_firms,        "key_req": "FIRMS_MAP_KEY"},
+    {"key": "mapillary",         "fn": mapillary,         "key_req": "MAPILLARY_TOKEN"},
 ]
-KEY_GATED = {"airnow", "purpleair"}
+KEY_GATED = {"airnow", "purpleair", "openaq", "nasa_firms", "mapillary"}
 
 
 def main(argv: List[str]) -> int:

@@ -275,6 +275,30 @@
     {"key": "purpleair",        "note": "PurpleAir sensors in bbox -> GeoJSON. Needs PURPLEAIR_API_KEY."}
   ],
 
+  "living_data_apis": [
+    {"key": "noaa_weather_alerts", "note": "Active NWS alerts for NH -> GeoJSON. Keyless (api.weather.gov)."},
+    {"key": "usgs_earthquakes",    "note": "Quakes M2+ within 100km since 1900 -> GeoJSON. Keyless."},
+    {"key": "gbif_species",        "note": "GBIF species occurrences in bbox -> GeoJSON. Keyless (capped 9k)."},
+    {"key": "inaturalist",         "note": "iNaturalist observations in bbox -> GeoJSON. Keyless."},
+    {"key": "wikidata_landmarks",  "note": "Geotagged Wikidata items in bbox via SPARQL -> GeoJSON. Keyless."},
+    {"key": "wikipedia_nearby",    "note": "Geotagged Wikipedia articles within 10km -> GeoJSON. Keyless."},
+    {"key": "openaq",              "note": "Air-quality monitor locations in bbox -> GeoJSON. Needs OPENAQ_API_KEY (free)."},
+    {"key": "nasa_firms",          "note": "VIIRS active fire/thermal detections (7d) -> GeoJSON. Needs FIRMS_MAP_KEY (free)."},
+    {"key": "mapillary",           "note": "Street-level image points in bbox -> GeoJSON. Needs MAPILLARY_TOKEN (free)."}
+  ],
+
+  "advanced_sources_manual": [
+    {"name": "OpenAddresses", "url": "https://batch.openaddresses.io/data", "note": "Bulk open address points (alternative to locked-down NH E911). Download the NH/US-Northeast run and clip to bbox."},
+    {"name": "Microsoft / Google Open Buildings", "url": "https://github.com/microsoft/USBuildingFootprints", "note": "Footprints to cross-check FEMA USA Structures. MS US footprints by state (GeoJSON) or via Planetary Computer STAC; Google Open Buildings covers other regions."},
+    {"name": "NWS / NWPS river flood gauges (AHPS)", "url": "https://water.noaa.gov/", "note": "Forecast flood points on the Merrimack. The NWPS API bbox filter was unreliable in testing — query by gauge LID, or use the working usgs_streamgages layer for physical gauges."},
+    {"name": "NOAA NCEI climate normals / GHCN", "url": "https://www.ncei.noaa.gov/access/services/data/v1", "note": "Station climate normals & daily records near Concord. Token-free data service; station-point layer."},
+    {"name": "OpenRouteService isochrones / OSRM", "url": "https://openrouteservice.org/dev/", "note": "Derive walk/drive-time isochrones from the road network. Free key. Turns roads into accessibility polygons."},
+    {"name": "Historical maps — Sanborn & USGS topoView", "url": "https://ngmdb.usgs.gov/topoview/", "note": "Georeferenced historic USGS topos and Sanborn fire-insurance maps (LoC) for Concord. Raster/image, not vector."},
+    {"name": "Satellite indices — Microsoft Planetary Computer", "url": "https://planetarycomputer.microsoft.com/", "note": "NDVI/greenness, nighttime lights (VIIRS), Landsat/Sentinel thermal (urban heat) via STAC. Raster analysis."},
+    {"name": "GTFS-Realtime (CAT)", "url": "https://www.transit.land/feeds/f-concordareatransit~nh~us", "note": "Live vehicle positions IF Concord Area Transit publishes an RT feed; static GTFS is handled by download_apis.py cat_gtfs."},
+    {"name": "OpenCellID cell towers", "url": "https://opencellid.org/", "note": "Crowd-sourced cell-tower locations (free API token). FCC ASR is the regulatory alternative."}
+  ],
+
   "business_layer_sources": [
     {"source": "OpenStreetMap", "note": "download_businesses.py — comprehensive Overpass union of shop/office/craft/commercial-amenity/tourism/healthcare/fitness. No deps."},
     {"source": "Overture Places", "note": "download_businesses.py --overture — densest free redistributable POI set."},
