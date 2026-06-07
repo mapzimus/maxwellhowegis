@@ -1,0 +1,157 @@
+{
+  "_about": "Machine-readable manifest of Concord, NH GIS data sources. Used by the download_*.py scripts. Edit freely: download_external.py and download_osm.py read this file.",
+  "concord_bbox_wgs84": "-71.668185,43.151772,-71.456903,43.309419",
+  "concord_arcgis_server": "https://gis.concordnh.gov/arc1061/rest/services",
+
+  "external_arcgis": [
+    {
+      "key": "nh_granit_parcels",
+      "title": "NH GRANIT statewide parcel mosaic (verify layer id)",
+      "url": "https://nhgeodata.unh.edu/nhgeodata/rest/services/CAD/ParcelMosiac/MapServer/0",
+      "note": "Server occasionally rate-limits. If this 503s/404s, browse https://nhgeodata.unh.edu/nhgeodata/rest/services and confirm the parcel layer id."
+    },
+    {
+      "key": "fema_flood_zones",
+      "title": "FEMA NFHL Flood Hazard Zones (S_FLD_HAZ_AR)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28"
+    },
+    {
+      "key": "fema_flood_boundaries",
+      "title": "FEMA NFHL Flood Hazard Boundaries (S_FLD_HAZ_LN)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/27"
+    },
+    {
+      "key": "fema_base_flood_elevations",
+      "title": "FEMA NFHL Base Flood Elevations (S_BFE)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/16"
+    },
+    {
+      "key": "fema_firm_panels",
+      "title": "FEMA NFHL FIRM Panel Index (S_FIRM_PAN)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/3"
+    },
+    {
+      "key": "tiger_roads",
+      "title": "Census TIGERweb roads (all classes / local)",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8"
+    },
+    {
+      "key": "tiger_railroads",
+      "title": "Census TIGERweb railroads",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/9"
+    },
+    {
+      "key": "tiger_tracts",
+      "title": "Census TIGERweb 2020 census tracts",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/0"
+    },
+    {
+      "key": "tiger_block_groups",
+      "title": "Census TIGERweb 2020 block groups",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/1"
+    },
+    {
+      "key": "tiger_blocks",
+      "title": "Census TIGERweb 2020 census blocks",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/2"
+    },
+    {
+      "key": "nhd_flowlines",
+      "title": "USGS NHD flowlines (streams/rivers, large scale)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6"
+    },
+    {
+      "key": "nhd_waterbodies",
+      "title": "USGS NHD waterbodies (lakes/ponds, large scale)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12"
+    },
+    {
+      "key": "nhd_areas",
+      "title": "USGS NHD areas (wide rivers/wetlands, large scale)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9"
+    },
+    {
+      "key": "nhd_points",
+      "title": "USGS NHD points (gages, dams, springs)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/0"
+    },
+    {
+      "key": "nwi_wetlands",
+      "title": "USFWS National Wetlands Inventory",
+      "url": "https://www.fws.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0"
+    }
+  ],
+
+  "osm_queries": [
+    { "theme": "roads",       "selector": "nwr[\"highway\"]" },
+    { "theme": "buildings",   "selector": "nwr[\"building\"]" },
+    { "theme": "water",       "selector": "nwr[\"natural\"=\"water\"]" },
+    { "theme": "waterways",   "selector": "nwr[\"waterway\"]" },
+    { "theme": "landuse",     "selector": "nwr[\"landuse\"]" },
+    { "theme": "amenities",   "selector": "nwr[\"amenity\"]" },
+    { "theme": "leisure",     "selector": "nwr[\"leisure\"]" },
+    { "theme": "railways",    "selector": "nwr[\"railway\"]" },
+    { "theme": "boundaries",  "selector": "nwr[\"boundary\"=\"administrative\"]" },
+    { "theme": "power",       "selector": "nwr[\"power\"]" },
+    { "theme": "shops",       "selector": "nwr[\"shop\"]" },
+    { "theme": "addresses",   "selector": "nwr[\"addr:housenumber\"]" }
+  ],
+
+  "portals_manual": [
+    {
+      "name": "City of Concord Interactive GIS Viewer",
+      "url": "https://www.concordnh.gov/897/Interactive-GIS-Viewer",
+      "note": "Front-end for the gis.concordnh.gov REST server (auto-downloaded by download_concord.py)."
+    },
+    {
+      "name": "City of Concord downloadable PDF maps & data for purchase",
+      "url": "https://www.concordnh.gov/898/Maps-Data-for-Purchase",
+      "note": "Cartographic PDFs and some datasets sold via City Hall, 41 Green St."
+    },
+    {
+      "name": "Vision Government Solutions (VGSI) assessment database",
+      "url": "https://gis.vgsi.com/concordnh/",
+      "note": "Full property/assessment records (tabular). Scrape per-parcel by PID or join to the city Property layer on MAP-BLOCK-LOT. No bulk GeoJSON API; export via per-record pages or request from the Assessing Dept."
+    },
+    {
+      "name": "NH GRANIT / NH Geodata Portal",
+      "url": "https://www.nhgeodata.unh.edu/",
+      "note": "100+ statewide layers: parcels, soils (SSURGO), wetlands, conservation/public lands, land cover, hydrography, roads, trails. Download as Shapefile/GeoJSON/KML/GeoTIFF; also WMS/WFS. REST root: https://nhgeodata.unh.edu/nhgeodata/rest/services"
+    },
+    {
+      "name": "NH GRANIT classic clearinghouse / free data",
+      "url": "https://www.granit.unh.edu/data/downloadfreedata/downloaddata.html",
+      "note": "Town-by-town and statewide bulk shapefile/raster downloads (incl. LiDAR DEM, orthoimagery)."
+    },
+    {
+      "name": "NH DES Geodata Portal",
+      "url": "https://nh-department-of-environmental-services-open-data-nhdes.hub.arcgis.com/",
+      "note": "Environmental layers: wells, contamination/remediation sites, dams, watersheds, wetlands permits."
+    },
+    {
+      "name": "Central NH Regional Planning Commission (CNHRPC)",
+      "url": "https://cnhrpc.org/gis-data/",
+      "note": "Regional transit routes, traffic counts, trails, Concord Pedestrian Master Plan. Contact ctufts@cnhrpc.org for downloads."
+    },
+    {
+      "name": "NHDOT GIS / public REST",
+      "url": "https://maps.dot.nh.gov/",
+      "note": "State roads, transit, traffic, signals, bridges. REST hosts: maps.dot.nh.gov/arcgis_server/rest/services and gis.dot.nh.gov/arcgis_prd/rest/services"
+    },
+    {
+      "name": "US Census data.census.gov / ACS API",
+      "url": "https://www.census.gov/data/developers/data-sets.html",
+      "note": "Demographics/economics joinable to TIGER tracts/blocks/block groups via GEOID."
+    },
+    {
+      "name": "USGS The National Map / 3DEP",
+      "url": "https://apps.nationalmap.gov/downloader/",
+      "note": "Elevation (LiDAR/DEM), NHD hydro bulk, NLCD land cover, NAIP imagery for Merrimack County."
+    },
+    {
+      "name": "FEMA Flood Map Service Center",
+      "url": "https://msc.fema.gov/portal/home",
+      "note": "Authoritative NFHL flood data downloads (the live layers are auto-downloaded by download_external.py)."
+    }
+  ]
+}
