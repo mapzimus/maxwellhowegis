@@ -1,0 +1,31 @@
+{
+  "_comment": "SCAFFOLD lockfile. Versions are recent CRAN placeholders — run renv::snapshot() (or setup.R) on your machine to pin exact installed versions + hashes. renv::restore() will install these from CRAN.",
+  "R": {
+    "Version": "4.4.1",
+    "Repositories": [
+      { "Name": "CRAN", "URL": "https://cloud.r-project.org" }
+    ]
+  },
+  "Packages": {
+    "sf":                    { "Package": "sf",                    "Version": "1.0-19", "Source": "Repository", "Repository": "CRAN" },
+    "DBI":                   { "Package": "DBI",                   "Version": "1.2.3",  "Source": "Repository", "Repository": "CRAN" },
+    "RPostgres":             { "Package": "RPostgres",             "Version": "1.4.7",  "Source": "Repository", "Repository": "CRAN" },
+    "httr2":                 { "Package": "httr2",                 "Version": "1.0.7",  "Source": "Repository", "Repository": "CRAN" },
+    "jsonlite":              { "Package": "jsonlite",              "Version": "1.8.9",  "Source": "Repository", "Repository": "CRAN" },
+    "cli":                   { "Package": "cli",                   "Version": "3.6.3",  "Source": "Repository", "Repository": "CRAN" },
+    "glue":                  { "Package": "glue",                  "Version": "1.8.0",  "Source": "Repository", "Repository": "CRAN" },
+    "dplyr":                 { "Package": "dplyr",                 "Version": "1.1.4",  "Source": "Repository", "Repository": "CRAN" },
+    "purrr":                 { "Package": "purrr",                 "Version": "1.0.2",  "Source": "Repository", "Repository": "CRAN" },
+    "yaml":                  { "Package": "yaml",                  "Version": "2.3.10", "Source": "Repository", "Repository": "CRAN" },
+    "arcgislayers":          { "Package": "arcgislayers",          "Version": "0.4.0",  "Source": "Repository", "Repository": "CRAN" },
+    "tidycensus":            { "Package": "tidycensus",            "Version": "1.6.7",  "Source": "Repository", "Repository": "CRAN" },
+    "tigris":                { "Package": "tigris",                "Version": "2.1",    "Source": "Repository", "Repository": "CRAN" },
+    "osmdata":               { "Package": "osmdata",               "Version": "0.2.5",  "Source": "Repository", "Repository": "CRAN" },
+    "rgbif":                 { "Package": "rgbif",                 "Version": "3.8.1",  "Source": "Repository", "Repository": "CRAN" },
+    "educationdata":         { "Package": "educationdata",         "Version": "0.1.5",  "Source": "Repository", "Repository": "CRAN" },
+    "WikidataQueryServiceR": { "Package": "WikidataQueryServiceR", "Version": "1.0.0",  "Source": "Repository", "Repository": "CRAN" },
+    "WikipediR":             { "Package": "WikipediR",             "Version": "1.5.0",  "Source": "Repository", "Repository": "CRAN" },
+    "targets":               { "Package": "targets",               "Version": "1.9.1",  "Source": "Repository", "Repository": "CRAN" },
+    "arrow":                 { "Package": "arrow",                 "Version": "18.1.0", "Source": "Repository", "Repository": "CRAN" }
+  }
+}

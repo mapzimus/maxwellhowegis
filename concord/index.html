@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Open Concord — Mega Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Every public Concord, NH dataset on one live map — an R Shiny app over a self-hosted PostGIS database." />
+  <style>
+    html, body { margin: 0; height: 100%; background: #0b1020; font-family: system-ui, sans-serif; }
+    #frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+    #fallback { color: #cbd5e1; max-width: 640px; margin: 12vh auto; padding: 0 24px; line-height: 1.5; }
+    #fallback a { color: #60a5fa; }
+    #fallback h1 { color: #fff; }
+  </style>
+</head>
+<body>
+  <!--
+    The Open Concord frontend is an R Shiny app (leaflet + sf) hosted on the VPS
+    alongside its PostGIS database. GitHub Pages is static, so this page embeds the
+    live app. Update APP_URL if your subdomain differs.
+  -->
+  <iframe id="frame" title="Open Concord live map"
+          src="https://concord.maxwellhowegis.com/"
+          allow="geolocation; fullscreen"></iframe>
+
+  <noscript>
+    <div id="fallback">
+      <h1>Open Concord</h1>
+      <p>The live map is at
+         <a href="https://concord.maxwellhowegis.com/">concord.maxwellhowegis.com</a>.</p>
+    </div>
+  </noscript>
+
+  <script>
+    // Graceful fallback if the Shiny host is unreachable (e.g. app down).
+    const APP_URL = "https://concord.maxwellhowegis.com/";
+    const frame = document.getElementById("frame");
+    frame.src = APP_URL;
+    let loaded = false;
+    frame.addEventListener("load", () => { loaded = true; });
+    setTimeout(() => {
+      if (!loaded) {
+        document.body.innerHTML =
+          '<div id="fallback"><h1>Open Concord</h1>' +
+          '<p>The live R&nbsp;Shiny map is hosted at ' +
+          '<a href="' + APP_URL + '">' + APP_URL + '</a>. ' +
+          'If it isn’t loading, the app server may be starting up — try again shortly.</p>' +
+          '<p style="color:#64748b;font-size:13px">R (ETL) → PostGIS → R Shiny (leaflet) — self-hosted.</p></div>';
+      }
+    }, 8000);
+  </script>
+</body>
+</html>

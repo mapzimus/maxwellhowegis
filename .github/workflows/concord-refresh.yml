@@ -1,0 +1,38 @@
+name: Concord data refresh (ETL)
+
+# Re-runs the Open Concord R pipeline to refresh PostGIS. With the live API
+# (pg_tileserv / pg_featureserv) the map is always fresh straight from the DB, so
+# there is nothing to commit — this job just updates the database.
+#
+# Runs on a SELF-HOSTED runner registered on the VPS (where R + PostGIS live).
+# Register one: repo Settings -> Actions -> Runners -> New self-hosted runner,
+# label it `open-concord`.
+
+on:
+  schedule:
+    - cron: "0 7 * * 0"        # 07:00 UTC Sundays
+  workflow_dispatch:
+
+jobs:
+  etl:
+    runs-on: [self-hosted, open-concord]
+    defaults:
+      run:
+        shell: bash
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGDATABASE: openconcord
+      PGUSER: ${{ secrets.PGUSER }}
+      PGPASSWORD: ${{ secrets.PGPASSWORD }}
+      CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+      NREL_API_KEY: ${{ secrets.NREL_API_KEY }}
+      AIRNOW_API_KEY: ${{ secrets.AIRNOW_API_KEY }}
+      OPENAQ_API_KEY: ${{ secrets.OPENAQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh PostGIS (download -> DB; live API serves it)
+        working-directory: open-concord
+        run: |
+          Rscript -e 'if (!requireNamespace("openconcord", quietly=TRUE)) remotes::install_local(".", upgrade="never")'
+          Rscript -e 'targets::tar_make()'
