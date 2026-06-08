@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quabbin: A Valley Chosen, Four Towns Erased | Maxwell Howe GIS</title>
-    <meta name="description" content="A reproducible multi-layer R GIS study of the Quabbin Reservoir — the four Massachusetts towns drowned in 1938. Terrain, reservoir, watershed, a flood-fill animation, the aqueduct to Boston, real census population, and an interactive Leaflet map, all from open data.">
-    <meta property="og:title" content="Quabbin: A Valley Chosen, Four Towns Erased — Maxwell Howe">
-    <meta property="og:description" content="A multi-layer R GIS study of the four Swift River Valley towns deliberately drowned in 1938 to supply Boston's water. Ten figures, a flood-fill animation, and an interactive map — fully reproducible from open data.">
+    <title>The Quabbin Reservoir and the Lost Towns of the Swift River Valley | Maxwell Howe GIS</title>
+    <meta name="description" content="A reproducible, multi-layer R GIS study of the Quabbin Reservoir and the four Swift River Valley towns disincorporated in 1938: terrain, the reservoir, watershed, decennial census population, a reservoir-filling animation, the aqueduct to Boston, and an interactive Leaflet map — all from open data.">
+    <meta property="og:title" content="The Quabbin Reservoir and the Lost Towns of the Swift River Valley — Maxwell Howe">
+    <meta property="og:description" content="A multi-layer R GIS study of the four Swift River Valley towns disincorporated in 1938 to create the Quabbin Reservoir. Ten figures, a reservoir-filling animation, and an interactive map, reproducible from open data.">
     <meta property="og:image" content="quabbin/output/08_hero.png">
     <meta property="og:type" content="article">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -37,7 +37,7 @@
 <main id="main-content">
     <section class="section project-hero">
         <div class="section-label">// GIS Study &middot; Reproducible in R</div>
-        <h1>Quabbin: A Valley Chosen, <span class="gradient">Four Towns Erased</span></h1>
+        <h1>The Quabbin Reservoir and the <span class="gradient">Lost Towns</span> of the Swift River Valley</h1>
         <div class="project-meta">
             <span>Self-directed GIS Study</span>
             <span>&middot;</span>
@@ -46,11 +46,11 @@
             <span>Open Data &middot; Fully Reproducible</span>
         </div>
         <div class="project-desc">
-            <p>In 1938, Massachusetts did something drastic: it disincorporated four entire towns &mdash; Dana, Enfield, Greenwich, and Prescott &mdash; and flooded the Swift River Valley to build the Quabbin Reservoir. About 2,500 people lost their homes so that Boston, 65 miles east, could have water.</p>
-            <p style="margin-top:16px;">I wanted to tell that story as a <em>multi-layer GIS study</em> &mdash; where several spatial layers, read together, converge on a single narrative &mdash; so I built the whole thing in R: terrain, reservoir, watershed, modern town boundaries, and population displacement, each from open public data.</p>
-            <p style="margin-top:16px;">Unlike my earlier coursework, this one ships its code. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, carves the reservoir out of its 530-foot full-pool surface, fetches USGS watershed units and US Census boundaries, and renders the ten figures below &mdash; then animates the valley filling frame by frame and exports the layers behind a live interactive map &mdash; reproducibly, with every download cached and every network call degrading gracefully if a service is down.</p>
-            <p style="margin-top:16px;">The layers agree: the valley's geography made it an obvious basin to flood, and the four towns &mdash; already shrinking for decades &mdash; were erased from the map, their land parcelled out to the towns that still ring the water today.</p>
-            <p style="margin-top:16px;">Going deeper, I added the dimensions a static map can't show: the towns' <strong>real decennial census counts</strong> (every one already shrinking before 1920), a <strong>flood-fill animation</strong> raising the water from the valley floor to the 1946 full pool, the <strong>aqueduct</strong> that carries the water ~100&nbsp;km east to the Boston metro &mdash; the city the valley was drowned for &mdash; and an <strong>interactive web map</strong> where you raise the water yourself.</p>
+            <p>Between 1938 and 1946, Massachusetts created the Quabbin Reservoir by damming and flooding the Swift River Valley. Four towns &mdash; Dana, Enfield, Greenwich, and Prescott &mdash; were disincorporated on 28 April 1938, and about 2,500 residents were relocated. The reservoir was built to supply metropolitan Boston, roughly 100&nbsp;km (65 miles) to the east.</p>
+            <p style="margin-top:16px;">This is a <em>multi-layer GIS study</em>: several spatial layers that, read together, describe how the reservoir was sited and what it replaced. It is built in R from open public data &mdash; terrain, the reservoir surface, the watershed, modern municipal boundaries, and decennial census population.</p>
+            <p style="margin-top:16px;">The analysis ships as a reproducible pipeline. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, derives the reservoir from its 530-foot full-pool surface, fetches USGS watershed units and US Census boundaries, renders the figures below, generates the reservoir-filling animation, and exports the GeoJSON used by the interactive map. Downloads are cached, and each network call falls back to a documented default if a service is unavailable.</p>
+            <p style="margin-top:16px;">Read together, the layers show a valley whose terrain forms a natural basin, four towns that had been losing population for decades before construction, and a present-day map in which their land has been absorbed by the surrounding municipalities.</p>
+            <p style="margin-top:16px;">Four further layers extend the study: decennial US Census counts for all four towns (1900&ndash;1920); an animation of the reservoir filling from the valley floor to the 1946 full pool; the aqueduct route carrying the water about 100&nbsp;km east to metropolitan Boston; and an interactive map combining these layers, with an adjustable pool level and the 1893 pre-reservoir topographic map as an overlay.</p>
         </div>
         <div class="project-tools">
             <span class="feature-pill">R</span>
@@ -77,17 +77,17 @@
 
     <section class="section">
         <div class="section-header fade-in">
-            <div class="section-label">// Interactive &middot; Leaflet</div>
-            <h2 class="section-title">Watch the valley drown</h2>
+            <div class="section-label">// Interactive map</div>
+            <h2 class="section-title">Filling the reservoir, 1939&ndash;1946</h2>
         </div>
         <div class="project-desc" style="margin-bottom:24px;">
-            <p>The reservoir didn't appear overnight &mdash; once the dam was sealed in 1939, the Swift River backed up for seven years, reaching its 530-foot full pool in 1946. The animation below raises the water stage by stage up the real terrain; in the <a href="quabbin/map/">interactive map</a> you can drag the slider yourself, read each town's census history, and follow the aqueduct east to Boston.</p>
+            <p>After Winsor Dam was closed in 1939, the Swift River backed up for seven years, reaching the 530-foot full pool in 1946. The animation below raises the water in equal-area stages up the terrain model. The <a href="quabbin/map/">interactive map</a> adds an adjustable pool level, the 1893 pre-reservoir topographic map as a fade overlay, each town's census history, and the aqueduct route east to Boston.</p>
         </div>
         <figure style="margin:0;text-align:center;">
             <a href="quabbin/map/" title="Open the interactive map">
-                <img src="quabbin/output/quabbin_floodfill.gif" alt="Animation of the Quabbin Reservoir filling, stage by stage, over the four drowned towns" loading="lazy" style="max-width:560px;width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.18);">
+                <img src="quabbin/output/quabbin_floodfill.gif" alt="Animation of the Quabbin Reservoir filling in stages over the four former town sites" loading="lazy" style="max-width:560px;width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.18);">
             </a>
-            <figcaption style="margin-top:12px;font-size:.85rem;color:#888;">The valley filling to full pool, carved from the DEM &mdash; click to open the interactive map.</figcaption>
+            <figcaption style="margin-top:12px;font-size:.85rem;color:#888;">The reservoir filling to full pool, derived from the DEM. Opens the interactive map.</figcaption>
         </figure>
         <div style="text-align:center;margin-top:24px;">
             <a href="quabbin/map/" class="btn">Open the interactive map &#8599;</a>
@@ -98,7 +98,7 @@
 
     <section class="section gallery-section parallax-section">
         <div class="section-header fade-in">
-            <div class="section-label">// 10 Maps &amp; Charts</div>
+            <div class="section-label">// 13 Maps &amp; Charts</div>
             <h2 class="section-title">The Study, Layer by Layer</h2>
         </div>
         <div class="gallery-grid fade-in fade-in-stagger" id="galleryGrid"></div>
@@ -134,16 +134,19 @@
 <script src="js/main.js"></script>
 <script>
 const galleryImages = [
-    { src: "quabbin/output/08_hero.png",             caption: "Terrain, water, and the vanished towns of the Swift River Valley" },
-    { src: "quabbin/output/01_locator.png",          caption: "Where it is — the reservoir in central Massachusetts" },
-    { src: "quabbin/output/02_dem_hillshade.png",    caption: "The Swift River Valley basin — the terrain that made it a reservoir" },
-    { src: "quabbin/output/03_reservoir_towns.png",  caption: "Four towns under the water — Dana, Enfield, Greenwich & Prescott" },
-    { src: "quabbin/output/04_watershed.png",        caption: "The reservoir nested inside its drainage (USGS HUC-10 units)" },
-    { src: "quabbin/output/05_erasure.png",          caption: "Erased from the map — land divided among the surviving municipalities" },
-    { src: "quabbin/output/06_town_lifelines.png",   caption: "Four lifelines, all ending on the same day — 28 April 1938" },
-    { src: "quabbin/output/07_population_decline.png",caption: "Every town was already shrinking — real US Census counts, 1900–1920" },
-    { src: "quabbin/output/09_floodfill.png",         caption: "The valley drowning, stage by stage — filling to the 530 ft pool" },
-    { src: "quabbin/output/10_aqueduct.png",          caption: "Drowned for a city 100 km east — the water's journey to Boston" }
+    { src: "quabbin/output/08_hero.png",             caption: "Terrain, reservoir, and the four former town sites" },
+    { src: "quabbin/output/01_locator.png",          caption: "Location: the reservoir in central Massachusetts" },
+    { src: "quabbin/output/02_dem_hillshade.png",    caption: "The Swift River Valley basin (shaded relief from the DEM)" },
+    { src: "quabbin/output/03_reservoir_towns.png",  caption: "The four former towns over the present reservoir: Dana, Enfield, Greenwich, Prescott" },
+    { src: "quabbin/output/04_watershed.png",        caption: "The reservoir within its drainage (USGS HUC-10 units)" },
+    { src: "quabbin/output/05_erasure.png",          caption: "The former town land, now divided among the surrounding municipalities" },
+    { src: "quabbin/output/06_town_lifelines.png",   caption: "Each town's span, from charter to the 1938 disincorporation" },
+    { src: "quabbin/output/07_population_decline.png",caption: "Decennial US Census population, 1900–1920" },
+    { src: "quabbin/output/09_floodfill.png",         caption: "The reservoir filling in stages to the 530 ft full pool" },
+    { src: "quabbin/output/10_aqueduct.png",          caption: "The aqueduct route: about 100 km east to metropolitan Boston" },
+    { src: "quabbin/output/11_crosssection.png",      caption: "Cross-section: the 530 ft pool over the dendritic valley" },
+    { src: "quabbin/output/12_losses.png",            caption: "The reservoir in numbers: what was removed, and what it supplies" },
+    { src: "quabbin/output/13_terrain3d.png",         caption: "The valley and reservoir in three dimensions" }
 ];
 
 // Render gallery
