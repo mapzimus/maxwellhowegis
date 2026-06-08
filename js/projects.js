@@ -293,7 +293,7 @@ const projects = [
         description: "Optitrek is an algorithmic road-trip optimizer for the United States. It takes the 2015 Randal Olson 'optimal US road trip' — 50 hand-picked stops, genetic algorithm, Google Maps API — and rebuilds it with 2026 tools. Instead of just ordering hand-picked stops, Optitrek solves both the selection AND the ordering across ~400 NPS units (Tier 1, current) growing to ~100,000 POIs (Tier 2+) using Google OR-Tools constrained TSP, a self-hosted OSRM routing engine on the US-only OSM extract, and a Neon PostGIS spatial database. Three-tier build: Tier 1 proves the algorithm with an NPS-only optimal loop covering all 48 contiguous states + D.C. (planned blog post + interactive map); Tier 2 ships a configurable web app on Railway; Tier 3 is a full consumer product with accounts, Amtrak rail routing, a community trip gallery, and presets. Current status: Phase 1 (data ingest) is running live — 466 NPS units in PostGIS with every required state covered. Phases 2–4 (OSRM distance matrix, OR-Tools solver, Folium visualization) are coded and unit-tested (17 passing), pending end-to-end run on the routing host.",
         tools: ["Python 3.11+", "PostGIS / Neon", "Google OR-Tools", "OSRM (self-hosted, US extract)", "Folium", "NPS API", "Census TIGER", "Docker", "FastAPI (planned)"],
         year: "2026",
-        thumb: "images/projects/optitrek-thumb.png",
+        thumb: "images/projects/optitrek-thumb.jpg",
         liveUrl: null,
         repoUrl: "https://github.com/mapzimus/optitrek",
         status: "development"

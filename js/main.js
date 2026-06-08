@@ -128,9 +128,16 @@ function openModal(id) {
     const overlay = document.getElementById('modalOverlay');
     if (!overlay) return;
 
-    document.getElementById('modalThumb').innerHTML = p.thumb
+    // Thumbnail. If the project has a destination, make it a link (live site preferred,
+    // else source repo) so clicking the image in the modal opens the project.
+    const thumbInner = p.thumb
         ? `<img src="${p.thumb}" alt="${p.title}">`
         : `<div class="placeholder-map">${typePlaceholders[p.type] || '\u{1F5FA}'}</div>`;
+    const thumbDest = p.liveUrl || p.repoUrl || null;
+    const thumbCta = p.liveUrl ? 'Open project ↗' : 'View source ↗';
+    document.getElementById('modalThumb').innerHTML = thumbDest
+        ? `<a href="${thumbDest}" target="_blank" rel="noopener noreferrer" class="modal-thumb-link" aria-label="${p.liveUrl ? 'Open' : 'View source for'} ${p.title} (opens in a new tab)">${thumbInner}<span class="modal-thumb-cta">${thumbCta}</span></a>`
+        : thumbInner;
 
     const galleryHTML = p.gallery && p.gallery.length > 0 ? `
         <div class="modal-section-title">Project Gallery</div>

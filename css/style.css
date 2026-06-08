@@ -656,6 +656,55 @@ main { flex: 1; }
     object-fit: cover;
 }
 
+/* Clickable modal thumbnail -> opens the project (live site or source repo) */
+.modal-thumb-link {
+    display: block;
+    width: 100%; height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.modal-thumb-link img { display: block; transition: transform var(--transition, 0.2s ease); }
+.modal-thumb-link::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.2s ease;
+}
+.modal-thumb-link:hover img,
+.modal-thumb-link:focus-visible img { transform: scale(1.03); }
+.modal-thumb-link:hover::after { background: rgba(0, 0, 0, 0.18); }
+.modal-thumb-link:focus-visible { outline: 2px solid var(--accent-blue, #87c3ff); outline-offset: -2px; }
+.modal-thumb-cta {
+    position: absolute;
+    right: 14px; bottom: 14px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #fff;
+    background: rgba(10, 14, 23, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+.modal-thumb-link:hover .modal-thumb-cta,
+.modal-thumb-link:focus-visible .modal-thumb-cta {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Touch devices can't hover — keep the affordance visible */
+@media (hover: none) {
+    .modal-thumb-cta { opacity: 1; transform: none; }
+}
+
 .modal-thumb .placeholder-map {
     width: 100%; height: 100%;
     display: flex;
