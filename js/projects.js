@@ -191,6 +191,21 @@ const projects = [
     },
     // ─── Current / Active ─────────────────────────────────────────────────────
     {
+        id: 17,
+        era: "current",
+        title: "Quabbin: A Valley Chosen, Four Towns Erased",
+        category: "Spatial Analysis",
+        type: "analysis",
+        tags: ["R", "sf", "terra", "DEM / Hillshade", "OpenStreetMap", "USGS WBD", "Census TIGER"],
+        summary: "A reproducible multi-layer R GIS study of the Quabbin Reservoir — the four Swift River Valley towns (Dana, Enfield, Greenwich, Prescott) deliberately drowned in 1938 to supply Boston's water. Terrain, reservoir, watershed, modern boundaries, and population displacement — all from open data, rendered to eight maps and charts by a single R pipeline.",
+        description: "The first in a planned series of multi-layer GIS studies of geography-shaped American places — and the first portfolio piece that ships its full analysis code. In 1938 Massachusetts disincorporated four entire towns — Dana, Enfield, Greenwich, and Prescott — and flooded the Swift River Valley to create the Quabbin Reservoir, displacing about 2,500 people so that Boston, 65 miles east, could drink. I built the whole study in R as a reproducible pipeline: a DEM pulled from AWS Terrain Tiles (elevatr), reprojected to Massachusetts State Plane and hillshaded with terra; the reservoir carved straight out of the terrain at its 530-foot full-pool elevation; USGS Watershed Boundary Dataset units for regional drainage context; US Census TIGER municipalities to show how the four towns were erased and their land parcelled out to the survivors that ring the water today; and a documented population-displacement layer. Every spatial layer comes from open data, every network fetch degrades gracefully if a service is down, and a single `Rscript run_all.R` regenerates all eight figures from scratch. Read together, the layers tell one story — a valley its geography made an obvious basin, and the four towns that vanished to fill it.",
+        tools: ["R", "sf", "terra", "elevatr", "osmdata", "tigris", "ggplot2", "ggnewscale", "ggspatial", "GDAL"],
+        year: "2026",
+        thumb: "quabbin/output/08_hero.png",
+        liveUrl: "quabbin.html",
+        repoUrl: "https://github.com/mapzimus/maxwellhowegis/tree/main/quabbin"
+    },
+    {
         id: 16,
         era: "current",
         title: "Massachusetts Education Atlas",
