@@ -51,7 +51,7 @@
             <p style="margin-top:16px;">The analysis ships as a reproducible pipeline. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, derives the reservoir from its 530-foot full-pool surface, fetches USGS watershed units and US Census boundaries, renders the figures below, generates the reservoir-filling animation, and exports the GeoJSON used by the interactive map. Downloads are cached, and each network call falls back to a documented default if a service is unavailable.</p>
             <p style="margin-top:16px;">Read together, the layers show a valley whose terrain forms a natural basin, four towns that had been losing population for decades before construction, and a present-day map in which their land has been absorbed by the surrounding municipalities.</p>
             <p style="margin-top:16px;">Further layers extend the study: decennial US Census counts for all four towns (1900&ndash;1920); an animation of the reservoir filling from the valley floor to the 1946 full pool; the aqueduct route carrying the water about 105&nbsp;km east to metropolitan Boston; and an interactive map combining these layers, with an adjustable pool level, the 1893 pre-reservoir topographic map, and LiDAR overlays.</p>
-            <p style="margin-top:16px;">A final set looks at what survives above water: 1&nbsp;m LiDAR of Dana Common and the Prescott Peninsula, where old road traces and cellar holes are still legible in the bare-earth relief, and a connectivity map of the roads that once linked the valley to its neighbours.</p>
+            <p style="margin-top:16px;">A final set looks at what survives above water: 1&nbsp;m LiDAR of Dana Common and the Prescott Peninsula, where old road traces and cellar holes are still legible in the bare-earth relief, and a map of the valley's 1893 road network with the present reservoir overlaid to show which roads drowned.</p>
         </div>
         <div class="project-tools">
             <span class="feature-pill">R</span>
@@ -150,7 +150,7 @@ const galleryImages = [
     { src: "quabbin/output/13_terrain3d.png",         caption: "The valley and reservoir in three dimensions" },
     { src: "quabbin/output/14_dana_lidar.png",        caption: "LiDAR of Dana Common: the surviving town site above the water" },
     { src: "quabbin/output/15_prescott_lidar.png",    caption: "LiDAR of the Prescott Peninsula: old roads and foundations that stayed above water" },
-    { src: "quabbin/output/16_roads.png",             caption: "How the valley's roads connected the towns to each other and their neighbours" }
+    { src: "quabbin/output/16_roads.png",             caption: "The valley's 1893 road network, with the reservoir overlaid to show which roads drowned" }
 ];
 
 // Render gallery
