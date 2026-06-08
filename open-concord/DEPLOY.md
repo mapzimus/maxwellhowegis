@@ -44,7 +44,7 @@ export PGHOST=localhost PGPORT=5432 PGDATABASE=openconcord
 export PGUSER=openconcord PGPASSWORD=...        # from .env above
 export CENSUS_API_KEY=...                        # tidycensus (free)
 # optional: NREL_API_KEY, AIRNOW_API_KEY, OPENAQ_API_KEY, PURPLEAIR_API_KEY,
-#           FIRMS_MAP_KEY, MAPILLARY_TOKEN  (see ../concord-nh-data/docs/ACCOUNTS_NEEDED.md)
+#           FIRMS_MAP_KEY, MAPILLARY_TOKEN  (see docs/ACCOUNTS_NEEDED.md)
 ```
 
 ## 4. Run the pipeline

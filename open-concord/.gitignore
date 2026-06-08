@@ -4,6 +4,6 @@
 .RData
 .Ruserdata
 _targets/
-NAMESPACE
+# NAMESPACE is hand-written and committed (regenerate with roxygen2 if you prefer)
 man/
 *.tar.gz

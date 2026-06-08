@@ -1,3 +1,0 @@
-# Downloaded GIS data is large and reproducible from the scripts — don't commit it.
-*
-!.gitignore

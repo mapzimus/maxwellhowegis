@@ -13,7 +13,7 @@ oc_get_json <- function(url, headers = list()) {
     httr2::req_user_agent("open-concord/1.0 (mhowe.gis@gmail.com)") |>
     httr2::req_retry(max_tries = 4) |>
     httr2::req_timeout(120)
-  for (nm in names(headers)) req <- httr2::req_headers(req, !!nm := headers[[nm]])
+  if (length(headers)) req <- do.call(httr2::req_headers, c(list(req), headers))
   httr2::resp_body_json(httr2::req_perform(req), simplifyVector = TRUE)
 }
 

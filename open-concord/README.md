@@ -6,9 +6,11 @@ federal/state ArcGIS, OpenStreetMap, schools incl. **Penacook / Merrimack Valley
 SD**, demographics, biodiversity, knowledge), loads each into PostGIS tagged
 `map+db` or `db`, and exports a self-hostable web map.
 
-> **Status: R port in progress.** This replaces the (validated) Python toolkit.
+> **Status: R port — the Python toolkit has been removed and fully replaced.**
 > R is not installed in the build sandbox, so this code is written against known
-> package APIs but **not yet executed end-to-end** — run it locally and iterate.
+> package APIs but **not yet executed end-to-end** — run it locally (see
+> [`DEPLOY.md`](DEPLOY.md)) and iterate. The original validated Python lives in
+> git history if you ever need to diff against it.
 
 ## Stack
 
@@ -66,6 +68,6 @@ See [`DEPLOY.md`](DEPLOY.md) for the full VPS + PostGIS + static-publish setup.
   key-gated AQI/FIRMS/Mapillary via env vars).
 - `roxygen2::roxygenise()` to generate `NAMESPACE`/man pages; `renv::init()` lockfile.
 - First live run on the VPS (`targets::tar_make()`) + per-dataset validation
-  (flip `catalog.validated`), then remove the retired Python `concord-nh-data/`.
+  (flip `catalog.validated`) per `docs/MEGA_MAP_SPEC.md`.
 - `mapgl`-based styling per geometry/attribute; choropleths from `db` joins
   (e.g. ACS income on tracts, enrollment on school points).

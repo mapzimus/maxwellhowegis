@@ -1,0 +1,53 @@
+name: Concord mega map refresh
+
+# Rebuilds the Open Concord data + PMTiles and publishes the static export to
+# /concord/data/. The PostGIS DB lives on your private VPS, so this runs on a
+# SELF-HOSTED runner registered on that VPS (where R, tippecanoe, and the DB are
+# reachable). Register one: repo Settings -> Actions -> Runners -> New self-hosted
+# runner, label it `open-concord`.
+
+on:
+  schedule:
+    - cron: "0 7 * * 0"        # 07:00 UTC Sundays
+  workflow_dispatch:           # manual "Run workflow" button
+
+permissions:
+  contents: write              # to commit the refreshed export
+
+jobs:
+  refresh:
+    runs-on: [self-hosted, open-concord]
+    defaults:
+      run:
+        shell: bash
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGDATABASE: openconcord
+      PGUSER: ${{ secrets.PGUSER }}
+      PGPASSWORD: ${{ secrets.PGPASSWORD }}
+      CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+      # optional keys — set as repo secrets to enable those layers
+      NREL_API_KEY: ${{ secrets.NREL_API_KEY }}
+      AIRNOW_API_KEY: ${{ secrets.AIRNOW_API_KEY }}
+      OPENAQ_API_KEY: ${{ secrets.OPENAQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run the pipeline (download -> PostGIS -> PMTiles export)
+        working-directory: open-concord
+        run: |
+          Rscript -e 'if (!requireNamespace("openconcord", quietly=TRUE)) remotes::install_local(".", upgrade="never")'
+          Rscript -e 'targets::tar_make()'
+
+      - name: Commit refreshed static export
+        run: |
+          if [ -n "$(git status --porcelain concord/data)" ]; then
+            git config user.name  "open-concord bot"
+            git config user.email "mhowe.gis@gmail.com"
+            git add concord/data
+            git commit -m "chore: weekly Concord mega map data refresh"
+            git push
+          else
+            echo "No data changes."
+          fi
