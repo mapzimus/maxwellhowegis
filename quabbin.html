@@ -6,7 +6,7 @@
     <title>The Quabbin Reservoir and the Lost Towns of the Swift River Valley | Maxwell Howe GIS</title>
     <meta name="description" content="A reproducible, multi-layer R GIS study of the Quabbin Reservoir and the four Swift River Valley towns disincorporated in 1938: terrain, the reservoir, watershed, decennial census population, a reservoir-filling animation, the aqueduct to Boston, and an interactive Leaflet map — all from open data.">
     <meta property="og:title" content="The Quabbin Reservoir and the Lost Towns of the Swift River Valley — Maxwell Howe">
-    <meta property="og:description" content="A multi-layer R GIS study of the four Swift River Valley towns disincorporated in 1938 to create the Quabbin Reservoir. Ten figures, a reservoir-filling animation, and an interactive map, reproducible from open data.">
+    <meta property="og:description" content="A multi-layer R GIS study of the four Swift River Valley towns disincorporated in 1938 to create the Quabbin Reservoir. Thirteen figures, a reservoir-filling animation, and an interactive map, reproducible from open data.">
     <meta property="og:image" content="quabbin/output/08_hero.png">
     <meta property="og:type" content="article">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -46,11 +46,11 @@
             <span>Open Data &middot; Fully Reproducible</span>
         </div>
         <div class="project-desc">
-            <p>Between 1938 and 1946, Massachusetts created the Quabbin Reservoir by damming and flooding the Swift River Valley. Four towns &mdash; Dana, Enfield, Greenwich, and Prescott &mdash; were disincorporated on 28 April 1938, and about 2,500 residents were relocated. The reservoir was built to supply metropolitan Boston, roughly 100&nbsp;km (65 miles) to the east.</p>
+            <p>Between 1938 and 1946, Massachusetts created the Quabbin Reservoir by damming and flooding the Swift River Valley. Four towns &mdash; Dana, Enfield, Greenwich, and Prescott &mdash; were disincorporated on 28 April 1938, and about 2,500 residents were relocated. The reservoir was built to supply metropolitan Boston, roughly 105&nbsp;km (65 miles) to the east.</p>
             <p style="margin-top:16px;">This is a <em>multi-layer GIS study</em>: several spatial layers that, read together, describe how the reservoir was sited and what it replaced. It is built in R from open public data &mdash; terrain, the reservoir surface, the watershed, modern municipal boundaries, and decennial census population.</p>
             <p style="margin-top:16px;">The analysis ships as a reproducible pipeline. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, derives the reservoir from its 530-foot full-pool surface, fetches USGS watershed units and US Census boundaries, renders the figures below, generates the reservoir-filling animation, and exports the GeoJSON used by the interactive map. Downloads are cached, and each network call falls back to a documented default if a service is unavailable.</p>
             <p style="margin-top:16px;">Read together, the layers show a valley whose terrain forms a natural basin, four towns that had been losing population for decades before construction, and a present-day map in which their land has been absorbed by the surrounding municipalities.</p>
-            <p style="margin-top:16px;">Four further layers extend the study: decennial US Census counts for all four towns (1900&ndash;1920); an animation of the reservoir filling from the valley floor to the 1946 full pool; the aqueduct route carrying the water about 100&nbsp;km east to metropolitan Boston; and an interactive map combining these layers, with an adjustable pool level and the 1893 pre-reservoir topographic map as an overlay.</p>
+            <p style="margin-top:16px;">Four further layers extend the study: decennial US Census counts for all four towns (1900&ndash;1920); an animation of the reservoir filling from the valley floor to the 1946 full pool; the aqueduct route carrying the water about 105&nbsp;km east to metropolitan Boston; and an interactive map combining these layers, with an adjustable pool level and the 1893 pre-reservoir topographic map as an overlay.</p>
         </div>
         <div class="project-tools">
             <span class="feature-pill">R</span>
@@ -143,7 +143,7 @@ const galleryImages = [
     { src: "quabbin/output/06_town_lifelines.png",   caption: "Each town's span, from charter to the 1938 disincorporation" },
     { src: "quabbin/output/07_population_decline.png",caption: "Decennial US Census population, 1900–1920" },
     { src: "quabbin/output/09_floodfill.png",         caption: "The reservoir filling in stages to the 530 ft full pool" },
-    { src: "quabbin/output/10_aqueduct.png",          caption: "The aqueduct route: about 100 km east to metropolitan Boston" },
+    { src: "quabbin/output/10_aqueduct.png",          caption: "The aqueduct route: about 105 km east to metropolitan Boston" },
     { src: "quabbin/output/11_crosssection.png",      caption: "Cross-section: the 530 ft pool over the dendritic valley" },
     { src: "quabbin/output/12_losses.png",            caption: "The reservoir in numbers: what was removed, and what it supplies" },
     { src: "quabbin/output/13_terrain3d.png",         caption: "The valley and reservoir in three dimensions" }
