@@ -1,89 +1,78 @@
-# Deploying Open Concord (self-hosted PostGIS + static map)
+# Deploying Open Concord (R Shiny frontend + self-hosted PostGIS)
 
-Architecture: the **R pipeline** runs on your **VPS**, writes to a **self-hosted
-PostGIS**, and exports **static artifacts** (PMTiles + Parquet + catalog.json) that
-the **website** serves at `maxwellhowegis.com/concord/`. The database is never
-exposed publicly — only the static export is.
+Everything is R end-to-end: the R **ETL** loads **PostGIS**, and an R **Shiny app**
+(the frontend) queries it live and renders the interactive map. Both run on your
+**VPS**. The portfolio page at `maxwellhowegis.com/concord/` embeds the app.
 
 ```
- VPS:  targets::tar_make() ──► PostGIS (localhost:5432) ──► oc_export_web()
-                                                                  │
-                                  concord.pmtiles + *.parquet + catalog.json
-                                                                  ▼
-                              git push ──► maxwellhowegis repo  /concord/data/
-                                                                  ▼
-                              GitHub Pages ──► maxwellhowegis.com/concord/  (static)
+ VPS:  targets::tar_make() (R) ──► PostGIS (private, localhost)
+                                          ▲ DBI/sf
+                       Shiny app (R, leaflet) ──► Caddy (TLS) ──► concord.maxwellhowegis.com
+                                                                         ▲ iframe
+                       maxwellhowegis.com/concord/  (GitHub Pages) ──────┘
 ```
 
-## 1. Stand up PostGIS (VPS)
+## 1. DNS
+Point an A record for the app subdomain at the VPS, e.g.
+`concord.maxwellhowegis.com → <vps-ip>`. (The portfolio page stays on GitHub Pages
+and embeds it.)
+
+## 2. Bring up PostGIS + the Shiny app
 
 ```bash
 cd open-concord
-echo "PGPASSWORD=$(openssl rand -hex 24)" > .env   # also set PGUSER if you like
-docker compose up -d                                # schema.sql auto-loads on first boot
+cp .env.example .env          # set PGPASSWORD, APP_DOMAIN
+docker compose up -d          # postgis + shiny (built from Dockerfile) + caddy (auto-TLS)
 ```
 
-Port 5432 is bound to `127.0.0.1` only. Connect from elsewhere over an SSH tunnel:
-`ssh -L 5432:localhost:5432 you@your-vps`.
+`schema.sql` auto-loads; Caddy gets a Let's Encrypt cert for `APP_DOMAIN` and
+reverse-proxies the Shiny app (WebSockets included). Postgres stays on localhost.
 
-## 2. Install R + system libraries (VPS, Debian/Ubuntu)
+## 3. Install R + system libs for the ETL (VPS)
 
 ```bash
-sudo apt-get update
-sudo apt-get install -y r-base gdal-bin libgdal-dev libgeos-dev libproj-dev \
-    libudunits2-dev libpq-dev tippecanoe        # tippecanoe: build from github if no pkg
-Rscript -e 'install.packages(c("remotes","sf","DBI","RPostgres","httr2","jsonlite",
-  "arcgislayers","tidycensus","tigris","osmdata","rgbif","educationdata",
-  "WikidataQueryServiceR","WikipediR","targets","cli","glue","dplyr","purrr","arrow"))'
+sudo apt-get update && sudo apt-get install -y r-base gdal-bin libgdal-dev \
+  libgeos-dev libproj-dev libudunits2-dev libpq-dev
+cd open-concord && Rscript setup.R     # R deps + renv snapshot
 ```
 
-## 3. Configure credentials (env vars)
+(The Shiny container already has its R deps baked in via `Dockerfile`.)
+
+## 4. Load the data
 
 ```bash
-export PGHOST=localhost PGPORT=5432 PGDATABASE=openconcord
-export PGUSER=openconcord PGPASSWORD=...        # from .env above
-export CENSUS_API_KEY=...                        # tidycensus (free)
-# optional: NREL_API_KEY, AIRNOW_API_KEY, OPENAQ_API_KEY, PURPLEAIR_API_KEY,
-#           FIRMS_MAP_KEY, MAPILLARY_TOKEN  (see docs/ACCOUNTS_NEEDED.md)
+export PGHOST=localhost PGPORT=5432 PGDATABASE=openconcord \
+       PGUSER=openconcord PGPASSWORD=...      # from .env
+export CENSUS_API_KEY=...                     # tidycensus; others optional (docs/ACCOUNTS_NEEDED.md)
+Rscript -e 'targets::tar_make()'              # download -> PostGIS
 ```
 
-## 4. Run the pipeline
+The Shiny app reads `public.catalog` and renders every `map+db` layer live — no
+rebuild step. Re-run the ETL and the app reflects it.
 
-```r
-# from the open-concord/ directory
-remotes::install_local(".")        # or devtools::load_all(".")
-targets::tar_make()                # download -> PostGIS -> web export
-# or pieces:  openconcord::oc_db_init(); openconcord::oc_load_schools()
-```
+## 5. Frontend
 
-`oc_export_web()` writes `concord.pmtiles`, `*.parquet`, and `catalog.json` into
-`../concord/data/` (the website repo). Commit & push that to publish.
+- The app **is** `shiny/app.R` (R + leaflet + leaflet.extras + sf + pool): layer
+  toggles, click-popups, a **draw toolbar** (draw → live `ST_Intersects` count),
+  and **server-side attribute filtering**.
+- `concord/index.html` on GitHub Pages just **embeds** `concord.maxwellhowegis.com`
+  so the map appears at `maxwellhowegis.com/concord/`. Update the `APP_URL` there
+  if your subdomain differs.
+- Swap leaflet for `{mapgl}` (MapLibre in R) inside `app.R` if you want
+  vector-tile performance for the big layers (parcels/buildings).
 
-## 5. Publish to the site
+## 6. Refresh on a schedule
+`.github/workflows/concord-refresh.yml` (self-hosted runner on the VPS) re-runs the
+ETL; the live app follows automatically. Or cron:
+`0 3 * * 0 cd /srv/open-concord && Rscript -e 'targets::tar_make()'`.
 
-The map page already lives at `concord/index.html` (repo root → served at
-`maxwellhowegis.com/concord/`). After a pipeline run:
+## Optional: tile/feature API
+For vector-tile performance or an external API, `docker compose --profile api up -d`
+adds pg_tileserv (MVT) + pg_featureserv (GeoJSON/CQL). The Shiny app does **not**
+require them.
 
-```bash
-cd ../maxwellhowegis            # the website repo (this repo)
-git add concord/data && git commit -m "Refresh Concord mega map data" && git push
-```
-
-## 6. Automate (optional)
-
-Cron the whole thing on the VPS (the DB stays private; only static files are pushed):
-
-```cron
-# 3am Sundays: refresh data, rebuild tiles, publish
-0 3 * * 0  cd /srv/open-concord && Rscript -e 'targets::tar_make()' && \
-           cd /srv/maxwellhowegis && git add concord/data && \
-           git -c user.name=oc-bot -c user.email=mhowe.gis@gmail.com \
-               commit -m "weekly data refresh" && git push
-```
-
-## Security notes
-- Keep PostGIS bound to localhost / behind the firewall. The public only ever sees
-  static PMTiles/Parquet — no live DB connection from the browser.
-- Store keys in a `.env` / secrets manager, never in the repo.
-- The exported Parquet/PMTiles are public data; review before publishing if you add
-  any restricted layer.
+## Security
+- Postgres stays on localhost/firewalled. Only the Shiny app (and optional API) is
+  public, behind Caddy TLS.
+- For write-back / auth, use Shiny modules + DB roles, or add PostgREST.
+- Keep secrets in `.env`, never in the repo.

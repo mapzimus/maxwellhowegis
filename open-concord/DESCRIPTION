@@ -35,6 +35,10 @@ Imports:
 Suggests:
     targets,
     tarchetypes,
+    shiny,
+    leaflet,
+    leaflet.extras,
+    pool,
     mapgl,
     duckdb,
     arrow,

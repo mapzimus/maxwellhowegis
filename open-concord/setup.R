@@ -14,6 +14,8 @@ pkgs <- c(
   "WikidataQueryServiceR", "WikipediR",
   # pipeline + export
   "targets", "tarchetypes", "arrow",
+  # shiny frontend
+  "shiny", "leaflet", "leaflet.extras", "pool",
   # optional
   "duckdb", "mapgl", "rinat"
 )

@@ -44,15 +44,15 @@ enrollment (`db`) joins to school points (`map+db`) on `LEAID`.
 ## 2. Architecture
 
 ```
- download_*.py  ──►  data/  (GeoJSON + CSV/JSON)  ──►  ┌─────────────┐
- (run_all.py)                                          │  PostGIS DB │  ◄── db + map+db
-                                                       └──────┬──────┘
-                                          map+db layers │ (ETL: ogr2ogr / shp2pgsql / COPY)
-                                                        ▼
-                                            vector tiles (PMTiles / tippecanoe)
-                                                        ▼
-                                            MapLibre GL JS  ──►  Mega Map UI
-                                                                 (layer panel ← layer_index.json)
+ openconcord (R) targets::tar_make()  ──►  ┌─────────────┐
+                                           │  PostGIS DB │  ◄── db + map+db  (private/VPS)
+                                           └──────┬──────┘
+                                       DBI/sf │ (live queries)
+                                              ▼
+                          R Shiny app (leaflet)  ──►  Caddy (TLS)  ──► concord.maxwellhowegis.com
+                                                                            ▲ iframe
+                          maxwellhowegis.com/concord/ (GitHub Pages) ───────┘
+       (optional: pg_tileserv/pg_featureserv profile for vector-tile performance)
 ```
 
 ### Database (recommended: **PostgreSQL + PostGIS**)
@@ -65,16 +65,19 @@ enrollment (`db`) joins to school points (`map+db`) on `LEAID`.
 - Lightweight alternative: **DuckDB + spatial** (file-based, reads GeoJSON/Parquet
   directly) or **SQLite + SpatiaLite** if you want zero server.
 
-### Mega map (recommended: **MapLibre GL JS + PMTiles**)
-- Convert each `map+db` GeoJSON to **PMTiles** with `tippecanoe` (big layers —
-  parcels 13k, buildings 18.5k, GBIF 9k — need tiling; small ones can load as raw
-  GeoJSON sources).
-- Basemap: a neutral vector style; toggle Concord aerials (2000/2005/2010) and
-  USGS NAIP as raster overlays.
-- The **layer panel is generated from `docs/layer_index.json`** — grouped exactly
-  as the catalog, each layer a toggle, `db` joins exposed as styling options on
-  their host layer.
-- Popups pull attributes from the feature + any joined `db` rows.
+### Mega map — **R Shiny frontend** (`shiny/app.R`, leaflet + sf)
+- The frontend is **R**, hosted on the VPS, querying PostGIS live via `DBI`/`sf`
+  with a `{pool}` connection pool. It reads `public.catalog` and renders every
+  `map+db` layer.
+- Interactivity: layer toggles, click-popups, a **draw toolbar**
+  (`leaflet.extras`) that runs a live `ST_Intersects` count, and **server-side
+  attribute filtering** (re-query a layer with a `WHERE` clause).
+- `db` tables join to their `map+db` host (e.g. ACS income on tracts → choropleth).
+- **Caddy** terminates TLS on `concord.maxwellhowegis.com`; the GitHub Pages page
+  at `/concord/` iframes it. Raw Postgres stays private.
+- **Optional**: `--profile api` (pg_tileserv/pg_featureserv) for vector-tile
+  performance; `oc_export_web()` for an offline PMTiles/Parquet snapshot. Swap
+  leaflet → `{mapgl}` in `app.R` for MapLibre/vector tiles.
 
 ---
 

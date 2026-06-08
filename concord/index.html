@@ -4,134 +4,50 @@
   <meta charset="utf-8" />
   <title>Open Concord — Mega Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
-  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script src="https://unpkg.com/pmtiles@3.2.0/dist/pmtiles.js"></script>
+  <meta name="description" content="Every public Concord, NH dataset on one live map — an R Shiny app over a self-hosted PostGIS database." />
   <style>
-    html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
-    #map { position: absolute; inset: 0; }
-    #panel {
-      position: absolute; top: 10px; right: 10px; max-height: 92%; overflow: auto;
-      background: #fff; padding: 10px 14px; border-radius: 8px;
-      box-shadow: 0 1px 8px rgba(0,0,0,.3); font-size: 13px; width: 270px;
-    }
-    #panel h2 { margin: 0 0 2px; font-size: 15px; }
-    #panel .sub { color: #666; font-size: 11px; margin-bottom: 6px; }
-    details { margin-top: 6px; }
-    summary { font-weight: 600; text-transform: capitalize; cursor: pointer; }
-    summary .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%;
-                   margin-right: 5px; vertical-align: middle; }
-    label { display: block; padding: 1px 0 1px 14px; }
-    .maplibregl-popup-content { max-height: 240px; overflow: auto; font-size: 12px; }
-    .maplibregl-popup-content table { border-collapse: collapse; }
-    .maplibregl-popup-content td { border-bottom: 1px solid #eee; padding: 1px 4px; vertical-align: top; }
-    .maplibregl-popup-content td:first-child { color: #555; font-weight: 600; }
+    html, body { margin: 0; height: 100%; background: #0b1020; font-family: system-ui, sans-serif; }
+    #frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+    #fallback { color: #cbd5e1; max-width: 640px; margin: 12vh auto; padding: 0 24px; line-height: 1.5; }
+    #fallback a { color: #60a5fa; }
+    #fallback h1 { color: #fff; }
   </style>
 </head>
 <body>
-  <div id="map"></div>
-  <div id="panel">
-    <h2>Open Concord</h2>
-    <div class="sub">Every Concord, NH dataset, one map. Toggle layers; click a feature for details.</div>
-    <div id="layers">loading…</div>
-  </div>
+  <!--
+    The Open Concord frontend is an R Shiny app (leaflet + sf) hosted on the VPS
+    alongside its PostGIS database. GitHub Pages is static, so this page embeds the
+    live app. Update APP_URL if your subdomain differs.
+  -->
+  <iframe id="frame" title="Open Concord live map"
+          src="https://concord.maxwellhowegis.com/"
+          allow="geolocation; fullscreen"></iframe>
+
+  <noscript>
+    <div id="fallback">
+      <h1>Open Concord</h1>
+      <p>The live map is at
+         <a href="https://concord.maxwellhowegis.com/">concord.maxwellhowegis.com</a>.</p>
+    </div>
+  </noscript>
+
   <script>
-    // ---- group palette ----
-    const GROUP_COLOR = {
-      city: "#2563eb", external: "#059669", osm: "#7c3aed", apis: "#d97706",
-      schools: "#dc2626", business: "#db2777", knowledge: "#0891b2", web: "#475569"
-    };
-    const colorOf = g => GROUP_COLOR[g] || "#3b82f6";
-
-    // ---- static data sources: one PMTiles + a catalog ----
-    const protocol = new pmtiles.Protocol();
-    maplibregl.addProtocol("pmtiles", protocol.tile);
-    const PM = "pmtiles://./data/concord.pmtiles";
-
-    const map = new maplibregl.Map({
-      container: "map",
-      style: "https://demotiles.maplibre.org/style.json",  // neutral, keyless basemap
-      center: [-71.538, 43.207], zoom: 12
-    });
-    map.addControl(new maplibregl.NavigationControl(), "top-left");
-
-    // Build the three render layers (polygon/line/point) for one source-layer.
-    function addVectorLayer(sl, group) {
-      const color = colorOf(group);
-      // ACS income choropleth gets data-driven fill; everything else flat.
-      const isACS = sl === "apis__acs_tracts";
-      const fillPaint = isACS ? {
-        "fill-color": ["interpolate", ["linear"], ["coalesce", ["get", "median_household_incomeE"], 0],
-          0, "#fee5d9", 40000, "#fcae91", 70000, "#fb6a4a", 100000, "#de2d26", 150000, "#a50f15"],
-        "fill-opacity": 0.55
-      } : { "fill-color": color, "fill-opacity": 0.22 };
-
-      map.addLayer({ id: `${sl}-fill`, type: "fill", source: "concord", "source-layer": sl,
-        paint: fillPaint, layout: { visibility: "none" },
-        filter: ["==", ["geometry-type"], "Polygon"] });
-      map.addLayer({ id: `${sl}-line`, type: "line", source: "concord", "source-layer": sl,
-        paint: { "line-color": color, "line-width": ["case", ["==", ["geometry-type"], "Polygon"], 0.6, 1.4] },
-        layout: { visibility: "none" } });
-      map.addLayer({ id: `${sl}-point`, type: "circle", source: "concord", "source-layer": sl,
-        paint: { "circle-color": color, "circle-radius": 3.5, "circle-stroke-width": 0.6,
-                 "circle-stroke-color": "#fff" },
-        layout: { visibility: "none" }, filter: ["==", ["geometry-type"], "Point"] });
-    }
-
-    function setVisible(sl, on) {
-      ["fill", "line", "point"].forEach(t => {
-        const id = `${sl}-${t}`;
-        if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", on ? "visible" : "none");
-      });
-    }
-
-    // popup with a property table on click
-    function wirePopups() {
-      map.on("click", e => {
-        const feats = map.queryRenderedFeatures(e.point).filter(f => f.source === "concord");
-        if (!feats.length) return;
-        const p = feats[0].properties || {};
-        const rows = Object.entries(p).slice(0, 30)
-          .map(([k, v]) => `<tr><td>${k}</td><td>${String(v).slice(0, 120)}</td></tr>`).join("");
-        new maplibregl.Popup({ maxWidth: "320px" })
-          .setLngLat(e.lngLat)
-          .setHTML(`<strong>${feats[0].sourceLayer}</strong><table>${rows}</table>`)
-          .addTo(map);
-      });
-      map.on("mousemove", e => {
-        const hit = map.queryRenderedFeatures(e.point).some(f => f.source === "concord");
-        map.getCanvas().style.cursor = hit ? "pointer" : "";
-      });
-    }
-
-    map.on("load", async () => {
-      map.addSource("concord", { type: "vector", url: PM });
-      wirePopups();
-      const cat = await fetch("./data/catalog.json").then(r => r.json()).catch(() => []);
-      const mapLayers = cat.filter(d => d.target === "map+db");
-      const groups = {};
-      mapLayers.forEach(d => {
-        const sl = `${d.schema_name}__${d.table_name}`;
-        addVectorLayer(sl, d.schema_name);
-        (groups[d.schema_name] ||= []).push({ sl, name: d.table_name, n: d.n_features });
-      });
-
-      const host = document.getElementById("layers");
-      host.innerHTML = "";
-      Object.entries(groups).sort().forEach(([grp, items]) => {
-        const det = document.createElement("details");
-        det.innerHTML = `<summary><span class="dot" style="background:${colorOf(grp)}"></span>`
-          + `${grp} <span style="color:#999">(${items.length})</span></summary>`;
-        items.sort((a, b) => a.name.localeCompare(b.name)).forEach(({ sl, name, n }) => {
-          const lab = document.createElement("label");
-          lab.innerHTML = `<input type="checkbox" data-sl="${sl}"> ${name}`
-            + (n != null ? ` <span style="color:#aaa">${n}</span>` : "");
-          det.appendChild(lab);
-        });
-        host.appendChild(det);
-      });
-      host.addEventListener("change", e => setVisible(e.target.dataset.sl, e.target.checked));
-    });
+    // Graceful fallback if the Shiny host is unreachable (e.g. app down).
+    const APP_URL = "https://concord.maxwellhowegis.com/";
+    const frame = document.getElementById("frame");
+    frame.src = APP_URL;
+    let loaded = false;
+    frame.addEventListener("load", () => { loaded = true; });
+    setTimeout(() => {
+      if (!loaded) {
+        document.body.innerHTML =
+          '<div id="fallback"><h1>Open Concord</h1>' +
+          '<p>The live R&nbsp;Shiny map is hosted at ' +
+          '<a href="' + APP_URL + '">' + APP_URL + '</a>. ' +
+          'If it isn’t loading, the app server may be starting up — try again shortly.</p>' +
+          '<p style="color:#64748b;font-size:13px">R (ETL) → PostGIS → R Shiny (leaflet) — self-hosted.</p></div>';
+      }
+    }, 8000);
   </script>
 </body>
 </html>

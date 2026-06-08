@@ -24,8 +24,8 @@ Because Pages is **static**, anything dynamic must compile to static assets
 | `/` (`index.html`, `*.html`, `css/`, `js/`, `images/`) | Portfolio shell; gallery cards come from `js/projects.js` (source of truth) | Vanilla JS |
 | `geopuesto/`, `ma-atlas/` | **git submodules** (`mapzimus/geopuesto`, `mapzimus/ma-education-atlas`) mounted at subpaths | Leaflet / MapLibre |
 | `whydah/`, `bugwars/`, `Lynn-data-dive/` | Standalone sub-apps | MapLibre / vanilla JS |
-| `open-concord/` | **R package `openconcord`** + `{targets}` pipeline → PostGIS → static export | R |
-| `concord/` | Static MapLibre GL + PMTiles **mega map** (served at maxwellhowegis.com/concord/) | MapLibre, PMTiles |
+| `open-concord/` | **R package `openconcord`** (ETL → PostGIS) + `{targets}` pipeline + **R Shiny frontend** (`shiny/app.R`) + Docker/Caddy deploy | R |
+| `concord/` | Thin GitHub Pages page that **iframes** the VPS-hosted R Shiny map (maxwellhowegis.com/concord/) | HTML |
 | `.github/workflows/` | `pages.yml` (site deploy), `concord-refresh.yml` (data pipeline) | — |
 
 ## Conventions
@@ -44,16 +44,16 @@ Because Pages is **static**, anything dynamic must compile to static assets
 - **Two-tier model**: every dataset is `map+db` (geometry → map + PostGIS) or
   `db` (reference/bulk table joined to map layers). Tracked in `public.catalog`.
 - **Pipeline**: `targets::tar_make()` (full run) or `openconcord::oc_load_*()`
-  (one group). `oc_export_web()` writes `concord/data/{concord.pmtiles, *.parquet,
-  catalog.json}` — the static bundle the map reads.
-- **DB**: self-hosted PostGIS (see `open-concord/docker-compose.yml`), localhost-
-  bound; the public only ever sees the static export. Full setup in
-  `open-concord/DEPLOY.md`. Architecture + per-dataset validation protocol in
-  `open-concord/docs/MEGA_MAP_SPEC.md`; account/key list in
-  `open-concord/docs/ACCOUNTS_NEEDED.md`.
+  (one group). Writes straight to PostGIS; the Shiny app reads it live (no rebuild).
+- **Frontend is R Shiny** (`open-concord/shiny/app.R`, leaflet + sf + pool) —
+  hosted on the VPS, queries PostGIS directly. The portfolio `/concord/` page just
+  iframes it. (`oc_export_web()` is an optional static PMTiles/Parquet snapshot.)
+- **DB**: self-hosted PostGIS, localhost-bound (`open-concord/docker-compose.yml`:
+  postgis + shiny + caddy; optional `--profile api` adds pg_tileserv/featureserv).
+  Full setup in `open-concord/DEPLOY.md`. Architecture + per-dataset validation in
+  `open-concord/docs/MEGA_MAP_SPEC.md`; keys in `open-concord/docs/ACCOUNTS_NEEDED.md`.
 - **CI**: `concord-refresh.yml` runs on a **self-hosted runner on the VPS** (the
-  only thing that can reach the private DB), runs the pipeline, and commits
-  `concord/data/`.
+  only thing that can reach the private DB) and re-runs the ETL; the live app follows.
 
 ## Commands
 

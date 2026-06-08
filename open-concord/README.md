@@ -49,16 +49,15 @@ targets::tar_make()                          # download -> PostGIS -> web export
 openconcord::oc_load_schools()
 ```
 
-## Self-hosting on the website
+## Self-hosting (R end-to-end)
 
-`oc_export_web()` reads PostGIS and writes, into the site's `concord/data/`:
-- `concord.pmtiles` — all `map+db` layers (via `tippecanoe`) for the static map
-- `*.parquet` — `db` tables for in-browser DuckDB-WASM querying
-- `catalog.json` — drives the map's layer panel
-
-The map (`concord/index.html`, MapLibre + PMTiles) is fully static → lives at
-`maxwellhowegis.com/concord/` on GitHub Pages. PostGIS itself is hosted on
-Supabase (managed) and is the pipeline's source of truth.
+Everything is R: the ETL loads PostGIS and an **R Shiny app** (`shiny/app.R`,
+leaflet + sf + pool) is the frontend, querying PostGIS live. Both run on your
+**VPS** via `docker compose up -d` (PostGIS + Shiny + Caddy TLS — see
+[`DEPLOY.md`](DEPLOY.md)). The app is served at `concord.maxwellhowegis.com` and
+embedded at `maxwellhowegis.com/concord/` (GitHub Pages is static, so it iframes
+the live app). Optional `--profile api` adds pg_tileserv/pg_featureserv for
+vector-tile performance; `oc_export_web()` remains an optional static snapshot.
 
 See [`DEPLOY.md`](DEPLOY.md) for the full VPS + PostGIS + static-publish setup.
 
