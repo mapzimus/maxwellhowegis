@@ -58,10 +58,14 @@ The map (`concord/index.html`, MapLibre + PMTiles) is fully static → lives at
 `maxwellhowegis.com/concord/` on GitHub Pages. PostGIS itself is hosted on
 Supabase (managed) and is the pipeline's source of truth.
 
+See [`DEPLOY.md`](DEPLOY.md) for the full VPS + PostGIS + static-publish setup.
+
 ## Remaining (next phases)
 
-- Flesh out the rest of the `httr2` API sources in `R/apis.R` (epa_frs, cdc_places,
-  usgs gages, lodes, nrel_ev, inaturalist, wikidata_landmarks, key-gated AQI/FIRMS).
-- `roxygen2::roxygenise()` to generate `NAMESPACE`/man pages.
-- `mapgl`-based styling per geometry/attribute; choropleths from `db` joins.
-- Validation harness writing `catalog.validated`.
+- ~~Flesh out the `httr2` API sources in `R/apis.R`~~ ✅ done (20 sources, incl.
+  key-gated AQI/FIRMS/Mapillary via env vars).
+- `roxygen2::roxygenise()` to generate `NAMESPACE`/man pages; `renv::init()` lockfile.
+- First live run on the VPS (`targets::tar_make()`) + per-dataset validation
+  (flip `catalog.validated`), then remove the retired Python `concord-nh-data/`.
+- `mapgl`-based styling per geometry/attribute; choropleths from `db` joins
+  (e.g. ACS income on tracts, enrollment on school points).
