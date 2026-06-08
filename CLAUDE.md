@@ -41,6 +41,13 @@ Because Pages is **static**, anything dynamic must compile to static assets
 
 ## Open Concord essentials
 
+> **Picking this up locally?** Read `open-concord/HANDOVER.md` first (state,
+> Python→R map, expected counts, first-run risk register), then
+> `open-concord/docs/LOCAL_DEV.md` (run it) and `docs/VALIDATION_LOG.md` (check
+> off each dataset). The R code is written but **not yet executed** — expect a few
+> package-API fixes on first `targets::tar_make()`.
+
+
 - **Two-tier model**: every dataset is `map+db` (geometry → map + PostGIS) or
   `db` (reference/bulk table joined to map layers). Tracked in `public.catalog`.
 - **Pipeline**: `targets::tar_make()` (full run) or `openconcord::oc_load_*()`

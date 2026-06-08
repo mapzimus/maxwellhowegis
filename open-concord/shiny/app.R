@@ -49,10 +49,12 @@ get_layer <- function(schema, table, where = "1=1") {
            error = function(e) NULL)
 }
 
+# one HTML table per feature (returns a character vector of length nrow(x))
 popup_table <- function(x) {
   df <- st_drop_geometry(x)
-  apply(head(df, 1), 1, function(r) paste0(
-    "<table>", paste0("<tr><td><b>", names(r), "</b></td><td>",
+  if (!nrow(df)) return(character())
+  apply(df, 1, function(r) paste0(
+    "<table>", paste0("<tr><td><b>", names(df), "</b></td><td>",
                       substr(as.character(r), 1, 120), "</td></tr>", collapse = ""),
     "</table>"))
 }
@@ -125,11 +127,11 @@ server <- function(input, output, session) {
       col <- ifelse(is.na(GROUP_COLOR[parts[1]]), "#3b82f6", GROUP_COLOR[parts[1]])
       gt <- as.character(st_geometry_type(g, by_geometry = FALSE))
       if (grepl("POLY", gt)) proxy |> addPolygons(data = g, group = id, color = col,
-          weight = 1, fillOpacity = 0.25, popup = ~popup_table(g))
+          weight = 1, fillOpacity = 0.25, popup = popup_table(g))
       else if (grepl("LINE", gt)) proxy |> addPolylines(data = g, group = id,
-          color = col, weight = 2, popup = ~popup_table(g))
+          color = col, weight = 2, popup = popup_table(g))
       else proxy |> addCircleMarkers(data = g, group = id, radius = 4, color = col,
-          stroke = TRUE, weight = 0.6, fillOpacity = 0.8, popup = ~popup_table(g))
+          stroke = TRUE, weight = 0.6, fillOpacity = 0.8, popup = popup_table(g))
     }
     shown$ids <- sel
   })
@@ -165,7 +167,7 @@ server <- function(input, output, session) {
     if (!is.null(g) && nrow(g)) {
       col <- ifelse(is.na(GROUP_COLOR[parts[1]]), "#3b82f6", GROUP_COLOR[parts[1]])
       proxy |> addCircleMarkers(data = st_centroid(g), group = id, radius = 5,
-        color = "#facc15", stroke = TRUE, weight = 1, popup = ~popup_table(g))
+        color = "#facc15", stroke = TRUE, weight = 1, popup = popup_table(g))
       output$status <- renderText(sprintf("%s: %d features match.", id, nrow(g)))
     } else output$status <- renderText("No matches / query error.")
   })

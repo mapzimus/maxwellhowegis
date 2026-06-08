@@ -8,9 +8,13 @@ SD**, demographics, biodiversity, knowledge), loads each into PostGIS tagged
 
 > **Status: R port — the Python toolkit has been removed and fully replaced.**
 > R is not installed in the build sandbox, so this code is written against known
-> package APIs but **not yet executed end-to-end** — run it locally (see
-> [`DEPLOY.md`](DEPLOY.md)) and iterate. The original validated Python lives in
-> git history if you ever need to diff against it.
+> package APIs but **not yet executed end-to-end** — run it locally and iterate.
+> The original validated Python lives in git history if you ever need to diff.
+>
+> **▶ Start here: [`HANDOVER.md`](HANDOVER.md)** — current state, architecture,
+> Python→R map, expected counts, and the first-run risk register. Then
+> [`docs/LOCAL_DEV.md`](docs/LOCAL_DEV.md) to run it on your machine and
+> [`docs/VALIDATION_LOG.md`](docs/VALIDATION_LOG.md) to check off each dataset.
 
 ## Stack
 
