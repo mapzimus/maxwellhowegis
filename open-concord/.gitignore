@@ -1,0 +1,9 @@
+# R / targets / output artifacts
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+_targets/
+NAMESPACE
+man/
+*.tar.gz
