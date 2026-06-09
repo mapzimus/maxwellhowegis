@@ -27,12 +27,21 @@ now uses `fips=33` + post-filter (Urban Inst. CCD API returns 0 rows for direct 
 
 ## Federal & state ArcGIS — `oc_load_external()`
 
-**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6). **24/28 layers loaded.**
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6). **25/28 layers loaded.**
 **Fixes applied:** `db.R` — added `oc_flatten_list_cols()` (coerces non-geometry list-columns
 to text; `usace_dams` carried an Esri `SE_ANNO_CAD_DATA` blob list-column that crashed
 `RPostgres::dbWriteTable`), called from both `oc_write_layer` + `oc_write_table`.
 `external.R` — wrapped the per-layer body in `tryCatch` so one failed layer skips instead of
 halting the whole group (previously `usace_dams` killed the 3 layers after it).
+`arcgis.R` — added `oc_arc_layer_rest()` REST-pagination fallback (httr2, GeoJSON, offset-paged);
+`oc_arc_layer` now retries through it when arcgislayers errors and a bbox is set. Recovers
+`nwi_wetlands` (3,731), whose FWS MapServer breaks arcgislayers' internal count step.
+
+**HANDOVER geometry-column risk — RESOLVED:** all spatial tables store geometry in a column
+named `geometry` with *real* SRID 4326 (verified via `ST_SRID`); only the column *typmod* is
+generic (`geometry_columns.srid = 0`). `sf::st_read()` (Shiny `get_layer()`) reads real SRID and
+the draw-identify query references `geometry` by name — both match. Generic typmod + no GiST
+index is a non-blocking enhancement (only pg_tileserv / large-layer query speed care).
 
 | ✓ | Layer | Target | Got | Expected | Notes |
 |---|---|---|---|---|---|
@@ -51,7 +60,7 @@ halting the whole group (previously `usace_dams` killed the 3 layers after it).
 | [x] | external.tiger_tracts / _block_groups / _blocks | map+db | 24 / 52 / 1077 | 24 / … | OK |
 | [x] | external.tiger_roads / _railroads | map+db | 1665 / 5 | — | OK |
 | [x] | external.nhd_flowlines/_waterbodies/_areas/_points | map+db | 896 / 618 / 11 / 1 | — | OK |
-| [~] | external.nwi_wetlands | map+db | 0 | 3,731 | ❌ arcgislayers "can't determine count" on FWS MapServer — investigating |
+| [x] | external.nwi_wetlands | map+db | 3,731 | 3,731 | exact; via REST-pagination fallback (arcgislayers count step fails on FWS MapServer). Cols are `Wetlands.*`/`NWI_Wetland_Codes.*` (joined layer) |
 | [~] | external.nced_easements | map+db | 0 | flaky host | layer is now a RasterLayer (NCED unmaintained since Jan 2025) |
 | [~] | external.ssurgo_soils | map+db | 0 | flaky host | USDA host SSL reset — transient, re-run |
 | [~] | external.nh_granit_parcels | map+db | 0 | (verify id) | 404 Service not found — confirm layer id at nhgeodata.unh.edu |
