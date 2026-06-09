@@ -27,27 +27,35 @@ now uses `fips=33` + post-filter (Urban Inst. CCD API returns 0 rows for direct 
 
 ## Federal & state ArcGIS — `oc_load_external()`
 
-| ✓ | Layer | Target | Expected | Notes |
-|---|---|---|---|---|
-| [ ] | external.usa_structures | map+db | 18,576 (has HEIGHT) |  |
-| [ ] | external.padus_conservation_lands | map+db | 261 |  |
-| [ ] | external.nrhp_historic_points | map+db | 20 |  |
-| [ ] | external.nrhp_historic_districts | map+db | polygons |  |
-| [ ] | external.usace_dams | map+db | 16 |  |
-| [ ] | external.epa_rcra_facilities | map+db | 919 |  |
-| [ ] | external.epa_tri_facilities | map+db | 22 |  |
-| [ ] | external.epa_brownfields_acres | map+db | 14 |  |
-| [ ] | external.epa_superfund_npl | map+db | 0 (none in Concord — OK) |  |
-| [ ] | external.cdc_places_tracts_poly | map+db | 24 |  |
-| [ ] | external.faa_obstructions | map+db | 530 |  |
-| [ ] | external.fcc_broadband_block_groups | map+db | 52 |  |
-| [ ] | external.tiger_tracts / _block_groups / _blocks | map+db | 24 / … |  |
-| [ ] | external.tiger_roads / _railroads | map+db | — |  |
-| [ ] | external.nhd_flowlines/_waterbodies/_areas/_points | map+db | — |  |
-| [ ] | external.nwi_wetlands | map+db | 3,731 |  |
-| [ ] | external.nced_easements | map+db | flaky host — re-run |  |
-| [ ] | external.ssurgo_soils | map+db | flaky host — re-run |  |
-| [ ] | external.fema_flood_zones/_boundaries/_bfe/_firm | map+db | flaky host — re-run |  |
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6). **24/28 layers loaded.**
+**Fixes applied:** `db.R` — added `oc_flatten_list_cols()` (coerces non-geometry list-columns
+to text; `usace_dams` carried an Esri `SE_ANNO_CAD_DATA` blob list-column that crashed
+`RPostgres::dbWriteTable`), called from both `oc_write_layer` + `oc_write_table`.
+`external.R` — wrapped the per-layer body in `tryCatch` so one failed layer skips instead of
+halting the whole group (previously `usace_dams` killed the 3 layers after it).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | external.usa_structures | map+db | 18,576 | 18,576 (has HEIGHT) | exact |
+| [x] | external.padus_conservation_lands | map+db | 261 | 261 | exact |
+| [x] | external.nrhp_historic_points | map+db | 20 | 20 | exact |
+| [x] | external.nrhp_historic_districts | map+db | 11 | polygons | OK |
+| [x] | external.usace_dams | map+db | 16 | 16 | exact; flattened `SE_ANNO_CAD_DATA` |
+| [x] | external.epa_rcra_facilities | map+db | 919 | 919 | exact |
+| [x] | external.epa_tri_facilities | map+db | 22 | 22 | exact |
+| [x] | external.epa_brownfields_acres | map+db | 14 | 14 | exact |
+| [x] | external.epa_superfund_npl | map+db | 0 | 0 (none in Concord) | OK |
+| [x] | external.cdc_places_tracts_poly | map+db | 24 | 24 | exact |
+| [~] | external.faa_obstructions | map+db | 564 | 530 | +34 — FAA DOF ~56-day refresh, not a bug |
+| [x] | external.fcc_broadband_block_groups | map+db | 52 | 52 | exact |
+| [x] | external.tiger_tracts / _block_groups / _blocks | map+db | 24 / 52 / 1077 | 24 / … | OK |
+| [x] | external.tiger_roads / _railroads | map+db | 1665 / 5 | — | OK |
+| [x] | external.nhd_flowlines/_waterbodies/_areas/_points | map+db | 896 / 618 / 11 / 1 | — | OK |
+| [~] | external.nwi_wetlands | map+db | 0 | 3,731 | ❌ arcgislayers "can't determine count" on FWS MapServer — investigating |
+| [~] | external.nced_easements | map+db | 0 | flaky host | layer is now a RasterLayer (NCED unmaintained since Jan 2025) |
+| [~] | external.ssurgo_soils | map+db | 0 | flaky host | USDA host SSL reset — transient, re-run |
+| [~] | external.nh_granit_parcels | map+db | 0 | (verify id) | 404 Service not found — confirm layer id at nhgeodata.unh.edu |
+| [x] | external.fema_flood_zones/_boundaries/_bfe/_firm | map+db | 947 / 2698 / 251 / 35 | flaky host | all loaded OK this run |
 
 ## City of Concord — `oc_load_concord()`
 

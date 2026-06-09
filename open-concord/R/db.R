@@ -39,6 +39,7 @@ oc_write_layer <- function(x, schema, table, source = "", scope = "", con = oc_c
     n <- 0L
   } else {
     x <- sf::st_transform(x, 4326)
+    x <- oc_flatten_list_cols(x)
     sf::st_write(x, con, DBI::Id(schema = schema, table = table),
                  delete_layer = TRUE, quiet = TRUE)
     n <- nrow(x)
@@ -56,6 +57,7 @@ oc_write_layer <- function(x, schema, table, source = "", scope = "", con = oc_c
 oc_write_table <- function(df, schema, table, source = "", scope = "", con = oc_connect()) {
   n <- if (is.null(df)) 0L else nrow(df)
   if (n > 0) {
+    df <- oc_flatten_list_cols(df)
     DBI::dbWriteTable(con, DBI::Id(schema = schema, table = table), df, overwrite = TRUE)
     cli::cli_alert_success("{schema}.{table}: {n} rows -> PostGIS")
   }
@@ -73,4 +75,33 @@ oc_catalog_upsert <- function(con, schema, table, target, source, scope, n) {
       target = EXCLUDED.target, source = EXCLUDED.source, scope = EXCLUDED.scope,
       n_features = EXCLUDED.n_features, loaded_at = now();",
     params = list(schema, table, target, source, scope, n))
+}
+
+#' Coerce non-geometry list-columns to text so PostGIS can store them.
+#'
+#' ArcGIS/REST and some API layers occasionally return fields as list-columns
+#' (mixed types, nested/coded values, multi-valued cells). `RPostgres`'
+#' `dbWriteTable()` rejects list-columns unless they hold raw vectors, which
+#' otherwise halts the write. We collapse each cell to a single string so the
+#' attribute survives (useful for Shiny popups) rather than dropping it.
+#' The `sfc` geometry column is left untouched.
+#' @param x An `sf` object or data.frame.
+#' @keywords internal
+oc_flatten_list_cols <- function(x) {
+  geom <- attr(x, "sf_column")  # NULL for a plain data.frame
+  hit <- character()
+  for (nm in setdiff(names(x), geom)) {
+    col <- x[[nm]]
+    if (is.list(col) && !inherits(col, "sfc")) {
+      x[[nm]] <- vapply(col, function(v) {
+        if (is.null(v) || length(v) == 0L || all(is.na(v))) NA_character_
+        else paste(format(v, trim = TRUE), collapse = "; ")
+      }, character(1))
+      hit <- c(hit, nm)
+    }
+  }
+  if (length(hit)) {
+    cli::cli_alert_info("flattened list-column(s) to text: {paste(hit, collapse = ', ')}")
+  }
+  x
 }
