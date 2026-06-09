@@ -9,15 +9,21 @@ Status: `[ ]` pending · `[x]` validated · `[~]` issue (note it)
 
 ## Schools — `oc_load_schools()`  (start here: small + high-signal)
 
-| ✓ | Layer | Target | Expected | Notes |
-|---|---|---|---|---|
-| [ ] | schools.school_districts | map+db | 2 polygons (Concord SD + MVSD) |  |
-| [ ] | schools.public_schools_districts | map+db | 14 (both districts, incl. Penacook) |  |
-| [ ] | schools.public_schools_region | map+db | ~109 |  |
-| [ ] | schools.private_schools_region | map+db | 38 (incl. St. Paul's) |  |
-| [ ] | schools.colleges | map+db | 11 (NHTI, UNH Law) |  |
-| [ ] | schools.enrollment_districts | db | Concord SD total 4,037 |  |
-| [ ] | schools.enrollment_schools | db | per-school rows |  |
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6)
+**Fixes applied:** `schools.R` — (1) `st_transform(sd, 4326)` after `tigris::school_districts()` call
+(tigris returns NAD83; `st_filter` against WGS84 bbox crashed without this); (2) `enrollment_districts`
+now uses `fips=33` + post-filter (Urban Inst. CCD API returns 0 rows for direct `leaid` filter on NH districts).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | schools.school_districts | map+db | 2 | 2 polygons (Concord SD + MVSD) |  |
+| [x] | schools.school_districts_region | map+db | 18 | — | all NH unified districts in regional bbox |
+| [x] | schools.public_schools_districts | map+db | 14 | 14 (both districts, incl. Penacook) |  |
+| [x] | schools.public_schools_region | map+db | 109 | ~109 |  |
+| [x] | schools.private_schools_region | map+db | 38 | 38 (incl. St. Paul's) |  |
+| [x] | schools.colleges | map+db | 11 | 11 (NHTI, UNH Law) |  |
+| [x] | schools.enrollment_districts | db | 54 rows | Concord SD total 4,037 | 54 = 2 districts × 27 race×sex combos; `SUM WHERE leaid='3302460' AND race=99 AND sex=99` = 4,037 ✅ |
+| [x] | schools.enrollment_schools | db | 378 rows | per-school rows | 14 schools × 27 race×sex combos; Concord SD total = 4,025 (~4,037, <0.3% diff = data vintage) |
 
 ## Federal & state ArcGIS — `oc_load_external()`
 

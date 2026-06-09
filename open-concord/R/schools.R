@@ -24,6 +24,7 @@ oc_load_schools <- function(con = oc_connect(), year = 2022) {
 
   # --- district boundaries (the two, by GEOID) via {tigris} ---
   sd <- tigris::school_districts(state = "NH", type = "unified", year = year, progress_bar = FALSE)
+  sd <- sf::st_transform(sd, 4326)  # tigris returns NAD83; normalise to WGS84 before any spatial ops
   two <- sd[sd$GEOID %in% unname(leaids), ]
   oc_write_layer(two, "schools", "school_districts", "Census TIGER", "districts", con)
   oc_write_layer(sf::st_filter(sd, sf::st_as_sfc(region)),
@@ -51,12 +52,15 @@ oc_load_schools <- function(con = oc_connect(), year = 2022) {
 #' @export
 oc_load_enrollment <- function(con = oc_connect(), year = 2022) {
   leaids <- as.integer(unname(oc_school_leaids()))
-  dist <- tryCatch(
+  # Urban Inst. CCD district API does not support leaid filters; use fips=33 (all NH)
+  # and post-filter, mirroring the school-level query below.
+  dist_raw <- tryCatch(
     educationdata::get_education_data(
       level = "school-districts", source = "ccd", topic = "enrollment",
-      filters = list(year = year, grade = 99, leaid = leaids),
+      filters = list(year = year, grade = 99, fips = oc_fips()$state),
       subtopic = c("race", "sex")),
     error = function(e) { cli::cli_alert_danger("district enrollment: {conditionMessage(e)}"); NULL })
+  dist <- if (!is.null(dist_raw)) dist_raw[dist_raw$leaid %in% as.character(unname(leaids)), ] else NULL
   oc_write_table(dist, "schools", "enrollment_districts", "Urban Inst. CCD", "districts", con)
 
   sch <- tryCatch(
