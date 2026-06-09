@@ -68,7 +68,7 @@
             <span class="feature-pill">US Census 1920</span>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
-            <a href="quabbin/map/" class="btn">Open the interactive map &#8599;</a>
+            <a href="quabbin/map/" class="btn">Open the LiDAR imprint explorer &#8599;</a>
             <a href="https://github.com/mapzimus/maxwellhowegis/tree/main/quabbin" target="_blank" rel="noopener" class="btn btn-secondary">View the R pipeline on GitHub &#8599;</a>
             <a href="portfolio.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
         </div>
@@ -82,7 +82,7 @@
             <h2 class="section-title">Filling the reservoir, 1939&ndash;1946</h2>
         </div>
         <div class="project-desc" style="margin-bottom:24px;">
-            <p>After Winsor Dam was closed in 1939, the Swift River backed up for seven years, reaching the 530-foot full pool in 1946. The animation below raises the water in equal-area stages up the terrain model. The <a href="quabbin/map/">interactive map</a> adds an adjustable pool level, the 1893 pre-reservoir topographic map as a fade overlay, each town's census history, and the aqueduct route east to Boston.</p>
+            <p>After Winsor Dam was closed in 1939, the Swift River backed up for seven years, reaching the 530-foot full pool in 1946. The animation below raises the water in equal-area stages up the terrain model. The <a href="quabbin/map/">interactive LiDAR imprint explorer</a> goes further: on the land that never went under, it lets you pan and zoom across each town in 1&nbsp;m bare-earth relief to hunt the relict <strong>roads, paths and field walls</strong> still imprinted in the ground, toggle the auto-traced lines and the 1893 ground-truth survey, raise the pool to see what drowned, and follow the aqueduct east to Boston.</p>
         </div>
         <figure style="margin:0;text-align:center;">
             <a href="quabbin/map/" title="Open the interactive map">
@@ -91,7 +91,7 @@
             <figcaption style="margin-top:12px;font-size:.85rem;color:#888;">The reservoir filling to full pool, derived from the DEM. Opens the interactive map.</figcaption>
         </figure>
         <div style="text-align:center;margin-top:24px;">
-            <a href="quabbin/map/" class="btn">Open the interactive map &#8599;</a>
+            <a href="quabbin/map/" class="btn">Open the LiDAR imprint explorer &#8599;</a>
         </div>
     </section>
 
@@ -99,7 +99,7 @@
 
     <section class="section gallery-section parallax-section">
         <div class="section-header fade-in">
-            <div class="section-label">// 16 Maps &amp; Charts</div>
+            <div class="section-label">// 20 Maps &amp; Charts</div>
             <h2 class="section-title">The Study, Layer by Layer</h2>
         </div>
         <div class="gallery-grid fade-in fade-in-stagger" id="galleryGrid"></div>
@@ -150,7 +150,11 @@ const galleryImages = [
     { src: "quabbin/output/13_terrain3d.png",         caption: "The valley and reservoir in three dimensions" },
     { src: "quabbin/output/14_dana_lidar.png",        caption: "LiDAR of Dana Common: the surviving town site above the water" },
     { src: "quabbin/output/15_prescott_lidar.png",    caption: "LiDAR of the Prescott Peninsula: old roads and foundations that stayed above water" },
-    { src: "quabbin/output/16_roads.png",             caption: "The valley's 1893 road network, with the reservoir overlaid to show which roads drowned" }
+    { src: "quabbin/output/16_roads.png",             caption: "The valley's 1893 road network, with the reservoir overlaid to show which roads drowned" },
+    { src: "quabbin/output/24_prescott_survey.png",   caption: "LiDAR imprint survey — Prescott: the 1893 survey vs. the roads and walls still in the ground today" },
+    { src: "quabbin/output/24_enfield_survey.png",    caption: "LiDAR imprint survey — Enfield: surviving roads on the dry south, the village center drowned" },
+    { src: "quabbin/output/24_dana_survey.png",       caption: "LiDAR imprint survey — Dana: the surviving common and ridge vs. the drowned village" },
+    { src: "quabbin/output/24_greenwich_survey.png",  caption: "LiDAR imprint survey — Greenwich: the 1893 village, now entirely under water" }
 ];
 
 // Render gallery
