@@ -48,9 +48,9 @@
         <div class="project-desc">
             <p>Between 1938 and 1946, Massachusetts created the Quabbin Reservoir by damming and flooding the Swift River Valley. Four towns &mdash; Dana, Enfield, Greenwich, and Prescott &mdash; were disincorporated on 28 April 1938, and about 2,500 residents were relocated. The reservoir was built to supply metropolitan Boston, roughly 105&nbsp;km (65 miles) to the east.</p>
             <p style="margin-top:16px;">This is a <em>multi-layer GIS study</em>: several spatial layers that, read together, describe how the reservoir was sited and what it replaced. It is built in R from open public data &mdash; terrain, the reservoir surface, the watershed, modern municipal boundaries, and decennial census population.</p>
-            <p style="margin-top:16px;">The analysis ships as a reproducible pipeline. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, derives the reservoir from its 530-foot full-pool surface, fetches USGS watershed units and US Census boundaries, renders the figures below, generates the reservoir-filling animation, and exports the GeoJSON used by the interactive map. Downloads are cached, and each network call falls back to a documented default if a service is unavailable.</p>
+            <p style="margin-top:16px;">The analysis ships as a reproducible pipeline. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, derives the reservoir from MassGIS LiDAR (which resolves the dams, keeping the water contained), fetches USGS watershed units and US Census boundaries, renders the figures below, generates the schematic reservoir-filling animation, and exports the GeoJSON used by the interactive map. Downloads are cached, and each network call falls back to a documented default if a service is unavailable.</p>
             <p style="margin-top:16px;">Read together, the layers show a valley whose terrain forms a natural basin, four towns that had been losing population for decades before construction, and a present-day map in which their land has been absorbed by the surrounding municipalities.</p>
-            <p style="margin-top:16px;">Further layers extend the study: decennial US Census counts for all four towns (1900&ndash;1920); an animation of the reservoir filling from the valley floor to the 1946 full pool; the aqueduct route carrying the water about 105&nbsp;km east to metropolitan Boston; and an interactive map combining these layers, with an adjustable pool level, the 1893 pre-reservoir topographic map, and LiDAR overlays.</p>
+            <p style="margin-top:16px;">Further layers extend the study: decennial US Census counts for all four towns (1900&ndash;1920); a schematic animation of the reservoir filling to the 1946 full pool; the aqueduct route carrying the water about 105&nbsp;km east to metropolitan Boston; and an interactive map combining these layers, with an adjustable pool level, the 1893 pre-reservoir topographic map, and LiDAR overlays.</p>
             <p style="margin-top:16px;">A final set looks at what survives above water: 1&nbsp;m LiDAR of Dana Common and the Prescott Peninsula, where old road traces and cellar holes are still legible in the bare-earth relief, and a map of the valley's 1893 road network with the present reservoir overlaid to show which roads drowned.</p>
         </div>
         <div class="project-tools">
@@ -82,13 +82,13 @@
             <h2 class="section-title">Filling the reservoir, 1939&ndash;1946</h2>
         </div>
         <div class="project-desc" style="margin-bottom:24px;">
-            <p>After Winsor Dam was closed in 1939, the Swift River backed up for seven years, reaching the 530-foot full pool in 1946. The animation below raises the water in equal-area stages up the terrain model. The <a href="quabbin/map/">interactive LiDAR imprint explorer</a> goes further: a <strong>&ldquo;ghost relief&rdquo;</strong> layer covers the whole reservoir in bare-earth LiDAR, so you can pan and zoom across every acre the water spared and read the <strong>street plans, house-lot outlines and cellar-hole pits</strong> of the drowned villages still imprinted in the ground (crisp 1&nbsp;m detail at the surviving village sites). Toggle the auto-traced lines and the 1893 ground-truth survey, raise the pool to see what drowned, and follow the aqueduct east to Boston.</p>
+            <p>After Winsor Dam was closed in 1939, the Swift River backed up for seven years, reaching the 530-foot full pool in 1946. The animation below raises the water in equal-area stages over a schematic synthetic basin (modern DEMs capture only today's water surface, not the drowned valley floor). The <a href="quabbin/map/">interactive LiDAR imprint explorer</a> goes further: a <strong>&ldquo;ghost relief&rdquo;</strong> layer covers the whole reservoir in bare-earth LiDAR, so you can pan and zoom across every acre the water spared and read the <strong>street plans, house-lot outlines and cellar-hole pits</strong> of the drowned villages still imprinted in the ground (crisp 1&nbsp;m detail at the surviving village sites). Toggle the auto-traced lines and the 1893 ground-truth survey, raise the pool to see what drowned, and follow the aqueduct east to Boston.</p>
         </div>
         <figure style="margin:0;text-align:center;">
             <a href="quabbin/map/" title="Open the interactive map">
                 <img src="quabbin/output/quabbin_floodfill.gif" alt="Animation of the Quabbin Reservoir filling in stages over the four former town sites" loading="lazy" style="max-width:560px;width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.18);">
             </a>
-            <figcaption style="margin-top:12px;font-size:.85rem;color:#888;">The reservoir filling to full pool, derived from the DEM. Opens the interactive map.</figcaption>
+            <figcaption style="margin-top:12px;font-size:.85rem;color:#888;">The reservoir filling to full pool — a schematic synthetic basin, not surveyed bathymetry. Opens the interactive map.</figcaption>
         </figure>
         <div style="text-align:center;margin-top:24px;">
             <a href="quabbin/map/" class="btn">Open the LiDAR imprint explorer &#8599;</a>
@@ -143,7 +143,7 @@ const galleryImages = [
     { src: "quabbin/output/05_erasure.png",          caption: "The former town land, now divided among the surrounding municipalities" },
     { src: "quabbin/output/06_town_lifelines.png",   caption: "Each town's span, from charter to the 1938 disincorporation" },
     { src: "quabbin/output/07_population_decline.png",caption: "Decennial US Census population, 1900–1920" },
-    { src: "quabbin/output/09_floodfill.png",         caption: "The reservoir filling in stages to the 530 ft full pool" },
+    { src: "quabbin/output/09_floodfill.png",         caption: "The reservoir filling in equal-area stages to the 530 ft full pool (schematic synthetic basin)" },
     { src: "quabbin/output/10_aqueduct.png",          caption: "The aqueduct route: about 105 km east to metropolitan Boston" },
     { src: "quabbin/output/11_crosssection.png",      caption: "Cross-section: the 530 ft pool over the dendritic valley" },
     { src: "quabbin/output/12_losses.png",            caption: "The reservoir in numbers: what was removed, and what it supplies" },
