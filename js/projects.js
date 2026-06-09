@@ -83,8 +83,7 @@ const projects = [
             { src: "images/projects/granite-state/Screenshot 2025-05-30 114843.png", caption: "Landsat Imagery Analysis" },
             { src: "images/projects/granite-state/Screenshot 2025-05-30 114920.png", caption: "Band Composite Comparison" },
             { src: "images/projects/granite-state/Screenshot 2025-05-30 114936.png", caption: "Pansharpened Imagery" },
-            { src: "images/projects/granite-state/Screenshot 2025-05-30 115012.png", caption: "Urban Expansion Results" },
-            { src: "images/projects/granite-state/Screenshot 2025-05-30 115047.png", caption: "Final Analysis" }
+            { src: "images/projects/granite-state/Screenshot 2025-05-30 115012.png", caption: "Urban Expansion Results" }
         ],
         liveUrl: null,
         repoUrl: null
@@ -232,7 +231,6 @@ const projects = [
             { src: "quabbin/output/16_roads.png", caption: "The roads the reservoir drowned — the pre-flood street network beneath the water" },
             { src: "quabbin/output/24_prescott_survey.png", caption: "Prescott Peninsula — the best-preserved imprint; roads and foundations legible in 1 m LiDAR" },
             { src: "quabbin/output/24_dana_survey.png", caption: "Dana — town map, LiDAR hillshade, and traced roads & cellar holes that stayed above water" },
-            { src: "quabbin/output/24_greenwich_survey.png", caption: "Greenwich — the town map beside open water; nearly all of it submerged" },
             { src: "quabbin/output/24_enfield_survey.png", caption: "Enfield — the valley seat, now almost entirely beneath the reservoir" },
             { src: "quabbin/output/25_prescott_xref.png", caption: "Ground-truth — 1893 USGS roads cross-referenced against the LiDAR traces" },
             { src: "quabbin/output/09_floodfill.png", caption: "Filling the reservoir in equal-area stages (small multiples)" },
