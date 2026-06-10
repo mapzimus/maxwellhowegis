@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Quabbin Reservoir and the Lost Towns of the Swift River Valley | Maxwell Howe GIS</title>
-    <meta name="description" content="A reproducible, multi-layer R GIS study of the Quabbin Reservoir and the four Swift River Valley towns disincorporated in 1938: twenty figures (terrain, watershed, census population, the aqueduct to Boston), a schematic reservoir-filling animation, and an interactive LiDAR 'ghost relief' explorer where the drowned villages' street plans are still readable in the ground — all from open data.">
+    <meta name="description" content="A reproducible, multi-layer R GIS study of the Quabbin Reservoir and the four Swift River Valley towns disincorporated in 1938: twenty figures (terrain, watershed, census population, the aqueduct to Boston), a schematic reservoir-filling animation, and an interactive LiDAR 'bare-earth relief' explorer where the drowned villages' street plans are still readable in the ground — all from open data.">
     <meta property="og:title" content="The Quabbin Reservoir and the Lost Towns of the Swift River Valley — Maxwell Howe">
-    <meta property="og:description" content="A multi-layer R GIS study of the four Swift River Valley towns disincorporated in 1938 to create the Quabbin Reservoir. Twenty figures, a schematic reservoir-filling animation, and an interactive LiDAR 'ghost relief' explorer for hunting the drowned villages' street plans and cellar holes, reproducible from open data.">
+    <meta property="og:description" content="A multi-layer R GIS study of the four Swift River Valley towns disincorporated in 1938 to create the Quabbin Reservoir. Twenty figures, a schematic reservoir-filling animation, and an interactive LiDAR 'bare-earth relief' explorer for hunting the drowned villages' street plans and cellar holes, reproducible from open data.">
     <meta property="og:image" content="quabbin/output/08_hero.png">
     <meta property="og:type" content="article">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -47,7 +47,7 @@
         </div>
         <div class="project-desc">
             <p>Between 1938 and 1946, Massachusetts created the Quabbin Reservoir by damming and flooding the Swift River Valley. Four towns &mdash; Dana, Enfield, Greenwich, and Prescott &mdash; were disincorporated on 28 April 1938, and about 2,500 residents were relocated. The reservoir was built to supply metropolitan Boston, roughly 105&nbsp;km (65 miles) to the east.</p>
-            <p style="margin-top:16px;">The centerpiece of the study is the <a href="quabbin/map/">LiDAR imprint explorer</a>: the drowned villages' street plans, house-lot outlines and cellar-hole pits are still imprinted in the land the water spared &mdash; and still readable in 1&nbsp;m bare-earth LiDAR. A &ldquo;ghost relief&rdquo; layer covers the whole reservoir with it, so you can pan across every acre, check each trace against the 1893 USGS survey, and raise the pool to see what drowned.</p>
+            <p style="margin-top:16px;">The centerpiece of the study is the <a href="quabbin/map/">LiDAR imprint explorer</a>: the drowned villages' street plans, house-lot outlines and cellar-hole pits are still imprinted in the land the water spared &mdash; and still readable in 1&nbsp;m bare-earth LiDAR. A &ldquo;bare-earth relief&rdquo; layer covers the whole reservoir with it, so you can pan across every acre, check each trace against the 1893 USGS survey, and raise the pool to see what drowned.</p>
             <p style="margin-top:16px;">Around the explorer sits a <em>multi-layer GIS study</em>, built in R from open public data: terrain, the reservoir surface, the watershed, modern municipal boundaries, decennial US Census population for all four towns (1900&ndash;1920), a schematic animation of the reservoir filling to the 1946 full pool, the aqueduct route east to Boston, the valley's 1893 road network with the present reservoir overlaid to show which roads drowned, and 1&nbsp;m LiDAR close-ups of Dana Common and the Prescott Peninsula, the village sites that stayed above water.</p>
             <p style="margin-top:16px;">Read together, the layers show a valley whose terrain forms a natural basin, four towns that had been losing population for decades before construction, and a present-day map in which their land has been absorbed by the surrounding municipalities.</p>
             <p style="margin-top:16px;">The analysis ships as a reproducible pipeline. A single <code>Rscript run_all.R</code> pulls a DEM from AWS Terrain Tiles, derives the reservoir from MassGIS LiDAR (which resolves the dams, keeping the water contained), fetches USGS watershed units and US Census boundaries, renders the twenty figures below, generates the schematic filling animation, and exports the GeoJSON the explorer consumes. Downloads are cached, and each network call falls back to a documented default if a service is unavailable.</p>
@@ -99,7 +99,7 @@
 
     <section class="section">
         <div class="section-header fade-in">
-            <div class="section-label">// The ghosts in the ground</div>
+            <div class="section-label">// What survives in the ground</div>
             <h2 class="section-title">Reading the villages in bare-earth LiDAR</h2>
         </div>
         <div class="project-desc" style="margin-bottom:24px;">
@@ -188,7 +188,7 @@ galleryImages.forEach((img, i) => {
     grid.appendChild(item);
 });
 
-// The "ghosts in the ground" feature figure opens in the same lightbox
+// The "what survives in the ground" feature figure opens in the same lightbox
 document.getElementById('ghostFigureLink').addEventListener('click', (e) => {
     const idx = galleryImages.findIndex(g => g.src.endsWith('24_prescott_survey.png'));
     if (idx >= 0) { e.preventDefault(); openLightbox(idx); }
