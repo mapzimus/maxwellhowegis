@@ -40,7 +40,7 @@ present-day map in which their land has been absorbed by the surrounding towns.
 
 Plus a schematic **reservoir-filling animation** (`quabbin_floodfill.gif`) and an
 **interactive LiDAR imprint explorer** in [`map/`](map/) (mobile-first Leaflet):
-a **"ghost relief"** layer covering the *whole* reservoir in bare-earth LiDAR —
+a **"LiDAR relief"** layer covering the *whole* reservoir in bare-earth LiDAR —
 pan and zoom across every acre the reservoir spared to hunt the relict **streets,
 house-lot outlines and cellar-hole pits** of the drowned villages still imprinted
 in the ground (crisp 1 m tiles at the surviving village sites). Toggle the
@@ -68,11 +68,14 @@ Rscript quabbin/run_all.R
 
 Downloads are cached under `quabbin/data/cache/` (git-ignored), so the first
 run takes a few minutes and every run after that is ~90 seconds — except the
-imprint survey (stages 14–15), which mosaics the Prescott Peninsula and is
-cache-guarded: its first build takes several minutes, then later runs skip any
-area whose `output/24_*_survey.png` (or `25_prescott_xref.png`) already exists
-(delete one to force a rebuild). The twenty-one figures and the GIF land in `quabbin/output/`; the web-map
-GeoJSON, the 1893 overlay, and the LiDAR imprint overlays land in
+LiDAR stages (14–16), which mosaic the Prescott Peninsula and tile the whole
+reservoir, and are cache-guarded: their first build takes several minutes,
+then later runs skip any area whose `output/24_*_survey.png` (or
+`25_prescott_xref.png`) already exists, and stage 16 skips entirely while
+`map/data/reservoir_ghost.json` and every overlay it lists are present
+(delete a figure — or `reservoir_ghost.json` — to force a rebuild). The
+twenty figures and the GIF land in `quabbin/output/`; the web-map
+GeoJSON, the 1893 overlay, and the LiDAR relief/imprint overlays land in
 `quabbin/map/data/`. (The GIF needs
 ImageMagick — `apt-get install imagemagick`; without it the pipeline still
 produces the panel `09`.)
@@ -102,12 +105,13 @@ quabbin/
 │   ├── 13_roads.R         the valley's 1893 road network, reservoir overlaid
 │   ├── 14_imprints.R      LiDAR imprint survey (MassGIS) + per-town survey figures
 │   ├── 15_xref.R          cross-reference: extracted 1893 roads vs the LiDAR traces
-│   └── 16_reservoir.R     full-reservoir "ghost relief" coverage for the explorer
+│   ├── 16_reservoir.R     full-reservoir "LiDAR relief" coverage for the explorer
+│   └── lidar_utils.R      shared helpers for the LiDAR stages 14–16 (LRM, hillshade, line tracing, MassGIS export)
 ├── data/
 │   ├── drowned_towns.csv  the four towns: location, county, charter & end dates
 │   └── town_population.csv real US Census counts 1900–1920 + peaks + 1938 dissolution
 ├── map/                   interactive imprint explorer (index.html + vendored Leaflet)
-│   └── data/              GeoJSON + 1893 overlay + LiDAR ghost/imprint overlays (05–16)
+│   └── data/              GeoJSON + 1893 overlay + LiDAR relief/imprint overlays (05–16)
 └── output/                the rendered figures + GIF (committed)
 ```
 
@@ -182,7 +186,7 @@ never breaks the run — it degrades to a documented fallback instead.
   mean) then flags genuine depressions deeper than ~0.5 m — cellar holes and road
   cuts — in red, with a slope mask so natural gullies on the flanks aren't false-
   flagged. Paired with the 1893 quad as static then-&-now figures (the explorer's
-  relief now comes from the full-reservoir ghost layer, `16_reservoir.R`).
+  relief now comes from the full-reservoir LiDAR relief layer, `16_reservoir.R`).
   Submerged areas are not shown: the buildings were demolished and LiDAR cannot
   penetrate water, and the conservative threshold under-flags rather than fills the
   frame with canopy noise.
@@ -212,27 +216,29 @@ never breaks the run — it degrades to a documented fallback instead.
   Ouimet Lab; Johnson & Ouimet 2014), but not combined into a LiDAR imprint survey of
   the four towns. The Prescott Peninsula runs ~12 km — beyond the server's single-export
   cap — so it is mosaicked from three ~2 m strips into one DEM for full-length coverage;
-  the stage is cache-guarded (skips any area whose survey figure already exists), so only
-  the first build pays the render cost. Exported as static survey figures (`output/24_*`)
-  and as web overlays (relief + traces, transparent over water) with bounds in
-  `map/data/imprints.json`.
+  the stage is cache-guarded (skips any area whose survey figure — and, for web areas,
+  trace overlay — already exists), so only the first build pays the render cost. Exported
+  as static survey figures (`output/24_*`) and as auto-trace web overlays (transparent
+  over water) with bounds in `map/data/imprints.json`; the explorer's relief itself comes
+  from the full-reservoir LiDAR relief layer (`16_reservoir.R`).
 - **Interactive imprint explorer** — Leaflet (vendored locally, no CDN dependency),
   mobile-first: a full-screen map, bottom-sheet **Layers** control, big touch targets,
-  a full-width pool slider, and zoom to z19. It serves the full-reservoir **ghost relief**
+  a full-width pool slider, and zoom to z19. It serves the full-reservoir **LiDAR relief**
   (above) as its primary layer, the auto-traced lines, "jump to" buttons (whole reservoir /
   Prescott Center / Dana Common), the 1893 fade overlay, the drowned-town popups, the flood
   stages, and the aqueduct, over Esri World Hillshade + CARTO label tiles. The basemap tiles
   need internet; every layer the study itself produces is served locally.
-- **Full-reservoir "ghost relief"** (`16_reservoir.R`) — the explorer's headline layer.
+- **Full-reservoir "LiDAR relief"** (`16_reservoir.R`) — the explorer's headline layer.
   It tiles the *entire* Quabbin land area in MassGIS bare-earth LiDAR and renders each
   tile as a fine Local Relief Model (elevation minus its local mean over ~13 cells) —
   the rendering that makes the drowned villages' street plans, house-lot outlines and
   cellar-hole pits read directly in the bare ground — transparent over water. Broad
   coverage is ~2 m with a fixed contrast span so tiles match seamlessly; the surviving
-  village sites (Prescott Center, Dana Common) get crisp ~1 m tiles. Turn on **Ghost
-  relief** in the explorer and zoom in to hunt footprints anywhere the reservoir spared.
-  Downloads are cache-guarded (the slow part); re-runs re-export quickly. Exits to web
-  overlays + `map/data/reservoir_ghost.json`.
+  village sites (Prescott Center, Dana Common) get crisp ~1 m tiles. Turn on **LiDAR relief** in the explorer and zoom in to hunt footprints anywhere the reservoir spared.
+  Cache-guarded twice: the LiDAR downloads (the slow part), and the whole stage — re-runs
+  skip the re-export while `map/data/reservoir_ghost.json` and every overlay it lists
+  exist (delete the manifest to force a rebuild). Exports web overlays +
+  `map/data/reservoir_ghost.json`.
 - **Ground-truth cross-reference** (`15_xref.R`) — closes the loop on the imprints:
   it extracts the 1893 road network straight from the quad (dark, low-saturation
   linework, morphologically closed, kept only where elongated → roads, not text),
