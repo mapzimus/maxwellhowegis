@@ -93,21 +93,25 @@ index is a non-blocking enhancement (only pg_tileserv / large-layer query speed 
 
 ## APIs — `oc_load_apis()`  (+ `include_keyed = TRUE` for the rest)
 
-| ✓ | Layer | Target | Expected | Notes |
-|---|---|---|---|---|
-| [ ] | apis.acs_tracts | map+db | needs CENSUS_API_KEY; drives choropleth |  |
-| [ ] | apis.usgs_earthquakes | map+db | 111 |  |
-| [ ] | apis.gbif_species | map+db | ~9,000 |  |
-| [ ] | apis.inaturalist | map+db | ~3,000 |  |
-| [ ] | apis.wikidata_landmarks | map+db | 252 |  |
-| [ ] | apis.wikipedia_articles | map+db | 83 |  |
-| [ ] | apis.cdc_places | map+db | ~1,560 rows |  |
-| [ ] | apis.usgs_streamgages | map+db | 9 |  |
-| [ ] | apis.noaa_weather_alerts | map+db | 0+ (varies) |  |
-| [ ] | apis.ev_charging_stations | map+db | needs NREL reachable |  |
-| [ ] | apis.epa_frs_facilities | db | 2,625 |  |
-| [ ] | apis.lodes_wac_2023 | db | NH block rows |  |
-| [ ] | apis.airnow/openaq/purpleair/nasa_firms/mapillary | map+db | key-gated |  |
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6). **No code fixes needed** — every
+source worked; `oc_flatten_list_cols()` (added for external) auto-handled GBIF `dnaSequenceID`/
+`nucleotideSequence` and NWS `affectedZones` list-columns.
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [~] | apis.acs_tracts | map+db | — | Census key | **Invalid Key** — current CENSUS_API_KEY rejected by api.census.gov (needs activation/reissue). Code OK; re-run `oc_load_census()` once a valid key is set |
+| [x] | apis.usgs_earthquakes | map+db | 111 | 111 | exact |
+| [x] | apis.gbif_species | map+db | 9,000 | ~9,000 | hit limit |
+| [x] | apis.inaturalist | map+db | 3,000 | ~3,000 | exact |
+| [~] | apis.wikidata_landmarks | map+db | 228 | 252 | live-data drift (Wikidata items change); code OK |
+| [x] | apis.wikipedia_articles | map+db | 83 | 83 | exact |
+| [x] | apis.cdc_places | map+db | 1,560 | ~1,560 | |
+| [x] | apis.usgs_streamgages | map+db | 9 | 9 | exact |
+| [x] | apis.noaa_weather_alerts | map+db | 2 | 0+ (varies) | active alerts at run time |
+| [~] | apis.ev_charging_stations | map+db | 0 | NREL reachable | transient DNS fail (`developer.nrel.gov`); re-run |
+| [x] | apis.epa_frs_facilities | db | 2,625 | 2,625 | exact |
+| [x] | apis.lodes_wac_2023 | db | 10,746 | NH blocks | |
+| [ ] | apis.airnow/openaq/purpleair/nasa_firms/mapillary | map+db | — | key-gated | not run (no keys); `include_keyed=TRUE` to attempt |
 
 ## Knowledge — `oc_load_knowledge()`
 
