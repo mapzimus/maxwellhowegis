@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whydah Navigator — Chart</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text x='1' y='13' font-size='13'>%F0%9F%A7%AD</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="error-banner"></div>
+
+    <header>
+      <h1 id="game-title">Whydah Navigator</h1>
+      <p id="game-subtitle">Loading the chart…</p>
+    </header>
+
+    <main>
+      <section id="chart-wrap">
+        <svg id="chart" xmlns="http://www.w3.org/2000/svg" aria-label="Nautical chart of the eastern seaboard"></svg>
+      </section>
+
+      <aside id="panel">
+        <p class="panel-hint" id="panel-text">Loading the captain's orders…</p>
+
+        <section id="console">
+          <h2 class="console-title">⚓ Helm — plot your course</h2>
+          <div id="compass" aria-label="Compass dial: drag to set your heading"></div>
+          <div class="readout-big"><span class="rlabel">Heading</span><span id="heading-readout">000°</span></div>
+          <label class="dist-row">
+            <span class="rlabel">Distance</span>
+            <input type="range" id="dist-range" min="20" max="600" step="5" value="120" />
+            <span id="dist-readout">120 nm</span>
+          </label>
+          <div class="btn-row">
+            <button id="add-leg" type="button">Add leg ➜</button>
+            <button id="undo-leg" type="button">Undo</button>
+          </div>
+          <div id="route-info">
+            <div><span class="rlabel">Position</span> <span id="pos-readout">—</span></div>
+            <div><span class="rlabel">Legs</span> <span id="legs-readout">0</span> · <span id="total-readout">0 nm</span></div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

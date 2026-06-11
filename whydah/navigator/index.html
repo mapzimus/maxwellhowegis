@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whydah — First Sail</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text x='1' y='13' font-size='13'>%E2%9A%93</text></svg>" />
+    <link rel="stylesheet" href="sail.css" />
+    <script type="importmap">
+      { "imports": { "three": "./vendor/three.module.js" } }
+    </script>
+  </head>
+  <body>
+    <div id="error-banner"></div>
+    <canvas id="scene"></canvas>
+    <div id="clock">—</div>
+    <div id="status">—</div>
+
+    <div id="hud">
+      <div><span id="hud-heading">000°</span><span class="hud-sub">heading</span></div>
+      <div><span id="hud-speed">0.0</span><span class="hud-sub">knots</span></div>
+      <div><span id="hud-sail" class="hud-sail">Half sail</span><span class="hud-sub">canvas</span></div>
+    </div>
+    <div id="hint">A·D steer · W·S sail · C camera · T time · H help</div>
+    <div id="lookout"></div>
+    <div id="sight-cue"></div>
+    <div id="speed-cue"></div>
+
+    <div id="toolbar">
+      <button type="button" data-k="m">🗺️ Chart</button>
+      <button type="button" data-k="b">🌞 Sight</button>
+      <button type="button" data-k="l">🪢 Log</button>
+      <button type="button" data-k="f">⚓ Lead</button>
+      <button type="button" data-k="t">⏩ Time</button>
+      <button type="button" data-k="h">❓ Help</button>
+    </div>
+
+    <div id="ai-banner">
+      <span>⚓ The crew sails her — watch how the voyage went</span>
+      <button id="ai-takeover" type="button">Take the helm</button>
+    </div>
+    <div id="ai-caption"></div>
+
+    <div id="chart-overlay">
+      <div id="chart-frame">
+        <svg id="chart-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div id="chart-close">The navigator's table — press M to return to the helm</div>
+    </div>
+
+    <div id="backstaff-overlay">
+      <div id="bs-panel">
+        <h2 id="bs-title">Shoot the sun — the backstaff</h2>
+        <svg id="bs-svg" viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div id="bs-readout">Altitude: <b id="bs-alt">—</b></div>
+        <div id="bs-result"></div>
+        <div id="bs-buttons">
+          <button id="bs-mark" type="button">Mark the sun</button>
+          <button id="bs-fix" type="button" disabled>Enter latitude on chart</button>
+          <button id="bs-close" type="button">Close (B)</button>
+        </div>
+        <div id="bs-tip">Drag the brass arm until it rests on the sun, then Mark. A true fix needs the sun at its noon height.</div>
+      </div>
+    </div>
+
+    <div id="logline-overlay">
+      <div id="log-panel">
+        <h2>Heave the log — measure your speed</h2>
+        <svg id="log-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div id="log-readout">Knots counted: <b id="log-count">0.0</b></div>
+        <div id="log-result"></div>
+        <div id="log-buttons">
+          <button id="log-heave" type="button">Heave the log</button>
+          <button id="log-enter" type="button" disabled>Enter in reckoning</button>
+          <button id="log-close" type="button">Close (L)</button>
+        </div>
+        <div id="log-tip">Cast the log astern; when the sandglass empties, the knots that paid out are your speed.</div>
+      </div>
+    </div>
+
+    <div id="leadline-overlay">
+      <div id="lead-panel">
+        <h2>Heave the lead — sound the depth</h2>
+        <svg id="lead-svg" viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div id="lead-result"></div>
+        <div id="lead-buttons">
+          <button id="lead-heave" type="button">Heave the lead</button>
+          <button id="lead-close" type="button">Close (F)</button>
+        </div>
+        <div id="lead-tip">Cast the lead and let it strike bottom; the marks on the line read your depth in fathoms.</div>
+      </div>
+    </div>
+
+    <div id="scene-overlay">
+      <div id="scene-card">
+        <h2 id="scene-title"></h2>
+        <div id="scene-text"></div>
+        <div id="scene-buttons"></div>
+      </div>
+    </div>
+
+    <div id="leaderboard-overlay">
+      <div id="lb-card">
+        <h2 id="lb-title">The Log Book — Top 20</h2>
+        <div id="lb-score"></div>
+        <div id="lb-form">
+          <input id="lb-name" type="text" maxlength="12" placeholder="Your name" />
+          <button id="lb-save" type="button">Record</button>
+        </div>
+        <div id="lb-list"></div>
+        <button id="lb-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/sim/main.js"></script>
+  </body>
+</html>
