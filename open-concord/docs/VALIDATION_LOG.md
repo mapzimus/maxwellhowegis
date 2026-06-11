@@ -127,8 +127,18 @@ HANDOVER** — content/porting gaps, not crashes (see notes).
 
 ## OSM / Business — `oc_load_osm()`, `oc_load_businesses_osm()`, `oc_load_overture()`
 
-| ✓ | Layer | Target | Expected | Notes |
-|---|---|---|---|---|
-| [ ] | osm.* themes | map+db | ⚠️ mixed-geometry rbind — see HANDOVER risk #3 |  |
-| [ ] | business.osm_businesses | map+db | ~644 |  |
-| [ ] | business.overture_places | map+db | needs duckdb + S3 |  |
+**Code validated:** 2026-06-08 (offline synthetic fixtures; live Overpass run attempted).
+**Fix applied:** `osm.R` `oc_osm_combine()` — synthesize an `NA` `name` column when a geometry
+part has none (e.g. unnamed nodes), else `x["name"]` threw "undefined columns selected" and
+crashed the whole group. Also wrapped each theme (`oc_load_osm`) + the combine call
+(`oc_load_businesses_osm`) in `tryCatch` for per-theme resilience.
+**HANDOVER risk #3 (mixed-geometry rbind) — FALSE ALARM:** synthetic test confirms
+`rbind(POINT, LINESTRING, POLYGON)` → a mixed-geometry sf that writes fine to PostGIS (generic
+geometry column).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | oc_osm_combine logic | — | offline ✓ | — | missing-`name` crash fixed; mixed-geom rbind + PostGIS write verified via synthetic POINT/LINE/POLYGON fixtures |
+| [~] | osm.* themes | map+db | live pending | mixed-geom | live Overpass run in progress; public Overpass API throttling (60s backoffs) at run time |
+| [~] | business.osm_businesses | map+db | live pending | ~644 | pending live Overpass; combine keeps all features (named+unnamed) so count may exceed 644 |
+| [ ] | business.overture_places | map+db | — | duckdb + S3 | `duckdb` in Suggests; skips gracefully if not installed |
