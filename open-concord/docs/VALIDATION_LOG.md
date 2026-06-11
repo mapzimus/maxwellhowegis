@@ -138,7 +138,21 @@ geometry column).
 
 | ✓ | Layer | Target | Got | Expected | Notes |
 |---|---|---|---|---|---|
-| [x] | oc_osm_combine logic | — | offline ✓ | — | missing-`name` crash fixed; mixed-geom rbind + PostGIS write verified via synthetic POINT/LINE/POLYGON fixtures |
-| [~] | osm.* themes | map+db | live pending | mixed-geom | live Overpass run in progress; public Overpass API throttling (60s backoffs) at run time |
-| [~] | business.osm_businesses | map+db | live pending | ~644 | pending live Overpass; combine keeps all features (named+unnamed) so count may exceed 644 |
-| [ ] | business.overture_places | map+db | — | duckdb + S3 | `duckdb` in Suggests; skips gracefully if not installed |
+| [x] | oc_osm_combine logic | — | live ✓ | — | missing-`name` fix confirmed with real data; mixed-geom (POINT/LINE/POLYGON in one table) stored fine |
+| [x] | osm.roads / buildings / waterways | map+db | 103,308 / 88,196 / 21,061 | mixed-geom | all mixed POINT/LINE/POLYGON ✓ |
+| [x] | osm.leisure / landuse / amenities / power / shops | map+db | 9,915 / 9,058 / 7,089 / 5,514 / 946 | mixed-geom | ✓ |
+| [~] | osm.railways | map+db | skipped | — | Overpass HTTP 504 (transient); per-theme `tryCatch` handled it — re-run |
+| [~] | business.osm_businesses | map+db | 9,173 | ~644 | **semantic decision**: keeps ALL commercial POIs (docstring: "comprehensive"); HANDOVER 644 implies named-only. Add a named-feature filter to `oc_load_businesses_osm` if 644 is the target |
+| [ ] | business.overture_places | map+db | — | duckdb + S3 | `duckdb` not installed (Suggests); skipped gracefully as designed |
+
+## Frontend smoke-test — `shiny::runApp("shiny", port=3838)`
+
+**2026-06-08:** app launches clean (shiny/leaflet/leaflet.extras/sf/DBI/pool all load), connects to
+PostGIS via `pool` (PG* env vars), and serves HTTP 200 on 127.0.0.1:3838. The `catalog()` query
+returns **75 `map+db` layers across all 7 groups** (+ 8 `db` tables; 431,406 features total), so the
+layer-toggle list populates. **Interactive checks (toggles / click-popups / draw-to-identify /
+attribute filter) still need a human in a browser** — that's the remaining manual step.
+
+> Note: `public.catalog` lists `map+db` layers even when `n_features=0` (failed/empty source layers
+> like the dead external hosts), so a few empty toggles appear. Consider filtering `n_features > 0`
+> in the Shiny `catalog()` query for a cleaner layer list.
