@@ -115,12 +115,15 @@ source worked; `oc_flatten_list_cols()` (added for external) auto-handled GBIF `
 
 ## Knowledge — `oc_load_knowledge()`
 
-| ✓ | Layer | Target | Expected | Notes |
-|---|---|---|---|---|
-| [ ] | knowledge.notable_people_pins | map+db | 148 pins |  |
-| [ ] | knowledge.notable_people | db | 148 rows |  |
-| [ ] | knowledge.history | db | 6 articles |  |
-| [ ] | knowledge.wikidata_facts | db | 106 statements |  |
+**First validated:** 2026-06-08. Ran clean (exit 0, no code errors). Counts are **below
+HANDOVER** — content/porting gaps, not crashes (see notes).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [~] | knowledge.notable_people | db | 81 | 148 | **porting gap**: docstring says "Wikipedia category + Wikidata" but the body only calls `WikipediR::pages_in_category`; the Wikidata union (people with PoB/PoD = Concord Q28249) was never ported. Plus category drift. |
+| [~] | knowledge.notable_people_pins | map+db | 81 | 148 | mirrors notable_people |
+| [~] | knowledge.history | db | 5 | 6 | one+ of 7 seed pages returned NULL — likely special-char title (en-dash in "NHTI – Concord's Community College"); verify/normalize `oc_history_pages` titles |
+| [x] | knowledge.wikidata_facts | db | 102 | 106 | live Wikidata drift; OK |
 
 ## OSM / Business — `oc_load_osm()`, `oc_load_businesses_osm()`, `oc_load_overture()`
 
