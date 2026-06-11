@@ -20,20 +20,45 @@ oc_concord_preferred <- c(
 #' @param con A DBI connection.
 #' @export
 oc_load_concord <- function(con = oc_connect()) {
-  urls <- oc_arc_discover(oc_concord_server)
-  # keep only preferred services to avoid downloading shared layers many times
-  keep <- Reduce(`|`, lapply(oc_concord_preferred, function(s) grepl(s, urls, fixed = TRUE)))
-  urls <- urls[keep]
+  disc <- oc_arc_discover(oc_concord_server)
+  if (!nrow(disc)) {
+    cli::cli_alert_danger("city server: no layers discovered")
+    return(invisible(character()))
+  }
+
+  # Keep only layers under a preferred service; rank by preferred-list order
+  # (richest services first) so the dedup-by-name below keeps the best copy.
+  pref_idx <- vapply(disc$url, function(u) {
+    hit <- which(vapply(oc_concord_preferred, function(s) grepl(s, u, fixed = TRUE), logical(1)))
+    if (length(hit)) hit[1] else NA_integer_
+  }, integer(1), USE.NAMES = FALSE)
+  keep <- !is.na(pref_idx)
+  disc <- disc[keep, , drop = FALSE]
+  disc <- disc[order(pref_idx[keep]), , drop = FALSE]
+
+  # Name tables by the layer's real name (NOT its numeric id), and dedup shared
+  # layers BEFORE downloading so big shared layers aren't fetched repeatedly.
+  disc$slug <- vapply(disc$name, oc_slug, character(1))
+  disc <- disc[nzchar(disc$slug) & !duplicated(disc$slug), , drop = FALSE]
+  cli::cli_alert_info("city: {nrow(disc)} unique layers to load")
 
   seen <- character()
-  for (url in urls) {
-    lyr <- oc_arc_layer(url)                      # city data: no bbox needed
-    if (is.null(lyr) || nrow(lyr) == 0) next
-    nm <- oc_slug(attr(lyr, "layer_name") %||% basename(url))
-    if (nm %in% seen) next
-    seen <- c(seen, nm)
-    oc_write_layer(lyr, "city", nm, source = "City of Concord ArcGIS",
-                   scope = "city", con = con)
+  for (i in seq_len(nrow(disc))) {
+    cli::cli_h3("{disc$slug[i]}  ({disc$name[i]})")
+    tryCatch({
+      # Per-layer elapsed cap: a hanging or pathologically large layer (e.g. a
+      # dense Contours layer) becomes a graceful skip instead of stalling the run.
+      setTimeLimit(elapsed = 240, transient = TRUE)
+      lyr <- oc_arc_layer(disc$url[i])            # city data: no bbox needed
+      if (is.null(lyr) || nrow(lyr) == 0) {
+        cli::cli_alert_warning("{disc$slug[i]}: 0 features, skipping")
+      } else {
+        oc_write_layer(lyr, "city", disc$slug[i], source = "City of Concord ArcGIS",
+                       scope = "city", con = con)
+        seen <- c(seen, disc$slug[i])
+      }
+    }, error = function(e) cli::cli_alert_danger("{disc$slug[i]}: skipped ({conditionMessage(e)})"))
+    setTimeLimit()  # clear the per-layer cap before the next iteration
   }
   invisible(seen)
 }

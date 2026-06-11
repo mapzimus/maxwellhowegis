@@ -91,14 +91,18 @@ oc_arc_layer_rest <- function(url, bbox, where = "1=1", page = 2000L) {
 }
 
 #' List folders / services / layers under an ArcGIS REST server (for discovery).
+#'
+#' Returns each queryable vector layer's URL **and its human name** (taken from
+#' the service's `/layers` metadata, so callers can name tables sensibly instead
+#' of by numeric layer id).
 #' @param base REST services root (no trailing slash).
-#' @return Character vector of layer URLs.
+#' @return A data.frame with columns `url` and `name` (one row per layer).
 #' @keywords internal
 oc_arc_discover <- function(base) {
   get_json <- function(u) jsonlite::fromJSON(paste0(u, "?f=json"))
   root <- get_json(base)
   folders <- c("", root$folders)
-  layer_urls <- character()
+  rows <- list()
   for (folder in folders) {
     svc_url <- if (nzchar(folder)) paste0(base, "/", folder) else base
     svcs <- tryCatch(get_json(svc_url)$services, error = function(e) NULL)
@@ -109,14 +113,19 @@ oc_arc_discover <- function(base) {
       service_url <- paste0(base, "/", nm, "/", ty)
       lyrs <- tryCatch(get_json(paste0(service_url, "/layers"))$layers,
                        error = function(e) NULL)
-      if (is.null(lyrs) || !length(lyrs)) next
+      if (is.null(lyrs) || !length(lyrs) || is.null(lyrs$geometryType)) next
       vect <- lyrs$geometryType %in% c(
         "esriGeometryPoint", "esriGeometryMultipoint",
         "esriGeometryPolyline", "esriGeometryPolygon")
       for (j in which(vect)) {
-        layer_urls <- c(layer_urls, paste0(service_url, "/", lyrs$id[j]))
+        rows[[length(rows) + 1L]] <- data.frame(
+          url  = paste0(service_url, "/", lyrs$id[j]),
+          name = lyrs$name[j] %||% as.character(lyrs$id[j]),
+          stringsAsFactors = FALSE)
       }
     }
   }
-  unique(layer_urls)
+  if (!length(rows)) return(data.frame(url = character(), name = character()))
+  out <- do.call(rbind, rows)
+  out[!duplicated(out$url), , drop = FALSE]
 }

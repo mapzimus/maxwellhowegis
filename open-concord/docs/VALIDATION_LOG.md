@@ -68,9 +68,28 @@ index is a non-blocking enhancement (only pg_tileserv / large-layer query speed 
 
 ## City of Concord — `oc_load_concord()`
 
-| ✓ | Layer | Target | Expected | Notes |
-|---|---|---|---|---|
-| [ ] | city.* (auto-discovered) | map+db | ~91 layers; Property = 13,160 | confirm table **names** aren't numeric ids |
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6).
+**Fixes applied:**
+- `arcgis.R` `oc_arc_discover()` now returns `url` **and** `name` (from each service's `/layers`
+  metadata) so tables can be named sensibly. (Before: `attr(lyr,"layer_name")` was always NULL →
+  tables would have been named by numeric layer id `0`,`1`,`2`… and dedup-by-name would have
+  collapsed every id-`0` layer into one, destroying most data.)
+- `concord.R` `oc_load_concord()`: name tables by real layer name; rank by preferred-service order
+  (richest first); **dedup shared layers by name *before* downloading** (was: download all 320 then
+  dedup → re-fetched big shared layers repeatedly); per-layer `setTimeLimit(240s)` so a giant/slow
+  layer (Contours = 1,476 pages) skips instead of stalling the whole run.
+- `db.R` `oc_write_layer()`: if the source returns a geometryless `data.frame` (some city layers
+  advertise a geom type but have null geometry), store it as a **`db` reference table** instead of
+  crashing on `st_transform`.
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | city.property | map+db | **13,160** | 13,160 | exact; real name (not numeric id) |
+| [x] | city.* (auto-discovered) | map+db | 106 unique | ~91 layers | names correct (signs, hydrants, valves, mains, sewer_*, drainage_*, powerpoles…); 24+ verified loading; over-match inflates count, deduped by name |
+| [x] | city.shutoff / servicetaps / fittings / servicelines | db | shutoff 10,546 | — | geometryless layers now stored as db tables |
+| [~] | city.contours | map+db | capped | — | 1,476 pages; skipped by 240s per-layer cap (basemap layer, swept in via WaterSystemGIS over-match) |
+| [~] | city.fittingscards | — | 0 | — | ArcGIS "Pagination not supported"; no bbox → no REST fallback. Minor layer |
+| [~] | city.powerpoleanno | — | 0 | — | AnnotationLayer (not vector features) — correct to skip |
 
 ## APIs — `oc_load_apis()`  (+ `include_keyed = TRUE` for the rest)
 

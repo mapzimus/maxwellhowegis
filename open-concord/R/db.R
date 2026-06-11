@@ -34,6 +34,13 @@ oc_db_init <- function(con = oc_connect()) {
 #' @param con A DBI connection.
 #' @export
 oc_write_layer <- function(x, schema, table, source = "", scope = "", con = oc_connect()) {
+  # Some ArcGIS layers advertise a geometry type but return rows with no usable
+  # geometry (arcgislayers hands back a plain data.frame). Keep the data by
+  # storing it as a db reference table instead of failing on st_transform().
+  if (!is.null(x) && !inherits(x, "sf") && nrow(x) > 0) {
+    cli::cli_alert_info("{schema}.{table}: source returned no geometry -> storing as db table")
+    return(invisible(oc_write_table(x, schema, table, source = source, scope = scope, con = con)))
+  }
   if (is.null(x) || nrow(x) == 0) {
     cli::cli_alert_warning("{schema}.{table}: 0 features, skipping")
     n <- 0L
