@@ -1,0 +1,306 @@
+{
+ "03250000": {
+  "cte_female_pct": 0.35,
+  "cte_high_needs_pct": 0.521,
+  "chapter74_programs": 17
+ },
+ "00300000": {
+  "cte_female_pct": 0.38,
+  "cte_high_needs_pct": 0.54,
+  "chapter74_programs": 5
+ },
+ "00970000": {
+  "cte_female_pct": 0.059,
+  "cte_high_needs_pct": 0.745,
+  "chapter74_programs": 2
+ },
+ "06720000": {
+  "cte_female_pct": 0.442,
+  "cte_high_needs_pct": 0.512,
+  "chapter74_programs": 2
+ },
+ "00860000": {
+  "cte_female_pct": 0.346,
+  "cte_high_needs_pct": 0.5,
+  "chapter74_programs": 10
+ },
+ "02930000": {
+  "cte_female_pct": 0.423,
+  "cte_high_needs_pct": 0.594,
+  "chapter74_programs": 9
+ },
+ "02010000": {
+  "cte_female_pct": 0.44,
+  "cte_high_needs_pct": 0.8,
+  "chapter74_programs": 5
+ },
+ "01370000": {
+  "cte_female_pct": 0.505,
+  "cte_high_needs_pct": 0.868,
+  "chapter74_programs": 10
+ },
+ "07200000": {
+  "cte_female_pct": 0.167,
+  "cte_high_needs_pct": 0.5,
+  "chapter74_programs": 2
+ },
+ "00050000": {
+  "cte_female_pct": 0.41,
+  "cte_high_needs_pct": 0.59,
+  "chapter74_programs": 13
+ },
+ "06500000": {
+  "cte_female_pct": 0.37,
+  "cte_high_needs_pct": 0.38,
+  "chapter74_programs": 8
+ },
+ "01590000": {
+  "cte_female_pct": 0.214,
+  "cte_high_needs_pct": 0.6,
+  "chapter74_programs": 10
+ },
+ "01510000": {
+  "cte_female_pct": 0.475,
+  "cte_high_needs_pct": 0.475,
+  "chapter74_programs": 6
+ },
+ "03140000": {
+  "cte_female_pct": 0.536,
+  "cte_high_needs_pct": 0.393,
+  "chapter74_programs": 3
+ },
+ "00610000": {
+  "cte_female_pct": 0.317,
+  "cte_high_needs_pct": 0.469,
+  "chapter74_programs": 11
+ },
+ "02290000": {
+  "cte_female_pct": 0.629,
+  "cte_high_needs_pct": 0.549,
+  "chapter74_programs": 7
+ },
+ "01760000": {
+  "cte_female_pct": 0.453,
+  "cte_high_needs_pct": 0.53,
+  "chapter74_programs": 16
+ },
+ "07630000": {
+  "cte_female_pct": 0.207,
+  "cte_high_needs_pct": 0.241,
+  "chapter74_programs": 1
+ },
+ "03160000": {
+  "cte_female_pct": 0.343,
+  "cte_high_needs_pct": 0.714,
+  "chapter74_programs": 1
+ },
+ "02780000": {
+  "cte_female_pct": 0.254,
+  "cte_high_needs_pct": 0.582,
+  "chapter74_programs": 6
+ },
+ "03100000": {
+  "cte_female_pct": 0.5,
+  "cte_high_needs_pct": 0.62,
+  "chapter74_programs": 1
+ },
+ "07780000": {
+  "cte_female_pct": 0.933,
+  "cte_high_needs_pct": 0.311,
+  "chapter74_programs": 1
+ },
+ "02910000": {
+  "cte_female_pct": 0.375,
+  "cte_high_needs_pct": 0.75,
+  "chapter74_programs": 3
+ },
+ "07670000": {
+  "cte_female_pct": 0.484,
+  "cte_high_needs_pct": 0.463,
+  "chapter74_programs": 4
+ },
+ "07700000": {
+  "cte_female_pct": 0.406,
+  "cte_high_needs_pct": 0.371,
+  "chapter74_programs": 10
+ },
+ "01710000": {
+  "cte_female_pct": 0.52,
+  "cte_high_needs_pct": 0.104,
+  "chapter74_programs": 1
+ },
+ "02580000": {
+  "cte_female_pct": 0.453,
+  "cte_high_needs_pct": 0.701,
+  "chapter74_programs": 9
+ },
+ "01530000": {
+  "cte_female_pct": 0.351,
+  "cte_high_needs_pct": 0.585,
+  "chapter74_programs": 15
+ },
+ "06800000": {
+  "cte_female_pct": 0.435,
+  "cte_high_needs_pct": 0.471,
+  "chapter74_programs": 12
+ },
+ "03320000": {
+  "cte_female_pct": 0.4,
+  "cte_high_needs_pct": 0.654,
+  "chapter74_programs": 12
+ },
+ "00960000": {
+  "cte_female_pct": 0.897,
+  "cte_high_needs_pct": 0.641,
+  "chapter74_programs": 1
+ },
+ "02360000": {
+  "cte_female_pct": 0.44,
+  "cte_high_needs_pct": 0.685,
+  "chapter74_programs": 16
+ },
+ "00160000": {
+  "cte_female_pct": 0.464,
+  "cte_high_needs_pct": 0.422,
+  "chapter74_programs": 20
+ },
+ "00440000": {
+  "cte_female_pct": 0.498,
+  "cte_high_needs_pct": 0.727,
+  "chapter74_programs": 6
+ },
+ "02740000": {
+  "cte_female_pct": 0.447,
+  "cte_high_needs_pct": 0.682,
+  "chapter74_programs": 15
+ },
+ "01810000": {
+  "cte_female_pct": 0.483,
+  "cte_high_needs_pct": 0.547,
+  "chapter74_programs": 11
+ },
+ "00350000": {
+  "cte_female_pct": 0.445,
+  "cte_high_needs_pct": 0.885,
+  "chapter74_programs": 24
+ },
+ "01030000": {
+  "cte_high_needs_pct": 0.8,
+  "chapter74_programs": 2
+ },
+ "00490000": {
+  "cte_female_pct": 0.345,
+  "cte_high_needs_pct": 0.485,
+  "chapter74_programs": 13
+ },
+ "02110000": {
+  "cte_female_pct": 0.353,
+  "cte_high_needs_pct": 0.706,
+  "chapter74_programs": 4
+ },
+ "00950000": {
+  "cte_female_pct": 0.6,
+  "cte_high_needs_pct": 0.78,
+  "chapter74_programs": 11
+ },
+ "03360000": {
+  "cte_female_pct": 0.55,
+  "cte_high_needs_pct": 0.566,
+  "chapter74_programs": 11
+ },
+ "01490000": {
+  "cte_female_pct": 0.264,
+  "cte_high_needs_pct": 0.868,
+  "chapter74_programs": 6
+ },
+ "01600000": {
+  "cte_female_pct": 0.306,
+  "cte_high_needs_pct": 0.837,
+  "chapter74_programs": 3
+ },
+ "02390000": {
+  "cte_female_pct": 0.461,
+  "cte_high_needs_pct": 0.354,
+  "chapter74_programs": 11
+ },
+ "00870000": {
+  "cte_female_pct": 0.419,
+  "cte_high_needs_pct": 0.46,
+  "chapter74_programs": 12
+ },
+ "01740000": {
+  "cte_female_pct": 0.519,
+  "cte_high_needs_pct": 0.212,
+  "chapter74_programs": 1
+ },
+ "02430000": {
+  "cte_female_pct": 0.502,
+  "cte_high_needs_pct": 0.609,
+  "chapter74_programs": 16
+ },
+ "07660000": {
+  "cte_female_pct": 0.491,
+  "cte_high_needs_pct": 0.557,
+  "chapter74_programs": 12
+ },
+ "06180000": {
+  "cte_female_pct": 0.26,
+  "cte_high_needs_pct": 0.58,
+  "chapter74_programs": 3
+ },
+ "02180000": {
+  "cte_female_pct": 0.485,
+  "cte_high_needs_pct": 0.118,
+  "chapter74_programs": 1
+ },
+ "03080000": {
+  "cte_female_pct": 0.393,
+  "cte_high_needs_pct": 0.676,
+  "chapter74_programs": 15
+ },
+ "01070000": {
+  "cte_female_pct": 0.26,
+  "cte_high_needs_pct": 0.612,
+  "chapter74_programs": 5
+ },
+ "03480000": {
+  "cte_female_pct": 0.494,
+  "cte_high_needs_pct": 0.698,
+  "chapter74_programs": 28
+ },
+ "01610000": {
+  "cte_female_pct": 0.423,
+  "cte_high_needs_pct": 0.545,
+  "chapter74_programs": 13
+ },
+ "00200000": {
+  "cte_female_pct": 0.349,
+  "cte_high_needs_pct": 0.596,
+  "chapter74_programs": 1
+ },
+ "01280000": {
+  "cte_female_pct": 0.455,
+  "cte_high_needs_pct": 0.492,
+  "chapter74_programs": 3
+ },
+ "02070000": {
+  "cte_female_pct": 0.5,
+  "cte_high_needs_pct": 0.314,
+  "chapter74_programs": 8
+ },
+ "01630000": {
+  "cte_female_pct": 0.466,
+  "cte_high_needs_pct": 0.736,
+  "chapter74_programs": 18
+ },
+ "02810000": {
+  "cte_female_pct": 0.567,
+  "cte_high_needs_pct": 0.799,
+  "chapter74_programs": 25
+ },
+ "00930000": {
+  "cte_female_pct": 0.469,
+  "cte_high_needs_pct": 0.776,
+  "chapter74_programs": 9
+ }
+}

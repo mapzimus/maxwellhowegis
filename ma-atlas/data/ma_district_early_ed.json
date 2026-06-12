@@ -1,0 +1,1863 @@
+{
+ "01270000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 2.4167,
+  "prek_enrollment": 29,
+  "kindergarten_enrollment": 12,
+  "prek_low_income_pct": 0.2069
+ },
+ "01500000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4848,
+  "prek_enrollment": 16,
+  "kindergarten_enrollment": 33,
+  "prek_low_income_pct": 0.4375
+ },
+ "06500000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5363,
+  "prek_enrollment": 96,
+  "kindergarten_enrollment": 179,
+  "prek_low_income_pct": 0.2083
+ },
+ "00430000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8056,
+  "prek_enrollment": 29,
+  "kindergarten_enrollment": 36,
+  "prek_low_income_pct": 0.3448
+ },
+ "02340000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 17
+ },
+ "03420000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3421,
+  "prek_enrollment": 78,
+  "kindergarten_enrollment": 228,
+  "prek_low_income_pct": 0.1795
+ },
+ "02840000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5455,
+  "prek_enrollment": 90,
+  "kindergarten_enrollment": 165,
+  "prek_low_income_pct": 0.1222
+ },
+ "01250000": {
+  "full_day_k_pct": 0.9825,
+  "prek_per_k_ratio": 0.5789,
+  "prek_enrollment": 33,
+  "kindergarten_enrollment": 57,
+  "prek_low_income_pct": 0.0909
+ },
+ "02750000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5965,
+  "prek_enrollment": 34,
+  "kindergarten_enrollment": 57,
+  "prek_low_income_pct": 0.2941
+ },
+ "00080000": {
+  "full_day_k_pct": 0.9911,
+  "prek_per_k_ratio": 0.4464,
+  "prek_enrollment": 50,
+  "kindergarten_enrollment": 112,
+  "prek_low_income_pct": 0.54
+ },
+ "00980000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0,
+  "prek_enrollment": 6,
+  "kindergarten_enrollment": 6,
+  "prek_low_income_pct": 0.1667
+ },
+ "00630000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0,
+  "prek_enrollment": 18,
+  "kindergarten_enrollment": 18,
+  "prek_low_income_pct": 0.4444
+ },
+ "00070000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3469,
+  "prek_enrollment": 51,
+  "kindergarten_enrollment": 147,
+  "prek_low_income_pct": 0.3725
+ },
+ "00510000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2909,
+  "prek_enrollment": 16,
+  "kindergarten_enrollment": 55,
+  "prek_low_income_pct": 0.0625
+ },
+ "00870000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4352,
+  "prek_enrollment": 47,
+  "kindergarten_enrollment": 108,
+  "prek_low_income_pct": 0.2128
+ },
+ "02510000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4663,
+  "prek_enrollment": 76,
+  "kindergarten_enrollment": 163,
+  "prek_low_income_pct": 0.3026
+ },
+ "03160000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3219,
+  "prek_enrollment": 47,
+  "kindergarten_enrollment": 146,
+  "prek_low_income_pct": 0.5745
+ },
+ "01420000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.098,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 51,
+  "prek_low_income_pct": 0.2321
+ },
+ "02260000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4409,
+  "prek_enrollment": 41,
+  "kindergarten_enrollment": 93,
+  "prek_low_income_pct": 0.3659
+ },
+ "06000000": {
+  "full_day_k_pct": 0.9627,
+  "prek_per_k_ratio": 0.3447,
+  "prek_enrollment": 111,
+  "kindergarten_enrollment": 322,
+  "prek_low_income_pct": 0.2883
+ },
+ "00310000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4431,
+  "prek_enrollment": 187,
+  "kindergarten_enrollment": 422,
+  "prek_low_income_pct": 0.2674
+ },
+ "02910000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3881,
+  "prek_enrollment": 52,
+  "kindergarten_enrollment": 134,
+  "prek_low_income_pct": 0.1923
+ },
+ "03230000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4146,
+  "prek_enrollment": 34,
+  "kindergarten_enrollment": 82,
+  "prek_low_income_pct": 0.1765
+ },
+ "02210000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4524,
+  "prek_enrollment": 19,
+  "kindergarten_enrollment": 42,
+  "prek_low_income_pct": 0.2105
+ },
+ "00460000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5232,
+  "prek_enrollment": 237,
+  "kindergarten_enrollment": 453,
+  "prek_low_income_pct": 0.1224
+ },
+ "02130000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 179
+ },
+ "00890000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2093,
+  "prek_enrollment": 9,
+  "kindergarten_enrollment": 43,
+  "prek_low_income_pct": 0.4444
+ },
+ "00970000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3946,
+  "prek_enrollment": 161,
+  "kindergarten_enrollment": 408,
+  "prek_low_income_pct": 0.6832
+ },
+ "00480000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3359,
+  "prek_enrollment": 87,
+  "kindergarten_enrollment": 259,
+  "prek_low_income_pct": 0.2299
+ },
+ "02080000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6,
+  "prek_enrollment": 66,
+  "kindergarten_enrollment": 110,
+  "prek_low_income_pct": 0.1212
+ },
+ "02400000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 35
+ },
+ "07650000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.5135,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 37,
+  "prek_low_income_pct": 0.2679
+ },
+ "03050000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5686,
+  "prek_enrollment": 145,
+  "kindergarten_enrollment": 255,
+  "prek_low_income_pct": 0.1724
+ },
+ "02730000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5556,
+  "prek_enrollment": 75,
+  "kindergarten_enrollment": 135,
+  "prek_low_income_pct": 0.36
+ },
+ "02100000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3043,
+  "prek_enrollment": 42,
+  "kindergarten_enrollment": 138,
+  "prek_low_income_pct": 0.619
+ },
+ "07800000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4603,
+  "prek_enrollment": 110,
+  "kindergarten_enrollment": 239,
+  "prek_low_income_pct": 0.2182
+ },
+ "01050000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4321,
+  "prek_enrollment": 35,
+  "kindergarten_enrollment": 81,
+  "prek_low_income_pct": 0.1429
+ },
+ "06750000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2014,
+  "prek_enrollment": 28,
+  "kindergarten_enrollment": 139,
+  "prek_low_income_pct": 0.0714
+ },
+ "02620000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4513,
+  "prek_enrollment": 88,
+  "kindergarten_enrollment": 195,
+  "prek_low_income_pct": 0.2614
+ },
+ "02090000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.1765,
+  "prek_enrollment": 100,
+  "kindergarten_enrollment": 85,
+  "prek_low_income_pct": 0.72
+ },
+ "01140000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.78,
+  "prek_enrollment": 78,
+  "kindergarten_enrollment": 100,
+  "prek_low_income_pct": 0.5385
+ },
+ "02200000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5305,
+  "prek_enrollment": 139,
+  "kindergarten_enrollment": 262,
+  "prek_low_income_pct": 0.3309
+ },
+ "01980000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3583,
+  "prek_enrollment": 129,
+  "kindergarten_enrollment": 360,
+  "prek_low_income_pct": 0.0775
+ },
+ "00400000": {
+  "full_day_k_pct": 0.9062,
+  "prek_per_k_ratio": 0.2669,
+  "prek_enrollment": 91,
+  "kindergarten_enrollment": 341,
+  "prek_low_income_pct": 0.3956
+ },
+ "00790000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2291,
+  "prek_enrollment": 63,
+  "kindergarten_enrollment": 275,
+  "prek_low_income_pct": 0.4762
+ },
+ "03460000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2432,
+  "prek_enrollment": 36,
+  "kindergarten_enrollment": 148,
+  "prek_low_income_pct": 0.3056
+ },
+ "01350000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5625,
+  "prek_enrollment": 18,
+  "kindergarten_enrollment": 32,
+  "prek_low_income_pct": 0.2778
+ },
+ "02180000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7344,
+  "prek_enrollment": 94,
+  "kindergarten_enrollment": 128,
+  "prek_low_income_pct": 0.1596
+ },
+ "02170000": {
+  "full_day_k_pct": 0.9563,
+  "prek_per_k_ratio": 0.2732,
+  "prek_enrollment": 50,
+  "kindergarten_enrollment": 183,
+  "prek_low_income_pct": 0.08
+ },
+ "01610000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5612,
+  "prek_enrollment": 78,
+  "kindergarten_enrollment": 139,
+  "prek_low_income_pct": 0.4359
+ },
+ "02530000": {
+  "prek_per_k_ratio": 0.75,
+  "prek_enrollment": 3,
+  "kindergarten_enrollment": 4
+ },
+ "01000000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3446,
+  "prek_enrollment": 234,
+  "kindergarten_enrollment": 679,
+  "prek_low_income_pct": 0.5427
+ },
+ "02770000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4211,
+  "prek_enrollment": 64,
+  "kindergarten_enrollment": 152,
+  "prek_low_income_pct": 0.6406
+ },
+ "06620000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.1364,
+  "prek_enrollment": 3,
+  "kindergarten_enrollment": 22
+ },
+ "01010000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4014,
+  "prek_enrollment": 116,
+  "kindergarten_enrollment": 289,
+  "prek_low_income_pct": 0.2586
+ },
+ "03360000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.456,
+  "prek_enrollment": 223,
+  "kindergarten_enrollment": 489,
+  "prek_low_income_pct": 0.2377
+ },
+ "00440000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4627,
+  "prek_enrollment": 533,
+  "kindergarten_enrollment": 1152,
+  "prek_low_income_pct": 0.666
+ },
+ "01520000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2857,
+  "prek_enrollment": 14,
+  "kindergarten_enrollment": 49,
+  "prek_low_income_pct": 0.2143
+ },
+ "03430000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6848,
+  "prek_enrollment": 63,
+  "kindergarten_enrollment": 92,
+  "prek_low_income_pct": 0.4444
+ },
+ "03500000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4892,
+  "prek_enrollment": 68,
+  "kindergarten_enrollment": 139,
+  "prek_low_income_pct": 0.0735
+ },
+ "00300000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3333,
+  "prek_enrollment": 118,
+  "kindergarten_enrollment": 354,
+  "prek_low_income_pct": 0.2373
+ },
+ "02490000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0,
+  "prek_enrollment": 13,
+  "kindergarten_enrollment": 13,
+  "prek_low_income_pct": 0.2308
+ },
+ "01910000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0577,
+  "prek_enrollment": 55,
+  "kindergarten_enrollment": 52,
+  "prek_low_income_pct": 0.4182
+ },
+ "02630000": {
+  "prek_per_k_ratio": 0.5,
+  "prek_enrollment": 2,
+  "kindergarten_enrollment": 4
+ },
+ "07250000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4154,
+  "prek_enrollment": 81,
+  "kindergarten_enrollment": 195,
+  "prek_low_income_pct": 0.1358
+ },
+ "00380000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5185,
+  "prek_enrollment": 42,
+  "kindergarten_enrollment": 81,
+  "prek_low_income_pct": 0.0476
+ },
+ "00180000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4865,
+  "prek_enrollment": 18,
+  "kindergarten_enrollment": 37,
+  "prek_low_income_pct": 0.2778
+ },
+ "01370000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0128,
+  "prek_enrollment": 317,
+  "kindergarten_enrollment": 313,
+  "prek_low_income_pct": 0.8391
+ },
+ "03100000": {
+  "full_day_k_pct": 0.9891,
+  "prek_per_k_ratio": 0.3967,
+  "prek_enrollment": 73,
+  "kindergarten_enrollment": 184,
+  "prek_low_income_pct": 0.4795
+ },
+ "02930000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6157,
+  "prek_enrollment": 354,
+  "kindergarten_enrollment": 575,
+  "prek_low_income_pct": 0.5367
+ },
+ "00830000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9375,
+  "prek_enrollment": 120,
+  "kindergarten_enrollment": 128,
+  "prek_low_income_pct": 0.1583
+ },
+ "01600000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5272,
+  "prek_enrollment": 591,
+  "kindergarten_enrollment": 1121,
+  "prek_low_income_pct": 0.6684
+ },
+ "01810000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3828,
+  "prek_enrollment": 147,
+  "kindergarten_enrollment": 384,
+  "prek_low_income_pct": 0.585
+ },
+ "06250000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2347,
+  "prek_enrollment": 96,
+  "kindergarten_enrollment": 409,
+  "prek_low_income_pct": 0.2292
+ },
+ "07500000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.1944,
+  "prek_enrollment": 43,
+  "kindergarten_enrollment": 36,
+  "prek_low_income_pct": 0.2558
+ },
+ "00710000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4286,
+  "prek_enrollment": 93,
+  "kindergarten_enrollment": 217,
+  "prek_low_income_pct": 0.1935
+ },
+ "01210000": {
+  "prek_per_k_ratio": 1.25,
+  "prek_enrollment": 5,
+  "kindergarten_enrollment": 4
+ },
+ "01170000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.5143,
+  "prek_enrollment": 53,
+  "kindergarten_enrollment": 35,
+  "prek_low_income_pct": 0.1698
+ },
+ "01710000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4457,
+  "prek_enrollment": 119,
+  "kindergarten_enrollment": 267,
+  "prek_low_income_pct": 0.1765
+ },
+ "02140000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7578,
+  "prek_enrollment": 97,
+  "kindergarten_enrollment": 128,
+  "prek_low_income_pct": 0.268
+ },
+ "03470000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4615,
+  "prek_enrollment": 156,
+  "kindergarten_enrollment": 338,
+  "prek_low_income_pct": 0.4038
+ },
+ "06980000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5846,
+  "prek_enrollment": 38,
+  "kindergarten_enrollment": 65,
+  "prek_low_income_pct": 0.0789
+ },
+ "01380000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.5303,
+  "prek_enrollment": 101,
+  "kindergarten_enrollment": 66,
+  "prek_low_income_pct": 0.1287
+ },
+ "00670000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3212,
+  "prek_enrollment": 53,
+  "kindergarten_enrollment": 165,
+  "prek_low_income_pct": 0.0943
+ },
+ "06450000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5314,
+  "prek_enrollment": 127,
+  "kindergarten_enrollment": 239,
+  "prek_low_income_pct": 0.5984
+ },
+ "01590000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3012,
+  "prek_enrollment": 50,
+  "kindergarten_enrollment": 166,
+  "prek_low_income_pct": 0.12
+ },
+ "02190000": {
+  "full_day_k_pct": 0.9609,
+  "prek_per_k_ratio": 0.2458,
+  "prek_enrollment": 44,
+  "kindergarten_enrollment": 179,
+  "prek_low_income_pct": 0.1364
+ },
+ "01840000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0159,
+  "prek_enrollment": 64,
+  "kindergarten_enrollment": 63,
+  "prek_low_income_pct": 0.0938
+ },
+ "03080000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2512,
+  "prek_enrollment": 107,
+  "kindergarten_enrollment": 426,
+  "prek_low_income_pct": 0.3925
+ },
+ "01220000": {
+  "full_day_k_pct": 0.8688,
+  "prek_per_k_ratio": 0.3625,
+  "prek_enrollment": 58,
+  "kindergarten_enrollment": 160,
+  "prek_low_income_pct": 0.1552
+ },
+ "02310000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4485,
+  "prek_enrollment": 74,
+  "kindergarten_enrollment": 165,
+  "prek_low_income_pct": 0.1351
+ },
+ "06150000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5323,
+  "prek_enrollment": 66,
+  "kindergarten_enrollment": 124,
+  "prek_low_income_pct": 0.5606
+ },
+ "07280000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.6875,
+  "prek_enrollment": 27,
+  "kindergarten_enrollment": 16,
+  "prek_low_income_pct": 0.1852
+ },
+ "00230000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3101,
+  "prek_enrollment": 40,
+  "kindergarten_enrollment": 129,
+  "prek_low_income_pct": 0.175
+ },
+ "02300000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 12
+ },
+ "01620000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5093,
+  "prek_enrollment": 55,
+  "kindergarten_enrollment": 108,
+  "prek_low_income_pct": 0.3273
+ },
+ "00520000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8295,
+  "prek_enrollment": 73,
+  "kindergarten_enrollment": 88,
+  "prek_low_income_pct": 0.2055
+ },
+ "00250000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8029,
+  "prek_enrollment": 110,
+  "kindergarten_enrollment": 137,
+  "prek_low_income_pct": 0.3182
+ },
+ "02010000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4384,
+  "prek_enrollment": 463,
+  "kindergarten_enrollment": 1056,
+  "prek_low_income_pct": 0.6631
+ },
+ "02810000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.1562,
+  "prek_enrollment": 2036,
+  "kindergarten_enrollment": 1761,
+  "prek_low_income_pct": 0.7908
+ },
+ "02760000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9649,
+  "prek_enrollment": 110,
+  "kindergarten_enrollment": 114,
+  "prek_low_income_pct": 0.2364
+ },
+ "00170000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.503,
+  "prek_enrollment": 85,
+  "kindergarten_enrollment": 169,
+  "prek_low_income_pct": 0.2941
+ },
+ "00740000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0741,
+  "prek_enrollment": 29,
+  "kindergarten_enrollment": 27,
+  "prek_low_income_pct": 0.1379
+ },
+ "01440000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4,
+  "prek_enrollment": 46,
+  "kindergarten_enrollment": 115,
+  "prek_low_income_pct": 0.2391
+ },
+ "00860000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3619,
+  "prek_enrollment": 38,
+  "kindergarten_enrollment": 105,
+  "prek_low_income_pct": 0.4474
+ },
+ "02710000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5242,
+  "prek_enrollment": 173,
+  "kindergarten_enrollment": 330,
+  "prek_low_income_pct": 0.289
+ },
+ "02950000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5385,
+  "prek_enrollment": 147,
+  "kindergarten_enrollment": 273,
+  "prek_low_income_pct": 0.1088
+ },
+ "03270000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0,
+  "prek_enrollment": 10,
+  "kindergarten_enrollment": 10,
+  "prek_low_income_pct": 0.1
+ },
+ "03400000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.3333,
+  "prek_enrollment": 12,
+  "kindergarten_enrollment": 9,
+  "prek_low_income_pct": 0.0833
+ },
+ "00010000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5063,
+  "prek_enrollment": 80,
+  "kindergarten_enrollment": 158,
+  "prek_low_income_pct": 0.2625
+ },
+ "03480000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5391,
+  "prek_enrollment": 985,
+  "kindergarten_enrollment": 1827,
+  "prek_low_income_pct": 0.7188
+ },
+ "03000000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 2.4286,
+  "prek_enrollment": 17,
+  "kindergarten_enrollment": 7,
+  "prek_low_income_pct": 0.7059
+ },
+ "06100000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6364,
+  "prek_enrollment": 84,
+  "kindergarten_enrollment": 132,
+  "prek_low_income_pct": 0.1429
+ },
+ "00640000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8447,
+  "prek_enrollment": 136,
+  "kindergarten_enrollment": 161,
+  "prek_low_income_pct": 0.4559
+ },
+ "01680000": {
+  "full_day_k_pct": 0.9936,
+  "prek_per_k_ratio": 0.4038,
+  "prek_enrollment": 63,
+  "kindergarten_enrollment": 156,
+  "prek_low_income_pct": 0.1587
+ },
+ "01650000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4722,
+  "prek_enrollment": 212,
+  "kindergarten_enrollment": 449,
+  "prek_low_income_pct": 0.434
+ },
+ "06730000": {
+  "full_day_k_pct": 0.8676,
+  "prek_per_k_ratio": 0.5294,
+  "prek_enrollment": 72,
+  "kindergarten_enrollment": 136,
+  "prek_low_income_pct": 0.0833
+ },
+ "02040000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4786,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 117,
+  "prek_low_income_pct": 0.1786
+ },
+ "00930000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.837,
+  "prek_enrollment": 344,
+  "kindergarten_enrollment": 411,
+  "prek_low_income_pct": 0.657
+ },
+ "00650000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2844,
+  "prek_enrollment": 31,
+  "kindergarten_enrollment": 109,
+  "prek_low_income_pct": 0.0645
+ },
+ "01100000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5144,
+  "prek_enrollment": 107,
+  "kindergarten_enrollment": 208,
+  "prek_low_income_pct": 0.1963
+ },
+ "03210000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4449,
+  "prek_enrollment": 109,
+  "kindergarten_enrollment": 245,
+  "prek_low_income_pct": 0.2844
+ },
+ "01990000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.1935,
+  "prek_enrollment": 72,
+  "kindergarten_enrollment": 372,
+  "prek_low_income_pct": 0.125
+ },
+ "02440000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5702,
+  "prek_enrollment": 134,
+  "kindergarten_enrollment": 235,
+  "prek_low_income_pct": 0.5896
+ },
+ "03150000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2381,
+  "prek_enrollment": 40,
+  "kindergarten_enrollment": 168,
+  "prek_low_income_pct": 0.175
+ },
+ "01360000": {
+  "full_day_k_pct": 0.9774,
+  "prek_per_k_ratio": 0.4746,
+  "prek_enrollment": 84,
+  "kindergarten_enrollment": 177,
+  "prek_low_income_pct": 0.119
+ },
+ "02690000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.25,
+  "prek_enrollment": 13,
+  "kindergarten_enrollment": 52,
+  "prek_low_income_pct": 0.1538
+ },
+ "03250000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7395,
+  "prek_enrollment": 230,
+  "kindergarten_enrollment": 311,
+  "prek_low_income_pct": 0.4087
+ },
+ "01770000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3026,
+  "prek_enrollment": 46,
+  "kindergarten_enrollment": 152,
+  "prek_low_income_pct": 0.2609
+ },
+ "06720000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.037,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 54,
+  "prek_low_income_pct": 0.4286
+ },
+ "02270000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6585,
+  "prek_enrollment": 54,
+  "kindergarten_enrollment": 82,
+  "prek_low_income_pct": 0.3889
+ },
+ "07670000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9035,
+  "prek_enrollment": 103,
+  "kindergarten_enrollment": 114,
+  "prek_low_income_pct": 0.3689
+ },
+ "01330000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5234,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 107,
+  "prek_low_income_pct": 0.3393
+ },
+ "01820000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.274,
+  "prek_enrollment": 60,
+  "kindergarten_enrollment": 219,
+  "prek_low_income_pct": 0.3333
+ },
+ "07780000": {
+  "full_day_k_pct": 0.9867,
+  "prek_per_k_ratio": 0.5867,
+  "prek_enrollment": 44,
+  "kindergarten_enrollment": 75,
+  "prek_low_income_pct": 0.4545
+ },
+ "01670000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4372,
+  "prek_enrollment": 101,
+  "kindergarten_enrollment": 231,
+  "prek_low_income_pct": 0.2376
+ },
+ "00770000": {
+  "full_day_k_pct": 0.9865,
+  "prek_per_k_ratio": 0.8108,
+  "prek_enrollment": 60,
+  "kindergarten_enrollment": 74,
+  "prek_low_income_pct": 0.2
+ },
+ "03070000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.221,
+  "prek_enrollment": 61,
+  "kindergarten_enrollment": 276,
+  "prek_low_income_pct": 0.1967
+ },
+ "03260000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3852,
+  "prek_enrollment": 99,
+  "kindergarten_enrollment": 257,
+  "prek_low_income_pct": 0.1414
+ },
+ "00570000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5708,
+  "prek_enrollment": 262,
+  "kindergarten_enrollment": 459,
+  "prek_low_income_pct": 0.6794
+ },
+ "02850000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3918,
+  "prek_enrollment": 105,
+  "kindergarten_enrollment": 268,
+  "prek_low_income_pct": 0.4476
+ },
+ "00490000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6014,
+  "prek_enrollment": 344,
+  "kindergarten_enrollment": 572,
+  "prek_low_income_pct": 0.3488
+ },
+ "02880000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2636,
+  "prek_enrollment": 68,
+  "kindergarten_enrollment": 258,
+  "prek_low_income_pct": 0.1912
+ },
+ "03010000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5,
+  "prek_enrollment": 59,
+  "kindergarten_enrollment": 118,
+  "prek_low_income_pct": 0.1525
+ },
+ "06030000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9583,
+  "prek_enrollment": 69,
+  "kindergarten_enrollment": 72,
+  "prek_low_income_pct": 0.4058
+ },
+ "01110000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8611,
+  "prek_enrollment": 31,
+  "kindergarten_enrollment": 36,
+  "prek_low_income_pct": 0.2258
+ },
+ "02360000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5503,
+  "prek_enrollment": 186,
+  "kindergarten_enrollment": 338,
+  "prek_low_income_pct": 0.6559
+ },
+ "02650000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3161,
+  "prek_enrollment": 49,
+  "kindergarten_enrollment": 155,
+  "prek_low_income_pct": 0.2245
+ },
+ "07450000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4863,
+  "prek_enrollment": 89,
+  "kindergarten_enrollment": 183,
+  "prek_low_income_pct": 0.1124
+ },
+ "00960000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7746,
+  "prek_enrollment": 134,
+  "kindergarten_enrollment": 173,
+  "prek_low_income_pct": 0.4403
+ },
+ "00030000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.622,
+  "prek_enrollment": 51,
+  "kindergarten_enrollment": 82,
+  "prek_low_income_pct": 0.2745
+ },
+ "01550000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.223,
+  "prek_enrollment": 68,
+  "kindergarten_enrollment": 305,
+  "prek_low_income_pct": 0.1765
+ },
+ "07100000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2739,
+  "prek_enrollment": 43,
+  "kindergarten_enrollment": 157,
+  "prek_low_income_pct": 0.1395
+ },
+ "01890000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2941,
+  "prek_enrollment": 95,
+  "kindergarten_enrollment": 323,
+  "prek_low_income_pct": 0.2
+ },
+ "01540000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8947,
+  "prek_enrollment": 17,
+  "kindergarten_enrollment": 19,
+  "prek_low_income_pct": 0.2941
+ },
+ "02420000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 2.3333,
+  "prek_enrollment": 28,
+  "kindergarten_enrollment": 12,
+  "prek_low_income_pct": 0.3214
+ },
+ "01700000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5014,
+  "prek_enrollment": 184,
+  "kindergarten_enrollment": 367,
+  "prek_low_income_pct": 0.5163
+ },
+ "02460000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3289,
+  "prek_enrollment": 100,
+  "kindergarten_enrollment": 304,
+  "prek_low_income_pct": 0.09
+ },
+ "02110000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3523,
+  "prek_enrollment": 105,
+  "kindergarten_enrollment": 298,
+  "prek_low_income_pct": 0.3143
+ },
+ "02660000": {
+  "full_day_k_pct": 0.9502,
+  "prek_per_k_ratio": 0.3035,
+  "prek_enrollment": 61,
+  "kindergarten_enrollment": 201,
+  "prek_low_income_pct": 0.1475
+ },
+ "01410000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.1832,
+  "prek_enrollment": 35,
+  "kindergarten_enrollment": 191,
+  "prek_low_income_pct": 0.2857
+ },
+ "00560000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4914,
+  "prek_enrollment": 171,
+  "kindergarten_enrollment": 348,
+  "prek_low_income_pct": 0.2398
+ },
+ "03320000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.954,
+  "prek_enrollment": 228,
+  "kindergarten_enrollment": 239,
+  "prek_low_income_pct": 0.5658
+ },
+ "02230000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6721,
+  "prek_enrollment": 41,
+  "kindergarten_enrollment": 61,
+  "prek_low_income_pct": 0.561
+ },
+ "00450000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5312,
+  "prek_enrollment": 17,
+  "kindergarten_enrollment": 32,
+  "prek_low_income_pct": 0.2353
+ },
+ "02980000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6533,
+  "prek_enrollment": 49,
+  "kindergarten_enrollment": 75,
+  "prek_low_income_pct": 0.0204
+ },
+ "03180000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 13
+ },
+ "01640000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2324,
+  "prek_enrollment": 33,
+  "kindergarten_enrollment": 142,
+  "prek_low_income_pct": 0.1515
+ },
+ "02920000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4336,
+  "prek_enrollment": 62,
+  "kindergarten_enrollment": 143,
+  "prek_low_income_pct": 0.2581
+ },
+ "02480000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3438,
+  "prek_enrollment": 164,
+  "kindergarten_enrollment": 477,
+  "prek_low_income_pct": 0.5305
+ },
+ "02580000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5971,
+  "prek_enrollment": 203,
+  "kindergarten_enrollment": 340,
+  "prek_low_income_pct": 0.3842
+ },
+ "00100000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.1841,
+  "prek_enrollment": 79,
+  "kindergarten_enrollment": 429,
+  "prek_low_income_pct": 0.2658
+ },
+ "00940000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3925,
+  "prek_enrollment": 42,
+  "kindergarten_enrollment": 107,
+  "prek_low_income_pct": 0.5476
+ },
+ "03090000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6707,
+  "prek_enrollment": 55,
+  "kindergarten_enrollment": 82,
+  "prek_low_income_pct": 0.6182
+ },
+ "00850000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 26
+ },
+ "00260000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2463,
+  "prek_enrollment": 66,
+  "kindergarten_enrollment": 268,
+  "prek_low_income_pct": 0.2576
+ },
+ "03370000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.75,
+  "prek_enrollment": 15,
+  "kindergarten_enrollment": 20,
+  "prek_low_income_pct": 0.1333
+ },
+ "06580000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5346,
+  "prek_enrollment": 116,
+  "kindergarten_enrollment": 217,
+  "prek_low_income_pct": 0.3621
+ },
+ "00200000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4615,
+  "prek_enrollment": 162,
+  "kindergarten_enrollment": 351,
+  "prek_low_income_pct": 0.5617
+ },
+ "01580000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3448,
+  "prek_enrollment": 40,
+  "kindergarten_enrollment": 116,
+  "prek_low_income_pct": 0.15
+ },
+ "07740000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.1739,
+  "prek_enrollment": 8,
+  "kindergarten_enrollment": 46,
+  "prek_low_income_pct": 0.25
+ },
+ "01730000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6286,
+  "prek_enrollment": 22,
+  "kindergarten_enrollment": 35,
+  "prek_low_income_pct": 0.4545
+ },
+ "00910000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5714,
+  "prek_enrollment": 8,
+  "kindergarten_enrollment": 14,
+  "prek_low_income_pct": 0.625
+ },
+ "02150000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.1071,
+  "prek_enrollment": 31,
+  "kindergarten_enrollment": 28,
+  "prek_low_income_pct": 1.0
+ },
+ "01530000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3744,
+  "prek_enrollment": 158,
+  "kindergarten_enrollment": 422,
+  "prek_low_income_pct": 0.4304
+ },
+ "01760000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.343,
+  "prek_enrollment": 106,
+  "kindergarten_enrollment": 309,
+  "prek_low_income_pct": 0.3396
+ },
+ "03310000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4912,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 114,
+  "prek_low_income_pct": 0.3571
+ },
+ "06320000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.2667,
+  "prek_enrollment": 19,
+  "kindergarten_enrollment": 15,
+  "prek_low_income_pct": 0.2632
+ },
+ "01490000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5747,
+  "prek_enrollment": 481,
+  "kindergarten_enrollment": 837,
+  "prek_low_income_pct": 0.8191
+ },
+ "00410000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7358,
+  "prek_enrollment": 39,
+  "kindergarten_enrollment": 53,
+  "prek_low_income_pct": 0.4103
+ },
+ "06650000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2255,
+  "prek_enrollment": 46,
+  "kindergarten_enrollment": 204,
+  "prek_low_income_pct": 0.1522
+ },
+ "01450000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 152
+ },
+ "03140000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7976,
+  "prek_enrollment": 201,
+  "kindergarten_enrollment": 252,
+  "prek_low_income_pct": 0.2289
+ },
+ "01570000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.76,
+  "prek_enrollment": 76,
+  "kindergarten_enrollment": 100,
+  "prek_low_income_pct": 0.0526
+ },
+ "03220000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7222,
+  "prek_enrollment": 39,
+  "kindergarten_enrollment": 54,
+  "prek_low_income_pct": 0.1282
+ },
+ "01510000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6848,
+  "prek_enrollment": 63,
+  "kindergarten_enrollment": 92,
+  "prek_low_income_pct": 0.3492
+ },
+ "03490000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.25,
+  "prek_enrollment": 10,
+  "kindergarten_enrollment": 8,
+  "prek_low_income_pct": 0.3
+ },
+ "01070000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4225,
+  "prek_enrollment": 90,
+  "kindergarten_enrollment": 213,
+  "prek_low_income_pct": 0.4333
+ },
+ "06740000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5224,
+  "prek_enrollment": 35,
+  "kindergarten_enrollment": 67,
+  "prek_low_income_pct": 0.6
+ },
+ "00500000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4395,
+  "prek_enrollment": 109,
+  "kindergarten_enrollment": 248,
+  "prek_low_income_pct": 0.2936
+ },
+ "02890000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.3889,
+  "prek_enrollment": 25,
+  "kindergarten_enrollment": 18,
+  "prek_low_income_pct": 0.44
+ },
+ "02900000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7101,
+  "prek_enrollment": 49,
+  "kindergarten_enrollment": 69,
+  "prek_low_income_pct": 0.102
+ },
+ "00240000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4741,
+  "prek_enrollment": 55,
+  "kindergarten_enrollment": 116,
+  "prek_low_income_pct": 0.2364
+ },
+ "00880000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4711,
+  "prek_enrollment": 114,
+  "kindergarten_enrollment": 242,
+  "prek_low_income_pct": 0.2018
+ },
+ "03300000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3885,
+  "prek_enrollment": 54,
+  "kindergarten_enrollment": 139,
+  "prek_low_income_pct": 0.0185
+ },
+ "07150000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9825,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 57,
+  "prek_low_income_pct": 0.2321
+ },
+ "02640000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4093,
+  "prek_enrollment": 79,
+  "kindergarten_enrollment": 193,
+  "prek_low_income_pct": 0.1013
+ },
+ "02070000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2358,
+  "prek_enrollment": 162,
+  "kindergarten_enrollment": 687,
+  "prek_low_income_pct": 0.284
+ },
+ "03060000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.1111,
+  "prek_enrollment": 10,
+  "kindergarten_enrollment": 9
+ },
+ "03350000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2381,
+  "prek_enrollment": 50,
+  "kindergarten_enrollment": 210,
+  "prek_low_income_pct": 0.16
+ },
+ "01690000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3721,
+  "prek_enrollment": 16,
+  "kindergarten_enrollment": 43,
+  "prek_low_income_pct": 0.5
+ },
+ "02390000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.415,
+  "prek_enrollment": 210,
+  "kindergarten_enrollment": 506,
+  "prek_low_income_pct": 0.2905
+ },
+ "00610000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8349,
+  "prek_enrollment": 359,
+  "kindergarten_enrollment": 430,
+  "prek_low_income_pct": 0.6156
+ },
+ "01860000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8261,
+  "prek_enrollment": 95,
+  "kindergarten_enrollment": 115,
+  "prek_low_income_pct": 0.2211
+ },
+ "06850000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 2.3333,
+  "prek_enrollment": 14,
+  "kindergarten_enrollment": 6,
+  "prek_low_income_pct": 0.4286
+ },
+ "00160000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5694,
+  "prek_enrollment": 238,
+  "kindergarten_enrollment": 418,
+  "prek_low_income_pct": 0.4454
+ },
+ "01180000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 80
+ },
+ "02720000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 2.0,
+  "prek_enrollment": 20,
+  "kindergarten_enrollment": 10
+ },
+ "00360000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6505,
+  "prek_enrollment": 67,
+  "kindergarten_enrollment": 103,
+  "prek_low_income_pct": 0.3284
+ },
+ "01390000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2939,
+  "prek_enrollment": 82,
+  "kindergarten_enrollment": 279,
+  "prek_low_income_pct": 0.0854
+ },
+ "06160000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5081,
+  "prek_enrollment": 63,
+  "kindergarten_enrollment": 124,
+  "prek_low_income_pct": 0.2698
+ },
+ "00350000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.807,
+  "prek_enrollment": 2621,
+  "kindergarten_enrollment": 3248,
+  "prek_low_income_pct": 0.5982
+ },
+ "00050000": {
+  "full_day_k_pct": 0.9957,
+  "prek_per_k_ratio": 0.5556,
+  "prek_enrollment": 130,
+  "kindergarten_enrollment": 234,
+  "prek_low_income_pct": 0.3923
+ },
+ "00680000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8333,
+  "prek_enrollment": 15,
+  "kindergarten_enrollment": 18,
+  "prek_low_income_pct": 0.1333
+ },
+ "02430000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4242,
+  "prek_enrollment": 266,
+  "kindergarten_enrollment": 627,
+  "prek_low_income_pct": 0.3872
+ },
+ "02520000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6875,
+  "prek_enrollment": 22,
+  "kindergarten_enrollment": 32,
+  "prek_low_income_pct": 0.0455
+ },
+ "03040000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.661,
+  "prek_enrollment": 78,
+  "kindergarten_enrollment": 118,
+  "prek_low_income_pct": 0.2308
+ },
+ "01780000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9421,
+  "prek_enrollment": 228,
+  "kindergarten_enrollment": 242,
+  "prek_low_income_pct": 0.1316
+ },
+ "07170000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 2.0238,
+  "prek_enrollment": 85,
+  "kindergarten_enrollment": 42,
+  "prek_low_income_pct": 0.3882
+ },
+ "07660000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6,
+  "prek_enrollment": 48,
+  "kindergarten_enrollment": 80,
+  "prek_low_income_pct": 0.375
+ },
+ "06800000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4884,
+  "prek_enrollment": 84,
+  "kindergarten_enrollment": 172,
+  "prek_low_income_pct": 0.1667
+ },
+ "00730000": {
+  "full_day_k_pct": 0.904,
+  "prek_per_k_ratio": 0.4091,
+  "prek_enrollment": 81,
+  "kindergarten_enrollment": 198,
+  "prek_low_income_pct": 0.2469
+ },
+ "02960000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4074,
+  "prek_enrollment": 11,
+  "kindergarten_enrollment": 27,
+  "prek_low_income_pct": 0.2727
+ },
+ "07750000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2527,
+  "prek_enrollment": 116,
+  "kindergarten_enrollment": 459,
+  "prek_low_income_pct": 0.2414
+ },
+ "07200000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9859,
+  "prek_enrollment": 70,
+  "kindergarten_enrollment": 71,
+  "prek_low_income_pct": 0.2286
+ },
+ "02380000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5604,
+  "prek_enrollment": 51,
+  "kindergarten_enrollment": 91,
+  "prek_low_income_pct": 0.4118
+ },
+ "01870000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7733,
+  "prek_enrollment": 58,
+  "kindergarten_enrollment": 75,
+  "prek_low_income_pct": 0.1724
+ },
+ "00820000": {
+  "full_day_k_pct": 0.9734,
+  "prek_per_k_ratio": 0.2979,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 188,
+  "prek_low_income_pct": 0.1071
+ },
+ "07350000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2991,
+  "prek_enrollment": 64,
+  "kindergarten_enrollment": 214,
+  "prek_low_income_pct": 0.3281
+ },
+ "06180000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.098,
+  "prek_enrollment": 56,
+  "kindergarten_enrollment": 51,
+  "prek_low_income_pct": 0.4107
+ },
+ "03170000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3074,
+  "prek_enrollment": 79,
+  "kindergarten_enrollment": 257,
+  "prek_low_income_pct": 0.1139
+ },
+ "00090000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3095,
+  "prek_enrollment": 104,
+  "kindergarten_enrollment": 336,
+  "prek_low_income_pct": 0.1923
+ },
+ "01030000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5053,
+  "prek_enrollment": 95,
+  "kindergarten_enrollment": 188,
+  "prek_low_income_pct": 0.3895
+ },
+ "01310000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2581,
+  "prek_enrollment": 72,
+  "kindergarten_enrollment": 279,
+  "prek_low_income_pct": 0.0694
+ },
+ "02610000": {
+  "full_day_k_pct": 0.9938,
+  "prek_per_k_ratio": 0.5123,
+  "prek_enrollment": 83,
+  "kindergarten_enrollment": 162,
+  "prek_low_income_pct": 0.2892
+ },
+ "03440000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.2328,
+  "prek_enrollment": 61,
+  "kindergarten_enrollment": 262,
+  "prek_low_income_pct": 0.1475
+ },
+ "07120000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5,
+  "prek_enrollment": 47,
+  "kindergarten_enrollment": 94,
+  "prek_low_income_pct": 0.4894
+ },
+ "02740000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7147,
+  "prek_enrollment": 273,
+  "kindergarten_enrollment": 382,
+  "prek_low_income_pct": 0.2747
+ },
+ "06200000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5375,
+  "prek_enrollment": 43,
+  "kindergarten_enrollment": 80,
+  "prek_low_income_pct": 0.1163
+ },
+ "02120000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6301,
+  "prek_enrollment": 155,
+  "kindergarten_enrollment": 246,
+  "prek_low_income_pct": 0.2839
+ },
+ "01750000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3245,
+  "prek_enrollment": 49,
+  "kindergarten_enrollment": 151,
+  "prek_low_income_pct": 0.102
+ },
+ "02290000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4759,
+  "prek_enrollment": 217,
+  "kindergarten_enrollment": 456,
+  "prek_low_income_pct": 0.2995
+ },
+ "07530000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8345,
+  "prek_enrollment": 116,
+  "kindergarten_enrollment": 139,
+  "prek_low_income_pct": 0.2759
+ },
+ "01960000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.9474,
+  "prek_enrollment": 37,
+  "kindergarten_enrollment": 19,
+  "prek_low_income_pct": 0.1892
+ },
+ "01630000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4456,
+  "prek_enrollment": 467,
+  "kindergarten_enrollment": 1048,
+  "prek_low_income_pct": 0.6831
+ },
+ "02780000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6632,
+  "prek_enrollment": 63,
+  "kindergarten_enrollment": 95,
+  "prek_low_income_pct": 0.4603
+ },
+ "00140000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4615,
+  "prek_enrollment": 90,
+  "kindergarten_enrollment": 195,
+  "prek_low_income_pct": 0.2667
+ },
+ "01850000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4665,
+  "prek_enrollment": 146,
+  "kindergarten_enrollment": 313,
+  "prek_low_income_pct": 0.4795
+ },
+ "00720000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3981,
+  "prek_enrollment": 84,
+  "kindergarten_enrollment": 211,
+  "prek_low_income_pct": 0.2738
+ },
+ "07730000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.8634,
+  "prek_enrollment": 139,
+  "kindergarten_enrollment": 161,
+  "prek_low_income_pct": 0.2374
+ },
+ "06350000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3252,
+  "prek_enrollment": 40,
+  "kindergarten_enrollment": 123,
+  "prek_low_income_pct": 0.45
+ },
+ "01740000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.6559,
+  "prek_enrollment": 61,
+  "kindergarten_enrollment": 93,
+  "prek_low_income_pct": 0.2131
+ },
+ "01280000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5351,
+  "prek_enrollment": 305,
+  "kindergarten_enrollment": 570,
+  "prek_low_income_pct": 0.5934
+ },
+ "02240000": {
+  "full_day_k_pct": 1.0,
+  "kindergarten_enrollment": 20
+ },
+ "00950000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.4545,
+  "prek_enrollment": 410,
+  "kindergarten_enrollment": 902,
+  "prek_low_income_pct": 0.7707
+ },
+ "02500000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.44,
+  "prek_enrollment": 22,
+  "kindergarten_enrollment": 50,
+  "prek_low_income_pct": 0.2727
+ },
+ "06220000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.7342,
+  "prek_enrollment": 58,
+  "kindergarten_enrollment": 79,
+  "prek_low_income_pct": 0.1552
+ },
+ "01720000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 1.0795,
+  "prek_enrollment": 95,
+  "kindergarten_enrollment": 88,
+  "prek_low_income_pct": 0.4421
+ },
+ "00270000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.9733,
+  "prek_enrollment": 73,
+  "kindergarten_enrollment": 75,
+  "prek_low_income_pct": 0.1918
+ },
+ "01970000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.5667,
+  "prek_enrollment": 51,
+  "kindergarten_enrollment": 90,
+  "prek_low_income_pct": 0.5098
+ },
+ "00990000": {
+  "full_day_k_pct": 1.0,
+  "prek_per_k_ratio": 0.3568,
+  "prek_enrollment": 66,
+  "kindergarten_enrollment": 185,
+  "prek_low_income_pct": 0.2576
+ }
+}

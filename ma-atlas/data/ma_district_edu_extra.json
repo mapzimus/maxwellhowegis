@@ -1,0 +1,1681 @@
+{
+ "03140000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.156,
+  "teacher_experienced_pct": 0.842,
+  "teacher_infield_pct": 0.933
+ },
+ "01110000": {
+  "attendance_rate": 0.953,
+  "chronic_absent_pct": 0.1,
+  "teacher_experienced_pct": 0.859,
+  "teacher_infield_pct": 0.908
+ },
+ "02180000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.181,
+  "teacher_experienced_pct": 0.842,
+  "teacher_infield_pct": 0.985
+ },
+ "02290000": {
+  "attendance_rate": 0.929,
+  "chronic_absent_pct": 0.226,
+  "teacher_experienced_pct": 0.84,
+  "teacher_infield_pct": 0.964
+ },
+ "02150000": {
+  "attendance_rate": 0.887,
+  "chronic_absent_pct": 0.327,
+  "teacher_experienced_pct": 0.738,
+  "teacher_infield_pct": 1.0
+ },
+ "00440000": {
+  "attendance_rate": 0.918,
+  "chronic_absent_pct": 0.269,
+  "teacher_experienced_pct": 0.81,
+  "teacher_infield_pct": 0.945
+ },
+ "01780000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.106,
+  "teacher_experienced_pct": 0.852,
+  "teacher_infield_pct": 0.959
+ },
+ "01580000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.075,
+  "teacher_experienced_pct": 0.824,
+  "teacher_infield_pct": 0.984
+ },
+ "00720000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.134,
+  "teacher_experienced_pct": 0.895,
+  "teacher_infield_pct": 0.966
+ },
+ "01030000": {
+  "attendance_rate": 0.924,
+  "chronic_absent_pct": 0.267,
+  "teacher_experienced_pct": 0.781,
+  "teacher_infield_pct": 0.941
+ },
+ "01980000": {
+  "attendance_rate": 0.957,
+  "chronic_absent_pct": 0.087,
+  "teacher_experienced_pct": 0.884,
+  "teacher_infield_pct": 0.939
+ },
+ "03010000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.147,
+  "teacher_experienced_pct": 0.87,
+  "teacher_infield_pct": 0.962
+ },
+ "00380000": {
+  "attendance_rate": 0.956,
+  "chronic_absent_pct": 0.054,
+  "teacher_experienced_pct": 0.836,
+  "teacher_infield_pct": 1.0
+ },
+ "03060000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.139,
+  "teacher_experienced_pct": 0.538,
+  "teacher_infield_pct": 0.929
+ },
+ "01750000": {
+  "attendance_rate": 0.957,
+  "chronic_absent_pct": 0.068,
+  "teacher_experienced_pct": 0.92,
+  "teacher_infield_pct": 0.96
+ },
+ "03150000": {
+  "attendance_rate": 0.956,
+  "chronic_absent_pct": 0.078,
+  "teacher_experienced_pct": 0.933,
+  "teacher_infield_pct": 0.958
+ },
+ "02930000": {
+  "attendance_rate": 0.923,
+  "chronic_absent_pct": 0.238,
+  "teacher_experienced_pct": 0.836,
+  "teacher_infield_pct": 0.988
+ },
+ "00160000": {
+  "attendance_rate": 0.935,
+  "chronic_absent_pct": 0.178,
+  "teacher_experienced_pct": 0.834,
+  "teacher_infield_pct": 0.964
+ },
+ "00520000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.14,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.947
+ },
+ "01420000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.108,
+  "teacher_experienced_pct": 0.85,
+  "teacher_infield_pct": 0.976
+ },
+ "02660000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.098,
+  "teacher_experienced_pct": 0.85,
+  "teacher_infield_pct": 0.97
+ },
+ "02760000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.123,
+  "teacher_experienced_pct": 0.864,
+  "teacher_infield_pct": 0.956
+ },
+ "02630000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.128,
+  "teacher_experienced_pct": 0.889,
+  "teacher_infield_pct": 0.75
+ },
+ "00310000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.127,
+  "teacher_experienced_pct": 0.901,
+  "teacher_infield_pct": 0.966
+ },
+ "02500000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.068,
+  "teacher_experienced_pct": 0.881,
+  "teacher_infield_pct": 1.0
+ },
+ "01840000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.1,
+  "teacher_experienced_pct": 0.847,
+  "teacher_infield_pct": 0.974
+ },
+ "00400000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.116,
+  "teacher_experienced_pct": 0.917,
+  "teacher_infield_pct": 0.986
+ },
+ "01990000": {
+  "attendance_rate": 0.957,
+  "chronic_absent_pct": 0.067,
+  "teacher_experienced_pct": 0.857,
+  "teacher_infield_pct": 0.983
+ },
+ "01810000": {
+  "attendance_rate": 0.923,
+  "chronic_absent_pct": 0.239,
+  "teacher_experienced_pct": 0.822,
+  "teacher_infield_pct": 0.968
+ },
+ "03400000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.114,
+  "teacher_experienced_pct": 0.882,
+  "teacher_infield_pct": 0.9
+ },
+ "01690000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.158,
+  "teacher_experienced_pct": 0.882,
+  "teacher_infield_pct": 1.0
+ },
+ "00640000": {
+  "attendance_rate": 0.953,
+  "chronic_absent_pct": 0.087,
+  "teacher_experienced_pct": 0.848,
+  "teacher_infield_pct": 0.981
+ },
+ "03480000": {
+  "attendance_rate": 0.92,
+  "chronic_absent_pct": 0.253,
+  "teacher_experienced_pct": 0.775,
+  "teacher_infield_pct": 0.925
+ },
+ "07740000": {
+  "attendance_rate": 0.931,
+  "chronic_absent_pct": 0.215,
+  "teacher_experienced_pct": 0.787,
+  "teacher_infield_pct": 0.95
+ },
+ "02440000": {
+  "attendance_rate": 0.918,
+  "chronic_absent_pct": 0.231,
+  "teacher_experienced_pct": 0.759,
+  "teacher_infield_pct": 0.921
+ },
+ "02640000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.086,
+  "teacher_experienced_pct": 0.923,
+  "teacher_infield_pct": 0.992
+ },
+ "03420000": {
+  "attendance_rate": 0.953,
+  "chronic_absent_pct": 0.089,
+  "teacher_experienced_pct": 0.843,
+  "teacher_infield_pct": 0.954
+ },
+ "07800000": {
+  "attendance_rate": 0.933,
+  "chronic_absent_pct": 0.194,
+  "teacher_experienced_pct": 0.829
+ },
+ "07120000": {
+  "attendance_rate": 0.939,
+  "chronic_absent_pct": 0.153,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.962
+ },
+ "00030000": {
+  "attendance_rate": 0.953,
+  "chronic_absent_pct": 0.096,
+  "teacher_experienced_pct": 0.789,
+  "teacher_infield_pct": 0.941
+ },
+ "07150000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.112,
+  "teacher_experienced_pct": 0.839,
+  "teacher_infield_pct": 0.949
+ },
+ "00630000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.105,
+  "teacher_experienced_pct": 0.824,
+  "teacher_infield_pct": 0.882
+ },
+ "01140000": {
+  "attendance_rate": 0.92,
+  "chronic_absent_pct": 0.266,
+  "teacher_experienced_pct": 0.754,
+  "teacher_infield_pct": 0.968
+ },
+ "00230000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.103,
+  "teacher_experienced_pct": 0.856,
+  "teacher_infield_pct": 0.977
+ },
+ "00490000": {
+  "attendance_rate": 0.926,
+  "chronic_absent_pct": 0.217,
+  "teacher_experienced_pct": 0.825,
+  "teacher_infield_pct": 0.956
+ },
+ "06350000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.167,
+  "teacher_experienced_pct": 0.942,
+  "teacher_infield_pct": 0.96
+ },
+ "00070000": {
+  "attendance_rate": 0.932,
+  "chronic_absent_pct": 0.196,
+  "teacher_experienced_pct": 0.886,
+  "teacher_infield_pct": 0.989
+ },
+ "02490000": {
+  "attendance_rate": 0.946,
+  "chronic_absent_pct": 0.118,
+  "teacher_experienced_pct": 0.952,
+  "teacher_infield_pct": 0.955
+ },
+ "03000000": {
+  "attendance_rate": 0.93,
+  "chronic_absent_pct": 0.188,
+  "teacher_experienced_pct": 0.762,
+  "teacher_infield_pct": 0.905
+ },
+ "00270000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.111,
+  "teacher_experienced_pct": 0.853,
+  "teacher_infield_pct": 0.972
+ },
+ "02270000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.168,
+  "teacher_experienced_pct": 0.798,
+  "teacher_infield_pct": 0.962
+ },
+ "02650000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.106,
+  "teacher_experienced_pct": 0.949,
+  "teacher_infield_pct": 0.967
+ },
+ "03260000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.099,
+  "teacher_experienced_pct": 0.894,
+  "teacher_infield_pct": 0.964
+ },
+ "01050000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.132,
+  "teacher_experienced_pct": 0.911,
+  "teacher_infield_pct": 0.981
+ },
+ "00480000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.143,
+  "teacher_experienced_pct": 0.893,
+  "teacher_infield_pct": 0.973
+ },
+ "03300000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.078,
+  "teacher_experienced_pct": 0.822,
+  "teacher_infield_pct": 0.942
+ },
+ "07530000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.19,
+  "teacher_experienced_pct": 0.843,
+  "teacher_infield_pct": 0.961
+ },
+ "00950000": {
+  "attendance_rate": 0.915,
+  "chronic_absent_pct": 0.272,
+  "teacher_experienced_pct": 0.637,
+  "teacher_infield_pct": 0.917
+ },
+ "00740000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.128,
+  "teacher_experienced_pct": 0.886,
+  "teacher_infield_pct": 0.897
+ },
+ "00460000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.108,
+  "teacher_experienced_pct": 0.86,
+  "teacher_infield_pct": 0.956
+ },
+ "01530000": {
+  "attendance_rate": 0.927,
+  "chronic_absent_pct": 0.224,
+  "teacher_experienced_pct": 0.789,
+  "teacher_infield_pct": 0.935
+ },
+ "01700000": {
+  "attendance_rate": 0.928,
+  "chronic_absent_pct": 0.222,
+  "teacher_experienced_pct": 0.827,
+  "teacher_infield_pct": 0.985
+ },
+ "02380000": {
+  "attendance_rate": 0.946,
+  "chronic_absent_pct": 0.134,
+  "teacher_experienced_pct": 0.882,
+  "teacher_infield_pct": 1.0
+ },
+ "02690000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.068,
+  "teacher_experienced_pct": 0.771,
+  "teacher_infield_pct": 1.0
+ },
+ "02300000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.16,
+  "teacher_experienced_pct": 0.933,
+  "teacher_infield_pct": 1.0
+ },
+ "03270000": {
+  "attendance_rate": 0.978,
+  "chronic_absent_pct": 0.01,
+  "teacher_experienced_pct": 0.933,
+  "teacher_infield_pct": 0.944
+ },
+ "03220000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.102,
+  "teacher_experienced_pct": 0.826,
+  "teacher_infield_pct": 0.934
+ },
+ "02880000": {
+  "attendance_rate": 0.955,
+  "chronic_absent_pct": 0.06,
+  "teacher_experienced_pct": 0.906,
+  "teacher_infield_pct": 0.986
+ },
+ "06250000": {
+  "attendance_rate": 0.946,
+  "chronic_absent_pct": 0.108,
+  "teacher_experienced_pct": 0.87,
+  "teacher_infield_pct": 0.98
+ },
+ "07170000": {
+  "attendance_rate": 0.932,
+  "chronic_absent_pct": 0.18,
+  "teacher_experienced_pct": 0.872,
+  "teacher_infield_pct": 0.933
+ },
+ "06980000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.085,
+  "teacher_experienced_pct": 0.905,
+  "teacher_infield_pct": 0.963
+ },
+ "02100000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.159,
+  "teacher_experienced_pct": 0.862,
+  "teacher_infield_pct": 0.972
+ },
+ "02260000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.195,
+  "teacher_experienced_pct": 0.827,
+  "teacher_infield_pct": 0.959
+ },
+ "00870000": {
+  "attendance_rate": 0.959,
+  "chronic_absent_pct": 0.063,
+  "teacher_experienced_pct": 0.926,
+  "teacher_infield_pct": 0.986
+ },
+ "03210000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.152,
+  "teacher_experienced_pct": 0.902,
+  "teacher_infield_pct": 0.978
+ },
+ "01650000": {
+  "attendance_rate": 0.92,
+  "chronic_absent_pct": 0.258,
+  "teacher_experienced_pct": 0.766,
+  "teacher_infield_pct": 0.972
+ },
+ "02780000": {
+  "attendance_rate": 0.915,
+  "chronic_absent_pct": 0.241,
+  "teacher_experienced_pct": 0.879,
+  "teacher_infield_pct": 0.939
+ },
+ "03430000": {
+  "attendance_rate": 0.903,
+  "chronic_absent_pct": 0.298,
+  "teacher_experienced_pct": 0.809,
+  "teacher_infield_pct": 0.978
+ },
+ "03040000": {
+  "attendance_rate": 0.939,
+  "chronic_absent_pct": 0.183,
+  "teacher_experienced_pct": 0.839,
+  "teacher_infield_pct": 0.971
+ },
+ "01600000": {
+  "attendance_rate": 0.926,
+  "chronic_absent_pct": 0.214,
+  "teacher_experienced_pct": 0.826,
+  "teacher_infield_pct": 0.92
+ },
+ "02710000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.111,
+  "teacher_experienced_pct": 0.864,
+  "teacher_infield_pct": 0.959
+ },
+ "00010000": {
+  "attendance_rate": 0.935,
+  "chronic_absent_pct": 0.178,
+  "teacher_experienced_pct": 0.813,
+  "teacher_infield_pct": 0.961
+ },
+ "06620000": {
+  "attendance_rate": 0.929,
+  "chronic_absent_pct": 0.244,
+  "teacher_experienced_pct": 0.867,
+  "teacher_infield_pct": 1.0
+ },
+ "02170000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.062,
+  "teacher_experienced_pct": 0.927,
+  "teacher_infield_pct": 1.0
+ },
+ "03160000": {
+  "attendance_rate": 0.92,
+  "chronic_absent_pct": 0.273,
+  "teacher_experienced_pct": 0.832,
+  "teacher_infield_pct": 0.967
+ },
+ "06030000": {
+  "attendance_rate": 0.922,
+  "chronic_absent_pct": 0.254,
+  "teacher_experienced_pct": 0.758,
+  "teacher_infield_pct": 0.912
+ },
+ "06500000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.144,
+  "teacher_experienced_pct": 0.863,
+  "teacher_infield_pct": 0.96
+ },
+ "00410000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.118,
+  "teacher_experienced_pct": 0.854,
+  "teacher_infield_pct": 0.957
+ },
+ "00300000": {
+  "attendance_rate": 0.921,
+  "chronic_absent_pct": 0.248,
+  "teacher_experienced_pct": 0.8,
+  "teacher_infield_pct": 0.951
+ },
+ "00930000": {
+  "attendance_rate": 0.912,
+  "chronic_absent_pct": 0.321,
+  "teacher_experienced_pct": 0.799,
+  "teacher_infield_pct": 0.955
+ },
+ "01550000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.094,
+  "teacher_experienced_pct": 0.852,
+  "teacher_infield_pct": 0.976
+ },
+ "02110000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.145,
+  "teacher_experienced_pct": 0.88,
+  "teacher_infield_pct": 0.948
+ },
+ "02210000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.177,
+  "teacher_experienced_pct": 0.78,
+  "teacher_infield_pct": 0.968
+ },
+ "02770000": {
+  "attendance_rate": 0.899,
+  "chronic_absent_pct": 0.369,
+  "teacher_experienced_pct": 0.494,
+  "teacher_infield_pct": 0.876
+ },
+ "07280000": {
+  "attendance_rate": 0.932,
+  "chronic_absent_pct": 0.182,
+  "teacher_experienced_pct": 0.875,
+  "teacher_infield_pct": 1.0
+ },
+ "01610000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.123,
+  "teacher_experienced_pct": 0.95,
+  "teacher_infield_pct": 0.965
+ },
+ "02390000": {
+  "attendance_rate": 0.939,
+  "chronic_absent_pct": 0.157,
+  "teacher_experienced_pct": 0.868,
+  "teacher_infield_pct": 0.973
+ },
+ "06730000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.089,
+  "teacher_experienced_pct": 0.894,
+  "teacher_infield_pct": 0.97
+ },
+ "00650000": {
+  "attendance_rate": 0.956,
+  "chronic_absent_pct": 0.052,
+  "teacher_experienced_pct": 0.891,
+  "teacher_infield_pct": 0.953
+ },
+ "02840000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.152,
+  "teacher_experienced_pct": 0.818,
+  "teacher_infield_pct": 0.962
+ },
+ "02520000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.167,
+  "teacher_experienced_pct": 0.883,
+  "teacher_infield_pct": 0.916
+ },
+ "02090000": {
+  "attendance_rate": 0.914,
+  "chronic_absent_pct": 0.3,
+  "teacher_experienced_pct": 0.775,
+  "teacher_infield_pct": 0.911
+ },
+ "02580000": {
+  "attendance_rate": 0.926,
+  "chronic_absent_pct": 0.192,
+  "teacher_experienced_pct": 0.703,
+  "teacher_infield_pct": 0.936
+ },
+ "02910000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.155,
+  "teacher_experienced_pct": 0.876,
+  "teacher_infield_pct": 0.956
+ },
+ "02620000": {
+  "attendance_rate": 0.913,
+  "chronic_absent_pct": 0.296,
+  "teacher_experienced_pct": 0.849,
+  "teacher_infield_pct": 0.969
+ },
+ "01310000": {
+  "attendance_rate": 0.957,
+  "chronic_absent_pct": 0.061,
+  "teacher_experienced_pct": 0.89,
+  "teacher_infield_pct": 0.978
+ },
+ "00080000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.158,
+  "teacher_experienced_pct": 0.876,
+  "teacher_infield_pct": 0.966
+ },
+ "07750000": {
+  "attendance_rate": 0.944,
+  "chronic_absent_pct": 0.115,
+  "teacher_experienced_pct": 0.905,
+  "teacher_infield_pct": 0.992
+ },
+ "01100000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.148,
+  "teacher_experienced_pct": 0.875,
+  "teacher_infield_pct": 0.951
+ },
+ "02400000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.109,
+  "teacher_experienced_pct": 0.783,
+  "teacher_infield_pct": 1.0
+ },
+ "02850000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.154,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.978
+ },
+ "03440000": {
+  "attendance_rate": 0.957,
+  "chronic_absent_pct": 0.059,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.982
+ },
+ "03050000": {
+  "attendance_rate": 0.92,
+  "chronic_absent_pct": 0.211,
+  "teacher_experienced_pct": 0.865,
+  "teacher_infield_pct": 0.982
+ },
+ "02610000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.143,
+  "teacher_experienced_pct": 0.79,
+  "teacher_infield_pct": 0.931
+ },
+ "00500000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.154,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.966
+ },
+ "02750000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.111,
+  "teacher_experienced_pct": 0.929,
+  "teacher_infield_pct": 0.976
+ },
+ "06220000": {
+  "attendance_rate": 0.936,
+  "chronic_absent_pct": 0.196,
+  "teacher_experienced_pct": 0.629,
+  "teacher_infield_pct": 0.912
+ },
+ "01280000": {
+  "attendance_rate": 0.914,
+  "chronic_absent_pct": 0.272,
+  "teacher_experienced_pct": 0.794,
+  "teacher_infield_pct": 0.982
+ },
+ "06650000": {
+  "attendance_rate": 0.946,
+  "chronic_absent_pct": 0.118,
+  "teacher_experienced_pct": 0.894,
+  "teacher_infield_pct": 0.986
+ },
+ "01910000": {
+  "attendance_rate": 0.939,
+  "chronic_absent_pct": 0.153,
+  "teacher_experienced_pct": 0.67,
+  "teacher_infield_pct": 0.931
+ },
+ "00570000": {
+  "attendance_rate": 0.887,
+  "chronic_absent_pct": 0.36,
+  "teacher_experienced_pct": 0.657,
+  "teacher_infield_pct": 0.938
+ },
+ "07450000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.123,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.97
+ },
+ "01960000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.164,
+  "teacher_experienced_pct": 0.429,
+  "teacher_infield_pct": 0.8
+ },
+ "00610000": {
+  "attendance_rate": 0.923,
+  "chronic_absent_pct": 0.249,
+  "teacher_experienced_pct": 0.854,
+  "teacher_infield_pct": 0.97
+ },
+ "00140000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.134,
+  "teacher_experienced_pct": 0.864,
+  "teacher_infield_pct": 0.959
+ },
+ "03350000": {
+  "attendance_rate": 0.955,
+  "chronic_absent_pct": 0.074,
+  "teacher_experienced_pct": 0.842,
+  "teacher_infield_pct": 0.976
+ },
+ "07200000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.142,
+  "teacher_experienced_pct": 0.864,
+  "teacher_infield_pct": 0.954
+ },
+ "02240000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.125,
+  "teacher_experienced_pct": 0.875,
+  "teacher_infield_pct": 0.957
+ },
+ "01500000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.097,
+  "teacher_experienced_pct": 0.863,
+  "teacher_infield_pct": 0.932
+ },
+ "02460000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.081,
+  "teacher_experienced_pct": 0.881,
+  "teacher_infield_pct": 0.963
+ },
+ "02960000": {
+  "attendance_rate": 0.921,
+  "chronic_absent_pct": 0.314,
+  "teacher_experienced_pct": 0.872,
+  "teacher_infield_pct": 1.0
+ },
+ "01000000": {
+  "attendance_rate": 0.912,
+  "chronic_absent_pct": 0.305,
+  "teacher_experienced_pct": 0.739,
+  "teacher_infield_pct": 0.887
+ },
+ "06850000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.165,
+  "teacher_experienced_pct": 0.818,
+  "teacher_infield_pct": 0.833
+ },
+ "00820000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.066,
+  "teacher_experienced_pct": 0.912,
+  "teacher_infield_pct": 0.983
+ },
+ "02040000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.088,
+  "teacher_experienced_pct": 0.824,
+  "teacher_infield_pct": 0.969
+ },
+ "01170000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.163,
+  "teacher_experienced_pct": 0.857,
+  "teacher_infield_pct": 0.981
+ },
+ "02980000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.061,
+  "teacher_experienced_pct": 0.833,
+  "teacher_infield_pct": 1.0
+ },
+ "00090000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.086,
+  "teacher_experienced_pct": 0.894,
+  "teacher_infield_pct": 0.984
+ },
+ "03080000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.188,
+  "teacher_experienced_pct": 0.828,
+  "teacher_infield_pct": 0.973
+ },
+ "07650000": {
+  "attendance_rate": 0.919,
+  "chronic_absent_pct": 0.248,
+  "teacher_experienced_pct": 0.81,
+  "teacher_infield_pct": 0.987
+ },
+ "03230000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.102,
+  "teacher_experienced_pct": 0.854,
+  "teacher_infield_pct": 0.98
+ },
+ "00050000": {
+  "attendance_rate": 0.924,
+  "chronic_absent_pct": 0.247,
+  "teacher_experienced_pct": 0.892,
+  "teacher_infield_pct": 0.957
+ },
+ "02730000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.094,
+  "teacher_experienced_pct": 0.875,
+  "teacher_infield_pct": 1.0
+ },
+ "02510000": {
+  "attendance_rate": 0.93,
+  "chronic_absent_pct": 0.192,
+  "teacher_experienced_pct": 0.823,
+  "teacher_infield_pct": 0.937
+ },
+ "00200000": {
+  "attendance_rate": 0.929,
+  "chronic_absent_pct": 0.217,
+  "teacher_experienced_pct": 0.834,
+  "teacher_infield_pct": 0.966
+ },
+ "02950000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.112,
+  "teacher_experienced_pct": 0.884,
+  "teacher_infield_pct": 0.977
+ },
+ "00240000": {
+  "attendance_rate": 0.939,
+  "chronic_absent_pct": 0.152,
+  "teacher_experienced_pct": 0.972,
+  "teacher_infield_pct": 0.956
+ },
+ "03100000": {
+  "attendance_rate": 0.928,
+  "chronic_absent_pct": 0.218,
+  "teacher_experienced_pct": 0.819,
+  "teacher_infield_pct": 0.946
+ },
+ "01670000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.107,
+  "teacher_experienced_pct": 0.899,
+  "teacher_infield_pct": 1.0
+ },
+ "02430000": {
+  "attendance_rate": 0.944,
+  "chronic_absent_pct": 0.156,
+  "teacher_experienced_pct": 0.837,
+  "teacher_infield_pct": 0.988
+ },
+ "02900000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.116,
+  "teacher_experienced_pct": 0.951,
+  "teacher_infield_pct": 0.964
+ },
+ "01250000": {
+  "attendance_rate": 0.927,
+  "chronic_absent_pct": 0.198,
+  "teacher_experienced_pct": 0.915,
+  "teacher_infield_pct": 0.916
+ },
+ "03370000": {
+  "attendance_rate": 0.956,
+  "chronic_absent_pct": 0.023,
+  "teacher_experienced_pct": 0.824,
+  "teacher_infield_pct": 1.0
+ },
+ "02200000": {
+  "attendance_rate": 0.924,
+  "chronic_absent_pct": 0.254,
+  "teacher_experienced_pct": 0.849,
+  "teacher_infield_pct": 0.973
+ },
+ "01760000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.151,
+  "teacher_experienced_pct": 0.808,
+  "teacher_infield_pct": 0.937
+ },
+ "01770000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.094,
+  "teacher_experienced_pct": 0.845,
+  "teacher_infield_pct": 0.982
+ },
+ "02190000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.077,
+  "teacher_experienced_pct": 0.929,
+  "teacher_infield_pct": 1.0
+ },
+ "00880000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.113,
+  "teacher_experienced_pct": 0.896,
+  "teacher_infield_pct": 0.985
+ },
+ "02340000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.158,
+  "teacher_experienced_pct": 0.846,
+  "teacher_infield_pct": 0.786
+ },
+ "06740000": {
+  "attendance_rate": 0.926,
+  "chronic_absent_pct": 0.222,
+  "teacher_experienced_pct": 0.883,
+  "teacher_infield_pct": 0.949
+ },
+ "07780000": {
+  "attendance_rate": 0.924,
+  "chronic_absent_pct": 0.241,
+  "teacher_experienced_pct": 0.848,
+  "teacher_infield_pct": 0.908
+ },
+ "00990000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.09,
+  "teacher_experienced_pct": 0.917,
+  "teacher_infield_pct": 0.963
+ },
+ "01850000": {
+  "attendance_rate": 0.923,
+  "chronic_absent_pct": 0.231,
+  "teacher_experienced_pct": 0.858,
+  "teacher_infield_pct": 0.962
+ },
+ "07700000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.147,
+  "teacher_experienced_pct": 0.887,
+  "teacher_infield_pct": 0.972
+ },
+ "03360000": {
+  "attendance_rate": 0.932,
+  "chronic_absent_pct": 0.192,
+  "teacher_experienced_pct": 0.843,
+  "teacher_infield_pct": 0.985
+ },
+ "01330000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.122,
+  "teacher_experienced_pct": 0.838,
+  "teacher_infield_pct": 0.99
+ },
+ "02360000": {
+  "attendance_rate": 0.889,
+  "chronic_absent_pct": 0.386,
+  "teacher_experienced_pct": 0.737,
+  "teacher_infield_pct": 0.896
+ },
+ "01360000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.105,
+  "teacher_experienced_pct": 0.83,
+  "teacher_infield_pct": 0.982
+ },
+ "06550000": {
+  "attendance_rate": 0.957,
+  "chronic_absent_pct": 0.053,
+  "teacher_experienced_pct": 0.913,
+  "teacher_infield_pct": 0.958
+ },
+ "01350000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.085,
+  "teacher_experienced_pct": 0.762,
+  "teacher_infield_pct": 1.0
+ },
+ "07500000": {
+  "attendance_rate": 0.946,
+  "chronic_absent_pct": 0.119,
+  "teacher_experienced_pct": 0.762,
+  "teacher_infield_pct": 0.968
+ },
+ "02120000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.169,
+  "teacher_experienced_pct": 0.875,
+  "teacher_infield_pct": 0.977
+ },
+ "07350000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.161,
+  "teacher_experienced_pct": 0.827,
+  "teacher_infield_pct": 0.973
+ },
+ "06000000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.109,
+  "teacher_experienced_pct": 0.884,
+  "teacher_infield_pct": 0.988
+ },
+ "00940000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.173,
+  "teacher_experienced_pct": 0.857,
+  "teacher_infield_pct": 0.944
+ },
+ "06150000": {
+  "attendance_rate": 0.921,
+  "chronic_absent_pct": 0.257,
+  "teacher_experienced_pct": 0.711,
+  "teacher_infield_pct": 0.944
+ },
+ "01640000": {
+  "attendance_rate": 0.955,
+  "chronic_absent_pct": 0.063,
+  "teacher_experienced_pct": 0.905,
+  "teacher_infield_pct": 0.966
+ },
+ "02010000": {
+  "attendance_rate": 0.923,
+  "chronic_absent_pct": 0.242,
+  "teacher_experienced_pct": 0.704,
+  "teacher_infield_pct": 0.953
+ },
+ "01890000": {
+  "attendance_rate": 0.969,
+  "chronic_absent_pct": 0.049,
+  "teacher_experienced_pct": 0.877,
+  "teacher_infield_pct": 0.967
+ },
+ "01870000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.11,
+  "teacher_experienced_pct": 0.891,
+  "teacher_infield_pct": 0.935
+ },
+ "00730000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.157,
+  "teacher_experienced_pct": 0.888,
+  "teacher_infield_pct": 0.975
+ },
+ "00790000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.146,
+  "teacher_experienced_pct": 0.784,
+  "teacher_infield_pct": 0.983
+ },
+ "01820000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.181,
+  "teacher_experienced_pct": 0.869,
+  "teacher_infield_pct": 0.973
+ },
+ "03090000": {
+  "attendance_rate": 0.931,
+  "chronic_absent_pct": 0.22,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.956
+ },
+ "01970000": {
+  "attendance_rate": 0.929,
+  "chronic_absent_pct": 0.227,
+  "teacher_experienced_pct": 0.697,
+  "teacher_infield_pct": 0.924
+ },
+ "01450000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.161,
+  "teacher_experienced_pct": 0.888,
+  "teacher_infield_pct": 1.0
+ },
+ "01390000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.099,
+  "teacher_experienced_pct": 0.886,
+  "teacher_infield_pct": 0.968
+ },
+ "02310000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.116,
+  "teacher_experienced_pct": 0.909,
+  "teacher_infield_pct": 0.984
+ },
+ "06800000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.095,
+  "teacher_experienced_pct": 0.927,
+  "teacher_infield_pct": 0.987
+ },
+ "03500000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.123,
+  "teacher_experienced_pct": 0.843,
+  "teacher_infield_pct": 1.0
+ },
+ "06720000": {
+  "attendance_rate": 0.918,
+  "chronic_absent_pct": 0.233,
+  "teacher_experienced_pct": 0.843,
+  "teacher_infield_pct": 0.894
+ },
+ "06180000": {
+  "attendance_rate": 0.919,
+  "chronic_absent_pct": 0.277,
+  "teacher_experienced_pct": 0.857,
+  "teacher_infield_pct": 0.947
+ },
+ "00350000": {
+  "attendance_rate": 0.9,
+  "chronic_absent_pct": 0.33,
+  "teacher_experienced_pct": 0.799,
+  "teacher_infield_pct": 0.902
+ },
+ "00560000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.09,
+  "teacher_experienced_pct": 0.879,
+  "teacher_infield_pct": 0.96
+ },
+ "01510000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.167,
+  "teacher_experienced_pct": 0.875,
+  "teacher_infield_pct": 0.963
+ },
+ "07250000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.101,
+  "teacher_experienced_pct": 0.888,
+  "teacher_infield_pct": 0.978
+ },
+ "06160000": {
+  "attendance_rate": 0.946,
+  "chronic_absent_pct": 0.131,
+  "teacher_experienced_pct": 0.85,
+  "teacher_infield_pct": 0.972
+ },
+ "03320000": {
+  "attendance_rate": 0.936,
+  "chronic_absent_pct": 0.191,
+  "teacher_experienced_pct": 0.925,
+  "teacher_infield_pct": 0.953
+ },
+ "00170000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.126,
+  "teacher_experienced_pct": 0.885,
+  "teacher_infield_pct": 0.93
+ },
+ "01210000": {
+  "attendance_rate": 0.93,
+  "chronic_absent_pct": 0.212,
+  "teacher_experienced_pct": 0.889,
+  "teacher_infield_pct": 0.636
+ },
+ "02810000": {
+  "attendance_rate": 0.909,
+  "chronic_absent_pct": 0.328,
+  "teacher_experienced_pct": 0.71,
+  "teacher_infield_pct": 0.898
+ },
+ "06450000": {
+  "attendance_rate": 0.922,
+  "chronic_absent_pct": 0.243,
+  "teacher_experienced_pct": 0.851,
+  "teacher_infield_pct": 0.976
+ },
+ "01270000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.149,
+  "teacher_experienced_pct": 0.814,
+  "teacher_infield_pct": 0.978
+ },
+ "06320000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.147,
+  "teacher_experienced_pct": 0.65,
+  "teacher_infield_pct": 0.95
+ },
+ "07730000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.153,
+  "teacher_experienced_pct": 0.846,
+  "teacher_infield_pct": 0.967
+ },
+ "00250000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.192,
+  "teacher_experienced_pct": 0.883,
+  "teacher_infield_pct": 0.975
+ },
+ "02720000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.117,
+  "teacher_experienced_pct": 0.895,
+  "teacher_infield_pct": 0.947
+ },
+ "00710000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.155,
+  "teacher_experienced_pct": 0.871,
+  "teacher_infield_pct": 0.978
+ },
+ "01410000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.172,
+  "teacher_experienced_pct": 0.848,
+  "teacher_infield_pct": 0.955
+ },
+ "01540000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.094,
+  "teacher_experienced_pct": 0.882,
+  "teacher_infield_pct": 1.0
+ },
+ "01710000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.104,
+  "teacher_experienced_pct": 0.872,
+  "teacher_infield_pct": 0.989
+ },
+ "03460000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.131,
+  "teacher_experienced_pct": 0.745,
+  "teacher_infield_pct": 0.969
+ },
+ "00980000": {
+  "attendance_rate": 0.972,
+  "chronic_absent_pct": 0.047,
+  "teacher_experienced_pct": 0.769,
+  "teacher_infield_pct": 0.909
+ },
+ "06200000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.099,
+  "teacher_experienced_pct": 0.86,
+  "teacher_infield_pct": 0.989
+ },
+ "02530000": {
+  "attendance_rate": 0.915,
+  "chronic_absent_pct": 0.271,
+  "teacher_experienced_pct": 0.778,
+  "teacher_infield_pct": 0.9
+ },
+ "00260000": {
+  "attendance_rate": 0.953,
+  "chronic_absent_pct": 0.099,
+  "teacher_experienced_pct": 0.883,
+  "teacher_infield_pct": 0.987
+ },
+ "00510000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.075,
+  "teacher_experienced_pct": 0.902,
+  "teacher_infield_pct": 0.984
+ },
+ "02480000": {
+  "attendance_rate": 0.914,
+  "chronic_absent_pct": 0.264,
+  "teacher_experienced_pct": 0.747,
+  "teacher_infield_pct": 0.979
+ },
+ "01680000": {
+  "attendance_rate": 0.927,
+  "chronic_absent_pct": 0.191,
+  "teacher_experienced_pct": 0.857,
+  "teacher_infield_pct": 0.973
+ },
+ "03180000": {
+  "attendance_rate": 0.932,
+  "chronic_absent_pct": 0.171,
+  "teacher_experienced_pct": 0.769,
+  "teacher_infield_pct": 1.0
+ },
+ "07670000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.151,
+  "teacher_experienced_pct": 0.796,
+  "teacher_infield_pct": 0.948
+ },
+ "06750000": {
+  "attendance_rate": 0.958,
+  "chronic_absent_pct": 0.053,
+  "teacher_experienced_pct": 0.91,
+  "teacher_infield_pct": 0.957
+ },
+ "07100000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.107,
+  "teacher_experienced_pct": 0.831,
+  "teacher_infield_pct": 0.906
+ },
+ "02070000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.113,
+  "teacher_experienced_pct": 0.868,
+  "teacher_infield_pct": 0.96
+ },
+ "06100000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.104,
+  "teacher_experienced_pct": 0.91,
+  "teacher_infield_pct": 0.976
+ },
+ "00430000": {
+  "attendance_rate": 0.944,
+  "chronic_absent_pct": 0.106,
+  "teacher_experienced_pct": 0.862,
+  "teacher_infield_pct": 0.964
+ },
+ "03250000": {
+  "attendance_rate": 0.928,
+  "chronic_absent_pct": 0.217,
+  "teacher_experienced_pct": 0.821,
+  "teacher_infield_pct": 0.959
+ },
+ "06580000": {
+  "attendance_rate": 0.944,
+  "chronic_absent_pct": 0.132,
+  "teacher_experienced_pct": 0.91,
+  "teacher_infield_pct": 0.969
+ },
+ "02230000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.156,
+  "teacher_experienced_pct": 0.757,
+  "teacher_infield_pct": 0.951
+ },
+ "01860000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.146,
+  "teacher_experienced_pct": 0.874,
+  "teacher_infield_pct": 0.985
+ },
+ "01720000": {
+  "attendance_rate": 0.933,
+  "chronic_absent_pct": 0.195,
+  "teacher_experienced_pct": 0.833,
+  "teacher_infield_pct": 0.952
+ },
+ "01010000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.118,
+  "teacher_experienced_pct": 0.843,
+  "teacher_infield_pct": 0.976
+ },
+ "02130000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.107,
+  "teacher_experienced_pct": 0.938,
+  "teacher_infield_pct": 0.972
+ },
+ "02140000": {
+  "attendance_rate": 0.933,
+  "chronic_absent_pct": 0.19,
+  "teacher_experienced_pct": 0.87,
+  "teacher_infield_pct": 0.983
+ },
+ "02740000": {
+  "attendance_rate": 0.928,
+  "chronic_absent_pct": 0.193,
+  "teacher_experienced_pct": 0.793,
+  "teacher_infield_pct": 0.924
+ },
+ "01380000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.104,
+  "teacher_experienced_pct": 0.767,
+  "teacher_infield_pct": 0.922
+ },
+ "07660000": {
+  "attendance_rate": 0.947,
+  "chronic_absent_pct": 0.128,
+  "teacher_experienced_pct": 0.943,
+  "teacher_infield_pct": 1.0
+ },
+ "00670000": {
+  "attendance_rate": 0.954,
+  "chronic_absent_pct": 0.074,
+  "teacher_experienced_pct": 0.929,
+  "teacher_infield_pct": 1.0
+ },
+ "01370000": {
+  "attendance_rate": 0.876,
+  "chronic_absent_pct": 0.424,
+  "teacher_experienced_pct": 0.554,
+  "teacher_infield_pct": 0.852
+ },
+ "02890000": {
+  "attendance_rate": 0.943,
+  "chronic_absent_pct": 0.17,
+  "teacher_experienced_pct": 0.692,
+  "teacher_infield_pct": 0.933
+ },
+ "02920000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.158,
+  "teacher_experienced_pct": 0.927,
+  "teacher_infield_pct": 0.981
+ },
+ "00360000": {
+  "attendance_rate": 0.931,
+  "chronic_absent_pct": 0.2,
+  "teacher_experienced_pct": 0.847,
+  "teacher_infield_pct": 0.967
+ },
+ "01740000": {
+  "attendance_rate": 0.944,
+  "chronic_absent_pct": 0.145,
+  "teacher_experienced_pct": 0.803,
+  "teacher_infield_pct": 0.873
+ },
+ "00850000": {
+  "attendance_rate": 0.93,
+  "chronic_absent_pct": 0.208,
+  "teacher_experienced_pct": 0.81,
+  "teacher_infield_pct": 1.0
+ },
+ "00180000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.116,
+  "teacher_experienced_pct": 0.776,
+  "teacher_infield_pct": 0.95
+ },
+ "00100000": {
+  "attendance_rate": 0.952,
+  "chronic_absent_pct": 0.088,
+  "teacher_experienced_pct": 0.788,
+  "teacher_infield_pct": 0.976
+ },
+ "01180000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.11,
+  "teacher_experienced_pct": 0.9,
+  "teacher_infield_pct": 1.0
+ },
+ "01220000": {
+  "attendance_rate": 0.948,
+  "chronic_absent_pct": 0.1,
+  "teacher_experienced_pct": 0.879,
+  "teacher_infield_pct": 0.972
+ },
+ "00830000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.137,
+  "teacher_experienced_pct": 0.759,
+  "teacher_infield_pct": 1.0
+ },
+ "03070000": {
+  "attendance_rate": 0.955,
+  "chronic_absent_pct": 0.07,
+  "teacher_experienced_pct": 0.872,
+  "teacher_infield_pct": 0.987
+ },
+ "00770000": {
+  "attendance_rate": 0.94,
+  "chronic_absent_pct": 0.119,
+  "teacher_experienced_pct": 0.837,
+  "teacher_infield_pct": 0.962
+ },
+ "00860000": {
+  "attendance_rate": 0.933,
+  "chronic_absent_pct": 0.201,
+  "teacher_experienced_pct": 0.897,
+  "teacher_infield_pct": 0.992
+ },
+ "00680000": {
+  "attendance_rate": 0.942,
+  "chronic_absent_pct": 0.15,
+  "teacher_experienced_pct": 0.824,
+  "teacher_infield_pct": 1.0
+ },
+ "01590000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.099,
+  "teacher_experienced_pct": 0.88,
+  "teacher_infield_pct": 0.966
+ },
+ "01490000": {
+  "attendance_rate": 0.921,
+  "chronic_absent_pct": 0.233,
+  "teacher_experienced_pct": 0.617,
+  "teacher_infield_pct": 0.899
+ },
+ "01630000": {
+  "attendance_rate": 0.91,
+  "chronic_absent_pct": 0.308,
+  "teacher_experienced_pct": 0.712,
+  "teacher_infield_pct": 0.972
+ },
+ "00970000": {
+  "attendance_rate": 0.905,
+  "chronic_absent_pct": 0.362,
+  "teacher_experienced_pct": 0.812,
+  "teacher_infield_pct": 0.971
+ },
+ "03490000": {
+  "attendance_rate": 0.923,
+  "chronic_absent_pct": 0.244,
+  "teacher_experienced_pct": 0.727,
+  "teacher_infield_pct": 1.0
+ },
+ "00450000": {
+  "attendance_rate": 0.945,
+  "chronic_absent_pct": 0.127,
+  "teacher_experienced_pct": 0.692,
+  "teacher_infield_pct": 0.923
+ },
+ "02420000": {
+  "attendance_rate": 0.915,
+  "chronic_absent_pct": 0.335,
+  "teacher_experienced_pct": 0.8,
+  "teacher_infield_pct": 0.893
+ },
+ "03310000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.152,
+  "teacher_experienced_pct": 0.886,
+  "teacher_infield_pct": 0.952
+ },
+ "01620000": {
+  "attendance_rate": 0.944,
+  "chronic_absent_pct": 0.126,
+  "teacher_experienced_pct": 0.862,
+  "teacher_infield_pct": 0.924
+ },
+ "01520000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.157,
+  "teacher_experienced_pct": 0.909,
+  "teacher_infield_pct": 0.937
+ },
+ "01570000": {
+  "attendance_rate": 0.941,
+  "chronic_absent_pct": 0.146,
+  "teacher_experienced_pct": 0.921,
+  "teacher_infield_pct": 0.977
+ },
+ "01730000": {
+  "attendance_rate": 0.949,
+  "chronic_absent_pct": 0.089,
+  "teacher_experienced_pct": 0.949,
+  "teacher_infield_pct": 1.0
+ },
+ "02080000": {
+  "attendance_rate": 0.95,
+  "chronic_absent_pct": 0.11,
+  "teacher_experienced_pct": 0.876,
+  "teacher_infield_pct": 1.0
+ },
+ "00910000": {
+  "attendance_rate": 0.937,
+  "chronic_absent_pct": 0.235,
+  "teacher_experienced_pct": 0.81,
+  "teacher_infield_pct": 0.952
+ },
+ "00960000": {
+  "attendance_rate": 0.918,
+  "chronic_absent_pct": 0.267,
+  "teacher_experienced_pct": 0.835,
+  "teacher_infield_pct": 0.952
+ },
+ "01440000": {
+  "attendance_rate": 0.953,
+  "chronic_absent_pct": 0.065,
+  "teacher_experienced_pct": 0.84,
+  "teacher_infield_pct": 0.953
+ },
+ "03170000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.096,
+  "teacher_experienced_pct": 0.905,
+  "teacher_infield_pct": 0.966
+ },
+ "03470000": {
+  "attendance_rate": 0.929,
+  "chronic_absent_pct": 0.215,
+  "teacher_experienced_pct": 0.856,
+  "teacher_infield_pct": 0.981
+ },
+ "00890000": {
+  "attendance_rate": 0.934,
+  "chronic_absent_pct": 0.209,
+  "teacher_experienced_pct": 0.786,
+  "teacher_infield_pct": 0.932
+ },
+ "01070000": {
+  "attendance_rate": 0.917,
+  "chronic_absent_pct": 0.275,
+  "teacher_experienced_pct": 0.806,
+  "teacher_infield_pct": 0.985
+ },
+ "06400000": {
+  "attendance_rate": 0.951,
+  "chronic_absent_pct": 0.106,
+  "teacher_experienced_pct": 0.9,
+  "teacher_infield_pct": 0.92
+ },
+ "06600000": {
+  "attendance_rate": 0.933,
+  "chronic_absent_pct": 0.183,
+  "teacher_experienced_pct": 0.915,
+  "teacher_infield_pct": 0.964
+ },
+ "06900000": {
+  "attendance_rate": 0.935,
+  "chronic_absent_pct": 0.164,
+  "teacher_experienced_pct": 0.847,
+  "teacher_infield_pct": 0.942
+ },
+ "06950000": {
+  "attendance_rate": 0.958,
+  "chronic_absent_pct": 0.068,
+  "teacher_experienced_pct": 0.937,
+  "teacher_infield_pct": 0.972
+ },
+ "07050000": {
+  "attendance_rate": 0.938,
+  "chronic_absent_pct": 0.161,
+  "teacher_experienced_pct": 0.922,
+  "teacher_infield_pct": 0.978
+ },
+ "07300000": {
+  "attendance_rate": 0.935,
+  "chronic_absent_pct": 0.178,
+  "teacher_experienced_pct": 0.922,
+  "teacher_infield_pct": 0.966
+ },
+ "07630000": {
+  "attendance_rate": 0.929,
+  "chronic_absent_pct": 0.148,
+  "teacher_experienced_pct": 0.914,
+  "teacher_infield_pct": 0.988
+ }
+}

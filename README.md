@@ -17,14 +17,13 @@ Plain HTML/CSS/JS, no build step, no framework. Deployed via GitHub Pages from `
 | [`/lynn.html`](https://maxwellhowegis.com/lynn.html) | Chronic absenteeism capstone — geocoded student addresses correlated with distance from school across Lynn, MA. | R, ggplot2, Leaflet |
 | [`/nsn.html`](https://maxwellhowegis.com/nsn.html) | NSN reference page | — |
 
-## Submodules
+## Submodules & vendored apps
 
-Sub-apps live in their own GitHub repos and are mounted here as git submodules:
+- [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) — `/geopuesto/` + `/geopuesto/playground/`. Git submodule. Promoted out of this repo in May 2026 (via `git filter-repo --subdirectory-filter` preserving 14 commits of history) so the antipode app + geometry sandbox have their own README, stars, and issue tracker. **Must remain public** — the Pages workflow checks it out with the default token, which cannot read private submodules.
+- `ma-atlas/` — **vendored copy** (June 2026), no longer a submodule. The source repo `mapzimus/ma-education-atlas` is private; its served files are committed here directly. To publish atlas changes, run `deploy/sync_public_maps.ps1` in the `lehs-data-dive` repo (copies atlas + Lynn map files here), review the diff, commit, push.
+- `Lynn-data-dive/maps/` — **vendored copy** of the Lynn map from the private `mapzimus/lehs-data-dive` repo (replaced the old redirect to mapzimus.github.io in June 2026). Published the same way, via `sync_public_maps.ps1`.
 
-- [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) — `/geopuesto/` + `/geopuesto/playground/`. Promoted out of this repo in May 2026 (via `git filter-repo --subdirectory-filter` preserving 14 commits of history) so the antipode app + geometry sandbox have their own README, stars, and issue tracker.
-- [`mapzimus/ma-education-atlas`](https://github.com/mapzimus/ma-education-atlas) — `/ma-atlas/`. The MassGIS-academic-districts dissolve work lives here; the standalone repo is what gets cited.
-
-GitHub Pages handles submodule fetch via `submodules: recursive` in `.github/workflows/pages.yml`. After pushing changes inside a submodule, run `git submodule update --remote` here, commit the pointer bump, push — the Pages workflow re-deploys with the new submodule SHA.
+GitHub Pages fetches the remaining submodule via `submodules: recursive` in `.github/workflows/pages.yml`. After pushing changes inside `geopuesto`, run `git submodule update --remote` here, commit the pointer bump, push.
 
 ## Local development
 

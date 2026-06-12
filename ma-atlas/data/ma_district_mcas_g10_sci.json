@@ -1,0 +1,1928 @@
+{
+ "01850000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.22,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.22,
+  "mcas_g5_sci_me": 0.42,
+  "mcas_g8_sci_me": 0.22
+ },
+ "06180000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.17,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.23,
+  "mcas_g5_sci_me": 0.44,
+  "mcas_g8_sci_me": 0.35
+ },
+ "01910000": {
+  "mcas_g10_ela_exceeding": 0.18,
+  "mcas_g10_ela_not_meeting": 0.15,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.27,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.23
+ },
+ "02210000": {
+  "mcas_g5_sci_me": 0.45,
+  "mcas_g8_sci_me": 0.58
+ },
+ "02910000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.44
+ },
+ "01590000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.21,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.68,
+  "mcas_g8_sci_me": 0.58
+ },
+ "02100000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.15,
+  "mcas_g10_math_not_meeting": 0.08,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.43
+ },
+ "02610000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.65,
+  "mcas_g8_sci_me": 0.48
+ },
+ "02730000": {
+  "mcas_g5_sci_me": 0.55,
+  "mcas_g8_sci_me": 0.48
+ },
+ "02950000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.35
+ },
+ "01220000": {
+  "mcas_g10_ela_exceeding": 0.18,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.13,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.58,
+  "mcas_g8_sci_me": 0.51
+ },
+ "01420000": {
+  "mcas_g10_ela_exceeding": 0.14,
+  "mcas_g10_ela_not_meeting": 0.06,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.72,
+  "mcas_g8_sci_me": 0.26
+ },
+ "00610000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.22,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.35,
+  "mcas_g8_sci_me": 0.23
+ },
+ "00830000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.58,
+  "mcas_g8_sci_me": 0.38
+ },
+ "00260000": {
+  "mcas_g10_ela_exceeding": 0.33,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.42,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.74,
+  "mcas_g8_sci_me": 0.82
+ },
+ "01390000": {
+  "mcas_g10_ela_exceeding": 0.3,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.4,
+  "mcas_g10_math_not_meeting": 0.02,
+  "mcas_g5_sci_me": 0.8,
+  "mcas_g8_sci_me": 0.72
+ },
+ "01410000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.33,
+  "mcas_g8_sci_me": 0.31
+ },
+ "02120000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.09,
+  "mcas_g5_sci_me": 0.55,
+  "mcas_g8_sci_me": 0.48
+ },
+ "03220000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.06,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.44
+ },
+ "02310000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.07,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.5,
+  "mcas_g8_sci_me": 0.27
+ },
+ "01450000": {
+  "mcas_g5_sci_me": 0.6
+ },
+ "02580000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.17,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.18,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.29
+ },
+ "03250000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.19,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.32
+ },
+ "02460000": {
+  "mcas_g10_ela_exceeding": 0.17,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.17,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.64,
+  "mcas_g8_sci_me": 0.57
+ },
+ "06850000": {
+  "mcas_g5_sci_me": 0.6
+ },
+ "01640000": {
+  "mcas_g10_ela_exceeding": 0.18,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.72,
+  "mcas_g8_sci_me": 0.4
+ },
+ "02140000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.44,
+  "mcas_g8_sci_me": 0.3
+ },
+ "07170000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.13,
+  "mcas_g10_math_not_meeting": 0.08,
+  "mcas_g5_sci_me": 0.44,
+  "mcas_g8_sci_me": 0.21
+ },
+ "01810000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.21,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.28,
+  "mcas_g8_sci_me": 0.26
+ },
+ "00070000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.23,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.22,
+  "mcas_g5_sci_me": 0.34,
+  "mcas_g8_sci_me": 0.43
+ },
+ "06720000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.31,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.28,
+  "mcas_g5_sci_me": 0.6,
+  "mcas_g8_sci_me": 0.32
+ },
+ "01600000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.27,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.32,
+  "mcas_g5_sci_me": 0.22,
+  "mcas_g8_sci_me": 0.2
+ },
+ "02130000": {
+  "mcas_g5_sci_me": 0.66,
+  "mcas_g8_sci_me": 0.58
+ },
+ "07780000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.18,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.18,
+  "mcas_g5_sci_me": 0.38,
+  "mcas_g8_sci_me": 0.17
+ },
+ "00250000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.3
+ },
+ "02750000": {
+  "mcas_g5_sci_me": 0.77
+ },
+ "00100000": {
+  "mcas_g10_ela_exceeding": 0.21,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.36,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.8,
+  "mcas_g8_sci_me": 0.73
+ },
+ "06620000": {
+  "mcas_g5_sci_me": 0.5
+ },
+ "01750000": {
+  "mcas_g10_ela_exceeding": 0.16,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.27,
+  "mcas_g10_math_not_meeting": 0.01,
+  "mcas_g5_sci_me": 0.74,
+  "mcas_g8_sci_me": 0.7
+ },
+ "00510000": {
+  "mcas_g5_sci_me": 0.8,
+  "mcas_g8_sci_me": 0.87
+ },
+ "07100000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g5_sci_me": 0.5,
+  "mcas_g8_sci_me": 0.5
+ },
+ "06800000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.59,
+  "mcas_g8_sci_me": 0.43
+ },
+ "07350000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.11,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.38
+ },
+ "00850000": {
+  "mcas_g5_sci_me": 0.64
+ },
+ "07660000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.09,
+  "mcas_g5_sci_me": 0.42,
+  "mcas_g8_sci_me": 0.27
+ },
+ "03460000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.16,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.2,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.36
+ },
+ "02340000": {
+  "mcas_g5_sci_me": 0.76
+ },
+ "06150000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.31,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.17,
+  "mcas_g8_sci_me": 0.14
+ },
+ "02710000": {
+  "mcas_g10_ela_exceeding": 0.17,
+  "mcas_g10_ela_not_meeting": 0.06,
+  "mcas_g10_math_exceeding": 0.32,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.63
+ },
+ "00940000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.09,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.56,
+  "mcas_g8_sci_me": 0.39
+ },
+ "02900000": {
+  "mcas_g10_ela_exceeding": 0.15,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.42,
+  "mcas_g8_sci_me": 0.42
+ },
+ "02810000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.3,
+  "mcas_g10_math_exceeding": 0.01,
+  "mcas_g10_math_not_meeting": 0.34,
+  "mcas_g5_sci_me": 0.31,
+  "mcas_g8_sci_me": 0.1
+ },
+ "01840000": {
+  "mcas_g5_sci_me": 0.68
+ },
+ "06550000": {
+  "mcas_g10_ela_exceeding": 0.24,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.44,
+  "mcas_g10_math_not_meeting": 0.01,
+  "mcas_g8_sci_me": 0.72
+ },
+ "01250000": {
+  "mcas_g10_ela_exceeding": 0.23,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.37,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.85,
+  "mcas_g8_sci_me": 0.75
+ },
+ "01550000": {
+  "mcas_g10_ela_exceeding": 0.29,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.55,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.76,
+  "mcas_g8_sci_me": 0.77
+ },
+ "02150000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.24,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.21,
+  "mcas_g8_sci_me": 0.21
+ },
+ "03360000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.26
+ },
+ "07450000": {
+  "mcas_g10_ela_exceeding": 0.15,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.56,
+  "mcas_g8_sci_me": 0.4
+ },
+ "02170000": {
+  "mcas_g10_ela_exceeding": 0.15,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.23,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.92,
+  "mcas_g8_sci_me": 0.63
+ },
+ "01670000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.15,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.47
+ },
+ "03270000": {
+  "mcas_g5_sci_me": 0.6
+ },
+ "01350000": {
+  "mcas_g5_sci_me": 0.61
+ },
+ "01630000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.35,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.42,
+  "mcas_g5_sci_me": 0.23,
+  "mcas_g8_sci_me": 0.14
+ },
+ "06220000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.26,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.22,
+  "mcas_g5_sci_me": 0.57,
+  "mcas_g8_sci_me": 0.33
+ },
+ "00670000": {
+  "mcas_g5_sci_me": 0.73,
+  "mcas_g8_sci_me": 0.79
+ },
+ "00090000": {
+  "mcas_g10_ela_exceeding": 0.17,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.32,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.71,
+  "mcas_g8_sci_me": 0.65
+ },
+ "01760000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.19,
+  "mcas_g10_math_exceeding": 0.13,
+  "mcas_g10_math_not_meeting": 0.19,
+  "mcas_g5_sci_me": 0.46,
+  "mcas_g8_sci_me": 0.35
+ },
+ "00490000": {
+  "mcas_g10_ela_exceeding": 0.15,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.26,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.47
+ },
+ "02520000": {
+  "mcas_g10_ela_exceeding": 0.14,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.15,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.65
+ },
+ "00970000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.33,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.34,
+  "mcas_g5_sci_me": 0.23,
+  "mcas_g8_sci_me": 0.17
+ },
+ "00560000": {
+  "mcas_g10_ela_exceeding": 0.14,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.19,
+  "mcas_g10_math_not_meeting": 0.09,
+  "mcas_g5_sci_me": 0.65,
+  "mcas_g8_sci_me": 0.55
+ },
+ "02260000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.24,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.28,
+  "mcas_g5_sci_me": 0.37,
+  "mcas_g8_sci_me": 0.29
+ },
+ "01740000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.38,
+  "mcas_g8_sci_me": 0.62
+ },
+ "03470000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.37,
+  "mcas_g8_sci_me": 0.37
+ },
+ "01510000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.41,
+  "mcas_g8_sci_me": 0.33
+ },
+ "01780000": {
+  "mcas_g10_ela_exceeding": 0.21,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.15,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.48
+ },
+ "03080000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.27,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.28,
+  "mcas_g5_sci_me": 0.29,
+  "mcas_g8_sci_me": 0.32
+ },
+ "00990000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g5_sci_me": 0.56,
+  "mcas_g8_sci_me": 0.41
+ },
+ "01890000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.21,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.74,
+  "mcas_g8_sci_me": 0.67
+ },
+ "02650000": {
+  "mcas_g10_ela_exceeding": 0.16,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.55,
+  "mcas_g8_sci_me": 0.51
+ },
+ "07200000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.29,
+  "mcas_g8_sci_me": 0.3
+ },
+ "01980000": {
+  "mcas_g10_ela_exceeding": 0.17,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.29,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.72,
+  "mcas_g8_sci_me": 0.54
+ },
+ "02640000": {
+  "mcas_g10_ela_exceeding": 0.23,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.66,
+  "mcas_g8_sci_me": 0.62
+ },
+ "06000000": {
+  "mcas_g10_ela_exceeding": 0.23,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.41,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.68,
+  "mcas_g8_sci_me": 0.72
+ },
+ "02930000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.24,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.3,
+  "mcas_g5_sci_me": 0.34,
+  "mcas_g8_sci_me": 0.14
+ },
+ "06320000": {
+  "mcas_g5_sci_me": 0.5
+ },
+ "02720000": {
+  "mcas_g5_sci_me": 0.75
+ },
+ "06250000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.16,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.16,
+  "mcas_g5_sci_me": 0.33,
+  "mcas_g8_sci_me": 0.36
+ },
+ "03430000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.24,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.39
+ },
+ "03170000": {
+  "mcas_g10_ela_exceeding": 0.2,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.39,
+  "mcas_g10_math_not_meeting": 0.02,
+  "mcas_g5_sci_me": 0.8,
+  "mcas_g8_sci_me": 0.71
+ },
+ "00430000": {
+  "mcas_g5_sci_me": 0.69
+ },
+ "03060000": {
+  "mcas_g5_sci_me": 0.18
+ },
+ "00010000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.17,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.13,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.38
+ },
+ "01870000": {
+  "mcas_g10_ela_exceeding": 0.18,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.49
+ },
+ "06160000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.6
+ },
+ "01310000": {
+  "mcas_g10_ela_exceeding": 0.27,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.24,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.86,
+  "mcas_g8_sci_me": 0.59
+ },
+ "01620000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.49,
+  "mcas_g8_sci_me": 0.48
+ },
+ "00050000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.4,
+  "mcas_g8_sci_me": 0.36
+ },
+ "00860000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.13,
+  "mcas_g5_sci_me": 0.42,
+  "mcas_g8_sci_me": 0.3
+ },
+ "01500000": {
+  "mcas_g10_ela_exceeding": 0.13,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.0,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.38
+ },
+ "01070000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.4,
+  "mcas_g8_sci_me": 0.34
+ },
+ "03480000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.29,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.31,
+  "mcas_g5_sci_me": 0.26,
+  "mcas_g8_sci_me": 0.19
+ },
+ "00880000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.58,
+  "mcas_g8_sci_me": 0.56
+ },
+ "02960000": {
+  "mcas_g5_sci_me": 0.4,
+  "mcas_g8_sci_me": 0.32
+ },
+ "00300000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.15,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.49,
+  "mcas_g8_sci_me": 0.36
+ },
+ "06750000": {
+  "mcas_g10_ela_exceeding": 0.19,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.26,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.65,
+  "mcas_g8_sci_me": 0.7
+ },
+ "02880000": {
+  "mcas_g5_sci_me": 0.79,
+  "mcas_g8_sci_me": 0.67
+ },
+ "07500000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.11,
+  "mcas_g5_sci_me": 0.5,
+  "mcas_g8_sci_me": 0.45
+ },
+ "06980000": {
+  "mcas_g10_ela_exceeding": 0.22,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.22,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.66,
+  "mcas_g8_sci_me": 0.62
+ },
+ "03050000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.59,
+  "mcas_g8_sci_me": 0.52
+ },
+ "02380000": {
+  "mcas_g5_sci_me": 0.43
+ },
+ "07750000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.15,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.52
+ },
+ "07740000": {
+  "mcas_g5_sci_me": 0.59,
+  "mcas_g8_sci_me": 0.72
+ },
+ "03090000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.39,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.3,
+  "mcas_g5_sci_me": 0.38,
+  "mcas_g8_sci_me": 0.29
+ },
+ "03160000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.34,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.42,
+  "mcas_g5_sci_me": 0.16,
+  "mcas_g8_sci_me": 0.14
+ },
+ "02780000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.09,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.41,
+  "mcas_g8_sci_me": 0.41
+ },
+ "00740000": {
+  "mcas_g5_sci_me": 0.34
+ },
+ "00520000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.18,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.16,
+  "mcas_g5_sci_me": 0.37,
+  "mcas_g8_sci_me": 0.35
+ },
+ "01380000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.58,
+  "mcas_g8_sci_me": 0.43
+ },
+ "01530000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.22,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.45,
+  "mcas_g8_sci_me": 0.25
+ },
+ "06500000": {
+  "mcas_g10_ela_exceeding": 0.17,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.13,
+  "mcas_g10_math_not_meeting": 0.16,
+  "mcas_g5_sci_me": 0.62,
+  "mcas_g8_sci_me": 0.43
+ },
+ "01000000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.27,
+  "mcas_g10_math_exceeding": 0.09,
+  "mcas_g10_math_not_meeting": 0.25,
+  "mcas_g5_sci_me": 0.28,
+  "mcas_g8_sci_me": 0.21
+ },
+ "02230000": {
+  "mcas_g5_sci_me": 0.31
+ },
+ "02840000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.13,
+  "mcas_g5_sci_me": 0.45,
+  "mcas_g8_sci_me": 0.57
+ },
+ "02980000": {
+  "mcas_g5_sci_me": 0.73
+ },
+ "03180000": {
+  "mcas_g5_sci_me": 0.56
+ },
+ "02300000": {
+  "mcas_g5_sci_me": 0.53
+ },
+ "07120000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.09,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.64,
+  "mcas_g8_sci_me": 0.4
+ },
+ "03420000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.06,
+  "mcas_g10_math_exceeding": 0.13,
+  "mcas_g10_math_not_meeting": 0.08,
+  "mcas_g5_sci_me": 0.58,
+  "mcas_g8_sci_me": 0.53
+ },
+ "00180000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.36,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.24,
+  "mcas_g5_sci_me": 0.31,
+  "mcas_g8_sci_me": 0.22
+ },
+ "01770000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.17,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.64,
+  "mcas_g8_sci_me": 0.61
+ },
+ "02200000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.22,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.2,
+  "mcas_g5_sci_me": 0.42,
+  "mcas_g8_sci_me": 0.39
+ },
+ "00360000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.26,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.18,
+  "mcas_g5_sci_me": 0.33,
+  "mcas_g8_sci_me": 0.28
+ },
+ "00480000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.17,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.4
+ },
+ "02760000": {
+  "mcas_g5_sci_me": 0.81,
+  "mcas_g8_sci_me": 0.66
+ },
+ "03210000": {
+  "mcas_g10_ela_exceeding": 0.28,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.34,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.64,
+  "mcas_g8_sci_me": 0.63
+ },
+ "02850000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.15,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.39,
+  "mcas_g8_sci_me": 0.37
+ },
+ "03400000": {
+  "mcas_g5_sci_me": 0.83
+ },
+ "00030000": {
+  "mcas_g5_sci_me": 0.51,
+  "mcas_g8_sci_me": 0.36
+ },
+ "00440000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.28,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.35,
+  "mcas_g5_sci_me": 0.23,
+  "mcas_g8_sci_me": 0.14
+ },
+ "00460000": {
+  "mcas_g10_ela_exceeding": 0.29,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.36,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.7,
+  "mcas_g8_sci_me": 0.66
+ },
+ "03440000": {
+  "mcas_g10_ela_exceeding": 0.26,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.37,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.79,
+  "mcas_g8_sci_me": 0.75
+ },
+ "02080000": {
+  "mcas_g5_sci_me": 0.56
+ },
+ "06200000": {
+  "mcas_g10_ela_exceeding": 0.19,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.21,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.65,
+  "mcas_g8_sci_me": 0.53
+ },
+ "01610000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.15,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.28,
+  "mcas_g8_sci_me": 0.3
+ },
+ "01370000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.3,
+  "mcas_g10_math_exceeding": 0.01,
+  "mcas_g10_math_not_meeting": 0.47,
+  "mcas_g5_sci_me": 0.11,
+  "mcas_g8_sci_me": 0.06
+ },
+ "03350000": {
+  "mcas_g10_ela_exceeding": 0.19,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.25,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.8,
+  "mcas_g8_sci_me": 0.72
+ },
+ "03000000": {
+  "mcas_g5_sci_me": 0.7
+ },
+ "06730000": {
+  "mcas_g10_ela_exceeding": 0.16,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.26,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.63,
+  "mcas_g8_sci_me": 0.57
+ },
+ "07530000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.17,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.46,
+  "mcas_g8_sci_me": 0.27
+ },
+ "00720000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.09,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.36
+ },
+ "02290000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.31,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.31,
+  "mcas_g5_sci_me": 0.32,
+  "mcas_g8_sci_me": 0.33
+ },
+ "01970000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.31,
+  "mcas_g8_sci_me": 0.47
+ },
+ "00200000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.27,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.21,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.2
+ },
+ "01110000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.13,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.22
+ },
+ "03100000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.25,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.29,
+  "mcas_g5_sci_me": 0.37,
+  "mcas_g8_sci_me": 0.22
+ },
+ "07250000": {
+  "mcas_g10_ela_exceeding": 0.19,
+  "mcas_g10_ela_not_meeting": 0.06,
+  "mcas_g10_math_exceeding": 0.21,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.6
+ },
+ "01170000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.16,
+  "mcas_g5_sci_me": 0.53,
+  "mcas_g8_sci_me": 0.58
+ },
+ "01360000": {
+  "mcas_g10_ela_exceeding": 0.17,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.25,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.68,
+  "mcas_g8_sci_me": 0.62
+ },
+ "00730000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.18,
+  "mcas_g10_math_exceeding": 0.13,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.32
+ },
+ "00910000": {
+  "mcas_g5_sci_me": 0.41
+ },
+ "02240000": {
+  "mcas_g5_sci_me": 0.86
+ },
+ "02500000": {
+  "mcas_g5_sci_me": 0.6
+ },
+ "07150000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.11,
+  "mcas_g5_sci_me": 0.58,
+  "mcas_g8_sci_me": 0.46
+ },
+ "00500000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.16,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g5_sci_me": 0.65,
+  "mcas_g8_sci_me": 0.53
+ },
+ "01540000": {
+  "mcas_g5_sci_me": 0.83
+ },
+ "00640000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.28,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.22,
+  "mcas_g5_sci_me": 0.21,
+  "mcas_g8_sci_me": 0.25
+ },
+ "02390000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.16,
+  "mcas_g5_sci_me": 0.51,
+  "mcas_g8_sci_me": 0.29
+ },
+ "02620000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.26,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.22,
+  "mcas_g5_sci_me": 0.39,
+  "mcas_g8_sci_me": 0.27
+ },
+ "03230000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.07,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.1,
+  "mcas_g5_sci_me": 0.45,
+  "mcas_g8_sci_me": 0.34
+ },
+ "07700000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g8_sci_me": 0.46
+ },
+ "02770000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.47,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.47,
+  "mcas_g5_sci_me": 0.08,
+  "mcas_g8_sci_me": 0.13
+ },
+ "02480000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.31,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.29,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.18
+ },
+ "00950000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.3,
+  "mcas_g10_math_exceeding": 0.01,
+  "mcas_g10_math_not_meeting": 0.4,
+  "mcas_g5_sci_me": 0.26,
+  "mcas_g8_sci_me": 0.08
+ },
+ "02090000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.24,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.24,
+  "mcas_g5_sci_me": 0.32,
+  "mcas_g8_sci_me": 0.09
+ },
+ "01700000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.26,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.23,
+  "mcas_g5_sci_me": 0.29,
+  "mcas_g8_sci_me": 0.15
+ },
+ "01720000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.5,
+  "mcas_g8_sci_me": 0.29
+ },
+ "03070000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.07,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g5_sci_me": 0.64,
+  "mcas_g8_sci_me": 0.37
+ },
+ "01580000": {
+  "mcas_g10_ela_exceeding": 0.24,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.4,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.63,
+  "mcas_g8_sci_me": 0.66
+ },
+ "01140000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.31,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.37,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.21
+ },
+ "03010000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.11,
+  "mcas_g5_sci_me": 0.39,
+  "mcas_g8_sci_me": 0.44
+ },
+ "01010000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.15,
+  "mcas_g10_math_not_meeting": 0.08,
+  "mcas_g5_sci_me": 0.63,
+  "mcas_g8_sci_me": 0.49
+ },
+ "01690000": {
+  "mcas_g5_sci_me": 0.56
+ },
+ "02690000": {
+  "mcas_g5_sci_me": 0.72
+ },
+ "02400000": {
+  "mcas_g5_sci_me": 0.65
+ },
+ "03150000": {
+  "mcas_g10_ela_exceeding": 0.24,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.44,
+  "mcas_g10_math_not_meeting": 0.02,
+  "mcas_g5_sci_me": 0.73,
+  "mcas_g8_sci_me": 0.81
+ },
+ "01490000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.47,
+  "mcas_g10_math_exceeding": 0.01,
+  "mcas_g10_math_not_meeting": 0.5,
+  "mcas_g5_sci_me": 0.19,
+  "mcas_g8_sci_me": 0.16
+ },
+ "03370000": {
+  "mcas_g5_sci_me": 0.56
+ },
+ "01990000": {
+  "mcas_g10_ela_exceeding": 0.28,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.36,
+  "mcas_g10_math_not_meeting": 0.02,
+  "mcas_g5_sci_me": 0.75,
+  "mcas_g8_sci_me": 0.67
+ },
+ "00980000": {
+  "mcas_g8_sci_me": 0.2
+ },
+ "01710000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.09,
+  "mcas_g5_sci_me": 0.51,
+  "mcas_g8_sci_me": 0.49
+ },
+ "00140000": {
+  "mcas_g10_ela_exceeding": 0.19,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.31,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.55,
+  "mcas_g8_sci_me": 0.56
+ },
+ "01440000": {
+  "mcas_g10_ela_exceeding": 0.23,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.29,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.67,
+  "mcas_g8_sci_me": 0.43
+ },
+ "07670000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.21,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.2
+ },
+ "02440000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.26,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.3,
+  "mcas_g5_sci_me": 0.27,
+  "mcas_g8_sci_me": 0.17
+ },
+ "01050000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.36
+ },
+ "03260000": {
+  "mcas_g10_ela_exceeding": 0.26,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.31,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.7,
+  "mcas_g8_sci_me": 0.68
+ },
+ "01960000": {
+  "mcas_g5_sci_me": 0.58
+ },
+ "00160000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.44,
+  "mcas_g8_sci_me": 0.33
+ },
+ "00410000": {
+  "mcas_g5_sci_me": 0.6
+ },
+ "02360000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.19,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.25,
+  "mcas_g5_sci_me": 0.38,
+  "mcas_g8_sci_me": 0.17
+ },
+ "01030000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.23,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.21,
+  "mcas_g5_sci_me": 0.23,
+  "mcas_g8_sci_me": 0.24
+ },
+ "07280000": {
+  "mcas_g5_sci_me": 0.53
+ },
+ "02270000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.28,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.25,
+  "mcas_g5_sci_me": 0.29,
+  "mcas_g8_sci_me": 0.25
+ },
+ "03310000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.51,
+  "mcas_g8_sci_me": 0.35
+ },
+ "00960000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.38
+ },
+ "07730000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.6,
+  "mcas_g8_sci_me": 0.44
+ },
+ "00930000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.26,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.27,
+  "mcas_g8_sci_me": 0.15
+ },
+ "01180000": {
+  "mcas_g5_sci_me": 0.57
+ },
+ "07800000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.15,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.38
+ },
+ "02740000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.25,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.26,
+  "mcas_g5_sci_me": 0.42,
+  "mcas_g8_sci_me": 0.39
+ },
+ "06450000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.22,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.24,
+  "mcas_g5_sci_me": 0.41,
+  "mcas_g8_sci_me": 0.27
+ },
+ "00790000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.19,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.2,
+  "mcas_g5_sci_me": 0.41,
+  "mcas_g8_sci_me": 0.26
+ },
+ "02190000": {
+  "mcas_g10_ela_exceeding": 0.18,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.69,
+  "mcas_g8_sci_me": 0.58
+ },
+ "02420000": {
+  "mcas_g5_sci_me": 0.82
+ },
+ "00270000": {
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.57
+ },
+ "00380000": {
+  "mcas_g5_sci_me": 0.62
+ },
+ "01680000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.06,
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.48
+ },
+ "02660000": {
+  "mcas_g10_ela_exceeding": 0.32,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.45,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.72,
+  "mcas_g8_sci_me": 0.72
+ },
+ "00310000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.38
+ },
+ "06740000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.35,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.22,
+  "mcas_g5_sci_me": 0.46,
+  "mcas_g8_sci_me": 0.19
+ },
+ "02920000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.13,
+  "mcas_g5_sci_me": 0.44,
+  "mcas_g8_sci_me": 0.55
+ },
+ "03490000": {
+  "mcas_g5_sci_me": 0.15
+ },
+ "03140000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.19,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.55,
+  "mcas_g8_sci_me": 0.47
+ },
+ "00570000": {
+  "mcas_g10_ela_exceeding": 0.01,
+  "mcas_g10_ela_not_meeting": 0.36,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.35,
+  "mcas_g5_sci_me": 0.19,
+  "mcas_g8_sci_me": 0.09
+ },
+ "01650000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.24,
+  "mcas_g10_math_exceeding": 0.09,
+  "mcas_g10_math_not_meeting": 0.23,
+  "mcas_g5_sci_me": 0.35,
+  "mcas_g8_sci_me": 0.28
+ },
+ "00890000": {
+  "mcas_g5_sci_me": 0.68,
+  "mcas_g8_sci_me": 0.49
+ },
+ "03300000": {
+  "mcas_g10_ela_exceeding": 0.33,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.37,
+  "mcas_g10_math_not_meeting": 0.02,
+  "mcas_g5_sci_me": 0.76,
+  "mcas_g8_sci_me": 0.73
+ },
+ "00680000": {
+  "mcas_g5_sci_me": 0.6
+ },
+ "00240000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.5,
+  "mcas_g8_sci_me": 0.34
+ },
+ "00770000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.17,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.36,
+  "mcas_g8_sci_me": 0.44
+ },
+ "01330000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.18,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.23,
+  "mcas_g5_sci_me": 0.6,
+  "mcas_g8_sci_me": 0.26
+ },
+ "02890000": {
+  "mcas_g5_sci_me": 0.46
+ },
+ "02010000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.34,
+  "mcas_g10_math_exceeding": 0.01,
+  "mcas_g10_math_not_meeting": 0.44,
+  "mcas_g5_sci_me": 0.23,
+  "mcas_g8_sci_me": 0.12
+ },
+ "03040000": {
+  "mcas_g10_ela_exceeding": 0.05,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.16,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g5_sci_me": 0.39,
+  "mcas_g8_sci_me": 0.33
+ },
+ "00400000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.19,
+  "mcas_g10_math_not_meeting": 0.09,
+  "mcas_g5_sci_me": 0.65,
+  "mcas_g8_sci_me": 0.52
+ },
+ "01280000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.35,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.37,
+  "mcas_g5_sci_me": 0.34,
+  "mcas_g8_sci_me": 0.24
+ },
+ "00870000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.11,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.08,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.44
+ },
+ "01860000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.13,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.19,
+  "mcas_g5_sci_me": 0.47,
+  "mcas_g8_sci_me": 0.29
+ },
+ "00710000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.23,
+  "mcas_g10_math_exceeding": 0.03,
+  "mcas_g10_math_not_meeting": 0.18,
+  "mcas_g5_sci_me": 0.4,
+  "mcas_g8_sci_me": 0.41
+ },
+ "00230000": {
+  "mcas_g10_ela_exceeding": 0.22,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.23,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.74,
+  "mcas_g8_sci_me": 0.65
+ },
+ "06030000": {
+  "mcas_g10_ela_exceeding": 0.02,
+  "mcas_g10_ela_not_meeting": 0.27,
+  "mcas_g10_math_exceeding": 0.02,
+  "mcas_g10_math_not_meeting": 0.38,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.06
+ },
+ "02530000": {
+  "mcas_g5_sci_me": 0.58
+ },
+ "01730000": {
+  "mcas_g5_sci_me": 0.65
+ },
+ "07650000": {
+  "mcas_g10_ela_exceeding": 0.11,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.16,
+  "mcas_g5_sci_me": 0.4,
+  "mcas_g8_sci_me": 0.35
+ },
+ "02430000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.17,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.42
+ },
+ "06650000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.12,
+  "mcas_g10_math_exceeding": 0.07,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.51,
+  "mcas_g8_sci_me": 0.5
+ },
+ "01100000": {
+  "mcas_g10_ela_exceeding": 0.15,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.14,
+  "mcas_g10_math_not_meeting": 0.13,
+  "mcas_g5_sci_me": 0.67,
+  "mcas_g8_sci_me": 0.58
+ },
+ "02110000": {
+  "mcas_g10_ela_exceeding": 0.1,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g5_sci_me": 0.46,
+  "mcas_g8_sci_me": 0.53
+ },
+ "00080000": {
+  "mcas_g5_sci_me": 0.55
+ },
+ "00630000": {
+  "mcas_g5_sci_me": 0.37,
+  "mcas_g8_sci_me": 0.21
+ },
+ "02510000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.25,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.17,
+  "mcas_g5_sci_me": 0.34,
+  "mcas_g8_sci_me": 0.43
+ },
+ "06350000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.06,
+  "mcas_g10_math_not_meeting": 0.11,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.48
+ },
+ "01520000": {
+  "mcas_g10_ela_exceeding": 0.3,
+  "mcas_g10_ela_not_meeting": 0.02,
+  "mcas_g10_math_exceeding": 0.22,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.52,
+  "mcas_g8_sci_me": 0.47
+ },
+ "02490000": {
+  "mcas_g5_sci_me": 0.53,
+  "mcas_g8_sci_me": 0.62
+ },
+ "00820000": {
+  "mcas_g10_ela_exceeding": 0.16,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.27,
+  "mcas_g10_math_not_meeting": 0.0,
+  "mcas_g5_sci_me": 0.74,
+  "mcas_g8_sci_me": 0.57
+ },
+ "01270000": {
+  "mcas_g10_ela_exceeding": 0.0,
+  "mcas_g10_ela_not_meeting": 0.0,
+  "mcas_g10_math_exceeding": 0.0,
+  "mcas_g10_math_not_meeting": 0.0,
+  "mcas_g5_sci_me": 0.64,
+  "mcas_g8_sci_me": 0.5
+ },
+ "01820000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.09,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.11,
+  "mcas_g5_sci_me": 0.38,
+  "mcas_g8_sci_me": 0.38
+ },
+ "06100000": {
+  "mcas_g10_ela_exceeding": 0.09,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.4
+ },
+ "00170000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.15,
+  "mcas_g10_math_exceeding": 0.11,
+  "mcas_g10_math_not_meeting": 0.12,
+  "mcas_g5_sci_me": 0.54,
+  "mcas_g8_sci_me": 0.42
+ },
+ "00450000": {
+  "mcas_g5_sci_me": 0.73
+ },
+ "02070000": {
+  "mcas_g10_ela_exceeding": 0.25,
+  "mcas_g10_ela_not_meeting": 0.04,
+  "mcas_g10_math_exceeding": 0.38,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.7,
+  "mcas_g8_sci_me": 0.69
+ },
+ "02180000": {
+  "mcas_g10_ela_exceeding": 0.08,
+  "mcas_g10_ela_not_meeting": 0.14,
+  "mcas_g10_math_exceeding": 0.04,
+  "mcas_g10_math_not_meeting": 0.19,
+  "mcas_g5_sci_me": 0.34,
+  "mcas_g8_sci_me": 0.35
+ },
+ "06580000": {
+  "mcas_g10_ela_exceeding": 0.03,
+  "mcas_g10_ela_not_meeting": 0.18,
+  "mcas_g10_math_exceeding": 0.05,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.45,
+  "mcas_g8_sci_me": 0.35
+ },
+ "01570000": {
+  "mcas_g5_sci_me": 0.61,
+  "mcas_g8_sci_me": 0.67
+ },
+ "00650000": {
+  "mcas_g10_ela_exceeding": 0.27,
+  "mcas_g10_ela_not_meeting": 0.01,
+  "mcas_g10_math_exceeding": 0.21,
+  "mcas_g10_math_not_meeting": 0.03,
+  "mcas_g5_sci_me": 0.69,
+  "mcas_g8_sci_me": 0.52
+ },
+ "03320000": {
+  "mcas_g10_ela_exceeding": 0.04,
+  "mcas_g10_ela_not_meeting": 0.17,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.14,
+  "mcas_g5_sci_me": 0.43,
+  "mcas_g8_sci_me": 0.2
+ },
+ "03500000": {
+  "mcas_g5_sci_me": 0.66
+ },
+ "02040000": {
+  "mcas_g10_ela_exceeding": 0.2,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.19,
+  "mcas_g10_math_not_meeting": 0.04,
+  "mcas_g5_sci_me": 0.48,
+  "mcas_g8_sci_me": 0.55
+ },
+ "00350000": {
+  "mcas_g10_ela_exceeding": 0.06,
+  "mcas_g10_ela_not_meeting": 0.25,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.23,
+  "mcas_g5_sci_me": 0.27,
+  "mcas_g8_sci_me": 0.17
+ },
+ "06400000": {
+  "mcas_g10_ela_exceeding": 0.24,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.32,
+  "mcas_g10_math_not_meeting": 0.03
+ },
+ "06600000": {
+  "mcas_g10_ela_exceeding": 0.12,
+  "mcas_g10_ela_not_meeting": 0.1,
+  "mcas_g10_math_exceeding": 0.08,
+  "mcas_g10_math_not_meeting": 0.07,
+  "mcas_g8_sci_me": 0.44
+ },
+ "06900000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.06,
+  "mcas_g10_math_exceeding": 0.12,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g8_sci_me": 0.43
+ },
+ "06950000": {
+  "mcas_g10_ela_exceeding": 0.19,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.31,
+  "mcas_g10_math_not_meeting": 0.03
+ },
+ "07050000": {
+  "mcas_g10_ela_exceeding": 0.14,
+  "mcas_g10_ela_not_meeting": 0.05,
+  "mcas_g10_math_exceeding": 0.18,
+  "mcas_g10_math_not_meeting": 0.05,
+  "mcas_g8_sci_me": 0.62
+ },
+ "07300000": {
+  "mcas_g10_ela_exceeding": 0.23,
+  "mcas_g10_ela_not_meeting": 0.03,
+  "mcas_g10_math_exceeding": 0.3,
+  "mcas_g10_math_not_meeting": 0.02
+ },
+ "07630000": {
+  "mcas_g10_ela_exceeding": 0.07,
+  "mcas_g10_ela_not_meeting": 0.08,
+  "mcas_g10_math_exceeding": 0.1,
+  "mcas_g10_math_not_meeting": 0.09
+ }
+}

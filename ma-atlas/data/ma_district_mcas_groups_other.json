@@ -1,0 +1,916 @@
+{
+ "01650000": {
+  "mcas_ela_military": 0.55,
+  "mcas_ela_homeless": 0.18,
+  "mcas_math_military": 0.6,
+  "mcas_math_homeless": 0.12
+ },
+ "07660000": {
+  "mcas_ela_military": 0.5,
+  "mcas_math_military": 0.38
+ },
+ "02310000": {
+  "mcas_ela_military": 0.25,
+  "mcas_math_military": 0.56
+ },
+ "00870000": {
+  "mcas_ela_military": 0.42,
+  "mcas_math_military": 0.44
+ },
+ "01680000": {
+  "mcas_ela_military": 0.64,
+  "mcas_math_military": 0.64
+ },
+ "02650000": {
+  "mcas_ela_military": 0.45,
+  "mcas_math_military": 0.65
+ },
+ "03090000": {
+  "mcas_ela_military": 0.42,
+  "mcas_math_military": 0.5
+ },
+ "02810000": {
+  "mcas_ela_military": 0.3,
+  "mcas_ela_foster": 0.16,
+  "mcas_ela_homeless": 0.15,
+  "mcas_math_military": 0.27,
+  "mcas_math_foster": 0.12,
+  "mcas_math_homeless": 0.11
+ },
+ "03140000": {
+  "mcas_ela_military": 0.27,
+  "mcas_ela_homeless": 0.0,
+  "mcas_math_military": 0.45,
+  "mcas_math_homeless": 0.05
+ },
+ "02850000": {
+  "mcas_ela_military": 0.33,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.33,
+  "mcas_math_homeless": 0.08
+ },
+ "06500000": {
+  "mcas_ela_military": 0.59,
+  "mcas_math_military": 0.45
+ },
+ "03250000": {
+  "mcas_ela_military": 0.48,
+  "mcas_ela_foster": 0.12,
+  "mcas_ela_homeless": 0.19,
+  "mcas_math_military": 0.5,
+  "mcas_math_foster": 0.13,
+  "mcas_math_homeless": 0.12
+ },
+ "02130000": {
+  "mcas_math_homeless": 0.2
+ },
+ "00640000": {
+  "mcas_ela_homeless": 0.14,
+  "mcas_math_homeless": 0.16
+ },
+ "02290000": {
+  "mcas_ela_military": 0.24,
+  "mcas_ela_foster": 0.29,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_military": 0.35,
+  "mcas_math_foster": 0.2,
+  "mcas_math_homeless": 0.08
+ },
+ "00790000": {
+  "mcas_ela_homeless": 0.23,
+  "mcas_math_homeless": 0.23
+ },
+ "01490000": {
+  "mcas_ela_military": 0.2,
+  "mcas_ela_foster": 0.16,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_military": 0.26,
+  "mcas_math_foster": 0.18,
+  "mcas_math_homeless": 0.07
+ },
+ "00990000": {
+  "mcas_ela_military": 0.67,
+  "mcas_math_military": 0.47
+ },
+ "01280000": {
+  "mcas_ela_foster": 0.13,
+  "mcas_ela_homeless": 0.13,
+  "mcas_math_foster": 0.08,
+  "mcas_math_homeless": 0.13
+ },
+ "00090000": {
+  "mcas_ela_military": 0.43,
+  "mcas_ela_homeless": 0.42,
+  "mcas_math_military": 0.51,
+  "mcas_math_homeless": 0.25
+ },
+ "01000000": {
+  "mcas_ela_military": 0.42,
+  "mcas_ela_foster": 0.0,
+  "mcas_ela_homeless": 0.05,
+  "mcas_math_military": 0.42,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.02
+ },
+ "01700000": {
+  "mcas_ela_military": 0.41,
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_military": 0.27,
+  "mcas_math_homeless": 0.07
+ },
+ "01370000": {
+  "mcas_ela_military": 0.1,
+  "mcas_ela_foster": 0.09,
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_military": 0.05,
+  "mcas_math_foster": 0.03,
+  "mcas_math_homeless": 0.02
+ },
+ "03050000": {
+  "mcas_ela_military": 0.57,
+  "mcas_math_military": 0.64
+ },
+ "00070000": {
+  "mcas_ela_homeless": 0.31,
+  "mcas_math_homeless": 0.26
+ },
+ "06650000": {
+  "mcas_ela_military": 0.64,
+  "mcas_math_military": 0.52
+ },
+ "00400000": {
+  "mcas_ela_military": 0.53,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.53,
+  "mcas_math_homeless": 0.11
+ },
+ "02080000": {
+  "mcas_ela_military": 0.61,
+  "mcas_math_military": 0.61
+ },
+ "01570000": {
+  "mcas_ela_military": 0.46,
+  "mcas_math_military": 0.4
+ },
+ "00960000": {
+  "mcas_ela_military": 0.3,
+  "mcas_ela_homeless": 0.08,
+  "mcas_math_military": 0.26,
+  "mcas_math_homeless": 0.14
+ },
+ "00310000": {
+  "mcas_ela_military": 0.41,
+  "mcas_ela_homeless": 0.18,
+  "mcas_math_military": 0.52,
+  "mcas_math_homeless": 0.29
+ },
+ "00730000": {
+  "mcas_ela_military": 0.53,
+  "mcas_ela_homeless": 0.18,
+  "mcas_math_military": 0.5,
+  "mcas_math_homeless": 0.1
+ },
+ "07730000": {
+  "mcas_ela_homeless": 0.19,
+  "mcas_math_homeless": 0.21
+ },
+ "02100000": {
+  "mcas_ela_foster": 0.17,
+  "mcas_ela_homeless": 0.16,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.13
+ },
+ "02920000": {
+  "mcas_ela_military": 0.49,
+  "mcas_math_military": 0.43
+ },
+ "01890000": {
+  "mcas_ela_military": 0.27,
+  "mcas_math_military": 0.45
+ },
+ "00360000": {
+  "mcas_ela_military": 0.28,
+  "mcas_ela_foster": 0.17,
+  "mcas_math_military": 0.31,
+  "mcas_math_foster": 0.0
+ },
+ "00490000": {
+  "mcas_ela_military": 0.53,
+  "mcas_ela_foster": 0.55,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.49,
+  "mcas_math_foster": 0.27,
+  "mcas_math_homeless": 0.11
+ },
+ "07780000": {
+  "mcas_ela_military": 0.36,
+  "mcas_math_military": 0.29
+ },
+ "01550000": {
+  "mcas_ela_military": 0.67,
+  "mcas_ela_homeless": 0.25,
+  "mcas_math_military": 0.75,
+  "mcas_math_homeless": 0.1
+ },
+ "01630000": {
+  "mcas_ela_military": 0.27,
+  "mcas_ela_foster": 0.06,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_military": 0.13,
+  "mcas_math_foster": 0.06,
+  "mcas_math_homeless": 0.05
+ },
+ "01070000": {
+  "mcas_ela_foster": 0.3,
+  "mcas_ela_homeless": 0.13,
+  "mcas_math_foster": 0.2,
+  "mcas_math_homeless": 0.08
+ },
+ "01780000": {
+  "mcas_ela_military": 0.5,
+  "mcas_math_military": 0.38
+ },
+ "00940000": {
+  "mcas_ela_military": 0.73,
+  "mcas_math_military": 0.56
+ },
+ "00670000": {
+  "mcas_ela_homeless": 0.18,
+  "mcas_math_homeless": 0.0
+ },
+ "03440000": {
+  "mcas_ela_military": 0.8,
+  "mcas_math_military": 0.8
+ },
+ "03010000": {
+  "mcas_ela_military": 0.4,
+  "mcas_math_military": 0.4
+ },
+ "00270000": {
+  "mcas_ela_military": 0.2,
+  "mcas_math_military": 0.1
+ },
+ "06450000": {
+  "mcas_ela_military": 0.35,
+  "mcas_ela_homeless": 0.15,
+  "mcas_math_military": 0.18,
+  "mcas_math_homeless": 0.15
+ },
+ "00480000": {
+  "mcas_ela_military": 0.5,
+  "mcas_ela_homeless": 0.14,
+  "mcas_math_military": 0.41,
+  "mcas_math_homeless": 0.14
+ },
+ "01110000": {
+  "mcas_ela_military": 0.35,
+  "mcas_math_military": 0.18
+ },
+ "01510000": {
+  "mcas_ela_military": 0.19,
+  "mcas_ela_foster": 0.05,
+  "mcas_math_military": 0.19,
+  "mcas_math_foster": 0.05
+ },
+ "00160000": {
+  "mcas_ela_military": 0.43,
+  "mcas_ela_foster": 0.18,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_military": 0.41,
+  "mcas_math_foster": 0.24,
+  "mcas_math_homeless": 0.11
+ },
+ "01810000": {
+  "mcas_ela_foster": 0.08,
+  "mcas_ela_homeless": 0.2,
+  "mcas_math_foster": 0.04,
+  "mcas_math_homeless": 0.15
+ },
+ "02010000": {
+  "mcas_ela_military": 0.36,
+  "mcas_ela_foster": 0.1,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.35,
+  "mcas_math_foster": 0.06,
+  "mcas_math_homeless": 0.09
+ },
+ "07700000": {
+  "mcas_ela_military": 0.33,
+  "mcas_math_military": 0.23
+ },
+ "06100000": {
+  "mcas_ela_military": 0.43,
+  "mcas_math_military": 0.27
+ },
+ "03350000": {
+  "mcas_ela_military": 0.27,
+  "mcas_math_military": 0.45
+ },
+ "01310000": {
+  "mcas_ela_military": 0.73,
+  "mcas_math_military": 0.79
+ },
+ "02950000": {
+  "mcas_ela_military": 0.32,
+  "mcas_math_military": 0.39
+ },
+ "02440000": {
+  "mcas_ela_foster": 0.06,
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_foster": 0.06,
+  "mcas_math_homeless": 0.09
+ },
+ "02200000": {
+  "mcas_ela_military": 0.47,
+  "mcas_ela_foster": 0.1,
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_military": 0.47,
+  "mcas_math_foster": 0.1,
+  "mcas_math_homeless": 0.06
+ },
+ "02090000": {
+  "mcas_ela_foster": 0.13,
+  "mcas_ela_homeless": 0.24,
+  "mcas_math_foster": 0.07,
+  "mcas_math_homeless": 0.16
+ },
+ "01050000": {
+  "mcas_ela_military": 0.19,
+  "mcas_math_military": 0.31
+ },
+ "06030000": {
+  "mcas_ela_military": 0.38,
+  "mcas_ela_foster": 0.1,
+  "mcas_math_military": 0.19,
+  "mcas_math_foster": 0.0
+ },
+ "02070000": {
+  "mcas_ela_military": 0.43,
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_military": 0.3,
+  "mcas_math_homeless": 0.1
+ },
+ "02730000": {
+  "mcas_ela_military": 0.48,
+  "mcas_math_military": 0.41
+ },
+ "03070000": {
+  "mcas_ela_military": 0.48,
+  "mcas_math_military": 0.58
+ },
+ "01710000": {
+  "mcas_ela_military": 0.67,
+  "mcas_ela_homeless": 0.17,
+  "mcas_math_military": 0.59,
+  "mcas_math_homeless": 0.24
+ },
+ "03310000": {
+  "mcas_ela_foster": 0.1,
+  "mcas_math_foster": 0.1
+ },
+ "02620000": {
+  "mcas_ela_homeless": 0.15,
+  "mcas_math_homeless": 0.25
+ },
+ "03420000": {
+  "mcas_ela_military": 0.43,
+  "mcas_math_military": 0.47
+ },
+ "01500000": {
+  "mcas_ela_homeless": 0.18,
+  "mcas_math_homeless": 0.18
+ },
+ "02480000": {
+  "mcas_ela_military": 0.33,
+  "mcas_ela_foster": 0.13,
+  "mcas_ela_homeless": 0.12,
+  "mcas_math_military": 0.17,
+  "mcas_math_foster": 0.13,
+  "mcas_math_homeless": 0.12
+ },
+ "00010000": {
+  "mcas_ela_military": 0.33,
+  "mcas_math_military": 0.33
+ },
+ "02660000": {
+  "mcas_ela_homeless": 0.2,
+  "mcas_math_homeless": 0.3
+ },
+ "02430000": {
+  "mcas_ela_military": 0.21,
+  "mcas_ela_foster": 0.11,
+  "mcas_ela_homeless": 0.2,
+  "mcas_math_military": 0.21,
+  "mcas_math_foster": 0.22,
+  "mcas_math_homeless": 0.1
+ },
+ "01010000": {
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_homeless": 0.16
+ },
+ "03360000": {
+  "mcas_ela_military": 0.42,
+  "mcas_ela_foster": 0.11,
+  "mcas_ela_homeless": 0.29,
+  "mcas_math_military": 0.46,
+  "mcas_math_foster": 0.22,
+  "mcas_math_homeless": 0.16
+ },
+ "03480000": {
+  "mcas_ela_military": 0.2,
+  "mcas_ela_foster": 0.16,
+  "mcas_ela_homeless": 0.12,
+  "mcas_math_military": 0.3,
+  "mcas_math_foster": 0.07,
+  "mcas_math_homeless": 0.12
+ },
+ "00500000": {
+  "mcas_ela_military": 0.3,
+  "mcas_ela_homeless": 0.2,
+  "mcas_math_military": 0.43,
+  "mcas_math_homeless": 0.07
+ },
+ "06150000": {
+  "mcas_ela_military": 0.6,
+  "mcas_ela_foster": 0.18,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_military": 0.3,
+  "mcas_math_foster": 0.18,
+  "mcas_math_homeless": 0.16
+ },
+ "02780000": {
+  "mcas_ela_military": 0.1,
+  "mcas_ela_homeless": 0.2,
+  "mcas_math_military": 0.25,
+  "mcas_math_homeless": 0.07
+ },
+ "01850000": {
+  "mcas_ela_foster": 0.12,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.07
+ },
+ "02360000": {
+  "mcas_ela_foster": 0.16,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_foster": 0.12,
+  "mcas_math_homeless": 0.07
+ },
+ "00230000": {
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_homeless": 0.06
+ },
+ "01360000": {
+  "mcas_ela_military": 0.56,
+  "mcas_math_military": 0.59
+ },
+ "01760000": {
+  "mcas_ela_homeless": 0.0,
+  "mcas_math_homeless": 0.08
+ },
+ "07800000": {
+  "mcas_ela_military": 0.19,
+  "mcas_math_military": 0.38
+ },
+ "01820000": {
+  "mcas_ela_military": 0.09,
+  "mcas_ela_foster": 0.08,
+  "mcas_ela_homeless": 0.08,
+  "mcas_math_military": 0.09,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.1
+ },
+ "02930000": {
+  "mcas_ela_military": 0.56,
+  "mcas_ela_foster": 0.23,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_military": 0.38,
+  "mcas_math_foster": 0.17,
+  "mcas_math_homeless": 0.07
+ },
+ "03320000": {
+  "mcas_ela_military": 0.34,
+  "mcas_ela_foster": 0.15,
+  "mcas_ela_homeless": 0.17,
+  "mcas_math_military": 0.31,
+  "mcas_math_foster": 0.15,
+  "mcas_math_homeless": 0.17
+ },
+ "07200000": {
+  "mcas_ela_military": 0.12,
+  "mcas_math_military": 0.28
+ },
+ "02740000": {
+  "mcas_ela_homeless": 0.05,
+  "mcas_math_homeless": 0.0
+ },
+ "00350000": {
+  "mcas_ela_military": 0.35,
+  "mcas_ela_foster": 0.13,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.31,
+  "mcas_math_foster": 0.08,
+  "mcas_math_homeless": 0.11
+ },
+ "01180000": {
+  "mcas_ela_military": 0.92,
+  "mcas_math_military": 0.62
+ },
+ "06800000": {
+  "mcas_ela_military": 0.64,
+  "mcas_math_military": 0.55
+ },
+ "01530000": {
+  "mcas_ela_military": 0.38,
+  "mcas_ela_foster": 0.18,
+  "mcas_ela_homeless": 0.14,
+  "mcas_math_military": 0.31,
+  "mcas_math_foster": 0.37,
+  "mcas_math_homeless": 0.19
+ },
+ "02230000": {
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_homeless": 0.1
+ },
+ "02610000": {
+  "mcas_ela_military": 0.63,
+  "mcas_math_military": 0.61
+ },
+ "00240000": {
+  "mcas_ela_military": 0.62,
+  "mcas_math_military": 0.31
+ },
+ "00720000": {
+  "mcas_ela_military": 0.73,
+  "mcas_ela_homeless": 0.13,
+  "mcas_math_military": 0.73,
+  "mcas_math_homeless": 0.33
+ },
+ "00710000": {
+  "mcas_ela_military": 0.4,
+  "mcas_ela_foster": 0.1,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_military": 0.4,
+  "mcas_math_foster": 0.2,
+  "mcas_math_homeless": 0.04
+ },
+ "01330000": {
+  "mcas_ela_military": 0.4,
+  "mcas_ela_homeless": 0.45,
+  "mcas_math_military": 0.6,
+  "mcas_math_homeless": 0.27
+ },
+ "01610000": {
+  "mcas_ela_military": 0.31,
+  "mcas_math_military": 0.42
+ },
+ "06740000": {
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_homeless": 0.07
+ },
+ "01450000": {
+  "mcas_ela_military": 0.55,
+  "mcas_math_military": 0.64,
+  "mcas_math_homeless": 0.09
+ },
+ "06250000": {
+  "mcas_ela_military": 0.22,
+  "mcas_ela_foster": 0.16,
+  "mcas_ela_homeless": 0.15,
+  "mcas_math_military": 0.29,
+  "mcas_math_foster": 0.32,
+  "mcas_math_homeless": 0.11
+ },
+ "03460000": {
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_homeless": 0.13
+ },
+ "00570000": {
+  "mcas_ela_foster": 0.05,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_foster": 0.11,
+  "mcas_math_homeless": 0.11
+ },
+ "01720000": {
+  "mcas_ela_military": 0.61,
+  "mcas_math_military": 0.58
+ },
+ "00970000": {
+  "mcas_ela_military": 0.26,
+  "mcas_ela_foster": 0.25,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.31,
+  "mcas_math_foster": 0.23,
+  "mcas_math_homeless": 0.08
+ },
+ "03470000": {
+  "mcas_ela_foster": 0.29,
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_foster": 0.14,
+  "mcas_math_homeless": 0.06
+ },
+ "02770000": {
+  "mcas_ela_military": 0.21,
+  "mcas_ela_foster": 0.05,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_military": 0.31,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.09
+ },
+ "01590000": {
+  "mcas_ela_military": 0.54,
+  "mcas_math_military": 0.5
+ },
+ "00100000": {
+  "mcas_ela_military": 0.62,
+  "mcas_ela_homeless": 0.33,
+  "mcas_math_military": 0.54,
+  "mcas_math_homeless": 0.18
+ },
+ "01140000": {
+  "mcas_ela_foster": 0.0,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.03
+ },
+ "03160000": {
+  "mcas_ela_foster": 0.11,
+  "mcas_ela_homeless": 0.0,
+  "mcas_math_foster": 0.21,
+  "mcas_math_homeless": 0.13
+ },
+ "06200000": {
+  "mcas_ela_military": 0.5,
+  "mcas_math_military": 0.4
+ },
+ "01600000": {
+  "mcas_ela_military": 0.43,
+  "mcas_ela_foster": 0.23,
+  "mcas_ela_homeless": 0.16,
+  "mcas_math_military": 0.42,
+  "mcas_math_foster": 0.31,
+  "mcas_math_homeless": 0.18
+ },
+ "07350000": {
+  "mcas_ela_military": 0.09,
+  "mcas_ela_foster": 0.09,
+  "mcas_ela_homeless": 0.15,
+  "mcas_math_military": 0.36,
+  "mcas_math_foster": 0.18,
+  "mcas_math_homeless": 0.0
+ },
+ "06220000": {
+  "mcas_ela_military": 0.42,
+  "mcas_math_military": 0.48
+ },
+ "07250000": {
+  "mcas_ela_military": 0.51,
+  "mcas_math_military": 0.51
+ },
+ "02580000": {
+  "mcas_ela_military": 0.54,
+  "mcas_ela_foster": 0.23,
+  "mcas_ela_homeless": 0.12,
+  "mcas_math_military": 0.38,
+  "mcas_math_foster": 0.13,
+  "mcas_math_homeless": 0.07
+ },
+ "03430000": {
+  "mcas_ela_military": 0.09,
+  "mcas_ela_foster": 0.13,
+  "mcas_ela_homeless": 0.08,
+  "mcas_math_military": 0.08,
+  "mcas_math_foster": 0.13,
+  "mcas_math_homeless": 0.08
+ },
+ "00260000": {
+  "mcas_ela_military": 0.75,
+  "mcas_math_military": 0.75
+ },
+ "07670000": {
+  "mcas_ela_foster": 0.23,
+  "mcas_math_foster": 0.15
+ },
+ "02880000": {
+  "mcas_ela_military": 0.3,
+  "mcas_math_military": 0.4
+ },
+ "00930000": {
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_homeless": 0.13
+ },
+ "02110000": {
+  "mcas_ela_military": 0.59,
+  "mcas_ela_foster": 0.0,
+  "mcas_math_military": 0.51,
+  "mcas_math_foster": 0.0
+ },
+ "00520000": {
+  "mcas_ela_military": 0.33,
+  "mcas_ela_foster": 0.15,
+  "mcas_math_military": 0.55,
+  "mcas_math_foster": 0.15
+ },
+ "02510000": {
+  "mcas_ela_military": 0.43,
+  "mcas_ela_homeless": 0.23,
+  "mcas_math_military": 0.43,
+  "mcas_math_homeless": 0.22
+ },
+ "03170000": {
+  "mcas_ela_military": 0.67,
+  "mcas_math_military": 0.71
+ },
+ "06160000": {
+  "mcas_ela_military": 0.23,
+  "mcas_ela_homeless": 0.08,
+  "mcas_math_military": 0.33,
+  "mcas_math_homeless": 0.0
+ },
+ "07750000": {
+  "mcas_ela_military": 0.56,
+  "mcas_ela_foster": 0.15,
+  "mcas_math_military": 0.5,
+  "mcas_math_foster": 0.23
+ },
+ "00610000": {
+  "mcas_ela_military": 0.29,
+  "mcas_ela_foster": 0.21,
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_military": 0.32,
+  "mcas_math_foster": 0.08,
+  "mcas_math_homeless": 0.11
+ },
+ "02120000": {
+  "mcas_ela_military": 0.46,
+  "mcas_ela_foster": 0.23,
+  "mcas_ela_homeless": 0.05,
+  "mcas_math_military": 0.4,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.05
+ },
+ "01030000": {
+  "mcas_ela_military": 0.24,
+  "mcas_ela_foster": 0.07,
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_military": 0.19,
+  "mcas_math_foster": 0.1,
+  "mcas_math_homeless": 0.0
+ },
+ "00170000": {
+  "mcas_ela_military": 0.53,
+  "mcas_ela_foster": 0.36,
+  "mcas_ela_homeless": 0.14,
+  "mcas_math_military": 0.4,
+  "mcas_math_foster": 0.27,
+  "mcas_math_homeless": 0.0
+ },
+ "02260000": {
+  "mcas_ela_foster": 0.25,
+  "mcas_math_foster": 0.17
+ },
+ "00200000": {
+  "mcas_ela_military": 0.41,
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_military": 0.53,
+  "mcas_math_homeless": 0.14
+ },
+ "01620000": {
+  "mcas_ela_military": 0.58,
+  "mcas_math_military": 0.58
+ },
+ "00650000": {
+  "mcas_ela_military": 0.69,
+  "mcas_math_military": 0.62
+ },
+ "02710000": {
+  "mcas_ela_military": 0.48,
+  "mcas_ela_homeless": 0.04,
+  "mcas_math_military": 0.5,
+  "mcas_math_homeless": 0.15
+ },
+ "06000000": {
+  "mcas_ela_military": 0.4,
+  "mcas_ela_homeless": 0.0,
+  "mcas_math_military": 0.54,
+  "mcas_math_homeless": 0.0
+ },
+ "00460000": {
+  "mcas_ela_military": 0.67,
+  "mcas_ela_homeless": 0.13,
+  "mcas_math_military": 0.47,
+  "mcas_math_homeless": 0.06
+ },
+ "01670000": {
+  "mcas_ela_military": 0.42,
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_military": 0.45,
+  "mcas_math_homeless": 0.11
+ },
+ "00300000": {
+  "mcas_ela_military": 0.28,
+  "mcas_ela_homeless": 0.16,
+  "mcas_math_military": 0.47,
+  "mcas_math_homeless": 0.11
+ },
+ "07530000": {
+  "mcas_ela_military": 0.24,
+  "mcas_math_military": 0.25
+ },
+ "00440000": {
+  "mcas_ela_military": 0.36,
+  "mcas_ela_foster": 0.19,
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_military": 0.27,
+  "mcas_math_foster": 0.14,
+  "mcas_math_homeless": 0.07
+ },
+ "03100000": {
+  "mcas_ela_military": 0.38,
+  "mcas_ela_foster": 0.16,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_military": 0.26,
+  "mcas_math_foster": 0.11,
+  "mcas_math_homeless": 0.07
+ },
+ "06580000": {
+  "mcas_ela_military": 0.16,
+  "mcas_ela_foster": 0.36,
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_military": 0.16,
+  "mcas_math_foster": 0.0,
+  "mcas_math_homeless": 0.07
+ },
+ "00950000": {
+  "mcas_ela_military": 0.43,
+  "mcas_ela_foster": 0.1,
+  "mcas_ela_homeless": 0.06,
+  "mcas_math_military": 0.23,
+  "mcas_math_foster": 0.08,
+  "mcas_math_homeless": 0.06
+ },
+ "00820000": {
+  "mcas_ela_military": 0.52,
+  "mcas_math_military": 0.5
+ },
+ "01980000": {
+  "mcas_ela_military": 0.5,
+  "mcas_ela_homeless": 0.13,
+  "mcas_math_military": 0.5,
+  "mcas_math_homeless": 0.22
+ },
+ "06180000": {
+  "mcas_ela_homeless": 0.07,
+  "mcas_math_homeless": 0.0
+ },
+ "00250000": {
+  "mcas_ela_homeless": 0.11,
+  "mcas_math_homeless": 0.19
+ },
+ "06900000": {
+  "mcas_ela_military": 0.58,
+  "mcas_math_military": 0.45
+ },
+ "02270000": {
+  "mcas_ela_military": 0.15,
+  "mcas_math_military": 0.25
+ },
+ "06750000": {
+  "mcas_ela_military": 0.53,
+  "mcas_math_military": 0.29
+ },
+ "07120000": {
+  "mcas_ela_homeless": 0.31,
+  "mcas_math_homeless": 0.3
+ },
+ "00050000": {
+  "mcas_ela_military": 0.38,
+  "mcas_ela_homeless": 0.13,
+  "mcas_math_military": 0.47,
+  "mcas_math_homeless": 0.19
+ },
+ "03210000": {
+  "mcas_ela_military": 0.46,
+  "mcas_math_military": 0.77
+ },
+ "02390000": {
+  "mcas_ela_military": 0.5,
+  "mcas_ela_foster": 0.17,
+  "mcas_ela_homeless": 0.1,
+  "mcas_math_military": 0.41,
+  "mcas_math_foster": 0.09,
+  "mcas_math_homeless": 0.07
+ },
+ "03080000": {
+  "mcas_ela_military": 0.5,
+  "mcas_ela_foster": 0.18,
+  "mcas_ela_homeless": 0.09,
+  "mcas_math_military": 0.36,
+  "mcas_math_foster": 0.06,
+  "mcas_math_homeless": 0.13
+ },
+ "02140000": {
+  "mcas_ela_homeless": 0.08,
+  "mcas_math_homeless": 0.08
+ }
+}

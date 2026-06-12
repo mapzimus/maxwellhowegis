@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MA Education Atlas | Maxwell Howe GIS</title>
+    <meta name="description" content="Explore and compare Massachusetts schools, colleges, and school districts on one interactive map — MCAS scores, graduation rates, class sizes, per-pupil spending, and demographics for 351 towns, 280 districts, and ~2,400 schools (public, private, and college). Built with MapLibre GL JS.">
+    <meta property="og:title" content="MA Education Atlas — Maxwell Howe">
+    <meta property="og:description" content="Compare schools, test scores, class sizes, and spending in any Massachusetts town or school district — an interactive map of every public school and district in the state.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css?v=20260604w">
+</head>
+<body class="maps-page">
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<!-- Color-vision-deficiency simulation filters (Wickline/HCIRN matrices). Applied
+     to the map area via CSS filter when the "Color-vision check" picker is set, so
+     authors can verify a palette still reads for color-blind viewers. -->
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="cvd-deuteranopia"><feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.7 0.3 0 0 0  0 0.3 0.7 0 0  0 0 0 1 0"/></filter>
+    <filter id="cvd-protanopia"><feColorMatrix type="matrix" values="0.567 0.433 0 0 0  0.558 0.442 0 0 0  0 0.242 0.758 0 0  0 0 0 1 0"/></filter>
+    <filter id="cvd-tritanopia"><feColorMatrix type="matrix" values="0.95 0.05 0 0 0  0 0.433 0.567 0 0  0 0.475 0.525 0 0  0 0 0 1 0"/></filter>
+  </defs>
+</svg>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Projects</a></li>
+            <li><a href="../gallery.html">Map Gallery</a></li>
+            <li><a href="../side-projects.html">Beyond GIS</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="main-content" class="maps-main">
+
+    <!-- Mobile FAB to open the panel — hidden on desktop via CSS -->
+    <button class="panel-fab" id="panelFab" type="button" aria-label="Open controls panel">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="3"  y1="6"  x2="21" y2="6"></line>
+            <line x1="3"  y1="12" x2="21" y2="12"></line>
+            <line x1="3"  y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <!-- Mobile backdrop — tap to close the drawer -->
+    <div class="panel-backdrop" id="panelBackdrop" aria-hidden="true"></div>
+
+    <!-- LEFT PANEL -->
+    <aside class="control-panel" id="controlPanel" aria-label="Map controls">
+
+        <!-- Fixed header bar: title + collapse toggle. Stays pinned; never
+             overlaps the section text below it. -->
+        <div class="panel-section panel-section--head">
+            <div class="panel-header">
+                <span class="section-label">// MA Education Atlas</span>
+                <div class="panel-header-actions">
+                    <button class="panel-icon-btn" id="themeToggle" type="button"
+                            aria-pressed="false" title="Switch to dark mode" aria-label="Toggle dark mode">
+                        <svg data-theme-ico="light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="5.2" y1="5.2" x2="7" y2="7"/><line x1="17" y1="17" x2="18.8" y2="18.8"/><line x1="18.8" y1="5.2" x2="17" y2="7"/><line x1="7" y1="17" x2="5.2" y2="18.8"/></g></svg>
+                        <svg data-theme-ico="dark" viewBox="0 0 24 24" aria-hidden="true" style="display:none"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="panel-icon-btn" id="resetAllBtn" type="button"
+                            title="Reset metric, year &amp; filters to defaults" aria-label="Reset to defaults">↺</button>
+                    <button class="panel-toggle" id="panelToggle"
+                            aria-label="Collapse controls panel" title="Hide this panel">
+                        <svg class="panel-toggle-ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <span class="panel-toggle-tx">Hide</span>
+                    </button>
+                </div>
+            </div>
+            <a href="../portfolio.html" class="back-link">← Back to Projects</a>
+            <h1 class="panel-title">Massachusetts<br>Education Atlas</h1>
+            <p class="panel-desc">
+                Compare schools, MCAS scores, class sizes, spending, and
+                demographics in any Massachusetts town or school district.
+                Pick a topic, then <strong>click any area</strong> for its
+                full report.
+                <span style="display:block; margin-top:6px; font-size:12px; opacity:.65;">351 towns · 280 districts · ~2,400 schools &amp; colleges · <span id="metricCount">324</span> metrics</span>
+            </p>
+        </div>
+
+        <!-- START HERE — the unified front door. Merges the former "Find a place"
+             and "Have a concern?" sections into one calm entry point: find your
+             place, ask what's on your mind (guided questions → a mapped metric +
+             a plain-language readout), or explore a surprising connection (a
+             one-tap bivariate teaser). Collapsed by default, like every section. -->
+        <section class="panel-section accordion">
+            <button class="accordion-header" type="button" aria-expanded="false">
+                <span class="panel-h2">New? Start Here.</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+                <p class="start-intro">New here? Find your town, pick what's on your mind, or explore a surprising connection — we'll put the right map up and explain what you're seeing.</p>
+
+                <!-- 1 · Find your place (search + region jump) -->
+                <div class="start-block">
+                    <div class="start-block-h"><span aria-hidden="true">📍</span> Find your place</div>
+                    <label class="form-label" for="placeSearch">Search a town, district, school, or address</label>
+                    <input id="placeSearch" type="text" class="select-input" list="placeList" placeholder="e.g. Springfield, Brookline HS, or 02115…" autocomplete="off">
+                    <datalist id="placeList"></datalist>
+                    <div class="search-hint" id="searchHint" hidden></div>
+                    <details class="start-regions">
+                        <summary>or jump to a region</summary>
+                        <div class="view-buttons">
+                            <button class="view-btn active" data-view="ma">Massachusetts</button>
+                            <button class="view-btn" data-view="boston-metro">Boston Metro</button>
+                            <button class="view-btn" data-view="metrowest">MetroWest</button>
+                            <button class="view-btn" data-view="495-corridor">495 Corridor</button>
+                            <button class="view-btn" data-view="north-shore">North Shore</button>
+                            <button class="view-btn" data-view="merrimack-valley">Merrimack Valley</button>
+                            <button class="view-btn" data-view="south-shore">South Shore</button>
+                            <button class="view-btn" data-view="south-coast">South Coast</button>
+                            <button class="view-btn" data-view="central-ma">Central MA</button>
+                            <button class="view-btn" data-view="pioneer-valley">Pioneer Valley</button>
+                            <button class="view-btn" data-view="western-ma">Western MA</button>
+                            <button class="view-btn" data-view="berkshires">Berkshires</button>
+                            <button class="view-btn" data-view="cape">Cape &amp; Islands</button>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- 2 · What's on your mind? (guided questions → metric + readout) -->
+                <div class="start-block">
+                    <div class="start-block-h"><span aria-hidden="true">💭</span> What's on your mind?</div>
+                    <p class="start-sub">Tap a question — we'll map it and explain what counts as good.</p>
+                    <div id="startQuestions" class="start-questions"></div>
+                    <div id="startReadout" class="start-readout" role="status" aria-live="polite" hidden></div>
+                </div>
+
+                <!-- 3 · See how two things connect (one-tap bivariate teaser) -->
+                <div class="start-block">
+                    <div class="start-block-h"><span aria-hidden="true">🔗</span> See how two things connect</div>
+                    <p class="start-sub">One tap lays two maps over each other. Some confirm what you'd expect — some are surprising.</p>
+                    <div id="startCorrelations" class="start-correlations"></div>
+                    <div id="startCorrReadout" class="start-readout" role="status" aria-live="polite" hidden></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT TO MAP — just the essentials: area type, metric, year, group.
+             Power tools (comparisons, highlighting, charts) moved to the next
+             section so a first-time visitor isn't hit with everything at once. -->
+        <section class="panel-section choropleth-section accordion">
+            <button class="accordion-header" type="button" aria-expanded="true">
+                <span class="panel-h2">What To Map</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+
+            <label class="form-label" for="levelSelect">Show data for</label>
+            <select id="levelSelect" class="select-input">
+                <option value="district" selected>School districts (280)</option>
+                <option value="muni">Towns / municipalities (351)</option>
+            </select>
+
+            <label class="form-label" style="margin-top:12px;">Metric</label>
+            <div id="metricPicker" class="metric-picker">
+                <button type="button" id="metricPickerButton" class="metric-picker-button"
+                        aria-haspopup="listbox" aria-expanded="false" aria-controls="metricPickerPop"
+                        title="Click to pick a different metric">
+                    <span id="metricPickerCurrent" class="mp-current"></span>
+                    <span class="mp-change-hint">Change<svg class="mp-caret" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </button>
+                <div id="metricPickerPop" class="metric-picker-pop" hidden>
+                    <button type="button" id="metricPickerClose" class="mp-close" aria-label="Close metric picker" title="Close">✕</button>
+                    <input id="metricSearch" type="text" class="select-input mp-search"
+                           placeholder="Search 324 metrics…" autocomplete="off" aria-label="Search metrics">
+                    <div id="metricPickerList" class="metric-picker-list" role="listbox" aria-label="Metrics"></div>
+                </div>
+            </div>
+            <!-- Canonical metric value — kept in sync by the command palette so
+                 URL state, the change cascade, and the bivariate picker keep
+                 working unchanged. Visually hidden. -->
+            <select id="metricSelect" class="visually-hidden" aria-hidden="true" tabindex="-1"></select>
+            <div class="year-note" id="metricGatingNote"></div>
+
+            <!-- Year slider — auto-hidden by JS when the active metric isn't year-keyed -->
+            <div id="yearControls" style="margin-top:12px;">
+                <label class="form-label">Year</label>
+                <div class="year-slider-row">
+                    <button class="year-play" id="yearPlay" type="button" title="Play slideshow">▶</button>
+                    <input type="range" id="yearSlider" min="1994" max="2026" step="1" value="2025" class="year-slider">
+                    <span class="year-label" id="yearLabel">2025</span>
+                </div>
+                <div class="year-note">Click ▶ to animate. Year coverage shown next to slider — varies by metric.</div>
+            </div>
+
+            <!-- Student group filter — auto-hidden when the active metric has no subgroup columns -->
+            <div id="groupControls" style="margin-top:12px;">
+                <label class="form-label">Student group</label>
+                <select id="groupSelect" class="select-input">
+                    <option value="all">All Students</option>
+                    <option value="HL">Hispanic / Latino</option>
+                    <option value="BAA">Black / African American</option>
+                    <option value="AS">Asian</option>
+                    <option value="WH">White</option>
+                    <option value="ELL">English Learner</option>
+                    <option value="LI">Low Income</option>
+                    <option value="SWD">Students w/ Disabilities</option>
+                    <option value="HN">High Needs</option>
+                </select>
+                <div class="year-note" id="groupNote">Filter outcomes by demographic subgroup.</div>
+            </div>
+
+            <div class="metric-summary" id="metricSummary" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <!-- COMPARE & HIGHLIGHT — optional power tools: layer a second metric,
+             compare two districts or two years, spotlight a group or a value
+             range, and open the charts explorer. Collapsed by default. -->
+        <section class="panel-section accordion">
+            <button class="accordion-header" type="button" aria-expanded="false">
+                <span class="panel-h2">Compare, Select &amp; Highlight</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+            <div class="year-note" style="margin-bottom:8px;">Optional — the map works fine without these.</div>
+
+            <!-- Featured pairings lead: curated two-metric maps. Picking one turns
+                 on the comparison and sets both metrics — a one-click way for a new
+                 user to explore interesting (and counterintuitive) relationships. -->
+            <div id="bivarPresetWrap">
+                <label class="form-label" for="bivarPresetSelect">✨ Featured pairings <span style="font-weight:400; opacity:.7;">— ready-made comparisons</span></label>
+                <select id="bivarPresetSelect" class="select-input">
+                    <option value="">Pick a comparison to explore…</option>
+                </select>
+                <div class="year-note" id="bivarPresetBlurb"></div>
+            </div>
+
+            <label class="toggle-row" style="margin-top:12px;">
+                <input type="checkbox" id="bivariateToggle">
+                <span><strong>Compare two metrics on one map</strong></span>
+            </label>
+            <div id="bivarControls" style="display:none; margin-top:6px;">
+                <label class="form-label">Or build your own — second metric</label>
+                <select id="bivarMetricSelect" class="select-input"></select>
+                <details class="bivar-colors" style="margin-top:8px;">
+                    <summary>Color scheme</summary>
+                    <select id="bivarPaletteSelect" class="select-input" style="margin-top:6px;"></select>
+                </details>
+                <div class="year-note">Each area is shaded by both metrics at once — light = low on both, dark = high on both; the off-colors flag where one is high and the other low.</div>
+            </div>
+
+            <!-- Compare 2+ places OR 2+ schools side by side. Pick several on the
+                 map; the comparison panel + charts follow the chosen set. -->
+            <label class="toggle-row" style="margin-top:10px;">
+                <input type="checkbox" id="compareToggle">
+                <span><strong>Compare mode</strong> — pick several to compare</span>
+            </label>
+            <div id="compareKindWrap" class="compare-kind" hidden>
+                <span class="compare-kind-label">Comparing:</span>
+                <div class="compare-kind-seg" role="group" aria-label="What to compare">
+                    <button type="button" data-cmpkind="place" class="active" aria-pressed="true">Places</button>
+                    <button type="button" data-cmpkind="school" aria-pressed="false">Schools</button>
+                </div>
+            </div>
+
+            <!-- Change over time — maps how a year-keyed metric shifted between two
+                 years on a diverging scale. Mutually exclusive with the two compare
+                 modes; auto-disabled for single-year metrics. -->
+            <label class="toggle-row" style="margin-top:10px;">
+                <input type="checkbox" id="changeToggle">
+                <span><strong>Change over time</strong> — compare two years</span>
+            </label>
+            <div id="changeControls" style="display:none; margin-top:6px;">
+                <div class="change-years-row">
+                    <label class="change-year">
+                        <span class="form-label">From</span>
+                        <select id="changeFromSelect" class="select-input"></select>
+                    </label>
+                    <span class="change-arrow" aria-hidden="true">→</span>
+                    <label class="change-year">
+                        <span class="form-label">To</span>
+                        <select id="changeToSelect" class="select-input"></select>
+                    </label>
+                </div>
+                <label class="toggle-row" style="margin-top:8px;">
+                    <input type="checkbox" id="changeRelToggle">
+                    <span>Show as % change (relative to the start year)</span>
+                </label>
+                <div class="year-note">Diverging scale centered on zero — <strong style="color:#b2182b;">red = decrease</strong>, <strong style="color:#2166ac;">blue = increase</strong>. Only metrics with multiple years (graduation, dropout, AP, Gr10 MCAS, per-pupil $, demographics) can be compared.</div>
+            </div>
+
+            <!-- Highlight a group (moved here from Reference layers). -->
+            <div id="highlight-group-row" style="margin-top:12px;">
+                <label class="form-label" for="highlightGroupSelect">
+                    <span class="layer-swatch swatch-gateway" style="display:inline-block;vertical-align:middle;margin-right:6px;"></span>Highlight a group
+                </label>
+                <select id="highlightGroupSelect" class="select-input">
+                    <option value="none">None</option>
+                    <option value="gateway">Gateway Cities</option>
+                    <option value="regional">Regional / multi-town districts</option>
+                    <option value="nohs">K-8 / no high school</option>
+                    <option value="stateflag">State-flagged (needs assistance)</option>
+                    <option value="top10">Highest 10% — current metric</option>
+                    <option value="bottom10">Lowest 10% — current metric</option>
+                </select>
+            </div>
+
+            <!-- Highlight-by-value filter — dim everything outside a range -->
+            <label class="toggle-row" style="margin-top:12px;">
+                <input type="checkbox" id="thresholdToggle">
+                <span><strong>Highlight by value</strong> (dim the rest)</span>
+            </label>
+            <div id="thresholdControls" style="display:none; margin-top:6px;">
+                <div class="threshold-row">
+                    <input type="number" id="thresholdLo" class="select-input threshold-input" placeholder="min" step="any" aria-label="Minimum value">
+                    <span class="threshold-dash">to</span>
+                    <input type="number" id="thresholdHi" class="select-input threshold-input" placeholder="max" step="any" aria-label="Maximum value">
+                </div>
+                <div class="year-note" id="thresholdCount"></div>
+                <div class="year-note">Enter values in display units (e.g. 90 for 90%). Leave one side blank for an open range.</div>
+            </div>
+
+            <!-- Explore charts — distribution / scatter / ranked views of the
+                 current metric(s), cross-linked to the map (hover/click a point). -->
+            <button type="button" id="graphOpenBtn" class="graph-open-btn" style="margin-top:12px;">📊 Explore charts</button>
+            <button type="button" id="rankShortcutBtn" class="rank-shortcut-btn">↕ Rank districts on this metric</button>
+            </div>
+        </section>
+
+        <!-- APPEARANCE — how the map looks: basemap, opacity, colors (palette +
+             color-vision check + classification), and on-map labels/extras.
+             Merges the former "Style" + "Visual mode" sections. #styleSection
+             wraps just palette+classification, which updateMetricGating() hides
+             in bivariate mode (bivariate has its own color key). -->
+        <section class="panel-section accordion">
+            <button class="accordion-header" type="button" aria-expanded="false">
+                <span class="panel-h2">Colors &amp; Appearance</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+            <label class="form-label">Basemap</label>
+            <select id="basemapSelect" class="select-input">
+                <option value="streets">Streets &amp; labels (Positron)</option>
+                <option value="lightgray" selected>Light gray / minimal (data pops)</option>
+                <option value="dark">Dark (CARTO)</option>
+                <option value="satellite">Satellite (Esri imagery + labels)</option>
+                <option value="white">White / blank base (clean print)</option>
+            </select>
+            <label class="form-label" for="fillOpacityRange" style="margin-top:12px;">Fill opacity</label>
+            <input type="range" id="fillOpacityRange" class="opacity-range" min="40" max="100" step="5" value="85">
+            <div class="year-note" id="fillOpacityNote">85% — basemap shows through the colors.</div>
+
+            <!-- Palette + classification — hidden in bivariate mode via #styleSection. -->
+            <div id="styleSection">
+            <label class="form-label" for="paletteSelect" style="margin-top:12px;">Color palette</label>
+            <select id="paletteSelect" class="select-input"></select>
+            <label class="toggle-row" style="margin-top:8px;">
+                <input type="checkbox" id="reversePaletteToggle">
+                <span>Reverse colors (flip light ↔ dark)</span>
+            </label>
+            <label class="form-label" for="classifySelect" style="margin-top:12px;">How values are grouped into colors (classification)</label>
+            <div class="year-note" style="margin-top:-2px;">Also changeable straight from the map legend. Jenks finds natural gaps; quantiles put an equal count in each color.</div>
+            <select id="classifySelect" class="select-input" style="margin-top:6px;">
+                <option value="jenks" selected>Jenks natural breaks</option>
+                <option value="quantile">Quantiles (equal count)</option>
+                <option value="equal">Equal interval</option>
+                <option value="stddev">Standard deviation</option>
+                <option value="geometric">Geometric interval</option>
+                <option value="pretty">Pretty / rounded breaks</option>
+                <option value="continuous">Continuous (linear)</option>
+                <option value="manual">Manual / custom breaks</option>
+            </select>
+            <div id="manualBreaksWrap" style="display:none; margin-top:8px;">
+                <label class="form-label">Break values (comma-separated)</label>
+                <input id="manualBreaksInput" type="text" class="select-input"
+                       placeholder="e.g. 20, 40, 60, 80" autocomplete="off">
+                <div class="year-note">Enter the cut points between classes. N values → N+1 color classes. Values are sorted automatically.</div>
+            </div>
+            </div>
+
+            <label class="form-label" for="cvdSelect" style="margin-top:12px;">Color-vision check</label>
+            <select id="cvdSelect" class="select-input">
+                <option value="" selected>Normal vision</option>
+                <option value="deuteranopia">Deuteranopia (red–green, most common)</option>
+                <option value="protanopia">Protanopia (red–green)</option>
+                <option value="tritanopia">Tritanopia (blue–yellow)</option>
+            </select>
+            <div class="year-note">Previews the whole map as a color-blind viewer sees it — check your palette still reads.</div>
+            </div>
+        </section>
+
+        <!-- REFERENCE LAYERS -->
+        <section class="panel-section accordion">
+            <button class="accordion-header" type="button" aria-expanded="false">
+                <span class="panel-h2">Map Additions &amp; Features</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+            <label class="form-label">Show on the map</label>
+            <label class="toggle-row">
+                <input type="checkbox" id="toggle-town-labels" checked>
+                <span>Town labels (at zoom &gt; 10)</span>
+            </label>
+            <label class="toggle-row">
+                <input type="checkbox" id="toggle-district-labels" checked>
+                <span>District labels (at zoom &gt; 8)</span>
+            </label>
+            <label class="toggle-row">
+                <input type="checkbox" id="toggle-value-labels">
+                <span><strong>Values on the map</strong> (the number on each area)</span>
+            </label>
+            <label class="toggle-row">
+                <input type="checkbox" id="toggle-prop-circles">
+                <span><strong>Enrollment circles</strong> (bubble size = # students)</span>
+            </label>
+            <div id="propCircleLegend" class="prop-circle-legend" hidden></div>
+            <label class="toggle-row" style="margin-top:8px;">
+                <input type="checkbox" id="toggle-3d">
+                <span>3D extrusion (height = active metric)</span>
+            </label>
+
+            <div class="layer-group">Boundaries</div>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-muni-outline" checked>
+                <span class="layer-swatch swatch-muni-outline"></span>
+                <span class="layer-name">MA municipality borders (351)</span>
+            </label>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-academic-outline" checked>
+                <span class="layer-swatch swatch-academic-outline"></span>
+                <span class="layer-name">Academic district borders (~250)</span>
+            </label>
+
+            <div class="layer-group">District-type overlays</div>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-voctech-overlay">
+                <span class="layer-swatch swatch-voctech-overlay"></span>
+                <span class="layer-name">Regional Vocational overlay (26)</span>
+            </label>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-charter-overlay">
+                <span class="layer-swatch swatch-charter-overlay"></span>
+                <span class="layer-name">Charter overlay (78)</span>
+            </label>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-collaboratives">
+                <span class="layer-swatch swatch-collab"></span>
+                <span class="layer-name">Education Collaboratives (25)</span>
+            </label>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-unions">
+                <span class="layer-swatch swatch-union"></span>
+                <span class="layer-name">Superintendency Unions (17)</span>
+            </label>
+
+            <div class="layer-group">Points</div>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-all-ma-schools">
+                <span class="layer-swatch swatch-ma-schools"></span>
+                <span class="layer-name">All MA schools (points)</span>
+            </label>
+            <div class="schools-controls" id="schools-controls" hidden>
+                <div class="schools-ctrl-label">Show</div>
+                <div class="school-sector" id="school-sector">
+                    <label class="school-chip"><input type="checkbox" id="school-sector-public" checked><span class="school-chip-sw" style="background:#1976D2"></span>Public <b>1,817</b></label>
+                    <label class="school-chip"><input type="checkbox" id="school-sector-private"><span class="school-chip-sw school-chip-sw--private"></span>Private <b>507</b></label>
+                </div>
+                <div class="schools-private-note" id="schools-private-note" hidden>Private schools (NCES Private School Survey) are reference only — they don't report to MA DESE, so they have no MCAS, accountability, or graduation data.</div>
+                <div class="schools-ctrl-label">Color by <span class="schools-ctrl-hint">(public)</span></div>
+                <div class="schools-colormode">
+                    <label><input type="radio" name="school-color-mode" value="level" checked> Level</label>
+                    <label><input type="radio" name="school-color-mode" value="acct"> Accountability</label>
+                </div>
+                <div class="schools-ctrl-label">Status <span class="schools-ctrl-hint">(DESE accountability)</span></div>
+                <select id="school-status-select" class="select-input">
+                    <option value="all">All schools</option>
+                    <option value="recognition">Schools of Recognition</option>
+                    <option value="needs">Requiring assistance / intervention</option>
+                </select>
+                <div class="schools-ctrl-label">Public levels <span class="schools-ctrl-hint">(bigger dot = more students)</span></div>
+                <div class="school-chips" id="school-chips">
+                    <label class="school-chip"><input type="checkbox" data-level="elementary" checked><span class="school-chip-sw" style="background:#1976D2"></span>Elementary <b>1,084</b></label>
+                    <label class="school-chip"><input type="checkbox" data-level="middle" checked><span class="school-chip-sw" style="background:#F57C00"></span>Middle <b>287</b></label>
+                    <label class="school-chip"><input type="checkbox" data-level="high" checked><span class="school-chip-sw" style="background:#C62828"></span>High <b>327</b></label>
+                    <label class="school-chip"><input type="checkbox" data-level="voc" checked><span class="school-chip-sw" style="background:#6a1b9a"></span>Voc/Tech <b>28</b></label>
+                    <label class="school-chip"><input type="checkbox" data-level="charter" checked><span class="school-chip-sw" style="background:#00897B"></span>Charter <b>78</b></label>
+                    <label class="school-chip"><input type="checkbox" data-level="other" checked><span class="school-chip-sw" style="background:#455A64"></span>Other <b>13</b></label>
+                </div>
+                <div class="schools-ctrl-label">School size <span class="schools-ctrl-hint">(students enrolled)</span></div>
+                <div class="schools-size-legend" id="schools-size-legend" aria-hidden="true"></div>
+                <div class="schools-acct-legend" id="schools-acct-legend" hidden>
+                    <div class="schools-ctrl-label">Accountability percentile</div>
+                    <div class="schools-grad-bar"></div>
+                    <div class="schools-grad-axis"><span>Low (1)</span><span>High (99)</span></div>
+                    <div class="schools-grad-note">Grey dot = no accountability data</div>
+                </div>
+            </div>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-all-ma-colleges">
+                <span class="layer-swatch swatch-ma-colleges"></span>
+                <span class="layer-name">Colleges (IPEDS) + branch campuses</span>
+            </label>
+            <div class="schools-controls" id="colleges-controls" hidden>
+                <div class="schools-ctrl-label">Quick filter</div>
+                <div class="college-presets" id="college-presets">
+                    <button type="button" class="college-preset" data-preset="community">Community colleges</button>
+                    <button type="button" class="college-preset" data-preset="all">All colleges</button>
+                </div>
+                <div class="schools-ctrl-label">Sector <span class="schools-ctrl-hint">(counts = main campuses; bigger dot = more students)</span></div>
+                <div class="school-chips" id="college-sector-chips">
+                    <label class="school-chip"><input type="checkbox" data-sector="public" checked><span class="school-chip-sw" style="background:#2E7D32"></span>Public <b>30</b></label>
+                    <label class="school-chip"><input type="checkbox" data-sector="private nonprofit" checked><span class="school-chip-sw" style="background:#5E35B1"></span>Private nonprofit <b>76</b></label>
+                    <label class="school-chip"><input type="checkbox" data-sector="private for-profit" checked><span class="school-chip-sw" style="background:#EF6C00"></span>For-profit <b>3</b></label>
+                </div>
+                <div class="schools-ctrl-label">Level</div>
+                <div class="school-chips" id="college-level-chips">
+                    <label class="school-chip"><input type="checkbox" data-level="4-year" checked><span class="school-chip-sw college-lvl-sw"></span>4-year <b>88</b></label>
+                    <label class="school-chip"><input type="checkbox" data-level="2-year" checked><span class="school-chip-sw college-lvl-sw"></span>2-year <b>21</b></label>
+                </div>
+                <div class="schools-ctrl-label">College size <span class="schools-ctrl-hint">(students enrolled)</span></div>
+                <div class="schools-size-legend" id="colleges-size-legend" aria-hidden="true"></div>
+                <div class="schools-grad-note">Solid dot = main campus · hollow dot = branch/satellite site. 109 colleges (NCES IPEDS 2023) + 20 hand-placed sites.</div>
+            </div>
+            <label class="layer-row">
+                <input type="checkbox" id="ref-all-ma-childcare">
+                <span class="layer-swatch swatch-ma-childcare"></span>
+                <span class="layer-name">Child-care centers (EEC) (3,021)</span>
+            </label>
+            <div class="schools-controls" id="childcare-controls" hidden>
+                <div class="schools-ctrl-label">Color by</div>
+                <div class="schools-colormode">
+                    <label><input type="radio" name="childcare-color-mode" value="capacity" checked> Capacity</label>
+                    <label><input type="radio" name="childcare-color-mode" value="c3"> C3 grant / seat</label>
+                </div>
+                <div class="schools-acct-legend" id="childcare-c3-legend" hidden>
+                    <div class="schools-ctrl-label">C3 grant $ per licensed seat <span class="schools-ctrl-hint">(FY2026)</span></div>
+                    <div class="childcare-c3-bar"></div>
+                    <div class="schools-grad-axis"><span>Lower</span><span>Higher</span></div>
+                    <div class="schools-grad-note">Navy-ringed dots are statistical outliers (above the IQR fence) — a prompt to review, <b>not</b> evidence of wrongdoing. Grey = no C3 grant on record.</div>
+                </div>
+                <div class="schools-ctrl-label">Size <span class="schools-ctrl-hint">(licensed capacity)</span></div>
+                <div class="schools-size-legend" id="childcare-size-legend" aria-hidden="true"></div>
+                <div class="schools-grad-note">Centers only (in-home family child care excluded for privacy). C3 = Commonwealth Cares for Children operational grants. Sources: MA EEC licensing + C3 grants.</div>
+            </div>
+            <label class="layer-row" id="ref-nonop-row" hidden>
+                <input type="checkbox" id="ref-nonop-towns" checked>
+                <span class="layer-swatch swatch-nonop"></span>
+                <span class="layer-name" id="ref-nonop-name">No-district towns</span>
+            </label>
+            </div>
+        </section>
+
+        <!-- EXPORT & SHARE — PNG, CSV, and a shareable link. Near the bottom: you
+             reach for it after you've set up the view you want. -->
+        <section class="panel-section accordion">
+            <button class="accordion-header" type="button" aria-expanded="false">
+                <span class="panel-h2">Export &amp; Share</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+            <button id="copyLinkBtn" type="button" class="export-csv-btn">
+                🔗 Copy shareable link
+            </button>
+            <div class="form-label" style="margin-top:4px; font-size:11px; color:#566873;">
+                The link reproduces the exact view: level, metric, palette, classification, year, student group, and map position.
+            </div>
+            <label class="form-label" style="margin-top:12px;">Save an image (PNG)</label>
+            <button class="export-png-btn" id="exportPngBtn" type="button">
+                🖼 Export image…
+            </button>
+            <div class="form-label" style="margin-top:4px; font-size:11px; color:#566873;">
+                Opens a preview where you can edit the title, combine legends, choose framing &amp; resolution, then download.
+            </div>
+            <button class="export-png-btn" id="timelapseBtn" type="button" style="margin-top:8px;">
+                🎬 Record time-lapse (WebM)
+            </button>
+            <div class="form-label" id="timelapseHint" style="margin-top:4px; font-size:11px; color:#566873;">
+                Animate this metric year by year into a shareable video.
+            </div>
+            <button id="exportCsvBtn" type="button" class="export-csv-btn" style="margin-top:8px;">
+                ⬇ Export this layer as CSV
+            </button>
+            <div class="form-label" style="margin-top:4px; font-size:11px; color:#607D8B;">
+                CSV includes every visible feature + the active metric column. Opens in Excel / Sheets.
+            </div>
+            </div>
+        </section>
+
+        <!-- ATTRIBUTION -->
+        <section class="panel-section accordion panel-footer">
+            <button class="accordion-header" type="button" aria-expanded="false">
+                <span class="panel-h2">Sources / Credits / About</span>
+                <svg class="accordion-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+            <div class="attribution">
+                <strong>Sources:</strong> MA DESE E2C Hub · US Census ACS 5-year · MassGIS<br>
+                <strong>Built with:</strong> MapLibre GL JS · OpenFreeMap (vector tiles)<br>
+                <strong>Source &amp; pipeline:</strong> privately maintained · © <a href="https://maxwellhowegis.com" target="_blank" rel="noopener">Maxwell Howe</a>
+            </div>
+            </div>
+        </section>
+    </aside>
+
+    <!-- Reopen tab — sits OUTSIDE the panel (so it isn't clipped/translated with
+         it) and is revealed by JS only when the panel is collapsed on desktop. -->
+    <button class="panel-reopen" id="panelReopen" type="button"
+            aria-label="Show the controls panel" title="Show map controls">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        <span class="panel-reopen-tx">Controls</span>
+    </button>
+
+    <!-- MAP -->
+    <div class="maps-wrap" id="mapsWrap">
+        <div id="map" class="map-container" role="region"
+             aria-label="Interactive choropleth map of Massachusetts education data. Use the controls panel to change the metric; the legend and metric summary describe the current view."></div>
+        <!-- FIRST-RUN HINT — dismissible orientation chip (shown once via localStorage). -->
+        <div class="map-hint" id="mapHint" hidden>
+            <span class="map-hint-text">👋 The map is colored by the metric you choose. <strong>Click any district</strong> for its full report — or pick a different topic under <strong>“What To Map”</strong> on the left.</span>
+            <button type="button" class="map-hint-close" id="mapHintClose" aria-label="Dismiss tip">✕</button>
+        </div>
+        <!-- MODE BAR — shows when a special view (bivariate / change / compare) is
+             active, with a one-click way back to the normal single-metric map. -->
+        <div class="mode-bar" id="modeBar" hidden role="status">
+            <span class="mode-bar-label" id="modeBarLabel"></span>
+            <button type="button" class="mode-bar-exit" id="modeBarExit" aria-label="Exit this mode">✕ Exit</button>
+        </div>
+        <!-- ON-MAP STATUS CHIP — what the map is currently showing. Appears while
+             the controls panel is hidden, so the view never loses its context. -->
+        <div class="status-chip" id="statusChip" hidden role="status" aria-live="polite"></div>
+        <!-- LIST-VIEW TAB — opens the "places in view" companion list. -->
+        <button type="button" class="list-toggle" id="listToggleBtn"
+                aria-label="Show a list of the places in view" title="List the places in view">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="4.5" cy="6" r="1.4"/><circle cx="4.5" cy="12" r="1.4"/><circle cx="4.5" cy="18" r="1.4"/>
+                <line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/>
+            </svg>
+            <span class="list-toggle-tx">List</span>
+        </button>
+    </div>
+
+    <!-- LEGEND — drag the header to move it; pull the corner grip or use the
+         −/+ buttons to resize; ⟲ resets. Position & size persist (localStorage).
+         Wired in setupLegendCustomization(); desktop-only (docks on mobile). -->
+    <div class="legend" id="legend" role="region" aria-label="Map legend">
+        <div class="legend-header" id="legendHeader" tabindex="0"
+             title="Drag to move • arrow keys to nudge"
+             aria-label="Legend — drag to move, or focus and use arrow keys to reposition">
+            <div class="legend-title" id="legendTitle">Legend</div>
+            <div class="legend-tools" role="group" aria-label="Legend size and position">
+                <button type="button" class="legend-tool" id="legendSmaller"
+                        title="Smaller" aria-label="Make legend smaller">&minus;</button>
+                <button type="button" class="legend-tool" id="legendLarger"
+                        title="Larger" aria-label="Make legend larger">+</button>
+                <button type="button" class="legend-tool" id="legendReset"
+                        title="Reset position &amp; size"
+                        aria-label="Reset legend position and size">⟲</button>
+            </div>
+        </div>
+        <div class="legend-unit" id="legendUnit"></div>
+        <div class="legend-stops" id="legendStops"></div>
+        <!-- Why some areas are blank (no high school vs. suppressed / not reported),
+             surfaced right under the color key so structural gaps don't read as a bug.
+             Written by updateLegend(); a sibling of #legendStops so its rewrite never
+             wipes this. -->
+        <div class="legend-meta" id="legendMeta"></div>
+        <!-- Quick classification switch — a cartographer's natural home for it, right
+             under the color ramp. A sibling of #legendStops so updateLegend() (which
+             only rewrites #legendStops) never wipes it. Mirrors the Appearance radios
+             through setClassify(); hidden in bivariate mode. -->
+        <div class="legend-classify" id="legendClassifyRow">
+            <label class="legend-classify-label" for="legendClassify">Color grouping</label>
+            <select id="legendClassify" class="legend-classify-select"
+                    title="How values are grouped into color classes (classification method)"
+                    aria-label="Color grouping (classification method)">
+                <option value="jenks">Natural breaks (Jenks)</option>
+                <option value="quantile">Equal count (quantiles)</option>
+                <option value="equal">Equal interval</option>
+                <option value="stddev">Standard deviation</option>
+                <option value="geometric">Geometric interval</option>
+                <option value="pretty">Pretty / rounded</option>
+                <option value="continuous">Continuous (no classes)</option>
+                <option value="manual">Manual breaks</option>
+            </select>
+        </div>
+        <!-- Plain-language "how to read the colors" line (set in updateLegend). -->
+        <div class="legend-caption" id="legendCaption" hidden></div>
+        <div class="legend-insight" id="legendInsight"></div>
+        <div class="legend-nonop" id="legendNonOp" hidden>
+            <span class="legend-nonop-swatch" aria-hidden="true"></span>
+            <span>No operating district (tuition / school-choice town)</span>
+        </div>
+        <!-- Data-freshness line — at-a-glance vintage of the underlying data. -->
+        <div class="legend-vintage" id="legendVintage">Data: MA DESE (latest school year) · US Census ACS 5-year</div>
+        <div class="legend-resize" id="legendResize" aria-hidden="true"
+             title="Drag to resize"></div>
+    </div>
+
+    <!-- ATTRIBUTION CREDIT — always visible, centered along the bottom edge -->
+    <div class="map-credit" id="mapCredit">
+        <a href="https://maxwellhowegis.com" target="_blank" rel="noopener">© Maxwell Howe</a> · MA DESE · US Census · MassGIS · OpenFreeMap
+    </div>
+
+    <!-- HOVER TOOLTIP (positioned via JS) -->
+    <div class="map-tooltip" id="mapTooltip" aria-hidden="true"></div>
+
+    <!-- HELP & GUIDES — a labeled pill opens a hub: the map-controls cheat
+         sheet (default tab), a plain-language "How to use" guide, a glossary,
+         and a button that launches the interactive guided tour. Opt-in only —
+         we never auto-show it (an unprompted popup ate screen space and
+         confused desktop visitors). -->
+    <button class="help-fab" id="helpButton" type="button"
+            aria-haspopup="dialog" aria-controls="helpModal"
+            title="Help &amp; guides" aria-label="Open help and guides">
+        <svg class="help-fab-icon" viewBox="0 0 24 24" aria-hidden="true"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9.2"></circle>
+            <path d="M9.3 9.2a2.8 2.8 0 0 1 5.4 .9c0 1.9-2.7 2.3-2.7 4"></path>
+            <line x1="12" y1="17.4" x2="12.01" y2="17.4"></line>
+        </svg>
+        <span class="help-fab-label">Help &amp; guide</span>
+    </button>
+
+    <div class="help-modal" id="helpModal" aria-hidden="true">
+        <div class="help-modal-inner" role="dialog" aria-modal="true" aria-labelledby="helpModalTitle">
+            <button class="help-modal-close" id="helpModalClose" aria-label="Close help">&times;</button>
+
+            <div class="help-hd">
+                <span class="help-eyebrow">// MA Education Atlas</span>
+                <h2 id="helpModalTitle">Help &amp; guides</h2>
+                <p class="help-sub">New here? Take the 1-minute tour — or browse the how-tos and map controls below.</p>
+            </div>
+
+            <div class="help-tabs" role="tablist" aria-label="Help topics">
+                <button class="help-tab active" type="button" role="tab" id="helpTab-controls"
+                        data-help-tab="controls" aria-selected="true" aria-controls="helpPane-controls">Map controls</button>
+                <button class="help-tab" type="button" role="tab" id="helpTab-how"
+                        data-help-tab="how" aria-selected="false" aria-controls="helpPane-how">How to use</button>
+                <button class="help-tab" type="button" role="tab" id="helpTab-terms"
+                        data-help-tab="terms" aria-selected="false" aria-controls="helpPane-terms">Glossary</button>
+            </div>
+
+            <div class="help-body">
+
+                <!-- PANE — Map controls (the cheat sheet; default) -->
+                <div class="help-pane active" id="helpPane-controls" role="tabpanel"
+                     aria-labelledby="helpTab-controls" data-help-pane="controls">
+                    <section class="help-card">
+                        <div class="help-card-hd"><span class="help-card-ico" aria-hidden="true">🖱️</span> Mouse &amp; trackpad</div>
+                        <div class="help-row"><span class="help-key">Drag</span><span>Pan the map</span></div>
+                        <div class="help-row"><span class="help-key">Scroll</span><span>Zoom in / out</span></div>
+                        <div class="help-row"><span class="help-key">Right-click + Drag</span><span>Rotate &amp; tilt</span></div>
+                        <div class="help-row"><span class="help-key">Ctrl + Drag</span><span>Rotate the map</span></div>
+                        <div class="help-row"><span class="help-key">Shift + Drag</span><span>Box zoom</span></div>
+                        <div class="help-row"><span class="help-key">Double-click</span><span>Zoom in</span></div>
+                        <div class="help-row"><span class="help-key">Click a place</span><span>Open its full profile</span></div>
+                        <div class="help-row"><span class="help-key">Hover</span><span>Quick metric tooltip</span></div>
+                    </section>
+                    <section class="help-card">
+                        <div class="help-card-hd"><span class="help-card-ico" aria-hidden="true">👆</span> Touch (phone / tablet)</div>
+                        <div class="help-row"><span class="help-key">One-finger drag</span><span>Pan the map</span></div>
+                        <div class="help-row"><span class="help-key">Pinch</span><span>Zoom in / out</span></div>
+                        <div class="help-row"><span class="help-key">Two-finger twist</span><span>Rotate the map</span></div>
+                        <div class="help-row"><span class="help-key">Two-finger drag ↕</span><span>Tilt the map (3D)</span></div>
+                        <div class="help-row"><span class="help-key">Tap a place</span><span>Open its profile (bottom)</span></div>
+                    </section>
+                    <section class="help-card">
+                        <div class="help-card-hd"><span class="help-card-ico" aria-hidden="true">🎛️</span> On-screen buttons</div>
+                        <div class="help-row"><span class="help-key">+ / −</span><span>Zoom in / out</span></div>
+                        <div class="help-row"><span class="help-key">Compass</span><span>Click to reset north &amp; flatten the tilt</span></div>
+                    </section>
+                </div>
+
+                <!-- PANE — How to use (plain-language feature guide) -->
+                <div class="help-pane" id="helpPane-how" role="tabpanel"
+                     aria-labelledby="helpTab-how" data-help-pane="how" hidden>
+                    <ol class="help-quickstart">
+                        <li><span class="help-qs-n">1</span> Pick a topic to map</li>
+                        <li><span class="help-qs-n">2</span> Click a place for its profile</li>
+                        <li><span class="help-qs-n">3</span> Compare, rank &amp; export</li>
+                    </ol>
+                    <div class="help-howto">
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">🔎</span><div><strong>Start here</strong>New to the atlas? Search any town, district, or school, tap a question that's on your mind, or explore a surprising connection between two things.</div></div>
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">🎨</span><div><strong>Choose what to map</strong>Under “What To Map,” pick from 230+ topics — test scores, spending, class size, demographics. Every place is shaded by it.</div></div>
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">🖱️</span><div><strong>Click for the full story</strong>Click any town or district to open its profile: scores, trends, demographics, and finances.</div></div>
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">⇄</span><div><strong>Compare, Select &amp; Highlight</strong>Put two districts side by side, or highlight a group like Gateway Cities, regional districts, or top &amp; bottom performers.</div></div>
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">📊</span><div><strong>Charts &amp; rankings</strong>Open “Explore charts” for distributions, scatter plots, and ranked leaderboards — all linked to the map.</div></div>
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">🕑</span><div><strong>See change over time</strong>For topics with history, drag the year slider or switch to “Maps over time” to watch trends unfold.</div></div>
+                        <div class="help-howto-item"><span class="help-howto-ico" aria-hidden="true">⬇️</span><div><strong>Export &amp; Share</strong>Save the map as an image, export any place as a CSV, or print a one-page report card.</div></div>
+                    </div>
+                    <p class="help-note">Data comes from Massachusetts DESE, the U.S. Census / ACS, and IPEDS. Full credits live under “Sources / Credits / About” in the panel.</p>
+                </div>
+
+                <!-- PANE — Glossary (plain-language terms) -->
+                <div class="help-pane" id="helpPane-terms" role="tabpanel"
+                     aria-labelledby="helpTab-terms" data-help-pane="terms" hidden>
+                    <dl class="help-terms">
+                        <div class="help-term"><dt>MCAS</dt><dd>Massachusetts' statewide student test (grades 3–8 and 10).</dd></div>
+                        <div class="help-term"><dt>% Meeting / Exceeding</dt><dd>Share of students at or above grade level on MCAS.</dd></div>
+                        <div class="help-term"><dt>Growth (SGP)</dt><dd>How much students improve year-to-year — 1 to 99, about 50 is a typical year — regardless of starting scores.</dd></div>
+                        <div class="help-term"><dt>Accountability percentile</dt><dd>DESE's overall ranking of a school vs. others statewide, 1 (low) to 99 (high).</dd></div>
+                        <div class="help-term"><dt>Per-pupil $</dt><dd>Dollars spent per student, per year.</dd></div>
+                        <div class="help-term"><dt>English Learner</dt><dd>Students still learning English.</dd></div>
+                        <div class="help-term"><dt>High Needs</dt><dd>DESE's combined group: low-income, English-learner, and/or students with disabilities.</dd></div>
+                        <div class="help-term"><dt>Chronic absence</dt><dd>Share of students who miss 10% or more of school days.</dd></div>
+                    </dl>
+                </div>
+
+            </div>
+
+            <div class="help-footer">
+                <button class="help-tour-btn" id="helpStartTour" type="button">
+                    <span class="help-tour-play" aria-hidden="true">▶</span> Take the guided tour
+                </button>
+                <button class="help-got-it" id="helpGotIt">Got it</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE GUIDED TOUR — a spotlight overlay that points at the real
+         controls one step at a time. Markup is static; everything (target
+         positioning, step content, navigation) is driven from app.js. -->
+    <div class="tour" id="tour" aria-hidden="true">
+        <div class="tour-blocker" id="tourBlocker"></div>
+        <div class="tour-spotlight" id="tourSpotlight" aria-hidden="true"></div>
+        <div class="tour-coach" id="tourCoach" role="dialog" aria-modal="true"
+             aria-labelledby="tourTitle" aria-describedby="tourBody">
+            <div class="tour-coach-top">
+                <span class="tour-step" id="tourStep"></span>
+                <button class="tour-x" id="tourClose" type="button" aria-label="End tour">&times;</button>
+            </div>
+            <h3 class="tour-coach-title" id="tourTitle"></h3>
+            <p class="tour-coach-body" id="tourBody"></p>
+            <div class="tour-dots" id="tourDots" aria-hidden="true"></div>
+            <div class="tour-coach-actions">
+                <button class="tour-skip" id="tourSkip" type="button">Skip tour</button>
+                <div class="tour-nav">
+                    <button class="tour-back" id="tourBack" type="button">Back</button>
+                    <button class="tour-next" id="tourNext" type="button">Next →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRAPH / CHARTS MODAL — distribution, scatter, ranked; linked to the map -->
+    <div class="graph-modal" id="graphModal" aria-hidden="true">
+        <div class="graph-modal-inner" role="dialog" aria-modal="true" aria-labelledby="graphModalTitle">
+            <button class="graph-modal-close" id="graphModalClose" aria-label="Close charts">&times;</button>
+            <h2 id="graphModalTitle">Explore charts</h2>
+            <!-- Scope switch: chart the whole state, or just the comparison set. -->
+            <div class="graph-scope" id="graphScopeWrap" role="group" aria-label="Chart scope">
+                <button type="button" data-scope="all" class="active">All districts</button>
+                <button type="button" data-scope="set">Comparison set</button>
+            </div>
+            <div class="graph-tabs" role="tablist">
+                <!-- whole-state tabs -->
+                <button class="graph-tab" data-tab="distribution" type="button" role="tab">Distribution</button>
+                <button class="graph-tab active" data-tab="scatter" type="button" role="tab">Scatter</button>
+                <button class="graph-tab" data-tab="ranked" type="button" role="tab">Ranked</button>
+                <button class="graph-tab" data-tab="slope" type="button" role="tab">Slope (2 yrs)</button>
+                <button class="graph-tab" data-tab="overtime" type="button" role="tab">Maps over time</button>
+                <!-- comparison-set tabs (shown only in set scope) -->
+                <button class="graph-tab" data-tab="groupbar" type="button" role="tab" style="display:none;">Bars</button>
+                <button class="graph-tab" data-tab="profile" type="button" role="tab" style="display:none;">Profile</button>
+                <button class="graph-tab" data-tab="trend" type="button" role="tab" style="display:none;">Trend</button>
+            </div>
+            <div class="graph-bwrap" id="graphBWrap">
+                <label class="form-label" for="graphMetricB">Compare against (Y axis)</label>
+                <select id="graphMetricB" class="select-input"></select>
+            </div>
+            <div class="graph-bwrap" id="graphSchoolMetricWrap" style="display:none;">
+                <label class="form-label" for="graphSchoolMetric">School metric</label>
+                <select id="graphSchoolMetric" class="select-input"></select>
+            </div>
+            <div class="graph-bwrap" id="graphSchoolMetricBWrap" style="display:none;">
+                <label class="form-label" for="graphSchoolMetricB">Compare against (Y axis)</label>
+                <select id="graphSchoolMetricB" class="select-input"></select>
+            </div>
+            <div class="graph-bwrap" id="graphYearsWrap" style="display:none;">
+                <label class="form-label">Compare years</label>
+                <div class="graph-years">
+                    <select id="graphSlopeFrom" class="select-input"></select>
+                    <span class="change-arrow" aria-hidden="true">→</span>
+                    <select id="graphSlopeTo" class="select-input"></select>
+                </div>
+            </div>
+            <div class="graph-canvas" id="graphCanvas"></div>
+            <div class="graph-hint" id="graphHint">Hover a point to see its name; click to zoom to it on the map and open its profile.</div>
+            <div class="graph-tip" id="graphTip" hidden><span class="gt-name"></span><span class="gt-vals"></span></div>
+        </div>
+    </div>
+
+    <!-- EXPORT STUDIO MODAL — preview, tweak, and verify before downloading the PNG.
+         The preview is rendered by renderExport() and matches the downloaded file
+         exactly; legends auto-combine from whatever layers are on the map. -->
+    <div class="graph-modal export-modal" id="exportModal" aria-hidden="true">
+        <div class="export-modal-inner" role="dialog" aria-modal="true" aria-labelledby="exportModalTitle">
+            <button class="graph-modal-close" id="exportModalClose" aria-label="Close export">&times;</button>
+            <h2 id="exportModalTitle">Export image</h2>
+            <div class="export-body">
+                <!-- LEFT: live preview (exactly what the PNG will be) -->
+                <div class="export-preview-col">
+                    <div class="export-preview-frame">
+                        <canvas id="exportPreview" class="export-preview-canvas"></canvas>
+                        <div class="export-preview-busy" id="exportPreviewBusy">Rendering preview…</div>
+                        <div class="export-preview-error" id="exportPreviewError" hidden></div>
+                    </div>
+                    <div class="export-preview-hint">Live preview — this is exactly what your PNG will look like.</div>
+                </div>
+                <!-- RIGHT: final tweaks -->
+                <div class="export-controls-col">
+                    <label class="form-label" for="exportTitleInput">Title</label>
+                    <input id="exportTitleInput" type="text" class="select-input" autocomplete="off">
+                    <label class="form-label" for="exportSubtitleInput">Subtitle</label>
+                    <input id="exportSubtitleInput" type="text" class="select-input" autocomplete="off">
+                    <label class="form-label" for="exportCaptionInput">Caption <span class="export-dim">(optional)</span></label>
+                    <input id="exportCaptionInput" type="text" class="select-input" autocomplete="off" placeholder="a note or data source, shown along the bottom">
+                    <label class="form-label" for="exportAnnotInput">Label a spot <span class="export-dim">(optional)</span></label>
+                    <input id="exportAnnotInput" type="text" class="select-input" autocomplete="off" placeholder="e.g. “Our district” — then click the preview to place it">
+
+                    <label class="form-label" for="exportModalScope">Framing</label>
+                    <select id="exportModalScope" class="select-input">
+                        <option value="state">Whole state — fit to Massachusetts</option>
+                        <option value="current">Current view (whatever's on screen)</option>
+                        <option value="selection">Selected feature (last clicked)</option>
+                        <option value="search">By name… (uses the place search box)</option>
+                    </select>
+
+                    <span class="form-label" style="margin-top:12px;">Jump to a region <span class="export-dim">(re-frames the export)</span></span>
+                    <div class="export-view-btns" id="exportViewBtns"></div>
+
+                    <span class="form-label" style="margin-top:12px;">Legends to include <span class="export-dim">(auto-combined)</span></span>
+                    <div class="export-legend-toggles" id="exportLegendToggles"></div>
+
+                    <label class="form-label" for="exportLegendCorner">Legend position</label>
+                    <select id="exportLegendCorner" class="select-input">
+                        <option value="bl">Bottom-left</option>
+                        <option value="br">Bottom-right</option>
+                        <option value="tl">Top-left</option>
+                        <option value="tr">Top-right</option>
+                    </select>
+
+                    <span class="form-label" style="margin-top:12px;">Map overlays</span>
+                    <div class="export-overlay-toggles">
+                        <label class="export-toggle"><input type="checkbox" id="exportScaleToggle" checked><span>Scale bar</span></label>
+                        <label class="export-toggle"><input type="checkbox" id="exportNorthToggle" checked><span>North arrow</span></label>
+                    </div>
+
+                    <span class="form-label" style="margin-top:12px;">Resolution</span>
+                    <div class="export-res">
+                        <label><input type="radio" name="exportRes" value="1" checked> 1× screen</label>
+                        <label><input type="radio" name="exportRes" value="2"> 2×</label>
+                        <label><input type="radio" name="exportRes" value="3"> 3× print</label>
+                    </div>
+                    <div class="export-res-note" id="exportResNote" hidden>Capped to your screen's resolution — the image was too large at this setting.</div>
+                </div>
+            </div>
+
+            <div class="export-footer">
+                <button id="exportCancelBtn" type="button" class="export-btn-secondary">Cancel</button>
+                <button id="exportDownloadBtn" type="button" class="export-btn-primary">⤓ Download PNG</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIME-LAPSE RECORDER — its own dialog (opened by the side-panel button,
+         separate from the Export Studio). Animates the choropleth year by year
+         and records it to a WebM, colors locked across years. -->
+    <div class="graph-modal timelapse-modal" id="timelapseModal" aria-hidden="true">
+        <div class="tl-modal-inner" role="dialog" aria-modal="true" aria-labelledby="tlModalTitle">
+            <button class="graph-modal-close" id="timelapseClose" aria-label="Close">&times;</button>
+            <h2 id="tlModalTitle">Record a time-lapse</h2>
+            <p class="tl-sub">Animates this metric year by year into a WebM video — colors stay locked across all years, with the year shown on each frame.</p>
+            <div class="tl-controls">
+                <label class="tl-field">Speed
+                    <select id="tlSpeed" class="select-input">
+                        <option value="0.4">Fast</option>
+                        <option value="0.8" selected>Normal</option>
+                        <option value="1.5">Slow</option>
+                    </select>
+                </label>
+                <label class="tl-field">Framing
+                    <select id="tlScope" class="select-input">
+                        <option value="state" selected>Whole state</option>
+                        <option value="current">Current view</option>
+                        <option value="selection">Selected feature</option>
+                        <option value="search">By name…</option>
+                    </select>
+                </label>
+                <div class="tl-field">Resolution
+                    <div class="export-res" id="tlResWrap">
+                        <label><input type="radio" name="tlRes" value="1" checked> 1×</label>
+                        <label><input type="radio" name="tlRes" value="2"> 2×</label>
+                        <label><input type="radio" name="tlRes" value="3"> 3×</label>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-row">
+                <button id="tlRecordBtn" type="button" class="export-btn-primary">● Record video (WebM)</button>
+                <span class="export-dim" id="tlYears"></span>
+            </div>
+            <div class="export-animate-progress" id="tlProgress" hidden><div class="export-animate-bar" id="tlBar"></div></div>
+            <div class="export-animate-note" id="tlNote" hidden></div>
+            <div class="export-video-wrap" id="tlVideoWrap" hidden>
+                <video id="tlVideo" class="export-video" controls loop autoplay muted playsinline></video>
+                <button id="tlDownload" type="button" class="export-btn-primary">⤓ Download WebM</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURE DETAIL SIDE PANEL (sticky, right side) -->
+    <aside class="feature-panel" id="featurePanel" aria-hidden="true" aria-label="Feature details">
+        <!-- Print-only header: identifies the printed report card (hidden on screen). -->
+        <div class="feature-panel-print-head" aria-hidden="true">
+            <strong>Massachusetts Education Atlas</strong> · maxwellhowegis.com/ma-atlas<br>
+            Data: MA DESE &amp; US Census ACS
+        </div>
+        <header class="feature-panel-header">
+            <div class="feature-panel-title" id="featurePanelTitle">Feature</div>
+            <button class="feature-panel-close" id="featurePanelClose" aria-label="Close">&times;</button>
+        </header>
+        <div class="feature-panel-body" id="featurePanelBody"></div>
+        <footer class="feature-panel-footer">
+            <button id="compareStartBtn" type="button" class="export-csv-btn">
+                ➕ Add to comparison
+            </button>
+            <button id="printReportBtn" type="button" class="export-csv-btn">
+                🖨 Print / save as PDF
+            </button>
+            <button id="exportPlaceBtn" type="button" class="export-csv-btn">
+                ⬇ Export this place as CSV
+            </button>
+        </footer>
+    </aside>
+
+    <!-- COMPARISON SET PANEL — compare 2+ places or 2+ schools -->
+    <aside class="compare-panel" id="comparePanel" aria-hidden="true" aria-label="Compare places or schools">
+        <header class="compare-panel-header">
+            <div class="compare-panel-title" id="comparePanelTitle">Compare</div>
+            <div class="compare-panel-actions">
+                <button id="compareResetBtn" type="button" class="compare-act-btn" title="Exit compare mode">Done</button>
+                <button id="compareCloseBtn" type="button" class="feature-panel-close" aria-label="Close">&times;</button>
+            </div>
+        </header>
+        <div class="compare-max-note" id="compareMaxNote" hidden></div>
+        <div class="compare-panel-body" id="comparePanelBody"></div>
+    </aside>
+
+    <!-- PLACES-IN-VIEW LIST — a sortable companion to the map; synced to the
+         viewport, ranked by the active metric. Toggled by #listToggleBtn. -->
+    <aside class="list-panel" id="listPanel" aria-hidden="true" aria-label="Places in view">
+        <header class="list-panel-header">
+            <div class="list-panel-title" id="listPanelTitle">Places in view</div>
+            <button id="listPanelClose" type="button" class="feature-panel-close" aria-label="Close list">&times;</button>
+        </header>
+        <div class="list-panel-body" id="listPanelBody"></div>
+    </aside>
+
+    <!-- LOADING -->
+    <div class="map-loading" id="mapLoading">
+        <div class="map-loading-spinner"></div>
+        <div>Loading Massachusetts school &amp; district data…</div>
+    </div>
+
+</main>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="../js/main.js"></script>
+<script src="app.js?v=20260604w"></script>
+</body>
+</html>

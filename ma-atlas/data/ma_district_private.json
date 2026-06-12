@@ -1,0 +1,918 @@
+{
+ "00010000": {
+  "private_school_pct": 0.0438,
+  "homeschool_pct": 0.0125
+ },
+ "00030000": {
+  "private_school_pct": 0.0303,
+  "homeschool_pct": 0.0347
+ },
+ "00050000": {
+  "private_school_pct": 0.0335,
+  "homeschool_pct": 0.0347
+ },
+ "00070000": {
+  "private_school_pct": 0.0437,
+  "homeschool_pct": 0.0154
+ },
+ "00080000": {
+  "private_school_pct": 0.0495,
+  "homeschool_pct": 0.0113
+ },
+ "00090000": {
+  "private_school_pct": 0.1429,
+  "homeschool_pct": 0.0046
+ },
+ "00100000": {
+  "private_school_pct": 0.0426,
+  "homeschool_pct": 0.0098
+ },
+ "00140000": {
+  "private_school_pct": 0.0306,
+  "homeschool_pct": 0.0066
+ },
+ "00160000": {
+  "private_school_pct": 0.0533,
+  "homeschool_pct": 0.0216
+ },
+ "00170000": {
+  "private_school_pct": 0.0365,
+  "homeschool_pct": 0.0079
+ },
+ "00180000": {
+  "private_school_pct": 0.1141,
+  "homeschool_pct": 0.0127
+ },
+ "00200000": {
+  "private_school_pct": 0.0023,
+  "homeschool_pct": 0.0175
+ },
+ "00230000": {
+  "private_school_pct": 0.0434,
+  "homeschool_pct": 0.0081
+ },
+ "00240000": {
+  "private_school_pct": 0.0107,
+  "homeschool_pct": 0.0368
+ },
+ "00250000": {
+  "private_school_pct": 0.0324,
+  "homeschool_pct": 0.0328
+ },
+ "00260000": {
+  "private_school_pct": 0.0848,
+  "homeschool_pct": 0.0036
+ },
+ "00270000": {
+  "private_school_pct": 0.0093,
+  "homeschool_pct": 0.0263
+ },
+ "00300000": {
+  "private_school_pct": 0.1047,
+  "homeschool_pct": 0.0155
+ },
+ "00310000": {
+  "private_school_pct": 0.0065,
+  "homeschool_pct": 0.0135
+ },
+ "00350000": {
+  "private_school_pct": 0.1242,
+  "homeschool_pct": 0.0043
+ },
+ "00360000": {
+  "private_school_pct": 0.0288,
+  "homeschool_pct": 0.0354
+ },
+ "00380000": {
+  "private_school_pct": 0.1004,
+  "homeschool_pct": 0.0156
+ },
+ "00400000": {
+  "private_school_pct": 0.0979,
+  "homeschool_pct": 0.0026
+ },
+ "00410000": {
+  "private_school_pct": 0.311,
+  "homeschool_pct": 0.0488
+ },
+ "00430000": {
+  "private_school_pct": 0.0112,
+  "homeschool_pct": 0.0743
+ },
+ "00440000": {
+  "private_school_pct": 0.0375,
+  "homeschool_pct": 0.0072
+ },
+ "00450000": {
+  "private_school_pct": 0.0091,
+  "homeschool_pct": 0.0523
+ },
+ "00460000": {
+  "private_school_pct": 0.18,
+  "homeschool_pct": 0.0042
+ },
+ "00480000": {
+  "private_school_pct": 0.0794,
+  "homeschool_pct": 0.0102
+ },
+ "00490000": {
+  "private_school_pct": 0.1521,
+  "homeschool_pct": 0.0045
+ },
+ "00500000": {
+  "private_school_pct": 0.1028,
+  "homeschool_pct": 0.0046
+ },
+ "00510000": {
+  "private_school_pct": 0.067,
+  "homeschool_pct": 0.0157
+ },
+ "00520000": {
+  "private_school_pct": 0.0306,
+  "homeschool_pct": 0.0232
+ },
+ "00560000": {
+  "private_school_pct": 0.0191,
+  "homeschool_pct": 0.0084
+ },
+ "00570000": {
+  "private_school_pct": 0.0066,
+  "homeschool_pct": 0.0014
+ },
+ "00610000": {
+  "private_school_pct": 0.0571,
+  "homeschool_pct": 0.0195
+ },
+ "00630000": {
+  "private_school_pct": 0.0081,
+  "homeschool_pct": 0.0283
+ },
+ "00640000": {
+  "private_school_pct": 0.0397,
+  "homeschool_pct": 0.0213
+ },
+ "00650000": {
+  "private_school_pct": 0.1626,
+  "homeschool_pct": 0.0069
+ },
+ "00670000": {
+  "private_school_pct": 0.15,
+  "homeschool_pct": 0.0098
+ },
+ "00680000": {
+  "private_school_pct": 0.1229,
+  "homeschool_pct": 0.0559
+ },
+ "00710000": {
+  "private_school_pct": 0.1108,
+  "homeschool_pct": 0.0114
+ },
+ "00720000": {
+  "private_school_pct": 0.0818,
+  "homeschool_pct": 0.029
+ },
+ "00730000": {
+  "private_school_pct": 0.0889,
+  "homeschool_pct": 0.0127
+ },
+ "00740000": {
+  "private_school_pct": 0.1699,
+  "homeschool_pct": 0.0421
+ },
+ "00770000": {
+  "private_school_pct": 0.1557,
+  "homeschool_pct": 0.1698
+ },
+ "00790000": {
+  "private_school_pct": 0.0884,
+  "homeschool_pct": 0.0156
+ },
+ "00820000": {
+  "private_school_pct": 0.0495,
+  "homeschool_pct": 0.0061
+ },
+ "00830000": {
+  "private_school_pct": 0.0403,
+  "homeschool_pct": 0.0244
+ },
+ "00870000": {
+  "private_school_pct": 0.0318,
+  "homeschool_pct": 0.0165
+ },
+ "00850000": {
+  "private_school_pct": 0.1899,
+  "homeschool_pct": 0.1772
+ },
+ "00860000": {
+  "private_school_pct": 0.0694,
+  "homeschool_pct": 0.0193
+ },
+ "00880000": {
+  "private_school_pct": 0.0215,
+  "homeschool_pct": 0.0093
+ },
+ "00890000": {
+  "private_school_pct": 0.0339,
+  "homeschool_pct": 0.0081
+ },
+ "00910000": {
+  "private_school_pct": 0.0196,
+  "homeschool_pct": 0.0441
+ },
+ "00930000": {
+  "private_school_pct": 0.0277,
+  "homeschool_pct": 0.0026
+ },
+ "00940000": {
+  "private_school_pct": 0.0544,
+  "homeschool_pct": 0.0148
+ },
+ "00950000": {
+  "private_school_pct": 0.0289,
+  "homeschool_pct": 0.014
+ },
+ "00960000": {
+  "private_school_pct": 0.037,
+  "homeschool_pct": 0.0147
+ },
+ "00970000": {
+  "private_school_pct": 0.0515,
+  "homeschool_pct": 0.026
+ },
+ "00980000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.0556
+ },
+ "00990000": {
+  "private_school_pct": 0.0807,
+  "homeschool_pct": 0.0062
+ },
+ "01000000": {
+  "private_school_pct": 0.025,
+  "homeschool_pct": 0.0118
+ },
+ "01010000": {
+  "private_school_pct": 0.0296,
+  "homeschool_pct": 0.0105
+ },
+ "01030000": {
+  "private_school_pct": 0.0101,
+  "homeschool_pct": 0.004
+ },
+ "01050000": {
+  "private_school_pct": 0.0922,
+  "homeschool_pct": 0.0171
+ },
+ "01070000": {
+  "private_school_pct": 0.0317,
+  "homeschool_pct": 0.0217
+ },
+ "01100000": {
+  "private_school_pct": 0.0494,
+  "homeschool_pct": 0.0153
+ },
+ "01110000": {
+  "private_school_pct": 0.0701,
+  "homeschool_pct": 0.0533
+ },
+ "01140000": {
+  "private_school_pct": 0.0819,
+  "homeschool_pct": 0.0485
+ },
+ "01170000": {
+  "private_school_pct": 0.0994,
+  "homeschool_pct": 0.0216
+ },
+ "01180000": {
+  "private_school_pct": 0.0153,
+  "homeschool_pct": 0.0199
+ },
+ "01210000": {
+  "private_school_pct": 0.0256,
+  "homeschool_pct": 0.0385
+ },
+ "01220000": {
+  "private_school_pct": 0.0586,
+  "homeschool_pct": 0.009
+ },
+ "01250000": {
+  "private_school_pct": 0.0709,
+  "homeschool_pct": 0.0106
+ },
+ "01270000": {
+  "private_school_pct": 0.0169,
+  "homeschool_pct": 0.0225
+ },
+ "01280000": {
+  "private_school_pct": 0.0923,
+  "homeschool_pct": 0.0168
+ },
+ "01310000": {
+  "private_school_pct": 0.1951,
+  "homeschool_pct": 0.0032
+ },
+ "01330000": {
+  "private_school_pct": 0.0735,
+  "homeschool_pct": 0.0063
+ },
+ "01350000": {
+  "private_school_pct": 0.0176,
+  "homeschool_pct": 0.0647
+ },
+ "01360000": {
+  "private_school_pct": 0.0595,
+  "homeschool_pct": 0.0075
+ },
+ "01370000": {
+  "private_school_pct": 0.0436,
+  "homeschool_pct": 0.008
+ },
+ "01380000": {
+  "private_school_pct": 0.0276,
+  "homeschool_pct": 0.0164
+ },
+ "01390000": {
+  "private_school_pct": 0.0248,
+  "homeschool_pct": 0.003
+ },
+ "01410000": {
+  "private_school_pct": 0.0424,
+  "homeschool_pct": 0.0207
+ },
+ "01420000": {
+  "private_school_pct": 0.0804,
+  "homeschool_pct": 0.0188
+ },
+ "01440000": {
+  "private_school_pct": 0.0623,
+  "homeschool_pct": 0.0168
+ },
+ "01450000": {
+  "private_school_pct": 0.0565,
+  "homeschool_pct": 0.016
+ },
+ "01490000": {
+  "private_school_pct": 0.0648,
+  "homeschool_pct": 0.0023
+ },
+ "01500000": {
+  "private_school_pct": 0.0623,
+  "homeschool_pct": 0.0142
+ },
+ "01510000": {
+  "private_school_pct": 0.0391,
+  "homeschool_pct": 0.0287
+ },
+ "01520000": {
+  "private_school_pct": 0.0383,
+  "homeschool_pct": 0.0081
+ },
+ "01530000": {
+  "private_school_pct": 0.0623,
+  "homeschool_pct": 0.0214
+ },
+ "01540000": {
+  "private_school_pct": 0.0685,
+  "homeschool_pct": 0.0548
+ },
+ "01550000": {
+  "private_school_pct": 0.094,
+  "homeschool_pct": 0.0024
+ },
+ "01570000": {
+  "private_school_pct": 0.1581,
+  "homeschool_pct": 0.0152
+ },
+ "01580000": {
+  "private_school_pct": 0.0199,
+  "homeschool_pct": 0.0145
+ },
+ "01590000": {
+  "private_school_pct": 0.0752,
+  "homeschool_pct": 0.0068
+ },
+ "01600000": {
+  "private_school_pct": 0.0435,
+  "homeschool_pct": 0.009
+ },
+ "01610000": {
+  "private_school_pct": 0.0761,
+  "homeschool_pct": 0.0179
+ },
+ "01620000": {
+  "private_school_pct": 0.0345,
+  "homeschool_pct": 0.0422
+ },
+ "01630000": {
+  "private_school_pct": 0.0483,
+  "homeschool_pct": 0.0033
+ },
+ "01640000": {
+  "private_school_pct": 0.105,
+  "homeschool_pct": 0.0103
+ },
+ "01650000": {
+  "private_school_pct": 0.059,
+  "homeschool_pct": 0.0104
+ },
+ "01670000": {
+  "private_school_pct": 0.0732,
+  "homeschool_pct": 0.0109
+ },
+ "01680000": {
+  "private_school_pct": 0.1736,
+  "homeschool_pct": 0.0078
+ },
+ "01690000": {
+  "private_school_pct": 0.1076,
+  "homeschool_pct": 0.021
+ },
+ "01700000": {
+  "private_school_pct": 0.0343,
+  "homeschool_pct": 0.0118
+ },
+ "01710000": {
+  "private_school_pct": 0.042,
+  "homeschool_pct": 0.015
+ },
+ "01720000": {
+  "private_school_pct": 0.0301,
+  "homeschool_pct": 0.0192
+ },
+ "01730000": {
+  "private_school_pct": 0.0879,
+  "homeschool_pct": 0.0173
+ },
+ "01740000": {
+  "private_school_pct": 0.0322,
+  "homeschool_pct": 0.015
+ },
+ "01750000": {
+  "private_school_pct": 0.0789,
+  "homeschool_pct": 0.0061
+ },
+ "01760000": {
+  "private_school_pct": 0.0653,
+  "homeschool_pct": 0.0138
+ },
+ "01770000": {
+  "private_school_pct": 0.0372,
+  "homeschool_pct": 0.0102
+ },
+ "01780000": {
+  "private_school_pct": 0.0916,
+  "homeschool_pct": 0.008
+ },
+ "01810000": {
+  "private_school_pct": 0.106,
+  "homeschool_pct": 0.0083
+ },
+ "01820000": {
+  "private_school_pct": 0.0132,
+  "homeschool_pct": 0.0417
+ },
+ "01840000": {
+  "private_school_pct": 0.0938,
+  "homeschool_pct": 0.0054
+ },
+ "01850000": {
+  "private_school_pct": 0.0295,
+  "homeschool_pct": 0.0111
+ },
+ "01860000": {
+  "private_school_pct": 0.0365,
+  "homeschool_pct": 0.0155
+ },
+ "01870000": {
+  "private_school_pct": 0.0906,
+  "homeschool_pct": 0.0094
+ },
+ "01890000": {
+  "private_school_pct": 0.1722,
+  "homeschool_pct": 0.0032
+ },
+ "01910000": {
+  "private_school_pct": 0.0087,
+  "homeschool_pct": 0.0492
+ },
+ "01960000": {
+  "private_school_pct": 0.1151,
+  "homeschool_pct": 0.0
+ },
+ "01970000": {
+  "private_school_pct": 0.1205,
+  "homeschool_pct": 0.0103
+ },
+ "01980000": {
+  "private_school_pct": 0.054,
+  "homeschool_pct": 0.005
+ },
+ "01990000": {
+  "private_school_pct": 0.1757,
+  "homeschool_pct": 0.0016
+ },
+ "02010000": {
+  "private_school_pct": 0.0508,
+  "homeschool_pct": 0.0148
+ },
+ "02040000": {
+  "private_school_pct": 0.1118,
+  "homeschool_pct": 0.0067
+ },
+ "02070000": {
+  "private_school_pct": 0.2274,
+  "homeschool_pct": 0.0025
+ },
+ "02080000": {
+  "private_school_pct": 0.0787,
+  "homeschool_pct": 0.0262
+ },
+ "02090000": {
+  "private_school_pct": 0.0272,
+  "homeschool_pct": 0.0382
+ },
+ "02110000": {
+  "private_school_pct": 0.1077,
+  "homeschool_pct": 0.0087
+ },
+ "02120000": {
+  "private_school_pct": 0.1,
+  "homeschool_pct": 0.0158
+ },
+ "02150000": {
+  "private_school_pct": 0.0053,
+  "homeschool_pct": 0.0053
+ },
+ "02170000": {
+  "private_school_pct": 0.0642,
+  "homeschool_pct": 0.0055
+ },
+ "02100000": {
+  "private_school_pct": 0.0843,
+  "homeschool_pct": 0.0171
+ },
+ "02130000": {
+  "private_school_pct": 0.0694,
+  "homeschool_pct": 0.0173
+ },
+ "02140000": {
+  "private_school_pct": 0.0906,
+  "homeschool_pct": 0.0227
+ },
+ "02180000": {
+  "private_school_pct": 0.0377,
+  "homeschool_pct": 0.0287
+ },
+ "02190000": {
+  "private_school_pct": 0.08,
+  "homeschool_pct": 0.0077
+ },
+ "02200000": {
+  "private_school_pct": 0.1023,
+  "homeschool_pct": 0.0133
+ },
+ "02210000": {
+  "private_school_pct": 0.024,
+  "homeschool_pct": 0.0154
+ },
+ "02230000": {
+  "private_school_pct": 0.0033,
+  "homeschool_pct": 0.0
+ },
+ "02240000": {
+  "private_school_pct": 0.3385,
+  "homeschool_pct": 0.1385
+ },
+ "02260000": {
+  "private_school_pct": 0.0632,
+  "homeschool_pct": 0.0405
+ },
+ "02270000": {
+  "private_school_pct": 0.0272,
+  "homeschool_pct": 0.0425
+ },
+ "02290000": {
+  "private_school_pct": 0.1118,
+  "homeschool_pct": 0.0069
+ },
+ "02300000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.0
+ },
+ "02310000": {
+  "private_school_pct": 0.0509,
+  "homeschool_pct": 0.0227
+ },
+ "02340000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.0197
+ },
+ "02360000": {
+  "private_school_pct": 0.0303,
+  "homeschool_pct": 0.0214
+ },
+ "02380000": {
+  "private_school_pct": 0.0598,
+  "homeschool_pct": 0.0244
+ },
+ "02390000": {
+  "private_school_pct": 0.0383,
+  "homeschool_pct": 0.0192
+ },
+ "02400000": {
+  "private_school_pct": 0.0152,
+  "homeschool_pct": 0.0195
+ },
+ "02420000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.36
+ },
+ "02430000": {
+  "private_school_pct": 0.0791,
+  "homeschool_pct": 0.005
+ },
+ "02440000": {
+  "private_school_pct": 0.1214,
+  "homeschool_pct": 0.003
+ },
+ "02460000": {
+  "private_school_pct": 0.0761,
+  "homeschool_pct": 0.0048
+ },
+ "02480000": {
+  "private_school_pct": 0.0614,
+  "homeschool_pct": 0.0026
+ },
+ "02490000": {
+  "private_school_pct": 0.0567,
+  "homeschool_pct": 0.0071
+ },
+ "02500000": {
+  "private_school_pct": 0.046,
+  "homeschool_pct": 0.0208
+ },
+ "02510000": {
+  "private_school_pct": 0.0541,
+  "homeschool_pct": 0.0134
+ },
+ "02520000": {
+  "private_school_pct": 0.0954,
+  "homeschool_pct": 0.017
+ },
+ "02530000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.0
+ },
+ "02580000": {
+  "private_school_pct": 0.0829,
+  "homeschool_pct": 0.0106
+ },
+ "02610000": {
+  "private_school_pct": 0.0725,
+  "homeschool_pct": 0.0308
+ },
+ "02620000": {
+  "private_school_pct": 0.1391,
+  "homeschool_pct": 0.018
+ },
+ "02630000": {
+  "private_school_pct": 0.0179,
+  "homeschool_pct": 0.0179
+ },
+ "02640000": {
+  "private_school_pct": 0.0802,
+  "homeschool_pct": 0.0125
+ },
+ "02650000": {
+  "private_school_pct": 0.0999,
+  "homeschool_pct": 0.0209
+ },
+ "02660000": {
+  "private_school_pct": 0.0494,
+  "homeschool_pct": 0.0067
+ },
+ "02690000": {
+  "private_school_pct": 0.0911,
+  "homeschool_pct": 0.0041
+ },
+ "02710000": {
+  "private_school_pct": 0.0302,
+  "homeschool_pct": 0.0071
+ },
+ "02720000": {
+  "private_school_pct": 0.0343,
+  "homeschool_pct": 0.0588
+ },
+ "02730000": {
+  "private_school_pct": 0.0331,
+  "homeschool_pct": 0.0184
+ },
+ "02740000": {
+  "private_school_pct": 0.0797,
+  "homeschool_pct": 0.007
+ },
+ "02780000": {
+  "private_school_pct": 0.0486,
+  "homeschool_pct": 0.0276
+ },
+ "02750000": {
+  "private_school_pct": 0.0356,
+  "homeschool_pct": 0.0333
+ },
+ "02760000": {
+  "private_school_pct": 0.1143,
+  "homeschool_pct": 0.0097
+ },
+ "02770000": {
+  "private_school_pct": 0.045,
+  "homeschool_pct": 0.0231
+ },
+ "02810000": {
+  "private_school_pct": 0.0279,
+  "homeschool_pct": 0.0101
+ },
+ "02840000": {
+  "private_school_pct": 0.102,
+  "homeschool_pct": 0.0101
+ },
+ "02850000": {
+  "private_school_pct": 0.0627,
+  "homeschool_pct": 0.012
+ },
+ "02880000": {
+  "private_school_pct": 0.0491,
+  "homeschool_pct": 0.0044
+ },
+ "02890000": {
+  "private_school_pct": 0.0541,
+  "homeschool_pct": 0.0405
+ },
+ "02900000": {
+  "private_school_pct": 0.0617,
+  "homeschool_pct": 0.0437
+ },
+ "02910000": {
+  "private_school_pct": 0.0979,
+  "homeschool_pct": 0.0036
+ },
+ "02920000": {
+  "private_school_pct": 0.0594,
+  "homeschool_pct": 0.0127
+ },
+ "02930000": {
+  "private_school_pct": 0.0133,
+  "homeschool_pct": 0.016
+ },
+ "02950000": {
+  "private_school_pct": 0.0738,
+  "homeschool_pct": 0.0044
+ },
+ "02960000": {
+  "private_school_pct": 0.0339,
+  "homeschool_pct": 0.0071
+ },
+ "02980000": {
+  "private_school_pct": 0.1203,
+  "homeschool_pct": 0.0212
+ },
+ "03000000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.0071
+ },
+ "03010000": {
+  "private_school_pct": 0.0655,
+  "homeschool_pct": 0.0136
+ },
+ "03040000": {
+  "private_school_pct": 0.1045,
+  "homeschool_pct": 0.0352
+ },
+ "03050000": {
+  "private_school_pct": 0.0473,
+  "homeschool_pct": 0.0095
+ },
+ "03060000": {
+  "private_school_pct": 0.0113,
+  "homeschool_pct": 0.094
+ },
+ "03070000": {
+  "private_school_pct": 0.0856,
+  "homeschool_pct": 0.0066
+ },
+ "03080000": {
+  "private_school_pct": 0.1187,
+  "homeschool_pct": 0.0041
+ },
+ "03090000": {
+  "private_school_pct": 0.0123,
+  "homeschool_pct": 0.0311
+ },
+ "03100000": {
+  "private_school_pct": 0.0427,
+  "homeschool_pct": 0.0214
+ },
+ "03140000": {
+  "private_school_pct": 0.132,
+  "homeschool_pct": 0.0099
+ },
+ "03150000": {
+  "private_school_pct": 0.0784,
+  "homeschool_pct": 0.0049
+ },
+ "03160000": {
+  "private_school_pct": 0.0904,
+  "homeschool_pct": 0.0266
+ },
+ "03170000": {
+  "private_school_pct": 0.2638,
+  "homeschool_pct": 0.0042
+ },
+ "03180000": {
+  "private_school_pct": 0.0769,
+  "homeschool_pct": 0.2051
+ },
+ "03220000": {
+  "private_school_pct": 0.0609,
+  "homeschool_pct": 0.0255
+ },
+ "03230000": {
+  "private_school_pct": 0.004,
+  "homeschool_pct": 0.0121
+ },
+ "03320000": {
+  "private_school_pct": 0.041,
+  "homeschool_pct": 0.0386
+ },
+ "03210000": {
+  "private_school_pct": 0.0524,
+  "homeschool_pct": 0.0047
+ },
+ "03250000": {
+  "private_school_pct": 0.0902,
+  "homeschool_pct": 0.0378
+ },
+ "03260000": {
+  "private_school_pct": 0.0218,
+  "homeschool_pct": 0.0105
+ },
+ "03270000": {
+  "private_school_pct": 0.0643,
+  "homeschool_pct": 0.0292
+ },
+ "03300000": {
+  "private_school_pct": 0.1925,
+  "homeschool_pct": 0.0039
+ },
+ "03310000": {
+  "private_school_pct": 0.106,
+  "homeschool_pct": 0.0267
+ },
+ "03350000": {
+  "private_school_pct": 0.0547,
+  "homeschool_pct": 0.003
+ },
+ "03360000": {
+  "private_school_pct": 0.0917,
+  "homeschool_pct": 0.0089
+ },
+ "03370000": {
+  "private_school_pct": 0.0412,
+  "homeschool_pct": 0.0235
+ },
+ "03400000": {
+  "private_school_pct": 0.1098,
+  "homeschool_pct": 0.0235
+ },
+ "03420000": {
+  "private_school_pct": 0.0716,
+  "homeschool_pct": 0.0101
+ },
+ "03430000": {
+  "private_school_pct": 0.0301,
+  "homeschool_pct": 0.0719
+ },
+ "03440000": {
+  "private_school_pct": 0.1058,
+  "homeschool_pct": 0.0019
+ },
+ "03460000": {
+  "private_school_pct": 0.0414,
+  "homeschool_pct": 0.0066
+ },
+ "03470000": {
+  "private_school_pct": 0.0581,
+  "homeschool_pct": 0.009
+ },
+ "03480000": {
+  "private_school_pct": 0.0487,
+  "homeschool_pct": 0.0114
+ },
+ "03490000": {
+  "private_school_pct": 0.0,
+  "homeschool_pct": 0.0566
+ },
+ "03500000": {
+  "private_school_pct": 0.0905,
+  "homeschool_pct": 0.0222
+ }
+}

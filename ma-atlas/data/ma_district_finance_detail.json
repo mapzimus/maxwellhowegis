@@ -1,0 +1,1962 @@
+{
+ "01140000": {
+  "per_pupil_operations": 2109.0,
+  "per_pupil_instr_leadership": 1299.0,
+  "per_pupil_instr_materials": 864.0,
+  "per_pupil_guidance": 598.0,
+  "per_pupil_insurance_other": 5321.0
+ },
+ "02920000": {
+  "per_pupil_operations": 1414.0,
+  "per_pupil_instr_leadership": 955.0,
+  "per_pupil_instr_materials": 514.0,
+  "per_pupil_guidance": 634.0,
+  "per_pupil_insurance_other": 3433.0
+ },
+ "00250000": {
+  "per_pupil_operations": 1634.0,
+  "per_pupil_instr_leadership": 1306.0,
+  "per_pupil_instr_materials": 372.0,
+  "per_pupil_guidance": 788.0,
+  "per_pupil_insurance_other": 3993.0
+ },
+ "03350000": {
+  "per_pupil_operations": 2842.0,
+  "per_pupil_instr_leadership": 1781.0,
+  "per_pupil_instr_materials": 435.0,
+  "per_pupil_guidance": 762.0,
+  "per_pupil_insurance_other": 3092.0
+ },
+ "07650000": {
+  "per_pupil_operations": 3683.0,
+  "per_pupil_instr_leadership": 1945.0,
+  "per_pupil_instr_materials": 527.0,
+  "per_pupil_guidance": 1197.0,
+  "per_pupil_insurance_other": 6202.0
+ },
+ "07670000": {
+  "per_pupil_operations": 1518.0,
+  "per_pupil_instr_leadership": 1410.0,
+  "per_pupil_instr_materials": 948.0,
+  "per_pupil_guidance": 624.0,
+  "per_pupil_insurance_other": 3083.0
+ },
+ "01620000": {
+  "per_pupil_operations": 1472.0,
+  "per_pupil_instr_leadership": 1080.0,
+  "per_pupil_instr_materials": 441.0,
+  "per_pupil_guidance": 1001.0,
+  "per_pupil_insurance_other": 2082.0
+ },
+ "00310000": {
+  "per_pupil_operations": 1252.0,
+  "per_pupil_instr_leadership": 1014.0,
+  "per_pupil_instr_materials": 329.0,
+  "per_pupil_guidance": 585.0,
+  "per_pupil_insurance_other": 3516.0
+ },
+ "02230000": {
+  "per_pupil_operations": 1130.0,
+  "per_pupil_instr_leadership": 1111.0,
+  "per_pupil_instr_materials": 1469.0,
+  "per_pupil_guidance": 671.0,
+  "per_pupil_insurance_other": 3454.0
+ },
+ "03140000": {
+  "per_pupil_operations": 1574.0,
+  "per_pupil_instr_leadership": 1761.0,
+  "per_pupil_instr_materials": 482.0,
+  "per_pupil_guidance": 1177.0,
+  "per_pupil_insurance_other": 4196.0
+ },
+ "00990000": {
+  "per_pupil_operations": 2029.0,
+  "per_pupil_instr_leadership": 1407.0,
+  "per_pupil_instr_materials": 440.0,
+  "per_pupil_guidance": 906.0,
+  "per_pupil_insurance_other": 3541.0
+ },
+ "01490000": {
+  "per_pupil_operations": 2741.0,
+  "per_pupil_instr_leadership": 2457.0,
+  "per_pupil_instr_materials": 1302.0,
+  "per_pupil_guidance": 608.0,
+  "per_pupil_insurance_other": 3164.0
+ },
+ "02010000": {
+  "per_pupil_operations": 2382.0,
+  "per_pupil_instr_leadership": 1286.0,
+  "per_pupil_instr_materials": 852.0,
+  "per_pupil_guidance": 1584.0,
+  "per_pupil_insurance_other": 3945.0
+ },
+ "01700000": {
+  "per_pupil_operations": 2670.0,
+  "per_pupil_instr_leadership": 1797.0,
+  "per_pupil_instr_materials": 449.0,
+  "per_pupil_guidance": 653.0,
+  "per_pupil_insurance_other": 2805.0
+ },
+ "01220000": {
+  "per_pupil_operations": 1241.0,
+  "per_pupil_instr_leadership": 1368.0,
+  "per_pupil_instr_materials": 186.0,
+  "per_pupil_guidance": 637.0,
+  "per_pupil_insurance_other": 1124.0
+ },
+ "00630000": {
+  "per_pupil_operations": 813.0,
+  "per_pupil_instr_leadership": 1096.0,
+  "per_pupil_instr_materials": 215.0,
+  "per_pupil_guidance": 268.0,
+  "per_pupil_insurance_other": 2996.0
+ },
+ "00730000": {
+  "per_pupil_operations": 2307.0,
+  "per_pupil_instr_leadership": 1512.0,
+  "per_pupil_instr_materials": 544.0,
+  "per_pupil_guidance": 1085.0,
+  "per_pupil_insurance_other": 3415.0
+ },
+ "00860000": {
+  "per_pupil_operations": 1117.0,
+  "per_pupil_instr_leadership": 1203.0,
+  "per_pupil_instr_materials": 472.0,
+  "per_pupil_guidance": 595.0,
+  "per_pupil_insurance_other": 3297.0
+ },
+ "02120000": {
+  "per_pupil_operations": 1004.0,
+  "per_pupil_instr_leadership": 991.0,
+  "per_pupil_instr_materials": 397.0,
+  "per_pupil_guidance": 333.0,
+  "per_pupil_insurance_other": 3193.0
+ },
+ "03010000": {
+  "per_pupil_operations": 1386.0,
+  "per_pupil_instr_leadership": 1138.0,
+  "per_pupil_instr_materials": 218.0,
+  "per_pupil_guidance": 632.0,
+  "per_pupil_insurance_other": 3361.0
+ },
+ "03000000": {
+  "per_pupil_operations": 3596.0,
+  "per_pupil_instr_leadership": 4141.0,
+  "per_pupil_instr_materials": 1102.0,
+  "per_pupil_guidance": 2024.0,
+  "per_pupil_insurance_other": 11366.0
+ },
+ "02500000": {
+  "per_pupil_operations": 1650.0,
+  "per_pupil_instr_leadership": 1085.0,
+  "per_pupil_instr_materials": 476.0,
+  "per_pupil_guidance": 909.0,
+  "per_pupil_insurance_other": 2267.0
+ },
+ "03150000": {
+  "per_pupil_operations": 1128.0,
+  "per_pupil_instr_leadership": 1719.0,
+  "per_pupil_instr_materials": 441.0,
+  "per_pupil_guidance": 1013.0,
+  "per_pupil_insurance_other": 2861.0
+ },
+ "03050000": {
+  "per_pupil_operations": 1913.0,
+  "per_pupil_instr_leadership": 1255.0,
+  "per_pupil_instr_materials": 536.0,
+  "per_pupil_guidance": 710.0,
+  "per_pupil_insurance_other": 3400.0
+ },
+ "06220000": {
+  "per_pupil_operations": 1583.0,
+  "per_pupil_instr_leadership": 723.0,
+  "per_pupil_instr_materials": 365.0,
+  "per_pupil_guidance": 579.0,
+  "per_pupil_insurance_other": 3001.0
+ },
+ "01330000": {
+  "per_pupil_operations": 1309.0,
+  "per_pupil_instr_leadership": 804.0,
+  "per_pupil_instr_materials": 457.0,
+  "per_pupil_guidance": 660.0,
+  "per_pupil_insurance_other": 3423.0
+ },
+ "06500000": {
+  "per_pupil_operations": 1595.0,
+  "per_pupil_instr_leadership": 976.0,
+  "per_pupil_instr_materials": 377.0,
+  "per_pupil_guidance": 543.0,
+  "per_pupil_insurance_other": 2655.0
+ },
+ "01310000": {
+  "per_pupil_operations": 1535.0,
+  "per_pupil_instr_leadership": 1301.0,
+  "per_pupil_instr_materials": 596.0,
+  "per_pupil_guidance": 1024.0,
+  "per_pupil_insurance_other": 2556.0
+ },
+ "03160000": {
+  "per_pupil_operations": 1329.0,
+  "per_pupil_instr_leadership": 1579.0,
+  "per_pupil_instr_materials": 860.0,
+  "per_pupil_guidance": 859.0,
+  "per_pupil_insurance_other": 4008.0
+ },
+ "00770000": {
+  "per_pupil_operations": 1902.0,
+  "per_pupil_instr_leadership": 1173.0,
+  "per_pupil_instr_materials": 412.0,
+  "per_pupil_guidance": 663.0,
+  "per_pupil_insurance_other": 2565.0
+ },
+ "00740000": {
+  "per_pupil_operations": 2270.0,
+  "per_pupil_instr_leadership": 1464.0,
+  "per_pupil_instr_materials": 1064.0,
+  "per_pupil_guidance": 502.0,
+  "per_pupil_insurance_other": 3780.0
+ },
+ "02190000": {
+  "per_pupil_operations": 1762.0,
+  "per_pupil_instr_leadership": 1277.0,
+  "per_pupil_instr_materials": 453.0,
+  "per_pupil_guidance": 663.0,
+  "per_pupil_insurance_other": 3204.0
+ },
+ "02840000": {
+  "per_pupil_operations": 1624.0,
+  "per_pupil_instr_leadership": 1124.0,
+  "per_pupil_instr_materials": 679.0,
+  "per_pupil_guidance": 600.0,
+  "per_pupil_insurance_other": 4817.0
+ },
+ "00640000": {
+  "per_pupil_operations": 1397.0,
+  "per_pupil_instr_leadership": 944.0,
+  "per_pupil_instr_materials": 857.0,
+  "per_pupil_guidance": 756.0,
+  "per_pupil_insurance_other": 2914.0
+ },
+ "01570000": {
+  "per_pupil_operations": 2871.0,
+  "per_pupil_instr_leadership": 2995.0,
+  "per_pupil_instr_materials": 1166.0,
+  "per_pupil_guidance": 828.0,
+  "per_pupil_insurance_other": 4201.0
+ },
+ "01280000": {
+  "per_pupil_operations": 1345.0,
+  "per_pupil_instr_leadership": 981.0,
+  "per_pupil_instr_materials": 790.0,
+  "per_pupil_guidance": 813.0,
+  "per_pupil_insurance_other": 3057.0
+ },
+ "02950000": {
+  "per_pupil_operations": 2206.0,
+  "per_pupil_instr_leadership": 1016.0,
+  "per_pupil_instr_materials": 714.0,
+  "per_pupil_guidance": 485.0,
+  "per_pupil_insurance_other": 3636.0
+ },
+ "01500000": {
+  "per_pupil_operations": 1840.0,
+  "per_pupil_instr_leadership": 1240.0,
+  "per_pupil_instr_materials": 621.0,
+  "per_pupil_guidance": 702.0,
+  "per_pupil_insurance_other": 4749.0
+ },
+ "03480000": {
+  "per_pupil_operations": 1241.0,
+  "per_pupil_instr_leadership": 1144.0,
+  "per_pupil_instr_materials": 2028.0,
+  "per_pupil_guidance": 622.0,
+  "per_pupil_insurance_other": 3821.0
+ },
+ "07150000": {
+  "per_pupil_operations": 1764.0,
+  "per_pupil_instr_leadership": 1128.0,
+  "per_pupil_instr_materials": 583.0,
+  "per_pupil_guidance": 825.0,
+  "per_pupil_insurance_other": 4023.0
+ },
+ "00170000": {
+  "per_pupil_operations": 1159.0,
+  "per_pupil_instr_leadership": 963.0,
+  "per_pupil_instr_materials": 365.0,
+  "per_pupil_guidance": 624.0,
+  "per_pupil_insurance_other": 3606.0
+ },
+ "00460000": {
+  "per_pupil_operations": 2127.0,
+  "per_pupil_instr_leadership": 1574.0,
+  "per_pupil_instr_materials": 662.0,
+  "per_pupil_guidance": 935.0,
+  "per_pupil_insurance_other": 5118.0
+ },
+ "02640000": {
+  "per_pupil_operations": 1438.0,
+  "per_pupil_instr_leadership": 1527.0,
+  "per_pupil_instr_materials": 370.0,
+  "per_pupil_guidance": 710.0,
+  "per_pupil_insurance_other": 2927.0
+ },
+ "03400000": {
+  "per_pupil_operations": 2862.0,
+  "per_pupil_instr_leadership": 1917.0,
+  "per_pupil_instr_materials": 771.0,
+  "per_pupil_guidance": 738.0,
+  "per_pupil_insurance_other": 4401.0
+ },
+ "00910000": {
+  "per_pupil_operations": 3154.0,
+  "per_pupil_instr_leadership": 2028.0,
+  "per_pupil_instr_materials": 663.0,
+  "per_pupil_guidance": 592.0,
+  "per_pupil_insurance_other": 8391.0
+ },
+ "00680000": {
+  "per_pupil_operations": 2617.0,
+  "per_pupil_instr_leadership": 1644.0,
+  "per_pupil_instr_materials": 1173.0,
+  "per_pupil_guidance": 441.0,
+  "per_pupil_insurance_other": 3648.0
+ },
+ "02740000": {
+  "per_pupil_operations": 2463.0,
+  "per_pupil_instr_leadership": 2294.0,
+  "per_pupil_instr_materials": 824.0,
+  "per_pupil_guidance": 1484.0,
+  "per_pupil_insurance_other": 4160.0
+ },
+ "01840000": {
+  "per_pupil_operations": 1500.0,
+  "per_pupil_instr_leadership": 1702.0,
+  "per_pupil_instr_materials": 752.0,
+  "per_pupil_guidance": 543.0,
+  "per_pupil_insurance_other": 3436.0
+ },
+ "01360000": {
+  "per_pupil_operations": 1237.0,
+  "per_pupil_instr_leadership": 1464.0,
+  "per_pupil_instr_materials": 220.0,
+  "per_pupil_guidance": 723.0,
+  "per_pupil_insurance_other": 1739.0
+ },
+ "01890000": {
+  "per_pupil_operations": 1461.0,
+  "per_pupil_instr_leadership": 1918.0,
+  "per_pupil_instr_materials": 335.0,
+  "per_pupil_guidance": 501.0,
+  "per_pupil_insurance_other": 2905.0
+ },
+ "01970000": {
+  "per_pupil_operations": 2960.0,
+  "per_pupil_instr_leadership": 1796.0,
+  "per_pupil_instr_materials": 847.0,
+  "per_pupil_guidance": 1193.0,
+  "per_pupil_insurance_other": 6653.0
+ },
+ "02720000": {
+  "per_pupil_operations": 2754.0,
+  "per_pupil_instr_leadership": 2103.0,
+  "per_pupil_instr_materials": 385.0,
+  "per_pupil_guidance": 826.0,
+  "per_pupil_insurance_other": 3501.0
+ },
+ "01410000": {
+  "per_pupil_operations": 1704.0,
+  "per_pupil_instr_leadership": 1348.0,
+  "per_pupil_instr_materials": 620.0,
+  "per_pupil_guidance": 1127.0,
+  "per_pupil_insurance_other": 2634.0
+ },
+ "02460000": {
+  "per_pupil_operations": 1583.0,
+  "per_pupil_instr_leadership": 1506.0,
+  "per_pupil_instr_materials": 746.0,
+  "per_pupil_guidance": 850.0,
+  "per_pupil_insurance_other": 2939.0
+ },
+ "00490000": {
+  "per_pupil_operations": 2610.0,
+  "per_pupil_instr_leadership": 2373.0,
+  "per_pupil_instr_materials": 1766.0,
+  "per_pupil_guidance": 1466.0,
+  "per_pupil_insurance_other": 7190.0
+ },
+ "07350000": {
+  "per_pupil_operations": 1616.0,
+  "per_pupil_instr_leadership": 1021.0,
+  "per_pupil_instr_materials": 295.0,
+  "per_pupil_guidance": 550.0,
+  "per_pupil_insurance_other": 3888.0
+ },
+ "03230000": {
+  "per_pupil_operations": 1204.0,
+  "per_pupil_instr_leadership": 857.0,
+  "per_pupil_instr_materials": 309.0,
+  "per_pupil_guidance": 467.0,
+  "per_pupil_insurance_other": 2886.0
+ },
+ "01180000": {
+  "per_pupil_operations": 1294.0,
+  "per_pupil_instr_leadership": 595.0,
+  "per_pupil_instr_materials": 318.0,
+  "per_pupil_guidance": 514.0,
+  "per_pupil_insurance_other": 1806.0
+ },
+ "01540000": {
+  "per_pupil_operations": 2158.0,
+  "per_pupil_instr_leadership": 1663.0,
+  "per_pupil_instr_materials": 403.0,
+  "per_pupil_guidance": 666.0,
+  "per_pupil_insurance_other": 3793.0
+ },
+ "03430000": {
+  "per_pupil_operations": 1845.0,
+  "per_pupil_instr_leadership": 1237.0,
+  "per_pupil_instr_materials": 1618.0,
+  "per_pupil_guidance": 471.0,
+  "per_pupil_insurance_other": 2356.0
+ },
+ "02750000": {
+  "per_pupil_operations": 1027.0,
+  "per_pupil_instr_leadership": 932.0,
+  "per_pupil_instr_materials": 150.0,
+  "per_pupil_guidance": 312.0,
+  "per_pupil_insurance_other": 2759.0
+ },
+ "01590000": {
+  "per_pupil_operations": 1613.0,
+  "per_pupil_instr_leadership": 931.0,
+  "per_pupil_instr_materials": 355.0,
+  "per_pupil_guidance": 715.0,
+  "per_pupil_insurance_other": 2768.0
+ },
+ "00570000": {
+  "per_pupil_operations": 2511.0,
+  "per_pupil_instr_leadership": 1868.0,
+  "per_pupil_instr_materials": 700.0,
+  "per_pupil_guidance": 830.0,
+  "per_pupil_insurance_other": 3590.0
+ },
+ "02150000": {
+  "per_pupil_operations": 2502.0,
+  "per_pupil_instr_leadership": 1503.0,
+  "per_pupil_instr_materials": 368.0,
+  "per_pupil_guidance": 873.0,
+  "per_pupil_insurance_other": 4156.0
+ },
+ "02200000": {
+  "per_pupil_operations": 1774.0,
+  "per_pupil_instr_leadership": 1158.0,
+  "per_pupil_instr_materials": 548.0,
+  "per_pupil_guidance": 753.0,
+  "per_pupil_insurance_other": 3419.0
+ },
+ "01810000": {
+  "per_pupil_operations": 1379.0,
+  "per_pupil_instr_leadership": 1064.0,
+  "per_pupil_instr_materials": 487.0,
+  "per_pupil_guidance": 746.0,
+  "per_pupil_insurance_other": 2535.0
+ },
+ "06580000": {
+  "per_pupil_operations": 1459.0,
+  "per_pupil_instr_leadership": 800.0,
+  "per_pupil_instr_materials": 353.0,
+  "per_pupil_guidance": 604.0,
+  "per_pupil_insurance_other": 2722.0
+ },
+ "01010000": {
+  "per_pupil_operations": 1733.0,
+  "per_pupil_instr_leadership": 1642.0,
+  "per_pupil_instr_materials": 270.0,
+  "per_pupil_guidance": 751.0,
+  "per_pupil_insurance_other": 2709.0
+ },
+ "00100000": {
+  "per_pupil_operations": 1455.0,
+  "per_pupil_instr_leadership": 1189.0,
+  "per_pupil_instr_materials": 406.0,
+  "per_pupil_guidance": 873.0,
+  "per_pupil_insurance_other": 3333.0
+ },
+ "01770000": {
+  "per_pupil_operations": 1707.0,
+  "per_pupil_instr_leadership": 1074.0,
+  "per_pupil_instr_materials": 698.0,
+  "per_pupil_guidance": 874.0,
+  "per_pupil_insurance_other": 3187.0
+ },
+ "02850000": {
+  "per_pupil_operations": 1142.0,
+  "per_pupil_instr_leadership": 1665.0,
+  "per_pupil_instr_materials": 335.0,
+  "per_pupil_guidance": 658.0,
+  "per_pupil_insurance_other": 3121.0
+ },
+ "02530000": {
+  "per_pupil_operations": 2108.0,
+  "per_pupil_instr_leadership": 3203.0,
+  "per_pupil_instr_materials": 1048.0,
+  "per_pupil_guidance": 229.0,
+  "per_pupil_insurance_other": 7749.0
+ },
+ "07120000": {
+  "per_pupil_operations": 2772.0,
+  "per_pupil_instr_leadership": 1631.0,
+  "per_pupil_instr_materials": 638.0,
+  "per_pupil_guidance": 825.0,
+  "per_pupil_insurance_other": 4844.0
+ },
+ "00890000": {
+  "per_pupil_operations": 2586.0,
+  "per_pupil_instr_leadership": 1798.0,
+  "per_pupil_instr_materials": 911.0,
+  "per_pupil_guidance": 1127.0,
+  "per_pupil_insurance_other": 7347.0
+ },
+ "06620000": {
+  "per_pupil_operations": 6295.0,
+  "per_pupil_instr_leadership": 2256.0,
+  "per_pupil_instr_materials": 1188.0,
+  "per_pupil_guidance": 721.0,
+  "per_pupil_insurance_other": 14141.0
+ },
+ "07500000": {
+  "per_pupil_operations": 2990.0,
+  "per_pupil_instr_leadership": 1998.0,
+  "per_pupil_instr_materials": 566.0,
+  "per_pupil_guidance": 1085.0,
+  "per_pupil_insurance_other": 5580.0
+ },
+ "00510000": {
+  "per_pupil_operations": 2040.0,
+  "per_pupil_instr_leadership": 1434.0,
+  "per_pupil_instr_materials": 686.0,
+  "per_pupil_guidance": 561.0,
+  "per_pupil_insurance_other": 2478.0
+ },
+ "01380000": {
+  "per_pupil_operations": 1626.0,
+  "per_pupil_instr_leadership": 1116.0,
+  "per_pupil_instr_materials": 513.0,
+  "per_pupil_guidance": 777.0,
+  "per_pupil_insurance_other": 3525.0
+ },
+ "02890000": {
+  "per_pupil_operations": 3037.0,
+  "per_pupil_instr_leadership": 1563.0,
+  "per_pupil_instr_materials": 1681.0,
+  "per_pupil_guidance": 882.0,
+  "per_pupil_insurance_other": 4031.0
+ },
+ "01780000": {
+  "per_pupil_operations": 1217.0,
+  "per_pupil_instr_leadership": 1126.0,
+  "per_pupil_instr_materials": 239.0,
+  "per_pupil_guidance": 531.0,
+  "per_pupil_insurance_other": 2848.0
+ },
+ "01860000": {
+  "per_pupil_operations": 1935.0,
+  "per_pupil_instr_leadership": 1055.0,
+  "per_pupil_instr_materials": 824.0,
+  "per_pupil_guidance": 560.0,
+  "per_pupil_insurance_other": 3527.0
+ },
+ "01990000": {
+  "per_pupil_operations": 2072.0,
+  "per_pupil_instr_leadership": 1955.0,
+  "per_pupil_instr_materials": 892.0,
+  "per_pupil_guidance": 768.0,
+  "per_pupil_insurance_other": 4443.0
+ },
+ "02480000": {
+  "per_pupil_operations": 1390.0,
+  "per_pupil_instr_leadership": 1261.0,
+  "per_pupil_instr_materials": 949.0,
+  "per_pupil_guidance": 612.0,
+  "per_pupil_insurance_other": 3296.0
+ },
+ "06250000": {
+  "per_pupil_operations": 1286.0,
+  "per_pupil_instr_leadership": 727.0,
+  "per_pupil_instr_materials": 263.0,
+  "per_pupil_guidance": 629.0,
+  "per_pupil_insurance_other": 2719.0
+ },
+ "01600000": {
+  "per_pupil_operations": 1561.0,
+  "per_pupil_instr_leadership": 1689.0,
+  "per_pupil_instr_materials": 1368.0,
+  "per_pupil_guidance": 662.0,
+  "per_pupil_insurance_other": 3588.0
+ },
+ "02430000": {
+  "per_pupil_operations": 1462.0,
+  "per_pupil_instr_leadership": 1083.0,
+  "per_pupil_instr_materials": 592.0,
+  "per_pupil_guidance": 637.0,
+  "per_pupil_insurance_other": 5295.0
+ },
+ "00610000": {
+  "per_pupil_operations": 2141.0,
+  "per_pupil_instr_leadership": 1120.0,
+  "per_pupil_instr_materials": 1732.0,
+  "per_pupil_guidance": 491.0,
+  "per_pupil_insurance_other": 2971.0
+ },
+ "07250000": {
+  "per_pupil_operations": 2017.0,
+  "per_pupil_instr_leadership": 1037.0,
+  "per_pupil_instr_materials": 541.0,
+  "per_pupil_guidance": 884.0,
+  "per_pupil_insurance_other": 3449.0
+ },
+ "00500000": {
+  "per_pupil_operations": 941.0,
+  "per_pupil_instr_leadership": 1408.0,
+  "per_pupil_instr_materials": 379.0,
+  "per_pupil_guidance": 995.0,
+  "per_pupil_insurance_other": 3703.0
+ },
+ "03470000": {
+  "per_pupil_operations": 1768.0,
+  "per_pupil_instr_leadership": 1333.0,
+  "per_pupil_instr_materials": 300.0,
+  "per_pupil_guidance": 811.0,
+  "per_pupil_insurance_other": 4460.0
+ },
+ "02090000": {
+  "per_pupil_operations": 2293.0,
+  "per_pupil_instr_leadership": 1940.0,
+  "per_pupil_instr_materials": 1414.0,
+  "per_pupil_guidance": 603.0,
+  "per_pupil_insurance_other": 5823.0
+ },
+ "01270000": {
+  "per_pupil_operations": 1670.0,
+  "per_pupil_instr_leadership": 1372.0,
+  "per_pupil_instr_materials": 1945.0,
+  "per_pupil_guidance": 715.0,
+  "per_pupil_insurance_other": 2916.0
+ },
+ "02380000": {
+  "per_pupil_operations": 1776.0,
+  "per_pupil_instr_leadership": 967.0,
+  "per_pupil_instr_materials": 568.0,
+  "per_pupil_guidance": 196.0,
+  "per_pupil_insurance_other": 3638.0
+ },
+ "03420000": {
+  "per_pupil_operations": 2211.0,
+  "per_pupil_instr_leadership": 1274.0,
+  "per_pupil_instr_materials": 227.0,
+  "per_pupil_guidance": 1243.0,
+  "per_pupil_insurance_other": 5029.0
+ },
+ "02510000": {
+  "per_pupil_operations": 1484.0,
+  "per_pupil_instr_leadership": 1745.0,
+  "per_pupil_instr_materials": 458.0,
+  "per_pupil_guidance": 733.0,
+  "per_pupil_insurance_other": 4704.0
+ },
+ "02960000": {
+  "per_pupil_operations": 2123.0,
+  "per_pupil_instr_leadership": 2288.0,
+  "per_pupil_instr_materials": 932.0,
+  "per_pupil_guidance": 1114.0,
+  "per_pupil_insurance_other": 10489.0
+ },
+ "03460000": {
+  "per_pupil_operations": 1280.0,
+  "per_pupil_instr_leadership": 1041.0,
+  "per_pupil_instr_materials": 1255.0,
+  "per_pupil_guidance": 533.0,
+  "per_pupil_insurance_other": 3284.0
+ },
+ "07700000": {
+  "per_pupil_operations": 2180.0,
+  "per_pupil_instr_leadership": 871.0,
+  "per_pupil_instr_materials": 540.0,
+  "per_pupil_guidance": 644.0,
+  "per_pupil_insurance_other": 2605.0
+ },
+ "07730000": {
+  "per_pupil_operations": 1739.0,
+  "per_pupil_instr_leadership": 1111.0,
+  "per_pupil_instr_materials": 679.0,
+  "per_pupil_guidance": 771.0,
+  "per_pupil_insurance_other": 4113.0
+ },
+ "01850000": {
+  "per_pupil_operations": 1192.0,
+  "per_pupil_instr_leadership": 1439.0,
+  "per_pupil_instr_materials": 722.0,
+  "per_pupil_guidance": 808.0,
+  "per_pupil_insurance_other": 3694.0
+ },
+ "02080000": {
+  "per_pupil_operations": 1112.0,
+  "per_pupil_instr_leadership": 1153.0,
+  "per_pupil_instr_materials": 298.0,
+  "per_pupil_guidance": 521.0,
+  "per_pupil_insurance_other": 2621.0
+ },
+ "02300000": {
+  "per_pupil_operations": 1614.0,
+  "per_pupil_instr_leadership": 1885.0,
+  "per_pupil_instr_materials": 201.0,
+  "per_pupil_guidance": 1855.0,
+  "per_pupil_insurance_other": 4670.0
+ },
+ "02610000": {
+  "per_pupil_operations": 3214.0,
+  "per_pupil_instr_leadership": 1529.0,
+  "per_pupil_instr_materials": 745.0,
+  "per_pupil_guidance": 765.0,
+  "per_pupil_insurance_other": 5634.0
+ },
+ "07750000": {
+  "per_pupil_operations": 1348.0,
+  "per_pupil_instr_leadership": 944.0,
+  "per_pupil_instr_materials": 277.0,
+  "per_pupil_guidance": 336.0,
+  "per_pupil_insurance_other": 3207.0
+ },
+ "03300000": {
+  "per_pupil_operations": 2968.0,
+  "per_pupil_instr_leadership": 1546.0,
+  "per_pupil_instr_materials": 1163.0,
+  "per_pupil_guidance": 1412.0,
+  "per_pupil_insurance_other": 5625.0
+ },
+ "01680000": {
+  "per_pupil_operations": 1908.0,
+  "per_pupil_instr_leadership": 899.0,
+  "per_pupil_instr_materials": 580.0,
+  "per_pupil_guidance": 894.0,
+  "per_pupil_insurance_other": 3771.0
+ },
+ "03250000": {
+  "per_pupil_operations": 1263.0,
+  "per_pupil_instr_leadership": 1202.0,
+  "per_pupil_instr_materials": 1153.0,
+  "per_pupil_guidance": 717.0,
+  "per_pupil_insurance_other": 3348.0
+ },
+ "00710000": {
+  "per_pupil_operations": 1728.0,
+  "per_pupil_instr_leadership": 1025.0,
+  "per_pupil_instr_materials": 518.0,
+  "per_pupil_guidance": 747.0,
+  "per_pupil_insurance_other": 2747.0
+ },
+ "02140000": {
+  "per_pupil_operations": 1458.0,
+  "per_pupil_instr_leadership": 1238.0,
+  "per_pupil_instr_materials": 282.0,
+  "per_pupil_guidance": 655.0,
+  "per_pupil_insurance_other": 2843.0
+ },
+ "02100000": {
+  "per_pupil_operations": 1736.0,
+  "per_pupil_instr_leadership": 1085.0,
+  "per_pupil_instr_materials": 826.0,
+  "per_pupil_guidance": 968.0,
+  "per_pupil_insurance_other": 3687.0
+ },
+ "00480000": {
+  "per_pupil_operations": 1747.0,
+  "per_pupil_instr_leadership": 1780.0,
+  "per_pupil_instr_materials": 1242.0,
+  "per_pupil_guidance": 843.0,
+  "per_pupil_insurance_other": 4174.0
+ },
+ "00670000": {
+  "per_pupil_operations": 2086.0,
+  "per_pupil_instr_leadership": 2132.0,
+  "per_pupil_instr_materials": 806.0,
+  "per_pupil_guidance": 784.0,
+  "per_pupil_insurance_other": 3229.0
+ },
+ "00090000": {
+  "per_pupil_operations": 2048.0,
+  "per_pupil_instr_leadership": 1482.0,
+  "per_pupil_instr_materials": 504.0,
+  "per_pupil_guidance": 780.0,
+  "per_pupil_insurance_other": 3306.0
+ },
+ "00440000": {
+  "per_pupil_operations": 1639.0,
+  "per_pupil_instr_leadership": 1801.0,
+  "per_pupil_instr_materials": 267.0,
+  "per_pupil_guidance": 739.0,
+  "per_pupil_insurance_other": 3307.0
+ },
+ "00050000": {
+  "per_pupil_operations": 1569.0,
+  "per_pupil_instr_leadership": 1067.0,
+  "per_pupil_instr_materials": 650.0,
+  "per_pupil_guidance": 868.0,
+  "per_pupil_insurance_other": 4008.0
+ },
+ "02980000": {
+  "per_pupil_operations": 1682.0,
+  "per_pupil_instr_leadership": 1173.0,
+  "per_pupil_instr_materials": 1191.0,
+  "per_pupil_guidance": 577.0,
+  "per_pupil_insurance_other": 2875.0
+ },
+ "00380000": {
+  "per_pupil_operations": 2011.0,
+  "per_pupil_instr_leadership": 1357.0,
+  "per_pupil_instr_materials": 753.0,
+  "per_pupil_guidance": 422.0,
+  "per_pupil_insurance_other": 3619.0
+ },
+ "01670000": {
+  "per_pupil_operations": 1376.0,
+  "per_pupil_instr_leadership": 1247.0,
+  "per_pupil_instr_materials": 487.0,
+  "per_pupil_guidance": 830.0,
+  "per_pupil_insurance_other": 4052.0
+ },
+ "06180000": {
+  "per_pupil_operations": 2559.0,
+  "per_pupil_instr_leadership": 1833.0,
+  "per_pupil_instr_materials": 1189.0,
+  "per_pupil_guidance": 1179.0,
+  "per_pupil_insurance_other": 5692.0
+ },
+ "06200000": {
+  "per_pupil_operations": 1595.0,
+  "per_pupil_instr_leadership": 1306.0,
+  "per_pupil_instr_materials": 625.0,
+  "per_pupil_guidance": 730.0,
+  "per_pupil_insurance_other": 2979.0
+ },
+ "00560000": {
+  "per_pupil_operations": 1373.0,
+  "per_pupil_instr_leadership": 1033.0,
+  "per_pupil_instr_materials": 897.0,
+  "per_pupil_guidance": 559.0,
+  "per_pupil_insurance_other": 2819.0
+ },
+ "00260000": {
+  "per_pupil_operations": 1887.0,
+  "per_pupil_instr_leadership": 1079.0,
+  "per_pupil_instr_materials": 390.0,
+  "per_pupil_guidance": 674.0,
+  "per_pupil_insurance_other": 2986.0
+ },
+ "00820000": {
+  "per_pupil_operations": 1463.0,
+  "per_pupil_instr_leadership": 1349.0,
+  "per_pupil_instr_materials": 561.0,
+  "per_pupil_guidance": 749.0,
+  "per_pupil_insurance_other": 3082.0
+ },
+ "00980000": {
+  "per_pupil_operations": 1794.0,
+  "per_pupil_instr_leadership": 2004.0,
+  "per_pupil_instr_materials": 999.0,
+  "per_pupil_guidance": 377.0,
+  "per_pupil_insurance_other": 4031.0
+ },
+ "02620000": {
+  "per_pupil_operations": 985.0,
+  "per_pupil_instr_leadership": 1102.0,
+  "per_pupil_instr_materials": 380.0,
+  "per_pupil_guidance": 562.0,
+  "per_pupil_insurance_other": 4140.0
+ },
+ "00070000": {
+  "per_pupil_operations": 2081.0,
+  "per_pupil_instr_leadership": 1357.0,
+  "per_pupil_instr_materials": 435.0,
+  "per_pupil_guidance": 685.0,
+  "per_pupil_insurance_other": 4840.0
+ },
+ "07280000": {
+  "per_pupil_operations": 1978.0,
+  "per_pupil_instr_leadership": 2612.0,
+  "per_pupil_instr_materials": 387.0,
+  "per_pupil_guidance": 932.0,
+  "per_pupil_insurance_other": 5649.0
+ },
+ "00970000": {
+  "per_pupil_operations": 1781.0,
+  "per_pupil_instr_leadership": 1247.0,
+  "per_pupil_instr_materials": 833.0,
+  "per_pupil_guidance": 698.0,
+  "per_pupil_insurance_other": 3508.0
+ },
+ "01550000": {
+  "per_pupil_operations": 1775.0,
+  "per_pupil_instr_leadership": 2123.0,
+  "per_pupil_instr_materials": 421.0,
+  "per_pupil_guidance": 1191.0,
+  "per_pupil_insurance_other": 4363.0
+ },
+ "01100000": {
+  "per_pupil_operations": 1522.0,
+  "per_pupil_instr_leadership": 1508.0,
+  "per_pupil_instr_materials": 91.0,
+  "per_pupil_guidance": 349.0,
+  "per_pupil_insurance_other": 2051.0
+ },
+ "00950000": {
+  "per_pupil_operations": 3238.0,
+  "per_pupil_instr_leadership": 2111.0,
+  "per_pupil_instr_materials": 988.0,
+  "per_pupil_guidance": 1082.0,
+  "per_pupil_insurance_other": 4259.0
+ },
+ "01370000": {
+  "per_pupil_operations": 1672.0,
+  "per_pupil_instr_leadership": 1997.0,
+  "per_pupil_instr_materials": 2709.0,
+  "per_pupil_guidance": 752.0,
+  "per_pupil_insurance_other": 3209.0
+ },
+ "01870000": {
+  "per_pupil_operations": 1466.0,
+  "per_pupil_instr_leadership": 1139.0,
+  "per_pupil_instr_materials": 345.0,
+  "per_pupil_guidance": 681.0,
+  "per_pupil_insurance_other": 3351.0
+ },
+ "06030000": {
+  "per_pupil_operations": 2258.0,
+  "per_pupil_instr_leadership": 1822.0,
+  "per_pupil_instr_materials": 801.0,
+  "per_pupil_guidance": 622.0,
+  "per_pupil_insurance_other": 4401.0
+ },
+ "02730000": {
+  "per_pupil_operations": 1386.0,
+  "per_pupil_instr_leadership": 1258.0,
+  "per_pupil_instr_materials": 567.0,
+  "per_pupil_guidance": 465.0,
+  "per_pupil_insurance_other": 4274.0
+ },
+ "02760000": {
+  "per_pupil_operations": 1753.0,
+  "per_pupil_instr_leadership": 1501.0,
+  "per_pupil_instr_materials": 357.0,
+  "per_pupil_guidance": 499.0,
+  "per_pupil_insurance_other": 4143.0
+ },
+ "01390000": {
+  "per_pupil_operations": 1218.0,
+  "per_pupil_instr_leadership": 830.0,
+  "per_pupil_instr_materials": 390.0,
+  "per_pupil_guidance": 636.0,
+  "per_pupil_insurance_other": 2370.0
+ },
+ "01820000": {
+  "per_pupil_operations": 1479.0,
+  "per_pupil_instr_leadership": 981.0,
+  "per_pupil_instr_materials": 495.0,
+  "per_pupil_guidance": 629.0,
+  "per_pupil_insurance_other": 3819.0
+ },
+ "03060000": {
+  "per_pupil_operations": 9241.0,
+  "per_pupil_instr_leadership": 1548.0,
+  "per_pupil_instr_materials": 1418.0,
+  "per_pupil_guidance": 647.0,
+  "per_pupil_insurance_other": 4385.0
+ },
+ "07170000": {
+  "per_pupil_operations": 1941.0,
+  "per_pupil_instr_leadership": 1580.0,
+  "per_pupil_instr_materials": 636.0,
+  "per_pupil_guidance": 1023.0,
+  "per_pupil_insurance_other": 5914.0
+ },
+ "01210000": {
+  "per_pupil_operations": 891.0,
+  "per_pupil_instr_leadership": 2314.0,
+  "per_pupil_instr_materials": 759.0,
+  "per_pupil_guidance": 649.0,
+  "per_pupil_insurance_other": 311.0
+ },
+ "00830000": {
+  "per_pupil_operations": 1689.0,
+  "per_pupil_instr_leadership": 881.0,
+  "per_pupil_instr_materials": 593.0,
+  "per_pupil_guidance": 993.0,
+  "per_pupil_insurance_other": 2475.0
+ },
+ "01050000": {
+  "per_pupil_operations": 1522.0,
+  "per_pupil_instr_leadership": 1773.0,
+  "per_pupil_instr_materials": 360.0,
+  "per_pupil_guidance": 674.0,
+  "per_pupil_insurance_other": 3133.0
+ },
+ "02180000": {
+  "per_pupil_operations": 1154.0,
+  "per_pupil_instr_leadership": 972.0,
+  "per_pupil_instr_materials": 447.0,
+  "per_pupil_guidance": 818.0,
+  "per_pupil_insurance_other": 3406.0
+ },
+ "02270000": {
+  "per_pupil_operations": 1726.0,
+  "per_pupil_instr_leadership": 1883.0,
+  "per_pupil_instr_materials": 767.0,
+  "per_pupil_guidance": 786.0,
+  "per_pupil_insurance_other": 4735.0
+ },
+ "07450000": {
+  "per_pupil_operations": 1664.0,
+  "per_pupil_instr_leadership": 1077.0,
+  "per_pupil_instr_materials": 537.0,
+  "per_pupil_guidance": 548.0,
+  "per_pupil_insurance_other": 3535.0
+ },
+ "01690000": {
+  "per_pupil_operations": 1675.0,
+  "per_pupil_instr_leadership": 1262.0,
+  "per_pupil_instr_materials": 605.0,
+  "per_pupil_guidance": 1363.0,
+  "per_pupil_insurance_other": 4032.0
+ },
+ "03210000": {
+  "per_pupil_operations": 1681.0,
+  "per_pupil_instr_leadership": 1402.0,
+  "per_pupil_instr_materials": 552.0,
+  "per_pupil_guidance": 726.0,
+  "per_pupil_insurance_other": 3210.0
+ },
+ "01250000": {
+  "per_pupil_operations": 1826.0,
+  "per_pupil_instr_leadership": 1552.0,
+  "per_pupil_instr_materials": 728.0,
+  "per_pupil_guidance": 747.0,
+  "per_pupil_insurance_other": 3806.0
+ },
+ "06750000": {
+  "per_pupil_operations": 2517.0,
+  "per_pupil_instr_leadership": 1194.0,
+  "per_pupil_instr_materials": 773.0,
+  "per_pupil_guidance": 872.0,
+  "per_pupil_insurance_other": 3214.0
+ },
+ "01530000": {
+  "per_pupil_operations": 1582.0,
+  "per_pupil_instr_leadership": 1082.0,
+  "per_pupil_instr_materials": 1100.0,
+  "per_pupil_guidance": 573.0,
+  "per_pupil_insurance_other": 3173.0
+ },
+ "00940000": {
+  "per_pupil_operations": 1574.0,
+  "per_pupil_instr_leadership": 1071.0,
+  "per_pupil_instr_materials": 690.0,
+  "per_pupil_guidance": 731.0,
+  "per_pupil_insurance_other": 2715.0
+ },
+ "01350000": {
+  "per_pupil_operations": 1133.0,
+  "per_pupil_instr_leadership": 877.0,
+  "per_pupil_instr_materials": 559.0,
+  "per_pupil_guidance": 432.0,
+  "per_pupil_insurance_other": 1517.0
+ },
+ "00350000": {
+  "per_pupil_operations": 2653.0,
+  "per_pupil_instr_leadership": 2851.0,
+  "per_pupil_instr_materials": 2016.0,
+  "per_pupil_guidance": 524.0,
+  "per_pupil_insurance_other": 4970.0
+ },
+ "00850000": {
+  "per_pupil_operations": 2721.0,
+  "per_pupil_instr_leadership": 2016.0,
+  "per_pupil_instr_materials": 775.0,
+  "per_pupil_guidance": 1107.0,
+  "per_pupil_insurance_other": 4963.0
+ },
+ "02650000": {
+  "per_pupil_operations": 1389.0,
+  "per_pupil_instr_leadership": 875.0,
+  "per_pupil_instr_materials": 217.0,
+  "per_pupil_guidance": 713.0,
+  "per_pupil_insurance_other": 3178.0
+ },
+ "02360000": {
+  "per_pupil_operations": 1918.0,
+  "per_pupil_instr_leadership": 1548.0,
+  "per_pupil_instr_materials": 1167.0,
+  "per_pupil_guidance": 927.0,
+  "per_pupil_insurance_other": 5332.0
+ },
+ "06850000": {
+  "per_pupil_operations": 4040.0,
+  "per_pupil_instr_leadership": 2576.0,
+  "per_pupil_instr_materials": 721.0,
+  "per_pupil_guidance": 1136.0,
+  "per_pupil_insurance_other": 7098.0
+ },
+ "02660000": {
+  "per_pupil_operations": 1061.0,
+  "per_pupil_instr_leadership": 1139.0,
+  "per_pupil_instr_materials": 614.0,
+  "per_pupil_guidance": 736.0,
+  "per_pupil_insurance_other": 4489.0
+ },
+ "02210000": {
+  "per_pupil_operations": 2405.0,
+  "per_pupil_instr_leadership": 1827.0,
+  "per_pupil_instr_materials": 544.0,
+  "per_pupil_guidance": 447.0,
+  "per_pupil_insurance_other": 6743.0
+ },
+ "00030000": {
+  "per_pupil_operations": 1858.0,
+  "per_pupil_instr_leadership": 993.0,
+  "per_pupil_instr_materials": 625.0,
+  "per_pupil_guidance": 512.0,
+  "per_pupil_insurance_other": 1933.0
+ },
+ "02240000": {
+  "per_pupil_operations": 2454.0,
+  "per_pupil_instr_leadership": 2396.0,
+  "per_pupil_instr_materials": 1421.0,
+  "per_pupil_guidance": 1333.0,
+  "per_pupil_insurance_other": 8166.0
+ },
+ "03260000": {
+  "per_pupil_operations": 1423.0,
+  "per_pupil_instr_leadership": 1376.0,
+  "per_pupil_instr_materials": 209.0,
+  "per_pupil_guidance": 671.0,
+  "per_pupil_insurance_other": 3077.0
+ },
+ "01720000": {
+  "per_pupil_operations": 2619.0,
+  "per_pupil_instr_leadership": 1153.0,
+  "per_pupil_instr_materials": 1355.0,
+  "per_pupil_guidance": 959.0,
+  "per_pupil_insurance_other": 4385.0
+ },
+ "02040000": {
+  "per_pupil_operations": 1847.0,
+  "per_pupil_instr_leadership": 920.0,
+  "per_pupil_instr_materials": 284.0,
+  "per_pupil_guidance": 882.0,
+  "per_pupil_insurance_other": 4118.0
+ },
+ "01610000": {
+  "per_pupil_operations": 1477.0,
+  "per_pupil_instr_leadership": 1659.0,
+  "per_pupil_instr_materials": 410.0,
+  "per_pupil_guidance": 529.0,
+  "per_pupil_insurance_other": 4166.0
+ },
+ "06320000": {
+  "per_pupil_operations": 1425.0,
+  "per_pupil_instr_leadership": 1428.0,
+  "per_pupil_instr_materials": 758.0,
+  "per_pupil_guidance": 816.0,
+  "per_pupil_insurance_other": 3416.0
+ },
+ "00520000": {
+  "per_pupil_operations": 1371.0,
+  "per_pupil_instr_leadership": 1017.0,
+  "per_pupil_instr_materials": 444.0,
+  "per_pupil_guidance": 718.0,
+  "per_pupil_insurance_other": 4078.0
+ },
+ "03500000": {
+  "per_pupil_operations": 1515.0,
+  "per_pupil_instr_leadership": 926.0,
+  "per_pupil_instr_materials": 588.0,
+  "per_pupil_guidance": 585.0,
+  "per_pupil_insurance_other": 3105.0
+ },
+ "00930000": {
+  "per_pupil_operations": 1449.0,
+  "per_pupil_instr_leadership": 1005.0,
+  "per_pupil_instr_materials": 2149.0,
+  "per_pupil_guidance": 477.0,
+  "per_pupil_insurance_other": 2316.0
+ },
+ "00240000": {
+  "per_pupil_operations": 1385.0,
+  "per_pupil_instr_leadership": 817.0,
+  "per_pupil_instr_materials": 494.0,
+  "per_pupil_guidance": 651.0,
+  "per_pupil_insurance_other": 2871.0
+ },
+ "03040000": {
+  "per_pupil_operations": 1738.0,
+  "per_pupil_instr_leadership": 907.0,
+  "per_pupil_instr_materials": 357.0,
+  "per_pupil_guidance": 793.0,
+  "per_pupil_insurance_other": 3228.0
+ },
+ "03090000": {
+  "per_pupil_operations": 1731.0,
+  "per_pupil_instr_leadership": 1144.0,
+  "per_pupil_instr_materials": 773.0,
+  "per_pupil_guidance": 425.0,
+  "per_pupil_insurance_other": 3706.0
+ },
+ "00200000": {
+  "per_pupil_operations": 1626.0,
+  "per_pupil_instr_leadership": 1791.0,
+  "per_pupil_instr_materials": 713.0,
+  "per_pupil_guidance": 920.0,
+  "per_pupil_insurance_other": 3259.0
+ },
+ "02130000": {
+  "per_pupil_operations": 1329.0,
+  "per_pupil_instr_leadership": 1259.0,
+  "per_pupil_instr_materials": 445.0,
+  "per_pupil_guidance": 698.0,
+  "per_pupil_insurance_other": 3225.0
+ },
+ "00230000": {
+  "per_pupil_operations": 1312.0,
+  "per_pupil_instr_leadership": 1455.0,
+  "per_pupil_instr_materials": 571.0,
+  "per_pupil_guidance": 1149.0,
+  "per_pupil_insurance_other": 3351.0
+ },
+ "00720000": {
+  "per_pupil_operations": 1232.0,
+  "per_pupil_instr_leadership": 1249.0,
+  "per_pupil_instr_materials": 629.0,
+  "per_pupil_guidance": 742.0,
+  "per_pupil_insurance_other": 2288.0
+ },
+ "02340000": {
+  "per_pupil_operations": 1900.0,
+  "per_pupil_instr_leadership": 1475.0,
+  "per_pupil_instr_materials": 736.0,
+  "per_pupil_guidance": 506.0,
+  "per_pupil_insurance_other": 2844.0
+ },
+ "02310000": {
+  "per_pupil_operations": 1345.0,
+  "per_pupil_instr_leadership": 1511.0,
+  "per_pupil_instr_materials": 288.0,
+  "per_pupil_guidance": 603.0,
+  "per_pupil_insurance_other": 3496.0
+ },
+ "02440000": {
+  "per_pupil_operations": 2480.0,
+  "per_pupil_instr_leadership": 1911.0,
+  "per_pupil_instr_materials": 565.0,
+  "per_pupil_guidance": 818.0,
+  "per_pupil_insurance_other": 4322.0
+ },
+ "00650000": {
+  "per_pupil_operations": 1932.0,
+  "per_pupil_instr_leadership": 1323.0,
+  "per_pupil_instr_materials": 472.0,
+  "per_pupil_guidance": 956.0,
+  "per_pupil_insurance_other": 4220.0
+ },
+ "02880000": {
+  "per_pupil_operations": 1296.0,
+  "per_pupil_instr_leadership": 1938.0,
+  "per_pupil_instr_materials": 584.0,
+  "per_pupil_guidance": 841.0,
+  "per_pupil_insurance_other": 3330.0
+ },
+ "03070000": {
+  "per_pupil_operations": 1136.0,
+  "per_pupil_instr_leadership": 1469.0,
+  "per_pupil_instr_materials": 315.0,
+  "per_pupil_guidance": 729.0,
+  "per_pupil_insurance_other": 3042.0
+ },
+ "03100000": {
+  "per_pupil_operations": 1775.0,
+  "per_pupil_instr_leadership": 1719.0,
+  "per_pupil_instr_materials": 558.0,
+  "per_pupil_guidance": 910.0,
+  "per_pupil_insurance_other": 5294.0
+ },
+ "06650000": {
+  "per_pupil_operations": 1109.0,
+  "per_pupil_instr_leadership": 1056.0,
+  "per_pupil_instr_materials": 419.0,
+  "per_pupil_guidance": 592.0,
+  "per_pupil_insurance_other": 2623.0
+ },
+ "01760000": {
+  "per_pupil_operations": 1614.0,
+  "per_pupil_instr_leadership": 1666.0,
+  "per_pupil_instr_materials": 1335.0,
+  "per_pupil_guidance": 678.0,
+  "per_pupil_insurance_other": 3773.0
+ },
+ "07100000": {
+  "per_pupil_operations": 2015.0,
+  "per_pupil_instr_leadership": 1123.0,
+  "per_pupil_instr_materials": 728.0,
+  "per_pupil_guidance": 560.0,
+  "per_pupil_insurance_other": 3434.0
+ },
+ "07780000": {
+  "per_pupil_operations": 1611.0,
+  "per_pupil_instr_leadership": 1314.0,
+  "per_pupil_instr_materials": 874.0,
+  "per_pupil_guidance": 600.0,
+  "per_pupil_insurance_other": 3136.0
+ },
+ "02770000": {
+  "per_pupil_operations": 1777.0,
+  "per_pupil_instr_leadership": 2888.0,
+  "per_pupil_instr_materials": 920.0,
+  "per_pupil_guidance": 951.0,
+  "per_pupil_insurance_other": 3107.0
+ },
+ "00080000": {
+  "per_pupil_operations": 2248.0,
+  "per_pupil_instr_leadership": 2498.0,
+  "per_pupil_instr_materials": 628.0,
+  "per_pupil_guidance": 1053.0,
+  "per_pupil_insurance_other": 6605.0
+ },
+ "01980000": {
+  "per_pupil_operations": 1540.0,
+  "per_pupil_instr_leadership": 1015.0,
+  "per_pupil_instr_materials": 476.0,
+  "per_pupil_guidance": 899.0,
+  "per_pupil_insurance_other": 2911.0
+ },
+ "01740000": {
+  "per_pupil_operations": 1780.0,
+  "per_pupil_instr_leadership": 1428.0,
+  "per_pupil_instr_materials": 750.0,
+  "per_pupil_guidance": 1215.0,
+  "per_pupil_insurance_other": 4421.0
+ },
+ "06350000": {
+  "per_pupil_operations": 1740.0,
+  "per_pupil_instr_leadership": 1013.0,
+  "per_pupil_instr_materials": 713.0,
+  "per_pupil_guidance": 853.0,
+  "per_pupil_insurance_other": 4022.0
+ },
+ "06450000": {
+  "per_pupil_operations": 1706.0,
+  "per_pupil_instr_leadership": 1453.0,
+  "per_pupil_instr_materials": 1259.0,
+  "per_pupil_guidance": 692.0,
+  "per_pupil_insurance_other": 3724.0
+ },
+ "03080000": {
+  "per_pupil_operations": 1835.0,
+  "per_pupil_instr_leadership": 1385.0,
+  "per_pupil_instr_materials": 303.0,
+  "per_pupil_guidance": 1032.0,
+  "per_pupil_insurance_other": 6218.0
+ },
+ "02290000": {
+  "per_pupil_operations": 1258.0,
+  "per_pupil_instr_leadership": 1215.0,
+  "per_pupil_instr_materials": 620.0,
+  "per_pupil_guidance": 765.0,
+  "per_pupil_insurance_other": 3422.0
+ },
+ "07530000": {
+  "per_pupil_operations": 2135.0,
+  "per_pupil_instr_leadership": 1081.0,
+  "per_pupil_instr_materials": 626.0,
+  "per_pupil_guidance": 1168.0,
+  "per_pupil_insurance_other": 3195.0
+ },
+ "06740000": {
+  "per_pupil_operations": 2535.0,
+  "per_pupil_instr_leadership": 1802.0,
+  "per_pupil_instr_materials": 1234.0,
+  "per_pupil_guidance": 934.0,
+  "per_pupil_insurance_other": 5672.0
+ },
+ "00960000": {
+  "per_pupil_operations": 2321.0,
+  "per_pupil_instr_leadership": 1743.0,
+  "per_pupil_instr_materials": 927.0,
+  "per_pupil_guidance": 1011.0,
+  "per_pupil_insurance_other": 4623.0
+ },
+ "06720000": {
+  "per_pupil_operations": 2193.0,
+  "per_pupil_instr_leadership": 1520.0,
+  "per_pupil_instr_materials": 1000.0,
+  "per_pupil_guidance": 862.0,
+  "per_pupil_insurance_other": 4798.0
+ },
+ "01110000": {
+  "per_pupil_operations": 1345.0,
+  "per_pupil_instr_leadership": 1331.0,
+  "per_pupil_instr_materials": 309.0,
+  "per_pupil_guidance": 1523.0,
+  "per_pupil_insurance_other": 3122.0
+ },
+ "03320000": {
+  "per_pupil_operations": 1621.0,
+  "per_pupil_instr_leadership": 1097.0,
+  "per_pupil_instr_materials": 574.0,
+  "per_pupil_guidance": 968.0,
+  "per_pupil_insurance_other": 2814.0
+ },
+ "02170000": {
+  "per_pupil_operations": 1588.0,
+  "per_pupil_instr_leadership": 1274.0,
+  "per_pupil_instr_materials": 432.0,
+  "per_pupil_guidance": 785.0,
+  "per_pupil_insurance_other": 3705.0
+ },
+ "03270000": {
+  "per_pupil_operations": 1595.0,
+  "per_pupil_instr_leadership": 1873.0,
+  "per_pupil_instr_materials": 939.0,
+  "per_pupil_guidance": 536.0,
+  "per_pupil_insurance_other": 6433.0
+ },
+ "00140000": {
+  "per_pupil_operations": 1152.0,
+  "per_pupil_instr_leadership": 846.0,
+  "per_pupil_instr_materials": 362.0,
+  "per_pupil_guidance": 602.0,
+  "per_pupil_insurance_other": 2457.0
+ },
+ "03180000": {
+  "per_pupil_operations": 4891.0,
+  "per_pupil_instr_leadership": 3822.0,
+  "per_pupil_instr_materials": 1446.0,
+  "per_pupil_guidance": 1557.0,
+  "per_pupil_insurance_other": 7831.0
+ },
+ "01420000": {
+  "per_pupil_operations": 3357.0,
+  "per_pupil_instr_leadership": 1758.0,
+  "per_pupil_instr_materials": 1200.0,
+  "per_pupil_guidance": 1173.0,
+  "per_pupil_insurance_other": 5714.0
+ },
+ "01910000": {
+  "per_pupil_operations": 1734.0,
+  "per_pupil_instr_leadership": 1513.0,
+  "per_pupil_instr_materials": 704.0,
+  "per_pupil_guidance": 716.0,
+  "per_pupil_insurance_other": 4124.0
+ },
+ "01730000": {
+  "per_pupil_operations": 2686.0,
+  "per_pupil_instr_leadership": 1391.0,
+  "per_pupil_instr_materials": 794.0,
+  "per_pupil_guidance": 1221.0,
+  "per_pupil_insurance_other": 4779.0
+ },
+ "06150000": {
+  "per_pupil_operations": 1630.0,
+  "per_pupil_instr_leadership": 1279.0,
+  "per_pupil_instr_materials": 510.0,
+  "per_pupil_guidance": 637.0,
+  "per_pupil_insurance_other": 3241.0
+ },
+ "00790000": {
+  "per_pupil_operations": 1283.0,
+  "per_pupil_instr_leadership": 711.0,
+  "per_pupil_instr_materials": 417.0,
+  "per_pupil_guidance": 419.0,
+  "per_pupil_insurance_other": 3201.0
+ },
+ "02110000": {
+  "per_pupil_operations": 1066.0,
+  "per_pupil_instr_leadership": 1059.0,
+  "per_pupil_instr_materials": 242.0,
+  "per_pupil_guidance": 637.0,
+  "per_pupil_insurance_other": 2911.0
+ },
+ "02910000": {
+  "per_pupil_operations": 1365.0,
+  "per_pupil_instr_leadership": 1259.0,
+  "per_pupil_instr_materials": 299.0,
+  "per_pupil_guidance": 573.0,
+  "per_pupil_insurance_other": 3812.0
+ },
+ "02070000": {
+  "per_pupil_operations": 1843.0,
+  "per_pupil_instr_leadership": 1680.0,
+  "per_pupil_instr_materials": 653.0,
+  "per_pupil_guidance": 1146.0,
+  "per_pupil_insurance_other": 4506.0
+ },
+ "01520000": {
+  "per_pupil_operations": 2143.0,
+  "per_pupil_instr_leadership": 1098.0,
+  "per_pupil_instr_materials": 905.0,
+  "per_pupil_guidance": 1169.0,
+  "per_pupil_insurance_other": 4578.0
+ },
+ "02690000": {
+  "per_pupil_operations": 1591.0,
+  "per_pupil_instr_leadership": 1527.0,
+  "per_pupil_instr_materials": 434.0,
+  "per_pupil_guidance": 644.0,
+  "per_pupil_insurance_other": 3112.0
+ },
+ "01580000": {
+  "per_pupil_operations": 2015.0,
+  "per_pupil_instr_leadership": 1404.0,
+  "per_pupil_instr_materials": 251.0,
+  "per_pupil_guidance": 748.0,
+  "per_pupil_insurance_other": 2922.0
+ },
+ "01170000": {
+  "per_pupil_operations": 4656.0,
+  "per_pupil_instr_leadership": 1868.0,
+  "per_pupil_instr_materials": 919.0,
+  "per_pupil_guidance": 601.0,
+  "per_pupil_insurance_other": 2539.0
+ },
+ "01440000": {
+  "per_pupil_operations": 1829.0,
+  "per_pupil_instr_leadership": 1797.0,
+  "per_pupil_instr_materials": 1093.0,
+  "per_pupil_guidance": 1024.0,
+  "per_pupil_insurance_other": 3840.0
+ },
+ "03490000": {
+  "per_pupil_operations": 2873.0,
+  "per_pupil_instr_leadership": 2582.0,
+  "per_pupil_instr_materials": 1802.0,
+  "per_pupil_guidance": 5.0,
+  "per_pupil_insurance_other": 4277.0
+ },
+ "06730000": {
+  "per_pupil_operations": 1584.0,
+  "per_pupil_instr_leadership": 1541.0,
+  "per_pupil_instr_materials": 222.0,
+  "per_pupil_guidance": 687.0,
+  "per_pupil_insurance_other": 4660.0
+ },
+ "07200000": {
+  "per_pupil_operations": 1502.0,
+  "per_pupil_instr_leadership": 815.0,
+  "per_pupil_instr_materials": 245.0,
+  "per_pupil_guidance": 684.0,
+  "per_pupil_insurance_other": 3506.0
+ },
+ "02400000": {
+  "per_pupil_operations": 1744.0,
+  "per_pupil_instr_leadership": 1184.0,
+  "per_pupil_instr_materials": 312.0,
+  "per_pupil_guidance": 662.0,
+  "per_pupil_insurance_other": 1622.0
+ },
+ "02420000": {
+  "per_pupil_operations": 2983.0,
+  "per_pupil_instr_leadership": 2630.0,
+  "per_pupil_instr_materials": 4009.0,
+  "per_pupil_guidance": 758.0,
+  "per_pupil_insurance_other": 11418.0
+ },
+ "03370000": {
+  "per_pupil_operations": 2115.0,
+  "per_pupil_instr_leadership": 2018.0,
+  "per_pupil_instr_materials": 1298.0,
+  "per_pupil_guidance": 711.0,
+  "per_pupil_insurance_other": 3694.0
+ },
+ "00400000": {
+  "per_pupil_operations": 1976.0,
+  "per_pupil_instr_leadership": 1010.0,
+  "per_pupil_instr_materials": 278.0,
+  "per_pupil_guidance": 846.0,
+  "per_pupil_insurance_other": 2732.0
+ },
+ "06550000": {
+  "per_pupil_operations": 2162.0,
+  "per_pupil_instr_leadership": 1401.0,
+  "per_pupil_instr_materials": 493.0,
+  "per_pupil_guidance": 1276.0,
+  "per_pupil_insurance_other": 3990.0
+ },
+ "02520000": {
+  "per_pupil_operations": 2116.0,
+  "per_pupil_instr_leadership": 2072.0,
+  "per_pupil_instr_materials": 331.0,
+  "per_pupil_guidance": 838.0,
+  "per_pupil_insurance_other": 5730.0
+ },
+ "02390000": {
+  "per_pupil_operations": 1700.0,
+  "per_pupil_instr_leadership": 1398.0,
+  "per_pupil_instr_materials": 518.0,
+  "per_pupil_guidance": 668.0,
+  "per_pupil_insurance_other": 4819.0
+ },
+ "01650000": {
+  "per_pupil_operations": 1956.0,
+  "per_pupil_instr_leadership": 1173.0,
+  "per_pupil_instr_materials": 1492.0,
+  "per_pupil_guidance": 611.0,
+  "per_pupil_insurance_other": 3049.0
+ },
+ "07740000": {
+  "per_pupil_operations": 2755.0,
+  "per_pupil_instr_leadership": 2246.0,
+  "per_pupil_instr_materials": 1005.0,
+  "per_pupil_guidance": 965.0,
+  "per_pupil_insurance_other": 7757.0
+ },
+ "00160000": {
+  "per_pupil_operations": 2114.0,
+  "per_pupil_instr_leadership": 1325.0,
+  "per_pupil_instr_materials": 375.0,
+  "per_pupil_guidance": 507.0,
+  "per_pupil_insurance_other": 2796.0
+ },
+ "00300000": {
+  "per_pupil_operations": 1097.0,
+  "per_pupil_instr_leadership": 1050.0,
+  "per_pupil_instr_materials": 474.0,
+  "per_pupil_guidance": 748.0,
+  "per_pupil_insurance_other": 3971.0
+ },
+ "01640000": {
+  "per_pupil_operations": 1784.0,
+  "per_pupil_instr_leadership": 1179.0,
+  "per_pupil_instr_materials": 291.0,
+  "per_pupil_guidance": 741.0,
+  "per_pupil_insurance_other": 2884.0
+ },
+ "02580000": {
+  "per_pupil_operations": 1777.0,
+  "per_pupil_instr_leadership": 1731.0,
+  "per_pupil_instr_materials": 1420.0,
+  "per_pupil_guidance": 1100.0,
+  "per_pupil_insurance_other": 3365.0
+ },
+ "01030000": {
+  "per_pupil_operations": 1635.0,
+  "per_pupil_instr_leadership": 1063.0,
+  "per_pupil_instr_materials": 641.0,
+  "per_pupil_guidance": 613.0,
+  "per_pupil_insurance_other": 3300.0
+ },
+ "06980000": {
+  "per_pupil_operations": 3081.0,
+  "per_pupil_instr_leadership": 1463.0,
+  "per_pupil_instr_materials": 404.0,
+  "per_pupil_guidance": 847.0,
+  "per_pupil_insurance_other": 4306.0
+ },
+ "00430000": {
+  "per_pupil_operations": 2165.0,
+  "per_pupil_instr_leadership": 717.0,
+  "per_pupil_instr_materials": 1038.0,
+  "per_pupil_guidance": 711.0,
+  "per_pupil_insurance_other": 1875.0
+ },
+ "00880000": {
+  "per_pupil_operations": 1147.0,
+  "per_pupil_instr_leadership": 868.0,
+  "per_pupil_instr_materials": 421.0,
+  "per_pupil_guidance": 713.0,
+  "per_pupil_insurance_other": 2696.0
+ },
+ "02710000": {
+  "per_pupil_operations": 1043.0,
+  "per_pupil_instr_leadership": 1082.0,
+  "per_pupil_instr_materials": 716.0,
+  "per_pupil_guidance": 700.0,
+  "per_pupil_insurance_other": 2404.0
+ },
+ "03440000": {
+  "per_pupil_operations": 1053.0,
+  "per_pupil_instr_leadership": 1451.0,
+  "per_pupil_instr_materials": 566.0,
+  "per_pupil_guidance": 796.0,
+  "per_pupil_insurance_other": 2573.0
+ },
+ "07660000": {
+  "per_pupil_operations": 1623.0,
+  "per_pupil_instr_leadership": 1168.0,
+  "per_pupil_instr_materials": 1215.0,
+  "per_pupil_guidance": 810.0,
+  "per_pupil_insurance_other": 2687.0
+ },
+ "00360000": {
+  "per_pupil_operations": 1680.0,
+  "per_pupil_instr_leadership": 1530.0,
+  "per_pupil_instr_materials": 1062.0,
+  "per_pupil_guidance": 806.0,
+  "per_pupil_insurance_other": 5213.0
+ },
+ "06100000": {
+  "per_pupil_operations": 1462.0,
+  "per_pupil_instr_leadership": 898.0,
+  "per_pupil_instr_materials": 473.0,
+  "per_pupil_guidance": 707.0,
+  "per_pupil_insurance_other": 2298.0
+ },
+ "02900000": {
+  "per_pupil_operations": 2236.0,
+  "per_pupil_instr_leadership": 1005.0,
+  "per_pupil_instr_materials": 286.0,
+  "per_pupil_guidance": 623.0,
+  "per_pupil_insurance_other": 2681.0
+ },
+ "00450000": {
+  "per_pupil_operations": 1896.0,
+  "per_pupil_instr_leadership": 702.0,
+  "per_pupil_instr_materials": 550.0,
+  "per_pupil_guidance": 529.0,
+  "per_pupil_insurance_other": 1834.0
+ },
+ "03220000": {
+  "per_pupil_operations": 1595.0,
+  "per_pupil_instr_leadership": 1054.0,
+  "per_pupil_instr_materials": 346.0,
+  "per_pupil_guidance": 476.0,
+  "per_pupil_insurance_other": 3680.0
+ },
+ "01070000": {
+  "per_pupil_operations": 2574.0,
+  "per_pupil_instr_leadership": 3274.0,
+  "per_pupil_instr_materials": 208.0,
+  "per_pupil_guidance": 428.0,
+  "per_pupil_insurance_other": 4605.0
+ },
+ "01630000": {
+  "per_pupil_operations": 2637.0,
+  "per_pupil_instr_leadership": 1138.0,
+  "per_pupil_instr_materials": 1199.0,
+  "per_pupil_guidance": 659.0,
+  "per_pupil_insurance_other": 3416.0
+ },
+ "01750000": {
+  "per_pupil_operations": 1668.0,
+  "per_pupil_instr_leadership": 1428.0,
+  "per_pupil_instr_materials": 474.0,
+  "per_pupil_guidance": 830.0,
+  "per_pupil_insurance_other": 2252.0
+ },
+ "01960000": {
+  "per_pupil_operations": 3172.0,
+  "per_pupil_instr_leadership": 1478.0,
+  "per_pupil_instr_materials": 1516.0,
+  "per_pupil_guidance": 1182.0,
+  "per_pupil_insurance_other": 2618.0
+ },
+ "03310000": {
+  "per_pupil_operations": 1496.0,
+  "per_pupil_instr_leadership": 947.0,
+  "per_pupil_instr_materials": 298.0,
+  "per_pupil_guidance": 678.0,
+  "per_pupil_insurance_other": 2714.0
+ },
+ "03360000": {
+  "per_pupil_operations": 1343.0,
+  "per_pupil_instr_leadership": 1660.0,
+  "per_pupil_instr_materials": 662.0,
+  "per_pupil_guidance": 844.0,
+  "per_pupil_insurance_other": 3525.0
+ },
+ "02780000": {
+  "per_pupil_operations": 1646.0,
+  "per_pupil_instr_leadership": 1102.0,
+  "per_pupil_instr_materials": 624.0,
+  "per_pupil_guidance": 643.0,
+  "per_pupil_insurance_other": 3115.0
+ },
+ "02810000": {
+  "per_pupil_operations": 3806.0,
+  "per_pupil_instr_leadership": 1571.0,
+  "per_pupil_instr_materials": 2645.0,
+  "per_pupil_guidance": 697.0,
+  "per_pupil_insurance_other": 3905.0
+ },
+ "06000000": {
+  "per_pupil_operations": 1342.0,
+  "per_pupil_instr_leadership": 1353.0,
+  "per_pupil_instr_materials": 295.0,
+  "per_pupil_guidance": 892.0,
+  "per_pupil_insurance_other": 3853.0
+ },
+ "00180000": {
+  "per_pupil_operations": 1668.0,
+  "per_pupil_instr_leadership": 1551.0,
+  "per_pupil_instr_materials": 594.0,
+  "per_pupil_guidance": 759.0,
+  "per_pupil_insurance_other": 3659.0
+ },
+ "02930000": {
+  "per_pupil_operations": 1275.0,
+  "per_pupil_instr_leadership": 1065.0,
+  "per_pupil_instr_materials": 860.0,
+  "per_pupil_guidance": 991.0,
+  "per_pupil_insurance_other": 3298.0
+ },
+ "00270000": {
+  "per_pupil_operations": 1055.0,
+  "per_pupil_instr_leadership": 1170.0,
+  "per_pupil_instr_materials": 975.0,
+  "per_pupil_guidance": 262.0,
+  "per_pupil_insurance_other": 1875.0
+ },
+ "00010000": {
+  "per_pupil_operations": 1119.0,
+  "per_pupil_instr_leadership": 961.0,
+  "per_pupil_instr_materials": 354.0,
+  "per_pupil_guidance": 611.0,
+  "per_pupil_insurance_other": 3082.0
+ },
+ "02490000": {
+  "per_pupil_operations": 2620.0,
+  "per_pupil_instr_leadership": 1821.0,
+  "per_pupil_instr_materials": 514.0,
+  "per_pupil_guidance": 76.0,
+  "per_pupil_insurance_other": 3937.0
+ },
+ "06800000": {
+  "per_pupil_operations": 1637.0,
+  "per_pupil_instr_leadership": 912.0,
+  "per_pupil_instr_materials": 243.0,
+  "per_pupil_guidance": 759.0,
+  "per_pupil_insurance_other": 3354.0
+ },
+ "01710000": {
+  "per_pupil_operations": 1857.0,
+  "per_pupil_instr_leadership": 1366.0,
+  "per_pupil_instr_materials": 798.0,
+  "per_pupil_guidance": 668.0,
+  "per_pupil_insurance_other": 2304.0
+ },
+ "07800000": {
+  "per_pupil_operations": 1463.0,
+  "per_pupil_instr_leadership": 1051.0,
+  "per_pupil_instr_materials": 948.0,
+  "per_pupil_guidance": 611.0,
+  "per_pupil_insurance_other": 2757.0
+ },
+ "01000000": {
+  "per_pupil_operations": 1380.0,
+  "per_pupil_instr_leadership": 1876.0,
+  "per_pupil_instr_materials": 576.0,
+  "per_pupil_guidance": 803.0,
+  "per_pupil_insurance_other": 4220.0
+ },
+ "03170000": {
+  "per_pupil_operations": 1958.0,
+  "per_pupil_instr_leadership": 2454.0,
+  "per_pupil_instr_materials": 1214.0,
+  "per_pupil_guidance": 1190.0,
+  "per_pupil_insurance_other": 3954.0
+ },
+ "01510000": {
+  "per_pupil_operations": 1933.0,
+  "per_pupil_instr_leadership": 1145.0,
+  "per_pupil_instr_materials": 467.0,
+  "per_pupil_guidance": 559.0,
+  "per_pupil_insurance_other": 2780.0
+ },
+ "06160000": {
+  "per_pupil_operations": 1246.0,
+  "per_pupil_instr_leadership": 1472.0,
+  "per_pupil_instr_materials": 407.0,
+  "per_pupil_guidance": 680.0,
+  "per_pupil_insurance_other": 3042.0
+ },
+ "01450000": {
+  "per_pupil_operations": 1232.0,
+  "per_pupil_instr_leadership": 607.0,
+  "per_pupil_instr_materials": 251.0,
+  "per_pupil_guidance": 651.0,
+  "per_pupil_insurance_other": 1470.0
+ },
+ "00410000": {
+  "per_pupil_operations": 1540.0,
+  "per_pupil_instr_leadership": 1881.0,
+  "per_pupil_instr_materials": 754.0,
+  "per_pupil_guidance": 947.0,
+  "per_pupil_insurance_other": 5282.0
+ },
+ "02630000": {
+  "per_pupil_operations": 1726.0,
+  "per_pupil_instr_leadership": 1386.0,
+  "per_pupil_instr_materials": 301.0,
+  "per_pupil_guidance": 349.0,
+  "per_pupil_insurance_other": 4603.0
+ },
+ "00870000": {
+  "per_pupil_operations": 1728.0,
+  "per_pupil_instr_leadership": 774.0,
+  "per_pupil_instr_materials": 457.0,
+  "per_pupil_guidance": 698.0,
+  "per_pupil_insurance_other": 3280.0
+ },
+ "02260000": {
+  "per_pupil_operations": 1383.0,
+  "per_pupil_instr_leadership": 1503.0,
+  "per_pupil_instr_materials": 539.0,
+  "per_pupil_guidance": 720.0,
+  "per_pupil_insurance_other": 2854.0
+ },
+ "06400000": {
+  "per_pupil_operations": 2466.0,
+  "per_pupil_instr_leadership": 2242.0,
+  "per_pupil_instr_materials": 666.0,
+  "per_pupil_guidance": 1624.0,
+  "per_pupil_insurance_other": 3767.0
+ },
+ "06600000": {
+  "per_pupil_operations": 2281.0,
+  "per_pupil_instr_leadership": 1605.0,
+  "per_pupil_instr_materials": 957.0,
+  "per_pupil_guidance": 1404.0,
+  "per_pupil_insurance_other": 5579.0
+ },
+ "06900000": {
+  "per_pupil_operations": 2155.0,
+  "per_pupil_instr_leadership": 1515.0,
+  "per_pupil_instr_materials": 665.0,
+  "per_pupil_guidance": 1141.0,
+  "per_pupil_insurance_other": 4259.0
+ },
+ "06950000": {
+  "per_pupil_operations": 1665.0,
+  "per_pupil_instr_leadership": 1632.0,
+  "per_pupil_instr_materials": 540.0,
+  "per_pupil_guidance": 1537.0,
+  "per_pupil_insurance_other": 3570.0
+ },
+ "07050000": {
+  "per_pupil_operations": 2295.0,
+  "per_pupil_instr_leadership": 1567.0,
+  "per_pupil_instr_materials": 560.0,
+  "per_pupil_guidance": 975.0,
+  "per_pupil_insurance_other": 4457.0
+ },
+ "07300000": {
+  "per_pupil_operations": 1953.0,
+  "per_pupil_instr_leadership": 1195.0,
+  "per_pupil_instr_materials": 358.0,
+  "per_pupil_guidance": 1219.0,
+  "per_pupil_insurance_other": 3983.0
+ },
+ "07630000": {
+  "per_pupil_operations": 1736.0,
+  "per_pupil_instr_leadership": 1914.0,
+  "per_pupil_instr_materials": 780.0,
+  "per_pupil_guidance": 409.0,
+  "per_pupil_insurance_other": 3082.0
+ }
+}

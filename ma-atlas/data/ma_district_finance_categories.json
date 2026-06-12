@@ -1,0 +1,1122 @@
+{
+ "03480000": {
+  "per_pupil_prof_dev": 385.0,
+  "per_pupil_other_teaching": 1799.0
+ },
+ "00680000": {
+  "per_pupil_prof_dev": 273.0,
+  "per_pupil_other_teaching": 5577.0
+ },
+ "00610000": {
+  "per_pupil_prof_dev": 122.0,
+  "per_pupil_other_teaching": 1899.0
+ },
+ "02920000": {
+  "per_pupil_prof_dev": 48.0,
+  "per_pupil_other_teaching": 1117.0
+ },
+ "01380000": {
+  "per_pupil_prof_dev": 108.0,
+  "per_pupil_other_teaching": 1957.0
+ },
+ "01100000": {
+  "per_pupil_prof_dev": 17.0,
+  "per_pupil_other_teaching": 2056.0
+ },
+ "02260000": {
+  "per_pupil_prof_dev": 151.0,
+  "per_pupil_other_teaching": 1404.0
+ },
+ "01680000": {
+  "per_pupil_prof_dev": 104.0,
+  "per_pupil_other_teaching": 1708.0
+ },
+ "00850000": {
+  "per_pupil_prof_dev": 303.0,
+  "per_pupil_other_teaching": 3777.0
+ },
+ "00260000": {
+  "per_pupil_prof_dev": 133.0,
+  "per_pupil_other_teaching": 1534.0
+ },
+ "00010000": {
+  "per_pupil_prof_dev": 81.0,
+  "per_pupil_other_teaching": 2141.0
+ },
+ "02740000": {
+  "per_pupil_prof_dev": 434.0,
+  "per_pupil_other_teaching": 2476.0
+ },
+ "06580000": {
+  "per_pupil_prof_dev": 76.0,
+  "per_pupil_other_teaching": 1653.0
+ },
+ "00170000": {
+  "per_pupil_prof_dev": 44.0,
+  "per_pupil_other_teaching": 2024.0
+ },
+ "01840000": {
+  "per_pupil_prof_dev": 173.0,
+  "per_pupil_other_teaching": 2685.0
+ },
+ "01630000": {
+  "per_pupil_prof_dev": 284.0,
+  "per_pupil_other_teaching": 1999.0
+ },
+ "02180000": {
+  "per_pupil_prof_dev": 166.0,
+  "per_pupil_other_teaching": 2036.0
+ },
+ "01390000": {
+  "per_pupil_prof_dev": 119.0,
+  "per_pupil_other_teaching": 1592.0
+ },
+ "02390000": {
+  "per_pupil_prof_dev": 167.0,
+  "per_pupil_other_teaching": 1723.0
+ },
+ "07200000": {
+  "per_pupil_prof_dev": 188.0,
+  "per_pupil_other_teaching": 2012.0
+ },
+ "01410000": {
+  "per_pupil_prof_dev": 286.0,
+  "per_pupil_other_teaching": 2600.0
+ },
+ "00940000": {
+  "per_pupil_prof_dev": 106.0,
+  "per_pupil_other_teaching": 1064.0
+ },
+ "00740000": {
+  "per_pupil_prof_dev": 149.0,
+  "per_pupil_other_teaching": 3766.0
+ },
+ "02200000": {
+  "per_pupil_prof_dev": 175.0,
+  "per_pupil_other_teaching": 1953.0
+ },
+ "02960000": {
+  "per_pupil_prof_dev": 108.0,
+  "per_pupil_other_teaching": 4166.0
+ },
+ "00930000": {
+  "per_pupil_prof_dev": 580.0,
+  "per_pupil_other_teaching": 1596.0
+ },
+ "01280000": {
+  "per_pupil_prof_dev": 441.0,
+  "per_pupil_other_teaching": 2101.0
+ },
+ "01970000": {
+  "per_pupil_prof_dev": 567.0,
+  "per_pupil_other_teaching": 2484.0
+ },
+ "03440000": {
+  "per_pupil_prof_dev": 146.0,
+  "per_pupil_other_teaching": 1584.0
+ },
+ "03460000": {
+  "per_pupil_prof_dev": 85.0,
+  "per_pupil_other_teaching": 2139.0
+ },
+ "06100000": {
+  "per_pupil_prof_dev": 278.0,
+  "per_pupil_other_teaching": 1553.0
+ },
+ "07120000": {
+  "per_pupil_prof_dev": 391.0,
+  "per_pupil_other_teaching": 2441.0
+ },
+ "02380000": {
+  "per_pupil_prof_dev": 190.0,
+  "per_pupil_other_teaching": 2598.0
+ },
+ "07530000": {
+  "per_pupil_prof_dev": 408.0,
+  "per_pupil_other_teaching": 1998.0
+ },
+ "00380000": {
+  "per_pupil_prof_dev": 196.0,
+  "per_pupil_other_teaching": 2285.0
+ },
+ "01710000": {
+  "per_pupil_prof_dev": 313.0,
+  "per_pupil_other_teaching": 1845.0
+ },
+ "01870000": {
+  "per_pupil_prof_dev": 343.0,
+  "per_pupil_other_teaching": 2086.0
+ },
+ "00980000": {
+  "per_pupil_prof_dev": 672.0,
+  "per_pupil_other_teaching": 2444.0
+ },
+ "03500000": {
+  "per_pupil_prof_dev": 83.0,
+  "per_pupil_other_teaching": 2296.0
+ },
+ "03320000": {
+  "per_pupil_prof_dev": 201.0,
+  "per_pupil_other_teaching": 1737.0
+ },
+ "03430000": {
+  "per_pupil_prof_dev": 151.0,
+  "per_pupil_other_teaching": 2097.0
+ },
+ "01990000": {
+  "per_pupil_prof_dev": 366.0,
+  "per_pupil_other_teaching": 2183.0
+ },
+ "01070000": {
+  "per_pupil_prof_dev": 104.0,
+  "per_pupil_other_teaching": 1646.0
+ },
+ "06650000": {
+  "per_pupil_prof_dev": 48.0,
+  "per_pupil_other_teaching": 1298.0
+ },
+ "02930000": {
+  "per_pupil_prof_dev": 311.0,
+  "per_pupil_other_teaching": 1277.0
+ },
+ "07650000": {
+  "per_pupil_prof_dev": 396.0,
+  "per_pupil_other_teaching": 3514.0
+ },
+ "00510000": {
+  "per_pupil_prof_dev": 186.0,
+  "per_pupil_other_teaching": 1961.0
+ },
+ "06200000": {
+  "per_pupil_prof_dev": 97.0,
+  "per_pupil_other_teaching": 2296.0
+ },
+ "02620000": {
+  "per_pupil_prof_dev": 146.0,
+  "per_pupil_other_teaching": 1388.0
+ },
+ "07740000": {
+  "per_pupil_prof_dev": 132.0,
+  "per_pupil_other_teaching": 3332.0
+ },
+ "00200000": {
+  "per_pupil_prof_dev": 217.0,
+  "per_pupil_other_teaching": 2614.0
+ },
+ "02360000": {
+  "per_pupil_prof_dev": 317.0,
+  "per_pupil_other_teaching": 1939.0
+ },
+ "02750000": {
+  "per_pupil_prof_dev": 34.0,
+  "per_pupil_other_teaching": 1973.0
+ },
+ "00400000": {
+  "per_pupil_prof_dev": 91.0,
+  "per_pupil_other_teaching": 2151.0
+ },
+ "07280000": {
+  "per_pupil_prof_dev": 147.0,
+  "per_pupil_other_teaching": 4085.0
+ },
+ "06600000": {
+  "per_pupil_prof_dev": 458.0,
+  "per_pupil_other_teaching": 1778.0
+ },
+ "00670000": {
+  "per_pupil_prof_dev": 324.0,
+  "per_pupil_other_teaching": 4139.0
+ },
+ "02140000": {
+  "per_pupil_prof_dev": 123.0,
+  "per_pupil_other_teaching": 1926.0
+ },
+ "02760000": {
+  "per_pupil_prof_dev": 63.0,
+  "per_pupil_other_teaching": 3162.0
+ },
+ "00070000": {
+  "per_pupil_prof_dev": 168.0,
+  "per_pupil_other_teaching": 2565.0
+ },
+ "02580000": {
+  "per_pupil_prof_dev": 1009.0,
+  "per_pupil_other_teaching": 2094.0
+ },
+ "01620000": {
+  "per_pupil_prof_dev": 18.0,
+  "per_pupil_other_teaching": 2092.0
+ },
+ "06450000": {
+  "per_pupil_prof_dev": 294.0,
+  "per_pupil_other_teaching": 1731.0
+ },
+ "06730000": {
+  "per_pupil_prof_dev": 165.0,
+  "per_pupil_other_teaching": 2215.0
+ },
+ "02480000": {
+  "per_pupil_prof_dev": 673.0,
+  "per_pupil_other_teaching": 810.0
+ },
+ "00270000": {
+  "per_pupil_prof_dev": 85.0,
+  "per_pupil_other_teaching": 1375.0
+ },
+ "02650000": {
+  "per_pupil_prof_dev": 120.0,
+  "per_pupil_other_teaching": 1630.0
+ },
+ "03210000": {
+  "per_pupil_prof_dev": 279.0,
+  "per_pupil_other_teaching": 2111.0
+ },
+ "01500000": {
+  "per_pupil_prof_dev": 196.0,
+  "per_pupil_other_teaching": 2866.0
+ },
+ "03000000": {
+  "per_pupil_prof_dev": 555.0,
+  "per_pupil_other_teaching": 7836.0
+ },
+ "00100000": {
+  "per_pupil_prof_dev": 308.0,
+  "per_pupil_other_teaching": 1946.0
+ },
+ "00860000": {
+  "per_pupil_prof_dev": 200.0,
+  "per_pupil_other_teaching": 1732.0
+ },
+ "00880000": {
+  "per_pupil_prof_dev": 133.0,
+  "per_pupil_other_teaching": 1586.0
+ },
+ "06320000": {
+  "per_pupil_prof_dev": 374.0,
+  "per_pupil_other_teaching": 1643.0
+ },
+ "07150000": {
+  "per_pupil_prof_dev": 145.0,
+  "per_pupil_other_teaching": 2519.0
+ },
+ "01670000": {
+  "per_pupil_prof_dev": 461.0,
+  "per_pupil_other_teaching": 1753.0
+ },
+ "07450000": {
+  "per_pupil_prof_dev": 43.0,
+  "per_pupil_other_teaching": 1841.0
+ },
+ "07300000": {
+  "per_pupil_prof_dev": 271.0,
+  "per_pupil_other_teaching": 2096.0
+ },
+ "03090000": {
+  "per_pupil_prof_dev": 235.0,
+  "per_pupil_other_teaching": 2268.0
+ },
+ "06000000": {
+  "per_pupil_prof_dev": 186.0,
+  "per_pupil_other_teaching": 2007.0
+ },
+ "02490000": {
+  "per_pupil_prof_dev": 337.0,
+  "per_pupil_other_teaching": 1672.0
+ },
+ "02240000": {
+  "per_pupil_prof_dev": 243.0,
+  "per_pupil_other_teaching": 4174.0
+ },
+ "01490000": {
+  "per_pupil_prof_dev": 324.0,
+  "per_pupil_other_teaching": 2512.0
+ },
+ "01360000": {
+  "per_pupil_prof_dev": 76.0,
+  "per_pupil_other_teaching": 1900.0
+ },
+ "01960000": {
+  "per_pupil_prof_dev": 41.0,
+  "per_pupil_other_teaching": 1940.0
+ },
+ "07250000": {
+  "per_pupil_prof_dev": 536.0,
+  "per_pupil_other_teaching": 1946.0
+ },
+ "01820000": {
+  "per_pupil_prof_dev": 209.0,
+  "per_pupil_other_teaching": 1682.0
+ },
+ "02850000": {
+  "per_pupil_prof_dev": 67.0,
+  "per_pupil_other_teaching": 1544.0
+ },
+ "00080000": {
+  "per_pupil_prof_dev": 700.0,
+  "per_pupil_other_teaching": 4612.0
+ },
+ "01540000": {
+  "per_pupil_prof_dev": 205.0,
+  "per_pupil_other_teaching": 3526.0
+ },
+ "03060000": {
+  "per_pupil_prof_dev": 212.0,
+  "per_pupil_other_teaching": 3236.0
+ },
+ "00030000": {
+  "per_pupil_prof_dev": 251.0,
+  "per_pupil_other_teaching": 1482.0
+ },
+ "01720000": {
+  "per_pupil_prof_dev": 188.0,
+  "per_pupil_other_teaching": 1735.0
+ },
+ "06850000": {
+  "per_pupil_prof_dev": 868.0,
+  "per_pupil_other_teaching": 4347.0
+ },
+ "01440000": {
+  "per_pupil_prof_dev": 286.0,
+  "per_pupil_other_teaching": 2667.0
+ },
+ "03160000": {
+  "per_pupil_prof_dev": 586.0,
+  "per_pupil_other_teaching": 2459.0
+ },
+ "03170000": {
+  "per_pupil_prof_dev": 804.0,
+  "per_pupil_other_teaching": 3107.0
+ },
+ "01180000": {
+  "per_pupil_prof_dev": 79.0,
+  "per_pupil_other_teaching": 1389.0
+ },
+ "02840000": {
+  "per_pupil_prof_dev": 47.0,
+  "per_pupil_other_teaching": 2261.0
+ },
+ "06150000": {
+  "per_pupil_prof_dev": 397.0,
+  "per_pupil_other_teaching": 1934.0
+ },
+ "07100000": {
+  "per_pupil_prof_dev": 144.0,
+  "per_pupil_other_teaching": 1689.0
+ },
+ "00350000": {
+  "per_pupil_prof_dev": 561.0,
+  "per_pupil_other_teaching": 3126.0
+ },
+ "01170000": {
+  "per_pupil_prof_dev": 342.0,
+  "per_pupil_other_teaching": 1912.0
+ },
+ "06220000": {
+  "per_pupil_prof_dev": 117.0,
+  "per_pupil_other_teaching": 1362.0
+ },
+ "01980000": {
+  "per_pupil_prof_dev": 159.0,
+  "per_pupil_other_teaching": 1899.0
+ },
+ "00050000": {
+  "per_pupil_prof_dev": 213.0,
+  "per_pupil_other_teaching": 1926.0
+ },
+ "01610000": {
+  "per_pupil_prof_dev": 41.0,
+  "per_pupil_other_teaching": 1815.0
+ },
+ "00230000": {
+  "per_pupil_prof_dev": 255.0,
+  "per_pupil_other_teaching": 2346.0
+ },
+ "01310000": {
+  "per_pupil_prof_dev": 97.0,
+  "per_pupil_other_teaching": 2197.0
+ },
+ "06900000": {
+  "per_pupil_prof_dev": 143.0,
+  "per_pupil_other_teaching": 1110.0
+ },
+ "00520000": {
+  "per_pupil_prof_dev": 271.0,
+  "per_pupil_other_teaching": 1731.0
+ },
+ "03100000": {
+  "per_pupil_prof_dev": 106.0,
+  "per_pupil_other_teaching": 2302.0
+ },
+ "01000000": {
+  "per_pupil_prof_dev": 255.0,
+  "per_pupil_other_teaching": 2013.0
+ },
+ "00560000": {
+  "per_pupil_prof_dev": 27.0,
+  "per_pupil_other_teaching": 1240.0
+ },
+ "02880000": {
+  "per_pupil_prof_dev": 269.0,
+  "per_pupil_other_teaching": 2567.0
+ },
+ "03360000": {
+  "per_pupil_prof_dev": 95.0,
+  "per_pupil_other_teaching": 1301.0
+ },
+ "06750000": {
+  "per_pupil_prof_dev": 362.0,
+  "per_pupil_other_teaching": 1856.0
+ },
+ "01420000": {
+  "per_pupil_prof_dev": 117.0,
+  "per_pupil_other_teaching": 1975.0
+ },
+ "02890000": {
+  "per_pupil_prof_dev": 129.0,
+  "per_pupil_other_teaching": 4549.0
+ },
+ "03270000": {
+  "per_pupil_prof_dev": 86.0,
+  "per_pupil_other_teaching": 2461.0
+ },
+ "01590000": {
+  "per_pupil_prof_dev": 224.0,
+  "per_pupil_other_teaching": 1656.0
+ },
+ "02770000": {
+  "per_pupil_prof_dev": 627.0,
+  "per_pupil_other_teaching": 2650.0
+ },
+ "01250000": {
+  "per_pupil_prof_dev": 176.0,
+  "per_pupil_other_teaching": 2544.0
+ },
+ "03220000": {
+  "per_pupil_prof_dev": 65.0,
+  "per_pupil_other_teaching": 2008.0
+ },
+ "02810000": {
+  "per_pupil_prof_dev": 426.0,
+  "per_pupil_other_teaching": 2014.0
+ },
+ "00140000": {
+  "per_pupil_prof_dev": 97.0,
+  "per_pupil_other_teaching": 1521.0
+ },
+ "01220000": {
+  "per_pupil_prof_dev": 55.0,
+  "per_pupil_other_teaching": 1253.0
+ },
+ "03370000": {
+  "per_pupil_prof_dev": 178.0,
+  "per_pupil_other_teaching": 3560.0
+ },
+ "02910000": {
+  "per_pupil_prof_dev": 56.0,
+  "per_pupil_other_teaching": 1913.0
+ },
+ "01450000": {
+  "per_pupil_prof_dev": 41.0,
+  "per_pupil_other_teaching": 936.0
+ },
+ "01350000": {
+  "per_pupil_prof_dev": 44.0,
+  "per_pupil_other_teaching": 1926.0
+ },
+ "01760000": {
+  "per_pupil_prof_dev": 28.0,
+  "per_pupil_other_teaching": 1486.0
+ },
+ "00570000": {
+  "per_pupil_prof_dev": 921.0,
+  "per_pupil_other_teaching": 1532.0
+ },
+ "01640000": {
+  "per_pupil_prof_dev": 126.0,
+  "per_pupil_other_teaching": 1722.0
+ },
+ "02710000": {
+  "per_pupil_prof_dev": 196.0,
+  "per_pupil_other_teaching": 2305.0
+ },
+ "06950000": {
+  "per_pupil_prof_dev": 145.0,
+  "per_pupil_other_teaching": 1341.0
+ },
+ "03300000": {
+  "per_pupil_prof_dev": 397.0,
+  "per_pupil_other_teaching": 2067.0
+ },
+ "00460000": {
+  "per_pupil_prof_dev": 181.0,
+  "per_pupil_other_teaching": 3038.0
+ },
+ "03010000": {
+  "per_pupil_prof_dev": 150.0,
+  "per_pupil_other_teaching": 1452.0
+ },
+ "00160000": {
+  "per_pupil_prof_dev": 189.0,
+  "per_pupil_other_teaching": 2022.0
+ },
+ "03470000": {
+  "per_pupil_prof_dev": 241.0,
+  "per_pupil_other_teaching": 2361.0
+ },
+ "01270000": {
+  "per_pupil_prof_dev": 32.0,
+  "per_pupil_other_teaching": 1884.0
+ },
+ "01600000": {
+  "per_pupil_prof_dev": 612.0,
+  "per_pupil_other_teaching": 2341.0
+ },
+ "02400000": {
+  "per_pupil_prof_dev": 169.0,
+  "per_pupil_other_teaching": 1765.0
+ },
+ "03310000": {
+  "per_pupil_prof_dev": 99.0,
+  "per_pupil_other_teaching": 2005.0
+ },
+ "01530000": {
+  "per_pupil_prof_dev": 50.0,
+  "per_pupil_other_teaching": 2137.0
+ },
+ "07660000": {
+  "per_pupil_prof_dev": 464.0,
+  "per_pupil_other_teaching": 1558.0
+ },
+ "00410000": {
+  "per_pupil_prof_dev": 340.0,
+  "per_pupil_other_teaching": 4034.0
+ },
+ "00770000": {
+  "per_pupil_prof_dev": 45.0,
+  "per_pupil_other_teaching": 1849.0
+ },
+ "01740000": {
+  "per_pupil_prof_dev": 195.0,
+  "per_pupil_other_teaching": 2331.0
+ },
+ "02230000": {
+  "per_pupil_prof_dev": 425.0,
+  "per_pupil_other_teaching": 3380.0
+ },
+ "02090000": {
+  "per_pupil_prof_dev": 367.0,
+  "per_pupil_other_teaching": 2001.0
+ },
+ "01510000": {
+  "per_pupil_prof_dev": 252.0,
+  "per_pupil_other_teaching": 2509.0
+ },
+ "00240000": {
+  "per_pupil_prof_dev": 135.0,
+  "per_pupil_other_teaching": 1385.0
+ },
+ "02290000": {
+  "per_pupil_prof_dev": 162.0,
+  "per_pupil_other_teaching": 1340.0
+ },
+ "01810000": {
+  "per_pupil_prof_dev": 279.0,
+  "per_pupil_other_teaching": 2040.0
+ },
+ "02690000": {
+  "per_pupil_prof_dev": 142.0,
+  "per_pupil_other_teaching": 3042.0
+ },
+ "01520000": {
+  "per_pupil_prof_dev": 479.0,
+  "per_pupil_other_teaching": 1983.0
+ },
+ "07780000": {
+  "per_pupil_prof_dev": 452.0,
+  "per_pupil_other_teaching": 2190.0
+ },
+ "00430000": {
+  "per_pupil_prof_dev": 28.0,
+  "per_pupil_other_teaching": 2357.0
+ },
+ "00360000": {
+  "per_pupil_prof_dev": 347.0,
+  "per_pupil_other_teaching": 1925.0
+ },
+ "01770000": {
+  "per_pupil_prof_dev": 317.0,
+  "per_pupil_other_teaching": 1185.0
+ },
+ "03230000": {
+  "per_pupil_prof_dev": 55.0,
+  "per_pupil_other_teaching": 1301.0
+ },
+ "00300000": {
+  "per_pupil_prof_dev": 167.0,
+  "per_pupil_other_teaching": 1556.0
+ },
+ "06250000": {
+  "per_pupil_prof_dev": 89.0,
+  "per_pupil_other_teaching": 1353.0
+ },
+ "02300000": {
+  "per_pupil_prof_dev": 6.0,
+  "per_pupil_other_teaching": 3010.0
+ },
+ "00820000": {
+  "per_pupil_prof_dev": 86.0,
+  "per_pupil_other_teaching": 1260.0
+ },
+ "01010000": {
+  "per_pupil_prof_dev": 324.0,
+  "per_pupil_other_teaching": 1884.0
+ },
+ "02640000": {
+  "per_pupil_prof_dev": 11.0,
+  "per_pupil_other_teaching": 1165.0
+ },
+ "01550000": {
+  "per_pupil_prof_dev": 254.0,
+  "per_pupil_other_teaching": 2973.0
+ },
+ "01370000": {
+  "per_pupil_prof_dev": 956.0,
+  "per_pupil_other_teaching": 2959.0
+ },
+ "02980000": {
+  "per_pupil_prof_dev": 128.0,
+  "per_pupil_other_teaching": 2920.0
+ },
+ "00730000": {
+  "per_pupil_prof_dev": 475.0,
+  "per_pupil_other_teaching": 2411.0
+ },
+ "06180000": {
+  "per_pupil_prof_dev": 767.0,
+  "per_pupil_other_teaching": 2920.0
+ },
+ "00640000": {
+  "per_pupil_prof_dev": 210.0,
+  "per_pupil_other_teaching": 1943.0
+ },
+ "01030000": {
+  "per_pupil_prof_dev": 565.0,
+  "per_pupil_other_teaching": 1732.0
+ },
+ "00500000": {
+  "per_pupil_prof_dev": 82.0,
+  "per_pupil_other_teaching": 2038.0
+ },
+ "01730000": {
+  "per_pupil_prof_dev": 228.0,
+  "per_pupil_other_teaching": 2238.0
+ },
+ "01570000": {
+  "per_pupil_prof_dev": 335.0,
+  "per_pupil_other_teaching": 3295.0
+ },
+ "02340000": {
+  "per_pupil_prof_dev": 13.0,
+  "per_pupil_other_teaching": 2090.0
+ },
+ "02430000": {
+  "per_pupil_prof_dev": 287.0,
+  "per_pupil_other_teaching": 1190.0
+ },
+ "06740000": {
+  "per_pupil_prof_dev": 455.0,
+  "per_pupil_other_teaching": 2880.0
+ },
+ "00910000": {
+  "per_pupil_prof_dev": 148.0,
+  "per_pupil_other_teaching": 6045.0
+ },
+ "01750000": {
+  "per_pupil_prof_dev": 61.0,
+  "per_pupil_other_teaching": 1721.0
+ },
+ "02420000": {
+  "per_pupil_prof_dev": 151.0,
+  "per_pupil_other_teaching": 2818.0
+ },
+ "01700000": {
+  "per_pupil_prof_dev": 201.0,
+  "per_pupil_other_teaching": 1560.0
+ },
+ "02720000": {
+  "per_pupil_prof_dev": 160.0,
+  "per_pupil_other_teaching": 4359.0
+ },
+ "03400000": {
+  "per_pupil_prof_dev": 57.0,
+  "per_pupil_other_teaching": 2041.0
+ },
+ "02310000": {
+  "per_pupil_prof_dev": 51.0,
+  "per_pupil_other_teaching": 1236.0
+ },
+ "02150000": {
+  "per_pupil_prof_dev": 84.0,
+  "per_pupil_other_teaching": 2712.0
+ },
+ "06030000": {
+  "per_pupil_prof_dev": 334.0,
+  "per_pupil_other_teaching": 2106.0
+ },
+ "00830000": {
+  "per_pupil_prof_dev": 156.0,
+  "per_pupil_other_teaching": 1371.0
+ },
+ "02120000": {
+  "per_pupil_prof_dev": 17.0,
+  "per_pupil_other_teaching": 1322.0
+ },
+ "01140000": {
+  "per_pupil_prof_dev": 91.0,
+  "per_pupil_other_teaching": 2538.0
+ },
+ "02080000": {
+  "per_pupil_prof_dev": 137.0,
+  "per_pupil_other_teaching": 2449.0
+ },
+ "02010000": {
+  "per_pupil_prof_dev": 492.0,
+  "per_pupil_other_teaching": 1460.0
+ },
+ "01890000": {
+  "per_pupil_prof_dev": 168.0,
+  "per_pupil_other_teaching": 1628.0
+ },
+ "06350000": {
+  "per_pupil_prof_dev": 333.0,
+  "per_pupil_other_teaching": 1593.0
+ },
+ "02270000": {
+  "per_pupil_prof_dev": 67.0,
+  "per_pupil_other_teaching": 1835.0
+ },
+ "00650000": {
+  "per_pupil_prof_dev": 115.0,
+  "per_pupil_other_teaching": 1589.0
+ },
+ "01580000": {
+  "per_pupil_prof_dev": 154.0,
+  "per_pupil_other_teaching": 1484.0
+ },
+ "00870000": {
+  "per_pupil_prof_dev": 628.0,
+  "per_pupil_other_teaching": 2392.0
+ },
+ "03050000": {
+  "per_pupil_prof_dev": 159.0,
+  "per_pupil_other_teaching": 1738.0
+ },
+ "00480000": {
+  "per_pupil_prof_dev": 281.0,
+  "per_pupil_other_teaching": 2214.0
+ },
+ "03180000": {
+  "per_pupil_prof_dev": 421.0,
+  "per_pupil_other_teaching": 4107.0
+ },
+ "02530000": {
+  "per_pupil_prof_dev": 174.0,
+  "per_pupil_other_teaching": 3971.0
+ },
+ "00310000": {
+  "per_pupil_prof_dev": 71.0,
+  "per_pupil_other_teaching": 2717.0
+ },
+ "01690000": {
+  "per_pupil_prof_dev": 248.0,
+  "per_pupil_other_teaching": 2170.0
+ },
+ "02040000": {
+  "per_pupil_prof_dev": 403.0,
+  "per_pupil_other_teaching": 1522.0
+ },
+ "00970000": {
+  "per_pupil_prof_dev": 673.0,
+  "per_pupil_other_teaching": 1636.0
+ },
+ "02780000": {
+  "per_pupil_prof_dev": 137.0,
+  "per_pupil_other_teaching": 2275.0
+ },
+ "06400000": {
+  "per_pupil_prof_dev": 195.0,
+  "per_pupil_other_teaching": 2053.0
+ },
+ "02730000": {
+  "per_pupil_prof_dev": 137.0,
+  "per_pupil_other_teaching": 1590.0
+ },
+ "06160000": {
+  "per_pupil_prof_dev": 226.0,
+  "per_pupil_other_teaching": 1675.0
+ },
+ "00090000": {
+  "per_pupil_prof_dev": 485.0,
+  "per_pupil_other_teaching": 2316.0
+ },
+ "06620000": {
+  "per_pupil_prof_dev": 127.0,
+  "per_pupil_other_teaching": 4172.0
+ },
+ "02630000": {
+  "per_pupil_prof_dev": 57.0,
+  "per_pupil_other_teaching": 2637.0
+ },
+ "02130000": {
+  "per_pupil_prof_dev": 85.0,
+  "per_pupil_other_teaching": 2858.0
+ },
+ "03420000": {
+  "per_pupil_prof_dev": 171.0,
+  "per_pupil_other_teaching": 1749.0
+ },
+ "06550000": {
+  "per_pupil_prof_dev": 215.0,
+  "per_pupil_other_teaching": 1526.0
+ },
+ "00790000": {
+  "per_pupil_prof_dev": 120.0,
+  "per_pupil_other_teaching": 1227.0
+ },
+ "00630000": {
+  "per_pupil_prof_dev": 51.0,
+  "per_pupil_other_teaching": 1502.0
+ },
+ "00950000": {
+  "per_pupil_prof_dev": 285.0,
+  "per_pupil_other_teaching": 2012.0
+ },
+ "03150000": {
+  "per_pupil_prof_dev": 231.0,
+  "per_pupil_other_teaching": 2054.0
+ },
+ "03260000": {
+  "per_pupil_prof_dev": 20.0,
+  "per_pupil_other_teaching": 1631.0
+ },
+ "03140000": {
+  "per_pupil_prof_dev": 452.0,
+  "per_pupil_other_teaching": 2412.0
+ },
+ "07350000": {
+  "per_pupil_prof_dev": 150.0,
+  "per_pupil_other_teaching": 1701.0
+ },
+ "01850000": {
+  "per_pupil_prof_dev": 156.0,
+  "per_pupil_other_teaching": 1139.0
+ },
+ "02900000": {
+  "per_pupil_prof_dev": 75.0,
+  "per_pupil_other_teaching": 1848.0
+ },
+ "07050000": {
+  "per_pupil_prof_dev": 48.0,
+  "per_pupil_other_teaching": 1341.0
+ },
+ "07750000": {
+  "per_pupil_prof_dev": 88.0,
+  "per_pupil_other_teaching": 1771.0
+ },
+ "07730000": {
+  "per_pupil_prof_dev": 146.0,
+  "per_pupil_other_teaching": 2258.0
+ },
+ "06980000": {
+  "per_pupil_prof_dev": 148.0,
+  "per_pupil_other_teaching": 1782.0
+ },
+ "01650000": {
+  "per_pupil_prof_dev": 123.0,
+  "per_pupil_other_teaching": 1750.0
+ },
+ "02510000": {
+  "per_pupil_prof_dev": 103.0,
+  "per_pupil_other_teaching": 1639.0
+ },
+ "07630000": {
+  "per_pupil_prof_dev": 124.0,
+  "per_pupil_other_teaching": 836.0
+ },
+ "00180000": {
+  "per_pupil_prof_dev": 111.0,
+  "per_pupil_other_teaching": 861.0
+ },
+ "07170000": {
+  "per_pupil_prof_dev": 593.0,
+  "per_pupil_other_teaching": 3505.0
+ },
+ "07700000": {
+  "per_pupil_prof_dev": 109.0,
+  "per_pupil_other_teaching": 1208.0
+ },
+ "00720000": {
+  "per_pupil_prof_dev": 277.0,
+  "per_pupil_other_teaching": 1382.0
+ },
+ "00960000": {
+  "per_pupil_prof_dev": 192.0,
+  "per_pupil_other_teaching": 2067.0
+ },
+ "03080000": {
+  "per_pupil_prof_dev": 415.0,
+  "per_pupil_other_teaching": 2109.0
+ },
+ "02500000": {
+  "per_pupil_prof_dev": 258.0,
+  "per_pupil_other_teaching": 1614.0
+ },
+ "00890000": {
+  "per_pupil_prof_dev": 88.0,
+  "per_pupil_other_teaching": 3643.0
+ },
+ "02660000": {
+  "per_pupil_prof_dev": 50.0,
+  "per_pupil_other_teaching": 1800.0
+ },
+ "00440000": {
+  "per_pupil_prof_dev": 239.0,
+  "per_pupil_other_teaching": 1593.0
+ },
+ "01330000": {
+  "per_pupil_prof_dev": 119.0,
+  "per_pupil_other_teaching": 1317.0
+ },
+ "01110000": {
+  "per_pupil_prof_dev": 180.0,
+  "per_pupil_other_teaching": 1771.0
+ },
+ "00990000": {
+  "per_pupil_prof_dev": 199.0,
+  "per_pupil_other_teaching": 1589.0
+ },
+ "03490000": {
+  "per_pupil_prof_dev": 90.0,
+  "per_pupil_other_teaching": 2422.0
+ },
+ "02100000": {
+  "per_pupil_prof_dev": 313.0,
+  "per_pupil_other_teaching": 2663.0
+ },
+ "03350000": {
+  "per_pupil_prof_dev": 211.0,
+  "per_pupil_other_teaching": 3101.0
+ },
+ "01910000": {
+  "per_pupil_prof_dev": 793.0,
+  "per_pupil_other_teaching": 2059.0
+ },
+ "00450000": {
+  "per_pupil_prof_dev": 43.0,
+  "per_pupil_other_teaching": 2215.0
+ },
+ "02110000": {
+  "per_pupil_prof_dev": 99.0,
+  "per_pupil_other_teaching": 2270.0
+ },
+ "07670000": {
+  "per_pupil_prof_dev": 199.0,
+  "per_pupil_other_teaching": 1880.0
+ },
+ "07800000": {
+  "per_pupil_prof_dev": 17.0,
+  "per_pupil_other_teaching": 1407.0
+ },
+ "00490000": {
+  "per_pupil_prof_dev": 1012.0,
+  "per_pupil_other_teaching": 3492.0
+ },
+ "07500000": {
+  "per_pupil_prof_dev": 214.0,
+  "per_pupil_other_teaching": 2972.0
+ },
+ "06720000": {
+  "per_pupil_prof_dev": 253.0,
+  "per_pupil_other_teaching": 2406.0
+ },
+ "01860000": {
+  "per_pupil_prof_dev": 379.0,
+  "per_pupil_other_teaching": 2027.0
+ },
+ "02170000": {
+  "per_pupil_prof_dev": 114.0,
+  "per_pupil_other_teaching": 1690.0
+ },
+ "00710000": {
+  "per_pupil_prof_dev": 506.0,
+  "per_pupil_other_teaching": 1997.0
+ },
+ "00250000": {
+  "per_pupil_prof_dev": 308.0,
+  "per_pupil_other_teaching": 2130.0
+ },
+ "06800000": {
+  "per_pupil_prof_dev": 230.0,
+  "per_pupil_other_teaching": 1876.0
+ },
+ "03250000": {
+  "per_pupil_prof_dev": 101.0,
+  "per_pupil_other_teaching": 1700.0
+ },
+ "02610000": {
+  "per_pupil_prof_dev": 424.0,
+  "per_pupil_other_teaching": 2677.0
+ },
+ "06500000": {
+  "per_pupil_prof_dev": 178.0,
+  "per_pupil_other_teaching": 1930.0
+ },
+ "02070000": {
+  "per_pupil_prof_dev": 435.0,
+  "per_pupil_other_teaching": 3301.0
+ },
+ "02210000": {
+  "per_pupil_prof_dev": 73.0,
+  "per_pupil_other_teaching": 3335.0
+ },
+ "03070000": {
+  "per_pupil_prof_dev": 477.0,
+  "per_pupil_other_teaching": 1771.0
+ },
+ "02950000": {
+  "per_pupil_prof_dev": 530.0,
+  "per_pupil_other_teaching": 2335.0
+ },
+ "03040000": {
+  "per_pupil_prof_dev": 272.0,
+  "per_pupil_other_teaching": 2318.0
+ },
+ "02190000": {
+  "per_pupil_prof_dev": 61.0,
+  "per_pupil_other_teaching": 1399.0
+ },
+ "02440000": {
+  "per_pupil_prof_dev": 168.0,
+  "per_pupil_other_teaching": 2013.0
+ },
+ "01210000": {
+  "per_pupil_prof_dev": 45.0,
+  "per_pupil_other_teaching": 4760.0
+ },
+ "01050000": {
+  "per_pupil_prof_dev": 79.0,
+  "per_pupil_other_teaching": 1767.0
+ },
+ "02460000": {
+  "per_pupil_prof_dev": 203.0,
+  "per_pupil_other_teaching": 1682.0
+ },
+ "02520000": {
+  "per_pupil_prof_dev": 286.0,
+  "per_pupil_other_teaching": 2010.0
+ },
+ "01780000": {
+  "per_pupil_prof_dev": 242.0,
+  "per_pupil_other_teaching": 1607.0
+ }
+}

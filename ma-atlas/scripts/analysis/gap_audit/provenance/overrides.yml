@@ -1,0 +1,29 @@
+# Hand-maintained provenance overrides — merged OVER the auto-extracted manifest.
+#
+# Use this for the ~15-20% of cases the auto-extractor can't resolve cleanly:
+#   - aggregate scripts (two-hop: a muni fetch feeds a district aggregate)
+#   - multi-output scripts
+#   - files whose docstring lacks a dataset id / Source: line
+#
+# Shape:
+#   files:                       # keyed by output data filename
+#     ma_district_acs.json:
+#       fetch_script: scripts/aggregate_acs_to_districts.py
+#       upstream_source: "..."
+#       dataset_id: ACS5
+#       vintage: "2019-2023"
+#       refill_command: "python scripts/fetch_acs_basics.py && python scripts/aggregate_acs_to_districts.py"
+#   metrics:                     # keyed by metric id (rare; for computed/special cases)
+#     some_metric:
+#       resolution: computed
+#       refill_command: "..."
+
+files:
+  ma_district_acs.json:
+    fetch_script: scripts/aggregate_acs_to_districts.py
+    upstream_source: "US Census ACS 5-yr (via ma_muni_acs.json) aggregated to districts"
+    dataset_id: ACS5
+    vintage: "2019-2023"
+    refill_command: "python scripts/fetch_acs_basics.py && python scripts/aggregate_acs_to_districts.py"
+
+metrics: {}

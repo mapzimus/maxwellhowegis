@@ -1,0 +1,1037 @@
+{
+ "06800000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.56
+ },
+ "00430000": {
+  "mcas_g4_ela_me": 0.42
+ },
+ "02430000": {
+  "mcas_g4_ela_me": 0.42,
+  "mcas_g8_ela_me": 0.54
+ },
+ "02770000": {
+  "mcas_g4_ela_me": 0.04,
+  "mcas_g8_ela_me": 0.28
+ },
+ "00890000": {
+  "mcas_g4_ela_me": 0.34,
+  "mcas_g8_ela_me": 0.51
+ },
+ "01870000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.57
+ },
+ "07740000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.72
+ },
+ "02920000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.39
+ },
+ "01980000": {
+  "mcas_g4_ela_me": 0.6,
+  "mcas_g8_ela_me": 0.64
+ },
+ "00300000": {
+  "mcas_g4_ela_me": 0.52,
+  "mcas_g8_ela_me": 0.41
+ },
+ "01510000": {
+  "mcas_g4_ela_me": 0.28,
+  "mcas_g8_ela_me": 0.39
+ },
+ "00570000": {
+  "mcas_g4_ela_me": 0.19,
+  "mcas_g8_ela_me": 0.16
+ },
+ "00850000": {
+  "mcas_g4_ela_me": 0.64
+ },
+ "00500000": {
+  "mcas_g4_ela_me": 0.57,
+  "mcas_g8_ela_me": 0.6
+ },
+ "00560000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.62
+ },
+ "02660000": {
+  "mcas_g4_ela_me": 0.67,
+  "mcas_g8_ela_me": 0.76
+ },
+ "00010000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.42
+ },
+ "02310000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.3
+ },
+ "01530000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.39
+ },
+ "07200000": {
+  "mcas_g4_ela_me": 0.32,
+  "mcas_g8_ela_me": 0.28
+ },
+ "06620000": {
+  "mcas_g4_ela_me": 0.47
+ },
+ "02880000": {
+  "mcas_g4_ela_me": 0.71,
+  "mcas_g8_ela_me": 0.8
+ },
+ "01910000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.34
+ },
+ "01970000": {
+  "mcas_g4_ela_me": 0.22,
+  "mcas_g8_ela_me": 0.37
+ },
+ "03150000": {
+  "mcas_g4_ela_me": 0.72,
+  "mcas_g8_ela_me": 0.83
+ },
+ "07750000": {
+  "mcas_g4_ela_me": 0.53,
+  "mcas_g8_ela_me": 0.54
+ },
+ "00650000": {
+  "mcas_g4_ela_me": 0.62,
+  "mcas_g8_ela_me": 0.79
+ },
+ "07650000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.36
+ },
+ "00200000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.22
+ },
+ "01990000": {
+  "mcas_g4_ela_me": 0.7,
+  "mcas_g8_ela_me": 0.78
+ },
+ "01360000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.7
+ },
+ "00860000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.34
+ },
+ "03080000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.47
+ },
+ "00380000": {
+  "mcas_g4_ela_me": 0.49
+ },
+ "00440000": {
+  "mcas_g4_ela_me": 0.19,
+  "mcas_g8_ela_me": 0.25
+ },
+ "02950000": {
+  "mcas_g4_ela_me": 0.33,
+  "mcas_g8_ela_me": 0.56
+ },
+ "06500000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.47
+ },
+ "06750000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.74
+ },
+ "00640000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.3
+ },
+ "00510000": {
+  "mcas_g4_ela_me": 0.89,
+  "mcas_g8_ela_me": 0.89
+ },
+ "00400000": {
+  "mcas_g4_ela_me": 0.58,
+  "mcas_g8_ela_me": 0.51
+ },
+ "00360000": {
+  "mcas_g4_ela_me": 0.31,
+  "mcas_g8_ela_me": 0.4
+ },
+ "00480000": {
+  "mcas_g4_ela_me": 0.45,
+  "mcas_g8_ela_me": 0.59
+ },
+ "01420000": {
+  "mcas_g4_ela_me": 0.55,
+  "mcas_g8_ela_me": 0.61
+ },
+ "01620000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.54
+ },
+ "07500000": {
+  "mcas_g4_ela_me": 0.39,
+  "mcas_g8_ela_me": 0.45
+ },
+ "02130000": {
+  "mcas_g4_ela_me": 0.55,
+  "mcas_g8_ela_me": 0.57
+ },
+ "00990000": {
+  "mcas_g4_ela_me": 0.61,
+  "mcas_g8_ela_me": 0.56
+ },
+ "00070000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.47
+ },
+ "00260000": {
+  "mcas_g4_ela_me": 0.67,
+  "mcas_g8_ela_me": 0.77
+ },
+ "01500000": {
+  "mcas_g4_ela_me": 0.33,
+  "mcas_g8_ela_me": 0.41
+ },
+ "02010000": {
+  "mcas_g4_ela_me": 0.22,
+  "mcas_g8_ela_me": 0.19
+ },
+ "02140000": {
+  "mcas_g4_ela_me": 0.24,
+  "mcas_g8_ela_me": 0.31
+ },
+ "01610000": {
+  "mcas_g4_ela_me": 0.32,
+  "mcas_g8_ela_me": 0.26
+ },
+ "02110000": {
+  "mcas_g4_ela_me": 0.45,
+  "mcas_g8_ela_me": 0.52
+ },
+ "02520000": {
+  "mcas_g4_ela_me": 0.46,
+  "mcas_g8_ela_me": 0.62
+ },
+ "01840000": {
+  "mcas_g4_ela_me": 0.48
+ },
+ "02750000": {
+  "mcas_g4_ela_me": 0.46
+ },
+ "01670000": {
+  "mcas_g4_ela_me": 0.48,
+  "mcas_g8_ela_me": 0.66
+ },
+ "01270000": {
+  "mcas_g4_ela_me": 0.42,
+  "mcas_g8_ela_me": 0.39
+ },
+ "03160000": {
+  "mcas_g4_ela_me": 0.25,
+  "mcas_g8_ela_me": 0.2
+ },
+ "06650000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.53
+ },
+ "02980000": {
+  "mcas_g4_ela_me": 0.52
+ },
+ "06250000": {
+  "mcas_g4_ela_me": 0.34,
+  "mcas_g8_ela_me": 0.43
+ },
+ "01310000": {
+  "mcas_g4_ela_me": 0.73,
+  "mcas_g8_ela_me": 0.76
+ },
+ "01960000": {
+  "mcas_g4_ela_me": 0.4
+ },
+ "01440000": {
+  "mcas_g4_ela_me": 0.54,
+  "mcas_g8_ela_me": 0.63
+ },
+ "01570000": {
+  "mcas_g4_ela_me": 0.59,
+  "mcas_g8_ela_me": 0.72
+ },
+ "01750000": {
+  "mcas_g4_ela_me": 0.63,
+  "mcas_g8_ela_me": 0.67
+ },
+ "01390000": {
+  "mcas_g4_ela_me": 0.69,
+  "mcas_g8_ela_me": 0.8
+ },
+ "02290000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.27
+ },
+ "03470000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.37
+ },
+ "06740000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.09
+ },
+ "02190000": {
+  "mcas_g4_ela_me": 0.7,
+  "mcas_g8_ela_me": 0.63
+ },
+ "02270000": {
+  "mcas_g4_ela_me": 0.21,
+  "mcas_g8_ela_me": 0.29
+ },
+ "00930000": {
+  "mcas_g4_ela_me": 0.19,
+  "mcas_g8_ela_me": 0.26
+ },
+ "00180000": {
+  "mcas_g4_ela_me": 0.34,
+  "mcas_g8_ela_me": 0.29
+ },
+ "00250000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.23
+ },
+ "02890000": {
+  "mcas_g4_ela_me": 0.67
+ },
+ "03300000": {
+  "mcas_g4_ela_me": 0.74,
+  "mcas_g8_ela_me": 0.78
+ },
+ "01070000": {
+  "mcas_g4_ela_me": 0.31,
+  "mcas_g8_ela_me": 0.36
+ },
+ "02380000": {
+  "mcas_g4_ela_me": 0.48
+ },
+ "00940000": {
+  "mcas_g4_ela_me": 0.5,
+  "mcas_g8_ela_me": 0.37
+ },
+ "06180000": {
+  "mcas_g4_ela_me": 0.48,
+  "mcas_g8_ela_me": 0.33
+ },
+ "07050000": {
+  "mcas_g8_ela_me": 0.56
+ },
+ "02740000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.4
+ },
+ "06000000": {
+  "mcas_g4_ela_me": 0.63,
+  "mcas_g8_ela_me": 0.73
+ },
+ "07780000": {
+  "mcas_g4_ela_me": 0.31,
+  "mcas_g8_ela_me": 0.21
+ },
+ "00950000": {
+  "mcas_g4_ela_me": 0.18,
+  "mcas_g8_ela_me": 0.19
+ },
+ "01650000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.4
+ },
+ "03140000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.58
+ },
+ "01370000": {
+  "mcas_g4_ela_me": 0.16,
+  "mcas_g8_ela_me": 0.11
+ },
+ "02480000": {
+  "mcas_g4_ela_me": 0.23,
+  "mcas_g8_ela_me": 0.26
+ },
+ "01410000": {
+  "mcas_g4_ela_me": 0.47,
+  "mcas_g8_ela_me": 0.36
+ },
+ "07800000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.38
+ },
+ "01100000": {
+  "mcas_g4_ela_me": 0.55,
+  "mcas_g8_ela_me": 0.61
+ },
+ "00350000": {
+  "mcas_g4_ela_me": 0.28,
+  "mcas_g8_ela_me": 0.28
+ },
+ "01850000": {
+  "mcas_g4_ela_me": 0.24,
+  "mcas_g8_ela_me": 0.29
+ },
+ "01000000": {
+  "mcas_g4_ela_me": 0.26,
+  "mcas_g8_ela_me": 0.26
+ },
+ "06150000": {
+  "mcas_g4_ela_me": 0.19,
+  "mcas_g8_ela_me": 0.2
+ },
+ "02500000": {
+  "mcas_g4_ela_me": 0.4
+ },
+ "01780000": {
+  "mcas_g4_ela_me": 0.73,
+  "mcas_g8_ela_me": 0.55
+ },
+ "06720000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.23
+ },
+ "06100000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.54
+ },
+ "03370000": {
+  "mcas_g4_ela_me": 0.47
+ },
+ "03310000": {
+  "mcas_g4_ela_me": 0.32,
+  "mcas_g8_ela_me": 0.28
+ },
+ "00980000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.2
+ },
+ "06980000": {
+  "mcas_g4_ela_me": 0.54,
+  "mcas_g8_ela_me": 0.72
+ },
+ "01540000": {
+  "mcas_g4_ela_me": 0.22
+ },
+ "07280000": {
+  "mcas_g4_ela_me": 0.42
+ },
+ "02210000": {
+  "mcas_g4_ela_me": 0.44,
+  "mcas_g8_ela_me": 0.53
+ },
+ "03250000": {
+  "mcas_g4_ela_me": 0.33,
+  "mcas_g8_ela_me": 0.43
+ },
+ "03320000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.24
+ },
+ "06600000": {
+  "mcas_g8_ela_me": 0.59
+ },
+ "03270000": {
+  "mcas_g4_ela_me": 0.45
+ },
+ "01700000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.26
+ },
+ "01810000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.32
+ },
+ "02620000": {
+  "mcas_g4_ela_me": 0.27,
+  "mcas_g8_ela_me": 0.23
+ },
+ "01350000": {
+  "mcas_g4_ela_me": 0.34
+ },
+ "02580000": {
+  "mcas_g4_ela_me": 0.29,
+  "mcas_g8_ela_me": 0.33
+ },
+ "07730000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.41
+ },
+ "02170000": {
+  "mcas_g4_ela_me": 0.65,
+  "mcas_g8_ela_me": 0.75
+ },
+ "00450000": {
+  "mcas_g4_ela_me": 0.39
+ },
+ "00090000": {
+  "mcas_g4_ela_me": 0.6,
+  "mcas_g8_ela_me": 0.65
+ },
+ "02440000": {
+  "mcas_g4_ela_me": 0.16,
+  "mcas_g8_ela_me": 0.2
+ },
+ "00410000": {
+  "mcas_g4_ela_me": 0.48
+ },
+ "01760000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.41
+ },
+ "02530000": {
+  "mcas_g4_ela_me": 0.3
+ },
+ "00160000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.41
+ },
+ "07100000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.55
+ },
+ "00730000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.45
+ },
+ "00770000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.61
+ },
+ "07250000": {
+  "mcas_g4_ela_me": 0.56,
+  "mcas_g8_ela_me": 0.66
+ },
+ "07530000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.41
+ },
+ "00460000": {
+  "mcas_g4_ela_me": 0.66,
+  "mcas_g8_ela_me": 0.75
+ },
+ "03430000": {
+  "mcas_g4_ela_me": 0.26,
+  "mcas_g8_ela_me": 0.35
+ },
+ "03170000": {
+  "mcas_g4_ela_me": 0.67,
+  "mcas_g8_ela_me": 0.78
+ },
+ "00310000": {
+  "mcas_g4_ela_me": 0.42,
+  "mcas_g8_ela_me": 0.4
+ },
+ "00630000": {
+  "mcas_g4_ela_me": 0.22,
+  "mcas_g8_ela_me": 0.26
+ },
+ "02900000": {
+  "mcas_g4_ela_me": 0.41,
+  "mcas_g8_ela_me": 0.51
+ },
+ "07670000": {
+  "mcas_g4_ela_me": 0.23,
+  "mcas_g8_ela_me": 0.25
+ },
+ "00170000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.53
+ },
+ "00680000": {
+  "mcas_g4_ela_me": 0.65
+ },
+ "02710000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.69
+ },
+ "03060000": {
+  "mcas_g4_ela_me": 0.25
+ },
+ "01690000": {
+  "mcas_g4_ela_me": 0.41
+ },
+ "02650000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.63
+ },
+ "01820000": {
+  "mcas_g4_ela_me": 0.34,
+  "mcas_g8_ela_me": 0.37
+ },
+ "03100000": {
+  "mcas_g4_ela_me": 0.29,
+  "mcas_g8_ela_me": 0.24
+ },
+ "03260000": {
+  "mcas_g4_ela_me": 0.58,
+  "mcas_g8_ela_me": 0.72
+ },
+ "01050000": {
+  "mcas_g4_ela_me": 0.47,
+  "mcas_g8_ela_me": 0.38
+ },
+ "01550000": {
+  "mcas_g4_ela_me": 0.74,
+  "mcas_g8_ela_me": 0.79
+ },
+ "02300000": {
+  "mcas_g4_ela_me": 0.62
+ },
+ "00140000": {
+  "mcas_g4_ela_me": 0.5,
+  "mcas_g8_ela_me": 0.64
+ },
+ "03500000": {
+  "mcas_g4_ela_me": 0.47
+ },
+ "06730000": {
+  "mcas_g4_ela_me": 0.57,
+  "mcas_g8_ela_me": 0.6
+ },
+ "02730000": {
+  "mcas_g4_ela_me": 0.44,
+  "mcas_g8_ela_me": 0.42
+ },
+ "03090000": {
+  "mcas_g4_ela_me": 0.21,
+  "mcas_g8_ela_me": 0.34
+ },
+ "02260000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.39
+ },
+ "01520000": {
+  "mcas_g4_ela_me": 0.6,
+  "mcas_g8_ela_me": 0.66
+ },
+ "00970000": {
+  "mcas_g4_ela_me": 0.26,
+  "mcas_g8_ela_me": 0.29
+ },
+ "02360000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.27
+ },
+ "03180000": {
+  "mcas_g4_ela_me": 0.63
+ },
+ "06220000": {
+  "mcas_g4_ela_me": 0.41,
+  "mcas_g8_ela_me": 0.37
+ },
+ "01110000": {
+  "mcas_g4_ela_me": 0.32,
+  "mcas_g8_ela_me": 0.16
+ },
+ "07120000": {
+  "mcas_g4_ela_me": 0.41,
+  "mcas_g8_ela_me": 0.4
+ },
+ "00520000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.21
+ },
+ "02760000": {
+  "mcas_g4_ela_me": 0.65,
+  "mcas_g8_ela_me": 0.73
+ },
+ "01630000": {
+  "mcas_g4_ela_me": 0.17,
+  "mcas_g8_ela_me": 0.18
+ },
+ "02090000": {
+  "mcas_g4_ela_me": 0.18,
+  "mcas_g8_ela_me": 0.22
+ },
+ "02840000": {
+  "mcas_g4_ela_me": 0.45,
+  "mcas_g8_ela_me": 0.6
+ },
+ "02490000": {
+  "mcas_g4_ela_me": 0.61,
+  "mcas_g8_ela_me": 0.62
+ },
+ "00720000": {
+  "mcas_g4_ela_me": 0.47,
+  "mcas_g8_ela_me": 0.54
+ },
+ "00830000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.35
+ },
+ "00270000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.58
+ },
+ "01720000": {
+  "mcas_g4_ela_me": 0.42,
+  "mcas_g8_ela_me": 0.36
+ },
+ "02100000": {
+  "mcas_g4_ela_me": 0.53,
+  "mcas_g8_ela_me": 0.44
+ },
+ "03210000": {
+  "mcas_g4_ela_me": 0.62,
+  "mcas_g8_ela_me": 0.74
+ },
+ "01380000": {
+  "mcas_g4_ela_me": 0.46,
+  "mcas_g8_ela_me": 0.45
+ },
+ "02230000": {
+  "mcas_g4_ela_me": 0.13
+ },
+ "00910000": {
+  "mcas_g4_ela_me": 0.33
+ },
+ "02240000": {
+  "mcas_g4_ela_me": 0.68
+ },
+ "00960000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.52
+ },
+ "03230000": {
+  "mcas_g4_ela_me": 0.28,
+  "mcas_g8_ela_me": 0.5
+ },
+ "03440000": {
+  "mcas_g4_ela_me": 0.7,
+  "mcas_g8_ela_me": 0.79
+ },
+ "03050000": {
+  "mcas_g4_ela_me": 0.56,
+  "mcas_g8_ela_me": 0.59
+ },
+ "06450000": {
+  "mcas_g4_ela_me": 0.26,
+  "mcas_g8_ela_me": 0.27
+ },
+ "06550000": {
+  "mcas_g8_ela_me": 0.74
+ },
+ "06900000": {
+  "mcas_g8_ela_me": 0.54
+ },
+ "02640000": {
+  "mcas_g4_ela_me": 0.56,
+  "mcas_g8_ela_me": 0.66
+ },
+ "02120000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.55
+ },
+ "02780000": {
+  "mcas_g4_ela_me": 0.31,
+  "mcas_g8_ela_me": 0.5
+ },
+ "01890000": {
+  "mcas_g4_ela_me": 0.7,
+  "mcas_g8_ela_me": 0.59
+ },
+ "01490000": {
+  "mcas_g4_ela_me": 0.16,
+  "mcas_g8_ela_me": 0.21
+ },
+ "02850000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.36
+ },
+ "01450000": {
+  "mcas_g4_ela_me": 0.4
+ },
+ "00490000": {
+  "mcas_g4_ela_me": 0.59,
+  "mcas_g8_ela_me": 0.62
+ },
+ "03220000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.63
+ },
+ "03420000": {
+  "mcas_g4_ela_me": 0.53,
+  "mcas_g8_ela_me": 0.53
+ },
+ "07450000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.44
+ },
+ "06030000": {
+  "mcas_g4_ela_me": 0.22,
+  "mcas_g8_ela_me": 0.07
+ },
+ "01710000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.62
+ },
+ "01740000": {
+  "mcas_g4_ela_me": 0.42,
+  "mcas_g8_ela_me": 0.57
+ },
+ "02510000": {
+  "mcas_g4_ela_me": 0.39,
+  "mcas_g8_ela_me": 0.46
+ },
+ "01860000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.37
+ },
+ "01170000": {
+  "mcas_g4_ela_me": 0.56,
+  "mcas_g8_ela_me": 0.53
+ },
+ "02040000": {
+  "mcas_g4_ela_me": 0.44,
+  "mcas_g8_ela_me": 0.63
+ },
+ "02070000": {
+  "mcas_g4_ela_me": 0.61,
+  "mcas_g8_ela_me": 0.75
+ },
+ "02180000": {
+  "mcas_g4_ela_me": 0.44,
+  "mcas_g8_ela_me": 0.47
+ },
+ "03010000": {
+  "mcas_g4_ela_me": 0.43,
+  "mcas_g8_ela_me": 0.45
+ },
+ "03480000": {
+  "mcas_g4_ela_me": 0.24,
+  "mcas_g8_ela_me": 0.27
+ },
+ "07660000": {
+  "mcas_g4_ela_me": 0.53,
+  "mcas_g8_ela_me": 0.31
+ },
+ "02460000": {
+  "mcas_g4_ela_me": 0.71,
+  "mcas_g8_ela_me": 0.68
+ },
+ "01580000": {
+  "mcas_g4_ela_me": 0.53,
+  "mcas_g8_ela_me": 0.72
+ },
+ "01280000": {
+  "mcas_g4_ela_me": 0.28,
+  "mcas_g8_ela_me": 0.27
+ },
+ "01250000": {
+  "mcas_g4_ela_me": 0.63,
+  "mcas_g8_ela_me": 0.77
+ },
+ "01600000": {
+  "mcas_g4_ela_me": 0.28,
+  "mcas_g8_ela_me": 0.34
+ },
+ "02080000": {
+  "mcas_g4_ela_me": 0.54
+ },
+ "06350000": {
+  "mcas_g4_ela_me": 0.32,
+  "mcas_g8_ela_me": 0.47
+ },
+ "01730000": {
+  "mcas_g4_ela_me": 0.55
+ },
+ "00080000": {
+  "mcas_g4_ela_me": 0.56
+ },
+ "00740000": {
+  "mcas_g4_ela_me": 0.52
+ },
+ "01590000": {
+  "mcas_g4_ela_me": 0.59,
+  "mcas_g8_ela_me": 0.66
+ },
+ "07350000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.43
+ },
+ "00790000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.4
+ },
+ "00050000": {
+  "mcas_g4_ela_me": 0.39,
+  "mcas_g8_ela_me": 0.31
+ },
+ "00670000": {
+  "mcas_g4_ela_me": 0.61,
+  "mcas_g8_ela_me": 0.83
+ },
+ "02400000": {
+  "mcas_g4_ela_me": 0.6
+ },
+ "02720000": {
+  "mcas_g4_ela_me": 0.64
+ },
+ "01140000": {
+  "mcas_g4_ela_me": 0.24,
+  "mcas_g8_ela_me": 0.19
+ },
+ "02390000": {
+  "mcas_g4_ela_me": 0.45,
+  "mcas_g8_ela_me": 0.45
+ },
+ "00610000": {
+  "mcas_g4_ela_me": 0.29,
+  "mcas_g8_ela_me": 0.28
+ },
+ "03070000": {
+  "mcas_g4_ela_me": 0.59,
+  "mcas_g8_ela_me": 0.47
+ },
+ "00100000": {
+  "mcas_g4_ela_me": 0.67,
+  "mcas_g8_ela_me": 0.8
+ },
+ "03040000": {
+  "mcas_g4_ela_me": 0.46,
+  "mcas_g8_ela_me": 0.43
+ },
+ "00870000": {
+  "mcas_g4_ela_me": 0.39,
+  "mcas_g8_ela_me": 0.5
+ },
+ "02340000": {
+  "mcas_g4_ela_me": 0.42
+ },
+ "07150000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.54
+ },
+ "00230000": {
+  "mcas_g4_ela_me": 0.64,
+  "mcas_g8_ela_me": 0.76
+ },
+ "00710000": {
+  "mcas_g4_ela_me": 0.37,
+  "mcas_g8_ela_me": 0.35
+ },
+ "03360000": {
+  "mcas_g4_ela_me": 0.41,
+  "mcas_g8_ela_me": 0.52
+ },
+ "01330000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.3
+ },
+ "02930000": {
+  "mcas_g4_ela_me": 0.26,
+  "mcas_g8_ela_me": 0.27
+ },
+ "00820000": {
+  "mcas_g4_ela_me": 0.66,
+  "mcas_g8_ela_me": 0.72
+ },
+ "01640000": {
+  "mcas_g4_ela_me": 0.62,
+  "mcas_g8_ela_me": 0.6
+ },
+ "02910000": {
+  "mcas_g4_ela_me": 0.53,
+  "mcas_g8_ela_me": 0.52
+ },
+ "02960000": {
+  "mcas_g4_ela_me": 0.32,
+  "mcas_g8_ela_me": 0.5
+ },
+ "00240000": {
+  "mcas_g4_ela_me": 0.35,
+  "mcas_g8_ela_me": 0.5
+ },
+ "01680000": {
+  "mcas_g4_ela_me": 0.49,
+  "mcas_g8_ela_me": 0.71
+ },
+ "07170000": {
+  "mcas_g4_ela_me": 0.28,
+  "mcas_g8_ela_me": 0.15
+ },
+ "06580000": {
+  "mcas_g4_ela_me": 0.36,
+  "mcas_g8_ela_me": 0.41
+ },
+ "02150000": {
+  "mcas_g4_ela_me": 0.16,
+  "mcas_g8_ela_me": 0.2
+ },
+ "06200000": {
+  "mcas_g4_ela_me": 0.57,
+  "mcas_g8_ela_me": 0.5
+ },
+ "03350000": {
+  "mcas_g4_ela_me": 0.69,
+  "mcas_g8_ela_me": 0.75
+ },
+ "00030000": {
+  "mcas_g4_ela_me": 0.59,
+  "mcas_g8_ela_me": 0.53
+ },
+ "00880000": {
+  "mcas_g4_ela_me": 0.56,
+  "mcas_g8_ela_me": 0.53
+ },
+ "01030000": {
+  "mcas_g4_ela_me": 0.23,
+  "mcas_g8_ela_me": 0.33
+ },
+ "01010000": {
+  "mcas_g4_ela_me": 0.61,
+  "mcas_g8_ela_me": 0.64
+ },
+ "02200000": {
+  "mcas_g4_ela_me": 0.4,
+  "mcas_g8_ela_me": 0.41
+ },
+ "03460000": {
+  "mcas_g4_ela_me": 0.3,
+  "mcas_g8_ela_me": 0.57
+ },
+ "01220000": {
+  "mcas_g4_ela_me": 0.55,
+  "mcas_g8_ela_me": 0.6
+ },
+ "02690000": {
+  "mcas_g4_ela_me": 0.67
+ },
+ "02610000": {
+  "mcas_g4_ela_me": 0.51,
+  "mcas_g8_ela_me": 0.52
+ },
+ "06160000": {
+  "mcas_g4_ela_me": 0.38,
+  "mcas_g8_ela_me": 0.54
+ },
+ "06320000": {
+  "mcas_g4_ela_me": 0.46
+ },
+ "06850000": {
+  "mcas_g4_ela_me": 0.4
+ },
+ "07700000": {
+  "mcas_g8_ela_me": 0.49
+ },
+ "01770000": {
+  "mcas_g4_ela_me": 0.61,
+  "mcas_g8_ela_me": 0.72
+ },
+ "01180000": {
+  "mcas_g4_ela_me": 0.63
+ },
+ "02810000": {
+  "mcas_g4_ela_me": 0.26,
+  "mcas_g8_ela_me": 0.2
+ }
+}

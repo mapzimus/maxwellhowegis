@@ -1,0 +1,1571 @@
+{
+ "01600000": {
+  "mcas_g3_ela_me": 0.29,
+  "mcas_g3_math_me": 0.35,
+  "mcas_g4_math_me": 0.32,
+  "mcas_g8_math_me": 0.33
+ },
+ "02720000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.76,
+  "mcas_g4_math_me": 0.27
+ },
+ "02440000": {
+  "mcas_g3_ela_me": 0.2,
+  "mcas_g3_math_me": 0.29,
+  "mcas_g4_math_me": 0.26,
+  "mcas_g8_math_me": 0.18
+ },
+ "03370000": {
+  "mcas_g3_ela_me": 0.69,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.87
+ },
+ "00680000": {
+  "mcas_g3_ela_me": 0.94,
+  "mcas_g3_math_me": 0.71,
+  "mcas_g4_math_me": 0.53
+ },
+ "00070000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.31,
+  "mcas_g4_math_me": 0.39,
+  "mcas_g8_math_me": 0.32
+ },
+ "02110000": {
+  "mcas_g3_ela_me": 0.52,
+  "mcas_g3_math_me": 0.53,
+  "mcas_g4_math_me": 0.5,
+  "mcas_g8_math_me": 0.54
+ },
+ "01740000": {
+  "mcas_g3_ela_me": 0.38,
+  "mcas_g3_math_me": 0.26,
+  "mcas_g4_math_me": 0.34,
+  "mcas_g8_math_me": 0.53
+ },
+ "02140000": {
+  "mcas_g3_ela_me": 0.44,
+  "mcas_g3_math_me": 0.42,
+  "mcas_g4_math_me": 0.3,
+  "mcas_g8_math_me": 0.38
+ },
+ "06250000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.42,
+  "mcas_g8_math_me": 0.42
+ },
+ "06620000": {
+  "mcas_g3_ela_me": 0.33,
+  "mcas_g3_math_me": 0.33,
+  "mcas_g4_math_me": 0.37
+ },
+ "00450000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.46
+ },
+ "01760000": {
+  "mcas_g3_ela_me": 0.49,
+  "mcas_g3_math_me": 0.44,
+  "mcas_g4_math_me": 0.31,
+  "mcas_g8_math_me": 0.29
+ },
+ "03080000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.41
+ },
+ "07450000": {
+  "mcas_g3_ela_me": 0.51,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.47,
+  "mcas_g8_math_me": 0.47
+ },
+ "02200000": {
+  "mcas_g3_ela_me": 0.33,
+  "mcas_g3_math_me": 0.37,
+  "mcas_g4_math_me": 0.42,
+  "mcas_g8_math_me": 0.4
+ },
+ "00500000": {
+  "mcas_g3_ela_me": 0.6,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.63,
+  "mcas_g8_math_me": 0.68
+ },
+ "07530000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.34,
+  "mcas_g4_math_me": 0.39,
+  "mcas_g8_math_me": 0.26
+ },
+ "01360000": {
+  "mcas_g3_ela_me": 0.51,
+  "mcas_g3_math_me": 0.53,
+  "mcas_g4_math_me": 0.4,
+  "mcas_g8_math_me": 0.65
+ },
+ "00410000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.59
+ },
+ "01550000": {
+  "mcas_g3_ela_me": 0.7,
+  "mcas_g3_math_me": 0.74,
+  "mcas_g4_math_me": 0.76,
+  "mcas_g8_math_me": 0.76
+ },
+ "02910000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.5,
+  "mcas_g4_math_me": 0.43,
+  "mcas_g8_math_me": 0.4
+ },
+ "00910000": {
+  "mcas_g3_ela_me": 0.27,
+  "mcas_g3_math_me": 0.33,
+  "mcas_g4_math_me": 0.27
+ },
+ "07780000": {
+  "mcas_g3_ela_me": 0.25,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.1
+ },
+ "01180000": {
+  "mcas_g3_ela_me": 0.69,
+  "mcas_g3_math_me": 0.65,
+  "mcas_g4_math_me": 0.45
+ },
+ "02340000": {
+  "mcas_g3_ela_me": 0.37,
+  "mcas_g3_math_me": 0.17,
+  "mcas_g4_math_me": 0.32
+ },
+ "02890000": {
+  "mcas_g3_ela_me": 0.33,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.67
+ },
+ "03250000": {
+  "mcas_g3_ela_me": 0.31,
+  "mcas_g3_math_me": 0.35,
+  "mcas_g4_math_me": 0.37,
+  "mcas_g8_math_me": 0.38
+ },
+ "01850000": {
+  "mcas_g3_ela_me": 0.24,
+  "mcas_g3_math_me": 0.32,
+  "mcas_g4_math_me": 0.28,
+  "mcas_g8_math_me": 0.13
+ },
+ "03350000": {
+  "mcas_g3_ela_me": 0.72,
+  "mcas_g3_math_me": 0.74,
+  "mcas_g4_math_me": 0.75,
+  "mcas_g8_math_me": 0.7
+ },
+ "02270000": {
+  "mcas_g3_ela_me": 0.34,
+  "mcas_g3_math_me": 0.33,
+  "mcas_g4_math_me": 0.22,
+  "mcas_g8_math_me": 0.32
+ },
+ "02900000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.36,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.42
+ },
+ "02170000": {
+  "mcas_g3_ela_me": 0.67,
+  "mcas_g3_math_me": 0.69,
+  "mcas_g4_math_me": 0.6,
+  "mcas_g8_math_me": 0.67
+ },
+ "00960000": {
+  "mcas_g3_ela_me": 0.47,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.45,
+  "mcas_g8_math_me": 0.36
+ },
+ "02120000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.44,
+  "mcas_g4_math_me": 0.38,
+  "mcas_g8_math_me": 0.46
+ },
+ "00850000": {
+  "mcas_g3_ela_me": 0.56,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.68
+ },
+ "01370000": {
+  "mcas_g3_ela_me": 0.15,
+  "mcas_g3_math_me": 0.09,
+  "mcas_g4_math_me": 0.1,
+  "mcas_g8_math_me": 0.04
+ },
+ "03050000": {
+  "mcas_g3_ela_me": 0.56,
+  "mcas_g3_math_me": 0.6,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.51
+ },
+ "00460000": {
+  "mcas_g3_ela_me": 0.66,
+  "mcas_g3_math_me": 0.68,
+  "mcas_g4_math_me": 0.66,
+  "mcas_g8_math_me": 0.75
+ },
+ "02100000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.3
+ },
+ "02770000": {
+  "mcas_g3_ela_me": 0.06,
+  "mcas_g3_math_me": 0.01,
+  "mcas_g4_math_me": 0.05,
+  "mcas_g8_math_me": 0.18
+ },
+ "01270000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.19,
+  "mcas_g4_math_me": 0.46,
+  "mcas_g8_math_me": 0.25
+ },
+ "03060000": {
+  "mcas_g4_math_me": 0.33
+ },
+ "00650000": {
+  "mcas_g3_ela_me": 0.65,
+  "mcas_g3_math_me": 0.68,
+  "mcas_g4_math_me": 0.71,
+  "mcas_g8_math_me": 0.63
+ },
+ "01890000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.57,
+  "mcas_g4_math_me": 0.7,
+  "mcas_g8_math_me": 0.48
+ },
+ "03000000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.55
+ },
+ "02460000": {
+  "mcas_g3_ela_me": 0.64,
+  "mcas_g3_math_me": 0.63,
+  "mcas_g4_math_me": 0.74,
+  "mcas_g8_math_me": 0.68
+ },
+ "00440000": {
+  "mcas_g3_ela_me": 0.21,
+  "mcas_g3_math_me": 0.2,
+  "mcas_g4_math_me": 0.18,
+  "mcas_g8_math_me": 0.21
+ },
+ "01000000": {
+  "mcas_g3_ela_me": 0.24,
+  "mcas_g3_math_me": 0.21,
+  "mcas_g4_math_me": 0.19,
+  "mcas_g8_math_me": 0.2
+ },
+ "02730000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.6,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.48
+ },
+ "01070000": {
+  "mcas_g3_ela_me": 0.28,
+  "mcas_g3_math_me": 0.31,
+  "mcas_g4_math_me": 0.31,
+  "mcas_g8_math_me": 0.24
+ },
+ "01860000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.25
+ },
+ "01100000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.52
+ },
+ "01640000": {
+  "mcas_g3_ela_me": 0.62,
+  "mcas_g3_math_me": 0.69,
+  "mcas_g4_math_me": 0.64,
+  "mcas_g8_math_me": 0.61
+ },
+ "01720000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.26
+ },
+ "02920000": {
+  "mcas_g3_ela_me": 0.52,
+  "mcas_g3_math_me": 0.44,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.42
+ },
+ "03040000": {
+  "mcas_g3_ela_me": 0.47,
+  "mcas_g3_math_me": 0.35,
+  "mcas_g4_math_me": 0.5,
+  "mcas_g8_math_me": 0.29
+ },
+ "00820000": {
+  "mcas_g3_ela_me": 0.64,
+  "mcas_g3_math_me": 0.7,
+  "mcas_g4_math_me": 0.72,
+  "mcas_g8_math_me": 0.54
+ },
+ "06220000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.51,
+  "mcas_g8_math_me": 0.26
+ },
+ "07100000": {
+  "mcas_g3_ela_me": 0.47,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.61,
+  "mcas_g8_math_me": 0.33
+ },
+ "07200000": {
+  "mcas_g3_ela_me": 0.32,
+  "mcas_g3_math_me": 0.39,
+  "mcas_g4_math_me": 0.26,
+  "mcas_g8_math_me": 0.25
+ },
+ "01690000": {
+  "mcas_g3_ela_me": 0.42,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.45
+ },
+ "02710000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.73,
+  "mcas_g4_math_me": 0.67,
+  "mcas_g8_math_me": 0.72
+ },
+ "02090000": {
+  "mcas_g3_ela_me": 0.22,
+  "mcas_g3_math_me": 0.34,
+  "mcas_g4_math_me": 0.18,
+  "mcas_g8_math_me": 0.03
+ },
+ "02010000": {
+  "mcas_g3_ela_me": 0.22,
+  "mcas_g3_math_me": 0.2,
+  "mcas_g4_math_me": 0.23,
+  "mcas_g8_math_me": 0.12
+ },
+ "01750000": {
+  "mcas_g3_ela_me": 0.71,
+  "mcas_g3_math_me": 0.78,
+  "mcas_g4_math_me": 0.82,
+  "mcas_g8_math_me": 0.67
+ },
+ "01770000": {
+  "mcas_g3_ela_me": 0.6,
+  "mcas_g3_math_me": 0.65,
+  "mcas_g4_math_me": 0.64,
+  "mcas_g8_math_me": 0.69
+ },
+ "02130000": {
+  "mcas_g3_ela_me": 0.55,
+  "mcas_g3_math_me": 0.59,
+  "mcas_g4_math_me": 0.57,
+  "mcas_g8_math_me": 0.51
+ },
+ "02810000": {
+  "mcas_g3_ela_me": 0.24,
+  "mcas_g3_math_me": 0.21,
+  "mcas_g4_math_me": 0.23,
+  "mcas_g8_math_me": 0.12
+ },
+ "07800000": {
+  "mcas_g3_ela_me": 0.51,
+  "mcas_g3_math_me": 0.48,
+  "mcas_g4_math_me": 0.47,
+  "mcas_g8_math_me": 0.3
+ },
+ "00050000": {
+  "mcas_g3_ela_me": 0.41,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.26
+ },
+ "01030000": {
+  "mcas_g3_ela_me": 0.22,
+  "mcas_g3_math_me": 0.17,
+  "mcas_g4_math_me": 0.17,
+  "mcas_g8_math_me": 0.19
+ },
+ "07120000": {
+  "mcas_g3_ela_me": 0.54,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.53,
+  "mcas_g8_math_me": 0.3
+ },
+ "02850000": {
+  "mcas_g3_ela_me": 0.42,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.45,
+  "mcas_g8_math_me": 0.28
+ },
+ "00710000": {
+  "mcas_g3_ela_me": 0.38,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.35
+ },
+ "03070000": {
+  "mcas_g3_ela_me": 0.68,
+  "mcas_g3_math_me": 0.73,
+  "mcas_g4_math_me": 0.73,
+  "mcas_g8_math_me": 0.45
+ },
+ "03010000": {
+  "mcas_g3_ela_me": 0.27,
+  "mcas_g3_math_me": 0.31,
+  "mcas_g4_math_me": 0.57,
+  "mcas_g8_math_me": 0.51
+ },
+ "00630000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.55,
+  "mcas_g4_math_me": 0.3,
+  "mcas_g8_math_me": 0.0
+ },
+ "00480000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.51,
+  "mcas_g8_math_me": 0.52
+ },
+ "02780000": {
+  "mcas_g3_ela_me": 0.31,
+  "mcas_g3_math_me": 0.29,
+  "mcas_g4_math_me": 0.29,
+  "mcas_g8_math_me": 0.35
+ },
+ "01510000": {
+  "mcas_g3_ela_me": 0.27,
+  "mcas_g3_math_me": 0.29,
+  "mcas_g4_math_me": 0.14,
+  "mcas_g8_math_me": 0.29
+ },
+ "00990000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.67,
+  "mcas_g4_math_me": 0.64,
+  "mcas_g8_math_me": 0.59
+ },
+ "00090000": {
+  "mcas_g3_ela_me": 0.61,
+  "mcas_g3_math_me": 0.68,
+  "mcas_g4_math_me": 0.68,
+  "mcas_g8_math_me": 0.65
+ },
+ "00100000": {
+  "mcas_g3_ela_me": 0.65,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.67,
+  "mcas_g8_math_me": 0.74
+ },
+ "00200000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.42,
+  "mcas_g4_math_me": 0.27,
+  "mcas_g8_math_me": 0.14
+ },
+ "00560000": {
+  "mcas_g3_ela_me": 0.6,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.5,
+  "mcas_g8_math_me": 0.4
+ },
+ "02610000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.57,
+  "mcas_g8_math_me": 0.44
+ },
+ "00870000": {
+  "mcas_g3_ela_me": 0.38,
+  "mcas_g3_math_me": 0.48,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.43
+ },
+ "02980000": {
+  "mcas_g3_ela_me": 0.65,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.44
+ },
+ "01980000": {
+  "mcas_g3_ela_me": 0.61,
+  "mcas_g3_math_me": 0.6,
+  "mcas_g4_math_me": 0.6,
+  "mcas_g8_math_me": 0.56
+ },
+ "02690000": {
+  "mcas_g3_ela_me": 0.77,
+  "mcas_g3_math_me": 0.71,
+  "mcas_g4_math_me": 0.55
+ },
+ "06450000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.5,
+  "mcas_g4_math_me": 0.36,
+  "mcas_g8_math_me": 0.19
+ },
+ "01530000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.37,
+  "mcas_g4_math_me": 0.37,
+  "mcas_g8_math_me": 0.38
+ },
+ "02070000": {
+  "mcas_g3_ela_me": 0.62,
+  "mcas_g3_math_me": 0.67,
+  "mcas_g4_math_me": 0.67,
+  "mcas_g8_math_me": 0.76
+ },
+ "02620000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.47,
+  "mcas_g4_math_me": 0.31,
+  "mcas_g8_math_me": 0.47
+ },
+ "02740000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.32,
+  "mcas_g4_math_me": 0.31,
+  "mcas_g8_math_me": 0.37
+ },
+ "03260000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.63,
+  "mcas_g4_math_me": 0.69,
+  "mcas_g8_math_me": 0.78
+ },
+ "01310000": {
+  "mcas_g3_ela_me": 0.72,
+  "mcas_g3_math_me": 0.66,
+  "mcas_g4_math_me": 0.71,
+  "mcas_g8_math_me": 0.62
+ },
+ "02300000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.61,
+  "mcas_g4_math_me": 0.5
+ },
+ "01610000": {
+  "mcas_g3_ela_me": 0.3,
+  "mcas_g3_math_me": 0.3,
+  "mcas_g4_math_me": 0.37,
+  "mcas_g8_math_me": 0.22
+ },
+ "02260000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.41,
+  "mcas_g4_math_me": 0.26,
+  "mcas_g8_math_me": 0.11
+ },
+ "00310000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.55,
+  "mcas_g8_math_me": 0.21
+ },
+ "06200000": {
+  "mcas_g3_ela_me": 0.55,
+  "mcas_g3_math_me": 0.67,
+  "mcas_g4_math_me": 0.53,
+  "mcas_g8_math_me": 0.58
+ },
+ "01170000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.5,
+  "mcas_g4_math_me": 0.53,
+  "mcas_g8_math_me": 0.35
+ },
+ "07280000": {
+  "mcas_g3_ela_me": 0.3,
+  "mcas_g3_math_me": 0.2,
+  "mcas_g4_math_me": 0.26
+ },
+ "06030000": {
+  "mcas_g3_ela_me": 0.12,
+  "mcas_g3_math_me": 0.05,
+  "mcas_g4_math_me": 0.16,
+  "mcas_g8_math_me": 0.04
+ },
+ "00360000": {
+  "mcas_g3_ela_me": 0.27,
+  "mcas_g3_math_me": 0.31,
+  "mcas_g4_math_me": 0.33,
+  "mcas_g8_math_me": 0.4
+ },
+ "01710000": {
+  "mcas_g3_ela_me": 0.54,
+  "mcas_g3_math_me": 0.66,
+  "mcas_g4_math_me": 0.63,
+  "mcas_g8_math_me": 0.5
+ },
+ "07650000": {
+  "mcas_g3_ela_me": 0.34,
+  "mcas_g3_math_me": 0.32,
+  "mcas_g4_math_me": 0.53,
+  "mcas_g8_math_me": 0.36
+ },
+ "00950000": {
+  "mcas_g3_ela_me": 0.21,
+  "mcas_g3_math_me": 0.22,
+  "mcas_g4_math_me": 0.26,
+  "mcas_g8_math_me": 0.14
+ },
+ "02510000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.47,
+  "mcas_g8_math_me": 0.3
+ },
+ "07670000": {
+  "mcas_g3_ela_me": 0.26,
+  "mcas_g3_math_me": 0.25,
+  "mcas_g4_math_me": 0.18,
+  "mcas_g8_math_me": 0.24
+ },
+ "02360000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.28,
+  "mcas_g8_math_me": 0.12
+ },
+ "06160000": {
+  "mcas_g3_ela_me": 0.38,
+  "mcas_g3_math_me": 0.42,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.37
+ },
+ "01390000": {
+  "mcas_g3_ela_me": 0.65,
+  "mcas_g3_math_me": 0.71,
+  "mcas_g4_math_me": 0.76,
+  "mcas_g8_math_me": 0.82
+ },
+ "01680000": {
+  "mcas_g3_ela_me": 0.67,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.58,
+  "mcas_g8_math_me": 0.57
+ },
+ "02310000": {
+  "mcas_g3_ela_me": 0.48,
+  "mcas_g3_math_me": 0.53,
+  "mcas_g4_math_me": 0.66,
+  "mcas_g8_math_me": 0.56
+ },
+ "02430000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.5,
+  "mcas_g8_math_me": 0.38
+ },
+ "06150000": {
+  "mcas_g3_ela_me": 0.2,
+  "mcas_g3_math_me": 0.24,
+  "mcas_g4_math_me": 0.23,
+  "mcas_g8_math_me": 0.23
+ },
+ "06980000": {
+  "mcas_g3_ela_me": 0.69,
+  "mcas_g3_math_me": 0.55,
+  "mcas_g4_math_me": 0.65,
+  "mcas_g8_math_me": 0.66
+ },
+ "01870000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.4,
+  "mcas_g8_math_me": 0.51
+ },
+ "03150000": {
+  "mcas_g3_ela_me": 0.7,
+  "mcas_g3_math_me": 0.75,
+  "mcas_g4_math_me": 0.71,
+  "mcas_g8_math_me": 0.77
+ },
+ "02180000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.33,
+  "mcas_g4_math_me": 0.42,
+  "mcas_g8_math_me": 0.39
+ },
+ "03310000": {
+  "mcas_g3_ela_me": 0.41,
+  "mcas_g3_math_me": 0.36,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.11
+ },
+ "01570000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.6,
+  "mcas_g8_math_me": 0.61
+ },
+ "00380000": {
+  "mcas_g3_ela_me": 0.61,
+  "mcas_g3_math_me": 0.58,
+  "mcas_g4_math_me": 0.55
+ },
+ "01050000": {
+  "mcas_g3_ela_me": 0.55,
+  "mcas_g3_math_me": 0.53,
+  "mcas_g4_math_me": 0.45,
+  "mcas_g8_math_me": 0.23
+ },
+ "03420000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.61,
+  "mcas_g8_math_me": 0.6
+ },
+ "01450000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.49,
+  "mcas_g4_math_me": 0.35
+ },
+ "00730000": {
+  "mcas_g3_ela_me": 0.54,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.45,
+  "mcas_g8_math_me": 0.51
+ },
+ "00740000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.47,
+  "mcas_g4_math_me": 0.58
+ },
+ "01650000": {
+  "mcas_g3_ela_me": 0.31,
+  "mcas_g3_math_me": 0.33,
+  "mcas_g4_math_me": 0.37,
+  "mcas_g8_math_me": 0.3
+ },
+ "06650000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.61,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.54
+ },
+ "00880000": {
+  "mcas_g3_ela_me": 0.54,
+  "mcas_g3_math_me": 0.55,
+  "mcas_g4_math_me": 0.61,
+  "mcas_g8_math_me": 0.54
+ },
+ "00270000": {
+  "mcas_g3_ela_me": 0.55,
+  "mcas_g3_math_me": 0.59,
+  "mcas_g4_math_me": 0.51,
+  "mcas_g8_math_me": 0.43
+ },
+ "03360000": {
+  "mcas_g3_ela_me": 0.48,
+  "mcas_g3_math_me": 0.49,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.27
+ },
+ "00640000": {
+  "mcas_g3_ela_me": 0.44,
+  "mcas_g3_math_me": 0.44,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.17
+ },
+ "02930000": {
+  "mcas_g3_ela_me": 0.37,
+  "mcas_g3_math_me": 0.3,
+  "mcas_g4_math_me": 0.25,
+  "mcas_g8_math_me": 0.11
+ },
+ "03140000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.5,
+  "mcas_g4_math_me": 0.53,
+  "mcas_g8_math_me": 0.44
+ },
+ "01420000": {
+  "mcas_g3_ela_me": 0.7,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.58,
+  "mcas_g8_math_me": 0.15
+ },
+ "07730000": {
+  "mcas_g3_ela_me": 0.55,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.44
+ },
+ "02520000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.38,
+  "mcas_g8_math_me": 0.58
+ },
+ "06740000": {
+  "mcas_g3_ela_me": 0.24,
+  "mcas_g3_math_me": 0.15,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.15
+ },
+ "00430000": {
+  "mcas_g3_ela_me": 0.5,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.62
+ },
+ "00890000": {
+  "mcas_g3_ela_me": 0.42,
+  "mcas_g3_math_me": 0.17,
+  "mcas_g4_math_me": 0.15,
+  "mcas_g8_math_me": 0.66
+ },
+ "00670000": {
+  "mcas_g3_ela_me": 0.71,
+  "mcas_g3_math_me": 0.65,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.66
+ },
+ "07700000": {
+  "mcas_g8_math_me": 0.46
+ },
+ "00520000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.24
+ },
+ "02950000": {
+  "mcas_g3_ela_me": 0.52,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.38,
+  "mcas_g8_math_me": 0.44
+ },
+ "01280000": {
+  "mcas_g3_ela_me": 0.34,
+  "mcas_g3_math_me": 0.35,
+  "mcas_g4_math_me": 0.34,
+  "mcas_g8_math_me": 0.27
+ },
+ "01700000": {
+  "mcas_g3_ela_me": 0.3,
+  "mcas_g3_math_me": 0.25,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.22
+ },
+ "01540000": {
+  "mcas_g3_ela_me": 0.81,
+  "mcas_g3_math_me": 0.67,
+  "mcas_g4_math_me": 0.11
+ },
+ "02530000": {
+  "mcas_g4_math_me": 0.5
+ },
+ "01250000": {
+  "mcas_g3_ela_me": 0.64,
+  "mcas_g3_math_me": 0.61,
+  "mcas_g4_math_me": 0.61,
+  "mcas_g8_math_me": 0.56
+ },
+ "03460000": {
+  "mcas_g3_ela_me": 0.32,
+  "mcas_g3_math_me": 0.36,
+  "mcas_g4_math_me": 0.24,
+  "mcas_g8_math_me": 0.62
+ },
+ "01380000": {
+  "mcas_g3_ela_me": 0.47,
+  "mcas_g3_math_me": 0.58,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.38
+ },
+ "06000000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.63,
+  "mcas_g4_math_me": 0.61,
+  "mcas_g8_math_me": 0.8
+ },
+ "02500000": {
+  "mcas_g3_ela_me": 0.62,
+  "mcas_g3_math_me": 0.73,
+  "mcas_g4_math_me": 0.44
+ },
+ "01010000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.68,
+  "mcas_g4_math_me": 0.7,
+  "mcas_g8_math_me": 0.52
+ },
+ "00830000": {
+  "mcas_g3_ela_me": 0.34,
+  "mcas_g3_math_me": 0.33,
+  "mcas_g4_math_me": 0.36,
+  "mcas_g8_math_me": 0.27
+ },
+ "01350000": {
+  "mcas_g3_ela_me": 0.44,
+  "mcas_g3_math_me": 0.53,
+  "mcas_g4_math_me": 0.5
+ },
+ "02380000": {
+  "mcas_g3_ela_me": 0.46,
+  "mcas_g3_math_me": 0.5,
+  "mcas_g4_math_me": 0.42
+ },
+ "03430000": {
+  "mcas_g3_ela_me": 0.29,
+  "mcas_g3_math_me": 0.12,
+  "mcas_g4_math_me": 0.26,
+  "mcas_g8_math_me": 0.3
+ },
+ "02240000": {
+  "mcas_g3_ela_me": 0.67,
+  "mcas_g3_math_me": 0.64,
+  "mcas_g4_math_me": 0.59
+ },
+ "01140000": {
+  "mcas_g3_ela_me": 0.15,
+  "mcas_g3_math_me": 0.23,
+  "mcas_g4_math_me": 0.32,
+  "mcas_g8_math_me": 0.06
+ },
+ "03480000": {
+  "mcas_g3_ela_me": 0.25,
+  "mcas_g3_math_me": 0.24,
+  "mcas_g4_math_me": 0.25,
+  "mcas_g8_math_me": 0.22
+ },
+ "00230000": {
+  "mcas_g3_ela_me": 0.64,
+  "mcas_g3_math_me": 0.69,
+  "mcas_g4_math_me": 0.71,
+  "mcas_g8_math_me": 0.6
+ },
+ "00300000": {
+  "mcas_g3_ela_me": 0.56,
+  "mcas_g3_math_me": 0.6,
+  "mcas_g4_math_me": 0.62,
+  "mcas_g8_math_me": 0.39
+ },
+ "02840000": {
+  "mcas_g3_ela_me": 0.52,
+  "mcas_g3_math_me": 0.54,
+  "mcas_g4_math_me": 0.49,
+  "mcas_g8_math_me": 0.45
+ },
+ "06180000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.43,
+  "mcas_g8_math_me": 0.24
+ },
+ "01500000": {
+  "mcas_g3_ela_me": 0.35,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.49,
+  "mcas_g8_math_me": 0.12
+ },
+ "00970000": {
+  "mcas_g3_ela_me": 0.27,
+  "mcas_g3_math_me": 0.3,
+  "mcas_g4_math_me": 0.28,
+  "mcas_g8_math_me": 0.15
+ },
+ "01820000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.39,
+  "mcas_g8_math_me": 0.35
+ },
+ "02960000": {
+  "mcas_g3_ela_me": 0.42,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.18
+ },
+ "03300000": {
+  "mcas_g3_ela_me": 0.81,
+  "mcas_g3_math_me": 0.81,
+  "mcas_g4_math_me": 0.75,
+  "mcas_g8_math_me": 0.78
+ },
+ "01970000": {
+  "mcas_g3_ela_me": 0.22,
+  "mcas_g3_math_me": 0.24,
+  "mcas_g4_math_me": 0.26,
+  "mcas_g8_math_me": 0.25
+ },
+ "06580000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.36,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.24
+ },
+ "06500000": {
+  "mcas_g3_ela_me": 0.51,
+  "mcas_g3_math_me": 0.41,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.43
+ },
+ "07250000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.58,
+  "mcas_g4_math_me": 0.64,
+  "mcas_g8_math_me": 0.61
+ },
+ "02760000": {
+  "mcas_g3_ela_me": 0.83,
+  "mcas_g3_math_me": 0.82,
+  "mcas_g4_math_me": 0.78,
+  "mcas_g8_math_me": 0.56
+ },
+ "06730000": {
+  "mcas_g3_ela_me": 0.59,
+  "mcas_g3_math_me": 0.64,
+  "mcas_g4_math_me": 0.66,
+  "mcas_g8_math_me": 0.6
+ },
+ "02580000": {
+  "mcas_g3_ela_me": 0.3,
+  "mcas_g3_math_me": 0.32,
+  "mcas_g4_math_me": 0.28,
+  "mcas_g8_math_me": 0.2
+ },
+ "02190000": {
+  "mcas_g3_ela_me": 0.66,
+  "mcas_g3_math_me": 0.63,
+  "mcas_g4_math_me": 0.66,
+  "mcas_g8_math_me": 0.61
+ },
+ "01730000": {
+  "mcas_g3_ela_me": 0.72,
+  "mcas_g3_math_me": 0.52,
+  "mcas_g4_math_me": 0.59
+ },
+ "00720000": {
+  "mcas_g3_ela_me": 0.48,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.58,
+  "mcas_g8_math_me": 0.52
+ },
+ "00770000": {
+  "mcas_g3_ela_me": 0.46,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.31,
+  "mcas_g8_math_me": 0.51
+ },
+ "00860000": {
+  "mcas_g3_ela_me": 0.38,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.38,
+  "mcas_g8_math_me": 0.31
+ },
+ "01580000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.56,
+  "mcas_g8_math_me": 0.62
+ },
+ "00610000": {
+  "mcas_g3_ela_me": 0.32,
+  "mcas_g3_math_me": 0.28,
+  "mcas_g4_math_me": 0.28,
+  "mcas_g8_math_me": 0.23
+ },
+ "01840000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.49,
+  "mcas_g4_math_me": 0.59
+ },
+ "01910000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.3,
+  "mcas_g4_math_me": 0.36,
+  "mcas_g8_math_me": 0.12
+ },
+ "01110000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.37,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.1
+ },
+ "02880000": {
+  "mcas_g3_ela_me": 0.67,
+  "mcas_g3_math_me": 0.7,
+  "mcas_g4_math_me": 0.72,
+  "mcas_g8_math_me": 0.77
+ },
+ "00240000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.34,
+  "mcas_g4_math_me": 0.25,
+  "mcas_g8_math_me": 0.34
+ },
+ "03160000": {
+  "mcas_g3_ela_me": 0.28,
+  "mcas_g3_math_me": 0.23,
+  "mcas_g4_math_me": 0.32,
+  "mcas_g8_math_me": 0.13
+ },
+ "01990000": {
+  "mcas_g3_ela_me": 0.66,
+  "mcas_g3_math_me": 0.66,
+  "mcas_g4_math_me": 0.72,
+  "mcas_g8_math_me": 0.8
+ },
+ "06350000": {
+  "mcas_g3_ela_me": 0.46,
+  "mcas_g3_math_me": 0.47,
+  "mcas_g4_math_me": 0.43,
+  "mcas_g8_math_me": 0.42
+ },
+ "06550000": {
+  "mcas_g8_math_me": 0.7
+ },
+ "02290000": {
+  "mcas_g3_ela_me": 0.35,
+  "mcas_g3_math_me": 0.32,
+  "mcas_g4_math_me": 0.35,
+  "mcas_g8_math_me": 0.33
+ },
+ "00570000": {
+  "mcas_g3_ela_me": 0.22,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.34,
+  "mcas_g8_math_me": 0.1
+ },
+ "03180000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.26,
+  "mcas_g4_math_me": 0.63
+ },
+ "02660000": {
+  "mcas_g3_ela_me": 0.7,
+  "mcas_g3_math_me": 0.67,
+  "mcas_g4_math_me": 0.73,
+  "mcas_g8_math_me": 0.63
+ },
+ "06750000": {
+  "mcas_g3_ela_me": 0.62,
+  "mcas_g3_math_me": 0.69,
+  "mcas_g4_math_me": 0.61,
+  "mcas_g8_math_me": 0.73
+ },
+ "00080000": {
+  "mcas_g3_ela_me": 0.41,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.48
+ },
+ "03320000": {
+  "mcas_g3_ela_me": 0.37,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.5,
+  "mcas_g8_math_me": 0.11
+ },
+ "00140000": {
+  "mcas_g3_ela_me": 0.48,
+  "mcas_g3_math_me": 0.49,
+  "mcas_g4_math_me": 0.51,
+  "mcas_g8_math_me": 0.65
+ },
+ "03270000": {
+  "mcas_g3_ela_me": 0.46,
+  "mcas_g3_math_me": 0.36,
+  "mcas_g4_math_me": 0.55
+ },
+ "00250000": {
+  "mcas_g3_ela_me": 0.44,
+  "mcas_g3_math_me": 0.45,
+  "mcas_g4_math_me": 0.4,
+  "mcas_g8_math_me": 0.17
+ },
+ "02640000": {
+  "mcas_g3_ela_me": 0.68,
+  "mcas_g3_math_me": 0.67,
+  "mcas_g4_math_me": 0.66,
+  "mcas_g8_math_me": 0.61
+ },
+ "01410000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.42,
+  "mcas_g4_math_me": 0.36,
+  "mcas_g8_math_me": 0.19
+ },
+ "02210000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.61,
+  "mcas_g4_math_me": 0.48,
+  "mcas_g8_math_me": 0.74
+ },
+ "03400000": {
+  "mcas_g3_ela_me": 0.72,
+  "mcas_g3_math_me": 0.78
+ },
+ "00180000": {
+  "mcas_g3_ela_me": 0.37,
+  "mcas_g3_math_me": 0.3,
+  "mcas_g4_math_me": 0.22,
+  "mcas_g8_math_me": 0.33
+ },
+ "02400000": {
+  "mcas_g3_ela_me": 0.69,
+  "mcas_g3_math_me": 0.51,
+  "mcas_g4_math_me": 0.46
+ },
+ "07170000": {
+  "mcas_g3_ela_me": 0.51,
+  "mcas_g3_math_me": 0.4,
+  "mcas_g4_math_me": 0.15,
+  "mcas_g8_math_me": 0.16
+ },
+ "01620000": {
+  "mcas_g3_ela_me": 0.46,
+  "mcas_g3_math_me": 0.44,
+  "mcas_g4_math_me": 0.51,
+  "mcas_g8_math_me": 0.41
+ },
+ "01330000": {
+  "mcas_g3_ela_me": 0.35,
+  "mcas_g3_math_me": 0.24,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.28
+ },
+ "03220000": {
+  "mcas_g3_ela_me": 0.49,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.62,
+  "mcas_g8_math_me": 0.57
+ },
+ "01780000": {
+  "mcas_g3_ela_me": 0.68,
+  "mcas_g3_math_me": 0.72,
+  "mcas_g4_math_me": 0.72,
+  "mcas_g8_math_me": 0.41
+ },
+ "06720000": {
+  "mcas_g3_ela_me": 0.41,
+  "mcas_g3_math_me": 0.49,
+  "mcas_g4_math_me": 0.38,
+  "mcas_g8_math_me": 0.16
+ },
+ "07750000": {
+  "mcas_g3_ela_me": 0.56,
+  "mcas_g3_math_me": 0.6,
+  "mcas_g4_math_me": 0.46,
+  "mcas_g8_math_me": 0.54
+ },
+ "07500000": {
+  "mcas_g3_ela_me": 0.36,
+  "mcas_g3_math_me": 0.2,
+  "mcas_g4_math_me": 0.41,
+  "mcas_g8_math_me": 0.31
+ },
+ "02480000": {
+  "mcas_g3_ela_me": 0.28,
+  "mcas_g3_math_me": 0.34,
+  "mcas_g4_math_me": 0.31,
+  "mcas_g8_math_me": 0.2
+ },
+ "03440000": {
+  "mcas_g3_ela_me": 0.78,
+  "mcas_g3_math_me": 0.75,
+  "mcas_g4_math_me": 0.73,
+  "mcas_g8_math_me": 0.81
+ },
+ "00930000": {
+  "mcas_g3_ela_me": 0.19,
+  "mcas_g3_math_me": 0.22,
+  "mcas_g4_math_me": 0.21,
+  "mcas_g8_math_me": 0.17
+ },
+ "03470000": {
+  "mcas_g3_ela_me": 0.44,
+  "mcas_g3_math_me": 0.38,
+  "mcas_g4_math_me": 0.32,
+  "mcas_g8_math_me": 0.32
+ },
+ "01960000": {
+  "mcas_g3_ela_me": 0.47,
+  "mcas_g3_math_me": 0.2,
+  "mcas_g4_math_me": 0.36
+ },
+ "00790000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.45,
+  "mcas_g8_math_me": 0.31
+ },
+ "07150000": {
+  "mcas_g3_ela_me": 0.57,
+  "mcas_g3_math_me": 0.57,
+  "mcas_g4_math_me": 0.49,
+  "mcas_g8_math_me": 0.28
+ },
+ "00980000": {
+  "mcas_g4_math_me": 0.08,
+  "mcas_g8_math_me": 0.1
+ },
+ "01490000": {
+  "mcas_g3_ela_me": 0.18,
+  "mcas_g3_math_me": 0.25,
+  "mcas_g4_math_me": 0.17,
+  "mcas_g8_math_me": 0.19
+ },
+ "02650000": {
+  "mcas_g3_ela_me": 0.41,
+  "mcas_g3_math_me": 0.5,
+  "mcas_g4_math_me": 0.62,
+  "mcas_g8_math_me": 0.5
+ },
+ "03100000": {
+  "mcas_g3_ela_me": 0.29,
+  "mcas_g3_math_me": 0.34,
+  "mcas_g4_math_me": 0.4,
+  "mcas_g8_math_me": 0.1
+ },
+ "03500000": {
+  "mcas_g3_ela_me": 0.6,
+  "mcas_g3_math_me": 0.7,
+  "mcas_g4_math_me": 0.42
+ },
+ "00490000": {
+  "mcas_g3_ela_me": 0.61,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.6,
+  "mcas_g8_math_me": 0.55
+ },
+ "07740000": {
+  "mcas_g3_ela_me": 0.68,
+  "mcas_g3_math_me": 0.55,
+  "mcas_g4_math_me": 0.54,
+  "mcas_g8_math_me": 0.7
+ },
+ "01810000": {
+  "mcas_g3_ela_me": 0.3,
+  "mcas_g3_math_me": 0.29,
+  "mcas_g4_math_me": 0.24,
+  "mcas_g8_math_me": 0.3
+ },
+ "03230000": {
+  "mcas_g3_ela_me": 0.48,
+  "mcas_g3_math_me": 0.36,
+  "mcas_g4_math_me": 0.37,
+  "mcas_g8_math_me": 0.47
+ },
+ "00260000": {
+  "mcas_g3_ela_me": 0.7,
+  "mcas_g3_math_me": 0.73,
+  "mcas_g4_math_me": 0.64,
+  "mcas_g8_math_me": 0.79
+ },
+ "02390000": {
+  "mcas_g3_ela_me": 0.53,
+  "mcas_g3_math_me": 0.47,
+  "mcas_g4_math_me": 0.43,
+  "mcas_g8_math_me": 0.29
+ },
+ "02750000": {
+  "mcas_g3_ela_me": 0.45,
+  "mcas_g3_math_me": 0.54,
+  "mcas_g4_math_me": 0.4
+ },
+ "06320000": {
+  "mcas_g3_ela_me": 0.26,
+  "mcas_g3_math_me": 0.39,
+  "mcas_g4_math_me": 0.46
+ },
+ "01630000": {
+  "mcas_g3_ela_me": 0.17,
+  "mcas_g3_math_me": 0.18,
+  "mcas_g4_math_me": 0.18,
+  "mcas_g8_math_me": 0.13
+ },
+ "00400000": {
+  "mcas_g3_ela_me": 0.54,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.54
+ },
+ "01440000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.58,
+  "mcas_g4_math_me": 0.55,
+  "mcas_g8_math_me": 0.4
+ },
+ "00510000": {
+  "mcas_g3_ela_me": 0.68,
+  "mcas_g3_math_me": 0.63,
+  "mcas_g4_math_me": 0.75,
+  "mcas_g8_math_me": 0.88
+ },
+ "02040000": {
+  "mcas_g3_ela_me": 0.42,
+  "mcas_g3_math_me": 0.42,
+  "mcas_g4_math_me": 0.47,
+  "mcas_g8_math_me": 0.46
+ },
+ "00010000": {
+  "mcas_g3_ela_me": 0.31,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.4,
+  "mcas_g8_math_me": 0.42
+ },
+ "07350000": {
+  "mcas_g3_ela_me": 0.52,
+  "mcas_g3_math_me": 0.54,
+  "mcas_g4_math_me": 0.43,
+  "mcas_g8_math_me": 0.36
+ },
+ "00170000": {
+  "mcas_g3_ela_me": 0.44,
+  "mcas_g3_math_me": 0.39,
+  "mcas_g4_math_me": 0.46,
+  "mcas_g8_math_me": 0.38
+ },
+ "00940000": {
+  "mcas_g3_ela_me": 0.56,
+  "mcas_g3_math_me": 0.49,
+  "mcas_g4_math_me": 0.47,
+  "mcas_g8_math_me": 0.39
+ },
+ "01520000": {
+  "mcas_g3_ela_me": 0.61,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.67,
+  "mcas_g8_math_me": 0.53
+ },
+ "07660000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.47,
+  "mcas_g4_math_me": 0.52,
+  "mcas_g8_math_me": 0.24
+ },
+ "02490000": {
+  "mcas_g3_ela_me": 0.65,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.56,
+  "mcas_g8_math_me": 0.31
+ },
+ "00160000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.39,
+  "mcas_g4_math_me": 0.43,
+  "mcas_g8_math_me": 0.4
+ },
+ "06800000": {
+  "mcas_g3_ela_me": 0.43,
+  "mcas_g3_math_me": 0.43,
+  "mcas_g4_math_me": 0.45,
+  "mcas_g8_math_me": 0.4
+ },
+ "06850000": {
+  "mcas_g4_math_me": 0.2
+ },
+ "02230000": {
+  "mcas_g3_ela_me": 0.23,
+  "mcas_g3_math_me": 0.25,
+  "mcas_g4_math_me": 0.15
+ },
+ "01670000": {
+  "mcas_g3_ela_me": 0.58,
+  "mcas_g3_math_me": 0.62,
+  "mcas_g4_math_me": 0.51,
+  "mcas_g8_math_me": 0.59
+ },
+ "02150000": {
+  "mcas_g3_ela_me": 0.23,
+  "mcas_g3_math_me": 0.35,
+  "mcas_g4_math_me": 0.38,
+  "mcas_g8_math_me": 0.17
+ },
+ "03090000": {
+  "mcas_g3_ela_me": 0.4,
+  "mcas_g3_math_me": 0.28,
+  "mcas_g4_math_me": 0.23,
+  "mcas_g8_math_me": 0.06
+ },
+ "03210000": {
+  "mcas_g3_ela_me": 0.6,
+  "mcas_g3_math_me": 0.64,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.73
+ },
+ "01220000": {
+  "mcas_g3_ela_me": 0.57,
+  "mcas_g3_math_me": 0.6,
+  "mcas_g4_math_me": 0.62,
+  "mcas_g8_math_me": 0.51
+ },
+ "06100000": {
+  "mcas_g3_ela_me": 0.39,
+  "mcas_g3_math_me": 0.46,
+  "mcas_g4_math_me": 0.44,
+  "mcas_g8_math_me": 0.3
+ },
+ "03170000": {
+  "mcas_g3_ela_me": 0.75,
+  "mcas_g3_math_me": 0.77,
+  "mcas_g4_math_me": 0.7,
+  "mcas_g8_math_me": 0.69
+ },
+ "01590000": {
+  "mcas_g3_ela_me": 0.6,
+  "mcas_g3_math_me": 0.58,
+  "mcas_g4_math_me": 0.64,
+  "mcas_g8_math_me": 0.6
+ },
+ "00350000": {
+  "mcas_g3_ela_me": 0.31,
+  "mcas_g3_math_me": 0.31,
+  "mcas_g4_math_me": 0.29,
+  "mcas_g8_math_me": 0.25
+ },
+ "02080000": {
+  "mcas_g3_ela_me": 0.69,
+  "mcas_g3_math_me": 0.71,
+  "mcas_g4_math_me": 0.67
+ },
+ "02420000": {
+  "mcas_g3_ela_me": 0.07,
+  "mcas_g3_math_me": 0.13
+ },
+ "00030000": {
+  "mcas_g3_ela_me": 0.62,
+  "mcas_g3_math_me": 0.56,
+  "mcas_g4_math_me": 0.59,
+  "mcas_g8_math_me": 0.3
+ },
+ "06600000": {
+  "mcas_g8_math_me": 0.22
+ },
+ "06900000": {
+  "mcas_g8_math_me": 0.46
+ },
+ "07050000": {
+  "mcas_g8_math_me": 0.53
+ }
+}
