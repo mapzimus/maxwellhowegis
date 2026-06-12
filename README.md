@@ -34,29 +34,19 @@ After pushing changes inside a submodule, run `git submodule update --remote <pa
 
 ### Bootstrapping a new submodule (first time)
 
-Use `git subtree split` on `main` to seed the new repo with the subdirectory's full history, then register it as a submodule:
+To promote a subdirectory into its own repo with history, then submodule it back:
 
 ```bash
-# Example: bootstrap bug-wars from the bugwars/ subtree
-git subtree split --prefix=bugwars -b bootstrap/bug-wars
-git push https://github.com/mapzimus/bug-wars bootstrap/bug-wars:main --force
-git branch -D bootstrap/bug-wars
+git subtree split --prefix=<dir> -b bootstrap/<name>
+git push https://github.com/mapzimus/<repo> bootstrap/<name>:main --force
+git branch -D bootstrap/<name>
 
-# Then register it as a submodule (replaces the plain directory)
-git rm -r bugwars/
-git submodule add https://github.com/mapzimus/bug-wars bugwars
-git commit -m "convert bugwars/ to submodule mapzimus/bug-wars"
+git rm -r <dir>/
+git submodule add https://github.com/mapzimus/<repo> <dir>
+git commit -m "convert <dir>/ to submodule"
 ```
 
-Repeat for `truescale/` → `mapzimus/true-scale` and `quabbin/` → `mapzimus/quabbin`.
-
-**Whydah Navigator** was extracted from `whydah/navigator/` — push it to a branch in `mapzimus/Whydah-Unit`:
-
-```bash
-git subtree split --prefix=whydah/navigator -b bootstrap/whydah-navigator
-git push https://github.com/mapzimus/Whydah-Unit bootstrap/whydah-navigator:feat/navigator-game
-git branch -D bootstrap/whydah-navigator
-```
+Done so far: `geopuesto` (May 2026), `bug-wars`, `true-scale`, `quabbin` (June 2026). The Whydah Navigator game was extracted the same way to the `feat/navigator-game` branch of [`mapzimus/Whydah-Unit`](https://github.com/mapzimus/Whydah-Unit).
 
 ## Local development
 
