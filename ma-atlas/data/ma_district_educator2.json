@@ -1,0 +1,1402 @@
+{
+ "06100000": {
+  "educators_of_color_pct": 0.03,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.869
+ },
+ "02950000": {
+  "educators_of_color_pct": 0.012,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.918
+ },
+ "00250000": {
+  "educators_of_color_pct": 0.025,
+  "principal_retention_pct": 0.4,
+  "teacher_retention_pct": 0.853
+ },
+ "01850000": {
+  "educators_of_color_pct": 0.052,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.945
+ },
+ "02150000": {
+  "educators_of_color_pct": 0.049,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.722
+ },
+ "03320000": {
+  "educators_of_color_pct": 0.02,
+  "principal_retention_pct": 0.875,
+  "teacher_retention_pct": 0.907
+ },
+ "01600000": {
+  "educators_of_color_pct": 0.106,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.889
+ },
+ "06720000": {
+  "educators_of_color_pct": 0.047,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.788
+ },
+ "02340000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.769
+ },
+ "00560000": {
+  "educators_of_color_pct": 0.021,
+  "principal_retention_pct": 0.875,
+  "teacher_retention_pct": 0.888
+ },
+ "01580000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.933
+ },
+ "00670000": {
+  "educators_of_color_pct": 0.121,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.875
+ },
+ "01100000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.874
+ },
+ "00140000": {
+  "educators_of_color_pct": 0.027,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.896
+ },
+ "02080000": {
+  "educators_of_color_pct": 0.011,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.902
+ },
+ "03050000": {
+  "educators_of_color_pct": 0.011,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.9
+ },
+ "01620000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.893
+ },
+ "07530000": {
+  "educators_of_color_pct": 0.026,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.887
+ },
+ "00880000": {
+  "educators_of_color_pct": 0.045,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.848
+ },
+ "02100000": {
+  "educators_of_color_pct": 0.071,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.87
+ },
+ "02360000": {
+  "educators_of_color_pct": 0.049,
+  "principal_retention_pct": 0.714,
+  "teacher_retention_pct": 0.813
+ },
+ "02650000": {
+  "educators_of_color_pct": 0.035,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.873
+ },
+ "02910000": {
+  "educators_of_color_pct": 0.021,
+  "principal_retention_pct": 0.333,
+  "teacher_retention_pct": 0.889
+ },
+ "01680000": {
+  "educators_of_color_pct": 0.028,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.859
+ },
+ "03270000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.778
+ },
+ "02730000": {
+  "educators_of_color_pct": 0.03,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.89
+ },
+ "07450000": {
+  "educators_of_color_pct": 0.026,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.872
+ },
+ "03480000": {
+  "educators_of_color_pct": 0.135,
+  "principal_retention_pct": 0.885,
+  "teacher_retention_pct": 0.887
+ },
+ "02130000": {
+  "educators_of_color_pct": 0.028,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.843
+ },
+ "00230000": {
+  "educators_of_color_pct": 0.064,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.921
+ },
+ "01170000": {
+  "educators_of_color_pct": 0.122,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.857
+ },
+ "01140000": {
+  "educators_of_color_pct": 0.066,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.787
+ },
+ "02230000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.75
+ },
+ "02200000": {
+  "educators_of_color_pct": 0.041,
+  "principal_retention_pct": 0.889,
+  "teacher_retention_pct": 0.919
+ },
+ "02630000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 1.0
+ },
+ "02710000": {
+  "educators_of_color_pct": 0.053,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.902
+ },
+ "03230000": {
+  "educators_of_color_pct": 0.02,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.909
+ },
+ "00100000": {
+  "educators_of_color_pct": 0.075,
+  "principal_retention_pct": 0.909,
+  "teacher_retention_pct": 0.904
+ },
+ "00450000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.923
+ },
+ "01630000": {
+  "educators_of_color_pct": 0.099,
+  "principal_retention_pct": 0.778,
+  "teacher_retention_pct": 0.834
+ },
+ "01650000": {
+  "educators_of_color_pct": 0.108,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.877
+ },
+ "02780000": {
+  "educators_of_color_pct": 0.025,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.799
+ },
+ "00090000": {
+  "educators_of_color_pct": 0.058,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.895
+ },
+ "00640000": {
+  "educators_of_color_pct": 0.043,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.922
+ },
+ "07750000": {
+  "educators_of_color_pct": 0.006,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.885
+ },
+ "01700000": {
+  "educators_of_color_pct": 0.046,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.902
+ },
+ "00970000": {
+  "educators_of_color_pct": 0.104,
+  "principal_retention_pct": 0.625,
+  "teacher_retention_pct": 0.843
+ },
+ "01810000": {
+  "educators_of_color_pct": 0.03,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.894
+ },
+ "02190000": {
+  "educators_of_color_pct": 0.012,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.92
+ },
+ "03090000": {
+  "educators_of_color_pct": 0.043,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.795
+ },
+ "06160000": {
+  "educators_of_color_pct": 0.034,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.865
+ },
+ "02430000": {
+  "educators_of_color_pct": 0.062,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.923
+ },
+ "01180000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.825
+ },
+ "06450000": {
+  "educators_of_color_pct": 0.035,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.881
+ },
+ "07740000": {
+  "educators_of_color_pct": 0.033,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.929
+ },
+ "03160000": {
+  "educators_of_color_pct": 0.007,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.839
+ },
+ "00610000": {
+  "educators_of_color_pct": 0.057,
+  "principal_retention_pct": 0.933,
+  "teacher_retention_pct": 0.848
+ },
+ "01070000": {
+  "educators_of_color_pct": 0.019,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.863
+ },
+ "01520000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.854
+ },
+ "01720000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.85
+ },
+ "00790000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.908
+ },
+ "01910000": {
+  "educators_of_color_pct": 0.034,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.818
+ },
+ "06030000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.723
+ },
+ "07350000": {
+  "educators_of_color_pct": 0.016,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.85
+ },
+ "02520000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.877
+ },
+ "03210000": {
+  "educators_of_color_pct": 0.058,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.895
+ },
+ "01220000": {
+  "educators_of_color_pct": 0.03,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.913
+ },
+ "07670000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.856
+ },
+ "00430000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.964
+ },
+ "02880000": {
+  "educators_of_color_pct": 0.057,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.859
+ },
+ "02300000": {
+  "educators_of_color_pct": 0.067,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.833
+ },
+ "02900000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.333,
+  "teacher_retention_pct": 0.953
+ },
+ "02170000": {
+  "educators_of_color_pct": 0.014,
+  "principal_retention_pct": 0.6,
+  "teacher_retention_pct": 0.906
+ },
+ "01250000": {
+  "educators_of_color_pct": 0.054,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.843
+ },
+ "03500000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.917
+ },
+ "00050000": {
+  "educators_of_color_pct": 0.011,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.917
+ },
+ "03490000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.8
+ },
+ "03460000": {
+  "educators_of_color_pct": 0.013,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.86
+ },
+ "03000000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.833
+ },
+ "03310000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.925
+ },
+ "03260000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 0.889,
+  "teacher_retention_pct": 0.882
+ },
+ "00870000": {
+  "educators_of_color_pct": 0.047,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.795
+ },
+ "01670000": {
+  "educators_of_color_pct": 0.043,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.928
+ },
+ "01780000": {
+  "educators_of_color_pct": 0.033,
+  "principal_retention_pct": 0.875,
+  "teacher_retention_pct": 0.84
+ },
+ "01420000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.902
+ },
+ "01590000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.902
+ },
+ "02810000": {
+  "educators_of_color_pct": 0.265,
+  "principal_retention_pct": 0.845,
+  "teacher_retention_pct": 0.807
+ },
+ "07250000": {
+  "educators_of_color_pct": 0.026,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.862
+ },
+ "02290000": {
+  "educators_of_color_pct": 0.015,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.901
+ },
+ "00030000": {
+  "educators_of_color_pct": 0.013,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.886
+ },
+ "02400000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.85
+ },
+ "07780000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.333,
+  "teacher_retention_pct": 0.833
+ },
+ "02090000": {
+  "educators_of_color_pct": 0.016,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.793
+ },
+ "00400000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.919
+ },
+ "02720000": {
+  "educators_of_color_pct": 0.053,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.857
+ },
+ "00310000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.948
+ },
+ "03420000": {
+  "educators_of_color_pct": 0.025,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.917
+ },
+ "01570000": {
+  "educators_of_color_pct": 0.056,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.919
+ },
+ "01870000": {
+  "educators_of_color_pct": 0.047,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.958
+ },
+ "01760000": {
+  "educators_of_color_pct": 0.025,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.922
+ },
+ "01510000": {
+  "educators_of_color_pct": 0.02,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.872
+ },
+ "02070000": {
+  "educators_of_color_pct": 0.125,
+  "principal_retention_pct": 0.864,
+  "teacher_retention_pct": 0.908
+ },
+ "03080000": {
+  "educators_of_color_pct": 0.093,
+  "principal_retention_pct": 0.818,
+  "teacher_retention_pct": 0.882
+ },
+ "02180000": {
+  "educators_of_color_pct": 0.019,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.91
+ },
+ "00820000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.855
+ },
+ "02510000": {
+  "educators_of_color_pct": 0.05,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.871
+ },
+ "03430000": {
+  "educators_of_color_pct": 0.032,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.778
+ },
+ "00300000": {
+  "educators_of_color_pct": 0.028,
+  "principal_retention_pct": 0.875,
+  "teacher_retention_pct": 0.915
+ },
+ "02740000": {
+  "educators_of_color_pct": 0.153,
+  "principal_retention_pct": 0.9,
+  "teacher_retention_pct": 0.87
+ },
+ "00350000": {
+  "educators_of_color_pct": 0.414,
+  "principal_retention_pct": 0.877,
+  "teacher_retention_pct": 0.872
+ },
+ "00830000": {
+  "educators_of_color_pct": 0.019,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.87
+ },
+ "01360000": {
+  "educators_of_color_pct": 0.065,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.922
+ },
+ "02850000": {
+  "educators_of_color_pct": 0.06,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.916
+ },
+ "02760000": {
+  "educators_of_color_pct": 0.035,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.941
+ },
+ "03060000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.833
+ },
+ "07280000": {
+  "educators_of_color_pct": 0.062,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.882
+ },
+ "00650000": {
+  "educators_of_color_pct": 0.016,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.905
+ },
+ "01310000": {
+  "educators_of_color_pct": 0.022,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.926
+ },
+ "01440000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.911
+ },
+ "02210000": {
+  "educators_of_color_pct": 0.034,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.921
+ },
+ "03370000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.889
+ },
+ "02270000": {
+  "educators_of_color_pct": 0.026,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.81
+ },
+ "02490000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.778
+ },
+ "02930000": {
+  "educators_of_color_pct": 0.044,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.881
+ },
+ "06000000": {
+  "educators_of_color_pct": 0.056,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.892
+ },
+ "01450000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.84
+ },
+ "02260000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 0.6,
+  "teacher_retention_pct": 0.844
+ },
+ "02750000": {
+  "educators_of_color_pct": 0.071,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.829
+ },
+ "00270000": {
+  "educators_of_color_pct": 0.015,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.984
+ },
+ "03070000": {
+  "educators_of_color_pct": 0.016,
+  "principal_retention_pct": 0.875,
+  "teacher_retention_pct": 0.895
+ },
+ "00930000": {
+  "educators_of_color_pct": 0.099,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.853
+ },
+ "01390000": {
+  "educators_of_color_pct": 0.055,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.94
+ },
+ "00410000": {
+  "educators_of_color_pct": 0.021,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.849
+ },
+ "02240000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.826
+ },
+ "02980000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.912
+ },
+ "03100000": {
+  "educators_of_color_pct": 0.048,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.878
+ },
+ "06320000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.875
+ },
+ "01380000": {
+  "educators_of_color_pct": 0.02,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.92
+ },
+ "01840000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.863
+ },
+ "01000000": {
+  "educators_of_color_pct": 0.181,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.812
+ },
+ "01010000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 0.7,
+  "teacher_retention_pct": 0.857
+ },
+ "02310000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.904
+ },
+ "02620000": {
+  "educators_of_color_pct": 0.022,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.86
+ },
+ "06550000": {
+  "educators_of_color_pct": 0.091,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.933
+ },
+ "06740000": {
+  "educators_of_color_pct": 0.044,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.871
+ },
+ "01270000": {
+  "educators_of_color_pct": 0.024,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.81
+ },
+ "02120000": {
+  "educators_of_color_pct": 0.034,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.898
+ },
+ "01860000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.897
+ },
+ "06250000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 0.625,
+  "teacher_retention_pct": 0.835
+ },
+ "02140000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.829
+ },
+ "01640000": {
+  "educators_of_color_pct": 0.011,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.908
+ },
+ "03470000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 0.9,
+  "teacher_retention_pct": 0.853
+ },
+ "00730000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.915
+ },
+ "03170000": {
+  "educators_of_color_pct": 0.075,
+  "principal_retention_pct": 0.778,
+  "teacher_retention_pct": 0.891
+ },
+ "00380000": {
+  "educators_of_color_pct": 0.041,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.903
+ },
+ "00740000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.886
+ },
+ "01280000": {
+  "educators_of_color_pct": 0.057,
+  "principal_retention_pct": 0.933,
+  "teacher_retention_pct": 0.852
+ },
+ "00860000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.89
+ },
+ "07800000": {
+  "educators_of_color_pct": 0.012,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.792
+ },
+ "00960000": {
+  "educators_of_color_pct": 0.051,
+  "principal_retention_pct": 0.625,
+  "teacher_retention_pct": 0.92
+ },
+ "03300000": {
+  "educators_of_color_pct": 0.104,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.898
+ },
+ "07100000": {
+  "educators_of_color_pct": 0.037,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.867
+ },
+ "01970000": {
+  "educators_of_color_pct": 0.092,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.836
+ },
+ "02660000": {
+  "educators_of_color_pct": 0.045,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.874
+ },
+ "01370000": {
+  "educators_of_color_pct": 0.273,
+  "principal_retention_pct": 0.917,
+  "teacher_retention_pct": 0.791
+ },
+ "01330000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.86
+ },
+ "01710000": {
+  "educators_of_color_pct": 0.012,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.924
+ },
+ "02480000": {
+  "educators_of_color_pct": 0.076,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.839
+ },
+ "02690000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.846
+ },
+ "01690000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.886
+ },
+ "02580000": {
+  "educators_of_color_pct": 0.126,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.825
+ },
+ "02640000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.933
+ },
+ "00630000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.875
+ },
+ "02440000": {
+  "educators_of_color_pct": 0.175,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.814
+ },
+ "01890000": {
+  "educators_of_color_pct": 0.083,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.927
+ },
+ "06500000": {
+  "educators_of_color_pct": 0.031,
+  "principal_retention_pct": 0.6,
+  "teacher_retention_pct": 0.923
+ },
+ "06350000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.906
+ },
+ "06650000": {
+  "educators_of_color_pct": 0.023,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.912
+ },
+ "00510000": {
+  "educators_of_color_pct": 0.033,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.902
+ },
+ "00680000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.905
+ },
+ "01350000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.9
+ },
+ "00950000": {
+  "educators_of_color_pct": 0.08,
+  "principal_retention_pct": 0.7,
+  "teacher_retention_pct": 0.807
+ },
+ "02840000": {
+  "educators_of_color_pct": 0.058,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.832
+ },
+ "03360000": {
+  "educators_of_color_pct": 0.037,
+  "principal_retention_pct": 0.909,
+  "teacher_retention_pct": 0.914
+ },
+ "00070000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.811
+ },
+ "01410000": {
+  "educators_of_color_pct": 0.049,
+  "principal_retention_pct": 0.4,
+  "teacher_retention_pct": 0.864
+ },
+ "02890000": {
+  "educators_of_color_pct": 0.04,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.846
+ },
+ "03140000": {
+  "educators_of_color_pct": 0.068,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.877
+ },
+ "01530000": {
+  "educators_of_color_pct": 0.036,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.861
+ },
+ "00240000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.881
+ },
+ "00170000": {
+  "educators_of_color_pct": 0.021,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.915
+ },
+ "01990000": {
+  "educators_of_color_pct": 0.078,
+  "principal_retention_pct": 0.778,
+  "teacher_retention_pct": 0.883
+ },
+ "06200000": {
+  "educators_of_color_pct": 0.022,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.887
+ },
+ "02610000": {
+  "educators_of_color_pct": 0.028,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.86
+ },
+ "00480000": {
+  "educators_of_color_pct": 0.064,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.894
+ },
+ "01540000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.944
+ },
+ "01820000": {
+  "educators_of_color_pct": 0.009,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.857
+ },
+ "01750000": {
+  "educators_of_color_pct": 0.038,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.893
+ },
+ "02110000": {
+  "educators_of_color_pct": 0.006,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.833
+ },
+ "02040000": {
+  "educators_of_color_pct": 0.042,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.886
+ },
+ "03250000": {
+  "educators_of_color_pct": 0.019,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.865
+ },
+ "00500000": {
+  "educators_of_color_pct": 0.061,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.911
+ },
+ "03350000": {
+  "educators_of_color_pct": 0.052,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.897
+ },
+ "06620000": {
+  "educators_of_color_pct": 0.067,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.867
+ },
+ "06730000": {
+  "educators_of_color_pct": 0.011,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.876
+ },
+ "00850000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.731
+ },
+ "01550000": {
+  "educators_of_color_pct": 0.135,
+  "principal_retention_pct": 0.9,
+  "teacher_retention_pct": 0.897
+ },
+ "07500000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.864
+ },
+ "02500000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.905
+ },
+ "00570000": {
+  "educators_of_color_pct": 0.24,
+  "principal_retention_pct": 0.727,
+  "teacher_retention_pct": 0.805
+ },
+ "00890000": {
+  "educators_of_color_pct": 0.036,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.806
+ },
+ "00160000": {
+  "educators_of_color_pct": 0.059,
+  "principal_retention_pct": 0.818,
+  "teacher_retention_pct": 0.869
+ },
+ "01050000": {
+  "educators_of_color_pct": 0.02,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.739
+ },
+ "01980000": {
+  "educators_of_color_pct": 0.04,
+  "principal_retention_pct": 0.625,
+  "teacher_retention_pct": 0.886
+ },
+ "01610000": {
+  "educators_of_color_pct": 0.023,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.899
+ },
+ "02960000": {
+  "educators_of_color_pct": 0.043,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.872
+ },
+ "07170000": {
+  "educators_of_color_pct": 0.027,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.793
+ },
+ "00520000": {
+  "educators_of_color_pct": 0.045,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.898
+ },
+ "03010000": {
+  "educators_of_color_pct": 0.023,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.88
+ },
+ "00910000": {
+  "educators_of_color_pct": 0.05,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.95
+ },
+ "01740000": {
+  "educators_of_color_pct": 0.1,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.887
+ },
+ "00980000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 1.0
+ },
+ "00360000": {
+  "educators_of_color_pct": 0.013,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.881
+ },
+ "03150000": {
+  "educators_of_color_pct": 0.072,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.901
+ },
+ "02380000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.962
+ },
+ "06580000": {
+  "educators_of_color_pct": 0.034,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.905
+ },
+ "03040000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.885
+ },
+ "06150000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.8
+ },
+ "00460000": {
+  "educators_of_color_pct": 0.131,
+  "principal_retention_pct": 0.9,
+  "teacher_retention_pct": 0.923
+ },
+ "02420000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.75
+ },
+ "00260000": {
+  "educators_of_color_pct": 0.113,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.84
+ },
+ "02770000": {
+  "educators_of_color_pct": 0.168,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.743
+ },
+ "06750000": {
+  "educators_of_color_pct": 0.04,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.889
+ },
+ "01490000": {
+  "educators_of_color_pct": 0.202,
+  "principal_retention_pct": 0.906,
+  "teacher_retention_pct": 0.806
+ },
+ "01960000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 0.733
+ },
+ "00940000": {
+  "educators_of_color_pct": 0.013,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.814
+ },
+ "00200000": {
+  "educators_of_color_pct": 0.049,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.879
+ },
+ "01030000": {
+  "educators_of_color_pct": 0.039,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.804
+ },
+ "07730000": {
+  "educators_of_color_pct": 0.019,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.922
+ },
+ "01500000": {
+  "educators_of_color_pct": 0.041,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.903
+ },
+ "01110000": {
+  "educators_of_color_pct": 0.033,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.806
+ },
+ "02920000": {
+  "educators_of_color_pct": 0.013,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.931
+ },
+ "03440000": {
+  "educators_of_color_pct": 0.038,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.924
+ },
+ "06850000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.9
+ },
+ "00180000": {
+  "educators_of_color_pct": 0.093,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.8
+ },
+ "02010000": {
+  "educators_of_color_pct": 0.11,
+  "principal_retention_pct": 0.833,
+  "teacher_retention_pct": 0.84
+ },
+ "02460000": {
+  "educators_of_color_pct": 0.015,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.905
+ },
+ "03220000": {
+  "educators_of_color_pct": 0.012,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.882
+ },
+ "00490000": {
+  "educators_of_color_pct": 0.252,
+  "principal_retention_pct": 0.889,
+  "teacher_retention_pct": 0.881
+ },
+ "00710000": {
+  "educators_of_color_pct": 0.026,
+  "principal_retention_pct": 0.857,
+  "teacher_retention_pct": 0.874
+ },
+ "01730000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.974
+ },
+ "07150000": {
+  "educators_of_color_pct": 0.053,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.885
+ },
+ "06220000": {
+  "educators_of_color_pct": 0.065,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.78
+ },
+ "00080000": {
+  "educators_of_color_pct": 0.257,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.911
+ },
+ "01210000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.714
+ },
+ "00720000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.918
+ },
+ "00010000": {
+  "educators_of_color_pct": 0.062,
+  "principal_retention_pct": 0.8,
+  "teacher_retention_pct": 0.911
+ },
+ "00990000": {
+  "educators_of_color_pct": 0.023,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.911
+ },
+ "06180000": {
+  "educators_of_color_pct": 0.059,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.876
+ },
+ "07700000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.913
+ },
+ "02390000": {
+  "educators_of_color_pct": 0.018,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.916
+ },
+ "03180000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.846
+ },
+ "00770000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.907
+ },
+ "01770000": {
+  "educators_of_color_pct": 0.025,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.821
+ },
+ "00440000": {
+  "educators_of_color_pct": 0.166,
+  "principal_retention_pct": 0.769,
+  "teacher_retention_pct": 0.891
+ },
+ "07200000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.857
+ },
+ "02530000": {
+  "educators_of_color_pct": 0.111,
+  "principal_retention_pct": 0.0,
+  "teacher_retention_pct": 1.0
+ },
+ "06800000": {
+  "educators_of_color_pct": 0.009,
+  "principal_retention_pct": 0.667,
+  "teacher_retention_pct": 0.877
+ },
+ "03400000": {
+  "educators_of_color_pct": 0.0,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.889
+ },
+ "07120000": {
+  "educators_of_color_pct": 0.053,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.863
+ },
+ "07650000": {
+  "educators_of_color_pct": 0.065,
+  "principal_retention_pct": 0.5,
+  "teacher_retention_pct": 0.863
+ },
+ "06980000": {
+  "educators_of_color_pct": 0.008,
+  "principal_retention_pct": 0.75,
+  "teacher_retention_pct": 0.912
+ },
+ "07660000": {
+  "educators_of_color_pct": 0.041,
+  "principal_retention_pct": 0.333,
+  "teacher_retention_pct": 0.907
+ },
+ "06400000": {
+  "educators_of_color_pct": 0.11,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.93
+ },
+ "06600000": {
+  "educators_of_color_pct": 0.029,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.852
+ },
+ "06900000": {
+  "educators_of_color_pct": 0.028,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.94
+ },
+ "06950000": {
+  "educators_of_color_pct": 0.118,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.931
+ },
+ "07050000": {
+  "educators_of_color_pct": 0.046,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.925
+ },
+ "07300000": {
+  "educators_of_color_pct": 0.017,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.896
+ },
+ "07630000": {
+  "educators_of_color_pct": 0.013,
+  "principal_retention_pct": 1.0,
+  "teacher_retention_pct": 0.89
+ }
+}

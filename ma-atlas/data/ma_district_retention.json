@@ -1,0 +1,842 @@
+{
+ "00650000": {
+  "grade_retention_pct": 0.0
+ },
+ "03440000": {
+  "grade_retention_pct": 0.001
+ },
+ "00270000": {
+  "grade_retention_pct": 0.0
+ },
+ "00300000": {
+  "grade_retention_pct": 0.007
+ },
+ "01740000": {
+  "grade_retention_pct": 0.0
+ },
+ "03470000": {
+  "grade_retention_pct": 0.003
+ },
+ "00990000": {
+  "grade_retention_pct": 0.001
+ },
+ "00860000": {
+  "grade_retention_pct": 0.008
+ },
+ "01730000": {
+  "grade_retention_pct": 0.006
+ },
+ "01280000": {
+  "grade_retention_pct": 0.01
+ },
+ "01990000": {
+  "grade_retention_pct": 0.001
+ },
+ "02310000": {
+  "grade_retention_pct": 0.0
+ },
+ "02650000": {
+  "grade_retention_pct": 0.0
+ },
+ "01530000": {
+  "grade_retention_pct": 0.005
+ },
+ "01750000": {
+  "grade_retention_pct": 0.001
+ },
+ "02140000": {
+  "grade_retention_pct": 0.005
+ },
+ "00230000": {
+  "grade_retention_pct": 0.001
+ },
+ "00240000": {
+  "grade_retention_pct": 0.003
+ },
+ "02010000": {
+  "grade_retention_pct": 0.005
+ },
+ "01270000": {
+  "grade_retention_pct": 0.0
+ },
+ "02930000": {
+  "grade_retention_pct": 0.003
+ },
+ "01030000": {
+  "grade_retention_pct": 0.016
+ },
+ "01210000": {
+  "grade_retention_pct": 0.0
+ },
+ "00880000": {
+  "grade_retention_pct": 0.0
+ },
+ "02180000": {
+  "grade_retention_pct": 0.003
+ },
+ "01180000": {
+  "grade_retention_pct": 0.0
+ },
+ "03000000": {
+  "grade_retention_pct": 0.0
+ },
+ "06250000": {
+  "grade_retention_pct": 0.005
+ },
+ "01110000": {
+  "grade_retention_pct": 0.007
+ },
+ "07670000": {
+  "grade_retention_pct": 0.026
+ },
+ "07780000": {
+  "grade_retention_pct": 0.007
+ },
+ "00570000": {
+  "grade_retention_pct": 0.041
+ },
+ "07150000": {
+  "grade_retention_pct": 0.002
+ },
+ "00820000": {
+  "grade_retention_pct": 0.0
+ },
+ "00480000": {
+  "grade_retention_pct": 0.003
+ },
+ "00970000": {
+  "grade_retention_pct": 0.005
+ },
+ "03480000": {
+  "grade_retention_pct": 0.014
+ },
+ "02690000": {
+  "grade_retention_pct": 0.0
+ },
+ "01970000": {
+  "grade_retention_pct": 0.013
+ },
+ "01910000": {
+  "grade_retention_pct": 0.007
+ },
+ "03060000": {
+  "grade_retention_pct": 0.011
+ },
+ "01510000": {
+  "grade_retention_pct": 0.001
+ },
+ "02120000": {
+  "grade_retention_pct": 0.003
+ },
+ "02070000": {
+  "grade_retention_pct": 0.003
+ },
+ "02770000": {
+  "grade_retention_pct": 0.011
+ },
+ "02400000": {
+  "grade_retention_pct": 0.0
+ },
+ "02840000": {
+  "grade_retention_pct": 0.001
+ },
+ "01980000": {
+  "grade_retention_pct": 0.0
+ },
+ "01720000": {
+  "grade_retention_pct": 0.011
+ },
+ "02200000": {
+  "grade_retention_pct": 0.005
+ },
+ "02390000": {
+  "grade_retention_pct": 0.006
+ },
+ "07350000": {
+  "grade_retention_pct": 0.006
+ },
+ "02240000": {
+  "grade_retention_pct": 0.0
+ },
+ "00400000": {
+  "grade_retention_pct": 0.003
+ },
+ "00940000": {
+  "grade_retention_pct": 0.009
+ },
+ "02660000": {
+  "grade_retention_pct": 0.004
+ },
+ "01070000": {
+  "grade_retention_pct": 0.019
+ },
+ "03220000": {
+  "grade_retention_pct": 0.001
+ },
+ "07280000": {
+  "grade_retention_pct": 0.01
+ },
+ "03230000": {
+  "grade_retention_pct": 0.002
+ },
+ "02610000": {
+  "grade_retention_pct": 0.001
+ },
+ "01760000": {
+  "grade_retention_pct": 0.007
+ },
+ "00640000": {
+  "grade_retention_pct": 0.002
+ },
+ "02780000": {
+  "grade_retention_pct": 0.005
+ },
+ "02720000": {
+  "grade_retention_pct": 0.0
+ },
+ "01850000": {
+  "grade_retention_pct": 0.009
+ },
+ "06180000": {
+  "grade_retention_pct": 0.004
+ },
+ "00170000": {
+  "grade_retention_pct": 0.001
+ },
+ "02520000": {
+  "grade_retention_pct": 0.002
+ },
+ "01860000": {
+  "grade_retention_pct": 0.003
+ },
+ "03500000": {
+  "grade_retention_pct": 0.0
+ },
+ "01960000": {
+  "grade_retention_pct": 0.0
+ },
+ "00960000": {
+  "grade_retention_pct": 0.001
+ },
+ "01770000": {
+  "grade_retention_pct": 0.002
+ },
+ "06650000": {
+  "grade_retention_pct": 0.002
+ },
+ "07530000": {
+  "grade_retention_pct": 0.017
+ },
+ "06740000": {
+  "grade_retention_pct": 0.01
+ },
+ "02900000": {
+  "grade_retention_pct": 0.002
+ },
+ "01410000": {
+  "grade_retention_pct": 0.005
+ },
+ "01590000": {
+  "grade_retention_pct": 0.002
+ },
+ "01500000": {
+  "grade_retention_pct": 0.008
+ },
+ "00260000": {
+  "grade_retention_pct": 0.002
+ },
+ "00740000": {
+  "grade_retention_pct": 0.0
+ },
+ "02920000": {
+  "grade_retention_pct": 0.002
+ },
+ "00890000": {
+  "grade_retention_pct": 0.0
+ },
+ "01250000": {
+  "grade_retention_pct": 0.0
+ },
+ "03430000": {
+  "grade_retention_pct": 0.009
+ },
+ "07120000": {
+  "grade_retention_pct": 0.006
+ },
+ "07740000": {
+  "grade_retention_pct": 0.003
+ },
+ "00950000": {
+  "grade_retention_pct": 0.02
+ },
+ "00200000": {
+  "grade_retention_pct": 0.014
+ },
+ "07450000": {
+  "grade_retention_pct": 0.003
+ },
+ "02290000": {
+  "grade_retention_pct": 0.018
+ },
+ "00310000": {
+  "grade_retention_pct": 0.004
+ },
+ "01000000": {
+  "grade_retention_pct": 0.025
+ },
+ "01550000": {
+  "grade_retention_pct": 0.0
+ },
+ "01840000": {
+  "grade_retention_pct": 0.0
+ },
+ "03180000": {
+  "grade_retention_pct": 0.0
+ },
+ "00380000": {
+  "grade_retention_pct": 0.0
+ },
+ "02420000": {
+  "grade_retention_pct": 0.0
+ },
+ "06160000": {
+  "grade_retention_pct": 0.002
+ },
+ "06200000": {
+  "grade_retention_pct": 0.004
+ },
+ "06320000": {
+  "grade_retention_pct": 0.0
+ },
+ "02580000": {
+  "grade_retention_pct": 0.038
+ },
+ "06000000": {
+  "grade_retention_pct": 0.001
+ },
+ "01780000": {
+  "grade_retention_pct": 0.002
+ },
+ "03370000": {
+  "grade_retention_pct": 0.0
+ },
+ "00490000": {
+  "grade_retention_pct": 0.004
+ },
+ "02510000": {
+  "grade_retention_pct": 0.01
+ },
+ "01610000": {
+  "grade_retention_pct": 0.01
+ },
+ "01380000": {
+  "grade_retention_pct": 0.0
+ },
+ "01690000": {
+  "grade_retention_pct": 0.0
+ },
+ "03250000": {
+  "grade_retention_pct": 0.003
+ },
+ "06730000": {
+  "grade_retention_pct": 0.001
+ },
+ "00160000": {
+  "grade_retention_pct": 0.005
+ },
+ "02460000": {
+  "grade_retention_pct": 0.0
+ },
+ "07200000": {
+  "grade_retention_pct": 0.003
+ },
+ "00680000": {
+  "grade_retention_pct": 0.0
+ },
+ "03170000": {
+  "grade_retention_pct": 0.001
+ },
+ "03090000": {
+  "grade_retention_pct": 0.008
+ },
+ "00850000": {
+  "grade_retention_pct": 0.0
+ },
+ "02380000": {
+  "grade_retention_pct": 0.0
+ },
+ "06100000": {
+  "grade_retention_pct": 0.002
+ },
+ "07170000": {
+  "grade_retention_pct": 0.0
+ },
+ "02230000": {
+  "grade_retention_pct": 0.01
+ },
+ "01640000": {
+  "grade_retention_pct": 0.002
+ },
+ "00010000": {
+  "grade_retention_pct": 0.001
+ },
+ "01490000": {
+  "grade_retention_pct": 0.006
+ },
+ "07100000": {
+  "grade_retention_pct": 0.001
+ },
+ "07250000": {
+  "grade_retention_pct": 0.001
+ },
+ "03420000": {
+  "grade_retention_pct": 0.003
+ },
+ "01670000": {
+  "grade_retention_pct": 0.002
+ },
+ "01370000": {
+  "grade_retention_pct": 0.012
+ },
+ "02150000": {
+  "grade_retention_pct": 0.012
+ },
+ "02500000": {
+  "grade_retention_pct": 0.0
+ },
+ "00790000": {
+  "grade_retention_pct": 0.006
+ },
+ "03070000": {
+  "grade_retention_pct": 0.003
+ },
+ "07700000": {
+  "grade_retention_pct": 0.017
+ },
+ "02080000": {
+  "grade_retention_pct": 0.0
+ },
+ "01540000": {
+  "grade_retention_pct": 0.01
+ },
+ "06620000": {
+  "grade_retention_pct": 0.0
+ },
+ "00500000": {
+  "grade_retention_pct": 0.002
+ },
+ "03150000": {
+  "grade_retention_pct": 0.0
+ },
+ "07660000": {
+  "grade_retention_pct": 0.004
+ },
+ "01810000": {
+  "grade_retention_pct": 0.007
+ },
+ "00070000": {
+  "grade_retention_pct": 0.012
+ },
+ "03050000": {
+  "grade_retention_pct": 0.002
+ },
+ "06220000": {
+  "grade_retention_pct": 0.013
+ },
+ "01710000": {
+  "grade_retention_pct": 0.001
+ },
+ "00930000": {
+  "grade_retention_pct": 0.017
+ },
+ "00710000": {
+  "grade_retention_pct": 0.0
+ },
+ "01600000": {
+  "grade_retention_pct": 0.012
+ },
+ "00870000": {
+  "grade_retention_pct": 0.001
+ },
+ "00050000": {
+  "grade_retention_pct": 0.008
+ },
+ "00910000": {
+  "grade_retention_pct": 0.0
+ },
+ "01630000": {
+  "grade_retention_pct": 0.004
+ },
+ "00450000": {
+  "grade_retention_pct": 0.004
+ },
+ "00610000": {
+  "grade_retention_pct": 0.012
+ },
+ "01010000": {
+  "grade_retention_pct": 0.002
+ },
+ "07730000": {
+  "grade_retention_pct": 0.006
+ },
+ "01820000": {
+  "grade_retention_pct": 0.007
+ },
+ "02880000": {
+  "grade_retention_pct": 0.0
+ },
+ "01620000": {
+  "grade_retention_pct": 0.001
+ },
+ "06500000": {
+  "grade_retention_pct": 0.004
+ },
+ "01390000": {
+  "grade_retention_pct": 0.002
+ },
+ "02340000": {
+  "grade_retention_pct": 0.0
+ },
+ "01310000": {
+  "grade_retention_pct": 0.002
+ },
+ "03360000": {
+  "grade_retention_pct": 0.009
+ },
+ "02620000": {
+  "grade_retention_pct": 0.012
+ },
+ "03080000": {
+  "grade_retention_pct": 0.009
+ },
+ "01440000": {
+  "grade_retention_pct": 0.001
+ },
+ "00510000": {
+  "grade_retention_pct": 0.002
+ },
+ "02430000": {
+  "grade_retention_pct": 0.003
+ },
+ "03160000": {
+  "grade_retention_pct": 0.036
+ },
+ "01360000": {
+  "grade_retention_pct": 0.0
+ },
+ "06350000": {
+  "grade_retention_pct": 0.005
+ },
+ "00090000": {
+  "grade_retention_pct": 0.002
+ },
+ "02740000": {
+  "grade_retention_pct": 0.015
+ },
+ "02730000": {
+  "grade_retention_pct": 0.001
+ },
+ "02190000": {
+  "grade_retention_pct": 0.001
+ },
+ "03260000": {
+  "grade_retention_pct": 0.001
+ },
+ "03100000": {
+  "grade_retention_pct": 0.033
+ },
+ "01350000": {
+  "grade_retention_pct": 0.0
+ },
+ "01450000": {
+  "grade_retention_pct": 0.0
+ },
+ "06750000": {
+  "grade_retention_pct": 0.0
+ },
+ "03400000": {
+  "grade_retention_pct": 0.0
+ },
+ "07750000": {
+  "grade_retention_pct": 0.0
+ },
+ "02090000": {
+  "grade_retention_pct": 0.027
+ },
+ "02440000": {
+  "grade_retention_pct": 0.02
+ },
+ "02640000": {
+  "grade_retention_pct": 0.002
+ },
+ "00560000": {
+  "grade_retention_pct": 0.0
+ },
+ "02490000": {
+  "grade_retention_pct": 0.0
+ },
+ "00670000": {
+  "grade_retention_pct": 0.001
+ },
+ "01870000": {
+  "grade_retention_pct": 0.005
+ },
+ "01050000": {
+  "grade_retention_pct": 0.002
+ },
+ "01170000": {
+  "grade_retention_pct": 0.002
+ },
+ "02630000": {
+  "grade_retention_pct": 0.0
+ },
+ "03140000": {
+  "grade_retention_pct": 0.004
+ },
+ "02110000": {
+  "grade_retention_pct": 0.001
+ },
+ "02210000": {
+  "grade_retention_pct": 0.0
+ },
+ "02270000": {
+  "grade_retention_pct": 0.002
+ },
+ "02710000": {
+  "grade_retention_pct": 0.002
+ },
+ "02100000": {
+  "grade_retention_pct": 0.002
+ },
+ "02300000": {
+  "grade_retention_pct": 0.0
+ },
+ "03210000": {
+  "grade_retention_pct": 0.001
+ },
+ "06550000": {
+  "grade_retention_pct": 0.001
+ },
+ "06030000": {
+  "grade_retention_pct": 0.002
+ },
+ "01220000": {
+  "grade_retention_pct": 0.001
+ },
+ "06150000": {
+  "grade_retention_pct": 0.023
+ },
+ "06800000": {
+  "grade_retention_pct": 0.004
+ },
+ "00630000": {
+  "grade_retention_pct": 0.0
+ },
+ "03310000": {
+  "grade_retention_pct": 0.004
+ },
+ "02040000": {
+  "grade_retention_pct": 0.001
+ },
+ "00460000": {
+  "grade_retention_pct": 0.002
+ },
+ "02890000": {
+  "grade_retention_pct": 0.0
+ },
+ "00430000": {
+  "grade_retention_pct": 0.0
+ },
+ "00730000": {
+  "grade_retention_pct": 0.003
+ },
+ "01100000": {
+  "grade_retention_pct": 0.003
+ },
+ "03490000": {
+  "grade_retention_pct": 0.0
+ },
+ "06580000": {
+  "grade_retention_pct": 0.011
+ },
+ "00440000": {
+  "grade_retention_pct": 0.028
+ },
+ "02950000": {
+  "grade_retention_pct": 0.001
+ },
+ "02170000": {
+  "grade_retention_pct": 0.001
+ },
+ "02910000": {
+  "grade_retention_pct": 0.004
+ },
+ "00410000": {
+  "grade_retention_pct": 0.0
+ },
+ "02130000": {
+  "grade_retention_pct": 0.0
+ },
+ "01650000": {
+  "grade_retention_pct": 0.017
+ },
+ "00250000": {
+  "grade_retention_pct": 0.008
+ },
+ "00350000": {
+  "grade_retention_pct": 0.023
+ },
+ "00830000": {
+  "grade_retention_pct": 0.001
+ },
+ "03300000": {
+  "grade_retention_pct": 0.001
+ },
+ "00180000": {
+  "grade_retention_pct": 0.008
+ },
+ "03010000": {
+  "grade_retention_pct": 0.001
+ },
+ "06450000": {
+  "grade_retention_pct": 0.009
+ },
+ "02750000": {
+  "grade_retention_pct": 0.0
+ },
+ "01520000": {
+  "grade_retention_pct": 0.0
+ },
+ "07800000": {
+  "grade_retention_pct": 0.004
+ },
+ "01680000": {
+  "grade_retention_pct": 0.001
+ },
+ "01570000": {
+  "grade_retention_pct": 0.001
+ },
+ "01420000": {
+  "grade_retention_pct": 0.009
+ },
+ "03460000": {
+  "grade_retention_pct": 0.002
+ },
+ "01580000": {
+  "grade_retention_pct": 0.001
+ },
+ "00720000": {
+  "grade_retention_pct": 0.004
+ },
+ "02480000": {
+  "grade_retention_pct": 0.024
+ },
+ "03270000": {
+  "grade_retention_pct": 0.0
+ },
+ "02850000": {
+  "grade_retention_pct": 0.014
+ },
+ "02530000": {
+  "grade_retention_pct": 0.0
+ },
+ "00980000": {
+  "grade_retention_pct": 0.018
+ },
+ "02960000": {
+  "grade_retention_pct": 0.0
+ },
+ "00030000": {
+  "grade_retention_pct": 0.004
+ },
+ "00140000": {
+  "grade_retention_pct": 0.001
+ },
+ "00520000": {
+  "grade_retention_pct": 0.003
+ },
+ "00770000": {
+  "grade_retention_pct": 0.0
+ },
+ "00360000": {
+  "grade_retention_pct": 0.002
+ },
+ "03040000": {
+  "grade_retention_pct": 0.017
+ },
+ "06720000": {
+  "grade_retention_pct": 0.031
+ },
+ "02980000": {
+  "grade_retention_pct": 0.002
+ },
+ "02360000": {
+  "grade_retention_pct": 0.016
+ },
+ "01700000": {
+  "grade_retention_pct": 0.004
+ },
+ "03320000": {
+  "grade_retention_pct": 0.01
+ },
+ "07500000": {
+  "grade_retention_pct": 0.006
+ },
+ "01140000": {
+  "grade_retention_pct": 0.007
+ },
+ "01330000": {
+  "grade_retention_pct": 0.002
+ },
+ "00100000": {
+  "grade_retention_pct": 0.002
+ },
+ "06980000": {
+  "grade_retention_pct": 0.0
+ },
+ "01890000": {
+  "grade_retention_pct": 0.002
+ },
+ "07650000": {
+  "grade_retention_pct": 0.006
+ },
+ "06850000": {
+  "grade_retention_pct": 0.0
+ },
+ "02810000": {
+  "grade_retention_pct": 0.029
+ },
+ "02760000": {
+  "grade_retention_pct": 0.003
+ },
+ "00080000": {
+  "grade_retention_pct": 0.004
+ },
+ "03350000": {
+  "grade_retention_pct": 0.0
+ },
+ "02260000": {
+  "grade_retention_pct": 0.013
+ },
+ "06400000": {
+  "grade_retention_pct": 0.0
+ },
+ "06600000": {
+  "grade_retention_pct": 0.004
+ },
+ "06900000": {
+  "grade_retention_pct": 0.002
+ },
+ "06950000": {
+  "grade_retention_pct": 0.007
+ },
+ "07050000": {
+  "grade_retention_pct": 0.002
+ },
+ "07300000": {
+  "grade_retention_pct": 0.0
+ },
+ "07630000": {
+  "grade_retention_pct": 0.0
+ }
+}

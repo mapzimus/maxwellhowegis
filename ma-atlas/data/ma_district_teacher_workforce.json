@@ -1,0 +1,1402 @@
+{
+ "02640000": {
+  "teacher_under32_pct": 0.172,
+  "teacher_57plus_pct": 0.179,
+  "teacher_sped_pct": 0.081
+ },
+ "02130000": {
+  "teacher_under32_pct": 0.096,
+  "teacher_57plus_pct": 0.159,
+  "teacher_sped_pct": 0.082
+ },
+ "02900000": {
+  "teacher_under32_pct": 0.198,
+  "teacher_57plus_pct": 0.176,
+  "teacher_sped_pct": 0.192
+ },
+ "02910000": {
+  "teacher_under32_pct": 0.19,
+  "teacher_57plus_pct": 0.166,
+  "teacher_sped_pct": 0.126
+ },
+ "06100000": {
+  "teacher_under32_pct": 0.159,
+  "teacher_57plus_pct": 0.095,
+  "teacher_sped_pct": 0.15
+ },
+ "07730000": {
+  "teacher_under32_pct": 0.116,
+  "teacher_57plus_pct": 0.114,
+  "teacher_sped_pct": 0.175
+ },
+ "01890000": {
+  "teacher_under32_pct": 0.159,
+  "teacher_57plus_pct": 0.095,
+  "teacher_sped_pct": 0.114
+ },
+ "07280000": {
+  "teacher_under32_pct": 0.211,
+  "teacher_57plus_pct": 0.0,
+  "teacher_sped_pct": 0.327
+ },
+ "02840000": {
+  "teacher_under32_pct": 0.222,
+  "teacher_57plus_pct": 0.159,
+  "teacher_sped_pct": 0.22
+ },
+ "02690000": {
+  "teacher_under32_pct": 0.21,
+  "teacher_57plus_pct": 0.14,
+  "teacher_sped_pct": 0.193
+ },
+ "00170000": {
+  "teacher_under32_pct": 0.152,
+  "teacher_57plus_pct": 0.152,
+  "teacher_sped_pct": 0.062
+ },
+ "02890000": {
+  "teacher_under32_pct": 0.168,
+  "teacher_57plus_pct": 0.323,
+  "teacher_sped_pct": 0.176
+ },
+ "06000000": {
+  "teacher_under32_pct": 0.149,
+  "teacher_57plus_pct": 0.149,
+  "teacher_sped_pct": 0.15
+ },
+ "00740000": {
+  "teacher_under32_pct": 0.086,
+  "teacher_57plus_pct": 0.043,
+  "teacher_sped_pct": 0.065
+ },
+ "01620000": {
+  "teacher_under32_pct": 0.1,
+  "teacher_57plus_pct": 0.138,
+  "teacher_sped_pct": 0.019
+ },
+ "00950000": {
+  "teacher_under32_pct": 0.369,
+  "teacher_57plus_pct": 0.081,
+  "teacher_sped_pct": 0.125
+ },
+ "02360000": {
+  "teacher_under32_pct": 0.173,
+  "teacher_57plus_pct": 0.19,
+  "teacher_sped_pct": 0.191
+ },
+ "06980000": {
+  "teacher_under32_pct": 0.101,
+  "teacher_57plus_pct": 0.111,
+  "teacher_sped_pct": 0.216
+ },
+ "00270000": {
+  "teacher_under32_pct": 0.27,
+  "teacher_57plus_pct": 0.215,
+  "teacher_sped_pct": 0.009
+ },
+ "02120000": {
+  "teacher_under32_pct": 0.241,
+  "teacher_57plus_pct": 0.084,
+  "teacher_sped_pct": 0.15
+ },
+ "07700000": {
+  "teacher_under32_pct": 0.172,
+  "teacher_57plus_pct": 0.196,
+  "teacher_sped_pct": 0.069
+ },
+ "00200000": {
+  "teacher_under32_pct": 0.195,
+  "teacher_57plus_pct": 0.183,
+  "teacher_sped_pct": 0.169
+ },
+ "07800000": {
+  "teacher_under32_pct": 0.198,
+  "teacher_57plus_pct": 0.122,
+  "teacher_sped_pct": 0.017
+ },
+ "02630000": {
+  "teacher_under32_pct": 0.169,
+  "teacher_57plus_pct": 0.169,
+  "teacher_sped_pct": 0.144
+ },
+ "00960000": {
+  "teacher_under32_pct": 0.146,
+  "teacher_57plus_pct": 0.161,
+  "teacher_sped_pct": 0.185
+ },
+ "00080000": {
+  "teacher_under32_pct": 0.136,
+  "teacher_57plus_pct": 0.163,
+  "teacher_sped_pct": 0.254
+ },
+ "06550000": {
+  "teacher_under32_pct": 0.196,
+  "teacher_57plus_pct": 0.142,
+  "teacher_sped_pct": 0.142
+ },
+ "03050000": {
+  "teacher_under32_pct": 0.192,
+  "teacher_57plus_pct": 0.115,
+  "teacher_sped_pct": 0.041
+ },
+ "01510000": {
+  "teacher_under32_pct": 0.168,
+  "teacher_57plus_pct": 0.106,
+  "teacher_sped_pct": 0.149
+ },
+ "01580000": {
+  "teacher_under32_pct": 0.2,
+  "teacher_57plus_pct": 0.068,
+  "teacher_sped_pct": 0.157
+ },
+ "02140000": {
+  "teacher_under32_pct": 0.179,
+  "teacher_57plus_pct": 0.094,
+  "teacher_sped_pct": 0.082
+ },
+ "01330000": {
+  "teacher_under32_pct": 0.145,
+  "teacher_57plus_pct": 0.17,
+  "teacher_sped_pct": 0.225
+ },
+ "02760000": {
+  "teacher_under32_pct": 0.06,
+  "teacher_57plus_pct": 0.144,
+  "teacher_sped_pct": 0.053
+ },
+ "00650000": {
+  "teacher_under32_pct": 0.195,
+  "teacher_57plus_pct": 0.214,
+  "teacher_sped_pct": 0.032
+ },
+ "01610000": {
+  "teacher_under32_pct": 0.106,
+  "teacher_57plus_pct": 0.119,
+  "teacher_sped_pct": 0.23
+ },
+ "02080000": {
+  "teacher_under32_pct": 0.194,
+  "teacher_57plus_pct": 0.245,
+  "teacher_sped_pct": 0.292
+ },
+ "01270000": {
+  "teacher_under32_pct": 0.094,
+  "teacher_57plus_pct": 0.193,
+  "teacher_sped_pct": 0.0
+ },
+ "00250000": {
+  "teacher_under32_pct": 0.184,
+  "teacher_57plus_pct": 0.201,
+  "teacher_sped_pct": 0.181
+ },
+ "01520000": {
+  "teacher_under32_pct": 0.069,
+  "teacher_57plus_pct": 0.212,
+  "teacher_sped_pct": 0.112
+ },
+ "03480000": {
+  "teacher_under32_pct": 0.258,
+  "teacher_57plus_pct": 0.131,
+  "teacher_sped_pct": 0.072
+ },
+ "00050000": {
+  "teacher_under32_pct": 0.146,
+  "teacher_57plus_pct": 0.121,
+  "teacher_sped_pct": 0.163
+ },
+ "03430000": {
+  "teacher_under32_pct": 0.159,
+  "teacher_57plus_pct": 0.185,
+  "teacher_sped_pct": 0.074
+ },
+ "02580000": {
+  "teacher_under32_pct": 0.27,
+  "teacher_57plus_pct": 0.133,
+  "teacher_sped_pct": 0.049
+ },
+ "01110000": {
+  "teacher_under32_pct": 0.177,
+  "teacher_57plus_pct": 0.085,
+  "teacher_sped_pct": 0.181
+ },
+ "03320000": {
+  "teacher_under32_pct": 0.129,
+  "teacher_57plus_pct": 0.151,
+  "teacher_sped_pct": 0.194
+ },
+ "01100000": {
+  "teacher_under32_pct": 0.181,
+  "teacher_57plus_pct": 0.162,
+  "teacher_sped_pct": 0.092
+ },
+ "02090000": {
+  "teacher_under32_pct": 0.251,
+  "teacher_57plus_pct": 0.151,
+  "teacher_sped_pct": 0.106
+ },
+ "00450000": {
+  "teacher_under32_pct": 0.057,
+  "teacher_57plus_pct": 0.284,
+  "teacher_sped_pct": 0.285
+ },
+ "00260000": {
+  "teacher_under32_pct": 0.165,
+  "teacher_57plus_pct": 0.081,
+  "teacher_sped_pct": 0.141
+ },
+ "00640000": {
+  "teacher_under32_pct": 0.247,
+  "teacher_57plus_pct": 0.151,
+  "teacher_sped_pct": 0.099
+ },
+ "01350000": {
+  "teacher_under32_pct": 0.194,
+  "teacher_57plus_pct": 0.129,
+  "teacher_sped_pct": 0.205
+ },
+ "06220000": {
+  "teacher_under32_pct": 0.293,
+  "teacher_57plus_pct": 0.101,
+  "teacher_sped_pct": 0.134
+ },
+ "02850000": {
+  "teacher_under32_pct": 0.296,
+  "teacher_57plus_pct": 0.064,
+  "teacher_sped_pct": 0.073
+ },
+ "07120000": {
+  "teacher_under32_pct": 0.108,
+  "teacher_57plus_pct": 0.188,
+  "teacher_sped_pct": 0.0
+ },
+ "06900000": {
+  "teacher_under32_pct": 0.172,
+  "teacher_57plus_pct": 0.127,
+  "teacher_sped_pct": 0.186
+ },
+ "01680000": {
+  "teacher_under32_pct": 0.156,
+  "teacher_57plus_pct": 0.152,
+  "teacher_sped_pct": 0.133
+ },
+ "02660000": {
+  "teacher_under32_pct": 0.171,
+  "teacher_57plus_pct": 0.132,
+  "teacher_sped_pct": 0.0
+ },
+ "02070000": {
+  "teacher_under32_pct": 0.199,
+  "teacher_57plus_pct": 0.111,
+  "teacher_sped_pct": 0.237
+ },
+ "02110000": {
+  "teacher_under32_pct": 0.161,
+  "teacher_57plus_pct": 0.11,
+  "teacher_sped_pct": 0.115
+ },
+ "03000000": {
+  "teacher_under32_pct": 0.106,
+  "teacher_57plus_pct": 0.362,
+  "teacher_sped_pct": 0.0
+ },
+ "06160000": {
+  "teacher_under32_pct": 0.133,
+  "teacher_57plus_pct": 0.105,
+  "teacher_sped_pct": 0.224
+ },
+ "00180000": {
+  "teacher_under32_pct": 0.205,
+  "teacher_57plus_pct": 0.111,
+  "teacher_sped_pct": 0.105
+ },
+ "03270000": {
+  "teacher_under32_pct": 0.04,
+  "teacher_57plus_pct": 0.0,
+  "teacher_sped_pct": 0.132
+ },
+ "02010000": {
+  "teacher_under32_pct": 0.322,
+  "teacher_57plus_pct": 0.111,
+  "teacher_sped_pct": 0.181
+ },
+ "07150000": {
+  "teacher_under32_pct": 0.14,
+  "teacher_57plus_pct": 0.157,
+  "teacher_sped_pct": 0.118
+ },
+ "00910000": {
+  "teacher_under32_pct": 0.088,
+  "teacher_57plus_pct": 0.15,
+  "teacher_sped_pct": 0.301
+ },
+ "00940000": {
+  "teacher_under32_pct": 0.19,
+  "teacher_57plus_pct": 0.114,
+  "teacher_sped_pct": 0.114
+ },
+ "01490000": {
+  "teacher_under32_pct": 0.396,
+  "teacher_57plus_pct": 0.103,
+  "teacher_sped_pct": 0.094
+ },
+ "03010000": {
+  "teacher_under32_pct": 0.205,
+  "teacher_57plus_pct": 0.138,
+  "teacher_sped_pct": 0.172
+ },
+ "00830000": {
+  "teacher_under32_pct": 0.327,
+  "teacher_57plus_pct": 0.111,
+  "teacher_sped_pct": 0.0
+ },
+ "02960000": {
+  "teacher_under32_pct": 0.011,
+  "teacher_57plus_pct": 0.221,
+  "teacher_sped_pct": 0.165
+ },
+ "02650000": {
+  "teacher_under32_pct": 0.154,
+  "teacher_57plus_pct": 0.126,
+  "teacher_sped_pct": 0.18
+ },
+ "02300000": {
+  "teacher_under32_pct": 0.167,
+  "teacher_57plus_pct": 0.083,
+  "teacher_sped_pct": 0.2
+ },
+ "02430000": {
+  "teacher_under32_pct": 0.274,
+  "teacher_57plus_pct": 0.105,
+  "teacher_sped_pct": 0.105
+ },
+ "01050000": {
+  "teacher_under32_pct": 0.133,
+  "teacher_57plus_pct": 0.121,
+  "teacher_sped_pct": 0.075
+ },
+ "01550000": {
+  "teacher_under32_pct": 0.189,
+  "teacher_57plus_pct": 0.135,
+  "teacher_sped_pct": 0.198
+ },
+ "00730000": {
+  "teacher_under32_pct": 0.156,
+  "teacher_57plus_pct": 0.127,
+  "teacher_sped_pct": 0.126
+ },
+ "02440000": {
+  "teacher_under32_pct": 0.255,
+  "teacher_57plus_pct": 0.081,
+  "teacher_sped_pct": 0.162
+ },
+ "01740000": {
+  "teacher_under32_pct": 0.123,
+  "teacher_57plus_pct": 0.207,
+  "teacher_sped_pct": 0.125
+ },
+ "06650000": {
+  "teacher_under32_pct": 0.176,
+  "teacher_57plus_pct": 0.105,
+  "teacher_sped_pct": 0.152
+ },
+ "02710000": {
+  "teacher_under32_pct": 0.195,
+  "teacher_57plus_pct": 0.098,
+  "teacher_sped_pct": 0.09
+ },
+ "01980000": {
+  "teacher_under32_pct": 0.158,
+  "teacher_57plus_pct": 0.099,
+  "teacher_sped_pct": 0.123
+ },
+ "00070000": {
+  "teacher_under32_pct": 0.172,
+  "teacher_57plus_pct": 0.142,
+  "teacher_sped_pct": 0.182
+ },
+ "03310000": {
+  "teacher_under32_pct": 0.144,
+  "teacher_57plus_pct": 0.148,
+  "teacher_sped_pct": 0.13
+ },
+ "00720000": {
+  "teacher_under32_pct": 0.138,
+  "teacher_57plus_pct": 0.16,
+  "teacher_sped_pct": 0.156
+ },
+ "01210000": {
+  "teacher_under32_pct": 0.294,
+  "teacher_57plus_pct": 0.029,
+  "teacher_sped_pct": 0.0
+ },
+ "00490000": {
+  "teacher_under32_pct": 0.233,
+  "teacher_57plus_pct": 0.077,
+  "teacher_sped_pct": 0.078
+ },
+ "01530000": {
+  "teacher_under32_pct": 0.264,
+  "teacher_57plus_pct": 0.146,
+  "teacher_sped_pct": 0.171
+ },
+ "00090000": {
+  "teacher_under32_pct": 0.157,
+  "teacher_57plus_pct": 0.189,
+  "teacher_sped_pct": 0.218
+ },
+ "00410000": {
+  "teacher_under32_pct": 0.162,
+  "teacher_57plus_pct": 0.162,
+  "teacher_sped_pct": 0.101
+ },
+ "02310000": {
+  "teacher_under32_pct": 0.131,
+  "teacher_57plus_pct": 0.164,
+  "teacher_sped_pct": 0.086
+ },
+ "02510000": {
+  "teacher_under32_pct": 0.228,
+  "teacher_57plus_pct": 0.119,
+  "teacher_sped_pct": 0.123
+ },
+ "02810000": {
+  "teacher_under32_pct": 0.268,
+  "teacher_57plus_pct": 0.143,
+  "teacher_sped_pct": 0.242
+ },
+ "02980000": {
+  "teacher_under32_pct": 0.229,
+  "teacher_57plus_pct": 0.198,
+  "teacher_sped_pct": 0.213
+ },
+ "01780000": {
+  "teacher_under32_pct": 0.228,
+  "teacher_57plus_pct": 0.085,
+  "teacher_sped_pct": 0.051
+ },
+ "02100000": {
+  "teacher_under32_pct": 0.142,
+  "teacher_57plus_pct": 0.149,
+  "teacher_sped_pct": 0.314
+ },
+ "03470000": {
+  "teacher_under32_pct": 0.187,
+  "teacher_57plus_pct": 0.149,
+  "teacher_sped_pct": 0.075
+ },
+ "00440000": {
+  "teacher_under32_pct": 0.202,
+  "teacher_57plus_pct": 0.163,
+  "teacher_sped_pct": 0.118
+ },
+ "01700000": {
+  "teacher_under32_pct": 0.243,
+  "teacher_57plus_pct": 0.1,
+  "teacher_sped_pct": 0.135
+ },
+ "01670000": {
+  "teacher_under32_pct": 0.161,
+  "teacher_57plus_pct": 0.114,
+  "teacher_sped_pct": 0.211
+ },
+ "01770000": {
+  "teacher_under32_pct": 0.194,
+  "teacher_57plus_pct": 0.143,
+  "teacher_sped_pct": 0.11
+ },
+ "06750000": {
+  "teacher_under32_pct": 0.215,
+  "teacher_57plus_pct": 0.112,
+  "teacher_sped_pct": 0.08
+ },
+ "00460000": {
+  "teacher_under32_pct": 0.183,
+  "teacher_57plus_pct": 0.101,
+  "teacher_sped_pct": 0.158
+ },
+ "01960000": {
+  "teacher_under32_pct": 0.551,
+  "teacher_57plus_pct": 0.163,
+  "teacher_sped_pct": 0.089
+ },
+ "02240000": {
+  "teacher_under32_pct": 0.07,
+  "teacher_57plus_pct": 0.252,
+  "teacher_sped_pct": 0.159
+ },
+ "03260000": {
+  "teacher_under32_pct": 0.093,
+  "teacher_57plus_pct": 0.143,
+  "teacher_sped_pct": 0.119
+ },
+ "06500000": {
+  "teacher_under32_pct": 0.186,
+  "teacher_57plus_pct": 0.188,
+  "teacher_sped_pct": 0.127
+ },
+ "06720000": {
+  "teacher_under32_pct": 0.207,
+  "teacher_57plus_pct": 0.219,
+  "teacher_sped_pct": 0.171
+ },
+ "06740000": {
+  "teacher_under32_pct": 0.143,
+  "teacher_57plus_pct": 0.163,
+  "teacher_sped_pct": 0.155
+ },
+ "02770000": {
+  "teacher_under32_pct": 0.436,
+  "teacher_57plus_pct": 0.098,
+  "teacher_sped_pct": 0.121
+ },
+ "01140000": {
+  "teacher_under32_pct": 0.164,
+  "teacher_57plus_pct": 0.105,
+  "teacher_sped_pct": 0.089
+ },
+ "02500000": {
+  "teacher_under32_pct": 0.109,
+  "teacher_57plus_pct": 0.039,
+  "teacher_sped_pct": 0.131
+ },
+ "01170000": {
+  "teacher_under32_pct": 0.137,
+  "teacher_57plus_pct": 0.102,
+  "teacher_sped_pct": 0.081
+ },
+ "01420000": {
+  "teacher_under32_pct": 0.116,
+  "teacher_57plus_pct": 0.114,
+  "teacher_sped_pct": 0.151
+ },
+ "01360000": {
+  "teacher_under32_pct": 0.178,
+  "teacher_57plus_pct": 0.121,
+  "teacher_sped_pct": 0.121
+ },
+ "01870000": {
+  "teacher_under32_pct": 0.035,
+  "teacher_57plus_pct": 0.139,
+  "teacher_sped_pct": 0.159
+ },
+ "01750000": {
+  "teacher_under32_pct": 0.102,
+  "teacher_57plus_pct": 0.168,
+  "teacher_sped_pct": 0.043
+ },
+ "02150000": {
+  "teacher_under32_pct": 0.267,
+  "teacher_57plus_pct": 0.093,
+  "teacher_sped_pct": 0.063
+ },
+ "06030000": {
+  "teacher_under32_pct": 0.166,
+  "teacher_57plus_pct": 0.218,
+  "teacher_sped_pct": 0.085
+ },
+ "06200000": {
+  "teacher_under32_pct": 0.147,
+  "teacher_57plus_pct": 0.157,
+  "teacher_sped_pct": 0.086
+ },
+ "01850000": {
+  "teacher_under32_pct": 0.233,
+  "teacher_57plus_pct": 0.103,
+  "teacher_sped_pct": 0.166
+ },
+ "02340000": {
+  "teacher_under32_pct": 0.0,
+  "teacher_57plus_pct": 0.0,
+  "teacher_sped_pct": 0.0
+ },
+ "02260000": {
+  "teacher_under32_pct": 0.226,
+  "teacher_57plus_pct": 0.126,
+  "teacher_sped_pct": 0.05
+ },
+ "01390000": {
+  "teacher_under32_pct": 0.112,
+  "teacher_57plus_pct": 0.107,
+  "teacher_sped_pct": 0.141
+ },
+ "00430000": {
+  "teacher_under32_pct": 0.0,
+  "teacher_57plus_pct": 0.227,
+  "teacher_sped_pct": 0.306
+ },
+ "02270000": {
+  "teacher_under32_pct": 0.234,
+  "teacher_57plus_pct": 0.062,
+  "teacher_sped_pct": 0.193
+ },
+ "02380000": {
+  "teacher_under32_pct": 0.081,
+  "teacher_57plus_pct": 0.135,
+  "teacher_sped_pct": 0.0
+ },
+ "03350000": {
+  "teacher_under32_pct": 0.177,
+  "teacher_57plus_pct": 0.053,
+  "teacher_sped_pct": 0.119
+ },
+ "02730000": {
+  "teacher_under32_pct": 0.27,
+  "teacher_57plus_pct": 0.142,
+  "teacher_sped_pct": 0.245
+ },
+ "06150000": {
+  "teacher_under32_pct": 0.346,
+  "teacher_57plus_pct": 0.101,
+  "teacher_sped_pct": 0.147
+ },
+ "02190000": {
+  "teacher_under32_pct": 0.057,
+  "teacher_57plus_pct": 0.152,
+  "teacher_sped_pct": 0.127
+ },
+ "03080000": {
+  "teacher_under32_pct": 0.237,
+  "teacher_57plus_pct": 0.091,
+  "teacher_sped_pct": 0.126
+ },
+ "01820000": {
+  "teacher_under32_pct": 0.243,
+  "teacher_57plus_pct": 0.146,
+  "teacher_sped_pct": 0.152
+ },
+ "06450000": {
+  "teacher_under32_pct": 0.155,
+  "teacher_57plus_pct": 0.187,
+  "teacher_sped_pct": 0.067
+ },
+ "00980000": {
+  "teacher_under32_pct": 0.193,
+  "teacher_57plus_pct": 0.193,
+  "teacher_sped_pct": 0.083
+ },
+ "00990000": {
+  "teacher_under32_pct": 0.148,
+  "teacher_57plus_pct": 0.12,
+  "teacher_sped_pct": 0.139
+ },
+ "03160000": {
+  "teacher_under32_pct": 0.191,
+  "teacher_57plus_pct": 0.113,
+  "teacher_sped_pct": 0.227
+ },
+ "07530000": {
+  "teacher_under32_pct": 0.185,
+  "teacher_57plus_pct": 0.16,
+  "teacher_sped_pct": 0.041
+ },
+ "01690000": {
+  "teacher_under32_pct": 0.094,
+  "teacher_57plus_pct": 0.281,
+  "teacher_sped_pct": 0.231
+ },
+ "03180000": {
+  "teacher_under32_pct": 0.256,
+  "teacher_57plus_pct": 0.256,
+  "teacher_sped_pct": 0.0
+ },
+ "06800000": {
+  "teacher_under32_pct": 0.144,
+  "teacher_57plus_pct": 0.131,
+  "teacher_sped_pct": 0.167
+ },
+ "00880000": {
+  "teacher_under32_pct": 0.162,
+  "teacher_57plus_pct": 0.117,
+  "teacher_sped_pct": 0.157
+ },
+ "03070000": {
+  "teacher_under32_pct": 0.222,
+  "teacher_57plus_pct": 0.156,
+  "teacher_sped_pct": 0.149
+ },
+ "06730000": {
+  "teacher_under32_pct": 0.203,
+  "teacher_57plus_pct": 0.151,
+  "teacher_sped_pct": 0.146
+ },
+ "07050000": {
+  "teacher_under32_pct": 0.157,
+  "teacher_57plus_pct": 0.144,
+  "teacher_sped_pct": 0.084
+ },
+ "00850000": {
+  "teacher_under32_pct": 0.067,
+  "teacher_57plus_pct": 0.346,
+  "teacher_sped_pct": 0.118
+ },
+ "00560000": {
+  "teacher_under32_pct": 0.189,
+  "teacher_57plus_pct": 0.129,
+  "teacher_sped_pct": 0.198
+ },
+ "00570000": {
+  "teacher_under32_pct": 0.467,
+  "teacher_57plus_pct": 0.075,
+  "teacher_sped_pct": 0.235
+ },
+ "00010000": {
+  "teacher_under32_pct": 0.216,
+  "teacher_57plus_pct": 0.119,
+  "teacher_sped_pct": 0.101
+ },
+ "06850000": {
+  "teacher_under32_pct": 0.0,
+  "teacher_57plus_pct": 0.283,
+  "teacher_sped_pct": 0.0
+ },
+ "06950000": {
+  "teacher_under32_pct": 0.06,
+  "teacher_57plus_pct": 0.116,
+  "teacher_sped_pct": 0.132
+ },
+ "02780000": {
+  "teacher_under32_pct": 0.153,
+  "teacher_57plus_pct": 0.224,
+  "teacher_sped_pct": 0.058
+ },
+ "01410000": {
+  "teacher_under32_pct": 0.122,
+  "teacher_57plus_pct": 0.144,
+  "teacher_sped_pct": 0.128
+ },
+ "00140000": {
+  "teacher_under32_pct": 0.262,
+  "teacher_57plus_pct": 0.113,
+  "teacher_sped_pct": 0.122
+ },
+ "03140000": {
+  "teacher_under32_pct": 0.233,
+  "teacher_57plus_pct": 0.092,
+  "teacher_sped_pct": 0.19
+ },
+ "06320000": {
+  "teacher_under32_pct": 0.106,
+  "teacher_57plus_pct": 0.106,
+  "teacher_sped_pct": 0.161
+ },
+ "07200000": {
+  "teacher_under32_pct": 0.206,
+  "teacher_57plus_pct": 0.167,
+  "teacher_sped_pct": 0.143
+ },
+ "06180000": {
+  "teacher_under32_pct": 0.109,
+  "teacher_57plus_pct": 0.212,
+  "teacher_sped_pct": 0.013
+ },
+ "07740000": {
+  "teacher_under32_pct": 0.225,
+  "teacher_57plus_pct": 0.137,
+  "teacher_sped_pct": 0.096
+ },
+ "01310000": {
+  "teacher_under32_pct": 0.105,
+  "teacher_57plus_pct": 0.123,
+  "teacher_sped_pct": 0.188
+ },
+ "06350000": {
+  "teacher_under32_pct": 0.118,
+  "teacher_57plus_pct": 0.176,
+  "teacher_sped_pct": 0.131
+ },
+ "00790000": {
+  "teacher_under32_pct": 0.309,
+  "teacher_57plus_pct": 0.104,
+  "teacher_sped_pct": 0.142
+ },
+ "07250000": {
+  "teacher_under32_pct": 0.135,
+  "teacher_57plus_pct": 0.157,
+  "teacher_sped_pct": 0.142
+ },
+ "00510000": {
+  "teacher_under32_pct": 0.195,
+  "teacher_57plus_pct": 0.06,
+  "teacher_sped_pct": 0.089
+ },
+ "00500000": {
+  "teacher_under32_pct": 0.136,
+  "teacher_57plus_pct": 0.117,
+  "teacher_sped_pct": 0.027
+ },
+ "00670000": {
+  "teacher_under32_pct": 0.13,
+  "teacher_57plus_pct": 0.162,
+  "teacher_sped_pct": 0.207
+ },
+ "00400000": {
+  "teacher_under32_pct": 0.144,
+  "teacher_57plus_pct": 0.089,
+  "teacher_sped_pct": 0.221
+ },
+ "02920000": {
+  "teacher_under32_pct": 0.203,
+  "teacher_57plus_pct": 0.138,
+  "teacher_sped_pct": 0.12
+ },
+ "07650000": {
+  "teacher_under32_pct": 0.096,
+  "teacher_57plus_pct": 0.213,
+  "teacher_sped_pct": 0.155
+ },
+ "07780000": {
+  "teacher_under32_pct": 0.215,
+  "teacher_57plus_pct": 0.149,
+  "teacher_sped_pct": 0.008
+ },
+ "03150000": {
+  "teacher_under32_pct": 0.07,
+  "teacher_57plus_pct": 0.112,
+  "teacher_sped_pct": 0.104
+ },
+ "00160000": {
+  "teacher_under32_pct": 0.282,
+  "teacher_57plus_pct": 0.107,
+  "teacher_sped_pct": 0.174
+ },
+ "03250000": {
+  "teacher_under32_pct": 0.205,
+  "teacher_57plus_pct": 0.164,
+  "teacher_sped_pct": 0.077
+ },
+ "06620000": {
+  "teacher_under32_pct": 0.109,
+  "teacher_57plus_pct": 0.127,
+  "teacher_sped_pct": 0.154
+ },
+ "03300000": {
+  "teacher_under32_pct": 0.135,
+  "teacher_57plus_pct": 0.144,
+  "teacher_sped_pct": 0.119
+ },
+ "07630000": {
+  "teacher_under32_pct": 0.198,
+  "teacher_57plus_pct": 0.139,
+  "teacher_sped_pct": 0.149
+ },
+ "07670000": {
+  "teacher_under32_pct": 0.191,
+  "teacher_57plus_pct": 0.113,
+  "teacher_sped_pct": 0.161
+ },
+ "01640000": {
+  "teacher_under32_pct": 0.157,
+  "teacher_57plus_pct": 0.083,
+  "teacher_sped_pct": 0.147
+ },
+ "00380000": {
+  "teacher_under32_pct": 0.232,
+  "teacher_57plus_pct": 0.12,
+  "teacher_sped_pct": 0.126
+ },
+ "01600000": {
+  "teacher_under32_pct": 0.223,
+  "teacher_57plus_pct": 0.123,
+  "teacher_sped_pct": 0.211
+ },
+ "00860000": {
+  "teacher_under32_pct": 0.11,
+  "teacher_57plus_pct": 0.082,
+  "teacher_sped_pct": 0.033
+ },
+ "01630000": {
+  "teacher_under32_pct": 0.313,
+  "teacher_57plus_pct": 0.135,
+  "teacher_sped_pct": 0.041
+ },
+ "03420000": {
+  "teacher_under32_pct": 0.161,
+  "teacher_57plus_pct": 0.103,
+  "teacher_sped_pct": 0.195
+ },
+ "02530000": {
+  "teacher_under32_pct": 0.167,
+  "teacher_57plus_pct": 0.0,
+  "teacher_sped_pct": 0.0
+ },
+ "00230000": {
+  "teacher_under32_pct": 0.132,
+  "teacher_57plus_pct": 0.136,
+  "teacher_sped_pct": 0.169
+ },
+ "02740000": {
+  "teacher_under32_pct": 0.297,
+  "teacher_57plus_pct": 0.085,
+  "teacher_sped_pct": 0.186
+ },
+ "06400000": {
+  "teacher_under32_pct": 0.109,
+  "teacher_57plus_pct": 0.141,
+  "teacher_sped_pct": 0.15
+ },
+ "00970000": {
+  "teacher_under32_pct": 0.275,
+  "teacher_57plus_pct": 0.12,
+  "teacher_sped_pct": 0.191
+ },
+ "01180000": {
+  "teacher_under32_pct": 0.259,
+  "teacher_57plus_pct": 0.081,
+  "teacher_sped_pct": 0.139
+ },
+ "02210000": {
+  "teacher_under32_pct": 0.062,
+  "teacher_57plus_pct": 0.183,
+  "teacher_sped_pct": 0.182
+ },
+ "02170000": {
+  "teacher_under32_pct": 0.14,
+  "teacher_57plus_pct": 0.132,
+  "teacher_sped_pct": 0.128
+ },
+ "03100000": {
+  "teacher_under32_pct": 0.235,
+  "teacher_57plus_pct": 0.204,
+  "teacher_sped_pct": 0.265
+ },
+ "01720000": {
+  "teacher_under32_pct": 0.116,
+  "teacher_57plus_pct": 0.216,
+  "teacher_sped_pct": 0.029
+ },
+ "07750000": {
+  "teacher_under32_pct": 0.168,
+  "teacher_57plus_pct": 0.1,
+  "teacher_sped_pct": 0.03
+ },
+ "01250000": {
+  "teacher_under32_pct": 0.132,
+  "teacher_57plus_pct": 0.203,
+  "teacher_sped_pct": 0.147
+ },
+ "02950000": {
+  "teacher_under32_pct": 0.149,
+  "teacher_57plus_pct": 0.128,
+  "teacher_sped_pct": 0.164
+ },
+ "01450000": {
+  "teacher_under32_pct": 0.218,
+  "teacher_57plus_pct": 0.143,
+  "teacher_sped_pct": 0.165
+ },
+ "03490000": {
+  "teacher_under32_pct": 0.0,
+  "teacher_57plus_pct": 0.218,
+  "teacher_sped_pct": 0.137
+ },
+ "02230000": {
+  "teacher_under32_pct": 0.214,
+  "teacher_57plus_pct": 0.143,
+  "teacher_sped_pct": 0.11
+ },
+ "02880000": {
+  "teacher_under32_pct": 0.174,
+  "teacher_57plus_pct": 0.127,
+  "teacher_sped_pct": 0.248
+ },
+ "03220000": {
+  "teacher_under32_pct": 0.127,
+  "teacher_57plus_pct": 0.141,
+  "teacher_sped_pct": 0.138
+ },
+ "01010000": {
+  "teacher_under32_pct": 0.145,
+  "teacher_57plus_pct": 0.114,
+  "teacher_sped_pct": 0.305
+ },
+ "02420000": {
+  "teacher_under32_pct": 0.237,
+  "teacher_57plus_pct": 0.414,
+  "teacher_sped_pct": 0.042
+ },
+ "02620000": {
+  "teacher_under32_pct": 0.194,
+  "teacher_57plus_pct": 0.103,
+  "teacher_sped_pct": 0.174
+ },
+ "01500000": {
+  "teacher_under32_pct": 0.102,
+  "teacher_57plus_pct": 0.103,
+  "teacher_sped_pct": 0.131
+ },
+ "03400000": {
+  "teacher_under32_pct": 0.107,
+  "teacher_57plus_pct": 0.0,
+  "teacher_sped_pct": 0.185
+ },
+ "03440000": {
+  "teacher_under32_pct": 0.194,
+  "teacher_57plus_pct": 0.122,
+  "teacher_sped_pct": 0.154
+ },
+ "07350000": {
+  "teacher_under32_pct": 0.17,
+  "teacher_57plus_pct": 0.136,
+  "teacher_sped_pct": 0.221
+ },
+ "07660000": {
+  "teacher_under32_pct": 0.113,
+  "teacher_57plus_pct": 0.155,
+  "teacher_sped_pct": 0.143
+ },
+ "02720000": {
+  "teacher_under32_pct": 0.053,
+  "teacher_57plus_pct": 0.175,
+  "teacher_sped_pct": 0.181
+ },
+ "02180000": {
+  "teacher_under32_pct": 0.219,
+  "teacher_57plus_pct": 0.087,
+  "teacher_sped_pct": 0.075
+ },
+ "02390000": {
+  "teacher_under32_pct": 0.179,
+  "teacher_57plus_pct": 0.126,
+  "teacher_sped_pct": 0.191
+ },
+ "00680000": {
+  "teacher_under32_pct": 0.08,
+  "teacher_57plus_pct": 0.08,
+  "teacher_sped_pct": 0.25
+ },
+ "02200000": {
+  "teacher_under32_pct": 0.21,
+  "teacher_57plus_pct": 0.129,
+  "teacher_sped_pct": 0.218
+ },
+ "03060000": {
+  "teacher_under32_pct": 0.228,
+  "teacher_57plus_pct": 0.114,
+  "teacher_sped_pct": 0.092
+ },
+ "01650000": {
+  "teacher_under32_pct": 0.257,
+  "teacher_57plus_pct": 0.085,
+  "teacher_sped_pct": 0.209
+ },
+ "00030000": {
+  "teacher_under32_pct": 0.181,
+  "teacher_57plus_pct": 0.129,
+  "teacher_sped_pct": 0.148
+ },
+ "01840000": {
+  "teacher_under32_pct": 0.207,
+  "teacher_57plus_pct": 0.195,
+  "teacher_sped_pct": 0.223
+ },
+ "07450000": {
+  "teacher_under32_pct": 0.196,
+  "teacher_57plus_pct": 0.181,
+  "teacher_sped_pct": 0.197
+ },
+ "00240000": {
+  "teacher_under32_pct": 0.1,
+  "teacher_57plus_pct": 0.124,
+  "teacher_sped_pct": 0.206
+ },
+ "02750000": {
+  "teacher_under32_pct": 0.043,
+  "teacher_57plus_pct": 0.271,
+  "teacher_sped_pct": 0.233
+ },
+ "01220000": {
+  "teacher_under32_pct": 0.179,
+  "teacher_57plus_pct": 0.136,
+  "teacher_sped_pct": 0.18
+ },
+ "03170000": {
+  "teacher_under32_pct": 0.124,
+  "teacher_57plus_pct": 0.133,
+  "teacher_sped_pct": 0.164
+ },
+ "00820000": {
+  "teacher_under32_pct": 0.13,
+  "teacher_57plus_pct": 0.129,
+  "teacher_sped_pct": 0.16
+ },
+ "01970000": {
+  "teacher_under32_pct": 0.282,
+  "teacher_57plus_pct": 0.15,
+  "teacher_sped_pct": 0.074
+ },
+ "00870000": {
+  "teacher_under32_pct": 0.111,
+  "teacher_57plus_pct": 0.206,
+  "teacher_sped_pct": 0.003
+ },
+ "00480000": {
+  "teacher_under32_pct": 0.189,
+  "teacher_57plus_pct": 0.091,
+  "teacher_sped_pct": 0.175
+ },
+ "02930000": {
+  "teacher_under32_pct": 0.296,
+  "teacher_57plus_pct": 0.133,
+  "teacher_sped_pct": 0.101
+ },
+ "06250000": {
+  "teacher_under32_pct": 0.183,
+  "teacher_57plus_pct": 0.096,
+  "teacher_sped_pct": 0.032
+ },
+ "07100000": {
+  "teacher_under32_pct": 0.182,
+  "teacher_57plus_pct": 0.121,
+  "teacher_sped_pct": 0.039
+ },
+ "02610000": {
+  "teacher_under32_pct": 0.141,
+  "teacher_57plus_pct": 0.182,
+  "teacher_sped_pct": 0.193
+ },
+ "03230000": {
+  "teacher_under32_pct": 0.236,
+  "teacher_57plus_pct": 0.118,
+  "teacher_sped_pct": 0.083
+ },
+ "02040000": {
+  "teacher_under32_pct": 0.19,
+  "teacher_57plus_pct": 0.146,
+  "teacher_sped_pct": 0.253
+ },
+ "00360000": {
+  "teacher_under32_pct": 0.125,
+  "teacher_57plus_pct": 0.189,
+  "teacher_sped_pct": 0.162
+ },
+ "01000000": {
+  "teacher_under32_pct": 0.299,
+  "teacher_57plus_pct": 0.084,
+  "teacher_sped_pct": 0.024
+ },
+ "01440000": {
+  "teacher_under32_pct": 0.125,
+  "teacher_57plus_pct": 0.211,
+  "teacher_sped_pct": 0.183
+ },
+ "01570000": {
+  "teacher_under32_pct": 0.187,
+  "teacher_57plus_pct": 0.15,
+  "teacher_sped_pct": 0.17
+ },
+ "01380000": {
+  "teacher_under32_pct": 0.23,
+  "teacher_57plus_pct": 0.086,
+  "teacher_sped_pct": 0.176
+ },
+ "00630000": {
+  "teacher_under32_pct": 0.2,
+  "teacher_57plus_pct": 0.133,
+  "teacher_sped_pct": 0.063
+ },
+ "01730000": {
+  "teacher_under32_pct": 0.07,
+  "teacher_57plus_pct": 0.167,
+  "teacher_sped_pct": 0.158
+ },
+ "01810000": {
+  "teacher_under32_pct": 0.214,
+  "teacher_57plus_pct": 0.104,
+  "teacher_sped_pct": 0.18
+ },
+ "02480000": {
+  "teacher_under32_pct": 0.33,
+  "teacher_57plus_pct": 0.097,
+  "teacher_sped_pct": 0.143
+ },
+ "06580000": {
+  "teacher_under32_pct": 0.129,
+  "teacher_57plus_pct": 0.164,
+  "teacher_sped_pct": 0.111
+ },
+ "01030000": {
+  "teacher_under32_pct": 0.262,
+  "teacher_57plus_pct": 0.097,
+  "teacher_sped_pct": 0.12
+ },
+ "07170000": {
+  "teacher_under32_pct": 0.153,
+  "teacher_57plus_pct": 0.088,
+  "teacher_sped_pct": 0.0
+ },
+ "00930000": {
+  "teacher_under32_pct": 0.306,
+  "teacher_57plus_pct": 0.088,
+  "teacher_sped_pct": 0.163
+ },
+ "00610000": {
+  "teacher_under32_pct": 0.188,
+  "teacher_57plus_pct": 0.105,
+  "teacher_sped_pct": 0.159
+ },
+ "01990000": {
+  "teacher_under32_pct": 0.18,
+  "teacher_57plus_pct": 0.109,
+  "teacher_sped_pct": 0.064
+ },
+ "01280000": {
+  "teacher_under32_pct": 0.275,
+  "teacher_57plus_pct": 0.129,
+  "teacher_sped_pct": 0.23
+ },
+ "03500000": {
+  "teacher_under32_pct": 0.152,
+  "teacher_57plus_pct": 0.184,
+  "teacher_sped_pct": 0.139
+ },
+ "00350000": {
+  "teacher_under32_pct": 0.238,
+  "teacher_57plus_pct": 0.121,
+  "teacher_sped_pct": 0.0
+ },
+ "01370000": {
+  "teacher_under32_pct": 0.347,
+  "teacher_57plus_pct": 0.1,
+  "teacher_sped_pct": 0.202
+ },
+ "00100000": {
+  "teacher_under32_pct": 0.248,
+  "teacher_57plus_pct": 0.097,
+  "teacher_sped_pct": 0.081
+ },
+ "01860000": {
+  "teacher_under32_pct": 0.131,
+  "teacher_57plus_pct": 0.08,
+  "teacher_sped_pct": 0.106
+ },
+ "00300000": {
+  "teacher_under32_pct": 0.203,
+  "teacher_57plus_pct": 0.104,
+  "teacher_sped_pct": 0.19
+ },
+ "02490000": {
+  "teacher_under32_pct": 0.152,
+  "teacher_57plus_pct": 0.373,
+  "teacher_sped_pct": 0.0
+ },
+ "00310000": {
+  "teacher_under32_pct": 0.142,
+  "teacher_57plus_pct": 0.159,
+  "teacher_sped_pct": 0.137
+ },
+ "03360000": {
+  "teacher_under32_pct": 0.16,
+  "teacher_57plus_pct": 0.144,
+  "teacher_sped_pct": 0.235
+ },
+ "01070000": {
+  "teacher_under32_pct": 0.187,
+  "teacher_57plus_pct": 0.128,
+  "teacher_sped_pct": 0.218
+ },
+ "01910000": {
+  "teacher_under32_pct": 0.313,
+  "teacher_57plus_pct": 0.105,
+  "teacher_sped_pct": 0.115
+ },
+ "02290000": {
+  "teacher_under32_pct": 0.159,
+  "teacher_57plus_pct": 0.17,
+  "teacher_sped_pct": 0.148
+ },
+ "02460000": {
+  "teacher_under32_pct": 0.18,
+  "teacher_57plus_pct": 0.113,
+  "teacher_sped_pct": 0.224
+ },
+ "03370000": {
+  "teacher_under32_pct": 0.19,
+  "teacher_57plus_pct": 0.0,
+  "teacher_sped_pct": 0.176
+ },
+ "03460000": {
+  "teacher_under32_pct": 0.393,
+  "teacher_57plus_pct": 0.071,
+  "teacher_sped_pct": 0.136
+ },
+ "02400000": {
+  "teacher_under32_pct": 0.071,
+  "teacher_57plus_pct": 0.064,
+  "teacher_sped_pct": 0.107
+ },
+ "03210000": {
+  "teacher_under32_pct": 0.166,
+  "teacher_57plus_pct": 0.128,
+  "teacher_sped_pct": 0.195
+ },
+ "00710000": {
+  "teacher_under32_pct": 0.165,
+  "teacher_57plus_pct": 0.086,
+  "teacher_sped_pct": 0.069
+ },
+ "01540000": {
+  "teacher_under32_pct": 0.19,
+  "teacher_57plus_pct": 0.133,
+  "teacher_sped_pct": 0.191
+ },
+ "02520000": {
+  "teacher_under32_pct": 0.034,
+  "teacher_57plus_pct": 0.272,
+  "teacher_sped_pct": 0.0
+ },
+ "07500000": {
+  "teacher_under32_pct": 0.134,
+  "teacher_57plus_pct": 0.144,
+  "teacher_sped_pct": 0.038
+ },
+ "03040000": {
+  "teacher_under32_pct": 0.24,
+  "teacher_57plus_pct": 0.124,
+  "teacher_sped_pct": 0.168
+ },
+ "00520000": {
+  "teacher_under32_pct": 0.173,
+  "teacher_57plus_pct": 0.177,
+  "teacher_sped_pct": 0.023
+ },
+ "00770000": {
+  "teacher_under32_pct": 0.168,
+  "teacher_57plus_pct": 0.111,
+  "teacher_sped_pct": 0.046
+ },
+ "06600000": {
+  "teacher_under32_pct": 0.095,
+  "teacher_57plus_pct": 0.273,
+  "teacher_sped_pct": 0.036
+ },
+ "01760000": {
+  "teacher_under32_pct": 0.263,
+  "teacher_57plus_pct": 0.089,
+  "teacher_sped_pct": 0.14
+ },
+ "00890000": {
+  "teacher_under32_pct": 0.236,
+  "teacher_57plus_pct": 0.261,
+  "teacher_sped_pct": 0.132
+ },
+ "03090000": {
+  "teacher_under32_pct": 0.122,
+  "teacher_57plus_pct": 0.174,
+  "teacher_sped_pct": 0.213
+ },
+ "01710000": {
+  "teacher_under32_pct": 0.149,
+  "teacher_57plus_pct": 0.153,
+  "teacher_sped_pct": 0.155
+ },
+ "01590000": {
+  "teacher_under32_pct": 0.119,
+  "teacher_57plus_pct": 0.227,
+  "teacher_sped_pct": 0.155
+ },
+ "07300000": {
+  "teacher_under32_pct": 0.144,
+  "teacher_57plus_pct": 0.168,
+  "teacher_sped_pct": 0.0
+ }
+}

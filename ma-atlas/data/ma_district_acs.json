@@ -1,0 +1,4587 @@
+{
+ "00010000": {
+  "acs_total_population": 17008,
+  "_pop_2020": 17062,
+  "_pop_density_per_sqmi": 1679.6512,
+  "_area_sqmi": 10.158062,
+  "_member_count": 1,
+  "_member_towns": [
+   "Abington"
+  ],
+  "acs_median_household_income": 119787,
+  "acs_foreign_born_pct": 0.099365,
+  "acs_bachelors_plus_pct": 0.398213,
+  "acs_non_english_pct": 0.126034,
+  "acs_child_poverty_pct": 0.056691,
+  "acs_severe_rent_burden_pct": 0.433474
+ },
+ "00030000": {
+  "acs_total_population": 10563,
+  "_pop_2020": 10559,
+  "_pop_density_per_sqmi": 561.4064,
+  "_area_sqmi": 18.808122,
+  "_member_count": 1,
+  "_member_towns": [
+   "Acushnet"
+  ],
+  "acs_median_household_income": 91050,
+  "acs_foreign_born_pct": 0.098173,
+  "acs_bachelors_plus_pct": 0.273036,
+  "acs_non_english_pct": 0.143508,
+  "acs_child_poverty_pct": 0.050838,
+  "acs_severe_rent_burden_pct": 0.554
+ },
+ "00050000": {
+  "acs_total_population": 28510,
+  "_pop_2020": 28692,
+  "_pop_density_per_sqmi": 1180.9603,
+  "_area_sqmi": 24.295483,
+  "_member_count": 1,
+  "_member_towns": [
+   "Agawam"
+  ],
+  "acs_median_household_income": 82359,
+  "acs_foreign_born_pct": 0.08625,
+  "acs_bachelors_plus_pct": 0.348906,
+  "acs_non_english_pct": 0.127426,
+  "acs_child_poverty_pct": 0.069272,
+  "acs_severe_rent_burden_pct": 0.353851
+ },
+ "00070000": {
+  "acs_total_population": 17277,
+  "_pop_2020": 17366,
+  "_pop_density_per_sqmi": 1269.3709,
+  "_area_sqmi": 13.680793,
+  "_member_count": 1,
+  "_member_towns": [
+   "Amesbury"
+  ],
+  "acs_median_household_income": 100599,
+  "acs_foreign_born_pct": 0.088152,
+  "acs_bachelors_plus_pct": 0.425042,
+  "acs_non_english_pct": 0.08345,
+  "acs_child_poverty_pct": 0.069722,
+  "acs_severe_rent_burden_pct": 0.603853
+ },
+ "00080000": {
+  "acs_total_population": 35472,
+  "_pop_2020": 39263,
+  "_pop_density_per_sqmi": 1424.6337,
+  "_area_sqmi": 27.560067,
+  "_member_count": 1,
+  "_member_towns": [
+   "Amherst"
+  ],
+  "acs_median_household_income": 65938,
+  "acs_foreign_born_pct": 0.157589,
+  "acs_bachelors_plus_pct": 0.73784,
+  "acs_non_english_pct": 0.22001,
+  "acs_child_poverty_pct": 0.241072,
+  "acs_severe_rent_burden_pct": 0.598691
+ },
+ "00090000": {
+  "acs_total_population": 36465,
+  "_pop_2020": 36569,
+  "_pop_density_per_sqmi": 1142.5218,
+  "_area_sqmi": 32.007267,
+  "_member_count": 1,
+  "_member_towns": [
+   "Andover"
+  ],
+  "acs_median_household_income": 167591,
+  "acs_foreign_born_pct": 0.163609,
+  "acs_bachelors_plus_pct": 0.751681,
+  "acs_non_english_pct": 0.198278,
+  "acs_child_poverty_pct": 0.035429,
+  "acs_severe_rent_burden_pct": 0.331918
+ },
+ "00100000": {
+  "acs_total_population": 46015,
+  "_pop_2020": 46308,
+  "_pop_density_per_sqmi": 8422.9387,
+  "_area_sqmi": 5.497844,
+  "_member_count": 1,
+  "_member_towns": [
+   "Arlington"
+  ],
+  "acs_median_household_income": 141440,
+  "acs_foreign_born_pct": 0.176768,
+  "acs_bachelors_plus_pct": 0.744179,
+  "acs_non_english_pct": 0.204031,
+  "acs_child_poverty_pct": 0.054023,
+  "acs_severe_rent_burden_pct": 0.354393
+ },
+ "00140000": {
+  "acs_total_population": 18694,
+  "_pop_2020": 18832,
+  "_pop_density_per_sqmi": 1468.5395,
+  "_area_sqmi": 12.823625,
+  "_member_count": 1,
+  "_member_towns": [
+   "Ashland"
+  ],
+  "acs_median_household_income": 127106,
+  "acs_foreign_born_pct": 0.219215,
+  "acs_bachelors_plus_pct": 0.594752,
+  "acs_non_english_pct": 0.283292,
+  "acs_child_poverty_pct": 0.041069,
+  "acs_severe_rent_burden_pct": 0.475162
+ },
+ "00160000": {
+  "acs_total_population": 46499,
+  "_pop_2020": 46461,
+  "_pop_density_per_sqmi": 1677.109,
+  "_area_sqmi": 27.703029,
+  "_member_count": 1,
+  "_member_towns": [
+   "Attleboro"
+  ],
+  "acs_median_household_income": 93266,
+  "acs_foreign_born_pct": 0.125917,
+  "acs_bachelors_plus_pct": 0.337134,
+  "acs_non_english_pct": 0.175597,
+  "acs_child_poverty_pct": 0.092104,
+  "acs_severe_rent_burden_pct": 0.456554
+ },
+ "00170000": {
+  "acs_total_population": 16840,
+  "_pop_2020": 16889,
+  "_pop_density_per_sqmi": 1033.9225,
+  "_area_sqmi": 16.33488,
+  "_member_count": 1,
+  "_member_towns": [
+   "Auburn"
+  ],
+  "acs_median_household_income": 100786,
+  "acs_foreign_born_pct": 0.072922,
+  "acs_bachelors_plus_pct": 0.420039,
+  "acs_non_english_pct": 0.097416,
+  "acs_child_poverty_pct": 0.04479,
+  "acs_severe_rent_burden_pct": 0.460575
+ },
+ "00180000": {
+  "acs_total_population": 4753,
+  "_pop_2020": 4777,
+  "_pop_density_per_sqmi": 1054.2469,
+  "_area_sqmi": 4.531197,
+  "_member_count": 1,
+  "_member_towns": [
+   "Avon"
+  ],
+  "acs_median_household_income": 129487,
+  "acs_foreign_born_pct": 0.187671,
+  "acs_bachelors_plus_pct": 0.310449,
+  "acs_non_english_pct": 0.23594,
+  "acs_child_poverty_pct": 0.051505,
+  "acs_severe_rent_burden_pct": 0.581461
+ },
+ "00200000": {
+  "acs_total_population": 49232,
+  "_pop_2020": 48916,
+  "_pop_density_per_sqmi": 785.3915,
+  "_area_sqmi": 62.282316,
+  "_member_count": 1,
+  "_member_towns": [
+   "Barnstable"
+  ],
+  "acs_median_household_income": 97348,
+  "acs_foreign_born_pct": 0.172043,
+  "acs_bachelors_plus_pct": 0.423355,
+  "acs_non_english_pct": 0.198979,
+  "acs_child_poverty_pct": 0.070533,
+  "acs_severe_rent_burden_pct": 0.567541
+ },
+ "00230000": {
+  "acs_total_population": 14343,
+  "_pop_2020": 14383,
+  "_pop_density_per_sqmi": 1045.1416,
+  "_area_sqmi": 13.761771,
+  "_member_count": 1,
+  "_member_towns": [
+   "Bedford"
+  ],
+  "acs_median_household_income": 158964,
+  "acs_foreign_born_pct": 0.233424,
+  "acs_bachelors_plus_pct": 0.694272,
+  "acs_non_english_pct": 0.229337,
+  "acs_child_poverty_pct": 0.040737,
+  "acs_severe_rent_burden_pct": 0.38023
+ },
+ "00240000": {
+  "acs_total_population": 15366,
+  "_pop_2020": 15350,
+  "_pop_density_per_sqmi": 278.8185,
+  "_area_sqmi": 55.053744,
+  "_member_count": 1,
+  "_member_towns": [
+   "Belchertown"
+  ],
+  "acs_median_household_income": 99089,
+  "acs_foreign_born_pct": 0.04933,
+  "acs_bachelors_plus_pct": 0.45917,
+  "acs_non_english_pct": 0.091136,
+  "acs_child_poverty_pct": 0.087313,
+  "acs_severe_rent_burden_pct": 0.454365
+ },
+ "00250000": {
+  "acs_total_population": 17160,
+  "_pop_2020": 16945,
+  "_pop_density_per_sqmi": 903.2372,
+  "_area_sqmi": 18.760298,
+  "_member_count": 1,
+  "_member_towns": [
+   "Bellingham"
+  ],
+  "acs_median_household_income": 120966,
+  "acs_foreign_born_pct": 0.057226,
+  "acs_bachelors_plus_pct": 0.400191,
+  "acs_non_english_pct": 0.100581,
+  "acs_child_poverty_pct": 0.044317,
+  "acs_severe_rent_burden_pct": 0.58432
+ },
+ "00260000": {
+  "acs_total_population": 27009,
+  "_pop_2020": 27295,
+  "_pop_density_per_sqmi": 5842.0348,
+  "_area_sqmi": 4.672174,
+  "_member_count": 1,
+  "_member_towns": [
+   "Belmont"
+  ],
+  "acs_median_household_income": 178188,
+  "acs_foreign_born_pct": 0.252212,
+  "acs_bachelors_plus_pct": 0.801869,
+  "acs_non_english_pct": 0.305469,
+  "acs_child_poverty_pct": 0.034516,
+  "acs_severe_rent_burden_pct": 0.382289
+ },
+ "00270000": {
+  "acs_total_population": 6789,
+  "_pop_2020": 6764,
+  "_pop_density_per_sqmi": 409.6996,
+  "_area_sqmi": 16.509657,
+  "_member_count": 1,
+  "_member_towns": [
+   "Berkley"
+  ],
+  "acs_median_household_income": 123877,
+  "acs_foreign_born_pct": 0.039476,
+  "acs_bachelors_plus_pct": 0.374872,
+  "acs_non_english_pct": 0.040689,
+  "acs_child_poverty_pct": 0.026576,
+  "acs_severe_rent_burden_pct": 0.0
+ },
+ "00300000": {
+  "acs_total_population": 42408,
+  "_pop_2020": 42670,
+  "_pop_density_per_sqmi": 2770.6907,
+  "_area_sqmi": 15.400492,
+  "_member_count": 1,
+  "_member_towns": [
+   "Beverly"
+  ],
+  "acs_median_household_income": 103739,
+  "acs_foreign_born_pct": 0.096562,
+  "acs_bachelors_plus_pct": 0.52335,
+  "acs_non_english_pct": 0.118957,
+  "acs_child_poverty_pct": 0.099458,
+  "acs_severe_rent_burden_pct": 0.514311
+ },
+ "00310000": {
+  "acs_total_population": 41700,
+  "_pop_2020": 42119,
+  "_pop_density_per_sqmi": 1606.647,
+  "_area_sqmi": 26.215467,
+  "_member_count": 1,
+  "_member_towns": [
+   "Billerica"
+  ],
+  "acs_median_household_income": 139706,
+  "acs_foreign_born_pct": 0.149233,
+  "acs_bachelors_plus_pct": 0.410046,
+  "acs_non_english_pct": 0.194179,
+  "acs_child_poverty_pct": 0.044713,
+  "acs_severe_rent_burden_pct": 0.448467
+ },
+ "00350000": {
+  "acs_total_population": 663972,
+  "_pop_2020": 675647,
+  "_pop_density_per_sqmi": 13576.8959,
+  "_area_sqmi": 49.764468,
+  "_member_count": 1,
+  "_member_towns": [
+   "Boston"
+  ],
+  "acs_median_household_income": 94755,
+  "acs_foreign_born_pct": 0.275061,
+  "acs_bachelors_plus_pct": 0.540651,
+  "acs_non_english_pct": 0.351961,
+  "acs_child_poverty_pct": 0.168666,
+  "acs_severe_rent_burden_pct": 0.477769
+ },
+ "00360000": {
+  "acs_total_population": 20093,
+  "_pop_2020": 20452,
+  "_pop_density_per_sqmi": 499.0102,
+  "_area_sqmi": 40.98513,
+  "_member_count": 1,
+  "_member_towns": [
+   "Bourne"
+  ],
+  "acs_median_household_income": 95349,
+  "acs_foreign_born_pct": 0.051809,
+  "acs_bachelors_plus_pct": 0.463129,
+  "acs_non_english_pct": 0.064743,
+  "acs_child_poverty_pct": 0.05776,
+  "acs_severe_rent_burden_pct": 0.507699
+ },
+ "00380000": {
+  "acs_total_population": 8155,
+  "_pop_2020": 8203,
+  "_pop_density_per_sqmi": 337.4903,
+  "_area_sqmi": 24.305881,
+  "_member_count": 1,
+  "_member_towns": [
+   "Boxford"
+  ],
+  "acs_median_household_income": 192605,
+  "acs_foreign_born_pct": 0.063397,
+  "acs_bachelors_plus_pct": 0.695765,
+  "acs_non_english_pct": 0.06897,
+  "acs_child_poverty_pct": 0.022195,
+  "acs_severe_rent_burden_pct": 0.51875
+ },
+ "00400000": {
+  "acs_total_population": 38762,
+  "_pop_2020": 39143,
+  "_pop_density_per_sqmi": 2726.5316,
+  "_area_sqmi": 14.356335,
+  "_member_count": 1,
+  "_member_towns": [
+   "Braintree"
+  ],
+  "acs_median_household_income": 125305,
+  "acs_foreign_born_pct": 0.194237,
+  "acs_bachelors_plus_pct": 0.470876,
+  "acs_non_english_pct": 0.258003,
+  "acs_child_poverty_pct": 0.051696,
+  "acs_severe_rent_burden_pct": 0.459311
+ },
+ "00410000": {
+  "acs_total_population": 10367,
+  "_pop_2020": 10318,
+  "_pop_density_per_sqmi": 405.4127,
+  "_area_sqmi": 25.450609,
+  "_member_count": 1,
+  "_member_towns": [
+   "Brewster"
+  ],
+  "acs_median_household_income": 94798,
+  "acs_foreign_born_pct": 0.069355,
+  "acs_bachelors_plus_pct": 0.523954,
+  "acs_non_english_pct": 0.062592,
+  "acs_child_poverty_pct": 0.107648,
+  "acs_severe_rent_burden_pct": 0.567104
+ },
+ "00430000": {
+  "acs_total_population": 3694,
+  "_pop_2020": 3694,
+  "_pop_density_per_sqmi": 105.0405,
+  "_area_sqmi": 35.167393,
+  "_member_count": 1,
+  "_member_towns": [
+   "Brimfield"
+  ],
+  "acs_median_household_income": 101477,
+  "acs_foreign_born_pct": 0.02653,
+  "acs_bachelors_plus_pct": 0.435332,
+  "acs_non_english_pct": 0.027567,
+  "acs_child_poverty_pct": 0.058696,
+  "acs_severe_rent_burden_pct": 0.518717
+ },
+ "00440000": {
+  "acs_total_population": 105080,
+  "_pop_2020": 105643,
+  "_pop_density_per_sqmi": 4935.4078,
+  "_area_sqmi": 21.405121,
+  "_member_count": 1,
+  "_member_towns": [
+   "Brockton"
+  ],
+  "acs_median_household_income": 77089,
+  "acs_foreign_born_pct": 0.328816,
+  "acs_bachelors_plus_pct": 0.212717,
+  "acs_non_english_pct": 0.463987,
+  "acs_child_poverty_pct": 0.13895,
+  "acs_severe_rent_burden_pct": 0.528736
+ },
+ "00450000": {
+  "acs_total_population": 3442,
+  "_pop_2020": 3439,
+  "_pop_density_per_sqmi": 208.3646,
+  "_area_sqmi": 16.504721,
+  "_member_count": 1,
+  "_member_towns": [
+   "Brookfield"
+  ],
+  "acs_median_household_income": 71875,
+  "acs_foreign_born_pct": 0.01075,
+  "acs_bachelors_plus_pct": 0.265789,
+  "acs_non_english_pct": 0.022754,
+  "acs_child_poverty_pct": 0.070598,
+  "acs_severe_rent_burden_pct": 0.243363
+ },
+ "00460000": {
+  "acs_total_population": 62822,
+  "_pop_2020": 63191,
+  "_pop_density_per_sqmi": 9299.8895,
+  "_area_sqmi": 6.794812,
+  "_member_count": 1,
+  "_member_towns": [
+   "Brookline"
+  ],
+  "acs_median_household_income": 140631,
+  "acs_foreign_born_pct": 0.275381,
+  "acs_bachelors_plus_pct": 0.85038,
+  "acs_non_english_pct": 0.303734,
+  "acs_child_poverty_pct": 0.097582,
+  "acs_severe_rent_burden_pct": 0.44618
+ },
+ "00480000": {
+  "acs_total_population": 26223,
+  "_pop_2020": 26377,
+  "_pop_density_per_sqmi": 2229.5457,
+  "_area_sqmi": 11.830661,
+  "_member_count": 1,
+  "_member_towns": [
+   "Burlington"
+  ],
+  "acs_median_household_income": 142207,
+  "acs_foreign_born_pct": 0.182664,
+  "acs_bachelors_plus_pct": 0.582027,
+  "acs_non_english_pct": 0.195307,
+  "acs_child_poverty_pct": 0.055862,
+  "acs_severe_rent_burden_pct": 0.457143
+ },
+ "00490000": {
+  "acs_total_population": 117794,
+  "_pop_2020": 118403,
+  "_pop_density_per_sqmi": 16764.6381,
+  "_area_sqmi": 7.062664,
+  "_member_count": 1,
+  "_member_towns": [
+   "Cambridge"
+  ],
+  "acs_median_household_income": 126469,
+  "acs_foreign_born_pct": 0.28796,
+  "acs_bachelors_plus_pct": 0.802105,
+  "acs_non_english_pct": 0.341965,
+  "acs_child_poverty_pct": 0.124489,
+  "acs_severe_rent_burden_pct": 0.426659
+ },
+ "00500000": {
+  "acs_total_population": 24459,
+  "_pop_2020": 24370,
+  "_pop_density_per_sqmi": 1257.4481,
+  "_area_sqmi": 19.380521,
+  "_member_count": 1,
+  "_member_towns": [
+   "Canton"
+  ],
+  "acs_median_household_income": 128341,
+  "acs_foreign_born_pct": 0.143342,
+  "acs_bachelors_plus_pct": 0.654677,
+  "acs_non_english_pct": 0.188532,
+  "acs_child_poverty_pct": 0.043785,
+  "acs_severe_rent_burden_pct": 0.539046
+ },
+ "00510000": {
+  "acs_total_population": 5209,
+  "_pop_2020": 5237,
+  "_pop_density_per_sqmi": 338.3414,
+  "_area_sqmi": 15.478449,
+  "_member_count": 1,
+  "_member_towns": [
+   "Carlisle"
+  ],
+  "acs_median_household_income": 250001,
+  "acs_foreign_born_pct": 0.115185,
+  "acs_bachelors_plus_pct": 0.831377,
+  "acs_non_english_pct": 0.115936,
+  "acs_child_poverty_pct": 0.020628,
+  "acs_severe_rent_burden_pct": 0.696078
+ },
+ "00520000": {
+  "acs_total_population": 11645,
+  "_pop_2020": 11645,
+  "_pop_density_per_sqmi": 294.0865,
+  "_area_sqmi": 39.597193,
+  "_member_count": 1,
+  "_member_towns": [
+   "Carver"
+  ],
+  "acs_median_household_income": 78955,
+  "acs_foreign_born_pct": 0.037269,
+  "acs_bachelors_plus_pct": 0.272399,
+  "acs_non_english_pct": 0.037951,
+  "acs_child_poverty_pct": 0.065663,
+  "acs_severe_rent_burden_pct": 0.511194
+ },
+ "00560000": {
+  "acs_total_population": 36220,
+  "_pop_2020": 36392,
+  "_pop_density_per_sqmi": 1584.0088,
+  "_area_sqmi": 22.974619,
+  "_member_count": 1,
+  "_member_towns": [
+   "Chelmsford"
+  ],
+  "acs_median_household_income": 140519,
+  "acs_foreign_born_pct": 0.125897,
+  "acs_bachelors_plus_pct": 0.54646,
+  "acs_non_english_pct": 0.159026,
+  "acs_child_poverty_pct": 0.042575,
+  "acs_severe_rent_burden_pct": 0.483715
+ },
+ "00570000": {
+  "acs_total_population": 39460,
+  "_pop_2020": 40787,
+  "_pop_density_per_sqmi": 18298.398,
+  "_area_sqmi": 2.228993,
+  "_member_count": 1,
+  "_member_towns": [
+   "Chelsea"
+  ],
+  "acs_median_household_income": 72220,
+  "acs_foreign_born_pct": 0.452585,
+  "acs_bachelors_plus_pct": 0.21979,
+  "acs_non_english_pct": 0.703798,
+  "acs_child_poverty_pct": 0.206066,
+  "acs_severe_rent_burden_pct": 0.543644
+ },
+ "00610000": {
+  "acs_total_population": 55213,
+  "_pop_2020": 55560,
+  "_pop_density_per_sqmi": 2340.0243,
+  "_area_sqmi": 23.743343,
+  "_member_count": 1,
+  "_member_towns": [
+   "Chicopee"
+  ],
+  "acs_median_household_income": 66927,
+  "acs_foreign_born_pct": 0.096825,
+  "acs_bachelors_plus_pct": 0.232424,
+  "acs_non_english_pct": 0.241815,
+  "acs_child_poverty_pct": 0.152094,
+  "acs_severe_rent_burden_pct": 0.46898
+ },
+ "00630000": {
+  "acs_total_population": 1723,
+  "_pop_2020": 1657,
+  "_pop_density_per_sqmi": 130.1239,
+  "_area_sqmi": 12.734015,
+  "_member_count": 1,
+  "_member_towns": [
+   "Clarksburg"
+  ],
+  "acs_median_household_income": 78421,
+  "acs_foreign_born_pct": 0.001741,
+  "acs_bachelors_plus_pct": 0.266986,
+  "acs_non_english_pct": 0.005341,
+  "acs_child_poverty_pct": 0.024956,
+  "acs_severe_rent_burden_pct": 0.490909
+ },
+ "00640000": {
+  "acs_total_population": 15430,
+  "_pop_2020": 15428,
+  "_pop_density_per_sqmi": 2135.1496,
+  "_area_sqmi": 7.225723,
+  "_member_count": 1,
+  "_member_towns": [
+   "Clinton"
+  ],
+  "acs_median_household_income": 93849,
+  "acs_foreign_born_pct": 0.172586,
+  "acs_bachelors_plus_pct": 0.350785,
+  "acs_non_english_pct": 0.231773,
+  "acs_child_poverty_pct": 0.083941,
+  "acs_severe_rent_burden_pct": 0.340134
+ },
+ "00650000": {
+  "acs_total_population": 8358,
+  "_pop_2020": 8381,
+  "_pop_density_per_sqmi": 836.4583,
+  "_area_sqmi": 10.019627,
+  "_member_count": 1,
+  "_member_towns": [
+   "Cohasset"
+  ],
+  "acs_median_household_income": 187060,
+  "acs_foreign_born_pct": 0.031228,
+  "acs_bachelors_plus_pct": 0.724537,
+  "acs_non_english_pct": 0.049197,
+  "acs_child_poverty_pct": 0.029494,
+  "acs_severe_rent_burden_pct": 0.433781
+ },
+ "00670000": {
+  "acs_total_population": 18226,
+  "_pop_2020": 18491,
+  "_pop_density_per_sqmi": 718.9015,
+  "_area_sqmi": 25.721186,
+  "_member_count": 1,
+  "_member_towns": [
+   "Concord"
+  ],
+  "acs_median_household_income": 212315,
+  "acs_foreign_born_pct": 0.105344,
+  "acs_bachelors_plus_pct": 0.790877,
+  "acs_non_english_pct": 0.125322,
+  "acs_child_poverty_pct": 0.02535,
+  "acs_severe_rent_burden_pct": 0.460232
+ },
+ "00680000": {
+  "acs_total_population": 1757,
+  "_pop_2020": 1761,
+  "_pop_density_per_sqmi": 46.7091,
+  "_area_sqmi": 37.701437,
+  "_member_count": 1,
+  "_member_towns": [
+   "Conway"
+  ],
+  "acs_median_household_income": 92471,
+  "acs_foreign_born_pct": 0.048378,
+  "acs_bachelors_plus_pct": 0.597153,
+  "acs_non_english_pct": 0.034218,
+  "acs_child_poverty_pct": 0.034977,
+  "acs_severe_rent_burden_pct": 0.298507
+ },
+ "00710000": {
+  "acs_total_population": 27924,
+  "_pop_2020": 28087,
+  "_pop_density_per_sqmi": 2046.5218,
+  "_area_sqmi": 13.724261,
+  "_member_count": 1,
+  "_member_towns": [
+   "Danvers"
+  ],
+  "acs_median_household_income": 117072,
+  "acs_foreign_born_pct": 0.089135,
+  "acs_bachelors_plus_pct": 0.468129,
+  "acs_non_english_pct": 0.113625,
+  "acs_child_poverty_pct": 0.052266,
+  "acs_severe_rent_burden_pct": 0.520548
+ },
+ "00720000": {
+  "acs_total_population": 32621,
+  "_pop_2020": 33783,
+  "_pop_density_per_sqmi": 547.2187,
+  "_area_sqmi": 61.735826,
+  "_member_count": 1,
+  "_member_towns": [
+   "Dartmouth"
+  ],
+  "acs_median_household_income": 98662,
+  "acs_foreign_born_pct": 0.105821,
+  "acs_bachelors_plus_pct": 0.385053,
+  "acs_non_english_pct": 0.183427,
+  "acs_child_poverty_pct": 0.059911,
+  "acs_severe_rent_burden_pct": 0.462632
+ },
+ "00730000": {
+  "acs_total_population": 25109,
+  "_pop_2020": 25364,
+  "_pop_density_per_sqmi": 2379.2918,
+  "_area_sqmi": 10.660315,
+  "_member_count": 1,
+  "_member_towns": [
+   "Dedham"
+  ],
+  "acs_median_household_income": 124375,
+  "acs_foreign_born_pct": 0.132024,
+  "acs_bachelors_plus_pct": 0.550542,
+  "acs_non_english_pct": 0.163498,
+  "acs_child_poverty_pct": 0.045973,
+  "acs_severe_rent_burden_pct": 0.518663
+ },
+ "00740000": {
+  "acs_total_population": 5136,
+  "_pop_2020": 5090,
+  "_pop_density_per_sqmi": 152.961,
+  "_area_sqmi": 33.276463,
+  "_member_count": 1,
+  "_member_towns": [
+   "Deerfield"
+  ],
+  "acs_median_household_income": 103110,
+  "acs_foreign_born_pct": 0.058801,
+  "acs_bachelors_plus_pct": 0.443026,
+  "acs_non_english_pct": 0.049901,
+  "acs_child_poverty_pct": 0.071989,
+  "acs_severe_rent_burden_pct": 0.318841
+ },
+ "00770000": {
+  "acs_total_population": 9096,
+  "_pop_2020": 8983,
+  "_pop_density_per_sqmi": 237.8281,
+  "_area_sqmi": 37.770979,
+  "_member_count": 1,
+  "_member_towns": [
+   "Douglas"
+  ],
+  "acs_median_household_income": 147185,
+  "acs_foreign_born_pct": 0.014842,
+  "acs_bachelors_plus_pct": 0.440531,
+  "acs_non_english_pct": 0.028578,
+  "acs_child_poverty_pct": 0.050572,
+  "acs_severe_rent_burden_pct": 0.45735
+ },
+ "00790000": {
+  "acs_total_population": 32356,
+  "_pop_2020": 32617,
+  "_pop_density_per_sqmi": 1523.2919,
+  "_area_sqmi": 21.41218,
+  "_member_count": 1,
+  "_member_towns": [
+   "Dracut"
+  ],
+  "acs_median_household_income": 111539,
+  "acs_foreign_born_pct": 0.104308,
+  "acs_bachelors_plus_pct": 0.35242,
+  "acs_non_english_pct": 0.162984,
+  "acs_child_poverty_pct": 0.066148,
+  "acs_severe_rent_burden_pct": 0.576237
+ },
+ "00820000": {
+  "acs_total_population": 16110,
+  "_pop_2020": 16090,
+  "_pop_density_per_sqmi": 673.1664,
+  "_area_sqmi": 23.901965,
+  "_member_count": 1,
+  "_member_towns": [
+   "Duxbury"
+  ],
+  "acs_median_household_income": 171471,
+  "acs_foreign_born_pct": 0.036747,
+  "acs_bachelors_plus_pct": 0.734842,
+  "acs_non_english_pct": 0.041496,
+  "acs_child_poverty_pct": 0.050788,
+  "acs_severe_rent_burden_pct": 0.537688
+ },
+ "00830000": {
+  "acs_total_population": 14420,
+  "_pop_2020": 14440,
+  "_pop_density_per_sqmi": 825.0552,
+  "_area_sqmi": 17.501859,
+  "_member_count": 1,
+  "_member_towns": [
+   "East Bridgewater"
+  ],
+  "acs_median_household_income": 128679,
+  "acs_foreign_born_pct": 0.030097,
+  "acs_bachelors_plus_pct": 0.343104,
+  "acs_non_english_pct": 0.05718,
+  "acs_child_poverty_pct": 0.040799,
+  "acs_severe_rent_burden_pct": 0.548349
+ },
+ "00850000": {
+  "acs_total_population": 5772,
+  "_pop_2020": 5752,
+  "_pop_density_per_sqmi": 402.2579,
+  "_area_sqmi": 14.299283,
+  "_member_count": 1,
+  "_member_towns": [
+   "Eastham"
+  ],
+  "acs_median_household_income": 72683,
+  "acs_foreign_born_pct": 0.086972,
+  "acs_bachelors_plus_pct": 0.516219,
+  "acs_non_english_pct": 0.074624,
+  "acs_child_poverty_pct": 0.091476,
+  "acs_severe_rent_burden_pct": 0.511041
+ },
+ "00860000": {
+  "acs_total_population": 16103,
+  "_pop_2020": 16211,
+  "_pop_density_per_sqmi": 1196.084,
+  "_area_sqmi": 13.553396,
+  "_member_count": 1,
+  "_member_towns": [
+   "Easthampton"
+  ],
+  "acs_median_household_income": 72925,
+  "acs_foreign_born_pct": 0.073216,
+  "acs_bachelors_plus_pct": 0.410215,
+  "acs_non_english_pct": 0.118181,
+  "acs_child_poverty_pct": 0.088587,
+  "acs_severe_rent_burden_pct": 0.432841
+ },
+ "00870000": {
+  "acs_total_population": 16368,
+  "_pop_2020": 16430,
+  "_pop_density_per_sqmi": 1269.7052,
+  "_area_sqmi": 12.940011,
+  "_member_count": 1,
+  "_member_towns": [
+   "East Longmeadow"
+  ],
+  "acs_median_household_income": 101540,
+  "acs_foreign_born_pct": 0.059445,
+  "acs_bachelors_plus_pct": 0.4644,
+  "acs_non_english_pct": 0.104589,
+  "acs_child_poverty_pct": 0.029206,
+  "acs_severe_rent_burden_pct": 0.441103
+ },
+ "00880000": {
+  "acs_total_population": 25162,
+  "_pop_2020": 25058,
+  "_pop_density_per_sqmi": 860.9728,
+  "_area_sqmi": 29.104287,
+  "_member_count": 1,
+  "_member_towns": [
+   "Easton"
+  ],
+  "acs_median_household_income": 121458,
+  "acs_foreign_born_pct": 0.084453,
+  "acs_bachelors_plus_pct": 0.521436,
+  "acs_non_english_pct": 0.105115,
+  "acs_child_poverty_pct": 0.066284,
+  "acs_severe_rent_burden_pct": 0.586429
+ },
+ "00890000": {
+  "acs_total_population": 5212,
+  "_pop_2020": 5168,
+  "_pop_density_per_sqmi": 193.6077,
+  "_area_sqmi": 26.693159,
+  "_member_count": 1,
+  "_member_towns": [
+   "Edgartown"
+  ],
+  "acs_median_household_income": 89710,
+  "acs_foreign_born_pct": 0.099386,
+  "acs_bachelors_plus_pct": 0.449297,
+  "acs_non_english_pct": 0.096329,
+  "acs_child_poverty_pct": 0.058539,
+  "acs_severe_rent_burden_pct": 0.131429
+ },
+ "00910000": {
+  "acs_total_population": 1639,
+  "_pop_2020": 1665,
+  "_pop_density_per_sqmi": 116.1691,
+  "_area_sqmi": 14.332549,
+  "_member_count": 1,
+  "_member_towns": [
+   "Erving"
+  ],
+  "acs_median_household_income": 74550,
+  "acs_foreign_born_pct": 0.026846,
+  "acs_bachelors_plus_pct": 0.250859,
+  "acs_non_english_pct": 0.02892,
+  "acs_child_poverty_pct": 0.059793,
+  "acs_severe_rent_burden_pct": 0.475
+ },
+ "00930000": {
+  "acs_total_population": 49236,
+  "_pop_2020": 49075,
+  "_pop_density_per_sqmi": 14314.8047,
+  "_area_sqmi": 3.428269,
+  "_member_count": 1,
+  "_member_towns": [
+   "Everett"
+  ],
+  "acs_median_household_income": 79658,
+  "acs_foreign_born_pct": 0.454667,
+  "acs_bachelors_plus_pct": 0.234522,
+  "acs_non_english_pct": 0.629171,
+  "acs_child_poverty_pct": 0.153569,
+  "acs_severe_rent_burden_pct": 0.537233
+ },
+ "00940000": {
+  "acs_total_population": 15878,
+  "_pop_2020": 15924,
+  "_pop_density_per_sqmi": 1288.1924,
+  "_area_sqmi": 12.361507,
+  "_member_count": 1,
+  "_member_towns": [
+   "Fairhaven"
+  ],
+  "acs_median_household_income": 92500,
+  "acs_foreign_born_pct": 0.060713,
+  "acs_bachelors_plus_pct": 0.304594,
+  "acs_non_english_pct": 0.090561,
+  "acs_child_poverty_pct": 0.076287,
+  "acs_severe_rent_burden_pct": 0.471868
+ },
+ "00950000": {
+  "acs_total_population": 93764,
+  "_pop_2020": 94000,
+  "_pop_density_per_sqmi": 2449.7844,
+  "_area_sqmi": 38.370724,
+  "_member_count": 1,
+  "_member_towns": [
+   "Fall River"
+  ],
+  "acs_median_household_income": 53933,
+  "acs_foreign_born_pct": 0.218186,
+  "acs_bachelors_plus_pct": 0.168286,
+  "acs_non_english_pct": 0.385723,
+  "acs_child_poverty_pct": 0.20929,
+  "acs_severe_rent_burden_pct": 0.490814
+ },
+ "00960000": {
+  "acs_total_population": 32841,
+  "_pop_2020": 32517,
+  "_pop_density_per_sqmi": 716.6108,
+  "_area_sqmi": 45.376093,
+  "_member_count": 1,
+  "_member_towns": [
+   "Falmouth"
+  ],
+  "acs_median_household_income": 92862,
+  "acs_foreign_born_pct": 0.091836,
+  "acs_bachelors_plus_pct": 0.518474,
+  "acs_non_english_pct": 0.108122,
+  "acs_child_poverty_pct": 0.089734,
+  "acs_severe_rent_burden_pct": 0.477381
+ },
+ "00970000": {
+  "acs_total_population": 41633,
+  "_pop_2020": 41946,
+  "_pop_density_per_sqmi": 1495.9428,
+  "_area_sqmi": 28.039842,
+  "_member_count": 1,
+  "_member_towns": [
+   "Fitchburg"
+  ],
+  "acs_median_household_income": 70659,
+  "acs_foreign_born_pct": 0.104076,
+  "acs_bachelors_plus_pct": 0.245089,
+  "acs_non_english_pct": 0.286035,
+  "acs_child_poverty_pct": 0.154917,
+  "acs_severe_rent_burden_pct": 0.482613
+ },
+ "00980000": {
+  "acs_total_population": 774,
+  "_pop_2020": 694,
+  "_pop_density_per_sqmi": 28.3307,
+  "_area_sqmi": 24.496364,
+  "_member_count": 1,
+  "_member_towns": [
+   "Florida"
+  ],
+  "acs_median_household_income": 90078,
+  "acs_foreign_born_pct": 0.046512,
+  "acs_bachelors_plus_pct": 0.224026,
+  "acs_non_english_pct": 0.023407,
+  "acs_child_poverty_pct": 0.051656,
+  "acs_severe_rent_burden_pct": 0.090909
+ },
+ "00990000": {
+  "acs_total_population": 18516,
+  "_pop_2020": 18618,
+  "_pop_density_per_sqmi": 896.3027,
+  "_area_sqmi": 20.772001,
+  "_member_count": 1,
+  "_member_towns": [
+   "Foxborough"
+  ],
+  "acs_median_household_income": 108559,
+  "acs_foreign_born_pct": 0.100886,
+  "acs_bachelors_plus_pct": 0.582527,
+  "acs_non_english_pct": 0.156857,
+  "acs_child_poverty_pct": 0.047663,
+  "acs_severe_rent_burden_pct": 0.606092
+ },
+ "01000000": {
+  "acs_total_population": 72013,
+  "_pop_2020": 72362,
+  "_pop_density_per_sqmi": 2742.0631,
+  "_area_sqmi": 26.389619,
+  "_member_count": 1,
+  "_member_towns": [
+   "Framingham"
+  ],
+  "acs_median_household_income": 98179,
+  "acs_foreign_born_pct": 0.315124,
+  "acs_bachelors_plus_pct": 0.494121,
+  "acs_non_english_pct": 0.43906,
+  "acs_child_poverty_pct": 0.110066,
+  "acs_severe_rent_burden_pct": 0.523606
+ },
+ "01010000": {
+  "acs_total_population": 33067,
+  "_pop_2020": 33261,
+  "_pop_density_per_sqmi": 1234.5354,
+  "_area_sqmi": 26.942119,
+  "_member_count": 1,
+  "_member_towns": [
+   "Franklin"
+  ],
+  "acs_median_household_income": 142788,
+  "acs_foreign_born_pct": 0.100342,
+  "acs_bachelors_plus_pct": 0.564447,
+  "acs_non_english_pct": 0.117567,
+  "acs_child_poverty_pct": 0.054963,
+  "acs_severe_rent_burden_pct": 0.466492
+ },
+ "01030000": {
+  "acs_total_population": 21075,
+  "_pop_2020": 21287,
+  "_pop_density_per_sqmi": 928.787,
+  "_area_sqmi": 22.919141,
+  "_member_count": 1,
+  "_member_towns": [
+   "Gardner"
+  ],
+  "acs_median_household_income": 62948,
+  "acs_foreign_born_pct": 0.079953,
+  "acs_bachelors_plus_pct": 0.227661,
+  "acs_non_english_pct": 0.136753,
+  "acs_child_poverty_pct": 0.142907,
+  "acs_severe_rent_burden_pct": 0.469504
+ },
+ "01050000": {
+  "acs_total_population": 8454,
+  "_pop_2020": 8470,
+  "_pop_density_per_sqmi": 646.4585,
+  "_area_sqmi": 13.102157,
+  "_member_count": 1,
+  "_member_towns": [
+   "Georgetown"
+  ],
+  "acs_median_household_income": 152014,
+  "acs_foreign_born_pct": 0.031228,
+  "acs_bachelors_plus_pct": 0.533634,
+  "acs_non_english_pct": 0.040206,
+  "acs_child_poverty_pct": 0.032346,
+  "acs_severe_rent_burden_pct": 0.490119
+ },
+ "01070000": {
+  "acs_total_population": 29862,
+  "_pop_2020": 29729,
+  "_pop_density_per_sqmi": 1119.1068,
+  "_area_sqmi": 26.564935,
+  "_member_count": 1,
+  "_member_towns": [
+   "Gloucester"
+  ],
+  "acs_median_household_income": 87898,
+  "acs_foreign_born_pct": 0.096712,
+  "acs_bachelors_plus_pct": 0.387648,
+  "acs_non_english_pct": 0.115826,
+  "acs_child_poverty_pct": 0.106468,
+  "acs_severe_rent_burden_pct": 0.502586
+ },
+ "01090000": {
+  "acs_total_population": 51,
+  "_pop_2020": 70,
+  "_pop_density_per_sqmi": 5.2291,
+  "_area_sqmi": 13.386525,
+  "_member_count": 1,
+  "_member_towns": [
+   "Gosnold"
+  ],
+  "acs_median_household_income": null,
+  "acs_foreign_born_pct": 0.0,
+  "acs_bachelors_plus_pct": 0.745098,
+  "acs_non_english_pct": 0.039216,
+  "acs_child_poverty_pct": 0.039216,
+  "acs_severe_rent_burden_pct": 0.133333
+ },
+ "01100000": {
+  "acs_total_population": 19771,
+  "_pop_2020": 19664,
+  "_pop_density_per_sqmi": 847.3153,
+  "_area_sqmi": 23.207418,
+  "_member_count": 1,
+  "_member_towns": [
+   "Grafton"
+  ],
+  "acs_median_household_income": 124548,
+  "acs_foreign_born_pct": 0.120378,
+  "acs_bachelors_plus_pct": 0.535625,
+  "acs_non_english_pct": 0.177858,
+  "acs_child_poverty_pct": 0.063726,
+  "acs_severe_rent_burden_pct": 0.412752
+ },
+ "01110000": {
+  "acs_total_population": 6088,
+  "_pop_2020": 6110,
+  "_pop_density_per_sqmi": 218.8635,
+  "_area_sqmi": 27.91694,
+  "_member_count": 1,
+  "_member_towns": [
+   "Granby"
+  ],
+  "acs_median_household_income": 110188,
+  "acs_foreign_born_pct": 0.043693,
+  "acs_bachelors_plus_pct": 0.373884,
+  "acs_non_english_pct": 0.074556,
+  "acs_child_poverty_pct": 0.046309,
+  "acs_severe_rent_burden_pct": 0.398551
+ },
+ "01140000": {
+  "acs_total_population": 17662,
+  "_pop_2020": 17768,
+  "_pop_density_per_sqmi": 816.0921,
+  "_area_sqmi": 21.772052,
+  "_member_count": 1,
+  "_member_towns": [
+   "Greenfield"
+  ],
+  "acs_median_household_income": 53961,
+  "acs_foreign_born_pct": 0.058997,
+  "acs_bachelors_plus_pct": 0.378327,
+  "acs_non_english_pct": 0.084113,
+  "acs_child_poverty_pct": 0.156467,
+  "acs_severe_rent_burden_pct": 0.559281
+ },
+ "01170000": {
+  "acs_total_population": 5299,
+  "_pop_2020": 5325,
+  "_pop_density_per_sqmi": 217.1324,
+  "_area_sqmi": 24.52421,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hadley"
+  ],
+  "acs_median_household_income": 117580,
+  "acs_foreign_born_pct": 0.057935,
+  "acs_bachelors_plus_pct": 0.63154,
+  "acs_non_english_pct": 0.064397,
+  "acs_child_poverty_pct": 0.031069,
+  "acs_severe_rent_burden_pct": 0.332203
+ },
+ "01180000": {
+  "acs_total_population": 7734,
+  "_pop_2020": 7749,
+  "_pop_density_per_sqmi": 447.1965,
+  "_area_sqmi": 17.327952,
+  "_member_count": 1,
+  "_member_towns": [
+   "Halifax"
+  ],
+  "acs_median_household_income": 106851,
+  "acs_foreign_born_pct": 0.01655,
+  "acs_bachelors_plus_pct": 0.329432,
+  "acs_non_english_pct": 0.052248,
+  "acs_child_poverty_pct": 0.030903,
+  "acs_severe_rent_burden_pct": 0.25641
+ },
+ "01210000": {
+  "acs_total_population": 798,
+  "_pop_2020": 757,
+  "_pop_density_per_sqmi": 21.2916,
+  "_area_sqmi": 35.553876,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hancock"
+  ],
+  "acs_median_household_income": 93125,
+  "acs_foreign_born_pct": 0.035088,
+  "acs_bachelors_plus_pct": 0.377622,
+  "acs_non_english_pct": 0.040446,
+  "acs_child_poverty_pct": 0.154135,
+  "acs_severe_rent_burden_pct": 0.585714
+ },
+ "01220000": {
+  "acs_total_population": 14800,
+  "_pop_2020": 14833,
+  "_pop_density_per_sqmi": 953.5748,
+  "_area_sqmi": 15.555151,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hanover"
+  ],
+  "acs_median_household_income": 174821,
+  "acs_foreign_born_pct": 0.040946,
+  "acs_bachelors_plus_pct": 0.565301,
+  "acs_non_english_pct": 0.046357,
+  "acs_child_poverty_pct": 0.057201,
+  "acs_severe_rent_burden_pct": 0.711044
+ },
+ "01250000": {
+  "acs_total_population": 6881,
+  "_pop_2020": 6851,
+  "_pop_density_per_sqmi": 253.0431,
+  "_area_sqmi": 27.074444,
+  "_member_count": 1,
+  "_member_towns": [
+   "Harvard"
+  ],
+  "acs_median_household_income": 200688,
+  "acs_foreign_born_pct": 0.102311,
+  "acs_bachelors_plus_pct": 0.641921,
+  "acs_non_english_pct": 0.176888,
+  "acs_child_poverty_pct": 0.043999,
+  "acs_severe_rent_burden_pct": 0.60793
+ },
+ "01270000": {
+  "acs_total_population": 3324,
+  "_pop_2020": 3352,
+  "_pop_density_per_sqmi": 200.3356,
+  "_area_sqmi": 16.731926,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hatfield"
+  ],
+  "acs_median_household_income": 100381,
+  "acs_foreign_born_pct": 0.064982,
+  "acs_bachelors_plus_pct": 0.486715,
+  "acs_non_english_pct": 0.083202,
+  "acs_child_poverty_pct": 0.0789,
+  "acs_severe_rent_burden_pct": 0.307065
+ },
+ "01280000": {
+  "acs_total_population": 67387,
+  "_pop_2020": 67787,
+  "_pop_density_per_sqmi": 1907.451,
+  "_area_sqmi": 35.538003,
+  "_member_count": 1,
+  "_member_towns": [
+   "Haverhill"
+  ],
+  "acs_median_household_income": 87675,
+  "acs_foreign_born_pct": 0.133898,
+  "acs_bachelors_plus_pct": 0.316451,
+  "acs_non_english_pct": 0.254898,
+  "acs_child_poverty_pct": 0.106211,
+  "acs_severe_rent_burden_pct": 0.54969
+ },
+ "01310000": {
+  "acs_total_population": 24185,
+  "_pop_2020": 24284,
+  "_pop_density_per_sqmi": 1077.4218,
+  "_area_sqmi": 22.538991,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hingham"
+  ],
+  "acs_median_household_income": 181017,
+  "acs_foreign_born_pct": 0.050569,
+  "acs_bachelors_plus_pct": 0.753326,
+  "acs_non_english_pct": 0.053342,
+  "acs_child_poverty_pct": 0.032612,
+  "acs_severe_rent_burden_pct": 0.57052
+ },
+ "01330000": {
+  "acs_total_population": 11320,
+  "_pop_2020": 11405,
+  "_pop_density_per_sqmi": 1565.0801,
+  "_area_sqmi": 7.287167,
+  "_member_count": 1,
+  "_member_towns": [
+   "Holbrook"
+  ],
+  "acs_median_household_income": 107768,
+  "acs_foreign_born_pct": 0.179152,
+  "acs_bachelors_plus_pct": 0.369395,
+  "acs_non_english_pct": 0.200718,
+  "acs_child_poverty_pct": 0.065632,
+  "acs_severe_rent_burden_pct": 0.448034
+ },
+ "01350000": {
+  "acs_total_population": 2576,
+  "_pop_2020": 2603,
+  "_pop_density_per_sqmi": 200.0451,
+  "_area_sqmi": 13.012068,
+  "_member_count": 1,
+  "_member_towns": [
+   "Holland"
+  ],
+  "acs_median_household_income": 86806,
+  "acs_foreign_born_pct": 0.042702,
+  "acs_bachelors_plus_pct": 0.341721,
+  "acs_non_english_pct": 0.081442,
+  "acs_child_poverty_pct": 0.050466,
+  "acs_severe_rent_burden_pct": 0.12766
+ },
+ "01360000": {
+  "acs_total_population": 14964,
+  "_pop_2020": 14996,
+  "_pop_density_per_sqmi": 790.4427,
+  "_area_sqmi": 18.971647,
+  "_member_count": 1,
+  "_member_towns": [
+   "Holliston"
+  ],
+  "acs_median_household_income": 154684,
+  "acs_foreign_born_pct": 0.112537,
+  "acs_bachelors_plus_pct": 0.657349,
+  "acs_non_english_pct": 0.146685,
+  "acs_child_poverty_pct": 0.031733,
+  "acs_severe_rent_burden_pct": 0.414993
+ },
+ "01370000": {
+  "acs_total_population": 37949,
+  "_pop_2020": 38238,
+  "_pop_density_per_sqmi": 1684.5362,
+  "_area_sqmi": 22.699424,
+  "_member_count": 1,
+  "_member_towns": [
+   "Holyoke"
+  ],
+  "acs_median_household_income": 51892,
+  "acs_foreign_born_pct": 0.063638,
+  "acs_bachelors_plus_pct": 0.243098,
+  "acs_non_english_pct": 0.422759,
+  "acs_child_poverty_pct": 0.237199,
+  "acs_severe_rent_burden_pct": 0.469305
+ },
+ "01380000": {
+  "acs_total_population": 6024,
+  "_pop_2020": 6017,
+  "_pop_density_per_sqmi": 1126.6258,
+  "_area_sqmi": 5.340726,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hopedale"
+  ],
+  "acs_median_household_income": 115216,
+  "acs_foreign_born_pct": 0.044157,
+  "acs_bachelors_plus_pct": 0.483615,
+  "acs_non_english_pct": 0.06176,
+  "acs_child_poverty_pct": 0.042202,
+  "acs_severe_rent_burden_pct": 0.436508
+ },
+ "01390000": {
+  "acs_total_population": 19050,
+  "_pop_2020": 18758,
+  "_pop_density_per_sqmi": 676.5009,
+  "_area_sqmi": 27.727975,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hopkinton"
+  ],
+  "acs_median_household_income": 204418,
+  "acs_foreign_born_pct": 0.173491,
+  "acs_bachelors_plus_pct": 0.758094,
+  "acs_non_english_pct": 0.221334,
+  "acs_child_poverty_pct": 0.033296,
+  "acs_severe_rent_burden_pct": 0.660843
+ },
+ "01410000": {
+  "acs_total_population": 19959,
+  "_pop_2020": 20092,
+  "_pop_density_per_sqmi": 1698.8621,
+  "_area_sqmi": 11.82674,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hudson"
+  ],
+  "acs_median_household_income": 107202,
+  "acs_foreign_born_pct": 0.174307,
+  "acs_bachelors_plus_pct": 0.473414,
+  "acs_non_english_pct": 0.224708,
+  "acs_child_poverty_pct": 0.046822,
+  "acs_severe_rent_burden_pct": 0.325037
+ },
+ "01420000": {
+  "acs_total_population": 10098,
+  "_pop_2020": 10072,
+  "_pop_density_per_sqmi": 3164.5749,
+  "_area_sqmi": 3.182734,
+  "_member_count": 1,
+  "_member_towns": [
+   "Hull"
+  ],
+  "acs_median_household_income": 127112,
+  "acs_foreign_born_pct": 0.047534,
+  "acs_bachelors_plus_pct": 0.517254,
+  "acs_non_english_pct": 0.043805,
+  "acs_child_poverty_pct": 0.053242,
+  "acs_severe_rent_burden_pct": 0.475694
+ },
+ "01440000": {
+  "acs_total_population": 13820,
+  "_pop_2020": 13785,
+  "_pop_density_per_sqmi": 420.2531,
+  "_area_sqmi": 32.801662,
+  "_member_count": 1,
+  "_member_towns": [
+   "Ipswich"
+  ],
+  "acs_median_household_income": 124405,
+  "acs_foreign_born_pct": 0.050796,
+  "acs_bachelors_plus_pct": 0.574905,
+  "acs_non_english_pct": 0.060631,
+  "acs_child_poverty_pct": 0.065486,
+  "acs_severe_rent_burden_pct": 0.519316
+ },
+ "01450000": {
+  "acs_total_population": 13782,
+  "_pop_2020": 13708,
+  "_pop_density_per_sqmi": 724.5522,
+  "_area_sqmi": 18.919273,
+  "_member_count": 1,
+  "_member_towns": [
+   "Kingston"
+  ],
+  "acs_median_household_income": 115863,
+  "acs_foreign_born_pct": 0.028515,
+  "acs_bachelors_plus_pct": 0.487286,
+  "acs_non_english_pct": 0.05247,
+  "acs_child_poverty_pct": 0.028557,
+  "acs_severe_rent_burden_pct": 0.316372
+ },
+ "01490000": {
+  "acs_total_population": 88297,
+  "_pop_2020": 89143,
+  "_pop_density_per_sqmi": 12057.0638,
+  "_area_sqmi": 7.393425,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lawrence"
+  ],
+  "acs_median_household_income": 57903,
+  "acs_foreign_born_pct": 0.437172,
+  "acs_bachelors_plus_pct": 0.164492,
+  "acs_non_english_pct": 0.785164,
+  "acs_child_poverty_pct": 0.181955,
+  "acs_severe_rent_burden_pct": 0.574715
+ },
+ "01500000": {
+  "acs_total_population": 5751,
+  "_pop_2020": 5788,
+  "_pop_density_per_sqmi": 215.2513,
+  "_area_sqmi": 26.889495,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lee"
+  ],
+  "acs_median_household_income": 74222,
+  "acs_foreign_born_pct": 0.066945,
+  "acs_bachelors_plus_pct": 0.451337,
+  "acs_non_english_pct": 0.062191,
+  "acs_child_poverty_pct": 0.067084,
+  "acs_severe_rent_burden_pct": 0.616319
+ },
+ "01510000": {
+  "acs_total_population": 11076,
+  "_pop_2020": 11087,
+  "_pop_density_per_sqmi": 451.1724,
+  "_area_sqmi": 24.573755,
+  "_member_count": 1,
+  "_member_towns": [
+   "Leicester"
+  ],
+  "acs_median_household_income": 95776,
+  "acs_foreign_born_pct": 0.068436,
+  "acs_bachelors_plus_pct": 0.294479,
+  "acs_non_english_pct": 0.074217,
+  "acs_child_poverty_pct": 0.034048,
+  "acs_severe_rent_burden_pct": 0.203285
+ },
+ "01520000": {
+  "acs_total_population": 5076,
+  "_pop_2020": 5095,
+  "_pop_density_per_sqmi": 236.0884,
+  "_area_sqmi": 21.580898,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lenox"
+  ],
+  "acs_median_household_income": 97569,
+  "acs_foreign_born_pct": 0.094563,
+  "acs_bachelors_plus_pct": 0.495344,
+  "acs_non_english_pct": 0.074455,
+  "acs_child_poverty_pct": 0.090643,
+  "acs_severe_rent_burden_pct": 0.53211
+ },
+ "01530000": {
+  "acs_total_population": 43697,
+  "_pop_2020": 43782,
+  "_pop_density_per_sqmi": 1483.0445,
+  "_area_sqmi": 29.521703,
+  "_member_count": 1,
+  "_member_towns": [
+   "Leominster"
+  ],
+  "acs_median_household_income": 81556,
+  "acs_foreign_born_pct": 0.15326,
+  "acs_bachelors_plus_pct": 0.323234,
+  "acs_non_english_pct": 0.244307,
+  "acs_child_poverty_pct": 0.100647,
+  "acs_severe_rent_burden_pct": 0.488764
+ },
+ "01540000": {
+  "acs_total_population": 1704,
+  "_pop_2020": 1865,
+  "_pop_density_per_sqmi": 81.6743,
+  "_area_sqmi": 22.834608,
+  "_member_count": 1,
+  "_member_towns": [
+   "Leverett"
+  ],
+  "acs_median_household_income": 113750,
+  "acs_foreign_born_pct": 0.074531,
+  "acs_bachelors_plus_pct": 0.675277,
+  "acs_non_english_pct": 0.067395,
+  "acs_child_poverty_pct": 0.090802,
+  "acs_severe_rent_burden_pct": 0.593023
+ },
+ "01550000": {
+  "acs_total_population": 34085,
+  "_pop_2020": 34454,
+  "_pop_density_per_sqmi": 2083.088,
+  "_area_sqmi": 16.539867,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lexington"
+  ],
+  "acs_median_household_income": 219402,
+  "acs_foreign_born_pct": 0.337274,
+  "acs_bachelors_plus_pct": 0.849832,
+  "acs_non_english_pct": 0.400384,
+  "acs_child_poverty_pct": 0.04282,
+  "acs_severe_rent_burden_pct": 0.469431
+ },
+ "01570000": {
+  "acs_total_population": 6946,
+  "_pop_2020": 7014,
+  "_pop_density_per_sqmi": 469.7071,
+  "_area_sqmi": 14.93271,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lincoln"
+  ],
+  "acs_median_household_income": 180750,
+  "acs_foreign_born_pct": 0.1241,
+  "acs_bachelors_plus_pct": 0.787458,
+  "acs_non_english_pct": 0.124596,
+  "acs_child_poverty_pct": 0.039204,
+  "acs_severe_rent_burden_pct": 0.508982
+ },
+ "01580000": {
+  "acs_total_population": 10150,
+  "_pop_2020": 10141,
+  "_pop_density_per_sqmi": 581.5273,
+  "_area_sqmi": 17.438561,
+  "_member_count": 1,
+  "_member_towns": [
+   "Littleton"
+  ],
+  "acs_median_household_income": 146250,
+  "acs_foreign_born_pct": 0.1067,
+  "acs_bachelors_plus_pct": 0.609855,
+  "acs_non_english_pct": 0.099547,
+  "acs_child_poverty_pct": 0.059816,
+  "acs_severe_rent_burden_pct": 0.420959
+ },
+ "01590000": {
+  "acs_total_population": 15724,
+  "_pop_2020": 15853,
+  "_pop_density_per_sqmi": 1664.6997,
+  "_area_sqmi": 9.523039,
+  "_member_count": 1,
+  "_member_towns": [
+   "Longmeadow"
+  ],
+  "acs_median_household_income": 144639,
+  "acs_foreign_born_pct": 0.135462,
+  "acs_bachelors_plus_pct": 0.661067,
+  "acs_non_english_pct": 0.13813,
+  "acs_child_poverty_pct": 0.039256,
+  "acs_severe_rent_burden_pct": 0.455531
+ },
+ "01600000": {
+  "acs_total_population": 114799,
+  "_pop_2020": 115554,
+  "_pop_density_per_sqmi": 7990.3407,
+  "_area_sqmi": 14.461711,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lowell"
+  ],
+  "acs_median_household_income": 76205,
+  "acs_foreign_born_pct": 0.294994,
+  "acs_bachelors_plus_pct": 0.298624,
+  "acs_non_english_pct": 0.421254,
+  "acs_child_poverty_pct": 0.160037,
+  "acs_severe_rent_burden_pct": 0.502676
+ },
+ "01610000": {
+  "acs_total_population": 20846,
+  "_pop_2020": 21002,
+  "_pop_density_per_sqmi": 744.5093,
+  "_area_sqmi": 28.209184,
+  "_member_count": 1,
+  "_member_towns": [
+   "Ludlow"
+  ],
+  "acs_median_household_income": 78981,
+  "acs_foreign_born_pct": 0.157872,
+  "acs_bachelors_plus_pct": 0.253207,
+  "acs_non_english_pct": 0.267781,
+  "acs_child_poverty_pct": 0.084726,
+  "acs_severe_rent_burden_pct": 0.444393
+ },
+ "01620000": {
+  "acs_total_population": 11804,
+  "_pop_2020": 11782,
+  "_pop_density_per_sqmi": 425.9831,
+  "_area_sqmi": 27.658377,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lunenburg"
+  ],
+  "acs_median_household_income": 109753,
+  "acs_foreign_born_pct": 0.072348,
+  "acs_bachelors_plus_pct": 0.448485,
+  "acs_non_english_pct": 0.110063,
+  "acs_child_poverty_pct": 0.051788,
+  "acs_severe_rent_burden_pct": 0.381346
+ },
+ "01630000": {
+  "acs_total_population": 100905,
+  "_pop_2020": 101253,
+  "_pop_density_per_sqmi": 8799.7617,
+  "_area_sqmi": 11.506334,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lynn"
+  ],
+  "acs_median_household_income": 74715,
+  "acs_foreign_born_pct": 0.357326,
+  "acs_bachelors_plus_pct": 0.233308,
+  "acs_non_english_pct": 0.512676,
+  "acs_child_poverty_pct": 0.136931,
+  "acs_severe_rent_burden_pct": 0.553132
+ },
+ "01640000": {
+  "acs_total_population": 12964,
+  "_pop_2020": 13000,
+  "_pop_density_per_sqmi": 1247.5432,
+  "_area_sqmi": 10.42048,
+  "_member_count": 1,
+  "_member_towns": [
+   "Lynnfield"
+  ],
+  "acs_median_household_income": 172484,
+  "acs_foreign_born_pct": 0.118328,
+  "acs_bachelors_plus_pct": 0.61082,
+  "acs_non_english_pct": 0.161771,
+  "acs_child_poverty_pct": 0.060707,
+  "acs_severe_rent_burden_pct": 0.586262
+ },
+ "01650000": {
+  "acs_total_population": 65509,
+  "_pop_2020": 66263,
+  "_pop_density_per_sqmi": 13146.6995,
+  "_area_sqmi": 5.040276,
+  "_member_count": 1,
+  "_member_towns": [
+   "Malden"
+  ],
+  "acs_median_household_income": 95298,
+  "acs_foreign_born_pct": 0.407654,
+  "acs_bachelors_plus_pct": 0.449142,
+  "acs_non_english_pct": 0.490677,
+  "acs_child_poverty_pct": 0.132575,
+  "acs_severe_rent_burden_pct": 0.475769
+ },
+ "01670000": {
+  "acs_total_population": 23855,
+  "_pop_2020": 23860,
+  "_pop_density_per_sqmi": 1173.4328,
+  "_area_sqmi": 20.333504,
+  "_member_count": 1,
+  "_member_towns": [
+   "Mansfield"
+  ],
+  "acs_median_household_income": 131409,
+  "acs_foreign_born_pct": 0.081618,
+  "acs_bachelors_plus_pct": 0.514573,
+  "acs_non_english_pct": 0.091803,
+  "acs_child_poverty_pct": 0.048209,
+  "acs_severe_rent_burden_pct": 0.348553
+ },
+ "01680000": {
+  "acs_total_population": 20334,
+  "_pop_2020": 20441,
+  "_pop_density_per_sqmi": 4703.9815,
+  "_area_sqmi": 4.345468,
+  "_member_count": 1,
+  "_member_towns": [
+   "Marblehead"
+  ],
+  "acs_median_household_income": 165859,
+  "acs_foreign_born_pct": 0.066539,
+  "acs_bachelors_plus_pct": 0.769236,
+  "acs_non_english_pct": 0.085141,
+  "acs_child_poverty_pct": 0.037513,
+  "acs_severe_rent_burden_pct": 0.433735
+ },
+ "01690000": {
+  "acs_total_population": 5312,
+  "_pop_2020": 5347,
+  "_pop_density_per_sqmi": 380.1054,
+  "_area_sqmi": 14.06715,
+  "_member_count": 1,
+  "_member_towns": [
+   "Marion"
+  ],
+  "acs_median_household_income": 120227,
+  "acs_foreign_born_pct": 0.047252,
+  "acs_bachelors_plus_pct": 0.451621,
+  "acs_non_english_pct": 0.061912,
+  "acs_child_poverty_pct": 0.058857,
+  "acs_severe_rent_burden_pct": 0.418301
+ },
+ "01700000": {
+  "acs_total_population": 41398,
+  "_pop_2020": 41793,
+  "_pop_density_per_sqmi": 1898.4738,
+  "_area_sqmi": 22.013999,
+  "_member_count": 1,
+  "_member_towns": [
+   "Marlborough"
+  ],
+  "acs_median_household_income": 95047,
+  "acs_foreign_born_pct": 0.29412,
+  "acs_bachelors_plus_pct": 0.405589,
+  "acs_non_english_pct": 0.403287,
+  "acs_child_poverty_pct": 0.092203,
+  "acs_severe_rent_burden_pct": 0.532136
+ },
+ "01710000": {
+  "acs_total_population": 25795,
+  "_pop_2020": 25825,
+  "_pop_density_per_sqmi": 908.4931,
+  "_area_sqmi": 28.426192,
+  "_member_count": 1,
+  "_member_towns": [
+   "Marshfield"
+  ],
+  "acs_median_household_income": 125525,
+  "acs_foreign_born_pct": 0.029308,
+  "acs_bachelors_plus_pct": 0.527803,
+  "acs_non_english_pct": 0.027236,
+  "acs_child_poverty_pct": 0.075571,
+  "acs_severe_rent_burden_pct": 0.541043
+ },
+ "01720000": {
+  "acs_total_population": 15234,
+  "_pop_2020": 15060,
+  "_pop_density_per_sqmi": 589.3999,
+  "_area_sqmi": 25.551412,
+  "_member_count": 1,
+  "_member_towns": [
+   "Mashpee"
+  ],
+  "acs_median_household_income": 95852,
+  "acs_foreign_born_pct": 0.045359,
+  "acs_bachelors_plus_pct": 0.442182,
+  "acs_non_english_pct": 0.048997,
+  "acs_child_poverty_pct": 0.050109,
+  "acs_severe_rent_burden_pct": 0.529565
+ },
+ "01730000": {
+  "acs_total_population": 6563,
+  "_pop_2020": 6508,
+  "_pop_density_per_sqmi": 373.4156,
+  "_area_sqmi": 17.428304,
+  "_member_count": 1,
+  "_member_towns": [
+   "Mattapoisett"
+  ],
+  "acs_median_household_income": 117308,
+  "acs_foreign_born_pct": 0.045406,
+  "acs_bachelors_plus_pct": 0.576549,
+  "acs_non_english_pct": 0.036696,
+  "acs_child_poverty_pct": 0.032455,
+  "acs_severe_rent_burden_pct": 0.248408
+ },
+ "01740000": {
+  "acs_total_population": 10663,
+  "_pop_2020": 10746,
+  "_pop_density_per_sqmi": 2010.4225,
+  "_area_sqmi": 5.345145,
+  "_member_count": 1,
+  "_member_towns": [
+   "Maynard"
+  ],
+  "acs_median_household_income": 119549,
+  "acs_foreign_born_pct": 0.118353,
+  "acs_bachelors_plus_pct": 0.642191,
+  "acs_non_english_pct": 0.118945,
+  "acs_child_poverty_pct": 0.073994,
+  "acs_severe_rent_burden_pct": 0.418994
+ },
+ "01750000": {
+  "acs_total_population": 12923,
+  "_pop_2020": 12799,
+  "_pop_density_per_sqmi": 876.6833,
+  "_area_sqmi": 14.599342,
+  "_member_count": 1,
+  "_member_towns": [
+   "Medfield"
+  ],
+  "acs_median_household_income": 214801,
+  "acs_foreign_born_pct": 0.069566,
+  "acs_bachelors_plus_pct": 0.76289,
+  "acs_non_english_pct": 0.079578,
+  "acs_child_poverty_pct": 0.022678,
+  "acs_severe_rent_burden_pct": 0.672026
+ },
+ "01760000": {
+  "acs_total_population": 59062,
+  "_pop_2020": 59659,
+  "_pop_density_per_sqmi": 7095.6136,
+  "_area_sqmi": 8.40787,
+  "_member_count": 1,
+  "_member_towns": [
+   "Medford"
+  ],
+  "acs_median_household_income": 118089,
+  "acs_foreign_born_pct": 0.24156,
+  "acs_bachelors_plus_pct": 0.575891,
+  "acs_non_english_pct": 0.300025,
+  "acs_child_poverty_pct": 0.081884,
+  "acs_severe_rent_burden_pct": 0.392665
+ },
+ "01770000": {
+  "acs_total_population": 13251,
+  "_pop_2020": 13115,
+  "_pop_density_per_sqmi": 1127.6834,
+  "_area_sqmi": 11.630037,
+  "_member_count": 1,
+  "_member_towns": [
+   "Medway"
+  ],
+  "acs_median_household_income": 174357,
+  "acs_foreign_born_pct": 0.076975,
+  "acs_bachelors_plus_pct": 0.618784,
+  "acs_non_english_pct": 0.101008,
+  "acs_child_poverty_pct": 0.031495,
+  "acs_severe_rent_burden_pct": 0.420139
+ },
+ "01780000": {
+  "acs_total_population": 29488,
+  "_pop_2020": 29817,
+  "_pop_density_per_sqmi": 6282.7189,
+  "_area_sqmi": 4.745875,
+  "_member_count": 1,
+  "_member_towns": [
+   "Melrose"
+  ],
+  "acs_median_household_income": 126854,
+  "acs_foreign_born_pct": 0.159624,
+  "acs_bachelors_plus_pct": 0.619875,
+  "acs_non_english_pct": 0.211606,
+  "acs_child_poverty_pct": 0.036974,
+  "acs_severe_rent_burden_pct": 0.457286
+ },
+ "01810000": {
+  "acs_total_population": 53043,
+  "_pop_2020": 53059,
+  "_pop_density_per_sqmi": 2314.9206,
+  "_area_sqmi": 22.92044,
+  "_member_count": 1,
+  "_member_towns": [
+   "Methuen"
+  ],
+  "acs_median_household_income": 103270,
+  "acs_foreign_born_pct": 0.240126,
+  "acs_bachelors_plus_pct": 0.305054,
+  "acs_non_english_pct": 0.389604,
+  "acs_child_poverty_pct": 0.081706,
+  "acs_severe_rent_burden_pct": 0.519268
+ },
+ "01820000": {
+  "acs_total_population": 24360,
+  "_pop_2020": 24245,
+  "_pop_density_per_sqmi": 337.1169,
+  "_area_sqmi": 71.918669,
+  "_member_count": 1,
+  "_member_towns": [
+   "Middleborough"
+  ],
+  "acs_median_household_income": 91914,
+  "acs_foreign_born_pct": 0.048522,
+  "acs_bachelors_plus_pct": 0.303024,
+  "acs_non_english_pct": 0.068484,
+  "acs_child_poverty_pct": 0.077199,
+  "acs_severe_rent_burden_pct": 0.606222
+ },
+ "01840000": {
+  "acs_total_population": 9727,
+  "_pop_2020": 9779,
+  "_pop_density_per_sqmi": 677.739,
+  "_area_sqmi": 14.428857,
+  "_member_count": 1,
+  "_member_towns": [
+   "Middleton"
+  ],
+  "acs_median_household_income": 171458,
+  "acs_foreign_born_pct": 0.110723,
+  "acs_bachelors_plus_pct": 0.416241,
+  "acs_non_english_pct": 0.167798,
+  "acs_child_poverty_pct": 0.033368,
+  "acs_severe_rent_burden_pct": 0.338645
+ },
+ "01850000": {
+  "acs_total_population": 30304,
+  "_pop_2020": 30379,
+  "_pop_density_per_sqmi": 2031.4875,
+  "_area_sqmi": 14.954067,
+  "_member_count": 1,
+  "_member_towns": [
+   "Milford"
+  ],
+  "acs_median_household_income": 92726,
+  "acs_foreign_born_pct": 0.298508,
+  "acs_bachelors_plus_pct": 0.337475,
+  "acs_non_english_pct": 0.383518,
+  "acs_child_poverty_pct": 0.082542,
+  "acs_severe_rent_burden_pct": 0.511222
+ },
+ "01860000": {
+  "acs_total_population": 13899,
+  "_pop_2020": 13831,
+  "_pop_density_per_sqmi": 844.4127,
+  "_area_sqmi": 16.379432,
+  "_member_count": 1,
+  "_member_towns": [
+   "Millbury"
+  ],
+  "acs_median_household_income": 116000,
+  "acs_foreign_born_pct": 0.088136,
+  "acs_bachelors_plus_pct": 0.333657,
+  "acs_non_english_pct": 0.103309,
+  "acs_child_poverty_pct": 0.038764,
+  "acs_severe_rent_burden_pct": 0.408104
+ },
+ "01870000": {
+  "acs_total_population": 8699,
+  "_pop_2020": 8460,
+  "_pop_density_per_sqmi": 692.3726,
+  "_area_sqmi": 12.218854,
+  "_member_count": 1,
+  "_member_towns": [
+   "Millis"
+  ],
+  "acs_median_household_income": 149021,
+  "acs_foreign_born_pct": 0.108173,
+  "acs_bachelors_plus_pct": 0.506588,
+  "acs_non_english_pct": 0.107352,
+  "acs_child_poverty_pct": 0.04884,
+  "acs_severe_rent_burden_pct": 0.583032
+ },
+ "01890000": {
+  "acs_total_population": 28481,
+  "_pop_2020": 28630,
+  "_pop_density_per_sqmi": 2162.3608,
+  "_area_sqmi": 13.240159,
+  "_member_count": 1,
+  "_member_towns": [
+   "Milton"
+  ],
+  "acs_median_household_income": 178053,
+  "acs_foreign_born_pct": 0.140515,
+  "acs_bachelors_plus_pct": 0.704124,
+  "acs_non_english_pct": 0.171431,
+  "acs_child_poverty_pct": 0.04706,
+  "acs_severe_rent_burden_pct": 0.497502
+ },
+ "01910000": {
+  "acs_total_population": 8126,
+  "_pop_2020": 8150,
+  "_pop_density_per_sqmi": 182.6184,
+  "_area_sqmi": 44.628583,
+  "_member_count": 1,
+  "_member_towns": [
+   "Monson"
+  ],
+  "acs_median_household_income": 84067,
+  "acs_foreign_born_pct": 0.031873,
+  "acs_bachelors_plus_pct": 0.28978,
+  "acs_non_english_pct": 0.041698,
+  "acs_child_poverty_pct": 0.121739,
+  "acs_severe_rent_burden_pct": 0.450805
+ },
+ "01960000": {
+  "acs_total_population": 3328,
+  "_pop_2020": 3334,
+  "_pop_density_per_sqmi": 2588.42,
+  "_area_sqmi": 1.288044,
+  "_member_count": 1,
+  "_member_towns": [
+   "Nahant"
+  ],
+  "acs_median_household_income": 111004,
+  "acs_foreign_born_pct": 0.059195,
+  "acs_bachelors_plus_pct": 0.61742,
+  "acs_non_english_pct": 0.08993,
+  "acs_child_poverty_pct": 0.067662,
+  "acs_severe_rent_burden_pct": 0.570866
+ },
+ "01970000": {
+  "acs_total_population": 14299,
+  "_pop_2020": 14255,
+  "_pop_density_per_sqmi": 292.0911,
+  "_area_sqmi": 48.803273,
+  "_member_count": 1,
+  "_member_towns": [
+   "Nantucket"
+  ],
+  "acs_median_household_income": 119750,
+  "acs_foreign_born_pct": 0.15092,
+  "acs_bachelors_plus_pct": 0.583828,
+  "acs_non_english_pct": 0.156287,
+  "acs_child_poverty_pct": 0.030256,
+  "acs_severe_rent_burden_pct": 0.417018
+ },
+ "01980000": {
+  "acs_total_population": 36627,
+  "_pop_2020": 37006,
+  "_pop_density_per_sqmi": 2330.2475,
+  "_area_sqmi": 15.880716,
+  "_member_count": 1,
+  "_member_towns": [
+   "Natick"
+  ],
+  "acs_median_household_income": 134591,
+  "acs_foreign_born_pct": 0.207825,
+  "acs_bachelors_plus_pct": 0.694333,
+  "acs_non_english_pct": 0.224667,
+  "acs_child_poverty_pct": 0.055864,
+  "acs_severe_rent_burden_pct": 0.404995
+ },
+ "01990000": {
+  "acs_total_population": 32059,
+  "_pop_2020": 32091,
+  "_pop_density_per_sqmi": 2535.9803,
+  "_area_sqmi": 12.654278,
+  "_member_count": 1,
+  "_member_towns": [
+   "Needham"
+  ],
+  "acs_median_household_income": 212241,
+  "acs_foreign_born_pct": 0.166849,
+  "acs_bachelors_plus_pct": 0.808465,
+  "acs_non_english_pct": 0.201485,
+  "acs_child_poverty_pct": 0.037521,
+  "acs_severe_rent_burden_pct": 0.533818
+ },
+ "02010000": {
+  "acs_total_population": 100731,
+  "_pop_2020": 101079,
+  "_pop_density_per_sqmi": 5002.2758,
+  "_area_sqmi": 20.206603,
+  "_member_count": 1,
+  "_member_towns": [
+   "New Bedford"
+  ],
+  "acs_median_household_income": 56025,
+  "acs_foreign_born_pct": 0.207434,
+  "acs_bachelors_plus_pct": 0.168048,
+  "acs_non_english_pct": 0.376331,
+  "acs_child_poverty_pct": 0.198624,
+  "acs_severe_rent_burden_pct": 0.480653
+ },
+ "02040000": {
+  "acs_total_population": 18444,
+  "_pop_2020": 18289,
+  "_pop_density_per_sqmi": 2114.8414,
+  "_area_sqmi": 8.64793,
+  "_member_count": 1,
+  "_member_towns": [
+   "Newburyport"
+  ],
+  "acs_median_household_income": 144259,
+  "acs_foreign_born_pct": 0.063327,
+  "acs_bachelors_plus_pct": 0.658969,
+  "acs_non_english_pct": 0.067415,
+  "acs_child_poverty_pct": 0.050657,
+  "acs_severe_rent_burden_pct": 0.390718
+ },
+ "02070000": {
+  "acs_total_population": 88504,
+  "_pop_2020": 88923,
+  "_pop_density_per_sqmi": 4914.5998,
+  "_area_sqmi": 18.09364,
+  "_member_count": 1,
+  "_member_towns": [
+   "Newton"
+  ],
+  "acs_median_household_income": 184989,
+  "acs_foreign_born_pct": 0.235368,
+  "acs_bachelors_plus_pct": 0.806501,
+  "acs_non_english_pct": 0.274641,
+  "acs_child_poverty_pct": 0.046981,
+  "acs_severe_rent_burden_pct": 0.392391
+ },
+ "02080000": {
+  "acs_total_population": 11556,
+  "_pop_2020": 11662,
+  "_pop_density_per_sqmi": 759.0896,
+  "_area_sqmi": 15.363141,
+  "_member_count": 1,
+  "_member_towns": [
+   "Norfolk"
+  ],
+  "acs_median_household_income": 197379,
+  "acs_foreign_born_pct": 0.067844,
+  "acs_bachelors_plus_pct": 0.585493,
+  "acs_non_english_pct": 0.087365,
+  "acs_child_poverty_pct": 0.020932,
+  "acs_severe_rent_burden_pct": 0.426829
+ },
+ "02090000": {
+  "acs_total_population": 12660,
+  "_pop_2020": 12961,
+  "_pop_density_per_sqmi": 630.7036,
+  "_area_sqmi": 20.550064,
+  "_member_count": 1,
+  "_member_towns": [
+   "North Adams"
+  ],
+  "acs_median_household_income": 48521,
+  "acs_foreign_born_pct": 0.054265,
+  "acs_bachelors_plus_pct": 0.270184,
+  "acs_non_english_pct": 0.060574,
+  "acs_child_poverty_pct": 0.181402,
+  "acs_severe_rent_burden_pct": 0.56878
+ },
+ "02100000": {
+  "acs_total_population": 28640,
+  "_pop_2020": 29571,
+  "_pop_density_per_sqmi": 830.4638,
+  "_area_sqmi": 35.607814,
+  "_member_count": 1,
+  "_member_towns": [
+   "Northampton"
+  ],
+  "acs_median_household_income": 78467,
+  "acs_foreign_born_pct": 0.082437,
+  "acs_bachelors_plus_pct": 0.61315,
+  "acs_non_english_pct": 0.133384,
+  "acs_child_poverty_pct": 0.12499,
+  "acs_severe_rent_burden_pct": 0.528056
+ },
+ "02110000": {
+  "acs_total_population": 31024,
+  "_pop_2020": 30915,
+  "_pop_density_per_sqmi": 1120.7372,
+  "_area_sqmi": 27.584522,
+  "_member_count": 1,
+  "_member_towns": [
+   "North Andover"
+  ],
+  "acs_median_household_income": 134319,
+  "acs_foreign_born_pct": 0.123195,
+  "acs_bachelors_plus_pct": 0.60701,
+  "acs_non_english_pct": 0.145238,
+  "acs_child_poverty_pct": 0.077291,
+  "acs_severe_rent_burden_pct": 0.500432
+ },
+ "02120000": {
+  "acs_total_population": 30842,
+  "_pop_2020": 30834,
+  "_pop_density_per_sqmi": 1597.7762,
+  "_area_sqmi": 19.298072,
+  "_member_count": 1,
+  "_member_towns": [
+   "North Attleborough"
+  ],
+  "acs_median_household_income": 109426,
+  "acs_foreign_born_pct": 0.084982,
+  "acs_bachelors_plus_pct": 0.468127,
+  "acs_non_english_pct": 0.103716,
+  "acs_child_poverty_pct": 0.054368,
+  "acs_severe_rent_burden_pct": 0.42155
+ },
+ "02130000": {
+  "acs_total_population": 15694,
+  "_pop_2020": 15741,
+  "_pop_density_per_sqmi": 844.1264,
+  "_area_sqmi": 18.64768,
+  "_member_count": 1,
+  "_member_towns": [
+   "Northborough"
+  ],
+  "acs_median_household_income": 174358,
+  "acs_foreign_born_pct": 0.16586,
+  "acs_bachelors_plus_pct": 0.673899,
+  "acs_non_english_pct": 0.187396,
+  "acs_child_poverty_pct": 0.036183,
+  "acs_severe_rent_burden_pct": 0.478417
+ },
+ "02140000": {
+  "acs_total_population": 16358,
+  "_pop_2020": 16335,
+  "_pop_density_per_sqmi": 908.7987,
+  "_area_sqmi": 17.974277,
+  "_member_count": 1,
+  "_member_towns": [
+   "Northbridge"
+  ],
+  "acs_median_household_income": 103355,
+  "acs_foreign_born_pct": 0.051718,
+  "acs_bachelors_plus_pct": 0.348668,
+  "acs_non_english_pct": 0.125819,
+  "acs_child_poverty_pct": 0.082291,
+  "acs_severe_rent_burden_pct": 0.371055
+ },
+ "02150000": {
+  "acs_total_population": 4739,
+  "_pop_2020": 4735,
+  "_pop_density_per_sqmi": 216.6054,
+  "_area_sqmi": 21.860029,
+  "_member_count": 1,
+  "_member_towns": [
+   "North Brookfield"
+  ],
+  "acs_median_household_income": 81010,
+  "acs_foreign_born_pct": 0.015404,
+  "acs_bachelors_plus_pct": 0.264874,
+  "acs_non_english_pct": 0.019214,
+  "acs_child_poverty_pct": 0.115921,
+  "acs_severe_rent_burden_pct": 0.439114
+ },
+ "02170000": {
+  "acs_total_population": 15634,
+  "_pop_2020": 15554,
+  "_pop_density_per_sqmi": 1159.3747,
+  "_area_sqmi": 13.415852,
+  "_member_count": 1,
+  "_member_towns": [
+   "North Reading"
+  ],
+  "acs_median_household_income": 150820,
+  "acs_foreign_born_pct": 0.071959,
+  "acs_bachelors_plus_pct": 0.555197,
+  "acs_non_english_pct": 0.093857,
+  "acs_child_poverty_pct": 0.028397,
+  "acs_severe_rent_burden_pct": 0.635307
+ },
+ "02180000": {
+  "acs_total_population": 19155,
+  "_pop_2020": 19202,
+  "_pop_density_per_sqmi": 657.8603,
+  "_area_sqmi": 29.188568,
+  "_member_count": 1,
+  "_member_towns": [
+   "Norton"
+  ],
+  "acs_median_household_income": 127404,
+  "acs_foreign_born_pct": 0.047037,
+  "acs_bachelors_plus_pct": 0.457744,
+  "acs_non_english_pct": 0.071925,
+  "acs_child_poverty_pct": 0.048273,
+  "acs_severe_rent_burden_pct": 0.377581
+ },
+ "02190000": {
+  "acs_total_population": 11309,
+  "_pop_2020": 11351,
+  "_pop_density_per_sqmi": 536.4715,
+  "_area_sqmi": 21.158626,
+  "_member_count": 1,
+  "_member_towns": [
+   "Norwell"
+  ],
+  "acs_median_household_income": 182637,
+  "acs_foreign_born_pct": 0.046512,
+  "acs_bachelors_plus_pct": 0.652772,
+  "acs_non_english_pct": 0.056611,
+  "acs_child_poverty_pct": 0.03095,
+  "acs_severe_rent_burden_pct": 0.632258
+ },
+ "02200000": {
+  "acs_total_population": 31380,
+  "_pop_2020": 31611,
+  "_pop_density_per_sqmi": 3006.3789,
+  "_area_sqmi": 10.514643,
+  "_member_count": 1,
+  "_member_towns": [
+   "Norwood"
+  ],
+  "acs_median_household_income": 97110,
+  "acs_foreign_born_pct": 0.215679,
+  "acs_bachelors_plus_pct": 0.530874,
+  "acs_non_english_pct": 0.266712,
+  "acs_child_poverty_pct": 0.081796,
+  "acs_severe_rent_burden_pct": 0.498675
+ },
+ "02210000": {
+  "acs_total_population": 5370,
+  "_pop_2020": 5341,
+  "_pop_density_per_sqmi": 720.3377,
+  "_area_sqmi": 7.414578,
+  "_member_count": 1,
+  "_member_towns": [
+   "Oak Bluffs"
+  ],
+  "acs_median_household_income": 117927,
+  "acs_foreign_born_pct": 0.102607,
+  "acs_bachelors_plus_pct": 0.469368,
+  "acs_non_english_pct": 0.125981,
+  "acs_child_poverty_pct": 0.058386,
+  "acs_severe_rent_burden_pct": 0.568562
+ },
+ "02230000": {
+  "acs_total_population": 7583,
+  "_pop_2020": 7569,
+  "_pop_density_per_sqmi": 211.1306,
+  "_area_sqmi": 35.849842,
+  "_member_count": 1,
+  "_member_towns": [
+   "Orange"
+  ],
+  "acs_median_household_income": 54105,
+  "acs_foreign_born_pct": 0.034023,
+  "acs_bachelors_plus_pct": 0.158192,
+  "acs_non_english_pct": 0.060448,
+  "acs_child_poverty_pct": 0.212673,
+  "acs_severe_rent_burden_pct": 0.451485
+ },
+ "02240000": {
+  "acs_total_population": 6342,
+  "_pop_2020": 6307,
+  "_pop_density_per_sqmi": 435.0878,
+  "_area_sqmi": 14.495926,
+  "_member_count": 1,
+  "_member_towns": [
+   "Orleans"
+  ],
+  "acs_median_household_income": 98798,
+  "acs_foreign_born_pct": 0.045254,
+  "acs_bachelors_plus_pct": 0.590348,
+  "acs_non_english_pct": 0.037617,
+  "acs_child_poverty_pct": 0.107624,
+  "acs_severe_rent_burden_pct": 0.475684
+ },
+ "02260000": {
+  "acs_total_population": 13349,
+  "_pop_2020": 13347,
+  "_pop_density_per_sqmi": 488.581,
+  "_area_sqmi": 27.317884,
+  "_member_count": 1,
+  "_member_towns": [
+   "Oxford"
+  ],
+  "acs_median_household_income": 104000,
+  "acs_foreign_born_pct": 0.052588,
+  "acs_bachelors_plus_pct": 0.277737,
+  "acs_non_english_pct": 0.092803,
+  "acs_child_poverty_pct": 0.051003,
+  "acs_severe_rent_burden_pct": 0.538629
+ },
+ "02270000": {
+  "acs_total_population": 12372,
+  "_pop_2020": 12448,
+  "_pop_density_per_sqmi": 390.3983,
+  "_area_sqmi": 31.885384,
+  "_member_count": 1,
+  "_member_towns": [
+   "Palmer"
+  ],
+  "acs_median_household_income": 78789,
+  "acs_foreign_born_pct": 0.020934,
+  "acs_bachelors_plus_pct": 0.239959,
+  "acs_non_english_pct": 0.048968,
+  "acs_child_poverty_pct": 0.085633,
+  "acs_severe_rent_burden_pct": 0.446514
+ },
+ "02290000": {
+  "acs_total_population": 54180,
+  "_pop_2020": 54481,
+  "_pop_density_per_sqmi": 3253.2581,
+  "_area_sqmi": 16.746596,
+  "_member_count": 1,
+  "_member_towns": [
+   "Peabody"
+  ],
+  "acs_median_household_income": 95278,
+  "acs_foreign_born_pct": 0.171761,
+  "acs_bachelors_plus_pct": 0.338742,
+  "acs_non_english_pct": 0.237649,
+  "acs_child_poverty_pct": 0.065063,
+  "acs_severe_rent_burden_pct": 0.56131
+ },
+ "02300000": {
+  "acs_total_population": 1332,
+  "_pop_2020": 1280,
+  "_pop_density_per_sqmi": 48.3944,
+  "_area_sqmi": 26.449367,
+  "_member_count": 1,
+  "_member_towns": [
+   "Pelham"
+  ],
+  "acs_median_household_income": 121667,
+  "acs_foreign_born_pct": 0.074324,
+  "acs_bachelors_plus_pct": 0.68106,
+  "acs_non_english_pct": 0.111199,
+  "acs_child_poverty_pct": 0.107224,
+  "acs_severe_rent_burden_pct": 0.379562
+ },
+ "02310000": {
+  "acs_total_population": 18335,
+  "_pop_2020": 18361,
+  "_pop_density_per_sqmi": 783.4988,
+  "_area_sqmi": 23.434623,
+  "_member_count": 1,
+  "_member_towns": [
+   "Pembroke"
+  ],
+  "acs_median_household_income": 141332,
+  "acs_foreign_born_pct": 0.034633,
+  "acs_bachelors_plus_pct": 0.457319,
+  "acs_non_english_pct": 0.047372,
+  "acs_child_poverty_pct": 0.042758,
+  "acs_severe_rent_burden_pct": 0.433962
+ },
+ "02340000": {
+  "acs_total_population": 1173,
+  "_pop_2020": 1194,
+  "_pop_density_per_sqmi": 17.5452,
+  "_area_sqmi": 68.05264,
+  "_member_count": 1,
+  "_member_towns": [
+   "Petersham"
+  ],
+  "acs_median_household_income": 107656,
+  "acs_foreign_born_pct": 0.021313,
+  "acs_bachelors_plus_pct": 0.429342,
+  "acs_non_english_pct": 0.041156,
+  "acs_child_poverty_pct": 0.088696,
+  "acs_severe_rent_burden_pct": 0.116279
+ },
+ "02360000": {
+  "acs_total_population": 43559,
+  "_pop_2020": 43927,
+  "_pop_density_per_sqmi": 1040.3817,
+  "_area_sqmi": 42.222005,
+  "_member_count": 1,
+  "_member_towns": [
+   "Pittsfield"
+  ],
+  "acs_median_household_income": 68386,
+  "acs_foreign_born_pct": 0.068183,
+  "acs_bachelors_plus_pct": 0.341846,
+  "acs_non_english_pct": 0.102383,
+  "acs_child_poverty_pct": 0.135587,
+  "acs_severe_rent_burden_pct": 0.520405
+ },
+ "02380000": {
+  "acs_total_population": 9872,
+  "_pop_2020": 9945,
+  "_pop_density_per_sqmi": 868.6724,
+  "_area_sqmi": 11.448504,
+  "_member_count": 1,
+  "_member_towns": [
+   "Plainville"
+  ],
+  "acs_median_household_income": 95625,
+  "acs_foreign_born_pct": 0.120948,
+  "acs_bachelors_plus_pct": 0.427361,
+  "acs_non_english_pct": 0.116893,
+  "acs_child_poverty_pct": 0.08205,
+  "acs_severe_rent_burden_pct": 0.587525
+ },
+ "02390000": {
+  "acs_total_population": 62656,
+  "_pop_2020": 61217,
+  "_pop_density_per_sqmi": 598.5385,
+  "_area_sqmi": 102.277461,
+  "_member_count": 1,
+  "_member_towns": [
+   "Plymouth"
+  ],
+  "acs_median_household_income": 111975,
+  "acs_foreign_born_pct": 0.063889,
+  "acs_bachelors_plus_pct": 0.450208,
+  "acs_non_english_pct": 0.075429,
+  "acs_child_poverty_pct": 0.061139,
+  "acs_severe_rent_burden_pct": 0.50995
+ },
+ "02400000": {
+  "acs_total_population": 2934,
+  "_pop_2020": 2930,
+  "_pop_density_per_sqmi": 194.6852,
+  "_area_sqmi": 15.049937,
+  "_member_count": 1,
+  "_member_towns": [
+   "Plympton"
+  ],
+  "acs_median_household_income": 119750,
+  "acs_foreign_born_pct": 0.006476,
+  "acs_bachelors_plus_pct": 0.355682,
+  "acs_non_english_pct": 0.016158,
+  "acs_child_poverty_pct": 0.092365,
+  "acs_severe_rent_burden_pct": 0.275862
+ },
+ "02420000": {
+  "acs_total_population": 3681,
+  "_pop_2020": 3664,
+  "_pop_density_per_sqmi": 356.3065,
+  "_area_sqmi": 10.28328,
+  "_member_count": 1,
+  "_member_towns": [
+   "Provincetown"
+  ],
+  "acs_median_household_income": 104500,
+  "acs_foreign_born_pct": 0.179571,
+  "acs_bachelors_plus_pct": 0.614668,
+  "acs_non_english_pct": 0.142496,
+  "acs_child_poverty_pct": 0.119296,
+  "acs_severe_rent_burden_pct": 0.593857
+ },
+ "02430000": {
+  "acs_total_population": 101361,
+  "_pop_2020": 101636,
+  "_pop_density_per_sqmi": 5889.6649,
+  "_area_sqmi": 17.256669,
+  "_member_count": 1,
+  "_member_towns": [
+   "Quincy"
+  ],
+  "acs_median_household_income": 95711,
+  "acs_foreign_born_pct": 0.327345,
+  "acs_bachelors_plus_pct": 0.486463,
+  "acs_non_english_pct": 0.382552,
+  "acs_child_poverty_pct": 0.114194,
+  "acs_severe_rent_burden_pct": 0.450722
+ },
+ "02440000": {
+  "acs_total_population": 34683,
+  "_pop_2020": 34984,
+  "_pop_density_per_sqmi": 3361.3496,
+  "_area_sqmi": 10.407724,
+  "_member_count": 1,
+  "_member_towns": [
+   "Randolph"
+  ],
+  "acs_median_household_income": 103129,
+  "acs_foreign_born_pct": 0.360782,
+  "acs_bachelors_plus_pct": 0.347155,
+  "acs_non_english_pct": 0.452521,
+  "acs_child_poverty_pct": 0.073789,
+  "acs_severe_rent_burden_pct": 0.591487
+ },
+ "02460000": {
+  "acs_total_population": 25448,
+  "_pop_2020": 25518,
+  "_pop_density_per_sqmi": 2566.3476,
+  "_area_sqmi": 9.943314,
+  "_member_count": 1,
+  "_member_towns": [
+   "Reading"
+  ],
+  "acs_median_household_income": 163725,
+  "acs_foreign_born_pct": 0.089477,
+  "acs_bachelors_plus_pct": 0.650757,
+  "acs_non_english_pct": 0.113206,
+  "acs_child_poverty_pct": 0.026802,
+  "acs_severe_rent_burden_pct": 0.270705
+ },
+ "02480000": {
+  "acs_total_population": 59933,
+  "_pop_2020": 62186,
+  "_pop_density_per_sqmi": 10148.0657,
+  "_area_sqmi": 6.127867,
+  "_member_count": 1,
+  "_member_towns": [
+   "Revere"
+  ],
+  "acs_median_household_income": 81121,
+  "acs_foreign_born_pct": 0.435353,
+  "acs_bachelors_plus_pct": 0.2466,
+  "acs_non_english_pct": 0.565799,
+  "acs_child_poverty_pct": 0.124159,
+  "acs_severe_rent_burden_pct": 0.559013
+ },
+ "02490000": {
+  "acs_total_population": 1392,
+  "_pop_2020": 1407,
+  "_pop_density_per_sqmi": 74.2695,
+  "_area_sqmi": 18.944523,
+  "_member_count": 1,
+  "_member_towns": [
+   "Richmond"
+  ],
+  "acs_median_household_income": 96923,
+  "acs_foreign_born_pct": 0.027299,
+  "acs_bachelors_plus_pct": 0.593503,
+  "acs_non_english_pct": 0.035482,
+  "acs_child_poverty_pct": 0.128592,
+  "acs_severe_rent_burden_pct": 0.560606
+ },
+ "02500000": {
+  "acs_total_population": 5770,
+  "_pop_2020": 5717,
+  "_pop_density_per_sqmi": 159.303,
+  "_area_sqmi": 35.887574,
+  "_member_count": 1,
+  "_member_towns": [
+   "Rochester"
+  ],
+  "acs_median_household_income": 119239,
+  "acs_foreign_born_pct": 0.060139,
+  "acs_bachelors_plus_pct": 0.416004,
+  "acs_non_english_pct": 0.046529,
+  "acs_child_poverty_pct": 0.052393,
+  "acs_severe_rent_burden_pct": 0.313953
+ },
+ "02510000": {
+  "acs_total_population": 17709,
+  "_pop_2020": 17803,
+  "_pop_density_per_sqmi": 1767.0131,
+  "_area_sqmi": 10.075194,
+  "_member_count": 1,
+  "_member_towns": [
+   "Rockland"
+  ],
+  "acs_median_household_income": 101475,
+  "acs_foreign_born_pct": 0.087187,
+  "acs_bachelors_plus_pct": 0.343161,
+  "acs_non_english_pct": 0.122134,
+  "acs_child_poverty_pct": 0.074802,
+  "acs_severe_rent_burden_pct": 0.533196
+ },
+ "02520000": {
+  "acs_total_population": 6977,
+  "_pop_2020": 6992,
+  "_pop_density_per_sqmi": 999.4984,
+  "_area_sqmi": 6.995509,
+  "_member_count": 1,
+  "_member_towns": [
+   "Rockport"
+  ],
+  "acs_median_household_income": 93227,
+  "acs_foreign_born_pct": 0.048015,
+  "acs_bachelors_plus_pct": 0.572234,
+  "acs_non_english_pct": 0.041938,
+  "acs_child_poverty_pct": 0.035627,
+  "acs_severe_rent_burden_pct": 0.596421
+ },
+ "02530000": {
+  "acs_total_population": 469,
+  "_pop_2020": 424,
+  "_pop_density_per_sqmi": 17.7473,
+  "_area_sqmi": 23.890902,
+  "_member_count": 1,
+  "_member_towns": [
+   "Rowe"
+  ],
+  "acs_median_household_income": 87917,
+  "acs_foreign_born_pct": 0.012793,
+  "acs_bachelors_plus_pct": 0.245342,
+  "acs_non_english_pct": 0.026906,
+  "acs_child_poverty_pct": 0.144989,
+  "acs_severe_rent_burden_pct": 0.071429
+ },
+ "02580000": {
+  "acs_total_population": 44241,
+  "_pop_2020": 44480,
+  "_pop_density_per_sqmi": 5361.9118,
+  "_area_sqmi": 8.295549,
+  "_member_count": 1,
+  "_member_towns": [
+   "Salem"
+  ],
+  "acs_median_household_income": 85137,
+  "acs_foreign_born_pct": 0.154495,
+  "acs_bachelors_plus_pct": 0.49605,
+  "acs_non_english_pct": 0.225852,
+  "acs_child_poverty_pct": 0.136849,
+  "acs_severe_rent_burden_pct": 0.508415
+ },
+ "02610000": {
+  "acs_total_population": 20422,
+  "_pop_2020": 20259,
+  "_pop_density_per_sqmi": 463.7622,
+  "_area_sqmi": 43.684025,
+  "_member_count": 1,
+  "_member_towns": [
+   "Sandwich"
+  ],
+  "acs_median_household_income": 118799,
+  "acs_foreign_born_pct": 0.045196,
+  "acs_bachelors_plus_pct": 0.495668,
+  "acs_non_english_pct": 0.049252,
+  "acs_child_poverty_pct": 0.064221,
+  "acs_severe_rent_burden_pct": 0.33494
+ },
+ "02620000": {
+  "acs_total_population": 28599,
+  "_pop_2020": 28619,
+  "_pop_density_per_sqmi": 2535.8917,
+  "_area_sqmi": 11.285577,
+  "_member_count": 1,
+  "_member_towns": [
+   "Saugus"
+  ],
+  "acs_median_household_income": 100819,
+  "acs_foreign_born_pct": 0.170391,
+  "acs_bachelors_plus_pct": 0.314372,
+  "acs_non_english_pct": 0.263676,
+  "acs_child_poverty_pct": 0.063855,
+  "acs_severe_rent_burden_pct": 0.483709
+ },
+ "02630000": {
+  "acs_total_population": 733,
+  "_pop_2020": 645,
+  "_pop_density_per_sqmi": 17.9546,
+  "_area_sqmi": 35.923879,
+  "_member_count": 1,
+  "_member_towns": [
+   "Savoy"
+  ],
+  "acs_median_household_income": 55000,
+  "acs_foreign_born_pct": 0.013643,
+  "acs_bachelors_plus_pct": 0.236615,
+  "acs_non_english_pct": 0.022535,
+  "acs_child_poverty_pct": 0.145975,
+  "acs_severe_rent_burden_pct": 0.481481
+ },
+ "02640000": {
+  "acs_total_population": 19145,
+  "_pop_2020": 19063,
+  "_pop_density_per_sqmi": 1105.0033,
+  "_area_sqmi": 17.251533,
+  "_member_count": 1,
+  "_member_towns": [
+   "Scituate"
+  ],
+  "acs_median_household_income": 131861,
+  "acs_foreign_born_pct": 0.052285,
+  "acs_bachelors_plus_pct": 0.667131,
+  "acs_non_english_pct": 0.058552,
+  "acs_child_poverty_pct": 0.024404,
+  "acs_severe_rent_burden_pct": 0.493258
+ },
+ "02650000": {
+  "acs_total_population": 15573,
+  "_pop_2020": 15531,
+  "_pop_density_per_sqmi": 836.7677,
+  "_area_sqmi": 18.560707,
+  "_member_count": 1,
+  "_member_towns": [
+   "Seekonk"
+  ],
+  "acs_median_household_income": 116310,
+  "acs_foreign_born_pct": 0.080139,
+  "acs_bachelors_plus_pct": 0.433281,
+  "acs_non_english_pct": 0.105371,
+  "acs_child_poverty_pct": 0.044051,
+  "acs_severe_rent_burden_pct": 0.393103
+ },
+ "02660000": {
+  "acs_total_population": 18478,
+  "_pop_2020": 18575,
+  "_pop_density_per_sqmi": 765.014,
+  "_area_sqmi": 24.2806,
+  "_member_count": 1,
+  "_member_towns": [
+   "Sharon"
+  ],
+  "acs_median_household_income": 183724,
+  "acs_foreign_born_pct": 0.232276,
+  "acs_bachelors_plus_pct": 0.760465,
+  "acs_non_english_pct": 0.2685,
+  "acs_child_poverty_pct": 0.039351,
+  "acs_severe_rent_burden_pct": 0.493582
+ },
+ "02690000": {
+  "acs_total_population": 4404,
+  "_pop_2020": 4401,
+  "_pop_density_per_sqmi": 273.3613,
+  "_area_sqmi": 16.099573,
+  "_member_count": 1,
+  "_member_towns": [
+   "Sherborn"
+  ],
+  "acs_median_household_income": 247500,
+  "acs_foreign_born_pct": 0.126249,
+  "acs_bachelors_plus_pct": 0.812284,
+  "acs_non_english_pct": 0.146993,
+  "acs_child_poverty_pct": 0.018392,
+  "acs_severe_rent_burden_pct": 0.521739
+ },
+ "02710000": {
+  "acs_total_population": 38440,
+  "_pop_2020": 38325,
+  "_pop_density_per_sqmi": 1769.8185,
+  "_area_sqmi": 21.654763,
+  "_member_count": 1,
+  "_member_towns": [
+   "Shrewsbury"
+  ],
+  "acs_median_household_income": 136225,
+  "acs_foreign_born_pct": 0.267196,
+  "acs_bachelors_plus_pct": 0.65574,
+  "acs_non_english_pct": 0.342232,
+  "acs_child_poverty_pct": 0.038427,
+  "acs_severe_rent_burden_pct": 0.386307
+ },
+ "02720000": {
+  "acs_total_population": 1867,
+  "_pop_2020": 1717,
+  "_pop_density_per_sqmi": 63.5858,
+  "_area_sqmi": 27.002903,
+  "_member_count": 1,
+  "_member_towns": [
+   "Shutesbury"
+  ],
+  "acs_median_household_income": 108021,
+  "acs_foreign_born_pct": 0.059454,
+  "acs_bachelors_plus_pct": 0.696909,
+  "acs_non_english_pct": 0.096218,
+  "acs_child_poverty_pct": 0.044992,
+  "acs_severe_rent_burden_pct": 0.275862
+ },
+ "02730000": {
+  "acs_total_population": 18246,
+  "_pop_2020": 18303,
+  "_pop_density_per_sqmi": 2243.9081,
+  "_area_sqmi": 8.156751,
+  "_member_count": 1,
+  "_member_towns": [
+   "Somerset"
+  ],
+  "acs_median_household_income": 111720,
+  "acs_foreign_born_pct": 0.062644,
+  "acs_bachelors_plus_pct": 0.369603,
+  "acs_non_english_pct": 0.096133,
+  "acs_child_poverty_pct": 0.049574,
+  "acs_severe_rent_burden_pct": 0.479021
+ },
+ "02740000": {
+  "acs_total_population": 80549,
+  "_pop_2020": 81045,
+  "_pop_density_per_sqmi": 19692.7232,
+  "_area_sqmi": 4.11548,
+  "_member_count": 1,
+  "_member_towns": [
+   "Somerville"
+  ],
+  "acs_median_household_income": 127056,
+  "acs_foreign_born_pct": 0.247948,
+  "acs_bachelors_plus_pct": 0.680425,
+  "acs_non_english_pct": 0.287843,
+  "acs_child_poverty_pct": 0.101494,
+  "acs_severe_rent_burden_pct": 0.367394
+ },
+ "02750000": {
+  "acs_total_population": 6212,
+  "_pop_2020": 6224,
+  "_pop_density_per_sqmi": 215.9491,
+  "_area_sqmi": 28.821601,
+  "_member_count": 1,
+  "_member_towns": [
+   "Southampton"
+  ],
+  "acs_median_household_income": 125534,
+  "acs_foreign_born_pct": 0.033806,
+  "acs_bachelors_plus_pct": 0.411023,
+  "acs_non_english_pct": 0.071119,
+  "acs_child_poverty_pct": 0.033001,
+  "acs_severe_rent_burden_pct": 0.396887
+ },
+ "02760000": {
+  "acs_total_population": 10441,
+  "_pop_2020": 10450,
+  "_pop_density_per_sqmi": 676.6485,
+  "_area_sqmi": 15.443764,
+  "_member_count": 1,
+  "_member_towns": [
+   "Southborough"
+  ],
+  "acs_median_household_income": 192006,
+  "acs_foreign_born_pct": 0.218945,
+  "acs_bachelors_plus_pct": 0.756937,
+  "acs_non_english_pct": 0.232974,
+  "acs_child_poverty_pct": 0.038073,
+  "acs_severe_rent_burden_pct": 0.3
+ },
+ "02770000": {
+  "acs_total_population": 17806,
+  "_pop_2020": 17740,
+  "_pop_density_per_sqmi": 855.6392,
+  "_area_sqmi": 20.733038,
+  "_member_count": 1,
+  "_member_towns": [
+   "Southbridge"
+  ],
+  "acs_median_household_income": 59397,
+  "acs_foreign_born_pct": 0.040099,
+  "acs_bachelors_plus_pct": 0.176895,
+  "acs_non_english_pct": 0.350565,
+  "acs_child_poverty_pct": 0.162122,
+  "acs_severe_rent_burden_pct": 0.53302
+ },
+ "02780000": {
+  "acs_total_population": 17410,
+  "_pop_2020": 18150,
+  "_pop_density_per_sqmi": 990.9737,
+  "_area_sqmi": 18.315319,
+  "_member_count": 1,
+  "_member_towns": [
+   "South Hadley"
+  ],
+  "acs_median_household_income": 93646,
+  "acs_foreign_born_pct": 0.082769,
+  "acs_bachelors_plus_pct": 0.50206,
+  "acs_non_english_pct": 0.102018,
+  "acs_child_poverty_pct": 0.072873,
+  "acs_severe_rent_burden_pct": 0.38434
+ },
+ "02810000": {
+  "acs_total_population": 154751,
+  "_pop_2020": 155929,
+  "_pop_density_per_sqmi": 4733.4174,
+  "_area_sqmi": 32.942161,
+  "_member_count": 1,
+  "_member_towns": [
+   "Springfield"
+  ],
+  "acs_median_household_income": 51339,
+  "acs_foreign_born_pct": 0.101886,
+  "acs_bachelors_plus_pct": 0.196505,
+  "acs_non_english_pct": 0.396861,
+  "acs_child_poverty_pct": 0.252591,
+  "acs_severe_rent_burden_pct": 0.543368
+ },
+ "02840000": {
+  "acs_total_population": 22986,
+  "_pop_2020": 23244,
+  "_pop_density_per_sqmi": 3530.741,
+  "_area_sqmi": 6.583321,
+  "_member_count": 1,
+  "_member_towns": [
+   "Stoneham"
+  ],
+  "acs_median_household_income": 112635,
+  "acs_foreign_born_pct": 0.12699,
+  "acs_bachelors_plus_pct": 0.539552,
+  "acs_non_english_pct": 0.178675,
+  "acs_child_poverty_pct": 0.045586,
+  "acs_severe_rent_burden_pct": 0.407852
+ },
+ "02850000": {
+  "acs_total_population": 29074,
+  "_pop_2020": 29281,
+  "_pop_density_per_sqmi": 1787.2238,
+  "_area_sqmi": 16.38351,
+  "_member_count": 1,
+  "_member_towns": [
+   "Stoughton"
+  ],
+  "acs_median_household_income": 104164,
+  "acs_foreign_born_pct": 0.252494,
+  "acs_bachelors_plus_pct": 0.409895,
+  "acs_non_english_pct": 0.306938,
+  "acs_child_poverty_pct": 0.09234,
+  "acs_severe_rent_burden_pct": 0.626164
+ },
+ "02880000": {
+  "acs_total_population": 19067,
+  "_pop_2020": 18934,
+  "_pop_density_per_sqmi": 767.8216,
+  "_area_sqmi": 24.659374,
+  "_member_count": 1,
+  "_member_towns": [
+   "Sudbury"
+  ],
+  "acs_median_household_income": 234634,
+  "acs_foreign_born_pct": 0.125924,
+  "acs_bachelors_plus_pct": 0.844142,
+  "acs_non_english_pct": 0.136484,
+  "acs_child_poverty_pct": 0.025627,
+  "acs_severe_rent_burden_pct": 0.375806
+ },
+ "02890000": {
+  "acs_total_population": 3653,
+  "_pop_2020": 3663,
+  "_pop_density_per_sqmi": 249.9621,
+  "_area_sqmi": 14.654224,
+  "_member_count": 1,
+  "_member_towns": [
+   "Sunderland"
+  ],
+  "acs_median_household_income": 61442,
+  "acs_foreign_born_pct": 0.137969,
+  "acs_bachelors_plus_pct": 0.612616,
+  "acs_non_english_pct": 0.153138,
+  "acs_child_poverty_pct": 0.190755,
+  "acs_severe_rent_burden_pct": 0.655431
+ },
+ "02900000": {
+  "acs_total_population": 9383,
+  "_pop_2020": 9357,
+  "_pop_density_per_sqmi": 276.2449,
+  "_area_sqmi": 33.872118,
+  "_member_count": 1,
+  "_member_towns": [
+   "Sutton"
+  ],
+  "acs_median_household_income": 156215,
+  "acs_foreign_born_pct": 0.048705,
+  "acs_bachelors_plus_pct": 0.469679,
+  "acs_non_english_pct": 0.059653,
+  "acs_child_poverty_pct": 0.044853,
+  "acs_severe_rent_burden_pct": 0.275701
+ },
+ "02910000": {
+  "acs_total_population": 15209,
+  "_pop_2020": 15111,
+  "_pop_density_per_sqmi": 4886.4205,
+  "_area_sqmi": 3.092448,
+  "_member_count": 1,
+  "_member_towns": [
+   "Swampscott"
+  ],
+  "acs_median_household_income": 128964,
+  "acs_foreign_born_pct": 0.198369,
+  "acs_bachelors_plus_pct": 0.617128,
+  "acs_non_english_pct": 0.248948,
+  "acs_child_poverty_pct": 0.069991,
+  "acs_severe_rent_burden_pct": 0.498469
+ },
+ "02920000": {
+  "acs_total_population": 17231,
+  "_pop_2020": 17144,
+  "_pop_density_per_sqmi": 749.3822,
+  "_area_sqmi": 22.877511,
+  "_member_count": 1,
+  "_member_towns": [
+   "Swansea"
+  ],
+  "acs_median_household_income": 116627,
+  "acs_foreign_born_pct": 0.086298,
+  "acs_bachelors_plus_pct": 0.342057,
+  "acs_non_english_pct": 0.138885,
+  "acs_child_poverty_pct": 0.027869,
+  "acs_severe_rent_burden_pct": 0.467849
+ },
+ "02930000": {
+  "acs_total_population": 59719,
+  "_pop_2020": 59408,
+  "_pop_density_per_sqmi": 1236.094,
+  "_area_sqmi": 48.06107,
+  "_member_count": 1,
+  "_member_towns": [
+   "Taunton"
+  ],
+  "acs_median_household_income": 79715,
+  "acs_foreign_born_pct": 0.14091,
+  "acs_bachelors_plus_pct": 0.243918,
+  "acs_non_english_pct": 0.21647,
+  "acs_child_poverty_pct": 0.137346,
+  "acs_severe_rent_burden_pct": 0.499096
+ },
+ "02950000": {
+  "acs_total_population": 31168,
+  "_pop_2020": 31342,
+  "_pop_density_per_sqmi": 1487.1386,
+  "_area_sqmi": 21.075372,
+  "_member_count": 1,
+  "_member_towns": [
+   "Tewksbury"
+  ],
+  "acs_median_household_income": 125966,
+  "acs_foreign_born_pct": 0.10283,
+  "acs_bachelors_plus_pct": 0.403357,
+  "acs_non_english_pct": 0.133959,
+  "acs_child_poverty_pct": 0.029954,
+  "acs_severe_rent_burden_pct": 0.442833
+ },
+ "02960000": {
+  "acs_total_population": 4860,
+  "_pop_2020": 4815,
+  "_pop_density_per_sqmi": 731.9578,
+  "_area_sqmi": 6.578248,
+  "_member_count": 1,
+  "_member_towns": [
+   "Tisbury"
+  ],
+  "acs_median_household_income": 70724,
+  "acs_foreign_born_pct": 0.298354,
+  "acs_bachelors_plus_pct": 0.409801,
+  "acs_non_english_pct": 0.305526,
+  "acs_child_poverty_pct": 0.056007,
+  "acs_severe_rent_burden_pct": 0.328671
+ },
+ "02980000": {
+  "acs_total_population": 6535,
+  "_pop_2020": 6569,
+  "_pop_density_per_sqmi": 514.5674,
+  "_area_sqmi": 12.766062,
+  "_member_count": 1,
+  "_member_towns": [
+   "Topsfield"
+  ],
+  "acs_median_household_income": 176698,
+  "acs_foreign_born_pct": 0.054476,
+  "acs_bachelors_plus_pct": 0.72973,
+  "acs_non_english_pct": 0.075797,
+  "acs_child_poverty_pct": 0.075047,
+  "acs_severe_rent_burden_pct": 0.548837
+ },
+ "03000000": {
+  "acs_total_population": 1675,
+  "_pop_2020": 2454,
+  "_pop_density_per_sqmi": 111.7039,
+  "_area_sqmi": 21.968797,
+  "_member_count": 1,
+  "_member_towns": [
+   "Truro"
+  ],
+  "acs_median_household_income": 94637,
+  "acs_foreign_born_pct": 0.000597,
+  "acs_bachelors_plus_pct": 0.543004,
+  "acs_non_english_pct": 0.000597,
+  "acs_child_poverty_pct": 0.059104,
+  "acs_severe_rent_burden_pct": 0.25731
+ },
+ "03010000": {
+  "acs_total_population": 12424,
+  "_pop_2020": 12380,
+  "_pop_density_per_sqmi": 687.6681,
+  "_area_sqmi": 18.002872,
+  "_member_count": 1,
+  "_member_towns": [
+   "Tyngsborough"
+  ],
+  "acs_median_household_income": 144375,
+  "acs_foreign_born_pct": 0.089021,
+  "acs_bachelors_plus_pct": 0.497463,
+  "acs_non_english_pct": 0.130252,
+  "acs_child_poverty_pct": 0.048133,
+  "acs_severe_rent_burden_pct": 0.676106
+ },
+ "03040000": {
+  "acs_total_population": 14318,
+  "_pop_2020": 14162,
+  "_pop_density_per_sqmi": 470.2582,
+  "_area_sqmi": 30.115374,
+  "_member_count": 1,
+  "_member_towns": [
+   "Uxbridge"
+  ],
+  "acs_median_household_income": 127083,
+  "acs_foreign_born_pct": 0.073264,
+  "acs_bachelors_plus_pct": 0.389492,
+  "acs_non_english_pct": 0.049748,
+  "acs_child_poverty_pct": 0.040053,
+  "acs_severe_rent_burden_pct": 0.284644
+ },
+ "03050000": {
+  "acs_total_population": 27284,
+  "_pop_2020": 27090,
+  "_pop_density_per_sqmi": 3413.8434,
+  "_area_sqmi": 7.935338,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wakefield"
+  ],
+  "acs_median_household_income": 130320,
+  "acs_foreign_born_pct": 0.101855,
+  "acs_bachelors_plus_pct": 0.57009,
+  "acs_non_english_pct": 0.129134,
+  "acs_child_poverty_pct": 0.046177,
+  "acs_severe_rent_burden_pct": 0.418526
+ },
+ "03060000": {
+  "acs_total_population": 1927,
+  "_pop_2020": 1832,
+  "_pop_density_per_sqmi": 115.0643,
+  "_area_sqmi": 15.92153,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wales"
+  ],
+  "acs_median_household_income": 93971,
+  "acs_foreign_born_pct": 0.010898,
+  "acs_bachelors_plus_pct": 0.261339,
+  "acs_non_english_pct": 0.017768,
+  "acs_child_poverty_pct": 0.047996,
+  "acs_severe_rent_burden_pct": 0.181818
+ },
+ "03070000": {
+  "acs_total_population": 26294,
+  "_pop_2020": 26383,
+  "_pop_density_per_sqmi": 1261.0683,
+  "_area_sqmi": 20.921151,
+  "_member_count": 1,
+  "_member_towns": [
+   "Walpole"
+  ],
+  "acs_median_household_income": 159720,
+  "acs_foreign_born_pct": 0.102685,
+  "acs_bachelors_plus_pct": 0.624881,
+  "acs_non_english_pct": 0.141596,
+  "acs_child_poverty_pct": 0.033086,
+  "acs_severe_rent_burden_pct": 0.399142
+ },
+ "03080000": {
+  "acs_total_population": 64723,
+  "_pop_2020": 65218,
+  "_pop_density_per_sqmi": 4744.8045,
+  "_area_sqmi": 13.74514,
+  "_member_count": 1,
+  "_member_towns": [
+   "Waltham"
+  ],
+  "acs_median_household_income": 116560,
+  "acs_foreign_born_pct": 0.266196,
+  "acs_bachelors_plus_pct": 0.56424,
+  "acs_non_english_pct": 0.334841,
+  "acs_child_poverty_pct": 0.086227,
+  "acs_severe_rent_burden_pct": 0.423071
+ },
+ "03090000": {
+  "acs_total_population": 10012,
+  "_pop_2020": 10066,
+  "_pop_density_per_sqmi": 252.8389,
+  "_area_sqmi": 39.811913,
+  "_member_count": 1,
+  "_member_towns": [
+   "Ware"
+  ],
+  "acs_median_household_income": 69666,
+  "acs_foreign_born_pct": 0.032062,
+  "acs_bachelors_plus_pct": 0.260138,
+  "acs_non_english_pct": 0.062791,
+  "acs_child_poverty_pct": 0.098122,
+  "acs_severe_rent_burden_pct": 0.509821
+ },
+ "03100000": {
+  "acs_total_population": 23226,
+  "_pop_2020": 23303,
+  "_pop_density_per_sqmi": 628.7427,
+  "_area_sqmi": 37.062854,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wareham"
+  ],
+  "acs_median_household_income": 82741,
+  "acs_foreign_born_pct": 0.058254,
+  "acs_bachelors_plus_pct": 0.277691,
+  "acs_non_english_pct": 0.070375,
+  "acs_child_poverty_pct": 0.071736,
+  "acs_severe_rent_burden_pct": 0.4613
+ },
+ "03140000": {
+  "acs_total_population": 35270,
+  "_pop_2020": 35329,
+  "_pop_density_per_sqmi": 8639.6273,
+  "_area_sqmi": 4.089181,
+  "_member_count": 1,
+  "_member_towns": [
+   "Watertown"
+  ],
+  "acs_median_household_income": 123422,
+  "acs_foreign_born_pct": 0.264587,
+  "acs_bachelors_plus_pct": 0.672315,
+  "acs_non_english_pct": 0.31235,
+  "acs_child_poverty_pct": 0.061113,
+  "acs_severe_rent_burden_pct": 0.414246
+ },
+ "03150000": {
+  "acs_total_population": 13826,
+  "_pop_2020": 13943,
+  "_pop_density_per_sqmi": 883.637,
+  "_area_sqmi": 15.779104,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wayland"
+  ],
+  "acs_median_household_income": 221250,
+  "acs_foreign_born_pct": 0.182338,
+  "acs_bachelors_plus_pct": 0.777951,
+  "acs_non_english_pct": 0.211758,
+  "acs_child_poverty_pct": 0.041648,
+  "acs_severe_rent_burden_pct": 0.383158
+ },
+ "03160000": {
+  "acs_total_population": 17674,
+  "_pop_2020": 17776,
+  "_pop_density_per_sqmi": 1223.7867,
+  "_area_sqmi": 14.525407,
+  "_member_count": 1,
+  "_member_towns": [
+   "Webster"
+  ],
+  "acs_median_household_income": 68934,
+  "acs_foreign_born_pct": 0.098506,
+  "acs_bachelors_plus_pct": 0.247776,
+  "acs_non_english_pct": 0.202432,
+  "acs_child_poverty_pct": 0.153542,
+  "acs_severe_rent_burden_pct": 0.484539
+ },
+ "03170000": {
+  "acs_total_population": 29906,
+  "_pop_2020": 29550,
+  "_pop_density_per_sqmi": 2822.4559,
+  "_area_sqmi": 10.469605,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wellesley"
+  ],
+  "acs_median_household_income": 250001,
+  "acs_foreign_born_pct": 0.173778,
+  "acs_bachelors_plus_pct": 0.871464,
+  "acs_non_english_pct": 0.2037,
+  "acs_child_poverty_pct": 0.032105,
+  "acs_severe_rent_burden_pct": 0.377656
+ },
+ "03180000": {
+  "acs_total_population": 4371,
+  "_pop_2020": 3566,
+  "_pop_density_per_sqmi": 170.6435,
+  "_area_sqmi": 20.897372,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wellfleet"
+  ],
+  "acs_median_household_income": 114074,
+  "acs_foreign_born_pct": 0.053992,
+  "acs_bachelors_plus_pct": 0.580011,
+  "acs_non_english_pct": 0.116518,
+  "acs_child_poverty_pct": 0.064055,
+  "acs_severe_rent_burden_pct": 0.257962
+ },
+ "03210000": {
+  "acs_total_population": 21591,
+  "_pop_2020": 21567,
+  "_pop_density_per_sqmi": 1009.2664,
+  "_area_sqmi": 21.368987,
+  "_member_count": 1,
+  "_member_towns": [
+   "Westborough"
+  ],
+  "acs_median_household_income": 134474,
+  "acs_foreign_born_pct": 0.28938,
+  "acs_bachelors_plus_pct": 0.660358,
+  "acs_non_english_pct": 0.337222,
+  "acs_child_poverty_pct": 0.050478,
+  "acs_severe_rent_burden_pct": 0.385804
+ },
+ "03220000": {
+  "acs_total_population": 7732,
+  "_pop_2020": 7877,
+  "_pop_density_per_sqmi": 570.7673,
+  "_area_sqmi": 13.80072,
+  "_member_count": 1,
+  "_member_towns": [
+   "West Boylston"
+  ],
+  "acs_median_household_income": 99674,
+  "acs_foreign_born_pct": 0.054966,
+  "acs_bachelors_plus_pct": 0.411102,
+  "acs_non_english_pct": 0.113463,
+  "acs_child_poverty_pct": 0.082502,
+  "acs_severe_rent_burden_pct": 0.282862
+ },
+ "03230000": {
+  "acs_total_population": 7682,
+  "_pop_2020": 7707,
+  "_pop_density_per_sqmi": 493.7175,
+  "_area_sqmi": 15.610142,
+  "_member_count": 1,
+  "_member_towns": [
+   "West Bridgewater"
+  ],
+  "acs_median_household_income": 124483,
+  "acs_foreign_born_pct": 0.073418,
+  "acs_bachelors_plus_pct": 0.425513,
+  "acs_non_english_pct": 0.079063,
+  "acs_child_poverty_pct": 0.045678,
+  "acs_severe_rent_burden_pct": 0.429185
+ },
+ "03250000": {
+  "acs_total_population": 40673,
+  "_pop_2020": 40834,
+  "_pop_density_per_sqmi": 866.9694,
+  "_area_sqmi": 47.099701,
+  "_member_count": 1,
+  "_member_towns": [
+   "Westfield"
+  ],
+  "acs_median_household_income": 82847,
+  "acs_foreign_born_pct": 0.100165,
+  "acs_bachelors_plus_pct": 0.326359,
+  "acs_non_english_pct": 0.160641,
+  "acs_child_poverty_pct": 0.109649,
+  "acs_severe_rent_burden_pct": 0.444976
+ },
+ "03260000": {
+  "acs_total_population": 24584,
+  "_pop_2020": 24643,
+  "_pop_density_per_sqmi": 786.8758,
+  "_area_sqmi": 31.317523,
+  "_member_count": 1,
+  "_member_towns": [
+   "Westford"
+  ],
+  "acs_median_household_income": 181523,
+  "acs_foreign_born_pct": 0.210137,
+  "acs_bachelors_plus_pct": 0.729733,
+  "acs_non_english_pct": 0.254346,
+  "acs_child_poverty_pct": 0.023583,
+  "acs_severe_rent_burden_pct": 0.436578
+ },
+ "03270000": {
+  "acs_total_population": 1514,
+  "_pop_2020": 1622,
+  "_pop_density_per_sqmi": 59.5366,
+  "_area_sqmi": 27.243758,
+  "_member_count": 1,
+  "_member_towns": [
+   "Westhampton"
+  ],
+  "acs_median_household_income": 95192,
+  "acs_foreign_born_pct": 0.022457,
+  "acs_bachelors_plus_pct": 0.45837,
+  "acs_non_english_pct": 0.02517,
+  "acs_child_poverty_pct": 0.057873,
+  "acs_severe_rent_burden_pct": 0.234043
+ },
+ "03300000": {
+  "acs_total_population": 11443,
+  "_pop_2020": 11851,
+  "_pop_density_per_sqmi": 686.6026,
+  "_area_sqmi": 17.260348,
+  "_member_count": 1,
+  "_member_towns": [
+   "Weston"
+  ],
+  "acs_median_household_income": 250001,
+  "acs_foreign_born_pct": 0.211745,
+  "acs_bachelors_plus_pct": 0.844307,
+  "acs_non_english_pct": 0.266661,
+  "acs_child_poverty_pct": 0.042649,
+  "acs_severe_rent_burden_pct": 0.530973
+ },
+ "03310000": {
+  "acs_total_population": 16382,
+  "_pop_2020": 16339,
+  "_pop_density_per_sqmi": 314.6288,
+  "_area_sqmi": 51.931033,
+  "_member_count": 1,
+  "_member_towns": [
+   "Westport"
+  ],
+  "acs_median_household_income": 100703,
+  "acs_foreign_born_pct": 0.104505,
+  "acs_bachelors_plus_pct": 0.302839,
+  "acs_non_english_pct": 0.15456,
+  "acs_child_poverty_pct": 0.059719,
+  "acs_severe_rent_burden_pct": 0.460332
+ },
+ "03320000": {
+  "acs_total_population": 28635,
+  "_pop_2020": 28835,
+  "_pop_density_per_sqmi": 1650.3031,
+  "_area_sqmi": 17.472548,
+  "_member_count": 1,
+  "_member_towns": [
+   "West Springfield"
+  ],
+  "acs_median_household_income": 70401,
+  "acs_foreign_born_pct": 0.181351,
+  "acs_bachelors_plus_pct": 0.3492,
+  "acs_non_english_pct": 0.273654,
+  "acs_child_poverty_pct": 0.104439,
+  "acs_severe_rent_burden_pct": 0.570444
+ },
+ "03350000": {
+  "acs_total_population": 16213,
+  "_pop_2020": 16266,
+  "_pop_density_per_sqmi": 1456.9966,
+  "_area_sqmi": 11.164062,
+  "_member_count": 1,
+  "_member_towns": [
+   "Westwood"
+  ],
+  "acs_median_household_income": 205000,
+  "acs_foreign_born_pct": 0.117622,
+  "acs_bachelors_plus_pct": 0.710152,
+  "acs_non_english_pct": 0.159821,
+  "acs_child_poverty_pct": 0.04982,
+  "acs_severe_rent_burden_pct": 0.536377
+ },
+ "03360000": {
+  "acs_total_population": 57786,
+  "_pop_2020": 57437,
+  "_pop_density_per_sqmi": 3236.7691,
+  "_area_sqmi": 17.745164,
+  "_member_count": 1,
+  "_member_towns": [
+   "Weymouth"
+  ],
+  "acs_median_household_income": 100077,
+  "acs_foreign_born_pct": 0.136815,
+  "acs_bachelors_plus_pct": 0.430484,
+  "acs_non_english_pct": 0.14594,
+  "acs_child_poverty_pct": 0.076645,
+  "acs_severe_rent_burden_pct": 0.501655
+ },
+ "03370000": {
+  "acs_total_population": 1521,
+  "_pop_2020": 1607,
+  "_pop_density_per_sqmi": 77.9488,
+  "_area_sqmi": 20.616107,
+  "_member_count": 1,
+  "_member_towns": [
+   "Whately"
+  ],
+  "acs_median_household_income": 102734,
+  "acs_foreign_born_pct": 0.019724,
+  "acs_bachelors_plus_pct": 0.431993,
+  "acs_non_english_pct": 0.025051,
+  "acs_child_poverty_pct": 0.082183,
+  "acs_severe_rent_burden_pct": 0.285714
+ },
+ "03400000": {
+  "acs_total_population": 2716,
+  "_pop_2020": 2504,
+  "_pop_density_per_sqmi": 97.7122,
+  "_area_sqmi": 25.626288,
+  "_member_count": 1,
+  "_member_towns": [
+   "Williamsburg"
+  ],
+  "acs_median_household_income": 108500,
+  "acs_foreign_born_pct": 0.051178,
+  "acs_bachelors_plus_pct": 0.628449,
+  "acs_non_english_pct": 0.077069,
+  "acs_child_poverty_pct": 0.043446,
+  "acs_severe_rent_burden_pct": 0.521978
+ },
+ "03420000": {
+  "acs_total_population": 23195,
+  "_pop_2020": 23349,
+  "_pop_density_per_sqmi": 1366.7569,
+  "_area_sqmi": 17.083506,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wilmington"
+  ],
+  "acs_median_household_income": 161473,
+  "acs_foreign_born_pct": 0.070619,
+  "acs_bachelors_plus_pct": 0.492427,
+  "acs_non_english_pct": 0.086128,
+  "acs_child_poverty_pct": 0.030059,
+  "acs_severe_rent_burden_pct": 0.560194
+ },
+ "03430000": {
+  "acs_total_population": 10392,
+  "_pop_2020": 10364,
+  "_pop_density_per_sqmi": 236.1113,
+  "_area_sqmi": 43.894553,
+  "_member_count": 1,
+  "_member_towns": [
+   "Winchendon"
+  ],
+  "acs_median_household_income": 85160,
+  "acs_foreign_born_pct": 0.043495,
+  "acs_bachelors_plus_pct": 0.239403,
+  "acs_non_english_pct": 0.091559,
+  "acs_child_poverty_pct": 0.116566,
+  "acs_severe_rent_burden_pct": 0.498229
+ },
+ "03440000": {
+  "acs_total_population": 22862,
+  "_pop_2020": 22970,
+  "_pop_density_per_sqmi": 3648.7141,
+  "_area_sqmi": 6.295368,
+  "_member_count": 1,
+  "_member_towns": [
+   "Winchester"
+  ],
+  "acs_median_household_income": 218176,
+  "acs_foreign_born_pct": 0.202257,
+  "acs_bachelors_plus_pct": 0.78446,
+  "acs_non_english_pct": 0.268566,
+  "acs_child_poverty_pct": 0.039324,
+  "acs_severe_rent_burden_pct": 0.33209
+ },
+ "03460000": {
+  "acs_total_population": 18807,
+  "_pop_2020": 19316,
+  "_pop_density_per_sqmi": 8481.0719,
+  "_area_sqmi": 2.277542,
+  "_member_count": 1,
+  "_member_towns": [
+   "Winthrop"
+  ],
+  "acs_median_household_income": 106357,
+  "acs_foreign_born_pct": 0.194662,
+  "acs_bachelors_plus_pct": 0.428987,
+  "acs_non_english_pct": 0.301685,
+  "acs_child_poverty_pct": 0.070526,
+  "acs_severe_rent_burden_pct": 0.508383
+ },
+ "03470000": {
+  "acs_total_population": 41205,
+  "_pop_2020": 40876,
+  "_pop_density_per_sqmi": 3164.2542,
+  "_area_sqmi": 12.918052,
+  "_member_count": 1,
+  "_member_towns": [
+   "Woburn"
+  ],
+  "acs_median_household_income": 107754,
+  "acs_foreign_born_pct": 0.20182,
+  "acs_bachelors_plus_pct": 0.473419,
+  "acs_non_english_pct": 0.238515,
+  "acs_child_poverty_pct": 0.077939,
+  "acs_severe_rent_burden_pct": 0.534555
+ },
+ "03480000": {
+  "acs_total_population": 205501,
+  "_pop_2020": 206518,
+  "_pop_density_per_sqmi": 5394.9067,
+  "_area_sqmi": 38.28018,
+  "_member_count": 1,
+  "_member_towns": [
+   "Worcester"
+  ],
+  "acs_median_household_income": 67544,
+  "acs_foreign_born_pct": 0.231741,
+  "acs_bachelors_plus_pct": 0.340948,
+  "acs_non_english_pct": 0.389421,
+  "acs_child_poverty_pct": 0.197757,
+  "acs_severe_rent_burden_pct": 0.5164
+ },
+ "03490000": {
+  "acs_total_population": 1061,
+  "_pop_2020": 1193,
+  "_pop_density_per_sqmi": 37.3066,
+  "_area_sqmi": 31.978262,
+  "_member_count": 1,
+  "_member_towns": [
+   "Worthington"
+  ],
+  "acs_median_household_income": 91250,
+  "acs_foreign_born_pct": 0.0377,
+  "acs_bachelors_plus_pct": 0.442809,
+  "acs_non_english_pct": 0.036489,
+  "acs_child_poverty_pct": 0.037037,
+  "acs_severe_rent_burden_pct": 0.363636
+ },
+ "03500000": {
+  "acs_total_population": 12305,
+  "_pop_2020": 12178,
+  "_pop_density_per_sqmi": 540.8697,
+  "_area_sqmi": 22.51559,
+  "_member_count": 1,
+  "_member_towns": [
+   "Wrentham"
+  ],
+  "acs_median_household_income": 147930,
+  "acs_foreign_born_pct": 0.039984,
+  "acs_bachelors_plus_pct": 0.53747,
+  "acs_non_english_pct": 0.069289,
+  "acs_child_poverty_pct": 0.056687,
+  "acs_severe_rent_burden_pct": 0.409657
+ },
+ "06000000": {
+  "acs_total_population": 29429,
+  "_pop_2020": 29527,
+  "_pop_density_per_sqmi": 967.2474,
+  "_area_sqmi": 30.526832,
+  "_member_count": 2,
+  "_member_towns": [
+   "Acton",
+   "Boxborough"
+  ],
+  "acs_median_household_income": 152904,
+  "acs_foreign_born_pct": 0.280879,
+  "acs_bachelors_plus_pct": 0.776817,
+  "acs_non_english_pct": 0.321578,
+  "acs_child_poverty_pct": 0.034182,
+  "acs_severe_rent_burden_pct": 0.460103
+ },
+ "06030000": {
+  "acs_total_population": 11340,
+  "_pop_2020": 11424,
+  "_pop_density_per_sqmi": 227.0395,
+  "_area_sqmi": 50.317235,
+  "_member_count": 2,
+  "_member_towns": [
+   "Adams",
+   "Cheshire"
+  ],
+  "acs_median_household_income": 60775,
+  "acs_foreign_born_pct": 0.024074,
+  "acs_bachelors_plus_pct": 0.262292,
+  "acs_non_english_pct": 0.041832,
+  "acs_child_poverty_pct": 0.13209,
+  "acs_severe_rent_burden_pct": 0.456887
+ },
+ "06100000": {
+  "acs_total_population": 14646,
+  "_pop_2020": 14528,
+  "_pop_density_per_sqmi": 186.6258,
+  "_area_sqmi": 77.845605,
+  "_member_count": 2,
+  "_member_towns": [
+   "Ashburnham",
+   "Westminster"
+  ],
+  "acs_median_household_income": 107350,
+  "acs_foreign_born_pct": 0.022259,
+  "acs_bachelors_plus_pct": 0.412499,
+  "acs_non_english_pct": 0.0281,
+  "acs_child_poverty_pct": 0.04764,
+  "acs_severe_rent_burden_pct": 0.621325
+ },
+ "06150000": {
+  "acs_total_population": 13437,
+  "_pop_2020": 13195,
+  "_pop_density_per_sqmi": 174.6963,
+  "_area_sqmi": 75.531058,
+  "_member_count": 2,
+  "_member_towns": [
+   "Athol",
+   "Royalston"
+  ],
+  "acs_median_household_income": 69504,
+  "acs_foreign_born_pct": 0.036615,
+  "acs_bachelors_plus_pct": 0.203641,
+  "acs_non_english_pct": 0.066387,
+  "acs_child_poverty_pct": 0.142423,
+  "acs_severe_rent_burden_pct": 0.514551
+ },
+ "06160000": {
+  "acs_total_population": 15508,
+  "_pop_2020": 15910,
+  "_pop_density_per_sqmi": 630.1082,
+  "_area_sqmi": 25.249631,
+  "_member_count": 2,
+  "_member_towns": [
+   "Ayer",
+   "Shirley"
+  ],
+  "acs_median_household_income": 112661,
+  "acs_foreign_born_pct": 0.077702,
+  "acs_bachelors_plus_pct": 0.385936,
+  "acs_non_english_pct": 0.116777,
+  "acs_child_poverty_pct": 0.058975,
+  "acs_severe_rent_burden_pct": 0.426371
+ },
+ "06180000": {
+  "acs_total_population": 10270,
+  "_pop_2020": 10533,
+  "_pop_density_per_sqmi": 120.0142,
+  "_area_sqmi": 87.764602,
+  "_member_count": 3,
+  "_member_towns": [
+   "Great Barrington",
+   "Stockbridge",
+   "West Stockbridge"
+  ],
+  "acs_median_household_income": 93555,
+  "acs_foreign_born_pct": 0.101266,
+  "acs_bachelors_plus_pct": 0.524634,
+  "acs_non_english_pct": 0.093426,
+  "acs_child_poverty_pct": 0.063392,
+  "acs_severe_rent_burden_pct": 0.474189
+ },
+ "06200000": {
+  "acs_total_population": 8207,
+  "_pop_2020": 8007,
+  "_pop_density_per_sqmi": 244.1907,
+  "_area_sqmi": 32.789941,
+  "_member_count": 2,
+  "_member_towns": [
+   "Berlin",
+   "Boylston"
+  ],
+  "acs_median_household_income": 123796,
+  "acs_foreign_born_pct": 0.066529,
+  "acs_bachelors_plus_pct": 0.559456,
+  "acs_non_english_pct": 0.082816,
+  "acs_child_poverty_pct": 0.070915,
+  "acs_severe_rent_burden_pct": 0.379557
+ },
+ "06220000": {
+  "acs_total_population": 12367,
+  "_pop_2020": 12382,
+  "_pop_density_per_sqmi": 760.7701,
+  "_area_sqmi": 16.275614,
+  "_member_count": 2,
+  "_member_towns": [
+   "Blackstone",
+   "Millville"
+  ],
+  "acs_median_household_income": 103274,
+  "acs_foreign_born_pct": 0.063475,
+  "acs_bachelors_plus_pct": 0.337746,
+  "acs_non_english_pct": 0.126866,
+  "acs_child_poverty_pct": 0.051475,
+  "acs_severe_rent_burden_pct": 0.47405
+ },
+ "06250000": {
+  "acs_total_population": 43942,
+  "_pop_2020": 43775,
+  "_pop_density_per_sqmi": 895.169,
+  "_area_sqmi": 48.90138,
+  "_member_count": 2,
+  "_member_towns": [
+   "Bridgewater",
+   "Raynham"
+  ],
+  "acs_median_household_income": 114383,
+  "acs_foreign_born_pct": 0.092827,
+  "acs_bachelors_plus_pct": 0.398515,
+  "acs_non_english_pct": 0.111508,
+  "acs_child_poverty_pct": 0.063458,
+  "acs_severe_rent_burden_pct": 0.511242
+ },
+ "06320000": {
+  "acs_total_population": 1929,
+  "_pop_2020": 2146,
+  "_pop_density_per_sqmi": 44.0382,
+  "_area_sqmi": 48.730446,
+  "_member_count": 2,
+  "_member_towns": [
+   "Chesterfield",
+   "Goshen"
+  ],
+  "acs_median_household_income": 97576,
+  "acs_foreign_born_pct": 0.024365,
+  "acs_bachelors_plus_pct": 0.372966,
+  "acs_non_english_pct": 0.046697,
+  "acs_child_poverty_pct": 0.084259,
+  "acs_severe_rent_burden_pct": 0.458251
+ },
+ "06350000": {
+  "acs_total_population": 13277,
+  "_pop_2020": 13148,
+  "_pop_density_per_sqmi": 61.5703,
+  "_area_sqmi": 213.544559,
+  "_member_count": 7,
+  "_member_towns": [
+   "Becket",
+   "Cummington",
+   "Dalton",
+   "Hinsdale",
+   "Peru",
+   "Washington",
+   "Windsor"
+  ],
+  "acs_median_household_income": 83238,
+  "acs_foreign_born_pct": 0.034571,
+  "acs_bachelors_plus_pct": 0.380717,
+  "acs_non_english_pct": 0.041157,
+  "acs_child_poverty_pct": 0.061273,
+  "acs_severe_rent_burden_pct": 0.332211
+ },
+ "06450000": {
+  "acs_total_population": 39894,
+  "_pop_2020": 39697,
+  "_pop_density_per_sqmi": 870.3224,
+  "_area_sqmi": 45.611832,
+  "_member_count": 2,
+  "_member_towns": [
+   "Dennis",
+   "Yarmouth"
+  ],
+  "acs_median_household_income": 84285,
+  "acs_foreign_born_pct": 0.117135,
+  "acs_bachelors_plus_pct": 0.41253,
+  "acs_non_english_pct": 0.12642,
+  "acs_child_poverty_pct": 0.077474,
+  "acs_severe_rent_burden_pct": 0.606967
+ },
+ "06500000": {
+  "acs_total_population": 20931,
+  "_pop_2020": 20603,
+  "_pop_density_per_sqmi": 296.9366,
+  "_area_sqmi": 69.385179,
+  "_member_count": 2,
+  "_member_towns": [
+   "Dighton",
+   "Rehoboth"
+  ],
+  "acs_median_household_income": 130606,
+  "acs_foreign_born_pct": 0.050021,
+  "acs_bachelors_plus_pct": 0.396221,
+  "acs_non_english_pct": 0.099387,
+  "acs_child_poverty_pct": 0.042061,
+  "acs_severe_rent_burden_pct": 0.235907
+ },
+ "06550000": {
+  "acs_total_population": 10297,
+  "_pop_2020": 10324,
+  "_pop_density_per_sqmi": 328.8624,
+  "_area_sqmi": 31.393066,
+  "_member_count": 2,
+  "_member_towns": [
+   "Dover",
+   "Sherborn"
+  ],
+  "acs_median_household_income": 248931,
+  "acs_foreign_born_pct": 0.142177,
+  "acs_bachelors_plus_pct": 0.84683,
+  "acs_non_english_pct": 0.152268,
+  "acs_child_poverty_pct": 0.019451,
+  "acs_severe_rent_burden_pct": 0.420492
+ },
+ "06580000": {
+  "acs_total_population": 11886,
+  "_pop_2020": 11921,
+  "_pop_density_per_sqmi": 547.9477,
+  "_area_sqmi": 21.755727,
+  "_member_count": 1,
+  "_member_towns": [
+   "Dudley"
+  ],
+  "acs_median_household_income": 85179,
+  "acs_foreign_born_pct": 0.072943,
+  "acs_bachelors_plus_pct": 0.249499,
+  "acs_non_english_pct": 0.123245,
+  "acs_child_poverty_pct": 0.074952,
+  "acs_severe_rent_burden_pct": 0.404666
+ },
+ "06620000": {
+  "acs_total_population": 2566,
+  "_pop_2020": 2623,
+  "_pop_density_per_sqmi": 28.9471,
+  "_area_sqmi": 90.613592,
+  "_member_count": 2,
+  "_member_towns": [
+   "Otis",
+   "Sandisfield"
+  ],
+  "acs_median_household_income": 98608,
+  "acs_foreign_born_pct": 0.015199,
+  "acs_bachelors_plus_pct": 0.348194,
+  "acs_non_english_pct": 0.023564,
+  "acs_child_poverty_pct": 0.028907,
+  "acs_severe_rent_burden_pct": 0.384405
+ },
+ "06650000": {
+  "acs_total_population": 20954,
+  "_pop_2020": 20729,
+  "_pop_density_per_sqmi": 291.2794,
+  "_area_sqmi": 71.165341,
+  "_member_count": 2,
+  "_member_towns": [
+   "Freetown",
+   "Lakeville"
+  ],
+  "acs_median_household_income": 134342,
+  "acs_foreign_born_pct": 0.049346,
+  "acs_bachelors_plus_pct": 0.389479,
+  "acs_non_english_pct": 0.048388,
+  "acs_child_poverty_pct": 0.043275,
+  "acs_severe_rent_burden_pct": 0.459457
+ },
+ "06720000": {
+  "acs_total_population": 7202,
+  "_pop_2020": 7384,
+  "_pop_density_per_sqmi": 42.5151,
+  "_area_sqmi": 173.679464,
+  "_member_count": 6,
+  "_member_towns": [
+   "Blandford",
+   "Chester",
+   "Huntington",
+   "Middlefield",
+   "Montgomery",
+   "Russell"
+  ],
+  "acs_median_household_income": 97741,
+  "acs_foreign_born_pct": 0.032213,
+  "acs_bachelors_plus_pct": 0.30473,
+  "acs_non_english_pct": 0.046058,
+  "acs_child_poverty_pct": 0.066423,
+  "acs_severe_rent_burden_pct": 0.293799
+ },
+ "06730000": {
+  "acs_total_population": 14640,
+  "_pop_2020": 14673,
+  "_pop_density_per_sqmi": 291.9749,
+  "_area_sqmi": 50.254325,
+  "_member_count": 2,
+  "_member_towns": [
+   "Dunstable",
+   "Groton"
+  ],
+  "acs_median_household_income": 192223,
+  "acs_foreign_born_pct": 0.100478,
+  "acs_bachelors_plus_pct": 0.643606,
+  "acs_non_english_pct": 0.098006,
+  "acs_child_poverty_pct": 0.035611,
+  "acs_severe_rent_burden_pct": 0.409833
+ },
+ "06740000": {
+  "acs_total_population": 10332,
+  "_pop_2020": 10131,
+  "_pop_density_per_sqmi": 220.1154,
+  "_area_sqmi": 46.025851,
+  "_member_count": 2,
+  "_member_towns": [
+   "Gill",
+   "Montague"
+  ],
+  "acs_median_household_income": 75473,
+  "acs_foreign_born_pct": 0.041909,
+  "acs_bachelors_plus_pct": 0.376834,
+  "acs_non_english_pct": 0.062353,
+  "acs_child_poverty_pct": 0.096781,
+  "acs_severe_rent_burden_pct": 0.521268
+ },
+ "06750000": {
+  "acs_total_population": 12501,
+  "_pop_2020": 12540,
+  "_pop_density_per_sqmi": 547.3205,
+  "_area_sqmi": 22.91162,
+  "_member_count": 2,
+  "_member_towns": [
+   "Hamilton",
+   "Wenham"
+  ],
+  "acs_median_household_income": 150514,
+  "acs_foreign_born_pct": 0.075434,
+  "acs_bachelors_plus_pct": 0.690716,
+  "acs_non_english_pct": 0.082252,
+  "acs_child_poverty_pct": 0.052596,
+  "acs_severe_rent_burden_pct": 0.56568
+ },
+ "06800000": {
+  "acs_total_population": 19488,
+  "_pop_2020": 19579,
+  "_pop_density_per_sqmi": 468.9109,
+  "_area_sqmi": 41.754205,
+  "_member_count": 2,
+  "_member_towns": [
+   "Hampden",
+   "Wilbraham"
+  ],
+  "acs_median_household_income": 120634,
+  "acs_foreign_born_pct": 0.036894,
+  "acs_bachelors_plus_pct": 0.494975,
+  "acs_non_english_pct": 0.042871,
+  "acs_child_poverty_pct": 0.037172,
+  "acs_severe_rent_burden_pct": 0.447863
+ },
+ "06850000": {
+  "acs_total_population": 1414,
+  "_pop_2020": 1538,
+  "_pop_density_per_sqmi": 27.0062,
+  "_area_sqmi": 56.949866,
+  "_member_count": 2,
+  "_member_towns": [
+   "Charlemont",
+   "Hawley"
+  ],
+  "acs_median_household_income": 69523,
+  "acs_foreign_born_pct": 0.01768,
+  "acs_bachelors_plus_pct": 0.349264,
+  "acs_non_english_pct": 0.027787,
+  "acs_child_poverty_pct": 0.088524,
+  "acs_severe_rent_burden_pct": 0.456085
+ },
+ "06980000": {
+  "acs_total_population": 9048,
+  "_pop_2020": 9070,
+  "_pop_density_per_sqmi": 415.0233,
+  "_area_sqmi": 21.854192,
+  "_member_count": 2,
+  "_member_towns": [
+   "Essex",
+   "Manchester-By-The-Sea"
+  ],
+  "acs_median_household_income": 179368,
+  "acs_foreign_born_pct": 0.044872,
+  "acs_bachelors_plus_pct": 0.777778,
+  "acs_non_english_pct": 0.034467,
+  "acs_child_poverty_pct": 0.041063,
+  "acs_severe_rent_burden_pct": 0.400423
+ },
+ "07100000": {
+  "acs_total_population": 14361,
+  "_pop_2020": 14228,
+  "_pop_density_per_sqmi": 358.867,
+  "_area_sqmi": 39.646999,
+  "_member_count": 2,
+  "_member_towns": [
+   "Mendon",
+   "Upton"
+  ],
+  "acs_median_household_income": 144557,
+  "acs_foreign_born_pct": 0.087459,
+  "acs_bachelors_plus_pct": 0.53204,
+  "acs_non_english_pct": 0.121823,
+  "acs_child_poverty_pct": 0.040068,
+  "acs_severe_rent_burden_pct": 0.564319
+ },
+ "07120000": {
+  "acs_total_population": 20149,
+  "_pop_2020": 20034,
+  "_pop_density_per_sqmi": 507.7549,
+  "_area_sqmi": 39.456043,
+  "_member_count": 2,
+  "_member_towns": [
+   "Chatham",
+   "Harwich"
+  ],
+  "acs_median_household_income": 87528,
+  "acs_foreign_born_pct": 0.043228,
+  "acs_bachelors_plus_pct": 0.52016,
+  "acs_non_english_pct": 0.040592,
+  "acs_child_poverty_pct": 0.06005,
+  "acs_severe_rent_burden_pct": 0.463647
+ },
+ "07150000": {
+  "acs_total_population": 10496,
+  "_pop_2020": 10551,
+  "_pop_density_per_sqmi": 138.6245,
+  "_area_sqmi": 76.112083,
+  "_member_count": 2,
+  "_member_towns": [
+   "Lanesborough",
+   "Williamstown"
+  ],
+  "acs_median_household_income": 93943,
+  "acs_foreign_born_pct": 0.079268,
+  "acs_bachelors_plus_pct": 0.595995,
+  "acs_non_english_pct": 0.092497,
+  "acs_child_poverty_pct": 0.095733,
+  "acs_severe_rent_burden_pct": 0.441777
+ },
+ "07170000": {
+  "acs_total_population": 10237,
+  "_pop_2020": 10319,
+  "_pop_density_per_sqmi": 40.7437,
+  "_area_sqmi": 253.265868,
+  "_member_count": 9,
+  "_member_towns": [
+   "Ashfield",
+   "Buckland",
+   "Charlemont",
+   "Colrain",
+   "Hawley",
+   "Heath",
+   "Plainfield",
+   "Rowe",
+   "Shelburne"
+  ],
+  "acs_median_household_income": 81120,
+  "acs_foreign_born_pct": 0.035557,
+  "acs_bachelors_plus_pct": 0.438429,
+  "acs_non_english_pct": 0.036786,
+  "acs_child_poverty_pct": 0.101352,
+  "acs_severe_rent_burden_pct": 0.4268
+ },
+ "07200000": {
+  "acs_total_population": 10102,
+  "_pop_2020": 9875,
+  "_pop_density_per_sqmi": 173.9992,
+  "_area_sqmi": 56.753139,
+  "_member_count": 2,
+  "_member_towns": [
+   "Phillipston",
+   "Templeton"
+  ],
+  "acs_median_household_income": 101144,
+  "acs_foreign_born_pct": 0.015146,
+  "acs_bachelors_plus_pct": 0.272701,
+  "acs_non_english_pct": 0.031544,
+  "acs_child_poverty_pct": 0.080277,
+  "acs_severe_rent_burden_pct": 0.415573
+ },
+ "07250000": {
+  "acs_total_population": 21277,
+  "_pop_2020": 21280,
+  "_pop_density_per_sqmi": 323.3064,
+  "_area_sqmi": 65.819909,
+  "_member_count": 3,
+  "_member_towns": [
+   "Bolton",
+   "Lancaster",
+   "Stow"
+  ],
+  "acs_median_household_income": 164506,
+  "acs_foreign_born_pct": 0.091554,
+  "acs_bachelors_plus_pct": 0.677299,
+  "acs_non_english_pct": 0.111107,
+  "acs_child_poverty_pct": 0.035537,
+  "acs_severe_rent_burden_pct": 0.401256
+ },
+ "07280000": {
+  "acs_total_population": 1874,
+  "_pop_2020": 1907,
+  "_pop_density_per_sqmi": 21.0595,
+  "_area_sqmi": 90.553074,
+  "_member_count": 2,
+  "_member_towns": [
+   "New Salem",
+   "Wendell"
+  ],
+  "acs_median_household_income": 74519,
+  "acs_foreign_born_pct": 0.028815,
+  "acs_bachelors_plus_pct": 0.430962,
+  "acs_non_english_pct": 0.035546,
+  "acs_child_poverty_pct": 0.109392,
+  "acs_severe_rent_burden_pct": 0.650034
+ },
+ "07350000": {
+  "acs_total_population": 23896,
+  "_pop_2020": 23924,
+  "_pop_density_per_sqmi": 299.309,
+  "_area_sqmi": 79.930768,
+  "_member_count": 3,
+  "_member_towns": [
+   "Ashby",
+   "Pepperell",
+   "Townsend"
+  ],
+  "acs_median_household_income": 122230,
+  "acs_foreign_born_pct": 0.063986,
+  "acs_bachelors_plus_pct": 0.416431,
+  "acs_non_english_pct": 0.080065,
+  "acs_child_poverty_pct": 0.063208,
+  "acs_severe_rent_burden_pct": 0.370978
+ },
+ "07450000": {
+  "acs_total_population": 17990,
+  "_pop_2020": 17975,
+  "_pop_density_per_sqmi": 546.4112,
+  "_area_sqmi": 32.896473,
+  "_member_count": 3,
+  "_member_towns": [
+   "Groveland",
+   "Merrimac",
+   "West Newbury"
+  ],
+  "acs_median_household_income": 141917,
+  "acs_foreign_born_pct": 0.038577,
+  "acs_bachelors_plus_pct": 0.476047,
+  "acs_non_english_pct": 0.04719,
+  "acs_child_poverty_pct": 0.052313,
+  "acs_severe_rent_burden_pct": 0.522827
+ },
+ "07500000": {
+  "acs_total_population": 6465,
+  "_pop_2020": 6482,
+  "_pop_density_per_sqmi": 56.8787,
+  "_area_sqmi": 113.961761,
+  "_member_count": 4,
+  "_member_towns": [
+   "Bernardston",
+   "Leyden",
+   "Northfield",
+   "Warwick"
+  ],
+  "acs_median_household_income": 94034,
+  "acs_foreign_born_pct": 0.032792,
+  "acs_bachelors_plus_pct": 0.389517,
+  "acs_non_english_pct": 0.042447,
+  "acs_child_poverty_pct": 0.076636,
+  "acs_severe_rent_burden_pct": 0.414883
+ },
+ "07530000": {
+  "acs_total_population": 15093,
+  "_pop_2020": 15372,
+  "_pop_density_per_sqmi": 91.0879,
+  "_area_sqmi": 168.759982,
+  "_member_count": 5,
+  "_member_towns": [
+   "Barre",
+   "Hardwick",
+   "Hubbardston",
+   "New Braintree",
+   "Oakham"
+  ],
+  "acs_median_household_income": 95298,
+  "acs_foreign_born_pct": 0.038362,
+  "acs_bachelors_plus_pct": 0.317948,
+  "acs_non_english_pct": 0.034587,
+  "acs_child_poverty_pct": 0.110138,
+  "acs_severe_rent_burden_pct": 0.382075
+ },
+ "07650000": {
+  "acs_total_population": 7654,
+  "_pop_2020": 7808,
+  "_pop_density_per_sqmi": 50.8265,
+  "_area_sqmi": 153.620559,
+  "_member_count": 5,
+  "_member_towns": [
+   "Alford",
+   "Egremont",
+   "Monterey",
+   "New Marlborough",
+   "Sheffield"
+  ],
+  "acs_median_household_income": 96607,
+  "acs_foreign_born_pct": 0.050039,
+  "acs_bachelors_plus_pct": 0.474248,
+  "acs_non_english_pct": 0.056644,
+  "acs_child_poverty_pct": 0.064841,
+  "acs_severe_rent_burden_pct": 0.42175
+ },
+ "07660000": {
+  "acs_total_population": 9697,
+  "_pop_2020": 9703,
+  "_pop_density_per_sqmi": 151.2392,
+  "_area_sqmi": 64.156652,
+  "_member_count": 2,
+  "_member_towns": [
+   "Southwick",
+   "Tolland"
+  ],
+  "acs_median_household_income": 108717,
+  "acs_foreign_born_pct": 0.033412,
+  "acs_bachelors_plus_pct": 0.361175,
+  "acs_non_english_pct": 0.062183,
+  "acs_child_poverty_pct": 0.061457,
+  "acs_severe_rent_burden_pct": 0.513964
+ },
+ "07670000": {
+  "acs_total_population": 11961,
+  "_pop_2020": 11992,
+  "_pop_density_per_sqmi": 354.4025,
+  "_area_sqmi": 33.837228,
+  "_member_count": 1,
+  "_member_towns": [
+   "Spencer"
+  ],
+  "acs_median_household_income": 79086,
+  "acs_foreign_born_pct": 0.031352,
+  "acs_bachelors_plus_pct": 0.274551,
+  "acs_non_english_pct": 0.048241,
+  "acs_child_poverty_pct": 0.076736,
+  "acs_severe_rent_burden_pct": 0.453631
+ },
+ "07700000": {
+  "acs_total_population": 21528,
+  "_pop_2020": 21435,
+  "_pop_density_per_sqmi": 179.3746,
+  "_area_sqmi": 119.49851,
+  "_member_count": 5,
+  "_member_towns": [
+   "Brimfield",
+   "Brookfield",
+   "Holland",
+   "Sturbridge",
+   "Wales"
+  ],
+  "acs_median_household_income": 107238,
+  "acs_foreign_born_pct": 0.037022,
+  "acs_bachelors_plus_pct": 0.395123,
+  "acs_non_english_pct": 0.052681,
+  "acs_child_poverty_pct": 0.045676,
+  "acs_severe_rent_burden_pct": 0.356101
+ },
+ "07730000": {
+  "acs_total_population": 22160,
+  "_pop_2020": 22113,
+  "_pop_density_per_sqmi": 380.2017,
+  "_area_sqmi": 58.161239,
+  "_member_count": 3,
+  "_member_towns": [
+   "Newbury",
+   "Rowley",
+   "Salisbury"
+  ],
+  "acs_median_household_income": 129003,
+  "acs_foreign_born_pct": 0.035334,
+  "acs_bachelors_plus_pct": 0.492183,
+  "acs_non_english_pct": 0.0555,
+  "acs_child_poverty_pct": 0.03986,
+  "acs_severe_rent_burden_pct": 0.482796
+ },
+ "07740000": {
+  "acs_total_population": 5258,
+  "_pop_2020": 5206,
+  "_pop_density_per_sqmi": 99.6461,
+  "_area_sqmi": 52.244914,
+  "_member_count": 3,
+  "_member_towns": [
+   "Aquinnah",
+   "Chilmark",
+   "West Tisbury"
+  ],
+  "acs_median_household_income": 175513,
+  "acs_foreign_born_pct": 0.06086,
+  "acs_bachelors_plus_pct": 0.624107,
+  "acs_non_english_pct": 0.089225,
+  "acs_child_poverty_pct": 0.042545,
+  "acs_severe_rent_burden_pct": 0.277885
+ },
+ "07750000": {
+  "acs_total_population": 45694,
+  "_pop_2020": 45438,
+  "_pop_density_per_sqmi": 293.356,
+  "_area_sqmi": 154.890286,
+  "_member_count": 5,
+  "_member_towns": [
+   "Holden",
+   "Paxton",
+   "Princeton",
+   "Rutland",
+   "Sterling"
+  ],
+  "acs_median_household_income": 143797,
+  "acs_foreign_born_pct": 0.073839,
+  "acs_bachelors_plus_pct": 0.536046,
+  "acs_non_english_pct": 0.106262,
+  "acs_child_poverty_pct": 0.034277,
+  "acs_severe_rent_burden_pct": 0.359167
+ },
+ "07780000": {
+  "acs_total_population": 8811,
+  "_pop_2020": 8808,
+  "_pop_density_per_sqmi": 181.5132,
+  "_area_sqmi": 48.525401,
+  "_member_count": 2,
+  "_member_towns": [
+   "Warren",
+   "West Brookfield"
+  ],
+  "acs_median_household_income": 71978,
+  "acs_foreign_born_pct": 0.070934,
+  "acs_bachelors_plus_pct": 0.324582,
+  "acs_non_english_pct": 0.106184,
+  "acs_child_poverty_pct": 0.089967,
+  "acs_severe_rent_burden_pct": 0.327237
+ },
+ "07800000": {
+  "acs_total_population": 25830,
+  "_pop_2020": 25760,
+  "_pop_density_per_sqmi": 1141.6049,
+  "_area_sqmi": 22.564724,
+  "_member_count": 2,
+  "_member_towns": [
+   "Hanson",
+   "Whitman"
+  ],
+  "acs_median_household_income": 109480,
+  "acs_foreign_born_pct": 0.05513,
+  "acs_bachelors_plus_pct": 0.331911,
+  "acs_non_english_pct": 0.072597,
+  "acs_child_poverty_pct": 0.054923,
+  "acs_severe_rent_burden_pct": 0.546876
+ },
+ "06400000": {
+  "acs_total_population": 23435,
+  "_pop_2020": 23728,
+  "_pop_density_per_sqmi": 575.9245,
+  "_area_sqmi": 41.199847,
+  "_member_count": 2,
+  "_member_towns": [
+   "Carlisle",
+   "Concord"
+  ],
+  "acs_median_household_income": 220692,
+  "acs_foreign_born_pct": 0.107531,
+  "acs_bachelors_plus_pct": 0.799879,
+  "acs_non_english_pct": 0.123236,
+  "acs_child_poverty_pct": 0.0243,
+  "acs_severe_rent_burden_pct": 0.512654
+ },
+ "06600000": {
+  "acs_total_population": 26852,
+  "_pop_2020": 25943,
+  "_pop_density_per_sqmi": 345.2539,
+  "_area_sqmi": 75.141812,
+  "_member_count": 4,
+  "_member_towns": [
+   "Brewster",
+   "Eastham",
+   "Orleans",
+   "Wellfleet"
+  ],
+  "acs_median_household_income": 94127,
+  "acs_foreign_born_pct": 0.064949,
+  "acs_bachelors_plus_pct": 0.547097,
+  "acs_non_english_pct": 0.068058,
+  "acs_child_poverty_pct": 0.09707,
+  "acs_severe_rent_burden_pct": 0.483138
+ },
+ "06900000": {
+  "acs_total_population": 33733,
+  "_pop_2020": 33785,
+  "_pop_density_per_sqmi": 684.9083,
+  "_area_sqmi": 49.327775,
+  "_member_count": 3,
+  "_member_towns": [
+   "Norfolk",
+   "Plainville",
+   "Wrentham"
+  ],
+  "acs_median_household_income": 149563,
+  "acs_foreign_born_pct": 0.073222,
+  "acs_bachelors_plus_pct": 0.521698,
+  "acs_non_english_pct": 0.089413,
+  "acs_child_poverty_pct": 0.051861,
+  "acs_severe_rent_burden_pct": 0.467593
+ },
+ "06950000": {
+  "acs_total_population": 26013,
+  "_pop_2020": 25948,
+  "_pop_density_per_sqmi": 655.3987,
+  "_area_sqmi": 39.591169,
+  "_member_count": 2,
+  "_member_towns": [
+   "Lincoln",
+   "Sudbury"
+  ],
+  "acs_median_household_income": 220246,
+  "acs_foreign_born_pct": 0.125437,
+  "acs_bachelors_plus_pct": 0.829007,
+  "acs_non_english_pct": 0.13331,
+  "acs_child_poverty_pct": 0.029253,
+  "acs_severe_rent_burden_pct": 0.411367
+ },
+ "07050000": {
+  "acs_total_population": 24417,
+  "_pop_2020": 24551,
+  "_pop_density_per_sqmi": 476.7066,
+  "_area_sqmi": 51.50128,
+  "_member_count": 3,
+  "_member_towns": [
+   "Boxford",
+   "Middleton",
+   "Topsfield"
+  ],
+  "acs_median_household_income": 179923,
+  "acs_foreign_born_pct": 0.079862,
+  "acs_bachelors_plus_pct": 0.593501,
+  "acs_non_english_pct": 0.110167,
+  "acs_child_poverty_pct": 0.040791,
+  "acs_severe_rent_burden_pct": 0.455054
+ },
+ "07300000": {
+  "acs_total_population": 26135,
+  "_pop_2020": 26191,
+  "_pop_density_per_sqmi": 768.229,
+  "_area_sqmi": 34.092699,
+  "_member_count": 2,
+  "_member_towns": [
+   "Northborough",
+   "Southborough"
+  ],
+  "acs_median_household_income": 181408,
+  "acs_foreign_born_pct": 0.187067,
+  "acs_bachelors_plus_pct": 0.707073,
+  "acs_non_english_pct": 0.205604,
+  "acs_child_poverty_pct": 0.036938,
+  "acs_severe_rent_burden_pct": 0.407139
+ },
+ "07630000": {
+  "acs_total_population": 25035,
+  "_pop_2020": 25067,
+  "_pop_density_per_sqmi": 1016.3045,
+  "_area_sqmi": 24.664852,
+  "_member_count": 2,
+  "_member_towns": [
+   "Berkley",
+   "Somerset"
+  ],
+  "acs_median_household_income": 115017,
+  "acs_foreign_born_pct": 0.056361,
+  "acs_bachelors_plus_pct": 0.371032,
+  "acs_non_english_pct": 0.081098,
+  "acs_child_poverty_pct": 0.043337,
+  "acs_severe_rent_burden_pct": 0.34912
+ }
+}

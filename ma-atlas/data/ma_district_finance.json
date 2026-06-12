@@ -1,0 +1,2522 @@
+{
+ "06030000": {
+  "foundation_budget": 15216793.0,
+  "required_nss": 16115660.0,
+  "actual_nss": 18092968.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.19,
+  "in_district_pp_exp": 22450.0,
+  "enrollment_fte": 1239.9
+ },
+ "01670000": {
+  "foundation_budget": 41585192.0,
+  "required_nss": 48992878.0,
+  "actual_nss": 62647055.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.51,
+  "in_district_pp_exp": 21606.0,
+  "enrollment_fte": 3457.4
+ },
+ "01810000": {
+  "foundation_budget": 89379135.0,
+  "required_nss": 89540204.0,
+  "actual_nss": 94221811.0,
+  "nss_pct_of_required": 1.05,
+  "nss_pct_of_foundation": 1.05,
+  "in_district_pp_exp": 18016.0,
+  "enrollment_fte": 7092.0
+ },
+ "06650000": {
+  "foundation_budget": 30046776.0,
+  "required_nss": 32305347.0,
+  "actual_nss": 36566528.0,
+  "nss_pct_of_required": 1.13,
+  "nss_pct_of_foundation": 1.22,
+  "in_district_pp_exp": 16493.0,
+  "enrollment_fte": 2800.4
+ },
+ "00500000": {
+  "foundation_budget": 37413396.0,
+  "required_nss": 37479187.0,
+  "actual_nss": 57047113.0,
+  "nss_pct_of_required": 1.52,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 20971.0,
+  "enrollment_fte": 3352.4
+ },
+ "02950000": {
+  "foundation_budget": 35982818.0,
+  "required_nss": 43109720.0,
+  "actual_nss": 59994802.0,
+  "nss_pct_of_required": 1.39,
+  "nss_pct_of_foundation": 1.67,
+  "in_district_pp_exp": 20974.0,
+  "enrollment_fte": 3423.3
+ },
+ "00080000": {
+  "foundation_budget": 12765298.0,
+  "required_nss": 16043246.0,
+  "actual_nss": 27263836.0,
+  "nss_pct_of_required": 1.7,
+  "nss_pct_of_foundation": 2.14,
+  "in_district_pp_exp": 31268.0,
+  "enrollment_fte": 1135.4
+ },
+ "02120000": {
+  "foundation_budget": 45683012.0,
+  "required_nss": 49807109.0,
+  "actual_nss": 56550193.0,
+  "nss_pct_of_required": 1.14,
+  "nss_pct_of_foundation": 1.24,
+  "in_district_pp_exp": 16596.0,
+  "enrollment_fte": 4149.6
+ },
+ "01030000": {
+  "foundation_budget": 30713287.0,
+  "required_nss": 31404375.0,
+  "actual_nss": 32239337.0,
+  "nss_pct_of_required": 1.03,
+  "nss_pct_of_foundation": 1.05,
+  "in_district_pp_exp": 17987.0,
+  "enrollment_fte": 2681.4
+ },
+ "02650000": {
+  "foundation_budget": 22858887.0,
+  "required_nss": 23281396.0,
+  "actual_nss": 34669413.0,
+  "nss_pct_of_required": 1.49,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 18680.0,
+  "enrollment_fte": 2118.5
+ },
+ "07750000": {
+  "foundation_budget": 73176177.0,
+  "required_nss": 74964441.0,
+  "actual_nss": 95087530.0,
+  "nss_pct_of_required": 1.27,
+  "nss_pct_of_foundation": 1.3,
+  "in_district_pp_exp": 16883.0,
+  "enrollment_fte": 6937.8
+ },
+ "00180000": {
+  "foundation_budget": 7016240.0,
+  "required_nss": 7155527.0,
+  "actual_nss": 11831479.0,
+  "nss_pct_of_required": 1.65,
+  "nss_pct_of_foundation": 1.69,
+  "in_district_pp_exp": 20350.0,
+  "enrollment_fte": 771.4
+ },
+ "01990000": {
+  "foundation_budget": 62757966.0,
+  "required_nss": 62967935.0,
+  "actual_nss": 112761387.0,
+  "nss_pct_of_required": 1.79,
+  "nss_pct_of_foundation": 1.8,
+  "in_district_pp_exp": 23671.0,
+  "enrollment_fte": 5666.6
+ },
+ "02100000": {
+  "foundation_budget": 30678559.0,
+  "required_nss": 32947860.0,
+  "actual_nss": 43691268.0,
+  "nss_pct_of_required": 1.33,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 21427.0,
+  "enrollment_fte": 2846.2
+ },
+ "00310000": {
+  "foundation_budget": 52245954.0,
+  "required_nss": 62592586.0,
+  "actual_nss": 83513914.0,
+  "nss_pct_of_required": 1.33,
+  "nss_pct_of_foundation": 1.6,
+  "in_district_pp_exp": 19744.0,
+  "enrollment_fte": 5159.7
+ },
+ "06320000": {
+  "foundation_budget": 1138618.0,
+  "required_nss": 1563909.0,
+  "actual_nss": 2513132.0,
+  "nss_pct_of_required": 1.61,
+  "nss_pct_of_foundation": 2.21,
+  "in_district_pp_exp": 22180.0,
+  "enrollment_fte": 151.6
+ },
+ "01380000": {
+  "foundation_budget": 10312156.0,
+  "required_nss": 12214154.0,
+  "actual_nss": 15465381.0,
+  "nss_pct_of_required": 1.27,
+  "nss_pct_of_foundation": 1.5,
+  "in_district_pp_exp": 18440.0,
+  "enrollment_fte": 1160.2
+ },
+ "02810000": {
+  "foundation_budget": 446524568.0,
+  "required_nss": 446524568.0,
+  "actual_nss": 446524575.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.0,
+  "in_district_pp_exp": 26613.0,
+  "enrollment_fte": 29467.9
+ },
+ "03140000": {
+  "foundation_budget": 33614343.0,
+  "required_nss": 33668638.0,
+  "actual_nss": 60560018.0,
+  "nss_pct_of_required": 1.8,
+  "nss_pct_of_foundation": 1.8,
+  "in_district_pp_exp": 25465.0,
+  "enrollment_fte": 2855.0
+ },
+ "03350000": {
+  "foundation_budget": 32473680.0,
+  "required_nss": 32514238.0,
+  "actual_nss": 57784065.0,
+  "nss_pct_of_required": 1.78,
+  "nss_pct_of_foundation": 1.78,
+  "in_district_pp_exp": 24325.0,
+  "enrollment_fte": 2904.0
+ },
+ "01490000": {
+  "foundation_budget": 234592261.0,
+  "required_nss": 245266148.0,
+  "actual_nss": 234004115.0,
+  "nss_pct_of_required": 0.95,
+  "nss_pct_of_foundation": 1.0,
+  "in_district_pp_exp": 23444.0,
+  "enrollment_fte": 15499.6
+ },
+ "00270000": {
+  "foundation_budget": 7950532.0,
+  "required_nss": 8274710.0,
+  "actual_nss": 9744962.0,
+  "nss_pct_of_required": 1.18,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 16054.0,
+  "enrollment_fte": 861.9
+ },
+ "01420000": {
+  "foundation_budget": 10312533.0,
+  "required_nss": 12407416.0,
+  "actual_nss": 19782818.0,
+  "nss_pct_of_required": 1.59,
+  "nss_pct_of_foundation": 1.92,
+  "in_district_pp_exp": 31139.0,
+  "enrollment_fte": 791.3
+ },
+ "02850000": {
+  "foundation_budget": 44927626.0,
+  "required_nss": 45081027.0,
+  "actual_nss": 57703817.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.28,
+  "in_district_pp_exp": 19113.0,
+  "enrollment_fte": 4015.8
+ },
+ "03160000": {
+  "foundation_budget": 25360639.0,
+  "required_nss": 26213658.0,
+  "actual_nss": 29331662.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.16,
+  "in_district_pp_exp": 22800.0,
+  "enrollment_fte": 1975.6
+ },
+ "01610000": {
+  "foundation_budget": 28842661.0,
+  "required_nss": 30544988.0,
+  "actual_nss": 40811969.0,
+  "nss_pct_of_required": 1.34,
+  "nss_pct_of_foundation": 1.41,
+  "in_district_pp_exp": 19928.0,
+  "enrollment_fte": 2376.6
+ },
+ "03210000": {
+  "foundation_budget": 42200577.0,
+  "required_nss": 43157465.0,
+  "actual_nss": 66713938.0,
+  "nss_pct_of_required": 1.55,
+  "nss_pct_of_foundation": 1.58,
+  "in_district_pp_exp": 20534.0,
+  "enrollment_fte": 3952.5
+ },
+ "02360000": {
+  "foundation_budget": 79110405.0,
+  "required_nss": 79110405.0,
+  "actual_nss": 94094558.0,
+  "nss_pct_of_required": 1.19,
+  "nss_pct_of_foundation": 1.19,
+  "in_district_pp_exp": 23737.0,
+  "enrollment_fte": 5805.5
+ },
+ "01710000": {
+  "foundation_budget": 43275872.0,
+  "required_nss": 50481178.0,
+  "actual_nss": 55271632.0,
+  "nss_pct_of_required": 1.09,
+  "nss_pct_of_foundation": 1.28,
+  "in_district_pp_exp": 19487.0,
+  "enrollment_fte": 3769.2
+ },
+ "02090000": {
+  "foundation_budget": 17897202.0,
+  "required_nss": 18876463.0,
+  "actual_nss": 22317490.0,
+  "nss_pct_of_required": 1.18,
+  "nss_pct_of_foundation": 1.25,
+  "in_district_pp_exp": 26258.0,
+  "enrollment_fte": 1447.4
+ },
+ "01590000": {
+  "foundation_budget": 29129978.0,
+  "required_nss": 29782664.0,
+  "actual_nss": 44022344.0,
+  "nss_pct_of_required": 1.48,
+  "nss_pct_of_foundation": 1.51,
+  "in_district_pp_exp": 17708.0,
+  "enrollment_fte": 2826.5
+ },
+ "06550000": {
+  "foundation_budget": 13732497.0,
+  "required_nss": 13742823.0,
+  "actual_nss": 23534390.0,
+  "nss_pct_of_required": 1.71,
+  "nss_pct_of_foundation": 1.71,
+  "in_district_pp_exp": 25318.0,
+  "enrollment_fte": 1152.5
+ },
+ "01510000": {
+  "foundation_budget": 17918102.0,
+  "required_nss": 18721234.0,
+  "actual_nss": 20958759.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.17,
+  "in_district_pp_exp": 19329.0,
+  "enrollment_fte": 1497.3
+ },
+ "03500000": {
+  "foundation_budget": 8698912.0,
+  "required_nss": 10994415.0,
+  "actual_nss": 15986154.0,
+  "nss_pct_of_required": 1.45,
+  "nss_pct_of_foundation": 1.84,
+  "in_district_pp_exp": 19546.0,
+  "enrollment_fte": 1002.4
+ },
+ "02740000": {
+  "foundation_budget": 77023977.0,
+  "required_nss": 83009999.0,
+  "actual_nss": 111637722.0,
+  "nss_pct_of_required": 1.34,
+  "nss_pct_of_foundation": 1.45,
+  "in_district_pp_exp": 27410.0,
+  "enrollment_fte": 5355.6
+ },
+ "01330000": {
+  "foundation_budget": 17262299.0,
+  "required_nss": 17262299.0,
+  "actual_nss": 19873943.0,
+  "nss_pct_of_required": 1.15,
+  "nss_pct_of_foundation": 1.15,
+  "in_district_pp_exp": 17567.0,
+  "enrollment_fte": 1422.8
+ },
+ "01100000": {
+  "foundation_budget": 33113667.0,
+  "required_nss": 33731215.0,
+  "actual_nss": 45733197.0,
+  "nss_pct_of_required": 1.36,
+  "nss_pct_of_foundation": 1.38,
+  "in_district_pp_exp": 16100.0,
+  "enrollment_fte": 3188.8
+ },
+ "03060000": {
+  "foundation_budget": 1543004.0,
+  "required_nss": 1569403.0,
+  "actual_nss": 2074122.0,
+  "nss_pct_of_required": 1.32,
+  "nss_pct_of_foundation": 1.34,
+  "in_district_pp_exp": 32601.0,
+  "enrollment_fte": 122.1
+ },
+ "02180000": {
+  "foundation_budget": 26330388.0,
+  "required_nss": 31847899.0,
+  "actual_nss": 38154905.0,
+  "nss_pct_of_required": 1.2,
+  "nss_pct_of_foundation": 1.45,
+  "in_district_pp_exp": 19457.0,
+  "enrollment_fte": 2496.8
+ },
+ "07450000": {
+  "foundation_budget": 24481014.0,
+  "required_nss": 31777054.0,
+  "actual_nss": 36513796.0,
+  "nss_pct_of_required": 1.15,
+  "nss_pct_of_foundation": 1.49,
+  "in_district_pp_exp": 19412.0,
+  "enrollment_fte": 2369.8
+ },
+ "01650000": {
+  "foundation_budget": 97816216.0,
+  "required_nss": 99196109.0,
+  "actual_nss": 99262327.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.01,
+  "in_district_pp_exp": 20346.0,
+  "enrollment_fte": 7014.3
+ },
+ "01370000": {
+  "foundation_budget": 94346220.0,
+  "required_nss": 94945262.0,
+  "actual_nss": 94944262.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.01,
+  "in_district_pp_exp": 24710.0,
+  "enrollment_fte": 6164.7
+ },
+ "01570000": {
+  "foundation_budget": 6357796.0,
+  "required_nss": 6436691.0,
+  "actual_nss": 14155271.0,
+  "nss_pct_of_required": 2.2,
+  "nss_pct_of_foundation": 2.23,
+  "in_district_pp_exp": 31136.0,
+  "enrollment_fte": 1070.8
+ },
+ "03070000": {
+  "foundation_budget": 40749021.0,
+  "required_nss": 41736532.0,
+  "actual_nss": 58914198.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.45,
+  "in_district_pp_exp": 19286.0,
+  "enrollment_fte": 3739.6
+ },
+ "02260000": {
+  "foundation_budget": 18679880.0,
+  "required_nss": 20694202.0,
+  "actual_nss": 21967881.0,
+  "nss_pct_of_required": 1.06,
+  "nss_pct_of_foundation": 1.18,
+  "in_district_pp_exp": 18176.0,
+  "enrollment_fte": 1631.6
+ },
+ "02920000": {
+  "foundation_budget": 23940769.0,
+  "required_nss": 23940769.0,
+  "actual_nss": 26523272.0,
+  "nss_pct_of_required": 1.11,
+  "nss_pct_of_foundation": 1.11,
+  "in_district_pp_exp": 17343.0,
+  "enrollment_fte": 2106.5
+ },
+ "00030000": {
+  "foundation_budget": 13489100.0,
+  "required_nss": 14279819.0,
+  "actual_nss": 16001958.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.19,
+  "in_district_pp_exp": 16414.0,
+  "enrollment_fte": 1232.5
+ },
+ "03370000": {
+  "foundation_budget": 961185.0,
+  "required_nss": 1042127.0,
+  "actual_nss": 2135190.0,
+  "nss_pct_of_required": 2.05,
+  "nss_pct_of_foundation": 2.22,
+  "in_district_pp_exp": 23593.0,
+  "enrollment_fte": 136.3
+ },
+ "01850000": {
+  "foundation_budget": 58526188.0,
+  "required_nss": 58526188.0,
+  "actual_nss": 68252483.0,
+  "nss_pct_of_required": 1.17,
+  "nss_pct_of_foundation": 1.17,
+  "in_district_pp_exp": 20980.0,
+  "enrollment_fte": 4914.4
+ },
+ "01860000": {
+  "foundation_budget": 19104093.0,
+  "required_nss": 19976867.0,
+  "actual_nss": 27626692.0,
+  "nss_pct_of_required": 1.38,
+  "nss_pct_of_foundation": 1.45,
+  "in_district_pp_exp": 19991.0,
+  "enrollment_fte": 1746.8
+ },
+ "00770000": {
+  "foundation_budget": 12319421.0,
+  "required_nss": 16284767.0,
+  "actual_nss": 17509731.0,
+  "nss_pct_of_required": 1.08,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 18572.0,
+  "enrollment_fte": 1206.6
+ },
+ "00450000": {
+  "foundation_budget": 2739833.0,
+  "required_nss": 2862210.0,
+  "actual_nss": 3545680.0,
+  "nss_pct_of_required": 1.24,
+  "nss_pct_of_foundation": 1.29,
+  "in_district_pp_exp": 15887.0,
+  "enrollment_fte": 314.4
+ },
+ "01440000": {
+  "foundation_budget": 18360233.0,
+  "required_nss": 18527082.0,
+  "actual_nss": 31070249.0,
+  "nss_pct_of_required": 1.68,
+  "nss_pct_of_foundation": 1.69,
+  "in_district_pp_exp": 24813.0,
+  "enrollment_fte": 1673.8
+ },
+ "02750000": {
+  "foundation_budget": 5095671.0,
+  "required_nss": 6077774.0,
+  "actual_nss": 7215908.0,
+  "nss_pct_of_required": 1.19,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 16533.0,
+  "enrollment_fte": 549.1
+ },
+ "00630000": {
+  "foundation_budget": 2139256.0,
+  "required_nss": 2541177.0,
+  "actual_nss": 3121740.0,
+  "nss_pct_of_required": 1.23,
+  "nss_pct_of_foundation": 1.46,
+  "in_district_pp_exp": 15079.0,
+  "enrollment_fte": 262.4
+ },
+ "00090000": {
+  "foundation_budget": 64739542.0,
+  "required_nss": 65247254.0,
+  "actual_nss": 109284941.0,
+  "nss_pct_of_required": 1.67,
+  "nss_pct_of_foundation": 1.69,
+  "in_district_pp_exp": 23543.0,
+  "enrollment_fte": 5582.3
+ },
+ "01750000": {
+  "foundation_budget": 26424181.0,
+  "required_nss": 28161684.0,
+  "actual_nss": 42301196.0,
+  "nss_pct_of_required": 1.5,
+  "nss_pct_of_foundation": 1.6,
+  "in_district_pp_exp": 20108.0,
+  "enrollment_fte": 2507.3
+ },
+ "02980000": {
+  "foundation_budget": 5583547.0,
+  "required_nss": 5861709.0,
+  "actual_nss": 10861290.0,
+  "nss_pct_of_required": 1.85,
+  "nss_pct_of_foundation": 1.95,
+  "in_district_pp_exp": 22248.0,
+  "enrollment_fte": 624.7
+ },
+ "06800000": {
+  "foundation_budget": 31633421.0,
+  "required_nss": 33978935.0,
+  "actual_nss": 44151622.0,
+  "nss_pct_of_required": 1.3,
+  "nss_pct_of_foundation": 1.4,
+  "in_district_pp_exp": 18435.0,
+  "enrollment_fte": 2950.4
+ },
+ "00950000": {
+  "foundation_budget": 179465810.0,
+  "required_nss": 182699137.0,
+  "actual_nss": 181022709.0,
+  "nss_pct_of_required": 0.99,
+  "nss_pct_of_foundation": 1.01,
+  "in_district_pp_exp": 23981.0,
+  "enrollment_fte": 13005.7
+ },
+ "01530000": {
+  "foundation_budget": 81402160.0,
+  "required_nss": 81408337.0,
+  "actual_nss": 81685489.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.0,
+  "in_district_pp_exp": 18860.0,
+  "enrollment_fte": 6393.9
+ },
+ "02530000": {
+  "foundation_budget": 580640.0,
+  "required_nss": 620093.0,
+  "actual_nss": 2065147.0,
+  "nss_pct_of_required": 3.33,
+  "nss_pct_of_foundation": 3.56,
+  "in_district_pp_exp": 34298.0,
+  "enrollment_fte": 85.9
+ },
+ "01270000": {
+  "foundation_budget": 3877179.0,
+  "required_nss": 4054949.0,
+  "actual_nss": 6374381.0,
+  "nss_pct_of_required": 1.57,
+  "nss_pct_of_foundation": 1.64,
+  "in_district_pp_exp": 24753.0,
+  "enrollment_fte": 412.1
+ },
+ "01700000": {
+  "foundation_budget": 68784011.0,
+  "required_nss": 69331528.0,
+  "actual_nss": 86178296.0,
+  "nss_pct_of_required": 1.24,
+  "nss_pct_of_foundation": 1.25,
+  "in_district_pp_exp": 20142.0,
+  "enrollment_fte": 5571.9
+ },
+ "00970000": {
+  "foundation_budget": 80948313.0,
+  "required_nss": 80950249.0,
+  "actual_nss": 81150776.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.0,
+  "in_district_pp_exp": 20866.0,
+  "enrollment_fte": 5895.3
+ },
+ "02210000": {
+  "foundation_budget": 5250477.0,
+  "required_nss": 5252037.0,
+  "actual_nss": 12120018.0,
+  "nss_pct_of_required": 2.31,
+  "nss_pct_of_foundation": 2.31,
+  "in_district_pp_exp": 30814.0,
+  "enrollment_fte": 458.2
+ },
+ "00610000": {
+  "foundation_budget": 103803922.0,
+  "required_nss": 103803922.0,
+  "actual_nss": 105474862.0,
+  "nss_pct_of_required": 1.02,
+  "nss_pct_of_foundation": 1.02,
+  "in_district_pp_exp": 22865.0,
+  "enrollment_fte": 7529.7
+ },
+ "02430000": {
+  "foundation_budget": 138447528.0,
+  "required_nss": 138467853.0,
+  "actual_nss": 164430885.0,
+  "nss_pct_of_required": 1.19,
+  "nss_pct_of_foundation": 1.19,
+  "in_district_pp_exp": 20257.0,
+  "enrollment_fte": 10093.8
+ },
+ "01000000": {
+  "foundation_budget": 124104569.0,
+  "required_nss": 124235874.0,
+  "actual_nss": 181461731.0,
+  "nss_pct_of_required": 1.46,
+  "nss_pct_of_foundation": 1.46,
+  "in_district_pp_exp": 23623.0,
+  "enrollment_fte": 9874.0
+ },
+ "03490000": {
+  "foundation_budget": 1188970.0,
+  "required_nss": 1340215.0,
+  "actual_nss": 1615558.0,
+  "nss_pct_of_required": 1.21,
+  "nss_pct_of_foundation": 1.36,
+  "in_district_pp_exp": 22986.0,
+  "enrollment_fte": 139.8
+ },
+ "00670000": {
+  "foundation_budget": 21236752.0,
+  "required_nss": 21318091.0,
+  "actual_nss": 44273390.0,
+  "nss_pct_of_required": 2.08,
+  "nss_pct_of_foundation": 2.08,
+  "in_district_pp_exp": 26925.0,
+  "enrollment_fte": 2011.6
+ },
+ "02900000": {
+  "foundation_budget": 13690364.0,
+  "required_nss": 16609112.0,
+  "actual_nss": 20021114.0,
+  "nss_pct_of_required": 1.21,
+  "nss_pct_of_foundation": 1.46,
+  "in_district_pp_exp": 18712.0,
+  "enrollment_fte": 1381.6
+ },
+ "07250000": {
+  "foundation_budget": 34773057.0,
+  "required_nss": 34777992.0,
+  "actual_nss": 45420592.0,
+  "nss_pct_of_required": 1.31,
+  "nss_pct_of_foundation": 1.31,
+  "in_district_pp_exp": 21352.0,
+  "enrollment_fte": 3179.7
+ },
+ "01180000": {
+  "foundation_budget": 6881456.0,
+  "required_nss": 6915659.0,
+  "actual_nss": 8954094.0,
+  "nss_pct_of_required": 1.29,
+  "nss_pct_of_foundation": 1.3,
+  "in_district_pp_exp": 17023.0,
+  "enrollment_fte": 614.7
+ },
+ "01600000": {
+  "foundation_budget": 232660515.0,
+  "required_nss": 232665678.0,
+  "actual_nss": 241290288.0,
+  "nss_pct_of_required": 1.04,
+  "nss_pct_of_foundation": 1.04,
+  "in_district_pp_exp": 22212.0,
+  "enrollment_fte": 17133.9
+ },
+ "01740000": {
+  "foundation_budget": 14868952.0,
+  "required_nss": 16083653.0,
+  "actual_nss": 26494490.0,
+  "nss_pct_of_required": 1.65,
+  "nss_pct_of_foundation": 1.78,
+  "in_district_pp_exp": 23907.0,
+  "enrollment_fte": 1384.8
+ },
+ "02200000": {
+  "foundation_budget": 43678903.0,
+  "required_nss": 43819023.0,
+  "actual_nss": 64607277.0,
+  "nss_pct_of_required": 1.47,
+  "nss_pct_of_foundation": 1.48,
+  "in_district_pp_exp": 21056.0,
+  "enrollment_fte": 3764.0
+ },
+ "02520000": {
+  "foundation_budget": 6998375.0,
+  "required_nss": 7293605.0,
+  "actual_nss": 17227233.0,
+  "nss_pct_of_required": 2.36,
+  "nss_pct_of_foundation": 2.46,
+  "in_district_pp_exp": 28232.0,
+  "enrollment_fte": 723.5
+ },
+ "02080000": {
+  "foundation_budget": 10190817.0,
+  "required_nss": 11827898.0,
+  "actual_nss": 15708135.0,
+  "nss_pct_of_required": 1.33,
+  "nss_pct_of_foundation": 1.54,
+  "in_district_pp_exp": 18258.0,
+  "enrollment_fte": 1077.9
+ },
+ "00940000": {
+  "foundation_budget": 20710204.0,
+  "required_nss": 20975457.0,
+  "actual_nss": 23535014.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.14,
+  "in_district_pp_exp": 17287.0,
+  "enrollment_fte": 1821.6
+ },
+ "03310000": {
+  "foundation_budget": 16990670.0,
+  "required_nss": 18620895.0,
+  "actual_nss": 23281483.0,
+  "nss_pct_of_required": 1.25,
+  "nss_pct_of_foundation": 1.37,
+  "in_district_pp_exp": 18123.0,
+  "enrollment_fte": 1669.0
+ },
+ "01140000": {
+  "foundation_budget": 23851070.0,
+  "required_nss": 24139103.0,
+  "actual_nss": 28936710.0,
+  "nss_pct_of_required": 1.2,
+  "nss_pct_of_foundation": 1.21,
+  "in_district_pp_exp": 24237.0,
+  "enrollment_fte": 1869.4
+ },
+ "00680000": {
+  "foundation_budget": 926022.0,
+  "required_nss": 1392772.0,
+  "actual_nss": 2336119.0,
+  "nss_pct_of_required": 1.68,
+  "nss_pct_of_foundation": 2.52,
+  "in_district_pp_exp": 27058.0,
+  "enrollment_fte": 154.8
+ },
+ "06200000": {
+  "foundation_budget": 10696910.0,
+  "required_nss": 10727337.0,
+  "actual_nss": 16708006.0,
+  "nss_pct_of_required": 1.56,
+  "nss_pct_of_foundation": 1.56,
+  "in_district_pp_exp": 19832.0,
+  "enrollment_fte": 1166.3
+ },
+ "01680000": {
+  "foundation_budget": 30235711.0,
+  "required_nss": 30979769.0,
+  "actual_nss": 52502170.0,
+  "nss_pct_of_required": 1.69,
+  "nss_pct_of_foundation": 1.74,
+  "in_district_pp_exp": 20743.0,
+  "enrollment_fte": 2728.5
+ },
+ "00200000": {
+  "foundation_budget": 65238260.0,
+  "required_nss": 66987030.0,
+  "actual_nss": 87126785.0,
+  "nss_pct_of_required": 1.3,
+  "nss_pct_of_foundation": 1.34,
+  "in_district_pp_exp": 23044.0,
+  "enrollment_fte": 5474.4
+ },
+ "03270000": {
+  "foundation_budget": 1221028.0,
+  "required_nss": 1457511.0,
+  "actual_nss": 2657437.0,
+  "nss_pct_of_required": 1.82,
+  "nss_pct_of_foundation": 2.18,
+  "in_district_pp_exp": 27647.0,
+  "enrollment_fte": 123.8
+ },
+ "06000000": {
+  "foundation_budget": 57822928.0,
+  "required_nss": 62061953.0,
+  "actual_nss": 85549936.0,
+  "nss_pct_of_required": 1.38,
+  "nss_pct_of_foundation": 1.48,
+  "in_district_pp_exp": 20952.0,
+  "enrollment_fte": 5256.5
+ },
+ "00410000": {
+  "foundation_budget": 4895214.0,
+  "required_nss": 5063460.0,
+  "actual_nss": 9518534.0,
+  "nss_pct_of_required": 1.88,
+  "nss_pct_of_foundation": 1.94,
+  "in_district_pp_exp": 27588.0,
+  "enrollment_fte": 454.2
+ },
+ "07670000": {
+  "foundation_budget": 18910771.0,
+  "required_nss": 22885486.0,
+  "actual_nss": 22872992.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.21,
+  "in_district_pp_exp": 19133.0,
+  "enrollment_fte": 1677.4
+ },
+ "00890000": {
+  "foundation_budget": 5243885.0,
+  "required_nss": 5243885.0,
+  "actual_nss": 11460646.0,
+  "nss_pct_of_required": 2.19,
+  "nss_pct_of_foundation": 2.19,
+  "in_district_pp_exp": 33847.0,
+  "enrollment_fte": 442.6
+ },
+ "06580000": {
+  "foundation_budget": 38219798.0,
+  "required_nss": 42805149.0,
+  "actual_nss": 46945046.0,
+  "nss_pct_of_required": 1.1,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 16666.0,
+  "enrollment_fte": 3568.4
+ },
+ "06750000": {
+  "foundation_budget": 17836079.0,
+  "required_nss": 18506154.0,
+  "actual_nss": 32319914.0,
+  "nss_pct_of_required": 1.75,
+  "nss_pct_of_foundation": 1.81,
+  "in_district_pp_exp": 22303.0,
+  "enrollment_fte": 1714.3
+ },
+ "00010000": {
+  "foundation_budget": 26529796.0,
+  "required_nss": 26629510.0,
+  "actual_nss": 31762847.0,
+  "nss_pct_of_required": 1.19,
+  "nss_pct_of_foundation": 1.2,
+  "in_district_pp_exp": 17097.0,
+  "enrollment_fte": 2287.7
+ },
+ "06850000": {
+  "foundation_budget": 1114457.0,
+  "required_nss": 1265012.0,
+  "actual_nss": 1780193.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.6,
+  "in_district_pp_exp": 41169.0,
+  "enrollment_fte": 107.8
+ },
+ "02270000": {
+  "foundation_budget": 16709438.0,
+  "required_nss": 17746297.0,
+  "actual_nss": 19454849.0,
+  "nss_pct_of_required": 1.1,
+  "nss_pct_of_foundation": 1.16,
+  "in_district_pp_exp": 23155.0,
+  "enrollment_fte": 1233.8
+ },
+ "02290000": {
+  "foundation_budget": 74033831.0,
+  "required_nss": 74033831.0,
+  "actual_nss": 81644692.0,
+  "nss_pct_of_required": 1.1,
+  "nss_pct_of_foundation": 1.1,
+  "in_district_pp_exp": 19148.0,
+  "enrollment_fte": 6252.8
+ },
+ "01760000": {
+  "foundation_budget": 59164566.0,
+  "required_nss": 61086493.0,
+  "actual_nss": 86201585.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.46,
+  "in_district_pp_exp": 22631.0,
+  "enrollment_fte": 4624.0
+ },
+ "00960000": {
+  "foundation_budget": 36995294.0,
+  "required_nss": 37392327.0,
+  "actual_nss": 62674735.0,
+  "nss_pct_of_required": 1.68,
+  "nss_pct_of_foundation": 1.69,
+  "in_district_pp_exp": 25271.0,
+  "enrollment_fte": 3129.7
+ },
+ "01890000": {
+  "foundation_budget": 48097216.0,
+  "required_nss": 48454883.0,
+  "actual_nss": 66387423.0,
+  "nss_pct_of_required": 1.37,
+  "nss_pct_of_foundation": 1.38,
+  "in_district_pp_exp": 19134.0,
+  "enrollment_fte": 4404.1
+ },
+ "00250000": {
+  "foundation_budget": 24805883.0,
+  "required_nss": 26105176.0,
+  "actual_nss": 38007489.0,
+  "nss_pct_of_required": 1.46,
+  "nss_pct_of_foundation": 1.53,
+  "in_district_pp_exp": 20735.0,
+  "enrollment_fte": 2350.9
+ },
+ "02170000": {
+  "foundation_budget": 25122868.0,
+  "required_nss": 27947592.0,
+  "actual_nss": 41079691.0,
+  "nss_pct_of_required": 1.47,
+  "nss_pct_of_foundation": 1.64,
+  "in_district_pp_exp": 20475.0,
+  "enrollment_fte": 2378.9
+ },
+ "00860000": {
+  "foundation_budget": 19817458.0,
+  "required_nss": 21054596.0,
+  "actual_nss": 22685384.0,
+  "nss_pct_of_required": 1.08,
+  "nss_pct_of_foundation": 1.14,
+  "in_district_pp_exp": 17372.0,
+  "enrollment_fte": 1711.7
+ },
+ "00260000": {
+  "foundation_budget": 50694465.0,
+  "required_nss": 50716777.0,
+  "actual_nss": 71815400.0,
+  "nss_pct_of_required": 1.42,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 18266.0,
+  "enrollment_fte": 4574.8
+ },
+ "02140000": {
+  "foundation_budget": 24066340.0,
+  "required_nss": 28564448.0,
+  "actual_nss": 29515069.0,
+  "nss_pct_of_required": 1.03,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 17970.0,
+  "enrollment_fte": 2097.8
+ },
+ "06500000": {
+  "foundation_budget": 30297677.0,
+  "required_nss": 33888040.0,
+  "actual_nss": 40703768.0,
+  "nss_pct_of_required": 1.2,
+  "nss_pct_of_foundation": 1.34,
+  "in_district_pp_exp": 18208.0,
+  "enrollment_fte": 2683.6
+ },
+ "00480000": {
+  "foundation_budget": 40093789.0,
+  "required_nss": 40182108.0,
+  "actual_nss": 79159210.0,
+  "nss_pct_of_required": 1.97,
+  "nss_pct_of_foundation": 1.97,
+  "in_district_pp_exp": 25102.0,
+  "enrollment_fte": 3650.1
+ },
+ "02240000": {
+  "foundation_budget": 2121258.0,
+  "required_nss": 2185512.0,
+  "actual_nss": 5323025.0,
+  "nss_pct_of_required": 2.44,
+  "nss_pct_of_foundation": 2.51,
+  "in_district_pp_exp": 41826.0,
+  "enrollment_fte": 154.0
+ },
+ "02840000": {
+  "foundation_budget": 27721100.0,
+  "required_nss": 27997944.0,
+  "actual_nss": 40966032.0,
+  "nss_pct_of_required": 1.46,
+  "nss_pct_of_foundation": 1.48,
+  "in_district_pp_exp": 21111.0,
+  "enrollment_fte": 2538.2
+ },
+ "02490000": {
+  "foundation_budget": 1294267.0,
+  "required_nss": 1435779.0,
+  "actual_nss": 3567108.0,
+  "nss_pct_of_required": 2.48,
+  "nss_pct_of_foundation": 2.76,
+  "in_district_pp_exp": 26631.0,
+  "enrollment_fte": 210.1
+ },
+ "00570000": {
+  "foundation_budget": 114106348.0,
+  "required_nss": 114110343.0,
+  "actual_nss": 117038446.0,
+  "nss_pct_of_required": 1.03,
+  "nss_pct_of_foundation": 1.03,
+  "in_district_pp_exp": 22535.0,
+  "enrollment_fte": 7293.8
+ },
+ "01070000": {
+  "foundation_budget": 39342679.0,
+  "required_nss": 39342679.0,
+  "actual_nss": 55250622.0,
+  "nss_pct_of_required": 1.4,
+  "nss_pct_of_foundation": 1.4,
+  "in_district_pp_exp": 22663.0,
+  "enrollment_fte": 3221.6
+ },
+ "02770000": {
+  "foundation_budget": 31977787.0,
+  "required_nss": 31977787.0,
+  "actual_nss": 33333448.0,
+  "nss_pct_of_required": 1.04,
+  "nss_pct_of_foundation": 1.04,
+  "in_district_pp_exp": 24585.0,
+  "enrollment_fte": 2306.3
+ },
+ "02910000": {
+  "foundation_budget": 23502231.0,
+  "required_nss": 23899307.0,
+  "actual_nss": 33951347.0,
+  "nss_pct_of_required": 1.42,
+  "nss_pct_of_foundation": 1.44,
+  "in_district_pp_exp": 19912.0,
+  "enrollment_fte": 2202.2
+ },
+ "02480000": {
+  "foundation_budget": 119408964.0,
+  "required_nss": 119408964.0,
+  "actual_nss": 116309919.0,
+  "nss_pct_of_required": 0.97,
+  "nss_pct_of_foundation": 0.97,
+  "in_district_pp_exp": 20324.0,
+  "enrollment_fte": 8175.8
+ },
+ "00140000": {
+  "foundation_budget": 30147062.0,
+  "required_nss": 30857120.0,
+  "actual_nss": 39872569.0,
+  "nss_pct_of_required": 1.29,
+  "nss_pct_of_foundation": 1.32,
+  "in_district_pp_exp": 16725.0,
+  "enrollment_fte": 2968.8
+ },
+ "03080000": {
+  "foundation_budget": 79126548.0,
+  "required_nss": 80986371.0,
+  "actual_nss": 120319595.0,
+  "nss_pct_of_required": 1.49,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 25559.0,
+  "enrollment_fte": 5922.1
+ },
+ "03430000": {
+  "foundation_budget": 16192011.0,
+  "required_nss": 17040600.0,
+  "actual_nss": 17561136.0,
+  "nss_pct_of_required": 1.03,
+  "nss_pct_of_foundation": 1.08,
+  "in_district_pp_exp": 19559.0,
+  "enrollment_fte": 1359.6
+ },
+ "03100000": {
+  "foundation_budget": 30246630.0,
+  "required_nss": 32458075.0,
+  "actual_nss": 40670671.0,
+  "nss_pct_of_required": 1.25,
+  "nss_pct_of_foundation": 1.34,
+  "in_district_pp_exp": 24083.0,
+  "enrollment_fte": 2348.0
+ },
+ "00640000": {
+  "foundation_budget": 26864609.0,
+  "required_nss": 26864609.0,
+  "actual_nss": 30928012.0,
+  "nss_pct_of_required": 1.15,
+  "nss_pct_of_foundation": 1.15,
+  "in_district_pp_exp": 18512.0,
+  "enrollment_fte": 2237.2
+ },
+ "00850000": {
+  "foundation_budget": 2320434.0,
+  "required_nss": 2320434.0,
+  "actual_nss": 4658399.0,
+  "nss_pct_of_required": 2.01,
+  "nss_pct_of_foundation": 2.01,
+  "in_district_pp_exp": 30787.0,
+  "enrollment_fte": 216.3
+ },
+ "00400000": {
+  "foundation_budget": 63352380.0,
+  "required_nss": 65492242.0,
+  "actual_nss": 79520858.0,
+  "nss_pct_of_required": 1.21,
+  "nss_pct_of_foundation": 1.26,
+  "in_district_pp_exp": 19549.0,
+  "enrollment_fte": 5449.9
+ },
+ "01220000": {
+  "foundation_budget": 27986422.0,
+  "required_nss": 28693777.0,
+  "actual_nss": 36749662.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.31,
+  "in_district_pp_exp": 16823.0,
+  "enrollment_fte": 2692.2
+ },
+ "02150000": {
+  "foundation_budget": 6863579.0,
+  "required_nss": 7423416.0,
+  "actual_nss": 8338420.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.21,
+  "in_district_pp_exp": 23249.0,
+  "enrollment_fte": 618.9
+ },
+ "02130000": {
+  "foundation_budget": 16551244.0,
+  "required_nss": 17491619.0,
+  "actual_nss": 29871664.0,
+  "nss_pct_of_required": 1.71,
+  "nss_pct_of_foundation": 1.8,
+  "in_district_pp_exp": 20544.0,
+  "enrollment_fte": 1716.1
+ },
+ "02720000": {
+  "foundation_budget": 1167666.0,
+  "required_nss": 1346739.0,
+  "actual_nss": 2803984.0,
+  "nss_pct_of_required": 2.08,
+  "nss_pct_of_foundation": 2.4,
+  "in_district_pp_exp": 26908.0,
+  "enrollment_fte": 128.7
+ },
+ "07170000": {
+  "foundation_budget": 9675021.0,
+  "required_nss": 12457493.0,
+  "actual_nss": 17226939.0,
+  "nss_pct_of_required": 1.38,
+  "nss_pct_of_foundation": 1.78,
+  "in_district_pp_exp": 27121.0,
+  "enrollment_fte": 950.6
+ },
+ "02040000": {
+  "foundation_budget": 24047193.0,
+  "required_nss": 24141136.0,
+  "actual_nss": 41076182.0,
+  "nss_pct_of_required": 1.7,
+  "nss_pct_of_foundation": 1.71,
+  "in_district_pp_exp": 21988.0,
+  "enrollment_fte": 2330.3
+ },
+ "01210000": {
+  "foundation_budget": 936904.0,
+  "required_nss": 936904.0,
+  "actual_nss": 1506504.0,
+  "nss_pct_of_required": 1.61,
+  "nss_pct_of_foundation": 1.61,
+  "in_district_pp_exp": 21836.0,
+  "enrollment_fte": 105.5
+ },
+ "06720000": {
+  "foundation_budget": 9593037.0,
+  "required_nss": 10900112.0,
+  "actual_nss": 13420354.0,
+  "nss_pct_of_required": 1.23,
+  "nss_pct_of_foundation": 1.4,
+  "in_district_pp_exp": 25430.0,
+  "enrollment_fte": 846.6
+ },
+ "02070000": {
+  "foundation_budget": 140792530.0,
+  "required_nss": 141645943.0,
+  "actual_nss": 260370453.0,
+  "nss_pct_of_required": 1.84,
+  "nss_pct_of_foundation": 1.85,
+  "in_district_pp_exp": 25647.0,
+  "enrollment_fte": 11918.0
+ },
+ "00170000": {
+  "foundation_budget": 27367441.0,
+  "required_nss": 27852870.0,
+  "actual_nss": 35770786.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.31,
+  "in_district_pp_exp": 17664.0,
+  "enrollment_fte": 2536.2
+ },
+ "01550000": {
+  "foundation_budget": 80618069.0,
+  "required_nss": 81157401.0,
+  "actual_nss": 150016427.0,
+  "nss_pct_of_required": 1.85,
+  "nss_pct_of_foundation": 1.86,
+  "in_district_pp_exp": 26144.0,
+  "enrollment_fte": 6941.8
+ },
+ "01730000": {
+  "foundation_budget": 4252682.0,
+  "required_nss": 4359828.0,
+  "actual_nss": 8966435.0,
+  "nss_pct_of_required": 2.06,
+  "nss_pct_of_foundation": 2.11,
+  "in_district_pp_exp": 25901.0,
+  "enrollment_fte": 398.7
+ },
+ "06250000": {
+  "foundation_budget": 60696670.0,
+  "required_nss": 60841834.0,
+  "actual_nss": 69334268.0,
+  "nss_pct_of_required": 1.14,
+  "nss_pct_of_foundation": 1.14,
+  "in_district_pp_exp": 16125.0,
+  "enrollment_fte": 5871.9
+ },
+ "00510000": {
+  "foundation_budget": 5777297.0,
+  "required_nss": 5795093.0,
+  "actual_nss": 12710891.0,
+  "nss_pct_of_required": 2.19,
+  "nss_pct_of_foundation": 2.2,
+  "in_district_pp_exp": 24354.0,
+  "enrollment_fte": 612.4
+ },
+ "02300000": {
+  "foundation_budget": 782638.0,
+  "required_nss": 886260.0,
+  "actual_nss": 2001656.0,
+  "nss_pct_of_required": 2.26,
+  "nss_pct_of_foundation": 2.56,
+  "in_district_pp_exp": 23040.0,
+  "enrollment_fte": 135.5
+ },
+ "06100000": {
+  "foundation_budget": 24454472.0,
+  "required_nss": 24909622.0,
+  "actual_nss": 30157725.0,
+  "nss_pct_of_required": 1.21,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 16209.0,
+  "enrollment_fte": 2335.7
+ },
+ "03000000": {
+  "foundation_budget": 2253510.0,
+  "required_nss": 2267562.0,
+  "actual_nss": 6781649.0,
+  "nss_pct_of_required": 2.99,
+  "nss_pct_of_foundation": 3.01,
+  "in_district_pp_exp": 54980.0,
+  "enrollment_fte": 195.1
+ },
+ "00880000": {
+  "foundation_budget": 37338105.0,
+  "required_nss": 40413003.0,
+  "actual_nss": 50465761.0,
+  "nss_pct_of_required": 1.25,
+  "nss_pct_of_foundation": 1.35,
+  "in_district_pp_exp": 17430.0,
+  "enrollment_fte": 3482.5
+ },
+ "01450000": {
+  "foundation_budget": 11891965.0,
+  "required_nss": 12251103.0,
+  "actual_nss": 15115685.0,
+  "nss_pct_of_required": 1.23,
+  "nss_pct_of_foundation": 1.27,
+  "in_district_pp_exp": 12021.0,
+  "enrollment_fte": 1332.8
+ },
+ "00100000": {
+  "foundation_budget": 64412506.0,
+  "required_nss": 65961393.0,
+  "actual_nss": 96979638.0,
+  "nss_pct_of_required": 1.47,
+  "nss_pct_of_foundation": 1.51,
+  "in_district_pp_exp": 19872.0,
+  "enrollment_fte": 6162.2
+ },
+ "01780000": {
+  "foundation_budget": 44344391.0,
+  "required_nss": 44779595.0,
+  "actual_nss": 49926991.0,
+  "nss_pct_of_required": 1.11,
+  "nss_pct_of_foundation": 1.13,
+  "in_district_pp_exp": 15798.0,
+  "enrollment_fte": 4257.4
+ },
+ "02310000": {
+  "foundation_budget": 31570380.0,
+  "required_nss": 35450303.0,
+  "actual_nss": 40881500.0,
+  "nss_pct_of_required": 1.15,
+  "nss_pct_of_foundation": 1.29,
+  "in_district_pp_exp": 18911.0,
+  "enrollment_fte": 2562.9
+ },
+ "03050000": {
+  "foundation_budget": 38638840.0,
+  "required_nss": 38723961.0,
+  "actual_nss": 57533005.0,
+  "nss_pct_of_required": 1.49,
+  "nss_pct_of_foundation": 1.49,
+  "in_district_pp_exp": 20241.0,
+  "enrollment_fte": 3491.1
+ },
+ "00440000": {
+  "foundation_budget": 261944927.0,
+  "required_nss": 261944927.0,
+  "actual_nss": 265007695.0,
+  "nss_pct_of_required": 1.01,
+  "nss_pct_of_foundation": 1.01,
+  "in_district_pp_exp": 20064.0,
+  "enrollment_fte": 17184.7
+ },
+ "01410000": {
+  "foundation_budget": 30183665.0,
+  "required_nss": 31027255.0,
+  "actual_nss": 47582288.0,
+  "nss_pct_of_required": 1.53,
+  "nss_pct_of_foundation": 1.58,
+  "in_district_pp_exp": 22242.0,
+  "enrollment_fte": 2672.0
+ },
+ "01910000": {
+  "foundation_budget": 10403183.0,
+  "required_nss": 13575013.0,
+  "actual_nss": 14630590.0,
+  "nss_pct_of_required": 1.08,
+  "nss_pct_of_foundation": 1.41,
+  "in_district_pp_exp": 22674.0,
+  "enrollment_fte": 910.0
+ },
+ "01870000": {
+  "foundation_budget": 11844886.0,
+  "required_nss": 13958306.0,
+  "actual_nss": 20655260.0,
+  "nss_pct_of_required": 1.48,
+  "nss_pct_of_foundation": 1.74,
+  "in_district_pp_exp": 21123.0,
+  "enrollment_fte": 1225.2
+ },
+ "02780000": {
+  "foundation_budget": 22281903.0,
+  "required_nss": 22670405.0,
+  "actual_nss": 27849764.0,
+  "nss_pct_of_required": 1.23,
+  "nss_pct_of_foundation": 1.25,
+  "in_district_pp_exp": 19809.0,
+  "enrollment_fte": 1949.9
+ },
+ "00380000": {
+  "foundation_budget": 7077684.0,
+  "required_nss": 7607183.0,
+  "actual_nss": 14082779.0,
+  "nss_pct_of_required": 1.85,
+  "nss_pct_of_foundation": 1.99,
+  "in_district_pp_exp": 21534.0,
+  "enrollment_fte": 778.5
+ },
+ "03230000": {
+  "foundation_budget": 12509536.0,
+  "required_nss": 12690149.0,
+  "actual_nss": 17448454.0,
+  "nss_pct_of_required": 1.37,
+  "nss_pct_of_foundation": 1.39,
+  "in_district_pp_exp": 16062.0,
+  "enrollment_fte": 1431.8
+ },
+ "03400000": {
+  "foundation_budget": 2025768.0,
+  "required_nss": 2070980.0,
+  "actual_nss": 3451497.0,
+  "nss_pct_of_required": 1.67,
+  "nss_pct_of_foundation": 1.7,
+  "in_district_pp_exp": 26302.0,
+  "enrollment_fte": 160.6
+ },
+ "02690000": {
+  "foundation_budget": 4092250.0,
+  "required_nss": 4102923.0,
+  "actual_nss": 7899843.0,
+  "nss_pct_of_required": 1.93,
+  "nss_pct_of_foundation": 1.93,
+  "in_district_pp_exp": 21624.0,
+  "enrollment_fte": 422.5
+ },
+ "06180000": {
+  "foundation_budget": 11959904.0,
+  "required_nss": 12828419.0,
+  "actual_nss": 25554629.0,
+  "nss_pct_of_required": 1.99,
+  "nss_pct_of_foundation": 2.14,
+  "in_district_pp_exp": 30255.0,
+  "enrollment_fte": 1291.3
+ },
+ "00820000": {
+  "foundation_budget": 29901987.0,
+  "required_nss": 30133087.0,
+  "actual_nss": 44981460.0,
+  "nss_pct_of_required": 1.49,
+  "nss_pct_of_foundation": 1.5,
+  "in_district_pp_exp": 20115.0,
+  "enrollment_fte": 2786.2
+ },
+ "03260000": {
+  "foundation_budget": 49437145.0,
+  "required_nss": 55735710.0,
+  "actual_nss": 71224240.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.44,
+  "in_district_pp_exp": 18054.0,
+  "enrollment_fte": 4744.4
+ },
+ "03360000": {
+  "foundation_budget": 76134832.0,
+  "required_nss": 87004788.0,
+  "actual_nss": 96419386.0,
+  "nss_pct_of_required": 1.11,
+  "nss_pct_of_foundation": 1.27,
+  "in_district_pp_exp": 19597.0,
+  "enrollment_fte": 5997.1
+ },
+ "03440000": {
+  "foundation_budget": 49628251.0,
+  "required_nss": 50696387.0,
+  "actual_nss": 71616120.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.44,
+  "in_district_pp_exp": 18726.0,
+  "enrollment_fte": 4380.2
+ },
+ "01970000": {
+  "foundation_budget": 20100925.0,
+  "required_nss": 20233402.0,
+  "actual_nss": 39798147.0,
+  "nss_pct_of_required": 1.97,
+  "nss_pct_of_foundation": 1.98,
+  "in_district_pp_exp": 28994.0,
+  "enrollment_fte": 1693.4
+ },
+ "07280000": {
+  "foundation_budget": 1358882.0,
+  "required_nss": 1358882.0,
+  "actual_nss": 3057387.0,
+  "nss_pct_of_required": 2.25,
+  "nss_pct_of_foundation": 2.25,
+  "in_district_pp_exp": 27551.0,
+  "enrollment_fte": 147.6
+ },
+ "02890000": {
+  "foundation_budget": 1721299.0,
+  "required_nss": 2297140.0,
+  "actual_nss": 3561818.0,
+  "nss_pct_of_required": 1.55,
+  "nss_pct_of_foundation": 2.07,
+  "in_district_pp_exp": 27950.0,
+  "enrollment_fte": 208.9
+ },
+ "01630000": {
+  "foundation_budget": 268344427.0,
+  "required_nss": 269973692.0,
+  "actual_nss": 268015172.0,
+  "nss_pct_of_required": 0.99,
+  "nss_pct_of_foundation": 1.0,
+  "in_district_pp_exp": 22182.0,
+  "enrollment_fte": 18628.2
+ },
+ "00240000": {
+  "foundation_budget": 24800115.0,
+  "required_nss": 26807294.0,
+  "actual_nss": 31246330.0,
+  "nss_pct_of_required": 1.17,
+  "nss_pct_of_foundation": 1.26,
+  "in_district_pp_exp": 17886.0,
+  "enrollment_fte": 2265.0
+ },
+ "01360000": {
+  "foundation_budget": 28327730.0,
+  "required_nss": 29457390.0,
+  "actual_nss": 39994511.0,
+  "nss_pct_of_required": 1.36,
+  "nss_pct_of_foundation": 1.41,
+  "in_district_pp_exp": 16859.0,
+  "enrollment_fte": 2861.4
+ },
+ "07800000": {
+  "foundation_budget": 40067181.0,
+  "required_nss": 46038165.0,
+  "actual_nss": 53061318.0,
+  "nss_pct_of_required": 1.15,
+  "nss_pct_of_foundation": 1.32,
+  "in_district_pp_exp": 18079.0,
+  "enrollment_fte": 3622.9
+ },
+ "01770000": {
+  "foundation_budget": 23134189.0,
+  "required_nss": 27985641.0,
+  "actual_nss": 35096750.0,
+  "nss_pct_of_required": 1.25,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 18135.0,
+  "enrollment_fte": 2283.1
+ },
+ "01820000": {
+  "foundation_budget": 35767383.0,
+  "required_nss": 37158860.0,
+  "actual_nss": 43988945.0,
+  "nss_pct_of_required": 1.18,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 19536.0,
+  "enrollment_fte": 3169.2
+ },
+ "02460000": {
+  "foundation_budget": 42274011.0,
+  "required_nss": 45825918.0,
+  "actual_nss": 59475512.0,
+  "nss_pct_of_required": 1.3,
+  "nss_pct_of_foundation": 1.41,
+  "in_district_pp_exp": 18974.0,
+  "enrollment_fte": 3933.5
+ },
+ "06980000": {
+  "foundation_budget": 13975373.0,
+  "required_nss": 14615941.0,
+  "actual_nss": 26282056.0,
+  "nss_pct_of_required": 1.8,
+  "nss_pct_of_foundation": 1.88,
+  "in_district_pp_exp": 25121.0,
+  "enrollment_fte": 1227.8
+ },
+ "07350000": {
+  "foundation_budget": 33474931.0,
+  "required_nss": 40403742.0,
+  "actual_nss": 49497514.0,
+  "nss_pct_of_required": 1.23,
+  "nss_pct_of_foundation": 1.48,
+  "in_district_pp_exp": 18662.0,
+  "enrollment_fte": 3195.2
+ },
+ "00460000": {
+  "foundation_budget": 77422820.0,
+  "required_nss": 79086353.0,
+  "actual_nss": 162525681.0,
+  "nss_pct_of_required": 2.06,
+  "nss_pct_of_foundation": 2.1,
+  "in_district_pp_exp": 26683.0,
+  "enrollment_fte": 7120.0
+ },
+ "02010000": {
+  "foundation_budget": 206188928.0,
+  "required_nss": 207315042.0,
+  "actual_nss": 212848940.0,
+  "nss_pct_of_required": 1.03,
+  "nss_pct_of_foundation": 1.03,
+  "in_district_pp_exp": 23173.0,
+  "enrollment_fte": 14587.3
+ },
+ "02510000": {
+  "foundation_budget": 29636842.0,
+  "required_nss": 29636842.0,
+  "actual_nss": 36496090.0,
+  "nss_pct_of_required": 1.23,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 21153.0,
+  "enrollment_fte": 2300.6
+ },
+ "06350000": {
+  "foundation_budget": 18403561.0,
+  "required_nss": 19957883.0,
+  "actual_nss": 25165408.0,
+  "nss_pct_of_required": 1.26,
+  "nss_pct_of_foundation": 1.37,
+  "in_district_pp_exp": 19767.0,
+  "enrollment_fte": 1786.6
+ },
+ "00520000": {
+  "foundation_budget": 17600656.0,
+  "required_nss": 19649054.0,
+  "actual_nss": 24372658.0,
+  "nss_pct_of_required": 1.24,
+  "nss_pct_of_foundation": 1.38,
+  "in_district_pp_exp": 19247.0,
+  "enrollment_fte": 1620.5
+ },
+ "01960000": {
+  "foundation_budget": 2845522.0,
+  "required_nss": 2878958.0,
+  "actual_nss": 4428860.0,
+  "nss_pct_of_required": 1.54,
+  "nss_pct_of_foundation": 1.56,
+  "in_district_pp_exp": 22406.0,
+  "enrollment_fte": 270.7
+ },
+ "02610000": {
+  "foundation_budget": 27638904.0,
+  "required_nss": 30028284.0,
+  "actual_nss": 49108928.0,
+  "nss_pct_of_required": 1.64,
+  "nss_pct_of_foundation": 1.78,
+  "in_district_pp_exp": 26445.0,
+  "enrollment_fte": 2392.2
+ },
+ "01310000": {
+  "foundation_budget": 43233894.0,
+  "required_nss": 43741996.0,
+  "actual_nss": 65578171.0,
+  "nss_pct_of_required": 1.5,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 20479.0,
+  "enrollment_fte": 3738.8
+ },
+ "01170000": {
+  "foundation_budget": 5857374.0,
+  "required_nss": 6126694.0,
+  "actual_nss": 9004914.0,
+  "nss_pct_of_required": 1.47,
+  "nss_pct_of_foundation": 1.54,
+  "in_district_pp_exp": 25173.0,
+  "enrollment_fte": 623.7
+ },
+ "03010000": {
+  "foundation_budget": 18200501.0,
+  "required_nss": 20171110.0,
+  "actual_nss": 25363694.0,
+  "nss_pct_of_required": 1.26,
+  "nss_pct_of_foundation": 1.39,
+  "in_district_pp_exp": 19058.0,
+  "enrollment_fte": 1689.5
+ },
+ "01520000": {
+  "foundation_budget": 5879254.0,
+  "required_nss": 6072044.0,
+  "actual_nss": 13845166.0,
+  "nss_pct_of_required": 2.28,
+  "nss_pct_of_foundation": 2.35,
+  "in_district_pp_exp": 23945.0,
+  "enrollment_fte": 814.1
+ },
+ "02880000": {
+  "foundation_budget": 25581450.0,
+  "required_nss": 26170934.0,
+  "actual_nss": 47317190.0,
+  "nss_pct_of_required": 1.81,
+  "nss_pct_of_foundation": 1.85,
+  "in_district_pp_exp": 21983.0,
+  "enrollment_fte": 2578.7
+ },
+ "07740000": {
+  "foundation_budget": 4428347.0,
+  "required_nss": 4544467.0,
+  "actual_nss": 12685739.0,
+  "nss_pct_of_required": 2.79,
+  "nss_pct_of_foundation": 2.86,
+  "in_district_pp_exp": 35738.0,
+  "enrollment_fte": 455.1
+ },
+ "00490000": {
+  "foundation_budget": 100848387.0,
+  "required_nss": 100848387.0,
+  "actual_nss": 235833391.0,
+  "nss_pct_of_required": 2.34,
+  "nss_pct_of_foundation": 2.34,
+  "in_district_pp_exp": 36948.0,
+  "enrollment_fte": 7558.3
+ },
+ "03250000": {
+  "foundation_budget": 64714819.0,
+  "required_nss": 66130290.0,
+  "actual_nss": 73618818.0,
+  "nss_pct_of_required": 1.11,
+  "nss_pct_of_foundation": 1.14,
+  "in_district_pp_exp": 19198.0,
+  "enrollment_fte": 5161.5
+ },
+ "03090000": {
+  "foundation_budget": 16595927.0,
+  "required_nss": 16595927.0,
+  "actual_nss": 18237283.0,
+  "nss_pct_of_required": 1.1,
+  "nss_pct_of_foundation": 1.1,
+  "in_district_pp_exp": 20348.0,
+  "enrollment_fte": 1309.7
+ },
+ "06160000": {
+  "foundation_budget": 19326736.0,
+  "required_nss": 21677231.0,
+  "actual_nss": 26809377.0,
+  "nss_pct_of_required": 1.24,
+  "nss_pct_of_foundation": 1.39,
+  "in_district_pp_exp": 18739.0,
+  "enrollment_fte": 1905.0
+ },
+ "02400000": {
+  "foundation_budget": 2366032.0,
+  "required_nss": 2530868.0,
+  "actual_nss": 4056160.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.71,
+  "in_district_pp_exp": 16934.0,
+  "enrollment_fte": 278.4
+ },
+ "02340000": {
+  "foundation_budget": 859319.0,
+  "required_nss": 1025931.0,
+  "actual_nss": 1690589.0,
+  "nss_pct_of_required": 1.65,
+  "nss_pct_of_foundation": 1.97,
+  "in_district_pp_exp": 19591.0,
+  "enrollment_fte": 140.8
+ },
+ "00790000": {
+  "foundation_budget": 46058563.0,
+  "required_nss": 46058563.0,
+  "actual_nss": 46662523.0,
+  "nss_pct_of_required": 1.01,
+  "nss_pct_of_foundation": 1.01,
+  "in_district_pp_exp": 15695.0,
+  "enrollment_fte": 3960.8
+ },
+ "00740000": {
+  "foundation_budget": 3195342.0,
+  "required_nss": 3759310.0,
+  "actual_nss": 6010117.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.88,
+  "in_district_pp_exp": 24381.0,
+  "enrollment_fte": 354.7
+ },
+ "00870000": {
+  "foundation_budget": 27993088.0,
+  "required_nss": 29366036.0,
+  "actual_nss": 39778213.0,
+  "nss_pct_of_required": 1.35,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 19445.0,
+  "enrollment_fte": 2599.8
+ },
+ "06450000": {
+  "foundation_budget": 40000864.0,
+  "required_nss": 40246704.0,
+  "actual_nss": 60819473.0,
+  "nss_pct_of_required": 1.51,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 24027.0,
+  "enrollment_fte": 3477.7
+ },
+ "01720000": {
+  "foundation_budget": 18231112.0,
+  "required_nss": 19726133.0,
+  "actual_nss": 31642559.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.74,
+  "in_district_pp_exp": 24456.0,
+  "enrollment_fte": 1593.4
+ },
+ "02630000": {
+  "foundation_budget": 542332.0,
+  "required_nss": 974902.0,
+  "actual_nss": 935970.0,
+  "nss_pct_of_required": 0.96,
+  "nss_pct_of_foundation": 1.73,
+  "in_district_pp_exp": 23100.0,
+  "enrollment_fte": 62.5
+ },
+ "01350000": {
+  "foundation_budget": 1813559.0,
+  "required_nss": 2101881.0,
+  "actual_nss": 3029131.0,
+  "nss_pct_of_required": 1.44,
+  "nss_pct_of_foundation": 1.67,
+  "in_district_pp_exp": 16251.0,
+  "enrollment_fte": 234.4
+ },
+ "00720000": {
+  "foundation_budget": 38413026.0,
+  "required_nss": 41739938.0,
+  "actual_nss": 50222422.0,
+  "nss_pct_of_required": 1.2,
+  "nss_pct_of_foundation": 1.31,
+  "in_district_pp_exp": 18131.0,
+  "enrollment_fte": 3506.5
+ },
+ "02580000": {
+  "foundation_budget": 59973102.0,
+  "required_nss": 62876841.0,
+  "actual_nss": 79465679.0,
+  "nss_pct_of_required": 1.26,
+  "nss_pct_of_foundation": 1.33,
+  "in_district_pp_exp": 25824.0,
+  "enrollment_fte": 4489.0
+ },
+ "02660000": {
+  "foundation_budget": 38638373.0,
+  "required_nss": 39590771.0,
+  "actual_nss": 60009891.0,
+  "nss_pct_of_required": 1.52,
+  "nss_pct_of_foundation": 1.55,
+  "in_district_pp_exp": 20541.0,
+  "enrollment_fte": 3648.6
+ },
+ "01250000": {
+  "foundation_budget": 9395298.0,
+  "required_nss": 9760072.0,
+  "actual_nss": 15248914.0,
+  "nss_pct_of_required": 1.56,
+  "nss_pct_of_foundation": 1.62,
+  "in_district_pp_exp": 23169.0,
+  "enrollment_fte": 1072.1
+ },
+ "03320000": {
+  "foundation_budget": 53788013.0,
+  "required_nss": 53788013.0,
+  "actual_nss": 56614089.0,
+  "nss_pct_of_required": 1.05,
+  "nss_pct_of_foundation": 1.05,
+  "in_district_pp_exp": 18761.0,
+  "enrollment_fte": 4244.6
+ },
+ "00050000": {
+  "foundation_budget": 42850725.0,
+  "required_nss": 43370784.0,
+  "actual_nss": 66813739.0,
+  "nss_pct_of_required": 1.54,
+  "nss_pct_of_foundation": 1.56,
+  "in_district_pp_exp": 20919.0,
+  "enrollment_fte": 3690.6
+ },
+ "00560000": {
+  "foundation_budget": 54364866.0,
+  "required_nss": 56199122.0,
+  "actual_nss": 74757505.0,
+  "nss_pct_of_required": 1.33,
+  "nss_pct_of_foundation": 1.38,
+  "in_district_pp_exp": 17377.0,
+  "enrollment_fte": 5345.8
+ },
+ "00070000": {
+  "foundation_budget": 22473929.0,
+  "required_nss": 25761653.0,
+  "actual_nss": 35498674.0,
+  "nss_pct_of_required": 1.38,
+  "nss_pct_of_foundation": 1.58,
+  "in_district_pp_exp": 22730.0,
+  "enrollment_fte": 2056.6
+ },
+ "00230000": {
+  "foundation_budget": 30729463.0,
+  "required_nss": 31026443.0,
+  "actual_nss": 51230141.0,
+  "nss_pct_of_required": 1.65,
+  "nss_pct_of_foundation": 1.67,
+  "in_district_pp_exp": 23094.0,
+  "enrollment_fte": 2612.6
+ },
+ "00360000": {
+  "foundation_budget": 20951766.0,
+  "required_nss": 22554090.0,
+  "actual_nss": 31796880.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 24570.0,
+  "enrollment_fte": 1817.3
+ },
+ "06730000": {
+  "foundation_budget": 23977455.0,
+  "required_nss": 30769044.0,
+  "actual_nss": 40834045.0,
+  "nss_pct_of_required": 1.33,
+  "nss_pct_of_foundation": 1.7,
+  "in_district_pp_exp": 20960.0,
+  "enrollment_fte": 2418.2
+ },
+ "07730000": {
+  "foundation_budget": 24917420.0,
+  "required_nss": 29398313.0,
+  "actual_nss": 42334952.0,
+  "nss_pct_of_required": 1.44,
+  "nss_pct_of_foundation": 1.7,
+  "in_district_pp_exp": 24436.0,
+  "enrollment_fte": 2312.3
+ },
+ "00730000": {
+  "foundation_budget": 30666509.0,
+  "required_nss": 31443810.0,
+  "actual_nss": 54895726.0,
+  "nss_pct_of_required": 1.75,
+  "nss_pct_of_foundation": 1.79,
+  "in_district_pp_exp": 25023.0,
+  "enrollment_fte": 2805.0
+ },
+ "03300000": {
+  "foundation_budget": 21554029.0,
+  "required_nss": 21789134.0,
+  "actual_nss": 52545401.0,
+  "nss_pct_of_required": 2.41,
+  "nss_pct_of_foundation": 2.44,
+  "in_district_pp_exp": 29761.0,
+  "enrollment_fte": 2081.3
+ },
+ "07650000": {
+  "foundation_budget": 7970637.0,
+  "required_nss": 8501434.0,
+  "actual_nss": 14517586.0,
+  "nss_pct_of_required": 1.71,
+  "nss_pct_of_foundation": 1.82,
+  "in_district_pp_exp": 33162.0,
+  "enrollment_fte": 757.7
+ },
+ "06150000": {
+  "foundation_budget": 21516033.0,
+  "required_nss": 21989258.0,
+  "actual_nss": 23152806.0,
+  "nss_pct_of_required": 1.05,
+  "nss_pct_of_foundation": 1.08,
+  "in_district_pp_exp": 18982.0,
+  "enrollment_fte": 1887.2
+ },
+ "02760000": {
+  "foundation_budget": 12226979.0,
+  "required_nss": 13107989.0,
+  "actual_nss": 26299271.0,
+  "nss_pct_of_required": 2.01,
+  "nss_pct_of_foundation": 2.15,
+  "in_district_pp_exp": 22578.0,
+  "enrollment_fte": 1333.1
+ },
+ "00300000": {
+  "foundation_budget": 53925726.0,
+  "required_nss": 53925726.0,
+  "actual_nss": 68964402.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.28,
+  "in_district_pp_exp": 18595.0,
+  "enrollment_fte": 4712.3
+ },
+ "01010000": {
+  "foundation_budget": 59769256.0,
+  "required_nss": 71018218.0,
+  "actual_nss": 80449980.0,
+  "nss_pct_of_required": 1.13,
+  "nss_pct_of_foundation": 1.35,
+  "in_district_pp_exp": 18060.0,
+  "enrollment_fte": 5133.5
+ },
+ "01980000": {
+  "foundation_budget": 57529966.0,
+  "required_nss": 57825004.0,
+  "actual_nss": 88182129.0,
+  "nss_pct_of_required": 1.52,
+  "nss_pct_of_foundation": 1.53,
+  "in_district_pp_exp": 20240.0,
+  "enrollment_fte": 5442.2
+ },
+ "03480000": {
+  "foundation_budget": 400051103.0,
+  "required_nss": 400061624.0,
+  "actual_nss": 399441338.0,
+  "nss_pct_of_required": 1.0,
+  "nss_pct_of_foundation": 1.0,
+  "in_district_pp_exp": 22221.0,
+  "enrollment_fte": 27606.4
+ },
+ "01280000": {
+  "foundation_budget": 109839438.0,
+  "required_nss": 109839438.0,
+  "actual_nss": 125203118.0,
+  "nss_pct_of_required": 1.14,
+  "nss_pct_of_foundation": 1.14,
+  "in_district_pp_exp": 19638.0,
+  "enrollment_fte": 8721.9
+ },
+ "02710000": {
+  "foundation_budget": 67854308.0,
+  "required_nss": 72725121.0,
+  "actual_nss": 88360951.0,
+  "nss_pct_of_required": 1.21,
+  "nss_pct_of_foundation": 1.3,
+  "in_district_pp_exp": 18151.0,
+  "enrollment_fte": 6128.9
+ },
+ "02960000": {
+  "foundation_budget": 4207932.0,
+  "required_nss": 4332485.0,
+  "actual_nss": 10437639.0,
+  "nss_pct_of_required": 2.41,
+  "nss_pct_of_foundation": 2.48,
+  "in_district_pp_exp": 39934.0,
+  "enrollment_fte": 381.8
+ },
+ "07200000": {
+  "foundation_budget": 14626287.0,
+  "required_nss": 16093543.0,
+  "actual_nss": 17946563.0,
+  "nss_pct_of_required": 1.12,
+  "nss_pct_of_foundation": 1.23,
+  "in_district_pp_exp": 17008.0,
+  "enrollment_fte": 1572.2
+ },
+ "01540000": {
+  "foundation_budget": 1142445.0,
+  "required_nss": 1241178.0,
+  "actual_nss": 2609027.0,
+  "nss_pct_of_required": 2.1,
+  "nss_pct_of_foundation": 2.28,
+  "in_district_pp_exp": 21910.0,
+  "enrollment_fte": 145.4
+ },
+ "01580000": {
+  "foundation_budget": 16227168.0,
+  "required_nss": 17472772.0,
+  "actual_nss": 27920660.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.72,
+  "in_district_pp_exp": 18447.0,
+  "enrollment_fte": 1762.5
+ },
+ "06620000": {
+  "foundation_budget": 2405494.0,
+  "required_nss": 2433039.0,
+  "actual_nss": 4039515.0,
+  "nss_pct_of_required": 1.66,
+  "nss_pct_of_foundation": 1.68,
+  "in_district_pp_exp": 46333.0,
+  "enrollment_fte": 253.5
+ },
+ "03170000": {
+  "foundation_budget": 49998664.0,
+  "required_nss": 50656381.0,
+  "actual_nss": 98048781.0,
+  "nss_pct_of_required": 1.94,
+  "nss_pct_of_foundation": 1.96,
+  "in_district_pp_exp": 28369.0,
+  "enrollment_fte": 4157.9
+ },
+ "06740000": {
+  "foundation_budget": 12355223.0,
+  "required_nss": 13195185.0,
+  "actual_nss": 19045778.0,
+  "nss_pct_of_required": 1.44,
+  "nss_pct_of_foundation": 1.54,
+  "in_district_pp_exp": 26346.0,
+  "enrollment_fte": 1127.2
+ },
+ "02500000": {
+  "foundation_budget": 5247585.0,
+  "required_nss": 5589432.0,
+  "actual_nss": 7455875.0,
+  "nss_pct_of_required": 1.33,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 17427.0,
+  "enrollment_fte": 498.9
+ },
+ "00350000": {
+  "foundation_budget": 978880394.0,
+  "required_nss": 1012233521.0,
+  "actual_nss": 1375755502.0,
+  "nss_pct_of_required": 1.36,
+  "nss_pct_of_foundation": 1.41,
+  "in_district_pp_exp": 35084.0,
+  "enrollment_fte": 60359.9
+ },
+ "01620000": {
+  "foundation_budget": 18408485.0,
+  "required_nss": 18731996.0,
+  "actual_nss": 23919189.0,
+  "nss_pct_of_required": 1.28,
+  "nss_pct_of_foundation": 1.3,
+  "in_district_pp_exp": 17029.0,
+  "enrollment_fte": 1680.4
+ },
+ "00980000": {
+  "foundation_budget": 710253.0,
+  "required_nss": 985195.0,
+  "actual_nss": 1602443.0,
+  "nss_pct_of_required": 1.63,
+  "nss_pct_of_foundation": 2.26,
+  "in_district_pp_exp": 23175.0,
+  "enrollment_fte": 94.0
+ },
+ "02730000": {
+  "foundation_budget": 17923180.0,
+  "required_nss": 18494491.0,
+  "actual_nss": 26040765.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.45,
+  "in_district_pp_exp": 19702.0,
+  "enrollment_fte": 1663.7
+ },
+ "00160000": {
+  "foundation_budget": 80741146.0,
+  "required_nss": 80741146.0,
+  "actual_nss": 83777458.0,
+  "nss_pct_of_required": 1.04,
+  "nss_pct_of_foundation": 1.04,
+  "in_district_pp_exp": 18184.0,
+  "enrollment_fte": 6404.6
+ },
+ "01390000": {
+  "foundation_budget": 43582815.0,
+  "required_nss": 44006243.0,
+  "actual_nss": 60636410.0,
+  "nss_pct_of_required": 1.38,
+  "nss_pct_of_foundation": 1.39,
+  "in_district_pp_exp": 17318.0,
+  "enrollment_fte": 4257.1
+ },
+ "01690000": {
+  "foundation_budget": 4374312.0,
+  "required_nss": 4481242.0,
+  "actual_nss": 7408353.0,
+  "nss_pct_of_required": 1.65,
+  "nss_pct_of_foundation": 1.69,
+  "in_district_pp_exp": 22401.0,
+  "enrollment_fte": 389.0
+ },
+ "02110000": {
+  "foundation_budget": 51229168.0,
+  "required_nss": 51562160.0,
+  "actual_nss": 66762659.0,
+  "nss_pct_of_required": 1.29,
+  "nss_pct_of_foundation": 1.3,
+  "in_district_pp_exp": 18118.0,
+  "enrollment_fte": 4652.8
+ },
+ "02640000": {
+  "foundation_budget": 30894316.0,
+  "required_nss": 31602363.0,
+  "actual_nss": 48155626.0,
+  "nss_pct_of_required": 1.52,
+  "nss_pct_of_foundation": 1.56,
+  "in_district_pp_exp": 20435.0,
+  "enrollment_fte": 2794.0
+ },
+ "03460000": {
+  "foundation_budget": 23441502.0,
+  "required_nss": 24711119.0,
+  "actual_nss": 28203694.0,
+  "nss_pct_of_required": 1.14,
+  "nss_pct_of_foundation": 1.2,
+  "in_district_pp_exp": 18338.0,
+  "enrollment_fte": 2027.0
+ },
+ "07150000": {
+  "foundation_budget": 11519400.0,
+  "required_nss": 12025072.0,
+  "actual_nss": 19284675.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.67,
+  "in_district_pp_exp": 21705.0,
+  "enrollment_fte": 1268.7
+ },
+ "07660000": {
+  "foundation_budget": 15958928.0,
+  "required_nss": 20960424.0,
+  "actual_nss": 21278965.0,
+  "nss_pct_of_required": 1.02,
+  "nss_pct_of_foundation": 1.33,
+  "in_district_pp_exp": 20308.0,
+  "enrollment_fte": 1431.9
+ },
+ "07700000": {
+  "foundation_budget": 20438009.0,
+  "required_nss": 20554610.0,
+  "actual_nss": 23501774.0,
+  "nss_pct_of_required": 1.14,
+  "nss_pct_of_foundation": 1.15,
+  "in_district_pp_exp": 18065.0,
+  "enrollment_fte": 1814.3
+ },
+ "07530000": {
+  "foundation_budget": 22572923.0,
+  "required_nss": 27691220.0,
+  "actual_nss": 31945286.0,
+  "nss_pct_of_required": 1.15,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 19568.0,
+  "enrollment_fte": 2261.3
+ },
+ "07780000": {
+  "foundation_budget": 14365916.0,
+  "required_nss": 15026077.0,
+  "actual_nss": 16445611.0,
+  "nss_pct_of_required": 1.09,
+  "nss_pct_of_foundation": 1.14,
+  "in_district_pp_exp": 21091.0,
+  "enrollment_fte": 1250.2
+ },
+ "00650000": {
+  "foundation_budget": 15385214.0,
+  "required_nss": 15483664.0,
+  "actual_nss": 26863760.0,
+  "nss_pct_of_required": 1.73,
+  "nss_pct_of_foundation": 1.75,
+  "in_district_pp_exp": 22516.0,
+  "enrollment_fte": 1461.6
+ },
+ "02930000": {
+  "foundation_budget": 107043468.0,
+  "required_nss": 107050855.0,
+  "actual_nss": 108534307.0,
+  "nss_pct_of_required": 1.01,
+  "nss_pct_of_foundation": 1.01,
+  "in_district_pp_exp": 18871.0,
+  "enrollment_fte": 8647.5
+ },
+ "03040000": {
+  "foundation_budget": 19398107.0,
+  "required_nss": 22416564.0,
+  "actual_nss": 26125602.0,
+  "nss_pct_of_required": 1.17,
+  "nss_pct_of_foundation": 1.35,
+  "in_district_pp_exp": 20429.0,
+  "enrollment_fte": 1808.7
+ },
+ "00990000": {
+  "foundation_budget": 29685009.0,
+  "required_nss": 33613372.0,
+  "actual_nss": 47544039.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.6,
+  "in_district_pp_exp": 21096.0,
+  "enrollment_fte": 2654.5
+ },
+ "02420000": {
+  "foundation_budget": 1357829.0,
+  "required_nss": 1413960.0,
+  "actual_nss": 6045872.0,
+  "nss_pct_of_required": 4.28,
+  "nss_pct_of_foundation": 4.45,
+  "in_district_pp_exp": 53061.0,
+  "enrollment_fte": 159.9
+ },
+ "00930000": {
+  "foundation_budget": 120819748.0,
+  "required_nss": 120819748.0,
+  "actual_nss": 126013134.0,
+  "nss_pct_of_required": 1.04,
+  "nss_pct_of_foundation": 1.04,
+  "in_district_pp_exp": 20978.0,
+  "enrollment_fte": 8302.0
+ },
+ "00830000": {
+  "foundation_budget": 23394636.0,
+  "required_nss": 23955862.0,
+  "actual_nss": 28002653.0,
+  "nss_pct_of_required": 1.17,
+  "nss_pct_of_foundation": 1.2,
+  "in_district_pp_exp": 17593.0,
+  "enrollment_fte": 2106.9
+ },
+ "00910000": {
+  "foundation_budget": 2355746.0,
+  "required_nss": 2421205.0,
+  "actual_nss": 5325939.0,
+  "nss_pct_of_required": 2.2,
+  "nss_pct_of_foundation": 2.26,
+  "in_district_pp_exp": 34568.0,
+  "enrollment_fte": 207.8
+ },
+ "01050000": {
+  "foundation_budget": 13268519.0,
+  "required_nss": 16245424.0,
+  "actual_nss": 20224750.0,
+  "nss_pct_of_required": 1.24,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 18884.0,
+  "enrollment_fte": 1311.2
+ },
+ "02620000": {
+  "foundation_budget": 31864909.0,
+  "required_nss": 32637721.0,
+  "actual_nss": 45258771.0,
+  "nss_pct_of_required": 1.39,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 17357.0,
+  "enrollment_fte": 3084.2
+ },
+ "03220000": {
+  "foundation_budget": 9723141.0,
+  "required_nss": 10859021.0,
+  "actual_nss": 15340724.0,
+  "nss_pct_of_required": 1.41,
+  "nss_pct_of_foundation": 1.58,
+  "in_district_pp_exp": 19718.0,
+  "enrollment_fte": 986.5
+ },
+ "02380000": {
+  "foundation_budget": 7127763.0,
+  "required_nss": 8221412.0,
+  "actual_nss": 10436253.0,
+  "nss_pct_of_required": 1.27,
+  "nss_pct_of_foundation": 1.46,
+  "in_district_pp_exp": 19830.0,
+  "enrollment_fte": 689.8
+ },
+ "03470000": {
+  "foundation_budget": 54858831.0,
+  "required_nss": 54945913.0,
+  "actual_nss": 87957013.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.6,
+  "in_district_pp_exp": 22678.0,
+  "enrollment_fte": 4712.9
+ },
+ "06220000": {
+  "foundation_budget": 19313058.0,
+  "required_nss": 20393868.0,
+  "actual_nss": 23615311.0,
+  "nss_pct_of_required": 1.16,
+  "nss_pct_of_foundation": 1.22,
+  "in_district_pp_exp": 18632.0,
+  "enrollment_fte": 1666.9
+ },
+ "01840000": {
+  "foundation_budget": 6927207.0,
+  "required_nss": 7400837.0,
+  "actual_nss": 12762770.0,
+  "nss_pct_of_required": 1.72,
+  "nss_pct_of_foundation": 1.84,
+  "in_district_pp_exp": 22396.0,
+  "enrollment_fte": 735.4
+ },
+ "03180000": {
+  "foundation_budget": 1274233.0,
+  "required_nss": 1274903.0,
+  "actual_nss": 3684054.0,
+  "nss_pct_of_required": 2.89,
+  "nss_pct_of_foundation": 2.89,
+  "in_district_pp_exp": 43851.0,
+  "enrollment_fte": 107.4
+ },
+ "03420000": {
+  "foundation_budget": 31976675.0,
+  "required_nss": 37934467.0,
+  "actual_nss": 59864607.0,
+  "nss_pct_of_required": 1.58,
+  "nss_pct_of_foundation": 1.87,
+  "in_district_pp_exp": 23969.0,
+  "enrollment_fte": 2881.6
+ },
+ "07100000": {
+  "foundation_budget": 22629367.0,
+  "required_nss": 29752247.0,
+  "actual_nss": 34459539.0,
+  "nss_pct_of_required": 1.16,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 20324.0,
+  "enrollment_fte": 2161.0
+ },
+ "07120000": {
+  "foundation_budget": 20768968.0,
+  "required_nss": 20974095.0,
+  "actual_nss": 36388033.0,
+  "nss_pct_of_required": 1.73,
+  "nss_pct_of_foundation": 1.75,
+  "in_district_pp_exp": 25586.0,
+  "enrollment_fte": 1869.2
+ },
+ "02390000": {
+  "foundation_budget": 96767565.0,
+  "required_nss": 101072080.0,
+  "actual_nss": 137107825.0,
+  "nss_pct_of_required": 1.36,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 22128.0,
+  "enrollment_fte": 7639.4
+ },
+ "00710000": {
+  "foundation_budget": 37556777.0,
+  "required_nss": 38127292.0,
+  "actual_nss": 56254881.0,
+  "nss_pct_of_required": 1.48,
+  "nss_pct_of_foundation": 1.5,
+  "in_district_pp_exp": 19716.0,
+  "enrollment_fte": 3451.5
+ },
+ "00430000": {
+  "foundation_budget": 2957058.0,
+  "required_nss": 3128843.0,
+  "actual_nss": 4276454.0,
+  "nss_pct_of_required": 1.37,
+  "nss_pct_of_foundation": 1.45,
+  "in_district_pp_exp": 20363.0,
+  "enrollment_fte": 299.4
+ },
+ "07500000": {
+  "foundation_budget": 7287027.0,
+  "required_nss": 9134506.0,
+  "actual_nss": 13045416.0,
+  "nss_pct_of_required": 1.43,
+  "nss_pct_of_foundation": 1.79,
+  "in_district_pp_exp": 27491.0,
+  "enrollment_fte": 664.5
+ },
+ "02190000": {
+  "foundation_budget": 23347458.0,
+  "required_nss": 23354038.0,
+  "actual_nss": 35475031.0,
+  "nss_pct_of_required": 1.52,
+  "nss_pct_of_foundation": 1.52,
+  "in_district_pp_exp": 19525.0,
+  "enrollment_fte": 2200.2
+ },
+ "01500000": {
+  "foundation_budget": 7363634.0,
+  "required_nss": 8177437.0,
+  "actual_nss": 11702790.0,
+  "nss_pct_of_required": 1.43,
+  "nss_pct_of_foundation": 1.59,
+  "in_district_pp_exp": 24155.0,
+  "enrollment_fte": 745.9
+ },
+ "02440000": {
+  "foundation_budget": 44771563.0,
+  "required_nss": 44773911.0,
+  "actual_nss": 59254184.0,
+  "nss_pct_of_required": 1.32,
+  "nss_pct_of_foundation": 1.32,
+  "in_district_pp_exp": 24056.0,
+  "enrollment_fte": 3295.2
+ },
+ "01640000": {
+  "foundation_budget": 23928672.0,
+  "required_nss": 24211035.0,
+  "actual_nss": 35878817.0,
+  "nss_pct_of_required": 1.48,
+  "nss_pct_of_foundation": 1.5,
+  "in_district_pp_exp": 19300.0,
+  "enrollment_fte": 2238.6
+ },
+ "02230000": {
+  "foundation_budget": 6806427.0,
+  "required_nss": 7528322.0,
+  "actual_nss": 8078895.0,
+  "nss_pct_of_required": 1.07,
+  "nss_pct_of_foundation": 1.19,
+  "in_district_pp_exp": 21808.0,
+  "enrollment_fte": 593.0
+ },
+ "03150000": {
+  "foundation_budget": 29175011.0,
+  "required_nss": 29276650.0,
+  "actual_nss": 52315426.0,
+  "nss_pct_of_required": 1.79,
+  "nss_pct_of_foundation": 1.79,
+  "in_district_pp_exp": 22634.0,
+  "enrollment_fte": 2809.5
+ },
+ "01110000": {
+  "foundation_budget": 8293231.0,
+  "required_nss": 9833607.0,
+  "actual_nss": 10480359.0,
+  "nss_pct_of_required": 1.07,
+  "nss_pct_of_foundation": 1.26,
+  "in_district_pp_exp": 18825.0,
+  "enrollment_fte": 781.3
+ },
+ "06400000": {
+  "foundation_budget": 16437449.0,
+  "required_nss": 16446778.0,
+  "actual_nss": 29214053.0,
+  "nss_pct_of_required": 1.78,
+  "nss_pct_of_foundation": 1.78,
+  "in_district_pp_exp": 28628.0,
+  "enrollment_fte": 1258.0
+ },
+ "06600000": {
+  "foundation_budget": 14255426.0,
+  "required_nss": 15323276.0,
+  "actual_nss": 28236201.0,
+  "nss_pct_of_required": 1.84,
+  "nss_pct_of_foundation": 1.98,
+  "in_district_pp_exp": 29035.0,
+  "enrollment_fte": 1411.6
+ },
+ "06900000": {
+  "foundation_budget": 23108673.0,
+  "required_nss": 26140768.0,
+  "actual_nss": 35653902.0,
+  "nss_pct_of_required": 1.36,
+  "nss_pct_of_foundation": 1.54,
+  "in_district_pp_exp": 21315.0,
+  "enrollment_fte": 1977.5
+ },
+ "06950000": {
+  "foundation_budget": 18587999.0,
+  "required_nss": 18599770.0,
+  "actual_nss": 32237456.0,
+  "nss_pct_of_required": 1.73,
+  "nss_pct_of_foundation": 1.73,
+  "in_district_pp_exp": 24183.0,
+  "enrollment_fte": 1495.2
+ },
+ "07050000": {
+  "foundation_budget": 19942250.0,
+  "required_nss": 21705695.0,
+  "actual_nss": 34633027.0,
+  "nss_pct_of_required": 1.6,
+  "nss_pct_of_foundation": 1.74,
+  "in_district_pp_exp": 25083.0,
+  "enrollment_fte": 1595.7
+ },
+ "07300000": {
+  "foundation_budget": 16306106.0,
+  "required_nss": 16534898.0,
+  "actual_nss": 23228972.0,
+  "nss_pct_of_required": 1.4,
+  "nss_pct_of_foundation": 1.42,
+  "in_district_pp_exp": 24176.0,
+  "enrollment_fte": 1227.7
+ },
+ "07630000": {
+  "foundation_budget": 12639534.0,
+  "required_nss": 12690991.0,
+  "actual_nss": 15359142.0,
+  "nss_pct_of_required": 1.21,
+  "nss_pct_of_foundation": 1.22,
+  "in_district_pp_exp": 19512.0,
+  "enrollment_fte": 991.2
+ }
+}

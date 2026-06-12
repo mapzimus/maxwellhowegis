@@ -1,0 +1,2192 @@
+{
+ "00010000": {
+  "childcare_capacity_per_100_u5": 56.0,
+  "childcare_infant_toddler_per_100_u5": 15.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1665,
+  "childcare_c3_trend_2yr": 0.325
+ },
+ "00030000": {
+  "childcare_capacity_per_100_u5": 34.1,
+  "childcare_infant_toddler_per_100_u5": 8.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.571,
+  "childcare_c3_per_seat": 1504,
+  "childcare_c3_trend_2yr": 0.29
+ },
+ "00050000": {
+  "childcare_capacity_per_100_u5": 54.8,
+  "childcare_infant_toddler_per_100_u5": 0.7,
+  "childcare_headstart_per_100_u5": 1.7,
+  "childcare_subsidy_pct": 0.457,
+  "childcare_c3_per_seat": 1261,
+  "childcare_c3_trend_2yr": -0.254
+ },
+ "00070000": {
+  "childcare_capacity_per_100_u5": 68.5,
+  "childcare_infant_toddler_per_100_u5": 20.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.467,
+  "childcare_c3_per_seat": 1830,
+  "childcare_c3_trend_2yr": 0.055
+ },
+ "00080000": {
+  "childcare_capacity_per_100_u5": 120.3,
+  "childcare_infant_toddler_per_100_u5": 22.5,
+  "childcare_headstart_per_100_u5": 9.3,
+  "childcare_subsidy_pct": 0.647,
+  "childcare_c3_per_seat": 1523,
+  "childcare_c3_trend_2yr": -0.253
+ },
+ "00090000": {
+  "childcare_capacity_per_100_u5": 106.7,
+  "childcare_infant_toddler_per_100_u5": 23.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.788,
+  "childcare_c3_per_seat": 1367,
+  "childcare_c3_trend_2yr": 0.059
+ },
+ "00100000": {
+  "childcare_capacity_per_100_u5": 126.1,
+  "childcare_infant_toddler_per_100_u5": 22.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.383,
+  "childcare_c3_per_seat": 1127,
+  "childcare_c3_trend_2yr": -0.234
+ },
+ "00140000": {
+  "childcare_capacity_per_100_u5": 84.1,
+  "childcare_infant_toddler_per_100_u5": 19.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.519,
+  "childcare_c3_per_seat": 983,
+  "childcare_c3_trend_2yr": -0.288
+ },
+ "00160000": {
+  "childcare_capacity_per_100_u5": 36.5,
+  "childcare_infant_toddler_per_100_u5": 6.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.579,
+  "childcare_c3_per_seat": 2085,
+  "childcare_c3_trend_2yr": -0.081
+ },
+ "00170000": {
+  "childcare_capacity_per_100_u5": 88.3,
+  "childcare_infant_toddler_per_100_u5": 27.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.727,
+  "childcare_c3_per_seat": 2229,
+  "childcare_c3_trend_2yr": -0.077
+ },
+ "00180000": {
+  "childcare_capacity_per_100_u5": 40.4,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.571,
+  "childcare_c3_per_seat": 523,
+  "childcare_c3_trend_2yr": -0.613
+ },
+ "00200000": {
+  "childcare_capacity_per_100_u5": 65.3,
+  "childcare_infant_toddler_per_100_u5": 7.9,
+  "childcare_headstart_per_100_u5": 8.8,
+  "childcare_subsidy_pct": 0.837,
+  "childcare_c3_per_seat": 1926,
+  "childcare_c3_trend_2yr": 0.036
+ },
+ "00230000": {
+  "childcare_capacity_per_100_u5": 135.5,
+  "childcare_infant_toddler_per_100_u5": 36.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1109,
+  "childcare_c3_trend_2yr": -0.379
+ },
+ "00240000": {
+  "childcare_capacity_per_100_u5": 57.1,
+  "childcare_infant_toddler_per_100_u5": 8.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.529,
+  "childcare_c3_per_seat": 1989,
+  "childcare_c3_trend_2yr": 0.301
+ },
+ "00250000": {
+  "childcare_capacity_per_100_u5": 60.1,
+  "childcare_infant_toddler_per_100_u5": 10.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1451,
+  "childcare_c3_trend_2yr": 0.321
+ },
+ "00260000": {
+  "childcare_capacity_per_100_u5": 168.0,
+  "childcare_infant_toddler_per_100_u5": 24.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.351,
+  "childcare_c3_per_seat": 1041,
+  "childcare_c3_trend_2yr": -0.138
+ },
+ "00270000": {
+  "childcare_capacity_per_100_u5": 11.2,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 433,
+  "childcare_c3_trend_2yr": -0.406
+ },
+ "00300000": {
+  "childcare_capacity_per_100_u5": 111.4,
+  "childcare_infant_toddler_per_100_u5": 23.5,
+  "childcare_headstart_per_100_u5": 4.9,
+  "childcare_subsidy_pct": 0.641,
+  "childcare_c3_per_seat": 1736,
+  "childcare_c3_trend_2yr": -0.097
+ },
+ "00310000": {
+  "childcare_capacity_per_100_u5": 86.5,
+  "childcare_infant_toddler_per_100_u5": 14.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.378,
+  "childcare_c3_per_seat": 976,
+  "childcare_c3_trend_2yr": -0.175
+ },
+ "00350000": {
+  "childcare_capacity_per_100_u5": 75.7,
+  "childcare_infant_toddler_per_100_u5": 16.8,
+  "childcare_headstart_per_100_u5": 6.1,
+  "childcare_subsidy_pct": 0.856,
+  "childcare_c3_per_seat": 1806,
+  "childcare_c3_trend_2yr": -0.073
+ },
+ "00360000": {
+  "childcare_capacity_per_100_u5": 47.0,
+  "childcare_infant_toddler_per_100_u5": 6.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1142,
+  "childcare_c3_trend_2yr": -0.226
+ },
+ "00380000": {
+  "childcare_capacity_per_100_u5": 130.2,
+  "childcare_infant_toddler_per_100_u5": 11.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.143,
+  "childcare_c3_per_seat": 683,
+  "childcare_c3_trend_2yr": -0.05
+ },
+ "00400000": {
+  "childcare_capacity_per_100_u5": 104.8,
+  "childcare_infant_toddler_per_100_u5": 20.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.432,
+  "childcare_c3_per_seat": 1140,
+  "childcare_c3_trend_2yr": -0.228
+ },
+ "00410000": {
+  "childcare_capacity_per_100_u5": 104.2,
+  "childcare_infant_toddler_per_100_u5": 15.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.833,
+  "childcare_c3_per_seat": 1795,
+  "childcare_c3_trend_2yr": 0.284
+ },
+ "00430000": {
+  "childcare_capacity_per_100_u5": 10.9,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1286,
+  "childcare_c3_trend_2yr": 1.769
+ },
+ "00440000": {
+  "childcare_capacity_per_100_u5": 46.7,
+  "childcare_infant_toddler_per_100_u5": 5.9,
+  "childcare_headstart_per_100_u5": 6.8,
+  "childcare_subsidy_pct": 0.868,
+  "childcare_c3_per_seat": 2488,
+  "childcare_c3_trend_2yr": 0.246
+ },
+ "00450000": {
+  "childcare_capacity_per_100_u5": 96.7,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1715,
+  "childcare_c3_trend_2yr": 0.475
+ },
+ "00460000": {
+  "childcare_capacity_per_100_u5": 121.0,
+  "childcare_infant_toddler_per_100_u5": 32.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.411,
+  "childcare_c3_per_seat": 847,
+  "childcare_c3_trend_2yr": -0.371
+ },
+ "00480000": {
+  "childcare_capacity_per_100_u5": 132.6,
+  "childcare_infant_toddler_per_100_u5": 41.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.448,
+  "childcare_c3_per_seat": 1178,
+  "childcare_c3_trend_2yr": -0.256
+ },
+ "00490000": {
+  "childcare_capacity_per_100_u5": 97.0,
+  "childcare_infant_toddler_per_100_u5": 31.2,
+  "childcare_headstart_per_100_u5": 1.5,
+  "childcare_subsidy_pct": 0.585,
+  "childcare_c3_per_seat": 1097,
+  "childcare_c3_trend_2yr": -0.397
+ },
+ "00500000": {
+  "childcare_capacity_per_100_u5": 78.4,
+  "childcare_infant_toddler_per_100_u5": 20.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.467,
+  "childcare_c3_per_seat": 1722,
+  "childcare_c3_trend_2yr": 0.071
+ },
+ "00510000": {
+  "childcare_capacity_per_100_u5": 50.2,
+  "childcare_infant_toddler_per_100_u5": 10.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 900,
+  "childcare_c3_trend_2yr": -0.561
+ },
+ "00520000": {
+  "childcare_capacity_per_100_u5": 80.9,
+  "childcare_infant_toddler_per_100_u5": 20.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.778,
+  "childcare_c3_per_seat": 2396,
+  "childcare_c3_trend_2yr": 0.615
+ },
+ "00560000": {
+  "childcare_capacity_per_100_u5": 82.0,
+  "childcare_infant_toddler_per_100_u5": 28.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.4,
+  "childcare_c3_per_seat": 1717,
+  "childcare_c3_trend_2yr": 0.06
+ },
+ "00570000": {
+  "childcare_capacity_per_100_u5": 39.7,
+  "childcare_infant_toddler_per_100_u5": 5.9,
+  "childcare_headstart_per_100_u5": 4.5,
+  "childcare_subsidy_pct": 0.914,
+  "childcare_c3_per_seat": 2082,
+  "childcare_c3_trend_2yr": 0.038
+ },
+ "00610000": {
+  "childcare_capacity_per_100_u5": 79.7,
+  "childcare_infant_toddler_per_100_u5": 4.3,
+  "childcare_headstart_per_100_u5": 3.5,
+  "childcare_subsidy_pct": 0.912,
+  "childcare_c3_per_seat": 2087,
+  "childcare_c3_trend_2yr": 0.144
+ },
+ "00630000": {
+  "childcare_capacity_per_100_u5": 45.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 2000,
+  "childcare_c3_trend_2yr": -0.036
+ },
+ "00640000": {
+  "childcare_capacity_per_100_u5": 29.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 4.5,
+  "childcare_subsidy_pct": 0.696,
+  "childcare_c3_per_seat": 1534,
+  "childcare_c3_trend_2yr": 0.298
+ },
+ "00650000": {
+  "childcare_capacity_per_100_u5": 40.3,
+  "childcare_infant_toddler_per_100_u5": 12.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.143,
+  "childcare_c3_per_seat": 1442,
+  "childcare_c3_trend_2yr": 0.122
+ },
+ "00670000": {
+  "childcare_capacity_per_100_u5": 124.9,
+  "childcare_infant_toddler_per_100_u5": 20.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.231,
+  "childcare_c3_per_seat": 1349,
+  "childcare_c3_trend_2yr": -0.117
+ },
+ "00680000": {
+  "childcare_capacity_per_100_u5": 40.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 877,
+  "childcare_c3_trend_2yr": -0.189
+ },
+ "00710000": {
+  "childcare_capacity_per_100_u5": 107.1,
+  "childcare_infant_toddler_per_100_u5": 21.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.577,
+  "childcare_c3_per_seat": 1152,
+  "childcare_c3_trend_2yr": -0.327
+ },
+ "00720000": {
+  "childcare_capacity_per_100_u5": 142.9,
+  "childcare_infant_toddler_per_100_u5": 45.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.783,
+  "childcare_c3_per_seat": 2606,
+  "childcare_c3_trend_2yr": 0.131
+ },
+ "00730000": {
+  "childcare_capacity_per_100_u5": 93.8,
+  "childcare_infant_toddler_per_100_u5": 26.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.487,
+  "childcare_c3_per_seat": 1683,
+  "childcare_c3_trend_2yr": -0.142
+ },
+ "00740000": {
+  "childcare_capacity_per_100_u5": 125.2,
+  "childcare_infant_toddler_per_100_u5": 48.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.444,
+  "childcare_c3_per_seat": 1148,
+  "childcare_c3_trend_2yr": -0.029
+ },
+ "00770000": {
+  "childcare_capacity_per_100_u5": 23.5,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.25,
+  "childcare_c3_per_seat": 934,
+  "childcare_c3_trend_2yr": 0.214
+ },
+ "00790000": {
+  "childcare_capacity_per_100_u5": 79.0,
+  "childcare_infant_toddler_per_100_u5": 9.0,
+  "childcare_headstart_per_100_u5": 6.6,
+  "childcare_subsidy_pct": 0.771,
+  "childcare_c3_per_seat": 1894,
+  "childcare_c3_trend_2yr": 0.024
+ },
+ "00820000": {
+  "childcare_capacity_per_100_u5": 66.9,
+  "childcare_infant_toddler_per_100_u5": 11.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.125,
+  "childcare_c3_per_seat": 845,
+  "childcare_c3_trend_2yr": -0.316
+ },
+ "00830000": {
+  "childcare_capacity_per_100_u5": 80.4,
+  "childcare_infant_toddler_per_100_u5": 28.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.6,
+  "childcare_c3_per_seat": 2065,
+  "childcare_c3_trend_2yr": 0.385
+ },
+ "00850000": {
+  "childcare_capacity_per_100_u5": 30.7,
+  "childcare_infant_toddler_per_100_u5": 10.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 2675,
+  "childcare_c3_trend_2yr": 0.256
+ },
+ "00860000": {
+  "childcare_capacity_per_100_u5": 131.8,
+  "childcare_infant_toddler_per_100_u5": 21.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.4,
+  "childcare_c3_per_seat": 1984,
+  "childcare_c3_trend_2yr": 0.008
+ },
+ "00870000": {
+  "childcare_capacity_per_100_u5": 85.3,
+  "childcare_infant_toddler_per_100_u5": 16.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.556,
+  "childcare_c3_per_seat": 1579,
+  "childcare_c3_trend_2yr": -0.222
+ },
+ "00880000": {
+  "childcare_capacity_per_100_u5": 123.1,
+  "childcare_infant_toddler_per_100_u5": 29.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.4,
+  "childcare_c3_per_seat": 1677,
+  "childcare_c3_trend_2yr": 0.179
+ },
+ "00890000": {
+  "childcare_capacity_per_100_u5": 120.8,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 678,
+  "childcare_c3_trend_2yr": 0.653
+ },
+ "00910000": {
+  "childcare_capacity_per_100_u5": 28.1,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 667,
+  "childcare_c3_trend_2yr": -0.537
+ },
+ "00930000": {
+  "childcare_capacity_per_100_u5": 51.6,
+  "childcare_infant_toddler_per_100_u5": 3.5,
+  "childcare_headstart_per_100_u5": 1.8,
+  "childcare_subsidy_pct": 0.788,
+  "childcare_c3_per_seat": 2031,
+  "childcare_c3_trend_2yr": 0.487
+ },
+ "00940000": {
+  "childcare_capacity_per_100_u5": 97.8,
+  "childcare_infant_toddler_per_100_u5": 25.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.909,
+  "childcare_c3_per_seat": 2373,
+  "childcare_c3_trend_2yr": -0.121
+ },
+ "00950000": {
+  "childcare_capacity_per_100_u5": 62.9,
+  "childcare_infant_toddler_per_100_u5": 9.7,
+  "childcare_headstart_per_100_u5": 10.2,
+  "childcare_subsidy_pct": 0.903,
+  "childcare_c3_per_seat": 1905,
+  "childcare_c3_trend_2yr": 0.081
+ },
+ "00960000": {
+  "childcare_capacity_per_100_u5": 49.9,
+  "childcare_infant_toddler_per_100_u5": 9.5,
+  "childcare_headstart_per_100_u5": 4.4,
+  "childcare_subsidy_pct": 0.735,
+  "childcare_c3_per_seat": 1851,
+  "childcare_c3_trend_2yr": 0.147
+ },
+ "00970000": {
+  "childcare_capacity_per_100_u5": 61.7,
+  "childcare_infant_toddler_per_100_u5": 3.0,
+  "childcare_headstart_per_100_u5": 4.6,
+  "childcare_subsidy_pct": 0.917,
+  "childcare_c3_per_seat": 2188,
+  "childcare_c3_trend_2yr": 0.218
+ },
+ "00980000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "00990000": {
+  "childcare_capacity_per_100_u5": 121.1,
+  "childcare_infant_toddler_per_100_u5": 31.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.647,
+  "childcare_c3_per_seat": 1647,
+  "childcare_c3_trend_2yr": -0.187
+ },
+ "01000000": {
+  "childcare_capacity_per_100_u5": 58.8,
+  "childcare_infant_toddler_per_100_u5": 12.8,
+  "childcare_headstart_per_100_u5": 5.0,
+  "childcare_subsidy_pct": 0.68,
+  "childcare_c3_per_seat": 1890,
+  "childcare_c3_trend_2yr": -0.092
+ },
+ "01010000": {
+  "childcare_capacity_per_100_u5": 91.0,
+  "childcare_infant_toddler_per_100_u5": 23.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.258,
+  "childcare_c3_per_seat": 1287,
+  "childcare_c3_trend_2yr": 0.032
+ },
+ "01030000": {
+  "childcare_capacity_per_100_u5": 88.7,
+  "childcare_infant_toddler_per_100_u5": 10.2,
+  "childcare_headstart_per_100_u5": 16.2,
+  "childcare_subsidy_pct": 0.75,
+  "childcare_c3_per_seat": 2276,
+  "childcare_c3_trend_2yr": 0.144
+ },
+ "01050000": {
+  "childcare_capacity_per_100_u5": 39.9,
+  "childcare_infant_toddler_per_100_u5": 4.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 908,
+  "childcare_c3_trend_2yr": 3.63
+ },
+ "01070000": {
+  "childcare_capacity_per_100_u5": 68.5,
+  "childcare_infant_toddler_per_100_u5": 12.3,
+  "childcare_headstart_per_100_u5": 18.8,
+  "childcare_subsidy_pct": 0.783,
+  "childcare_c3_per_seat": 1720,
+  "childcare_c3_trend_2yr": 0.167
+ },
+ "01100000": {
+  "childcare_capacity_per_100_u5": 58.5,
+  "childcare_infant_toddler_per_100_u5": 5.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.438,
+  "childcare_c3_per_seat": 877,
+  "childcare_c3_trend_2yr": 0.481
+ },
+ "01110000": {
+  "childcare_capacity_per_100_u5": 117.5,
+  "childcare_infant_toddler_per_100_u5": 24.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.833,
+  "childcare_c3_per_seat": 2146,
+  "childcare_c3_trend_2yr": 0.129
+ },
+ "01140000": {
+  "childcare_capacity_per_100_u5": 71.0,
+  "childcare_infant_toddler_per_100_u5": 10.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.533,
+  "childcare_c3_per_seat": 1626,
+  "childcare_c3_trend_2yr": 0.179
+ },
+ "01170000": {
+  "childcare_capacity_per_100_u5": 39.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 1459,
+  "childcare_c3_trend_2yr": 0.114
+ },
+ "01180000": {
+  "childcare_capacity_per_100_u5": 72.8,
+  "childcare_infant_toddler_per_100_u5": 8.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1695,
+  "childcare_c3_trend_2yr": 0.192
+ },
+ "01210000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "01220000": {
+  "childcare_capacity_per_100_u5": 82.2,
+  "childcare_infant_toddler_per_100_u5": 29.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 1426,
+  "childcare_c3_trend_2yr": -0.096
+ },
+ "01250000": {
+  "childcare_capacity_per_100_u5": 89.8,
+  "childcare_infant_toddler_per_100_u5": 12.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.375,
+  "childcare_c3_per_seat": 1116,
+  "childcare_c3_trend_2yr": -0.254
+ },
+ "01270000": {
+  "childcare_capacity_per_100_u5": 22.4,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 1292,
+  "childcare_c3_trend_2yr": -0.184
+ },
+ "01280000": {
+  "childcare_capacity_per_100_u5": 73.5,
+  "childcare_infant_toddler_per_100_u5": 8.2,
+  "childcare_headstart_per_100_u5": 10.6,
+  "childcare_subsidy_pct": 0.896,
+  "childcare_c3_per_seat": 2046,
+  "childcare_c3_trend_2yr": 0.196
+ },
+ "01310000": {
+  "childcare_capacity_per_100_u5": 88.6,
+  "childcare_infant_toddler_per_100_u5": 30.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.235,
+  "childcare_c3_per_seat": 1010,
+  "childcare_c3_trend_2yr": -0.382
+ },
+ "01330000": {
+  "childcare_capacity_per_100_u5": 41.1,
+  "childcare_infant_toddler_per_100_u5": 4.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.938,
+  "childcare_c3_per_seat": 2024,
+  "childcare_c3_trend_2yr": 0.028
+ },
+ "01350000": {
+  "childcare_capacity_per_100_u5": 43.8,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.6,
+  "childcare_c3_per_seat": 1726,
+  "childcare_c3_trend_2yr": 0.008
+ },
+ "01360000": {
+  "childcare_capacity_per_100_u5": 56.0,
+  "childcare_infant_toddler_per_100_u5": 7.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.231,
+  "childcare_c3_per_seat": 1605,
+  "childcare_c3_trend_2yr": 0.259
+ },
+ "01370000": {
+  "childcare_capacity_per_100_u5": 61.7,
+  "childcare_infant_toddler_per_100_u5": 5.3,
+  "childcare_headstart_per_100_u5": 0.8,
+  "childcare_subsidy_pct": 0.852,
+  "childcare_c3_per_seat": 2242,
+  "childcare_c3_trend_2yr": 0.161
+ },
+ "01380000": {
+  "childcare_capacity_per_100_u5": 96.8,
+  "childcare_infant_toddler_per_100_u5": 41.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.6,
+  "childcare_c3_per_seat": 2484,
+  "childcare_c3_trend_2yr": 0.367
+ },
+ "01390000": {
+  "childcare_capacity_per_100_u5": 92.4,
+  "childcare_infant_toddler_per_100_u5": 20.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.389,
+  "childcare_c3_per_seat": 1518,
+  "childcare_c3_trend_2yr": 0.177
+ },
+ "01410000": {
+  "childcare_capacity_per_100_u5": 72.9,
+  "childcare_infant_toddler_per_100_u5": 11.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.571,
+  "childcare_c3_per_seat": 1799,
+  "childcare_c3_trend_2yr": -0.021
+ },
+ "01420000": {
+  "childcare_capacity_per_100_u5": 8.2,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 654,
+  "childcare_c3_trend_2yr": 0.2
+ },
+ "01440000": {
+  "childcare_capacity_per_100_u5": 54.6,
+  "childcare_infant_toddler_per_100_u5": 12.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.385,
+  "childcare_c3_per_seat": 1291,
+  "childcare_c3_trend_2yr": -0.12
+ },
+ "01450000": {
+  "childcare_capacity_per_100_u5": 81.9,
+  "childcare_infant_toddler_per_100_u5": 17.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.714,
+  "childcare_c3_per_seat": 1887,
+  "childcare_c3_trend_2yr": 0.57
+ },
+ "01490000": {
+  "childcare_capacity_per_100_u5": 112.4,
+  "childcare_infant_toddler_per_100_u5": 10.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.913,
+  "childcare_c3_per_seat": 2308,
+  "childcare_c3_trend_2yr": 0.209
+ },
+ "01500000": {
+  "childcare_capacity_per_100_u5": 125.6,
+  "childcare_infant_toddler_per_100_u5": 28.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.4,
+  "childcare_c3_per_seat": 1928,
+  "childcare_c3_trend_2yr": -0.05
+ },
+ "01510000": {
+  "childcare_capacity_per_100_u5": 45.8,
+  "childcare_infant_toddler_per_100_u5": 5.8,
+  "childcare_headstart_per_100_u5": 8.4,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 2251,
+  "childcare_c3_trend_2yr": 0.5
+ },
+ "01520000": {
+  "childcare_capacity_per_100_u5": 118.8,
+  "childcare_infant_toddler_per_100_u5": 41.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 2148,
+  "childcare_c3_trend_2yr": -0.122
+ },
+ "01530000": {
+  "childcare_capacity_per_100_u5": 49.8,
+  "childcare_infant_toddler_per_100_u5": 7.5,
+  "childcare_headstart_per_100_u5": 5.8,
+  "childcare_subsidy_pct": 0.795,
+  "childcare_c3_per_seat": 2316,
+  "childcare_c3_trend_2yr": 0.364
+ },
+ "01540000": {
+  "childcare_capacity_per_100_u5": 154.3,
+  "childcare_infant_toddler_per_100_u5": 19.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1041,
+  "childcare_c3_trend_2yr": -0.081
+ },
+ "01550000": {
+  "childcare_capacity_per_100_u5": 162.4,
+  "childcare_infant_toddler_per_100_u5": 40.3,
+  "childcare_headstart_per_100_u5": 3.3,
+  "childcare_subsidy_pct": 0.412,
+  "childcare_c3_per_seat": 1175,
+  "childcare_c3_trend_2yr": -0.306
+ },
+ "01570000": {
+  "childcare_capacity_per_100_u5": 96.5,
+  "childcare_infant_toddler_per_100_u5": 13.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.1,
+  "childcare_c3_per_seat": 634,
+  "childcare_c3_trend_2yr": -0.529
+ },
+ "01580000": {
+  "childcare_capacity_per_100_u5": 32.6,
+  "childcare_infant_toddler_per_100_u5": 9.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 1793,
+  "childcare_c3_trend_2yr": 0.147
+ },
+ "01590000": {
+  "childcare_capacity_per_100_u5": 68.7,
+  "childcare_infant_toddler_per_100_u5": 9.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.154,
+  "childcare_c3_per_seat": 515,
+  "childcare_c3_trend_2yr": -0.493
+ },
+ "01600000": {
+  "childcare_capacity_per_100_u5": 53.7,
+  "childcare_infant_toddler_per_100_u5": 4.4,
+  "childcare_headstart_per_100_u5": 6.8,
+  "childcare_subsidy_pct": 0.888,
+  "childcare_c3_per_seat": 2299,
+  "childcare_c3_trend_2yr": 0.181
+ },
+ "01610000": {
+  "childcare_capacity_per_100_u5": 68.8,
+  "childcare_infant_toddler_per_100_u5": 3.4,
+  "childcare_headstart_per_100_u5": 4.0,
+  "childcare_subsidy_pct": 0.235,
+  "childcare_c3_per_seat": 1353,
+  "childcare_c3_trend_2yr": 0.038
+ },
+ "01620000": {
+  "childcare_capacity_per_100_u5": 23.3,
+  "childcare_infant_toddler_per_100_u5": 2.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.3,
+  "childcare_c3_per_seat": 642,
+  "childcare_c3_trend_2yr": -0.417
+ },
+ "01630000": {
+  "childcare_capacity_per_100_u5": 67.4,
+  "childcare_infant_toddler_per_100_u5": 5.9,
+  "childcare_headstart_per_100_u5": 4.3,
+  "childcare_subsidy_pct": 0.866,
+  "childcare_c3_per_seat": 2166,
+  "childcare_c3_trend_2yr": 0.332
+ },
+ "01640000": {
+  "childcare_capacity_per_100_u5": 43.6,
+  "childcare_infant_toddler_per_100_u5": 10.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1501,
+  "childcare_c3_trend_2yr": 0.021
+ },
+ "01650000": {
+  "childcare_capacity_per_100_u5": 62.2,
+  "childcare_infant_toddler_per_100_u5": 10.8,
+  "childcare_headstart_per_100_u5": 3.2,
+  "childcare_subsidy_pct": 0.767,
+  "childcare_c3_per_seat": 1817,
+  "childcare_c3_trend_2yr": -0.053
+ },
+ "01670000": {
+  "childcare_capacity_per_100_u5": 73.2,
+  "childcare_infant_toddler_per_100_u5": 24.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.579,
+  "childcare_c3_per_seat": 1570,
+  "childcare_c3_trend_2yr": 0.214
+ },
+ "01680000": {
+  "childcare_capacity_per_100_u5": 140.6,
+  "childcare_infant_toddler_per_100_u5": 26.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.263,
+  "childcare_c3_per_seat": 991,
+  "childcare_c3_trend_2yr": -0.229
+ },
+ "01690000": {
+  "childcare_capacity_per_100_u5": 227.4,
+  "childcare_infant_toddler_per_100_u5": 57.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.8,
+  "childcare_c3_per_seat": 2005,
+  "childcare_c3_trend_2yr": -0.086
+ },
+ "01700000": {
+  "childcare_capacity_per_100_u5": 68.9,
+  "childcare_infant_toddler_per_100_u5": 17.3,
+  "childcare_headstart_per_100_u5": 5.9,
+  "childcare_subsidy_pct": 0.681,
+  "childcare_c3_per_seat": 2180,
+  "childcare_c3_trend_2yr": -0.068
+ },
+ "01710000": {
+  "childcare_capacity_per_100_u5": 66.6,
+  "childcare_infant_toddler_per_100_u5": 17.4,
+  "childcare_headstart_per_100_u5": 10.0,
+  "childcare_subsidy_pct": 0.526,
+  "childcare_c3_per_seat": 1447,
+  "childcare_c3_trend_2yr": 0.373
+ },
+ "01720000": {
+  "childcare_capacity_per_100_u5": 48.8,
+  "childcare_infant_toddler_per_100_u5": 1.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1844,
+  "childcare_c3_trend_2yr": 0.189
+ },
+ "01730000": {
+  "childcare_capacity_per_100_u5": 205.7,
+  "childcare_infant_toddler_per_100_u5": 53.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.8,
+  "childcare_c3_per_seat": 1789,
+  "childcare_c3_trend_2yr": 0.089
+ },
+ "01740000": {
+  "childcare_capacity_per_100_u5": 126.9,
+  "childcare_infant_toddler_per_100_u5": 35.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.556,
+  "childcare_c3_per_seat": 1084,
+  "childcare_c3_trend_2yr": 0.332
+ },
+ "01750000": {
+  "childcare_capacity_per_100_u5": 91.8,
+  "childcare_infant_toddler_per_100_u5": 16.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.818,
+  "childcare_c3_per_seat": 1369,
+  "childcare_c3_trend_2yr": 0.061
+ },
+ "01760000": {
+  "childcare_capacity_per_100_u5": 62.6,
+  "childcare_infant_toddler_per_100_u5": 13.5,
+  "childcare_headstart_per_100_u5": 2.8,
+  "childcare_subsidy_pct": 0.375,
+  "childcare_c3_per_seat": 1337,
+  "childcare_c3_trend_2yr": -0.237
+ },
+ "01770000": {
+  "childcare_capacity_per_100_u5": 87.2,
+  "childcare_infant_toddler_per_100_u5": 17.0,
+  "childcare_headstart_per_100_u5": 2.1,
+  "childcare_subsidy_pct": 0.263,
+  "childcare_c3_per_seat": 1606,
+  "childcare_c3_trend_2yr": 0.138
+ },
+ "01780000": {
+  "childcare_capacity_per_100_u5": 57.9,
+  "childcare_infant_toddler_per_100_u5": 20.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.435,
+  "childcare_c3_per_seat": 1722,
+  "childcare_c3_trend_2yr": -0.03
+ },
+ "01810000": {
+  "childcare_capacity_per_100_u5": 80.4,
+  "childcare_infant_toddler_per_100_u5": 7.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.888,
+  "childcare_c3_per_seat": 2157,
+  "childcare_c3_trend_2yr": 0.194
+ },
+ "01820000": {
+  "childcare_capacity_per_100_u5": 63.5,
+  "childcare_infant_toddler_per_100_u5": 15.8,
+  "childcare_headstart_per_100_u5": 1.7,
+  "childcare_subsidy_pct": 0.722,
+  "childcare_c3_per_seat": 1588,
+  "childcare_c3_trend_2yr": 0.16
+ },
+ "01840000": {
+  "childcare_capacity_per_100_u5": 100.8,
+  "childcare_infant_toddler_per_100_u5": 42.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.75,
+  "childcare_c3_per_seat": 2587,
+  "childcare_c3_trend_2yr": 0.073
+ },
+ "01850000": {
+  "childcare_capacity_per_100_u5": 50.5,
+  "childcare_infant_toddler_per_100_u5": 13.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.622,
+  "childcare_c3_per_seat": 2046,
+  "childcare_c3_trend_2yr": -0.004
+ },
+ "01860000": {
+  "childcare_capacity_per_100_u5": 40.9,
+  "childcare_infant_toddler_per_100_u5": 13.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 2594,
+  "childcare_c3_trend_2yr": 0.314
+ },
+ "01870000": {
+  "childcare_capacity_per_100_u5": 34.6,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.2,
+  "childcare_c3_per_seat": 847,
+  "childcare_c3_trend_2yr": -0.263
+ },
+ "01890000": {
+  "childcare_capacity_per_100_u5": 79.9,
+  "childcare_infant_toddler_per_100_u5": 20.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.452,
+  "childcare_c3_per_seat": 1519,
+  "childcare_c3_trend_2yr": -0.118
+ },
+ "01910000": {
+  "childcare_capacity_per_100_u5": 16.3,
+  "childcare_infant_toddler_per_100_u5": 6.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 266,
+  "childcare_c3_trend_2yr": -0.392
+ },
+ "01960000": {
+  "childcare_capacity_per_100_u5": 33.1,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 226,
+  "childcare_c3_trend_2yr": -0.457
+ },
+ "01970000": {
+  "childcare_capacity_per_100_u5": 40.3,
+  "childcare_infant_toddler_per_100_u5": 5.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.235,
+  "childcare_c3_per_seat": 1128,
+  "childcare_c3_trend_2yr": -0.274
+ },
+ "01980000": {
+  "childcare_capacity_per_100_u5": 91.5,
+  "childcare_infant_toddler_per_100_u5": 24.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.326,
+  "childcare_c3_per_seat": 1174,
+  "childcare_c3_trend_2yr": -0.186
+ },
+ "01990000": {
+  "childcare_capacity_per_100_u5": 139.1,
+  "childcare_infant_toddler_per_100_u5": 27.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.455,
+  "childcare_c3_per_seat": 1337,
+  "childcare_c3_trend_2yr": -0.147
+ },
+ "02010000": {
+  "childcare_capacity_per_100_u5": 45.6,
+  "childcare_infant_toddler_per_100_u5": 9.5,
+  "childcare_headstart_per_100_u5": 3.7,
+  "childcare_subsidy_pct": 0.949,
+  "childcare_c3_per_seat": 2585,
+  "childcare_c3_trend_2yr": 0.258
+ },
+ "02040000": {
+  "childcare_capacity_per_100_u5": 137.3,
+  "childcare_infant_toddler_per_100_u5": 46.1,
+  "childcare_headstart_per_100_u5": 6.5,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1053,
+  "childcare_c3_trend_2yr": -0.101
+ },
+ "02070000": {
+  "childcare_capacity_per_100_u5": 158.4,
+  "childcare_infant_toddler_per_100_u5": 30.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.347,
+  "childcare_c3_per_seat": 856,
+  "childcare_c3_trend_2yr": -0.275
+ },
+ "02080000": {
+  "childcare_capacity_per_100_u5": 24.7,
+  "childcare_infant_toddler_per_100_u5": 7.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 664,
+  "childcare_c3_trend_2yr": -0.47
+ },
+ "02090000": {
+  "childcare_capacity_per_100_u5": 59.0,
+  "childcare_infant_toddler_per_100_u5": 7.4,
+  "childcare_headstart_per_100_u5": 12.8,
+  "childcare_subsidy_pct": 0.8,
+  "childcare_c3_per_seat": 2428,
+  "childcare_c3_trend_2yr": -0.11
+ },
+ "02100000": {
+  "childcare_capacity_per_100_u5": 97.6,
+  "childcare_infant_toddler_per_100_u5": 13.9,
+  "childcare_headstart_per_100_u5": 8.4,
+  "childcare_subsidy_pct": 0.704,
+  "childcare_c3_per_seat": 1477,
+  "childcare_c3_trend_2yr": -0.224
+ },
+ "02110000": {
+  "childcare_capacity_per_100_u5": 40.5,
+  "childcare_infant_toddler_per_100_u5": 14.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.3,
+  "childcare_c3_per_seat": 1271,
+  "childcare_c3_trend_2yr": -0.102
+ },
+ "02120000": {
+  "childcare_capacity_per_100_u5": 76.1,
+  "childcare_infant_toddler_per_100_u5": 16.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.739,
+  "childcare_c3_per_seat": 1642,
+  "childcare_c3_trend_2yr": -0.169
+ },
+ "02130000": {
+  "childcare_capacity_per_100_u5": 51.8,
+  "childcare_infant_toddler_per_100_u5": 15.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.385,
+  "childcare_c3_per_seat": 1824,
+  "childcare_c3_trend_2yr": 0.245
+ },
+ "02140000": {
+  "childcare_capacity_per_100_u5": 89.6,
+  "childcare_infant_toddler_per_100_u5": 12.2,
+  "childcare_headstart_per_100_u5": 2.9,
+  "childcare_subsidy_pct": 0.647,
+  "childcare_c3_per_seat": 1770,
+  "childcare_c3_trend_2yr": -0.121
+ },
+ "02150000": {
+  "childcare_capacity_per_100_u5": 16.5,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 824,
+  "childcare_c3_trend_2yr": -0.11
+ },
+ "02170000": {
+  "childcare_capacity_per_100_u5": 102.9,
+  "childcare_infant_toddler_per_100_u5": 17.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.471,
+  "childcare_c3_per_seat": 1271,
+  "childcare_c3_trend_2yr": 0.028
+ },
+ "02180000": {
+  "childcare_capacity_per_100_u5": 80.3,
+  "childcare_infant_toddler_per_100_u5": 16.1,
+  "childcare_headstart_per_100_u5": 10.1,
+  "childcare_subsidy_pct": 0.733,
+  "childcare_c3_per_seat": 1844,
+  "childcare_c3_trend_2yr": 0.047
+ },
+ "02190000": {
+  "childcare_capacity_per_100_u5": 103.2,
+  "childcare_infant_toddler_per_100_u5": 29.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.615,
+  "childcare_c3_per_seat": 1571,
+  "childcare_c3_trend_2yr": 0.399
+ },
+ "02200000": {
+  "childcare_capacity_per_100_u5": 63.4,
+  "childcare_infant_toddler_per_100_u5": 9.9,
+  "childcare_headstart_per_100_u5": 1.7,
+  "childcare_subsidy_pct": 0.514,
+  "childcare_c3_per_seat": 1309,
+  "childcare_c3_trend_2yr": 0.061
+ },
+ "02210000": {
+  "childcare_capacity_per_100_u5": 52.6,
+  "childcare_infant_toddler_per_100_u5": 12.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 2299,
+  "childcare_c3_trend_2yr": 0.07
+ },
+ "02230000": {
+  "childcare_capacity_per_100_u5": 28.8,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 5.6,
+  "childcare_subsidy_pct": 0.714,
+  "childcare_c3_per_seat": 1713,
+  "childcare_c3_trend_2yr": -0.293
+ },
+ "02240000": {
+  "childcare_capacity_per_100_u5": 205.6,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 741,
+  "childcare_c3_trend_2yr": -0.416
+ },
+ "02260000": {
+  "childcare_capacity_per_100_u5": 50.7,
+  "childcare_infant_toddler_per_100_u5": 4.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.778,
+  "childcare_c3_per_seat": 1575,
+  "childcare_c3_trend_2yr": 0.363
+ },
+ "02270000": {
+  "childcare_capacity_per_100_u5": 30.6,
+  "childcare_infant_toddler_per_100_u5": 1.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.556,
+  "childcare_c3_per_seat": 2023,
+  "childcare_c3_trend_2yr": 0.341
+ },
+ "02290000": {
+  "childcare_capacity_per_100_u5": 76.0,
+  "childcare_infant_toddler_per_100_u5": 15.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.633,
+  "childcare_c3_per_seat": 1859,
+  "childcare_c3_trend_2yr": 0.008
+ },
+ "02300000": {
+  "childcare_capacity_per_100_u5": 55.9,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0
+ },
+ "02310000": {
+  "childcare_capacity_per_100_u5": 57.0,
+  "childcare_infant_toddler_per_100_u5": 14.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.818,
+  "childcare_c3_per_seat": 1826,
+  "childcare_c3_trend_2yr": 0.331
+ },
+ "02340000": {
+  "childcare_capacity_per_100_u5": 147.8,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 653,
+  "childcare_c3_trend_2yr": 0.143
+ },
+ "02360000": {
+  "childcare_capacity_per_100_u5": 86.3,
+  "childcare_infant_toddler_per_100_u5": 10.5,
+  "childcare_headstart_per_100_u5": 7.5,
+  "childcare_subsidy_pct": 0.724,
+  "childcare_c3_per_seat": 2479,
+  "childcare_c3_trend_2yr": 0.177
+ },
+ "02380000": {
+  "childcare_capacity_per_100_u5": 92.4,
+  "childcare_infant_toddler_per_100_u5": 26.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1789,
+  "childcare_c3_trend_2yr": 0.537
+ },
+ "02390000": {
+  "childcare_capacity_per_100_u5": 67.8,
+  "childcare_infant_toddler_per_100_u5": 15.0,
+  "childcare_headstart_per_100_u5": 8.3,
+  "childcare_subsidy_pct": 0.622,
+  "childcare_c3_per_seat": 1851,
+  "childcare_c3_trend_2yr": 0.157
+ },
+ "02400000": {
+  "childcare_capacity_per_100_u5": 89.1,
+  "childcare_infant_toddler_per_100_u5": 18.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 976,
+  "childcare_c3_trend_2yr": 0.146
+ },
+ "02420000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "02430000": {
+  "childcare_capacity_per_100_u5": 74.7,
+  "childcare_infant_toddler_per_100_u5": 14.4,
+  "childcare_headstart_per_100_u5": 4.9,
+  "childcare_subsidy_pct": 0.739,
+  "childcare_c3_per_seat": 1773,
+  "childcare_c3_trend_2yr": -0.042
+ },
+ "02440000": {
+  "childcare_capacity_per_100_u5": 84.9,
+  "childcare_infant_toddler_per_100_u5": 8.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.85,
+  "childcare_c3_per_seat": 1906,
+  "childcare_c3_trend_2yr": 0.113
+ },
+ "02460000": {
+  "childcare_capacity_per_100_u5": 47.5,
+  "childcare_infant_toddler_per_100_u5": 6.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.35,
+  "childcare_c3_per_seat": 1434,
+  "childcare_c3_trend_2yr": 0.127
+ },
+ "02480000": {
+  "childcare_capacity_per_100_u5": 53.1,
+  "childcare_infant_toddler_per_100_u5": 3.5,
+  "childcare_headstart_per_100_u5": 2.4,
+  "childcare_subsidy_pct": 0.821,
+  "childcare_c3_per_seat": 1663,
+  "childcare_c3_trend_2yr": -0.018
+ },
+ "02490000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "02500000": {
+  "childcare_capacity_per_100_u5": 66.3,
+  "childcare_infant_toddler_per_100_u5": 22.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 2574,
+  "childcare_c3_trend_2yr": 0.374
+ },
+ "02510000": {
+  "childcare_capacity_per_100_u5": 39.9,
+  "childcare_infant_toddler_per_100_u5": 10.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.7,
+  "childcare_c3_per_seat": 1386,
+  "childcare_c3_trend_2yr": -0.143
+ },
+ "02520000": {
+  "childcare_capacity_per_100_u5": 24.1,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1194,
+  "childcare_c3_trend_2yr": 0.782
+ },
+ "02530000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "02580000": {
+  "childcare_capacity_per_100_u5": 125.0,
+  "childcare_infant_toddler_per_100_u5": 20.2,
+  "childcare_headstart_per_100_u5": 6.6,
+  "childcare_subsidy_pct": 0.857,
+  "childcare_c3_per_seat": 1925,
+  "childcare_c3_trend_2yr": 0.025
+ },
+ "02610000": {
+  "childcare_capacity_per_100_u5": 79.1,
+  "childcare_infant_toddler_per_100_u5": 21.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.429,
+  "childcare_c3_per_seat": 1090,
+  "childcare_c3_trend_2yr": 0.077
+ },
+ "02620000": {
+  "childcare_capacity_per_100_u5": 64.2,
+  "childcare_infant_toddler_per_100_u5": 13.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.677,
+  "childcare_c3_per_seat": 2521,
+  "childcare_c3_trend_2yr": 0.072
+ },
+ "02630000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "02640000": {
+  "childcare_capacity_per_100_u5": 49.1,
+  "childcare_infant_toddler_per_100_u5": 6.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.133,
+  "childcare_c3_per_seat": 893,
+  "childcare_c3_trend_2yr": -0.399
+ },
+ "02650000": {
+  "childcare_capacity_per_100_u5": 147.8,
+  "childcare_infant_toddler_per_100_u5": 34.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.75,
+  "childcare_c3_per_seat": 1182,
+  "childcare_c3_trend_2yr": -0.045
+ },
+ "02660000": {
+  "childcare_capacity_per_100_u5": 67.9,
+  "childcare_infant_toddler_per_100_u5": 17.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.192,
+  "childcare_c3_per_seat": 795,
+  "childcare_c3_trend_2yr": -0.385
+ },
+ "02690000": {
+  "childcare_capacity_per_100_u5": 14.6,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 289,
+  "childcare_c3_trend_2yr": -0.407
+ },
+ "02710000": {
+  "childcare_capacity_per_100_u5": 52.0,
+  "childcare_infant_toddler_per_100_u5": 12.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.486,
+  "childcare_c3_per_seat": 1590,
+  "childcare_c3_trend_2yr": -0.159
+ },
+ "02720000": {
+  "childcare_capacity_per_100_u5": 24.4,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0
+ },
+ "02730000": {
+  "childcare_capacity_per_100_u5": 58.2,
+  "childcare_infant_toddler_per_100_u5": 10.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.933,
+  "childcare_c3_per_seat": 1870,
+  "childcare_c3_trend_2yr": 0.433
+ },
+ "02740000": {
+  "childcare_capacity_per_100_u5": 60.9,
+  "childcare_infant_toddler_per_100_u5": 17.7,
+  "childcare_headstart_per_100_u5": 5.7,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1265,
+  "childcare_c3_trend_2yr": -0.236
+ },
+ "02750000": {
+  "childcare_capacity_per_100_u5": 57.4,
+  "childcare_infant_toddler_per_100_u5": 19.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.286,
+  "childcare_c3_per_seat": 2544,
+  "childcare_c3_trend_2yr": -0.049
+ },
+ "02760000": {
+  "childcare_capacity_per_100_u5": 23.9,
+  "childcare_infant_toddler_per_100_u5": 7.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.6,
+  "childcare_c3_per_seat": 1068,
+  "childcare_c3_trend_2yr": -0.408
+ },
+ "02770000": {
+  "childcare_capacity_per_100_u5": 61.9,
+  "childcare_infant_toddler_per_100_u5": 4.9,
+  "childcare_headstart_per_100_u5": 9.1,
+  "childcare_subsidy_pct": 0.889,
+  "childcare_c3_per_seat": 2241,
+  "childcare_c3_trend_2yr": 0.112
+ },
+ "02780000": {
+  "childcare_capacity_per_100_u5": 88.5,
+  "childcare_infant_toddler_per_100_u5": 25.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 2632,
+  "childcare_c3_trend_2yr": 0.185
+ },
+ "02810000": {
+  "childcare_capacity_per_100_u5": 81.1,
+  "childcare_infant_toddler_per_100_u5": 8.4,
+  "childcare_headstart_per_100_u5": 3.3,
+  "childcare_subsidy_pct": 0.901,
+  "childcare_c3_per_seat": 2088,
+  "childcare_c3_trend_2yr": 0.204
+ },
+ "02840000": {
+  "childcare_capacity_per_100_u5": 59.3,
+  "childcare_infant_toddler_per_100_u5": 10.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.55,
+  "childcare_c3_per_seat": 1331,
+  "childcare_c3_trend_2yr": -0.107
+ },
+ "02850000": {
+  "childcare_capacity_per_100_u5": 116.5,
+  "childcare_infant_toddler_per_100_u5": 21.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.727,
+  "childcare_c3_per_seat": 2233,
+  "childcare_c3_trend_2yr": 0.085
+ },
+ "02880000": {
+  "childcare_capacity_per_100_u5": 156.1,
+  "childcare_infant_toddler_per_100_u5": 34.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.571,
+  "childcare_c3_per_seat": 1109,
+  "childcare_c3_trend_2yr": -0.047
+ },
+ "02890000": {
+  "childcare_capacity_per_100_u5": 10.7,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 3000
+ },
+ "02900000": {
+  "childcare_capacity_per_100_u5": 39.1,
+  "childcare_infant_toddler_per_100_u5": 11.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1112,
+  "childcare_c3_trend_2yr": -0.368
+ },
+ "02910000": {
+  "childcare_capacity_per_100_u5": 78.8,
+  "childcare_infant_toddler_per_100_u5": 21.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.294,
+  "childcare_c3_per_seat": 1191,
+  "childcare_c3_trend_2yr": 0.286
+ },
+ "02920000": {
+  "childcare_capacity_per_100_u5": 51.3,
+  "childcare_infant_toddler_per_100_u5": 13.5,
+  "childcare_headstart_per_100_u5": 3.1,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 2526,
+  "childcare_c3_trend_2yr": 0.212
+ },
+ "02930000": {
+  "childcare_capacity_per_100_u5": 40.1,
+  "childcare_infant_toddler_per_100_u5": 7.3,
+  "childcare_headstart_per_100_u5": 7.9,
+  "childcare_subsidy_pct": 0.786,
+  "childcare_c3_per_seat": 2236,
+  "childcare_c3_trend_2yr": 0.301
+ },
+ "02950000": {
+  "childcare_capacity_per_100_u5": 75.3,
+  "childcare_infant_toddler_per_100_u5": 16.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.368,
+  "childcare_c3_per_seat": 1247,
+  "childcare_c3_trend_2yr": -0.039
+ },
+ "02960000": {
+  "childcare_capacity_per_100_u5": 66.9,
+  "childcare_infant_toddler_per_100_u5": 14.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.429,
+  "childcare_c3_per_seat": 733,
+  "childcare_c3_trend_2yr": -0.599
+ },
+ "02980000": {
+  "childcare_capacity_per_100_u5": 52.5,
+  "childcare_infant_toddler_per_100_u5": 14.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.2,
+  "childcare_c3_per_seat": 495,
+  "childcare_c3_trend_2yr": -0.365
+ },
+ "03000000": {
+  "childcare_capacity_per_100_u5": 66.7,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 1650,
+  "childcare_c3_trend_2yr": -0.108
+ },
+ "03010000": {
+  "childcare_capacity_per_100_u5": 41.5,
+  "childcare_infant_toddler_per_100_u5": 10.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.615,
+  "childcare_c3_per_seat": 1845,
+  "childcare_c3_trend_2yr": 0.383
+ },
+ "03040000": {
+  "childcare_capacity_per_100_u5": 28.3,
+  "childcare_infant_toddler_per_100_u5": 2.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.412,
+  "childcare_c3_per_seat": 1599,
+  "childcare_c3_trend_2yr": 0.665
+ },
+ "03050000": {
+  "childcare_capacity_per_100_u5": 43.0,
+  "childcare_infant_toddler_per_100_u5": 14.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.545,
+  "childcare_c3_per_seat": 1830,
+  "childcare_c3_trend_2yr": 0.301
+ },
+ "03060000": {
+  "childcare_capacity_per_100_u5": 6.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 2250,
+  "childcare_c3_trend_2yr": 0.293
+ },
+ "03070000": {
+  "childcare_capacity_per_100_u5": 86.6,
+  "childcare_infant_toddler_per_100_u5": 30.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.407,
+  "childcare_c3_per_seat": 1524,
+  "childcare_c3_trend_2yr": -0.208
+ },
+ "03080000": {
+  "childcare_capacity_per_100_u5": 49.2,
+  "childcare_infant_toddler_per_100_u5": 7.8,
+  "childcare_headstart_per_100_u5": 3.7,
+  "childcare_subsidy_pct": 0.488,
+  "childcare_c3_per_seat": 1435,
+  "childcare_c3_trend_2yr": -0.119
+ },
+ "03090000": {
+  "childcare_capacity_per_100_u5": 36.0,
+  "childcare_infant_toddler_per_100_u5": 7.2,
+  "childcare_headstart_per_100_u5": 2.9,
+  "childcare_subsidy_pct": 0.727,
+  "childcare_c3_per_seat": 1327,
+  "childcare_c3_trend_2yr": -0.057
+ },
+ "03100000": {
+  "childcare_capacity_per_100_u5": 66.1,
+  "childcare_infant_toddler_per_100_u5": 13.9,
+  "childcare_headstart_per_100_u5": 10.7,
+  "childcare_subsidy_pct": 0.818,
+  "childcare_c3_per_seat": 1646,
+  "childcare_c3_trend_2yr": 0.321
+ },
+ "03140000": {
+  "childcare_capacity_per_100_u5": 91.1,
+  "childcare_infant_toddler_per_100_u5": 34.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.535,
+  "childcare_c3_per_seat": 1272,
+  "childcare_c3_trend_2yr": -0.307
+ },
+ "03150000": {
+  "childcare_capacity_per_100_u5": 91.3,
+  "childcare_infant_toddler_per_100_u5": 29.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.462,
+  "childcare_c3_per_seat": 1275,
+  "childcare_c3_trend_2yr": -0.194
+ },
+ "03160000": {
+  "childcare_capacity_per_100_u5": 36.3,
+  "childcare_infant_toddler_per_100_u5": 5.9,
+  "childcare_headstart_per_100_u5": 6.4,
+  "childcare_subsidy_pct": 0.8,
+  "childcare_c3_per_seat": 2649,
+  "childcare_c3_trend_2yr": 0.023
+ },
+ "03170000": {
+  "childcare_capacity_per_100_u5": 103.4,
+  "childcare_infant_toddler_per_100_u5": 21.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.393,
+  "childcare_c3_per_seat": 1085,
+  "childcare_c3_trend_2yr": -0.096
+ },
+ "03180000": {
+  "childcare_capacity_per_100_u5": 150.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1842,
+  "childcare_c3_trend_2yr": 0.54
+ },
+ "03210000": {
+  "childcare_capacity_per_100_u5": 75.8,
+  "childcare_infant_toddler_per_100_u5": 25.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.583,
+  "childcare_c3_per_seat": 1500,
+  "childcare_c3_trend_2yr": -0.273
+ },
+ "03220000": {
+  "childcare_capacity_per_100_u5": 130.6,
+  "childcare_infant_toddler_per_100_u5": 25.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.462,
+  "childcare_c3_per_seat": 1746,
+  "childcare_c3_trend_2yr": 0.075
+ },
+ "03230000": {
+  "childcare_capacity_per_100_u5": 100.2,
+  "childcare_infant_toddler_per_100_u5": 42.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.667,
+  "childcare_c3_per_seat": 1850,
+  "childcare_c3_trend_2yr": -0.129
+ },
+ "03250000": {
+  "childcare_capacity_per_100_u5": 108.4,
+  "childcare_infant_toddler_per_100_u5": 12.5,
+  "childcare_headstart_per_100_u5": 5.7,
+  "childcare_subsidy_pct": 0.723,
+  "childcare_c3_per_seat": 1866,
+  "childcare_c3_trend_2yr": 0.006
+ },
+ "03260000": {
+  "childcare_capacity_per_100_u5": 122.6,
+  "childcare_infant_toddler_per_100_u5": 28.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.323,
+  "childcare_c3_per_seat": 1159,
+  "childcare_c3_trend_2yr": 0.067
+ },
+ "03270000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "03300000": {
+  "childcare_capacity_per_100_u5": 166.1,
+  "childcare_infant_toddler_per_100_u5": 55.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.167,
+  "childcare_c3_per_seat": 1247,
+  "childcare_c3_trend_2yr": -0.391
+ },
+ "03310000": {
+  "childcare_capacity_per_100_u5": 36.5,
+  "childcare_infant_toddler_per_100_u5": 10.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 2317,
+  "childcare_c3_trend_2yr": 0.169
+ },
+ "03320000": {
+  "childcare_capacity_per_100_u5": 71.2,
+  "childcare_infant_toddler_per_100_u5": 4.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.743,
+  "childcare_c3_per_seat": 1624,
+  "childcare_c3_trend_2yr": -0.097
+ },
+ "03350000": {
+  "childcare_capacity_per_100_u5": 76.7,
+  "childcare_infant_toddler_per_100_u5": 18.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.267,
+  "childcare_c3_per_seat": 850,
+  "childcare_c3_trend_2yr": -0.195
+ },
+ "03360000": {
+  "childcare_capacity_per_100_u5": 56.4,
+  "childcare_infant_toddler_per_100_u5": 9.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.625,
+  "childcare_c3_per_seat": 1145,
+  "childcare_c3_trend_2yr": -0.084
+ },
+ "03370000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "03400000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "03420000": {
+  "childcare_capacity_per_100_u5": 40.2,
+  "childcare_infant_toddler_per_100_u5": 13.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.364,
+  "childcare_c3_per_seat": 2385,
+  "childcare_c3_trend_2yr": 0.544
+ },
+ "03430000": {
+  "childcare_capacity_per_100_u5": 29.4,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 3.6,
+  "childcare_subsidy_pct": 0.8,
+  "childcare_c3_per_seat": 1819,
+  "childcare_c3_trend_2yr": 0.03
+ },
+ "03440000": {
+  "childcare_capacity_per_100_u5": 127.0,
+  "childcare_infant_toddler_per_100_u5": 12.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.391,
+  "childcare_c3_per_seat": 837,
+  "childcare_c3_trend_2yr": -0.119
+ },
+ "03460000": {
+  "childcare_capacity_per_100_u5": 68.2,
+  "childcare_infant_toddler_per_100_u5": 11.8,
+  "childcare_headstart_per_100_u5": 2.3,
+  "childcare_subsidy_pct": 0.609,
+  "childcare_c3_per_seat": 1709,
+  "childcare_c3_trend_2yr": -0.185
+ },
+ "03470000": {
+  "childcare_capacity_per_100_u5": 116.2,
+  "childcare_infant_toddler_per_100_u5": 33.7,
+  "childcare_headstart_per_100_u5": 4.3,
+  "childcare_subsidy_pct": 0.625,
+  "childcare_c3_per_seat": 1544,
+  "childcare_c3_trend_2yr": -0.142
+ },
+ "03480000": {
+  "childcare_capacity_per_100_u5": 59.1,
+  "childcare_infant_toddler_per_100_u5": 6.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.908,
+  "childcare_c3_per_seat": 2257,
+  "childcare_c3_trend_2yr": 0.221
+ },
+ "03490000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "03500000": {
+  "childcare_capacity_per_100_u5": 38.0,
+  "childcare_infant_toddler_per_100_u5": 5.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.167,
+  "childcare_c3_per_seat": 928,
+  "childcare_c3_trend_2yr": -0.21
+ },
+ "06000000": {
+  "childcare_capacity_per_100_u5": 126.6,
+  "childcare_infant_toddler_per_100_u5": 36.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.429,
+  "childcare_c3_per_seat": 855,
+  "childcare_c3_trend_2yr": -0.314
+ },
+ "06030000": {
+  "childcare_capacity_per_100_u5": 74.4,
+  "childcare_infant_toddler_per_100_u5": 4.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.8,
+  "childcare_c3_per_seat": 2113,
+  "childcare_c3_trend_2yr": 0.209
+ },
+ "06100000": {
+  "childcare_capacity_per_100_u5": 44.3,
+  "childcare_infant_toddler_per_100_u5": 7.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.389,
+  "childcare_c3_per_seat": 936,
+  "childcare_c3_trend_2yr": -0.272
+ },
+ "06150000": {
+  "childcare_capacity_per_100_u5": 54.7,
+  "childcare_infant_toddler_per_100_u5": 6.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.882,
+  "childcare_c3_per_seat": 2157,
+  "childcare_c3_trend_2yr": 0.147
+ },
+ "06160000": {
+  "childcare_capacity_per_100_u5": 40.5,
+  "childcare_infant_toddler_per_100_u5": 3.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.643,
+  "childcare_c3_per_seat": 1742,
+  "childcare_c3_trend_2yr": 0.038
+ },
+ "06180000": {
+  "childcare_capacity_per_100_u5": 78.5,
+  "childcare_infant_toddler_per_100_u5": 10.0,
+  "childcare_headstart_per_100_u5": 9.1,
+  "childcare_subsidy_pct": 0.857,
+  "childcare_c3_per_seat": 2024,
+  "childcare_c3_trend_2yr": -0.025
+ },
+ "06200000": {
+  "childcare_capacity_per_100_u5": 52.8,
+  "childcare_infant_toddler_per_100_u5": 21.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 2320,
+  "childcare_c3_trend_2yr": 0.13
+ },
+ "06220000": {
+  "childcare_capacity_per_100_u5": 35.1,
+  "childcare_infant_toddler_per_100_u5": 3.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.364,
+  "childcare_c3_per_seat": 813,
+  "childcare_c3_trend_2yr": -0.175
+ },
+ "06250000": {
+  "childcare_capacity_per_100_u5": 40.8,
+  "childcare_infant_toddler_per_100_u5": 8.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.625,
+  "childcare_c3_per_seat": 1491,
+  "childcare_c3_trend_2yr": -0.17
+ },
+ "06320000": {
+  "childcare_capacity_per_100_u5": 127.6,
+  "childcare_infant_toddler_per_100_u5": 23.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1373,
+  "childcare_c3_trend_2yr": 0.225
+ },
+ "06350000": {
+  "childcare_capacity_per_100_u5": 61.8,
+  "childcare_infant_toddler_per_100_u5": 6.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.571,
+  "childcare_c3_per_seat": 1613,
+  "childcare_c3_trend_2yr": 0.647
+ },
+ "06450000": {
+  "childcare_capacity_per_100_u5": 79.2,
+  "childcare_infant_toddler_per_100_u5": 14.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.773,
+  "childcare_c3_per_seat": 1600,
+  "childcare_c3_trend_2yr": 0.873
+ },
+ "06500000": {
+  "childcare_capacity_per_100_u5": 40.2,
+  "childcare_infant_toddler_per_100_u5": 4.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.308,
+  "childcare_c3_per_seat": 1092,
+  "childcare_c3_trend_2yr": -0.12
+ },
+ "06550000": {
+  "childcare_capacity_per_100_u5": 27.7,
+  "childcare_infant_toddler_per_100_u5": 2.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 460,
+  "childcare_c3_trend_2yr": -0.362
+ },
+ "06580000": {
+  "childcare_capacity_per_100_u5": 72.6,
+  "childcare_infant_toddler_per_100_u5": 7.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.694,
+  "childcare_c3_per_seat": 1655,
+  "childcare_c3_trend_2yr": 0.025
+ },
+ "06620000": {
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0
+ },
+ "06650000": {
+  "childcare_capacity_per_100_u5": 67.0,
+  "childcare_infant_toddler_per_100_u5": 21.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.824,
+  "childcare_c3_per_seat": 2897,
+  "childcare_c3_trend_2yr": 0.381
+ },
+ "06720000": {
+  "childcare_capacity_per_100_u5": 45.9,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.25,
+  "childcare_c3_per_seat": 741,
+  "childcare_c3_trend_2yr": 4.676
+ },
+ "06730000": {
+  "childcare_capacity_per_100_u5": 39.1,
+  "childcare_infant_toddler_per_100_u5": 6.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.25,
+  "childcare_c3_per_seat": 1241,
+  "childcare_c3_trend_2yr": -0.298
+ },
+ "06740000": {
+  "childcare_capacity_per_100_u5": 54.1,
+  "childcare_infant_toddler_per_100_u5": 17.2,
+  "childcare_headstart_per_100_u5": 5.9,
+  "childcare_subsidy_pct": 0.692,
+  "childcare_c3_per_seat": 2883,
+  "childcare_c3_trend_2yr": 0.203
+ },
+ "06750000": {
+  "childcare_capacity_per_100_u5": 76.5,
+  "childcare_infant_toddler_per_100_u5": 15.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.571,
+  "childcare_c3_per_seat": 1738,
+  "childcare_c3_trend_2yr": 0.788
+ },
+ "06800000": {
+  "childcare_capacity_per_100_u5": 63.5,
+  "childcare_infant_toddler_per_100_u5": 5.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.368,
+  "childcare_c3_per_seat": 1476,
+  "childcare_c3_trend_2yr": -0.136
+ },
+ "06850000": {
+  "childcare_capacity_per_100_u5": 66.7,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 1.0,
+  "childcare_c3_per_seat": 1875,
+  "childcare_c3_trend_2yr": 0.158
+ },
+ "06980000": {
+  "childcare_capacity_per_100_u5": 78.0,
+  "childcare_infant_toddler_per_100_u5": 20.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.5,
+  "childcare_c3_per_seat": 1050,
+  "childcare_c3_trend_2yr": 0.215
+ },
+ "07100000": {
+  "childcare_capacity_per_100_u5": 53.4,
+  "childcare_infant_toddler_per_100_u5": 13.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.429,
+  "childcare_c3_per_seat": 1432,
+  "childcare_c3_trend_2yr": 0.776
+ },
+ "07120000": {
+  "childcare_capacity_per_100_u5": 52.4,
+  "childcare_infant_toddler_per_100_u5": 5.6,
+  "childcare_headstart_per_100_u5": 14.1,
+  "childcare_subsidy_pct": 0.636,
+  "childcare_c3_per_seat": 1608,
+  "childcare_c3_trend_2yr": 0.097
+ },
+ "07150000": {
+  "childcare_capacity_per_100_u5": 108.8,
+  "childcare_infant_toddler_per_100_u5": 20.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.875,
+  "childcare_c3_per_seat": 1597,
+  "childcare_c3_trend_2yr": -0.24
+ },
+ "07170000": {
+  "childcare_capacity_per_100_u5": 32.9,
+  "childcare_infant_toddler_per_100_u5": 14.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.6,
+  "childcare_c3_per_seat": 2503,
+  "childcare_c3_trend_2yr": 0.64
+ },
+ "07200000": {
+  "childcare_capacity_per_100_u5": 20.5,
+  "childcare_infant_toddler_per_100_u5": 4.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.545,
+  "childcare_c3_per_seat": 2064,
+  "childcare_c3_trend_2yr": -0.144
+ },
+ "07250000": {
+  "childcare_capacity_per_100_u5": 25.9,
+  "childcare_infant_toddler_per_100_u5": 6.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.375,
+  "childcare_c3_per_seat": 2111,
+  "childcare_c3_trend_2yr": -0.13
+ },
+ "07280000": {
+  "childcare_capacity_per_100_u5": 16.0,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_per_seat": 656,
+  "childcare_c3_trend_2yr": -0.538
+ },
+ "07350000": {
+  "childcare_capacity_per_100_u5": 40.8,
+  "childcare_infant_toddler_per_100_u5": 8.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.4,
+  "childcare_c3_per_seat": 2226,
+  "childcare_c3_trend_2yr": 1.004
+ },
+ "07450000": {
+  "childcare_capacity_per_100_u5": 36.9,
+  "childcare_infant_toddler_per_100_u5": 8.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 875,
+  "childcare_c3_trend_2yr": 0.319
+ },
+ "07500000": {
+  "childcare_capacity_per_100_u5": 5.1,
+  "childcare_infant_toddler_per_100_u5": 0.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.0,
+  "childcare_c3_trend_2yr": -1.0
+ },
+ "07530000": {
+  "childcare_capacity_per_100_u5": 56.6,
+  "childcare_infant_toddler_per_100_u5": 5.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.733,
+  "childcare_c3_per_seat": 1622,
+  "childcare_c3_trend_2yr": 0.292
+ },
+ "07650000": {
+  "childcare_capacity_per_100_u5": 47.4,
+  "childcare_infant_toddler_per_100_u5": 19.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.2,
+  "childcare_c3_per_seat": 778,
+  "childcare_c3_trend_2yr": -0.105
+ },
+ "07660000": {
+  "childcare_capacity_per_100_u5": 67.2,
+  "childcare_infant_toddler_per_100_u5": 19.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.333,
+  "childcare_c3_per_seat": 1668,
+  "childcare_c3_trend_2yr": -0.028
+ },
+ "07670000": {
+  "childcare_capacity_per_100_u5": 47.3,
+  "childcare_infant_toddler_per_100_u5": 6.8,
+  "childcare_headstart_per_100_u5": 2.5,
+  "childcare_subsidy_pct": 0.786,
+  "childcare_c3_per_seat": 2063,
+  "childcare_c3_trend_2yr": -0.026
+ },
+ "07700000": {
+  "childcare_capacity_per_100_u5": 51.0,
+  "childcare_infant_toddler_per_100_u5": 5.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.542,
+  "childcare_c3_per_seat": 1795,
+  "childcare_c3_trend_2yr": 0.108
+ },
+ "07730000": {
+  "childcare_capacity_per_100_u5": 61.6,
+  "childcare_infant_toddler_per_100_u5": 18.8,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.294,
+  "childcare_c3_per_seat": 1697,
+  "childcare_c3_trend_2yr": -0.143
+ },
+ "07740000": {
+  "childcare_capacity_per_100_u5": 34.2,
+  "childcare_infant_toddler_per_100_u5": 2.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.167,
+  "childcare_c3_per_seat": 733,
+  "childcare_c3_trend_2yr": -0.331
+ },
+ "07750000": {
+  "childcare_capacity_per_100_u5": 64.6,
+  "childcare_infant_toddler_per_100_u5": 11.7,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.481,
+  "childcare_c3_per_seat": 1529,
+  "childcare_c3_trend_2yr": 0.044
+ },
+ "07780000": {
+  "childcare_capacity_per_100_u5": 23.7,
+  "childcare_infant_toddler_per_100_u5": 7.2,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.75,
+  "childcare_c3_per_seat": 1762,
+  "childcare_c3_trend_2yr": -0.23
+ },
+ "07800000": {
+  "childcare_capacity_per_100_u5": 50.4,
+  "childcare_infant_toddler_per_100_u5": 7.6,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.44,
+  "childcare_c3_per_seat": 1246,
+  "childcare_c3_trend_2yr": 1.298
+ },
+ "06400000": {
+  "childcare_capacity_per_100_u5": 102.1,
+  "childcare_infant_toddler_per_100_u5": 17.1,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.188,
+  "childcare_c3_per_seat": 1281,
+  "childcare_c3_trend_2yr": -0.202
+ },
+ "06950000": {
+  "childcare_capacity_per_100_u5": 140.7,
+  "childcare_infant_toddler_per_100_u5": 29.0,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.447,
+  "childcare_c3_per_seat": 1025,
+  "childcare_c3_trend_2yr": -0.143
+ },
+ "06600000": {
+  "childcare_capacity_per_100_u5": 96.8,
+  "childcare_infant_toddler_per_100_u5": 11.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.833,
+  "childcare_c3_per_seat": 1632,
+  "childcare_c3_trend_2yr": 0.15
+ },
+ "06900000": {
+  "childcare_capacity_per_100_u5": 52.2,
+  "childcare_infant_toddler_per_100_u5": 13.3,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.3,
+  "childcare_c3_per_seat": 1410,
+  "childcare_c3_trend_2yr": 0.194
+ },
+ "07050000": {
+  "childcare_capacity_per_100_u5": 85.8,
+  "childcare_infant_toddler_per_100_u5": 23.5,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.312,
+  "childcare_c3_per_seat": 1429,
+  "childcare_c3_trend_2yr": -0.01
+ },
+ "07300000": {
+  "childcare_capacity_per_100_u5": 37.8,
+  "childcare_infant_toddler_per_100_u5": 11.9,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.444,
+  "childcare_c3_per_seat": 1585,
+  "childcare_c3_trend_2yr": 0.008
+ },
+ "07630000": {
+  "childcare_capacity_per_100_u5": 45.9,
+  "childcare_infant_toddler_per_100_u5": 7.4,
+  "childcare_headstart_per_100_u5": 0.0,
+  "childcare_subsidy_pct": 0.737,
+  "childcare_c3_per_seat": 1779,
+  "childcare_c3_trend_2yr": 0.403
+ }
+}

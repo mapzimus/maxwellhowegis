@@ -1,0 +1,1624 @@
+{
+ "01820000": {
+  "sped_full_inclusion_pct": 0.652,
+  "sped_partial_inclusion_pct": 0.163,
+  "sped_separate_pct": 0.13,
+  "sped_out_of_district_pct": 0.052
+ },
+ "01270000": {
+  "sped_full_inclusion_pct": 0.55,
+  "sped_partial_inclusion_pct": 0.417,
+  "sped_separate_pct": 0.033,
+  "sped_out_of_district_pct": 0.067
+ },
+ "01220000": {
+  "sped_full_inclusion_pct": 0.756,
+  "sped_partial_inclusion_pct": 0.115,
+  "sped_separate_pct": 0.072,
+  "sped_out_of_district_pct": 0.057
+ },
+ "00300000": {
+  "sped_full_inclusion_pct": 0.71,
+  "sped_partial_inclusion_pct": 0.066,
+  "sped_separate_pct": 0.159,
+  "sped_out_of_district_pct": 0.073
+ },
+ "02760000": {
+  "sped_full_inclusion_pct": 0.734,
+  "sped_partial_inclusion_pct": 0.093,
+  "sped_separate_pct": 0.046,
+  "sped_out_of_district_pct": 0.059
+ },
+ "03050000": {
+  "sped_full_inclusion_pct": 0.741,
+  "sped_partial_inclusion_pct": 0.149,
+  "sped_separate_pct": 0.052,
+  "sped_out_of_district_pct": 0.057
+ },
+ "03360000": {
+  "sped_full_inclusion_pct": 0.641,
+  "sped_partial_inclusion_pct": 0.177,
+  "sped_separate_pct": 0.132,
+  "sped_out_of_district_pct": 0.054
+ },
+ "02950000": {
+  "sped_full_inclusion_pct": 0.637,
+  "sped_partial_inclusion_pct": 0.136,
+  "sped_separate_pct": 0.086,
+  "sped_out_of_district_pct": 0.121
+ },
+ "07120000": {
+  "sped_full_inclusion_pct": 0.645,
+  "sped_partial_inclusion_pct": 0.199,
+  "sped_separate_pct": 0.093,
+  "sped_out_of_district_pct": 0.056
+ },
+ "02300000": {
+  "sped_full_inclusion_pct": 1.0
+ },
+ "02430000": {
+  "sped_full_inclusion_pct": 0.499,
+  "sped_partial_inclusion_pct": 0.205,
+  "sped_separate_pct": 0.214,
+  "sped_out_of_district_pct": 0.061
+ },
+ "00730000": {
+  "sped_full_inclusion_pct": 0.691,
+  "sped_partial_inclusion_pct": 0.178,
+  "sped_separate_pct": 0.061,
+  "sped_out_of_district_pct": 0.067
+ },
+ "02730000": {
+  "sped_full_inclusion_pct": 0.721,
+  "sped_partial_inclusion_pct": 0.156,
+  "sped_separate_pct": 0.074,
+  "sped_out_of_district_pct": 0.038
+ },
+ "01640000": {
+  "sped_full_inclusion_pct": 0.738,
+  "sped_partial_inclusion_pct": 0.133,
+  "sped_separate_pct": 0.051,
+  "sped_out_of_district_pct": 0.061
+ },
+ "01330000": {
+  "sped_full_inclusion_pct": 0.712,
+  "sped_partial_inclusion_pct": 0.066,
+  "sped_separate_pct": 0.138,
+  "sped_out_of_district_pct": 0.078
+ },
+ "02420000": {
+  "sped_full_inclusion_pct": 0.938,
+  "sped_partial_inclusion_pct": 0.063
+ },
+ "02510000": {
+  "sped_full_inclusion_pct": 0.642,
+  "sped_partial_inclusion_pct": 0.131,
+  "sped_separate_pct": 0.167,
+  "sped_out_of_district_pct": 0.06
+ },
+ "03310000": {
+  "sped_full_inclusion_pct": 0.736,
+  "sped_partial_inclusion_pct": 0.104,
+  "sped_separate_pct": 0.121,
+  "sped_out_of_district_pct": 0.042
+ },
+ "07800000": {
+  "sped_full_inclusion_pct": 0.728,
+  "sped_partial_inclusion_pct": 0.105,
+  "sped_separate_pct": 0.124,
+  "sped_out_of_district_pct": 0.054
+ },
+ "06620000": {
+  "sped_full_inclusion_pct": 0.333,
+  "sped_partial_inclusion_pct": 0.667
+ },
+ "03440000": {
+  "sped_full_inclusion_pct": 0.771,
+  "sped_partial_inclusion_pct": 0.117,
+  "sped_separate_pct": 0.048,
+  "sped_out_of_district_pct": 0.064
+ },
+ "01890000": {
+  "sped_full_inclusion_pct": 0.753,
+  "sped_partial_inclusion_pct": 0.086,
+  "sped_separate_pct": 0.09,
+  "sped_out_of_district_pct": 0.067
+ },
+ "01140000": {
+  "sped_full_inclusion_pct": 0.643,
+  "sped_partial_inclusion_pct": 0.154,
+  "sped_separate_pct": 0.129,
+  "sped_out_of_district_pct": 0.084
+ },
+ "01840000": {
+  "sped_full_inclusion_pct": 0.652,
+  "sped_partial_inclusion_pct": 0.203,
+  "sped_separate_pct": 0.08,
+  "sped_out_of_district_pct": 0.043
+ },
+ "01870000": {
+  "sped_full_inclusion_pct": 0.754,
+  "sped_partial_inclusion_pct": 0.097,
+  "sped_separate_pct": 0.076,
+  "sped_out_of_district_pct": 0.076
+ },
+ "02180000": {
+  "sped_full_inclusion_pct": 0.621,
+  "sped_partial_inclusion_pct": 0.218,
+  "sped_separate_pct": 0.115,
+  "sped_out_of_district_pct": 0.053
+ },
+ "00230000": {
+  "sped_full_inclusion_pct": 0.741,
+  "sped_partial_inclusion_pct": 0.12,
+  "sped_separate_pct": 0.066,
+  "sped_out_of_district_pct": 0.081
+ },
+ "02290000": {
+  "sped_full_inclusion_pct": 0.628,
+  "sped_partial_inclusion_pct": 0.099,
+  "sped_separate_pct": 0.162,
+  "sped_out_of_district_pct": 0.088
+ },
+ "00830000": {
+  "sped_full_inclusion_pct": 0.719,
+  "sped_partial_inclusion_pct": 0.119,
+  "sped_separate_pct": 0.077,
+  "sped_out_of_district_pct": 0.065
+ },
+ "03250000": {
+  "sped_full_inclusion_pct": 0.643,
+  "sped_partial_inclusion_pct": 0.157,
+  "sped_separate_pct": 0.161,
+  "sped_out_of_district_pct": 0.057
+ },
+ "03420000": {
+  "sped_full_inclusion_pct": 0.681,
+  "sped_partial_inclusion_pct": 0.129,
+  "sped_separate_pct": 0.088,
+  "sped_out_of_district_pct": 0.095
+ },
+ "06580000": {
+  "sped_full_inclusion_pct": 0.625,
+  "sped_partial_inclusion_pct": 0.2,
+  "sped_separate_pct": 0.111,
+  "sped_out_of_district_pct": 0.028
+ },
+ "03300000": {
+  "sped_full_inclusion_pct": 0.787,
+  "sped_partial_inclusion_pct": 0.146,
+  "sped_separate_pct": 0.006,
+  "sped_out_of_district_pct": 0.064
+ },
+ "00610000": {
+  "sped_full_inclusion_pct": 0.652,
+  "sped_partial_inclusion_pct": 0.05,
+  "sped_separate_pct": 0.264,
+  "sped_out_of_district_pct": 0.031
+ },
+ "02040000": {
+  "sped_full_inclusion_pct": 0.65,
+  "sped_partial_inclusion_pct": 0.257,
+  "sped_separate_pct": 0.049,
+  "sped_out_of_district_pct": 0.049
+ },
+ "02360000": {
+  "sped_full_inclusion_pct": 0.68,
+  "sped_partial_inclusion_pct": 0.097,
+  "sped_separate_pct": 0.116,
+  "sped_out_of_district_pct": 0.054
+ },
+ "02630000": {
+  "sped_full_inclusion_pct": 1.0
+ },
+ "01390000": {
+  "sped_full_inclusion_pct": 0.67,
+  "sped_partial_inclusion_pct": 0.197,
+  "sped_separate_pct": 0.074,
+  "sped_out_of_district_pct": 0.059
+ },
+ "01010000": {
+  "sped_full_inclusion_pct": 0.69,
+  "sped_partial_inclusion_pct": 0.127,
+  "sped_separate_pct": 0.128,
+  "sped_out_of_district_pct": 0.07
+ },
+ "03500000": {
+  "sped_full_inclusion_pct": 0.716,
+  "sped_partial_inclusion_pct": 0.163,
+  "sped_separate_pct": 0.056,
+  "sped_out_of_district_pct": 0.005
+ },
+ "01600000": {
+  "sped_full_inclusion_pct": 0.544,
+  "sped_partial_inclusion_pct": 0.137,
+  "sped_separate_pct": 0.243,
+  "sped_out_of_district_pct": 0.035
+ },
+ "00890000": {
+  "sped_full_inclusion_pct": 0.831,
+  "sped_partial_inclusion_pct": 0.112,
+  "sped_separate_pct": 0.056
+ },
+ "03320000": {
+  "sped_full_inclusion_pct": 0.683,
+  "sped_partial_inclusion_pct": 0.076,
+  "sped_separate_pct": 0.168,
+  "sped_out_of_district_pct": 0.049
+ },
+ "02610000": {
+  "sped_full_inclusion_pct": 0.688,
+  "sped_partial_inclusion_pct": 0.152,
+  "sped_separate_pct": 0.095,
+  "sped_out_of_district_pct": 0.066
+ },
+ "07740000": {
+  "sped_full_inclusion_pct": 0.923,
+  "sped_partial_inclusion_pct": 0.067,
+  "sped_separate_pct": 0.01
+ },
+ "01540000": {
+  "sped_full_inclusion_pct": 0.962,
+  "sped_partial_inclusion_pct": 0.038
+ },
+ "03010000": {
+  "sped_full_inclusion_pct": 0.813,
+  "sped_partial_inclusion_pct": 0.049,
+  "sped_separate_pct": 0.074,
+  "sped_out_of_district_pct": 0.061
+ },
+ "02200000": {
+  "sped_full_inclusion_pct": 0.675,
+  "sped_partial_inclusion_pct": 0.119,
+  "sped_separate_pct": 0.135,
+  "sped_out_of_district_pct": 0.08
+ },
+ "03100000": {
+  "sped_full_inclusion_pct": 0.559,
+  "sped_partial_inclusion_pct": 0.132,
+  "sped_separate_pct": 0.257,
+  "sped_out_of_district_pct": 0.054
+ },
+ "02960000": {
+  "sped_full_inclusion_pct": 0.829,
+  "sped_partial_inclusion_pct": 0.158,
+  "sped_separate_pct": 0.013
+ },
+ "06750000": {
+  "sped_full_inclusion_pct": 0.655,
+  "sped_partial_inclusion_pct": 0.152,
+  "sped_separate_pct": 0.085,
+  "sped_out_of_district_pct": 0.108
+ },
+ "00250000": {
+  "sped_full_inclusion_pct": 0.695,
+  "sped_partial_inclusion_pct": 0.107,
+  "sped_separate_pct": 0.079,
+  "sped_out_of_district_pct": 0.063
+ },
+ "01810000": {
+  "sped_full_inclusion_pct": 0.63,
+  "sped_partial_inclusion_pct": 0.066,
+  "sped_separate_pct": 0.187,
+  "sped_out_of_district_pct": 0.113
+ },
+ "01970000": {
+  "sped_full_inclusion_pct": 0.636,
+  "sped_partial_inclusion_pct": 0.249,
+  "sped_separate_pct": 0.085,
+  "sped_out_of_district_pct": 0.026
+ },
+ "02400000": {
+  "sped_full_inclusion_pct": 0.778,
+  "sped_partial_inclusion_pct": 0.178,
+  "sped_out_of_district_pct": 0.044
+ },
+ "06550000": {
+  "sped_full_inclusion_pct": 0.796,
+  "sped_partial_inclusion_pct": 0.061,
+  "sped_separate_pct": 0.028,
+  "sped_out_of_district_pct": 0.138
+ },
+ "03400000": {
+  "sped_full_inclusion_pct": 0.913,
+  "sped_partial_inclusion_pct": 0.087
+ },
+ "01690000": {
+  "sped_full_inclusion_pct": 0.872,
+  "sped_partial_inclusion_pct": 0.07,
+  "sped_out_of_district_pct": 0.081
+ },
+ "03040000": {
+  "sped_full_inclusion_pct": 0.765,
+  "sped_partial_inclusion_pct": 0.082,
+  "sped_separate_pct": 0.088,
+  "sped_out_of_district_pct": 0.057
+ },
+ "06350000": {
+  "sped_full_inclusion_pct": 0.817,
+  "sped_partial_inclusion_pct": 0.103,
+  "sped_separate_pct": 0.047,
+  "sped_out_of_district_pct": 0.03
+ },
+ "03430000": {
+  "sped_full_inclusion_pct": 0.612,
+  "sped_partial_inclusion_pct": 0.251,
+  "sped_separate_pct": 0.067,
+  "sped_out_of_district_pct": 0.059
+ },
+ "02390000": {
+  "sped_full_inclusion_pct": 0.761,
+  "sped_partial_inclusion_pct": 0.086,
+  "sped_separate_pct": 0.097,
+  "sped_out_of_district_pct": 0.057
+ },
+ "00950000": {
+  "sped_full_inclusion_pct": 0.567,
+  "sped_partial_inclusion_pct": 0.064,
+  "sped_separate_pct": 0.293,
+  "sped_out_of_district_pct": 0.04
+ },
+ "00170000": {
+  "sped_full_inclusion_pct": 0.758,
+  "sped_partial_inclusion_pct": 0.078,
+  "sped_separate_pct": 0.126,
+  "sped_out_of_district_pct": 0.033
+ },
+ "02100000": {
+  "sped_full_inclusion_pct": 0.706,
+  "sped_partial_inclusion_pct": 0.22,
+  "sped_separate_pct": 0.042,
+  "sped_out_of_district_pct": 0.034
+ },
+ "02120000": {
+  "sped_full_inclusion_pct": 0.704,
+  "sped_partial_inclusion_pct": 0.129,
+  "sped_separate_pct": 0.135,
+  "sped_out_of_district_pct": 0.039
+ },
+ "01700000": {
+  "sped_full_inclusion_pct": 0.603,
+  "sped_partial_inclusion_pct": 0.208,
+  "sped_separate_pct": 0.117,
+  "sped_out_of_district_pct": 0.063
+ },
+ "01170000": {
+  "sped_full_inclusion_pct": 0.908,
+  "sped_partial_inclusion_pct": 0.076,
+  "sped_separate_pct": 0.008
+ },
+ "00940000": {
+  "sped_full_inclusion_pct": 0.772,
+  "sped_partial_inclusion_pct": 0.085,
+  "sped_separate_pct": 0.112,
+  "sped_out_of_district_pct": 0.054
+ },
+ "00050000": {
+  "sped_full_inclusion_pct": 0.621,
+  "sped_partial_inclusion_pct": 0.119,
+  "sped_separate_pct": 0.214,
+  "sped_out_of_district_pct": 0.049
+ },
+ "00010000": {
+  "sped_full_inclusion_pct": 0.642,
+  "sped_partial_inclusion_pct": 0.153,
+  "sped_separate_pct": 0.114,
+  "sped_out_of_district_pct": 0.088
+ },
+ "01550000": {
+  "sped_full_inclusion_pct": 0.698,
+  "sped_partial_inclusion_pct": 0.13,
+  "sped_separate_pct": 0.067,
+  "sped_out_of_district_pct": 0.109
+ },
+ "03260000": {
+  "sped_full_inclusion_pct": 0.637,
+  "sped_partial_inclusion_pct": 0.199,
+  "sped_separate_pct": 0.089,
+  "sped_out_of_district_pct": 0.081
+ },
+ "06030000": {
+  "sped_full_inclusion_pct": 0.664,
+  "sped_partial_inclusion_pct": 0.233,
+  "sped_separate_pct": 0.083,
+  "sped_out_of_district_pct": 0.02
+ },
+ "02110000": {
+  "sped_full_inclusion_pct": 0.734,
+  "sped_partial_inclusion_pct": 0.11,
+  "sped_separate_pct": 0.07,
+  "sped_out_of_district_pct": 0.059
+ },
+ "02170000": {
+  "sped_full_inclusion_pct": 0.749,
+  "sped_partial_inclusion_pct": 0.12,
+  "sped_separate_pct": 0.051,
+  "sped_out_of_district_pct": 0.082
+ },
+ "01000000": {
+  "sped_full_inclusion_pct": 0.651,
+  "sped_partial_inclusion_pct": 0.047,
+  "sped_separate_pct": 0.219,
+  "sped_out_of_district_pct": 0.083
+ },
+ "02310000": {
+  "sped_full_inclusion_pct": 0.775,
+  "sped_partial_inclusion_pct": 0.123,
+  "sped_separate_pct": 0.059,
+  "sped_out_of_district_pct": 0.043
+ },
+ "02340000": {
+  "sped_full_inclusion_pct": 0.955,
+  "sped_partial_inclusion_pct": 0.045
+ },
+ "00880000": {
+  "sped_full_inclusion_pct": 0.773,
+  "sped_partial_inclusion_pct": 0.119,
+  "sped_separate_pct": 0.064,
+  "sped_out_of_district_pct": 0.052
+ },
+ "00070000": {
+  "sped_full_inclusion_pct": 0.576,
+  "sped_partial_inclusion_pct": 0.221,
+  "sped_separate_pct": 0.118,
+  "sped_out_of_district_pct": 0.082
+ },
+ "02650000": {
+  "sped_full_inclusion_pct": 0.621,
+  "sped_partial_inclusion_pct": 0.199,
+  "sped_separate_pct": 0.103,
+  "sped_out_of_district_pct": 0.081
+ },
+ "03070000": {
+  "sped_full_inclusion_pct": 0.705,
+  "sped_partial_inclusion_pct": 0.132,
+  "sped_separate_pct": 0.084,
+  "sped_out_of_district_pct": 0.081
+ },
+ "00430000": {
+  "sped_full_inclusion_pct": 0.625,
+  "sped_partial_inclusion_pct": 0.25,
+  "sped_separate_pct": 0.104,
+  "sped_out_of_district_pct": 0.021
+ },
+ "02640000": {
+  "sped_full_inclusion_pct": 0.809,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_separate_pct": 0.061,
+  "sped_out_of_district_pct": 0.051
+ },
+ "06850000": {
+  "sped_full_inclusion_pct": 0.821,
+  "sped_partial_inclusion_pct": 0.107,
+  "sped_out_of_district_pct": 0.036
+ },
+ "02660000": {
+  "sped_full_inclusion_pct": 0.745,
+  "sped_partial_inclusion_pct": 0.115,
+  "sped_separate_pct": 0.07,
+  "sped_out_of_district_pct": 0.071
+ },
+ "00850000": {
+  "sped_full_inclusion_pct": 0.774,
+  "sped_partial_inclusion_pct": 0.161,
+  "sped_out_of_district_pct": 0.065
+ },
+ "01670000": {
+  "sped_full_inclusion_pct": 0.551,
+  "sped_partial_inclusion_pct": 0.261,
+  "sped_separate_pct": 0.139,
+  "sped_out_of_district_pct": 0.066
+ },
+ "03000000": {
+  "sped_full_inclusion_pct": 0.833,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_out_of_district_pct": 0.083
+ },
+ "01610000": {
+  "sped_full_inclusion_pct": 0.683,
+  "sped_partial_inclusion_pct": 0.09,
+  "sped_separate_pct": 0.18,
+  "sped_out_of_district_pct": 0.049
+ },
+ "01680000": {
+  "sped_full_inclusion_pct": 0.667,
+  "sped_partial_inclusion_pct": 0.182,
+  "sped_separate_pct": 0.066,
+  "sped_out_of_district_pct": 0.091
+ },
+ "02490000": {
+  "sped_full_inclusion_pct": 0.688,
+  "sped_partial_inclusion_pct": 0.25,
+  "sped_out_of_district_pct": 0.063
+ },
+ "00140000": {
+  "sped_full_inclusion_pct": 0.751,
+  "sped_partial_inclusion_pct": 0.102,
+  "sped_separate_pct": 0.09,
+  "sped_out_of_district_pct": 0.048
+ },
+ "07170000": {
+  "sped_full_inclusion_pct": 0.686,
+  "sped_partial_inclusion_pct": 0.201,
+  "sped_separate_pct": 0.052,
+  "sped_out_of_district_pct": 0.072
+ },
+ "06740000": {
+  "sped_full_inclusion_pct": 0.65,
+  "sped_partial_inclusion_pct": 0.179,
+  "sped_separate_pct": 0.118,
+  "sped_out_of_district_pct": 0.049
+ },
+ "02130000": {
+  "sped_full_inclusion_pct": 0.828,
+  "sped_partial_inclusion_pct": 0.092,
+  "sped_separate_pct": 0.034,
+  "sped_out_of_district_pct": 0.04
+ },
+ "00480000": {
+  "sped_full_inclusion_pct": 0.71,
+  "sped_partial_inclusion_pct": 0.066,
+  "sped_separate_pct": 0.064,
+  "sped_out_of_district_pct": 0.136
+ },
+ "02260000": {
+  "sped_full_inclusion_pct": 0.74,
+  "sped_partial_inclusion_pct": 0.02,
+  "sped_separate_pct": 0.17,
+  "sped_out_of_district_pct": 0.061
+ },
+ "01910000": {
+  "sped_full_inclusion_pct": 0.764,
+  "sped_partial_inclusion_pct": 0.106,
+  "sped_separate_pct": 0.082,
+  "sped_out_of_district_pct": 0.043
+ },
+ "00200000": {
+  "sped_full_inclusion_pct": 0.633,
+  "sped_partial_inclusion_pct": 0.176,
+  "sped_separate_pct": 0.159,
+  "sped_out_of_district_pct": 0.039
+ },
+ "00500000": {
+  "sped_full_inclusion_pct": 0.706,
+  "sped_partial_inclusion_pct": 0.101,
+  "sped_separate_pct": 0.098,
+  "sped_out_of_district_pct": 0.101
+ },
+ "01250000": {
+  "sped_full_inclusion_pct": 0.802,
+  "sped_partial_inclusion_pct": 0.089,
+  "sped_separate_pct": 0.042,
+  "sped_out_of_district_pct": 0.078
+ },
+ "02890000": {
+  "sped_full_inclusion_pct": 0.818,
+  "sped_partial_inclusion_pct": 0.091,
+  "sped_separate_pct": 0.068,
+  "sped_out_of_district_pct": 0.045
+ },
+ "02480000": {
+  "sped_full_inclusion_pct": 0.595,
+  "sped_partial_inclusion_pct": 0.098,
+  "sped_separate_pct": 0.19,
+  "sped_out_of_district_pct": 0.111
+ },
+ "06450000": {
+  "sped_full_inclusion_pct": 0.686,
+  "sped_partial_inclusion_pct": 0.101,
+  "sped_separate_pct": 0.15,
+  "sped_out_of_district_pct": 0.057
+ },
+ "07500000": {
+  "sped_full_inclusion_pct": 0.771,
+  "sped_partial_inclusion_pct": 0.15,
+  "sped_separate_pct": 0.057,
+  "sped_out_of_district_pct": 0.036
+ },
+ "03170000": {
+  "sped_full_inclusion_pct": 0.761,
+  "sped_partial_inclusion_pct": 0.133,
+  "sped_separate_pct": 0.033,
+  "sped_out_of_district_pct": 0.072
+ },
+ "00790000": {
+  "sped_full_inclusion_pct": 0.544,
+  "sped_partial_inclusion_pct": 0.232,
+  "sped_separate_pct": 0.16,
+  "sped_out_of_district_pct": 0.065
+ },
+ "02710000": {
+  "sped_full_inclusion_pct": 0.695,
+  "sped_partial_inclusion_pct": 0.139,
+  "sped_separate_pct": 0.112,
+  "sped_out_of_district_pct": 0.047
+ },
+ "00090000": {
+  "sped_full_inclusion_pct": 0.707,
+  "sped_partial_inclusion_pct": 0.119,
+  "sped_separate_pct": 0.11,
+  "sped_out_of_district_pct": 0.062
+ },
+ "01720000": {
+  "sped_full_inclusion_pct": 0.674,
+  "sped_partial_inclusion_pct": 0.174,
+  "sped_separate_pct": 0.085,
+  "sped_out_of_district_pct": 0.068
+ },
+ "01070000": {
+  "sped_full_inclusion_pct": 0.68,
+  "sped_partial_inclusion_pct": 0.12,
+  "sped_separate_pct": 0.104,
+  "sped_out_of_district_pct": 0.056
+ },
+ "00360000": {
+  "sped_full_inclusion_pct": 0.764,
+  "sped_partial_inclusion_pct": 0.135,
+  "sped_separate_pct": 0.063,
+  "sped_out_of_district_pct": 0.044
+ },
+ "00720000": {
+  "sped_full_inclusion_pct": 0.769,
+  "sped_partial_inclusion_pct": 0.118,
+  "sped_separate_pct": 0.067,
+  "sped_out_of_district_pct": 0.053
+ },
+ "02580000": {
+  "sped_full_inclusion_pct": 0.601,
+  "sped_partial_inclusion_pct": 0.067,
+  "sped_separate_pct": 0.256,
+  "sped_out_of_district_pct": 0.046
+ },
+ "00770000": {
+  "sped_full_inclusion_pct": 0.685,
+  "sped_partial_inclusion_pct": 0.157,
+  "sped_separate_pct": 0.102,
+  "sped_out_of_district_pct": 0.047
+ },
+ "06100000": {
+  "sped_full_inclusion_pct": 0.742,
+  "sped_partial_inclusion_pct": 0.146,
+  "sped_separate_pct": 0.074,
+  "sped_out_of_district_pct": 0.028
+ },
+ "06000000": {
+  "sped_full_inclusion_pct": 0.779,
+  "sped_partial_inclusion_pct": 0.101,
+  "sped_separate_pct": 0.058,
+  "sped_out_of_district_pct": 0.067
+ },
+ "02840000": {
+  "sped_full_inclusion_pct": 0.669,
+  "sped_partial_inclusion_pct": 0.134,
+  "sped_separate_pct": 0.103,
+  "sped_out_of_district_pct": 0.072
+ },
+ "00400000": {
+  "sped_full_inclusion_pct": 0.615,
+  "sped_partial_inclusion_pct": 0.088,
+  "sped_separate_pct": 0.25,
+  "sped_out_of_district_pct": 0.048
+ },
+ "02080000": {
+  "sped_full_inclusion_pct": 0.695,
+  "sped_partial_inclusion_pct": 0.172,
+  "sped_separate_pct": 0.074,
+  "sped_out_of_district_pct": 0.025
+ },
+ "07100000": {
+  "sped_full_inclusion_pct": 0.784,
+  "sped_partial_inclusion_pct": 0.117,
+  "sped_separate_pct": 0.057,
+  "sped_out_of_district_pct": 0.048
+ },
+ "01860000": {
+  "sped_full_inclusion_pct": 0.721,
+  "sped_partial_inclusion_pct": 0.138,
+  "sped_separate_pct": 0.088,
+  "sped_out_of_district_pct": 0.033
+ },
+ "02010000": {
+  "sped_full_inclusion_pct": 0.62,
+  "sped_partial_inclusion_pct": 0.102,
+  "sped_separate_pct": 0.206,
+  "sped_out_of_district_pct": 0.037
+ },
+ "02530000": {
+  "sped_full_inclusion_pct": 1.0
+ },
+ "01510000": {
+  "sped_full_inclusion_pct": 0.635,
+  "sped_partial_inclusion_pct": 0.148,
+  "sped_separate_pct": 0.14,
+  "sped_out_of_district_pct": 0.077
+ },
+ "02460000": {
+  "sped_full_inclusion_pct": 0.734,
+  "sped_partial_inclusion_pct": 0.13,
+  "sped_separate_pct": 0.06,
+  "sped_out_of_district_pct": 0.074
+ },
+ "00350000": {
+  "sped_full_inclusion_pct": 0.603,
+  "sped_partial_inclusion_pct": 0.057,
+  "sped_separate_pct": 0.285,
+  "sped_out_of_district_pct": 0.032
+ },
+ "00670000": {
+  "sped_full_inclusion_pct": 0.753,
+  "sped_partial_inclusion_pct": 0.145,
+  "sped_separate_pct": 0.047,
+  "sped_out_of_district_pct": 0.031
+ },
+ "03160000": {
+  "sped_full_inclusion_pct": 0.551,
+  "sped_partial_inclusion_pct": 0.155,
+  "sped_separate_pct": 0.192,
+  "sped_out_of_district_pct": 0.091
+ },
+ "00490000": {
+  "sped_full_inclusion_pct": 0.715,
+  "sped_partial_inclusion_pct": 0.05,
+  "sped_separate_pct": 0.155,
+  "sped_out_of_district_pct": 0.078
+ },
+ "01350000": {
+  "sped_full_inclusion_pct": 0.75,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_separate_pct": 0.056,
+  "sped_out_of_district_pct": 0.083
+ },
+ "00160000": {
+  "sped_full_inclusion_pct": 0.665,
+  "sped_partial_inclusion_pct": 0.104,
+  "sped_separate_pct": 0.195,
+  "sped_out_of_district_pct": 0.038
+ },
+ "01490000": {
+  "sped_full_inclusion_pct": 0.665,
+  "sped_partial_inclusion_pct": 0.143,
+  "sped_separate_pct": 0.126,
+  "sped_out_of_district_pct": 0.024
+ },
+ "02690000": {
+  "sped_full_inclusion_pct": 0.905,
+  "sped_partial_inclusion_pct": 0.016,
+  "sped_separate_pct": 0.016,
+  "sped_out_of_district_pct": 0.032
+ },
+ "06980000": {
+  "sped_full_inclusion_pct": 0.659,
+  "sped_partial_inclusion_pct": 0.091,
+  "sped_separate_pct": 0.173,
+  "sped_out_of_district_pct": 0.082
+ },
+ "03470000": {
+  "sped_full_inclusion_pct": 0.662,
+  "sped_partial_inclusion_pct": 0.135,
+  "sped_separate_pct": 0.126,
+  "sped_out_of_district_pct": 0.072
+ },
+ "01310000": {
+  "sped_full_inclusion_pct": 0.802,
+  "sped_partial_inclusion_pct": 0.112,
+  "sped_separate_pct": 0.024,
+  "sped_out_of_district_pct": 0.063
+ },
+ "02230000": {
+  "sped_full_inclusion_pct": 0.702,
+  "sped_partial_inclusion_pct": 0.14,
+  "sped_separate_pct": 0.091,
+  "sped_out_of_district_pct": 0.05
+ },
+ "01990000": {
+  "sped_full_inclusion_pct": 0.808,
+  "sped_partial_inclusion_pct": 0.085,
+  "sped_separate_pct": 0.042,
+  "sped_out_of_district_pct": 0.074
+ },
+ "00460000": {
+  "sped_full_inclusion_pct": 0.718,
+  "sped_partial_inclusion_pct": 0.145,
+  "sped_separate_pct": 0.076,
+  "sped_out_of_district_pct": 0.051
+ },
+ "02980000": {
+  "sped_full_inclusion_pct": 0.855,
+  "sped_partial_inclusion_pct": 0.094,
+  "sped_separate_pct": 0.009,
+  "sped_out_of_district_pct": 0.026
+ },
+ "07150000": {
+  "sped_full_inclusion_pct": 0.747,
+  "sped_partial_inclusion_pct": 0.213,
+  "sped_separate_pct": 0.011,
+  "sped_out_of_district_pct": 0.017
+ },
+ "00570000": {
+  "sped_full_inclusion_pct": 0.58,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_separate_pct": 0.201,
+  "sped_out_of_district_pct": 0.112
+ },
+ "07660000": {
+  "sped_full_inclusion_pct": 0.763,
+  "sped_partial_inclusion_pct": 0.066,
+  "sped_separate_pct": 0.124,
+  "sped_out_of_district_pct": 0.054
+ },
+ "00260000": {
+  "sped_full_inclusion_pct": 0.73,
+  "sped_partial_inclusion_pct": 0.063,
+  "sped_separate_pct": 0.029,
+  "sped_out_of_district_pct": 0.168
+ },
+ "03150000": {
+  "sped_full_inclusion_pct": 0.806,
+  "sped_partial_inclusion_pct": 0.103,
+  "sped_separate_pct": 0.016,
+  "sped_out_of_district_pct": 0.073
+ },
+ "06250000": {
+  "sped_full_inclusion_pct": 0.68,
+  "sped_partial_inclusion_pct": 0.107,
+  "sped_separate_pct": 0.163,
+  "sped_out_of_district_pct": 0.038
+ },
+ "02240000": {
+  "sped_full_inclusion_pct": 0.515,
+  "sped_partial_inclusion_pct": 0.424,
+  "sped_separate_pct": 0.061,
+  "sped_out_of_district_pct": 0.03
+ },
+ "01100000": {
+  "sped_full_inclusion_pct": 0.668,
+  "sped_partial_inclusion_pct": 0.179,
+  "sped_separate_pct": 0.09,
+  "sped_out_of_district_pct": 0.047
+ },
+ "01850000": {
+  "sped_full_inclusion_pct": 0.626,
+  "sped_partial_inclusion_pct": 0.198,
+  "sped_separate_pct": 0.109,
+  "sped_out_of_district_pct": 0.062
+ },
+ "07780000": {
+  "sped_full_inclusion_pct": 0.719,
+  "sped_partial_inclusion_pct": 0.164,
+  "sped_separate_pct": 0.078,
+  "sped_out_of_district_pct": 0.039
+ },
+ "06730000": {
+  "sped_full_inclusion_pct": 0.659,
+  "sped_partial_inclusion_pct": 0.188,
+  "sped_separate_pct": 0.068,
+  "sped_out_of_district_pct": 0.061
+ },
+ "02770000": {
+  "sped_full_inclusion_pct": 0.613,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_separate_pct": 0.181,
+  "sped_out_of_district_pct": 0.08
+ },
+ "01520000": {
+  "sped_full_inclusion_pct": 0.701,
+  "sped_partial_inclusion_pct": 0.289,
+  "sped_out_of_district_pct": 0.021
+ },
+ "01740000": {
+  "sped_full_inclusion_pct": 0.694,
+  "sped_partial_inclusion_pct": 0.181,
+  "sped_separate_pct": 0.032,
+  "sped_out_of_district_pct": 0.081
+ },
+ "00960000": {
+  "sped_full_inclusion_pct": 0.656,
+  "sped_partial_inclusion_pct": 0.22,
+  "sped_separate_pct": 0.074,
+  "sped_out_of_district_pct": 0.042
+ },
+ "00270000": {
+  "sped_full_inclusion_pct": 0.6,
+  "sped_partial_inclusion_pct": 0.288,
+  "sped_separate_pct": 0.082,
+  "sped_out_of_district_pct": 0.012
+ },
+ "07350000": {
+  "sped_full_inclusion_pct": 0.669,
+  "sped_partial_inclusion_pct": 0.155,
+  "sped_separate_pct": 0.096,
+  "sped_out_of_district_pct": 0.078
+ },
+ "00380000": {
+  "sped_full_inclusion_pct": 0.761,
+  "sped_partial_inclusion_pct": 0.154,
+  "sped_separate_pct": 0.017,
+  "sped_out_of_district_pct": 0.043
+ },
+ "01650000": {
+  "sped_full_inclusion_pct": 0.657,
+  "sped_partial_inclusion_pct": 0.048,
+  "sped_separate_pct": 0.226,
+  "sped_out_of_district_pct": 0.061
+ },
+ "06180000": {
+  "sped_full_inclusion_pct": 0.728,
+  "sped_partial_inclusion_pct": 0.156,
+  "sped_separate_pct": 0.033,
+  "sped_out_of_district_pct": 0.078
+ },
+ "07280000": {
+  "sped_full_inclusion_pct": 0.9,
+  "sped_partial_inclusion_pct": 0.067
+ },
+ "02150000": {
+  "sped_full_inclusion_pct": 0.803,
+  "sped_partial_inclusion_pct": 0.102,
+  "sped_separate_pct": 0.031,
+  "sped_out_of_district_pct": 0.071
+ },
+ "01580000": {
+  "sped_full_inclusion_pct": 0.705,
+  "sped_partial_inclusion_pct": 0.178,
+  "sped_separate_pct": 0.071,
+  "sped_out_of_district_pct": 0.046
+ },
+ "02750000": {
+  "sped_full_inclusion_pct": 0.892,
+  "sped_partial_inclusion_pct": 0.059,
+  "sped_separate_pct": 0.029,
+  "sped_out_of_district_pct": 0.02
+ },
+ "06220000": {
+  "sped_full_inclusion_pct": 0.563,
+  "sped_partial_inclusion_pct": 0.248,
+  "sped_separate_pct": 0.156,
+  "sped_out_of_district_pct": 0.044
+ },
+ "06500000": {
+  "sped_full_inclusion_pct": 0.776,
+  "sped_partial_inclusion_pct": 0.082,
+  "sped_separate_pct": 0.073,
+  "sped_out_of_district_pct": 0.043
+ },
+ "00510000": {
+  "sped_full_inclusion_pct": 0.813,
+  "sped_partial_inclusion_pct": 0.113,
+  "sped_out_of_district_pct": 0.063
+ },
+ "02930000": {
+  "sped_full_inclusion_pct": 0.669,
+  "sped_partial_inclusion_pct": 0.057,
+  "sped_separate_pct": 0.212,
+  "sped_out_of_district_pct": 0.052
+ },
+ "00870000": {
+  "sped_full_inclusion_pct": 0.736,
+  "sped_partial_inclusion_pct": 0.071,
+  "sped_separate_pct": 0.133,
+  "sped_out_of_district_pct": 0.064
+ },
+ "00740000": {
+  "sped_full_inclusion_pct": 0.809,
+  "sped_partial_inclusion_pct": 0.176,
+  "sped_separate_pct": 0.015
+ },
+ "02810000": {
+  "sped_full_inclusion_pct": 0.457,
+  "sped_partial_inclusion_pct": 0.247,
+  "sped_separate_pct": 0.252,
+  "sped_out_of_district_pct": 0.022
+ },
+ "07670000": {
+  "sped_full_inclusion_pct": 0.73,
+  "sped_partial_inclusion_pct": 0.072,
+  "sped_separate_pct": 0.145,
+  "sped_out_of_district_pct": 0.058
+ },
+ "01210000": {
+  "sped_full_inclusion_pct": 0.818,
+  "sped_partial_inclusion_pct": 0.182
+ },
+ "03370000": {
+  "sped_full_inclusion_pct": 0.903,
+  "sped_partial_inclusion_pct": 0.097
+ },
+ "01110000": {
+  "sped_full_inclusion_pct": 0.643,
+  "sped_partial_inclusion_pct": 0.204,
+  "sped_separate_pct": 0.07,
+  "sped_out_of_district_pct": 0.083
+ },
+ "01280000": {
+  "sped_full_inclusion_pct": 0.632,
+  "sped_partial_inclusion_pct": 0.1,
+  "sped_separate_pct": 0.191,
+  "sped_out_of_district_pct": 0.036
+ },
+ "07750000": {
+  "sped_full_inclusion_pct": 0.713,
+  "sped_partial_inclusion_pct": 0.094,
+  "sped_separate_pct": 0.124,
+  "sped_out_of_district_pct": 0.072
+ },
+ "01750000": {
+  "sped_full_inclusion_pct": 0.826,
+  "sped_partial_inclusion_pct": 0.091,
+  "sped_separate_pct": 0.025,
+  "sped_out_of_district_pct": 0.039
+ },
+ "01500000": {
+  "sped_full_inclusion_pct": 0.659,
+  "sped_partial_inclusion_pct": 0.146,
+  "sped_separate_pct": 0.154,
+  "sped_out_of_district_pct": 0.041
+ },
+ "01730000": {
+  "sped_full_inclusion_pct": 0.919,
+  "sped_partial_inclusion_pct": 0.027,
+  "sped_out_of_district_pct": 0.081
+ },
+ "01590000": {
+  "sped_full_inclusion_pct": 0.751,
+  "sped_partial_inclusion_pct": 0.175,
+  "sped_separate_pct": 0.02,
+  "sped_out_of_district_pct": 0.048
+ },
+ "02380000": {
+  "sped_full_inclusion_pct": 0.755,
+  "sped_partial_inclusion_pct": 0.086,
+  "sped_separate_pct": 0.086,
+  "sped_out_of_district_pct": 0.046
+ },
+ "01050000": {
+  "sped_full_inclusion_pct": 0.719,
+  "sped_partial_inclusion_pct": 0.158,
+  "sped_separate_pct": 0.047,
+  "sped_out_of_district_pct": 0.041
+ },
+ "07700000": {
+  "sped_full_inclusion_pct": 0.53,
+  "sped_partial_inclusion_pct": 0.217,
+  "sped_separate_pct": 0.185,
+  "sped_out_of_district_pct": 0.072
+ },
+ "00990000": {
+  "sped_full_inclusion_pct": 0.754,
+  "sped_partial_inclusion_pct": 0.096,
+  "sped_separate_pct": 0.122,
+  "sped_out_of_district_pct": 0.045
+ },
+ "02520000": {
+  "sped_full_inclusion_pct": 0.793,
+  "sped_partial_inclusion_pct": 0.069,
+  "sped_separate_pct": 0.007,
+  "sped_out_of_district_pct": 0.124
+ },
+ "02780000": {
+  "sped_full_inclusion_pct": 0.566,
+  "sped_partial_inclusion_pct": 0.239,
+  "sped_separate_pct": 0.12,
+  "sped_out_of_district_pct": 0.07
+ },
+ "01620000": {
+  "sped_full_inclusion_pct": 0.709,
+  "sped_partial_inclusion_pct": 0.062,
+  "sped_separate_pct": 0.159,
+  "sped_out_of_district_pct": 0.047
+ },
+ "00520000": {
+  "sped_full_inclusion_pct": 0.685,
+  "sped_partial_inclusion_pct": 0.155,
+  "sped_separate_pct": 0.116,
+  "sped_out_of_district_pct": 0.054
+ },
+ "03460000": {
+  "sped_full_inclusion_pct": 0.472,
+  "sped_partial_inclusion_pct": 0.304,
+  "sped_separate_pct": 0.179,
+  "sped_out_of_district_pct": 0.04
+ },
+ "07250000": {
+  "sped_full_inclusion_pct": 0.775,
+  "sped_partial_inclusion_pct": 0.104,
+  "sped_separate_pct": 0.077,
+  "sped_out_of_district_pct": 0.052
+ },
+ "00680000": {
+  "sped_full_inclusion_pct": 0.733,
+  "sped_partial_inclusion_pct": 0.067,
+  "sped_separate_pct": 0.2
+ },
+ "03220000": {
+  "sped_full_inclusion_pct": 0.684,
+  "sped_partial_inclusion_pct": 0.158,
+  "sped_separate_pct": 0.136,
+  "sped_out_of_district_pct": 0.023
+ },
+ "03480000": {
+  "sped_full_inclusion_pct": 0.535,
+  "sped_partial_inclusion_pct": 0.16,
+  "sped_separate_pct": 0.23,
+  "sped_out_of_district_pct": 0.057
+ },
+ "07200000": {
+  "sped_full_inclusion_pct": 0.755,
+  "sped_partial_inclusion_pct": 0.167,
+  "sped_separate_pct": 0.045,
+  "sped_out_of_district_pct": 0.024
+ },
+ "01030000": {
+  "sped_full_inclusion_pct": 0.7,
+  "sped_partial_inclusion_pct": 0.121,
+  "sped_separate_pct": 0.131,
+  "sped_out_of_district_pct": 0.053
+ },
+ "02850000": {
+  "sped_full_inclusion_pct": 0.653,
+  "sped_partial_inclusion_pct": 0.098,
+  "sped_separate_pct": 0.172,
+  "sped_out_of_district_pct": 0.08
+ },
+ "07530000": {
+  "sped_full_inclusion_pct": 0.74,
+  "sped_partial_inclusion_pct": 0.074,
+  "sped_separate_pct": 0.14,
+  "sped_out_of_district_pct": 0.034
+ },
+ "02190000": {
+  "sped_full_inclusion_pct": 0.883,
+  "sped_partial_inclusion_pct": 0.044,
+  "sped_out_of_district_pct": 0.073
+ },
+ "02140000": {
+  "sped_full_inclusion_pct": 0.754,
+  "sped_partial_inclusion_pct": 0.063,
+  "sped_separate_pct": 0.094,
+  "sped_out_of_district_pct": 0.063
+ },
+ "00640000": {
+  "sped_full_inclusion_pct": 0.612,
+  "sped_partial_inclusion_pct": 0.175,
+  "sped_separate_pct": 0.096,
+  "sped_out_of_district_pct": 0.086
+ },
+ "02620000": {
+  "sped_full_inclusion_pct": 0.615,
+  "sped_partial_inclusion_pct": 0.086,
+  "sped_separate_pct": 0.21,
+  "sped_out_of_district_pct": 0.095
+ },
+ "03080000": {
+  "sped_full_inclusion_pct": 0.514,
+  "sped_partial_inclusion_pct": 0.235,
+  "sped_separate_pct": 0.165,
+  "sped_out_of_district_pct": 0.081
+ },
+ "03140000": {
+  "sped_full_inclusion_pct": 0.594,
+  "sped_partial_inclusion_pct": 0.146,
+  "sped_separate_pct": 0.15,
+  "sped_out_of_district_pct": 0.106
+ },
+ "01410000": {
+  "sped_full_inclusion_pct": 0.642,
+  "sped_partial_inclusion_pct": 0.202,
+  "sped_separate_pct": 0.086,
+  "sped_out_of_district_pct": 0.072
+ },
+ "06200000": {
+  "sped_full_inclusion_pct": 0.745,
+  "sped_partial_inclusion_pct": 0.085,
+  "sped_separate_pct": 0.09,
+  "sped_out_of_district_pct": 0.064
+ },
+ "03490000": {
+  "sped_full_inclusion_pct": 0.957,
+  "sped_partial_inclusion_pct": 0.043
+ },
+ "00650000": {
+  "sped_full_inclusion_pct": 0.841,
+  "sped_partial_inclusion_pct": 0.084,
+  "sped_separate_pct": 0.016,
+  "sped_out_of_district_pct": 0.06
+ },
+ "00820000": {
+  "sped_full_inclusion_pct": 0.79,
+  "sped_partial_inclusion_pct": 0.127,
+  "sped_separate_pct": 0.031,
+  "sped_out_of_district_pct": 0.057
+ },
+ "01180000": {
+  "sped_full_inclusion_pct": 0.846,
+  "sped_partial_inclusion_pct": 0.068,
+  "sped_separate_pct": 0.051,
+  "sped_out_of_district_pct": 0.034
+ },
+ "01530000": {
+  "sped_full_inclusion_pct": 0.655,
+  "sped_partial_inclusion_pct": 0.163,
+  "sped_separate_pct": 0.128,
+  "sped_out_of_district_pct": 0.05
+ },
+ "02900000": {
+  "sped_full_inclusion_pct": 0.596,
+  "sped_partial_inclusion_pct": 0.291,
+  "sped_separate_pct": 0.072,
+  "sped_out_of_district_pct": 0.049
+ },
+ "02070000": {
+  "sped_full_inclusion_pct": 0.734,
+  "sped_partial_inclusion_pct": 0.094,
+  "sped_separate_pct": 0.105,
+  "sped_out_of_district_pct": 0.051
+ },
+ "00080000": {
+  "sped_full_inclusion_pct": 0.715,
+  "sped_partial_inclusion_pct": 0.169,
+  "sped_separate_pct": 0.107,
+  "sped_out_of_district_pct": 0.004
+ },
+ "00450000": {
+  "sped_full_inclusion_pct": 0.813,
+  "sped_partial_inclusion_pct": 0.063,
+  "sped_separate_pct": 0.125
+ },
+ "01760000": {
+  "sped_full_inclusion_pct": 0.649,
+  "sped_partial_inclusion_pct": 0.15,
+  "sped_separate_pct": 0.136,
+  "sped_out_of_district_pct": 0.043
+ },
+ "03350000": {
+  "sped_full_inclusion_pct": 0.715,
+  "sped_partial_inclusion_pct": 0.193,
+  "sped_separate_pct": 0.055,
+  "sped_out_of_district_pct": 0.039
+ },
+ "01960000": {
+  "sped_full_inclusion_pct": 0.745,
+  "sped_partial_inclusion_pct": 0.128,
+  "sped_out_of_district_pct": 0.149
+ },
+ "00560000": {
+  "sped_full_inclusion_pct": 0.707,
+  "sped_partial_inclusion_pct": 0.145,
+  "sped_separate_pct": 0.087,
+  "sped_out_of_district_pct": 0.062
+ },
+ "06800000": {
+  "sped_full_inclusion_pct": 0.645,
+  "sped_partial_inclusion_pct": 0.232,
+  "sped_separate_pct": 0.082,
+  "sped_out_of_district_pct": 0.038
+ },
+ "03270000": {
+  "sped_full_inclusion_pct": 0.704,
+  "sped_partial_inclusion_pct": 0.296
+ },
+ "06150000": {
+  "sped_full_inclusion_pct": 0.779,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_separate_pct": 0.081,
+  "sped_out_of_district_pct": 0.062
+ },
+ "02720000": {
+  "sped_full_inclusion_pct": 0.75,
+  "sped_partial_inclusion_pct": 0.208,
+  "sped_separate_pct": 0.042
+ },
+ "02740000": {
+  "sped_full_inclusion_pct": 0.689,
+  "sped_partial_inclusion_pct": 0.057,
+  "sped_separate_pct": 0.163,
+  "sped_out_of_district_pct": 0.058
+ },
+ "06650000": {
+  "sped_full_inclusion_pct": 0.685,
+  "sped_partial_inclusion_pct": 0.145,
+  "sped_separate_pct": 0.121,
+  "sped_out_of_district_pct": 0.069
+ },
+ "02090000": {
+  "sped_full_inclusion_pct": 0.649,
+  "sped_partial_inclusion_pct": 0.145,
+  "sped_separate_pct": 0.142,
+  "sped_out_of_district_pct": 0.05
+ },
+ "03090000": {
+  "sped_full_inclusion_pct": 0.724,
+  "sped_partial_inclusion_pct": 0.109,
+  "sped_separate_pct": 0.122,
+  "sped_out_of_district_pct": 0.05
+ },
+ "01360000": {
+  "sped_full_inclusion_pct": 0.59,
+  "sped_partial_inclusion_pct": 0.281,
+  "sped_separate_pct": 0.053,
+  "sped_out_of_district_pct": 0.067
+ },
+ "01630000": {
+  "sped_full_inclusion_pct": 0.61,
+  "sped_partial_inclusion_pct": 0.054,
+  "sped_separate_pct": 0.292,
+  "sped_out_of_district_pct": 0.032
+ },
+ "01370000": {
+  "sped_full_inclusion_pct": 0.641,
+  "sped_partial_inclusion_pct": 0.095,
+  "sped_separate_pct": 0.181,
+  "sped_out_of_district_pct": 0.08
+ },
+ "01380000": {
+  "sped_full_inclusion_pct": 0.758,
+  "sped_partial_inclusion_pct": 0.121,
+  "sped_separate_pct": 0.048,
+  "sped_out_of_district_pct": 0.065
+ },
+ "02910000": {
+  "sped_full_inclusion_pct": 0.723,
+  "sped_partial_inclusion_pct": 0.15,
+  "sped_separate_pct": 0.06,
+  "sped_out_of_district_pct": 0.067
+ },
+ "00410000": {
+  "sped_full_inclusion_pct": 0.474,
+  "sped_partial_inclusion_pct": 0.274,
+  "sped_separate_pct": 0.179,
+  "sped_out_of_district_pct": 0.032
+ },
+ "01420000": {
+  "sped_full_inclusion_pct": 0.78,
+  "sped_partial_inclusion_pct": 0.058,
+  "sped_separate_pct": 0.087,
+  "sped_out_of_district_pct": 0.075
+ },
+ "00710000": {
+  "sped_full_inclusion_pct": 0.71,
+  "sped_partial_inclusion_pct": 0.115,
+  "sped_separate_pct": 0.085,
+  "sped_out_of_district_pct": 0.092
+ },
+ "00980000": {
+  "sped_full_inclusion_pct": 0.857,
+  "sped_partial_inclusion_pct": 0.143
+ },
+ "02210000": {
+  "sped_full_inclusion_pct": 0.894,
+  "sped_partial_inclusion_pct": 0.096,
+  "sped_out_of_district_pct": 0.011
+ },
+ "02500000": {
+  "sped_full_inclusion_pct": 0.94,
+  "sped_partial_inclusion_pct": 0.024,
+  "sped_separate_pct": 0.012,
+  "sped_out_of_district_pct": 0.036
+ },
+ "01980000": {
+  "sped_full_inclusion_pct": 0.736,
+  "sped_partial_inclusion_pct": 0.123,
+  "sped_separate_pct": 0.079,
+  "sped_out_of_district_pct": 0.057
+ },
+ "01450000": {
+  "sped_full_inclusion_pct": 0.731,
+  "sped_partial_inclusion_pct": 0.16,
+  "sped_separate_pct": 0.069,
+  "sped_out_of_district_pct": 0.023
+ },
+ "00240000": {
+  "sped_full_inclusion_pct": 0.649,
+  "sped_partial_inclusion_pct": 0.179,
+  "sped_separate_pct": 0.142,
+  "sped_out_of_district_pct": 0.031
+ },
+ "00930000": {
+  "sped_full_inclusion_pct": 0.66,
+  "sped_partial_inclusion_pct": 0.123,
+  "sped_separate_pct": 0.125,
+  "sped_out_of_district_pct": 0.069
+ },
+ "01440000": {
+  "sped_full_inclusion_pct": 0.818,
+  "sped_partial_inclusion_pct": 0.082,
+  "sped_separate_pct": 0.04,
+  "sped_out_of_district_pct": 0.058
+ },
+ "00910000": {
+  "sped_full_inclusion_pct": 0.815,
+  "sped_partial_inclusion_pct": 0.074,
+  "sped_separate_pct": 0.037,
+  "sped_out_of_district_pct": 0.037
+ },
+ "01770000": {
+  "sped_full_inclusion_pct": 0.725,
+  "sped_partial_inclusion_pct": 0.176,
+  "sped_separate_pct": 0.017,
+  "sped_out_of_district_pct": 0.083
+ },
+ "03230000": {
+  "sped_full_inclusion_pct": 0.801,
+  "sped_partial_inclusion_pct": 0.086,
+  "sped_separate_pct": 0.048,
+  "sped_out_of_district_pct": 0.07
+ },
+ "07450000": {
+  "sped_full_inclusion_pct": 0.689,
+  "sped_partial_inclusion_pct": 0.17,
+  "sped_separate_pct": 0.081,
+  "sped_out_of_district_pct": 0.061
+ },
+ "00630000": {
+  "sped_full_inclusion_pct": 1.0
+ },
+ "00970000": {
+  "sped_full_inclusion_pct": 0.659,
+  "sped_partial_inclusion_pct": 0.045,
+  "sped_separate_pct": 0.181,
+  "sped_out_of_district_pct": 0.1
+ },
+ "06320000": {
+  "sped_full_inclusion_pct": 0.636,
+  "sped_partial_inclusion_pct": 0.318,
+  "sped_out_of_district_pct": 0.045
+ },
+ "07730000": {
+  "sped_full_inclusion_pct": 0.78,
+  "sped_partial_inclusion_pct": 0.108,
+  "sped_separate_pct": 0.043,
+  "sped_out_of_district_pct": 0.058
+ },
+ "00180000": {
+  "sped_full_inclusion_pct": 0.725,
+  "sped_partial_inclusion_pct": 0.092,
+  "sped_separate_pct": 0.124,
+  "sped_out_of_district_pct": 0.065
+ },
+ "00310000": {
+  "sped_full_inclusion_pct": 0.678,
+  "sped_partial_inclusion_pct": 0.13,
+  "sped_separate_pct": 0.128,
+  "sped_out_of_district_pct": 0.061
+ },
+ "00030000": {
+  "sped_full_inclusion_pct": 0.743,
+  "sped_partial_inclusion_pct": 0.041,
+  "sped_separate_pct": 0.181,
+  "sped_out_of_district_pct": 0.094
+ },
+ "01710000": {
+  "sped_full_inclusion_pct": 0.673,
+  "sped_partial_inclusion_pct": 0.193,
+  "sped_separate_pct": 0.083,
+  "sped_out_of_district_pct": 0.046
+ },
+ "03180000": {
+  "sped_full_inclusion_pct": 0.833,
+  "sped_partial_inclusion_pct": 0.167
+ },
+ "03060000": {
+  "sped_full_inclusion_pct": 0.72,
+  "sped_partial_inclusion_pct": 0.12,
+  "sped_separate_pct": 0.12
+ },
+ "01570000": {
+  "sped_full_inclusion_pct": 0.64,
+  "sped_partial_inclusion_pct": 0.203,
+  "sped_separate_pct": 0.113,
+  "sped_out_of_district_pct": 0.113
+ },
+ "02920000": {
+  "sped_full_inclusion_pct": 0.63,
+  "sped_partial_inclusion_pct": 0.197,
+  "sped_separate_pct": 0.091,
+  "sped_out_of_district_pct": 0.048
+ },
+ "02880000": {
+  "sped_full_inclusion_pct": 0.816,
+  "sped_partial_inclusion_pct": 0.118,
+  "sped_separate_pct": 0.045,
+  "sped_out_of_district_pct": 0.026
+ },
+ "02270000": {
+  "sped_full_inclusion_pct": 0.592,
+  "sped_partial_inclusion_pct": 0.162,
+  "sped_separate_pct": 0.197,
+  "sped_out_of_district_pct": 0.048
+ },
+ "03210000": {
+  "sped_full_inclusion_pct": 0.704,
+  "sped_partial_inclusion_pct": 0.151,
+  "sped_separate_pct": 0.088,
+  "sped_out_of_district_pct": 0.051
+ },
+ "01780000": {
+  "sped_full_inclusion_pct": 0.731,
+  "sped_partial_inclusion_pct": 0.191,
+  "sped_separate_pct": 0.043,
+  "sped_out_of_district_pct": 0.084
+ },
+ "06720000": {
+  "sped_full_inclusion_pct": 0.786,
+  "sped_partial_inclusion_pct": 0.107,
+  "sped_separate_pct": 0.086,
+  "sped_out_of_district_pct": 0.021
+ },
+ "07650000": {
+  "sped_full_inclusion_pct": 0.771,
+  "sped_partial_inclusion_pct": 0.133,
+  "sped_separate_pct": 0.038,
+  "sped_out_of_district_pct": 0.019
+ },
+ "00440000": {
+  "sped_full_inclusion_pct": 0.578,
+  "sped_partial_inclusion_pct": 0.104,
+  "sped_separate_pct": 0.278,
+  "sped_out_of_district_pct": 0.026
+ },
+ "02440000": {
+  "sped_full_inclusion_pct": 0.612,
+  "sped_partial_inclusion_pct": 0.083,
+  "sped_separate_pct": 0.229,
+  "sped_out_of_district_pct": 0.081
+ },
+ "06160000": {
+  "sped_full_inclusion_pct": 0.752,
+  "sped_partial_inclusion_pct": 0.117,
+  "sped_separate_pct": 0.047,
+  "sped_out_of_district_pct": 0.076
+ },
+ "00860000": {
+  "sped_full_inclusion_pct": 0.73,
+  "sped_partial_inclusion_pct": 0.142,
+  "sped_separate_pct": 0.068,
+  "sped_out_of_district_pct": 0.06
+ },
+ "00100000": {
+  "sped_full_inclusion_pct": 0.801,
+  "sped_partial_inclusion_pct": 0.071,
+  "sped_separate_pct": 0.053,
+  "sped_out_of_district_pct": 0.056
+ },
+ "06400000": {
+  "sped_full_inclusion_pct": 0.593,
+  "sped_partial_inclusion_pct": 0.154,
+  "sped_separate_pct": 0.1,
+  "sped_out_of_district_pct": 0.167
+ },
+ "06600000": {
+  "sped_full_inclusion_pct": 0.643,
+  "sped_partial_inclusion_pct": 0.194,
+  "sped_separate_pct": 0.07,
+  "sped_out_of_district_pct": 0.101
+ },
+ "06900000": {
+  "sped_full_inclusion_pct": 0.559,
+  "sped_partial_inclusion_pct": 0.161,
+  "sped_separate_pct": 0.212,
+  "sped_out_of_district_pct": 0.073
+ },
+ "06950000": {
+  "sped_full_inclusion_pct": 0.661,
+  "sped_partial_inclusion_pct": 0.138,
+  "sped_separate_pct": 0.033,
+  "sped_out_of_district_pct": 0.132
+ },
+ "07050000": {
+  "sped_full_inclusion_pct": 0.678,
+  "sped_partial_inclusion_pct": 0.111,
+  "sped_separate_pct": 0.018,
+  "sped_out_of_district_pct": 0.187
+ },
+ "07300000": {
+  "sped_full_inclusion_pct": 0.688,
+  "sped_partial_inclusion_pct": 0.139,
+  "sped_separate_pct": 0.144,
+  "sped_out_of_district_pct": 0.03
+ },
+ "07630000": {
+  "sped_full_inclusion_pct": 0.59,
+  "sped_partial_inclusion_pct": 0.154,
+  "sped_separate_pct": 0.147,
+  "sped_out_of_district_pct": 0.122
+ }
+}

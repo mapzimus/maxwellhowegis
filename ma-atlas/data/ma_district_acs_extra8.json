@@ -1,0 +1,2250 @@
+{
+ "00010000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.476875,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.00742,
+  "acs_govt_worker_pct": 0.16596,
+  "acs_born_in_state_pct": 0.80615
+ },
+ "00030000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.414494,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.012833,
+  "acs_govt_worker_pct": 0.131451,
+  "acs_born_in_state_pct": 0.821831
+ },
+ "00050000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.425358,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.012353,
+  "acs_govt_worker_pct": 0.170697,
+  "acs_born_in_state_pct": 0.698387
+ },
+ "00070000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.488629,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.015386,
+  "acs_govt_worker_pct": 0.10337,
+  "acs_born_in_state_pct": 0.659721
+ },
+ "00080000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.465755,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.079921,
+  "acs_govt_worker_pct": 0.335518,
+  "acs_born_in_state_pct": 0.47164
+ },
+ "00090000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.701897,
+  "acs_median_rooms": 7.1,
+  "acs_moved_diff_state_pct": 0.018351,
+  "acs_govt_worker_pct": 0.118057,
+  "acs_born_in_state_pct": 0.580913
+ },
+ "00100000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.752515,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.019432,
+  "acs_govt_worker_pct": 0.111888,
+  "acs_born_in_state_pct": 0.492948
+ },
+ "00140000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.61712,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.003632,
+  "acs_govt_worker_pct": 0.100269,
+  "acs_born_in_state_pct": 0.544881
+ },
+ "00160000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.421346,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.017707,
+  "acs_govt_worker_pct": 0.115402,
+  "acs_born_in_state_pct": 0.587453
+ },
+ "00170000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.48481,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.003282,
+  "acs_govt_worker_pct": 0.15784,
+  "acs_born_in_state_pct": 0.785095
+ },
+ "00180000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.362567,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.016442,
+  "acs_govt_worker_pct": 0.141533,
+  "acs_born_in_state_pct": 0.720808
+ },
+ "00200000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.40578,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.015455,
+  "acs_govt_worker_pct": 0.113027,
+  "acs_born_in_state_pct": 0.572311
+ },
+ "00230000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.660644,
+  "acs_median_rooms": 6.8,
+  "acs_moved_diff_state_pct": 0.029761,
+  "acs_govt_worker_pct": 0.088933,
+  "acs_born_in_state_pct": 0.492784
+ },
+ "00240000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.503912,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.013226,
+  "acs_govt_worker_pct": 0.256531,
+  "acs_born_in_state_pct": 0.716907
+ },
+ "00250000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.493767,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.002655,
+  "acs_govt_worker_pct": 0.152052,
+  "acs_born_in_state_pct": 0.70035
+ },
+ "00260000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.76922,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.031661,
+  "acs_govt_worker_pct": 0.092952,
+  "acs_born_in_state_pct": 0.445259
+ },
+ "00270000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.453232,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.004605,
+  "acs_govt_worker_pct": 0.150289,
+  "acs_born_in_state_pct": 0.794668
+ },
+ "00300000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.581155,
+  "acs_median_rooms": 5.5,
+  "acs_moved_diff_state_pct": 0.028996,
+  "acs_govt_worker_pct": 0.105661,
+  "acs_born_in_state_pct": 0.669402
+ },
+ "00310000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.515011,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.01715,
+  "acs_govt_worker_pct": 0.109866,
+  "acs_born_in_state_pct": 0.71554
+ },
+ "00350000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.563841,
+  "acs_median_rooms": 4.3,
+  "acs_moved_diff_state_pct": 0.048355,
+  "acs_govt_worker_pct": 0.113696,
+  "acs_born_in_state_pct": 0.428152
+ },
+ "00360000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.439017,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.038987,
+  "acs_govt_worker_pct": 0.123869,
+  "acs_born_in_state_pct": 0.658787
+ },
+ "00380000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.66,
+  "acs_median_rooms": 10.0,
+  "acs_moved_diff_state_pct": 0.00861,
+  "acs_govt_worker_pct": 0.104,
+  "acs_born_in_state_pct": 0.652115
+ },
+ "00400000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.517502,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.007814,
+  "acs_govt_worker_pct": 0.165135,
+  "acs_born_in_state_pct": 0.683995
+ },
+ "00410000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.471903,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.045965,
+  "acs_govt_worker_pct": 0.130752,
+  "acs_born_in_state_pct": 0.563519
+ },
+ "00430000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.507389,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.01543,
+  "acs_govt_worker_pct": 0.151615,
+  "acs_born_in_state_pct": 0.690038
+ },
+ "00440000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.304474,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.002445,
+  "acs_govt_worker_pct": 0.136803,
+  "acs_born_in_state_pct": 0.557794
+ },
+ "00450000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.394624,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.01345,
+  "acs_govt_worker_pct": 0.096237,
+  "acs_born_in_state_pct": 0.853574
+ },
+ "00460000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.836067,
+  "acs_median_rooms": 4.8,
+  "acs_moved_diff_state_pct": 0.066799,
+  "acs_govt_worker_pct": 0.068744,
+  "acs_born_in_state_pct": 0.320095
+ },
+ "00480000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.578668,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.014626,
+  "acs_govt_worker_pct": 0.116711,
+  "acs_born_in_state_pct": 0.670976
+ },
+ "00490000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.787174,
+  "acs_median_rooms": 4.1,
+  "acs_moved_diff_state_pct": 0.084599,
+  "acs_govt_worker_pct": 0.091513,
+  "acs_born_in_state_pct": 0.298682
+ },
+ "00500000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.685258,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.011222,
+  "acs_govt_worker_pct": 0.121109,
+  "acs_born_in_state_pct": 0.645693
+ },
+ "00510000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.703164,
+  "acs_median_rooms": 8.4,
+  "acs_moved_diff_state_pct": 0.041885,
+  "acs_govt_worker_pct": 0.074938,
+  "acs_born_in_state_pct": 0.475715
+ },
+ "00520000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.412777,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.014773,
+  "acs_govt_worker_pct": 0.111883,
+  "acs_born_in_state_pct": 0.819493
+ },
+ "00560000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.619526,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.017927,
+  "acs_govt_worker_pct": 0.137793,
+  "acs_born_in_state_pct": 0.662424
+ },
+ "00570000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.247701,
+  "acs_median_rooms": 4.3,
+  "acs_moved_diff_state_pct": 0.015109,
+  "acs_govt_worker_pct": 0.082886,
+  "acs_born_in_state_pct": 0.410694
+ },
+ "00610000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.34485,
+  "acs_median_rooms": 5.0,
+  "acs_moved_diff_state_pct": 0.009672,
+  "acs_govt_worker_pct": 0.153421,
+  "acs_born_in_state_pct": 0.681506
+ },
+ "00630000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.359392,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.022635,
+  "acs_govt_worker_pct": 0.242128,
+  "acs_born_in_state_pct": 0.809054
+ },
+ "00640000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.402652,
+  "acs_median_rooms": 5.1,
+  "acs_moved_diff_state_pct": 0.008545,
+  "acs_govt_worker_pct": 0.116861,
+  "acs_born_in_state_pct": 0.621841
+ },
+ "00650000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.653061,
+  "acs_median_rooms": 7.3,
+  "acs_moved_diff_state_pct": 0.006153,
+  "acs_govt_worker_pct": 0.074994,
+  "acs_born_in_state_pct": 0.644652
+ },
+ "00670000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.750034,
+  "acs_median_rooms": 7.7,
+  "acs_moved_diff_state_pct": 0.021769,
+  "acs_govt_worker_pct": 0.073285,
+  "acs_born_in_state_pct": 0.506419
+ },
+ "00680000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.596999,
+  "acs_median_rooms": 6.7,
+  "acs_moved_diff_state_pct": 0.010245,
+  "acs_govt_worker_pct": 0.188639,
+  "acs_born_in_state_pct": 0.571429
+ },
+ "00710000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.527122,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.010203,
+  "acs_govt_worker_pct": 0.149062,
+  "acs_born_in_state_pct": 0.768121
+ },
+ "00720000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.437715,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.027082,
+  "acs_govt_worker_pct": 0.191369,
+  "acs_born_in_state_pct": 0.710738
+ },
+ "00730000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.547207,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.018617,
+  "acs_govt_worker_pct": 0.117279,
+  "acs_born_in_state_pct": 0.675654
+ },
+ "00740000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.573858,
+  "acs_median_rooms": 6.9,
+  "acs_moved_diff_state_pct": 0.024143,
+  "acs_govt_worker_pct": 0.130043,
+  "acs_born_in_state_pct": 0.700935
+ },
+ "00770000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.554944,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.002535,
+  "acs_govt_worker_pct": 0.118931,
+  "acs_born_in_state_pct": 0.665128
+ },
+ "00790000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.444237,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.006121,
+  "acs_govt_worker_pct": 0.16247,
+  "acs_born_in_state_pct": 0.796081
+ },
+ "00820000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.595936,
+  "acs_median_rooms": 7.4,
+  "acs_moved_diff_state_pct": 0.009974,
+  "acs_govt_worker_pct": 0.123225,
+  "acs_born_in_state_pct": 0.675791
+ },
+ "00830000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.44206,
+  "acs_median_rooms": 6.6,
+  "acs_moved_diff_state_pct": 0.006814,
+  "acs_govt_worker_pct": 0.111781,
+  "acs_born_in_state_pct": 0.866505
+ },
+ "00850000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.490787,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.03353,
+  "acs_govt_worker_pct": 0.159966,
+  "acs_born_in_state_pct": 0.441788
+ },
+ "00860000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.497941,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.027633,
+  "acs_govt_worker_pct": 0.196173,
+  "acs_born_in_state_pct": 0.676147
+ },
+ "00870000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.521188,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.007339,
+  "acs_govt_worker_pct": 0.193488,
+  "acs_born_in_state_pct": 0.754032
+ },
+ "00880000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.573375,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.019703,
+  "acs_govt_worker_pct": 0.13903,
+  "acs_born_in_state_pct": 0.719339
+ },
+ "00890000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.418807,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.069211,
+  "acs_govt_worker_pct": 0.036166,
+  "acs_born_in_state_pct": 0.561781
+ },
+ "00910000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.36935,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.017167,
+  "acs_govt_worker_pct": 0.159868,
+  "acs_born_in_state_pct": 0.801708
+ },
+ "00930000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.302654,
+  "acs_median_rooms": 4.8,
+  "acs_moved_diff_state_pct": 0.011041,
+  "acs_govt_worker_pct": 0.09362,
+  "acs_born_in_state_pct": 0.438886
+ },
+ "00940000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.44358,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.00836,
+  "acs_govt_worker_pct": 0.200816,
+  "acs_born_in_state_pct": 0.805076
+ },
+ "00950000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.296246,
+  "acs_median_rooms": 5.0,
+  "acs_moved_diff_state_pct": 0.010787,
+  "acs_govt_worker_pct": 0.102586,
+  "acs_born_in_state_pct": 0.600497
+ },
+ "00960000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.501117,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.015366,
+  "acs_govt_worker_pct": 0.123866,
+  "acs_born_in_state_pct": 0.6107
+ },
+ "00970000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.326821,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.018167,
+  "acs_govt_worker_pct": 0.145582,
+  "acs_born_in_state_pct": 0.656859
+ },
+ "00980000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.408602,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.046512,
+  "acs_govt_worker_pct": 0.150538,
+  "acs_born_in_state_pct": 0.656331
+ },
+ "00990000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.563978,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.012959,
+  "acs_govt_worker_pct": 0.134177,
+  "acs_born_in_state_pct": 0.669475
+ },
+ "01000000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.454473,
+  "acs_median_rooms": 5.5,
+  "acs_moved_diff_state_pct": 0.013912,
+  "acs_govt_worker_pct": 0.117518,
+  "acs_born_in_state_pct": 0.485204
+ },
+ "01010000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.559702,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.017554,
+  "acs_govt_worker_pct": 0.129827,
+  "acs_born_in_state_pct": 0.63202
+ },
+ "01030000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.387195,
+  "acs_median_rooms": 5.1,
+  "acs_moved_diff_state_pct": 0.002487,
+  "acs_govt_worker_pct": 0.177145,
+  "acs_born_in_state_pct": 0.749039
+ },
+ "01050000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.549896,
+  "acs_median_rooms": 6.6,
+  "acs_moved_diff_state_pct": 0.011625,
+  "acs_govt_worker_pct": 0.153508,
+  "acs_born_in_state_pct": 0.779868
+ },
+ "01070000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.418216,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.004141,
+  "acs_govt_worker_pct": 0.111429,
+  "acs_born_in_state_pct": 0.721619
+ },
+ "01090000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.540541,
+  "acs_median_rooms": 5.1,
+  "acs_moved_diff_state_pct": 0.039216,
+  "acs_govt_worker_pct": 0.054054,
+  "acs_born_in_state_pct": 0.470588
+ },
+ "01100000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.556544,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.013577,
+  "acs_govt_worker_pct": 0.096589,
+  "acs_born_in_state_pct": 0.653938
+ },
+ "01110000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.464266,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.002477,
+  "acs_govt_worker_pct": 0.180886,
+  "acs_born_in_state_pct": 0.751314
+ },
+ "01140000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.410721,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.011073,
+  "acs_govt_worker_pct": 0.138992,
+  "acs_born_in_state_pct": 0.640358
+ },
+ "01170000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.635872,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.013295,
+  "acs_govt_worker_pct": 0.230603,
+  "acs_born_in_state_pct": 0.623514
+ },
+ "01180000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.472959,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.024928,
+  "acs_govt_worker_pct": 0.230846,
+  "acs_born_in_state_pct": 0.88195
+ },
+ "01210000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.526699,
+  "acs_median_rooms": 4.5,
+  "acs_moved_diff_state_pct": 0.0,
+  "acs_govt_worker_pct": 0.145631,
+  "acs_born_in_state_pct": 0.637845
+ },
+ "01220000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.561664,
+  "acs_median_rooms": 7.6,
+  "acs_moved_diff_state_pct": 0.001428,
+  "acs_govt_worker_pct": 0.113487,
+  "acs_born_in_state_pct": 0.8225
+ },
+ "01250000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.71475,
+  "acs_median_rooms": 7.9,
+  "acs_moved_diff_state_pct": 0.019573,
+  "acs_govt_worker_pct": 0.094217,
+  "acs_born_in_state_pct": 0.555152
+ },
+ "01270000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.423963,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.002127,
+  "acs_govt_worker_pct": 0.167947,
+  "acs_born_in_state_pct": 0.676294
+ },
+ "01280000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.40356,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.013842,
+  "acs_govt_worker_pct": 0.109707,
+  "acs_born_in_state_pct": 0.67427
+ },
+ "01310000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.691749,
+  "acs_median_rooms": 7.4,
+  "acs_moved_diff_state_pct": 0.00912,
+  "acs_govt_worker_pct": 0.108875,
+  "acs_born_in_state_pct": 0.657763
+ },
+ "01330000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.431251,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.002671,
+  "acs_govt_worker_pct": 0.129232,
+  "acs_born_in_state_pct": 0.713604
+ },
+ "01350000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.341028,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.003505,
+  "acs_govt_worker_pct": 0.212956,
+  "acs_born_in_state_pct": 0.701087
+ },
+ "01360000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.626834,
+  "acs_median_rooms": 7.1,
+  "acs_moved_diff_state_pct": 0.016433,
+  "acs_govt_worker_pct": 0.149592,
+  "acs_born_in_state_pct": 0.628575
+ },
+ "01370000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.35279,
+  "acs_median_rooms": 4.8,
+  "acs_moved_diff_state_pct": 0.016068,
+  "acs_govt_worker_pct": 0.163038,
+  "acs_born_in_state_pct": 0.577696
+ },
+ "01380000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.466893,
+  "acs_median_rooms": 6.7,
+  "acs_moved_diff_state_pct": 0.000167,
+  "acs_govt_worker_pct": 0.17955,
+  "acs_born_in_state_pct": 0.745186
+ },
+ "01390000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.670009,
+  "acs_median_rooms": 7.6,
+  "acs_moved_diff_state_pct": 0.021315,
+  "acs_govt_worker_pct": 0.063759,
+  "acs_born_in_state_pct": 0.545144
+ },
+ "01410000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.52465,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.011057,
+  "acs_govt_worker_pct": 0.141422,
+  "acs_born_in_state_pct": 0.600882
+ },
+ "01420000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.551607,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.010138,
+  "acs_govt_worker_pct": 0.163746,
+  "acs_born_in_state_pct": 0.753119
+ },
+ "01440000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.561205,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.005317,
+  "acs_govt_worker_pct": 0.132838,
+  "acs_born_in_state_pct": 0.682562
+ },
+ "01450000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.456081,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.00213,
+  "acs_govt_worker_pct": 0.130717,
+  "acs_born_in_state_pct": 0.818169
+ },
+ "01490000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.213443,
+  "acs_median_rooms": 4.8,
+  "acs_moved_diff_state_pct": 0.007228,
+  "acs_govt_worker_pct": 0.083028,
+  "acs_born_in_state_pct": 0.389798
+ },
+ "01500000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.570838,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.036785,
+  "acs_govt_worker_pct": 0.240951,
+  "acs_born_in_state_pct": 0.636411
+ },
+ "01510000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.417555,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.005721,
+  "acs_govt_worker_pct": 0.170632,
+  "acs_born_in_state_pct": 0.815547
+ },
+ "01520000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.473874,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.029157,
+  "acs_govt_worker_pct": 0.08964,
+  "acs_born_in_state_pct": 0.509062
+ },
+ "01530000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.398642,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.003225,
+  "acs_govt_worker_pct": 0.13237,
+  "acs_born_in_state_pct": 0.660503
+ },
+ "01540000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.61007,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.010006,
+  "acs_govt_worker_pct": 0.180328,
+  "acs_born_in_state_pct": 0.541667
+ },
+ "01550000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.80207,
+  "acs_median_rooms": 7.4,
+  "acs_moved_diff_state_pct": 0.035147,
+  "acs_govt_worker_pct": 0.071545,
+  "acs_born_in_state_pct": 0.345841
+ },
+ "01570000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.763608,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.068673,
+  "acs_govt_worker_pct": 0.130249,
+  "acs_born_in_state_pct": 0.340052
+ },
+ "01580000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.662438,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.011097,
+  "acs_govt_worker_pct": 0.144944,
+  "acs_born_in_state_pct": 0.672906
+ },
+ "01590000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.656557,
+  "acs_median_rooms": 7.6,
+  "acs_moved_diff_state_pct": 0.021876,
+  "acs_govt_worker_pct": 0.155402,
+  "acs_born_in_state_pct": 0.540829
+ },
+ "01600000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.392315,
+  "acs_median_rooms": 4.8,
+  "acs_moved_diff_state_pct": 0.017798,
+  "acs_govt_worker_pct": 0.10893,
+  "acs_born_in_state_pct": 0.531747
+ },
+ "01610000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.414352,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.003281,
+  "acs_govt_worker_pct": 0.163104,
+  "acs_born_in_state_pct": 0.712847
+ },
+ "01620000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.460522,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.002382,
+  "acs_govt_worker_pct": 0.128345,
+  "acs_born_in_state_pct": 0.728736
+ },
+ "01630000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.320779,
+  "acs_median_rooms": 5.0,
+  "acs_moved_diff_state_pct": 0.006103,
+  "acs_govt_worker_pct": 0.110187,
+  "acs_born_in_state_pct": 0.539676
+ },
+ "01640000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.588426,
+  "acs_median_rooms": 7.6,
+  "acs_moved_diff_state_pct": 0.031135,
+  "acs_govt_worker_pct": 0.127495,
+  "acs_born_in_state_pct": 0.715828
+ },
+ "01650000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.503204,
+  "acs_median_rooms": 4.5,
+  "acs_moved_diff_state_pct": 0.020197,
+  "acs_govt_worker_pct": 0.107252,
+  "acs_born_in_state_pct": 0.433009
+ },
+ "01670000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.531529,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.009981,
+  "acs_govt_worker_pct": 0.136452,
+  "acs_born_in_state_pct": 0.681702
+ },
+ "01680000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.667882,
+  "acs_median_rooms": 7.1,
+  "acs_moved_diff_state_pct": 0.009974,
+  "acs_govt_worker_pct": 0.117966,
+  "acs_born_in_state_pct": 0.609324
+ },
+ "01690000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.493116,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.0076,
+  "acs_govt_worker_pct": 0.181894,
+  "acs_born_in_state_pct": 0.651167
+ },
+ "01700000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.426661,
+  "acs_median_rooms": 5.1,
+  "acs_moved_diff_state_pct": 0.013011,
+  "acs_govt_worker_pct": 0.084966,
+  "acs_born_in_state_pct": 0.508938
+ },
+ "01710000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.541591,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.008265,
+  "acs_govt_worker_pct": 0.180879,
+  "acs_born_in_state_pct": 0.780655
+ },
+ "01720000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.41117,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.030479,
+  "acs_govt_worker_pct": 0.144613,
+  "acs_born_in_state_pct": 0.651438
+ },
+ "01730000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.519605,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.010095,
+  "acs_govt_worker_pct": 0.155097,
+  "acs_born_in_state_pct": 0.754838
+ },
+ "01740000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.694514,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.010153,
+  "acs_govt_worker_pct": 0.109388,
+  "acs_born_in_state_pct": 0.627403
+ },
+ "01750000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.665311,
+  "acs_median_rooms": 8.0,
+  "acs_moved_diff_state_pct": 0.039557,
+  "acs_govt_worker_pct": 0.087965,
+  "acs_born_in_state_pct": 0.651242
+ },
+ "01760000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.585982,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.039296,
+  "acs_govt_worker_pct": 0.110557,
+  "acs_born_in_state_pct": 0.512394
+ },
+ "01770000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.546125,
+  "acs_median_rooms": 7.4,
+  "acs_moved_diff_state_pct": 0.003979,
+  "acs_govt_worker_pct": 0.163811,
+  "acs_born_in_state_pct": 0.72153
+ },
+ "01780000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.653222,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.011413,
+  "acs_govt_worker_pct": 0.119703,
+  "acs_born_in_state_pct": 0.607671
+ },
+ "01810000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.388744,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.007839,
+  "acs_govt_worker_pct": 0.121866,
+  "acs_born_in_state_pct": 0.618762
+ },
+ "01820000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.38058,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.000124,
+  "acs_govt_worker_pct": 0.128762,
+  "acs_born_in_state_pct": 0.817077
+ },
+ "01840000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.459159,
+  "acs_median_rooms": 6.6,
+  "acs_moved_diff_state_pct": 0.002685,
+  "acs_govt_worker_pct": 0.129659,
+  "acs_born_in_state_pct": 0.750488
+ },
+ "01850000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.404793,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.007833,
+  "acs_govt_worker_pct": 0.092091,
+  "acs_born_in_state_pct": 0.554349
+ },
+ "01860000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.487325,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.010156,
+  "acs_govt_worker_pct": 0.171076,
+  "acs_born_in_state_pct": 0.76984
+ },
+ "01870000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.531493,
+  "acs_median_rooms": 6.7,
+  "acs_moved_diff_state_pct": 0.009366,
+  "acs_govt_worker_pct": 0.122304,
+  "acs_born_in_state_pct": 0.721692
+ },
+ "01890000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.632393,
+  "acs_median_rooms": 7.1,
+  "acs_moved_diff_state_pct": 0.014104,
+  "acs_govt_worker_pct": 0.168983,
+  "acs_born_in_state_pct": 0.61778
+ },
+ "01910000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.372064,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.014514,
+  "acs_govt_worker_pct": 0.168603,
+  "acs_born_in_state_pct": 0.778612
+ },
+ "01960000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.522067,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.004239,
+  "acs_govt_worker_pct": 0.171152,
+  "acs_born_in_state_pct": 0.740084
+ },
+ "01970000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.474985,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.035121,
+  "acs_govt_worker_pct": 0.227535,
+  "acs_born_in_state_pct": 0.452969
+ },
+ "01980000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.658745,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.018437,
+  "acs_govt_worker_pct": 0.110385,
+  "acs_born_in_state_pct": 0.516641
+ },
+ "01990000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.726106,
+  "acs_median_rooms": 7.7,
+  "acs_moved_diff_state_pct": 0.01662,
+  "acs_govt_worker_pct": 0.079487,
+  "acs_born_in_state_pct": 0.541346
+ },
+ "02010000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.267651,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.010498,
+  "acs_govt_worker_pct": 0.112523,
+  "acs_born_in_state_pct": 0.630501
+ },
+ "02040000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.63961,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.024361,
+  "acs_govt_worker_pct": 0.123026,
+  "acs_born_in_state_pct": 0.606593
+ },
+ "02070000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.739162,
+  "acs_median_rooms": 6.8,
+  "acs_moved_diff_state_pct": 0.032939,
+  "acs_govt_worker_pct": 0.076117,
+  "acs_born_in_state_pct": 0.435393
+ },
+ "02080000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.68385,
+  "acs_median_rooms": 7.8,
+  "acs_moved_diff_state_pct": 0.010202,
+  "acs_govt_worker_pct": 0.110552,
+  "acs_born_in_state_pct": 0.663032
+ },
+ "02090000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.382225,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.022509,
+  "acs_govt_worker_pct": 0.167757,
+  "acs_born_in_state_pct": 0.686177
+ },
+ "02100000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.588404,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.048844,
+  "acs_govt_worker_pct": 0.178928,
+  "acs_born_in_state_pct": 0.493506
+ },
+ "02110000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.595298,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.029552,
+  "acs_govt_worker_pct": 0.124731,
+  "acs_born_in_state_pct": 0.649981
+ },
+ "02120000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.456564,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.021615,
+  "acs_govt_worker_pct": 0.13468,
+  "acs_born_in_state_pct": 0.625186
+ },
+ "02130000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.663292,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.003654,
+  "acs_govt_worker_pct": 0.125179,
+  "acs_born_in_state_pct": 0.600038
+ },
+ "02140000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.480442,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.009728,
+  "acs_govt_worker_pct": 0.139126,
+  "acs_born_in_state_pct": 0.752292
+ },
+ "02150000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.390337,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.004037,
+  "acs_govt_worker_pct": 0.123083,
+  "acs_born_in_state_pct": 0.861785
+ },
+ "02170000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.534433,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.017188,
+  "acs_govt_worker_pct": 0.147021,
+  "acs_born_in_state_pct": 0.772931
+ },
+ "02180000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.483883,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.016368,
+  "acs_govt_worker_pct": 0.129903,
+  "acs_born_in_state_pct": 0.725398
+ },
+ "02190000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.585008,
+  "acs_median_rooms": 7.5,
+  "acs_moved_diff_state_pct": 0.012894,
+  "acs_govt_worker_pct": 0.132448,
+  "acs_born_in_state_pct": 0.73163
+ },
+ "02200000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.534605,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.01565,
+  "acs_govt_worker_pct": 0.128798,
+  "acs_born_in_state_pct": 0.632569
+ },
+ "02210000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.404508,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.0,
+  "acs_govt_worker_pct": 0.09569,
+  "acs_born_in_state_pct": 0.580074
+ },
+ "02230000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.27767,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.008394,
+  "acs_govt_worker_pct": 0.18123,
+  "acs_born_in_state_pct": 0.778979
+ },
+ "02240000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.559353,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.03264,
+  "acs_govt_worker_pct": 0.12554,
+  "acs_born_in_state_pct": 0.474456
+ },
+ "02260000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.423023,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.010373,
+  "acs_govt_worker_pct": 0.139124,
+  "acs_born_in_state_pct": 0.822459
+ },
+ "02270000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.379666,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.033336,
+  "acs_govt_worker_pct": 0.126767,
+  "acs_born_in_state_pct": 0.789606
+ },
+ "02290000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.417465,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.014886,
+  "acs_govt_worker_pct": 0.158847,
+  "acs_born_in_state_pct": 0.706312
+ },
+ "02300000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.718608,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.016006,
+  "acs_govt_worker_pct": 0.287443,
+  "acs_born_in_state_pct": 0.514264
+ },
+ "02310000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.49096,
+  "acs_median_rooms": 6.8,
+  "acs_moved_diff_state_pct": 0.00677,
+  "acs_govt_worker_pct": 0.156169,
+  "acs_born_in_state_pct": 0.815762
+ },
+ "02340000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.448399,
+  "acs_median_rooms": 6.7,
+  "acs_moved_diff_state_pct": 0.015451,
+  "acs_govt_worker_pct": 0.204626,
+  "acs_born_in_state_pct": 0.7289
+ },
+ "02360000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.448417,
+  "acs_median_rooms": 5.5,
+  "acs_moved_diff_state_pct": 0.02947,
+  "acs_govt_worker_pct": 0.143224,
+  "acs_born_in_state_pct": 0.684405
+ },
+ "02380000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.430966,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.009935,
+  "acs_govt_worker_pct": 0.147446,
+  "acs_born_in_state_pct": 0.673926
+ },
+ "02390000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.449579,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.018711,
+  "acs_govt_worker_pct": 0.134987,
+  "acs_born_in_state_pct": 0.743009
+ },
+ "02400000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.388728,
+  "acs_median_rooms": 6.9,
+  "acs_moved_diff_state_pct": 0.00309,
+  "acs_govt_worker_pct": 0.159682,
+  "acs_born_in_state_pct": 0.84424
+ },
+ "02420000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.582397,
+  "acs_median_rooms": 3.8,
+  "acs_moved_diff_state_pct": 0.06479,
+  "acs_govt_worker_pct": 0.132022,
+  "acs_born_in_state_pct": 0.38169
+ },
+ "02430000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.529984,
+  "acs_median_rooms": 4.3,
+  "acs_moved_diff_state_pct": 0.027757,
+  "acs_govt_worker_pct": 0.101983,
+  "acs_born_in_state_pct": 0.516451
+ },
+ "02440000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.432521,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.006798,
+  "acs_govt_worker_pct": 0.150546,
+  "acs_born_in_state_pct": 0.509241
+ },
+ "02460000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.684882,
+  "acs_median_rooms": 6.9,
+  "acs_moved_diff_state_pct": 0.012233,
+  "acs_govt_worker_pct": 0.163046,
+  "acs_born_in_state_pct": 0.721275
+ },
+ "02480000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.320141,
+  "acs_median_rooms": 4.6,
+  "acs_moved_diff_state_pct": 0.012896,
+  "acs_govt_worker_pct": 0.101236,
+  "acs_born_in_state_pct": 0.47478
+ },
+ "02490000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.644928,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.004323,
+  "acs_govt_worker_pct": 0.097101,
+  "acs_born_in_state_pct": 0.558908
+ },
+ "02500000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.44385,
+  "acs_median_rooms": 6.7,
+  "acs_moved_diff_state_pct": 0.00824,
+  "acs_govt_worker_pct": 0.235609,
+  "acs_born_in_state_pct": 0.740555
+ },
+ "02510000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.379009,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.002741,
+  "acs_govt_worker_pct": 0.102717,
+  "acs_born_in_state_pct": 0.790954
+ },
+ "02520000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.505047,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.004014,
+  "acs_govt_worker_pct": 0.166718,
+  "acs_born_in_state_pct": 0.64082
+ },
+ "02530000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.288043,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.006479,
+  "acs_govt_worker_pct": 0.277174,
+  "acs_born_in_state_pct": 0.688699
+ },
+ "02580000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.496049,
+  "acs_median_rooms": 4.8,
+  "acs_moved_diff_state_pct": 0.015026,
+  "acs_govt_worker_pct": 0.125959,
+  "acs_born_in_state_pct": 0.59472
+ },
+ "02610000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.480106,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.024414,
+  "acs_govt_worker_pct": 0.153467,
+  "acs_born_in_state_pct": 0.660415
+ },
+ "02620000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.388364,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.01519,
+  "acs_govt_worker_pct": 0.126645,
+  "acs_born_in_state_pct": 0.742648
+ },
+ "02630000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.409786,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.0,
+  "acs_govt_worker_pct": 0.091743,
+  "acs_born_in_state_pct": 0.822647
+ },
+ "02640000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.610292,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.009631,
+  "acs_govt_worker_pct": 0.125589,
+  "acs_born_in_state_pct": 0.764638
+ },
+ "02650000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.551524,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.020288,
+  "acs_govt_worker_pct": 0.168239,
+  "acs_born_in_state_pct": 0.283632
+ },
+ "02660000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.744725,
+  "acs_median_rooms": 7.4,
+  "acs_moved_diff_state_pct": 0.045534,
+  "acs_govt_worker_pct": 0.090871,
+  "acs_born_in_state_pct": 0.467908
+ },
+ "02690000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.769231,
+  "acs_median_rooms": 8.4,
+  "acs_moved_diff_state_pct": 0.017051,
+  "acs_govt_worker_pct": 0.108145,
+  "acs_born_in_state_pct": 0.46049
+ },
+ "02710000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.63689,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.026983,
+  "acs_govt_worker_pct": 0.131123,
+  "acs_born_in_state_pct": 0.52833
+ },
+ "02720000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.662766,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.030091,
+  "acs_govt_worker_pct": 0.326596,
+  "acs_born_in_state_pct": 0.499197
+ },
+ "02730000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.463438,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.011748,
+  "acs_govt_worker_pct": 0.154231,
+  "acs_born_in_state_pct": 0.734846
+ },
+ "02740000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.701234,
+  "acs_median_rooms": 4.6,
+  "acs_moved_diff_state_pct": 0.055543,
+  "acs_govt_worker_pct": 0.079197,
+  "acs_born_in_state_pct": 0.377795
+ },
+ "02750000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.407492,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.035627,
+  "acs_govt_worker_pct": 0.145839,
+  "acs_born_in_state_pct": 0.778332
+ },
+ "02760000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.697719,
+  "acs_median_rooms": 8.0,
+  "acs_moved_diff_state_pct": 0.023871,
+  "acs_govt_worker_pct": 0.08386,
+  "acs_born_in_state_pct": 0.541711
+ },
+ "02770000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.261418,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.00784,
+  "acs_govt_worker_pct": 0.108515,
+  "acs_born_in_state_pct": 0.651129
+ },
+ "02780000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.505752,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.030401,
+  "acs_govt_worker_pct": 0.163471,
+  "acs_born_in_state_pct": 0.662206
+ },
+ "02810000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.321883,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.01068,
+  "acs_govt_worker_pct": 0.156262,
+  "acs_born_in_state_pct": 0.551867
+ },
+ "02840000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.569195,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.007399,
+  "acs_govt_worker_pct": 0.134402,
+  "acs_born_in_state_pct": 0.727791
+ },
+ "02850000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.471337,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.021505,
+  "acs_govt_worker_pct": 0.12444,
+  "acs_born_in_state_pct": 0.616186
+ },
+ "02880000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.781845,
+  "acs_median_rooms": 10.0,
+  "acs_moved_diff_state_pct": 0.01066,
+  "acs_govt_worker_pct": 0.076773,
+  "acs_born_in_state_pct": 0.518225
+ },
+ "02890000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.574925,
+  "acs_median_rooms": 4.4,
+  "acs_moved_diff_state_pct": 0.041002,
+  "acs_govt_worker_pct": 0.385144,
+  "acs_born_in_state_pct": 0.520394
+ },
+ "02900000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.517235,
+  "acs_median_rooms": 6.6,
+  "acs_moved_diff_state_pct": 0.009364,
+  "acs_govt_worker_pct": 0.155479,
+  "acs_born_in_state_pct": 0.720239
+ },
+ "02910000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.653295,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.006119,
+  "acs_govt_worker_pct": 0.113799,
+  "acs_born_in_state_pct": 0.536524
+ },
+ "02920000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.416731,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.013597,
+  "acs_govt_worker_pct": 0.17153,
+  "acs_born_in_state_pct": 0.659683
+ },
+ "02930000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.358733,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.016717,
+  "acs_govt_worker_pct": 0.12401,
+  "acs_born_in_state_pct": 0.734373
+ },
+ "02950000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.489488,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.009578,
+  "acs_govt_worker_pct": 0.131151,
+  "acs_born_in_state_pct": 0.770662
+ },
+ "02960000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.397674,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.034903,
+  "acs_govt_worker_pct": 0.11794,
+  "acs_born_in_state_pct": 0.460082
+ },
+ "02980000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.701256,
+  "acs_median_rooms": 8.3,
+  "acs_moved_diff_state_pct": 0.011186,
+  "acs_govt_worker_pct": 0.186902,
+  "acs_born_in_state_pct": 0.611171
+ },
+ "03000000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.475096,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.0,
+  "acs_govt_worker_pct": 0.100894,
+  "acs_born_in_state_pct": 0.450149
+ },
+ "03010000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.569622,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.001055,
+  "acs_govt_worker_pct": 0.154599,
+  "acs_born_in_state_pct": 0.750483
+ },
+ "03040000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.493402,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.019369,
+  "acs_govt_worker_pct": 0.102447,
+  "acs_born_in_state_pct": 0.697444
+ },
+ "03050000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.604358,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.006656,
+  "acs_govt_worker_pct": 0.137311,
+  "acs_born_in_state_pct": 0.744905
+ },
+ "03060000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.304743,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.001048,
+  "acs_govt_worker_pct": 0.152371,
+  "acs_born_in_state_pct": 0.763882
+ },
+ "03070000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.60523,
+  "acs_median_rooms": 6.7,
+  "acs_moved_diff_state_pct": 0.00694,
+  "acs_govt_worker_pct": 0.14586,
+  "acs_born_in_state_pct": 0.718871
+ },
+ "03080000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.57669,
+  "acs_median_rooms": 5.0,
+  "acs_moved_diff_state_pct": 0.043865,
+  "acs_govt_worker_pct": 0.113377,
+  "acs_born_in_state_pct": 0.477991
+ },
+ "03090000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.376129,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.017137,
+  "acs_govt_worker_pct": 0.135323,
+  "acs_born_in_state_pct": 0.806832
+ },
+ "03100000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.392698,
+  "acs_median_rooms": 5.1,
+  "acs_moved_diff_state_pct": 0.007358,
+  "acs_govt_worker_pct": 0.159614,
+  "acs_born_in_state_pct": 0.800784
+ },
+ "03140000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.693917,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.021132,
+  "acs_govt_worker_pct": 0.093044,
+  "acs_born_in_state_pct": 0.459087
+ },
+ "03150000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.763965,
+  "acs_median_rooms": 7.7,
+  "acs_moved_diff_state_pct": 0.022999,
+  "acs_govt_worker_pct": 0.079161,
+  "acs_born_in_state_pct": 0.510198
+ },
+ "03160000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.291648,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.014625,
+  "acs_govt_worker_pct": 0.117829,
+  "acs_born_in_state_pct": 0.694693
+ },
+ "03170000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.74034,
+  "acs_median_rooms": 8.1,
+  "acs_moved_diff_state_pct": 0.045711,
+  "acs_govt_worker_pct": 0.070938,
+  "acs_born_in_state_pct": 0.432689
+ },
+ "03180000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.471889,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.038104,
+  "acs_govt_worker_pct": 0.242672,
+  "acs_born_in_state_pct": 0.526424
+ },
+ "03210000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.658875,
+  "acs_median_rooms": 5.5,
+  "acs_moved_diff_state_pct": 0.02177,
+  "acs_govt_worker_pct": 0.090773,
+  "acs_born_in_state_pct": 0.452364
+ },
+ "03220000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.505526,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.002343,
+  "acs_govt_worker_pct": 0.110513,
+  "acs_born_in_state_pct": 0.78492
+ },
+ "03230000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.374795,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.008294,
+  "acs_govt_worker_pct": 0.115969,
+  "acs_born_in_state_pct": 0.8434
+ },
+ "03250000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.398737,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.012645,
+  "acs_govt_worker_pct": 0.184415,
+  "acs_born_in_state_pct": 0.686549
+ },
+ "03260000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.697639,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.027616,
+  "acs_govt_worker_pct": 0.110549,
+  "acs_born_in_state_pct": 0.550643
+ },
+ "03270000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.51084,
+  "acs_median_rooms": 6.4,
+  "acs_moved_diff_state_pct": 0.0,
+  "acs_govt_worker_pct": 0.173442,
+  "acs_born_in_state_pct": 0.770145
+ },
+ "03300000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.794032,
+  "acs_median_rooms": 10.0,
+  "acs_moved_diff_state_pct": 0.013605,
+  "acs_govt_worker_pct": 0.05384,
+  "acs_born_in_state_pct": 0.471467
+ },
+ "03310000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.396871,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.006741,
+  "acs_govt_worker_pct": 0.142294,
+  "acs_born_in_state_pct": 0.73538
+ },
+ "03320000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.388731,
+  "acs_median_rooms": 5.2,
+  "acs_moved_diff_state_pct": 0.02191,
+  "acs_govt_worker_pct": 0.175449,
+  "acs_born_in_state_pct": 0.596333
+ },
+ "03350000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.681955,
+  "acs_median_rooms": 7.5,
+  "acs_moved_diff_state_pct": 0.009753,
+  "acs_govt_worker_pct": 0.10213,
+  "acs_born_in_state_pct": 0.659347
+ },
+ "03360000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.510803,
+  "acs_median_rooms": 5.5,
+  "acs_moved_diff_state_pct": 0.01265,
+  "acs_govt_worker_pct": 0.132218,
+  "acs_born_in_state_pct": 0.715208
+ },
+ "03370000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.494832,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.00929,
+  "acs_govt_worker_pct": 0.171835,
+  "acs_born_in_state_pct": 0.771861
+ },
+ "03400000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.568966,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.013353,
+  "acs_govt_worker_pct": 0.152794,
+  "acs_born_in_state_pct": 0.537923
+ },
+ "03420000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.548432,
+  "acs_median_rooms": 6.9,
+  "acs_moved_diff_state_pct": 0.014339,
+  "acs_govt_worker_pct": 0.125807,
+  "acs_born_in_state_pct": 0.805562
+ },
+ "03430000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.383682,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.00648,
+  "acs_govt_worker_pct": 0.145188,
+  "acs_born_in_state_pct": 0.761259
+ },
+ "03440000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.766929,
+  "acs_median_rooms": 7.6,
+  "acs_moved_diff_state_pct": 0.016547,
+  "acs_govt_worker_pct": 0.071775,
+  "acs_born_in_state_pct": 0.500787
+ },
+ "03460000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.466739,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.025703,
+  "acs_govt_worker_pct": 0.167489,
+  "acs_born_in_state_pct": 0.634285
+ },
+ "03470000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.514026,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.025543,
+  "acs_govt_worker_pct": 0.110542,
+  "acs_born_in_state_pct": 0.65344
+ },
+ "03480000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.412277,
+  "acs_median_rooms": 5.1,
+  "acs_moved_diff_state_pct": 0.02953,
+  "acs_govt_worker_pct": 0.137831,
+  "acs_born_in_state_pct": 0.538377
+ },
+ "03490000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.482883,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.017062,
+  "acs_govt_worker_pct": 0.192793,
+  "acs_born_in_state_pct": 0.65787
+ },
+ "03500000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.605838,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.005986,
+  "acs_govt_worker_pct": 0.120841,
+  "acs_born_in_state_pct": 0.652743
+ },
+ "06000000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.709546,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.018362,
+  "acs_govt_worker_pct": 0.105923,
+  "acs_born_in_state_pct": 0.415746
+ },
+ "06030000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.385291,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.009471,
+  "acs_govt_worker_pct": 0.127619,
+  "acs_born_in_state_pct": 0.822399
+ },
+ "06100000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.404311,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.006854,
+  "acs_govt_worker_pct": 0.220963,
+  "acs_born_in_state_pct": 0.823775
+ },
+ "06150000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.318965,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.032068,
+  "acs_govt_worker_pct": 0.188579,
+  "acs_born_in_state_pct": 0.828012
+ },
+ "06160000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.522148,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.019933,
+  "acs_govt_worker_pct": 0.125725,
+  "acs_born_in_state_pct": 0.68455
+ },
+ "06180000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.527302,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.065455,
+  "acs_govt_worker_pct": 0.081622,
+  "acs_born_in_state_pct": 0.452094
+ },
+ "06200000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.606897,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.017057,
+  "acs_govt_worker_pct": 0.141188,
+  "acs_born_in_state_pct": 0.708663
+ },
+ "06220000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.431692,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.014616,
+  "acs_govt_worker_pct": 0.118699,
+  "acs_born_in_state_pct": 0.505054
+ },
+ "06250000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.491463,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.012075,
+  "acs_govt_worker_pct": 0.160001,
+  "acs_born_in_state_pct": 0.768922
+ },
+ "06320000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.406722,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.015601,
+  "acs_govt_worker_pct": 0.167664,
+  "acs_born_in_state_pct": 0.783307
+ },
+ "06350000": {
+  "_member_count": 7,
+  "acs_mgmt_occ_pct": 0.463041,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.027997,
+  "acs_govt_worker_pct": 0.136218,
+  "acs_born_in_state_pct": 0.697974
+ },
+ "06450000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.401361,
+  "acs_median_rooms": 5.3,
+  "acs_moved_diff_state_pct": 0.020955,
+  "acs_govt_worker_pct": 0.122826,
+  "acs_born_in_state_pct": 0.629994
+ },
+ "06500000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.45998,
+  "acs_median_rooms": 6.5,
+  "acs_moved_diff_state_pct": 0.012445,
+  "acs_govt_worker_pct": 0.10602,
+  "acs_born_in_state_pct": 0.574507
+ },
+ "06550000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.739927,
+  "acs_median_rooms": 9.3,
+  "acs_moved_diff_state_pct": 0.010321,
+  "acs_govt_worker_pct": 0.065914,
+  "acs_born_in_state_pct": 0.531514
+ },
+ "06580000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.336585,
+  "acs_median_rooms": 5.9,
+  "acs_moved_diff_state_pct": 0.018026,
+  "acs_govt_worker_pct": 0.145962,
+  "acs_born_in_state_pct": 0.749874
+ },
+ "06620000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.318971,
+  "acs_median_rooms": 5.7,
+  "acs_moved_diff_state_pct": 0.049686,
+  "acs_govt_worker_pct": 0.125369,
+  "acs_born_in_state_pct": 0.492206
+ },
+ "06650000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.434774,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.002206,
+  "acs_govt_worker_pct": 0.165438,
+  "acs_born_in_state_pct": 0.806529
+ },
+ "06720000": {
+  "_member_count": 6,
+  "acs_mgmt_occ_pct": 0.386953,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.00614,
+  "acs_govt_worker_pct": 0.153881,
+  "acs_born_in_state_pct": 0.744793
+ },
+ "06730000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.612665,
+  "acs_median_rooms": 7.7,
+  "acs_moved_diff_state_pct": 0.030282,
+  "acs_govt_worker_pct": 0.123978,
+  "acs_born_in_state_pct": 0.545492
+ },
+ "06740000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.454068,
+  "acs_median_rooms": 5.4,
+  "acs_moved_diff_state_pct": 0.018034,
+  "acs_govt_worker_pct": 0.161388,
+  "acs_born_in_state_pct": 0.707898
+ },
+ "06750000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.612157,
+  "acs_median_rooms": 6.9,
+  "acs_moved_diff_state_pct": 0.034365,
+  "acs_govt_worker_pct": 0.148629,
+  "acs_born_in_state_pct": 0.644508
+ },
+ "06800000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.488582,
+  "acs_median_rooms": 6.6,
+  "acs_moved_diff_state_pct": 0.003651,
+  "acs_govt_worker_pct": 0.229717,
+  "acs_born_in_state_pct": 0.769653
+ },
+ "06850000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.427832,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.006432,
+  "acs_govt_worker_pct": 0.15229,
+  "acs_born_in_state_pct": 0.666902
+ },
+ "06980000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.684678,
+  "acs_median_rooms": 7.0,
+  "acs_moved_diff_state_pct": 0.021626,
+  "acs_govt_worker_pct": 0.115864,
+  "acs_born_in_state_pct": 0.601237
+ },
+ "07100000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.501865,
+  "acs_median_rooms": 7.5,
+  "acs_moved_diff_state_pct": 0.002383,
+  "acs_govt_worker_pct": 0.137949,
+  "acs_born_in_state_pct": 0.688253
+ },
+ "07120000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.442908,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.04085,
+  "acs_govt_worker_pct": 0.165541,
+  "acs_born_in_state_pct": 0.57452
+ },
+ "07150000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.60282,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.057007,
+  "acs_govt_worker_pct": 0.084241,
+  "acs_born_in_state_pct": 0.481422
+ },
+ "07170000": {
+  "_member_count": 9,
+  "acs_mgmt_occ_pct": 0.42762,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.012088,
+  "acs_govt_worker_pct": 0.171398,
+  "acs_born_in_state_pct": 0.657029
+ },
+ "07200000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.430053,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.024274,
+  "acs_govt_worker_pct": 0.192895,
+  "acs_born_in_state_pct": 0.823203
+ },
+ "07250000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.698274,
+  "acs_median_rooms": 7.1,
+  "acs_moved_diff_state_pct": 0.01122,
+  "acs_govt_worker_pct": 0.122533,
+  "acs_born_in_state_pct": 0.64464
+ },
+ "07280000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.496626,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.021941,
+  "acs_govt_worker_pct": 0.219833,
+  "acs_born_in_state_pct": 0.626467
+ },
+ "07350000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.475985,
+  "acs_median_rooms": 6.6,
+  "acs_moved_diff_state_pct": 0.009213,
+  "acs_govt_worker_pct": 0.15726,
+  "acs_born_in_state_pct": 0.699573
+ },
+ "07450000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.518906,
+  "acs_median_rooms": 6.8,
+  "acs_moved_diff_state_pct": 0.018395,
+  "acs_govt_worker_pct": 0.123188,
+  "acs_born_in_state_pct": 0.748916
+ },
+ "07500000": {
+  "_member_count": 4,
+  "acs_mgmt_occ_pct": 0.404164,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.007308,
+  "acs_govt_worker_pct": 0.185593,
+  "acs_born_in_state_pct": 0.679041
+ },
+ "07530000": {
+  "_member_count": 5,
+  "acs_mgmt_occ_pct": 0.444745,
+  "acs_median_rooms": 6.1,
+  "acs_moved_diff_state_pct": 0.004246,
+  "acs_govt_worker_pct": 0.167716,
+  "acs_born_in_state_pct": 0.801696
+ },
+ "07650000": {
+  "_member_count": 5,
+  "acs_mgmt_occ_pct": 0.432096,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.061681,
+  "acs_govt_worker_pct": 0.091416,
+  "acs_born_in_state_pct": 0.485106
+ },
+ "07660000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.453775,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.020188,
+  "acs_govt_worker_pct": 0.118998,
+  "acs_born_in_state_pct": 0.645457
+ },
+ "07670000": {
+  "_member_count": 1,
+  "acs_mgmt_occ_pct": 0.401683,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.004372,
+  "acs_govt_worker_pct": 0.144942,
+  "acs_born_in_state_pct": 0.827021
+ },
+ "07700000": {
+  "_member_count": 5,
+  "acs_mgmt_occ_pct": 0.479127,
+  "acs_median_rooms": 6.0,
+  "acs_moved_diff_state_pct": 0.015596,
+  "acs_govt_worker_pct": 0.139313,
+  "acs_born_in_state_pct": 0.743311
+ },
+ "07730000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.541368,
+  "acs_median_rooms": 6.3,
+  "acs_moved_diff_state_pct": 0.020823,
+  "acs_govt_worker_pct": 0.13919,
+  "acs_born_in_state_pct": 0.729016
+ },
+ "07740000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.545471,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.143948,
+  "acs_govt_worker_pct": 0.157999,
+  "acs_born_in_state_pct": 0.429821
+ },
+ "07750000": {
+  "_member_count": 5,
+  "acs_mgmt_occ_pct": 0.580136,
+  "acs_median_rooms": 6.8,
+  "acs_moved_diff_state_pct": 0.010591,
+  "acs_govt_worker_pct": 0.162691,
+  "acs_born_in_state_pct": 0.735414
+ },
+ "07780000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.387592,
+  "acs_median_rooms": 5.6,
+  "acs_moved_diff_state_pct": 0.019398,
+  "acs_govt_worker_pct": 0.121255,
+  "acs_born_in_state_pct": 0.744524
+ },
+ "07800000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.382387,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.001877,
+  "acs_govt_worker_pct": 0.163629,
+  "acs_born_in_state_pct": 0.848316
+ },
+ "06400000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.739616,
+  "acs_median_rooms": 7.9,
+  "acs_moved_diff_state_pct": 0.02624,
+  "acs_govt_worker_pct": 0.073652,
+  "acs_born_in_state_pct": 0.499594
+ },
+ "06600000": {
+  "_member_count": 4,
+  "acs_mgmt_occ_pct": 0.496614,
+  "acs_median_rooms": 5.8,
+  "acs_moved_diff_state_pct": 0.038865,
+  "acs_govt_worker_pct": 0.154019,
+  "acs_born_in_state_pct": 0.510279
+ },
+ "06900000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.581386,
+  "acs_median_rooms": 6.8,
+  "acs_moved_diff_state_pct": 0.008586,
+  "acs_govt_worker_pct": 0.125102,
+  "acs_born_in_state_pct": 0.662467
+ },
+ "06950000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.776975,
+  "acs_median_rooms": 9.1,
+  "acs_moved_diff_state_pct": 0.026151,
+  "acs_govt_worker_pct": 0.091052,
+  "acs_born_in_state_pct": 0.470649
+ },
+ "07050000": {
+  "_member_count": 3,
+  "acs_mgmt_occ_pct": 0.591033,
+  "acs_median_rooms": 8.2,
+  "acs_moved_diff_state_pct": 0.006939,
+  "acs_govt_worker_pct": 0.13641,
+  "acs_born_in_state_pct": 0.680346
+ },
+ "07300000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.677046,
+  "acs_median_rooms": 7.4,
+  "acs_moved_diff_state_pct": 0.011731,
+  "acs_govt_worker_pct": 0.108672,
+  "acs_born_in_state_pct": 0.576736
+ },
+ "07630000": {
+  "_member_count": 2,
+  "acs_mgmt_occ_pct": 0.46067,
+  "acs_median_rooms": 6.2,
+  "acs_moved_diff_state_pct": 0.009811,
+  "acs_govt_worker_pct": 0.153162,
+  "acs_born_in_state_pct": 0.751069
+ }
+}

@@ -1,0 +1,2250 @@
+{
+ "00010000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1547,
+  "acs_single_parent_pct": 0.145958,
+  "acs_snap_pct": 0.084809,
+  "acs_veteran_pct": 0.052668,
+  "acs_moved_last_year_pct": 0.135439
+ },
+ "00030000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1155,
+  "acs_single_parent_pct": 0.356935,
+  "acs_snap_pct": 0.076529,
+  "acs_veteran_pct": 0.087181,
+  "acs_moved_last_year_pct": 0.051905
+ },
+ "00050000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1234,
+  "acs_single_parent_pct": 0.279783,
+  "acs_snap_pct": 0.105241,
+  "acs_veteran_pct": 0.057967,
+  "acs_moved_last_year_pct": 0.076726
+ },
+ "00070000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1573,
+  "acs_single_parent_pct": 0.363017,
+  "acs_snap_pct": 0.09662,
+  "acs_veteran_pct": 0.042429,
+  "acs_moved_last_year_pct": 0.081849
+ },
+ "00080000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1570,
+  "acs_single_parent_pct": 0.247756,
+  "acs_snap_pct": 0.090718,
+  "acs_veteran_pct": 0.012843,
+  "acs_moved_last_year_pct": 0.253167
+ },
+ "00090000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2046,
+  "acs_single_parent_pct": 0.153305,
+  "acs_snap_pct": 0.048046,
+  "acs_veteran_pct": 0.032193,
+  "acs_moved_last_year_pct": 0.085896
+ },
+ "00100000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2043,
+  "acs_single_parent_pct": 0.155531,
+  "acs_snap_pct": 0.056213,
+  "acs_veteran_pct": 0.026981,
+  "acs_moved_last_year_pct": 0.132943
+ },
+ "00140000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2334,
+  "acs_single_parent_pct": 0.173321,
+  "acs_snap_pct": 0.061931,
+  "acs_veteran_pct": 0.035944,
+  "acs_moved_last_year_pct": 0.113154
+ },
+ "00160000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1446,
+  "acs_single_parent_pct": 0.345277,
+  "acs_snap_pct": 0.162196,
+  "acs_veteran_pct": 0.052265,
+  "acs_moved_last_year_pct": 0.082912
+ },
+ "00170000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1241,
+  "acs_single_parent_pct": 0.301834,
+  "acs_snap_pct": 0.114969,
+  "acs_veteran_pct": 0.072885,
+  "acs_moved_last_year_pct": 0.032136
+ },
+ "00180000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1648,
+  "acs_single_parent_pct": 0.409978,
+  "acs_snap_pct": 0.144536,
+  "acs_veteran_pct": 0.082729,
+  "acs_moved_last_year_pct": 0.094332
+ },
+ "00200000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1751,
+  "acs_single_parent_pct": 0.310982,
+  "acs_snap_pct": 0.0961,
+  "acs_veteran_pct": 0.072598,
+  "acs_moved_last_year_pct": 0.098169
+ },
+ "00230000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2445,
+  "acs_single_parent_pct": 0.14666,
+  "acs_snap_pct": 0.046921,
+  "acs_veteran_pct": 0.081364,
+  "acs_moved_last_year_pct": 0.117149
+ },
+ "00240000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1308,
+  "acs_single_parent_pct": 0.190476,
+  "acs_snap_pct": 0.093774,
+  "acs_veteran_pct": 0.063487,
+  "acs_moved_last_year_pct": 0.105648
+ },
+ "00250000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1788,
+  "acs_single_parent_pct": 0.330739,
+  "acs_snap_pct": 0.097949,
+  "acs_veteran_pct": 0.039361,
+  "acs_moved_last_year_pct": 0.044431
+ },
+ "00260000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2387,
+  "acs_single_parent_pct": 0.129704,
+  "acs_snap_pct": 0.04219,
+  "acs_veteran_pct": 0.023511,
+  "acs_moved_last_year_pct": 0.117629
+ },
+ "00270000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": null,
+  "acs_single_parent_pct": 0.073306,
+  "acs_snap_pct": 0.087505,
+  "acs_veteran_pct": 0.063223,
+  "acs_moved_last_year_pct": 0.048365
+ },
+ "00300000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1683,
+  "acs_single_parent_pct": 0.273113,
+  "acs_snap_pct": 0.12078,
+  "acs_veteran_pct": 0.048405,
+  "acs_moved_last_year_pct": 0.094101
+ },
+ "00310000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2132,
+  "acs_single_parent_pct": 0.20137,
+  "acs_snap_pct": 0.071232,
+  "acs_veteran_pct": 0.048052,
+  "acs_moved_last_year_pct": 0.085638
+ },
+ "00350000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2093,
+  "acs_single_parent_pct": 0.446744,
+  "acs_snap_pct": 0.186418,
+  "acs_veteran_pct": 0.022242,
+  "acs_moved_last_year_pct": 0.181163
+ },
+ "00360000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1409,
+  "acs_single_parent_pct": 0.332321,
+  "acs_snap_pct": 0.078941,
+  "acs_veteran_pct": 0.093143,
+  "acs_moved_last_year_pct": 0.095513
+ },
+ "00380000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 736,
+  "acs_single_parent_pct": 0.066421,
+  "acs_snap_pct": 0.013962,
+  "acs_veteran_pct": 0.049183,
+  "acs_moved_last_year_pct": 0.044179
+ },
+ "00400000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1925,
+  "acs_single_parent_pct": 0.240988,
+  "acs_snap_pct": 0.100007,
+  "acs_veteran_pct": 0.047041,
+  "acs_moved_last_year_pct": 0.081684
+ },
+ "00410000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1386,
+  "acs_single_parent_pct": 0.099063,
+  "acs_snap_pct": 0.084586,
+  "acs_veteran_pct": 0.057647,
+  "acs_moved_last_year_pct": 0.086406
+ },
+ "00430000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 786,
+  "acs_single_parent_pct": 0.126801,
+  "acs_snap_pct": 0.085869,
+  "acs_veteran_pct": 0.104181,
+  "acs_moved_last_year_pct": 0.092041
+ },
+ "00440000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1545,
+  "acs_single_parent_pct": 0.444901,
+  "acs_snap_pct": 0.314209,
+  "acs_veteran_pct": 0.038898,
+  "acs_moved_last_year_pct": 0.104725
+ },
+ "00450000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1043,
+  "acs_single_parent_pct": 0.214286,
+  "acs_snap_pct": 0.084182,
+  "acs_veteran_pct": 0.055384,
+  "acs_moved_last_year_pct": 0.059859
+ },
+ "00460000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2804,
+  "acs_single_parent_pct": 0.173062,
+  "acs_snap_pct": 0.059941,
+  "acs_veteran_pct": 0.024533,
+  "acs_moved_last_year_pct": 0.221496
+ },
+ "00480000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2597,
+  "acs_single_parent_pct": 0.12811,
+  "acs_snap_pct": 0.045247,
+  "acs_veteran_pct": 0.037437,
+  "acs_moved_last_year_pct": 0.090666
+ },
+ "00490000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2742,
+  "acs_single_parent_pct": 0.248029,
+  "acs_snap_pct": 0.080598,
+  "acs_veteran_pct": 0.016028,
+  "acs_moved_last_year_pct": 0.254573
+ },
+ "00500000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2237,
+  "acs_single_parent_pct": 0.238051,
+  "acs_snap_pct": 0.091247,
+  "acs_veteran_pct": 0.044525,
+  "acs_moved_last_year_pct": 0.075249
+ },
+ "00510000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1409,
+  "acs_single_parent_pct": 0.090909,
+  "acs_snap_pct": 0.013326,
+  "acs_veteran_pct": 0.066405,
+  "acs_moved_last_year_pct": 0.065205
+ },
+ "00520000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1759,
+  "acs_single_parent_pct": 0.148148,
+  "acs_snap_pct": 0.09235,
+  "acs_veteran_pct": 0.112534,
+  "acs_moved_last_year_pct": 0.075357
+ },
+ "00560000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1959,
+  "acs_single_parent_pct": 0.1797,
+  "acs_snap_pct": 0.082098,
+  "acs_veteran_pct": 0.050658,
+  "acs_moved_last_year_pct": 0.086067
+ },
+ "00570000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1859,
+  "acs_single_parent_pct": 0.454267,
+  "acs_snap_pct": 0.238514,
+  "acs_veteran_pct": 0.01946,
+  "acs_moved_last_year_pct": 0.1325
+ },
+ "00610000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1108,
+  "acs_single_parent_pct": 0.545924,
+  "acs_snap_pct": 0.250289,
+  "acs_veteran_pct": 0.074918,
+  "acs_moved_last_year_pct": 0.074536
+ },
+ "00630000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1145,
+  "acs_single_parent_pct": 0.265734,
+  "acs_snap_pct": 0.077135,
+  "acs_veteran_pct": 0.061111,
+  "acs_moved_last_year_pct": 0.102504
+ },
+ "00640000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1353,
+  "acs_single_parent_pct": 0.300543,
+  "acs_snap_pct": 0.095302,
+  "acs_veteran_pct": 0.041204,
+  "acs_moved_last_year_pct": 0.099856
+ },
+ "00650000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1959,
+  "acs_single_parent_pct": 0.078156,
+  "acs_snap_pct": 0.035381,
+  "acs_veteran_pct": 0.081156,
+  "acs_moved_last_year_pct": 0.035892
+ },
+ "00670000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2471,
+  "acs_single_parent_pct": 0.134334,
+  "acs_snap_pct": 0.01709,
+  "acs_veteran_pct": 0.054024,
+  "acs_moved_last_year_pct": 0.096587
+ },
+ "00680000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1696,
+  "acs_single_parent_pct": 0.275449,
+  "acs_snap_pct": 0.033722,
+  "acs_veteran_pct": 0.046239,
+  "acs_moved_last_year_pct": 0.076879
+ },
+ "00710000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2004,
+  "acs_single_parent_pct": 0.181993,
+  "acs_snap_pct": 0.067385,
+  "acs_veteran_pct": 0.057243,
+  "acs_moved_last_year_pct": 0.09632
+ },
+ "00720000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1374,
+  "acs_single_parent_pct": 0.267458,
+  "acs_snap_pct": 0.127559,
+  "acs_veteran_pct": 0.045535,
+  "acs_moved_last_year_pct": 0.077045
+ },
+ "00730000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2058,
+  "acs_single_parent_pct": 0.24206,
+  "acs_snap_pct": 0.074196,
+  "acs_veteran_pct": 0.045608,
+  "acs_moved_last_year_pct": 0.109903
+ },
+ "00740000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1377,
+  "acs_single_parent_pct": 0.442125,
+  "acs_snap_pct": 0.068085,
+  "acs_veteran_pct": 0.032681,
+  "acs_moved_last_year_pct": 0.073331
+ },
+ "00770000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1537,
+  "acs_single_parent_pct": 0.278396,
+  "acs_snap_pct": 0.065509,
+  "acs_veteran_pct": 0.050091,
+  "acs_moved_last_year_pct": 0.063272
+ },
+ "00790000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1740,
+  "acs_single_parent_pct": 0.271804,
+  "acs_snap_pct": 0.110663,
+  "acs_veteran_pct": 0.051382,
+  "acs_moved_last_year_pct": 0.059629
+ },
+ "00820000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1644,
+  "acs_single_parent_pct": 0.157869,
+  "acs_snap_pct": 0.037625,
+  "acs_veteran_pct": 0.082714,
+  "acs_moved_last_year_pct": 0.068979
+ },
+ "00830000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1566,
+  "acs_single_parent_pct": 0.365306,
+  "acs_snap_pct": 0.108006,
+  "acs_veteran_pct": 0.06142,
+  "acs_moved_last_year_pct": 0.040685
+ },
+ "00850000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1692,
+  "acs_single_parent_pct": 0.437198,
+  "acs_snap_pct": 0.025524,
+  "acs_veteran_pct": 0.099439,
+  "acs_moved_last_year_pct": 0.067814
+ },
+ "00860000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1192,
+  "acs_single_parent_pct": 0.48463,
+  "acs_snap_pct": 0.118753,
+  "acs_veteran_pct": 0.108006,
+  "acs_moved_last_year_pct": 0.090812
+ },
+ "00870000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1229,
+  "acs_single_parent_pct": 0.211047,
+  "acs_snap_pct": 0.071356,
+  "acs_veteran_pct": 0.072989,
+  "acs_moved_last_year_pct": 0.058629
+ },
+ "00880000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1883,
+  "acs_single_parent_pct": 0.297466,
+  "acs_snap_pct": 0.074217,
+  "acs_veteran_pct": 0.059087,
+  "acs_moved_last_year_pct": 0.080877
+ },
+ "00890000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1717,
+  "acs_single_parent_pct": 0.364035,
+  "acs_snap_pct": 0.10024,
+  "acs_veteran_pct": 0.092404,
+  "acs_moved_last_year_pct": 0.092362
+ },
+ "00910000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 992,
+  "acs_single_parent_pct": 0.169811,
+  "acs_snap_pct": 0.159124,
+  "acs_veteran_pct": 0.061802,
+  "acs_moved_last_year_pct": 0.041692
+ },
+ "00930000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1988,
+  "acs_single_parent_pct": 0.432636,
+  "acs_snap_pct": 0.186073,
+  "acs_veteran_pct": 0.023716,
+  "acs_moved_last_year_pct": 0.113647
+ },
+ "00940000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1071,
+  "acs_single_parent_pct": 0.399079,
+  "acs_snap_pct": 0.1,
+  "acs_veteran_pct": 0.082435,
+  "acs_moved_last_year_pct": 0.074914
+ },
+ "00950000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1086,
+  "acs_single_parent_pct": 0.596274,
+  "acs_snap_pct": 0.316438,
+  "acs_veteran_pct": 0.043206,
+  "acs_moved_last_year_pct": 0.112511
+ },
+ "00960000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1406,
+  "acs_single_parent_pct": 0.213544,
+  "acs_snap_pct": 0.099685,
+  "acs_veteran_pct": 0.083152,
+  "acs_moved_last_year_pct": 0.089039
+ },
+ "00970000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1131,
+  "acs_single_parent_pct": 0.459427,
+  "acs_snap_pct": 0.252725,
+  "acs_veteran_pct": 0.05214,
+  "acs_moved_last_year_pct": 0.110352
+ },
+ "00980000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1208,
+  "acs_single_parent_pct": 0.134328,
+  "acs_snap_pct": 0.08254,
+  "acs_veteran_pct": 0.068323,
+  "acs_moved_last_year_pct": 0.065891
+ },
+ "00990000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1763,
+  "acs_single_parent_pct": 0.243348,
+  "acs_snap_pct": 0.092482,
+  "acs_veteran_pct": 0.061233,
+  "acs_moved_last_year_pct": 0.078708
+ },
+ "01000000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1853,
+  "acs_single_parent_pct": 0.295575,
+  "acs_snap_pct": 0.128192,
+  "acs_veteran_pct": 0.031918,
+  "acs_moved_last_year_pct": 0.119971
+ },
+ "01010000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1856,
+  "acs_single_parent_pct": 0.159402,
+  "acs_snap_pct": 0.059324,
+  "acs_veteran_pct": 0.031548,
+  "acs_moved_last_year_pct": 0.069181
+ },
+ "01030000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1071,
+  "acs_single_parent_pct": 0.471442,
+  "acs_snap_pct": 0.231253,
+  "acs_veteran_pct": 0.069827,
+  "acs_moved_last_year_pct": 0.081011
+ },
+ "01050000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1973,
+  "acs_single_parent_pct": 0.082593,
+  "acs_snap_pct": 0.031681,
+  "acs_veteran_pct": 0.097056,
+  "acs_moved_last_year_pct": 0.076821
+ },
+ "01070000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1395,
+  "acs_single_parent_pct": 0.271024,
+  "acs_snap_pct": 0.119954,
+  "acs_veteran_pct": 0.057653,
+  "acs_moved_last_year_pct": 0.073765
+ },
+ "01090000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": null,
+  "acs_single_parent_pct": null,
+  "acs_snap_pct": 0.0,
+  "acs_veteran_pct": 0.039216,
+  "acs_moved_last_year_pct": 0.052632
+ },
+ "01100000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1345,
+  "acs_single_parent_pct": 0.125761,
+  "acs_snap_pct": 0.05961,
+  "acs_veteran_pct": 0.049745,
+  "acs_moved_last_year_pct": 0.088516
+ },
+ "01110000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": null,
+  "acs_single_parent_pct": 0.156652,
+  "acs_snap_pct": 0.037416,
+  "acs_veteran_pct": 0.103242,
+  "acs_moved_last_year_pct": 0.046139
+ },
+ "01140000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1097,
+  "acs_single_parent_pct": 0.489229,
+  "acs_snap_pct": 0.268462,
+  "acs_veteran_pct": 0.071138,
+  "acs_moved_last_year_pct": 0.119377
+ },
+ "01170000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1682,
+  "acs_single_parent_pct": 0.182403,
+  "acs_snap_pct": 0.078064,
+  "acs_veteran_pct": 0.076217,
+  "acs_moved_last_year_pct": 0.094618
+ },
+ "01180000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1494,
+  "acs_single_parent_pct": 0.009346,
+  "acs_snap_pct": 0.098482,
+  "acs_veteran_pct": 0.061149,
+  "acs_moved_last_year_pct": 0.067493
+ },
+ "01210000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1319,
+  "acs_single_parent_pct": 0.142857,
+  "acs_snap_pct": 0.094937,
+  "acs_veteran_pct": 0.057632,
+  "acs_moved_last_year_pct": 0.035533
+ },
+ "01220000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1642,
+  "acs_single_parent_pct": 0.083096,
+  "acs_snap_pct": 0.059339,
+  "acs_veteran_pct": 0.040147,
+  "acs_moved_last_year_pct": 0.052963
+ },
+ "01250000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1458,
+  "acs_single_parent_pct": 0.04023,
+  "acs_snap_pct": 0.026121,
+  "acs_veteran_pct": 0.057276,
+  "acs_moved_last_year_pct": 0.040858
+ },
+ "01270000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1212,
+  "acs_single_parent_pct": 0.371585,
+  "acs_snap_pct": 0.065844,
+  "acs_veteran_pct": 0.043634,
+  "acs_moved_last_year_pct": 0.088056
+ },
+ "01280000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1620,
+  "acs_single_parent_pct": 0.390749,
+  "acs_snap_pct": 0.208973,
+  "acs_veteran_pct": 0.05085,
+  "acs_moved_last_year_pct": 0.095073
+ },
+ "01310000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2452,
+  "acs_single_parent_pct": 0.0818,
+  "acs_snap_pct": 0.025528,
+  "acs_veteran_pct": 0.045765,
+  "acs_moved_last_year_pct": 0.087595
+ },
+ "01330000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1522,
+  "acs_single_parent_pct": 0.243519,
+  "acs_snap_pct": 0.113137,
+  "acs_veteran_pct": 0.057779,
+  "acs_moved_last_year_pct": 0.028507
+ },
+ "01350000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1750,
+  "acs_single_parent_pct": 0.447236,
+  "acs_snap_pct": 0.075601,
+  "acs_veteran_pct": 0.099261,
+  "acs_moved_last_year_pct": 0.029595
+ },
+ "01360000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1651,
+  "acs_single_parent_pct": 0.121893,
+  "acs_snap_pct": 0.033605,
+  "acs_veteran_pct": 0.051503,
+  "acs_moved_last_year_pct": 0.076596
+ },
+ "01370000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1016,
+  "acs_single_parent_pct": 0.663803,
+  "acs_snap_pct": 0.373744,
+  "acs_veteran_pct": 0.052335,
+  "acs_moved_last_year_pct": 0.097787
+ },
+ "01380000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1819,
+  "acs_single_parent_pct": 0.252788,
+  "acs_snap_pct": 0.064486,
+  "acs_veteran_pct": 0.060799,
+  "acs_moved_last_year_pct": 0.021453
+ },
+ "01390000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2500,
+  "acs_single_parent_pct": 0.09379,
+  "acs_snap_pct": 0.023217,
+  "acs_veteran_pct": 0.036788,
+  "acs_moved_last_year_pct": 0.079171
+ },
+ "01410000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1416,
+  "acs_single_parent_pct": 0.152353,
+  "acs_snap_pct": 0.064544,
+  "acs_veteran_pct": 0.048122,
+  "acs_moved_last_year_pct": 0.07425
+ },
+ "01420000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1885,
+  "acs_single_parent_pct": 0.225329,
+  "acs_snap_pct": 0.070164,
+  "acs_veteran_pct": 0.061602,
+  "acs_moved_last_year_pct": 0.103589
+ },
+ "01440000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1525,
+  "acs_single_parent_pct": 0.189073,
+  "acs_snap_pct": 0.060622,
+  "acs_veteran_pct": 0.051128,
+  "acs_moved_last_year_pct": 0.060457
+ },
+ "01450000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1157,
+  "acs_single_parent_pct": 0.208798,
+  "acs_snap_pct": 0.040202,
+  "acs_veteran_pct": 0.090969,
+  "acs_moved_last_year_pct": 0.045747
+ },
+ "01490000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1569,
+  "acs_single_parent_pct": 0.599629,
+  "acs_snap_pct": 0.439131,
+  "acs_veteran_pct": 0.018784,
+  "acs_moved_last_year_pct": 0.102653
+ },
+ "01500000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1255,
+  "acs_single_parent_pct": 0.39486,
+  "acs_snap_pct": 0.088081,
+  "acs_veteran_pct": 0.06047,
+  "acs_moved_last_year_pct": 0.10056
+ },
+ "01510000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1211,
+  "acs_single_parent_pct": 0.292453,
+  "acs_snap_pct": 0.073694,
+  "acs_veteran_pct": 0.081266,
+  "acs_moved_last_year_pct": 0.061819
+ },
+ "01520000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1060,
+  "acs_single_parent_pct": 0.483296,
+  "acs_snap_pct": 0.065876,
+  "acs_veteran_pct": 0.042334,
+  "acs_moved_last_year_pct": 0.095508
+ },
+ "01530000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1282,
+  "acs_single_parent_pct": 0.328929,
+  "acs_snap_pct": 0.168259,
+  "acs_veteran_pct": 0.047811,
+  "acs_moved_last_year_pct": 0.072193
+ },
+ "01540000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1339,
+  "acs_single_parent_pct": 0.323944,
+  "acs_snap_pct": 0.092437,
+  "acs_veteran_pct": 0.060436,
+  "acs_moved_last_year_pct": 0.072153
+ },
+ "01550000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2816,
+  "acs_single_parent_pct": 0.134638,
+  "acs_snap_pct": 0.030883,
+  "acs_veteran_pct": 0.034289,
+  "acs_moved_last_year_pct": 0.133365
+ },
+ "01570000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2455,
+  "acs_single_parent_pct": 0.210811,
+  "acs_snap_pct": 0.043446,
+  "acs_veteran_pct": 0.080457,
+  "acs_moved_last_year_pct": 0.132353
+ },
+ "01580000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1542,
+  "acs_single_parent_pct": 0.115023,
+  "acs_snap_pct": 0.092109,
+  "acs_veteran_pct": 0.050235,
+  "acs_moved_last_year_pct": 0.05456
+ },
+ "01590000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1650,
+  "acs_single_parent_pct": 0.15445,
+  "acs_snap_pct": 0.036421,
+  "acs_veteran_pct": 0.056486,
+  "acs_moved_last_year_pct": 0.078566
+ },
+ "01600000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1603,
+  "acs_single_parent_pct": 0.453051,
+  "acs_snap_pct": 0.252884,
+  "acs_veteran_pct": 0.030192,
+  "acs_moved_last_year_pct": 0.12735
+ },
+ "01610000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1250,
+  "acs_single_parent_pct": 0.450305,
+  "acs_snap_pct": 0.150435,
+  "acs_veteran_pct": 0.068071,
+  "acs_moved_last_year_pct": 0.05558
+ },
+ "01620000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1784,
+  "acs_single_parent_pct": 0.33633,
+  "acs_snap_pct": 0.077059,
+  "acs_veteran_pct": 0.055029,
+  "acs_moved_last_year_pct": 0.067479
+ },
+ "01630000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1612,
+  "acs_single_parent_pct": 0.422885,
+  "acs_snap_pct": 0.289006,
+  "acs_veteran_pct": 0.031696,
+  "acs_moved_last_year_pct": 0.091869
+ },
+ "01640000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2333,
+  "acs_single_parent_pct": 0.121844,
+  "acs_snap_pct": 0.028782,
+  "acs_veteran_pct": 0.030271,
+  "acs_moved_last_year_pct": 0.087069
+ },
+ "01650000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2066,
+  "acs_single_parent_pct": 0.233148,
+  "acs_snap_pct": 0.159049,
+  "acs_veteran_pct": 0.027809,
+  "acs_moved_last_year_pct": 0.139926
+ },
+ "01670000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1702,
+  "acs_single_parent_pct": 0.253731,
+  "acs_snap_pct": 0.093207,
+  "acs_veteran_pct": 0.037395,
+  "acs_moved_last_year_pct": 0.078515
+ },
+ "01680000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1769,
+  "acs_single_parent_pct": 0.121009,
+  "acs_snap_pct": 0.038231,
+  "acs_veteran_pct": 0.042239,
+  "acs_moved_last_year_pct": 0.064563
+ },
+ "01690000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1452,
+  "acs_single_parent_pct": 0.276553,
+  "acs_snap_pct": 0.054315,
+  "acs_veteran_pct": 0.035681,
+  "acs_moved_last_year_pct": 0.065422
+ },
+ "01700000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1721,
+  "acs_single_parent_pct": 0.26325,
+  "acs_snap_pct": 0.112079,
+  "acs_veteran_pct": 0.042693,
+  "acs_moved_last_year_pct": 0.134625
+ },
+ "01710000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1620,
+  "acs_single_parent_pct": 0.192744,
+  "acs_snap_pct": 0.068073,
+  "acs_veteran_pct": 0.049042,
+  "acs_moved_last_year_pct": 0.080756
+ },
+ "01720000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1808,
+  "acs_single_parent_pct": 0.355533,
+  "acs_snap_pct": 0.080549,
+  "acs_veteran_pct": 0.070555,
+  "acs_moved_last_year_pct": 0.123058
+ },
+ "01730000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1478,
+  "acs_single_parent_pct": 0.179396,
+  "acs_snap_pct": 0.045393,
+  "acs_veteran_pct": 0.089947,
+  "acs_moved_last_year_pct": 0.036907
+ },
+ "01740000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1678,
+  "acs_single_parent_pct": 0.208299,
+  "acs_snap_pct": 0.046651,
+  "acs_veteran_pct": 0.048263,
+  "acs_moved_last_year_pct": 0.068006
+ },
+ "01750000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1652,
+  "acs_single_parent_pct": 0.104339,
+  "acs_snap_pct": 0.047159,
+  "acs_veteran_pct": 0.027856,
+  "acs_moved_last_year_pct": 0.09989
+ },
+ "01760000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2477,
+  "acs_single_parent_pct": 0.231592,
+  "acs_snap_pct": 0.085382,
+  "acs_veteran_pct": 0.02986,
+  "acs_moved_last_year_pct": 0.156844
+ },
+ "01770000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1570,
+  "acs_single_parent_pct": 0.110218,
+  "acs_snap_pct": 0.043954,
+  "acs_veteran_pct": 0.047764,
+  "acs_moved_last_year_pct": 0.059028
+ },
+ "01780000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1933,
+  "acs_single_parent_pct": 0.146915,
+  "acs_snap_pct": 0.058942,
+  "acs_veteran_pct": 0.026734,
+  "acs_moved_last_year_pct": 0.074045
+ },
+ "01810000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1610,
+  "acs_single_parent_pct": 0.335525,
+  "acs_snap_pct": 0.17145,
+  "acs_veteran_pct": 0.038018,
+  "acs_moved_last_year_pct": 0.089402
+ },
+ "01820000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1692,
+  "acs_single_parent_pct": 0.395686,
+  "acs_snap_pct": 0.118926,
+  "acs_veteran_pct": 0.077478,
+  "acs_moved_last_year_pct": 0.089585
+ },
+ "01840000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1621,
+  "acs_single_parent_pct": 0.076381,
+  "acs_snap_pct": 0.020507,
+  "acs_veteran_pct": 0.03814,
+  "acs_moved_last_year_pct": 0.075806
+ },
+ "01850000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1702,
+  "acs_single_parent_pct": 0.267584,
+  "acs_snap_pct": 0.064849,
+  "acs_veteran_pct": 0.043857,
+  "acs_moved_last_year_pct": 0.109118
+ },
+ "01860000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1507,
+  "acs_single_parent_pct": 0.388889,
+  "acs_snap_pct": 0.096183,
+  "acs_veteran_pct": 0.051697,
+  "acs_moved_last_year_pct": 0.091403
+ },
+ "01870000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1733,
+  "acs_single_parent_pct": 0.172825,
+  "acs_snap_pct": 0.029264,
+  "acs_veteran_pct": 0.041917,
+  "acs_moved_last_year_pct": 0.052583
+ },
+ "01890000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1503,
+  "acs_single_parent_pct": 0.20782,
+  "acs_snap_pct": 0.049349,
+  "acs_veteran_pct": 0.038796,
+  "acs_moved_last_year_pct": 0.049244
+ },
+ "01910000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 874,
+  "acs_single_parent_pct": 0.307143,
+  "acs_snap_pct": 0.114488,
+  "acs_veteran_pct": 0.091615,
+  "acs_moved_last_year_pct": 0.038534
+ },
+ "01960000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1790,
+  "acs_single_parent_pct": 0.287402,
+  "acs_snap_pct": 0.046758,
+  "acs_veteran_pct": 0.05068,
+  "acs_moved_last_year_pct": 0.068245
+ },
+ "01970000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2070,
+  "acs_single_parent_pct": 0.122143,
+  "acs_snap_pct": 0.060222,
+  "acs_veteran_pct": 0.045366,
+  "acs_moved_last_year_pct": 0.065906
+ },
+ "01980000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2059,
+  "acs_single_parent_pct": 0.163891,
+  "acs_snap_pct": 0.053151,
+  "acs_veteran_pct": 0.033863,
+  "acs_moved_last_year_pct": 0.12065
+ },
+ "01990000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2412,
+  "acs_single_parent_pct": 0.115249,
+  "acs_snap_pct": 0.030348,
+  "acs_veteran_pct": 0.031947,
+  "acs_moved_last_year_pct": 0.08278
+ },
+ "02010000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1085,
+  "acs_single_parent_pct": 0.565859,
+  "acs_snap_pct": 0.309592,
+  "acs_veteran_pct": 0.045806,
+  "acs_moved_last_year_pct": 0.122133
+ },
+ "02040000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1511,
+  "acs_single_parent_pct": 0.195846,
+  "acs_snap_pct": 0.063655,
+  "acs_veteran_pct": 0.047329,
+  "acs_moved_last_year_pct": 0.082299
+ },
+ "02070000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2388,
+  "acs_single_parent_pct": 0.137276,
+  "acs_snap_pct": 0.044122,
+  "acs_veteran_pct": 0.019562,
+  "acs_moved_last_year_pct": 0.109997
+ },
+ "02080000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1791,
+  "acs_single_parent_pct": 0.052888,
+  "acs_snap_pct": 0.008628,
+  "acs_veteran_pct": 0.032277,
+  "acs_moved_last_year_pct": 0.076993
+ },
+ "02090000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 777,
+  "acs_single_parent_pct": 0.491097,
+  "acs_snap_pct": 0.276419,
+  "acs_veteran_pct": 0.082056,
+  "acs_moved_last_year_pct": 0.09589
+ },
+ "02100000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1404,
+  "acs_single_parent_pct": 0.34811,
+  "acs_snap_pct": 0.130949,
+  "acs_veteran_pct": 0.038587,
+  "acs_moved_last_year_pct": 0.132268
+ },
+ "02110000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2113,
+  "acs_single_parent_pct": 0.226462,
+  "acs_snap_pct": 0.0618,
+  "acs_veteran_pct": 0.032849,
+  "acs_moved_last_year_pct": 0.136608
+ },
+ "02120000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1402,
+  "acs_single_parent_pct": 0.204963,
+  "acs_snap_pct": 0.081291,
+  "acs_veteran_pct": 0.051293,
+  "acs_moved_last_year_pct": 0.110739
+ },
+ "02130000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2087,
+  "acs_single_parent_pct": 0.102551,
+  "acs_snap_pct": 0.048119,
+  "acs_veteran_pct": 0.036985,
+  "acs_moved_last_year_pct": 0.100708
+ },
+ "02140000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1248,
+  "acs_single_parent_pct": 0.379612,
+  "acs_snap_pct": 0.112036,
+  "acs_veteran_pct": 0.065759,
+  "acs_moved_last_year_pct": 0.119562
+ },
+ "02150000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 973,
+  "acs_single_parent_pct": 0.214689,
+  "acs_snap_pct": 0.103321,
+  "acs_veteran_pct": 0.124647,
+  "acs_moved_last_year_pct": 0.072387
+ },
+ "02170000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2253,
+  "acs_single_parent_pct": 0.196117,
+  "acs_snap_pct": 0.08487,
+  "acs_veteran_pct": 0.045853,
+  "acs_moved_last_year_pct": 0.080065
+ },
+ "02180000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1986,
+  "acs_single_parent_pct": 0.224432,
+  "acs_snap_pct": 0.071363,
+  "acs_veteran_pct": 0.045122,
+  "acs_moved_last_year_pct": 0.080337
+ },
+ "02190000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2181,
+  "acs_single_parent_pct": 0.147687,
+  "acs_snap_pct": 0.048586,
+  "acs_veteran_pct": 0.051266,
+  "acs_moved_last_year_pct": 0.061215
+ },
+ "02200000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2056,
+  "acs_single_parent_pct": 0.259082,
+  "acs_snap_pct": 0.090909,
+  "acs_veteran_pct": 0.04432,
+  "acs_moved_last_year_pct": 0.130865
+ },
+ "02210000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": null,
+  "acs_single_parent_pct": 0.172161,
+  "acs_snap_pct": 0.071221,
+  "acs_veteran_pct": 0.089346,
+  "acs_moved_last_year_pct": 0.061712
+ },
+ "02230000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 740,
+  "acs_single_parent_pct": 0.445557,
+  "acs_snap_pct": 0.22568,
+  "acs_veteran_pct": 0.087154,
+  "acs_moved_last_year_pct": 0.063853
+ },
+ "02240000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1181,
+  "acs_single_parent_pct": 0.221393,
+  "acs_snap_pct": 0.06962,
+  "acs_veteran_pct": 0.066308,
+  "acs_moved_last_year_pct": 0.103763
+ },
+ "02260000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1150,
+  "acs_single_parent_pct": 0.236808,
+  "acs_snap_pct": 0.170012,
+  "acs_veteran_pct": 0.058262,
+  "acs_moved_last_year_pct": 0.087422
+ },
+ "02270000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1041,
+  "acs_single_parent_pct": 0.564211,
+  "acs_snap_pct": 0.206094,
+  "acs_veteran_pct": 0.072959,
+  "acs_moved_last_year_pct": 0.101497
+ },
+ "02290000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1902,
+  "acs_single_parent_pct": 0.257596,
+  "acs_snap_pct": 0.10352,
+  "acs_veteran_pct": 0.061846,
+  "acs_moved_last_year_pct": 0.100173
+ },
+ "02300000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1159,
+  "acs_single_parent_pct": 0.232,
+  "acs_snap_pct": 0.102787,
+  "acs_veteran_pct": 0.059546,
+  "acs_moved_last_year_pct": 0.057927
+ },
+ "02310000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2413,
+  "acs_single_parent_pct": 0.197404,
+  "acs_snap_pct": 0.030692,
+  "acs_veteran_pct": 0.061401,
+  "acs_moved_last_year_pct": 0.051135
+ },
+ "02340000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1214,
+  "acs_single_parent_pct": 0.240506,
+  "acs_snap_pct": 0.069114,
+  "acs_veteran_pct": 0.060757,
+  "acs_moved_last_year_pct": 0.096102
+ },
+ "02360000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1094,
+  "acs_single_parent_pct": 0.508516,
+  "acs_snap_pct": 0.217111,
+  "acs_veteran_pct": 0.052853,
+  "acs_moved_last_year_pct": 0.11123
+ },
+ "02380000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1901,
+  "acs_single_parent_pct": 0.334794,
+  "acs_snap_pct": 0.092381,
+  "acs_veteran_pct": 0.033652,
+  "acs_moved_last_year_pct": 0.083567
+ },
+ "02390000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1831,
+  "acs_single_parent_pct": 0.268297,
+  "acs_snap_pct": 0.069398,
+  "acs_veteran_pct": 0.066922,
+  "acs_moved_last_year_pct": 0.121005
+ },
+ "02400000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 402,
+  "acs_single_parent_pct": 0.183976,
+  "acs_snap_pct": 0.117366,
+  "acs_veteran_pct": 0.087148,
+  "acs_moved_last_year_pct": 0.023834
+ },
+ "02420000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1306,
+  "acs_single_parent_pct": 0.315789,
+  "acs_snap_pct": 0.117502,
+  "acs_veteran_pct": 0.048888,
+  "acs_moved_last_year_pct": 0.167998
+ },
+ "02430000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1998,
+  "acs_single_parent_pct": 0.257165,
+  "acs_snap_pct": 0.13818,
+  "acs_veteran_pct": 0.037068,
+  "acs_moved_last_year_pct": 0.151687
+ },
+ "02440000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2049,
+  "acs_single_parent_pct": 0.423903,
+  "acs_snap_pct": 0.216276,
+  "acs_veteran_pct": 0.031091,
+  "acs_moved_last_year_pct": 0.064512
+ },
+ "02460000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1722,
+  "acs_single_parent_pct": 0.113504,
+  "acs_snap_pct": 0.012952,
+  "acs_veteran_pct": 0.055746,
+  "acs_moved_last_year_pct": 0.075437
+ },
+ "02480000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1966,
+  "acs_single_parent_pct": 0.342073,
+  "acs_snap_pct": 0.17897,
+  "acs_veteran_pct": 0.028959,
+  "acs_moved_last_year_pct": 0.133765
+ },
+ "02490000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1116,
+  "acs_single_parent_pct": 0.410526,
+  "acs_snap_pct": 0.041806,
+  "acs_veteran_pct": 0.06885,
+  "acs_moved_last_year_pct": 0.033406
+ },
+ "02500000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1442,
+  "acs_single_parent_pct": 0.209945,
+  "acs_snap_pct": 0.076706,
+  "acs_veteran_pct": 0.059019,
+  "acs_moved_last_year_pct": 0.114582
+ },
+ "02510000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1497,
+  "acs_single_parent_pct": 0.203564,
+  "acs_snap_pct": 0.132843,
+  "acs_veteran_pct": 0.06001,
+  "acs_moved_last_year_pct": 0.073753
+ },
+ "02520000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1827,
+  "acs_single_parent_pct": 0.346154,
+  "acs_snap_pct": 0.051793,
+  "acs_veteran_pct": 0.079533,
+  "acs_moved_last_year_pct": 0.097867
+ },
+ "02530000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1536,
+  "acs_single_parent_pct": 0.210526,
+  "acs_snap_pct": 0.122222,
+  "acs_veteran_pct": 0.124646,
+  "acs_moved_last_year_pct": 0.105832
+ },
+ "02580000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1800,
+  "acs_single_parent_pct": 0.463294,
+  "acs_snap_pct": 0.175653,
+  "acs_veteran_pct": 0.036189,
+  "acs_moved_last_year_pct": 0.092528
+ },
+ "02610000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1725,
+  "acs_single_parent_pct": 0.195148,
+  "acs_snap_pct": 0.059536,
+  "acs_veteran_pct": 0.067927,
+  "acs_moved_last_year_pct": 0.070138
+ },
+ "02620000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1982,
+  "acs_single_parent_pct": 0.139669,
+  "acs_snap_pct": 0.103729,
+  "acs_veteran_pct": 0.049553,
+  "acs_moved_last_year_pct": 0.078186
+ },
+ "02630000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 731,
+  "acs_single_parent_pct": 0.5,
+  "acs_snap_pct": 0.120219,
+  "acs_veteran_pct": 0.068852,
+  "acs_moved_last_year_pct": 0.026462
+ },
+ "02640000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1579,
+  "acs_single_parent_pct": 0.121425,
+  "acs_snap_pct": 0.054428,
+  "acs_veteran_pct": 0.052009,
+  "acs_moved_last_year_pct": 0.117166
+ },
+ "02650000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1808,
+  "acs_single_parent_pct": 0.195534,
+  "acs_snap_pct": 0.078844,
+  "acs_veteran_pct": 0.05157,
+  "acs_moved_last_year_pct": 0.050493
+ },
+ "02660000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2269,
+  "acs_single_parent_pct": 0.093579,
+  "acs_snap_pct": 0.06802,
+  "acs_veteran_pct": 0.034995,
+  "acs_moved_last_year_pct": 0.098458
+ },
+ "02690000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2313,
+  "acs_single_parent_pct": 0.015175,
+  "acs_snap_pct": 0.015873,
+  "acs_veteran_pct": 0.024627,
+  "acs_moved_last_year_pct": 0.063825
+ },
+ "02710000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2046,
+  "acs_single_parent_pct": 0.16059,
+  "acs_snap_pct": 0.054591,
+  "acs_veteran_pct": 0.046526,
+  "acs_moved_last_year_pct": 0.13901
+ },
+ "02720000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1500,
+  "acs_single_parent_pct": 0.280488,
+  "acs_snap_pct": 0.088042,
+  "acs_veteran_pct": 0.034461,
+  "acs_moved_last_year_pct": 0.059645
+ },
+ "02730000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1313,
+  "acs_single_parent_pct": 0.165946,
+  "acs_snap_pct": 0.078346,
+  "acs_veteran_pct": 0.09115,
+  "acs_moved_last_year_pct": 0.050131
+ },
+ "02740000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2468,
+  "acs_single_parent_pct": 0.185292,
+  "acs_snap_pct": 0.0855,
+  "acs_veteran_pct": 0.015878,
+  "acs_moved_last_year_pct": 0.241527
+ },
+ "02750000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 741,
+  "acs_single_parent_pct": 0.076299,
+  "acs_snap_pct": 0.081981,
+  "acs_veteran_pct": 0.056332,
+  "acs_moved_last_year_pct": 0.089414
+ },
+ "02760000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2343,
+  "acs_single_parent_pct": 0.076449,
+  "acs_snap_pct": 0.028025,
+  "acs_veteran_pct": 0.02256,
+  "acs_moved_last_year_pct": 0.106516
+ },
+ "02770000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1157,
+  "acs_single_parent_pct": 0.562274,
+  "acs_snap_pct": 0.348126,
+  "acs_veteran_pct": 0.079277,
+  "acs_moved_last_year_pct": 0.100517
+ },
+ "02780000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1264,
+  "acs_single_parent_pct": 0.337743,
+  "acs_snap_pct": 0.082666,
+  "acs_veteran_pct": 0.084918,
+  "acs_moved_last_year_pct": 0.104937
+ },
+ "02810000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1114,
+  "acs_single_parent_pct": 0.602541,
+  "acs_snap_pct": 0.36285,
+  "acs_veteran_pct": 0.037209,
+  "acs_moved_last_year_pct": 0.081071
+ },
+ "02840000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1878,
+  "acs_single_parent_pct": 0.125688,
+  "acs_snap_pct": 0.062815,
+  "acs_veteran_pct": 0.06277,
+  "acs_moved_last_year_pct": 0.066082
+ },
+ "02850000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1993,
+  "acs_single_parent_pct": 0.267222,
+  "acs_snap_pct": 0.104134,
+  "acs_veteran_pct": 0.043656,
+  "acs_moved_last_year_pct": 0.097503
+ },
+ "02880000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1427,
+  "acs_single_parent_pct": 0.12205,
+  "acs_snap_pct": 0.021811,
+  "acs_veteran_pct": 0.02223,
+  "acs_moved_last_year_pct": 0.047922
+ },
+ "02890000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1613,
+  "acs_single_parent_pct": 0.339367,
+  "acs_snap_pct": 0.043065,
+  "acs_veteran_pct": 0.057271,
+  "acs_moved_last_year_pct": 0.197713
+ },
+ "02900000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1167,
+  "acs_single_parent_pct": 0.137606,
+  "acs_snap_pct": 0.0502,
+  "acs_veteran_pct": 0.065974,
+  "acs_moved_last_year_pct": 0.070544
+ },
+ "02910000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2223,
+  "acs_single_parent_pct": 0.130205,
+  "acs_snap_pct": 0.058441,
+  "acs_veteran_pct": 0.03214,
+  "acs_moved_last_year_pct": 0.115929
+ },
+ "02920000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1332,
+  "acs_single_parent_pct": 0.16656,
+  "acs_snap_pct": 0.107699,
+  "acs_veteran_pct": 0.062699,
+  "acs_moved_last_year_pct": 0.042591
+ },
+ "02930000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1269,
+  "acs_single_parent_pct": 0.454959,
+  "acs_snap_pct": 0.245319,
+  "acs_veteran_pct": 0.057434,
+  "acs_moved_last_year_pct": 0.120127
+ },
+ "02950000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2248,
+  "acs_single_parent_pct": 0.185629,
+  "acs_snap_pct": 0.056733,
+  "acs_veteran_pct": 0.061297,
+  "acs_moved_last_year_pct": 0.078367
+ },
+ "02960000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1340,
+  "acs_single_parent_pct": 0.260377,
+  "acs_snap_pct": 0.125133,
+  "acs_veteran_pct": 0.067343,
+  "acs_moved_last_year_pct": 0.141368
+ },
+ "02980000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1003,
+  "acs_single_parent_pct": 0.08613,
+  "acs_snap_pct": 0.049443,
+  "acs_veteran_pct": 0.056867,
+  "acs_moved_last_year_pct": 0.120176
+ },
+ "03000000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": null,
+  "acs_single_parent_pct": 1.0,
+  "acs_snap_pct": 0.067426,
+  "acs_veteran_pct": 0.115692,
+  "acs_moved_last_year_pct": 0.020958
+ },
+ "03010000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1863,
+  "acs_single_parent_pct": 0.248705,
+  "acs_snap_pct": 0.098298,
+  "acs_veteran_pct": 0.044661,
+  "acs_moved_last_year_pct": 0.092861
+ },
+ "03040000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1480,
+  "acs_single_parent_pct": 0.244401,
+  "acs_snap_pct": 0.055708,
+  "acs_veteran_pct": 0.043569,
+  "acs_moved_last_year_pct": 0.087157
+ },
+ "03050000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1872,
+  "acs_single_parent_pct": 0.157532,
+  "acs_snap_pct": 0.055124,
+  "acs_veteran_pct": 0.038988,
+  "acs_moved_last_year_pct": 0.069548
+ },
+ "03060000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1295,
+  "acs_single_parent_pct": 0.107759,
+  "acs_snap_pct": 0.13577,
+  "acs_veteran_pct": 0.125,
+  "acs_moved_last_year_pct": 0.016763
+ },
+ "03070000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2070,
+  "acs_single_parent_pct": 0.130139,
+  "acs_snap_pct": 0.040995,
+  "acs_veteran_pct": 0.047636,
+  "acs_moved_last_year_pct": 0.060845
+ },
+ "03080000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2232,
+  "acs_single_parent_pct": 0.249254,
+  "acs_snap_pct": 0.076358,
+  "acs_veteran_pct": 0.024197,
+  "acs_moved_last_year_pct": 0.159491
+ },
+ "03090000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1049,
+  "acs_single_parent_pct": 0.47697,
+  "acs_snap_pct": 0.230615,
+  "acs_veteran_pct": 0.080757,
+  "acs_moved_last_year_pct": 0.090772
+ },
+ "03100000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1420,
+  "acs_single_parent_pct": 0.549176,
+  "acs_snap_pct": 0.183209,
+  "acs_veteran_pct": 0.09994,
+  "acs_moved_last_year_pct": 0.092947
+ },
+ "03140000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2357,
+  "acs_single_parent_pct": 0.16372,
+  "acs_snap_pct": 0.054164,
+  "acs_veteran_pct": 0.034369,
+  "acs_moved_last_year_pct": 0.167909
+ },
+ "03150000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1403,
+  "acs_single_parent_pct": 0.119276,
+  "acs_snap_pct": 0.030922,
+  "acs_veteran_pct": 0.029187,
+  "acs_moved_last_year_pct": 0.096769
+ },
+ "03160000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1135,
+  "acs_single_parent_pct": 0.499417,
+  "acs_snap_pct": 0.183449,
+  "acs_veteran_pct": 0.073388,
+  "acs_moved_last_year_pct": 0.143314
+ },
+ "03170000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2849,
+  "acs_single_parent_pct": 0.106389,
+  "acs_snap_pct": 0.02681,
+  "acs_veteran_pct": 0.021921,
+  "acs_moved_last_year_pct": 0.088325
+ },
+ "03180000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1200,
+  "acs_single_parent_pct": 0.153285,
+  "acs_snap_pct": 0.060811,
+  "acs_veteran_pct": 0.054268,
+  "acs_moved_last_year_pct": 0.06718
+ },
+ "03210000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2038,
+  "acs_single_parent_pct": 0.118167,
+  "acs_snap_pct": 0.041414,
+  "acs_veteran_pct": 0.033504,
+  "acs_moved_last_year_pct": 0.194682
+ },
+ "03220000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1278,
+  "acs_single_parent_pct": 0.266892,
+  "acs_snap_pct": 0.078231,
+  "acs_veteran_pct": 0.057778,
+  "acs_moved_last_year_pct": 0.060765
+ },
+ "03230000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2011,
+  "acs_single_parent_pct": 0.110714,
+  "acs_snap_pct": 0.070584,
+  "acs_veteran_pct": 0.068593,
+  "acs_moved_last_year_pct": 0.060378
+ },
+ "03250000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1064,
+  "acs_single_parent_pct": 0.360941,
+  "acs_snap_pct": 0.177822,
+  "acs_veteran_pct": 0.068584,
+  "acs_moved_last_year_pct": 0.10554
+ },
+ "03260000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2068,
+  "acs_single_parent_pct": 0.146341,
+  "acs_snap_pct": 0.038915,
+  "acs_veteran_pct": 0.066035,
+  "acs_moved_last_year_pct": 0.110658
+ },
+ "03270000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1339,
+  "acs_single_parent_pct": 0.327869,
+  "acs_snap_pct": 0.096463,
+  "acs_veteran_pct": 0.068493,
+  "acs_moved_last_year_pct": 0.029255
+ },
+ "03300000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2168,
+  "acs_single_parent_pct": 0.110105,
+  "acs_snap_pct": 0.018403,
+  "acs_veteran_pct": 0.032701,
+  "acs_moved_last_year_pct": 0.100151
+ },
+ "03310000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1305,
+  "acs_single_parent_pct": 0.351295,
+  "acs_snap_pct": 0.077332,
+  "acs_veteran_pct": 0.075697,
+  "acs_moved_last_year_pct": 0.038896
+ },
+ "03320000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1121,
+  "acs_single_parent_pct": 0.318826,
+  "acs_snap_pct": 0.220114,
+  "acs_veteran_pct": 0.058692,
+  "acs_moved_last_year_pct": 0.123128
+ },
+ "03350000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2390,
+  "acs_single_parent_pct": 0.108696,
+  "acs_snap_pct": 0.016934,
+  "acs_veteran_pct": 0.042544,
+  "acs_moved_last_year_pct": 0.102634
+ },
+ "03360000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1861,
+  "acs_single_parent_pct": 0.237671,
+  "acs_snap_pct": 0.092573,
+  "acs_veteran_pct": 0.055933,
+  "acs_moved_last_year_pct": 0.101918
+ },
+ "03370000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1622,
+  "acs_single_parent_pct": 0.427536,
+  "acs_snap_pct": 0.053111,
+  "acs_veteran_pct": 0.092271,
+  "acs_moved_last_year_pct": 0.089453
+ },
+ "03400000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1377,
+  "acs_single_parent_pct": 0.172727,
+  "acs_snap_pct": 0.042553,
+  "acs_veteran_pct": 0.066301,
+  "acs_moved_last_year_pct": 0.079212
+ },
+ "03420000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2412,
+  "acs_single_parent_pct": 0.111694,
+  "acs_snap_pct": 0.04866,
+  "acs_veteran_pct": 0.058283,
+  "acs_moved_last_year_pct": 0.057054
+ },
+ "03430000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1223,
+  "acs_single_parent_pct": 0.243062,
+  "acs_snap_pct": 0.175577,
+  "acs_veteran_pct": 0.077025,
+  "acs_moved_last_year_pct": 0.080377
+ },
+ "03440000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2271,
+  "acs_single_parent_pct": 0.13475,
+  "acs_snap_pct": 0.017134,
+  "acs_veteran_pct": 0.041875,
+  "acs_moved_last_year_pct": 0.068472
+ },
+ "03460000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1909,
+  "acs_single_parent_pct": 0.318427,
+  "acs_snap_pct": 0.121243,
+  "acs_veteran_pct": 0.037504,
+  "acs_moved_last_year_pct": 0.123762
+ },
+ "03470000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 2190,
+  "acs_single_parent_pct": 0.188218,
+  "acs_snap_pct": 0.096944,
+  "acs_veteran_pct": 0.0406,
+  "acs_moved_last_year_pct": 0.134969
+ },
+ "03480000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1415,
+  "acs_single_parent_pct": 0.461839,
+  "acs_snap_pct": 0.268356,
+  "acs_veteran_pct": 0.034676,
+  "acs_moved_last_year_pct": 0.146121
+ },
+ "03490000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 592,
+  "acs_single_parent_pct": 0.216216,
+  "acs_snap_pct": 0.054475,
+  "acs_veteran_pct": 0.060738,
+  "acs_moved_last_year_pct": 0.03981
+ },
+ "03500000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1046,
+  "acs_single_parent_pct": 0.26514,
+  "acs_snap_pct": 0.074175,
+  "acs_veteran_pct": 0.055471,
+  "acs_moved_last_year_pct": 0.052227
+ },
+ "06000000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1893,
+  "acs_single_parent_pct": 0.146885,
+  "acs_snap_pct": 0.041068,
+  "acs_veteran_pct": 0.046681,
+  "acs_moved_last_year_pct": 0.105534
+ },
+ "06030000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1038,
+  "acs_single_parent_pct": 0.474305,
+  "acs_snap_pct": 0.161077,
+  "acs_veteran_pct": 0.073992,
+  "acs_moved_last_year_pct": 0.071263
+ },
+ "06100000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1643,
+  "acs_single_parent_pct": 0.251486,
+  "acs_snap_pct": 0.040236,
+  "acs_veteran_pct": 0.079854,
+  "acs_moved_last_year_pct": 0.068992
+ },
+ "06150000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1031,
+  "acs_single_parent_pct": 0.39417,
+  "acs_snap_pct": 0.229115,
+  "acs_veteran_pct": 0.07606,
+  "acs_moved_last_year_pct": 0.083873
+ },
+ "06160000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1283,
+  "acs_single_parent_pct": 0.236761,
+  "acs_snap_pct": 0.09438,
+  "acs_veteran_pct": 0.073293,
+  "acs_moved_last_year_pct": 0.077619
+ },
+ "06180000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1211,
+  "acs_single_parent_pct": 0.177048,
+  "acs_snap_pct": 0.078433,
+  "acs_veteran_pct": 0.031349,
+  "acs_moved_last_year_pct": 0.149639
+ },
+ "06200000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1671,
+  "acs_single_parent_pct": 0.079974,
+  "acs_snap_pct": 0.04591,
+  "acs_veteran_pct": 0.058268,
+  "acs_moved_last_year_pct": 0.07202
+ },
+ "06220000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1187,
+  "acs_single_parent_pct": 0.226672,
+  "acs_snap_pct": 0.069157,
+  "acs_veteran_pct": 0.056705,
+  "acs_moved_last_year_pct": 0.073274
+ },
+ "06250000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1870,
+  "acs_single_parent_pct": 0.319745,
+  "acs_snap_pct": 0.08415,
+  "acs_veteran_pct": 0.064526,
+  "acs_moved_last_year_pct": 0.069896
+ },
+ "06320000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1214,
+  "acs_single_parent_pct": 0.348661,
+  "acs_snap_pct": 0.082196,
+  "acs_veteran_pct": 0.048002,
+  "acs_moved_last_year_pct": 0.067748
+ },
+ "06350000": {
+  "_member_count": 7,
+  "acs_median_gross_rent": 1009,
+  "acs_single_parent_pct": 0.3444,
+  "acs_snap_pct": 0.125957,
+  "acs_veteran_pct": 0.085703,
+  "acs_moved_last_year_pct": 0.080422
+ },
+ "06450000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1589,
+  "acs_single_parent_pct": 0.376383,
+  "acs_snap_pct": 0.092508,
+  "acs_veteran_pct": 0.076422,
+  "acs_moved_last_year_pct": 0.096259
+ },
+ "06500000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1347,
+  "acs_single_parent_pct": 0.118913,
+  "acs_snap_pct": 0.042707,
+  "acs_veteran_pct": 0.066262,
+  "acs_moved_last_year_pct": 0.047571
+ },
+ "06550000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 2420,
+  "acs_single_parent_pct": 0.059176,
+  "acs_snap_pct": 0.011279,
+  "acs_veteran_pct": 0.021716,
+  "acs_moved_last_year_pct": 0.050838
+ },
+ "06580000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1188,
+  "acs_single_parent_pct": 0.376006,
+  "acs_snap_pct": 0.156052,
+  "acs_veteran_pct": 0.043589,
+  "acs_moved_last_year_pct": 0.072582
+ },
+ "06620000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1498,
+  "acs_single_parent_pct": 0.139693,
+  "acs_snap_pct": 0.05024,
+  "acs_veteran_pct": 0.067456,
+  "acs_moved_last_year_pct": 0.091337
+ },
+ "06650000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1887,
+  "acs_single_parent_pct": 0.232615,
+  "acs_snap_pct": 0.08443,
+  "acs_veteran_pct": 0.063435,
+  "acs_moved_last_year_pct": 0.062192
+ },
+ "06720000": {
+  "_member_count": 6,
+  "acs_median_gross_rent": 1103,
+  "acs_single_parent_pct": 0.189719,
+  "acs_snap_pct": 0.083464,
+  "acs_veteran_pct": 0.093539,
+  "acs_moved_last_year_pct": 0.048394
+ },
+ "06730000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1495,
+  "acs_single_parent_pct": 0.127555,
+  "acs_snap_pct": 0.025426,
+  "acs_veteran_pct": 0.039251,
+  "acs_moved_last_year_pct": 0.07566
+ },
+ "06740000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1231,
+  "acs_single_parent_pct": 0.335367,
+  "acs_snap_pct": 0.179348,
+  "acs_veteran_pct": 0.071323,
+  "acs_moved_last_year_pct": 0.074927
+ },
+ "06750000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1746,
+  "acs_single_parent_pct": 0.140247,
+  "acs_snap_pct": 0.036834,
+  "acs_veteran_pct": 0.050329,
+  "acs_moved_last_year_pct": 0.087334
+ },
+ "06800000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 972,
+  "acs_single_parent_pct": 0.094644,
+  "acs_snap_pct": 0.070146,
+  "acs_veteran_pct": 0.055434,
+  "acs_moved_last_year_pct": 0.047508
+ },
+ "06850000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1029,
+  "acs_single_parent_pct": 0.15711,
+  "acs_snap_pct": 0.098083,
+  "acs_veteran_pct": 0.080445,
+  "acs_moved_last_year_pct": 0.033859
+ },
+ "06980000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1854,
+  "acs_single_parent_pct": 0.16575,
+  "acs_snap_pct": 0.028899,
+  "acs_veteran_pct": 0.057026,
+  "acs_moved_last_year_pct": 0.164605
+ },
+ "07100000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1947,
+  "acs_single_parent_pct": 0.210079,
+  "acs_snap_pct": 0.069538,
+  "acs_veteran_pct": 0.061915,
+  "acs_moved_last_year_pct": 0.048274
+ },
+ "07120000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1616,
+  "acs_single_parent_pct": 0.369684,
+  "acs_snap_pct": 0.059121,
+  "acs_veteran_pct": 0.077655,
+  "acs_moved_last_year_pct": 0.086371
+ },
+ "07150000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1304,
+  "acs_single_parent_pct": 0.372045,
+  "acs_snap_pct": 0.06235,
+  "acs_veteran_pct": 0.055928,
+  "acs_moved_last_year_pct": 0.122825
+ },
+ "07170000": {
+  "_member_count": 9,
+  "acs_median_gross_rent": 1061,
+  "acs_single_parent_pct": 0.240191,
+  "acs_snap_pct": 0.109067,
+  "acs_veteran_pct": 0.077135,
+  "acs_moved_last_year_pct": 0.059397
+ },
+ "07200000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1191,
+  "acs_single_parent_pct": 0.396187,
+  "acs_snap_pct": 0.111155,
+  "acs_veteran_pct": 0.063872,
+  "acs_moved_last_year_pct": 0.070186
+ },
+ "07250000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1838,
+  "acs_single_parent_pct": 0.133481,
+  "acs_snap_pct": 0.067514,
+  "acs_veteran_pct": 0.044714,
+  "acs_moved_last_year_pct": 0.087714
+ },
+ "07280000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1400,
+  "acs_single_parent_pct": 0.216316,
+  "acs_snap_pct": 0.107717,
+  "acs_veteran_pct": 0.056599,
+  "acs_moved_last_year_pct": 0.072398
+ },
+ "07350000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1218,
+  "acs_single_parent_pct": 0.158375,
+  "acs_snap_pct": 0.060984,
+  "acs_veteran_pct": 0.053278,
+  "acs_moved_last_year_pct": 0.074798
+ },
+ "07450000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1598,
+  "acs_single_parent_pct": 0.250451,
+  "acs_snap_pct": 0.071628,
+  "acs_veteran_pct": 0.063627,
+  "acs_moved_last_year_pct": 0.061363
+ },
+ "07500000": {
+  "_member_count": 4,
+  "acs_median_gross_rent": 1198,
+  "acs_single_parent_pct": 0.328342,
+  "acs_snap_pct": 0.096767,
+  "acs_veteran_pct": 0.067509,
+  "acs_moved_last_year_pct": 0.043917
+ },
+ "07530000": {
+  "_member_count": 5,
+  "acs_median_gross_rent": 1125,
+  "acs_single_parent_pct": 0.308503,
+  "acs_snap_pct": 0.130387,
+  "acs_veteran_pct": 0.06645,
+  "acs_moved_last_year_pct": 0.082847
+ },
+ "07650000": {
+  "_member_count": 5,
+  "acs_median_gross_rent": 1398,
+  "acs_single_parent_pct": 0.224787,
+  "acs_snap_pct": 0.037127,
+  "acs_veteran_pct": 0.060191,
+  "acs_moved_last_year_pct": 0.106258
+ },
+ "07660000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1343,
+  "acs_single_parent_pct": 0.245486,
+  "acs_snap_pct": 0.06495,
+  "acs_veteran_pct": 0.070061,
+  "acs_moved_last_year_pct": 0.086124
+ },
+ "07670000": {
+  "_member_count": 1,
+  "acs_median_gross_rent": 1085,
+  "acs_single_parent_pct": 0.387625,
+  "acs_snap_pct": 0.096203,
+  "acs_veteran_pct": 0.059487,
+  "acs_moved_last_year_pct": 0.050038
+ },
+ "07700000": {
+  "_member_count": 5,
+  "acs_median_gross_rent": 1220,
+  "acs_single_parent_pct": 0.207343,
+  "acs_snap_pct": 0.097938,
+  "acs_veteran_pct": 0.08136,
+  "acs_moved_last_year_pct": 0.073924
+ },
+ "07730000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1661,
+  "acs_single_parent_pct": 0.209325,
+  "acs_snap_pct": 0.074587,
+  "acs_veteran_pct": 0.089927,
+  "acs_moved_last_year_pct": 0.074763
+ },
+ "07740000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 2068,
+  "acs_single_parent_pct": 0.384719,
+  "acs_snap_pct": 0.003868,
+  "acs_veteran_pct": 0.024176,
+  "acs_moved_last_year_pct": 0.160388
+ },
+ "07750000": {
+  "_member_count": 5,
+  "acs_median_gross_rent": 1352,
+  "acs_single_parent_pct": 0.256323,
+  "acs_snap_pct": 0.052936,
+  "acs_veteran_pct": 0.05734,
+  "acs_moved_last_year_pct": 0.057874
+ },
+ "07780000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 991,
+  "acs_single_parent_pct": 0.358777,
+  "acs_snap_pct": 0.162114,
+  "acs_veteran_pct": 0.148015,
+  "acs_moved_last_year_pct": 0.088688
+ },
+ "07800000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1837,
+  "acs_single_parent_pct": 0.23381,
+  "acs_snap_pct": 0.076978,
+  "acs_veteran_pct": 0.058687,
+  "acs_moved_last_year_pct": 0.07451
+ },
+ "06400000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 2235,
+  "acs_single_parent_pct": 0.124682,
+  "acs_snap_pct": 0.016253,
+  "acs_veteran_pct": 0.056776,
+  "acs_moved_last_year_pct": 0.089612
+ },
+ "06600000": {
+  "_member_count": 4,
+  "acs_median_gross_rent": 1373,
+  "acs_single_parent_pct": 0.209466,
+  "acs_snap_pct": 0.064485,
+  "acs_veteran_pct": 0.068126,
+  "acs_moved_last_year_pct": 0.083379
+ },
+ "06900000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1551,
+  "acs_single_parent_pct": 0.212813,
+  "acs_snap_pct": 0.057048,
+  "acs_veteran_pct": 0.04114,
+  "acs_moved_last_year_pct": 0.069883
+ },
+ "06950000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1701,
+  "acs_single_parent_pct": 0.145751,
+  "acs_snap_pct": 0.027588,
+  "acs_veteran_pct": 0.037778,
+  "acs_moved_last_year_pct": 0.070467
+ },
+ "07050000": {
+  "_member_count": 3,
+  "acs_median_gross_rent": 1160,
+  "acs_single_parent_pct": 0.075664,
+  "acs_snap_pct": 0.026066,
+  "acs_veteran_pct": 0.04684,
+  "acs_moved_last_year_pct": 0.077118
+ },
+ "07300000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 2189,
+  "acs_single_parent_pct": 0.092123,
+  "acs_snap_pct": 0.040091,
+  "acs_veteran_pct": 0.031222,
+  "acs_moved_last_year_pct": 0.103028
+ },
+ "07630000": {
+  "_member_count": 2,
+  "acs_median_gross_rent": 1313,
+  "acs_single_parent_pct": 0.140824,
+  "acs_snap_pct": 0.08083,
+  "acs_veteran_pct": 0.083577,
+  "acs_moved_last_year_pct": 0.049652
+ }
+}

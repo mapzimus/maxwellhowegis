@@ -1,0 +1,1147 @@
+{
+ "00010000": {
+  "school_choice_out_pct": 0.0142,
+  "charter_out_pct": 0.0254,
+  "enrollment_out_pct": 0.0396
+ },
+ "00030000": {
+  "school_choice_out_pct": 0.0298,
+  "charter_out_pct": 0.0036,
+  "enrollment_out_pct": 0.0334
+ },
+ "00050000": {
+  "school_choice_out_pct": 0.0165,
+  "charter_out_pct": 0.0265,
+  "enrollment_out_pct": 0.043
+ },
+ "00070000": {
+  "school_choice_out_pct": 0.0403,
+  "charter_out_pct": 0.0573,
+  "enrollment_out_pct": 0.0975
+ },
+ "00080000": {
+  "school_choice_out_pct": 0.0405,
+  "charter_out_pct": 0.0741,
+  "enrollment_out_pct": 0.1146
+ },
+ "00090000": {
+  "school_choice_out_pct": 0.0022,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.0034
+ },
+ "00100000": {
+  "school_choice_out_pct": 0.0014,
+  "charter_out_pct": 0.0031,
+  "enrollment_out_pct": 0.0045
+ },
+ "00140000": {
+  "school_choice_out_pct": 0.0041,
+  "charter_out_pct": 0.0007,
+  "enrollment_out_pct": 0.0048
+ },
+ "00160000": {
+  "school_choice_out_pct": 0.0138,
+  "charter_out_pct": 0.0213,
+  "enrollment_out_pct": 0.0351
+ },
+ "00170000": {
+  "school_choice_out_pct": 0.0079,
+  "charter_out_pct": 0.002,
+  "enrollment_out_pct": 0.0098
+ },
+ "00180000": {
+  "school_choice_out_pct": 0.0224,
+  "charter_out_pct": 0.0319,
+  "enrollment_out_pct": 0.0543
+ },
+ "00200000": {
+  "school_choice_out_pct": 0.0512,
+  "charter_out_pct": 0.0781,
+  "enrollment_out_pct": 0.1293
+ },
+ "00230000": {
+  "school_choice_out_pct": 0.0025,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0025
+ },
+ "00240000": {
+  "school_choice_out_pct": 0.0538,
+  "charter_out_pct": 0.0224,
+  "enrollment_out_pct": 0.0762
+ },
+ "00250000": {
+  "school_choice_out_pct": 0.0518,
+  "charter_out_pct": 0.0735,
+  "enrollment_out_pct": 0.1253
+ },
+ "00260000": {
+  "school_choice_out_pct": 0.0012,
+  "charter_out_pct": 0.0014,
+  "enrollment_out_pct": 0.0025
+ },
+ "00270000": {
+  "school_choice_out_pct": 0.0248,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0248
+ },
+ "00300000": {
+  "school_choice_out_pct": 0.0191,
+  "charter_out_pct": 0.0064,
+  "enrollment_out_pct": 0.0255
+ },
+ "00310000": {
+  "school_choice_out_pct": 0.0076,
+  "charter_out_pct": 0.0122,
+  "enrollment_out_pct": 0.0198
+ },
+ "00350000": {
+  "school_choice_out_pct": 0.0051,
+  "charter_out_pct": 0.2031,
+  "enrollment_out_pct": 0.2083
+ },
+ "00360000": {
+  "school_choice_out_pct": 0.0863,
+  "charter_out_pct": 0.0556,
+  "enrollment_out_pct": 0.1419
+ },
+ "00380000": {
+  "school_choice_out_pct": 0.0015,
+  "charter_out_pct": 0.003,
+  "enrollment_out_pct": 0.0045
+ },
+ "00400000": {
+  "school_choice_out_pct": 0.0042,
+  "charter_out_pct": 0.0078,
+  "enrollment_out_pct": 0.012
+ },
+ "00410000": {
+  "school_choice_out_pct": 0.0564,
+  "charter_out_pct": 0.0625,
+  "enrollment_out_pct": 0.1189
+ },
+ "00430000": {
+  "school_choice_out_pct": 0.019,
+  "charter_out_pct": 0.0152,
+  "enrollment_out_pct": 0.0342
+ },
+ "00440000": {
+  "school_choice_out_pct": 0.0187,
+  "charter_out_pct": 0.0989,
+  "enrollment_out_pct": 0.1176
+ },
+ "00450000": {
+  "school_choice_out_pct": 0.0142,
+  "charter_out_pct": 0.0047,
+  "enrollment_out_pct": 0.0189
+ },
+ "00460000": {
+  "school_choice_out_pct": 0.0008,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.0019
+ },
+ "00480000": {
+  "school_choice_out_pct": 0.0064,
+  "charter_out_pct": 0.0014,
+  "enrollment_out_pct": 0.0078
+ },
+ "00490000": {
+  "school_choice_out_pct": 0.0026,
+  "charter_out_pct": 0.062,
+  "enrollment_out_pct": 0.0646
+ },
+ "00500000": {
+  "school_choice_out_pct": 0.0026,
+  "charter_out_pct": 0.0046,
+  "enrollment_out_pct": 0.0073
+ },
+ "00510000": {
+  "school_choice_out_pct": 0.0,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0
+ },
+ "00520000": {
+  "school_choice_out_pct": 0.0077,
+  "charter_out_pct": 0.0495,
+  "enrollment_out_pct": 0.0573
+ },
+ "00560000": {
+  "school_choice_out_pct": 0.0048,
+  "charter_out_pct": 0.014,
+  "enrollment_out_pct": 0.0188
+ },
+ "00570000": {
+  "school_choice_out_pct": 0.0033,
+  "charter_out_pct": 0.1349,
+  "enrollment_out_pct": 0.1382
+ },
+ "00610000": {
+  "school_choice_out_pct": 0.0338,
+  "charter_out_pct": 0.052,
+  "enrollment_out_pct": 0.0858
+ },
+ "00630000": {
+  "school_choice_out_pct": 0.0728,
+  "charter_out_pct": 0.0038,
+  "enrollment_out_pct": 0.0766
+ },
+ "00640000": {
+  "school_choice_out_pct": 0.0373,
+  "charter_out_pct": 0.0378,
+  "enrollment_out_pct": 0.0751
+ },
+ "00650000": {
+  "school_choice_out_pct": 0.0022,
+  "charter_out_pct": 0.0029,
+  "enrollment_out_pct": 0.0052
+ },
+ "00670000": {
+  "school_choice_out_pct": 0.0008,
+  "charter_out_pct": 0.0015,
+  "enrollment_out_pct": 0.0023
+ },
+ "00680000": {
+  "school_choice_out_pct": 0.0127,
+  "charter_out_pct": 0.019,
+  "enrollment_out_pct": 0.0316
+ },
+ "00710000": {
+  "school_choice_out_pct": 0.0158,
+  "charter_out_pct": 0.0044,
+  "enrollment_out_pct": 0.0202
+ },
+ "00720000": {
+  "school_choice_out_pct": 0.0136,
+  "charter_out_pct": 0.002,
+  "enrollment_out_pct": 0.0156
+ },
+ "00730000": {
+  "school_choice_out_pct": 0.0037,
+  "charter_out_pct": 0.01,
+  "enrollment_out_pct": 0.0137
+ },
+ "00740000": {
+  "school_choice_out_pct": 0.0615,
+  "charter_out_pct": 0.0192,
+  "enrollment_out_pct": 0.0808
+ },
+ "00770000": {
+  "school_choice_out_pct": 0.0434,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0434
+ },
+ "00790000": {
+  "school_choice_out_pct": 0.0125,
+  "charter_out_pct": 0.0551,
+  "enrollment_out_pct": 0.0676
+ },
+ "00820000": {
+  "school_choice_out_pct": 0.0019,
+  "charter_out_pct": 0.0049,
+  "enrollment_out_pct": 0.0067
+ },
+ "00830000": {
+  "school_choice_out_pct": 0.0148,
+  "charter_out_pct": 0.0053,
+  "enrollment_out_pct": 0.0201
+ },
+ "00850000": {
+  "school_choice_out_pct": 0.0582,
+  "charter_out_pct": 0.0313,
+  "enrollment_out_pct": 0.0895
+ },
+ "00860000": {
+  "school_choice_out_pct": 0.0774,
+  "charter_out_pct": 0.0826,
+  "enrollment_out_pct": 0.1599
+ },
+ "00870000": {
+  "school_choice_out_pct": 0.0129,
+  "charter_out_pct": 0.0095,
+  "enrollment_out_pct": 0.0224
+ },
+ "00880000": {
+  "school_choice_out_pct": 0.0079,
+  "charter_out_pct": 0.0061,
+  "enrollment_out_pct": 0.014
+ },
+ "00890000": {
+  "school_choice_out_pct": 0.0267,
+  "charter_out_pct": 0.0617,
+  "enrollment_out_pct": 0.0883
+ },
+ "00910000": {
+  "school_choice_out_pct": 0.0794,
+  "charter_out_pct": 0.0212,
+  "enrollment_out_pct": 0.1005
+ },
+ "00930000": {
+  "school_choice_out_pct": 0.0045,
+  "charter_out_pct": 0.1036,
+  "enrollment_out_pct": 0.1081
+ },
+ "00940000": {
+  "school_choice_out_pct": 0.0273,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.0284
+ },
+ "00950000": {
+  "school_choice_out_pct": 0.0202,
+  "charter_out_pct": 0.1235,
+  "enrollment_out_pct": 0.1437
+ },
+ "00960000": {
+  "school_choice_out_pct": 0.0179,
+  "charter_out_pct": 0.0382,
+  "enrollment_out_pct": 0.0561
+ },
+ "00970000": {
+  "school_choice_out_pct": 0.061,
+  "charter_out_pct": 0.0335,
+  "enrollment_out_pct": 0.0945
+ },
+ "00980000": {
+  "school_choice_out_pct": 0.058,
+  "charter_out_pct": 0.058,
+  "enrollment_out_pct": 0.1159
+ },
+ "00990000": {
+  "school_choice_out_pct": 0.0113,
+  "charter_out_pct": 0.025,
+  "enrollment_out_pct": 0.0363
+ },
+ "01000000": {
+  "school_choice_out_pct": 0.0099,
+  "charter_out_pct": 0.0305,
+  "enrollment_out_pct": 0.0405
+ },
+ "01010000": {
+  "school_choice_out_pct": 0.0085,
+  "charter_out_pct": 0.064,
+  "enrollment_out_pct": 0.0725
+ },
+ "01030000": {
+  "school_choice_out_pct": 0.0514,
+  "charter_out_pct": 0.006,
+  "enrollment_out_pct": 0.0575
+ },
+ "01050000": {
+  "school_choice_out_pct": 0.064,
+  "charter_out_pct": 0.0025,
+  "enrollment_out_pct": 0.0666
+ },
+ "01070000": {
+  "school_choice_out_pct": 0.0702,
+  "charter_out_pct": 0.0006,
+  "enrollment_out_pct": 0.0708
+ },
+ "01100000": {
+  "school_choice_out_pct": 0.0086,
+  "charter_out_pct": 0.0035,
+  "enrollment_out_pct": 0.0121
+ },
+ "01110000": {
+  "school_choice_out_pct": 0.0668,
+  "charter_out_pct": 0.0379,
+  "enrollment_out_pct": 0.1047
+ },
+ "01140000": {
+  "school_choice_out_pct": 0.1654,
+  "charter_out_pct": 0.0675,
+  "enrollment_out_pct": 0.2328
+ },
+ "01170000": {
+  "school_choice_out_pct": 0.0761,
+  "charter_out_pct": 0.085,
+  "enrollment_out_pct": 0.1611
+ },
+ "01180000": {
+  "school_choice_out_pct": 0.0056,
+  "charter_out_pct": 0.0149,
+  "enrollment_out_pct": 0.0204
+ },
+ "01210000": {
+  "school_choice_out_pct": 0.1013,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.1013
+ },
+ "01220000": {
+  "school_choice_out_pct": 0.0035,
+  "charter_out_pct": 0.0106,
+  "enrollment_out_pct": 0.0141
+ },
+ "01250000": {
+  "school_choice_out_pct": 0.0066,
+  "charter_out_pct": 0.0232,
+  "enrollment_out_pct": 0.0299
+ },
+ "01270000": {
+  "school_choice_out_pct": 0.1828,
+  "charter_out_pct": 0.0586,
+  "enrollment_out_pct": 0.2414
+ },
+ "01280000": {
+  "school_choice_out_pct": 0.0155,
+  "charter_out_pct": 0.0433,
+  "enrollment_out_pct": 0.0588
+ },
+ "01310000": {
+  "school_choice_out_pct": 0.0008,
+  "charter_out_pct": 0.0014,
+  "enrollment_out_pct": 0.0022
+ },
+ "01330000": {
+  "school_choice_out_pct": 0.0131,
+  "charter_out_pct": 0.0373,
+  "enrollment_out_pct": 0.0503
+ },
+ "01350000": {
+  "school_choice_out_pct": 0.0223,
+  "charter_out_pct": 0.0064,
+  "enrollment_out_pct": 0.0287
+ },
+ "01360000": {
+  "school_choice_out_pct": 0.0075,
+  "charter_out_pct": 0.0038,
+  "enrollment_out_pct": 0.0113
+ },
+ "01370000": {
+  "school_choice_out_pct": 0.0792,
+  "charter_out_pct": 0.1141,
+  "enrollment_out_pct": 0.1933
+ },
+ "01380000": {
+  "school_choice_out_pct": 0.0191,
+  "charter_out_pct": 0.0131,
+  "enrollment_out_pct": 0.0322
+ },
+ "01390000": {
+  "school_choice_out_pct": 0.0033,
+  "charter_out_pct": 0.0007,
+  "enrollment_out_pct": 0.004
+ },
+ "01410000": {
+  "school_choice_out_pct": 0.0071,
+  "charter_out_pct": 0.0828,
+  "enrollment_out_pct": 0.0899
+ },
+ "01420000": {
+  "school_choice_out_pct": 0.0112,
+  "charter_out_pct": 0.014,
+  "enrollment_out_pct": 0.0252
+ },
+ "01440000": {
+  "school_choice_out_pct": 0.0151,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0151
+ },
+ "01450000": {
+  "school_choice_out_pct": 0.0052,
+  "charter_out_pct": 0.0331,
+  "enrollment_out_pct": 0.0384
+ },
+ "01490000": {
+  "school_choice_out_pct": 0.006,
+  "charter_out_pct": 0.1259,
+  "enrollment_out_pct": 0.1319
+ },
+ "01500000": {
+  "school_choice_out_pct": 0.167,
+  "charter_out_pct": 0.0038,
+  "enrollment_out_pct": 0.1707
+ },
+ "01510000": {
+  "school_choice_out_pct": 0.0587,
+  "charter_out_pct": 0.0312,
+  "enrollment_out_pct": 0.0899
+ },
+ "01520000": {
+  "school_choice_out_pct": 0.0645,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0645
+ },
+ "01530000": {
+  "school_choice_out_pct": 0.0246,
+  "charter_out_pct": 0.0137,
+  "enrollment_out_pct": 0.0383
+ },
+ "01540000": {
+  "school_choice_out_pct": 0.0249,
+  "charter_out_pct": 0.0448,
+  "enrollment_out_pct": 0.0697
+ },
+ "01550000": {
+  "school_choice_out_pct": 0.0014,
+  "charter_out_pct": 0.0005,
+  "enrollment_out_pct": 0.0019
+ },
+ "01570000": {
+  "school_choice_out_pct": 0.0,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0
+ },
+ "01580000": {
+  "school_choice_out_pct": 0.011,
+  "charter_out_pct": 0.0256,
+  "enrollment_out_pct": 0.0366
+ },
+ "01590000": {
+  "school_choice_out_pct": 0.0019,
+  "charter_out_pct": 0.0038,
+  "enrollment_out_pct": 0.0057
+ },
+ "01600000": {
+  "school_choice_out_pct": 0.0093,
+  "charter_out_pct": 0.1278,
+  "enrollment_out_pct": 0.1371
+ },
+ "01610000": {
+  "school_choice_out_pct": 0.0321,
+  "charter_out_pct": 0.0172,
+  "enrollment_out_pct": 0.0493
+ },
+ "01620000": {
+  "school_choice_out_pct": 0.0335,
+  "charter_out_pct": 0.0127,
+  "enrollment_out_pct": 0.0462
+ },
+ "01630000": {
+  "school_choice_out_pct": 0.0107,
+  "charter_out_pct": 0.1119,
+  "enrollment_out_pct": 0.1225
+ },
+ "01640000": {
+  "school_choice_out_pct": 0.0014,
+  "charter_out_pct": 0.0055,
+  "enrollment_out_pct": 0.0069
+ },
+ "01650000": {
+  "school_choice_out_pct": 0.0053,
+  "charter_out_pct": 0.0921,
+  "enrollment_out_pct": 0.0974
+ },
+ "01670000": {
+  "school_choice_out_pct": 0.0095,
+  "charter_out_pct": 0.0092,
+  "enrollment_out_pct": 0.0188
+ },
+ "01680000": {
+  "school_choice_out_pct": 0.0033,
+  "charter_out_pct": 0.0339,
+  "enrollment_out_pct": 0.0371
+ },
+ "01690000": {
+  "school_choice_out_pct": 0.0205,
+  "charter_out_pct": 0.0059,
+  "enrollment_out_pct": 0.0264
+ },
+ "01700000": {
+  "school_choice_out_pct": 0.0255,
+  "charter_out_pct": 0.098,
+  "enrollment_out_pct": 0.1235
+ },
+ "01710000": {
+  "school_choice_out_pct": 0.0022,
+  "charter_out_pct": 0.0115,
+  "enrollment_out_pct": 0.0137
+ },
+ "01720000": {
+  "school_choice_out_pct": 0.0663,
+  "charter_out_pct": 0.0359,
+  "enrollment_out_pct": 0.1023
+ },
+ "01730000": {
+  "school_choice_out_pct": 0.0057,
+  "charter_out_pct": 0.0029,
+  "enrollment_out_pct": 0.0086
+ },
+ "01740000": {
+  "school_choice_out_pct": 0.0064,
+  "charter_out_pct": 0.0544,
+  "enrollment_out_pct": 0.0608
+ },
+ "01750000": {
+  "school_choice_out_pct": 0.0004,
+  "charter_out_pct": 0.0004,
+  "enrollment_out_pct": 0.0008
+ },
+ "01760000": {
+  "school_choice_out_pct": 0.0038,
+  "charter_out_pct": 0.0832,
+  "enrollment_out_pct": 0.087
+ },
+ "01770000": {
+  "school_choice_out_pct": 0.0139,
+  "charter_out_pct": 0.0148,
+  "enrollment_out_pct": 0.0287
+ },
+ "01780000": {
+  "school_choice_out_pct": 0.0035,
+  "charter_out_pct": 0.0731,
+  "enrollment_out_pct": 0.0766
+ },
+ "01810000": {
+  "school_choice_out_pct": 0.0079,
+  "charter_out_pct": 0.0177,
+  "enrollment_out_pct": 0.0256
+ },
+ "01820000": {
+  "school_choice_out_pct": 0.0243,
+  "charter_out_pct": 0.0243,
+  "enrollment_out_pct": 0.0485
+ },
+ "01840000": {
+  "school_choice_out_pct": 0.0024,
+  "charter_out_pct": 0.0033,
+  "enrollment_out_pct": 0.0057
+ },
+ "01850000": {
+  "school_choice_out_pct": 0.0517,
+  "charter_out_pct": 0.0346,
+  "enrollment_out_pct": 0.0863
+ },
+ "01860000": {
+  "school_choice_out_pct": 0.0267,
+  "charter_out_pct": 0.0058,
+  "enrollment_out_pct": 0.0324
+ },
+ "01870000": {
+  "school_choice_out_pct": 0.0176,
+  "charter_out_pct": 0.0017,
+  "enrollment_out_pct": 0.0192
+ },
+ "01890000": {
+  "school_choice_out_pct": 0.0014,
+  "charter_out_pct": 0.0041,
+  "enrollment_out_pct": 0.0054
+ },
+ "01910000": {
+  "school_choice_out_pct": 0.0439,
+  "charter_out_pct": 0.034,
+  "enrollment_out_pct": 0.0779
+ },
+ "01960000": {
+  "school_choice_out_pct": 0.0035,
+  "charter_out_pct": 0.0382,
+  "enrollment_out_pct": 0.0417
+ },
+ "01970000": {
+  "school_choice_out_pct": 0.0,
+  "charter_out_pct": 0.0012,
+  "enrollment_out_pct": 0.0012
+ },
+ "01980000": {
+  "school_choice_out_pct": 0.0017,
+  "charter_out_pct": 0.0027,
+  "enrollment_out_pct": 0.0044
+ },
+ "01990000": {
+  "school_choice_out_pct": 0.0015,
+  "charter_out_pct": 0.0006,
+  "enrollment_out_pct": 0.0021
+ },
+ "02010000": {
+  "school_choice_out_pct": 0.0169,
+  "charter_out_pct": 0.0972,
+  "enrollment_out_pct": 0.1141
+ },
+ "02040000": {
+  "school_choice_out_pct": 0.0059,
+  "charter_out_pct": 0.0427,
+  "enrollment_out_pct": 0.0486
+ },
+ "02070000": {
+  "school_choice_out_pct": 0.0009,
+  "charter_out_pct": 0.0005,
+  "enrollment_out_pct": 0.0014
+ },
+ "02080000": {
+  "school_choice_out_pct": 0.0045,
+  "charter_out_pct": 0.0106,
+  "enrollment_out_pct": 0.0151
+ },
+ "02090000": {
+  "school_choice_out_pct": 0.1089,
+  "charter_out_pct": 0.0655,
+  "enrollment_out_pct": 0.1744
+ },
+ "02100000": {
+  "school_choice_out_pct": 0.0299,
+  "charter_out_pct": 0.0624,
+  "enrollment_out_pct": 0.0923
+ },
+ "02110000": {
+  "school_choice_out_pct": 0.0039,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.005
+ },
+ "02120000": {
+  "school_choice_out_pct": 0.0072,
+  "charter_out_pct": 0.0095,
+  "enrollment_out_pct": 0.0167
+ },
+ "02130000": {
+  "school_choice_out_pct": 0.0069,
+  "charter_out_pct": 0.002,
+  "enrollment_out_pct": 0.0089
+ },
+ "02140000": {
+  "school_choice_out_pct": 0.0822,
+  "charter_out_pct": 0.0019,
+  "enrollment_out_pct": 0.0841
+ },
+ "02150000": {
+  "school_choice_out_pct": 0.3403,
+  "charter_out_pct": 0.0274,
+  "enrollment_out_pct": 0.3677
+ },
+ "02170000": {
+  "school_choice_out_pct": 0.0038,
+  "charter_out_pct": 0.0013,
+  "enrollment_out_pct": 0.005
+ },
+ "02180000": {
+  "school_choice_out_pct": 0.0196,
+  "charter_out_pct": 0.0174,
+  "enrollment_out_pct": 0.037
+ },
+ "02190000": {
+  "school_choice_out_pct": 0.0005,
+  "charter_out_pct": 0.0018,
+  "enrollment_out_pct": 0.0023
+ },
+ "02200000": {
+  "school_choice_out_pct": 0.004,
+  "charter_out_pct": 0.0154,
+  "enrollment_out_pct": 0.0194
+ },
+ "02210000": {
+  "school_choice_out_pct": 0.036,
+  "charter_out_pct": 0.0479,
+  "enrollment_out_pct": 0.0839
+ },
+ "02230000": {
+  "school_choice_out_pct": 0.0807,
+  "charter_out_pct": 0.0066,
+  "enrollment_out_pct": 0.0872
+ },
+ "02240000": {
+  "school_choice_out_pct": 0.0418,
+  "charter_out_pct": 0.0639,
+  "enrollment_out_pct": 0.1057
+ },
+ "02260000": {
+  "school_choice_out_pct": 0.0469,
+  "charter_out_pct": 0.019,
+  "enrollment_out_pct": 0.0659
+ },
+ "02270000": {
+  "school_choice_out_pct": 0.0811,
+  "charter_out_pct": 0.0196,
+  "enrollment_out_pct": 0.1007
+ },
+ "02290000": {
+  "school_choice_out_pct": 0.016,
+  "charter_out_pct": 0.027,
+  "enrollment_out_pct": 0.043
+ },
+ "02300000": {
+  "school_choice_out_pct": 0.0676,
+  "charter_out_pct": 0.0338,
+  "enrollment_out_pct": 0.1014
+ },
+ "02310000": {
+  "school_choice_out_pct": 0.0074,
+  "charter_out_pct": 0.0181,
+  "enrollment_out_pct": 0.0255
+ },
+ "02340000": {
+  "school_choice_out_pct": 0.2403,
+  "charter_out_pct": 0.0065,
+  "enrollment_out_pct": 0.2468
+ },
+ "02360000": {
+  "school_choice_out_pct": 0.1256,
+  "charter_out_pct": 0.0297,
+  "enrollment_out_pct": 0.1553
+ },
+ "02380000": {
+  "school_choice_out_pct": 0.0232,
+  "charter_out_pct": 0.024,
+  "enrollment_out_pct": 0.0472
+ },
+ "02390000": {
+  "school_choice_out_pct": 0.014,
+  "charter_out_pct": 0.0475,
+  "enrollment_out_pct": 0.0615
+ },
+ "02400000": {
+  "school_choice_out_pct": 0.0066,
+  "charter_out_pct": 0.022,
+  "enrollment_out_pct": 0.0286
+ },
+ "02420000": {
+  "school_choice_out_pct": 0.0412,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0412
+ },
+ "02430000": {
+  "school_choice_out_pct": 0.0027,
+  "charter_out_pct": 0.0068,
+  "enrollment_out_pct": 0.0095
+ },
+ "02440000": {
+  "school_choice_out_pct": 0.0252,
+  "charter_out_pct": 0.0813,
+  "enrollment_out_pct": 0.1066
+ },
+ "02460000": {
+  "school_choice_out_pct": 0.0024,
+  "charter_out_pct": 0.0008,
+  "enrollment_out_pct": 0.0032
+ },
+ "02480000": {
+  "school_choice_out_pct": 0.008,
+  "charter_out_pct": 0.0762,
+  "enrollment_out_pct": 0.0841
+ },
+ "02490000": {
+  "school_choice_out_pct": 0.1111,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.1111
+ },
+ "02500000": {
+  "school_choice_out_pct": 0.0135,
+  "charter_out_pct": 0.0124,
+  "enrollment_out_pct": 0.0259
+ },
+ "02510000": {
+  "school_choice_out_pct": 0.01,
+  "charter_out_pct": 0.0463,
+  "enrollment_out_pct": 0.0563
+ },
+ "02520000": {
+  "school_choice_out_pct": 0.0755,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0755
+ },
+ "02530000": {
+  "school_choice_out_pct": 0.0256,
+  "charter_out_pct": 0.0256,
+  "enrollment_out_pct": 0.0513
+ },
+ "02580000": {
+  "school_choice_out_pct": 0.0237,
+  "charter_out_pct": 0.1072,
+  "enrollment_out_pct": 0.131
+ },
+ "02610000": {
+  "school_choice_out_pct": 0.0327,
+  "charter_out_pct": 0.0675,
+  "enrollment_out_pct": 0.1001
+ },
+ "02620000": {
+  "school_choice_out_pct": 0.0104,
+  "charter_out_pct": 0.0906,
+  "enrollment_out_pct": 0.1009
+ },
+ "02630000": {
+  "school_choice_out_pct": 0.2222,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.2222
+ },
+ "02640000": {
+  "school_choice_out_pct": 0.0022,
+  "charter_out_pct": 0.0026,
+  "enrollment_out_pct": 0.0048
+ },
+ "02650000": {
+  "school_choice_out_pct": 0.0038,
+  "charter_out_pct": 0.0014,
+  "enrollment_out_pct": 0.0052
+ },
+ "02660000": {
+  "school_choice_out_pct": 0.0024,
+  "charter_out_pct": 0.0018,
+  "enrollment_out_pct": 0.0041
+ },
+ "02690000": {
+  "school_choice_out_pct": 0.0022,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.0034
+ },
+ "02710000": {
+  "school_choice_out_pct": 0.0055,
+  "charter_out_pct": 0.0034,
+  "enrollment_out_pct": 0.0089
+ },
+ "02720000": {
+  "school_choice_out_pct": 0.0622,
+  "charter_out_pct": 0.0335,
+  "enrollment_out_pct": 0.0957
+ },
+ "02730000": {
+  "school_choice_out_pct": 0.0088,
+  "charter_out_pct": 0.0088,
+  "enrollment_out_pct": 0.0177
+ },
+ "02740000": {
+  "school_choice_out_pct": 0.0029,
+  "charter_out_pct": 0.05,
+  "enrollment_out_pct": 0.0529
+ },
+ "02750000": {
+  "school_choice_out_pct": 0.027,
+  "charter_out_pct": 0.0245,
+  "enrollment_out_pct": 0.0515
+ },
+ "02760000": {
+  "school_choice_out_pct": 0.0045,
+  "charter_out_pct": 0.0017,
+  "enrollment_out_pct": 0.0062
+ },
+ "02770000": {
+  "school_choice_out_pct": 0.1065,
+  "charter_out_pct": 0.0816,
+  "enrollment_out_pct": 0.1881
+ },
+ "02780000": {
+  "school_choice_out_pct": 0.0729,
+  "charter_out_pct": 0.0723,
+  "enrollment_out_pct": 0.1451
+ },
+ "02810000": {
+  "school_choice_out_pct": 0.0239,
+  "charter_out_pct": 0.1671,
+  "enrollment_out_pct": 0.1911
+ },
+ "02840000": {
+  "school_choice_out_pct": 0.0053,
+  "charter_out_pct": 0.0821,
+  "enrollment_out_pct": 0.0874
+ },
+ "02850000": {
+  "school_choice_out_pct": 0.0079,
+  "charter_out_pct": 0.0253,
+  "enrollment_out_pct": 0.0332
+ },
+ "02880000": {
+  "school_choice_out_pct": 0.0008,
+  "charter_out_pct": 0.0017,
+  "enrollment_out_pct": 0.0025
+ },
+ "02890000": {
+  "school_choice_out_pct": 0.1014,
+  "charter_out_pct": 0.0101,
+  "enrollment_out_pct": 0.1115
+ },
+ "02900000": {
+  "school_choice_out_pct": 0.0261,
+  "charter_out_pct": 0.0015,
+  "enrollment_out_pct": 0.0276
+ },
+ "02910000": {
+  "school_choice_out_pct": 0.0064,
+  "charter_out_pct": 0.0218,
+  "enrollment_out_pct": 0.0282
+ },
+ "02920000": {
+  "school_choice_out_pct": 0.013,
+  "charter_out_pct": 0.007,
+  "enrollment_out_pct": 0.02
+ },
+ "02930000": {
+  "school_choice_out_pct": 0.0308,
+  "charter_out_pct": 0.0189,
+  "enrollment_out_pct": 0.0497
+ },
+ "02950000": {
+  "school_choice_out_pct": 0.006,
+  "charter_out_pct": 0.0095,
+  "enrollment_out_pct": 0.0155
+ },
+ "02960000": {
+  "school_choice_out_pct": 0.1123,
+  "charter_out_pct": 0.0737,
+  "enrollment_out_pct": 0.186
+ },
+ "02980000": {
+  "school_choice_out_pct": 0.0057,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0057
+ },
+ "03000000": {
+  "school_choice_out_pct": 0.3168,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.3168
+ },
+ "03010000": {
+  "school_choice_out_pct": 0.0138,
+  "charter_out_pct": 0.0442,
+  "enrollment_out_pct": 0.058
+ },
+ "03040000": {
+  "school_choice_out_pct": 0.0703,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.0715
+ },
+ "03050000": {
+  "school_choice_out_pct": 0.002,
+  "charter_out_pct": 0.0279,
+  "enrollment_out_pct": 0.0299
+ },
+ "03060000": {
+  "school_choice_out_pct": 0.1,
+  "charter_out_pct": 0.0083,
+  "enrollment_out_pct": 0.1083
+ },
+ "03070000": {
+  "school_choice_out_pct": 0.003,
+  "charter_out_pct": 0.006,
+  "enrollment_out_pct": 0.0089
+ },
+ "03080000": {
+  "school_choice_out_pct": 0.0031,
+  "charter_out_pct": 0.0015,
+  "enrollment_out_pct": 0.0046
+ },
+ "03090000": {
+  "school_choice_out_pct": 0.1326,
+  "charter_out_pct": 0.0015,
+  "enrollment_out_pct": 0.1341
+ },
+ "03100000": {
+  "school_choice_out_pct": 0.088,
+  "charter_out_pct": 0.0621,
+  "enrollment_out_pct": 0.1501
+ },
+ "03140000": {
+  "school_choice_out_pct": 0.0059,
+  "charter_out_pct": 0.0014,
+  "enrollment_out_pct": 0.0073
+ },
+ "03150000": {
+  "school_choice_out_pct": 0.0004,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0004
+ },
+ "03160000": {
+  "school_choice_out_pct": 0.0864,
+  "charter_out_pct": 0.017,
+  "enrollment_out_pct": 0.1034
+ },
+ "03170000": {
+  "school_choice_out_pct": 0.0008,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0008
+ },
+ "03180000": {
+  "school_choice_out_pct": 0.1135,
+  "charter_out_pct": 0.0175,
+  "enrollment_out_pct": 0.131
+ },
+ "03210000": {
+  "school_choice_out_pct": 0.004,
+  "charter_out_pct": 0.0011,
+  "enrollment_out_pct": 0.0051
+ },
+ "03220000": {
+  "school_choice_out_pct": 0.0348,
+  "charter_out_pct": 0.0081,
+  "enrollment_out_pct": 0.0429
+ },
+ "03230000": {
+  "school_choice_out_pct": 0.0121,
+  "charter_out_pct": 0.0057,
+  "enrollment_out_pct": 0.0178
+ },
+ "03250000": {
+  "school_choice_out_pct": 0.0305,
+  "charter_out_pct": 0.0145,
+  "enrollment_out_pct": 0.045
+ },
+ "03260000": {
+  "school_choice_out_pct": 0.0035,
+  "charter_out_pct": 0.0024,
+  "enrollment_out_pct": 0.0059
+ },
+ "03270000": {
+  "school_choice_out_pct": 0.0435,
+  "charter_out_pct": 0.0248,
+  "enrollment_out_pct": 0.0683
+ },
+ "03300000": {
+  "school_choice_out_pct": 0.0005,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0005
+ },
+ "03310000": {
+  "school_choice_out_pct": 0.0391,
+  "charter_out_pct": 0.0089,
+  "enrollment_out_pct": 0.048
+ },
+ "03320000": {
+  "school_choice_out_pct": 0.0167,
+  "charter_out_pct": 0.0281,
+  "enrollment_out_pct": 0.0448
+ },
+ "03350000": {
+  "school_choice_out_pct": 0.0022,
+  "charter_out_pct": 0.0,
+  "enrollment_out_pct": 0.0022
+ },
+ "03360000": {
+  "school_choice_out_pct": 0.0068,
+  "charter_out_pct": 0.0455,
+  "enrollment_out_pct": 0.0522
+ },
+ "03370000": {
+  "school_choice_out_pct": 0.0904,
+  "charter_out_pct": 0.0113,
+  "enrollment_out_pct": 0.1017
+ },
+ "03400000": {
+  "school_choice_out_pct": 0.1179,
+  "charter_out_pct": 0.0306,
+  "enrollment_out_pct": 0.1485
+ },
+ "03420000": {
+  "school_choice_out_pct": 0.0074,
+  "charter_out_pct": 0.0026,
+  "enrollment_out_pct": 0.01
+ },
+ "03430000": {
+  "school_choice_out_pct": 0.0849,
+  "charter_out_pct": 0.0054,
+  "enrollment_out_pct": 0.0902
+ },
+ "03440000": {
+  "school_choice_out_pct": 0.0005,
+  "charter_out_pct": 0.0002,
+  "enrollment_out_pct": 0.0007
+ },
+ "03460000": {
+  "school_choice_out_pct": 0.0024,
+  "charter_out_pct": 0.0194,
+  "enrollment_out_pct": 0.0218
+ },
+ "03470000": {
+  "school_choice_out_pct": 0.0108,
+  "charter_out_pct": 0.01,
+  "enrollment_out_pct": 0.0208
+ },
+ "03480000": {
+  "school_choice_out_pct": 0.0184,
+  "charter_out_pct": 0.079,
+  "enrollment_out_pct": 0.0975
+ },
+ "03490000": {
+  "school_choice_out_pct": 0.1167,
+  "charter_out_pct": 0.025,
+  "enrollment_out_pct": 0.1417
+ },
+ "03500000": {
+  "school_choice_out_pct": 0.0045,
+  "charter_out_pct": 0.0307,
+  "enrollment_out_pct": 0.0352
+ }
+}

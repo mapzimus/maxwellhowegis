@@ -1,0 +1,1383 @@
+{
+ "06200000": {
+  "class_size_ela": 16.8,
+  "class_size_math": 16.8,
+  "class_size_science": 16.8
+ },
+ "00910000": {
+  "class_size_ela": 12.1,
+  "class_size_math": 12.2
+ },
+ "03460000": {
+  "class_size_ela": 19.0,
+  "class_size_math": 19.5,
+  "class_size_science": 22.1
+ },
+ "06320000": {
+  "class_size_ela": 12.7,
+  "class_size_math": 13.4,
+  "class_size_science": 13.4
+ },
+ "00740000": {
+  "class_size_ela": 18.3,
+  "class_size_math": 18.3,
+  "class_size_science": 18.3
+ },
+ "07660000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 14.9,
+  "class_size_science": 16.4
+ },
+ "03180000": {
+  "class_size_ela": 12.3,
+  "class_size_math": 13.3,
+  "class_size_science": 14.8
+ },
+ "01370000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 16.5,
+  "class_size_science": 16.2
+ },
+ "01110000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 13.9,
+  "class_size_science": 16.9
+ },
+ "01720000": {
+  "class_size_ela": 15.5,
+  "class_size_math": 14.7,
+  "class_size_science": 15.1
+ },
+ "03350000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 18.3,
+  "class_size_science": 17.3
+ },
+ "00850000": {
+  "class_size_ela": 14.7,
+  "class_size_math": 15.0,
+  "class_size_science": 15.2
+ },
+ "00960000": {
+  "class_size_ela": 15.2,
+  "class_size_math": 15.9,
+  "class_size_science": 17.7
+ },
+ "06730000": {
+  "class_size_ela": 17.4,
+  "class_size_math": 17.8,
+  "class_size_science": 19.7
+ },
+ "02740000": {
+  "class_size_ela": 13.8,
+  "class_size_math": 13.3,
+  "class_size_science": 13.2
+ },
+ "00300000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 20.4,
+  "class_size_science": 20.8
+ },
+ "02360000": {
+  "class_size_ela": 13.9,
+  "class_size_math": 14.9,
+  "class_size_science": 15.2
+ },
+ "01440000": {
+  "class_size_ela": 14.4,
+  "class_size_math": 16.3,
+  "class_size_science": 15.4
+ },
+ "00160000": {
+  "class_size_ela": 17.4,
+  "class_size_math": 17.9,
+  "class_size_science": 18.5
+ },
+ "07650000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 13.5,
+  "class_size_science": 15.9
+ },
+ "03210000": {
+  "class_size_ela": 13.8,
+  "class_size_math": 17.1,
+  "class_size_science": 18.7
+ },
+ "00730000": {
+  "class_size_ela": 13.8,
+  "class_size_math": 15.8,
+  "class_size_science": 18.2
+ },
+ "00490000": {
+  "class_size_ela": 16.1,
+  "class_size_math": 16.7,
+  "class_size_science": 16.6
+ },
+ "03440000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 19.3,
+  "class_size_science": 19.9
+ },
+ "01680000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 15.8,
+  "class_size_science": 17.1
+ },
+ "01750000": {
+  "class_size_ela": 14.2,
+  "class_size_math": 14.8,
+  "class_size_science": 14.7
+ },
+ "03250000": {
+  "class_size_ela": 14.2,
+  "class_size_math": 15.8,
+  "class_size_science": 17.9
+ },
+ "00980000": {
+  "class_size_ela": 7.8,
+  "class_size_math": 7.8,
+  "class_size_science": 7.7
+ },
+ "02720000": {
+  "class_size_ela": 16.8,
+  "class_size_math": 15.8
+ },
+ "02480000": {
+  "class_size_ela": 15.7,
+  "class_size_math": 16.6,
+  "class_size_science": 18.0
+ },
+ "07750000": {
+  "class_size_ela": 15.7,
+  "class_size_math": 15.7,
+  "class_size_science": 17.7
+ },
+ "01410000": {
+  "class_size_ela": 14.6,
+  "class_size_math": 16.7,
+  "class_size_science": 17.0
+ },
+ "00940000": {
+  "class_size_ela": 15.0,
+  "class_size_math": 15.5,
+  "class_size_science": 15.7
+ },
+ "01840000": {
+  "class_size_ela": 11.0,
+  "class_size_math": 11.1,
+  "class_size_science": 18.4
+ },
+ "02340000": {
+  "class_size_ela": 20.3,
+  "class_size_math": 20.1,
+  "class_size_science": 20.6
+ },
+ "02400000": {
+  "class_size_ela": 15.1,
+  "class_size_math": 15.7,
+  "class_size_science": 18.0
+ },
+ "02900000": {
+  "class_size_ela": 17.8,
+  "class_size_math": 18.2,
+  "class_size_science": 18.9
+ },
+ "02520000": {
+  "class_size_ela": 13.8,
+  "class_size_math": 15.2,
+  "class_size_science": 15.0
+ },
+ "01710000": {
+  "class_size_ela": 16.1,
+  "class_size_math": 16.3,
+  "class_size_science": 17.5
+ },
+ "03430000": {
+  "class_size_ela": 17.4,
+  "class_size_math": 16.0,
+  "class_size_science": 18.6
+ },
+ "06720000": {
+  "class_size_ela": 12.7,
+  "class_size_math": 12.2,
+  "class_size_science": 12.9
+ },
+ "00520000": {
+  "class_size_ela": 12.8,
+  "class_size_math": 16.6,
+  "class_size_science": 15.6
+ },
+ "02390000": {
+  "class_size_ela": 15.3,
+  "class_size_math": 15.4,
+  "class_size_science": 16.2
+ },
+ "00010000": {
+  "class_size_ela": 14.0,
+  "class_size_math": 18.8,
+  "class_size_science": 20.7
+ },
+ "01970000": {
+  "class_size_ela": 14.6,
+  "class_size_math": 18.4,
+  "class_size_science": 18.9
+ },
+ "01870000": {
+  "class_size_ela": 17.6,
+  "class_size_math": 19.0,
+  "class_size_science": 18.6
+ },
+ "01890000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 20.6,
+  "class_size_science": 20.5
+ },
+ "02110000": {
+  "class_size_ela": 16.7,
+  "class_size_math": 19.4,
+  "class_size_science": 19.6
+ },
+ "03300000": {
+  "class_size_ela": 18.3,
+  "class_size_math": 17.0,
+  "class_size_science": 20.2
+ },
+ "03320000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 11.9,
+  "class_size_science": 16.0
+ },
+ "07170000": {
+  "class_size_ela": 9.5,
+  "class_size_math": 9.7,
+  "class_size_science": 11.6
+ },
+ "01360000": {
+  "class_size_ela": 15.2,
+  "class_size_math": 18.2,
+  "class_size_science": 18.9
+ },
+ "07730000": {
+  "class_size_ela": 15.8,
+  "class_size_math": 16.2,
+  "class_size_science": 16.9
+ },
+ "07780000": {
+  "class_size_ela": 16.3,
+  "class_size_math": 16.0,
+  "class_size_science": 17.2
+ },
+ "00070000": {
+  "class_size_ela": 16.5,
+  "class_size_math": 16.6,
+  "class_size_science": 18.3
+ },
+ "02650000": {
+  "class_size_ela": 13.1,
+  "class_size_math": 15.0,
+  "class_size_science": 17.8
+ },
+ "01820000": {
+  "class_size_ela": 17.7,
+  "class_size_math": 16.7,
+  "class_size_science": 17.4
+ },
+ "02460000": {
+  "class_size_ela": 15.8,
+  "class_size_math": 16.4,
+  "class_size_science": 17.3
+ },
+ "00410000": {
+  "class_size_ela": 16.6,
+  "class_size_math": 16.7,
+  "class_size_science": 16.8
+ },
+ "01450000": {
+  "class_size_ela": 20.6,
+  "class_size_math": 20.6,
+  "class_size_science": 20.6
+ },
+ "02750000": {
+  "class_size_ela": 18.8,
+  "class_size_math": 18.8,
+  "class_size_science": 18.8
+ },
+ "00140000": {
+  "class_size_ela": 17.3,
+  "class_size_math": 18.8,
+  "class_size_science": 21.0
+ },
+ "00610000": {
+  "class_size_ela": 14.9,
+  "class_size_math": 16.6,
+  "class_size_science": 15.1
+ },
+ "02010000": {
+  "class_size_ela": 16.2,
+  "class_size_math": 16.8,
+  "class_size_science": 17.8
+ },
+ "01690000": {
+  "class_size_ela": 17.4,
+  "class_size_math": 17.4,
+  "class_size_science": 17.4
+ },
+ "02890000": {
+  "class_size_ela": 12.7,
+  "class_size_math": 12.8,
+  "class_size_science": 12.8
+ },
+ "00680000": {
+  "class_size_ela": 19.5,
+  "class_size_math": 19.6,
+  "class_size_science": 19.6
+ },
+ "06220000": {
+  "class_size_ela": 16.3,
+  "class_size_math": 16.8,
+  "class_size_science": 18.8
+ },
+ "06650000": {
+  "class_size_ela": 16.8,
+  "class_size_math": 17.8,
+  "class_size_science": 17.7
+ },
+ "01070000": {
+  "class_size_ela": 14.1,
+  "class_size_math": 16.2,
+  "class_size_science": 16.8
+ },
+ "02040000": {
+  "class_size_ela": 13.5,
+  "class_size_math": 15.8,
+  "class_size_science": 16.8
+ },
+ "00510000": {
+  "class_size_ela": 17.3,
+  "class_size_math": 17.1,
+  "class_size_science": 17.3
+ },
+ "00380000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 13.4,
+  "class_size_science": 18.9
+ },
+ "06750000": {
+  "class_size_ela": 16.0,
+  "class_size_math": 16.2,
+  "class_size_science": 17.0
+ },
+ "01740000": {
+  "class_size_ela": 15.0,
+  "class_size_math": 17.5,
+  "class_size_science": 18.1
+ },
+ "06450000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 17.7,
+  "class_size_science": 16.6
+ },
+ "00450000": {
+  "class_size_ela": 19.2,
+  "class_size_math": 19.3,
+  "class_size_science": 19.2
+ },
+ "06350000": {
+  "class_size_ela": 16.3,
+  "class_size_math": 16.4,
+  "class_size_science": 17.5
+ },
+ "07800000": {
+  "class_size_ela": 19.2,
+  "class_size_math": 19.6,
+  "class_size_science": 20.1
+ },
+ "02580000": {
+  "class_size_ela": 15.2,
+  "class_size_math": 19.2,
+  "class_size_science": 19.4
+ },
+ "01570000": {
+  "class_size_ela": 13.4,
+  "class_size_math": 12.3,
+  "class_size_science": 16.2
+ },
+ "02730000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 16.2,
+  "class_size_science": 20.7
+ },
+ "02500000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 18.1,
+  "class_size_science": 18.1
+ },
+ "00790000": {
+  "class_size_ela": 18.2,
+  "class_size_math": 18.3,
+  "class_size_science": 20.6
+ },
+ "01310000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 18.0,
+  "class_size_science": 18.1
+ },
+ "01760000": {
+  "class_size_ela": 14.3,
+  "class_size_math": 15.0,
+  "class_size_science": 16.2
+ },
+ "03010000": {
+  "class_size_ela": 19.0,
+  "class_size_math": 18.7,
+  "class_size_science": 18.5
+ },
+ "03090000": {
+  "class_size_ela": 16.7,
+  "class_size_math": 16.9,
+  "class_size_science": 15.4
+ },
+ "03490000": {
+  "class_size_ela": 8.7,
+  "class_size_math": 8.7,
+  "class_size_science": 8.7
+ },
+ "00230000": {
+  "class_size_ela": 16.5,
+  "class_size_math": 17.7,
+  "class_size_science": 18.1
+ },
+ "01030000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 16.5,
+  "class_size_science": 19.1
+ },
+ "01330000": {
+  "class_size_ela": 18.7,
+  "class_size_math": 18.7,
+  "class_size_science": 19.5
+ },
+ "03040000": {
+  "class_size_ela": 13.3,
+  "class_size_math": 16.6,
+  "class_size_science": 16.2
+ },
+ "02230000": {
+  "class_size_ela": 20.6,
+  "class_size_math": 20.6,
+  "class_size_science": 20.6
+ },
+ "03310000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 16.4,
+  "class_size_science": 18.2
+ },
+ "01100000": {
+  "class_size_ela": 18.5,
+  "class_size_math": 18.5,
+  "class_size_science": 20.6
+ },
+ "06150000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.0,
+  "class_size_science": 16.5
+ },
+ "06580000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 18.3,
+  "class_size_science": 20.0
+ },
+ "01540000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.0
+ },
+ "02440000": {
+  "class_size_ela": 17.6,
+  "class_size_math": 19.2,
+  "class_size_science": 19.3
+ },
+ "02770000": {
+  "class_size_ela": 12.7,
+  "class_size_math": 15.1,
+  "class_size_science": 16.6
+ },
+ "02840000": {
+  "class_size_ela": 14.5,
+  "class_size_math": 17.0,
+  "class_size_science": 16.5
+ },
+ "00650000": {
+  "class_size_ela": 16.0,
+  "class_size_math": 16.4,
+  "class_size_science": 17.1
+ },
+ "01500000": {
+  "class_size_ela": 21.0,
+  "class_size_math": 26.8,
+  "class_size_science": 13.6
+ },
+ "01420000": {
+  "class_size_ela": 10.4,
+  "class_size_math": 13.1,
+  "class_size_science": 13.1
+ },
+ "01780000": {
+  "class_size_ela": 19.6,
+  "class_size_math": 19.5,
+  "class_size_science": 21.3
+ },
+ "00970000": {
+  "class_size_ela": 16.1,
+  "class_size_math": 18.0,
+  "class_size_science": 19.6
+ },
+ "07280000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.0,
+  "class_size_science": 17.0
+ },
+ "00350000": {
+  "class_size_ela": 14.5,
+  "class_size_math": 16.1,
+  "class_size_science": 16.6
+ },
+ "07150000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 15.9,
+  "class_size_science": 15.0
+ },
+ "01700000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 17.2,
+  "class_size_science": 19.1
+ },
+ "03160000": {
+  "class_size_ela": 14.9,
+  "class_size_math": 17.3,
+  "class_size_science": 21.7
+ },
+ "00360000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 15.2,
+  "class_size_science": 16.2
+ },
+ "00240000": {
+  "class_size_ela": 15.3,
+  "class_size_math": 16.5,
+  "class_size_science": 18.4
+ },
+ "00480000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 16.0,
+  "class_size_science": 16.7
+ },
+ "02170000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 16.0,
+  "class_size_science": 17.1
+ },
+ "03260000": {
+  "class_size_ela": 19.7,
+  "class_size_math": 20.0,
+  "class_size_science": 21.1
+ },
+ "03480000": {
+  "class_size_ela": 11.1,
+  "class_size_math": 16.6,
+  "class_size_science": 17.1
+ },
+ "00250000": {
+  "class_size_ela": 15.7,
+  "class_size_math": 17.4,
+  "class_size_science": 16.2
+ },
+ "00710000": {
+  "class_size_ela": 14.0,
+  "class_size_math": 15.2,
+  "class_size_science": 16.0
+ },
+ "01850000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 17.4,
+  "class_size_science": 16.9
+ },
+ "03140000": {
+  "class_size_ela": 14.7,
+  "class_size_math": 17.7,
+  "class_size_science": 18.4
+ },
+ "02130000": {
+  "class_size_ela": 14.4,
+  "class_size_math": 16.6,
+  "class_size_science": 19.6
+ },
+ "06500000": {
+  "class_size_ela": 18.8,
+  "class_size_math": 19.5,
+  "class_size_science": 20.0
+ },
+ "03150000": {
+  "class_size_ela": 16.1,
+  "class_size_math": 17.4,
+  "class_size_science": 18.1
+ },
+ "00770000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 16.6,
+  "class_size_science": 18.3
+ },
+ "01000000": {
+  "class_size_ela": 11.7,
+  "class_size_math": 13.2,
+  "class_size_science": 13.6
+ },
+ "02100000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 14.6,
+  "class_size_science": 21.7
+ },
+ "02850000": {
+  "class_size_ela": 14.5,
+  "class_size_math": 15.3,
+  "class_size_science": 16.1
+ },
+ "06250000": {
+  "class_size_ela": 19.0,
+  "class_size_math": 20.0,
+  "class_size_science": 21.7
+ },
+ "06620000": {
+  "class_size_ela": 15.7,
+  "class_size_math": 15.7,
+  "class_size_science": 17.3
+ },
+ "00200000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 15.5,
+  "class_size_science": 16.3
+ },
+ "01140000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 13.6,
+  "class_size_science": 14.0
+ },
+ "02980000": {
+  "class_size_ela": 20.5,
+  "class_size_math": 16.8,
+  "class_size_science": 21.1
+ },
+ "00430000": {
+  "class_size_ela": 17.2,
+  "class_size_math": 17.2,
+  "class_size_science": 17.2
+ },
+ "01390000": {
+  "class_size_ela": 17.1,
+  "class_size_math": 20.3,
+  "class_size_science": 21.3
+ },
+ "07740000": {
+  "class_size_ela": 14.6,
+  "class_size_math": 11.4,
+  "class_size_science": 16.1
+ },
+ "07500000": {
+  "class_size_ela": 13.1,
+  "class_size_math": 13.6,
+  "class_size_science": 15.0
+ },
+ "01730000": {
+  "class_size_ela": 17.4,
+  "class_size_math": 17.4,
+  "class_size_science": 17.4
+ },
+ "02270000": {
+  "class_size_ela": 14.5,
+  "class_size_math": 15.9,
+  "class_size_science": 15.2
+ },
+ "01270000": {
+  "class_size_ela": 12.0,
+  "class_size_math": 11.3,
+  "class_size_science": 12.5
+ },
+ "02930000": {
+  "class_size_ela": 17.7,
+  "class_size_math": 17.5,
+  "class_size_science": 17.9
+ },
+ "02090000": {
+  "class_size_ela": 16.2,
+  "class_size_math": 16.0,
+  "class_size_science": 16.9
+ },
+ "02530000": {
+  "class_size_ela": 7.4,
+  "class_size_math": 7.9,
+  "class_size_science": 7.9
+ },
+ "02290000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 16.3,
+  "class_size_science": 16.9
+ },
+ "00830000": {
+  "class_size_ela": 16.0,
+  "class_size_math": 16.8,
+  "class_size_science": 18.0
+ },
+ "02950000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 18.1,
+  "class_size_science": 19.6
+ },
+ "00560000": {
+  "class_size_ela": 15.8,
+  "class_size_math": 19.5,
+  "class_size_science": 20.9
+ },
+ "00630000": {
+  "class_size_ela": 18.4,
+  "class_size_math": 18.7,
+  "class_size_science": 18.4
+ },
+ "02640000": {
+  "class_size_ela": 16.3,
+  "class_size_math": 18.2,
+  "class_size_science": 18.4
+ },
+ "00080000": {
+  "class_size_ela": 17.9,
+  "class_size_math": 17.8,
+  "class_size_science": 17.9
+ },
+ "02200000": {
+  "class_size_ela": 15.7,
+  "class_size_math": 16.1,
+  "class_size_science": 17.3
+ },
+ "03220000": {
+  "class_size_ela": 17.7,
+  "class_size_math": 16.2,
+  "class_size_science": 19.6
+ },
+ "00950000": {
+  "class_size_ela": 18.4,
+  "class_size_math": 18.8,
+  "class_size_science": 19.4
+ },
+ "02880000": {
+  "class_size_ela": 19.1,
+  "class_size_math": 19.5,
+  "class_size_science": 20.8
+ },
+ "01620000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 18.4,
+  "class_size_science": 19.5
+ },
+ "02210000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 15.4,
+  "class_size_science": 15.9
+ },
+ "00440000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 19.3,
+  "class_size_science": 20.0
+ },
+ "00030000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 18.0,
+  "class_size_science": 19.5
+ },
+ "00050000": {
+  "class_size_ela": 17.9,
+  "class_size_math": 16.7,
+  "class_size_science": 17.9
+ },
+ "01650000": {
+  "class_size_ela": 17.9,
+  "class_size_math": 17.3,
+  "class_size_science": 19.0
+ },
+ "03360000": {
+  "class_size_ela": 16.5,
+  "class_size_math": 16.7,
+  "class_size_science": 18.4
+ },
+ "02510000": {
+  "class_size_ela": 15.8,
+  "class_size_math": 17.7,
+  "class_size_science": 18.9
+ },
+ "02610000": {
+  "class_size_ela": 16.8,
+  "class_size_math": 17.7,
+  "class_size_science": 19.2
+ },
+ "00670000": {
+  "class_size_ela": 17.3,
+  "class_size_math": 17.5,
+  "class_size_science": 18.2
+ },
+ "01520000": {
+  "class_size_ela": 10.6,
+  "class_size_math": 13.2,
+  "class_size_science": 15.6
+ },
+ "01530000": {
+  "class_size_ela": 18.0,
+  "class_size_math": 19.2,
+  "class_size_science": 19.2
+ },
+ "00100000": {
+  "class_size_ela": 17.2,
+  "class_size_math": 18.6,
+  "class_size_science": 19.0
+ },
+ "06030000": {
+  "class_size_ela": 16.0,
+  "class_size_math": 16.6,
+  "class_size_science": 17.2
+ },
+ "02120000": {
+  "class_size_ela": 12.6,
+  "class_size_math": 14.6,
+  "class_size_science": 14.1
+ },
+ "02260000": {
+  "class_size_ela": 17.6,
+  "class_size_math": 17.5,
+  "class_size_science": 17.4
+ },
+ "03420000": {
+  "class_size_ela": 15.2,
+  "class_size_math": 15.3,
+  "class_size_science": 17.2
+ },
+ "00930000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.6,
+  "class_size_science": 18.2
+ },
+ "01220000": {
+  "class_size_ela": 18.6,
+  "class_size_math": 20.9,
+  "class_size_science": 21.7
+ },
+ "02780000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 17.0,
+  "class_size_science": 18.2
+ },
+ "00860000": {
+  "class_size_ela": 14.4,
+  "class_size_math": 15.3,
+  "class_size_science": 18.6
+ },
+ "00310000": {
+  "class_size_ela": 19.2,
+  "class_size_math": 20.0,
+  "class_size_science": 19.8
+ },
+ "01640000": {
+  "class_size_ela": 16.6,
+  "class_size_math": 19.3,
+  "class_size_science": 19.0
+ },
+ "02960000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 10.8,
+  "class_size_science": 14.9
+ },
+ "01770000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 19.0,
+  "class_size_science": 18.6
+ },
+ "03100000": {
+  "class_size_ela": 12.7,
+  "class_size_math": 12.6,
+  "class_size_science": 14.2
+ },
+ "02760000": {
+  "class_size_ela": 13.2,
+  "class_size_math": 14.2,
+  "class_size_science": 17.4
+ },
+ "03070000": {
+  "class_size_ela": 15.2,
+  "class_size_math": 16.7,
+  "class_size_science": 16.1
+ },
+ "03170000": {
+  "class_size_ela": 16.1,
+  "class_size_math": 15.9,
+  "class_size_science": 18.6
+ },
+ "00460000": {
+  "class_size_ela": 15.1,
+  "class_size_math": 17.7,
+  "class_size_science": 17.8
+ },
+ "02810000": {
+  "class_size_ela": 14.7,
+  "class_size_math": 14.2,
+  "class_size_science": 15.1
+ },
+ "03270000": {
+  "class_size_ela": 11.7,
+  "class_size_math": 11.7,
+  "class_size_science": 11.7
+ },
+ "02920000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 14.6,
+  "class_size_science": 13.9
+ },
+ "02300000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.0,
+  "class_size_science": 17.0
+ },
+ "01990000": {
+  "class_size_ela": 17.7,
+  "class_size_math": 18.7,
+  "class_size_science": 18.9
+ },
+ "01610000": {
+  "class_size_ela": 13.2,
+  "class_size_math": 13.5,
+  "class_size_science": 15.9
+ },
+ "02070000": {
+  "class_size_ela": 14.1,
+  "class_size_math": 16.6,
+  "class_size_science": 18.0
+ },
+ "02490000": {
+  "class_size_ela": 14.5,
+  "class_size_math": 7.8,
+  "class_size_science": 14.3
+ },
+ "07350000": {
+  "class_size_ela": 18.0,
+  "class_size_math": 19.2,
+  "class_size_science": 20.0
+ },
+ "00260000": {
+  "class_size_ela": 20.2,
+  "class_size_math": 21.8,
+  "class_size_science": 22.9
+ },
+ "02620000": {
+  "class_size_ela": 19.1,
+  "class_size_math": 19.6,
+  "class_size_science": 20.2
+ },
+ "03060000": {
+  "class_size_ela": 12.3,
+  "class_size_math": 12.3,
+  "class_size_science": 12.3
+ },
+ "06740000": {
+  "class_size_ela": 12.7,
+  "class_size_math": 12.5,
+  "class_size_science": 15.4
+ },
+ "03230000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 19.8,
+  "class_size_science": 19.4
+ },
+ "00720000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 17.3,
+  "class_size_science": 19.3
+ },
+ "01210000": {
+  "class_size_ela": 6.5,
+  "class_size_math": 6.1,
+  "class_size_science": 5.8
+ },
+ "06100000": {
+  "class_size_ela": 18.5,
+  "class_size_math": 19.3,
+  "class_size_science": 19.9
+ },
+ "01280000": {
+  "class_size_ela": 16.2,
+  "class_size_math": 17.6,
+  "class_size_science": 18.1
+ },
+ "07700000": {
+  "class_size_ela": 8.5,
+  "class_size_math": 14.8,
+  "class_size_science": 14.0
+ },
+ "06980000": {
+  "class_size_ela": 14.3,
+  "class_size_math": 16.9,
+  "class_size_science": 18.0
+ },
+ "00640000": {
+  "class_size_ela": 21.1,
+  "class_size_math": 16.4,
+  "class_size_science": 24.7
+ },
+ "01170000": {
+  "class_size_ela": 16.9,
+  "class_size_math": 18.0,
+  "class_size_science": 17.4
+ },
+ "02240000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 13.6,
+  "class_size_science": 13.4
+ },
+ "01180000": {
+  "class_size_ela": 16.6,
+  "class_size_math": 16.2,
+  "class_size_science": 17.7
+ },
+ "02630000": {
+  "class_size_ela": 5.3,
+  "class_size_math": 5.3,
+  "class_size_science": 5.3
+ },
+ "03080000": {
+  "class_size_ela": 13.9,
+  "class_size_math": 14.8,
+  "class_size_science": 16.7
+ },
+ "07530000": {
+  "class_size_ela": 16.7,
+  "class_size_math": 17.4,
+  "class_size_science": 18.6
+ },
+ "01910000": {
+  "class_size_ela": 15.2,
+  "class_size_math": 14.6,
+  "class_size_science": 16.1
+ },
+ "07120000": {
+  "class_size_ela": 17.8,
+  "class_size_math": 17.5,
+  "class_size_science": 17.6
+ },
+ "01250000": {
+  "class_size_ela": 15.5,
+  "class_size_math": 18.1,
+  "class_size_science": 16.0
+ },
+ "06800000": {
+  "class_size_ela": 17.8,
+  "class_size_math": 17.3,
+  "class_size_science": 21.0
+ },
+ "00990000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 17.4,
+  "class_size_science": 18.0
+ },
+ "00170000": {
+  "class_size_ela": 18.0,
+  "class_size_math": 18.1,
+  "class_size_science": 18.2
+ },
+ "03400000": {
+  "class_size_ela": 15.0,
+  "class_size_math": 14.8,
+  "class_size_science": 15.0
+ },
+ "01980000": {
+  "class_size_ela": 17.2,
+  "class_size_math": 19.3,
+  "class_size_science": 19.4
+ },
+ "06000000": {
+  "class_size_ela": 19.9,
+  "class_size_math": 20.5,
+  "class_size_science": 21.0
+ },
+ "01670000": {
+  "class_size_ela": 13.7,
+  "class_size_math": 15.2,
+  "class_size_science": 15.8
+ },
+ "01380000": {
+  "class_size_ela": 15.3,
+  "class_size_math": 15.3,
+  "class_size_science": 17.6
+ },
+ "03470000": {
+  "class_size_ela": 14.9,
+  "class_size_math": 15.3,
+  "class_size_science": 16.7
+ },
+ "01590000": {
+  "class_size_ela": 18.0,
+  "class_size_math": 17.9,
+  "class_size_science": 18.9
+ },
+ "01580000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 17.3,
+  "class_size_science": 20.0
+ },
+ "07250000": {
+  "class_size_ela": 14.9,
+  "class_size_math": 17.8,
+  "class_size_science": 15.5
+ },
+ "00820000": {
+  "class_size_ela": 17.1,
+  "class_size_math": 18.9,
+  "class_size_science": 18.0
+ },
+ "00500000": {
+  "class_size_ela": 17.3,
+  "class_size_math": 18.7,
+  "class_size_science": 18.1
+ },
+ "02190000": {
+  "class_size_ela": 14.5,
+  "class_size_math": 17.0,
+  "class_size_science": 17.7
+ },
+ "02660000": {
+  "class_size_ela": 17.2,
+  "class_size_math": 19.0,
+  "class_size_science": 18.9
+ },
+ "00400000": {
+  "class_size_ela": 16.7,
+  "class_size_math": 17.7,
+  "class_size_science": 18.6
+ },
+ "07670000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 17.7,
+  "class_size_science": 18.8
+ },
+ "02710000": {
+  "class_size_ela": 18.7,
+  "class_size_math": 17.7,
+  "class_size_science": 19.7
+ },
+ "02430000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 17.2,
+  "class_size_science": 17.7
+ },
+ "03050000": {
+  "class_size_ela": 17.9,
+  "class_size_math": 17.5,
+  "class_size_science": 19.8
+ },
+ "00570000": {
+  "class_size_ela": 19.2,
+  "class_size_math": 20.3,
+  "class_size_science": 20.5
+ },
+ "00880000": {
+  "class_size_ela": 16.8,
+  "class_size_math": 19.0,
+  "class_size_science": 19.3
+ },
+ "01490000": {
+  "class_size_ela": 16.7,
+  "class_size_math": 18.0,
+  "class_size_science": 19.3
+ },
+ "06180000": {
+  "class_size_ela": 13.0,
+  "class_size_math": 15.0,
+  "class_size_science": 15.2
+ },
+ "01810000": {
+  "class_size_ela": 15.0,
+  "class_size_math": 17.5,
+  "class_size_science": 18.5
+ },
+ "06850000": {
+  "class_size_ela": 9.0,
+  "class_size_math": 9.0
+ },
+ "01350000": {
+  "class_size_ela": 15.4,
+  "class_size_math": 15.6,
+  "class_size_science": 15.4
+ },
+ "01600000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 16.8,
+  "class_size_science": 18.4
+ },
+ "01960000": {
+  "class_size_ela": 16.0,
+  "class_size_math": 16.0,
+  "class_size_science": 16.0
+ },
+ "01010000": {
+  "class_size_ela": 17.1,
+  "class_size_math": 17.6,
+  "class_size_science": 18.4
+ },
+ "07200000": {
+  "class_size_ela": 19.1,
+  "class_size_math": 17.9,
+  "class_size_science": 19.6
+ },
+ "03370000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 16.4,
+  "class_size_science": 16.4
+ },
+ "01510000": {
+  "class_size_ela": 14.9,
+  "class_size_math": 15.8,
+  "class_size_science": 16.4
+ },
+ "03500000": {
+  "class_size_ela": 17.1,
+  "class_size_math": 16.9,
+  "class_size_science": 18.4
+ },
+ "06550000": {
+  "class_size_ela": 12.5,
+  "class_size_math": 13.5,
+  "class_size_science": 14.2
+ },
+ "02140000": {
+  "class_size_ela": 14.3,
+  "class_size_math": 14.0,
+  "class_size_science": 18.9
+ },
+ "00270000": {
+  "class_size_ela": 16.2,
+  "class_size_math": 19.6,
+  "class_size_science": 19.5
+ },
+ "07100000": {
+  "class_size_ela": 15.9,
+  "class_size_math": 17.4,
+  "class_size_science": 17.3
+ },
+ "00870000": {
+  "class_size_ela": 18.1,
+  "class_size_math": 17.1,
+  "class_size_science": 20.3
+ },
+ "01860000": {
+  "class_size_ela": 17.2,
+  "class_size_math": 17.3,
+  "class_size_science": 17.6
+ },
+ "02910000": {
+  "class_size_ela": 17.2,
+  "class_size_math": 15.5,
+  "class_size_science": 19.3
+ },
+ "00090000": {
+  "class_size_ela": 18.3,
+  "class_size_math": 19.7,
+  "class_size_science": 20.4
+ },
+ "00890000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.6,
+  "class_size_science": 19.1
+ },
+ "01630000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 19.2,
+  "class_size_science": 20.0
+ },
+ "01550000": {
+  "class_size_ela": 18.7,
+  "class_size_math": 18.3,
+  "class_size_science": 20.6
+ },
+ "02180000": {
+  "class_size_ela": 18.8,
+  "class_size_math": 18.5,
+  "class_size_science": 19.6
+ },
+ "02420000": {
+  "class_size_ela": 12.6,
+  "class_size_math": 12.6,
+  "class_size_science": 12.6
+ },
+ "02080000": {
+  "class_size_ela": 47.3,
+  "class_size_math": 47.3,
+  "class_size_science": 47.3
+ },
+ "02310000": {
+  "class_size_ela": 16.4,
+  "class_size_math": 17.7,
+  "class_size_science": 18.6
+ },
+ "07450000": {
+  "class_size_ela": 15.6,
+  "class_size_math": 16.4,
+  "class_size_science": 17.7
+ },
+ "01050000": {
+  "class_size_ela": 17.0,
+  "class_size_math": 17.4,
+  "class_size_science": 17.1
+ },
+ "06160000": {
+  "class_size_ela": 19.8,
+  "class_size_math": 18.9,
+  "class_size_science": 19.5
+ },
+ "00180000": {
+  "class_size_ela": 14.1,
+  "class_size_math": 14.6,
+  "class_size_science": 18.0
+ },
+ "02690000": {
+  "class_size_ela": 18.7,
+  "class_size_math": 18.7,
+  "class_size_science": 18.7
+ },
+ "06400000": {
+  "class_size_ela": 11.7,
+  "class_size_math": 18.0,
+  "class_size_science": 18.5
+ },
+ "06600000": {
+  "class_size_ela": 12.0,
+  "class_size_math": 14.6,
+  "class_size_science": 17.0
+ },
+ "06900000": {
+  "class_size_ela": 17.7,
+  "class_size_math": 17.7,
+  "class_size_science": 19.4
+ },
+ "06950000": {
+  "class_size_ela": 20.8,
+  "class_size_math": 19.3,
+  "class_size_science": 20.3
+ },
+ "07050000": {
+  "class_size_ela": 13.0,
+  "class_size_math": 14.9,
+  "class_size_science": 17.9
+ },
+ "07300000": {
+  "class_size_ela": 14.3,
+  "class_size_math": 15.9,
+  "class_size_science": 17.8
+ },
+ "07630000": {
+  "class_size_ela": 16.9,
+  "class_size_math": 14.9,
+  "class_size_science": 15.8
+ }
+}

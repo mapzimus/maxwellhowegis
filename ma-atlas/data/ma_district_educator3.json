@@ -1,0 +1,1401 @@
+{
+ "00010000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 137,
+  "para_per_100_students": 2.09
+ },
+ "00030000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 103,
+  "para_per_100_students": 1.84
+ },
+ "00050000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 118,
+  "para_per_100_students": 3.9
+ },
+ "00070000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 122,
+  "para_per_100_students": 4.17
+ },
+ "00080000": {
+  "staff_asian_pct": 0.046,
+  "students_per_admin": 71,
+  "para_per_100_students": 10.72
+ },
+ "00090000": {
+  "staff_asian_pct": 0.049,
+  "students_per_admin": 106,
+  "para_per_100_students": 4.55
+ },
+ "00100000": {
+  "staff_asian_pct": 0.049,
+  "students_per_admin": 75,
+  "para_per_100_students": 2.64
+ },
+ "00140000": {
+  "staff_asian_pct": 0.025,
+  "students_per_admin": 113,
+  "para_per_100_students": 1.5
+ },
+ "00160000": {
+  "staff_asian_pct": 0.019,
+  "students_per_admin": 117,
+  "para_per_100_students": 2.99
+ },
+ "00170000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 129,
+  "para_per_100_students": 4.28
+ },
+ "00180000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 78,
+  "para_per_100_students": 1.53
+ },
+ "00200000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 96,
+  "para_per_100_students": 4.62
+ },
+ "00230000": {
+  "staff_asian_pct": 0.043,
+  "students_per_admin": 68,
+  "para_per_100_students": 4.45
+ },
+ "00240000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 133,
+  "para_per_100_students": 2.89
+ },
+ "00250000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 98,
+  "para_per_100_students": 3.33
+ },
+ "00260000": {
+  "staff_asian_pct": 0.047,
+  "students_per_admin": 128,
+  "para_per_100_students": 2.33
+ },
+ "00270000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 106,
+  "para_per_100_students": 3.31
+ },
+ "00300000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 150,
+  "para_per_100_students": 3.0
+ },
+ "00310000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 152,
+  "para_per_100_students": 3.91
+ },
+ "00350000": {
+  "staff_asian_pct": 0.057,
+  "students_per_admin": 31,
+  "para_per_100_students": 3.94
+ },
+ "00360000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 87,
+  "para_per_100_students": 2.99
+ },
+ "00380000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 92,
+  "para_per_100_students": 2.97
+ },
+ "00400000": {
+  "staff_asian_pct": 0.023,
+  "students_per_admin": 124,
+  "para_per_100_students": 2.62
+ },
+ "00410000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 91,
+  "para_per_100_students": 10.14
+ },
+ "00430000": {
+  "staff_asian_pct": 0.021,
+  "students_per_admin": 174,
+  "para_per_100_students": 4.9
+ },
+ "00440000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 112,
+  "para_per_100_students": 3.48
+ },
+ "00450000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 192,
+  "para_per_100_students": 4.86
+ },
+ "00460000": {
+  "staff_asian_pct": 0.06,
+  "students_per_admin": 77,
+  "para_per_100_students": 4.51
+ },
+ "00480000": {
+  "staff_asian_pct": 0.035,
+  "students_per_admin": 76,
+  "para_per_100_students": 2.56
+ },
+ "00490000": {
+  "staff_asian_pct": 0.066,
+  "students_per_admin": 76,
+  "para_per_100_students": 3.97
+ },
+ "00500000": {
+  "staff_asian_pct": 0.019,
+  "students_per_admin": 86,
+  "para_per_100_students": 3.89
+ },
+ "00510000": {
+  "staff_asian_pct": 0.046,
+  "students_per_admin": 152,
+  "para_per_100_students": 4.43
+ },
+ "00520000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 115,
+  "para_per_100_students": 3.24
+ },
+ "00560000": {
+  "staff_asian_pct": 0.072,
+  "students_per_admin": 126,
+  "para_per_100_students": 4.46
+ },
+ "00570000": {
+  "staff_asian_pct": 0.038,
+  "students_per_admin": 89,
+  "para_per_100_students": 2.84
+ },
+ "00610000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 95,
+  "para_per_100_students": 4.7
+ },
+ "00630000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 49,
+  "para_per_100_students": 0.47
+ },
+ "00640000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 135,
+  "para_per_100_students": 3.69
+ },
+ "00650000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 97,
+  "para_per_100_students": 2.19
+ },
+ "00670000": {
+  "staff_asian_pct": 0.039,
+  "students_per_admin": 79,
+  "para_per_100_students": 5.83
+ },
+ "00680000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 70,
+  "para_per_100_students": 10.27
+ },
+ "00710000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 114,
+  "para_per_100_students": 4.24
+ },
+ "00720000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 128,
+  "para_per_100_students": 2.81
+ },
+ "00730000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 72,
+  "para_per_100_students": 3.75
+ },
+ "00740000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 57,
+  "para_per_100_students": 9.22
+ },
+ "00770000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 84,
+  "para_per_100_students": 3.85
+ },
+ "00790000": {
+  "staff_asian_pct": 0.023,
+  "students_per_admin": 146,
+  "para_per_100_students": 2.36
+ },
+ "00820000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 103,
+  "para_per_100_students": 2.4
+ },
+ "00830000": {
+  "staff_asian_pct": 0.003,
+  "students_per_admin": 134,
+  "para_per_100_students": 3.23
+ },
+ "00850000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 94,
+  "para_per_100_students": 4.72
+ },
+ "00860000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 111,
+  "para_per_100_students": 4.16
+ },
+ "00870000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 123,
+  "para_per_100_students": 4.35
+ },
+ "00880000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 113,
+  "para_per_100_students": 2.66
+ },
+ "00890000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 79,
+  "para_per_100_students": 9.97
+ },
+ "00910000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 42,
+  "para_per_100_students": 16.04
+ },
+ "00930000": {
+  "staff_asian_pct": 0.027,
+  "students_per_admin": 99,
+  "para_per_100_students": 1.56
+ },
+ "00940000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 104,
+  "para_per_100_students": 2.5
+ },
+ "00950000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 65,
+  "para_per_100_students": 4.59
+ },
+ "00960000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 73,
+  "para_per_100_students": 3.34
+ },
+ "00970000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 108,
+  "para_per_100_students": 2.99
+ },
+ "00980000": {
+  "staff_asian_pct": 0.049,
+  "students_per_admin": 42,
+  "para_per_100_students": 5.88
+ },
+ "00990000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 103,
+  "para_per_100_students": 2.74
+ },
+ "01000000": {
+  "staff_asian_pct": 0.025,
+  "students_per_admin": 82,
+  "para_per_100_students": 1.4
+ },
+ "01010000": {
+  "staff_asian_pct": 0.017,
+  "students_per_admin": 116,
+  "para_per_100_students": 3.07
+ },
+ "01030000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 88,
+  "para_per_100_students": 3.09
+ },
+ "01050000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 71,
+  "para_per_100_students": 2.64
+ },
+ "01070000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 85,
+  "para_per_100_students": 4.17
+ },
+ "01100000": {
+  "staff_asian_pct": 0.022,
+  "students_per_admin": 147,
+  "para_per_100_students": 4.91
+ },
+ "01110000": {
+  "staff_asian_pct": 0.017,
+  "students_per_admin": 73,
+  "para_per_100_students": 4.07
+ },
+ "01140000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 73,
+  "para_per_100_students": 5.6
+ },
+ "01170000": {
+  "staff_asian_pct": 0.047,
+  "students_per_admin": 73,
+  "para_per_100_students": 5.87
+ },
+ "01180000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 139,
+  "para_per_100_students": 2.64
+ },
+ "01210000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 31,
+  "para_per_100_students": 9.09
+ },
+ "01220000": {
+  "staff_asian_pct": 0.003,
+  "students_per_admin": 101,
+  "para_per_100_students": 1.3
+ },
+ "01250000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 73,
+  "para_per_100_students": 3.48
+ },
+ "01270000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 34,
+  "para_per_100_students": 5.63
+ },
+ "01280000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 133,
+  "para_per_100_students": 3.57
+ },
+ "01310000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 109,
+  "para_per_100_students": 3.3
+ },
+ "01330000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 125,
+  "para_per_100_students": 1.44
+ },
+ "01350000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 145,
+  "para_per_100_students": 5.05
+ },
+ "01360000": {
+  "staff_asian_pct": 0.033,
+  "students_per_admin": 129,
+  "para_per_100_students": 3.94
+ },
+ "01370000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 61,
+  "para_per_100_students": 4.57
+ },
+ "01380000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 105,
+  "para_per_100_students": 4.1
+ },
+ "01390000": {
+  "staff_asian_pct": 0.045,
+  "students_per_admin": 118,
+  "para_per_100_students": 2.79
+ },
+ "01410000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 78,
+  "para_per_100_students": 2.91
+ },
+ "01420000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 69,
+  "para_per_100_students": 3.36
+ },
+ "01440000": {
+  "staff_asian_pct": 0.003,
+  "students_per_admin": 84,
+  "para_per_100_students": 3.42
+ },
+ "01450000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 166,
+  "para_per_100_students": 3.46
+ },
+ "01490000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 86,
+  "para_per_100_students": 3.49
+ },
+ "01500000": {
+  "staff_asian_pct": 0.022,
+  "students_per_admin": 108,
+  "para_per_100_students": 6.33
+ },
+ "01510000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 86,
+  "para_per_100_students": 6.31
+ },
+ "01520000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 68,
+  "para_per_100_students": 3.84
+ },
+ "01530000": {
+  "staff_asian_pct": 0.017,
+  "students_per_admin": 155,
+  "para_per_100_students": 2.76
+ },
+ "01540000": {
+  "staff_asian_pct": 0.031,
+  "students_per_admin": 54,
+  "para_per_100_students": 5.85
+ },
+ "01550000": {
+  "staff_asian_pct": 0.078,
+  "students_per_admin": 95,
+  "para_per_100_students": 3.18
+ },
+ "01570000": {
+  "staff_asian_pct": 0.036,
+  "students_per_admin": 66,
+  "para_per_100_students": 6.01
+ },
+ "01580000": {
+  "staff_asian_pct": 0.039,
+  "students_per_admin": 102,
+  "para_per_100_students": 2.35
+ },
+ "01590000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 129,
+  "para_per_100_students": 2.84
+ },
+ "01600000": {
+  "staff_asian_pct": 0.056,
+  "students_per_admin": 95,
+  "para_per_100_students": 3.85
+ },
+ "01610000": {
+  "staff_asian_pct": 0.003,
+  "students_per_admin": 117,
+  "para_per_100_students": 3.64
+ },
+ "01620000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 102,
+  "para_per_100_students": 3.76
+ },
+ "01630000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 90,
+  "para_per_100_students": 2.64
+ },
+ "01640000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 86,
+  "para_per_100_students": 3.8
+ },
+ "01650000": {
+  "staff_asian_pct": 0.074,
+  "students_per_admin": 136,
+  "para_per_100_students": 2.37
+ },
+ "01670000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 137,
+  "para_per_100_students": 2.76
+ },
+ "01680000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 92,
+  "para_per_100_students": 0.59
+ },
+ "01690000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 92,
+  "para_per_100_students": 4.97
+ },
+ "01700000": {
+  "staff_asian_pct": 0.02,
+  "students_per_admin": 103,
+  "para_per_100_students": 3.97
+ },
+ "01710000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 94,
+  "para_per_100_students": 3.7
+ },
+ "01720000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 71,
+  "para_per_100_students": 2.82
+ },
+ "01730000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 99,
+  "para_per_100_students": 5.08
+ },
+ "01740000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 76,
+  "para_per_100_students": 4.42
+ },
+ "01750000": {
+  "staff_asian_pct": 0.017,
+  "students_per_admin": 163,
+  "para_per_100_students": 3.59
+ },
+ "01760000": {
+  "staff_asian_pct": 0.023,
+  "students_per_admin": 93,
+  "para_per_100_students": 2.4
+ },
+ "01770000": {
+  "staff_asian_pct": 0.02,
+  "students_per_admin": 98,
+  "para_per_100_students": 2.59
+ },
+ "01780000": {
+  "staff_asian_pct": 0.019,
+  "students_per_admin": 130,
+  "para_per_100_students": 3.26
+ },
+ "01810000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 129,
+  "para_per_100_students": 2.72
+ },
+ "01820000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 153,
+  "para_per_100_students": 1.11
+ },
+ "01840000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 69,
+  "para_per_100_students": 4.05
+ },
+ "01850000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 88,
+  "para_per_100_students": 0.68
+ },
+ "01860000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 86,
+  "para_per_100_students": 3.66
+ },
+ "01870000": {
+  "staff_asian_pct": 0.022,
+  "students_per_admin": 136,
+  "para_per_100_students": 3.38
+ },
+ "01890000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 110,
+  "para_per_100_students": 2.4
+ },
+ "01910000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 100,
+  "para_per_100_students": 5.62
+ },
+ "01960000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 109,
+  "para_per_100_students": 2.91
+ },
+ "01970000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 83,
+  "para_per_100_students": 3.51
+ },
+ "01980000": {
+  "staff_asian_pct": 0.029,
+  "students_per_admin": 102,
+  "para_per_100_students": 2.37
+ },
+ "01990000": {
+  "staff_asian_pct": 0.031,
+  "students_per_admin": 93,
+  "para_per_100_students": 3.27
+ },
+ "02010000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 114,
+  "para_per_100_students": 2.43
+ },
+ "02040000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 100,
+  "para_per_100_students": 2.6
+ },
+ "02070000": {
+  "staff_asian_pct": 0.055,
+  "students_per_admin": 93,
+  "para_per_100_students": 4.9
+ },
+ "02080000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 101,
+  "para_per_100_students": 4.6
+ },
+ "02090000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 41,
+  "para_per_100_students": 7.14
+ },
+ "02100000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 116,
+  "para_per_100_students": 5.75
+ },
+ "02110000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 116,
+  "para_per_100_students": 3.53
+ },
+ "02120000": {
+  "staff_asian_pct": 0.021,
+  "students_per_admin": 111,
+  "para_per_100_students": 2.92
+ },
+ "02130000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 137,
+  "para_per_100_students": 3.94
+ },
+ "02140000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 98,
+  "para_per_100_students": 4.27
+ },
+ "02150000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 78,
+  "para_per_100_students": 3.34
+ },
+ "02170000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 133,
+  "para_per_100_students": 2.38
+ },
+ "02180000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 95,
+  "para_per_100_students": 2.8
+ },
+ "02190000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 141,
+  "para_per_100_students": 1.83
+ },
+ "02200000": {
+  "staff_asian_pct": 0.024,
+  "students_per_admin": 97,
+  "para_per_100_students": 3.07
+ },
+ "02210000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 111,
+  "para_per_100_students": 8.23
+ },
+ "02230000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 121,
+  "para_per_100_students": 6.41
+ },
+ "02240000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 78,
+  "para_per_100_students": 5.41
+ },
+ "02260000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 92,
+  "para_per_100_students": 3.35
+ },
+ "02270000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 89,
+  "para_per_100_students": 4.68
+ },
+ "02290000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 140,
+  "para_per_100_students": 2.49
+ },
+ "02300000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 60,
+  "para_per_100_students": 5.59
+ },
+ "02310000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 98,
+  "para_per_100_students": 2.13
+ },
+ "02340000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 74,
+  "para_per_100_students": 2.63
+ },
+ "02360000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 67,
+  "para_per_100_students": 4.04
+ },
+ "02380000": {
+  "staff_asian_pct": 0.026,
+  "students_per_admin": 93,
+  "para_per_100_students": 4.88
+ },
+ "02390000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 101,
+  "para_per_100_students": 2.27
+ },
+ "02400000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 88,
+  "para_per_100_students": 2.55
+ },
+ "02420000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 53,
+  "para_per_100_students": 2.19
+ },
+ "02430000": {
+  "staff_asian_pct": 0.071,
+  "students_per_admin": 145,
+  "para_per_100_students": 2.4
+ },
+ "02440000": {
+  "staff_asian_pct": 0.035,
+  "students_per_admin": 90,
+  "para_per_100_students": 3.03
+ },
+ "02460000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 84,
+  "para_per_100_students": 3.1
+ },
+ "02480000": {
+  "staff_asian_pct": 0.028,
+  "students_per_admin": 121,
+  "para_per_100_students": 1.35
+ },
+ "02490000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 112,
+  "para_per_100_students": 5.22
+ },
+ "02500000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 122,
+  "para_per_100_students": 2.88
+ },
+ "02510000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 89,
+  "para_per_100_students": 2.71
+ },
+ "02520000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 96,
+  "para_per_100_students": 2.59
+ },
+ "02530000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 34,
+  "para_per_100_students": 3.92
+ },
+ "02580000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 74,
+  "para_per_100_students": 3.62
+ },
+ "02610000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 78,
+  "para_per_100_students": 4.11
+ },
+ "02620000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 162,
+  "para_per_100_students": 2.41
+ },
+ "02630000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 26,
+  "para_per_100_students": 2.78
+ },
+ "02640000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 85,
+  "para_per_100_students": 3.09
+ },
+ "02650000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 139,
+  "para_per_100_students": 3.04
+ },
+ "02660000": {
+  "staff_asian_pct": 0.048,
+  "students_per_admin": 110,
+  "para_per_100_students": 1.0
+ },
+ "02690000": {
+  "staff_asian_pct": 0.044,
+  "students_per_admin": 82,
+  "para_per_100_students": 4.83
+ },
+ "02710000": {
+  "staff_asian_pct": 0.063,
+  "students_per_admin": 112,
+  "para_per_100_students": 4.35
+ },
+ "02720000": {
+  "staff_asian_pct": 0.026,
+  "students_per_admin": 48,
+  "para_per_100_students": 9.92
+ },
+ "02730000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 104,
+  "para_per_100_students": 4.79
+ },
+ "02740000": {
+  "staff_asian_pct": 0.029,
+  "students_per_admin": 51,
+  "para_per_100_students": 1.48
+ },
+ "02750000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 148,
+  "para_per_100_students": 3.69
+ },
+ "02760000": {
+  "staff_asian_pct": 0.043,
+  "students_per_admin": 115,
+  "para_per_100_students": 5.5
+ },
+ "02770000": {
+  "staff_asian_pct": 0.019,
+  "students_per_admin": 44,
+  "para_per_100_students": 4.14
+ },
+ "02780000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 92,
+  "para_per_100_students": 3.62
+ },
+ "02810000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 109,
+  "para_per_100_students": 4.11
+ },
+ "02840000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 117,
+  "para_per_100_students": 3.04
+ },
+ "02850000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 101,
+  "para_per_100_students": 2.91
+ },
+ "02880000": {
+  "staff_asian_pct": 0.03,
+  "students_per_admin": 110,
+  "para_per_100_students": 3.09
+ },
+ "02890000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 82,
+  "para_per_100_students": 12.14
+ },
+ "02900000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 127,
+  "para_per_100_students": 4.38
+ },
+ "02910000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 104,
+  "para_per_100_students": 2.91
+ },
+ "02920000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 98,
+  "para_per_100_students": 1.86
+ },
+ "02930000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 136,
+  "para_per_100_students": 1.83
+ },
+ "02950000": {
+  "staff_asian_pct": 0.023,
+  "students_per_admin": 156,
+  "para_per_100_students": 3.56
+ },
+ "02960000": {
+  "staff_asian_pct": 0.02,
+  "students_per_admin": 65,
+  "para_per_100_students": 9.62
+ },
+ "02980000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 67,
+  "para_per_100_students": 5.79
+ },
+ "03000000": {
+  "staff_asian_pct": 0.032,
+  "students_per_admin": 22
+ },
+ "03010000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 91,
+  "para_per_100_students": 2.56
+ },
+ "03040000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 136,
+  "para_per_100_students": 4.59
+ },
+ "03050000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 87,
+  "para_per_100_students": 3.18
+ },
+ "03060000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 107,
+  "para_per_100_students": 5.61
+ },
+ "03070000": {
+  "staff_asian_pct": 0.017,
+  "students_per_admin": 104,
+  "para_per_100_students": 2.32
+ },
+ "03080000": {
+  "staff_asian_pct": 0.025,
+  "students_per_admin": 106,
+  "para_per_100_students": 3.07
+ },
+ "03090000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 106,
+  "para_per_100_students": 3.85
+ },
+ "03100000": {
+  "staff_asian_pct": 0.003,
+  "students_per_admin": 118,
+  "para_per_100_students": 3.57
+ },
+ "03140000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 79,
+  "para_per_100_students": 3.9
+ },
+ "03150000": {
+  "staff_asian_pct": 0.046,
+  "students_per_admin": 89,
+  "para_per_100_students": 3.38
+ },
+ "03160000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 103,
+  "para_per_100_students": 1.64
+ },
+ "03170000": {
+  "staff_asian_pct": 0.029,
+  "students_per_admin": 80,
+  "para_per_100_students": 4.19
+ },
+ "03180000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 43,
+  "para_per_100_students": 3.66
+ },
+ "03210000": {
+  "staff_asian_pct": 0.064,
+  "students_per_admin": 96,
+  "para_per_100_students": 3.04
+ },
+ "03220000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 113,
+  "para_per_100_students": 3.29
+ },
+ "03230000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 145,
+  "para_per_100_students": 2.54
+ },
+ "03250000": {
+  "staff_asian_pct": 0.009,
+  "students_per_admin": 111,
+  "para_per_100_students": 3.27
+ },
+ "03260000": {
+  "staff_asian_pct": 0.067,
+  "students_per_admin": 123,
+  "para_per_100_students": 3.14
+ },
+ "03270000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 66,
+  "para_per_100_students": 9.57
+ },
+ "03300000": {
+  "staff_asian_pct": 0.056,
+  "students_per_admin": 88,
+  "para_per_100_students": 3.55
+ },
+ "03310000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 94,
+  "para_per_100_students": 3.57
+ },
+ "03320000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 118,
+  "para_per_100_students": 4.12
+ },
+ "03350000": {
+  "staff_asian_pct": 0.029,
+  "students_per_admin": 80,
+  "para_per_100_students": 3.42
+ },
+ "03360000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 120,
+  "para_per_100_students": 3.27
+ },
+ "03370000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 67,
+  "para_per_100_students": 8.51
+ },
+ "03400000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 79,
+  "para_per_100_students": 6.36
+ },
+ "03420000": {
+  "staff_asian_pct": 0.021,
+  "students_per_admin": 94,
+  "para_per_100_students": 2.93
+ },
+ "03430000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 87,
+  "para_per_100_students": 3.95
+ },
+ "03440000": {
+  "staff_asian_pct": 0.039,
+  "students_per_admin": 101,
+  "para_per_100_students": 2.87
+ },
+ "03460000": {
+  "staff_asian_pct": 0.016,
+  "students_per_admin": 115,
+  "para_per_100_students": 3.93
+ },
+ "03470000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 96,
+  "para_per_100_students": 3.58
+ },
+ "03480000": {
+  "staff_asian_pct": 0.017,
+  "students_per_admin": 79,
+  "para_per_100_students": 2.89
+ },
+ "03490000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 61,
+  "para_per_100_students": 6.16
+ },
+ "03500000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 110,
+  "para_per_100_students": 5.24
+ },
+ "06000000": {
+  "staff_asian_pct": 0.064,
+  "students_per_admin": 108,
+  "para_per_100_students": 3.07
+ },
+ "06030000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 53,
+  "para_per_100_students": 4.94
+ },
+ "06100000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 132,
+  "para_per_100_students": 3.2
+ },
+ "06150000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 77,
+  "para_per_100_students": 2.57
+ },
+ "06160000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 104,
+  "para_per_100_students": 3.85
+ },
+ "06180000": {
+  "staff_asian_pct": 0.013,
+  "students_per_admin": 84,
+  "para_per_100_students": 5.78
+ },
+ "06200000": {
+  "staff_asian_pct": 0.022,
+  "students_per_admin": 105,
+  "para_per_100_students": 4.41
+ },
+ "06220000": {
+  "staff_asian_pct": 0.027,
+  "students_per_admin": 139,
+  "para_per_100_students": 2.12
+ },
+ "06250000": {
+  "staff_asian_pct": 0.002,
+  "students_per_admin": 197,
+  "para_per_100_students": 2.04
+ },
+ "06320000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 91,
+  "para_per_100_students": 5.47
+ },
+ "06350000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 88,
+  "para_per_100_students": 3.95
+ },
+ "06400000": {
+  "staff_asian_pct": 0.055,
+  "students_per_admin": 76,
+  "para_per_100_students": 2.59
+ },
+ "06450000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 94,
+  "para_per_100_students": 3.2
+ },
+ "06500000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 121,
+  "para_per_100_students": 3.03
+ },
+ "06550000": {
+  "staff_asian_pct": 0.025,
+  "students_per_admin": 74,
+  "para_per_100_students": 1.84
+ },
+ "06580000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 135,
+  "para_per_100_students": 2.76
+ },
+ "06600000": {
+  "staff_asian_pct": 0.005,
+  "students_per_admin": 86,
+  "para_per_100_students": 2.43
+ },
+ "06620000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 42,
+  "para_per_100_students": 6.29
+ },
+ "06650000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 144,
+  "para_per_100_students": 2.86
+ },
+ "06720000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 56,
+  "para_per_100_students": 5.08
+ },
+ "06730000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 102,
+  "para_per_100_students": 3.02
+ },
+ "06740000": {
+  "staff_asian_pct": 0.016,
+  "students_per_admin": 70,
+  "para_per_100_students": 6.32
+ },
+ "06750000": {
+  "staff_asian_pct": 0.022,
+  "students_per_admin": 71,
+  "para_per_100_students": 2.88
+ },
+ "06800000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 154,
+  "para_per_100_students": 3.67
+ },
+ "06850000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 41,
+  "para_per_100_students": 9.73
+ },
+ "06900000": {
+  "staff_asian_pct": 0.014,
+  "students_per_admin": 111,
+  "para_per_100_students": 1.13
+ },
+ "06950000": {
+  "staff_asian_pct": 0.031,
+  "students_per_admin": 90,
+  "para_per_100_students": 1.84
+ },
+ "06980000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 105,
+  "para_per_100_students": 3.29
+ },
+ "07050000": {
+  "staff_asian_pct": 0.015,
+  "students_per_admin": 74,
+  "para_per_100_students": 2.46
+ },
+ "07100000": {
+  "staff_asian_pct": 0.01,
+  "students_per_admin": 136,
+  "para_per_100_students": 2.52
+ },
+ "07120000": {
+  "staff_asian_pct": 0.018,
+  "students_per_admin": 71,
+  "para_per_100_students": 4.82
+ },
+ "07150000": {
+  "staff_asian_pct": 0.025,
+  "students_per_admin": 80,
+  "para_per_100_students": 5.62
+ },
+ "07170000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 48,
+  "para_per_100_students": 8.29
+ },
+ "07200000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 105,
+  "para_per_100_students": 4.09
+ },
+ "07250000": {
+  "staff_asian_pct": 0.011,
+  "students_per_admin": 99,
+  "para_per_100_students": 2.88
+ },
+ "07280000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 52,
+  "para_per_100_students": 10.36
+ },
+ "07300000": {
+  "staff_asian_pct": 0.022,
+  "students_per_admin": 113,
+  "para_per_100_students": 2.62
+ },
+ "07350000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 128,
+  "para_per_100_students": 3.27
+ },
+ "07450000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 94,
+  "para_per_100_students": 2.67
+ },
+ "07500000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 43,
+  "para_per_100_students": 6.43
+ },
+ "07530000": {
+  "staff_asian_pct": 0.006,
+  "students_per_admin": 132,
+  "para_per_100_students": 2.65
+ },
+ "07630000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 82,
+  "para_per_100_students": 1.79
+ },
+ "07650000": {
+  "staff_asian_pct": 0.007,
+  "students_per_admin": 50,
+  "para_per_100_students": 4.01
+ },
+ "07660000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 96,
+  "para_per_100_students": 3.8
+ },
+ "07670000": {
+  "staff_asian_pct": 0.012,
+  "students_per_admin": 111,
+  "para_per_100_students": 4.13
+ },
+ "07700000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 131,
+  "para_per_100_students": 2.23
+ },
+ "07730000": {
+  "staff_asian_pct": 0.008,
+  "students_per_admin": 109,
+  "para_per_100_students": 5.33
+ },
+ "07740000": {
+  "staff_asian_pct": 0.004,
+  "students_per_admin": 91,
+  "para_per_100_students": 8.65
+ },
+ "07750000": {
+  "staff_asian_pct": 0.001,
+  "students_per_admin": 139,
+  "para_per_100_students": 3.31
+ },
+ "07780000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 94,
+  "para_per_100_students": 4.4
+ },
+ "07800000": {
+  "staff_asian_pct": 0.0,
+  "students_per_admin": 108,
+  "para_per_100_students": 3.07
+ }
+}

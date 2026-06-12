@@ -1,0 +1,1070 @@
+{
+ "00270000": {
+  "el_proficiency_pct": 0.0
+ },
+ "02140000": {
+  "el_making_progress_pct": 0.51,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 1.0
+ },
+ "03170000": {
+  "el_making_progress_pct": 0.88,
+  "el_proficiency_pct": 0.35,
+  "el_exiting_pct": 0.95
+ },
+ "06730000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.28,
+  "el_exiting_pct": 1.0
+ },
+ "03150000": {
+  "el_making_progress_pct": 0.71,
+  "el_proficiency_pct": 0.35,
+  "el_exiting_pct": 0.92
+ },
+ "01450000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.07
+ },
+ "01970000": {
+  "el_making_progress_pct": 0.57,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.91
+ },
+ "03050000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.2,
+  "el_exiting_pct": 0.93
+ },
+ "01380000": {
+  "el_making_progress_pct": 0.4,
+  "el_proficiency_pct": 0.07
+ },
+ "07250000": {
+  "el_making_progress_pct": 0.49,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.92
+ },
+ "02430000": {
+  "el_making_progress_pct": 0.51,
+  "el_proficiency_pct": 0.18,
+  "el_exiting_pct": 0.94
+ },
+ "00160000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.12,
+  "el_exiting_pct": 0.96
+ },
+ "03260000": {
+  "el_making_progress_pct": 0.6,
+  "el_proficiency_pct": 0.26,
+  "el_exiting_pct": 0.96
+ },
+ "02310000": {
+  "el_making_progress_pct": 0.67,
+  "el_proficiency_pct": 0.23
+ },
+ "00490000": {
+  "el_making_progress_pct": 0.74,
+  "el_proficiency_pct": 0.23,
+  "el_exiting_pct": 0.76
+ },
+ "01280000": {
+  "el_making_progress_pct": 0.46,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.97
+ },
+ "00880000": {
+  "el_making_progress_pct": 0.58,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 0.86
+ },
+ "01550000": {
+  "el_making_progress_pct": 0.76,
+  "el_proficiency_pct": 0.36,
+  "el_exiting_pct": 0.96
+ },
+ "07120000": {
+  "el_making_progress_pct": 0.48,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 1.0
+ },
+ "00350000": {
+  "el_making_progress_pct": 0.41,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 1.0
+ },
+ "01100000": {
+  "el_making_progress_pct": 0.51,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 1.0
+ },
+ "02150000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.12
+ },
+ "00090000": {
+  "el_making_progress_pct": 0.65,
+  "el_proficiency_pct": 0.24,
+  "el_exiting_pct": 1.0
+ },
+ "02180000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.14
+ },
+ "02170000": {
+  "el_making_progress_pct": 0.86,
+  "el_proficiency_pct": 0.18
+ },
+ "06000000": {
+  "el_making_progress_pct": 0.62,
+  "el_proficiency_pct": 0.23,
+  "el_exiting_pct": 1.0
+ },
+ "00670000": {
+  "el_making_progress_pct": 0.65,
+  "el_proficiency_pct": 0.14
+ },
+ "02080000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.04
+ },
+ "07530000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.18
+ },
+ "03320000": {
+  "el_making_progress_pct": 0.64,
+  "el_proficiency_pct": 0.22,
+  "el_exiting_pct": 0.97
+ },
+ "03070000": {
+  "el_making_progress_pct": 0.56,
+  "el_proficiency_pct": 0.2,
+  "el_exiting_pct": 0.96
+ },
+ "00610000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.95
+ },
+ "02100000": {
+  "el_making_progress_pct": 0.62,
+  "el_proficiency_pct": 0.21,
+  "el_exiting_pct": 0.87
+ },
+ "02950000": {
+  "el_making_progress_pct": 0.69,
+  "el_proficiency_pct": 0.3,
+  "el_exiting_pct": 0.95
+ },
+ "00140000": {
+  "el_making_progress_pct": 0.55,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.94
+ },
+ "07350000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 1.0
+ },
+ "02210000": {
+  "el_making_progress_pct": 0.77,
+  "el_proficiency_pct": 0.32,
+  "el_exiting_pct": 1.0
+ },
+ "02460000": {
+  "el_making_progress_pct": 0.68,
+  "el_proficiency_pct": 0.25,
+  "el_exiting_pct": 0.89
+ },
+ "00460000": {
+  "el_making_progress_pct": 0.81,
+  "el_proficiency_pct": 0.33,
+  "el_exiting_pct": 0.9
+ },
+ "01640000": {
+  "el_making_progress_pct": 0.58,
+  "el_proficiency_pct": 0.33,
+  "el_exiting_pct": 0.94
+ },
+ "07750000": {
+  "el_making_progress_pct": 0.55,
+  "el_proficiency_pct": 0.26,
+  "el_exiting_pct": 0.92
+ },
+ "01050000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.05
+ },
+ "00070000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.9
+ },
+ "01680000": {
+  "el_making_progress_pct": 0.66,
+  "el_proficiency_pct": 0.35,
+  "el_exiting_pct": 1.0
+ },
+ "02650000": {
+  "el_making_progress_pct": 0.54,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.92
+ },
+ "00790000": {
+  "el_making_progress_pct": 0.55,
+  "el_proficiency_pct": 0.23,
+  "el_exiting_pct": 0.92
+ },
+ "00710000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.95
+ },
+ "03420000": {
+  "el_making_progress_pct": 0.72,
+  "el_proficiency_pct": 0.25,
+  "el_exiting_pct": 1.0
+ },
+ "07660000": {
+  "el_making_progress_pct": 0.71,
+  "el_proficiency_pct": 0.31,
+  "el_exiting_pct": 0.92
+ },
+ "01620000": {
+  "el_making_progress_pct": 0.67,
+  "el_proficiency_pct": 0.21,
+  "el_exiting_pct": 0.83
+ },
+ "01410000": {
+  "el_making_progress_pct": 0.54,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.82
+ },
+ "01440000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.02
+ },
+ "02640000": {
+  "el_proficiency_pct": 0.13
+ },
+ "00940000": {
+  "el_making_progress_pct": 0.7,
+  "el_proficiency_pct": 0.24,
+  "el_exiting_pct": 1.0
+ },
+ "00870000": {
+  "el_making_progress_pct": 0.56,
+  "el_proficiency_pct": 0.21,
+  "el_exiting_pct": 1.0
+ },
+ "02760000": {
+  "el_making_progress_pct": 0.75,
+  "el_proficiency_pct": 0.28,
+  "el_exiting_pct": 1.0
+ },
+ "02770000": {
+  "el_making_progress_pct": 0.2,
+  "el_proficiency_pct": 0.05,
+  "el_exiting_pct": 1.0
+ },
+ "06250000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.94
+ },
+ "06750000": {
+  "el_making_progress_pct": 0.4,
+  "el_proficiency_pct": 0.15
+ },
+ "02920000": {
+  "el_making_progress_pct": 0.33,
+  "el_proficiency_pct": 0.25
+ },
+ "06030000": {
+  "el_proficiency_pct": 0.31
+ },
+ "01740000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.75
+ },
+ "01110000": {
+  "el_making_progress_pct": 0.37,
+  "el_proficiency_pct": 0.16
+ },
+ "01700000": {
+  "el_making_progress_pct": 0.46,
+  "el_proficiency_pct": 0.08,
+  "el_exiting_pct": 0.93
+ },
+ "02190000": {
+  "el_proficiency_pct": 0.27
+ },
+ "03500000": {
+  "el_making_progress_pct": 0.76,
+  "el_proficiency_pct": 0.21
+ },
+ "00240000": {
+  "el_making_progress_pct": 0.48,
+  "el_proficiency_pct": 0.18,
+  "el_exiting_pct": 1.0
+ },
+ "06650000": {
+  "el_making_progress_pct": 0.69,
+  "el_proficiency_pct": 0.25
+ },
+ "07800000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 1.0
+ },
+ "02130000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 1.0
+ },
+ "02960000": {
+  "el_making_progress_pct": 0.72,
+  "el_proficiency_pct": 0.19,
+  "el_exiting_pct": 0.93
+ },
+ "02610000": {
+  "el_making_progress_pct": 0.84,
+  "el_proficiency_pct": 0.35,
+  "el_exiting_pct": 0.82
+ },
+ "02440000": {
+  "el_making_progress_pct": 0.54,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.88
+ },
+ "02910000": {
+  "el_making_progress_pct": 0.71,
+  "el_proficiency_pct": 0.23,
+  "el_exiting_pct": 0.92
+ },
+ "02380000": {
+  "el_making_progress_pct": 0.58,
+  "el_proficiency_pct": 0.15
+ },
+ "02660000": {
+  "el_making_progress_pct": 0.7,
+  "el_proficiency_pct": 0.26,
+  "el_exiting_pct": 0.91
+ },
+ "03080000": {
+  "el_making_progress_pct": 0.4,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.97
+ },
+ "03210000": {
+  "el_making_progress_pct": 0.67,
+  "el_proficiency_pct": 0.28,
+  "el_exiting_pct": 0.98
+ },
+ "03230000": {
+  "el_making_progress_pct": 0.58,
+  "el_proficiency_pct": 0.18
+ },
+ "03430000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.19
+ },
+ "01990000": {
+  "el_making_progress_pct": 0.62,
+  "el_proficiency_pct": 0.25,
+  "el_exiting_pct": 0.97
+ },
+ "06160000": {
+  "el_making_progress_pct": 0.49,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 1.0
+ },
+ "00360000": {
+  "el_making_progress_pct": 0.64,
+  "el_proficiency_pct": 0.18
+ },
+ "00890000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.18,
+  "el_exiting_pct": 0.86
+ },
+ "01490000": {
+  "el_making_progress_pct": 0.31,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.96
+ },
+ "03040000": {
+  "el_making_progress_pct": 0.36,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.7
+ },
+ "07670000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.1
+ },
+ "01710000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.92
+ },
+ "01670000": {
+  "el_making_progress_pct": 0.55,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 1.0
+ },
+ "00100000": {
+  "el_making_progress_pct": 0.74,
+  "el_proficiency_pct": 0.28,
+  "el_exiting_pct": 0.87
+ },
+ "03140000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.93
+ },
+ "06740000": {
+  "el_making_progress_pct": 0.29,
+  "el_proficiency_pct": 0.06
+ },
+ "07200000": {
+  "el_making_progress_pct": 0.6,
+  "el_proficiency_pct": 0.17
+ },
+ "06150000": {
+  "el_making_progress_pct": 0.37,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.9
+ },
+ "01510000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.83
+ },
+ "02710000": {
+  "el_making_progress_pct": 0.75,
+  "el_proficiency_pct": 0.32,
+  "el_exiting_pct": 0.94
+ },
+ "03470000": {
+  "el_making_progress_pct": 0.48,
+  "el_proficiency_pct": 0.12,
+  "el_exiting_pct": 0.89
+ },
+ "07730000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.3,
+  "el_exiting_pct": 0.71
+ },
+ "02270000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.13
+ },
+ "00970000": {
+  "el_making_progress_pct": 0.36,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 1.0
+ },
+ "01750000": {
+  "el_making_progress_pct": 0.87,
+  "el_proficiency_pct": 0.4,
+  "el_exiting_pct": 0.92
+ },
+ "01650000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.94
+ },
+ "00770000": {
+  "el_making_progress_pct": 0.83,
+  "el_proficiency_pct": 0.53
+ },
+ "03250000": {
+  "el_making_progress_pct": 0.48,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.98
+ },
+ "00480000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.94
+ },
+ "02290000": {
+  "el_making_progress_pct": 0.41,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.95
+ },
+ "02840000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.19,
+  "el_exiting_pct": 1.0
+ },
+ "00570000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.98
+ },
+ "00300000": {
+  "el_making_progress_pct": 0.54,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 0.89
+ },
+ "01890000": {
+  "el_making_progress_pct": 0.64,
+  "el_proficiency_pct": 0.2,
+  "el_exiting_pct": 0.89
+ },
+ "02890000": {
+  "el_proficiency_pct": 0.0
+ },
+ "06220000": {
+  "el_making_progress_pct": 0.6,
+  "el_proficiency_pct": 0.18,
+  "el_exiting_pct": 0.85
+ },
+ "01170000": {
+  "el_making_progress_pct": 0.4,
+  "el_proficiency_pct": 0.1
+ },
+ "02040000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.18,
+  "el_exiting_pct": 0.92
+ },
+ "02200000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.92
+ },
+ "01850000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 1.0
+ },
+ "01720000": {
+  "el_making_progress_pct": 0.47,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 0.82
+ },
+ "02880000": {
+  "el_making_progress_pct": 0.82,
+  "el_proficiency_pct": 0.34,
+  "el_exiting_pct": 1.0
+ },
+ "06720000": {
+  "el_proficiency_pct": 0.38
+ },
+ "01370000": {
+  "el_making_progress_pct": 0.23,
+  "el_proficiency_pct": 0.07,
+  "el_exiting_pct": 0.97
+ },
+ "01000000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.98
+ },
+ "00500000": {
+  "el_making_progress_pct": 0.65,
+  "el_proficiency_pct": 0.26,
+  "el_exiting_pct": 0.98
+ },
+ "02730000": {
+  "el_making_progress_pct": 0.77,
+  "el_proficiency_pct": 0.25
+ },
+ "02510000": {
+  "el_making_progress_pct": 0.42,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.95
+ },
+ "00170000": {
+  "el_making_progress_pct": 0.34,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.9
+ },
+ "02390000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.93
+ },
+ "01840000": {
+  "el_making_progress_pct": 0.62,
+  "el_proficiency_pct": 0.19
+ },
+ "01770000": {
+  "el_making_progress_pct": 0.49,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 1.0
+ },
+ "06200000": {
+  "el_making_progress_pct": 0.81,
+  "el_proficiency_pct": 0.28,
+  "el_exiting_pct": 1.0
+ },
+ "02010000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.95
+ },
+ "06500000": {
+  "el_making_progress_pct": 0.36,
+  "el_proficiency_pct": 0.07
+ },
+ "00730000": {
+  "el_making_progress_pct": 0.35,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.95
+ },
+ "01760000": {
+  "el_making_progress_pct": 0.46,
+  "el_proficiency_pct": 0.12,
+  "el_exiting_pct": 0.94
+ },
+ "01500000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.09
+ },
+ "01820000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.2,
+  "el_exiting_pct": 0.94
+ },
+ "02850000": {
+  "el_making_progress_pct": 0.56,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.91
+ },
+ "01030000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 1.0
+ },
+ "02900000": {
+  "el_making_progress_pct": 0.64,
+  "el_proficiency_pct": 0.25
+ },
+ "03300000": {
+  "el_making_progress_pct": 0.85,
+  "el_proficiency_pct": 0.53,
+  "el_exiting_pct": 0.97
+ },
+ "07650000": {
+  "el_making_progress_pct": 0.35,
+  "el_proficiency_pct": 0.14
+ },
+ "01520000": {
+  "el_making_progress_pct": 0.71,
+  "el_proficiency_pct": 0.22
+ },
+ "02780000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.21,
+  "el_exiting_pct": 1.0
+ },
+ "00400000": {
+  "el_making_progress_pct": 0.71,
+  "el_proficiency_pct": 0.31,
+  "el_exiting_pct": 0.97
+ },
+ "01140000": {
+  "el_making_progress_pct": 0.28,
+  "el_proficiency_pct": 0.07
+ },
+ "00960000": {
+  "el_making_progress_pct": 0.55,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.92
+ },
+ "01420000": {
+  "el_making_progress_pct": 0.27,
+  "el_proficiency_pct": 0.14
+ },
+ "01570000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.17
+ },
+ "01610000": {
+  "el_making_progress_pct": 0.56,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.85
+ },
+ "00010000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.97
+ },
+ "01330000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.08,
+  "el_exiting_pct": 0.85
+ },
+ "02360000": {
+  "el_making_progress_pct": 0.37,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.85
+ },
+ "00200000": {
+  "el_making_progress_pct": 0.47,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.93
+ },
+ "02420000": {
+  "el_making_progress_pct": 0.25,
+  "el_proficiency_pct": 0.0
+ },
+ "03010000": {
+  "el_making_progress_pct": 0.54,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 1.0
+ },
+ "03460000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 0.96
+ },
+ "07150000": {
+  "el_making_progress_pct": 0.65,
+  "el_proficiency_pct": 0.31,
+  "el_exiting_pct": 1.0
+ },
+ "00830000": {
+  "el_making_progress_pct": 0.39,
+  "el_proficiency_pct": 0.12
+ },
+ "06350000": {
+  "el_making_progress_pct": 0.57,
+  "el_proficiency_pct": 0.31
+ },
+ "00180000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.95
+ },
+ "00640000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.97
+ },
+ "01590000": {
+  "el_making_progress_pct": 0.87,
+  "el_proficiency_pct": 0.47,
+  "el_exiting_pct": 0.86
+ },
+ "00250000": {
+  "el_making_progress_pct": 0.56,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 0.9
+ },
+ "03090000": {
+  "el_making_progress_pct": 0.12,
+  "el_proficiency_pct": 0.0
+ },
+ "01810000": {
+  "el_making_progress_pct": 0.43,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.99
+ },
+ "01220000": {
+  "el_making_progress_pct": 0.69,
+  "el_proficiency_pct": 0.23
+ },
+ "02690000": {
+  "el_proficiency_pct": 0.25
+ },
+ "00410000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.06
+ },
+ "03360000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.15,
+  "el_exiting_pct": 0.94
+ },
+ "07700000": {
+  "el_making_progress_pct": 0.23,
+  "el_proficiency_pct": 0.0
+ },
+ "07100000": {
+  "el_making_progress_pct": 0.68,
+  "el_proficiency_pct": 0.25,
+  "el_exiting_pct": 1.0
+ },
+ "01530000": {
+  "el_making_progress_pct": 0.48,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.93
+ },
+ "01860000": {
+  "el_making_progress_pct": 0.31,
+  "el_proficiency_pct": 0.07
+ },
+ "06450000": {
+  "el_making_progress_pct": 0.57,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.96
+ },
+ "01870000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.17
+ },
+ "07740000": {
+  "el_making_progress_pct": 0.92,
+  "el_proficiency_pct": 0.38
+ },
+ "03480000": {
+  "el_making_progress_pct": 0.36,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.95
+ },
+ "01310000": {
+  "el_making_progress_pct": 0.74,
+  "el_proficiency_pct": 0.2
+ },
+ "06100000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.15
+ },
+ "00310000": {
+  "el_making_progress_pct": 0.6,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.91
+ },
+ "00930000": {
+  "el_making_progress_pct": 0.41,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.95
+ },
+ "02090000": {
+  "el_proficiency_pct": 0.15
+ },
+ "00520000": {
+  "el_making_progress_pct": 0.67,
+  "el_proficiency_pct": 0.34,
+  "el_exiting_pct": 0.91
+ },
+ "03100000": {
+  "el_making_progress_pct": 0.83,
+  "el_proficiency_pct": 0.3,
+  "el_exiting_pct": 1.0
+ },
+ "03440000": {
+  "el_making_progress_pct": 0.75,
+  "el_proficiency_pct": 0.36,
+  "el_exiting_pct": 0.97
+ },
+ "00560000": {
+  "el_making_progress_pct": 0.61,
+  "el_proficiency_pct": 0.2,
+  "el_exiting_pct": 1.0
+ },
+ "02580000": {
+  "el_making_progress_pct": 0.47,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.97
+ },
+ "07450000": {
+  "el_making_progress_pct": 0.79,
+  "el_proficiency_pct": 0.29
+ },
+ "01070000": {
+  "el_making_progress_pct": 0.24,
+  "el_proficiency_pct": 0.07,
+  "el_exiting_pct": 0.95
+ },
+ "00440000": {
+  "el_making_progress_pct": 0.38,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.94
+ },
+ "01250000": {
+  "el_making_progress_pct": 0.42,
+  "el_proficiency_pct": 0.07
+ },
+ "02120000": {
+  "el_making_progress_pct": 0.56,
+  "el_proficiency_pct": 0.17,
+  "el_exiting_pct": 0.94
+ },
+ "03160000": {
+  "el_making_progress_pct": 0.32,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.94
+ },
+ "03310000": {
+  "el_making_progress_pct": 0.42,
+  "el_proficiency_pct": 0.16
+ },
+ "00050000": {
+  "el_making_progress_pct": 0.5,
+  "el_proficiency_pct": 0.12,
+  "el_exiting_pct": 1.0
+ },
+ "02810000": {
+  "el_making_progress_pct": 0.42,
+  "el_proficiency_pct": 0.12,
+  "el_exiting_pct": 0.96
+ },
+ "03220000": {
+  "el_making_progress_pct": 0.46,
+  "el_proficiency_pct": 0.16
+ },
+ "06800000": {
+  "el_making_progress_pct": 0.62,
+  "el_proficiency_pct": 0.33,
+  "el_exiting_pct": 1.0
+ },
+ "06580000": {
+  "el_making_progress_pct": 0.6,
+  "el_proficiency_pct": 0.25,
+  "el_exiting_pct": 1.0
+ },
+ "01390000": {
+  "el_making_progress_pct": 0.81,
+  "el_proficiency_pct": 0.37,
+  "el_exiting_pct": 0.94
+ },
+ "02930000": {
+  "el_making_progress_pct": 0.37,
+  "el_proficiency_pct": 0.08,
+  "el_exiting_pct": 0.97
+ },
+ "01980000": {
+  "el_making_progress_pct": 0.59,
+  "el_proficiency_pct": 0.2,
+  "el_exiting_pct": 0.93
+ },
+ "02750000": {
+  "el_making_progress_pct": 0.7,
+  "el_proficiency_pct": 0.17
+ },
+ "00950000": {
+  "el_making_progress_pct": 0.39,
+  "el_proficiency_pct": 0.09,
+  "el_exiting_pct": 0.95
+ },
+ "01630000": {
+  "el_making_progress_pct": 0.39,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.98
+ },
+ "00260000": {
+  "el_making_progress_pct": 0.84,
+  "el_proficiency_pct": 0.4,
+  "el_exiting_pct": 0.9
+ },
+ "02230000": {
+  "el_proficiency_pct": 0.13
+ },
+ "02620000": {
+  "el_making_progress_pct": 0.54,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.96
+ },
+ "01010000": {
+  "el_making_progress_pct": 0.49,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.94
+ },
+ "00860000": {
+  "el_making_progress_pct": 0.63,
+  "el_proficiency_pct": 0.29,
+  "el_exiting_pct": 1.0
+ },
+ "00230000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.16,
+  "el_exiting_pct": 0.94
+ },
+ "02260000": {
+  "el_making_progress_pct": 0.46,
+  "el_proficiency_pct": 0.08
+ },
+ "02480000": {
+  "el_making_progress_pct": 0.49,
+  "el_proficiency_pct": 0.14,
+  "el_exiting_pct": 0.95
+ },
+ "01600000": {
+  "el_making_progress_pct": 0.41,
+  "el_proficiency_pct": 0.12,
+  "el_exiting_pct": 0.99
+ },
+ "03350000": {
+  "el_making_progress_pct": 0.68,
+  "el_proficiency_pct": 0.29,
+  "el_exiting_pct": 1.0
+ },
+ "00990000": {
+  "el_making_progress_pct": 0.65,
+  "el_proficiency_pct": 0.21,
+  "el_exiting_pct": 0.96
+ },
+ "06180000": {
+  "el_making_progress_pct": 0.44,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.7
+ },
+ "00080000": {
+  "el_making_progress_pct": 0.57,
+  "el_proficiency_pct": 0.11,
+  "el_exiting_pct": 0.8
+ },
+ "00850000": {
+  "el_proficiency_pct": 0.27
+ },
+ "01360000": {
+  "el_making_progress_pct": 0.39,
+  "el_proficiency_pct": 0.1
+ },
+ "02740000": {
+  "el_making_progress_pct": 0.33,
+  "el_proficiency_pct": 0.1,
+  "el_exiting_pct": 0.93
+ },
+ "01780000": {
+  "el_making_progress_pct": 0.62,
+  "el_proficiency_pct": 0.23,
+  "el_exiting_pct": 0.96
+ },
+ "01580000": {
+  "el_making_progress_pct": 0.58,
+  "el_proficiency_pct": 0.23
+ },
+ "00720000": {
+  "el_making_progress_pct": 0.6,
+  "el_proficiency_pct": 0.35,
+  "el_exiting_pct": 0.95
+ },
+ "02070000": {
+  "el_making_progress_pct": 0.72,
+  "el_proficiency_pct": 0.29,
+  "el_exiting_pct": 0.91
+ },
+ "07780000": {
+  "el_making_progress_pct": 0.52,
+  "el_proficiency_pct": 0.19
+ },
+ "02110000": {
+  "el_making_progress_pct": 0.51,
+  "el_proficiency_pct": 0.13,
+  "el_exiting_pct": 0.9
+ },
+ "06600000": {
+  "el_making_progress_pct": 0.53,
+  "el_proficiency_pct": 0.29
+ },
+ "06900000": {
+  "el_making_progress_pct": 0.61,
+  "el_proficiency_pct": 0.13
+ },
+ "07300000": {
+  "el_proficiency_pct": 0.38
+ },
+ "07630000": {
+  "el_making_progress_pct": 0.45,
+  "el_proficiency_pct": 0.23
+ }
+}

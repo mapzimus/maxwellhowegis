@@ -1,0 +1,1307 @@
+{
+ "00860000": {
+  "ap_exams_per_taker": 1.421,
+  "ap_tests_per_100": 11.34,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.691
+ },
+ "02430000": {
+  "ap_exams_per_taker": 2.403,
+  "ap_tests_per_100": 14.1,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.808
+ },
+ "02110000": {
+  "ap_exams_per_taker": 2.105,
+  "ap_tests_per_100": 15.59,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.824
+ },
+ "03350000": {
+  "ap_exams_per_taker": 2.426,
+  "ap_tests_per_100": 36.14,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.925
+ },
+ "02260000": {
+  "ap_exams_per_taker": 1.714,
+  "ap_tests_per_100": 11.83,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.476
+ },
+ "00880000": {
+  "ap_exams_per_taker": 2.328,
+  "ap_tests_per_100": 21.11,
+  "ap_subjects_offered": 15,
+  "ap_pct_score_3plus_exams": 0.841
+ },
+ "01760000": {
+  "ap_exams_per_taker": 1.857,
+  "ap_tests_per_100": 7.57,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.837
+ },
+ "01810000": {
+  "ap_exams_per_taker": 1.967,
+  "ap_tests_per_100": 12.42,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.677
+ },
+ "01640000": {
+  "ap_exams_per_taker": 2.556,
+  "ap_tests_per_100": 24.5,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.803
+ },
+ "00090000": {
+  "ap_exams_per_taker": 2.478,
+  "ap_tests_per_100": 27.63,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.823
+ },
+ "00250000": {
+  "ap_exams_per_taker": 1.696,
+  "ap_tests_per_100": 7.58,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.75
+ },
+ "02090000": {
+  "ap_exams_per_taker": 1.225,
+  "ap_tests_per_100": 4.61,
+  "ap_subjects_offered": 2,
+  "ap_pct_score_3plus_exams": 0.204
+ },
+ "00310000": {
+  "ap_exams_per_taker": 2.0,
+  "ap_tests_per_100": 12.16,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.76
+ },
+ "00610000": {
+  "ap_exams_per_taker": 1.661,
+  "ap_tests_per_100": 7.86,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.527
+ },
+ "02460000": {
+  "ap_exams_per_taker": 2.391,
+  "ap_tests_per_100": 16.47,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.825
+ },
+ "01250000": {
+  "ap_exams_per_taker": 2.318,
+  "ap_tests_per_100": 25.35,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.875
+ },
+ "02650000": {
+  "ap_exams_per_taker": 1.808,
+  "ap_tests_per_100": 14.04,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.709
+ },
+ "00990000": {
+  "ap_exams_per_taker": 2.547,
+  "ap_tests_per_100": 22.04,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.769
+ },
+ "00640000": {
+  "ap_exams_per_taker": 1.936,
+  "ap_tests_per_100": 8.9,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.56
+ },
+ "02480000": {
+  "ap_exams_per_taker": 1.64,
+  "ap_tests_per_100": 8.61,
+  "ap_subjects_offered": 23,
+  "ap_pct_score_3plus_exams": 0.621
+ },
+ "03090000": {
+  "ap_exams_per_taker": 1.361,
+  "ap_tests_per_100": 4.6,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.714
+ },
+ "02510000": {
+  "ap_exams_per_taker": 1.93,
+  "ap_tests_per_100": 14.27,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.776
+ },
+ "01420000": {
+  "ap_exams_per_taker": 1.831,
+  "ap_tests_per_100": 15.65,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.806
+ },
+ "00730000": {
+  "ap_exams_per_taker": 1.977,
+  "ap_tests_per_100": 19.99,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.652
+ },
+ "01070000": {
+  "ap_exams_per_taker": 1.902,
+  "ap_tests_per_100": 6.98,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.686
+ },
+ "01710000": {
+  "ap_exams_per_taker": 2.115,
+  "ap_tests_per_100": 19.12,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.838
+ },
+ "02360000": {
+  "ap_exams_per_taker": 1.693,
+  "ap_tests_per_100": 12.62,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.57
+ },
+ "01670000": {
+  "ap_exams_per_taker": 2.227,
+  "ap_tests_per_100": 20.6,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.888
+ },
+ "07250000": {
+  "ap_exams_per_taker": 2.122,
+  "ap_tests_per_100": 20.42,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.868
+ },
+ "07450000": {
+  "ap_exams_per_taker": 1.751,
+  "ap_tests_per_100": 16.02,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.768
+ },
+ "03070000": {
+  "ap_exams_per_taker": 2.091,
+  "ap_tests_per_100": 16.1,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.93
+ },
+ "06730000": {
+  "ap_exams_per_taker": 1.758,
+  "ap_tests_per_100": 15.14,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.848
+ },
+ "07170000": {
+  "ap_exams_per_taker": 1.972,
+  "ap_tests_per_100": 9.35,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.648
+ },
+ "07800000": {
+  "ap_exams_per_taker": 1.875,
+  "ap_tests_per_100": 14.52,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.732
+ },
+ "00650000": {
+  "ap_exams_per_taker": 2.078,
+  "ap_tests_per_100": 32.92,
+  "ap_subjects_offered": 10,
+  "ap_pct_score_3plus_exams": 0.862
+ },
+ "01330000": {
+  "ap_exams_per_taker": 1.56,
+  "ap_tests_per_100": 2.95,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.744
+ },
+ "01520000": {
+  "ap_exams_per_taker": 1.429,
+  "ap_tests_per_100": 10.67,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.563
+ },
+ "01510000": {
+  "ap_exams_per_taker": 1.492,
+  "ap_tests_per_100": 7.33,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.784
+ },
+ "01740000": {
+  "ap_exams_per_taker": 2.032,
+  "ap_tests_per_100": 20.71,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.829
+ },
+ "01680000": {
+  "ap_exams_per_taker": 2.463,
+  "ap_tests_per_100": 38.76,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.846
+ },
+ "03050000": {
+  "ap_exams_per_taker": 2.049,
+  "ap_tests_per_100": 13.58,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.699
+ },
+ "03430000": {
+  "ap_exams_per_taker": 1.222,
+  "ap_tests_per_100": 2.93,
+  "ap_subjects_offered": 1,
+  "ap_pct_score_3plus_exams": 0.424
+ },
+ "07530000": {
+  "ap_exams_per_taker": 1.707,
+  "ap_tests_per_100": 9.31,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.657
+ },
+ "03040000": {
+  "ap_exams_per_taker": 1.789,
+  "ap_tests_per_100": 8.32,
+  "ap_subjects_offered": 5,
+  "ap_pct_score_3plus_exams": 0.625
+ },
+ "06500000": {
+  "ap_exams_per_taker": 2.074,
+  "ap_tests_per_100": 8.87,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.839
+ },
+ "00720000": {
+  "ap_exams_per_taker": 1.948,
+  "ap_tests_per_100": 17.42,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.768
+ },
+ "06200000": {
+  "ap_exams_per_taker": 1.841,
+  "ap_tests_per_100": 11.44,
+  "ap_subjects_offered": 5,
+  "ap_pct_score_3plus_exams": 0.709
+ },
+ "01270000": {
+  "ap_exams_per_taker": 1.818,
+  "ap_tests_per_100": 13.25,
+  "ap_subjects_offered": 2,
+  "ap_pct_score_3plus_exams": 0.575
+ },
+ "06180000": {
+  "ap_exams_per_taker": 1.658,
+  "ap_tests_per_100": 11.14,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.95
+ },
+ "01500000": {
+  "ap_exams_per_taker": 1.455,
+  "ap_tests_per_100": 7.41,
+  "ap_subjects_offered": 2,
+  "ap_pct_score_3plus_exams": 0.792
+ },
+ "01590000": {
+  "ap_exams_per_taker": 2.462,
+  "ap_tests_per_100": 22.45,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.924
+ },
+ "00710000": {
+  "ap_exams_per_taker": 2.101,
+  "ap_tests_per_100": 14.67,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.666
+ },
+ "06580000": {
+  "ap_exams_per_taker": 1.882,
+  "ap_tests_per_100": 11.59,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.771
+ },
+ "01390000": {
+  "ap_exams_per_taker": 2.547,
+  "ap_tests_per_100": 35.23,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.957
+ },
+ "00360000": {
+  "ap_exams_per_taker": 1.847,
+  "ap_tests_per_100": 12.29,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.597
+ },
+ "06740000": {
+  "ap_exams_per_taker": 1.182,
+  "ap_tests_per_100": 1.55,
+  "ap_pct_score_3plus_exams": 0.154
+ },
+ "02620000": {
+  "ap_exams_per_taker": 1.93,
+  "ap_tests_per_100": 10.48,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.533
+ },
+ "01010000": {
+  "ap_exams_per_taker": 2.44,
+  "ap_tests_per_100": 26.83,
+  "ap_subjects_offered": 28,
+  "ap_pct_score_3plus_exams": 0.803
+ },
+ "01750000": {
+  "ap_exams_per_taker": 1.909,
+  "ap_tests_per_100": 19.86,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.922
+ },
+ "02610000": {
+  "ap_exams_per_taker": 2.016,
+  "ap_tests_per_100": 18.02,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.747
+ },
+ "01440000": {
+  "ap_exams_per_taker": 2.366,
+  "ap_tests_per_100": 21.01,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.934
+ },
+ "06350000": {
+  "ap_exams_per_taker": 1.889,
+  "ap_tests_per_100": 11.11,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.635
+ },
+ "00960000": {
+  "ap_exams_per_taker": 2.089,
+  "ap_tests_per_100": 14.27,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.63
+ },
+ "00830000": {
+  "ap_exams_per_taker": 1.911,
+  "ap_tests_per_100": 14.08,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.742
+ },
+ "00770000": {
+  "ap_exams_per_taker": 2.234,
+  "ap_tests_per_100": 13.28,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.699
+ },
+ "01380000": {
+  "ap_exams_per_taker": 1.67,
+  "ap_tests_per_100": 15.93,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.87
+ },
+ "01530000": {
+  "ap_exams_per_taker": 1.864,
+  "ap_tests_per_100": 5.1,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.733
+ },
+ "02290000": {
+  "ap_exams_per_taker": 1.986,
+  "ap_tests_per_100": 10.17,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.637
+ },
+ "06800000": {
+  "ap_exams_per_taker": 1.822,
+  "ap_tests_per_100": 16.96,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.861
+ },
+ "01820000": {
+  "ap_exams_per_taker": 1.912,
+  "ap_tests_per_100": 12.16,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.727
+ },
+ "01280000": {
+  "ap_exams_per_taker": 2.119,
+  "ap_tests_per_100": 8.74,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.676
+ },
+ "01910000": {
+  "ap_exams_per_taker": 1.111,
+  "ap_tests_per_100": 3.75,
+  "ap_subjects_offered": 1,
+  "ap_pct_score_3plus_exams": 0.7
+ },
+ "00350000": {
+  "ap_exams_per_taker": 1.905,
+  "ap_tests_per_100": 15.4,
+  "ap_subjects_offered": 41,
+  "ap_pct_score_3plus_exams": 0.687
+ },
+ "01370000": {
+  "ap_exams_per_taker": 1.91,
+  "ap_tests_per_100": 5.54,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.297
+ },
+ "07750000": {
+  "ap_exams_per_taker": 2.103,
+  "ap_tests_per_100": 13.68,
+  "ap_subjects_offered": 23,
+  "ap_pct_score_3plus_exams": 0.878
+ },
+ "01220000": {
+  "ap_exams_per_taker": 2.0,
+  "ap_tests_per_100": 18.39,
+  "ap_subjects_offered": 15,
+  "ap_pct_score_3plus_exams": 0.838
+ },
+ "01890000": {
+  "ap_exams_per_taker": 2.241,
+  "ap_tests_per_100": 20.93,
+  "ap_subjects_offered": 24,
+  "ap_pct_score_3plus_exams": 0.905
+ },
+ "00170000": {
+  "ap_exams_per_taker": 1.631,
+  "ap_tests_per_100": 14.48,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.65
+ },
+ "03100000": {
+  "ap_exams_per_taker": 1.696,
+  "ap_tests_per_100": 6.0,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.402
+ },
+ "03140000": {
+  "ap_exams_per_taker": 2.167,
+  "ap_tests_per_100": 12.35,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.789
+ },
+ "03300000": {
+  "ap_exams_per_taker": 2.021,
+  "ap_tests_per_100": 32.47,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.933
+ },
+ "01870000": {
+  "ap_exams_per_taker": 1.645,
+  "ap_tests_per_100": 15.48,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.834
+ },
+ "00480000": {
+  "ap_exams_per_taker": 2.407,
+  "ap_tests_per_100": 17.27,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.769
+ },
+ "03260000": {
+  "ap_exams_per_taker": 2.35,
+  "ap_tests_per_100": 20.66,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.929
+ },
+ "02310000": {
+  "ap_exams_per_taker": 1.97,
+  "ap_tests_per_100": 19.85,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.802
+ },
+ "00160000": {
+  "ap_exams_per_taker": 1.702,
+  "ap_tests_per_100": 10.39,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.682
+ },
+ "00790000": {
+  "ap_exams_per_taker": 1.88,
+  "ap_tests_per_100": 8.16,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.699
+ },
+ "06550000": {
+  "ap_exams_per_taker": 2.355,
+  "ap_tests_per_100": 60.63,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.958
+ },
+ "03010000": {
+  "ap_exams_per_taker": 1.455,
+  "ap_tests_per_100": 9.31,
+  "ap_subjects_offered": 4,
+  "ap_pct_score_3plus_exams": 0.792
+ },
+ "01110000": {
+  "ap_exams_per_taker": 1.487,
+  "ap_tests_per_100": 9.15,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.569
+ },
+ "06150000": {
+  "ap_exams_per_taker": 1.453,
+  "ap_tests_per_100": 8.81,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.297
+ },
+ "01780000": {
+  "ap_exams_per_taker": 2.143,
+  "ap_tests_per_100": 25.74,
+  "ap_subjects_offered": 24,
+  "ap_pct_score_3plus_exams": 0.836
+ },
+ "06980000": {
+  "ap_exams_per_taker": 2.451,
+  "ap_tests_per_100": 34.34,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.846
+ },
+ "07780000": {
+  "ap_exams_per_taker": 1.747,
+  "ap_tests_per_100": 14.29,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.83
+ },
+ "00930000": {
+  "ap_exams_per_taker": 1.839,
+  "ap_tests_per_100": 8.6,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.515
+ },
+ "02780000": {
+  "ap_exams_per_taker": 2.038,
+  "ap_tests_per_100": 13.69,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.921
+ },
+ "02950000": {
+  "ap_exams_per_taker": 1.653,
+  "ap_tests_per_100": 12.23,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.75
+ },
+ "07120000": {
+  "ap_exams_per_taker": 2.152,
+  "ap_tests_per_100": 28.41,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.638
+ },
+ "00500000": {
+  "ap_exams_per_taker": 2.286,
+  "ap_tests_per_100": 22.69,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.855
+ },
+ "07650000": {
+  "ap_exams_per_taker": 1.333,
+  "ap_tests_per_100": 5.4,
+  "ap_subjects_offered": 2,
+  "ap_pct_score_3plus_exams": 0.719
+ },
+ "02180000": {
+  "ap_exams_per_taker": 2.151,
+  "ap_tests_per_100": 15.68,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.725
+ },
+ "00820000": {
+  "ap_exams_per_taker": 2.493,
+  "ap_tests_per_100": 38.09,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.792
+ },
+ "02150000": {
+  "ap_exams_per_taker": 1.167,
+  "ap_tests_per_100": 3.6,
+  "ap_pct_score_3plus_exams": 0.643
+ },
+ "01650000": {
+  "ap_exams_per_taker": 2.079,
+  "ap_tests_per_100": 12.12,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.754
+ },
+ "03150000": {
+  "ap_exams_per_taker": 2.044,
+  "ap_tests_per_100": 22.73,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.959
+ },
+ "02840000": {
+  "ap_exams_per_taker": 2.328,
+  "ap_tests_per_100": 20.08,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.738
+ },
+ "07660000": {
+  "ap_exams_per_taker": 1.645,
+  "ap_tests_per_100": 12.24,
+  "ap_subjects_offered": 5,
+  "ap_pct_score_3plus_exams": 0.758
+ },
+ "02930000": {
+  "ap_exams_per_taker": 1.871,
+  "ap_tests_per_100": 9.49,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.6
+ },
+ "00520000": {
+  "ap_exams_per_taker": 1.815,
+  "ap_tests_per_100": 10.24,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.741
+ },
+ "02170000": {
+  "ap_exams_per_taker": 1.845,
+  "ap_tests_per_100": 17.86,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.861
+ },
+ "03160000": {
+  "ap_exams_per_taker": 1.898,
+  "ap_tests_per_100": 5.36,
+  "ap_subjects_offered": 4,
+  "ap_pct_score_3plus_exams": 0.247
+ },
+ "02390000": {
+  "ap_exams_per_taker": 1.988,
+  "ap_tests_per_100": 12.28,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.737
+ },
+ "02520000": {
+  "ap_exams_per_taker": 1.702,
+  "ap_tests_per_100": 12.86,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.725
+ },
+ "06250000": {
+  "ap_exams_per_taker": 2.052,
+  "ap_tests_per_100": 13.12,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.721
+ },
+ "07150000": {
+  "ap_exams_per_taker": 1.9,
+  "ap_tests_per_100": 21.37,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.761
+ },
+ "03080000": {
+  "ap_exams_per_taker": 2.073,
+  "ap_tests_per_100": 14.91,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.732
+ },
+ "01610000": {
+  "ap_exams_per_taker": 2.437,
+  "ap_tests_per_100": 16.03,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.769
+ },
+ "02900000": {
+  "ap_exams_per_taker": 1.743,
+  "ap_tests_per_100": 24.32,
+  "ap_subjects_offered": 10,
+  "ap_pct_score_3plus_exams": 0.767
+ },
+ "03230000": {
+  "ap_exams_per_taker": 1.471,
+  "ap_tests_per_100": 9.19,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.528
+ },
+ "06720000": {
+  "ap_exams_per_taker": 2.857,
+  "ap_tests_per_100": 8.32,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.767
+ },
+ "07350000": {
+  "ap_exams_per_taker": 1.699,
+  "ap_tests_per_100": 8.79,
+  "ap_subjects_offered": 10,
+  "ap_pct_score_3plus_exams": 0.658
+ },
+ "00300000": {
+  "ap_exams_per_taker": 1.861,
+  "ap_tests_per_100": 12.79,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.755
+ },
+ "01360000": {
+  "ap_exams_per_taker": 1.794,
+  "ap_tests_per_100": 15.43,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.853
+ },
+ "01970000": {
+  "ap_exams_per_taker": 1.872,
+  "ap_tests_per_100": 15.97,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.708
+ },
+ "02270000": {
+  "ap_exams_per_taker": 1.524,
+  "ap_tests_per_100": 5.99,
+  "ap_subjects_offered": 1,
+  "ap_pct_score_3plus_exams": 0.656
+ },
+ "01310000": {
+  "ap_exams_per_taker": 1.968,
+  "ap_tests_per_100": 17.37,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.976
+ },
+ "01980000": {
+  "ap_exams_per_taker": 1.948,
+  "ap_tests_per_100": 25.58,
+  "ap_subjects_offered": 27,
+  "ap_pct_score_3plus_exams": 0.93
+ },
+ "02040000": {
+  "ap_exams_per_taker": 2.005,
+  "ap_tests_per_100": 18.68,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.812
+ },
+ "00140000": {
+  "ap_exams_per_taker": 2.308,
+  "ap_tests_per_100": 18.56,
+  "ap_subjects_offered": 15,
+  "ap_pct_score_3plus_exams": 0.954
+ },
+ "02810000": {
+  "ap_exams_per_taker": 1.679,
+  "ap_tests_per_100": 5.36,
+  "ap_subjects_offered": 26,
+  "ap_pct_score_3plus_exams": 0.412
+ },
+ "02190000": {
+  "ap_exams_per_taker": 1.709,
+  "ap_tests_per_100": 19.75,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.851
+ },
+ "06650000": {
+  "ap_exams_per_taker": 2.151,
+  "ap_tests_per_100": 17.61,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.86
+ },
+ "03470000": {
+  "ap_exams_per_taker": 2.207,
+  "ap_tests_per_100": 12.8,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.72
+ },
+ "00070000": {
+  "ap_exams_per_taker": 1.366,
+  "ap_tests_per_100": 5.35,
+  "ap_subjects_offered": 4,
+  "ap_pct_score_3plus_exams": 0.866
+ },
+ "03460000": {
+  "ap_exams_per_taker": 1.868,
+  "ap_tests_per_100": 15.15,
+  "ap_subjects_offered": 10,
+  "ap_pct_score_3plus_exams": 0.434
+ },
+ "01990000": {
+  "ap_exams_per_taker": 2.143,
+  "ap_tests_per_100": 19.83,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.955
+ },
+ "02200000": {
+  "ap_exams_per_taker": 2.301,
+  "ap_tests_per_100": 16.41,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.634
+ },
+ "06100000": {
+  "ap_exams_per_taker": 1.65,
+  "ap_tests_per_100": 10.63,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.614
+ },
+ "00240000": {
+  "ap_exams_per_taker": 1.439,
+  "ap_tests_per_100": 7.84,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.857
+ },
+ "03320000": {
+  "ap_exams_per_taker": 2.015,
+  "ap_tests_per_100": 17.64,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.705
+ },
+ "07500000": {
+  "ap_exams_per_taker": 1.833,
+  "ap_tests_per_100": 3.93,
+  "ap_pct_score_3plus_exams": 0.636
+ },
+ "01720000": {
+  "ap_exams_per_taker": 1.942,
+  "ap_tests_per_100": 19.87,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.56
+ },
+ "01580000": {
+  "ap_exams_per_taker": 1.94,
+  "ap_tests_per_100": 15.93,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.835
+ },
+ "02580000": {
+  "ap_exams_per_taker": 1.972,
+  "ap_tests_per_100": 12.63,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.664
+ },
+ "01770000": {
+  "ap_exams_per_taker": 2.182,
+  "ap_tests_per_100": 24.85,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.795
+ },
+ "01850000": {
+  "ap_exams_per_taker": 1.939,
+  "ap_tests_per_100": 16.36,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.566
+ },
+ "00460000": {
+  "ap_exams_per_taker": 2.264,
+  "ap_tests_per_100": 23.07,
+  "ap_subjects_offered": 26,
+  "ap_pct_score_3plus_exams": 0.941
+ },
+ "02660000": {
+  "ap_exams_per_taker": 2.605,
+  "ap_tests_per_100": 28.87,
+  "ap_subjects_offered": 24,
+  "ap_pct_score_3plus_exams": 0.926
+ },
+ "01600000": {
+  "ap_exams_per_taker": 1.722,
+  "ap_tests_per_100": 2.88,
+  "ap_subjects_offered": 10,
+  "ap_pct_score_3plus_exams": 0.67
+ },
+ "01620000": {
+  "ap_exams_per_taker": 1.73,
+  "ap_tests_per_100": 9.82,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.883
+ },
+ "03250000": {
+  "ap_exams_per_taker": 1.67,
+  "ap_tests_per_100": 6.54,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.625
+ },
+ "01410000": {
+  "ap_exams_per_taker": 1.709,
+  "ap_tests_per_100": 14.95,
+  "ap_subjects_offered": 10,
+  "ap_pct_score_3plus_exams": 0.579
+ },
+ "03310000": {
+  "ap_exams_per_taker": 1.667,
+  "ap_tests_per_100": 9.27,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.571
+ },
+ "03440000": {
+  "ap_exams_per_taker": 2.615,
+  "ap_tests_per_100": 29.09,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.918
+ },
+ "03420000": {
+  "ap_exams_per_taker": 2.061,
+  "ap_tests_per_100": 13.26,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.927
+ },
+ "07200000": {
+  "ap_exams_per_taker": 1.663,
+  "ap_tests_per_100": 9.74,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.662
+ },
+ "02070000": {
+  "ap_exams_per_taker": 2.344,
+  "ap_tests_per_100": 27.63,
+  "ap_subjects_offered": 31,
+  "ap_pct_score_3plus_exams": 0.906
+ },
+ "01000000": {
+  "ap_exams_per_taker": 2.186,
+  "ap_tests_per_100": 11.8,
+  "ap_subjects_offered": 24,
+  "ap_pct_score_3plus_exams": 0.831
+ },
+ "02640000": {
+  "ap_exams_per_taker": 2.279,
+  "ap_tests_per_100": 26.67,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.784
+ },
+ "00940000": {
+  "ap_exams_per_taker": 2.178,
+  "ap_tests_per_100": 16.74,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.772
+ },
+ "02770000": {
+  "ap_exams_per_taker": 1.463,
+  "ap_tests_per_100": 3.38,
+  "ap_subjects_offered": 4,
+  "ap_pct_score_3plus_exams": 0.283
+ },
+ "06220000": {
+  "ap_exams_per_taker": 1.699,
+  "ap_tests_per_100": 9.94,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.759
+ },
+ "06750000": {
+  "ap_exams_per_taker": 2.133,
+  "ap_tests_per_100": 18.76,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.775
+ },
+ "00400000": {
+  "ap_exams_per_taker": 2.02,
+  "ap_tests_per_100": 18.37,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.939
+ },
+ "06160000": {
+  "ap_exams_per_taker": 1.773,
+  "ap_tests_per_100": 10.39,
+  "ap_subjects_offered": 9,
+  "ap_pct_score_3plus_exams": 0.686
+ },
+ "02850000": {
+  "ap_exams_per_taker": 1.871,
+  "ap_tests_per_100": 10.22,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.675
+ },
+ "00230000": {
+  "ap_exams_per_taker": 2.003,
+  "ap_tests_per_100": 24.16,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.91
+ },
+ "00440000": {
+  "ap_exams_per_taker": 1.625,
+  "ap_tests_per_100": 3.67,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.507
+ },
+ "00260000": {
+  "ap_exams_per_taker": 2.623,
+  "ap_tests_per_100": 42.66,
+  "ap_subjects_offered": 27,
+  "ap_pct_score_3plus_exams": 0.959
+ },
+ "02710000": {
+  "ap_exams_per_taker": 2.308,
+  "ap_tests_per_100": 19.74,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.912
+ },
+ "02910000": {
+  "ap_exams_per_taker": 2.222,
+  "ap_tests_per_100": 28.8,
+  "ap_subjects_offered": 17,
+  "ap_pct_score_3plus_exams": 0.798
+ },
+ "01030000": {
+  "ap_exams_per_taker": 1.46,
+  "ap_tests_per_100": 3.72,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.565
+ },
+ "02100000": {
+  "ap_exams_per_taker": 2.064,
+  "ap_tests_per_100": 28.25,
+  "ap_subjects_offered": 23,
+  "ap_pct_score_3plus_exams": 0.86
+ },
+ "00570000": {
+  "ap_exams_per_taker": 1.723,
+  "ap_tests_per_100": 10.37,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.399
+ },
+ "07100000": {
+  "ap_exams_per_taker": 2.322,
+  "ap_tests_per_100": 20.5,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.801
+ },
+ "01860000": {
+  "ap_exams_per_taker": 1.576,
+  "ap_tests_per_100": 9.65,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.801
+ },
+ "03480000": {
+  "ap_exams_per_taker": 1.687,
+  "ap_tests_per_100": 11.41,
+  "ap_subjects_offered": 33,
+  "ap_pct_score_3plus_exams": 0.509
+ },
+ "07670000": {
+  "ap_exams_per_taker": 2.026,
+  "ap_tests_per_100": 5.34,
+  "ap_subjects_offered": 4,
+  "ap_pct_score_3plus_exams": 0.753
+ },
+ "00050000": {
+  "ap_exams_per_taker": 1.911,
+  "ap_tests_per_100": 14.37,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.69
+ },
+ "01170000": {
+  "ap_exams_per_taker": 2.116,
+  "ap_tests_per_100": 17.81,
+  "ap_subjects_offered": 5,
+  "ap_pct_score_3plus_exams": 0.648
+ },
+ "00970000": {
+  "ap_exams_per_taker": 2.087,
+  "ap_tests_per_100": 7.27,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.487
+ },
+ "01490000": {
+  "ap_exams_per_taker": 1.535,
+  "ap_tests_per_100": 7.51,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.46
+ },
+ "03170000": {
+  "ap_exams_per_taker": 2.333,
+  "ap_tests_per_100": 31.46,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.955
+ },
+ "03210000": {
+  "ap_exams_per_taker": 2.206,
+  "ap_tests_per_100": 19.95,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.867
+ },
+ "03360000": {
+  "ap_exams_per_taker": 2.123,
+  "ap_tests_per_100": 14.53,
+  "ap_subjects_offered": 25,
+  "ap_pct_score_3plus_exams": 0.818
+ },
+ "00560000": {
+  "ap_exams_per_taker": 2.297,
+  "ap_tests_per_100": 12.68,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.869
+ },
+ "01140000": {
+  "ap_exams_per_taker": 1.875,
+  "ap_tests_per_100": 9.34,
+  "ap_subjects_offered": 5,
+  "ap_pct_score_3plus_exams": 0.642
+ },
+ "02010000": {
+  "ap_exams_per_taker": 2.2,
+  "ap_tests_per_100": 7.16,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.659
+ },
+ "02440000": {
+  "ap_exams_per_taker": 2.099,
+  "ap_tests_per_100": 13.95,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.519
+ },
+ "01700000": {
+  "ap_exams_per_taker": 2.194,
+  "ap_tests_per_100": 8.3,
+  "ap_subjects_offered": 13,
+  "ap_pct_score_3plus_exams": 0.569
+ },
+ "00180000": {
+  "ap_exams_per_taker": 1.37,
+  "ap_tests_per_100": 5.48,
+  "ap_subjects_offered": 3,
+  "ap_pct_score_3plus_exams": 0.189
+ },
+ "00950000": {
+  "ap_exams_per_taker": 1.902,
+  "ap_tests_per_100": 8.32,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.535
+ },
+ "00100000": {
+  "ap_exams_per_taker": 2.224,
+  "ap_tests_per_100": 26.81,
+  "ap_subjects_offered": 26,
+  "ap_pct_score_3plus_exams": 0.917
+ },
+ "01050000": {
+  "ap_exams_per_taker": 2.222,
+  "ap_tests_per_100": 13.2,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.907
+ },
+ "00490000": {
+  "ap_exams_per_taker": 1.946,
+  "ap_tests_per_100": 18.06,
+  "ap_subjects_offered": 30,
+  "ap_pct_score_3plus_exams": 0.859
+ },
+ "07730000": {
+  "ap_exams_per_taker": 2.343,
+  "ap_tests_per_100": 11.51,
+  "ap_subjects_offered": 12,
+  "ap_pct_score_3plus_exams": 0.695
+ },
+ "06450000": {
+  "ap_exams_per_taker": 1.704,
+  "ap_tests_per_100": 13.49,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.518
+ },
+ "00870000": {
+  "ap_exams_per_taker": 1.804,
+  "ap_tests_per_100": 16.77,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.843
+ },
+ "02140000": {
+  "ap_exams_per_taker": 1.553,
+  "ap_tests_per_100": 6.54,
+  "ap_subjects_offered": 5,
+  "ap_pct_score_3plus_exams": 0.78
+ },
+ "02920000": {
+  "ap_exams_per_taker": 1.784,
+  "ap_tests_per_100": 10.04,
+  "ap_subjects_offered": 8,
+  "ap_pct_score_3plus_exams": 0.768
+ },
+ "01630000": {
+  "ap_exams_per_taker": 1.763,
+  "ap_tests_per_100": 5.86,
+  "ap_subjects_offered": 23,
+  "ap_pct_score_3plus_exams": 0.516
+ },
+ "06030000": {
+  "ap_exams_per_taker": 1.613,
+  "ap_tests_per_100": 12.2,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.413
+ },
+ "02120000": {
+  "ap_exams_per_taker": 2.088,
+  "ap_tests_per_100": 16.4,
+  "ap_subjects_offered": 15,
+  "ap_pct_score_3plus_exams": 0.775
+ },
+ "01550000": {
+  "ap_exams_per_taker": 2.394,
+  "ap_tests_per_100": 46.46,
+  "ap_subjects_offered": 29,
+  "ap_pct_score_3plus_exams": 0.946
+ },
+ "02740000": {
+  "ap_exams_per_taker": 2.339,
+  "ap_tests_per_100": 14.87,
+  "ap_subjects_offered": 21,
+  "ap_pct_score_3plus_exams": 0.75
+ },
+ "03220000": {
+  "ap_exams_per_taker": 1.982,
+  "ap_tests_per_100": 12.29,
+  "ap_subjects_offered": 7,
+  "ap_pct_score_3plus_exams": 0.793
+ },
+ "00200000": {
+  "ap_exams_per_taker": 1.771,
+  "ap_tests_per_100": 13.54,
+  "ap_subjects_offered": 22,
+  "ap_pct_score_3plus_exams": 0.537
+ },
+ "01100000": {
+  "ap_exams_per_taker": 1.854,
+  "ap_tests_per_100": 14.22,
+  "ap_subjects_offered": 14,
+  "ap_pct_score_3plus_exams": 0.851
+ },
+ "07700000": {
+  "ap_exams_per_taker": 1.649,
+  "ap_tests_per_100": 20.34,
+  "ap_subjects_offered": 11,
+  "ap_pct_score_3plus_exams": 0.923
+ },
+ "06000000": {
+  "ap_exams_per_taker": 2.086,
+  "ap_tests_per_100": 33.55,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.955
+ },
+ "00010000": {
+  "ap_exams_per_taker": 1.641,
+  "ap_tests_per_100": 4.92,
+  "ap_subjects_offered": 6,
+  "ap_pct_score_3plus_exams": 0.648
+ },
+ "06400000": {
+  "ap_exams_per_taker": 2.234,
+  "ap_tests_per_100": 60.71,
+  "ap_subjects_offered": 20,
+  "ap_pct_score_3plus_exams": 0.963
+ },
+ "06600000": {
+  "ap_exams_per_taker": 2.189,
+  "ap_tests_per_100": 50.44,
+  "ap_subjects_offered": 18,
+  "ap_pct_score_3plus_exams": 0.751
+ },
+ "06900000": {
+  "ap_exams_per_taker": 2.271,
+  "ap_tests_per_100": 53.47,
+  "ap_subjects_offered": 24,
+  "ap_pct_score_3plus_exams": 0.766
+ },
+ "06950000": {
+  "ap_exams_per_taker": 1.701,
+  "ap_tests_per_100": 50.37,
+  "ap_subjects_offered": 15,
+  "ap_pct_score_3plus_exams": 0.977
+ },
+ "07050000": {
+  "ap_exams_per_taker": 1.938,
+  "ap_tests_per_100": 31.46,
+  "ap_subjects_offered": 19,
+  "ap_pct_score_3plus_exams": 0.817
+ },
+ "07300000": {
+  "ap_exams_per_taker": 2.184,
+  "ap_tests_per_100": 85.8,
+  "ap_subjects_offered": 23,
+  "ap_pct_score_3plus_exams": 0.88
+ },
+ "07630000": {
+  "ap_exams_per_taker": 2.176,
+  "ap_tests_per_100": 62.17,
+  "ap_subjects_offered": 16,
+  "ap_pct_score_3plus_exams": 0.815
+ }
+}

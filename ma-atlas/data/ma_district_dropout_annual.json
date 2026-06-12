@@ -1,0 +1,656 @@
+{
+ "06720000": {
+  "dropout_annual_pct": 0.013
+ },
+ "02460000": {
+  "dropout_annual_pct": 0.004
+ },
+ "01010000": {
+  "dropout_annual_pct": 0.003
+ },
+ "02440000": {
+  "dropout_annual_pct": 0.03
+ },
+ "03300000": {
+  "dropout_annual_pct": 0.002
+ },
+ "01000000": {
+  "dropout_annual_pct": 0.052
+ },
+ "03050000": {
+  "dropout_annual_pct": 0.009
+ },
+ "03310000": {
+  "dropout_annual_pct": 0.008
+ },
+ "01220000": {
+  "dropout_annual_pct": 0.0
+ },
+ "01860000": {
+  "dropout_annual_pct": 0.008
+ },
+ "00880000": {
+  "dropout_annual_pct": 0.001
+ },
+ "00930000": {
+  "dropout_annual_pct": 0.037
+ },
+ "00940000": {
+  "dropout_annual_pct": 0.011
+ },
+ "01330000": {
+  "dropout_annual_pct": 0.016
+ },
+ "01510000": {
+  "dropout_annual_pct": 0.008
+ },
+ "03460000": {
+  "dropout_annual_pct": 0.019
+ },
+ "01530000": {
+  "dropout_annual_pct": 0.01
+ },
+ "00140000": {
+  "dropout_annual_pct": 0.008
+ },
+ "02510000": {
+  "dropout_annual_pct": 0.027
+ },
+ "02780000": {
+  "dropout_annual_pct": 0.006
+ },
+ "03090000": {
+  "dropout_annual_pct": 0.027
+ },
+ "00770000": {
+  "dropout_annual_pct": 0.015
+ },
+ "01270000": {
+  "dropout_annual_pct": 0.0
+ },
+ "00570000": {
+  "dropout_annual_pct": 0.063
+ },
+ "00400000": {
+  "dropout_annual_pct": 0.006
+ },
+ "02040000": {
+  "dropout_annual_pct": 0.001
+ },
+ "01110000": {
+  "dropout_annual_pct": 0.0
+ },
+ "01600000": {
+  "dropout_annual_pct": 0.031
+ },
+ "01780000": {
+  "dropout_annual_pct": 0.003
+ },
+ "07300000": {
+  "dropout_annual_pct": 0.003
+ },
+ "03480000": {
+  "dropout_annual_pct": 0.02
+ },
+ "00820000": {
+  "dropout_annual_pct": 0.002
+ },
+ "01760000": {
+  "dropout_annual_pct": 0.019
+ },
+ "06980000": {
+  "dropout_annual_pct": 0.005
+ },
+ "00490000": {
+  "dropout_annual_pct": 0.006
+ },
+ "00650000": {
+  "dropout_annual_pct": 0.0
+ },
+ "00440000": {
+  "dropout_annual_pct": 0.04
+ },
+ "03140000": {
+  "dropout_annual_pct": 0.016
+ },
+ "07170000": {
+  "dropout_annual_pct": 0.026
+ },
+ "00560000": {
+  "dropout_annual_pct": 0.004
+ },
+ "00090000": {
+  "dropout_annual_pct": 0.0
+ },
+ "06200000": {
+  "dropout_annual_pct": 0.004
+ },
+ "00610000": {
+  "dropout_annual_pct": 0.031
+ },
+ "01650000": {
+  "dropout_annual_pct": 0.033
+ },
+ "01680000": {
+  "dropout_annual_pct": 0.001
+ },
+ "02140000": {
+  "dropout_annual_pct": 0.009
+ },
+ "01370000": {
+  "dropout_annual_pct": 0.046
+ },
+ "00230000": {
+  "dropout_annual_pct": 0.005
+ },
+ "07630000": {
+  "dropout_annual_pct": 0.007
+ },
+ "00970000": {
+  "dropout_annual_pct": 0.031
+ },
+ "02480000": {
+  "dropout_annual_pct": 0.045
+ },
+ "01990000": {
+  "dropout_annual_pct": 0.002
+ },
+ "00200000": {
+  "dropout_annual_pct": 0.026
+ },
+ "00730000": {
+  "dropout_annual_pct": 0.017
+ },
+ "06750000": {
+  "dropout_annual_pct": 0.0
+ },
+ "02840000": {
+  "dropout_annual_pct": 0.008
+ },
+ "07150000": {
+  "dropout_annual_pct": 0.009
+ },
+ "00860000": {
+  "dropout_annual_pct": 0.024
+ },
+ "01170000": {
+  "dropout_annual_pct": 0.023
+ },
+ "00960000": {
+  "dropout_annual_pct": 0.025
+ },
+ "03040000": {
+  "dropout_annual_pct": 0.018
+ },
+ "07660000": {
+  "dropout_annual_pct": 0.011
+ },
+ "01500000": {
+  "dropout_annual_pct": 0.005
+ },
+ "03420000": {
+  "dropout_annual_pct": 0.006
+ },
+ "02010000": {
+  "dropout_annual_pct": 0.021
+ },
+ "00350000": {
+  "dropout_annual_pct": 0.036
+ },
+ "01970000": {
+  "dropout_annual_pct": 0.018
+ },
+ "07500000": {
+  "dropout_annual_pct": 0.009
+ },
+ "00260000": {
+  "dropout_annual_pct": 0.001
+ },
+ "00460000": {
+  "dropout_annual_pct": 0.008
+ },
+ "02520000": {
+  "dropout_annual_pct": 0.009
+ },
+ "02710000": {
+  "dropout_annual_pct": 0.005
+ },
+ "01630000": {
+  "dropout_annual_pct": 0.045
+ },
+ "06100000": {
+  "dropout_annual_pct": 0.002
+ },
+ "07200000": {
+  "dropout_annual_pct": 0.011
+ },
+ "02650000": {
+  "dropout_annual_pct": 0.012
+ },
+ "00480000": {
+  "dropout_annual_pct": 0.008
+ },
+ "01030000": {
+  "dropout_annual_pct": 0.026
+ },
+ "01720000": {
+  "dropout_annual_pct": 0.005
+ },
+ "02640000": {
+  "dropout_annual_pct": 0.003
+ },
+ "03230000": {
+  "dropout_annual_pct": 0.003
+ },
+ "02200000": {
+  "dropout_annual_pct": 0.002
+ },
+ "02900000": {
+  "dropout_annual_pct": 0.005
+ },
+ "06600000": {
+  "dropout_annual_pct": 0.011
+ },
+ "00160000": {
+  "dropout_annual_pct": 0.01
+ },
+ "02310000": {
+  "dropout_annual_pct": 0.009
+ },
+ "03430000": {
+  "dropout_annual_pct": 0.028
+ },
+ "00720000": {
+  "dropout_annual_pct": 0.012
+ },
+ "07050000": {
+  "dropout_annual_pct": 0.002
+ },
+ "02260000": {
+  "dropout_annual_pct": 0.01
+ },
+ "06740000": {
+  "dropout_annual_pct": 0.056
+ },
+ "01620000": {
+  "dropout_annual_pct": 0.009
+ },
+ "07250000": {
+  "dropout_annual_pct": 0.006
+ },
+ "02610000": {
+  "dropout_annual_pct": 0.008
+ },
+ "01490000": {
+  "dropout_annual_pct": 0.036
+ },
+ "02770000": {
+  "dropout_annual_pct": 0.059
+ },
+ "02950000": {
+  "dropout_annual_pct": 0.003
+ },
+ "00240000": {
+  "dropout_annual_pct": 0.014
+ },
+ "07530000": {
+  "dropout_annual_pct": 0.026
+ },
+ "00100000": {
+  "dropout_annual_pct": 0.004
+ },
+ "02270000": {
+  "dropout_annual_pct": 0.005
+ },
+ "00250000": {
+  "dropout_annual_pct": 0.012
+ },
+ "00990000": {
+  "dropout_annual_pct": 0.004
+ },
+ "06650000": {
+  "dropout_annual_pct": 0.002
+ },
+ "02190000": {
+  "dropout_annual_pct": 0.0
+ },
+ "03170000": {
+  "dropout_annual_pct": 0.002
+ },
+ "07650000": {
+  "dropout_annual_pct": 0.019
+ },
+ "00520000": {
+  "dropout_annual_pct": 0.003
+ },
+ "01590000": {
+  "dropout_annual_pct": 0.002
+ },
+ "06350000": {
+  "dropout_annual_pct": 0.007
+ },
+ "01420000": {
+  "dropout_annual_pct": 0.022
+ },
+ "01980000": {
+  "dropout_annual_pct": 0.008
+ },
+ "02580000": {
+  "dropout_annual_pct": 0.017
+ },
+ "07800000": {
+  "dropout_annual_pct": 0.009
+ },
+ "01670000": {
+  "dropout_annual_pct": 0.001
+ },
+ "01070000": {
+  "dropout_annual_pct": 0.03
+ },
+ "01520000": {
+  "dropout_annual_pct": 0.0
+ },
+ "00050000": {
+  "dropout_annual_pct": 0.01
+ },
+ "00950000": {
+  "dropout_annual_pct": 0.05
+ },
+ "01610000": {
+  "dropout_annual_pct": 0.008
+ },
+ "01820000": {
+  "dropout_annual_pct": 0.013
+ },
+ "02100000": {
+  "dropout_annual_pct": 0.014
+ },
+ "06160000": {
+  "dropout_annual_pct": 0.007
+ },
+ "02110000": {
+  "dropout_annual_pct": 0.005
+ },
+ "02910000": {
+  "dropout_annual_pct": 0.001
+ },
+ "06800000": {
+  "dropout_annual_pct": 0.005
+ },
+ "01050000": {
+  "dropout_annual_pct": 0.007
+ },
+ "07700000": {
+  "dropout_annual_pct": 0.007
+ },
+ "01910000": {
+  "dropout_annual_pct": 0.021
+ },
+ "03080000": {
+  "dropout_annual_pct": 0.037
+ },
+ "01250000": {
+  "dropout_annual_pct": 0.0
+ },
+ "00310000": {
+  "dropout_annual_pct": 0.011
+ },
+ "02920000": {
+  "dropout_annual_pct": 0.016
+ },
+ "03440000": {
+  "dropout_annual_pct": 0.0
+ },
+ "00360000": {
+  "dropout_annual_pct": 0.012
+ },
+ "07750000": {
+  "dropout_annual_pct": 0.007
+ },
+ "02740000": {
+  "dropout_annual_pct": 0.021
+ },
+ "01750000": {
+  "dropout_annual_pct": 0.006
+ },
+ "06000000": {
+  "dropout_annual_pct": 0.004
+ },
+ "06250000": {
+  "dropout_annual_pct": 0.007
+ },
+ "06730000": {
+  "dropout_annual_pct": 0.002
+ },
+ "07100000": {
+  "dropout_annual_pct": 0.011
+ },
+ "07670000": {
+  "dropout_annual_pct": 0.02
+ },
+ "02360000": {
+  "dropout_annual_pct": 0.051
+ },
+ "03250000": {
+  "dropout_annual_pct": 0.016
+ },
+ "06030000": {
+  "dropout_annual_pct": 0.023
+ },
+ "06220000": {
+  "dropout_annual_pct": 0.017
+ },
+ "00830000": {
+  "dropout_annual_pct": 0.004
+ },
+ "03220000": {
+  "dropout_annual_pct": 0.008
+ },
+ "00180000": {
+  "dropout_annual_pct": 0.009
+ },
+ "03210000": {
+  "dropout_annual_pct": 0.006
+ },
+ "02660000": {
+  "dropout_annual_pct": 0.009
+ },
+ "03150000": {
+  "dropout_annual_pct": 0.002
+ },
+ "02290000": {
+  "dropout_annual_pct": 0.033
+ },
+ "02430000": {
+  "dropout_annual_pct": 0.011
+ },
+ "02620000": {
+  "dropout_annual_pct": 0.024
+ },
+ "01410000": {
+  "dropout_annual_pct": 0.023
+ },
+ "07730000": {
+  "dropout_annual_pct": 0.022
+ },
+ "01870000": {
+  "dropout_annual_pct": 0.003
+ },
+ "06180000": {
+  "dropout_annual_pct": 0.035
+ },
+ "01640000": {
+  "dropout_annual_pct": 0.003
+ },
+ "02120000": {
+  "dropout_annual_pct": 0.013
+ },
+ "00790000": {
+  "dropout_annual_pct": 0.019
+ },
+ "01280000": {
+  "dropout_annual_pct": 0.025
+ },
+ "02150000": {
+  "dropout_annual_pct": 0.056
+ },
+ "02810000": {
+  "dropout_annual_pct": 0.033
+ },
+ "00010000": {
+  "dropout_annual_pct": 0.015
+ },
+ "01550000": {
+  "dropout_annual_pct": 0.001
+ },
+ "01700000": {
+  "dropout_annual_pct": 0.015
+ },
+ "01770000": {
+  "dropout_annual_pct": 0.013
+ },
+ "01310000": {
+  "dropout_annual_pct": 0.004
+ },
+ "06450000": {
+  "dropout_annual_pct": 0.02
+ },
+ "00300000": {
+  "dropout_annual_pct": 0.022
+ },
+ "06150000": {
+  "dropout_annual_pct": 0.029
+ },
+ "03010000": {
+  "dropout_annual_pct": 0.005
+ },
+ "00710000": {
+  "dropout_annual_pct": 0.012
+ },
+ "01390000": {
+  "dropout_annual_pct": 0.002
+ },
+ "01850000": {
+  "dropout_annual_pct": 0.047
+ },
+ "02180000": {
+  "dropout_annual_pct": 0.003
+ },
+ "03350000": {
+  "dropout_annual_pct": 0.0
+ },
+ "06400000": {
+  "dropout_annual_pct": 0.0
+ },
+ "01360000": {
+  "dropout_annual_pct": 0.004
+ },
+ "02170000": {
+  "dropout_annual_pct": 0.003
+ },
+ "01100000": {
+  "dropout_annual_pct": 0.009
+ },
+ "03320000": {
+  "dropout_annual_pct": 0.015
+ },
+ "01380000": {
+  "dropout_annual_pct": 0.004
+ },
+ "00640000": {
+  "dropout_annual_pct": 0.004
+ },
+ "03470000": {
+  "dropout_annual_pct": 0.016
+ },
+ "02070000": {
+  "dropout_annual_pct": 0.003
+ },
+ "02390000": {
+  "dropout_annual_pct": 0.012
+ },
+ "02930000": {
+  "dropout_annual_pct": 0.031
+ },
+ "00170000": {
+  "dropout_annual_pct": 0.012
+ },
+ "06500000": {
+  "dropout_annual_pct": 0.005
+ },
+ "06550000": {
+  "dropout_annual_pct": 0.0
+ },
+ "01740000": {
+  "dropout_annual_pct": 0.023
+ },
+ "01440000": {
+  "dropout_annual_pct": 0.002
+ },
+ "07350000": {
+  "dropout_annual_pct": 0.017
+ },
+ "00500000": {
+  "dropout_annual_pct": 0.008
+ },
+ "00070000": {
+  "dropout_annual_pct": 0.008
+ },
+ "02090000": {
+  "dropout_annual_pct": 0.032
+ },
+ "01890000": {
+  "dropout_annual_pct": 0.003
+ },
+ "03360000": {
+  "dropout_annual_pct": 0.014
+ },
+ "00870000": {
+  "dropout_annual_pct": 0.004
+ },
+ "01140000": {
+  "dropout_annual_pct": 0.039
+ },
+ "03160000": {
+  "dropout_annual_pct": 0.025
+ },
+ "01580000": {
+  "dropout_annual_pct": 0.004
+ },
+ "07120000": {
+  "dropout_annual_pct": 0.002
+ },
+ "07450000": {
+  "dropout_annual_pct": 0.01
+ },
+ "07780000": {
+  "dropout_annual_pct": 0.012
+ },
+ "03070000": {
+  "dropout_annual_pct": 0.009
+ },
+ "01810000": {
+  "dropout_annual_pct": 0.022
+ },
+ "02850000": {
+  "dropout_annual_pct": 0.011
+ },
+ "03100000": {
+  "dropout_annual_pct": 0.03
+ },
+ "06900000": {
+  "dropout_annual_pct": 0.01
+ },
+ "01710000": {
+  "dropout_annual_pct": 0.004
+ },
+ "06580000": {
+  "dropout_annual_pct": 0.011
+ },
+ "03260000": {
+  "dropout_annual_pct": 0.0
+ },
+ "06950000": {
+  "dropout_annual_pct": 0.001
+ }
+}

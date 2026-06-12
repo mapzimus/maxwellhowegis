@@ -289,8 +289,8 @@ const projects = [
         tools: ["Python", "Streamlit", "Plotly", "Pandas", "GeoPandas", "MA DESE E2C Hub", "US Census ACS", "MassGIS"],
         year: "2026",
         thumb: "images/projects/lynn-data-dive-thumb.png",
-        liveUrl: "Lynn-data-dive/",
-        repoUrl: "https://github.com/mapzimus/lehs-data-dive"
+        liveUrl: "Lynn-data-dive/"
+        // repoUrl omitted — source repo is private (pipeline IP)
     },
     {
         id: 12,
