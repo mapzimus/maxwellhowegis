@@ -1,0 +1,1952 @@
+{
+ "00790000": {
+  "mcas_alt_progressing_pct": 0.4118,
+  "sped_movein_pct": 0.1384,
+  "sped_moveout_pct": 0.0578,
+  "student_attrition_pct": 0.084,
+  "swd_grad_5yr_pct": 0.556,
+  "swd_college_persist_pct": 0.194
+ },
+ "03080000": {
+  "mcas_alt_progressing_pct": 0.3667,
+  "sped_movein_pct": 0.182,
+  "sped_moveout_pct": 0.06,
+  "student_attrition_pct": 0.047,
+  "swd_grad_5yr_pct": 0.714,
+  "swd_college_persist_pct": 0.247
+ },
+ "07100000": {
+  "sped_movein_pct": 0.065,
+  "sped_moveout_pct": 0.3406,
+  "student_attrition_pct": 0.044,
+  "swd_grad_5yr_pct": 0.92,
+  "swd_college_persist_pct": 0.32
+ },
+ "01310000": {
+  "sped_movein_pct": 0.1456,
+  "sped_moveout_pct": 0.106,
+  "student_attrition_pct": 0.038,
+  "swd_grad_5yr_pct": 0.811,
+  "swd_college_persist_pct": 0.568
+ },
+ "07530000": {
+  "mcas_alt_progressing_pct": 0.375,
+  "sped_movein_pct": 0.0691,
+  "sped_moveout_pct": 0.1098,
+  "student_attrition_pct": 0.06,
+  "swd_grad_5yr_pct": 0.483,
+  "swd_college_persist_pct": 0.138
+ },
+ "02900000": {
+  "sped_movein_pct": 0.0851,
+  "sped_moveout_pct": 0.1191,
+  "student_attrition_pct": 0.048,
+  "swd_grad_5yr_pct": 0.846,
+  "swd_college_persist_pct": 0.385
+ },
+ "00980000": {
+  "student_attrition_pct": 0.052
+ },
+ "07280000": {
+  "sped_movein_pct": 0.303,
+  "sped_moveout_pct": 0.1818,
+  "student_attrition_pct": 0.031
+ },
+ "03460000": {
+  "mcas_alt_progressing_pct": 0.6176,
+  "sped_movein_pct": 0.1541,
+  "sped_moveout_pct": 0.0377,
+  "student_attrition_pct": 0.05,
+  "swd_grad_5yr_pct": 0.917,
+  "swd_college_persist_pct": 0.333
+ },
+ "01750000": {
+  "sped_movein_pct": 0.1309,
+  "sped_moveout_pct": 0.0836,
+  "student_attrition_pct": 0.032,
+  "swd_grad_5yr_pct": 1.0,
+  "swd_college_persist_pct": 0.815
+ },
+ "03090000": {
+  "sped_movein_pct": 0.067,
+  "sped_moveout_pct": 0.0848,
+  "student_attrition_pct": 0.068,
+  "swd_grad_5yr_pct": 0.375
+ },
+ "00630000": {
+  "sped_movein_pct": 0.1842,
+  "sped_moveout_pct": 0.3421,
+  "student_attrition_pct": 0.018
+ },
+ "02380000": {
+  "sped_movein_pct": 0.1132,
+  "sped_moveout_pct": 0.1132,
+  "student_attrition_pct": 0.048
+ },
+ "00090000": {
+  "mcas_alt_progressing_pct": 0.7368,
+  "sped_movein_pct": 0.0999,
+  "sped_moveout_pct": 0.1148,
+  "student_attrition_pct": 0.047,
+  "swd_grad_5yr_pct": 0.918,
+  "swd_college_persist_pct": 0.529
+ },
+ "02230000": {
+  "sped_movein_pct": 0.4724,
+  "sped_moveout_pct": 0.1024,
+  "student_attrition_pct": 0.064
+ },
+ "01390000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.1196,
+  "sped_moveout_pct": 0.0673,
+  "student_attrition_pct": 0.03,
+  "swd_grad_5yr_pct": 0.93,
+  "swd_college_persist_pct": 0.632
+ },
+ "03150000": {
+  "sped_movein_pct": 0.1217,
+  "sped_moveout_pct": 0.069,
+  "student_attrition_pct": 0.022,
+  "swd_grad_5yr_pct": 0.974,
+  "swd_college_persist_pct": 0.605
+ },
+ "00230000": {
+  "mcas_alt_progressing_pct": 0.5417,
+  "sped_movein_pct": 0.1319,
+  "sped_moveout_pct": 0.0926,
+  "student_attrition_pct": 0.057,
+  "swd_grad_5yr_pct": 0.9,
+  "swd_college_persist_pct": 0.533
+ },
+ "03350000": {
+  "mcas_alt_progressing_pct": 0.375,
+  "sped_movein_pct": 0.1206,
+  "sped_moveout_pct": 0.0869,
+  "student_attrition_pct": 0.025,
+  "swd_grad_5yr_pct": 0.977,
+  "swd_college_persist_pct": 0.75
+ },
+ "01840000": {
+  "sped_movein_pct": 0.1429,
+  "sped_moveout_pct": 0.0584,
+  "student_attrition_pct": 0.02
+ },
+ "03430000": {
+  "sped_movein_pct": 0.1635,
+  "sped_moveout_pct": 0.0609,
+  "student_attrition_pct": 0.113,
+  "swd_grad_5yr_pct": 0.846,
+  "swd_college_persist_pct": 0.077
+ },
+ "00360000": {
+  "sped_movein_pct": 0.0799,
+  "sped_moveout_pct": 0.1022,
+  "student_attrition_pct": 0.109,
+  "swd_grad_5yr_pct": 0.857,
+  "swd_college_persist_pct": 0.357
+ },
+ "00260000": {
+  "mcas_alt_progressing_pct": 0.4583,
+  "sped_movein_pct": 0.1397,
+  "sped_moveout_pct": 0.044,
+  "student_attrition_pct": 0.043,
+  "swd_grad_5yr_pct": 0.811,
+  "swd_college_persist_pct": 0.595
+ },
+ "06600000": {
+  "sped_movein_pct": 0.0462,
+  "sped_moveout_pct": 0.0667,
+  "student_attrition_pct": 0.061,
+  "swd_grad_5yr_pct": 0.861,
+  "swd_college_persist_pct": 0.278
+ },
+ "00440000": {
+  "mcas_alt_progressing_pct": 0.7075,
+  "sped_movein_pct": 0.1276,
+  "sped_moveout_pct": 0.0564,
+  "student_attrition_pct": 0.097,
+  "swd_grad_5yr_pct": 0.606,
+  "swd_college_persist_pct": 0.114
+ },
+ "00010000": {
+  "mcas_alt_progressing_pct": 0.6071,
+  "sped_movein_pct": 0.1488,
+  "sped_moveout_pct": 0.0548,
+  "student_attrition_pct": 0.057,
+  "swd_grad_5yr_pct": 0.688,
+  "swd_college_persist_pct": 0.313
+ },
+ "00940000": {
+  "mcas_alt_progressing_pct": 0.4583,
+  "sped_movein_pct": 0.0894,
+  "sped_moveout_pct": 0.1358,
+  "student_attrition_pct": 0.073,
+  "swd_grad_5yr_pct": 0.808,
+  "swd_college_persist_pct": 0.231
+ },
+ "00240000": {
+  "sped_movein_pct": 0.0938,
+  "sped_moveout_pct": 0.0847,
+  "student_attrition_pct": 0.054,
+  "swd_grad_5yr_pct": 0.771,
+  "swd_college_persist_pct": 0.314
+ },
+ "00850000": {
+  "sped_movein_pct": 0.4138,
+  "sped_moveout_pct": 0.1379,
+  "student_attrition_pct": 0.059
+ },
+ "02070000": {
+  "mcas_alt_progressing_pct": 0.6386,
+  "sped_movein_pct": 0.1255,
+  "sped_moveout_pct": 0.0617,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.876,
+  "swd_college_persist_pct": 0.523
+ },
+ "00870000": {
+  "mcas_alt_progressing_pct": 0.35,
+  "sped_movein_pct": 0.1324,
+  "sped_moveout_pct": 0.0949,
+  "student_attrition_pct": 0.035,
+  "swd_grad_5yr_pct": 0.875,
+  "swd_college_persist_pct": 0.304
+ },
+ "07750000": {
+  "mcas_alt_progressing_pct": 0.7,
+  "sped_movein_pct": 0.3556,
+  "sped_moveout_pct": 0.163,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.75,
+  "swd_college_persist_pct": 0.382
+ },
+ "00740000": {
+  "sped_movein_pct": 0.2254,
+  "sped_moveout_pct": 0.0563,
+  "student_attrition_pct": 0.038
+ },
+ "02530000": {
+  "sped_movein_pct": 0.0476,
+  "sped_moveout_pct": 0.3333,
+  "student_attrition_pct": 0.043
+ },
+ "01350000": {
+  "sped_movein_pct": 0.3571,
+  "student_attrition_pct": 0.019
+ },
+ "06400000": {
+  "sped_movein_pct": 0.0484,
+  "sped_moveout_pct": 0.0806,
+  "student_attrition_pct": 0.031,
+  "swd_grad_5yr_pct": 0.909,
+  "swd_college_persist_pct": 0.701
+ },
+ "00960000": {
+  "mcas_alt_progressing_pct": 0.5357,
+  "sped_movein_pct": 0.1306,
+  "sped_moveout_pct": 0.0952,
+  "student_attrition_pct": 0.081,
+  "swd_grad_5yr_pct": 0.743,
+  "swd_college_persist_pct": 0.314
+ },
+ "01870000": {
+  "sped_movein_pct": 0.1302,
+  "sped_moveout_pct": 0.0605,
+  "student_attrition_pct": 0.043,
+  "swd_grad_5yr_pct": 0.4,
+  "swd_college_persist_pct": 0.3
+ },
+ "02240000": {
+  "sped_movein_pct": 0.1538,
+  "sped_moveout_pct": 0.0769,
+  "student_attrition_pct": 0.079
+ },
+ "06150000": {
+  "sped_movein_pct": 0.0932,
+  "sped_moveout_pct": 0.0466,
+  "student_attrition_pct": 0.086,
+  "swd_grad_5yr_pct": 0.778,
+  "swd_college_persist_pct": 0.074
+ },
+ "00170000": {
+  "mcas_alt_progressing_pct": 0.375,
+  "sped_movein_pct": 0.1354,
+  "sped_moveout_pct": 0.0462,
+  "student_attrition_pct": 0.058,
+  "swd_grad_5yr_pct": 0.85,
+  "swd_college_persist_pct": 0.25
+ },
+ "01970000": {
+  "mcas_alt_progressing_pct": 0.55,
+  "sped_movein_pct": 0.1357,
+  "sped_moveout_pct": 0.0821,
+  "student_attrition_pct": 0.04,
+  "swd_grad_5yr_pct": 0.962,
+  "swd_college_persist_pct": 0.423
+ },
+ "01330000": {
+  "mcas_alt_progressing_pct": 0.4545,
+  "sped_movein_pct": 0.1068,
+  "sped_moveout_pct": 0.0819,
+  "student_attrition_pct": 0.093,
+  "swd_grad_5yr_pct": 0.625,
+  "swd_college_persist_pct": 0.125
+ },
+ "01640000": {
+  "sped_movein_pct": 0.1603,
+  "sped_moveout_pct": 0.0408,
+  "student_attrition_pct": 0.039,
+  "swd_grad_5yr_pct": 0.88,
+  "swd_college_persist_pct": 0.64
+ },
+ "01680000": {
+  "mcas_alt_progressing_pct": 0.6538,
+  "sped_movein_pct": 0.0924,
+  "sped_moveout_pct": 0.0965,
+  "student_attrition_pct": 0.063,
+  "swd_grad_5yr_pct": 0.984,
+  "swd_college_persist_pct": 0.557
+ },
+ "02100000": {
+  "sped_movein_pct": 0.3307,
+  "sped_moveout_pct": 0.1703,
+  "student_attrition_pct": 0.065,
+  "swd_grad_5yr_pct": 0.851,
+  "swd_college_persist_pct": 0.234
+ },
+ "01770000": {
+  "sped_movein_pct": 0.1311,
+  "sped_moveout_pct": 0.1098,
+  "student_attrition_pct": 0.047,
+  "swd_grad_5yr_pct": 0.815,
+  "swd_college_persist_pct": 0.593
+ },
+ "00400000": {
+  "mcas_alt_progressing_pct": 0.75,
+  "sped_movein_pct": 0.1303,
+  "sped_moveout_pct": 0.0557,
+  "student_attrition_pct": 0.051,
+  "swd_grad_5yr_pct": 0.868,
+  "swd_college_persist_pct": 0.396
+ },
+ "02960000": {
+  "sped_movein_pct": 0.2,
+  "sped_moveout_pct": 0.0667,
+  "student_attrition_pct": 0.125
+ },
+ "00250000": {
+  "mcas_alt_progressing_pct": 0.5714,
+  "sped_movein_pct": 0.106,
+  "sped_moveout_pct": 0.0899,
+  "student_attrition_pct": 0.045,
+  "swd_grad_5yr_pct": 0.818,
+  "swd_college_persist_pct": 0.152
+ },
+ "02910000": {
+  "sped_movein_pct": 0.1176,
+  "sped_moveout_pct": 0.0566,
+  "student_attrition_pct": 0.041,
+  "swd_grad_5yr_pct": 0.838,
+  "swd_college_persist_pct": 0.432
+ },
+ "03220000": {
+  "sped_movein_pct": 0.0778,
+  "sped_moveout_pct": 0.1497,
+  "student_attrition_pct": 0.066,
+  "swd_grad_5yr_pct": 0.75
+ },
+ "03000000": {
+  "sped_movein_pct": 0.0588,
+  "sped_moveout_pct": 0.1176,
+  "student_attrition_pct": 0.25
+ },
+ "07170000": {
+  "sped_movein_pct": 0.1848,
+  "sped_moveout_pct": 0.0598,
+  "student_attrition_pct": 0.135,
+  "swd_grad_5yr_pct": 0.727,
+  "swd_college_persist_pct": 0.273
+ },
+ "02630000": {
+  "sped_movein_pct": 0.3333,
+  "sped_moveout_pct": 0.3333,
+  "student_attrition_pct": 0.118
+ },
+ "03060000": {
+  "sped_movein_pct": 0.4667,
+  "sped_moveout_pct": 0.0667,
+  "student_attrition_pct": 0.013
+ },
+ "03370000": {
+  "sped_movein_pct": 0.4,
+  "student_attrition_pct": 0.041
+ },
+ "01730000": {
+  "sped_movein_pct": 0.2464,
+  "sped_moveout_pct": 0.058,
+  "student_attrition_pct": 0.033
+ },
+ "01630000": {
+  "mcas_alt_progressing_pct": 0.7606,
+  "sped_movein_pct": 0.1507,
+  "sped_moveout_pct": 0.0525,
+  "student_attrition_pct": 0.063,
+  "swd_grad_5yr_pct": 0.742,
+  "swd_college_persist_pct": 0.135
+ },
+ "03420000": {
+  "sped_movein_pct": 0.166,
+  "sped_moveout_pct": 0.0749,
+  "student_attrition_pct": 0.05,
+  "swd_grad_5yr_pct": 0.667,
+  "swd_college_persist_pct": 0.455
+ },
+ "01590000": {
+  "sped_movein_pct": 0.138,
+  "sped_moveout_pct": 0.0926,
+  "student_attrition_pct": 0.038,
+  "swd_grad_5yr_pct": 0.902,
+  "swd_college_persist_pct": 0.529
+ },
+ "02690000": {
+  "sped_movein_pct": 0.2,
+  "sped_moveout_pct": 0.1,
+  "student_attrition_pct": 0.019
+ },
+ "02290000": {
+  "mcas_alt_progressing_pct": 0.5432,
+  "sped_movein_pct": 0.1237,
+  "sped_moveout_pct": 0.0919,
+  "student_attrition_pct": 0.091,
+  "swd_grad_5yr_pct": 0.735,
+  "swd_college_persist_pct": 0.255
+ },
+ "01500000": {
+  "sped_movein_pct": 0.0841,
+  "sped_moveout_pct": 0.0654,
+  "student_attrition_pct": 0.043,
+  "swd_grad_5yr_pct": 1.0,
+  "swd_college_persist_pct": 0.143
+ },
+ "02260000": {
+  "sped_movein_pct": 0.1169,
+  "sped_moveout_pct": 0.0708,
+  "student_attrition_pct": 0.077,
+  "swd_grad_5yr_pct": 0.692,
+  "swd_college_persist_pct": 0.077
+ },
+ "02420000": {
+  "sped_movein_pct": 0.0645,
+  "student_attrition_pct": 0.153
+ },
+ "03100000": {
+  "mcas_alt_progressing_pct": 0.66,
+  "sped_movein_pct": 0.1008,
+  "sped_moveout_pct": 0.0698,
+  "student_attrition_pct": 0.093,
+  "swd_grad_5yr_pct": 0.676,
+  "swd_college_persist_pct": 0.135
+ },
+ "03160000": {
+  "mcas_alt_progressing_pct": 0.2,
+  "sped_movein_pct": 0.0902,
+  "sped_moveout_pct": 0.0756,
+  "student_attrition_pct": 0.106,
+  "swd_grad_5yr_pct": 0.556,
+  "swd_college_persist_pct": 0.111
+ },
+ "02440000": {
+  "mcas_alt_progressing_pct": 0.4516,
+  "sped_movein_pct": 0.1152,
+  "sped_moveout_pct": 0.0576,
+  "student_attrition_pct": 0.106,
+  "swd_grad_5yr_pct": 0.684,
+  "swd_college_persist_pct": 0.105
+ },
+ "03140000": {
+  "sped_movein_pct": 0.1159,
+  "sped_moveout_pct": 0.0589,
+  "student_attrition_pct": 0.069,
+  "swd_grad_5yr_pct": 0.727,
+  "swd_college_persist_pct": 0.303
+ },
+ "00500000": {
+  "mcas_alt_progressing_pct": 0.4,
+  "sped_movein_pct": 0.1591,
+  "sped_moveout_pct": 0.0786,
+  "student_attrition_pct": 0.045,
+  "swd_grad_5yr_pct": 0.864,
+  "swd_college_persist_pct": 0.409
+ },
+ "06500000": {
+  "sped_movein_pct": 0.103,
+  "sped_moveout_pct": 0.0323,
+  "student_attrition_pct": 0.06,
+  "swd_grad_5yr_pct": 0.667,
+  "swd_college_persist_pct": 0.056
+ },
+ "00670000": {
+  "sped_movein_pct": 0.1729,
+  "sped_moveout_pct": 0.0585,
+  "student_attrition_pct": 0.059
+ },
+ "06250000": {
+  "mcas_alt_progressing_pct": 0.2308,
+  "sped_movein_pct": 0.1072,
+  "sped_moveout_pct": 0.0778,
+  "student_attrition_pct": 0.082,
+  "swd_grad_5yr_pct": 0.75,
+  "swd_college_persist_pct": 0.154
+ },
+ "07120000": {
+  "sped_movein_pct": 0.0915,
+  "sped_moveout_pct": 0.1341,
+  "student_attrition_pct": 0.056,
+  "swd_grad_5yr_pct": 0.759,
+  "swd_college_persist_pct": 0.379
+ },
+ "02770000": {
+  "mcas_alt_progressing_pct": 0.2667,
+  "sped_movein_pct": 0.1096,
+  "sped_moveout_pct": 0.0515,
+  "student_attrition_pct": 0.112,
+  "swd_grad_5yr_pct": 0.395,
+  "swd_college_persist_pct": 0.053
+ },
+ "01760000": {
+  "mcas_alt_progressing_pct": 0.6667,
+  "sped_movein_pct": 0.1046,
+  "sped_moveout_pct": 0.0685,
+  "student_attrition_pct": 0.066,
+  "swd_grad_5yr_pct": 0.885,
+  "swd_college_persist_pct": 0.256
+ },
+ "00310000": {
+  "mcas_alt_progressing_pct": 0.525,
+  "sped_movein_pct": 0.1075,
+  "sped_moveout_pct": 0.089,
+  "student_attrition_pct": 0.073,
+  "swd_grad_5yr_pct": 0.827,
+  "swd_college_persist_pct": 0.269
+ },
+ "00990000": {
+  "mcas_alt_progressing_pct": 0.35,
+  "sped_movein_pct": 0.1496,
+  "sped_moveout_pct": 0.0689,
+  "student_attrition_pct": 0.044,
+  "swd_grad_5yr_pct": 0.978,
+  "swd_college_persist_pct": 0.489
+ },
+ "00830000": {
+  "sped_movein_pct": 0.0978,
+  "sped_moveout_pct": 0.0734,
+  "student_attrition_pct": 0.055,
+  "swd_grad_5yr_pct": 0.943,
+  "swd_college_persist_pct": 0.257
+ },
+ "01510000": {
+  "mcas_alt_progressing_pct": 0.3429,
+  "sped_movein_pct": 0.0957,
+  "sped_moveout_pct": 0.1135,
+  "student_attrition_pct": 0.05,
+  "swd_grad_5yr_pct": 0.769,
+  "swd_college_persist_pct": 0.154
+ },
+ "01570000": {
+  "sped_movein_pct": 0.1823,
+  "sped_moveout_pct": 0.0246,
+  "student_attrition_pct": 0.145
+ },
+ "07700000": {
+  "sped_movein_pct": 0.0569,
+  "sped_moveout_pct": 0.1611,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.237
+ },
+ "00650000": {
+  "sped_movein_pct": 0.1111,
+  "sped_moveout_pct": 0.0578,
+  "student_attrition_pct": 0.037,
+  "swd_grad_5yr_pct": 0.947,
+  "swd_college_persist_pct": 0.474
+ },
+ "06900000": {
+  "sped_movein_pct": 0.0906,
+  "sped_moveout_pct": 0.0976,
+  "student_attrition_pct": 0.051,
+  "swd_grad_5yr_pct": 0.776,
+  "swd_college_persist_pct": 0.388
+ },
+ "03310000": {
+  "mcas_alt_progressing_pct": 0.7105,
+  "sped_movein_pct": 0.125,
+  "sped_moveout_pct": 0.0769,
+  "student_attrition_pct": 0.051,
+  "swd_grad_5yr_pct": 0.545,
+  "swd_college_persist_pct": 0.091
+ },
+ "03470000": {
+  "mcas_alt_progressing_pct": 0.5488,
+  "sped_movein_pct": 0.1433,
+  "sped_moveout_pct": 0.0419,
+  "student_attrition_pct": 0.078,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.333
+ },
+ "00610000": {
+  "mcas_alt_progressing_pct": 0.6379,
+  "sped_movein_pct": 0.0728,
+  "sped_moveout_pct": 0.0688,
+  "student_attrition_pct": 0.075,
+  "swd_grad_5yr_pct": 0.744,
+  "swd_college_persist_pct": 0.133
+ },
+ "01370000": {
+  "mcas_alt_progressing_pct": 0.4432,
+  "sped_movein_pct": 0.0979,
+  "sped_moveout_pct": 0.037,
+  "student_attrition_pct": 0.1,
+  "swd_grad_5yr_pct": 0.552,
+  "swd_college_persist_pct": 0.052
+ },
+ "02890000": {
+  "sped_movein_pct": 0.4118,
+  "sped_moveout_pct": 0.0882,
+  "student_attrition_pct": 0.047
+ },
+ "01010000": {
+  "mcas_alt_progressing_pct": 0.5968,
+  "sped_movein_pct": 0.1274,
+  "sped_moveout_pct": 0.0648,
+  "student_attrition_pct": 0.059,
+  "swd_grad_5yr_pct": 0.909,
+  "swd_college_persist_pct": 0.532
+ },
+ "01990000": {
+  "mcas_alt_progressing_pct": 0.4773,
+  "sped_movein_pct": 0.1403,
+  "sped_moveout_pct": 0.0859,
+  "student_attrition_pct": 0.041,
+  "swd_grad_5yr_pct": 0.972,
+  "swd_college_persist_pct": 0.648
+ },
+ "02200000": {
+  "mcas_alt_progressing_pct": 0.4286,
+  "sped_movein_pct": 0.0778,
+  "sped_moveout_pct": 0.0861,
+  "student_attrition_pct": 0.081,
+  "swd_grad_5yr_pct": 0.833,
+  "swd_college_persist_pct": 0.318
+ },
+ "03250000": {
+  "mcas_alt_progressing_pct": 0.36,
+  "sped_movein_pct": 0.1389,
+  "sped_moveout_pct": 0.028,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.802,
+  "swd_college_persist_pct": 0.187
+ },
+ "06000000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.1459,
+  "sped_moveout_pct": 0.0657,
+  "student_attrition_pct": 0.039,
+  "swd_grad_5yr_pct": 0.854,
+  "swd_college_persist_pct": 0.561
+ },
+ "06030000": {
+  "mcas_alt_progressing_pct": 0.2,
+  "sped_movein_pct": 0.0625,
+  "sped_moveout_pct": 0.1292,
+  "student_attrition_pct": 0.107,
+  "swd_grad_5yr_pct": 0.6,
+  "swd_college_persist_pct": 0.2
+ },
+ "06450000": {
+  "mcas_alt_progressing_pct": 0.4348,
+  "sped_movein_pct": 0.2022,
+  "sped_moveout_pct": 0.0289,
+  "student_attrition_pct": 0.108,
+  "swd_grad_5yr_pct": 0.7,
+  "swd_college_persist_pct": 0.267
+ },
+ "00380000": {
+  "sped_movein_pct": 0.1284,
+  "sped_moveout_pct": 0.1216,
+  "student_attrition_pct": 0.022
+ },
+ "02640000": {
+  "mcas_alt_progressing_pct": 0.6786,
+  "sped_movein_pct": 0.135,
+  "sped_moveout_pct": 0.0865,
+  "student_attrition_pct": 0.026,
+  "swd_grad_5yr_pct": 0.862,
+  "swd_college_persist_pct": 0.414
+ },
+ "01410000": {
+  "sped_movein_pct": 0.0945,
+  "sped_moveout_pct": 0.076,
+  "student_attrition_pct": 0.067,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.184
+ },
+ "02130000": {
+  "sped_movein_pct": 0.1595,
+  "sped_moveout_pct": 0.1026,
+  "student_attrition_pct": 0.047
+ },
+ "00930000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.4721,
+  "sped_moveout_pct": 0.0357,
+  "student_attrition_pct": 0.082,
+  "swd_grad_5yr_pct": 0.81,
+  "swd_college_persist_pct": 0.19
+ },
+ "03010000": {
+  "sped_movein_pct": 0.0772,
+  "sped_moveout_pct": 0.1142,
+  "student_attrition_pct": 0.057,
+  "swd_grad_5yr_pct": 0.7,
+  "swd_college_persist_pct": 0.15
+ },
+ "02430000": {
+  "mcas_alt_progressing_pct": 0.6503,
+  "sped_movein_pct": 0.1122,
+  "sped_moveout_pct": 0.0614,
+  "student_attrition_pct": 0.05,
+  "swd_grad_5yr_pct": 0.905,
+  "swd_college_persist_pct": 0.292
+ },
+ "00720000": {
+  "mcas_alt_progressing_pct": 0.6034,
+  "sped_movein_pct": 0.1189,
+  "sped_moveout_pct": 0.0219,
+  "student_attrition_pct": 0.047,
+  "swd_grad_5yr_pct": 0.733,
+  "swd_college_persist_pct": 0.222
+ },
+ "00730000": {
+  "mcas_alt_progressing_pct": 0.5294,
+  "sped_movein_pct": 0.1476,
+  "sped_moveout_pct": 0.0808,
+  "student_attrition_pct": 0.085,
+  "swd_grad_5yr_pct": 0.744,
+  "swd_college_persist_pct": 0.442
+ },
+ "01180000": {
+  "sped_movein_pct": 0.1825,
+  "sped_moveout_pct": 0.1111,
+  "student_attrition_pct": 0.029
+ },
+ "00950000": {
+  "mcas_alt_progressing_pct": 0.4031,
+  "sped_movein_pct": 0.1315,
+  "sped_moveout_pct": 0.061,
+  "student_attrition_pct": 0.088,
+  "swd_grad_5yr_pct": 0.507,
+  "swd_college_persist_pct": 0.056
+ },
+ "02390000": {
+  "mcas_alt_progressing_pct": 0.371,
+  "sped_movein_pct": 0.1463,
+  "sped_moveout_pct": 0.0678,
+  "student_attrition_pct": 0.036,
+  "swd_grad_5yr_pct": 0.914,
+  "swd_college_persist_pct": 0.229
+ },
+ "01550000": {
+  "mcas_alt_progressing_pct": 0.5176,
+  "sped_movein_pct": 0.13,
+  "sped_moveout_pct": 0.0518,
+  "student_attrition_pct": 0.055,
+  "swd_grad_5yr_pct": 0.919,
+  "swd_college_persist_pct": 0.581
+ },
+ "00030000": {
+  "sped_movein_pct": 0.0987,
+  "sped_moveout_pct": 0.1118,
+  "student_attrition_pct": 0.032
+ },
+ "03050000": {
+  "mcas_alt_progressing_pct": 0.5882,
+  "sped_movein_pct": 0.1296,
+  "sped_moveout_pct": 0.0598,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.884,
+  "swd_college_persist_pct": 0.395
+ },
+ "01070000": {
+  "mcas_alt_progressing_pct": 0.4,
+  "sped_movein_pct": 0.1609,
+  "sped_moveout_pct": 0.0962,
+  "student_attrition_pct": 0.05,
+  "swd_grad_5yr_pct": 0.887,
+  "swd_college_persist_pct": 0.141
+ },
+ "00410000": {
+  "sped_movein_pct": 0.2283,
+  "sped_moveout_pct": 0.087,
+  "student_attrition_pct": 0.043
+ },
+ "03480000": {
+  "mcas_alt_progressing_pct": 0.4583,
+  "sped_movein_pct": 0.1112,
+  "sped_moveout_pct": 0.0554,
+  "student_attrition_pct": 0.057,
+  "swd_grad_5yr_pct": 0.748,
+  "swd_college_persist_pct": 0.136
+ },
+ "06160000": {
+  "mcas_alt_progressing_pct": 0.5455,
+  "sped_movein_pct": 0.1553,
+  "sped_moveout_pct": 0.1087,
+  "student_attrition_pct": 0.086,
+  "swd_grad_5yr_pct": 0.7,
+  "swd_college_persist_pct": 0.25
+ },
+ "00200000": {
+  "mcas_alt_progressing_pct": 0.7344,
+  "sped_movein_pct": 0.1384,
+  "sped_moveout_pct": 0.0927,
+  "student_attrition_pct": 0.082,
+  "swd_grad_5yr_pct": 0.731,
+  "swd_college_persist_pct": 0.224
+ },
+ "00160000": {
+  "mcas_alt_progressing_pct": 0.6857,
+  "sped_movein_pct": 0.0955,
+  "sped_moveout_pct": 0.069,
+  "student_attrition_pct": 0.041,
+  "swd_grad_5yr_pct": 0.796,
+  "swd_college_persist_pct": 0.126
+ },
+ "00180000": {
+  "sped_movein_pct": 0.1203,
+  "sped_moveout_pct": 0.0752,
+  "student_attrition_pct": 0.127,
+  "swd_grad_5yr_pct": 1.0,
+  "swd_college_persist_pct": 0.286
+ },
+ "02300000": {
+  "sped_movein_pct": 0.2,
+  "student_attrition_pct": 0.063
+ },
+ "00270000": {
+  "sped_movein_pct": 0.1753,
+  "sped_moveout_pct": 0.0844,
+  "student_attrition_pct": 0.022
+ },
+ "06200000": {
+  "sped_movein_pct": 0.1376,
+  "sped_moveout_pct": 0.0847,
+  "student_attrition_pct": 0.052,
+  "swd_grad_5yr_pct": 0.727,
+  "swd_college_persist_pct": 0.364
+ },
+ "01100000": {
+  "mcas_alt_progressing_pct": 0.3846,
+  "sped_movein_pct": 0.1098,
+  "sped_moveout_pct": 0.0455,
+  "student_attrition_pct": 0.052,
+  "swd_grad_5yr_pct": 0.9,
+  "swd_college_persist_pct": 0.325
+ },
+ "01860000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.0898,
+  "sped_moveout_pct": 0.0868,
+  "student_attrition_pct": 0.052,
+  "swd_grad_5yr_pct": 0.778,
+  "swd_college_persist_pct": 0.259
+ },
+ "02210000": {
+  "sped_movein_pct": 0.1702,
+  "sped_moveout_pct": 0.0957,
+  "student_attrition_pct": 0.049
+ },
+ "01000000": {
+  "mcas_alt_progressing_pct": 0.5725,
+  "sped_movein_pct": 0.1271,
+  "sped_moveout_pct": 0.0252,
+  "student_attrition_pct": 0.096,
+  "swd_grad_5yr_pct": 0.738,
+  "swd_college_persist_pct": 0.285
+ },
+ "01710000": {
+  "mcas_alt_progressing_pct": 0.7308,
+  "sped_movein_pct": 0.1198,
+  "sped_moveout_pct": 0.0924,
+  "student_attrition_pct": 0.032,
+  "swd_grad_5yr_pct": 0.871,
+  "swd_college_persist_pct": 0.339
+ },
+ "06620000": {
+  "sped_movein_pct": 0.1667,
+  "sped_moveout_pct": 0.1,
+  "student_attrition_pct": 0.155
+ },
+ "06720000": {
+  "sped_movein_pct": 0.085,
+  "sped_moveout_pct": 0.11,
+  "student_attrition_pct": 0.065,
+  "swd_grad_5yr_pct": 0.875
+ },
+ "07150000": {
+  "sped_movein_pct": 0.1356,
+  "sped_moveout_pct": 0.1073,
+  "student_attrition_pct": 0.064,
+  "swd_grad_5yr_pct": 0.909,
+  "swd_college_persist_pct": 0.545
+ },
+ "00100000": {
+  "mcas_alt_progressing_pct": 0.6471,
+  "sped_movein_pct": 0.1665,
+  "sped_moveout_pct": 0.0832,
+  "student_attrition_pct": 0.044,
+  "swd_grad_5yr_pct": 0.863,
+  "swd_college_persist_pct": 0.507
+ },
+ "01620000": {
+  "sped_movein_pct": 0.1712,
+  "sped_moveout_pct": 0.0766,
+  "student_attrition_pct": 0.062,
+  "swd_grad_5yr_pct": 1.0,
+  "swd_college_persist_pct": 0.444
+ },
+ "07670000": {
+  "mcas_alt_progressing_pct": 0.875,
+  "sped_movein_pct": 0.1118,
+  "sped_moveout_pct": 0.1088,
+  "student_attrition_pct": 0.075,
+  "swd_grad_5yr_pct": 0.615,
+  "swd_college_persist_pct": 0.154
+ },
+ "07050000": {
+  "sped_movein_pct": 0.0623,
+  "sped_moveout_pct": 0.0584,
+  "student_attrition_pct": 0.065,
+  "swd_grad_5yr_pct": 0.908,
+  "swd_college_persist_pct": 0.605
+ },
+ "01890000": {
+  "mcas_alt_progressing_pct": 0.7381,
+  "sped_movein_pct": 0.126,
+  "sped_moveout_pct": 0.1039,
+  "student_attrition_pct": 0.043,
+  "swd_grad_5yr_pct": 0.947,
+  "swd_college_persist_pct": 0.474
+ },
+ "02520000": {
+  "sped_movein_pct": 0.0616,
+  "sped_moveout_pct": 0.0616,
+  "student_attrition_pct": 0.051,
+  "swd_grad_5yr_pct": 0.895,
+  "swd_college_persist_pct": 0.579
+ },
+ "06220000": {
+  "sped_movein_pct": 0.1143,
+  "sped_moveout_pct": 0.1224,
+  "student_attrition_pct": 0.063,
+  "swd_grad_5yr_pct": 0.609,
+  "swd_college_persist_pct": 0.13
+ },
+ "06580000": {
+  "mcas_alt_progressing_pct": 0.4681,
+  "sped_movein_pct": 0.1535,
+  "sped_moveout_pct": 0.0886,
+  "student_attrition_pct": 0.065,
+  "swd_grad_5yr_pct": 0.625,
+  "swd_college_persist_pct": 0.156
+ },
+ "03230000": {
+  "sped_movein_pct": 0.1058,
+  "sped_moveout_pct": 0.0899,
+  "student_attrition_pct": 0.043,
+  "swd_grad_5yr_pct": 0.833,
+  "swd_college_persist_pct": 0.667
+ },
+ "06750000": {
+  "sped_movein_pct": 0.1043,
+  "sped_moveout_pct": 0.0982,
+  "student_attrition_pct": 0.031,
+  "swd_grad_5yr_pct": 0.808,
+  "swd_college_persist_pct": 0.5
+ },
+ "01380000": {
+  "sped_movein_pct": 0.1121,
+  "sped_moveout_pct": 0.1076,
+  "student_attrition_pct": 0.056,
+  "swd_grad_5yr_pct": 0.5,
+  "swd_college_persist_pct": 0.056
+ },
+ "03300000": {
+  "sped_movein_pct": 0.115,
+  "sped_moveout_pct": 0.0479,
+  "student_attrition_pct": 0.053,
+  "swd_grad_5yr_pct": 0.976,
+  "swd_college_persist_pct": 0.714
+ },
+ "02120000": {
+  "mcas_alt_progressing_pct": 0.3125,
+  "sped_movein_pct": 0.1288,
+  "sped_moveout_pct": 0.0644,
+  "student_attrition_pct": 0.06,
+  "swd_grad_5yr_pct": 0.659,
+  "swd_college_persist_pct": 0.22
+ },
+ "02270000": {
+  "mcas_alt_progressing_pct": 0.4643,
+  "sped_movein_pct": 0.0577,
+  "sped_moveout_pct": 0.1106,
+  "student_attrition_pct": 0.1,
+  "swd_grad_5yr_pct": 0.632,
+  "swd_college_persist_pct": 0.105
+ },
+ "06650000": {
+  "mcas_alt_progressing_pct": 0.4773,
+  "sped_movein_pct": 0.1783,
+  "sped_moveout_pct": 0.0699,
+  "student_attrition_pct": 0.061,
+  "swd_grad_5yr_pct": 0.882,
+  "swd_college_persist_pct": 0.206
+ },
+ "02310000": {
+  "sped_movein_pct": 0.1485,
+  "sped_moveout_pct": 0.1021,
+  "student_attrition_pct": 0.03,
+  "swd_grad_5yr_pct": 0.867,
+  "swd_college_persist_pct": 0.333
+ },
+ "07450000": {
+  "mcas_alt_progressing_pct": 0.4706,
+  "sped_movein_pct": 0.165,
+  "sped_moveout_pct": 0.0957,
+  "student_attrition_pct": 0.032,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.368
+ },
+ "01700000": {
+  "mcas_alt_progressing_pct": 0.6875,
+  "sped_movein_pct": 0.1377,
+  "sped_moveout_pct": 0.0612,
+  "student_attrition_pct": 0.144,
+  "swd_grad_5yr_pct": 0.658,
+  "swd_college_persist_pct": 0.158
+ },
+ "07500000": {
+  "sped_movein_pct": 0.2525,
+  "sped_moveout_pct": 0.0707,
+  "student_attrition_pct": 0.124,
+  "swd_grad_5yr_pct": 0.909,
+  "swd_college_persist_pct": 0.091
+ },
+ "02950000": {
+  "mcas_alt_progressing_pct": 0.5682,
+  "sped_movein_pct": 0.0744,
+  "sped_moveout_pct": 0.068,
+  "student_attrition_pct": 0.053,
+  "swd_grad_5yr_pct": 0.867,
+  "swd_college_persist_pct": 0.333
+ },
+ "00820000": {
+  "sped_movein_pct": 0.1348,
+  "sped_moveout_pct": 0.0851,
+  "student_attrition_pct": 0.026,
+  "swd_grad_5yr_pct": 0.9,
+  "swd_college_persist_pct": 0.667
+ },
+ "06100000": {
+  "sped_movein_pct": 0.0816,
+  "sped_moveout_pct": 0.0893,
+  "student_attrition_pct": 0.056,
+  "swd_grad_5yr_pct": 0.909,
+  "swd_college_persist_pct": 0.303
+ },
+ "02140000": {
+  "sped_movein_pct": 0.1126,
+  "sped_moveout_pct": 0.1923,
+  "student_attrition_pct": 0.079,
+  "swd_grad_5yr_pct": 0.778,
+  "swd_college_persist_pct": 0.167
+ },
+ "00970000": {
+  "mcas_alt_progressing_pct": 0.5755,
+  "sped_movein_pct": 0.1009,
+  "sped_moveout_pct": 0.08,
+  "student_attrition_pct": 0.097,
+  "swd_grad_5yr_pct": 0.722,
+  "swd_college_persist_pct": 0.093
+ },
+ "01720000": {
+  "sped_movein_pct": 0.1215,
+  "sped_moveout_pct": 0.0654,
+  "student_attrition_pct": 0.075,
+  "swd_grad_5yr_pct": 0.75,
+  "swd_college_persist_pct": 0.2
+ },
+ "07730000": {
+  "mcas_alt_progressing_pct": 0.3571,
+  "sped_movein_pct": 0.1385,
+  "sped_moveout_pct": 0.0869,
+  "student_attrition_pct": 0.064,
+  "swd_grad_5yr_pct": 0.794,
+  "swd_college_persist_pct": 0.324
+ },
+ "02500000": {
+  "sped_movein_pct": 0.1685,
+  "sped_moveout_pct": 0.1011,
+  "student_attrition_pct": 0.016
+ },
+ "00570000": {
+  "mcas_alt_progressing_pct": 0.4381,
+  "sped_movein_pct": 0.1407,
+  "sped_moveout_pct": 0.0389,
+  "student_attrition_pct": 0.091,
+  "swd_grad_5yr_pct": 0.588,
+  "swd_college_persist_pct": 0.098
+ },
+ "06850000": {
+  "student_attrition_pct": 0.074
+ },
+ "01670000": {
+  "mcas_alt_progressing_pct": 0.4348,
+  "sped_movein_pct": 0.0931,
+  "sped_moveout_pct": 0.0857,
+  "student_attrition_pct": 0.049,
+  "swd_grad_5yr_pct": 0.754,
+  "swd_college_persist_pct": 0.386
+ },
+ "01780000": {
+  "mcas_alt_progressing_pct": 0.3696,
+  "sped_movein_pct": 0.1458,
+  "sped_moveout_pct": 0.0609,
+  "student_attrition_pct": 0.057,
+  "swd_grad_5yr_pct": 0.913,
+  "swd_college_persist_pct": 0.543
+ },
+ "07250000": {
+  "mcas_alt_progressing_pct": 0.8214,
+  "sped_movein_pct": 0.1426,
+  "sped_moveout_pct": 0.0704,
+  "student_attrition_pct": 0.039,
+  "swd_grad_5yr_pct": 0.838,
+  "swd_college_persist_pct": 0.432
+ },
+ "00430000": {
+  "sped_movein_pct": 0.2333,
+  "sped_moveout_pct": 0.0333,
+  "student_attrition_pct": 0.036
+ },
+ "02750000": {
+  "sped_movein_pct": 0.127,
+  "sped_moveout_pct": 0.119,
+  "student_attrition_pct": 0.032
+ },
+ "02110000": {
+  "mcas_alt_progressing_pct": 0.7576,
+  "sped_movein_pct": 0.1501,
+  "sped_moveout_pct": 0.0576,
+  "student_attrition_pct": 0.051,
+  "swd_grad_5yr_pct": 0.898,
+  "swd_college_persist_pct": 0.424
+ },
+ "02180000": {
+  "mcas_alt_progressing_pct": 0.7188,
+  "sped_movein_pct": 0.1124,
+  "sped_moveout_pct": 0.0736,
+  "student_attrition_pct": 0.049,
+  "swd_grad_5yr_pct": 0.932,
+  "swd_college_persist_pct": 0.364
+ },
+ "03320000": {
+  "mcas_alt_progressing_pct": 0.5397,
+  "sped_movein_pct": 0.1416,
+  "sped_moveout_pct": 0.0512,
+  "student_attrition_pct": 0.089,
+  "swd_grad_5yr_pct": 0.788,
+  "swd_college_persist_pct": 0.197
+ },
+ "01910000": {
+  "sped_movein_pct": 0.165,
+  "sped_moveout_pct": 0.055,
+  "student_attrition_pct": 0.072,
+  "swd_grad_5yr_pct": 0.429,
+  "swd_college_persist_pct": 0.143
+ },
+ "06350000": {
+  "sped_movein_pct": 0.1679,
+  "sped_moveout_pct": 0.0709,
+  "student_attrition_pct": 0.068,
+  "swd_grad_5yr_pct": 0.846,
+  "swd_college_persist_pct": 0.231
+ },
+ "06730000": {
+  "mcas_alt_progressing_pct": 0.6071,
+  "sped_movein_pct": 0.1881,
+  "sped_moveout_pct": 0.1057,
+  "student_attrition_pct": 0.042,
+  "swd_grad_5yr_pct": 0.889,
+  "swd_college_persist_pct": 0.481
+ },
+ "00890000": {
+  "sped_movein_pct": 0.1932,
+  "sped_moveout_pct": 0.0795,
+  "student_attrition_pct": 0.068
+ },
+ "00450000": {
+  "sped_movein_pct": 0.2703,
+  "sped_moveout_pct": 0.0541,
+  "student_attrition_pct": 0.026
+ },
+ "01690000": {
+  "sped_movein_pct": 0.1585,
+  "student_attrition_pct": 0.031
+ },
+ "02150000": {
+  "sped_movein_pct": 0.2125,
+  "sped_moveout_pct": 0.2,
+  "student_attrition_pct": 0.128,
+  "swd_grad_5yr_pct": 0.571,
+  "swd_college_persist_pct": 0.286
+ },
+ "02340000": {
+  "sped_movein_pct": 0.3125,
+  "sped_moveout_pct": 0.1875,
+  "student_attrition_pct": 0.069
+ },
+ "01580000": {
+  "sped_movein_pct": 0.1107,
+  "sped_moveout_pct": 0.0893,
+  "student_attrition_pct": 0.036,
+  "swd_grad_5yr_pct": 0.9,
+  "swd_college_persist_pct": 0.7
+ },
+ "00770000": {
+  "sped_movein_pct": 0.164,
+  "sped_moveout_pct": 0.0423,
+  "student_attrition_pct": 0.087,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.105
+ },
+ "02400000": {
+  "sped_movein_pct": 0.18,
+  "sped_moveout_pct": 0.08,
+  "student_attrition_pct": 0.027
+ },
+ "01030000": {
+  "mcas_alt_progressing_pct": 0.4167,
+  "sped_movein_pct": 0.1555,
+  "sped_moveout_pct": 0.0748,
+  "student_attrition_pct": 0.072,
+  "swd_grad_5yr_pct": 0.872,
+  "swd_college_persist_pct": 0.154
+ },
+ "03040000": {
+  "sped_movein_pct": 0.1223,
+  "sped_moveout_pct": 0.0826,
+  "student_attrition_pct": 0.044,
+  "swd_grad_5yr_pct": 0.692,
+  "swd_college_persist_pct": 0.231
+ },
+ "03360000": {
+  "mcas_alt_progressing_pct": 0.6,
+  "sped_movein_pct": 0.0965,
+  "sped_moveout_pct": 0.0672,
+  "student_attrition_pct": 0.045,
+  "swd_grad_5yr_pct": 0.794,
+  "swd_college_persist_pct": 0.147
+ },
+ "02090000": {
+  "mcas_alt_progressing_pct": 0.375,
+  "sped_movein_pct": 0.1353,
+  "sped_moveout_pct": 0.1088,
+  "student_attrition_pct": 0.109,
+  "swd_grad_5yr_pct": 0.45
+ },
+ "02780000": {
+  "mcas_alt_progressing_pct": 0.3182,
+  "sped_movein_pct": 0.123,
+  "sped_moveout_pct": 0.0838,
+  "student_attrition_pct": 0.068,
+  "swd_grad_5yr_pct": 0.84,
+  "swd_college_persist_pct": 0.32
+ },
+ "02840000": {
+  "mcas_alt_progressing_pct": 0.3611,
+  "sped_movein_pct": 0.0949,
+  "sped_moveout_pct": 0.0612,
+  "student_attrition_pct": 0.065,
+  "swd_grad_5yr_pct": 0.829,
+  "swd_college_persist_pct": 0.286
+ },
+ "01650000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.1073,
+  "sped_moveout_pct": 0.0659,
+  "student_attrition_pct": 0.098,
+  "swd_grad_5yr_pct": 0.705,
+  "swd_college_persist_pct": 0.216
+ },
+ "02650000": {
+  "mcas_alt_progressing_pct": 0.4167,
+  "sped_movein_pct": 0.1235,
+  "sped_moveout_pct": 0.0469,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.85,
+  "swd_college_persist_pct": 0.25
+ },
+ "07780000": {
+  "sped_movein_pct": 0.1133,
+  "sped_moveout_pct": 0.1211,
+  "student_attrition_pct": 0.078,
+  "swd_grad_5yr_pct": 0.588,
+  "swd_college_persist_pct": 0.118
+ },
+ "00680000": {
+  "sped_movein_pct": 0.52,
+  "sped_moveout_pct": 0.04,
+  "student_attrition_pct": 0.034
+ },
+ "00910000": {
+  "sped_movein_pct": 0.1481,
+  "sped_moveout_pct": 0.0741,
+  "student_attrition_pct": 0.093
+ },
+ "02620000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.1788,
+  "sped_moveout_pct": 0.0993,
+  "student_attrition_pct": 0.094,
+  "swd_grad_5yr_pct": 0.75,
+  "swd_college_persist_pct": 0.125
+ },
+ "00140000": {
+  "mcas_alt_progressing_pct": 0.1765,
+  "sped_movein_pct": 0.1099,
+  "sped_moveout_pct": 0.1045,
+  "student_attrition_pct": 0.036,
+  "swd_grad_5yr_pct": 0.931,
+  "swd_college_persist_pct": 0.379
+ },
+ "02810000": {
+  "mcas_alt_progressing_pct": 0.6708,
+  "sped_movein_pct": 0.0951,
+  "sped_moveout_pct": 0.0431,
+  "student_attrition_pct": 0.077,
+  "swd_grad_5yr_pct": 0.669,
+  "swd_college_persist_pct": 0.08
+ },
+ "01220000": {
+  "mcas_alt_progressing_pct": 0.8235,
+  "sped_movein_pct": 0.1245,
+  "sped_moveout_pct": 0.0824,
+  "student_attrition_pct": 0.043,
+  "swd_grad_5yr_pct": 0.973,
+  "swd_college_persist_pct": 0.459
+ },
+ "01110000": {
+  "sped_movein_pct": 0.1786,
+  "sped_moveout_pct": 0.0714,
+  "student_attrition_pct": 0.049,
+  "swd_grad_5yr_pct": 0.857,
+  "swd_college_persist_pct": 0.071
+ },
+ "06950000": {
+  "sped_movein_pct": 0.0429,
+  "sped_moveout_pct": 0.0464,
+  "student_attrition_pct": 0.026,
+  "swd_grad_5yr_pct": 0.867,
+  "swd_college_persist_pct": 0.542
+ },
+ "02170000": {
+  "sped_movein_pct": 0.2531,
+  "sped_moveout_pct": 0.0702,
+  "student_attrition_pct": 0.029,
+  "swd_grad_5yr_pct": 0.763,
+  "swd_college_persist_pct": 0.5
+ },
+ "01360000": {
+  "mcas_alt_progressing_pct": 0.4091,
+  "sped_movein_pct": 0.1687,
+  "sped_moveout_pct": 0.0549,
+  "student_attrition_pct": 0.039,
+  "swd_grad_5yr_pct": 0.795,
+  "swd_college_persist_pct": 0.564
+ },
+ "01820000": {
+  "mcas_alt_progressing_pct": 0.52,
+  "sped_movein_pct": 0.1229,
+  "sped_moveout_pct": 0.0917,
+  "student_attrition_pct": 0.054,
+  "swd_grad_5yr_pct": 0.848,
+  "swd_college_persist_pct": 0.121
+ },
+ "02710000": {
+  "mcas_alt_progressing_pct": 0.4474,
+  "sped_movein_pct": 0.1568,
+  "sped_moveout_pct": 0.09,
+  "student_attrition_pct": 0.042,
+  "swd_grad_5yr_pct": 0.688,
+  "swd_college_persist_pct": 0.469
+ },
+ "03400000": {
+  "sped_movein_pct": 0.2778,
+  "student_attrition_pct": 0.045
+ },
+ "01440000": {
+  "sped_movein_pct": 0.1033,
+  "sped_moveout_pct": 0.1003,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.263
+ },
+ "01740000": {
+  "sped_movein_pct": 0.0921,
+  "sped_moveout_pct": 0.0439,
+  "student_attrition_pct": 0.052,
+  "swd_grad_5yr_pct": 0.857,
+  "swd_college_persist_pct": 0.357
+ },
+ "00070000": {
+  "mcas_alt_progressing_pct": 0.4,
+  "sped_movein_pct": 0.0626,
+  "sped_moveout_pct": 0.1317,
+  "student_attrition_pct": 0.061,
+  "swd_grad_5yr_pct": 0.793,
+  "swd_college_persist_pct": 0.207
+ },
+ "02010000": {
+  "mcas_alt_progressing_pct": 0.2677,
+  "sped_movein_pct": 0.1139,
+  "sped_moveout_pct": 0.0485,
+  "student_attrition_pct": 0.093,
+  "swd_grad_5yr_pct": 0.665,
+  "swd_college_persist_pct": 0.064
+ },
+ "02730000": {
+  "mcas_alt_progressing_pct": 0.8,
+  "sped_movein_pct": 0.1269,
+  "sped_moveout_pct": 0.0483,
+  "student_attrition_pct": 0.045
+ },
+ "03490000": {
+  "sped_movein_pct": 0.4375,
+  "student_attrition_pct": 0.071
+ },
+ "07350000": {
+  "sped_movein_pct": 0.1662,
+  "sped_moveout_pct": 0.0235,
+  "student_attrition_pct": 0.086,
+  "swd_grad_5yr_pct": 0.875,
+  "swd_college_persist_pct": 0.479
+ },
+ "00460000": {
+  "mcas_alt_progressing_pct": 0.6176,
+  "sped_movein_pct": 0.1355,
+  "sped_moveout_pct": 0.0652,
+  "student_attrition_pct": 0.066,
+  "swd_grad_5yr_pct": 0.891,
+  "swd_college_persist_pct": 0.416
+ },
+ "01050000": {
+  "sped_movein_pct": 0.1824,
+  "sped_moveout_pct": 0.0647,
+  "student_attrition_pct": 0.128,
+  "swd_grad_5yr_pct": 0.75,
+  "swd_college_persist_pct": 0.25
+ },
+ "00860000": {
+  "sped_movein_pct": 0.1698,
+  "sped_moveout_pct": 0.035,
+  "student_attrition_pct": 0.066,
+  "swd_grad_5yr_pct": 0.667,
+  "swd_college_persist_pct": 0.067
+ },
+ "02190000": {
+  "sped_movein_pct": 0.1311,
+  "sped_moveout_pct": 0.1189,
+  "student_attrition_pct": 0.038,
+  "swd_grad_5yr_pct": 0.933,
+  "swd_college_persist_pct": 0.733
+ },
+ "02930000": {
+  "mcas_alt_progressing_pct": 0.55,
+  "sped_movein_pct": 0.167,
+  "sped_moveout_pct": 0.0689,
+  "student_attrition_pct": 0.072,
+  "swd_grad_5yr_pct": 0.728,
+  "swd_college_persist_pct": 0.043
+ },
+ "03170000": {
+  "mcas_alt_progressing_pct": 0.6667,
+  "sped_movein_pct": 0.1306,
+  "sped_moveout_pct": 0.0579,
+  "student_attrition_pct": 0.054,
+  "swd_grad_5yr_pct": 0.882,
+  "swd_college_persist_pct": 0.618
+ },
+ "02850000": {
+  "mcas_alt_progressing_pct": 0.4314,
+  "sped_movein_pct": 0.1106,
+  "sped_moveout_pct": 0.0848,
+  "student_attrition_pct": 0.079,
+  "swd_grad_5yr_pct": 0.75,
+  "swd_college_persist_pct": 0.325
+ },
+ "01170000": {
+  "sped_movein_pct": 0.1348,
+  "sped_moveout_pct": 0.0899,
+  "student_attrition_pct": 0.092,
+  "swd_grad_5yr_pct": 0.833,
+  "swd_college_persist_pct": 0.333
+ },
+ "01270000": {
+  "sped_movein_pct": 0.0476,
+  "sped_moveout_pct": 0.0476,
+  "student_attrition_pct": 0.144,
+  "swd_grad_5yr_pct": 0.889,
+  "swd_college_persist_pct": 0.556
+ },
+ "03070000": {
+  "mcas_alt_progressing_pct": 0.6562,
+  "sped_movein_pct": 0.1685,
+  "sped_moveout_pct": 0.0942,
+  "student_attrition_pct": 0.042,
+  "swd_grad_5yr_pct": 0.845,
+  "swd_college_persist_pct": 0.431
+ },
+ "07660000": {
+  "sped_movein_pct": 0.0963,
+  "sped_moveout_pct": 0.0459,
+  "student_attrition_pct": 0.056,
+  "swd_grad_5yr_pct": 0.8,
+  "swd_college_persist_pct": 0.15
+ },
+ "06740000": {
+  "sped_movein_pct": 0.1328,
+  "sped_moveout_pct": 0.0871,
+  "student_attrition_pct": 0.098,
+  "swd_grad_5yr_pct": 0.733,
+  "swd_college_persist_pct": 0.2
+ },
+ "01600000": {
+  "mcas_alt_progressing_pct": 0.5387,
+  "sped_movein_pct": 0.0929,
+  "sped_moveout_pct": 0.0528,
+  "student_attrition_pct": 0.098,
+  "swd_grad_5yr_pct": 0.59,
+  "swd_college_persist_pct": 0.066
+ },
+ "00050000": {
+  "sped_movein_pct": 0.0997,
+  "sped_moveout_pct": 0.0861,
+  "student_attrition_pct": 0.045,
+  "swd_grad_5yr_pct": 0.774,
+  "swd_college_persist_pct": 0.258
+ },
+ "01520000": {
+  "sped_movein_pct": 0.1948,
+  "sped_moveout_pct": 0.0909,
+  "student_attrition_pct": 0.038,
+  "swd_grad_5yr_pct": 1.0,
+  "swd_college_persist_pct": 0.333
+ },
+ "07630000": {
+  "sped_movein_pct": 0.025,
+  "sped_moveout_pct": 0.0833,
+  "student_attrition_pct": 0.04,
+  "swd_grad_5yr_pct": 0.818,
+  "swd_college_persist_pct": 0.242
+ },
+ "01610000": {
+  "mcas_alt_progressing_pct": 0.4118,
+  "sped_movein_pct": 0.0758,
+  "sped_moveout_pct": 0.0806,
+  "student_attrition_pct": 0.034,
+  "swd_grad_5yr_pct": 0.793,
+  "swd_college_persist_pct": 0.172
+ },
+ "01980000": {
+  "mcas_alt_progressing_pct": 0.5952,
+  "sped_movein_pct": 0.1655,
+  "sped_moveout_pct": 0.0664,
+  "student_attrition_pct": 0.044,
+  "swd_grad_5yr_pct": 0.893,
+  "swd_college_persist_pct": 0.48
+ },
+ "07200000": {
+  "sped_movein_pct": 0.0532,
+  "sped_moveout_pct": 0.0598,
+  "student_attrition_pct": 0.073,
+  "swd_grad_5yr_pct": 0.769,
+  "swd_college_persist_pct": 0.308
+ },
+ "00710000": {
+  "mcas_alt_progressing_pct": 0.5833,
+  "sped_movein_pct": 0.2348,
+  "sped_moveout_pct": 0.1026,
+  "student_attrition_pct": 0.074,
+  "swd_grad_5yr_pct": 0.796,
+  "swd_college_persist_pct": 0.327
+ },
+ "06980000": {
+  "sped_movein_pct": 0.0861,
+  "sped_moveout_pct": 0.0239,
+  "student_attrition_pct": 0.035,
+  "swd_grad_5yr_pct": 0.944,
+  "swd_college_persist_pct": 0.667
+ },
+ "01140000": {
+  "sped_movein_pct": 0.1418,
+  "sped_moveout_pct": 0.0709,
+  "student_attrition_pct": 0.083,
+  "swd_grad_5yr_pct": 0.625
+ },
+ "02040000": {
+  "sped_movein_pct": 0.1051,
+  "sped_moveout_pct": 0.0538,
+  "student_attrition_pct": 0.036,
+  "swd_grad_5yr_pct": 0.951,
+  "swd_college_persist_pct": 0.561
+ },
+ "02660000": {
+  "mcas_alt_progressing_pct": 0.6061,
+  "sped_movein_pct": 0.1362,
+  "sped_moveout_pct": 0.1237,
+  "student_attrition_pct": 0.03,
+  "swd_grad_5yr_pct": 0.881,
+  "swd_college_persist_pct": 0.452
+ },
+ "02880000": {
+  "mcas_alt_progressing_pct": 1.0,
+  "sped_movein_pct": 0.1416,
+  "sped_moveout_pct": 0.0735,
+  "student_attrition_pct": 0.029
+ },
+ "02980000": {
+  "sped_movein_pct": 0.1241,
+  "sped_moveout_pct": 0.0966,
+  "student_attrition_pct": 0.039
+ },
+ "06320000": {
+  "sped_movein_pct": 0.0909,
+  "sped_moveout_pct": 0.0455,
+  "student_attrition_pct": 0.033
+ },
+ "06550000": {
+  "sped_movein_pct": 0.0573,
+  "sped_moveout_pct": 0.1019,
+  "student_attrition_pct": 0.052,
+  "swd_grad_5yr_pct": 0.933,
+  "swd_college_persist_pct": 0.533
+ },
+ "01490000": {
+  "mcas_alt_progressing_pct": 0.548,
+  "sped_movein_pct": 0.1244,
+  "sped_moveout_pct": 0.0517,
+  "student_attrition_pct": 0.094,
+  "swd_grad_5yr_pct": 0.574,
+  "swd_college_persist_pct": 0.08
+ },
+ "02920000": {
+  "mcas_alt_progressing_pct": 0.6,
+  "sped_movein_pct": 0.1645,
+  "sped_moveout_pct": 0.0526,
+  "student_attrition_pct": 0.058,
+  "swd_grad_5yr_pct": 0.467,
+  "swd_college_persist_pct": 0.067
+ },
+ "01540000": {
+  "sped_movein_pct": 0.28,
+  "student_attrition_pct": 0.06
+ },
+ "03210000": {
+  "mcas_alt_progressing_pct": 0.3947,
+  "sped_movein_pct": 0.1196,
+  "sped_moveout_pct": 0.1109,
+  "student_attrition_pct": 0.066,
+  "swd_grad_5yr_pct": 0.919,
+  "swd_college_persist_pct": 0.432
+ },
+ "03440000": {
+  "mcas_alt_progressing_pct": 0.4242,
+  "sped_movein_pct": 0.4198,
+  "sped_moveout_pct": 0.195,
+  "student_attrition_pct": 0.04,
+  "swd_grad_5yr_pct": 0.823,
+  "swd_college_persist_pct": 0.532
+ },
+ "01530000": {
+  "mcas_alt_progressing_pct": 0.5032,
+  "sped_movein_pct": 0.1009,
+  "sped_moveout_pct": 0.0429,
+  "student_attrition_pct": 0.055,
+  "swd_grad_5yr_pct": 0.852,
+  "swd_college_persist_pct": 0.243
+ },
+ "03180000": {
+  "sped_movein_pct": 0.0909,
+  "sped_moveout_pct": 0.0909,
+  "student_attrition_pct": 0.016
+ },
+ "01210000": {
+  "sped_movein_pct": 0.1538
+ },
+ "02360000": {
+  "mcas_alt_progressing_pct": 0.3382,
+  "sped_movein_pct": 0.1753,
+  "sped_moveout_pct": 0.0361,
+  "student_attrition_pct": 0.055,
+  "swd_grad_5yr_pct": 0.73,
+  "swd_college_persist_pct": 0.14
+ },
+ "02460000": {
+  "sped_movein_pct": 0.1086,
+  "sped_moveout_pct": 0.0386,
+  "student_attrition_pct": 0.03,
+  "swd_grad_5yr_pct": 0.927,
+  "swd_college_persist_pct": 0.618
+ },
+ "02480000": {
+  "mcas_alt_progressing_pct": 0.49,
+  "sped_movein_pct": 0.1078,
+  "sped_moveout_pct": 0.0827,
+  "student_attrition_pct": 0.082,
+  "swd_grad_5yr_pct": 0.679,
+  "swd_college_persist_pct": 0.141
+ },
+ "07650000": {
+  "sped_movein_pct": 0.8889,
+  "sped_moveout_pct": 0.1587,
+  "student_attrition_pct": 0.065,
+  "swd_grad_5yr_pct": 0.714,
+  "swd_college_persist_pct": 0.429
+ },
+ "01280000": {
+  "mcas_alt_progressing_pct": 0.5081,
+  "sped_movein_pct": 0.1006,
+  "sped_moveout_pct": 0.071,
+  "student_attrition_pct": 0.082,
+  "swd_grad_5yr_pct": 0.672,
+  "swd_college_persist_pct": 0.12
+ },
+ "00300000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.1316,
+  "sped_moveout_pct": 0.0471,
+  "student_attrition_pct": 0.059,
+  "swd_grad_5yr_pct": 0.818,
+  "swd_college_persist_pct": 0.309
+ },
+ "02720000": {
+  "sped_movein_pct": 0.2273,
+  "student_attrition_pct": 0.011
+ },
+ "00520000": {
+  "mcas_alt_progressing_pct": 0.75,
+  "sped_movein_pct": 0.2397,
+  "sped_moveout_pct": 0.0712,
+  "student_attrition_pct": 0.055,
+  "swd_grad_5yr_pct": 0.867,
+  "swd_college_persist_pct": 0.233
+ },
+ "01850000": {
+  "mcas_alt_progressing_pct": 0.619,
+  "sped_movein_pct": 0.131,
+  "sped_moveout_pct": 0.0535,
+  "student_attrition_pct": 0.085,
+  "swd_grad_5yr_pct": 0.691,
+  "swd_college_persist_pct": 0.164
+ },
+ "00510000": {
+  "sped_movein_pct": 0.1477,
+  "sped_moveout_pct": 0.1477,
+  "student_attrition_pct": 0.025
+ },
+ "02080000": {
+  "sped_movein_pct": 0.1613,
+  "sped_moveout_pct": 0.043,
+  "student_attrition_pct": 0.052
+ },
+ "07740000": {
+  "sped_movein_pct": 0.1609,
+  "sped_moveout_pct": 0.092,
+  "student_attrition_pct": 0.015
+ },
+ "07300000": {
+  "sped_movein_pct": 0.0537,
+  "sped_moveout_pct": 0.094,
+  "student_attrition_pct": 0.031,
+  "swd_grad_5yr_pct": 0.906,
+  "swd_college_persist_pct": 0.672
+ },
+ "00080000": {
+  "sped_movein_pct": 0.2,
+  "sped_moveout_pct": 0.0476,
+  "student_attrition_pct": 0.089
+ },
+ "02740000": {
+  "mcas_alt_progressing_pct": 0.28,
+  "sped_movein_pct": 0.1232,
+  "sped_moveout_pct": 0.0742,
+  "student_attrition_pct": 0.055,
+  "swd_grad_5yr_pct": 0.813,
+  "swd_college_persist_pct": 0.253
+ },
+ "02760000": {
+  "sped_movein_pct": 0.1244,
+  "sped_moveout_pct": 0.1106,
+  "student_attrition_pct": 0.019
+ },
+ "01810000": {
+  "mcas_alt_progressing_pct": 0.5,
+  "sped_movein_pct": 0.0919,
+  "sped_moveout_pct": 0.125,
+  "student_attrition_pct": 0.081,
+  "swd_grad_5yr_pct": 0.61,
+  "swd_college_persist_pct": 0.153
+ },
+ "02610000": {
+  "sped_movein_pct": 0.1077,
+  "sped_moveout_pct": 0.0422,
+  "student_attrition_pct": 0.084,
+  "swd_grad_5yr_pct": 0.917,
+  "swd_college_persist_pct": 0.444
+ },
+ "00880000": {
+  "mcas_alt_progressing_pct": 0.5357,
+  "sped_movein_pct": 0.0793,
+  "sped_moveout_pct": 0.0987,
+  "student_attrition_pct": 0.038,
+  "swd_grad_5yr_pct": 0.924,
+  "swd_college_persist_pct": 0.515
+ },
+ "02510000": {
+  "mcas_alt_progressing_pct": 0.6364,
+  "sped_movein_pct": 0.1296,
+  "sped_moveout_pct": 0.0856,
+  "student_attrition_pct": 0.069,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.158
+ },
+ "00350000": {
+  "mcas_alt_progressing_pct": 0.657,
+  "sped_movein_pct": 0.1141,
+  "sped_moveout_pct": 0.0492,
+  "student_attrition_pct": 0.088,
+  "swd_grad_5yr_pct": 0.68,
+  "swd_college_persist_pct": 0.137
+ },
+ "01420000": {
+  "sped_movein_pct": 0.1733,
+  "sped_moveout_pct": 0.1,
+  "student_attrition_pct": 0.041,
+  "swd_grad_5yr_pct": 0.9,
+  "swd_college_persist_pct": 0.2
+ },
+ "01450000": {
+  "sped_movein_pct": 0.1148,
+  "sped_moveout_pct": 0.1407,
+  "student_attrition_pct": 0.065
+ },
+ "02490000": {
+  "sped_moveout_pct": 0.25,
+  "student_attrition_pct": 0.053
+ },
+ "06800000": {
+  "mcas_alt_progressing_pct": 0.4615,
+  "sped_movein_pct": 0.1339,
+  "sped_moveout_pct": 0.0268,
+  "student_attrition_pct": 0.025,
+  "swd_grad_5yr_pct": 0.854,
+  "swd_college_persist_pct": 0.25
+ },
+ "02580000": {
+  "mcas_alt_progressing_pct": 0.3906,
+  "sped_movein_pct": 0.1432,
+  "sped_moveout_pct": 0.0274,
+  "student_attrition_pct": 0.104,
+  "swd_grad_5yr_pct": 0.678,
+  "swd_college_persist_pct": 0.186
+ },
+ "03270000": {
+  "sped_movein_pct": 0.25,
+  "sped_moveout_pct": 0.0357,
+  "student_attrition_pct": 0.147
+ },
+ "07800000": {
+  "mcas_alt_progressing_pct": 0.4667,
+  "sped_movein_pct": 0.2604,
+  "sped_moveout_pct": 0.0547,
+  "student_attrition_pct": 0.042,
+  "swd_grad_5yr_pct": 0.83,
+  "swd_college_persist_pct": 0.298
+ },
+ "00560000": {
+  "mcas_alt_progressing_pct": 0.5556,
+  "sped_movein_pct": 0.1042,
+  "sped_moveout_pct": 0.0542,
+  "student_attrition_pct": 0.036,
+  "swd_grad_5yr_pct": 0.842,
+  "swd_college_persist_pct": 0.456
+ },
+ "01960000": {
+  "sped_movein_pct": 0.6957,
+  "sped_moveout_pct": 0.2174,
+  "student_attrition_pct": 0.042
+ },
+ "03260000": {
+  "mcas_alt_progressing_pct": 0.5909,
+  "sped_movein_pct": 0.1101,
+  "sped_moveout_pct": 0.0505,
+  "student_attrition_pct": 0.035,
+  "swd_grad_5yr_pct": 0.895,
+  "swd_college_persist_pct": 0.614
+ },
+ "03500000": {
+  "sped_movein_pct": 0.2727,
+  "sped_moveout_pct": 0.0909,
+  "student_attrition_pct": 0.031
+ },
+ "00640000": {
+  "mcas_alt_progressing_pct": 0.7,
+  "sped_movein_pct": 0.1333,
+  "sped_moveout_pct": 0.0864,
+  "student_attrition_pct": 0.056,
+  "swd_grad_5yr_pct": 0.938,
+  "swd_college_persist_pct": 0.25
+ },
+ "06180000": {
+  "sped_movein_pct": 0.1535,
+  "sped_moveout_pct": 0.107,
+  "student_attrition_pct": 0.061,
+  "swd_grad_5yr_pct": 0.722,
+  "swd_college_persist_pct": 0.167
+ },
+ "00480000": {
+  "mcas_alt_progressing_pct": 0.48,
+  "sped_movein_pct": 0.1002,
+  "sped_moveout_pct": 0.0747,
+  "student_attrition_pct": 0.067,
+  "swd_grad_5yr_pct": 0.677,
+  "swd_college_persist_pct": 0.387
+ },
+ "01250000": {
+  "sped_movein_pct": 0.237,
+  "sped_moveout_pct": 0.0741,
+  "student_attrition_pct": 0.046,
+  "swd_grad_5yr_pct": 0.929,
+  "swd_college_persist_pct": 0.571
+ },
+ "00490000": {
+  "mcas_alt_progressing_pct": 0.5256,
+  "sped_movein_pct": 0.084,
+  "sped_moveout_pct": 0.058,
+  "student_attrition_pct": 0.081,
+  "swd_grad_5yr_pct": 0.835,
+  "swd_college_persist_pct": 0.438
+ }
+}

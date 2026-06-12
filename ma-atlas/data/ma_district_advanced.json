@@ -1,0 +1,873 @@
+{
+ "07450000": {
+  "adv_course_completion_pct": 0.792,
+  "ap_participation_pct": 0.4868
+ },
+ "01890000": {
+  "adv_course_completion_pct": 0.769,
+  "ap_participation_pct": 0.6697
+ },
+ "00640000": {
+  "adv_course_completion_pct": 0.489,
+  "ap_participation_pct": 0.27
+ },
+ "02920000": {
+  "adv_course_completion_pct": 0.528,
+  "ap_participation_pct": 0.2792
+ },
+ "06160000": {
+  "adv_course_completion_pct": 0.699,
+  "ap_participation_pct": 0.4306
+ },
+ "01600000": {
+  "adv_course_completion_pct": 0.408,
+  "ap_participation_pct": 0.1487
+ },
+ "00990000": {
+  "adv_course_completion_pct": 0.691,
+  "ap_participation_pct": 0.5103
+ },
+ "07100000": {
+  "adv_course_completion_pct": 0.838,
+  "ap_participation_pct": 0.6086
+ },
+ "01590000": {
+  "adv_course_completion_pct": 0.762,
+  "ap_participation_pct": 0.5749
+ },
+ "07800000": {
+  "adv_course_completion_pct": 0.675,
+  "ap_participation_pct": 0.4819
+ },
+ "01680000": {
+  "adv_course_completion_pct": 0.849,
+  "ap_participation_pct": 0.5517
+ },
+ "01970000": {
+  "adv_course_completion_pct": 0.641,
+  "ap_participation_pct": 0.3523
+ },
+ "02290000": {
+  "adv_course_completion_pct": 0.444,
+  "ap_participation_pct": 0.4033
+ },
+ "01380000": {
+  "adv_course_completion_pct": 0.803,
+  "ap_participation_pct": 0.5379
+ },
+ "01670000": {
+  "adv_course_completion_pct": 0.653,
+  "ap_participation_pct": 0.5358
+ },
+ "01650000": {
+  "adv_course_completion_pct": 0.446,
+  "ap_participation_pct": 0.3178
+ },
+ "03160000": {
+  "adv_course_completion_pct": 0.689,
+  "ap_participation_pct": 0.3006
+ },
+ "00960000": {
+  "adv_course_completion_pct": 0.776,
+  "ap_participation_pct": 0.5722
+ },
+ "03350000": {
+  "adv_course_completion_pct": 0.826,
+  "ap_participation_pct": 0.6962
+ },
+ "00070000": {
+  "adv_course_completion_pct": 0.451,
+  "ap_participation_pct": 0.3279
+ },
+ "02070000": {
+  "adv_course_completion_pct": 0.812,
+  "ap_participation_pct": 0.6008
+ },
+ "02640000": {
+  "adv_course_completion_pct": 0.958,
+  "ap_participation_pct": 0.7463
+ },
+ "03040000": {
+  "adv_course_completion_pct": 0.767,
+  "ap_participation_pct": 0.3182
+ },
+ "00790000": {
+  "adv_course_completion_pct": 0.584,
+  "ap_participation_pct": 0.3654
+ },
+ "01170000": {
+  "adv_course_completion_pct": 0.829,
+  "ap_participation_pct": 0.4944
+ },
+ "02710000": {
+  "adv_course_completion_pct": 0.957,
+  "ap_participation_pct": 0.5046
+ },
+ "01740000": {
+  "adv_course_completion_pct": 0.805,
+  "ap_participation_pct": 0.5584
+ },
+ "06030000": {
+  "adv_course_completion_pct": 0.705,
+  "ap_participation_pct": 0.5269
+ },
+ "01490000": {
+  "adv_course_completion_pct": 0.775,
+  "ap_participation_pct": 0.3582
+ },
+ "01760000": {
+  "adv_course_completion_pct": 0.423,
+  "ap_participation_pct": 0.3081
+ },
+ "02170000": {
+  "adv_course_completion_pct": 0.801,
+  "ap_participation_pct": 0.488
+ },
+ "02440000": {
+  "adv_course_completion_pct": 0.743,
+  "ap_participation_pct": 0.3758
+ },
+ "07700000": {
+  "adv_course_completion_pct": 0.816,
+  "ap_participation_pct": 0.3534
+ },
+ "01820000": {
+  "adv_course_completion_pct": 0.654,
+  "ap_participation_pct": 0.5037
+ },
+ "01280000": {
+  "adv_course_completion_pct": 0.604,
+  "ap_participation_pct": 0.3648
+ },
+ "03420000": {
+  "adv_course_completion_pct": 0.696,
+  "ap_participation_pct": 0.4688
+ },
+ "01860000": {
+  "adv_course_completion_pct": 0.652,
+  "ap_participation_pct": 0.3797
+ },
+ "01220000": {
+  "adv_course_completion_pct": 0.779,
+  "ap_participation_pct": 0.5254
+ },
+ "06750000": {
+  "adv_course_completion_pct": 0.843,
+  "ap_participation_pct": 0.7252
+ },
+ "03150000": {
+  "adv_course_completion_pct": 0.864,
+  "ap_participation_pct": 0.6089
+ },
+ "01310000": {
+  "adv_course_completion_pct": 0.869,
+  "ap_participation_pct": 0.5272
+ },
+ "03070000": {
+  "adv_course_completion_pct": 0.919,
+  "ap_participation_pct": 0.4138
+ },
+ "01270000": {
+  "adv_course_completion_pct": 0.821,
+  "ap_participation_pct": 0.5946
+ },
+ "02360000": {
+  "adv_course_completion_pct": 0.599,
+  "ap_participation_pct": 0.3312
+ },
+ "01360000": {
+  "adv_course_completion_pct": 0.711,
+  "ap_participation_pct": 0.7013
+ },
+ "01640000": {
+  "adv_course_completion_pct": 0.889,
+  "ap_participation_pct": 0.6926
+ },
+ "01850000": {
+  "adv_course_completion_pct": 0.663,
+  "ap_participation_pct": 0.4068
+ },
+ "00730000": {
+  "adv_course_completion_pct": 0.658,
+  "ap_participation_pct": 0.5272
+ },
+ "00610000": {
+  "adv_course_completion_pct": 0.549,
+  "ap_participation_pct": 0.2832
+ },
+ "01610000": {
+  "adv_course_completion_pct": 0.496,
+  "ap_participation_pct": 0.4594
+ },
+ "02620000": {
+  "adv_course_completion_pct": 0.698,
+  "ap_participation_pct": 0.3705
+ },
+ "06550000": {
+  "adv_course_completion_pct": 0.934,
+  "ap_participation_pct": 0.6809
+ },
+ "07750000": {
+  "adv_course_completion_pct": 0.672,
+  "ap_participation_pct": 0.3681
+ },
+ "00950000": {
+  "adv_course_completion_pct": 0.613,
+  "ap_participation_pct": 0.339
+ },
+ "00300000": {
+  "adv_course_completion_pct": 0.633,
+  "ap_participation_pct": 0.4164
+ },
+ "06150000": {
+  "adv_course_completion_pct": 0.732,
+  "ap_participation_pct": 0.6019
+ },
+ "02390000": {
+  "adv_course_completion_pct": 0.643,
+  "ap_participation_pct": 0.3827
+ },
+ "03430000": {
+  "adv_course_completion_pct": 0.537,
+  "ap_participation_pct": 0.3109
+ },
+ "03310000": {
+  "adv_course_completion_pct": 0.503,
+  "ap_participation_pct": 0.3657
+ },
+ "06200000": {
+  "adv_course_completion_pct": 0.702,
+  "ap_participation_pct": 0.5319
+ },
+ "00940000": {
+  "adv_course_completion_pct": 0.49,
+  "ap_participation_pct": 0.3176
+ },
+ "02850000": {
+  "adv_course_completion_pct": 0.517,
+  "ap_participation_pct": 0.2897
+ },
+ "06250000": {
+  "adv_course_completion_pct": 0.616,
+  "ap_participation_pct": 0.3828
+ },
+ "02150000": {
+  "ap_participation_pct": 0.25
+ },
+ "03100000": {
+  "adv_course_completion_pct": 0.33,
+  "ap_participation_pct": 0.4126
+ },
+ "02260000": {
+  "adv_course_completion_pct": 0.553,
+  "ap_participation_pct": 0.3711
+ },
+ "01620000": {
+  "adv_course_completion_pct": 0.523,
+  "ap_participation_pct": 0.4976
+ },
+ "00260000": {
+  "adv_course_completion_pct": 0.889,
+  "ap_participation_pct": 0.6183
+ },
+ "03250000": {
+  "adv_course_completion_pct": 0.466,
+  "ap_participation_pct": 0.2587
+ },
+ "00880000": {
+  "adv_course_completion_pct": 0.697,
+  "ap_participation_pct": 0.5841
+ },
+ "07670000": {
+  "adv_course_completion_pct": 0.816,
+  "ap_participation_pct": 0.3287
+ },
+ "01110000": {
+  "adv_course_completion_pct": 0.719,
+  "ap_participation_pct": 0.44
+ },
+ "00820000": {
+  "adv_course_completion_pct": 0.897,
+  "ap_participation_pct": 0.7215
+ },
+ "01370000": {
+  "adv_course_completion_pct": 0.51,
+  "ap_participation_pct": 0.1533
+ },
+ "01100000": {
+  "adv_course_completion_pct": 0.804,
+  "ap_participation_pct": 0.4928
+ },
+ "03460000": {
+  "adv_course_completion_pct": 0.724,
+  "ap_participation_pct": 0.5179
+ },
+ "03050000": {
+  "adv_course_completion_pct": 0.694,
+  "ap_participation_pct": 0.4458
+ },
+ "01440000": {
+  "adv_course_completion_pct": 0.749,
+  "ap_participation_pct": 0.4784
+ },
+ "01870000": {
+  "adv_course_completion_pct": 0.674,
+  "ap_participation_pct": 0.5444
+ },
+ "06000000": {
+  "adv_course_completion_pct": 0.747,
+  "ap_participation_pct": 0.687
+ },
+ "01710000": {
+  "adv_course_completion_pct": 0.725,
+  "ap_participation_pct": 0.4619
+ },
+ "06980000": {
+  "adv_course_completion_pct": 0.86,
+  "ap_participation_pct": 0.7574
+ },
+ "02660000": {
+  "adv_course_completion_pct": 0.773,
+  "ap_participation_pct": 0.6393
+ },
+ "00770000": {
+  "adv_course_completion_pct": 0.56,
+  "ap_participation_pct": 0.4136
+ },
+ "03080000": {
+  "adv_course_completion_pct": 0.546,
+  "ap_participation_pct": 0.4253
+ },
+ "02110000": {
+  "adv_course_completion_pct": 0.704,
+  "ap_participation_pct": 0.525
+ },
+ "01050000": {
+  "adv_course_completion_pct": 0.682,
+  "ap_participation_pct": 0.437
+ },
+ "03480000": {
+  "adv_course_completion_pct": 0.524,
+  "ap_participation_pct": 0.3366
+ },
+ "06730000": {
+  "adv_course_completion_pct": 0.76,
+  "ap_participation_pct": 0.5643
+ },
+ "02140000": {
+  "adv_course_completion_pct": 0.48,
+  "ap_participation_pct": 0.3624
+ },
+ "01780000": {
+  "adv_course_completion_pct": 0.784,
+  "ap_participation_pct": 0.6931
+ },
+ "03170000": {
+  "adv_course_completion_pct": 0.939,
+  "ap_participation_pct": 0.5974
+ },
+ "02910000": {
+  "adv_course_completion_pct": 0.771,
+  "ap_participation_pct": 0.5657
+ },
+ "00200000": {
+  "adv_course_completion_pct": 0.647,
+  "ap_participation_pct": 0.3141
+ },
+ "02780000": {
+  "adv_course_completion_pct": 0.493,
+  "ap_participation_pct": 0.327
+ },
+ "02580000": {
+  "adv_course_completion_pct": 0.733,
+  "ap_participation_pct": 0.3249
+ },
+ "01410000": {
+  "adv_course_completion_pct": 0.725,
+  "ap_participation_pct": 0.4793
+ },
+ "07730000": {
+  "adv_course_completion_pct": 0.579,
+  "ap_participation_pct": 0.339
+ },
+ "01980000": {
+  "adv_course_completion_pct": 0.756,
+  "ap_participation_pct": 0.578
+ },
+ "02740000": {
+  "adv_course_completion_pct": 0.634,
+  "ap_participation_pct": 0.4148
+ },
+ "07170000": {
+  "adv_course_completion_pct": 0.625,
+  "ap_participation_pct": 0.5588
+ },
+ "03230000": {
+  "adv_course_completion_pct": 0.703,
+  "ap_participation_pct": 0.4573
+ },
+ "00360000": {
+  "adv_course_completion_pct": 0.738,
+  "ap_participation_pct": 0.5086
+ },
+ "06720000": {
+  "adv_course_completion_pct": 0.5,
+  "ap_participation_pct": 0.2667
+ },
+ "00970000": {
+  "adv_course_completion_pct": 0.485,
+  "ap_participation_pct": 0.2523
+ },
+ "01030000": {
+  "adv_course_completion_pct": 0.709,
+  "ap_participation_pct": 0.1524
+ },
+ "00100000": {
+  "adv_course_completion_pct": 0.867,
+  "ap_participation_pct": 0.762
+ },
+ "02840000": {
+  "adv_course_completion_pct": 0.779,
+  "ap_participation_pct": 0.5986
+ },
+ "00250000": {
+  "adv_course_completion_pct": 0.823,
+  "ap_participation_pct": 0.3492
+ },
+ "02460000": {
+  "adv_course_completion_pct": 0.697,
+  "ap_participation_pct": 0.5036
+ },
+ "02120000": {
+  "adv_course_completion_pct": 0.788,
+  "ap_participation_pct": 0.5415
+ },
+ "03220000": {
+  "adv_course_completion_pct": 0.612,
+  "ap_participation_pct": 0.4057
+ },
+ "07530000": {
+  "adv_course_completion_pct": 0.968,
+  "ap_participation_pct": 0.9701
+ },
+ "01630000": {
+  "adv_course_completion_pct": 0.502,
+  "ap_participation_pct": 0.1423
+ },
+ "00720000": {
+  "adv_course_completion_pct": 0.747,
+  "ap_participation_pct": 0.5436
+ },
+ "00440000": {
+  "adv_course_completion_pct": 0.421,
+  "ap_participation_pct": 0.1714
+ },
+ "02180000": {
+  "adv_course_completion_pct": 0.504,
+  "ap_participation_pct": 0.406
+ },
+ "02100000": {
+  "adv_course_completion_pct": 0.804,
+  "ap_participation_pct": 0.7185
+ },
+ "02610000": {
+  "adv_course_completion_pct": 0.704,
+  "ap_participation_pct": 0.5307
+ },
+ "01250000": {
+  "adv_course_completion_pct": 0.898,
+  "ap_participation_pct": 0.7019
+ },
+ "01910000": {
+  "adv_course_completion_pct": 0.578,
+  "ap_participation_pct": 0.1571
+ },
+ "02090000": {
+  "adv_course_completion_pct": 0.694,
+  "ap_participation_pct": 0.1457
+ },
+ "00310000": {
+  "adv_course_completion_pct": 0.841,
+  "ap_participation_pct": 0.4789
+ },
+ "06350000": {
+  "adv_course_completion_pct": 0.739,
+  "ap_participation_pct": 0.3439
+ },
+ "02770000": {
+  "adv_course_completion_pct": 0.544,
+  "ap_participation_pct": 0.2979
+ },
+ "02520000": {
+  "adv_course_completion_pct": 0.796,
+  "ap_participation_pct": 0.5278
+ },
+ "01140000": {
+  "adv_course_completion_pct": 0.5,
+  "ap_participation_pct": 0.4393
+ },
+ "02190000": {
+  "adv_course_completion_pct": 0.973,
+  "ap_participation_pct": 0.7057
+ },
+ "01810000": {
+  "adv_course_completion_pct": 0.533,
+  "ap_participation_pct": 0.3192
+ },
+ "00050000": {
+  "adv_course_completion_pct": 0.659,
+  "ap_participation_pct": 0.4182
+ },
+ "03470000": {
+  "adv_course_completion_pct": 0.6,
+  "ap_participation_pct": 0.374
+ },
+ "03260000": {
+  "adv_course_completion_pct": 0.821,
+  "ap_participation_pct": 0.5046
+ },
+ "03300000": {
+  "adv_course_completion_pct": 0.961,
+  "ap_participation_pct": 0.8687
+ },
+ "01530000": {
+  "adv_course_completion_pct": 0.484,
+  "ap_participation_pct": 0.2606
+ },
+ "00870000": {
+  "adv_course_completion_pct": 0.761,
+  "ap_participation_pct": 0.4585
+ },
+ "00350000": {
+  "adv_course_completion_pct": 0.692,
+  "ap_participation_pct": 0.4343
+ },
+ "07200000": {
+  "adv_course_completion_pct": 0.528,
+  "ap_participation_pct": 0.3399
+ },
+ "06740000": {
+  "adv_course_completion_pct": 0.542,
+  "ap_participation_pct": 0.1731
+ },
+ "00160000": {
+  "adv_course_completion_pct": 0.572,
+  "ap_participation_pct": 0.3383
+ },
+ "01010000": {
+  "adv_course_completion_pct": 0.777,
+  "ap_participation_pct": 0.5876
+ },
+ "00460000": {
+  "adv_course_completion_pct": 0.928,
+  "ap_participation_pct": 0.5773
+ },
+ "01750000": {
+  "adv_course_completion_pct": 0.8,
+  "ap_participation_pct": 0.7556
+ },
+ "01770000": {
+  "adv_course_completion_pct": 0.784,
+  "ap_participation_pct": 0.6538
+ },
+ "07780000": {
+  "adv_course_completion_pct": 0.627,
+  "ap_participation_pct": 0.5273
+ },
+ "02310000": {
+  "adv_course_completion_pct": 0.837,
+  "ap_participation_pct": 0.5869
+ },
+ "02650000": {
+  "adv_course_completion_pct": 0.691,
+  "ap_participation_pct": 0.448
+ },
+ "00240000": {
+  "adv_course_completion_pct": 0.711,
+  "ap_participation_pct": 0.3758
+ },
+ "02480000": {
+  "adv_course_completion_pct": 0.715,
+  "ap_participation_pct": 0.3127
+ },
+ "01000000": {
+  "adv_course_completion_pct": 0.671,
+  "ap_participation_pct": 0.3394
+ },
+ "02430000": {
+  "adv_course_completion_pct": 0.637,
+  "ap_participation_pct": 0.3691
+ },
+ "00860000": {
+  "adv_course_completion_pct": 0.561,
+  "ap_participation_pct": 0.5585
+ },
+ "07500000": {
+  "adv_course_completion_pct": 0.925,
+  "ap_participation_pct": 0.6456
+ },
+ "06500000": {
+  "adv_course_completion_pct": 0.545,
+  "ap_participation_pct": 0.3912
+ },
+ "00140000": {
+  "adv_course_completion_pct": 0.681,
+  "ap_participation_pct": 0.3812
+ },
+ "00170000": {
+  "adv_course_completion_pct": 0.575,
+  "ap_participation_pct": 0.4464
+ },
+ "00710000": {
+  "adv_course_completion_pct": 0.806,
+  "ap_participation_pct": 0.5174
+ },
+ "07150000": {
+  "adv_course_completion_pct": 0.838,
+  "ap_participation_pct": 0.6686
+ },
+ "00480000": {
+  "adv_course_completion_pct": 0.687,
+  "ap_participation_pct": 0.6026
+ },
+ "01520000": {
+  "adv_course_completion_pct": 0.629,
+  "ap_participation_pct": 0.3917
+ },
+ "06180000": {
+  "adv_course_completion_pct": 0.549,
+  "ap_participation_pct": 0.4309
+ },
+ "02900000": {
+  "adv_course_completion_pct": 0.84,
+  "ap_participation_pct": 0.5979
+ },
+ "06220000": {
+  "adv_course_completion_pct": 0.722,
+  "ap_participation_pct": 0.2712
+ },
+ "01420000": {
+  "adv_course_completion_pct": 0.711,
+  "ap_participation_pct": 0.678
+ },
+ "02200000": {
+  "adv_course_completion_pct": 0.684,
+  "ap_participation_pct": 0.464
+ },
+ "06580000": {
+  "adv_course_completion_pct": 0.601,
+  "ap_participation_pct": 0.4337
+ },
+ "01990000": {
+  "adv_course_completion_pct": 0.946,
+  "ap_participation_pct": 0.6394
+ },
+ "00490000": {
+  "adv_course_completion_pct": 0.739,
+  "ap_participation_pct": 0.6421
+ },
+ "01500000": {
+  "adv_course_completion_pct": 0.811,
+  "ap_participation_pct": 0.4727
+ },
+ "01580000": {
+  "adv_course_completion_pct": 0.996,
+  "ap_participation_pct": 0.508
+ },
+ "02270000": {
+  "adv_course_completion_pct": 0.544,
+  "ap_participation_pct": 0.4545
+ },
+ "01700000": {
+  "adv_course_completion_pct": 0.616,
+  "ap_participation_pct": 0.3273
+ },
+ "03140000": {
+  "adv_course_completion_pct": 0.565,
+  "ap_participation_pct": 0.3146
+ },
+ "01510000": {
+  "adv_course_completion_pct": 0.625,
+  "ap_participation_pct": 0.28
+ },
+ "00400000": {
+  "adv_course_completion_pct": 0.718,
+  "ap_participation_pct": 0.4085
+ },
+ "00090000": {
+  "adv_course_completion_pct": 0.806,
+  "ap_participation_pct": 0.6971
+ },
+ "03440000": {
+  "adv_course_completion_pct": 0.984,
+  "ap_participation_pct": 0.6407
+ },
+ "00570000": {
+  "adv_course_completion_pct": 0.566,
+  "ap_participation_pct": 0.3587
+ },
+ "06650000": {
+  "adv_course_completion_pct": 0.666,
+  "ap_participation_pct": 0.5944
+ },
+ "00830000": {
+  "adv_course_completion_pct": 0.62,
+  "ap_participation_pct": 0.4038
+ },
+ "03010000": {
+  "adv_course_completion_pct": 0.73,
+  "ap_participation_pct": 0.3571
+ },
+ "00560000": {
+  "adv_course_completion_pct": 0.981,
+  "ap_participation_pct": 0.541
+ },
+ "02510000": {
+  "adv_course_completion_pct": 0.693,
+  "ap_participation_pct": 0.436
+ },
+ "00230000": {
+  "adv_course_completion_pct": 0.792,
+  "ap_participation_pct": 0.5592
+ },
+ "01070000": {
+  "adv_course_completion_pct": 0.373,
+  "ap_participation_pct": 0.2538
+ },
+ "03090000": {
+  "adv_course_completion_pct": 0.457,
+  "ap_participation_pct": 0.1447
+ },
+ "03320000": {
+  "adv_course_completion_pct": 0.624,
+  "ap_participation_pct": 0.4433
+ },
+ "07660000": {
+  "adv_course_completion_pct": 0.235,
+  "ap_participation_pct": 0.2474
+ },
+ "01550000": {
+  "adv_course_completion_pct": 0.951,
+  "ap_participation_pct": 0.8392
+ },
+ "00930000": {
+  "adv_course_completion_pct": 0.561,
+  "ap_participation_pct": 0.2184
+ },
+ "01330000": {
+  "adv_course_completion_pct": 0.368,
+  "ap_participation_pct": 0.2284
+ },
+ "02010000": {
+  "adv_course_completion_pct": 0.405,
+  "ap_participation_pct": 0.2086
+ },
+ "07350000": {
+  "adv_course_completion_pct": 0.896,
+  "ap_participation_pct": 0.4487
+ },
+ "07250000": {
+  "adv_course_completion_pct": 0.842,
+  "ap_participation_pct": 0.5843
+ },
+ "02040000": {
+  "adv_course_completion_pct": 0.73,
+  "ap_participation_pct": 0.5277
+ },
+ "00010000": {
+  "adv_course_completion_pct": 0.811,
+  "ap_participation_pct": 0.32
+ },
+ "07120000": {
+  "adv_course_completion_pct": 0.724,
+  "ap_participation_pct": 0.6143
+ },
+ "02810000": {
+  "adv_course_completion_pct": 0.5,
+  "ap_participation_pct": 0.253
+ },
+ "02950000": {
+  "adv_course_completion_pct": 0.796,
+  "ap_participation_pct": 0.5738
+ },
+ "06800000": {
+  "adv_course_completion_pct": 0.717,
+  "ap_participation_pct": 0.4156
+ },
+ "03360000": {
+  "adv_course_completion_pct": 0.634,
+  "ap_participation_pct": 0.3506
+ },
+ "03210000": {
+  "adv_course_completion_pct": 0.642,
+  "ap_participation_pct": 0.5249
+ },
+ "00500000": {
+  "adv_course_completion_pct": 0.717,
+  "ap_participation_pct": 0.7045
+ },
+ "00650000": {
+  "adv_course_completion_pct": 0.903,
+  "ap_participation_pct": 0.745
+ },
+ "02930000": {
+  "adv_course_completion_pct": 0.661,
+  "ap_participation_pct": 0.237
+ },
+ "00180000": {
+  "adv_course_completion_pct": 0.578,
+  "ap_participation_pct": 0.3661
+ },
+ "06450000": {
+  "adv_course_completion_pct": 0.642,
+  "ap_participation_pct": 0.4956
+ },
+ "07650000": {
+  "adv_course_completion_pct": 0.744,
+  "ap_participation_pct": 0.1486
+ },
+ "01720000": {
+  "adv_course_completion_pct": 0.785,
+  "ap_participation_pct": 0.5735
+ },
+ "06100000": {
+  "adv_course_completion_pct": 0.646,
+  "ap_participation_pct": 0.3686
+ },
+ "01390000": {
+  "adv_course_completion_pct": 0.841,
+  "ap_participation_pct": 0.7561
+ },
+ "00520000": {
+  "adv_course_completion_pct": 0.705,
+  "ap_participation_pct": 0.3897
+ },
+ "06400000": {
+  "adv_course_completion_pct": 0.78,
+  "ap_participation_pct": 0.5141
+ },
+ "06600000": {
+  "adv_course_completion_pct": 0.755,
+  "ap_participation_pct": 0.584
+ },
+ "06900000": {
+  "adv_course_completion_pct": 0.801,
+  "ap_participation_pct": 0.6904
+ },
+ "06950000": {
+  "adv_course_completion_pct": 0.82,
+  "ap_participation_pct": 0.3419
+ },
+ "07050000": {
+  "adv_course_completion_pct": 0.749,
+  "ap_participation_pct": 0.5472
+ },
+ "07300000": {
+  "adv_course_completion_pct": 0.801,
+  "ap_participation_pct": 0.6547
+ },
+ "07630000": {
+  "adv_course_completion_pct": 0.633,
+  "ap_participation_pct": 0.4648
+ }
+}

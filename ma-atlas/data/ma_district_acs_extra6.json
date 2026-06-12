@@ -1,0 +1,2250 @@
+{
+ "00010000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52259,
+  "acs_poverty_pct": 0.056691,
+  "acs_drove_alone_pct": 0.73399,
+  "acs_work_from_home_pct": 0.138986,
+  "acs_crowded_housing_pct": 0.006213
+ },
+ "00030000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47739,
+  "acs_poverty_pct": 0.050838,
+  "acs_drove_alone_pct": 0.80784,
+  "acs_work_from_home_pct": 0.082066,
+  "acs_crowded_housing_pct": 0.029491
+ },
+ "00050000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44973,
+  "acs_poverty_pct": 0.069272,
+  "acs_drove_alone_pct": 0.804091,
+  "acs_work_from_home_pct": 0.107463,
+  "acs_crowded_housing_pct": 0.011703
+ },
+ "00070000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56297,
+  "acs_poverty_pct": 0.069722,
+  "acs_drove_alone_pct": 0.740955,
+  "acs_work_from_home_pct": 0.154036,
+  "acs_crowded_housing_pct": 0.023459
+ },
+ "00080000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 29347,
+  "acs_poverty_pct": 0.241072,
+  "acs_drove_alone_pct": 0.42088,
+  "acs_work_from_home_pct": 0.192807,
+  "acs_crowded_housing_pct": 0.020799
+ },
+ "00090000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 82177,
+  "acs_poverty_pct": 0.035429,
+  "acs_drove_alone_pct": 0.615332,
+  "acs_work_from_home_pct": 0.272018,
+  "acs_crowded_housing_pct": 0.016492
+ },
+ "00100000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 83001,
+  "acs_poverty_pct": 0.054023,
+  "acs_drove_alone_pct": 0.457611,
+  "acs_work_from_home_pct": 0.304788,
+  "acs_crowded_housing_pct": 0.012945
+ },
+ "00140000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 69216,
+  "acs_poverty_pct": 0.041069,
+  "acs_drove_alone_pct": 0.63715,
+  "acs_work_from_home_pct": 0.208741,
+  "acs_crowded_housing_pct": 0.012941
+ },
+ "00160000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 42224,
+  "acs_poverty_pct": 0.092104,
+  "acs_drove_alone_pct": 0.745037,
+  "acs_work_from_home_pct": 0.134064,
+  "acs_crowded_housing_pct": 0.017884
+ },
+ "00170000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49977,
+  "acs_poverty_pct": 0.04479,
+  "acs_drove_alone_pct": 0.795201,
+  "acs_work_from_home_pct": 0.126633,
+  "acs_crowded_housing_pct": 0.008608
+ },
+ "00180000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47100,
+  "acs_poverty_pct": 0.051505,
+  "acs_drove_alone_pct": 0.748356,
+  "acs_work_from_home_pct": 0.10336,
+  "acs_crowded_housing_pct": 0.019976
+ },
+ "00200000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 54596,
+  "acs_poverty_pct": 0.070533,
+  "acs_drove_alone_pct": 0.7639,
+  "acs_work_from_home_pct": 0.110346,
+  "acs_crowded_housing_pct": 0.029009
+ },
+ "00230000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 89912,
+  "acs_poverty_pct": 0.040737,
+  "acs_drove_alone_pct": 0.545893,
+  "acs_work_from_home_pct": 0.321982,
+  "acs_crowded_housing_pct": 0.016733
+ },
+ "00240000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 46100,
+  "acs_poverty_pct": 0.087313,
+  "acs_drove_alone_pct": 0.820245,
+  "acs_work_from_home_pct": 0.12453,
+  "acs_crowded_housing_pct": 0.007489
+ },
+ "00250000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 51448,
+  "acs_poverty_pct": 0.044317,
+  "acs_drove_alone_pct": 0.759889,
+  "acs_work_from_home_pct": 0.148556,
+  "acs_crowded_housing_pct": 0.028621
+ },
+ "00260000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 92602,
+  "acs_poverty_pct": 0.034516,
+  "acs_drove_alone_pct": 0.489119,
+  "acs_work_from_home_pct": 0.283542,
+  "acs_crowded_housing_pct": 0.012358
+ },
+ "00270000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53173,
+  "acs_poverty_pct": 0.026576,
+  "acs_drove_alone_pct": 0.843095,
+  "acs_work_from_home_pct": 0.100752,
+  "acs_crowded_housing_pct": 0.009578
+ },
+ "00300000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56602,
+  "acs_poverty_pct": 0.099458,
+  "acs_drove_alone_pct": 0.62175,
+  "acs_work_from_home_pct": 0.190309,
+  "acs_crowded_housing_pct": 0.003429
+ },
+ "00310000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56392,
+  "acs_poverty_pct": 0.044713,
+  "acs_drove_alone_pct": 0.698849,
+  "acs_work_from_home_pct": 0.185973,
+  "acs_crowded_housing_pct": 0.014374
+ },
+ "00350000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60001,
+  "acs_poverty_pct": 0.168666,
+  "acs_drove_alone_pct": 0.340844,
+  "acs_work_from_home_pct": 0.187769,
+  "acs_crowded_housing_pct": 0.033619
+ },
+ "00360000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 59081,
+  "acs_poverty_pct": 0.05776,
+  "acs_drove_alone_pct": 0.767659,
+  "acs_work_from_home_pct": 0.137941,
+  "acs_crowded_housing_pct": 0.003028
+ },
+ "00380000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 91103,
+  "acs_poverty_pct": 0.022195,
+  "acs_drove_alone_pct": 0.682859,
+  "acs_work_from_home_pct": 0.190284,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "00400000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 57041,
+  "acs_poverty_pct": 0.051696,
+  "acs_drove_alone_pct": 0.635597,
+  "acs_work_from_home_pct": 0.169223,
+  "acs_crowded_housing_pct": 0.017853
+ },
+ "00410000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 70414,
+  "acs_poverty_pct": 0.107648,
+  "acs_drove_alone_pct": 0.77321,
+  "acs_work_from_home_pct": 0.15127,
+  "acs_crowded_housing_pct": 0.032999
+ },
+ "00430000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 54340,
+  "acs_poverty_pct": 0.058696,
+  "acs_drove_alone_pct": 0.770879,
+  "acs_work_from_home_pct": 0.157692,
+  "acs_crowded_housing_pct": 0.008114
+ },
+ "00440000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 35524,
+  "acs_poverty_pct": 0.13895,
+  "acs_drove_alone_pct": 0.717876,
+  "acs_work_from_home_pct": 0.062566,
+  "acs_crowded_housing_pct": 0.064954
+ },
+ "00450000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44865,
+  "acs_poverty_pct": 0.070598,
+  "acs_drove_alone_pct": 0.882838,
+  "acs_work_from_home_pct": 0.080308,
+  "acs_crowded_housing_pct": 0.002716
+ },
+ "00460000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 94739,
+  "acs_poverty_pct": 0.097582,
+  "acs_drove_alone_pct": 0.280891,
+  "acs_work_from_home_pct": 0.269756,
+  "acs_crowded_housing_pct": 0.018302
+ },
+ "00480000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 66433,
+  "acs_poverty_pct": 0.055862,
+  "acs_drove_alone_pct": 0.686976,
+  "acs_work_from_home_pct": 0.201662,
+  "acs_crowded_housing_pct": 0.012928
+ },
+ "00490000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 76789,
+  "acs_poverty_pct": 0.124489,
+  "acs_drove_alone_pct": 0.208953,
+  "acs_work_from_home_pct": 0.283066,
+  "acs_crowded_housing_pct": 0.027121
+ },
+ "00500000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 74606,
+  "acs_poverty_pct": 0.043785,
+  "acs_drove_alone_pct": 0.608789,
+  "acs_work_from_home_pct": 0.215741,
+  "acs_crowded_housing_pct": 0.021598
+ },
+ "00510000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 107381,
+  "acs_poverty_pct": 0.020628,
+  "acs_drove_alone_pct": 0.572856,
+  "acs_work_from_home_pct": 0.345129,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "00520000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47112,
+  "acs_poverty_pct": 0.065663,
+  "acs_drove_alone_pct": 0.804965,
+  "acs_work_from_home_pct": 0.119708,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "00560000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60479,
+  "acs_poverty_pct": 0.042575,
+  "acs_drove_alone_pct": 0.70353,
+  "acs_work_from_home_pct": 0.212008,
+  "acs_crowded_housing_pct": 0.008225
+ },
+ "00570000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 31544,
+  "acs_poverty_pct": 0.206066,
+  "acs_drove_alone_pct": 0.464184,
+  "acs_work_from_home_pct": 0.095766,
+  "acs_crowded_housing_pct": 0.110578
+ },
+ "00610000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 36140,
+  "acs_poverty_pct": 0.152094,
+  "acs_drove_alone_pct": 0.808955,
+  "acs_work_from_home_pct": 0.075459,
+  "acs_crowded_housing_pct": 0.012194
+ },
+ "00630000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44161,
+  "acs_poverty_pct": 0.024956,
+  "acs_drove_alone_pct": 0.82879,
+  "acs_work_from_home_pct": 0.055616,
+  "acs_crowded_housing_pct": 0.004132
+ },
+ "00640000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 45652,
+  "acs_poverty_pct": 0.083941,
+  "acs_drove_alone_pct": 0.705837,
+  "acs_work_from_home_pct": 0.137851,
+  "acs_crowded_housing_pct": 0.022062
+ },
+ "00650000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 114646,
+  "acs_poverty_pct": 0.029494,
+  "acs_drove_alone_pct": 0.574022,
+  "acs_work_from_home_pct": 0.240603,
+  "acs_crowded_housing_pct": 0.009971
+ },
+ "00670000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 98697,
+  "acs_poverty_pct": 0.02535,
+  "acs_drove_alone_pct": 0.528706,
+  "acs_work_from_home_pct": 0.348991,
+  "acs_crowded_housing_pct": 0.006999
+ },
+ "00680000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 55320,
+  "acs_poverty_pct": 0.034977,
+  "acs_drove_alone_pct": 0.622197,
+  "acs_work_from_home_pct": 0.280269,
+  "acs_crowded_housing_pct": 0.022049
+ },
+ "00710000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 55039,
+  "acs_poverty_pct": 0.052266,
+  "acs_drove_alone_pct": 0.733512,
+  "acs_work_from_home_pct": 0.17515,
+  "acs_crowded_housing_pct": 0.009963
+ },
+ "00720000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49201,
+  "acs_poverty_pct": 0.059911,
+  "acs_drove_alone_pct": 0.789096,
+  "acs_work_from_home_pct": 0.103559,
+  "acs_crowded_housing_pct": 0.003202
+ },
+ "00730000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 67595,
+  "acs_poverty_pct": 0.045973,
+  "acs_drove_alone_pct": 0.651754,
+  "acs_work_from_home_pct": 0.186442,
+  "acs_crowded_housing_pct": 0.002137
+ },
+ "00740000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 57210,
+  "acs_poverty_pct": 0.071989,
+  "acs_drove_alone_pct": 0.659574,
+  "acs_work_from_home_pct": 0.163121,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "00770000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 62780,
+  "acs_poverty_pct": 0.050572,
+  "acs_drove_alone_pct": 0.733813,
+  "acs_work_from_home_pct": 0.210631,
+  "acs_crowded_housing_pct": 0.004266
+ },
+ "00790000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47724,
+  "acs_poverty_pct": 0.066148,
+  "acs_drove_alone_pct": 0.803065,
+  "acs_work_from_home_pct": 0.1019,
+  "acs_crowded_housing_pct": 0.018855
+ },
+ "00820000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 85402,
+  "acs_poverty_pct": 0.050788,
+  "acs_drove_alone_pct": 0.699108,
+  "acs_work_from_home_pct": 0.201629,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "00830000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 58078,
+  "acs_poverty_pct": 0.040799,
+  "acs_drove_alone_pct": 0.736486,
+  "acs_work_from_home_pct": 0.135821,
+  "acs_crowded_housing_pct": 0.007927
+ },
+ "00850000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 51930,
+  "acs_poverty_pct": 0.091476,
+  "acs_drove_alone_pct": 0.737586,
+  "acs_work_from_home_pct": 0.172945,
+  "acs_crowded_housing_pct": 0.005944
+ },
+ "00860000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44565,
+  "acs_poverty_pct": 0.088587,
+  "acs_drove_alone_pct": 0.759632,
+  "acs_work_from_home_pct": 0.154847,
+  "acs_crowded_housing_pct": 0.020318
+ },
+ "00870000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49961,
+  "acs_poverty_pct": 0.029206,
+  "acs_drove_alone_pct": 0.758982,
+  "acs_work_from_home_pct": 0.133742,
+  "acs_crowded_housing_pct": 0.002542
+ },
+ "00880000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60634,
+  "acs_poverty_pct": 0.066284,
+  "acs_drove_alone_pct": 0.712291,
+  "acs_work_from_home_pct": 0.189569,
+  "acs_crowded_housing_pct": 0.011261
+ },
+ "00890000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 83786,
+  "acs_poverty_pct": 0.058539,
+  "acs_drove_alone_pct": 0.572841,
+  "acs_work_from_home_pct": 0.168125,
+  "acs_crowded_housing_pct": 0.004802
+ },
+ "00910000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 39145,
+  "acs_poverty_pct": 0.059793,
+  "acs_drove_alone_pct": 0.822121,
+  "acs_work_from_home_pct": 0.028506,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "00930000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 35941,
+  "acs_poverty_pct": 0.153569,
+  "acs_drove_alone_pct": 0.504162,
+  "acs_work_from_home_pct": 0.08556,
+  "acs_crowded_housing_pct": 0.072877
+ },
+ "00940000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 57317,
+  "acs_poverty_pct": 0.076287,
+  "acs_drove_alone_pct": 0.807946,
+  "acs_work_from_home_pct": 0.093309,
+  "acs_crowded_housing_pct": 0.007778
+ },
+ "00950000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 31998,
+  "acs_poverty_pct": 0.20929,
+  "acs_drove_alone_pct": 0.724281,
+  "acs_work_from_home_pct": 0.065229,
+  "acs_crowded_housing_pct": 0.030273
+ },
+ "00960000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 62449,
+  "acs_poverty_pct": 0.089734,
+  "acs_drove_alone_pct": 0.692576,
+  "acs_work_from_home_pct": 0.177854,
+  "acs_crowded_housing_pct": 0.012127
+ },
+ "00970000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 36790,
+  "acs_poverty_pct": 0.154917,
+  "acs_drove_alone_pct": 0.733734,
+  "acs_work_from_home_pct": 0.092874,
+  "acs_crowded_housing_pct": 0.023756
+ },
+ "00980000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 41988,
+  "acs_poverty_pct": 0.051656,
+  "acs_drove_alone_pct": 0.824324,
+  "acs_work_from_home_pct": 0.062162,
+  "acs_crowded_housing_pct": 0.009524
+ },
+ "00990000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 62746,
+  "acs_poverty_pct": 0.047663,
+  "acs_drove_alone_pct": 0.735009,
+  "acs_work_from_home_pct": 0.148943,
+  "acs_crowded_housing_pct": 0.019389
+ },
+ "01000000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52420,
+  "acs_poverty_pct": 0.110066,
+  "acs_drove_alone_pct": 0.630862,
+  "acs_work_from_home_pct": 0.173851,
+  "acs_crowded_housing_pct": 0.029653
+ },
+ "01010000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 63724,
+  "acs_poverty_pct": 0.054963,
+  "acs_drove_alone_pct": 0.672113,
+  "acs_work_from_home_pct": 0.214733,
+  "acs_crowded_housing_pct": 0.012643
+ },
+ "01030000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 34248,
+  "acs_poverty_pct": 0.142907,
+  "acs_drove_alone_pct": 0.694655,
+  "acs_work_from_home_pct": 0.119812,
+  "acs_crowded_housing_pct": 0.008307
+ },
+ "01050000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 65227,
+  "acs_poverty_pct": 0.032346,
+  "acs_drove_alone_pct": 0.739697,
+  "acs_work_from_home_pct": 0.155297,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01070000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53072,
+  "acs_poverty_pct": 0.106468,
+  "acs_drove_alone_pct": 0.740652,
+  "acs_work_from_home_pct": 0.106845,
+  "acs_crowded_housing_pct": 0.016161
+ },
+ "01090000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 84216,
+  "acs_poverty_pct": 0.039216,
+  "acs_drove_alone_pct": 0.162162,
+  "acs_work_from_home_pct": 0.351351,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01100000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 57622,
+  "acs_poverty_pct": 0.063726,
+  "acs_drove_alone_pct": 0.690968,
+  "acs_work_from_home_pct": 0.219561,
+  "acs_crowded_housing_pct": 0.007662
+ },
+ "01110000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60649,
+  "acs_poverty_pct": 0.046309,
+  "acs_drove_alone_pct": 0.853945,
+  "acs_work_from_home_pct": 0.074986,
+  "acs_crowded_housing_pct": 0.002757
+ },
+ "01140000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 33966,
+  "acs_poverty_pct": 0.156467,
+  "acs_drove_alone_pct": 0.7,
+  "acs_work_from_home_pct": 0.127214,
+  "acs_crowded_housing_pct": 0.008043
+ },
+ "01170000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60820,
+  "acs_poverty_pct": 0.031069,
+  "acs_drove_alone_pct": 0.726565,
+  "acs_work_from_home_pct": 0.165246,
+  "acs_crowded_housing_pct": 0.003925
+ },
+ "01180000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 48218,
+  "acs_poverty_pct": 0.030903,
+  "acs_drove_alone_pct": 0.794652,
+  "acs_work_from_home_pct": 0.11812,
+  "acs_crowded_housing_pct": 0.010793
+ },
+ "01210000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 43783,
+  "acs_poverty_pct": 0.154135,
+  "acs_drove_alone_pct": 0.83208,
+  "acs_work_from_home_pct": 0.075188,
+  "acs_crowded_housing_pct": 0.031646
+ },
+ "01220000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 70366,
+  "acs_poverty_pct": 0.057201,
+  "acs_drove_alone_pct": 0.714192,
+  "acs_work_from_home_pct": 0.200685,
+  "acs_crowded_housing_pct": 0.004078
+ },
+ "01250000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 85666,
+  "acs_poverty_pct": 0.043999,
+  "acs_drove_alone_pct": 0.550428,
+  "acs_work_from_home_pct": 0.365524,
+  "acs_crowded_housing_pct": 0.0069
+ },
+ "01270000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 51727,
+  "acs_poverty_pct": 0.0789,
+  "acs_drove_alone_pct": 0.747917,
+  "acs_work_from_home_pct": 0.144271,
+  "acs_crowded_housing_pct": 0.005487
+ },
+ "01280000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 42671,
+  "acs_poverty_pct": 0.106211,
+  "acs_drove_alone_pct": 0.769602,
+  "acs_work_from_home_pct": 0.116363,
+  "acs_crowded_housing_pct": 0.019202
+ },
+ "01310000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 104438,
+  "acs_poverty_pct": 0.032612,
+  "acs_drove_alone_pct": 0.515361,
+  "acs_work_from_home_pct": 0.310449,
+  "acs_crowded_housing_pct": 0.007638
+ },
+ "01330000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47792,
+  "acs_poverty_pct": 0.065632,
+  "acs_drove_alone_pct": 0.73089,
+  "acs_work_from_home_pct": 0.133564,
+  "acs_crowded_housing_pct": 0.004909
+ },
+ "01350000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49709,
+  "acs_poverty_pct": 0.050466,
+  "acs_drove_alone_pct": 0.858877,
+  "acs_work_from_home_pct": 0.062974,
+  "acs_crowded_housing_pct": 0.026632
+ },
+ "01360000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 74139,
+  "acs_poverty_pct": 0.031733,
+  "acs_drove_alone_pct": 0.659585,
+  "acs_work_from_home_pct": 0.264452,
+  "acs_crowded_housing_pct": 0.007428
+ },
+ "01370000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 31189,
+  "acs_poverty_pct": 0.237199,
+  "acs_drove_alone_pct": 0.765873,
+  "acs_work_from_home_pct": 0.091307,
+  "acs_crowded_housing_pct": 0.029309
+ },
+ "01380000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56273,
+  "acs_poverty_pct": 0.042202,
+  "acs_drove_alone_pct": 0.802588,
+  "acs_work_from_home_pct": 0.154612,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01390000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 98671,
+  "acs_poverty_pct": 0.033296,
+  "acs_drove_alone_pct": 0.601901,
+  "acs_work_from_home_pct": 0.322061,
+  "acs_crowded_housing_pct": 0.007237
+ },
+ "01410000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 55095,
+  "acs_poverty_pct": 0.046822,
+  "acs_drove_alone_pct": 0.712399,
+  "acs_work_from_home_pct": 0.163123,
+  "acs_crowded_housing_pct": 0.016789
+ },
+ "01420000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 73136,
+  "acs_poverty_pct": 0.053242,
+  "acs_drove_alone_pct": 0.68613,
+  "acs_work_from_home_pct": 0.191528,
+  "acs_crowded_housing_pct": 0.010055
+ },
+ "01440000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 72497,
+  "acs_poverty_pct": 0.065486,
+  "acs_drove_alone_pct": 0.744295,
+  "acs_work_from_home_pct": 0.160817,
+  "acs_crowded_housing_pct": 0.003821
+ },
+ "01450000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56247,
+  "acs_poverty_pct": 0.028557,
+  "acs_drove_alone_pct": 0.690969,
+  "acs_work_from_home_pct": 0.18497,
+  "acs_crowded_housing_pct": 0.005769
+ },
+ "01490000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 27827,
+  "acs_poverty_pct": 0.181955,
+  "acs_drove_alone_pct": 0.671954,
+  "acs_work_from_home_pct": 0.057435,
+  "acs_crowded_housing_pct": 0.066045
+ },
+ "01500000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53628,
+  "acs_poverty_pct": 0.067084,
+  "acs_drove_alone_pct": 0.695455,
+  "acs_work_from_home_pct": 0.176224,
+  "acs_crowded_housing_pct": 0.011244
+ },
+ "01510000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 43045,
+  "acs_poverty_pct": 0.034048,
+  "acs_drove_alone_pct": 0.771486,
+  "acs_work_from_home_pct": 0.117105,
+  "acs_crowded_housing_pct": 0.022938
+ },
+ "01520000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 59174,
+  "acs_poverty_pct": 0.090643,
+  "acs_drove_alone_pct": 0.699665,
+  "acs_work_from_home_pct": 0.20373,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01530000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 45014,
+  "acs_poverty_pct": 0.100647,
+  "acs_drove_alone_pct": 0.794123,
+  "acs_work_from_home_pct": 0.106545,
+  "acs_crowded_housing_pct": 0.014058
+ },
+ "01540000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 62211,
+  "acs_poverty_pct": 0.090802,
+  "acs_drove_alone_pct": 0.641774,
+  "acs_work_from_home_pct": 0.270712,
+  "acs_crowded_housing_pct": 0.008403
+ },
+ "01550000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 109883,
+  "acs_poverty_pct": 0.04282,
+  "acs_drove_alone_pct": 0.541358,
+  "acs_work_from_home_pct": 0.315584,
+  "acs_crowded_housing_pct": 0.018238
+ },
+ "01570000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 107437,
+  "acs_poverty_pct": 0.039204,
+  "acs_drove_alone_pct": 0.67467,
+  "acs_work_from_home_pct": 0.282381,
+  "acs_crowded_housing_pct": 0.005618
+ },
+ "01580000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 64913,
+  "acs_poverty_pct": 0.059816,
+  "acs_drove_alone_pct": 0.705331,
+  "acs_work_from_home_pct": 0.214997,
+  "acs_crowded_housing_pct": 0.011548
+ },
+ "01590000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 69311,
+  "acs_poverty_pct": 0.039256,
+  "acs_drove_alone_pct": 0.724701,
+  "acs_work_from_home_pct": 0.210411,
+  "acs_crowded_housing_pct": 0.009806
+ },
+ "01600000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 36138,
+  "acs_poverty_pct": 0.160037,
+  "acs_drove_alone_pct": 0.729597,
+  "acs_work_from_home_pct": 0.100257,
+  "acs_crowded_housing_pct": 0.042423
+ },
+ "01610000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 42015,
+  "acs_poverty_pct": 0.084726,
+  "acs_drove_alone_pct": 0.773033,
+  "acs_work_from_home_pct": 0.121785,
+  "acs_crowded_housing_pct": 0.009998
+ },
+ "01620000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 50804,
+  "acs_poverty_pct": 0.051788,
+  "acs_drove_alone_pct": 0.753587,
+  "acs_work_from_home_pct": 0.124791,
+  "acs_crowded_housing_pct": 0.014131
+ },
+ "01630000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 35083,
+  "acs_poverty_pct": 0.136931,
+  "acs_drove_alone_pct": 0.673631,
+  "acs_work_from_home_pct": 0.076435,
+  "acs_crowded_housing_pct": 0.079691
+ },
+ "01640000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 76408,
+  "acs_poverty_pct": 0.060707,
+  "acs_drove_alone_pct": 0.684202,
+  "acs_work_from_home_pct": 0.248597,
+  "acs_crowded_housing_pct": 0.001948
+ },
+ "01650000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47303,
+  "acs_poverty_pct": 0.132575,
+  "acs_drove_alone_pct": 0.454703,
+  "acs_work_from_home_pct": 0.176191,
+  "acs_crowded_housing_pct": 0.051826
+ },
+ "01670000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 61744,
+  "acs_poverty_pct": 0.048209,
+  "acs_drove_alone_pct": 0.703911,
+  "acs_work_from_home_pct": 0.183824,
+  "acs_crowded_housing_pct": 0.024499
+ },
+ "01680000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 94232,
+  "acs_poverty_pct": 0.037513,
+  "acs_drove_alone_pct": 0.537023,
+  "acs_work_from_home_pct": 0.299412,
+  "acs_crowded_housing_pct": 0.001466
+ },
+ "01690000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 78765,
+  "acs_poverty_pct": 0.058857,
+  "acs_drove_alone_pct": 0.736668,
+  "acs_work_from_home_pct": 0.189334,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01700000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 46876,
+  "acs_poverty_pct": 0.092203,
+  "acs_drove_alone_pct": 0.665692,
+  "acs_work_from_home_pct": 0.160788,
+  "acs_crowded_housing_pct": 0.030753
+ },
+ "01710000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 62630,
+  "acs_poverty_pct": 0.075571,
+  "acs_drove_alone_pct": 0.659734,
+  "acs_work_from_home_pct": 0.224462,
+  "acs_crowded_housing_pct": 0.014517
+ },
+ "01720000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 61411,
+  "acs_poverty_pct": 0.050109,
+  "acs_drove_alone_pct": 0.77929,
+  "acs_work_from_home_pct": 0.147231,
+  "acs_crowded_housing_pct": 0.004815
+ },
+ "01730000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 76625,
+  "acs_poverty_pct": 0.032455,
+  "acs_drove_alone_pct": 0.715945,
+  "acs_work_from_home_pct": 0.233517,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01740000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 66632,
+  "acs_poverty_pct": 0.073994,
+  "acs_drove_alone_pct": 0.705409,
+  "acs_work_from_home_pct": 0.203013,
+  "acs_crowded_housing_pct": 0.016264
+ },
+ "01750000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 102662,
+  "acs_poverty_pct": 0.022678,
+  "acs_drove_alone_pct": 0.498779,
+  "acs_work_from_home_pct": 0.351083,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "01760000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 61508,
+  "acs_poverty_pct": 0.081884,
+  "acs_drove_alone_pct": 0.501426,
+  "acs_work_from_home_pct": 0.221702,
+  "acs_crowded_housing_pct": 0.010378
+ },
+ "01770000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 74339,
+  "acs_poverty_pct": 0.031495,
+  "acs_drove_alone_pct": 0.725,
+  "acs_work_from_home_pct": 0.190217,
+  "acs_crowded_housing_pct": 0.00503
+ },
+ "01780000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 65038,
+  "acs_poverty_pct": 0.036974,
+  "acs_drove_alone_pct": 0.5036,
+  "acs_work_from_home_pct": 0.255776,
+  "acs_crowded_housing_pct": 0.005983
+ },
+ "01810000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44678,
+  "acs_poverty_pct": 0.081706,
+  "acs_drove_alone_pct": 0.759248,
+  "acs_work_from_home_pct": 0.107728,
+  "acs_crowded_housing_pct": 0.02094
+ },
+ "01820000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 48381,
+  "acs_poverty_pct": 0.077199,
+  "acs_drove_alone_pct": 0.804797,
+  "acs_work_from_home_pct": 0.113697,
+  "acs_crowded_housing_pct": 0.006023
+ },
+ "01840000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 67877,
+  "acs_poverty_pct": 0.033368,
+  "acs_drove_alone_pct": 0.809914,
+  "acs_work_from_home_pct": 0.122327,
+  "acs_crowded_housing_pct": 0.003016
+ },
+ "01850000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 45101,
+  "acs_poverty_pct": 0.082542,
+  "acs_drove_alone_pct": 0.667863,
+  "acs_work_from_home_pct": 0.135182,
+  "acs_crowded_housing_pct": 0.017822
+ },
+ "01860000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49530,
+  "acs_poverty_pct": 0.038764,
+  "acs_drove_alone_pct": 0.756472,
+  "acs_work_from_home_pct": 0.160945,
+  "acs_crowded_housing_pct": 0.004724
+ },
+ "01870000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 68784,
+  "acs_poverty_pct": 0.04884,
+  "acs_drove_alone_pct": 0.753958,
+  "acs_work_from_home_pct": 0.168865,
+  "acs_crowded_housing_pct": 0.006503
+ },
+ "01890000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 73011,
+  "acs_poverty_pct": 0.04706,
+  "acs_drove_alone_pct": 0.560165,
+  "acs_work_from_home_pct": 0.25643,
+  "acs_crowded_housing_pct": 0.006894
+ },
+ "01910000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 46000,
+  "acs_poverty_pct": 0.121739,
+  "acs_drove_alone_pct": 0.780556,
+  "acs_work_from_home_pct": 0.117122,
+  "acs_crowded_housing_pct": 0.017999
+ },
+ "01960000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 91157,
+  "acs_poverty_pct": 0.067662,
+  "acs_drove_alone_pct": 0.692683,
+  "acs_work_from_home_pct": 0.148509,
+  "acs_crowded_housing_pct": 0.008728
+ },
+ "01970000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 72733,
+  "acs_poverty_pct": 0.030256,
+  "acs_drove_alone_pct": 0.699426,
+  "acs_work_from_home_pct": 0.118483,
+  "acs_crowded_housing_pct": 0.042393
+ },
+ "01980000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 76366,
+  "acs_poverty_pct": 0.055864,
+  "acs_drove_alone_pct": 0.634176,
+  "acs_work_from_home_pct": 0.22902,
+  "acs_crowded_housing_pct": 0.010773
+ },
+ "01990000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 100288,
+  "acs_poverty_pct": 0.037521,
+  "acs_drove_alone_pct": 0.575244,
+  "acs_work_from_home_pct": 0.288469,
+  "acs_crowded_housing_pct": 0.004649
+ },
+ "02010000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 30475,
+  "acs_poverty_pct": 0.198624,
+  "acs_drove_alone_pct": 0.728266,
+  "acs_work_from_home_pct": 0.047294,
+  "acs_crowded_housing_pct": 0.027277
+ },
+ "02040000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 78121,
+  "acs_poverty_pct": 0.050657,
+  "acs_drove_alone_pct": 0.631409,
+  "acs_work_from_home_pct": 0.23589,
+  "acs_crowded_housing_pct": 0.004107
+ },
+ "02070000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 95106,
+  "acs_poverty_pct": 0.046981,
+  "acs_drove_alone_pct": 0.496336,
+  "acs_work_from_home_pct": 0.28718,
+  "acs_crowded_housing_pct": 0.008478
+ },
+ "02080000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 70548,
+  "acs_poverty_pct": 0.020932,
+  "acs_drove_alone_pct": 0.599191,
+  "acs_work_from_home_pct": 0.31001,
+  "acs_crowded_housing_pct": 0.010414
+ },
+ "02090000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 35537,
+  "acs_poverty_pct": 0.181402,
+  "acs_drove_alone_pct": 0.721005,
+  "acs_work_from_home_pct": 0.096524,
+  "acs_crowded_housing_pct": 0.027937
+ },
+ "02100000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 48960,
+  "acs_poverty_pct": 0.12499,
+  "acs_drove_alone_pct": 0.597227,
+  "acs_work_from_home_pct": 0.218752,
+  "acs_crowded_housing_pct": 0.009023
+ },
+ "02110000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 66594,
+  "acs_poverty_pct": 0.077291,
+  "acs_drove_alone_pct": 0.688772,
+  "acs_work_from_home_pct": 0.185985,
+  "acs_crowded_housing_pct": 0.018662
+ },
+ "02120000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56154,
+  "acs_poverty_pct": 0.054368,
+  "acs_drove_alone_pct": 0.761473,
+  "acs_work_from_home_pct": 0.137084,
+  "acs_crowded_housing_pct": 0.00669
+ },
+ "02130000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 79529,
+  "acs_poverty_pct": 0.036183,
+  "acs_drove_alone_pct": 0.687038,
+  "acs_work_from_home_pct": 0.207053,
+  "acs_crowded_housing_pct": 0.007349
+ },
+ "02140000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53029,
+  "acs_poverty_pct": 0.082291,
+  "acs_drove_alone_pct": 0.768471,
+  "acs_work_from_home_pct": 0.1605,
+  "acs_crowded_housing_pct": 0.014116
+ },
+ "02150000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 45296,
+  "acs_poverty_pct": 0.115921,
+  "acs_drove_alone_pct": 0.852517,
+  "acs_work_from_home_pct": 0.091299,
+  "acs_crowded_housing_pct": 0.017923
+ },
+ "02170000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 77743,
+  "acs_poverty_pct": 0.028397,
+  "acs_drove_alone_pct": 0.686891,
+  "acs_work_from_home_pct": 0.240798,
+  "acs_crowded_housing_pct": 0.011954
+ },
+ "02180000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52342,
+  "acs_poverty_pct": 0.048273,
+  "acs_drove_alone_pct": 0.713209,
+  "acs_work_from_home_pct": 0.171873,
+  "acs_crowded_housing_pct": 0.012199
+ },
+ "02190000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 74251,
+  "acs_poverty_pct": 0.03095,
+  "acs_drove_alone_pct": 0.650018,
+  "acs_work_from_home_pct": 0.235947,
+  "acs_crowded_housing_pct": 0.011803
+ },
+ "02200000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 59668,
+  "acs_poverty_pct": 0.081796,
+  "acs_drove_alone_pct": 0.632999,
+  "acs_work_from_home_pct": 0.14623,
+  "acs_crowded_housing_pct": 0.01955
+ },
+ "02210000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 63117,
+  "acs_poverty_pct": 0.058386,
+  "acs_drove_alone_pct": 0.799361,
+  "acs_work_from_home_pct": 0.08713,
+  "acs_crowded_housing_pct": 0.021802
+ },
+ "02230000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 28797,
+  "acs_poverty_pct": 0.212673,
+  "acs_drove_alone_pct": 0.789883,
+  "acs_work_from_home_pct": 0.072957,
+  "acs_crowded_housing_pct": 0.038651
+ },
+ "02240000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 68128,
+  "acs_poverty_pct": 0.107624,
+  "acs_drove_alone_pct": 0.680876,
+  "acs_work_from_home_pct": 0.227727,
+  "acs_crowded_housing_pct": 0.007995
+ },
+ "02260000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44187,
+  "acs_poverty_pct": 0.051003,
+  "acs_drove_alone_pct": 0.766866,
+  "acs_work_from_home_pct": 0.134776,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02270000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44562,
+  "acs_poverty_pct": 0.085633,
+  "acs_drove_alone_pct": 0.830224,
+  "acs_work_from_home_pct": 0.080778,
+  "acs_crowded_housing_pct": 0.004327
+ },
+ "02290000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 51534,
+  "acs_poverty_pct": 0.065063,
+  "acs_drove_alone_pct": 0.795765,
+  "acs_work_from_home_pct": 0.087767,
+  "acs_crowded_housing_pct": 0.013307
+ },
+ "02300000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 58366,
+  "acs_poverty_pct": 0.107224,
+  "acs_drove_alone_pct": 0.608764,
+  "acs_work_from_home_pct": 0.308294,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02310000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60532,
+  "acs_poverty_pct": 0.042758,
+  "acs_drove_alone_pct": 0.718327,
+  "acs_work_from_home_pct": 0.178691,
+  "acs_crowded_housing_pct": 0.017702
+ },
+ "02340000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47450,
+  "acs_poverty_pct": 0.088696,
+  "acs_drove_alone_pct": 0.763864,
+  "acs_work_from_home_pct": 0.144902,
+  "acs_crowded_housing_pct": 0.017279
+ },
+ "02360000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44159,
+  "acs_poverty_pct": 0.135587,
+  "acs_drove_alone_pct": 0.757179,
+  "acs_work_from_home_pct": 0.085056,
+  "acs_crowded_housing_pct": 0.00598
+ },
+ "02380000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 51109,
+  "acs_poverty_pct": 0.08205,
+  "acs_drove_alone_pct": 0.802323,
+  "acs_work_from_home_pct": 0.11718,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02390000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56916,
+  "acs_poverty_pct": 0.061139,
+  "acs_drove_alone_pct": 0.684038,
+  "acs_work_from_home_pct": 0.165121,
+  "acs_crowded_housing_pct": 0.010843
+ },
+ "02400000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53289,
+  "acs_poverty_pct": 0.092365,
+  "acs_drove_alone_pct": 0.722303,
+  "acs_work_from_home_pct": 0.188776,
+  "acs_crowded_housing_pct": 0.031489
+ },
+ "02420000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 89803,
+  "acs_poverty_pct": 0.119296,
+  "acs_drove_alone_pct": 0.372444,
+  "acs_work_from_home_pct": 0.313048,
+  "acs_crowded_housing_pct": 0.007375
+ },
+ "02430000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53273,
+  "acs_poverty_pct": 0.114194,
+  "acs_drove_alone_pct": 0.529991,
+  "acs_work_from_home_pct": 0.180621,
+  "acs_crowded_housing_pct": 0.041386
+ },
+ "02440000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47660,
+  "acs_poverty_pct": 0.073789,
+  "acs_drove_alone_pct": 0.665297,
+  "acs_work_from_home_pct": 0.136025,
+  "acs_crowded_housing_pct": 0.039028
+ },
+ "02460000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 71474,
+  "acs_poverty_pct": 0.026802,
+  "acs_drove_alone_pct": 0.595737,
+  "acs_work_from_home_pct": 0.27704,
+  "acs_crowded_housing_pct": 0.005327
+ },
+ "02480000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 38775,
+  "acs_poverty_pct": 0.124159,
+  "acs_drove_alone_pct": 0.535224,
+  "acs_work_from_home_pct": 0.079996,
+  "acs_crowded_housing_pct": 0.083209
+ },
+ "02490000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 80228,
+  "acs_poverty_pct": 0.128592,
+  "acs_drove_alone_pct": 0.759475,
+  "acs_work_from_home_pct": 0.161808,
+  "acs_crowded_housing_pct": 0.005017
+ },
+ "02500000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53775,
+  "acs_poverty_pct": 0.052393,
+  "acs_drove_alone_pct": 0.869942,
+  "acs_work_from_home_pct": 0.078998,
+  "acs_crowded_housing_pct": 0.004235
+ },
+ "02510000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 48224,
+  "acs_poverty_pct": 0.074802,
+  "acs_drove_alone_pct": 0.792194,
+  "acs_work_from_home_pct": 0.118499,
+  "acs_crowded_housing_pct": 0.001351
+ },
+ "02520000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 61065,
+  "acs_poverty_pct": 0.035627,
+  "acs_drove_alone_pct": 0.70043,
+  "acs_work_from_home_pct": 0.206262,
+  "acs_crowded_housing_pct": 0.019307
+ },
+ "02530000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 36171,
+  "acs_poverty_pct": 0.144989,
+  "acs_drove_alone_pct": 0.852459,
+  "acs_work_from_home_pct": 0.060109,
+  "acs_crowded_housing_pct": 0.016667
+ },
+ "02580000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49734,
+  "acs_poverty_pct": 0.136849,
+  "acs_drove_alone_pct": 0.576027,
+  "acs_work_from_home_pct": 0.194329,
+  "acs_crowded_housing_pct": 0.014958
+ },
+ "02610000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 63696,
+  "acs_poverty_pct": 0.064221,
+  "acs_drove_alone_pct": 0.751694,
+  "acs_work_from_home_pct": 0.139326,
+  "acs_crowded_housing_pct": 0.002347
+ },
+ "02620000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 46929,
+  "acs_poverty_pct": 0.063855,
+  "acs_drove_alone_pct": 0.728052,
+  "acs_work_from_home_pct": 0.1169,
+  "acs_crowded_housing_pct": 0.010373
+ },
+ "02630000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 39204,
+  "acs_poverty_pct": 0.145975,
+  "acs_drove_alone_pct": 0.923547,
+  "acs_work_from_home_pct": 0.021407,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02640000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 84117,
+  "acs_poverty_pct": 0.024404,
+  "acs_drove_alone_pct": 0.612026,
+  "acs_work_from_home_pct": 0.245478,
+  "acs_crowded_housing_pct": 0.001034
+ },
+ "02650000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 50340,
+  "acs_poverty_pct": 0.044051,
+  "acs_drove_alone_pct": 0.714127,
+  "acs_work_from_home_pct": 0.1841,
+  "acs_crowded_housing_pct": 0.026338
+ },
+ "02660000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 80677,
+  "acs_poverty_pct": 0.039351,
+  "acs_drove_alone_pct": 0.513554,
+  "acs_work_from_home_pct": 0.289891,
+  "acs_crowded_housing_pct": 0.018593
+ },
+ "02690000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 110567,
+  "acs_poverty_pct": 0.018392,
+  "acs_drove_alone_pct": 0.461924,
+  "acs_work_from_home_pct": 0.378477,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02710000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 67401,
+  "acs_poverty_pct": 0.038427,
+  "acs_drove_alone_pct": 0.670851,
+  "acs_work_from_home_pct": 0.236885,
+  "acs_crowded_housing_pct": 0.022746
+ },
+ "02720000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52944,
+  "acs_poverty_pct": 0.044992,
+  "acs_drove_alone_pct": 0.663717,
+  "acs_work_from_home_pct": 0.247788,
+  "acs_crowded_housing_pct": 0.023653
+ },
+ "02730000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 55168,
+  "acs_poverty_pct": 0.049574,
+  "acs_drove_alone_pct": 0.849036,
+  "acs_work_from_home_pct": 0.101755,
+  "acs_crowded_housing_pct": 0.008433
+ },
+ "02740000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 70880,
+  "acs_poverty_pct": 0.101494,
+  "acs_drove_alone_pct": 0.306924,
+  "acs_work_from_home_pct": 0.289642,
+  "acs_crowded_housing_pct": 0.020408
+ },
+ "02750000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 59434,
+  "acs_poverty_pct": 0.033001,
+  "acs_drove_alone_pct": 0.825782,
+  "acs_work_from_home_pct": 0.113125,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02760000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 96260,
+  "acs_poverty_pct": 0.038073,
+  "acs_drove_alone_pct": 0.624053,
+  "acs_work_from_home_pct": 0.287234,
+  "acs_crowded_housing_pct": 0.005389
+ },
+ "02770000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 33664,
+  "acs_poverty_pct": 0.162122,
+  "acs_drove_alone_pct": 0.753352,
+  "acs_work_from_home_pct": 0.053388,
+  "acs_crowded_housing_pct": 0.017778
+ },
+ "02780000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 54140,
+  "acs_poverty_pct": 0.072873,
+  "acs_drove_alone_pct": 0.691551,
+  "acs_work_from_home_pct": 0.1676,
+  "acs_crowded_housing_pct": 0.005658
+ },
+ "02810000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 27054,
+  "acs_poverty_pct": 0.252591,
+  "acs_drove_alone_pct": 0.729789,
+  "acs_work_from_home_pct": 0.07588,
+  "acs_crowded_housing_pct": 0.029976
+ },
+ "02840000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60479,
+  "acs_poverty_pct": 0.045586,
+  "acs_drove_alone_pct": 0.70476,
+  "acs_work_from_home_pct": 0.196853,
+  "acs_crowded_housing_pct": 0.007143
+ },
+ "02850000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 49598,
+  "acs_poverty_pct": 0.09234,
+  "acs_drove_alone_pct": 0.705816,
+  "acs_work_from_home_pct": 0.135909,
+  "acs_crowded_housing_pct": 0.01464
+ },
+ "02880000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 96780,
+  "acs_poverty_pct": 0.025627,
+  "acs_drove_alone_pct": 0.598985,
+  "acs_work_from_home_pct": 0.311887,
+  "acs_crowded_housing_pct": 0.006796
+ },
+ "02890000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 40222,
+  "acs_poverty_pct": 0.190755,
+  "acs_drove_alone_pct": 0.642082,
+  "acs_work_from_home_pct": 0.158785,
+  "acs_crowded_housing_pct": 0.040828
+ },
+ "02900000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 66108,
+  "acs_poverty_pct": 0.044853,
+  "acs_drove_alone_pct": 0.735636,
+  "acs_work_from_home_pct": 0.184186,
+  "acs_crowded_housing_pct": 0.008007
+ },
+ "02910000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 76101,
+  "acs_poverty_pct": 0.069991,
+  "acs_drove_alone_pct": 0.569702,
+  "acs_work_from_home_pct": 0.230348,
+  "acs_crowded_housing_pct": 0.014134
+ },
+ "02920000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 48644,
+  "acs_poverty_pct": 0.027869,
+  "acs_drove_alone_pct": 0.802723,
+  "acs_work_from_home_pct": 0.063044,
+  "acs_crowded_housing_pct": 0.013499
+ },
+ "02930000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 38335,
+  "acs_poverty_pct": 0.137346,
+  "acs_drove_alone_pct": 0.797928,
+  "acs_work_from_home_pct": 0.065854,
+  "acs_crowded_housing_pct": 0.020569
+ },
+ "02950000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 55423,
+  "acs_poverty_pct": 0.029954,
+  "acs_drove_alone_pct": 0.801225,
+  "acs_work_from_home_pct": 0.121573,
+  "acs_crowded_housing_pct": 0.023464
+ },
+ "02960000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 42949,
+  "acs_poverty_pct": 0.056007,
+  "acs_drove_alone_pct": 0.590987,
+  "acs_work_from_home_pct": 0.184363,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "02980000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 71322,
+  "acs_poverty_pct": 0.075047,
+  "acs_drove_alone_pct": 0.617981,
+  "acs_work_from_home_pct": 0.263271,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03000000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 80354,
+  "acs_poverty_pct": 0.059104,
+  "acs_drove_alone_pct": 0.557272,
+  "acs_work_from_home_pct": 0.374517,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03010000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56814,
+  "acs_poverty_pct": 0.048133,
+  "acs_drove_alone_pct": 0.736291,
+  "acs_work_from_home_pct": 0.158503,
+  "acs_crowded_housing_pct": 0.012947
+ },
+ "03040000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 53037,
+  "acs_poverty_pct": 0.040053,
+  "acs_drove_alone_pct": 0.737584,
+  "acs_work_from_home_pct": 0.146336,
+  "acs_crowded_housing_pct": 0.028676
+ },
+ "03050000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 67001,
+  "acs_poverty_pct": 0.046177,
+  "acs_drove_alone_pct": 0.62902,
+  "acs_work_from_home_pct": 0.222087,
+  "acs_crowded_housing_pct": 0.003886
+ },
+ "03060000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 44682,
+  "acs_poverty_pct": 0.047996,
+  "acs_drove_alone_pct": 0.815483,
+  "acs_work_from_home_pct": 0.114528,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03070000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 69116,
+  "acs_poverty_pct": 0.033086,
+  "acs_drove_alone_pct": 0.616744,
+  "acs_work_from_home_pct": 0.271582,
+  "acs_crowded_housing_pct": 0.012811
+ },
+ "03080000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 58065,
+  "acs_poverty_pct": 0.086227,
+  "acs_drove_alone_pct": 0.555815,
+  "acs_work_from_home_pct": 0.200345,
+  "acs_crowded_housing_pct": 0.02741
+ },
+ "03090000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 36863,
+  "acs_poverty_pct": 0.098122,
+  "acs_drove_alone_pct": 0.814157,
+  "acs_work_from_home_pct": 0.066724,
+  "acs_crowded_housing_pct": 0.014483
+ },
+ "03100000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 47118,
+  "acs_poverty_pct": 0.071736,
+  "acs_drove_alone_pct": 0.770159,
+  "acs_work_from_home_pct": 0.13034,
+  "acs_crowded_housing_pct": 0.017499
+ },
+ "03140000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 72891,
+  "acs_poverty_pct": 0.061113,
+  "acs_drove_alone_pct": 0.492153,
+  "acs_work_from_home_pct": 0.266164,
+  "acs_crowded_housing_pct": 0.019124
+ },
+ "03150000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 103056,
+  "acs_poverty_pct": 0.041648,
+  "acs_drove_alone_pct": 0.600562,
+  "acs_work_from_home_pct": 0.333383,
+  "acs_crowded_housing_pct": 0.009095
+ },
+ "03160000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 38779,
+  "acs_poverty_pct": 0.153542,
+  "acs_drove_alone_pct": 0.784623,
+  "acs_work_from_home_pct": 0.067932,
+  "acs_crowded_housing_pct": 0.019952
+ },
+ "03170000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 113079,
+  "acs_poverty_pct": 0.032105,
+  "acs_drove_alone_pct": 0.489751,
+  "acs_work_from_home_pct": 0.307698,
+  "acs_crowded_housing_pct": 0.015383
+ },
+ "03180000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 57279,
+  "acs_poverty_pct": 0.064055,
+  "acs_drove_alone_pct": 0.7,
+  "acs_work_from_home_pct": 0.1895,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03210000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 68311,
+  "acs_poverty_pct": 0.050478,
+  "acs_drove_alone_pct": 0.665352,
+  "acs_work_from_home_pct": 0.244554,
+  "acs_crowded_housing_pct": 0.056789
+ },
+ "03220000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52771,
+  "acs_poverty_pct": 0.082502,
+  "acs_drove_alone_pct": 0.761135,
+  "acs_work_from_home_pct": 0.157163,
+  "acs_crowded_housing_pct": 0.004082
+ },
+ "03230000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52738,
+  "acs_poverty_pct": 0.045678,
+  "acs_drove_alone_pct": 0.812889,
+  "acs_work_from_home_pct": 0.118591,
+  "acs_crowded_housing_pct": 0.005911
+ },
+ "03250000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 40482,
+  "acs_poverty_pct": 0.109649,
+  "acs_drove_alone_pct": 0.808328,
+  "acs_work_from_home_pct": 0.074911,
+  "acs_crowded_housing_pct": 0.012952
+ },
+ "03260000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 73464,
+  "acs_poverty_pct": 0.023583,
+  "acs_drove_alone_pct": 0.671515,
+  "acs_work_from_home_pct": 0.238744,
+  "acs_crowded_housing_pct": 0.012253
+ },
+ "03270000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 50984,
+  "acs_poverty_pct": 0.057873,
+  "acs_drove_alone_pct": 0.828966,
+  "acs_work_from_home_pct": 0.135172,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03300000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 131707,
+  "acs_poverty_pct": 0.042649,
+  "acs_drove_alone_pct": 0.57307,
+  "acs_work_from_home_pct": 0.285897,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03310000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52794,
+  "acs_poverty_pct": 0.059719,
+  "acs_drove_alone_pct": 0.835851,
+  "acs_work_from_home_pct": 0.088631,
+  "acs_crowded_housing_pct": 0.010331
+ },
+ "03320000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 41433,
+  "acs_poverty_pct": 0.104439,
+  "acs_drove_alone_pct": 0.837509,
+  "acs_work_from_home_pct": 0.09401,
+  "acs_crowded_housing_pct": 0.018416
+ },
+ "03350000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 86172,
+  "acs_poverty_pct": 0.04982,
+  "acs_drove_alone_pct": 0.605789,
+  "acs_work_from_home_pct": 0.234075,
+  "acs_crowded_housing_pct": 0.010015
+ },
+ "03360000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 55161,
+  "acs_poverty_pct": 0.076645,
+  "acs_drove_alone_pct": 0.676987,
+  "acs_work_from_home_pct": 0.160031,
+  "acs_crowded_housing_pct": 0.019526
+ },
+ "03370000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 57720,
+  "acs_poverty_pct": 0.082183,
+  "acs_drove_alone_pct": 0.719368,
+  "acs_work_from_home_pct": 0.184453,
+  "acs_crowded_housing_pct": 0.013657
+ },
+ "03400000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 54541,
+  "acs_poverty_pct": 0.043446,
+  "acs_drove_alone_pct": 0.631389,
+  "acs_work_from_home_pct": 0.273602,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "03420000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 60558,
+  "acs_poverty_pct": 0.030059,
+  "acs_drove_alone_pct": 0.712138,
+  "acs_work_from_home_pct": 0.178571,
+  "acs_crowded_housing_pct": 0.00216
+ },
+ "03430000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 38891,
+  "acs_poverty_pct": 0.116566,
+  "acs_drove_alone_pct": 0.761062,
+  "acs_work_from_home_pct": 0.104468,
+  "acs_crowded_housing_pct": 0.017034
+ },
+ "03440000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 104586,
+  "acs_poverty_pct": 0.039324,
+  "acs_drove_alone_pct": 0.523047,
+  "acs_work_from_home_pct": 0.315715,
+  "acs_crowded_housing_pct": 0.002732
+ },
+ "03460000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 59226,
+  "acs_poverty_pct": 0.070526,
+  "acs_drove_alone_pct": 0.569529,
+  "acs_work_from_home_pct": 0.150455,
+  "acs_crowded_housing_pct": 0.01705
+ },
+ "03470000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 56975,
+  "acs_poverty_pct": 0.077939,
+  "acs_drove_alone_pct": 0.689219,
+  "acs_work_from_home_pct": 0.1512,
+  "acs_crowded_housing_pct": 0.022922
+ },
+ "03480000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 35825,
+  "acs_poverty_pct": 0.197757,
+  "acs_drove_alone_pct": 0.658281,
+  "acs_work_from_home_pct": 0.107068,
+  "acs_crowded_housing_pct": 0.03338
+ },
+ "03490000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 52779,
+  "acs_poverty_pct": 0.037037,
+  "acs_drove_alone_pct": 0.65942,
+  "acs_work_from_home_pct": 0.257246,
+  "acs_crowded_housing_pct": 0.015564
+ },
+ "03500000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 66485,
+  "acs_poverty_pct": 0.056687,
+  "acs_drove_alone_pct": 0.679397,
+  "acs_work_from_home_pct": 0.212228,
+  "acs_crowded_housing_pct": 0.006598
+ },
+ "06000000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 75599,
+  "acs_poverty_pct": 0.034181,
+  "acs_drove_alone_pct": 0.588873,
+  "acs_work_from_home_pct": 0.311806,
+  "acs_crowded_housing_pct": 0.018263
+ },
+ "06030000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 38412,
+  "acs_poverty_pct": 0.13209,
+  "acs_drove_alone_pct": 0.819501,
+  "acs_work_from_home_pct": 0.067491,
+  "acs_crowded_housing_pct": 0.008215
+ },
+ "06100000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 50046,
+  "acs_poverty_pct": 0.04764,
+  "acs_drove_alone_pct": 0.812975,
+  "acs_work_from_home_pct": 0.132981,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "06150000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 31769,
+  "acs_poverty_pct": 0.142423,
+  "acs_drove_alone_pct": 0.740149,
+  "acs_work_from_home_pct": 0.083798,
+  "acs_crowded_housing_pct": 0.022165
+ },
+ "06160000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 52655,
+  "acs_poverty_pct": 0.058975,
+  "acs_drove_alone_pct": 0.75566,
+  "acs_work_from_home_pct": 0.183878,
+  "acs_crowded_housing_pct": 0.012776
+ },
+ "06180000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 62365,
+  "acs_poverty_pct": 0.063392,
+  "acs_drove_alone_pct": 0.602661,
+  "acs_work_from_home_pct": 0.256184,
+  "acs_crowded_housing_pct": 0.007653
+ },
+ "06200000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 68465,
+  "acs_poverty_pct": 0.070915,
+  "acs_drove_alone_pct": 0.659511,
+  "acs_work_from_home_pct": 0.262039,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "06220000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 50539,
+  "acs_poverty_pct": 0.051475,
+  "acs_drove_alone_pct": 0.768179,
+  "acs_work_from_home_pct": 0.147654,
+  "acs_crowded_housing_pct": 0.002627
+ },
+ "06250000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 48999,
+  "acs_poverty_pct": 0.063458,
+  "acs_drove_alone_pct": 0.768146,
+  "acs_work_from_home_pct": 0.115384,
+  "acs_crowded_housing_pct": 0.014079
+ },
+ "06320000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 47383,
+  "acs_poverty_pct": 0.084259,
+  "acs_drove_alone_pct": 0.800296,
+  "acs_work_from_home_pct": 0.111199,
+  "acs_crowded_housing_pct": 0.00335
+ },
+ "06350000": {
+  "_member_count": 7,
+  "acs_per_capita_income": 47906,
+  "acs_poverty_pct": 0.061273,
+  "acs_drove_alone_pct": 0.768615,
+  "acs_work_from_home_pct": 0.113959,
+  "acs_crowded_housing_pct": 0.005086
+ },
+ "06450000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 54807,
+  "acs_poverty_pct": 0.077474,
+  "acs_drove_alone_pct": 0.775964,
+  "acs_work_from_home_pct": 0.101988,
+  "acs_crowded_housing_pct": 0.016168
+ },
+ "06500000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 52185,
+  "acs_poverty_pct": 0.042061,
+  "acs_drove_alone_pct": 0.775617,
+  "acs_work_from_home_pct": 0.0931,
+  "acs_crowded_housing_pct": 0.001582
+ },
+ "06550000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 126679,
+  "acs_poverty_pct": 0.019451,
+  "acs_drove_alone_pct": 0.485284,
+  "acs_work_from_home_pct": 0.356478,
+  "acs_crowded_housing_pct": 0.006884
+ },
+ "06580000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 37153,
+  "acs_poverty_pct": 0.074952,
+  "acs_drove_alone_pct": 0.802531,
+  "acs_work_from_home_pct": 0.060061,
+  "acs_crowded_housing_pct": 0.021387
+ },
+ "06620000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 55277,
+  "acs_poverty_pct": 0.028906,
+  "acs_drove_alone_pct": 0.721479,
+  "acs_work_from_home_pct": 0.206825,
+  "acs_crowded_housing_pct": 0.012563
+ },
+ "06650000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 51871,
+  "acs_poverty_pct": 0.043275,
+  "acs_drove_alone_pct": 0.824697,
+  "acs_work_from_home_pct": 0.096503,
+  "acs_crowded_housing_pct": 0.007304
+ },
+ "06720000": {
+  "_member_count": 6,
+  "acs_per_capita_income": 46680,
+  "acs_poverty_pct": 0.066424,
+  "acs_drove_alone_pct": 0.835753,
+  "acs_work_from_home_pct": 0.09925,
+  "acs_crowded_housing_pct": 0.005718
+ },
+ "06730000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 74451,
+  "acs_poverty_pct": 0.035611,
+  "acs_drove_alone_pct": 0.661102,
+  "acs_work_from_home_pct": 0.242896,
+  "acs_crowded_housing_pct": 0.008181
+ },
+ "06740000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 38006,
+  "acs_poverty_pct": 0.096781,
+  "acs_drove_alone_pct": 0.656022,
+  "acs_work_from_home_pct": 0.142152,
+  "acs_crowded_housing_pct": 0.02432
+ },
+ "06750000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 61881,
+  "acs_poverty_pct": 0.052596,
+  "acs_drove_alone_pct": 0.588183,
+  "acs_work_from_home_pct": 0.249694,
+  "acs_crowded_housing_pct": 0.012342
+ },
+ "06800000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 55835,
+  "acs_poverty_pct": 0.037172,
+  "acs_drove_alone_pct": 0.831409,
+  "acs_work_from_home_pct": 0.088254,
+  "acs_crowded_housing_pct": 0.003771
+ },
+ "06850000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 48820,
+  "acs_poverty_pct": 0.088524,
+  "acs_drove_alone_pct": 0.611516,
+  "acs_work_from_home_pct": 0.159464,
+  "acs_crowded_housing_pct": 0.011315
+ },
+ "06980000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 88327,
+  "acs_poverty_pct": 0.041063,
+  "acs_drove_alone_pct": 0.562084,
+  "acs_work_from_home_pct": 0.27186,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "07100000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 61430,
+  "acs_poverty_pct": 0.040068,
+  "acs_drove_alone_pct": 0.73571,
+  "acs_work_from_home_pct": 0.177048,
+  "acs_crowded_housing_pct": 0.014555
+ },
+ "07120000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 67162,
+  "acs_poverty_pct": 0.06005,
+  "acs_drove_alone_pct": 0.726751,
+  "acs_work_from_home_pct": 0.195966,
+  "acs_crowded_housing_pct": 0.005359
+ },
+ "07150000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 46718,
+  "acs_poverty_pct": 0.095733,
+  "acs_drove_alone_pct": 0.480781,
+  "acs_work_from_home_pct": 0.194936,
+  "acs_crowded_housing_pct": 0.003386
+ },
+ "07170000": {
+  "_member_count": 9,
+  "acs_per_capita_income": 45918,
+  "acs_poverty_pct": 0.101352,
+  "acs_drove_alone_pct": 0.739334,
+  "acs_work_from_home_pct": 0.156193,
+  "acs_crowded_housing_pct": 0.013824
+ },
+ "07200000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 42028,
+  "acs_poverty_pct": 0.080278,
+  "acs_drove_alone_pct": 0.76411,
+  "acs_work_from_home_pct": 0.136885,
+  "acs_crowded_housing_pct": 0.012732
+ },
+ "07250000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 68903,
+  "acs_poverty_pct": 0.035537,
+  "acs_drove_alone_pct": 0.60132,
+  "acs_work_from_home_pct": 0.324194,
+  "acs_crowded_housing_pct": 0.011613
+ },
+ "07280000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 40883,
+  "acs_poverty_pct": 0.109392,
+  "acs_drove_alone_pct": 0.65994,
+  "acs_work_from_home_pct": 0.155608,
+  "acs_crowded_housing_pct": 0.003764
+ },
+ "07350000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 53217,
+  "acs_poverty_pct": 0.063208,
+  "acs_drove_alone_pct": 0.771589,
+  "acs_work_from_home_pct": 0.14544,
+  "acs_crowded_housing_pct": 0.006364
+ },
+ "07450000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 63506,
+  "acs_poverty_pct": 0.052312,
+  "acs_drove_alone_pct": 0.759978,
+  "acs_work_from_home_pct": 0.15201,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "07500000": {
+  "_member_count": 4,
+  "acs_per_capita_income": 46906,
+  "acs_poverty_pct": 0.076636,
+  "acs_drove_alone_pct": 0.75096,
+  "acs_work_from_home_pct": 0.160451,
+  "acs_crowded_housing_pct": 0.004997
+ },
+ "07530000": {
+  "_member_count": 5,
+  "acs_per_capita_income": 42093,
+  "acs_poverty_pct": 0.110138,
+  "acs_drove_alone_pct": 0.759137,
+  "acs_work_from_home_pct": 0.103485,
+  "acs_crowded_housing_pct": 0.022027
+ },
+ "07650000": {
+  "_member_count": 5,
+  "acs_per_capita_income": 63007,
+  "acs_poverty_pct": 0.064841,
+  "acs_drove_alone_pct": 0.678196,
+  "acs_work_from_home_pct": 0.181506,
+  "acs_crowded_housing_pct": 0.009799
+ },
+ "07660000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 51323,
+  "acs_poverty_pct": 0.061457,
+  "acs_drove_alone_pct": 0.793235,
+  "acs_work_from_home_pct": 0.139617,
+  "acs_crowded_housing_pct": 0.007988
+ },
+ "07670000": {
+  "_member_count": 1,
+  "acs_per_capita_income": 43794,
+  "acs_poverty_pct": 0.076736,
+  "acs_drove_alone_pct": 0.757555,
+  "acs_work_from_home_pct": 0.149869,
+  "acs_crowded_housing_pct": 0.007984
+ },
+ "07700000": {
+  "_member_count": 5,
+  "acs_per_capita_income": 53355,
+  "acs_poverty_pct": 0.045676,
+  "acs_drove_alone_pct": 0.787326,
+  "acs_work_from_home_pct": 0.137851,
+  "acs_crowded_housing_pct": 0.007862
+ },
+ "07730000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 65314,
+  "acs_poverty_pct": 0.03986,
+  "acs_drove_alone_pct": 0.782839,
+  "acs_work_from_home_pct": 0.154718,
+  "acs_crowded_housing_pct": 0.007216
+ },
+ "07740000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 92232,
+  "acs_poverty_pct": 0.042545,
+  "acs_drove_alone_pct": 0.635643,
+  "acs_work_from_home_pct": 0.301162,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "07750000": {
+  "_member_count": 5,
+  "acs_per_capita_income": 58853,
+  "acs_poverty_pct": 0.034277,
+  "acs_drove_alone_pct": 0.747667,
+  "acs_work_from_home_pct": 0.17198,
+  "acs_crowded_housing_pct": 0.009877
+ },
+ "07780000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 42818,
+  "acs_poverty_pct": 0.089967,
+  "acs_drove_alone_pct": 0.784118,
+  "acs_work_from_home_pct": 0.135058,
+  "acs_crowded_housing_pct": 0.0
+ },
+ "07800000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 50866,
+  "acs_poverty_pct": 0.054923,
+  "acs_drove_alone_pct": 0.767767,
+  "acs_work_from_home_pct": 0.081961,
+  "acs_crowded_housing_pct": 0.009106
+ },
+ "06400000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 100627,
+  "acs_poverty_pct": 0.0243,
+  "acs_drove_alone_pct": 0.538519,
+  "acs_work_from_home_pct": 0.348133,
+  "acs_crowded_housing_pct": 0.005443
+ },
+ "06600000": {
+  "_member_count": 4,
+  "acs_per_capita_income": 63763,
+  "acs_poverty_pct": 0.09707,
+  "acs_drove_alone_pct": 0.731827,
+  "acs_work_from_home_pct": 0.18021,
+  "acs_crowded_housing_pct": 0.015906
+ },
+ "06900000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 63377,
+  "acs_poverty_pct": 0.051861,
+  "acs_drove_alone_pct": 0.687895,
+  "acs_work_from_home_pct": 0.21791,
+  "acs_crowded_housing_pct": 0.005974
+ },
+ "06950000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 99626,
+  "acs_poverty_pct": 0.029252,
+  "acs_drove_alone_pct": 0.619194,
+  "acs_work_from_home_pct": 0.304008,
+  "acs_crowded_housing_pct": 0.006481
+ },
+ "07050000": {
+  "_member_count": 3,
+  "acs_per_capita_income": 76556,
+  "acs_poverty_pct": 0.040791,
+  "acs_drove_alone_pct": 0.71611,
+  "acs_work_from_home_pct": 0.182746,
+  "acs_crowded_housing_pct": 0.001201
+ },
+ "07300000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 86213,
+  "acs_poverty_pct": 0.036938,
+  "acs_drove_alone_pct": 0.661875,
+  "acs_work_from_home_pct": 0.239086,
+  "acs_crowded_housing_pct": 0.006566
+ },
+ "07630000": {
+  "_member_count": 2,
+  "acs_per_capita_income": 54627,
+  "acs_poverty_pct": 0.043337,
+  "acs_drove_alone_pct": 0.847425,
+  "acs_work_from_home_pct": 0.101483,
+  "acs_crowded_housing_pct": 0.008744
+ }
+}

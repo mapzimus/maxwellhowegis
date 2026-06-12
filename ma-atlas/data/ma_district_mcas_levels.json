@@ -1,0 +1,1658 @@
+{
+ "06650000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "07280000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "00960000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "02750000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "03050000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "01500000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "01850000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.27,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.24
+ },
+ "01840000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "03440000": {
+  "mcas_g38_ela_exceeding": 0.19,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.24,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "01890000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.15,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "01330000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "03310000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "01700000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.33,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.29
+ },
+ "02380000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.13,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "01390000": {
+  "mcas_g38_ela_exceeding": 0.18,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.32,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02850000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "00400000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "00930000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.36,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.32
+ },
+ "02100000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "02630000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.0,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.0
+ },
+ "06720000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "06730000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "02390000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "01370000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.48,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.55
+ },
+ "02620000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.26,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "03100000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "03150000": {
+  "mcas_g38_ela_exceeding": 0.17,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.25,
+  "mcas_g38_math_not_meeting": 0.03
+ },
+ "01180000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "00100000": {
+  "mcas_g38_ela_exceeding": 0.2,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.18,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "02500000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "06550000": {
+  "mcas_g38_ela_exceeding": 0.15,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.2,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "02430000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "02740000": {
+  "mcas_g38_ela_exceeding": 0.1,
+  "mcas_g38_ela_not_meeting": 0.27,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.3
+ },
+ "01010000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.14,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "01250000": {
+  "mcas_g38_ela_exceeding": 0.16,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.19,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "00730000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "01620000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "07170000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.24,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.23
+ },
+ "02610000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "03170000": {
+  "mcas_g38_ela_exceeding": 0.24,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.23,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "01280000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.27,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.25
+ },
+ "01820000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "00260000": {
+  "mcas_g38_ela_exceeding": 0.19,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.25,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "06250000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "02480000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.29,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.25
+ },
+ "01360000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.13,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "06160000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "00570000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.39,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.37
+ },
+ "02170000": {
+  "mcas_g38_ela_exceeding": 0.16,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.15,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "03250000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.22,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "02270000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.28,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "01530000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "07500000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "03230000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "02140000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "06850000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.32,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "07670000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.28,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.27
+ },
+ "00240000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "02090000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.36,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.32
+ },
+ "02780000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.21
+ },
+ "00720000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "01980000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.17,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "07800000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "00360000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "01270000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "01590000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "03220000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "02310000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "02530000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "03480000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.34,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.31
+ },
+ "00350000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.32,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.33
+ },
+ "06350000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "01350000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "00630000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "02440000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.32,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.29
+ },
+ "01030000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.37,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.36
+ },
+ "01730000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "00770000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "01710000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "03160000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.32,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.3
+ },
+ "02720000": {
+  "mcas_g38_ela_exceeding": 0.1,
+  "mcas_g38_ela_not_meeting": 0.02,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.0
+ },
+ "02260000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "00830000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "03000000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.03,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "03260000": {
+  "mcas_g38_ela_exceeding": 0.12,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.19,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "00650000": {
+  "mcas_g38_ela_exceeding": 0.2,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "00560000": {
+  "mcas_g38_ela_exceeding": 0.12,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "01810000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.25,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.27
+ },
+ "02400000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "07740000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "00170000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "00490000": {
+  "mcas_g38_ela_exceeding": 0.17,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.17,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "00910000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.21
+ },
+ "02960000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "02010000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.34,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.34
+ },
+ "01760000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.22,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "07250000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "02660000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.21,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "02760000": {
+  "mcas_g38_ela_exceeding": 0.18,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.23,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "01970000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.28,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "00950000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.37,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.36
+ },
+ "02120000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "00990000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "06580000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "00250000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.25,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "01600000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.31,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.25
+ },
+ "00680000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.01
+ },
+ "00410000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "02130000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "07730000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "03300000": {
+  "mcas_g38_ela_exceeding": 0.24,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.26,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02520000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "01510000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.22,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.21
+ },
+ "02110000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "03010000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "06500000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "03370000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "02890000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "00970000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.33,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.31
+ },
+ "03040000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.16,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "01100000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "00890000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "07660000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.16,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "00480000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "01740000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "00520000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "01310000": {
+  "mcas_g38_ela_exceeding": 0.23,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.17,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02290000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.26,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "01750000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.15,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02710000": {
+  "mcas_g38_ela_exceeding": 0.12,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.19,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "00820000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "06000000": {
+  "mcas_g38_ela_exceeding": 0.16,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.23,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "06620000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "02930000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.27,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.3
+ },
+ "03430000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.22,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.26
+ },
+ "02210000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "00860000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.22,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "01550000": {
+  "mcas_g38_ela_exceeding": 0.28,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.36,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "01050000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "02640000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02240000": {
+  "mcas_g38_ela_exceeding": 0.1,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "02490000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02510000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "02880000": {
+  "mcas_g38_ela_exceeding": 0.18,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.19,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "03140000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "06220000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "00980000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "00200000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.27,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.25
+ },
+ "02080000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "00140000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.16,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "00180000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.24,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.25
+ },
+ "00070000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "01000000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.39,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.37
+ },
+ "01540000": {
+  "mcas_g38_ela_exceeding": 0.17,
+  "mcas_g38_ela_not_meeting": 0.16,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "02040000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "03060000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "01140000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.31,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.29
+ },
+ "01580000": {
+  "mcas_g38_ela_exceeding": 0.18,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.14,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "02900000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "06800000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "07450000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "00850000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02650000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "06450000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.25,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "03210000": {
+  "mcas_g38_ela_exceeding": 0.16,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.21,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "02180000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "03070000": {
+  "mcas_g38_ela_exceeding": 0.1,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.16,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "02360000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.29,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.31
+ },
+ "03360000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.18,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "00050000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "00460000": {
+  "mcas_g38_ela_exceeding": 0.19,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.23,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "02190000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.15,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "07650000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "07200000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "00080000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "02950000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "02770000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.46,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.49
+ },
+ "01070000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "01170000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "02910000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "03080000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "07120000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "01960000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "02580000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.26,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.31
+ },
+ "07350000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "03180000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "00870000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "00790000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.16,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "01670000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "02070000": {
+  "mcas_g38_ela_exceeding": 0.17,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.22,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "02690000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "00300000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "00510000": {
+  "mcas_g38_ela_exceeding": 0.22,
+  "mcas_g38_ela_not_meeting": 0.03,
+  "mcas_g38_math_exceeding": 0.26,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "02810000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.34,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.37
+ },
+ "02730000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "07150000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "00880000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "02980000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.04,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "06740000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.3,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.27
+ },
+ "06180000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "00090000": {
+  "mcas_g38_ela_exceeding": 0.17,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.2,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "01520000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "07780000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.24,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "00740000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "07530000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "00670000": {
+  "mcas_g38_ela_exceeding": 0.22,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.16,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "03400000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.24,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "02920000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "06320000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "01690000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "03320000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.24,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "01910000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.19
+ },
+ "01990000": {
+  "mcas_g38_ela_exceeding": 0.22,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.21,
+  "mcas_g38_math_not_meeting": 0.04
+ },
+ "06750000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.14,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "01440000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "03090000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.26,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.26
+ },
+ "02300000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "01680000": {
+  "mcas_g38_ela_exceeding": 0.12,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "01490000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.41,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.36
+ },
+ "02340000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "07700000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "00450000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "03270000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "00610000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.25,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.23
+ },
+ "00380000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "00440000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.38,
+  "mcas_g38_math_exceeding": 0.02,
+  "mcas_g38_math_not_meeting": 0.38
+ },
+ "00230000": {
+  "mcas_g38_ela_exceeding": 0.23,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.22,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "01770000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "06980000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "01450000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "02460000": {
+  "mcas_g38_ela_exceeding": 0.15,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.15,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "03460000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "06150000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.35,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.31
+ },
+ "07100000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "01220000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "03490000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "00940000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.14,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "00430000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.05,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.02
+ },
+ "01210000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.16,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "01570000": {
+  "mcas_g38_ela_exceeding": 0.14,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.14,
+  "mcas_g38_math_not_meeting": 0.11
+ },
+ "01110000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.21,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.18
+ },
+ "01640000": {
+  "mcas_g38_ela_exceeding": 0.12,
+  "mcas_g38_ela_not_meeting": 0.07,
+  "mcas_g38_math_exceeding": 0.13,
+  "mcas_g38_math_not_meeting": 0.05
+ },
+ "03350000": {
+  "mcas_g38_ela_exceeding": 0.22,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.22,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "00640000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.26,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.21
+ },
+ "02840000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "06200000": {
+  "mcas_g38_ela_exceeding": 0.12,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.11,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "00160000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.17
+ },
+ "00710000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "01650000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.28,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.24
+ },
+ "01780000": {
+  "mcas_g38_ela_exceeding": 0.15,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.15,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "03420000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.1,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "00500000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.13,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "03500000": {
+  "mcas_g38_ela_exceeding": 0.07,
+  "mcas_g38_ela_not_meeting": 0.06,
+  "mcas_g38_math_exceeding": 0.12,
+  "mcas_g38_math_not_meeting": 0.06
+ },
+ "07750000": {
+  "mcas_g38_ela_exceeding": 0.08,
+  "mcas_g38_ela_not_meeting": 0.09,
+  "mcas_g38_math_exceeding": 0.09,
+  "mcas_g38_math_not_meeting": 0.07
+ },
+ "00030000": {
+  "mcas_g38_ela_exceeding": 0.09,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.08
+ },
+ "02150000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.23,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.25
+ },
+ "01420000": {
+  "mcas_g38_ela_exceeding": 0.13,
+  "mcas_g38_ela_not_meeting": 0.08,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.09
+ },
+ "02230000": {
+  "mcas_g38_ela_exceeding": 0.0,
+  "mcas_g38_ela_not_meeting": 0.33,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.3
+ },
+ "01720000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "02200000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.21
+ },
+ "03470000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.23,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.22
+ },
+ "06100000": {
+  "mcas_g38_ela_exceeding": 0.04,
+  "mcas_g38_ela_not_meeting": 0.11,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.12
+ },
+ "01380000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.13,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "00010000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.19,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.15
+ },
+ "02420000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.24
+ },
+ "00310000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.15,
+  "mcas_g38_math_exceeding": 0.07,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "01630000": {
+  "mcas_g38_ela_exceeding": 0.01,
+  "mcas_g38_ela_not_meeting": 0.39,
+  "mcas_g38_math_exceeding": 0.01,
+  "mcas_g38_math_not_meeting": 0.39
+ },
+ "01870000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.05,
+  "mcas_g38_math_not_meeting": 0.1
+ },
+ "01410000": {
+  "mcas_g38_ela_exceeding": 0.05,
+  "mcas_g38_ela_not_meeting": 0.2,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.23
+ },
+ "06030000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.31,
+  "mcas_g38_math_exceeding": 0.0,
+  "mcas_g38_math_not_meeting": 0.3
+ },
+ "00270000": {
+  "mcas_g38_ela_exceeding": 0.06,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.04,
+  "mcas_g38_math_not_meeting": 0.14
+ },
+ "01610000": {
+  "mcas_g38_ela_exceeding": 0.02,
+  "mcas_g38_ela_not_meeting": 0.26,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.2
+ },
+ "01860000": {
+  "mcas_g38_ela_exceeding": 0.03,
+  "mcas_g38_ela_not_meeting": 0.17,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.16
+ },
+ "06600000": {
+  "mcas_g38_ela_exceeding": 0.1,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.03,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "06900000": {
+  "mcas_g38_ela_exceeding": 0.11,
+  "mcas_g38_ela_not_meeting": 0.12,
+  "mcas_g38_math_exceeding": 0.08,
+  "mcas_g38_math_not_meeting": 0.13
+ },
+ "07050000": {
+  "mcas_g38_ela_exceeding": 0.1,
+  "mcas_g38_ela_not_meeting": 0.1,
+  "mcas_g38_math_exceeding": 0.06,
+  "mcas_g38_math_not_meeting": 0.11
+ }
+}

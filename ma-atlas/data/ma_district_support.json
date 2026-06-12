@@ -1,0 +1,1674 @@
+{
+ "00010000": {
+  "students_per_counselor": 309,
+  "students_per_nurse": 474,
+  "students_per_psychologist": 381,
+  "students_per_librarian": 2132
+ },
+ "00030000": {
+  "students_per_counselor": 231,
+  "students_per_nurse": 462,
+  "students_per_psychologist": 924,
+  "students_per_librarian": 462
+ },
+ "00050000": {
+  "students_per_counselor": 144,
+  "students_per_nurse": 488,
+  "students_per_psychologist": 1139,
+  "students_per_librarian": 570
+ },
+ "00070000": {
+  "students_per_counselor": 191,
+  "students_per_nurse": 453,
+  "students_per_psychologist": 906,
+  "students_per_social_worker": 1813,
+  "students_per_librarian": 697
+ },
+ "00080000": {
+  "students_per_counselor": 126,
+  "students_per_nurse": 253,
+  "students_per_psychologist": 168,
+  "students_per_librarian": 253
+ },
+ "00090000": {
+  "students_per_counselor": 364,
+  "students_per_nurse": 411,
+  "students_per_psychologist": 411,
+  "students_per_social_worker": 382,
+  "students_per_librarian": 622
+ },
+ "00100000": {
+  "students_per_counselor": 224,
+  "students_per_nurse": 308,
+  "students_per_psychologist": 717,
+  "students_per_social_worker": 235,
+  "students_per_librarian": 610
+ },
+ "00140000": {
+  "students_per_counselor": 194,
+  "students_per_nurse": 428,
+  "students_per_psychologist": 485,
+  "students_per_librarian": 2910
+ },
+ "00160000": {
+  "students_per_counselor": 234,
+  "students_per_nurse": 492,
+  "students_per_psychologist": 1034,
+  "students_per_librarian": 6205
+ },
+ "00170000": {
+  "students_per_counselor": 197,
+  "students_per_nurse": 272,
+  "students_per_psychologist": 1222,
+  "students_per_social_worker": 611,
+  "students_per_librarian": 3055
+ },
+ "00180000": {
+  "students_per_counselor": 169,
+  "students_per_nurse": 338,
+  "students_per_psychologist": 338
+ },
+ "00200000": {
+  "students_per_counselor": 164,
+  "students_per_nurse": 301,
+  "students_per_psychologist": 501,
+  "students_per_social_worker": 501,
+  "students_per_librarian": 2256
+ },
+ "00230000": {
+  "students_per_counselor": 106,
+  "students_per_nurse": 585,
+  "students_per_psychologist": 599,
+  "students_per_librarian": 959
+ },
+ "00240000": {
+  "students_per_counselor": 156,
+  "students_per_nurse": 281,
+  "students_per_psychologist": 1310,
+  "students_per_librarian": 614
+ },
+ "00250000": {
+  "students_per_counselor": 137,
+  "students_per_nurse": 411,
+  "students_per_psychologist": 588
+ },
+ "00260000": {
+  "students_per_counselor": 277,
+  "students_per_nurse": 426,
+  "students_per_psychologist": 568,
+  "students_per_social_worker": 739,
+  "students_per_librarian": 4433
+ },
+ "00270000": {
+  "students_per_counselor": 423,
+  "students_per_nurse": 423,
+  "students_per_psychologist": 846
+ },
+ "00300000": {
+  "students_per_counselor": 197,
+  "students_per_nurse": 357,
+  "students_per_psychologist": 642,
+  "students_per_librarian": 2811
+ },
+ "00310000": {
+  "students_per_counselor": 411,
+  "students_per_nurse": 294,
+  "students_per_psychologist": 548,
+  "students_per_social_worker": 277,
+  "students_per_librarian": 2741
+ },
+ "00350000": {
+  "students_per_counselor": 441,
+  "students_per_nurse": 293,
+  "students_per_psychologist": 429,
+  "students_per_social_worker": 213,
+  "students_per_librarian": 674
+ },
+ "00360000": {
+  "students_per_counselor": 147,
+  "students_per_nurse": 368,
+  "students_per_psychologist": 736
+ },
+ "00380000": {
+  "students_per_counselor": 543,
+  "students_per_nurse": 380,
+  "students_per_psychologist": 380
+ },
+ "00400000": {
+  "students_per_counselor": 322,
+  "students_per_nurse": 415,
+  "students_per_psychologist": 395,
+  "students_per_librarian": 2662
+ },
+ "00410000": {
+  "students_per_counselor": 149,
+  "students_per_nurse": 208,
+  "students_per_psychologist": 208
+ },
+ "00430000": {
+  "students_per_counselor": 261,
+  "students_per_nurse": 261,
+  "students_per_psychologist": 261,
+  "students_per_librarian": 261
+ },
+ "00440000": {
+  "students_per_counselor": 166,
+  "students_per_nurse": 394,
+  "students_per_psychologist": 1494,
+  "students_per_librarian": 16269
+ },
+ "00450000": {
+  "students_per_counselor": 288,
+  "students_per_nurse": 288,
+  "students_per_psychologist": 288,
+  "students_per_librarian": 288
+ },
+ "00460000": {
+  "students_per_counselor": 159,
+  "students_per_nurse": 334,
+  "students_per_psychologist": 463,
+  "students_per_social_worker": 695,
+  "students_per_librarian": 579
+ },
+ "00480000": {
+  "students_per_counselor": 146,
+  "students_per_nurse": 266,
+  "students_per_psychologist": 407,
+  "students_per_social_worker": 3457,
+  "students_per_librarian": 540
+ },
+ "00490000": {
+  "students_per_counselor": 366,
+  "students_per_psychologist": 316,
+  "students_per_social_worker": 170,
+  "students_per_librarian": 414
+ },
+ "00500000": {
+  "students_per_counselor": 221,
+  "students_per_nurse": 331,
+  "students_per_psychologist": 571,
+  "students_per_social_worker": 1657,
+  "students_per_librarian": 1657
+ },
+ "00510000": {
+  "students_per_nurse": 609,
+  "students_per_psychologist": 203,
+  "students_per_librarian": 677
+ },
+ "00520000": {
+  "students_per_counselor": 180,
+  "students_per_nurse": 359,
+  "students_per_psychologist": 718
+ },
+ "00560000": {
+  "students_per_counselor": 333,
+  "students_per_nurse": 570,
+  "students_per_psychologist": 466,
+  "students_per_social_worker": 916,
+  "students_per_librarian": 1768
+ },
+ "00570000": {
+  "students_per_counselor": 289,
+  "students_per_nurse": 523,
+  "students_per_psychologist": 1916,
+  "students_per_social_worker": 338,
+  "students_per_librarian": 1474
+ },
+ "00610000": {
+  "students_per_counselor": 155,
+  "students_per_nurse": 285,
+  "students_per_psychologist": 945,
+  "students_per_social_worker": 551,
+  "students_per_librarian": 1741
+ },
+ "00630000": {
+  "students_per_counselor": 422
+ },
+ "00640000": {
+  "students_per_counselor": 197,
+  "students_per_nurse": 409,
+  "students_per_psychologist": 553,
+  "students_per_social_worker": 2045,
+  "students_per_librarian": 2272
+ },
+ "00650000": {
+  "students_per_counselor": 157,
+  "students_per_nurse": 346,
+  "students_per_psychologist": 461,
+  "students_per_social_worker": 1382,
+  "students_per_librarian": 1382
+ },
+ "00670000": {
+  "students_per_counselor": 234,
+  "students_per_nurse": 322,
+  "students_per_psychologist": 374,
+  "students_per_social_worker": 934,
+  "students_per_librarian": 2076
+ },
+ "00680000": {
+  "students_per_nurse": 146,
+  "students_per_psychologist": 73
+ },
+ "00710000": {
+  "students_per_counselor": 446,
+  "students_per_nurse": 390,
+  "students_per_psychologist": 520,
+  "students_per_social_worker": 297,
+  "students_per_librarian": 1077
+ },
+ "00720000": {
+  "students_per_counselor": 427,
+  "students_per_nurse": 324,
+  "students_per_psychologist": 853,
+  "students_per_social_worker": 295,
+  "students_per_librarian": 1802
+ },
+ "00730000": {
+  "students_per_counselor": 205,
+  "students_per_nurse": 298,
+  "students_per_psychologist": 291,
+  "students_per_librarian": 582
+ },
+ "00740000": {
+  "students_per_counselor": 293,
+  "students_per_nurse": 195,
+  "students_per_psychologist": 293
+ },
+ "00770000": {
+  "students_per_counselor": 168,
+  "students_per_nurse": 269,
+  "students_per_psychologist": 1077,
+  "students_per_librarian": 718
+ },
+ "00790000": {
+  "students_per_counselor": 274,
+  "students_per_nurse": 455,
+  "students_per_psychologist": 1728,
+  "students_per_librarian": 3456
+ },
+ "00820000": {
+  "students_per_counselor": 177,
+  "students_per_nurse": 590,
+  "students_per_psychologist": 492,
+  "students_per_social_worker": 2657,
+  "students_per_librarian": 2657
+ },
+ "00830000": {
+  "students_per_counselor": 152,
+  "students_per_nurse": 396,
+  "students_per_psychologist": 991
+ },
+ "00850000": {
+  "students_per_counselor": 99,
+  "students_per_nurse": 178,
+  "students_per_psychologist": 178,
+  "students_per_librarian": 297
+ },
+ "00860000": {
+  "students_per_counselor": 149,
+  "students_per_nurse": 335,
+  "students_per_psychologist": 447,
+  "students_per_librarian": 447
+ },
+ "00870000": {
+  "students_per_counselor": 147,
+  "students_per_nurse": 248,
+  "students_per_psychologist": 785,
+  "students_per_librarian": 7850
+ },
+ "00880000": {
+  "students_per_counselor": 207,
+  "students_per_nurse": 412,
+  "students_per_psychologist": 824,
+  "students_per_librarian": 3297
+ },
+ "00890000": {
+  "students_per_counselor": 101,
+  "students_per_nurse": 237,
+  "students_per_psychologist": 444,
+  "students_per_librarian": 355
+ },
+ "00910000": {
+  "students_per_counselor": 106,
+  "students_per_nurse": 118,
+  "students_per_librarian": 106
+ },
+ "00930000": {
+  "students_per_counselor": 135,
+  "students_per_nurse": 314,
+  "students_per_social_worker": 3454
+ },
+ "00940000": {
+  "students_per_counselor": 189,
+  "students_per_nurse": 431,
+  "students_per_psychologist": 840
+ },
+ "00950000": {
+  "students_per_counselor": 146,
+  "students_per_nurse": 311,
+  "students_per_psychologist": 699,
+  "students_per_social_worker": 2237,
+  "students_per_librarian": 11184
+ },
+ "00960000": {
+  "students_per_counselor": 114,
+  "students_per_nurse": 309,
+  "students_per_psychologist": 546,
+  "students_per_librarian": 1265
+ },
+ "00970000": {
+  "students_per_counselor": 115,
+  "students_per_nurse": 311,
+  "students_per_psychologist": 1761,
+  "students_per_librarian": 1057
+ },
+ "00980000": {
+  "students_per_counselor": 340
+ },
+ "00990000": {
+  "students_per_counselor": 223,
+  "students_per_nurse": 490,
+  "students_per_psychologist": 700,
+  "students_per_social_worker": 612,
+  "students_per_librarian": 1225
+ },
+ "01000000": {
+  "students_per_counselor": 237,
+  "students_per_nurse": 428,
+  "students_per_psychologist": 471,
+  "students_per_social_worker": 268,
+  "students_per_librarian": 1047
+ },
+ "01010000": {
+  "students_per_counselor": 160,
+  "students_per_nurse": 353,
+  "students_per_psychologist": 438,
+  "students_per_librarian": 4383
+ },
+ "01030000": {
+  "students_per_counselor": 184,
+  "students_per_nurse": 309,
+  "students_per_psychologist": 823,
+  "students_per_social_worker": 1235,
+  "students_per_librarian": 2470
+ },
+ "01050000": {
+  "students_per_counselor": 134,
+  "students_per_nurse": 530,
+  "students_per_librarian": 1061
+ },
+ "01070000": {
+  "students_per_counselor": 164,
+  "students_per_nurse": 267,
+  "students_per_psychologist": 556,
+  "students_per_social_worker": 695,
+  "students_per_librarian": 2780
+ },
+ "01100000": {
+  "students_per_counselor": 240,
+  "students_per_nurse": 215,
+  "students_per_psychologist": 623
+ },
+ "01110000": {
+  "students_per_counselor": 334,
+  "students_per_nurse": 226,
+  "students_per_psychologist": 634,
+  "students_per_social_worker": 211,
+  "students_per_librarian": 6340
+ },
+ "01140000": {
+  "students_per_counselor": 130,
+  "students_per_nurse": 189,
+  "students_per_psychologist": 1285,
+  "students_per_social_worker": 1285,
+  "students_per_librarian": 459
+ },
+ "01170000": {
+  "students_per_counselor": 142,
+  "students_per_nurse": 256,
+  "students_per_psychologist": 511,
+  "students_per_librarian": 639
+ },
+ "01180000": {
+  "students_per_counselor": 530,
+  "students_per_nurse": 530,
+  "students_per_librarian": 662
+ },
+ "01210000": {
+  "students_per_counselor": 110,
+  "students_per_nurse": 44
+ },
+ "01220000": {
+  "students_per_counselor": 260,
+  "students_per_nurse": 604,
+  "students_per_psychologist": 483,
+  "students_per_librarian": 2415
+ },
+ "01250000": {
+  "students_per_counselor": 148,
+  "students_per_nurse": 252,
+  "students_per_psychologist": 503,
+  "students_per_librarian": 1006
+ },
+ "01270000": {
+  "students_per_counselor": 216,
+  "students_per_psychologist": 151,
+  "students_per_librarian": 302
+ },
+ "01280000": {
+  "students_per_counselor": 136,
+  "students_per_nurse": 383,
+  "students_per_psychologist": 966,
+  "students_per_social_worker": 7732,
+  "students_per_librarian": 7732
+ },
+ "01310000": {
+  "students_per_counselor": 163,
+  "students_per_nurse": 449,
+  "students_per_psychologist": 599,
+  "students_per_librarian": 719
+ },
+ "01330000": {
+  "students_per_counselor": 200,
+  "students_per_nurse": 441,
+  "students_per_psychologist": 1323
+ },
+ "01350000": {
+  "students_per_nurse": 218
+ },
+ "01360000": {
+  "students_per_counselor": 163,
+  "students_per_nurse": 428,
+  "students_per_psychologist": 663,
+  "students_per_librarian": 1395
+ },
+ "01370000": {
+  "students_per_counselor": 93,
+  "students_per_nurse": 231,
+  "students_per_psychologist": 1540,
+  "students_per_social_worker": 4619,
+  "students_per_librarian": 4619
+ },
+ "01380000": {
+  "students_per_counselor": 146,
+  "students_per_nurse": 370,
+  "students_per_psychologist": 1111,
+  "students_per_librarian": 617
+ },
+ "01390000": {
+  "students_per_counselor": 202,
+  "students_per_nurse": 633,
+  "students_per_psychologist": 943,
+  "students_per_social_worker": 10608,
+  "students_per_librarian": 1697
+ },
+ "01410000": {
+  "students_per_counselor": 176,
+  "students_per_nurse": 325,
+  "students_per_psychologist": 299,
+  "students_per_social_worker": 455,
+  "students_per_librarian": 1138
+ },
+ "01420000": {
+  "students_per_counselor": 230,
+  "students_per_nurse": 345,
+  "students_per_psychologist": 230,
+  "students_per_social_worker": 230,
+  "students_per_librarian": 1150
+ },
+ "01440000": {
+  "students_per_counselor": 156,
+  "students_per_nurse": 377,
+  "students_per_psychologist": 260,
+  "students_per_social_worker": 503,
+  "students_per_librarian": 503
+ },
+ "01450000": {
+  "students_per_counselor": 554,
+  "students_per_nurse": 370,
+  "students_per_psychologist": 554,
+  "students_per_librarian": 616
+ },
+ "01490000": {
+  "students_per_counselor": 139,
+  "students_per_nurse": 270,
+  "students_per_psychologist": 1283,
+  "students_per_librarian": 12955
+ },
+ "01500000": {
+  "students_per_counselor": 130,
+  "students_per_nurse": 324,
+  "students_per_psychologist": 648,
+  "students_per_librarian": 648
+ },
+ "01510000": {
+  "students_per_counselor": 220,
+  "students_per_nurse": 331,
+  "students_per_psychologist": 441,
+  "students_per_librarian": 1323
+ },
+ "01520000": {
+  "students_per_counselor": 179,
+  "students_per_nurse": 375,
+  "students_per_psychologist": 750,
+  "students_per_librarian": 750
+ },
+ "01530000": {
+  "students_per_counselor": 193,
+  "students_per_nurse": 515,
+  "students_per_psychologist": 773,
+  "students_per_social_worker": 2060
+ },
+ "01540000": {
+  "students_per_counselor": 270,
+  "students_per_nurse": 150,
+  "students_per_psychologist": 135
+ },
+ "01550000": {
+  "students_per_counselor": 221,
+  "students_per_nurse": 329,
+  "students_per_psychologist": 558,
+  "students_per_social_worker": 210,
+  "students_per_librarian": 652
+ },
+ "01570000": {
+  "students_per_nurse": 478,
+  "students_per_psychologist": 239,
+  "students_per_social_worker": 159,
+  "students_per_librarian": 4775
+ },
+ "01580000": {
+  "students_per_counselor": 302,
+  "students_per_nurse": 326,
+  "students_per_psychologist": 418,
+  "students_per_librarian": 2040
+ },
+ "01590000": {
+  "students_per_counselor": 185,
+  "students_per_nurse": 301,
+  "students_per_psychologist": 903,
+  "students_per_social_worker": 4513,
+  "students_per_librarian": 1934
+ },
+ "01600000": {
+  "students_per_counselor": 566,
+  "students_per_nurse": 423,
+  "students_per_psychologist": 959,
+  "students_per_social_worker": 226,
+  "students_per_librarian": 2936
+ },
+ "01610000": {
+  "students_per_counselor": 169,
+  "students_per_nurse": 407,
+  "students_per_psychologist": 540,
+  "students_per_social_worker": 540,
+  "students_per_librarian": 719
+ },
+ "01620000": {
+  "students_per_counselor": 1045,
+  "students_per_nurse": 392,
+  "students_per_psychologist": 627,
+  "students_per_social_worker": 1568
+ },
+ "01630000": {
+  "students_per_counselor": 535,
+  "students_per_nurse": 410,
+  "students_per_psychologist": 1080,
+  "students_per_social_worker": 189,
+  "students_per_librarian": 4178
+ },
+ "01640000": {
+  "students_per_counselor": 270,
+  "students_per_nurse": 540,
+  "students_per_psychologist": 432,
+  "students_per_librarian": 2159
+ },
+ "01650000": {
+  "students_per_counselor": 164,
+  "students_per_nurse": 434,
+  "students_per_psychologist": 867,
+  "students_per_librarian": 1518
+ },
+ "01670000": {
+  "students_per_counselor": 287,
+  "students_per_nurse": 405,
+  "students_per_psychologist": 427,
+  "students_per_social_worker": 1081,
+  "students_per_librarian": 3603
+ },
+ "01680000": {
+  "students_per_counselor": 149,
+  "students_per_nurse": 412,
+  "students_per_psychologist": 468,
+  "students_per_social_worker": 1194,
+  "students_per_librarian": 683
+ },
+ "01690000": {
+  "students_per_counselor": 342,
+  "students_per_nurse": 342,
+  "students_per_librarian": 342
+ },
+ "01700000": {
+  "students_per_counselor": 168,
+  "students_per_nurse": 335,
+  "students_per_psychologist": 727,
+  "students_per_social_worker": 1090,
+  "students_per_librarian": 4360
+ },
+ "01710000": {
+  "students_per_counselor": 273,
+  "students_per_nurse": 355,
+  "students_per_psychologist": 480,
+  "students_per_librarian": 3552
+ },
+ "01720000": {
+  "students_per_counselor": 233,
+  "students_per_nurse": 450,
+  "students_per_psychologist": 450,
+  "students_per_social_worker": 1349
+ },
+ "01730000": {
+  "students_per_counselor": 183,
+  "students_per_nurse": 183,
+  "students_per_psychologist": 366,
+  "students_per_librarian": 366
+ },
+ "01740000": {
+  "students_per_counselor": 137,
+  "students_per_nurse": 304,
+  "students_per_psychologist": 406,
+  "students_per_librarian": 608
+ },
+ "01750000": {
+  "students_per_counselor": 188,
+  "students_per_nurse": 382,
+  "students_per_psychologist": 452,
+  "students_per_librarian": 740
+ },
+ "01760000": {
+  "students_per_counselor": 162,
+  "students_per_nurse": 305,
+  "students_per_psychologist": 515,
+  "students_per_librarian": 5150
+ },
+ "01770000": {
+  "students_per_counselor": 236,
+  "students_per_nurse": 531,
+  "students_per_psychologist": 1417,
+  "students_per_social_worker": 531,
+  "students_per_librarian": 1062
+ },
+ "01780000": {
+  "students_per_counselor": 287,
+  "students_per_nurse": 3730,
+  "students_per_psychologist": 525,
+  "students_per_social_worker": 1865,
+  "students_per_librarian": 2487
+ },
+ "01810000": {
+  "students_per_counselor": 145,
+  "students_per_nurse": 695,
+  "students_per_psychologist": 2085,
+  "students_per_librarian": 7819
+ },
+ "01820000": {
+  "students_per_counselor": 191,
+  "students_per_nurse": 818,
+  "students_per_psychologist": 636,
+  "students_per_librarian": 1432
+ },
+ "01840000": {
+  "students_per_counselor": 268,
+  "students_per_nurse": 279,
+  "students_per_psychologist": 268
+ },
+ "01850000": {
+  "students_per_counselor": 161,
+  "students_per_nurse": 328,
+  "students_per_psychologist": 613,
+  "students_per_social_worker": 2146,
+  "students_per_librarian": 3301
+ },
+ "01860000": {
+  "students_per_counselor": 180,
+  "students_per_nurse": 269,
+  "students_per_psychologist": 539,
+  "students_per_librarian": 1616
+ },
+ "01870000": {
+  "students_per_counselor": 195,
+  "students_per_nurse": 468,
+  "students_per_psychologist": 1169,
+  "students_per_librarian": 2338
+ },
+ "01890000": {
+  "students_per_counselor": 249,
+  "students_per_nurse": 726,
+  "students_per_psychologist": 726
+ },
+ "01910000": {
+  "students_per_counselor": 167,
+  "students_per_nurse": 267,
+  "students_per_psychologist": 800
+ },
+ "01960000": {
+  "students_per_counselor": 175,
+  "students_per_nurse": 175
+ },
+ "01970000": {
+  "students_per_counselor": 165,
+  "students_per_nurse": 413,
+  "students_per_psychologist": 413,
+  "students_per_social_worker": 331,
+  "students_per_librarian": 972
+ },
+ "01980000": {
+  "students_per_counselor": 234,
+  "students_per_nurse": 425,
+  "students_per_psychologist": 348,
+  "students_per_social_worker": 1045,
+  "students_per_librarian": 768
+ },
+ "01990000": {
+  "students_per_counselor": 160,
+  "students_per_nurse": 377,
+  "students_per_psychologist": 904,
+  "students_per_social_worker": 5427,
+  "students_per_librarian": 670
+ },
+ "02010000": {
+  "students_per_counselor": 110,
+  "students_per_nurse": 207,
+  "students_per_psychologist": 1244,
+  "students_per_librarian": 4290
+ },
+ "02040000": {
+  "students_per_counselor": 143,
+  "students_per_nurse": 351,
+  "students_per_psychologist": 701,
+  "students_per_social_worker": 2104,
+  "students_per_librarian": 726
+ },
+ "02070000": {
+  "students_per_counselor": 165,
+  "students_per_nurse": 441,
+  "students_per_psychologist": 327,
+  "students_per_social_worker": 470,
+  "students_per_librarian": 630
+ },
+ "02080000": {
+  "students_per_counselor": 518,
+  "students_per_nurse": 415,
+  "students_per_psychologist": 346
+ },
+ "02090000": {
+  "students_per_counselor": 193,
+  "students_per_nurse": 266,
+  "students_per_psychologist": 1330
+ },
+ "02100000": {
+  "students_per_counselor": 116,
+  "students_per_nurse": 340,
+  "students_per_psychologist": 350,
+  "students_per_librarian": 1985
+ },
+ "02110000": {
+  "students_per_counselor": 217,
+  "students_per_nurse": 346,
+  "students_per_psychologist": 855,
+  "students_per_librarian": 1014
+ },
+ "02120000": {
+  "students_per_counselor": 309,
+  "students_per_nurse": 359,
+  "students_per_psychologist": 471,
+  "students_per_librarian": 754
+ },
+ "02130000": {
+  "students_per_counselor": 269,
+  "students_per_nurse": 289,
+  "students_per_psychologist": 318,
+  "students_per_librarian": 318
+ },
+ "02140000": {
+  "students_per_counselor": 164,
+  "students_per_nurse": 420,
+  "students_per_psychologist": 602
+ },
+ "02150000": {
+  "students_per_counselor": 130,
+  "students_per_nurse": 130,
+  "students_per_psychologist": 778
+ },
+ "02170000": {
+  "students_per_counselor": 467,
+  "students_per_nurse": 425,
+  "students_per_psychologist": 236,
+  "students_per_librarian": 2335
+ },
+ "02180000": {
+  "students_per_counselor": 190,
+  "students_per_nurse": 380,
+  "students_per_psychologist": 759
+ },
+ "02190000": {
+  "students_per_counselor": 278,
+  "students_per_nurse": 543,
+  "students_per_psychologist": 724,
+  "students_per_social_worker": 2172,
+  "students_per_librarian": 2172
+ },
+ "02200000": {
+  "students_per_counselor": 123,
+  "students_per_nurse": 317,
+  "students_per_psychologist": 1164,
+  "students_per_social_worker": 5818,
+  "students_per_librarian": 1126
+ },
+ "02210000": {
+  "students_per_counselor": 150,
+  "students_per_nurse": 390,
+  "students_per_psychologist": 433,
+  "students_per_librarian": 390
+ },
+ "02230000": {
+  "students_per_counselor": 248,
+  "students_per_psychologist": 496
+ },
+ "02240000": {
+  "students_per_counselor": 148,
+  "students_per_nurse": 148,
+  "students_per_psychologist": 148,
+  "students_per_librarian": 370
+ },
+ "02260000": {
+  "students_per_counselor": 142,
+  "students_per_nurse": 237,
+  "students_per_psychologist": 710,
+  "students_per_social_worker": 1420,
+  "students_per_librarian": 1420
+ },
+ "02270000": {
+  "students_per_counselor": 107,
+  "students_per_nurse": 534,
+  "students_per_psychologist": 534
+ },
+ "02290000": {
+  "students_per_counselor": 151,
+  "students_per_psychologist": 798,
+  "students_per_librarian": 5587
+ },
+ "02300000": {
+  "students_per_counselor": 49,
+  "students_per_nurse": 127,
+  "students_per_psychologist": 635
+ },
+ "02310000": {
+  "students_per_counselor": 469,
+  "students_per_nurse": 469,
+  "students_per_psychologist": 586,
+  "students_per_social_worker": 442
+ },
+ "02340000": {
+  "students_per_counselor": 133,
+  "students_per_nurse": 133
+ },
+ "02360000": {
+  "students_per_counselor": 142,
+  "students_per_nurse": 321,
+  "students_per_psychologist": 1232,
+  "students_per_social_worker": 936
+ },
+ "02380000": {
+  "students_per_counselor": 318,
+  "students_per_nurse": 318,
+  "students_per_psychologist": 635
+ },
+ "02390000": {
+  "students_per_counselor": 208,
+  "students_per_nurse": 379,
+  "students_per_psychologist": 541,
+  "students_per_librarian": 2130
+ },
+ "02400000": {
+  "students_per_nurse": 255,
+  "students_per_psychologist": 255,
+  "students_per_librarian": 283
+ },
+ "02420000": {
+  "students_per_counselor": 137,
+  "students_per_nurse": 137
+ },
+ "02430000": {
+  "students_per_counselor": 171,
+  "students_per_nurse": 425,
+  "students_per_psychologist": 842,
+  "students_per_librarian": 4799
+ },
+ "02440000": {
+  "students_per_counselor": 958,
+  "students_per_nurse": 479,
+  "students_per_psychologist": 846,
+  "students_per_social_worker": 221,
+  "students_per_librarian": 2875
+ },
+ "02460000": {
+  "students_per_counselor": 209,
+  "students_per_nurse": 358,
+  "students_per_psychologist": 364,
+  "students_per_social_worker": 772,
+  "students_per_librarian": 489
+ },
+ "02480000": {
+  "students_per_counselor": 166,
+  "students_per_nurse": 495,
+  "students_per_psychologist": 1155,
+  "students_per_social_worker": 866,
+  "students_per_librarian": 6930
+ },
+ "02490000": {
+  "students_per_counselor": 157,
+  "students_per_nurse": 157,
+  "students_per_psychologist": 785
+ },
+ "02500000": {
+  "students_per_counselor": 226,
+  "students_per_nurse": 451,
+  "students_per_social_worker": 451,
+  "students_per_librarian": 451
+ },
+ "02510000": {
+  "students_per_counselor": 190,
+  "students_per_nurse": 462,
+  "students_per_psychologist": 590,
+  "students_per_social_worker": 3540
+ },
+ "02520000": {
+  "students_per_counselor": 130,
+  "students_per_nurse": 311,
+  "students_per_psychologist": 622,
+  "students_per_librarian": 3110
+ },
+ "02530000": {
+  "students_per_nurse": 51,
+  "students_per_librarian": 128
+ },
+ "02580000": {
+  "students_per_counselor": 111,
+  "students_per_nurse": 222,
+  "students_per_psychologist": 694,
+  "students_per_librarian": 1440
+ },
+ "02610000": {
+  "students_per_counselor": 365,
+  "students_per_nurse": 347,
+  "students_per_psychologist": 694,
+  "students_per_social_worker": 378,
+  "students_per_librarian": 1040
+ },
+ "02620000": {
+  "students_per_counselor": 267,
+  "students_per_nurse": 373,
+  "students_per_psychologist": 1867
+ },
+ "02640000": {
+  "students_per_counselor": 267,
+  "students_per_nurse": 389,
+  "students_per_psychologist": 389,
+  "students_per_social_worker": 1363,
+  "students_per_librarian": 3408
+ },
+ "02650000": {
+  "students_per_counselor": 190,
+  "students_per_nurse": 402,
+  "students_per_psychologist": 502,
+  "students_per_librarian": 693
+ },
+ "02660000": {
+  "students_per_counselor": 337,
+  "students_per_nurse": 425,
+  "students_per_psychologist": 523,
+  "students_per_social_worker": 6802,
+  "students_per_librarian": 810
+ },
+ "02690000": {
+  "students_per_counselor": 157,
+  "students_per_nurse": 393,
+  "students_per_psychologist": 393
+ },
+ "02710000": {
+  "students_per_counselor": 183,
+  "students_per_nurse": 440,
+  "students_per_psychologist": 585,
+  "students_per_social_worker": 5847,
+  "students_per_librarian": 1949
+ },
+ "02720000": {
+  "students_per_counselor": 242,
+  "students_per_nurse": 121,
+  "students_per_psychologist": 121
+ },
+ "02730000": {
+  "students_per_counselor": 272,
+  "students_per_nurse": 381,
+  "students_per_psychologist": 508,
+  "students_per_social_worker": 586,
+  "students_per_librarian": 15240
+ },
+ "02740000": {
+  "students_per_counselor": 124,
+  "students_per_nurse": 336,
+  "students_per_psychologist": 1219,
+  "students_per_social_worker": 826,
+  "students_per_librarian": 4876
+ },
+ "02750000": {
+  "students_per_counselor": 472,
+  "students_per_nurse": 315,
+  "students_per_psychologist": 472,
+  "students_per_librarian": 472
+ },
+ "02760000": {
+  "students_per_counselor": 348,
+  "students_per_nurse": 323,
+  "students_per_psychologist": 270,
+  "students_per_librarian": 441
+ },
+ "02770000": {
+  "students_per_counselor": 72,
+  "students_per_nurse": 222,
+  "students_per_psychologist": 444,
+  "students_per_social_worker": 444,
+  "students_per_librarian": 1775
+ },
+ "02780000": {
+  "students_per_counselor": 174,
+  "students_per_nurse": 782,
+  "students_per_psychologist": 782,
+  "students_per_social_worker": 2605,
+  "students_per_librarian": 1302
+ },
+ "02810000": {
+  "students_per_counselor": 151,
+  "students_per_nurse": 380,
+  "students_per_psychologist": 982,
+  "students_per_librarian": 1025
+ },
+ "02840000": {
+  "students_per_counselor": 132,
+  "students_per_nurse": 287,
+  "students_per_psychologist": 574,
+  "students_per_librarian": 2551
+ },
+ "02850000": {
+  "students_per_counselor": 159,
+  "students_per_nurse": 296,
+  "students_per_psychologist": 646,
+  "students_per_librarian": 3551
+ },
+ "02880000": {
+  "students_per_counselor": 249,
+  "students_per_nurse": 352,
+  "students_per_psychologist": 343,
+  "students_per_social_worker": 1268
+ },
+ "02890000": {
+  "students_per_counselor": 173,
+  "students_per_psychologist": 173,
+  "students_per_librarian": 173
+ },
+ "02900000": {
+  "students_per_counselor": 125,
+  "students_per_nurse": 279,
+  "students_per_psychologist": 627,
+  "students_per_librarian": 1568
+ },
+ "02910000": {
+  "students_per_counselor": 239,
+  "students_per_nurse": 521,
+  "students_per_psychologist": 347
+ },
+ "02920000": {
+  "students_per_counselor": 152,
+  "students_per_nurse": 282,
+  "students_per_psychologist": 1973,
+  "students_per_librarian": 1973
+ },
+ "02930000": {
+  "students_per_counselor": 178,
+  "students_per_nurse": 381,
+  "students_per_psychologist": 884,
+  "students_per_social_worker": 504,
+  "students_per_librarian": 1209
+ },
+ "02950000": {
+  "students_per_counselor": 234,
+  "students_per_nurse": 409,
+  "students_per_psychologist": 935,
+  "students_per_librarian": 1636
+ },
+ "02960000": {
+  "students_per_counselor": 120,
+  "students_per_nurse": 288,
+  "students_per_psychologist": 411,
+  "students_per_librarian": 288
+ },
+ "02980000": {
+  "students_per_counselor": 359,
+  "students_per_nurse": 288,
+  "students_per_psychologist": 288
+ },
+ "03000000": {
+  "students_per_counselor": 36,
+  "students_per_nurse": 71,
+  "students_per_psychologist": 237,
+  "students_per_librarian": 71
+ },
+ "03010000": {
+  "students_per_counselor": 286,
+  "students_per_nurse": 386,
+  "students_per_psychologist": 442,
+  "students_per_social_worker": 3092,
+  "students_per_librarian": 3865
+ },
+ "03040000": {
+  "students_per_counselor": 182,
+  "students_per_nurse": 408,
+  "students_per_psychologist": 545,
+  "students_per_social_worker": 1634,
+  "students_per_librarian": 1634
+ },
+ "03050000": {
+  "students_per_counselor": 201,
+  "students_per_nurse": 375,
+  "students_per_psychologist": 483,
+  "students_per_librarian": 1877
+ },
+ "03070000": {
+  "students_per_counselor": 193,
+  "students_per_nurse": 419,
+  "students_per_psychologist": 890,
+  "students_per_social_worker": 890,
+  "students_per_librarian": 3560
+ },
+ "03080000": {
+  "students_per_counselor": 172,
+  "students_per_nurse": 382,
+  "students_per_psychologist": 1273,
+  "students_per_librarian": 616
+ },
+ "03090000": {
+  "students_per_counselor": 213,
+  "students_per_nurse": 266,
+  "students_per_psychologist": 1066,
+  "students_per_social_worker": 1066,
+  "students_per_librarian": 592
+ },
+ "03100000": {
+  "students_per_counselor": 278,
+  "students_per_nurse": 487,
+  "students_per_psychologist": 487,
+  "students_per_social_worker": 453,
+  "students_per_librarian": 1083
+ },
+ "03140000": {
+  "students_per_counselor": 179,
+  "students_per_nurse": 508,
+  "students_per_psychologist": 569,
+  "students_per_social_worker": 406,
+  "students_per_librarian": 1895
+ },
+ "03150000": {
+  "students_per_counselor": 213,
+  "students_per_nurse": 266,
+  "students_per_psychologist": 333,
+  "students_per_librarian": 739
+ },
+ "03160000": {
+  "students_per_counselor": 152,
+  "students_per_nurse": 255,
+  "students_per_psychologist": 868,
+  "students_per_librarian": 1736
+ },
+ "03170000": {
+  "students_per_counselor": 238,
+  "students_per_nurse": 350,
+  "students_per_psychologist": 260,
+  "students_per_social_worker": 409,
+  "students_per_librarian": 523
+ },
+ "03180000": {
+  "students_per_nurse": 82,
+  "students_per_psychologist": 82,
+  "students_per_librarian": 410
+ },
+ "03210000": {
+  "students_per_counselor": 245,
+  "students_per_nurse": 405,
+  "students_per_psychologist": 332,
+  "students_per_social_worker": 1216,
+  "students_per_librarian": 521
+ },
+ "03220000": {
+  "students_per_counselor": 226,
+  "students_per_nurse": 452,
+  "students_per_psychologist": 903,
+  "students_per_librarian": 1806
+ },
+ "03230000": {
+  "students_per_counselor": 283,
+  "students_per_nurse": 340,
+  "students_per_psychologist": 389,
+  "students_per_social_worker": 1360
+ },
+ "03250000": {
+  "students_per_counselor": 171,
+  "students_per_nurse": 355,
+  "students_per_psychologist": 1890,
+  "students_per_librarian": 1575
+ },
+ "03260000": {
+  "students_per_counselor": 181,
+  "students_per_nurse": 347,
+  "students_per_psychologist": 1220,
+  "students_per_social_worker": 2258,
+  "students_per_librarian": 2150
+ },
+ "03270000": {
+  "students_per_counselor": 92,
+  "students_per_nurse": 92,
+  "students_per_psychologist": 460
+ },
+ "03300000": {
+  "students_per_counselor": 107,
+  "students_per_nurse": 297,
+  "students_per_psychologist": 274,
+  "students_per_social_worker": 594,
+  "students_per_librarian": 1386
+ },
+ "03310000": {
+  "students_per_counselor": 201,
+  "students_per_nurse": 378,
+  "students_per_psychologist": 1511,
+  "students_per_librarian": 3022
+ },
+ "03320000": {
+  "students_per_counselor": 142,
+  "students_per_nurse": 320,
+  "students_per_psychologist": 662,
+  "students_per_librarian": 1279
+ },
+ "03350000": {
+  "students_per_counselor": 204,
+  "students_per_nurse": 315,
+  "students_per_psychologist": 355,
+  "students_per_social_worker": 2839,
+  "students_per_librarian": 507
+ },
+ "03360000": {
+  "students_per_counselor": 169,
+  "students_per_nurse": 317,
+  "students_per_librarian": 9498
+ },
+ "03370000": {
+  "students_per_nurse": 141,
+  "students_per_psychologist": 141
+ },
+ "03400000": {
+  "students_per_counselor": 110,
+  "students_per_nurse": 110,
+  "students_per_psychologist": 550
+ },
+ "03420000": {
+  "students_per_counselor": 232,
+  "students_per_nurse": 348,
+  "students_per_psychologist": 556,
+  "students_per_social_worker": 556,
+  "students_per_librarian": 1739
+ },
+ "03430000": {
+  "students_per_counselor": 161,
+  "students_per_nurse": 282,
+  "students_per_psychologist": 1127,
+  "students_per_librarian": 2254
+ },
+ "03440000": {
+  "students_per_counselor": 254,
+  "students_per_nurse": 430,
+  "students_per_psychologist": 362,
+  "students_per_social_worker": 4341,
+  "students_per_librarian": 620
+ },
+ "03460000": {
+  "students_per_counselor": 178,
+  "students_per_nurse": 327,
+  "students_per_psychologist": 1960
+ },
+ "03470000": {
+  "students_per_counselor": 180,
+  "students_per_nurse": 233,
+  "students_per_psychologist": 433,
+  "students_per_social_worker": 1082,
+  "students_per_librarian": 4327
+ },
+ "03480000": {
+  "students_per_counselor": 177,
+  "students_per_nurse": 285,
+  "students_per_psychologist": 804,
+  "students_per_librarian": 2903
+ },
+ "03490000": {
+  "students_per_nurse": 122
+ },
+ "03500000": {
+  "students_per_counselor": 245,
+  "students_per_nurse": 327,
+  "students_per_psychologist": 490
+ },
+ "06000000": {
+  "students_per_counselor": 228,
+  "students_per_nurse": 463,
+  "students_per_psychologist": 327,
+  "students_per_librarian": 1001
+ },
+ "06030000": {
+  "students_per_counselor": 248,
+  "students_per_nurse": 248,
+  "students_per_psychologist": 992
+ },
+ "06100000": {
+  "students_per_counselor": 206,
+  "students_per_nurse": 317,
+  "students_per_psychologist": 1110,
+  "students_per_social_worker": 2220,
+  "students_per_librarian": 2220
+ },
+ "06150000": {
+  "students_per_counselor": 142,
+  "students_per_nurse": 784,
+  "students_per_psychologist": 1567
+ },
+ "06160000": {
+  "students_per_counselor": 127,
+  "students_per_nurse": 414,
+  "students_per_psychologist": 1104
+ },
+ "06180000": {
+  "students_per_counselor": 121,
+  "students_per_nurse": 362,
+  "students_per_psychologist": 1086,
+  "students_per_social_worker": 1086,
+  "students_per_librarian": 543
+ },
+ "06200000": {
+  "students_per_counselor": 222,
+  "students_per_nurse": 336,
+  "students_per_psychologist": 370,
+  "students_per_librarian": 2220
+ },
+ "06220000": {
+  "students_per_counselor": 175,
+  "students_per_nurse": 473,
+  "students_per_psychologist": 709
+ },
+ "06250000": {
+  "students_per_counselor": 302,
+  "students_per_nurse": 369,
+  "students_per_psychologist": 546,
+  "students_per_librarian": 5458
+ },
+ "06320000": {
+  "students_per_counselor": 128,
+  "students_per_nurse": 128,
+  "students_per_psychologist": 640
+ },
+ "06350000": {
+  "students_per_counselor": 140,
+  "students_per_nurse": 312,
+  "students_per_psychologist": 765,
+  "students_per_librarian": 1530
+ },
+ "06450000": {
+  "students_per_counselor": 242,
+  "students_per_nurse": 415,
+  "students_per_psychologist": 968,
+  "students_per_social_worker": 528,
+  "students_per_librarian": 1452
+ },
+ "06500000": {
+  "students_per_counselor": 229,
+  "students_per_nurse": 505,
+  "students_per_psychologist": 505
+ },
+ "06550000": {
+  "students_per_counselor": 98,
+  "students_per_nurse": 447,
+  "students_per_psychologist": 268,
+  "students_per_librarian": 670
+ },
+ "06580000": {
+  "students_per_counselor": 204,
+  "students_per_nurse": 342,
+  "students_per_psychologist": 856,
+  "students_per_librarian": 4281
+ },
+ "06620000": {
+  "students_per_counselor": 105,
+  "students_per_nurse": 105
+ },
+ "06650000": {
+  "students_per_counselor": 173,
+  "students_per_nurse": 432,
+  "students_per_psychologist": 647,
+  "students_per_librarian": 647
+ },
+ "06720000": {
+  "students_per_counselor": 104,
+  "students_per_nurse": 144,
+  "students_per_psychologist": 721,
+  "students_per_librarian": 1442
+ },
+ "06730000": {
+  "students_per_counselor": 188,
+  "students_per_nurse": 322,
+  "students_per_psychologist": 751,
+  "students_per_librarian": 1502
+ },
+ "06740000": {
+  "students_per_counselor": 106,
+  "students_per_nurse": 280,
+  "students_per_psychologist": 420,
+  "students_per_social_worker": 1678,
+  "students_per_librarian": 932
+ },
+ "06750000": {
+  "students_per_counselor": 155,
+  "students_per_nurse": 341,
+  "students_per_psychologist": 853,
+  "students_per_librarian": 1706
+ },
+ "06800000": {
+  "students_per_counselor": 175,
+  "students_per_nurse": 240,
+  "students_per_psychologist": 473,
+  "students_per_librarian": 3545
+ },
+ "06850000": {
+  "students_per_counselor": 73,
+  "students_per_nurse": 73,
+  "students_per_librarian": 365
+ },
+ "06980000": {
+  "students_per_counselor": 168,
+  "students_per_nurse": 385,
+  "students_per_psychologist": 578,
+  "students_per_librarian": 2312
+ },
+ "07100000": {
+  "students_per_counselor": 189,
+  "students_per_nurse": 291,
+  "students_per_psychologist": 1699,
+  "students_per_social_worker": 2039,
+  "students_per_librarian": 2039
+ },
+ "07120000": {
+  "students_per_counselor": 144,
+  "students_per_nurse": 401,
+  "students_per_psychologist": 685,
+  "students_per_social_worker": 1827,
+  "students_per_librarian": 822
+ },
+ "07150000": {
+  "students_per_counselor": 340,
+  "students_per_nurse": 385,
+  "students_per_psychologist": 771,
+  "students_per_social_worker": 289,
+  "students_per_librarian": 1156
+ },
+ "07170000": {
+  "students_per_counselor": 72,
+  "students_per_nurse": 149,
+  "students_per_psychologist": 380,
+  "students_per_librarian": 211
+ },
+ "07200000": {
+  "students_per_counselor": 220,
+  "students_per_nurse": 341,
+  "students_per_psychologist": 455
+ },
+ "07250000": {
+  "students_per_counselor": 186,
+  "students_per_nurse": 346,
+  "students_per_psychologist": 310,
+  "students_per_social_worker": 583,
+  "students_per_librarian": 991
+ },
+ "07280000": {
+  "students_per_counselor": 140,
+  "students_per_nurse": 127,
+  "students_per_librarian": 140
+ },
+ "07350000": {
+  "students_per_counselor": 197,
+  "students_per_nurse": 321,
+  "students_per_psychologist": 691,
+  "students_per_librarian": 2764
+ },
+ "07450000": {
+  "students_per_counselor": 194,
+  "students_per_nurse": 286,
+  "students_per_psychologist": 508,
+  "students_per_librarian": 2539
+ },
+ "07500000": {
+  "students_per_counselor": 165,
+  "students_per_nurse": 147,
+  "students_per_psychologist": 160,
+  "students_per_social_worker": 560,
+  "students_per_librarian": 1120
+ },
+ "07530000": {
+  "students_per_counselor": 213,
+  "students_per_nurse": 304,
+  "students_per_psychologist": 1119,
+  "students_per_social_worker": 354,
+  "students_per_librarian": 2126
+ },
+ "07650000": {
+  "students_per_counselor": 148,
+  "students_per_nurse": 296,
+  "students_per_psychologist": 296,
+  "students_per_librarian": 395
+ },
+ "07660000": {
+  "students_per_counselor": 139,
+  "students_per_nurse": 312,
+  "students_per_psychologist": 625,
+  "students_per_librarian": 2500
+ },
+ "07670000": {
+  "students_per_counselor": 160,
+  "students_per_nurse": 289,
+  "students_per_psychologist": 802
+ },
+ "07700000": {
+  "students_per_counselor": 133,
+  "students_per_nurse": 831,
+  "students_per_psychologist": 831
+ },
+ "07730000": {
+  "students_per_counselor": 208,
+  "students_per_nurse": 415,
+  "students_per_psychologist": 1038,
+  "students_per_social_worker": 346,
+  "students_per_librarian": 2076
+ },
+ "07740000": {
+  "students_per_counselor": 194,
+  "students_per_nurse": 204,
+  "students_per_psychologist": 510,
+  "students_per_librarian": 408
+ },
+ "07750000": {
+  "students_per_counselor": 258,
+  "students_per_nurse": 402,
+  "students_per_psychologist": 624,
+  "students_per_social_worker": 3214,
+  "students_per_librarian": 7141
+ },
+ "07780000": {
+  "students_per_counselor": 186,
+  "students_per_nurse": 398,
+  "students_per_psychologist": 1113,
+  "students_per_social_worker": 1113
+ },
+ "07800000": {
+  "students_per_counselor": 214,
+  "students_per_nurse": 489,
+  "students_per_psychologist": 489,
+  "students_per_librarian": 17115
+ },
+ "06400000": {
+  "students_per_counselor": 121,
+  "students_per_nurse": 574,
+  "students_per_psychologist": 287,
+  "students_per_librarian": 1148
+ },
+ "06600000": {
+  "students_per_counselor": 106,
+  "students_per_nurse": 318,
+  "students_per_psychologist": 573,
+  "students_per_librarian": 716
+ },
+ "06900000": {
+  "students_per_counselor": 132,
+  "students_per_nurse": 1181,
+  "students_per_psychologist": 443,
+  "students_per_librarian": 1968
+ },
+ "06950000": {
+  "students_per_counselor": 100,
+  "students_per_nurse": 679,
+  "students_per_psychologist": 453,
+  "students_per_librarian": 754
+ },
+ "07050000": {
+  "students_per_counselor": 115,
+  "students_per_nurse": 748,
+  "students_per_psychologist": 748,
+  "students_per_social_worker": 1497,
+  "students_per_librarian": 1497
+ },
+ "07300000": {
+  "students_per_counselor": 111,
+  "students_per_nurse": 602,
+  "students_per_psychologist": 669,
+  "students_per_librarian": 1204
+ },
+ "07630000": {
+  "students_per_counselor": 149,
+  "students_per_nurse": 896,
+  "students_per_psychologist": 896,
+  "students_per_librarian": 1120
+ }
+}

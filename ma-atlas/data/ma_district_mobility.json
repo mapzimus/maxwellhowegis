@@ -1,0 +1,1126 @@
+{
+ "02420000": {
+  "mobility_kfr_p25": 43.63,
+  "mobility_jail_p25": 0.01
+ },
+ "03180000": {
+  "mobility_kfr_p25": 45.12,
+  "mobility_jail_p25": 0.0
+ },
+ "03000000": {
+  "mobility_kfr_p25": 53.21,
+  "mobility_jail_p25": 0.0
+ },
+ "00850000": {
+  "mobility_kfr_p25": 45.86,
+  "mobility_jail_p25": 0.0
+ },
+ "02240000": {
+  "mobility_kfr_p25": 48.65,
+  "mobility_jail_p25": 0.0
+ },
+ "07120000": {
+  "mobility_kfr_p25": 45.99,
+  "mobility_jail_p25": 0.01
+ },
+ "00410000": {
+  "mobility_kfr_p25": 51.3,
+  "mobility_jail_p25": 0.0
+ },
+ "06450000": {
+  "mobility_kfr_p25": 43.24,
+  "mobility_jail_p25": 0.02
+ },
+ "00200000": {
+  "mobility_kfr_p25": 46.16,
+  "mobility_jail_p25": 0.01
+ },
+ "02610000": {
+  "mobility_kfr_p25": 50.87,
+  "mobility_jail_p25": 0.01
+ },
+ "00360000": {
+  "mobility_kfr_p25": 42.84,
+  "mobility_jail_p25": 0.02
+ },
+ "00960000": {
+  "mobility_kfr_p25": 45.03,
+  "mobility_jail_p25": 0.02
+ },
+ "01720000": {
+  "mobility_kfr_p25": 44.33,
+  "mobility_jail_p25": 0.02
+ },
+ "02360000": {
+  "mobility_kfr_p25": 40.61,
+  "mobility_jail_p25": 0.02
+ },
+ "07150000": {
+  "mobility_kfr_p25": 48.09,
+  "mobility_jail_p25": 0.0
+ },
+ "06350000": {
+  "mobility_kfr_p25": 40.05,
+  "mobility_jail_p25": 0.04
+ },
+ "01520000": {
+  "mobility_kfr_p25": 52.0,
+  "mobility_jail_p25": 0.0
+ },
+ "01500000": {
+  "mobility_kfr_p25": 45.73,
+  "mobility_jail_p25": 0.02
+ },
+ "02090000": {
+  "mobility_kfr_p25": 39.48,
+  "mobility_jail_p25": 0.01
+ },
+ "06030000": {
+  "mobility_kfr_p25": 41.48,
+  "mobility_jail_p25": 0.02
+ },
+ "06180000": {
+  "mobility_kfr_p25": 48.83,
+  "mobility_jail_p25": 0.06
+ },
+ "07650000": {
+  "mobility_kfr_p25": 40.26,
+  "mobility_jail_p25": 0.04
+ },
+ "00630000": {
+  "mobility_kfr_p25": 41.13,
+  "mobility_jail_p25": 0.06
+ },
+ "02630000": {
+  "mobility_kfr_p25": 45.23,
+  "mobility_jail_p25": 0.0
+ },
+ "06620000": {
+  "mobility_kfr_p25": 39.77,
+  "mobility_jail_p25": 0.0
+ },
+ "01210000": {
+  "mobility_kfr_p25": 46.39,
+  "mobility_jail_p25": 0.0
+ },
+ "00880000": {
+  "mobility_kfr_p25": 52.16,
+  "mobility_jail_p25": 0.01
+ },
+ "01670000": {
+  "mobility_kfr_p25": 48.65,
+  "mobility_jail_p25": 0.01
+ },
+ "02180000": {
+  "mobility_kfr_p25": 42.91,
+  "mobility_jail_p25": 0.01
+ },
+ "06250000": {
+  "mobility_kfr_p25": 50.25,
+  "mobility_jail_p25": 0.0
+ },
+ "02930000": {
+  "mobility_kfr_p25": 42.09,
+  "mobility_jail_p25": 0.02
+ },
+ "06500000": {
+  "mobility_kfr_p25": 46.69,
+  "mobility_jail_p25": 0.01
+ },
+ "00270000": {
+  "mobility_kfr_p25": 40.79,
+  "mobility_jail_p25": 0.01
+ },
+ "06650000": {
+  "mobility_kfr_p25": 48.65,
+  "mobility_jail_p25": 0.0
+ },
+ "02120000": {
+  "mobility_kfr_p25": 47.12,
+  "mobility_jail_p25": 0.01
+ },
+ "00160000": {
+  "mobility_kfr_p25": 44.31,
+  "mobility_jail_p25": 0.01
+ },
+ "02650000": {
+  "mobility_kfr_p25": 49.76,
+  "mobility_jail_p25": 0.0
+ },
+ "00950000": {
+  "mobility_kfr_p25": 41.27,
+  "mobility_jail_p25": 0.01
+ },
+ "02730000": {
+  "mobility_kfr_p25": 42.24,
+  "mobility_jail_p25": 0.01
+ },
+ "02920000": {
+  "mobility_kfr_p25": 47.69,
+  "mobility_jail_p25": 0.0
+ },
+ "03310000": {
+  "mobility_kfr_p25": 45.43,
+  "mobility_jail_p25": 0.01
+ },
+ "02010000": {
+  "mobility_kfr_p25": 41.46,
+  "mobility_jail_p25": 0.01
+ },
+ "00720000": {
+  "mobility_kfr_p25": 48.66,
+  "mobility_jail_p25": 0.01
+ },
+ "00030000": {
+  "mobility_kfr_p25": 43.52,
+  "mobility_jail_p25": 0.0
+ },
+ "00940000": {
+  "mobility_kfr_p25": 45.14,
+  "mobility_jail_p25": 0.01
+ },
+ "02960000": {
+  "mobility_kfr_p25": 49.36,
+  "mobility_jail_p25": 0.05
+ },
+ "02210000": {
+  "mobility_kfr_p25": 43.38,
+  "mobility_jail_p25": 0.01
+ },
+ "00890000": {
+  "mobility_kfr_p25": 50.65,
+  "mobility_jail_p25": 0.02
+ },
+ "07740000": {
+  "mobility_kfr_p25": 42.17,
+  "mobility_jail_p25": 0.03
+ },
+ "01960000": {
+  "mobility_kfr_p25": 49.16,
+  "mobility_jail_p25": 0.01
+ },
+ "02910000": {
+  "mobility_kfr_p25": 54.66,
+  "mobility_jail_p25": 0.01
+ },
+ "01680000": {
+  "mobility_kfr_p25": 53.66,
+  "mobility_jail_p25": 0.01
+ },
+ "02580000": {
+  "mobility_kfr_p25": 44.89,
+  "mobility_jail_p25": 0.01
+ },
+ "01630000": {
+  "mobility_kfr_p25": 41.47,
+  "mobility_jail_p25": 0.02
+ },
+ "02620000": {
+  "mobility_kfr_p25": 46.89,
+  "mobility_jail_p25": 0.02
+ },
+ "01640000": {
+  "mobility_kfr_p25": 54.7,
+  "mobility_jail_p25": 0.0
+ },
+ "02290000": {
+  "mobility_kfr_p25": 47.57,
+  "mobility_jail_p25": 0.01
+ },
+ "00710000": {
+  "mobility_kfr_p25": 47.73,
+  "mobility_jail_p25": 0.0
+ },
+ "00380000": {
+  "mobility_kfr_p25": 50.99,
+  "mobility_jail_p25": 0.01
+ },
+ "02980000": {
+  "mobility_kfr_p25": 56.77,
+  "mobility_jail_p25": 0.0
+ },
+ "06750000": {
+  "mobility_kfr_p25": 53.11,
+  "mobility_jail_p25": 0.0
+ },
+ "00300000": {
+  "mobility_kfr_p25": 47.97,
+  "mobility_jail_p25": 0.01
+ },
+ "06980000": {
+  "mobility_kfr_p25": 53.1,
+  "mobility_jail_p25": 0.01
+ },
+ "02520000": {
+  "mobility_kfr_p25": 48.95,
+  "mobility_jail_p25": 0.01
+ },
+ "01070000": {
+  "mobility_kfr_p25": 48.41,
+  "mobility_jail_p25": 0.01
+ },
+ "01440000": {
+  "mobility_kfr_p25": 46.16,
+  "mobility_jail_p25": 0.01
+ },
+ "01490000": {
+  "mobility_kfr_p25": 39.97,
+  "mobility_jail_p25": 0.02
+ },
+ "01810000": {
+  "mobility_kfr_p25": 47.96,
+  "mobility_jail_p25": 0.02
+ },
+ "02110000": {
+  "mobility_kfr_p25": 53.26,
+  "mobility_jail_p25": 0.01
+ },
+ "00090000": {
+  "mobility_kfr_p25": 53.88,
+  "mobility_jail_p25": 0.01
+ },
+ "01280000": {
+  "mobility_kfr_p25": 44.56,
+  "mobility_jail_p25": 0.02
+ },
+ "07450000": {
+  "mobility_kfr_p25": 50.42,
+  "mobility_jail_p25": 0.02
+ },
+ "01050000": {
+  "mobility_kfr_p25": 50.59,
+  "mobility_jail_p25": 0.02
+ },
+ "00070000": {
+  "mobility_kfr_p25": 46.21,
+  "mobility_jail_p25": 0.02
+ },
+ "07730000": {
+  "mobility_kfr_p25": 44.65,
+  "mobility_jail_p25": 0.01
+ },
+ "02040000": {
+  "mobility_kfr_p25": 49.2,
+  "mobility_jail_p25": 0.02
+ },
+ "07170000": {
+  "mobility_kfr_p25": 44.93,
+  "mobility_jail_p25": 0.01
+ },
+ "07500000": {
+  "mobility_kfr_p25": 45.96,
+  "mobility_jail_p25": 0.0
+ },
+ "00910000": {
+  "mobility_kfr_p25": 46.24,
+  "mobility_jail_p25": 0.01
+ },
+ "02230000": {
+  "mobility_kfr_p25": 39.65,
+  "mobility_jail_p25": 0.01
+ },
+ "02720000": {
+  "mobility_kfr_p25": 49.58,
+  "mobility_jail_p25": 0.0
+ },
+ "06740000": {
+  "mobility_kfr_p25": 40.84,
+  "mobility_jail_p25": 0.01
+ },
+ "03370000": {
+  "mobility_kfr_p25": 50.25,
+  "mobility_jail_p25": 0.02
+ },
+ "00740000": {
+  "mobility_kfr_p25": 46.12,
+  "mobility_jail_p25": 0.03
+ },
+ "01140000": {
+  "mobility_kfr_p25": 42.47,
+  "mobility_jail_p25": 0.0
+ },
+ "02810000": {
+  "mobility_kfr_p25": 37.85,
+  "mobility_jail_p25": 0.02
+ },
+ "02270000": {
+  "mobility_kfr_p25": 43.03,
+  "mobility_jail_p25": 0.0
+ },
+ "01610000": {
+  "mobility_kfr_p25": 44.72,
+  "mobility_jail_p25": 0.01
+ },
+ "00610000": {
+  "mobility_kfr_p25": 42.31,
+  "mobility_jail_p25": 0.02
+ },
+ "01370000": {
+  "mobility_kfr_p25": 36.63,
+  "mobility_jail_p25": 0.02
+ },
+ "03320000": {
+  "mobility_kfr_p25": 44.32,
+  "mobility_jail_p25": 0.01
+ },
+ "03250000": {
+  "mobility_kfr_p25": 43.82,
+  "mobility_jail_p25": 0.01
+ },
+ "07660000": {
+  "mobility_kfr_p25": 43.72,
+  "mobility_jail_p25": 0.0
+ },
+ "00050000": {
+  "mobility_kfr_p25": 47.84,
+  "mobility_jail_p25": 0.01
+ },
+ "01590000": {
+  "mobility_kfr_p25": 57.02,
+  "mobility_jail_p25": 0.02
+ },
+ "00870000": {
+  "mobility_kfr_p25": 48.28,
+  "mobility_jail_p25": 0.0
+ },
+ "06800000": {
+  "mobility_kfr_p25": 48.61,
+  "mobility_jail_p25": 0.01
+ },
+ "01910000": {
+  "mobility_kfr_p25": 39.75,
+  "mobility_jail_p25": 0.01
+ },
+ "03060000": {
+  "mobility_kfr_p25": 45.54,
+  "mobility_jail_p25": 0.0
+ },
+ "00430000": {
+  "mobility_kfr_p25": 49.26,
+  "mobility_jail_p25": 0.02
+ },
+ "03090000": {
+  "mobility_kfr_p25": 39.54,
+  "mobility_jail_p25": 0.01
+ },
+ "00080000": {
+  "mobility_kfr_p25": 47.3,
+  "mobility_jail_p25": 0.01
+ },
+ "01110000": {
+  "mobility_kfr_p25": 46.95,
+  "mobility_jail_p25": 0.0
+ },
+ "02780000": {
+  "mobility_kfr_p25": 50.39,
+  "mobility_jail_p25": 0.0
+ },
+ "01170000": {
+  "mobility_kfr_p25": 46.61,
+  "mobility_jail_p25": 0.02
+ },
+ "01270000": {
+  "mobility_kfr_p25": 49.32,
+  "mobility_jail_p25": 0.01
+ },
+ "02100000": {
+  "mobility_kfr_p25": 44.38,
+  "mobility_jail_p25": 0.02
+ },
+ "00860000": {
+  "mobility_kfr_p25": 40.5,
+  "mobility_jail_p25": 0.01
+ },
+ "02750000": {
+  "mobility_kfr_p25": 49.49,
+  "mobility_jail_p25": 0.0
+ },
+ "06720000": {
+  "mobility_kfr_p25": 43.62,
+  "mobility_jail_p25": 0.0
+ },
+ "03270000": {
+  "mobility_kfr_p25": 46.84,
+  "mobility_jail_p25": 0.02
+ },
+ "03490000": {
+  "mobility_kfr_p25": 47.75,
+  "mobility_jail_p25": 0.02
+ },
+ "07350000": {
+  "mobility_kfr_p25": 49.52,
+  "mobility_jail_p25": 0.0
+ },
+ "01600000": {
+  "mobility_kfr_p25": 44.57,
+  "mobility_jail_p25": 0.01
+ },
+ "03010000": {
+  "mobility_kfr_p25": 46.66,
+  "mobility_jail_p25": 0.0
+ },
+ "00790000": {
+  "mobility_kfr_p25": 47.14,
+  "mobility_jail_p25": 0.01
+ },
+ "02950000": {
+  "mobility_kfr_p25": 45.25,
+  "mobility_jail_p25": 0.0
+ },
+ "00310000": {
+  "mobility_kfr_p25": 49.42,
+  "mobility_jail_p25": 0.01
+ },
+ "00560000": {
+  "mobility_kfr_p25": 52.21,
+  "mobility_jail_p25": 0.0
+ },
+ "03260000": {
+  "mobility_kfr_p25": 51.53,
+  "mobility_jail_p25": 0.0
+ },
+ "01390000": {
+  "mobility_kfr_p25": 46.95,
+  "mobility_jail_p25": 0.0
+ },
+ "01700000": {
+  "mobility_kfr_p25": 47.99,
+  "mobility_jail_p25": 0.01
+ },
+ "01410000": {
+  "mobility_kfr_p25": 50.11,
+  "mobility_jail_p25": 0.0
+ },
+ "01580000": {
+  "mobility_kfr_p25": 45.97,
+  "mobility_jail_p25": 0.01
+ },
+ "06730000": {
+  "mobility_kfr_p25": 44.14,
+  "mobility_jail_p25": 0.0
+ },
+ "03420000": {
+  "mobility_kfr_p25": 52.36,
+  "mobility_jail_p25": 0.01
+ },
+ "00480000": {
+  "mobility_kfr_p25": 55.62,
+  "mobility_jail_p25": 0.01
+ },
+ "03470000": {
+  "mobility_kfr_p25": 48.51,
+  "mobility_jail_p25": 0.01
+ },
+ "02460000": {
+  "mobility_kfr_p25": 53.95,
+  "mobility_jail_p25": 0.01
+ },
+ "03050000": {
+  "mobility_kfr_p25": 52.79,
+  "mobility_jail_p25": 0.0
+ },
+ "01780000": {
+  "mobility_kfr_p25": 51.76,
+  "mobility_jail_p25": 0.01
+ },
+ "02840000": {
+  "mobility_kfr_p25": 48.88,
+  "mobility_jail_p25": 0.01
+ },
+ "03440000": {
+  "mobility_kfr_p25": 52.08,
+  "mobility_jail_p25": 0.01
+ },
+ "01760000": {
+  "mobility_kfr_p25": 46.34,
+  "mobility_jail_p25": 0.01
+ },
+ "01650000": {
+  "mobility_kfr_p25": 50.18,
+  "mobility_jail_p25": 0.0
+ },
+ "00930000": {
+  "mobility_kfr_p25": 46.01,
+  "mobility_jail_p25": 0.01
+ },
+ "02740000": {
+  "mobility_kfr_p25": 47.32,
+  "mobility_jail_p25": 0.01
+ },
+ "00490000": {
+  "mobility_kfr_p25": 43.98,
+  "mobility_jail_p25": 0.02
+ },
+ "00100000": {
+  "mobility_kfr_p25": 49.97,
+  "mobility_jail_p25": 0.01
+ },
+ "00260000": {
+  "mobility_kfr_p25": 59.36,
+  "mobility_jail_p25": 0.0
+ },
+ "01550000": {
+  "mobility_kfr_p25": 55.86,
+  "mobility_jail_p25": 0.01
+ },
+ "00230000": {
+  "mobility_kfr_p25": 56.78,
+  "mobility_jail_p25": 0.01
+ },
+ "00670000": {
+  "mobility_kfr_p25": 56.47,
+  "mobility_jail_p25": 0.0
+ },
+ "00510000": {
+  "mobility_kfr_p25": 49.48,
+  "mobility_jail_p25": 0.0
+ },
+ "06000000": {
+  "mobility_kfr_p25": 49.08,
+  "mobility_jail_p25": 0.0
+ },
+ "01740000": {
+  "mobility_kfr_p25": 44.24,
+  "mobility_jail_p25": 0.01
+ },
+ "02880000": {
+  "mobility_kfr_p25": 52.42,
+  "mobility_jail_p25": 0.0
+ },
+ "03150000": {
+  "mobility_kfr_p25": 44.93,
+  "mobility_jail_p25": 0.0
+ },
+ "03300000": {
+  "mobility_kfr_p25": 61.09,
+  "mobility_jail_p25": 0.0
+ },
+ "03080000": {
+  "mobility_kfr_p25": 50.4,
+  "mobility_jail_p25": 0.0
+ },
+ "03140000": {
+  "mobility_kfr_p25": 54.59,
+  "mobility_jail_p25": 0.01
+ },
+ "02070000": {
+  "mobility_kfr_p25": 54.72,
+  "mobility_jail_p25": 0.01
+ },
+ "01980000": {
+  "mobility_kfr_p25": 52.82,
+  "mobility_jail_p25": 0.0
+ },
+ "01000000": {
+  "mobility_kfr_p25": 47.42,
+  "mobility_jail_p25": 0.02
+ },
+ "00140000": {
+  "mobility_kfr_p25": 48.47,
+  "mobility_jail_p25": 0.01
+ },
+ "02690000": {
+  "mobility_kfr_p25": 59.07,
+  "mobility_jail_p25": 0.01
+ },
+ "01360000": {
+  "mobility_kfr_p25": 50.06,
+  "mobility_jail_p25": 0.0
+ },
+ "06160000": {
+  "mobility_kfr_p25": 46.36,
+  "mobility_jail_p25": 0.0
+ },
+ "01970000": {
+  "mobility_kfr_p25": 49.51,
+  "mobility_jail_p25": 0.04
+ },
+ "00460000": {
+  "mobility_kfr_p25": 52.18,
+  "mobility_jail_p25": 0.0
+ },
+ "00730000": {
+  "mobility_kfr_p25": 51.43,
+  "mobility_jail_p25": 0.01
+ },
+ "01990000": {
+  "mobility_kfr_p25": 63.53,
+  "mobility_jail_p25": 0.0
+ },
+ "03170000": {
+  "mobility_kfr_p25": 54.51,
+  "mobility_jail_p25": 0.01
+ },
+ "06550000": {
+  "mobility_kfr_p25": 52.43,
+  "mobility_jail_p25": 0.01
+ },
+ "01750000": {
+  "mobility_kfr_p25": 59.82,
+  "mobility_jail_p25": 0.01
+ },
+ "01770000": {
+  "mobility_kfr_p25": 55.39,
+  "mobility_jail_p25": 0.0
+ },
+ "02080000": {
+  "mobility_kfr_p25": 50.43,
+  "mobility_jail_p25": 0.01
+ },
+ "00990000": {
+  "mobility_kfr_p25": 47.59,
+  "mobility_jail_p25": 0.01
+ },
+ "03070000": {
+  "mobility_kfr_p25": 54.09,
+  "mobility_jail_p25": 0.02
+ },
+ "03350000": {
+  "mobility_kfr_p25": 54.96,
+  "mobility_jail_p25": 0.0
+ },
+ "02200000": {
+  "mobility_kfr_p25": 51.51,
+  "mobility_jail_p25": 0.02
+ },
+ "02660000": {
+  "mobility_kfr_p25": 58.34,
+  "mobility_jail_p25": 0.0
+ },
+ "00500000": {
+  "mobility_kfr_p25": 48.08,
+  "mobility_jail_p25": 0.0
+ },
+ "01890000": {
+  "mobility_kfr_p25": 59.42,
+  "mobility_jail_p25": 0.0
+ },
+ "02430000": {
+  "mobility_kfr_p25": 51.52,
+  "mobility_jail_p25": 0.01
+ },
+ "00400000": {
+  "mobility_kfr_p25": 52.79,
+  "mobility_jail_p25": 0.01
+ },
+ "02440000": {
+  "mobility_kfr_p25": 47.87,
+  "mobility_jail_p25": 0.01
+ },
+ "01330000": {
+  "mobility_kfr_p25": 47.57,
+  "mobility_jail_p25": 0.01
+ },
+ "03360000": {
+  "mobility_kfr_p25": 47.71,
+  "mobility_jail_p25": 0.01
+ },
+ "03500000": {
+  "mobility_kfr_p25": 54.28,
+  "mobility_jail_p25": 0.0
+ },
+ "01010000": {
+  "mobility_kfr_p25": 55.23,
+  "mobility_jail_p25": 0.0
+ },
+ "02850000": {
+  "mobility_kfr_p25": 47.64,
+  "mobility_jail_p25": 0.0
+ },
+ "00180000": {
+  "mobility_kfr_p25": 51.45,
+  "mobility_jail_p25": 0.01
+ },
+ "01420000": {
+  "mobility_kfr_p25": 49.48,
+  "mobility_jail_p25": 0.01
+ },
+ "01310000": {
+  "mobility_kfr_p25": 50.42,
+  "mobility_jail_p25": 0.02
+ },
+ "02510000": {
+  "mobility_kfr_p25": 44.39,
+  "mobility_jail_p25": 0.01
+ },
+ "01220000": {
+  "mobility_kfr_p25": 54.06,
+  "mobility_jail_p25": 0.0
+ },
+ "02190000": {
+  "mobility_kfr_p25": 52.34,
+  "mobility_jail_p25": 0.0
+ },
+ "02640000": {
+  "mobility_kfr_p25": 51.23,
+  "mobility_jail_p25": 0.02
+ },
+ "01710000": {
+  "mobility_kfr_p25": 54.89,
+  "mobility_jail_p25": 0.02
+ },
+ "00820000": {
+  "mobility_kfr_p25": 55.89,
+  "mobility_jail_p25": 0.01
+ },
+ "02310000": {
+  "mobility_kfr_p25": 50.58,
+  "mobility_jail_p25": 0.0
+ },
+ "01450000": {
+  "mobility_kfr_p25": 48.5,
+  "mobility_jail_p25": 0.01
+ },
+ "00440000": {
+  "mobility_kfr_p25": 40.27,
+  "mobility_jail_p25": 0.02
+ },
+ "00010000": {
+  "mobility_kfr_p25": 52.67,
+  "mobility_jail_p25": 0.0
+ },
+ "07800000": {
+  "mobility_kfr_p25": 47.0,
+  "mobility_jail_p25": 0.0
+ },
+ "00830000": {
+  "mobility_kfr_p25": 44.82,
+  "mobility_jail_p25": 0.02
+ },
+ "03230000": {
+  "mobility_kfr_p25": 46.24,
+  "mobility_jail_p25": 0.0
+ },
+ "01180000": {
+  "mobility_kfr_p25": 43.26,
+  "mobility_jail_p25": 0.0
+ },
+ "02390000": {
+  "mobility_kfr_p25": 44.58,
+  "mobility_jail_p25": 0.0
+ },
+ "02500000": {
+  "mobility_kfr_p25": 47.18,
+  "mobility_jail_p25": 0.01
+ },
+ "01820000": {
+  "mobility_kfr_p25": 46.91,
+  "mobility_jail_p25": 0.01
+ },
+ "02400000": {
+  "mobility_kfr_p25": 49.15,
+  "mobility_jail_p25": 0.03
+ },
+ "00520000": {
+  "mobility_kfr_p25": 41.55,
+  "mobility_jail_p25": 0.01
+ },
+ "03100000": {
+  "mobility_kfr_p25": 42.65,
+  "mobility_jail_p25": 0.02
+ },
+ "01730000": {
+  "mobility_kfr_p25": 47.56,
+  "mobility_jail_p25": 0.02
+ },
+ "00350000": {
+  "mobility_kfr_p25": 42.57,
+  "mobility_jail_p25": 0.02
+ },
+ "00570000": {
+  "mobility_kfr_p25": 43.76,
+  "mobility_jail_p25": 0.01
+ },
+ "02480000": {
+  "mobility_kfr_p25": 46.61,
+  "mobility_jail_p25": 0.02
+ },
+ "03460000": {
+  "mobility_kfr_p25": 49.93,
+  "mobility_jail_p25": 0.0
+ },
+ "06100000": {
+  "mobility_kfr_p25": 46.8,
+  "mobility_jail_p25": 0.01
+ },
+ "06150000": {
+  "mobility_kfr_p25": 41.24,
+  "mobility_jail_p25": 0.01
+ },
+ "07530000": {
+  "mobility_kfr_p25": 43.74,
+  "mobility_jail_p25": 0.0
+ },
+ "01030000": {
+  "mobility_kfr_p25": 41.92,
+  "mobility_jail_p25": 0.02
+ },
+ "01530000": {
+  "mobility_kfr_p25": 44.59,
+  "mobility_jail_p25": 0.01
+ },
+ "00970000": {
+  "mobility_kfr_p25": 41.18,
+  "mobility_jail_p25": 0.02
+ },
+ "01620000": {
+  "mobility_kfr_p25": 47.99,
+  "mobility_jail_p25": 0.0
+ },
+ "07250000": {
+  "mobility_kfr_p25": 52.91,
+  "mobility_jail_p25": 0.01
+ },
+ "00640000": {
+  "mobility_kfr_p25": 44.01,
+  "mobility_jail_p25": 0.01
+ },
+ "06200000": {
+  "mobility_kfr_p25": 47.9,
+  "mobility_jail_p25": 0.0
+ },
+ "07750000": {
+  "mobility_kfr_p25": 50.69,
+  "mobility_jail_p25": 0.0
+ },
+ "07780000": {
+  "mobility_kfr_p25": 40.9,
+  "mobility_jail_p25": 0.03
+ },
+ "02150000": {
+  "mobility_kfr_p25": 42.7,
+  "mobility_jail_p25": 0.01
+ },
+ "07670000": {
+  "mobility_kfr_p25": 45.91,
+  "mobility_jail_p25": 0.0
+ },
+ "03220000": {
+  "mobility_kfr_p25": 56.72,
+  "mobility_jail_p25": 0.0
+ },
+ "03480000": {
+  "mobility_kfr_p25": 43.37,
+  "mobility_jail_p25": 0.01
+ },
+ "01510000": {
+  "mobility_kfr_p25": 46.38,
+  "mobility_jail_p25": 0.0
+ },
+ "00170000": {
+  "mobility_kfr_p25": 49.63,
+  "mobility_jail_p25": 0.0
+ },
+ "01860000": {
+  "mobility_kfr_p25": 45.82,
+  "mobility_jail_p25": 0.01
+ },
+ "01100000": {
+  "mobility_kfr_p25": 45.76,
+  "mobility_jail_p25": 0.01
+ },
+ "02710000": {
+  "mobility_kfr_p25": 51.81,
+  "mobility_jail_p25": 0.01
+ },
+ "02130000": {
+  "mobility_kfr_p25": 50.63,
+  "mobility_jail_p25": 0.01
+ },
+ "02760000": {
+  "mobility_kfr_p25": 53.02,
+  "mobility_jail_p25": 0.01
+ },
+ "03210000": {
+  "mobility_kfr_p25": 50.13,
+  "mobility_jail_p25": 0.01
+ },
+ "07100000": {
+  "mobility_kfr_p25": 50.03,
+  "mobility_jail_p25": 0.0
+ },
+ "01850000": {
+  "mobility_kfr_p25": 47.65,
+  "mobility_jail_p25": 0.02
+ },
+ "01380000": {
+  "mobility_kfr_p25": 53.0,
+  "mobility_jail_p25": 0.0
+ },
+ "06220000": {
+  "mobility_kfr_p25": 43.28,
+  "mobility_jail_p25": 0.01
+ },
+ "03040000": {
+  "mobility_kfr_p25": 48.7,
+  "mobility_jail_p25": 0.0
+ },
+ "02140000": {
+  "mobility_kfr_p25": 47.64,
+  "mobility_jail_p25": 0.01
+ },
+ "02900000": {
+  "mobility_kfr_p25": 50.12,
+  "mobility_jail_p25": 0.0
+ },
+ "02260000": {
+  "mobility_kfr_p25": 47.73,
+  "mobility_jail_p25": 0.0
+ },
+ "03160000": {
+  "mobility_kfr_p25": 42.9,
+  "mobility_jail_p25": 0.0
+ },
+ "06580000": {
+  "mobility_kfr_p25": 45.14,
+  "mobility_jail_p25": 0.0
+ },
+ "02770000": {
+  "mobility_kfr_p25": 41.98,
+  "mobility_jail_p25": 0.01
+ },
+ "07700000": {
+  "mobility_kfr_p25": 46.54,
+  "mobility_jail_p25": 0.04
+ },
+ "00450000": {
+  "mobility_kfr_p25": 36.06,
+  "mobility_jail_p25": 0.01
+ },
+ "00240000": {
+  "mobility_kfr_p25": 44.72,
+  "mobility_jail_p25": 0.01
+ },
+ "00250000": {
+  "mobility_kfr_p25": 42.59,
+  "mobility_jail_p25": 0.0
+ },
+ "00650000": {
+  "mobility_kfr_p25": 44.91,
+  "mobility_jail_p25": 0.0
+ },
+ "00680000": {
+  "mobility_kfr_p25": 50.19,
+  "mobility_jail_p25": 0.01
+ },
+ "00770000": {
+  "mobility_kfr_p25": 47.96,
+  "mobility_jail_p25": 0.0
+ },
+ "00980000": {
+  "mobility_kfr_p25": 45.23,
+  "mobility_jail_p25": 0.0
+ },
+ "01090000": {
+  "mobility_kfr_p25": 48.83,
+  "mobility_jail_p25": 0.01
+ },
+ "01250000": {
+  "mobility_kfr_p25": 56.04,
+  "mobility_jail_p25": 0.0
+ },
+ "01350000": {
+  "mobility_kfr_p25": 45.54,
+  "mobility_jail_p25": 0.0
+ },
+ "01540000": {
+  "mobility_kfr_p25": 42.7,
+  "mobility_jail_p25": 0.01
+ },
+ "01570000": {
+  "mobility_kfr_p25": 63.05,
+  "mobility_jail_p25": 0.0
+ },
+ "01690000": {
+  "mobility_kfr_p25": 46.62,
+  "mobility_jail_p25": 0.01
+ },
+ "01840000": {
+  "mobility_kfr_p25": 41.02,
+  "mobility_jail_p25": 0.0
+ },
+ "01870000": {
+  "mobility_kfr_p25": 55.71,
+  "mobility_jail_p25": 0.02
+ },
+ "02170000": {
+  "mobility_kfr_p25": 52.78,
+  "mobility_jail_p25": 0.0
+ },
+ "02300000": {
+  "mobility_kfr_p25": 50.5,
+  "mobility_jail_p25": 0.01
+ },
+ "02340000": {
+  "mobility_kfr_p25": 40.78,
+  "mobility_jail_p25": 0.0
+ },
+ "02380000": {
+  "mobility_kfr_p25": 47.73,
+  "mobility_jail_p25": 0.0
+ },
+ "02490000": {
+  "mobility_kfr_p25": 48.75,
+  "mobility_jail_p25": 0.05
+ },
+ "02530000": {
+  "mobility_kfr_p25": 41.29,
+  "mobility_jail_p25": 0.0
+ },
+ "02890000": {
+  "mobility_kfr_p25": 50.25,
+  "mobility_jail_p25": 0.02
+ },
+ "03400000": {
+  "mobility_kfr_p25": 49.56,
+  "mobility_jail_p25": 0.0
+ },
+ "03430000": {
+  "mobility_kfr_p25": 40.05,
+  "mobility_jail_p25": 0.01
+ },
+ "06320000": {
+  "mobility_kfr_p25": 47.75,
+  "mobility_jail_p25": 0.02
+ },
+ "06850000": {
+  "mobility_kfr_p25": 41.29,
+  "mobility_jail_p25": 0.0
+ },
+ "07200000": {
+  "mobility_kfr_p25": 40.05,
+  "mobility_jail_p25": 0.01
+ },
+ "07280000": {
+  "mobility_kfr_p25": 49.58,
+  "mobility_jail_p25": 0.0
+ },
+ "06400000": {
+  "mobility_kfr_p25": 57.72,
+  "mobility_jail_p25": 0.01
+ },
+ "06950000": {
+  "mobility_kfr_p25": 46.47,
+  "mobility_jail_p25": 0.0
+ },
+ "06600000": {
+  "mobility_kfr_p25": 45.32,
+  "mobility_jail_p25": 0.02
+ },
+ "06900000": {
+  "mobility_kfr_p25": 47.15,
+  "mobility_jail_p25": 0.0
+ },
+ "07050000": {
+  "mobility_kfr_p25": 56.77,
+  "mobility_jail_p25": 0.0
+ },
+ "07300000": {
+  "mobility_kfr_p25": 45.18,
+  "mobility_jail_p25": 0.0
+ },
+ "07630000": {
+  "mobility_kfr_p25": 40.79,
+  "mobility_jail_p25": 0.01
+ }
+}

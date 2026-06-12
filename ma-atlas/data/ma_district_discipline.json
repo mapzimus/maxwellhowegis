@@ -1,0 +1,1274 @@
+{
+ "07700000": {
+  "disc_students_pct": 0.053,
+  "disc_oss_pct": 0.033,
+  "disc_iss_pct": 0.03
+ },
+ "02300000": {
+  "disc_students_pct": 0.0076
+ },
+ "06220000": {
+  "disc_students_pct": 0.0248,
+  "disc_oss_pct": 0.02,
+  "disc_iss_pct": 0.003
+ },
+ "02840000": {
+  "disc_students_pct": 0.0187,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.016
+ },
+ "06500000": {
+  "disc_students_pct": 0.0195,
+  "disc_oss_pct": 0.007,
+  "disc_iss_pct": 0.01
+ },
+ "00440000": {
+  "disc_students_pct": 0.0915,
+  "disc_oss_pct": 0.046,
+  "disc_iss_pct": 0.063
+ },
+ "06150000": {
+  "disc_students_pct": 0.1,
+  "disc_oss_pct": 0.072,
+  "disc_iss_pct": 0.052
+ },
+ "00200000": {
+  "disc_students_pct": 0.0408,
+  "disc_oss_pct": 0.021,
+  "disc_iss_pct": 0.022
+ },
+ "01700000": {
+  "disc_students_pct": 0.0536,
+  "disc_oss_pct": 0.044,
+  "disc_iss_pct": 0.019
+ },
+ "01500000": {
+  "disc_students_pct": 0.0311,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.013
+ },
+ "01140000": {
+  "disc_students_pct": 0.0465,
+  "disc_oss_pct": 0.037,
+  "disc_iss_pct": 0.014
+ },
+ "00380000": {
+  "disc_students_pct": 0.0
+ },
+ "02090000": {
+  "disc_students_pct": 0.1038,
+  "disc_oss_pct": 0.075,
+  "disc_iss_pct": 0.016
+ },
+ "02810000": {
+  "disc_students_pct": 0.0633,
+  "disc_oss_pct": 0.051,
+  "disc_iss_pct": 0.014
+ },
+ "00180000": {
+  "disc_students_pct": 0.0317,
+  "disc_oss_pct": 0.028,
+  "disc_iss_pct": 0.005
+ },
+ "01610000": {
+  "disc_students_pct": 0.0398,
+  "disc_oss_pct": 0.039,
+  "disc_iss_pct": 0.003
+ },
+ "00300000": {
+  "disc_students_pct": 0.0237,
+  "disc_oss_pct": 0.013,
+  "disc_iss_pct": 0.013
+ },
+ "02460000": {
+  "disc_students_pct": 0.0054,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.002
+ },
+ "03350000": {
+  "disc_students_pct": 0.0083,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.007
+ },
+ "00460000": {
+  "disc_students_pct": 0.0086,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.006
+ },
+ "01100000": {
+  "disc_students_pct": 0.0056,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.004
+ },
+ "03300000": {
+  "disc_students_pct": 0.0062,
+  "disc_oss_pct": 0.0,
+  "disc_iss_pct": 0.006
+ },
+ "02740000": {
+  "disc_students_pct": 0.0381,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.022
+ },
+ "01490000": {
+  "disc_students_pct": 0.0288,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.011
+ },
+ "00870000": {
+  "disc_students_pct": 0.0173,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.007
+ },
+ "01330000": {
+  "disc_students_pct": 0.0205,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.003
+ },
+ "03250000": {
+  "disc_students_pct": 0.0548,
+  "disc_oss_pct": 0.037,
+  "disc_iss_pct": 0.023
+ },
+ "00270000": {
+  "disc_students_pct": 0.0165,
+  "disc_oss_pct": 0.009,
+  "disc_iss_pct": 0.009
+ },
+ "06980000": {
+  "disc_students_pct": 0.0025
+ },
+ "02580000": {
+  "disc_students_pct": 0.0332,
+  "disc_oss_pct": 0.023,
+  "disc_iss_pct": 0.008
+ },
+ "01860000": {
+  "disc_students_pct": 0.0374,
+  "disc_oss_pct": 0.026,
+  "disc_iss_pct": 0.016
+ },
+ "00240000": {
+  "disc_students_pct": 0.0187,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.012
+ },
+ "02340000": {
+  "disc_students_pct": 0.0
+ },
+ "00070000": {
+  "disc_students_pct": 0.0373,
+  "disc_oss_pct": 0.024,
+  "disc_iss_pct": 0.018
+ },
+ "06650000": {
+  "disc_students_pct": 0.0343,
+  "disc_oss_pct": 0.028,
+  "disc_iss_pct": 0.018
+ },
+ "07150000": {
+  "disc_students_pct": 0.0159,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.012
+ },
+ "00170000": {
+  "disc_students_pct": 0.0194,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.011
+ },
+ "00490000": {
+  "disc_students_pct": 0.0122,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.002
+ },
+ "01820000": {
+  "disc_students_pct": 0.0394,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.025
+ },
+ "03100000": {
+  "disc_students_pct": 0.0835,
+  "disc_oss_pct": 0.068,
+  "disc_iss_pct": 0.023
+ },
+ "00510000": {
+  "disc_students_pct": 0.0032
+ },
+ "06000000": {
+  "disc_students_pct": 0.0039,
+  "disc_oss_pct": 0.001,
+  "disc_iss_pct": 0.001
+ },
+ "06450000": {
+  "disc_students_pct": 0.0202,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.003
+ },
+ "03060000": {
+  "disc_students_pct": 0.0
+ },
+ "00350000": {
+  "disc_students_pct": 0.0347,
+  "disc_oss_pct": 0.032,
+  "disc_iss_pct": 0.003
+ },
+ "06740000": {
+  "disc_students_pct": 0.0011
+ },
+ "07200000": {
+  "disc_students_pct": 0.0504,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.044
+ },
+ "02080000": {
+  "disc_students_pct": 0.0026
+ },
+ "00850000": {
+  "disc_students_pct": 0.0
+ },
+ "03360000": {
+  "disc_students_pct": 0.0338,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.02
+ },
+ "00480000": {
+  "disc_students_pct": 0.0156,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.009
+ },
+ "02880000": {
+  "disc_students_pct": 0.0078,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.005
+ },
+ "00310000": {
+  "disc_students_pct": 0.0157,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.003
+ },
+ "01510000": {
+  "disc_students_pct": 0.0515,
+  "disc_oss_pct": 0.033,
+  "disc_iss_pct": 0.033
+ },
+ "01620000": {
+  "disc_students_pct": 0.0315,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.016
+ },
+ "02110000": {
+  "disc_students_pct": 0.0068,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.001
+ },
+ "02240000": {
+  "disc_students_pct": 0.0
+ },
+ "00890000": {
+  "disc_students_pct": 0.0134
+ },
+ "02440000": {
+  "disc_students_pct": 0.043,
+  "disc_oss_pct": 0.035,
+  "disc_iss_pct": 0.004
+ },
+ "02040000": {
+  "disc_students_pct": 0.0019
+ },
+ "03010000": {
+  "disc_students_pct": 0.0147,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.0
+ },
+ "02190000": {
+  "disc_students_pct": 0.0118,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.005
+ },
+ "00360000": {
+  "disc_students_pct": 0.0215,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.012
+ },
+ "00820000": {
+  "disc_students_pct": 0.0095,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.008
+ },
+ "01000000": {
+  "disc_students_pct": 0.041,
+  "disc_oss_pct": 0.03,
+  "disc_iss_pct": 0.021
+ },
+ "01210000": {
+  "disc_students_pct": 0.0
+ },
+ "02130000": {
+  "disc_students_pct": 0.0018
+ },
+ "01170000": {
+  "disc_students_pct": 0.0223,
+  "disc_oss_pct": 0.011,
+  "disc_iss_pct": 0.015
+ },
+ "02480000": {
+  "disc_students_pct": 0.0319,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.0
+ },
+ "02980000": {
+  "disc_students_pct": 0.0
+ },
+ "00030000": {
+  "disc_students_pct": 0.019,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.012
+ },
+ "07530000": {
+  "disc_students_pct": 0.0455,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.03
+ },
+ "01650000": {
+  "disc_students_pct": 0.024,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.01
+ },
+ "00790000": {
+  "disc_students_pct": 0.0283,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.018
+ },
+ "01110000": {
+  "disc_students_pct": 0.0293,
+  "disc_oss_pct": 0.009,
+  "disc_iss_pct": 0.025
+ },
+ "01670000": {
+  "disc_students_pct": 0.0198,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.003
+ },
+ "02770000": {
+  "disc_students_pct": 0.0949,
+  "disc_oss_pct": 0.06,
+  "disc_iss_pct": 0.06
+ },
+ "03140000": {
+  "disc_students_pct": 0.0107,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.002
+ },
+ "01380000": {
+  "disc_students_pct": 0.0122,
+  "disc_oss_pct": 0.009,
+  "disc_iss_pct": 0.005
+ },
+ "01990000": {
+  "disc_students_pct": 0.0095,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.008
+ },
+ "00570000": {
+  "disc_students_pct": 0.0469,
+  "disc_oss_pct": 0.029,
+  "disc_iss_pct": 0.017
+ },
+ "02720000": {
+  "disc_students_pct": 0.0
+ },
+ "02850000": {
+  "disc_students_pct": 0.0318,
+  "disc_oss_pct": 0.021,
+  "disc_iss_pct": 0.01
+ },
+ "03320000": {
+  "disc_students_pct": 0.0355,
+  "disc_oss_pct": 0.027,
+  "disc_iss_pct": 0.011
+ },
+ "03040000": {
+  "disc_students_pct": 0.0281,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.013
+ },
+ "07670000": {
+  "disc_students_pct": 0.0382,
+  "disc_oss_pct": 0.03,
+  "disc_iss_pct": 0.011
+ },
+ "02910000": {
+  "disc_students_pct": 0.0139,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.004
+ },
+ "00980000": {
+  "disc_students_pct": 0.0
+ },
+ "01750000": {
+  "disc_students_pct": 0.0048,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.002
+ },
+ "02310000": {
+  "disc_students_pct": 0.0266,
+  "disc_oss_pct": 0.011,
+  "disc_iss_pct": 0.02
+ },
+ "03180000": {
+  "disc_students_pct": 0.0
+ },
+ "01890000": {
+  "disc_students_pct": 0.0023,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.001
+ },
+ "02690000": {
+  "disc_students_pct": 0.0049
+ },
+ "01840000": {
+  "disc_students_pct": 0.0
+ },
+ "06800000": {
+  "disc_students_pct": 0.02,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.002
+ },
+ "07280000": {
+  "disc_students_pct": 0.0
+ },
+ "01360000": {
+  "disc_students_pct": 0.0059,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.002
+ },
+ "01520000": {
+  "disc_students_pct": 0.0064
+ },
+ "06550000": {
+  "disc_students_pct": 0.0028
+ },
+ "00950000": {
+  "disc_students_pct": 0.0942,
+  "disc_oss_pct": 0.084,
+  "disc_iss_pct": 0.021
+ },
+ "06180000": {
+  "disc_students_pct": 0.0507,
+  "disc_oss_pct": 0.027,
+  "disc_iss_pct": 0.04
+ },
+ "07500000": {
+  "disc_students_pct": 0.0184,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.015
+ },
+ "02960000": {
+  "disc_students_pct": 0.006
+ },
+ "07350000": {
+  "disc_students_pct": 0.0298,
+  "disc_oss_pct": 0.027,
+  "disc_iss_pct": 0.003
+ },
+ "06620000": {
+  "disc_students_pct": 0.0236
+ },
+ "01280000": {
+  "disc_students_pct": 0.0344,
+  "disc_oss_pct": 0.03,
+  "disc_iss_pct": 0.009
+ },
+ "00450000": {
+  "disc_students_pct": 0.0
+ },
+ "03000000": {
+  "disc_students_pct": 0.0
+ },
+ "01050000": {
+  "disc_students_pct": 0.0106,
+  "disc_oss_pct": 0.001,
+  "disc_iss_pct": 0.01
+ },
+ "01960000": {
+  "disc_students_pct": 0.0
+ },
+ "03050000": {
+  "disc_students_pct": 0.0061,
+  "disc_oss_pct": 0.005,
+  "disc_iss_pct": 0.003
+ },
+ "03440000": {
+  "disc_students_pct": 0.002,
+  "disc_oss_pct": 0.001,
+  "disc_iss_pct": 0.001
+ },
+ "07120000": {
+  "disc_students_pct": 0.0431,
+  "disc_oss_pct": 0.028,
+  "disc_iss_pct": 0.015
+ },
+ "00500000": {
+  "disc_students_pct": 0.0286,
+  "disc_oss_pct": 0.02,
+  "disc_iss_pct": 0.018
+ },
+ "00710000": {
+  "disc_students_pct": 0.0332,
+  "disc_oss_pct": 0.019,
+  "disc_iss_pct": 0.023
+ },
+ "01310000": {
+  "disc_students_pct": 0.0044,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.002
+ },
+ "02360000": {
+  "disc_students_pct": 0.1301,
+  "disc_oss_pct": 0.079,
+  "disc_iss_pct": 0.098
+ },
+ "03460000": {
+  "disc_students_pct": 0.0029,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.0
+ },
+ "00930000": {
+  "disc_students_pct": 0.0371,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.025
+ },
+ "07450000": {
+  "disc_students_pct": 0.0145,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.0
+ },
+ "02760000": {
+  "disc_students_pct": 0.0029
+ },
+ "01630000": {
+  "disc_students_pct": 0.0337,
+  "disc_oss_pct": 0.03,
+  "disc_iss_pct": 0.003
+ },
+ "02610000": {
+  "disc_students_pct": 0.0288,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.022
+ },
+ "03220000": {
+  "disc_students_pct": 0.0222,
+  "disc_oss_pct": 0.021,
+  "disc_iss_pct": 0.002
+ },
+ "06750000": {
+  "disc_students_pct": 0.0071,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.004
+ },
+ "01350000": {
+  "disc_students_pct": 0.0044
+ },
+ "01070000": {
+  "disc_students_pct": 0.0224,
+  "disc_oss_pct": 0.019,
+  "disc_iss_pct": 0.005
+ },
+ "01600000": {
+  "disc_students_pct": 0.0334,
+  "disc_oss_pct": 0.028,
+  "disc_iss_pct": 0.008
+ },
+ "03470000": {
+  "disc_students_pct": 0.0168,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.003
+ },
+ "03310000": {
+  "disc_students_pct": 0.0629,
+  "disc_oss_pct": 0.039,
+  "disc_iss_pct": 0.04
+ },
+ "01030000": {
+  "disc_students_pct": 0.0579,
+  "disc_oss_pct": 0.056,
+  "disc_iss_pct": 0.005
+ },
+ "07780000": {
+  "disc_students_pct": 0.0156,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.001
+ },
+ "02140000": {
+  "disc_students_pct": 0.0366,
+  "disc_oss_pct": 0.037,
+  "disc_iss_pct": 0.0
+ },
+ "03230000": {
+  "disc_students_pct": 0.0357,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.024
+ },
+ "01590000": {
+  "disc_students_pct": 0.0068,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.0
+ },
+ "02500000": {
+  "disc_students_pct": 0.0084
+ },
+ "02290000": {
+  "disc_students_pct": 0.0301,
+  "disc_oss_pct": 0.019,
+  "disc_iss_pct": 0.017
+ },
+ "02430000": {
+  "disc_students_pct": 0.0255,
+  "disc_oss_pct": 0.021,
+  "disc_iss_pct": 0.012
+ },
+ "02380000": {
+  "disc_students_pct": 0.0058
+ },
+ "00520000": {
+  "disc_students_pct": 0.0549,
+  "disc_oss_pct": 0.024,
+  "disc_iss_pct": 0.036
+ },
+ "01580000": {
+  "disc_students_pct": 0.006,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.004
+ },
+ "00160000": {
+  "disc_students_pct": 0.0409,
+  "disc_oss_pct": 0.025,
+  "disc_iss_pct": 0.024
+ },
+ "01540000": {
+  "disc_students_pct": 0.0
+ },
+ "02120000": {
+  "disc_students_pct": 0.017,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.004
+ },
+ "01720000": {
+  "disc_students_pct": 0.0208,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.013
+ },
+ "02750000": {
+  "disc_students_pct": 0.0041
+ },
+ "02890000": {
+  "disc_students_pct": 0.016
+ },
+ "03370000": {
+  "disc_students_pct": 0.0
+ },
+ "07740000": {
+  "disc_students_pct": 0.0025
+ },
+ "02490000": {
+  "disc_students_pct": 0.0
+ },
+ "03400000": {
+  "disc_students_pct": 0.0
+ },
+ "00010000": {
+  "disc_students_pct": 0.0453,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.035
+ },
+ "01420000": {
+  "disc_students_pct": 0.0068
+ },
+ "00730000": {
+  "disc_students_pct": 0.0177,
+  "disc_oss_pct": 0.011,
+  "disc_iss_pct": 0.007
+ },
+ "03150000": {
+  "disc_students_pct": 0.0054,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.003
+ },
+ "00260000": {
+  "disc_students_pct": 0.012,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.008
+ },
+ "06250000": {
+  "disc_students_pct": 0.0126,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.003
+ },
+ "06030000": {
+  "disc_students_pct": 0.0816,
+  "disc_oss_pct": 0.032,
+  "disc_iss_pct": 0.049
+ },
+ "01740000": {
+  "disc_students_pct": 0.0159,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.009
+ },
+ "06160000": {
+  "disc_students_pct": 0.0135,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.003
+ },
+ "02420000": {
+  "disc_students_pct": 0.0
+ },
+ "00910000": {
+  "disc_students_pct": 0.0171
+ },
+ "02070000": {
+  "disc_students_pct": 0.0091,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.007
+ },
+ "02400000": {
+  "disc_students_pct": 0.0197
+ },
+ "01690000": {
+  "disc_students_pct": 0.0133
+ },
+ "03430000": {
+  "disc_students_pct": 0.0571,
+  "disc_oss_pct": 0.051,
+  "disc_iss_pct": 0.007
+ },
+ "00630000": {
+  "disc_students_pct": 0.0
+ },
+ "03260000": {
+  "disc_students_pct": 0.0017,
+  "disc_oss_pct": 0.001,
+  "disc_iss_pct": 0.0
+ },
+ "00770000": {
+  "disc_students_pct": 0.0035
+ },
+ "00670000": {
+  "disc_students_pct": 0.0102,
+  "disc_oss_pct": 0.007,
+  "disc_iss_pct": 0.004
+ },
+ "00960000": {
+  "disc_students_pct": 0.0404,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.026
+ },
+ "02390000": {
+  "disc_students_pct": 0.0512,
+  "disc_oss_pct": 0.024,
+  "disc_iss_pct": 0.039
+ },
+ "06580000": {
+  "disc_students_pct": 0.0235,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.013
+ },
+ "03090000": {
+  "disc_students_pct": 0.0617,
+  "disc_oss_pct": 0.029,
+  "disc_iss_pct": 0.048
+ },
+ "00880000": {
+  "disc_students_pct": 0.0146,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.011
+ },
+ "01220000": {
+  "disc_students_pct": 0.005,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.003
+ },
+ "01390000": {
+  "disc_students_pct": 0.0065,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.004
+ },
+ "02260000": {
+  "disc_students_pct": 0.0466,
+  "disc_oss_pct": 0.04,
+  "disc_iss_pct": 0.002
+ },
+ "06200000": {
+  "disc_students_pct": 0.0158,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.001
+ },
+ "00970000": {
+  "disc_students_pct": 0.0849,
+  "disc_oss_pct": 0.046,
+  "disc_iss_pct": 0.046
+ },
+ "02520000": {
+  "disc_students_pct": 0.0296,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.028
+ },
+ "02170000": {
+  "disc_students_pct": 0.0038,
+  "disc_oss_pct": 0.0,
+  "disc_iss_pct": 0.004
+ },
+ "03080000": {
+  "disc_students_pct": 0.0331,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.014
+ },
+ "02510000": {
+  "disc_students_pct": 0.041,
+  "disc_oss_pct": 0.038,
+  "disc_iss_pct": 0.007
+ },
+ "01770000": {
+  "disc_students_pct": 0.0136,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.004
+ },
+ "03070000": {
+  "disc_students_pct": 0.0195,
+  "disc_oss_pct": 0.011,
+  "disc_iss_pct": 0.012
+ },
+ "01810000": {
+  "disc_students_pct": 0.055,
+  "disc_oss_pct": 0.044,
+  "disc_iss_pct": 0.015
+ },
+ "02730000": {
+  "disc_students_pct": 0.0157,
+  "disc_oss_pct": 0.013,
+  "disc_iss_pct": 0.004
+ },
+ "01410000": {
+  "disc_students_pct": 0.0233,
+  "disc_oss_pct": 0.011,
+  "disc_iss_pct": 0.006
+ },
+ "07250000": {
+  "disc_students_pct": 0.0062,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.004
+ },
+ "01450000": {
+  "disc_students_pct": 0.0101,
+  "disc_oss_pct": 0.005,
+  "disc_iss_pct": 0.006
+ },
+ "07100000": {
+  "disc_students_pct": 0.0057,
+  "disc_oss_pct": 0.005,
+  "disc_iss_pct": 0.001
+ },
+ "00410000": {
+  "disc_students_pct": 0.0022
+ },
+ "00610000": {
+  "disc_students_pct": 0.0532,
+  "disc_oss_pct": 0.04,
+  "disc_iss_pct": 0.024
+ },
+ "06850000": {
+  "disc_students_pct": 0.0
+ },
+ "01870000": {
+  "disc_students_pct": 0.015,
+  "disc_oss_pct": 0.013,
+  "disc_iss_pct": 0.003
+ },
+ "01180000": {
+  "disc_students_pct": 0.0037
+ },
+ "03490000": {
+  "disc_students_pct": 0.0
+ },
+ "00740000": {
+  "disc_students_pct": 0.0
+ },
+ "00430000": {
+  "disc_students_pct": 0.0
+ },
+ "01780000": {
+  "disc_students_pct": 0.0073,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.004
+ },
+ "03210000": {
+  "disc_students_pct": 0.0117,
+  "disc_oss_pct": 0.005,
+  "disc_iss_pct": 0.01
+ },
+ "02900000": {
+  "disc_students_pct": 0.0075,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.006
+ },
+ "02210000": {
+  "disc_students_pct": 0.0142,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.0
+ },
+ "07750000": {
+  "disc_students_pct": 0.0121,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.004
+ },
+ "00100000": {
+  "disc_students_pct": 0.0059,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.002
+ },
+ "03500000": {
+  "disc_students_pct": 0.001
+ },
+ "00050000": {
+  "disc_students_pct": 0.0256,
+  "disc_oss_pct": 0.015,
+  "disc_iss_pct": 0.016
+ },
+ "00640000": {
+  "disc_students_pct": 0.0462,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.028
+ },
+ "00860000": {
+  "disc_students_pct": 0.0502,
+  "disc_oss_pct": 0.035,
+  "disc_iss_pct": 0.02
+ },
+ "01730000": {
+  "disc_students_pct": 0.0103
+ },
+ "01710000": {
+  "disc_students_pct": 0.0105,
+  "disc_oss_pct": 0.007,
+  "disc_iss_pct": 0.003
+ },
+ "06720000": {
+  "disc_students_pct": 0.0667,
+  "disc_oss_pct": 0.042,
+  "disc_iss_pct": 0.033
+ },
+ "02270000": {
+  "disc_students_pct": 0.063,
+  "disc_oss_pct": 0.057,
+  "disc_iss_pct": 0.005
+ },
+ "07660000": {
+  "disc_students_pct": 0.0606,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.053
+ },
+ "06350000": {
+  "disc_students_pct": 0.0407,
+  "disc_oss_pct": 0.018,
+  "disc_iss_pct": 0.032
+ },
+ "02100000": {
+  "disc_students_pct": 0.0249,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.017
+ },
+ "02230000": {
+  "disc_students_pct": 0.0189,
+  "disc_oss_pct": 0.019,
+  "disc_iss_pct": 0.0
+ },
+ "03420000": {
+  "disc_students_pct": 0.0135,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.007
+ },
+ "02200000": {
+  "disc_students_pct": 0.0326,
+  "disc_oss_pct": 0.027,
+  "disc_iss_pct": 0.013
+ },
+ "01370000": {
+  "disc_students_pct": 0.1172,
+  "disc_oss_pct": 0.096,
+  "disc_iss_pct": 0.027
+ },
+ "02010000": {
+  "disc_students_pct": 0.0576,
+  "disc_oss_pct": 0.042,
+  "disc_iss_pct": 0.01
+ },
+ "00680000": {
+  "disc_students_pct": 0.0
+ },
+ "02180000": {
+  "disc_students_pct": 0.0187,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.002
+ },
+ "02620000": {
+  "disc_students_pct": 0.0499,
+  "disc_oss_pct": 0.045,
+  "disc_iss_pct": 0.01
+ },
+ "01850000": {
+  "disc_students_pct": 0.038,
+  "disc_oss_pct": 0.032,
+  "disc_iss_pct": 0.009
+ },
+ "00250000": {
+  "disc_students_pct": 0.015,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.005
+ },
+ "02650000": {
+  "disc_students_pct": 0.0221,
+  "disc_oss_pct": 0.012,
+  "disc_iss_pct": 0.015
+ },
+ "01530000": {
+  "disc_students_pct": 0.0521,
+  "disc_oss_pct": 0.022,
+  "disc_iss_pct": 0.041
+ },
+ "06320000": {
+  "disc_students_pct": 0.0
+ },
+ "07800000": {
+  "disc_students_pct": 0.0121,
+  "disc_oss_pct": 0.009,
+  "disc_iss_pct": 0.005
+ },
+ "07730000": {
+  "disc_students_pct": 0.017,
+  "disc_oss_pct": 0.013,
+  "disc_iss_pct": 0.007
+ },
+ "01570000": {
+  "disc_students_pct": 0.0199,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.008
+ },
+ "02630000": {
+  "disc_students_pct": 0.0
+ },
+ "02660000": {
+  "disc_students_pct": 0.0119,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.007
+ },
+ "00720000": {
+  "disc_students_pct": 0.017,
+  "disc_oss_pct": 0.016,
+  "disc_iss_pct": 0.002
+ },
+ "02920000": {
+  "disc_students_pct": 0.0357,
+  "disc_oss_pct": 0.009,
+  "disc_iss_pct": 0.032
+ },
+ "01250000": {
+  "disc_students_pct": 0.0
+ },
+ "00230000": {
+  "disc_students_pct": 0.013,
+  "disc_oss_pct": 0.007,
+  "disc_iss_pct": 0.004
+ },
+ "00090000": {
+  "disc_students_pct": 0.005,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.001
+ },
+ "01640000": {
+  "disc_students_pct": 0.0032,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.0
+ },
+ "00830000": {
+  "disc_students_pct": 0.03,
+  "disc_oss_pct": 0.021,
+  "disc_iss_pct": 0.016
+ },
+ "01010000": {
+  "disc_students_pct": 0.0192,
+  "disc_oss_pct": 0.007,
+  "disc_iss_pct": 0.017
+ },
+ "01760000": {
+  "disc_students_pct": 0.0096,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.001
+ },
+ "00990000": {
+  "disc_students_pct": 0.0175,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.012
+ },
+ "01910000": {
+  "disc_students_pct": 0.0505,
+  "disc_oss_pct": 0.04,
+  "disc_iss_pct": 0.022
+ },
+ "01980000": {
+  "disc_students_pct": 0.0068,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.006
+ },
+ "00560000": {
+  "disc_students_pct": 0.0143,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.01
+ },
+ "00080000": {
+  "disc_students_pct": 0.0018
+ },
+ "03160000": {
+  "disc_students_pct": 0.0992,
+  "disc_oss_pct": 0.08,
+  "disc_iss_pct": 0.036
+ },
+ "01970000": {
+  "disc_students_pct": 0.0368,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.02
+ },
+ "02930000": {
+  "disc_students_pct": 0.0692,
+  "disc_oss_pct": 0.069,
+  "disc_iss_pct": 0.001
+ },
+ "02150000": {
+  "disc_students_pct": 0.0
+ },
+ "03480000": {
+  "disc_students_pct": 0.0482,
+  "disc_oss_pct": 0.033,
+  "disc_iss_pct": 0.017
+ },
+ "07650000": {
+  "disc_students_pct": 0.0112,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.006
+ },
+ "00400000": {
+  "disc_students_pct": 0.0131,
+  "disc_oss_pct": 0.01,
+  "disc_iss_pct": 0.003
+ },
+ "01440000": {
+  "disc_students_pct": 0.0151,
+  "disc_oss_pct": 0.009,
+  "disc_iss_pct": 0.008
+ },
+ "03270000": {
+  "disc_students_pct": 0.0
+ },
+ "06730000": {
+  "disc_students_pct": 0.0017
+ },
+ "00940000": {
+  "disc_students_pct": 0.0466,
+  "disc_oss_pct": 0.044,
+  "disc_iss_pct": 0.001
+ },
+ "01270000": {
+  "disc_students_pct": 0.0063
+ },
+ "07170000": {
+  "disc_students_pct": 0.0361,
+  "disc_oss_pct": 0.035,
+  "disc_iss_pct": 0.006
+ },
+ "00650000": {
+  "disc_students_pct": 0.005,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.002
+ },
+ "01680000": {
+  "disc_students_pct": 0.0054,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.002
+ },
+ "02530000": {
+  "disc_students_pct": 0.0
+ },
+ "02780000": {
+  "disc_students_pct": 0.0521,
+  "disc_oss_pct": 0.041,
+  "disc_iss_pct": 0.02
+ },
+ "02640000": {
+  "disc_students_pct": 0.0162,
+  "disc_oss_pct": 0.004,
+  "disc_iss_pct": 0.013
+ },
+ "02950000": {
+  "disc_students_pct": 0.0075,
+  "disc_oss_pct": 0.008,
+  "disc_iss_pct": 0.0
+ },
+ "00140000": {
+  "disc_students_pct": 0.02,
+  "disc_oss_pct": 0.017,
+  "disc_iss_pct": 0.006
+ },
+ "01550000": {
+  "disc_students_pct": 0.0082,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.006
+ },
+ "03170000": {
+  "disc_students_pct": 0.0074,
+  "disc_oss_pct": 0.003,
+  "disc_iss_pct": 0.005
+ },
+ "06100000": {
+  "disc_students_pct": 0.0143,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.012
+ },
+ "02710000": {
+  "disc_students_pct": 0.0147,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.008
+ },
+ "06400000": {
+  "disc_students_pct": 0.0174,
+  "disc_oss_pct": 0.014,
+  "disc_iss_pct": 0.006
+ },
+ "06600000": {
+  "disc_students_pct": 0.0473,
+  "disc_oss_pct": 0.041,
+  "disc_iss_pct": 0.007
+ },
+ "06900000": {
+  "disc_students_pct": 0.0228,
+  "disc_oss_pct": 0.002,
+  "disc_iss_pct": 0.021
+ },
+ "06950000": {
+  "disc_students_pct": 0.0152,
+  "disc_oss_pct": 0.013,
+  "disc_iss_pct": 0.006
+ },
+ "07050000": {
+  "disc_students_pct": 0.0107,
+  "disc_oss_pct": 0.006,
+  "disc_iss_pct": 0.01
+ },
+ "07300000": {
+  "disc_students_pct": 0.0066,
+  "disc_oss_pct": 0.007,
+  "disc_iss_pct": 0.0
+ },
+ "07630000": {
+  "disc_students_pct": 0.11,
+  "disc_oss_pct": 0.04,
+  "disc_iss_pct": 0.095
+ }
+}

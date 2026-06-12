@@ -1,0 +1,1874 @@
+{
+ "01670000": {
+  "chronic_low_income": 0.231,
+  "chronic_swd": 0.221,
+  "chronic_ell": 0.127,
+  "chronic_black": 0.181,
+  "chronic_hispanic": 0.187
+ },
+ "06160000": {
+  "chronic_low_income": 0.214,
+  "chronic_swd": 0.238,
+  "chronic_ell": 0.121,
+  "chronic_black": 0.075,
+  "chronic_hispanic": 0.175
+ },
+ "02130000": {
+  "chronic_low_income": 0.209,
+  "chronic_swd": 0.168,
+  "chronic_ell": 0.168,
+  "chronic_black": 0.093,
+  "chronic_hispanic": 0.171
+ },
+ "02300000": {
+  "chronic_low_income": 0.175,
+  "chronic_swd": 0.219,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.35
+ },
+ "01440000": {
+  "chronic_low_income": 0.124,
+  "chronic_swd": 0.09,
+  "chronic_ell": 0.121,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.123
+ },
+ "01690000": {
+  "chronic_low_income": 0.217,
+  "chronic_swd": 0.287,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.381
+ },
+ "00070000": {
+  "chronic_low_income": 0.338,
+  "chronic_swd": 0.289,
+  "chronic_ell": 0.323,
+  "chronic_black": 0.119,
+  "chronic_hispanic": 0.28
+ },
+ "00940000": {
+  "chronic_low_income": 0.237,
+  "chronic_swd": 0.24,
+  "chronic_ell": 0.098,
+  "chronic_black": 0.325,
+  "chronic_hispanic": 0.2
+ },
+ "02880000": {
+  "chronic_low_income": 0.184,
+  "chronic_swd": 0.103,
+  "chronic_ell": 0.16,
+  "chronic_black": 0.146,
+  "chronic_hispanic": 0.122
+ },
+ "02720000": {
+  "chronic_low_income": 0.179,
+  "chronic_swd": 0.115,
+  "chronic_hispanic": 0.143
+ },
+ "03480000": {
+  "chronic_low_income": 0.293,
+  "chronic_swd": 0.314,
+  "chronic_ell": 0.272,
+  "chronic_black": 0.16,
+  "chronic_hispanic": 0.315
+ },
+ "02140000": {
+  "chronic_low_income": 0.301,
+  "chronic_swd": 0.215,
+  "chronic_ell": 0.269,
+  "chronic_black": 0.104,
+  "chronic_hispanic": 0.224
+ },
+ "02930000": {
+  "chronic_low_income": 0.299,
+  "chronic_swd": 0.303,
+  "chronic_ell": 0.239,
+  "chronic_black": 0.207,
+  "chronic_hispanic": 0.303
+ },
+ "03370000": {
+  "chronic_low_income": 0.071,
+  "chronic_swd": 0.061
+ },
+ "00570000": {
+  "chronic_low_income": 0.375,
+  "chronic_swd": 0.424,
+  "chronic_ell": 0.362,
+  "chronic_black": 0.301,
+  "chronic_hispanic": 0.364
+ },
+ "02390000": {
+  "chronic_low_income": 0.268,
+  "chronic_swd": 0.217,
+  "chronic_ell": 0.311,
+  "chronic_black": 0.25,
+  "chronic_hispanic": 0.275
+ },
+ "00400000": {
+  "chronic_low_income": 0.219,
+  "chronic_swd": 0.182,
+  "chronic_ell": 0.133,
+  "chronic_black": 0.191,
+  "chronic_hispanic": 0.254
+ },
+ "00050000": {
+  "chronic_low_income": 0.326,
+  "chronic_swd": 0.318,
+  "chronic_ell": 0.267,
+  "chronic_black": 0.2,
+  "chronic_hispanic": 0.319
+ },
+ "06650000": {
+  "chronic_low_income": 0.229,
+  "chronic_swd": 0.253,
+  "chronic_ell": 0.107,
+  "chronic_black": 0.108,
+  "chronic_hispanic": 0.161
+ },
+ "00510000": {
+  "chronic_low_income": 0.121,
+  "chronic_swd": 0.071,
+  "chronic_ell": 0.125,
+  "chronic_hispanic": 0.05
+ },
+ "06350000": {
+  "chronic_low_income": 0.264,
+  "chronic_swd": 0.246,
+  "chronic_ell": 0.294,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.219
+ },
+ "00010000": {
+  "chronic_low_income": 0.289,
+  "chronic_swd": 0.204,
+  "chronic_ell": 0.316,
+  "chronic_black": 0.145,
+  "chronic_hispanic": 0.321
+ },
+ "02190000": {
+  "chronic_low_income": 0.234,
+  "chronic_swd": 0.147,
+  "chronic_ell": 0.182,
+  "chronic_black": 0.095,
+  "chronic_hispanic": 0.184
+ },
+ "02040000": {
+  "chronic_low_income": 0.216,
+  "chronic_swd": 0.152,
+  "chronic_ell": 0.235,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.224
+ },
+ "01330000": {
+  "chronic_low_income": 0.172,
+  "chronic_swd": 0.198,
+  "chronic_ell": 0.174,
+  "chronic_black": 0.087,
+  "chronic_hispanic": 0.148
+ },
+ "02610000": {
+  "chronic_low_income": 0.229,
+  "chronic_swd": 0.214,
+  "chronic_ell": 0.235,
+  "chronic_black": 0.265,
+  "chronic_hispanic": 0.243
+ },
+ "01550000": {
+  "chronic_low_income": 0.214,
+  "chronic_swd": 0.149,
+  "chronic_ell": 0.186,
+  "chronic_black": 0.191,
+  "chronic_hispanic": 0.188
+ },
+ "07350000": {
+  "chronic_low_income": 0.229,
+  "chronic_swd": 0.219,
+  "chronic_ell": 0.196,
+  "chronic_black": 0.168,
+  "chronic_hispanic": 0.228
+ },
+ "03060000": {
+  "chronic_low_income": 0.2,
+  "chronic_swd": 0.185,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.333
+ },
+ "02340000": {
+  "chronic_low_income": 0.196,
+  "chronic_swd": 0.118,
+  "chronic_hispanic": 0.182
+ },
+ "00890000": {
+  "chronic_low_income": 0.272,
+  "chronic_swd": 0.227,
+  "chronic_ell": 0.299,
+  "chronic_black": 0.333,
+  "chronic_hispanic": 0.239
+ },
+ "02520000": {
+  "chronic_low_income": 0.25,
+  "chronic_swd": 0.268,
+  "chronic_ell": 0.0,
+  "chronic_hispanic": 0.207
+ },
+ "03010000": {
+  "chronic_low_income": 0.246,
+  "chronic_swd": 0.225,
+  "chronic_ell": 0.134,
+  "chronic_black": 0.094,
+  "chronic_hispanic": 0.235
+ },
+ "00960000": {
+  "chronic_low_income": 0.386,
+  "chronic_swd": 0.352,
+  "chronic_ell": 0.475,
+  "chronic_black": 0.229,
+  "chronic_hispanic": 0.421
+ },
+ "02660000": {
+  "chronic_low_income": 0.24,
+  "chronic_swd": 0.184,
+  "chronic_ell": 0.196,
+  "chronic_black": 0.161,
+  "chronic_hispanic": 0.186
+ },
+ "07700000": {
+  "chronic_low_income": 0.269,
+  "chronic_swd": 0.305,
+  "chronic_ell": 0.278,
+  "chronic_black": 0.148,
+  "chronic_hispanic": 0.258
+ },
+ "00240000": {
+  "chronic_low_income": 0.289,
+  "chronic_swd": 0.244,
+  "chronic_ell": 0.375,
+  "chronic_black": 0.063,
+  "chronic_hispanic": 0.303
+ },
+ "01030000": {
+  "chronic_low_income": 0.325,
+  "chronic_swd": 0.345,
+  "chronic_ell": 0.36,
+  "chronic_black": 0.206,
+  "chronic_hispanic": 0.32
+ },
+ "03140000": {
+  "chronic_low_income": 0.269,
+  "chronic_swd": 0.228,
+  "chronic_ell": 0.267,
+  "chronic_black": 0.177,
+  "chronic_hispanic": 0.248
+ },
+ "07750000": {
+  "chronic_low_income": 0.231,
+  "chronic_swd": 0.198,
+  "chronic_ell": 0.231,
+  "chronic_black": 0.073,
+  "chronic_hispanic": 0.176
+ },
+ "06030000": {
+  "chronic_low_income": 0.327,
+  "chronic_swd": 0.301,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.387,
+  "chronic_hispanic": 0.333
+ },
+ "02260000": {
+  "chronic_low_income": 0.269,
+  "chronic_swd": 0.269,
+  "chronic_ell": 0.272,
+  "chronic_black": 0.167,
+  "chronic_hispanic": 0.271
+ },
+ "02630000": {
+  "chronic_low_income": 0.167,
+  "chronic_swd": 0.0
+ },
+ "01760000": {
+  "chronic_low_income": 0.241,
+  "chronic_swd": 0.234,
+  "chronic_ell": 0.226,
+  "chronic_black": 0.14,
+  "chronic_hispanic": 0.26
+ },
+ "02960000": {
+  "chronic_low_income": 0.407,
+  "chronic_swd": 0.309,
+  "chronic_ell": 0.512,
+  "chronic_black": 0.32,
+  "chronic_hispanic": 0.413
+ },
+ "07500000": {
+  "chronic_low_income": 0.202,
+  "chronic_swd": 0.078,
+  "chronic_hispanic": 0.4
+ },
+ "07800000": {
+  "chronic_low_income": 0.289,
+  "chronic_swd": 0.247,
+  "chronic_ell": 0.342,
+  "chronic_black": 0.19,
+  "chronic_hispanic": 0.328
+ },
+ "00440000": {
+  "chronic_low_income": 0.288,
+  "chronic_swd": 0.325,
+  "chronic_ell": 0.241,
+  "chronic_black": 0.22,
+  "chronic_hispanic": 0.359
+ },
+ "00850000": {
+  "chronic_low_income": 0.275,
+  "chronic_swd": 0.231,
+  "chronic_ell": 0.235,
+  "chronic_black": 0.28,
+  "chronic_hispanic": 0.25
+ },
+ "01780000": {
+  "chronic_low_income": 0.243,
+  "chronic_swd": 0.154,
+  "chronic_ell": 0.22,
+  "chronic_black": 0.201,
+  "chronic_hispanic": 0.211
+ },
+ "01280000": {
+  "chronic_low_income": 0.328,
+  "chronic_swd": 0.32,
+  "chronic_ell": 0.252,
+  "chronic_black": 0.162,
+  "chronic_hispanic": 0.315
+ },
+ "00740000": {
+  "chronic_low_income": 0.188,
+  "chronic_swd": 0.187,
+  "chronic_black": 0.5,
+  "chronic_hispanic": 0.0
+ },
+ "00860000": {
+  "chronic_low_income": 0.322,
+  "chronic_swd": 0.259,
+  "chronic_ell": 0.4,
+  "chronic_black": 0.294,
+  "chronic_hispanic": 0.316
+ },
+ "01610000": {
+  "chronic_low_income": 0.198,
+  "chronic_swd": 0.25,
+  "chronic_ell": 0.139,
+  "chronic_black": 0.196,
+  "chronic_hispanic": 0.194
+ },
+ "03500000": {
+  "chronic_low_income": 0.301,
+  "chronic_swd": 0.15,
+  "chronic_ell": 0.526,
+  "chronic_black": 0.227,
+  "chronic_hispanic": 0.264
+ },
+ "06200000": {
+  "chronic_low_income": 0.221,
+  "chronic_swd": 0.136,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.3,
+  "chronic_hispanic": 0.179
+ },
+ "07100000": {
+  "chronic_low_income": 0.235,
+  "chronic_swd": 0.155,
+  "chronic_ell": 0.235,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.187
+ },
+ "02580000": {
+  "chronic_low_income": 0.25,
+  "chronic_swd": 0.268,
+  "chronic_ell": 0.197,
+  "chronic_black": 0.144,
+  "chronic_hispanic": 0.227
+ },
+ "00820000": {
+  "chronic_low_income": 0.164,
+  "chronic_swd": 0.1,
+  "chronic_ell": 0.0,
+  "chronic_black": 0.15,
+  "chronic_hispanic": 0.098
+ },
+ "02640000": {
+  "chronic_low_income": 0.268,
+  "chronic_swd": 0.161,
+  "chronic_ell": 0.071,
+  "chronic_black": 0.206,
+  "chronic_hispanic": 0.333
+ },
+ "03040000": {
+  "chronic_low_income": 0.292,
+  "chronic_swd": 0.275,
+  "chronic_ell": 0.302,
+  "chronic_black": 0.172,
+  "chronic_hispanic": 0.319
+ },
+ "00650000": {
+  "chronic_low_income": 0.173,
+  "chronic_swd": 0.09,
+  "chronic_black": 0.184,
+  "chronic_hispanic": 0.15
+ },
+ "00180000": {
+  "chronic_low_income": 0.146,
+  "chronic_swd": 0.229,
+  "chronic_ell": 0.034,
+  "chronic_black": 0.085,
+  "chronic_hispanic": 0.117
+ },
+ "01410000": {
+  "chronic_low_income": 0.282,
+  "chronic_swd": 0.269,
+  "chronic_ell": 0.293,
+  "chronic_black": 0.245,
+  "chronic_hispanic": 0.273
+ },
+ "01010000": {
+  "chronic_low_income": 0.269,
+  "chronic_swd": 0.191,
+  "chronic_ell": 0.238,
+  "chronic_black": 0.142,
+  "chronic_hispanic": 0.237
+ },
+ "01910000": {
+  "chronic_low_income": 0.231,
+  "chronic_swd": 0.208,
+  "chronic_ell": 0.273,
+  "chronic_black": 0.214,
+  "chronic_hispanic": 0.247
+ },
+ "03460000": {
+  "chronic_low_income": 0.204,
+  "chronic_swd": 0.197,
+  "chronic_ell": 0.22,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.196
+ },
+ "06750000": {
+  "chronic_low_income": 0.162,
+  "chronic_swd": 0.104,
+  "chronic_ell": 0.0,
+  "chronic_black": 0.154,
+  "chronic_hispanic": 0.081
+ },
+ "06580000": {
+  "chronic_low_income": 0.208,
+  "chronic_swd": 0.195,
+  "chronic_ell": 0.19,
+  "chronic_black": 0.055,
+  "chronic_hispanic": 0.255
+ },
+ "01840000": {
+  "chronic_low_income": 0.198,
+  "chronic_swd": 0.09,
+  "chronic_ell": 0.088,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.122
+ },
+ "01540000": {
+  "chronic_low_income": 0.125,
+  "chronic_swd": 0.188
+ },
+ "00880000": {
+  "chronic_low_income": 0.213,
+  "chronic_swd": 0.208,
+  "chronic_ell": 0.2,
+  "chronic_black": 0.089,
+  "chronic_hispanic": 0.187
+ },
+ "02500000": {
+  "chronic_low_income": 0.124,
+  "chronic_swd": 0.069,
+  "chronic_hispanic": 0.222
+ },
+ "06100000": {
+  "chronic_low_income": 0.188,
+  "chronic_swd": 0.18,
+  "chronic_ell": 0.17,
+  "chronic_black": 0.136,
+  "chronic_hispanic": 0.195
+ },
+ "01310000": {
+  "chronic_low_income": 0.232,
+  "chronic_swd": 0.109,
+  "chronic_ell": 0.182,
+  "chronic_black": 0.262,
+  "chronic_hispanic": 0.132
+ },
+ "03160000": {
+  "chronic_low_income": 0.318,
+  "chronic_swd": 0.37,
+  "chronic_ell": 0.295,
+  "chronic_black": 0.151,
+  "chronic_hispanic": 0.345
+ },
+ "02230000": {
+  "chronic_low_income": 0.193,
+  "chronic_swd": 0.201,
+  "chronic_ell": 0.188,
+  "chronic_hispanic": 0.232
+ },
+ "00930000": {
+  "chronic_low_income": 0.346,
+  "chronic_swd": 0.372,
+  "chronic_ell": 0.362,
+  "chronic_black": 0.19,
+  "chronic_hispanic": 0.358
+ },
+ "02690000": {
+  "chronic_low_income": 0.231,
+  "chronic_swd": 0.149,
+  "chronic_ell": 0.167,
+  "chronic_black": 0.25,
+  "chronic_hispanic": 0.048
+ },
+ "02910000": {
+  "chronic_low_income": 0.318,
+  "chronic_swd": 0.217,
+  "chronic_ell": 0.267,
+  "chronic_black": 0.321,
+  "chronic_hispanic": 0.26
+ },
+ "07200000": {
+  "chronic_low_income": 0.224,
+  "chronic_swd": 0.194,
+  "chronic_ell": 0.25,
+  "chronic_black": 0.154,
+  "chronic_hispanic": 0.238
+ },
+ "06550000": {
+  "chronic_low_income": 0.093,
+  "chronic_swd": 0.091,
+  "chronic_ell": 0.0,
+  "chronic_black": 0.024,
+  "chronic_hispanic": 0.07
+ },
+ "00200000": {
+  "chronic_low_income": 0.266,
+  "chronic_swd": 0.294,
+  "chronic_ell": 0.266,
+  "chronic_black": 0.175,
+  "chronic_hispanic": 0.269
+ },
+ "01720000": {
+  "chronic_low_income": 0.299,
+  "chronic_swd": 0.267,
+  "chronic_ell": 0.384,
+  "chronic_black": 0.078,
+  "chronic_hispanic": 0.305
+ },
+ "00450000": {
+  "chronic_low_income": 0.225,
+  "chronic_swd": 0.145,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.208
+ },
+ "02460000": {
+  "chronic_low_income": 0.224,
+  "chronic_swd": 0.145,
+  "chronic_ell": 0.221,
+  "chronic_black": 0.239,
+  "chronic_hispanic": 0.162
+ },
+ "00170000": {
+  "chronic_low_income": 0.223,
+  "chronic_swd": 0.192,
+  "chronic_ell": 0.201,
+  "chronic_black": 0.163,
+  "chronic_hispanic": 0.201
+ },
+ "00230000": {
+  "chronic_low_income": 0.249,
+  "chronic_swd": 0.206,
+  "chronic_ell": 0.237,
+  "chronic_black": 0.216,
+  "chronic_hispanic": 0.22
+ },
+ "01730000": {
+  "chronic_low_income": 0.195,
+  "chronic_swd": 0.152,
+  "chronic_hispanic": 0.095
+ },
+ "02730000": {
+  "chronic_low_income": 0.161,
+  "chronic_swd": 0.14,
+  "chronic_ell": 0.167,
+  "chronic_black": 0.034,
+  "chronic_hispanic": 0.159
+ },
+ "01000000": {
+  "chronic_low_income": 0.41,
+  "chronic_swd": 0.355,
+  "chronic_ell": 0.442,
+  "chronic_black": 0.253,
+  "chronic_hispanic": 0.409
+ },
+ "01640000": {
+  "chronic_low_income": 0.242,
+  "chronic_swd": 0.141,
+  "chronic_ell": 0.196,
+  "chronic_black": 0.109,
+  "chronic_hispanic": 0.132
+ },
+ "01990000": {
+  "chronic_low_income": 0.214,
+  "chronic_swd": 0.142,
+  "chronic_ell": 0.158,
+  "chronic_black": 0.153,
+  "chronic_hispanic": 0.142
+ },
+ "02080000": {
+  "chronic_low_income": 0.341,
+  "chronic_swd": 0.129,
+  "chronic_ell": 0.42,
+  "chronic_black": 0.451,
+  "chronic_hispanic": 0.261
+ },
+ "02290000": {
+  "chronic_low_income": 0.316,
+  "chronic_swd": 0.29,
+  "chronic_ell": 0.3,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.303
+ },
+ "07780000": {
+  "chronic_low_income": 0.317,
+  "chronic_swd": 0.29,
+  "chronic_ell": 0.333,
+  "chronic_black": 0.4,
+  "chronic_hispanic": 0.32
+ },
+ "01590000": {
+  "chronic_low_income": 0.157,
+  "chronic_swd": 0.165,
+  "chronic_ell": 0.108,
+  "chronic_black": 0.069,
+  "chronic_hispanic": 0.117
+ },
+ "02510000": {
+  "chronic_low_income": 0.294,
+  "chronic_swd": 0.209,
+  "chronic_ell": 0.351,
+  "chronic_black": 0.272,
+  "chronic_hispanic": 0.321
+ },
+ "02180000": {
+  "chronic_low_income": 0.336,
+  "chronic_swd": 0.267,
+  "chronic_ell": 0.286,
+  "chronic_black": 0.307,
+  "chronic_hispanic": 0.224
+ },
+ "02240000": {
+  "chronic_low_income": 0.175,
+  "chronic_swd": 0.028,
+  "chronic_ell": 0.143,
+  "chronic_hispanic": 0.214
+ },
+ "00500000": {
+  "chronic_low_income": 0.313,
+  "chronic_swd": 0.272,
+  "chronic_ell": 0.297,
+  "chronic_black": 0.239,
+  "chronic_hispanic": 0.249
+ },
+ "00410000": {
+  "chronic_low_income": 0.186,
+  "chronic_swd": 0.217,
+  "chronic_ell": 0.211,
+  "chronic_black": 0.28,
+  "chronic_hispanic": 0.192
+ },
+ "01350000": {
+  "chronic_low_income": 0.122,
+  "chronic_swd": 0.195,
+  "chronic_hispanic": 0.053
+ },
+ "01970000": {
+  "chronic_low_income": 0.28,
+  "chronic_swd": 0.278,
+  "chronic_ell": 0.334,
+  "chronic_black": 0.174,
+  "chronic_hispanic": 0.269
+ },
+ "02150000": {
+  "chronic_low_income": 0.407,
+  "chronic_swd": 0.434,
+  "chronic_ell": 0.143,
+  "chronic_black": 0.478,
+  "chronic_hispanic": 0.377
+ },
+ "01070000": {
+  "chronic_low_income": 0.38,
+  "chronic_swd": 0.344,
+  "chronic_ell": 0.423,
+  "chronic_black": 0.254,
+  "chronic_hispanic": 0.373
+ },
+ "02310000": {
+  "chronic_low_income": 0.235,
+  "chronic_swd": 0.172,
+  "chronic_ell": 0.286,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.224
+ },
+ "02900000": {
+  "chronic_low_income": 0.25,
+  "chronic_swd": 0.134,
+  "chronic_ell": 0.235,
+  "chronic_black": 0.222,
+  "chronic_hispanic": 0.235
+ },
+ "06320000": {
+  "chronic_low_income": 0.2,
+  "chronic_swd": 0.136
+ },
+ "06740000": {
+  "chronic_low_income": 0.31,
+  "chronic_swd": 0.325,
+  "chronic_ell": 0.259,
+  "chronic_black": 0.19,
+  "chronic_hispanic": 0.277
+ },
+ "02770000": {
+  "chronic_low_income": 0.398,
+  "chronic_swd": 0.385,
+  "chronic_ell": 0.432,
+  "chronic_black": 0.24,
+  "chronic_hispanic": 0.396
+ },
+ "03400000": {
+  "chronic_low_income": 0.233,
+  "chronic_swd": 0.154,
+  "chronic_hispanic": 0.4
+ },
+ "01860000": {
+  "chronic_low_income": 0.236,
+  "chronic_swd": 0.178,
+  "chronic_ell": 0.274,
+  "chronic_black": 0.092,
+  "chronic_hispanic": 0.217
+ },
+ "01170000": {
+  "chronic_low_income": 0.261,
+  "chronic_swd": 0.207,
+  "chronic_ell": 0.242,
+  "chronic_black": 0.167,
+  "chronic_hispanic": 0.329
+ },
+ "02840000": {
+  "chronic_low_income": 0.309,
+  "chronic_swd": 0.277,
+  "chronic_ell": 0.21,
+  "chronic_black": 0.167,
+  "chronic_hispanic": 0.249
+ },
+ "02490000": {
+  "chronic_low_income": 0.143,
+  "chronic_swd": 0.111,
+  "chronic_hispanic": 0.0
+ },
+ "03350000": {
+  "chronic_low_income": 0.261,
+  "chronic_swd": 0.142,
+  "chronic_ell": 0.263,
+  "chronic_black": 0.333,
+  "chronic_hispanic": 0.218
+ },
+ "03470000": {
+  "chronic_low_income": 0.315,
+  "chronic_swd": 0.288,
+  "chronic_ell": 0.288,
+  "chronic_black": 0.177,
+  "chronic_hispanic": 0.31
+ },
+ "00360000": {
+  "chronic_low_income": 0.288,
+  "chronic_swd": 0.239,
+  "chronic_ell": 0.386,
+  "chronic_black": 0.475,
+  "chronic_hispanic": 0.296
+ },
+ "00870000": {
+  "chronic_low_income": 0.114,
+  "chronic_swd": 0.119,
+  "chronic_ell": 0.091,
+  "chronic_black": 0.097,
+  "chronic_hispanic": 0.102
+ },
+ "01520000": {
+  "chronic_low_income": 0.239,
+  "chronic_swd": 0.267,
+  "chronic_ell": 0.333,
+  "chronic_black": 0.375,
+  "chronic_hispanic": 0.141
+ },
+ "06000000": {
+  "chronic_low_income": 0.261,
+  "chronic_swd": 0.208,
+  "chronic_ell": 0.272,
+  "chronic_black": 0.144,
+  "chronic_hispanic": 0.254
+ },
+ "01870000": {
+  "chronic_low_income": 0.232,
+  "chronic_swd": 0.165,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.195
+ },
+ "01580000": {
+  "chronic_low_income": 0.242,
+  "chronic_swd": 0.126,
+  "chronic_ell": 0.061,
+  "chronic_black": 0.08,
+  "chronic_hispanic": 0.1
+ },
+ "01380000": {
+  "chronic_low_income": 0.167,
+  "chronic_swd": 0.167,
+  "chronic_ell": 0.091,
+  "chronic_black": 0.214,
+  "chronic_hispanic": 0.145
+ },
+ "00640000": {
+  "chronic_low_income": 0.104,
+  "chronic_swd": 0.105,
+  "chronic_ell": 0.09,
+  "chronic_black": 0.051,
+  "chronic_hispanic": 0.092
+ },
+ "02810000": {
+  "chronic_low_income": 0.351,
+  "chronic_swd": 0.392,
+  "chronic_ell": 0.309,
+  "chronic_black": 0.248,
+  "chronic_hispanic": 0.365
+ },
+ "03360000": {
+  "chronic_low_income": 0.287,
+  "chronic_swd": 0.298,
+  "chronic_ell": 0.284,
+  "chronic_black": 0.226,
+  "chronic_hispanic": 0.322
+ },
+ "01390000": {
+  "chronic_low_income": 0.235,
+  "chronic_swd": 0.174,
+  "chronic_ell": 0.228,
+  "chronic_black": 0.146,
+  "chronic_hispanic": 0.169
+ },
+ "01750000": {
+  "chronic_low_income": 0.257,
+  "chronic_swd": 0.157,
+  "chronic_ell": 0.217,
+  "chronic_black": 0.288,
+  "chronic_hispanic": 0.163
+ },
+ "01890000": {
+  "chronic_low_income": 0.155,
+  "chronic_swd": 0.126,
+  "chronic_ell": 0.076,
+  "chronic_black": 0.116,
+  "chronic_hispanic": 0.123
+ },
+ "00770000": {
+  "chronic_low_income": 0.193,
+  "chronic_swd": 0.189,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.136
+ },
+ "00910000": {
+  "chronic_low_income": 0.304,
+  "chronic_swd": 0.343,
+  "chronic_hispanic": 0.125
+ },
+ "00980000": {
+  "chronic_low_income": 0.097,
+  "chronic_swd": 0.0
+ },
+ "00260000": {
+  "chronic_low_income": 0.223,
+  "chronic_swd": 0.195,
+  "chronic_ell": 0.123,
+  "chronic_black": 0.259,
+  "chronic_hispanic": 0.213
+ },
+ "00520000": {
+  "chronic_low_income": 0.22,
+  "chronic_swd": 0.17,
+  "chronic_ell": 0.129,
+  "chronic_black": 0.059,
+  "chronic_hispanic": 0.167
+ },
+ "02400000": {
+  "chronic_low_income": 0.182,
+  "chronic_swd": 0.176,
+  "chronic_ell": 0.25,
+  "chronic_hispanic": 0.154
+ },
+ "03260000": {
+  "chronic_low_income": 0.24,
+  "chronic_swd": 0.159,
+  "chronic_ell": 0.14,
+  "chronic_black": 0.111,
+  "chronic_hispanic": 0.188
+ },
+ "01620000": {
+  "chronic_low_income": 0.224,
+  "chronic_swd": 0.171,
+  "chronic_ell": 0.215,
+  "chronic_black": 0.059,
+  "chronic_hispanic": 0.22
+ },
+ "06180000": {
+  "chronic_low_income": 0.367,
+  "chronic_swd": 0.36,
+  "chronic_ell": 0.4,
+  "chronic_black": 0.296,
+  "chronic_hispanic": 0.403
+ },
+ "03180000": {
+  "chronic_low_income": 0.278,
+  "chronic_swd": 0.25,
+  "chronic_hispanic": 0.0
+ },
+ "00720000": {
+  "chronic_low_income": 0.219,
+  "chronic_swd": 0.184,
+  "chronic_ell": 0.28,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.201
+ },
+ "02380000": {
+  "chronic_low_income": 0.21,
+  "chronic_swd": 0.23,
+  "chronic_ell": 0.105,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.143
+ },
+ "03320000": {
+  "chronic_low_income": 0.253,
+  "chronic_swd": 0.294,
+  "chronic_ell": 0.205,
+  "chronic_black": 0.134,
+  "chronic_hispanic": 0.281
+ },
+ "01820000": {
+  "chronic_low_income": 0.273,
+  "chronic_swd": 0.274,
+  "chronic_ell": 0.307,
+  "chronic_black": 0.24,
+  "chronic_hispanic": 0.195
+ },
+ "02530000": {
+  "chronic_low_income": 0.333,
+  "chronic_swd": 0.385
+ },
+ "01100000": {
+  "chronic_low_income": 0.253,
+  "chronic_swd": 0.255,
+  "chronic_ell": 0.248,
+  "chronic_black": 0.108,
+  "chronic_hispanic": 0.258
+ },
+ "02210000": {
+  "chronic_low_income": 0.26,
+  "chronic_swd": 0.183,
+  "chronic_ell": 0.272,
+  "chronic_black": 0.154,
+  "chronic_hispanic": 0.199
+ },
+ "06850000": {
+  "chronic_low_income": 0.167,
+  "chronic_swd": 0.182
+ },
+ "01650000": {
+  "chronic_low_income": 0.299,
+  "chronic_swd": 0.374,
+  "chronic_ell": 0.25,
+  "chronic_black": 0.196,
+  "chronic_hispanic": 0.343
+ },
+ "03300000": {
+  "chronic_low_income": 0.175,
+  "chronic_swd": 0.118,
+  "chronic_ell": 0.108,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.144
+ },
+ "07530000": {
+  "chronic_low_income": 0.296,
+  "chronic_swd": 0.24,
+  "chronic_ell": 0.308,
+  "chronic_black": 0.235,
+  "chronic_hispanic": 0.331
+ },
+ "00790000": {
+  "chronic_low_income": 0.237,
+  "chronic_swd": 0.224,
+  "chronic_ell": 0.253,
+  "chronic_black": 0.092,
+  "chronic_hispanic": 0.219
+ },
+ "00270000": {
+  "chronic_low_income": 0.203,
+  "chronic_swd": 0.163,
+  "chronic_ell": 0.25,
+  "chronic_black": 0.091,
+  "chronic_hispanic": 0.158
+ },
+ "00080000": {
+  "chronic_low_income": 0.268,
+  "chronic_swd": 0.273,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.159,
+  "chronic_hispanic": 0.296
+ },
+ "03310000": {
+  "chronic_low_income": 0.224,
+  "chronic_swd": 0.22,
+  "chronic_ell": 0.138,
+  "chronic_black": 0.238,
+  "chronic_hispanic": 0.198
+ },
+ "03150000": {
+  "chronic_low_income": 0.248,
+  "chronic_swd": 0.132,
+  "chronic_ell": 0.278,
+  "chronic_black": 0.228,
+  "chronic_hispanic": 0.111
+ },
+ "01850000": {
+  "chronic_low_income": 0.291,
+  "chronic_swd": 0.31,
+  "chronic_ell": 0.33,
+  "chronic_black": 0.214,
+  "chronic_hispanic": 0.267
+ },
+ "02360000": {
+  "chronic_low_income": 0.461,
+  "chronic_swd": 0.486,
+  "chronic_ell": 0.402,
+  "chronic_black": 0.354,
+  "chronic_hispanic": 0.465
+ },
+ "02650000": {
+  "chronic_low_income": 0.201,
+  "chronic_swd": 0.165,
+  "chronic_ell": 0.176,
+  "chronic_black": 0.081,
+  "chronic_hispanic": 0.128
+ },
+ "07450000": {
+  "chronic_low_income": 0.232,
+  "chronic_swd": 0.15,
+  "chronic_ell": 0.192,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.155
+ },
+ "01220000": {
+  "chronic_low_income": 0.26,
+  "chronic_swd": 0.129,
+  "chronic_ell": 0.163,
+  "chronic_black": 0.357,
+  "chronic_hispanic": 0.196
+ },
+ "02420000": {
+  "chronic_low_income": 0.324,
+  "chronic_swd": 0.308,
+  "chronic_ell": 0.263,
+  "chronic_black": 0.316,
+  "chronic_hispanic": 0.238
+ },
+ "00730000": {
+  "chronic_low_income": 0.277,
+  "chronic_swd": 0.239,
+  "chronic_ell": 0.219,
+  "chronic_black": 0.222,
+  "chronic_hispanic": 0.265
+ },
+ "03090000": {
+  "chronic_low_income": 0.268,
+  "chronic_swd": 0.265,
+  "chronic_ell": 0.192,
+  "chronic_black": 0.25,
+  "chronic_hispanic": 0.268
+ },
+ "07170000": {
+  "chronic_low_income": 0.238,
+  "chronic_swd": 0.189,
+  "chronic_ell": 0.429,
+  "chronic_black": 0.273,
+  "chronic_hispanic": 0.311
+ },
+ "02110000": {
+  "chronic_low_income": 0.278,
+  "chronic_swd": 0.213,
+  "chronic_ell": 0.245,
+  "chronic_black": 0.165,
+  "chronic_hispanic": 0.254
+ },
+ "01250000": {
+  "chronic_low_income": 0.366,
+  "chronic_swd": 0.271,
+  "chronic_ell": 0.417,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.347
+ },
+ "00490000": {
+  "chronic_low_income": 0.315,
+  "chronic_swd": 0.296,
+  "chronic_ell": 0.211,
+  "chronic_black": 0.262,
+  "chronic_hispanic": 0.309
+ },
+ "01110000": {
+  "chronic_low_income": 0.171,
+  "chronic_swd": 0.222,
+  "chronic_ell": 0.133,
+  "chronic_hispanic": 0.15
+ },
+ "02430000": {
+  "chronic_low_income": 0.212,
+  "chronic_swd": 0.279,
+  "chronic_ell": 0.142,
+  "chronic_black": 0.236,
+  "chronic_hispanic": 0.281
+ },
+ "01140000": {
+  "chronic_low_income": 0.334,
+  "chronic_swd": 0.314,
+  "chronic_ell": 0.333,
+  "chronic_black": 0.225,
+  "chronic_hispanic": 0.401
+ },
+ "02760000": {
+  "chronic_low_income": 0.303,
+  "chronic_swd": 0.234,
+  "chronic_ell": 0.381,
+  "chronic_black": 0.05,
+  "chronic_hispanic": 0.284
+ },
+ "06500000": {
+  "chronic_low_income": 0.268,
+  "chronic_swd": 0.184,
+  "chronic_ell": 0.294,
+  "chronic_black": 0.113,
+  "chronic_hispanic": 0.227
+ },
+ "00300000": {
+  "chronic_low_income": 0.424,
+  "chronic_swd": 0.344,
+  "chronic_ell": 0.372,
+  "chronic_black": 0.301,
+  "chronic_hispanic": 0.413
+ },
+ "03230000": {
+  "chronic_low_income": 0.179,
+  "chronic_swd": 0.16,
+  "chronic_ell": 0.241,
+  "chronic_black": 0.121,
+  "chronic_hispanic": 0.174
+ },
+ "02070000": {
+  "chronic_low_income": 0.255,
+  "chronic_swd": 0.194,
+  "chronic_ell": 0.203,
+  "chronic_black": 0.169,
+  "chronic_hispanic": 0.203
+ },
+ "07120000": {
+  "chronic_low_income": 0.213,
+  "chronic_swd": 0.183,
+  "chronic_ell": 0.151,
+  "chronic_black": 0.181,
+  "chronic_hispanic": 0.165
+ },
+ "01700000": {
+  "chronic_low_income": 0.274,
+  "chronic_swd": 0.284,
+  "chronic_ell": 0.288,
+  "chronic_black": 0.202,
+  "chronic_hispanic": 0.268
+ },
+ "02980000": {
+  "chronic_low_income": 0.077,
+  "chronic_swd": 0.065,
+  "chronic_hispanic": 0.107
+ },
+ "06250000": {
+  "chronic_low_income": 0.198,
+  "chronic_swd": 0.167,
+  "chronic_ell": 0.203,
+  "chronic_black": 0.1,
+  "chronic_hispanic": 0.211
+ },
+ "06730000": {
+  "chronic_low_income": 0.191,
+  "chronic_swd": 0.142,
+  "chronic_ell": 0.146,
+  "chronic_black": 0.043,
+  "chronic_hispanic": 0.123
+ },
+ "03490000": {
+  "chronic_low_income": 0.464,
+  "chronic_swd": 0.214
+ },
+ "02270000": {
+  "chronic_low_income": 0.236,
+  "chronic_swd": 0.243,
+  "chronic_ell": 0.322,
+  "chronic_black": 0.297,
+  "chronic_hispanic": 0.259
+ },
+ "01630000": {
+  "chronic_low_income": 0.336,
+  "chronic_swd": 0.357,
+  "chronic_ell": 0.31,
+  "chronic_black": 0.216,
+  "chronic_hispanic": 0.326
+ },
+ "00250000": {
+  "chronic_low_income": 0.313,
+  "chronic_swd": 0.3,
+  "chronic_ell": 0.298,
+  "chronic_black": 0.085,
+  "chronic_hispanic": 0.29
+ },
+ "00950000": {
+  "chronic_low_income": 0.291,
+  "chronic_swd": 0.347,
+  "chronic_ell": 0.233,
+  "chronic_black": 0.208,
+  "chronic_hispanic": 0.301
+ },
+ "07730000": {
+  "chronic_low_income": 0.268,
+  "chronic_swd": 0.21,
+  "chronic_ell": 0.306,
+  "chronic_black": 0.182,
+  "chronic_hispanic": 0.228
+ },
+ "02890000": {
+  "chronic_low_income": 0.289,
+  "chronic_swd": 0.378,
+  "chronic_ell": 0.158,
+  "chronic_black": 0.188,
+  "chronic_hispanic": 0.148
+ },
+ "07660000": {
+  "chronic_low_income": 0.207,
+  "chronic_swd": 0.177,
+  "chronic_ell": 0.277,
+  "chronic_black": 0.059,
+  "chronic_hispanic": 0.139
+ },
+ "02780000": {
+  "chronic_low_income": 0.354,
+  "chronic_swd": 0.3,
+  "chronic_ell": 0.429,
+  "chronic_black": 0.353,
+  "chronic_hispanic": 0.407
+ },
+ "03080000": {
+  "chronic_low_income": 0.259,
+  "chronic_swd": 0.228,
+  "chronic_ell": 0.3,
+  "chronic_black": 0.132,
+  "chronic_hispanic": 0.257
+ },
+ "00160000": {
+  "chronic_low_income": 0.25,
+  "chronic_swd": 0.256,
+  "chronic_ell": 0.231,
+  "chronic_black": 0.147,
+  "chronic_hispanic": 0.253
+ },
+ "03100000": {
+  "chronic_low_income": 0.272,
+  "chronic_swd": 0.326,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.237,
+  "chronic_hispanic": 0.324
+ },
+ "02850000": {
+  "chronic_low_income": 0.229,
+  "chronic_swd": 0.236,
+  "chronic_ell": 0.213,
+  "chronic_black": 0.158,
+  "chronic_hispanic": 0.204
+ },
+ "02170000": {
+  "chronic_low_income": 0.135,
+  "chronic_swd": 0.115,
+  "chronic_ell": 0.025,
+  "chronic_black": 0.059,
+  "chronic_hispanic": 0.15
+ },
+ "07150000": {
+  "chronic_low_income": 0.213,
+  "chronic_swd": 0.204,
+  "chronic_ell": 0.241,
+  "chronic_black": 0.257,
+  "chronic_hispanic": 0.2
+ },
+ "06800000": {
+  "chronic_low_income": 0.179,
+  "chronic_swd": 0.17,
+  "chronic_ell": 0.143,
+  "chronic_black": 0.108,
+  "chronic_hispanic": 0.141
+ },
+ "01180000": {
+  "chronic_low_income": 0.201,
+  "chronic_swd": 0.222,
+  "chronic_ell": 0.1,
+  "chronic_black": 0.182,
+  "chronic_hispanic": 0.111
+ },
+ "00460000": {
+  "chronic_low_income": 0.239,
+  "chronic_swd": 0.186,
+  "chronic_ell": 0.162,
+  "chronic_black": 0.197,
+  "chronic_hispanic": 0.186
+ },
+ "01530000": {
+  "chronic_low_income": 0.276,
+  "chronic_swd": 0.267,
+  "chronic_ell": 0.266,
+  "chronic_black": 0.119,
+  "chronic_hispanic": 0.285
+ },
+ "01510000": {
+  "chronic_low_income": 0.245,
+  "chronic_swd": 0.243,
+  "chronic_ell": 0.275,
+  "chronic_black": 0.123,
+  "chronic_hispanic": 0.241
+ },
+ "01810000": {
+  "chronic_low_income": 0.276,
+  "chronic_swd": 0.261,
+  "chronic_ell": 0.245,
+  "chronic_black": 0.138,
+  "chronic_hispanic": 0.268
+ },
+ "07670000": {
+  "chronic_low_income": 0.209,
+  "chronic_swd": 0.211,
+  "chronic_ell": 0.216,
+  "chronic_black": 0.102,
+  "chronic_hispanic": 0.208
+ },
+ "00030000": {
+  "chronic_low_income": 0.158,
+  "chronic_swd": 0.133,
+  "chronic_black": 0.077,
+  "chronic_hispanic": 0.129
+ },
+ "01710000": {
+  "chronic_low_income": 0.19,
+  "chronic_swd": 0.18,
+  "chronic_ell": 0.211,
+  "chronic_black": 0.139,
+  "chronic_hispanic": 0.146
+ },
+ "03070000": {
+  "chronic_low_income": 0.183,
+  "chronic_swd": 0.123,
+  "chronic_ell": 0.213,
+  "chronic_black": 0.176,
+  "chronic_hispanic": 0.135
+ },
+ "06620000": {
+  "chronic_low_income": 0.284,
+  "chronic_swd": 0.259,
+  "chronic_hispanic": 0.167
+ },
+ "00680000": {
+  "chronic_low_income": 0.175,
+  "chronic_swd": 0.171
+ },
+ "01420000": {
+  "chronic_low_income": 0.195,
+  "chronic_swd": 0.171,
+  "chronic_ell": 0.412,
+  "chronic_black": 0.105,
+  "chronic_hispanic": 0.286
+ },
+ "03000000": {
+  "chronic_low_income": 0.289,
+  "chronic_swd": 0.267,
+  "chronic_black": 0.286,
+  "chronic_hispanic": 0.444
+ },
+ "00140000": {
+  "chronic_low_income": 0.253,
+  "chronic_swd": 0.21,
+  "chronic_ell": 0.268,
+  "chronic_black": 0.126,
+  "chronic_hispanic": 0.227
+ },
+ "02620000": {
+  "chronic_low_income": 0.381,
+  "chronic_swd": 0.331,
+  "chronic_ell": 0.426,
+  "chronic_black": 0.245,
+  "chronic_hispanic": 0.378
+ },
+ "06220000": {
+  "chronic_low_income": 0.277,
+  "chronic_swd": 0.256,
+  "chronic_ell": 0.299,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.288
+ },
+ "01490000": {
+  "chronic_low_income": 0.244,
+  "chronic_swd": 0.311,
+  "chronic_ell": 0.239,
+  "chronic_black": 0.148,
+  "chronic_hispanic": 0.235
+ },
+ "07650000": {
+  "chronic_low_income": 0.328,
+  "chronic_swd": 0.21,
+  "chronic_ell": 0.24,
+  "chronic_hispanic": 0.292
+ },
+ "02440000": {
+  "chronic_low_income": 0.27,
+  "chronic_swd": 0.33,
+  "chronic_ell": 0.187,
+  "chronic_black": 0.21,
+  "chronic_hispanic": 0.325
+ },
+ "02750000": {
+  "chronic_low_income": 0.163,
+  "chronic_swd": 0.147,
+  "chronic_ell": 0.077,
+  "chronic_hispanic": 0.2
+ },
+ "06450000": {
+  "chronic_low_income": 0.285,
+  "chronic_swd": 0.267,
+  "chronic_ell": 0.265,
+  "chronic_black": 0.203,
+  "chronic_hispanic": 0.285
+ },
+ "00710000": {
+  "chronic_low_income": 0.298,
+  "chronic_swd": 0.251,
+  "chronic_ell": 0.274,
+  "chronic_black": 0.166,
+  "chronic_hispanic": 0.264
+ },
+ "00430000": {
+  "chronic_low_income": 0.159,
+  "chronic_swd": 0.184,
+  "chronic_hispanic": 0.067
+ },
+ "00560000": {
+  "chronic_low_income": 0.222,
+  "chronic_swd": 0.169,
+  "chronic_ell": 0.172,
+  "chronic_black": 0.073,
+  "chronic_hispanic": 0.166
+ },
+ "00670000": {
+  "chronic_low_income": 0.213,
+  "chronic_swd": 0.152,
+  "chronic_ell": 0.097,
+  "chronic_black": 0.181,
+  "chronic_hispanic": 0.184
+ },
+ "00100000": {
+  "chronic_low_income": 0.231,
+  "chronic_swd": 0.175,
+  "chronic_ell": 0.163,
+  "chronic_black": 0.171,
+  "chronic_hispanic": 0.179
+ },
+ "01210000": {
+  "chronic_low_income": 0.227,
+  "chronic_swd": 0.308
+ },
+ "01500000": {
+  "chronic_low_income": 0.18,
+  "chronic_swd": 0.127,
+  "chronic_ell": 0.209,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.221
+ },
+ "02010000": {
+  "chronic_low_income": 0.265,
+  "chronic_swd": 0.287,
+  "chronic_ell": 0.25,
+  "chronic_black": 0.193,
+  "chronic_hispanic": 0.277
+ },
+ "03050000": {
+  "chronic_low_income": 0.434,
+  "chronic_swd": 0.288,
+  "chronic_ell": 0.429,
+  "chronic_black": 0.396,
+  "chronic_hispanic": 0.342
+ },
+ "07740000": {
+  "chronic_low_income": 0.292,
+  "chronic_swd": 0.192,
+  "chronic_ell": 0.368,
+  "chronic_black": 0.25,
+  "chronic_hispanic": 0.273
+ },
+ "07250000": {
+  "chronic_low_income": 0.228,
+  "chronic_swd": 0.16,
+  "chronic_ell": 0.234,
+  "chronic_black": 0.12,
+  "chronic_hispanic": 0.169
+ },
+ "00970000": {
+  "chronic_low_income": 0.408,
+  "chronic_swd": 0.431,
+  "chronic_ell": 0.401,
+  "chronic_black": 0.216,
+  "chronic_hispanic": 0.414
+ },
+ "02120000": {
+  "chronic_low_income": 0.299,
+  "chronic_swd": 0.195,
+  "chronic_ell": 0.212,
+  "chronic_black": 0.142,
+  "chronic_hispanic": 0.307
+ },
+ "00090000": {
+  "chronic_low_income": 0.223,
+  "chronic_swd": 0.157,
+  "chronic_ell": 0.222,
+  "chronic_black": 0.124,
+  "chronic_hispanic": 0.185
+ },
+ "01050000": {
+  "chronic_low_income": 0.319,
+  "chronic_swd": 0.13,
+  "chronic_ell": 0.524,
+  "chronic_black": 0.111,
+  "chronic_hispanic": 0.288
+ },
+ "02950000": {
+  "chronic_low_income": 0.235,
+  "chronic_swd": 0.172,
+  "chronic_ell": 0.135,
+  "chronic_black": 0.095,
+  "chronic_hispanic": 0.19
+ },
+ "03270000": {
+  "chronic_low_income": 0.0,
+  "chronic_swd": 0.0
+ },
+ "00480000": {
+  "chronic_low_income": 0.27,
+  "chronic_swd": 0.197,
+  "chronic_ell": 0.325,
+  "chronic_black": 0.098,
+  "chronic_hispanic": 0.339
+ },
+ "02100000": {
+  "chronic_low_income": 0.304,
+  "chronic_swd": 0.267,
+  "chronic_ell": 0.276,
+  "chronic_black": 0.256,
+  "chronic_hispanic": 0.316
+ },
+ "02480000": {
+  "chronic_low_income": 0.295,
+  "chronic_swd": 0.302,
+  "chronic_ell": 0.311,
+  "chronic_black": 0.245,
+  "chronic_hispanic": 0.289
+ },
+ "03430000": {
+  "chronic_low_income": 0.377,
+  "chronic_swd": 0.323,
+  "chronic_ell": 0.313,
+  "chronic_black": 0.2,
+  "chronic_hispanic": 0.35
+ },
+ "06720000": {
+  "chronic_low_income": 0.298,
+  "chronic_swd": 0.289,
+  "chronic_ell": 0.375,
+  "chronic_hispanic": 0.321
+ },
+ "00990000": {
+  "chronic_low_income": 0.211,
+  "chronic_swd": 0.171,
+  "chronic_ell": 0.101,
+  "chronic_black": 0.133,
+  "chronic_hispanic": 0.21
+ },
+ "03170000": {
+  "chronic_low_income": 0.281,
+  "chronic_swd": 0.158,
+  "chronic_ell": 0.156,
+  "chronic_black": 0.26,
+  "chronic_hispanic": 0.168
+ },
+ "01770000": {
+  "chronic_low_income": 0.171,
+  "chronic_swd": 0.155,
+  "chronic_ell": 0.142,
+  "chronic_black": 0.091,
+  "chronic_hispanic": 0.169
+ },
+ "03250000": {
+  "chronic_low_income": 0.318,
+  "chronic_swd": 0.29,
+  "chronic_ell": 0.3,
+  "chronic_black": 0.306,
+  "chronic_hispanic": 0.32
+ },
+ "01960000": {
+  "chronic_low_income": 0.39,
+  "chronic_swd": 0.2,
+  "chronic_hispanic": 0.2
+ },
+ "01570000": {
+  "chronic_low_income": 0.262,
+  "chronic_swd": 0.182,
+  "chronic_ell": 0.311,
+  "chronic_black": 0.16,
+  "chronic_hispanic": 0.218
+ },
+ "03420000": {
+  "chronic_low_income": 0.223,
+  "chronic_swd": 0.186,
+  "chronic_ell": 0.158,
+  "chronic_black": 0.167,
+  "chronic_hispanic": 0.141
+ },
+ "06980000": {
+  "chronic_low_income": 0.148,
+  "chronic_swd": 0.141,
+  "chronic_ell": 0.286,
+  "chronic_hispanic": 0.111
+ },
+ "01980000": {
+  "chronic_low_income": 0.216,
+  "chronic_swd": 0.156,
+  "chronic_ell": 0.177,
+  "chronic_black": 0.189,
+  "chronic_hispanic": 0.165
+ },
+ "00350000": {
+  "chronic_low_income": 0.386,
+  "chronic_swd": 0.41,
+  "chronic_ell": 0.354,
+  "chronic_black": 0.334,
+  "chronic_hispanic": 0.407
+ },
+ "00630000": {
+  "chronic_low_income": 0.159,
+  "chronic_swd": 0.138
+ },
+ "02710000": {
+  "chronic_low_income": 0.203,
+  "chronic_swd": 0.192,
+  "chronic_ell": 0.243,
+  "chronic_black": 0.094,
+  "chronic_hispanic": 0.192
+ },
+ "03440000": {
+  "chronic_low_income": 0.135,
+  "chronic_swd": 0.102,
+  "chronic_ell": 0.16,
+  "chronic_black": 0.071,
+  "chronic_hispanic": 0.103
+ },
+ "02090000": {
+  "chronic_low_income": 0.366,
+  "chronic_swd": 0.34,
+  "chronic_ell": 0.167,
+  "chronic_black": 0.375,
+  "chronic_hispanic": 0.385
+ },
+ "01680000": {
+  "chronic_low_income": 0.344,
+  "chronic_swd": 0.288,
+  "chronic_ell": 0.217,
+  "chronic_black": 0.467,
+  "chronic_hispanic": 0.293
+ },
+ "07280000": {
+  "chronic_low_income": 0.3,
+  "chronic_swd": 0.182,
+  "chronic_hispanic": 0.333
+ },
+ "01600000": {
+  "chronic_low_income": 0.249,
+  "chronic_swd": 0.297,
+  "chronic_ell": 0.231,
+  "chronic_black": 0.125,
+  "chronic_hispanic": 0.275
+ },
+ "01270000": {
+  "chronic_low_income": 0.299,
+  "chronic_swd": 0.218,
+  "chronic_hispanic": 0.286
+ },
+ "00310000": {
+  "chronic_low_income": 0.225,
+  "chronic_swd": 0.184,
+  "chronic_ell": 0.256,
+  "chronic_black": 0.075,
+  "chronic_hispanic": 0.182
+ },
+ "01450000": {
+  "chronic_low_income": 0.223,
+  "chronic_swd": 0.232,
+  "chronic_ell": 0.171,
+  "chronic_black": 0.091,
+  "chronic_hispanic": 0.273
+ },
+ "02200000": {
+  "chronic_low_income": 0.394,
+  "chronic_swd": 0.379,
+  "chronic_ell": 0.354,
+  "chronic_black": 0.348,
+  "chronic_hispanic": 0.417
+ },
+ "00610000": {
+  "chronic_low_income": 0.308,
+  "chronic_swd": 0.351,
+  "chronic_ell": 0.293,
+  "chronic_black": 0.221,
+  "chronic_hispanic": 0.318
+ },
+ "00380000": {
+  "chronic_low_income": 0.136,
+  "chronic_swd": 0.095,
+  "chronic_black": 0.0,
+  "chronic_hispanic": 0.077
+ },
+ "01360000": {
+  "chronic_low_income": 0.198,
+  "chronic_swd": 0.173,
+  "chronic_ell": 0.2,
+  "chronic_black": 0.162,
+  "chronic_hispanic": 0.156
+ },
+ "02920000": {
+  "chronic_low_income": 0.286,
+  "chronic_swd": 0.231,
+  "chronic_ell": 0.333,
+  "chronic_black": 0.135,
+  "chronic_hispanic": 0.222
+ },
+ "03210000": {
+  "chronic_low_income": 0.289,
+  "chronic_swd": 0.221,
+  "chronic_ell": 0.292,
+  "chronic_black": 0.136,
+  "chronic_hispanic": 0.301
+ },
+ "02740000": {
+  "chronic_low_income": 0.277,
+  "chronic_swd": 0.259,
+  "chronic_ell": 0.283,
+  "chronic_black": 0.185,
+  "chronic_hispanic": 0.263
+ },
+ "06150000": {
+  "chronic_low_income": 0.306,
+  "chronic_swd": 0.36,
+  "chronic_ell": 0.382,
+  "chronic_black": 0.2,
+  "chronic_hispanic": 0.347
+ },
+ "00830000": {
+  "chronic_low_income": 0.216,
+  "chronic_swd": 0.186,
+  "chronic_ell": 0.282,
+  "chronic_black": 0.146,
+  "chronic_hispanic": 0.163
+ },
+ "03220000": {
+  "chronic_low_income": 0.158,
+  "chronic_swd": 0.17,
+  "chronic_ell": 0.153,
+  "chronic_black": 0.136,
+  "chronic_hispanic": 0.144
+ },
+ "01740000": {
+  "chronic_low_income": 0.25,
+  "chronic_swd": 0.209,
+  "chronic_ell": 0.31,
+  "chronic_black": 0.133,
+  "chronic_hispanic": 0.25
+ },
+ "01370000": {
+  "chronic_low_income": 0.458,
+  "chronic_swd": 0.483,
+  "chronic_ell": 0.459,
+  "chronic_black": 0.325,
+  "chronic_hispanic": 0.447
+ },
+ "06400000": {
+  "chronic_low_income": 0.156,
+  "chronic_swd": 0.218,
+  "chronic_ell": 0.0,
+  "chronic_black": 0.228,
+  "chronic_hispanic": 0.095
+ },
+ "06600000": {
+  "chronic_low_income": 0.254,
+  "chronic_swd": 0.254,
+  "chronic_ell": 0.36,
+  "chronic_black": 0.193,
+  "chronic_hispanic": 0.229
+ },
+ "06900000": {
+  "chronic_low_income": 0.344,
+  "chronic_swd": 0.255,
+  "chronic_ell": 0.302,
+  "chronic_black": 0.271,
+  "chronic_hispanic": 0.317
+ },
+ "06950000": {
+  "chronic_low_income": 0.233,
+  "chronic_swd": 0.148,
+  "chronic_black": 0.216,
+  "chronic_hispanic": 0.189
+ },
+ "07050000": {
+  "chronic_low_income": 0.379,
+  "chronic_swd": 0.252,
+  "chronic_ell": 0.167,
+  "chronic_black": 0.273,
+  "chronic_hispanic": 0.224
+ },
+ "07300000": {
+  "chronic_low_income": 0.286,
+  "chronic_swd": 0.44,
+  "chronic_ell": 0.182,
+  "chronic_black": 0.143,
+  "chronic_hispanic": 0.314
+ },
+ "07630000": {
+  "chronic_low_income": 0.278,
+  "chronic_swd": 0.289,
+  "chronic_ell": 0.214,
+  "chronic_black": 0.067,
+  "chronic_hispanic": 0.25
+ }
+}

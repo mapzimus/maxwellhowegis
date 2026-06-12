@@ -1,0 +1,1665 @@
+{
+ "01310000": {
+  "avg_teacher_salary": 107109,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "03170000": {
+  "avg_teacher_salary": 109899,
+  "teacher_licensed_pct": 0.981,
+  "classes_licensed_pct": 0.986,
+  "teacher_attendance_pct": 0.953
+ },
+ "01740000": {
+  "avg_teacher_salary": 88985,
+  "teacher_licensed_pct": 0.972,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.928
+ },
+ "01810000": {
+  "avg_teacher_salary": 86154,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 0.93,
+  "teacher_attendance_pct": 0.941
+ },
+ "01700000": {
+  "avg_teacher_salary": 87213,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.935
+ },
+ "06620000": {
+  "avg_teacher_salary": 74582,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.917
+ },
+ "00250000": {
+  "avg_teacher_salary": 98522,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.934
+ },
+ "01100000": {
+  "avg_teacher_salary": 81934,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.9
+ },
+ "03440000": {
+  "avg_teacher_salary": 103352,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.939
+ },
+ "01590000": {
+  "avg_teacher_salary": 84103,
+  "teacher_licensed_pct": 0.979,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.935
+ },
+ "01600000": {
+  "avg_teacher_salary": 93138,
+  "teacher_licensed_pct": 0.977,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.927
+ },
+ "01770000": {
+  "avg_teacher_salary": 90793,
+  "teacher_licensed_pct": 0.977,
+  "classes_licensed_pct": 0.951,
+  "teacher_attendance_pct": 0.938
+ },
+ "02530000": {
+  "avg_teacher_salary": 73503,
+  "teacher_licensed_pct": 0.9,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.948
+ },
+ "06000000": {
+  "avg_teacher_salary": 100138,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.939
+ },
+ "06350000": {
+  "avg_teacher_salary": 86371,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "01780000": {
+  "avg_teacher_salary": 85682,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.946
+ },
+ "01510000": {
+  "avg_teacher_salary": 76840,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.911
+ },
+ "06320000": {
+  "avg_teacher_salary": 85280,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.956
+ },
+ "00270000": {
+  "avg_teacher_salary": 85059,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "02810000": {
+  "avg_teacher_salary": 84692,
+  "teacher_licensed_pct": 0.968,
+  "classes_licensed_pct": 0.972,
+  "teacher_attendance_pct": 0.939
+ },
+ "02760000": {
+  "avg_teacher_salary": 100404,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.934
+ },
+ "02630000": {
+  "avg_teacher_salary": 56905,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.944
+ },
+ "00160000": {
+  "avg_teacher_salary": 95946,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 0.958,
+  "teacher_attendance_pct": 0.938
+ },
+ "02120000": {
+  "avg_teacher_salary": 95538,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 0.984,
+  "teacher_attendance_pct": 0.941
+ },
+ "07500000": {
+  "avg_teacher_salary": 75628,
+  "teacher_licensed_pct": 0.981,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.918
+ },
+ "00960000": {
+  "avg_teacher_salary": 92617,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "02750000": {
+  "avg_teacher_salary": 94266,
+  "teacher_licensed_pct": 0.982,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.91
+ },
+ "06580000": {
+  "avg_teacher_salary": 86012,
+  "teacher_licensed_pct": 0.981,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.946
+ },
+ "06100000": {
+  "avg_teacher_salary": 80274,
+  "teacher_licensed_pct": 0.981,
+  "classes_licensed_pct": 0.914,
+  "teacher_attendance_pct": 0.924
+ },
+ "00670000": {
+  "avg_teacher_salary": 114372,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 0.948,
+  "teacher_attendance_pct": 0.938
+ },
+ "00510000": {
+  "avg_teacher_salary": 123419,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.935
+ },
+ "03360000": {
+  "avg_teacher_salary": 94979,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.923
+ },
+ "00830000": {
+  "avg_teacher_salary": 79466,
+  "teacher_licensed_pct": 0.987,
+  "teacher_attendance_pct": 0.92
+ },
+ "02380000": {
+  "avg_teacher_salary": 91850,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "03300000": {
+  "avg_teacher_salary": 127449,
+  "teacher_licensed_pct": 0.998,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.924
+ },
+ "01690000": {
+  "avg_teacher_salary": 100512,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.923
+ },
+ "02360000": {
+  "avg_teacher_salary": 74111,
+  "teacher_licensed_pct": 0.909,
+  "classes_licensed_pct": 0.912,
+  "teacher_attendance_pct": 0.915
+ },
+ "03010000": {
+  "avg_teacher_salary": 90962,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.932
+ },
+ "02500000": {
+  "avg_teacher_salary": 85433,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.938
+ },
+ "06800000": {
+  "avg_teacher_salary": 91843,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 0.986,
+  "teacher_attendance_pct": 0.928
+ },
+ "01440000": {
+  "avg_teacher_salary": 97085,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.947
+ },
+ "01840000": {
+  "avg_teacher_salary": 90294,
+  "teacher_licensed_pct": 0.986,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.974
+ },
+ "01650000": {
+  "avg_teacher_salary": 106848,
+  "teacher_licensed_pct": 0.987,
+  "teacher_attendance_pct": 0.913
+ },
+ "00930000": {
+  "avg_teacher_salary": 112487,
+  "teacher_licensed_pct": 0.978,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.964
+ },
+ "01270000": {
+  "avg_teacher_salary": 87392,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.921
+ },
+ "01750000": {
+  "avg_teacher_salary": 108310,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "02090000": {
+  "avg_teacher_salary": 76435,
+  "teacher_licensed_pct": 0.889,
+  "classes_licensed_pct": 0.827,
+  "teacher_attendance_pct": 0.924
+ },
+ "00640000": {
+  "avg_teacher_salary": 87059,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.943
+ },
+ "06220000": {
+  "avg_teacher_salary": 94928,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.954
+ },
+ "00570000": {
+  "avg_teacher_salary": 89573,
+  "teacher_licensed_pct": 0.903,
+  "classes_licensed_pct": 0.893,
+  "teacher_attendance_pct": 0.925
+ },
+ "02400000": {
+  "avg_teacher_salary": 96745,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.932
+ },
+ "00080000": {
+  "avg_teacher_salary": 87842,
+  "teacher_licensed_pct": 0.923,
+  "classes_licensed_pct": 0.911,
+  "teacher_attendance_pct": 0.928
+ },
+ "07740000": {
+  "avg_teacher_salary": 104782,
+  "teacher_licensed_pct": 0.976,
+  "classes_licensed_pct": 0.99,
+  "teacher_attendance_pct": 0.896
+ },
+ "06160000": {
+  "avg_teacher_salary": 85887,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.935
+ },
+ "02770000": {
+  "avg_teacher_salary": 75714,
+  "teacher_licensed_pct": 0.813,
+  "classes_licensed_pct": 0.863,
+  "teacher_attendance_pct": 0.951
+ },
+ "01180000": {
+  "avg_teacher_salary": 99498,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.944
+ },
+ "00770000": {
+  "avg_teacher_salary": 80255,
+  "teacher_licensed_pct": 0.98,
+  "classes_licensed_pct": 0.923,
+  "teacher_attendance_pct": 0.923
+ },
+ "02100000": {
+  "avg_teacher_salary": 80036,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.91
+ },
+ "02740000": {
+  "avg_teacher_salary": 104743,
+  "teacher_licensed_pct": 0.973,
+  "classes_licensed_pct": 0.964,
+  "teacher_attendance_pct": 0.923
+ },
+ "06850000": {
+  "avg_teacher_salary": 97533,
+  "teacher_licensed_pct": 0.889,
+  "classes_licensed_pct": 0.847,
+  "teacher_attendance_pct": 0.962
+ },
+ "07170000": {
+  "avg_teacher_salary": 86280,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 0.966,
+  "teacher_attendance_pct": 0.97
+ },
+ "03500000": {
+  "avg_teacher_salary": 90215,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.907
+ },
+ "07530000": {
+  "avg_teacher_salary": 83990,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.943
+ },
+ "00410000": {
+  "avg_teacher_salary": 91701,
+  "teacher_licensed_pct": 0.96,
+  "classes_licensed_pct": 0.889,
+  "teacher_attendance_pct": 0.944
+ },
+ "00100000": {
+  "avg_teacher_salary": 95661,
+  "teacher_licensed_pct": 0.982,
+  "classes_licensed_pct": 0.983,
+  "teacher_attendance_pct": 0.933
+ },
+ "07670000": {
+  "avg_teacher_salary": 72463,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "00610000": {
+  "avg_teacher_salary": 90848,
+  "teacher_licensed_pct": 0.959,
+  "classes_licensed_pct": 0.965,
+  "teacher_attendance_pct": 0.927
+ },
+ "00630000": {
+  "avg_teacher_salary": 76847,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.96
+ },
+ "03050000": {
+  "avg_teacher_salary": 94881,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.951
+ },
+ "02930000": {
+  "avg_teacher_salary": 97034,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.931
+ },
+ "00970000": {
+  "avg_teacher_salary": 84723,
+  "teacher_licensed_pct": 0.991,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "00460000": {
+  "avg_teacher_salary": 122329,
+  "teacher_licensed_pct": 0.997,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.933
+ },
+ "06730000": {
+  "avg_teacher_salary": 91218,
+  "teacher_licensed_pct": 0.998,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "01420000": {
+  "avg_teacher_salary": 101140,
+  "teacher_licensed_pct": 0.977,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.921
+ },
+ "02490000": {
+  "avg_teacher_salary": 99025,
+  "teacher_licensed_pct": 0.899,
+  "classes_licensed_pct": 0.8,
+  "teacher_attendance_pct": 0.917
+ },
+ "02640000": {
+  "avg_teacher_salary": 107926,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 0.99,
+  "teacher_attendance_pct": 0.937
+ },
+ "02010000": {
+  "avg_teacher_salary": 88190,
+  "teacher_licensed_pct": 0.917,
+  "classes_licensed_pct": 0.904,
+  "teacher_attendance_pct": 0.949
+ },
+ "00790000": {
+  "avg_teacher_salary": 84757,
+  "teacher_licensed_pct": 0.978,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.953
+ },
+ "00560000": {
+  "avg_teacher_salary": 90640,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 0.977,
+  "teacher_attendance_pct": 0.925
+ },
+ "00890000": {
+  "avg_teacher_salary": 109042,
+  "teacher_licensed_pct": 0.927,
+  "classes_licensed_pct": 0.891,
+  "teacher_attendance_pct": 0.93
+ },
+ "00940000": {
+  "avg_teacher_salary": 82224,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.907
+ },
+ "01280000": {
+  "avg_teacher_salary": 85921,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 0.991,
+  "teacher_attendance_pct": 0.94
+ },
+ "07200000": {
+  "avg_teacher_salary": 75777,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.918
+ },
+ "01680000": {
+  "avg_teacher_salary": 90696,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 0.991,
+  "teacher_attendance_pct": 0.913
+ },
+ "00240000": {
+  "avg_teacher_salary": 82993,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "01140000": {
+  "avg_teacher_salary": 73650,
+  "teacher_licensed_pct": 0.974,
+  "classes_licensed_pct": 0.977,
+  "teacher_attendance_pct": 0.92
+ },
+ "00730000": {
+  "avg_teacher_salary": 105228,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.933
+ },
+ "00180000": {
+  "avg_teacher_salary": 84497,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.935
+ },
+ "03090000": {
+  "avg_teacher_salary": 77593,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.936
+ },
+ "00360000": {
+  "avg_teacher_salary": 94661,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.925
+ },
+ "01570000": {
+  "avg_teacher_salary": 97169,
+  "teacher_licensed_pct": 0.991,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.936
+ },
+ "02390000": {
+  "avg_teacher_salary": 85129,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "02420000": {
+  "avg_teacher_salary": 164619,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.954
+ },
+ "03040000": {
+  "avg_teacher_salary": 90262,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 0.975,
+  "teacher_attendance_pct": 0.925
+ },
+ "03070000": {
+  "avg_teacher_salary": 91393,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "01000000": {
+  "avg_teacher_salary": 101833,
+  "teacher_licensed_pct": 0.948,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.932
+ },
+ "07280000": {
+  "avg_teacher_salary": 65422,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.938
+ },
+ "00990000": {
+  "avg_teacher_salary": 96519,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.987
+ },
+ "01370000": {
+  "avg_teacher_salary": 78553,
+  "teacher_licensed_pct": 0.766,
+  "classes_licensed_pct": 0.882,
+  "teacher_attendance_pct": 0.971
+ },
+ "01620000": {
+  "avg_teacher_salary": 98894,
+  "teacher_licensed_pct": 0.981,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.926
+ },
+ "00980000": {
+  "avg_teacher_salary": 44429,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.933
+ },
+ "01870000": {
+  "avg_teacher_salary": 100915,
+  "teacher_licensed_pct": 0.969,
+  "classes_licensed_pct": 0.991,
+  "teacher_attendance_pct": 0.932
+ },
+ "01850000": {
+  "avg_teacher_salary": 105452,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.993
+ },
+ "02270000": {
+  "avg_teacher_salary": 80277,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.924
+ },
+ "06980000": {
+  "avg_teacher_salary": 98900,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.961
+ },
+ "06450000": {
+  "avg_teacher_salary": 110664,
+  "teacher_licensed_pct": 0.979,
+  "classes_licensed_pct": 0.961,
+  "teacher_attendance_pct": 0.946
+ },
+ "02710000": {
+  "avg_teacher_salary": 95247,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 0.994,
+  "teacher_attendance_pct": 0.939
+ },
+ "03400000": {
+  "avg_teacher_salary": 76506,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.933
+ },
+ "07150000": {
+  "avg_teacher_salary": 83842,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "07780000": {
+  "avg_teacher_salary": 87499,
+  "teacher_licensed_pct": 0.932,
+  "classes_licensed_pct": 0.916,
+  "teacher_attendance_pct": 0.929
+ },
+ "07650000": {
+  "avg_teacher_salary": 62030,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.931
+ },
+ "03060000": {
+  "avg_teacher_salary": 65176,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.962
+ },
+ "06650000": {
+  "avg_teacher_salary": 84056,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.934
+ },
+ "01910000": {
+  "avg_teacher_salary": 69455,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.942
+ },
+ "03420000": {
+  "avg_teacher_salary": 95988,
+  "teacher_licensed_pct": 0.998,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.938
+ },
+ "06200000": {
+  "avg_teacher_salary": 85102,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "03320000": {
+  "avg_teacher_salary": 83026,
+  "teacher_licensed_pct": 0.989,
+  "classes_licensed_pct": 0.984,
+  "teacher_attendance_pct": 0.918
+ },
+ "07730000": {
+  "avg_teacher_salary": 98538,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.955
+ },
+ "00680000": {
+  "avg_teacher_salary": 71978,
+  "teacher_licensed_pct": 0.944,
+  "classes_licensed_pct": 0.834,
+  "teacher_attendance_pct": 0.933
+ },
+ "01520000": {
+  "avg_teacher_salary": 84669,
+  "teacher_licensed_pct": 0.982,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.939
+ },
+ "00140000": {
+  "avg_teacher_salary": 94563,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.935
+ },
+ "03100000": {
+  "avg_teacher_salary": 90119,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.923
+ },
+ "03080000": {
+  "avg_teacher_salary": 97434,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "01050000": {
+  "avg_teacher_salary": 126247,
+  "teacher_licensed_pct": 0.988,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.948
+ },
+ "03310000": {
+  "avg_teacher_salary": 83017,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "02310000": {
+  "avg_teacher_salary": 96469,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.949
+ },
+ "07100000": {
+  "avg_teacher_salary": 91256,
+  "teacher_licensed_pct": 0.928,
+  "classes_licensed_pct": 0.921,
+  "teacher_attendance_pct": 0.93
+ },
+ "00870000": {
+  "avg_teacher_salary": 85672,
+  "teacher_licensed_pct": 0.994,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.978
+ },
+ "02070000": {
+  "avg_teacher_salary": 104716,
+  "teacher_licensed_pct": 0.963,
+  "classes_licensed_pct": 0.922,
+  "teacher_attendance_pct": 0.938
+ },
+ "01820000": {
+  "avg_teacher_salary": 103514,
+  "teacher_licensed_pct": 0.991,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.905
+ },
+ "01860000": {
+  "avg_teacher_salary": 92660,
+  "teacher_licensed_pct": 0.991,
+  "teacher_attendance_pct": 0.947
+ },
+ "03350000": {
+  "avg_teacher_salary": 113220,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.946
+ },
+ "02900000": {
+  "avg_teacher_salary": 91128,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.977
+ },
+ "00230000": {
+  "avg_teacher_salary": 104686,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 0.988,
+  "teacher_attendance_pct": 0.942
+ },
+ "06750000": {
+  "avg_teacher_salary": 93642,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.97
+ },
+ "03000000": {
+  "avg_teacher_salary": 82775,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.936
+ },
+ "00440000": {
+  "avg_teacher_salary": 105757,
+  "teacher_licensed_pct": 0.98,
+  "classes_licensed_pct": 0.949,
+  "teacher_attendance_pct": 0.922
+ },
+ "07350000": {
+  "avg_teacher_salary": 83109,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 0.952,
+  "teacher_attendance_pct": 0.911
+ },
+ "01890000": {
+  "avg_teacher_salary": 100399,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 0.976,
+  "teacher_attendance_pct": 0.921
+ },
+ "02850000": {
+  "avg_teacher_salary": 96092,
+  "teacher_licensed_pct": 0.997,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.925
+ },
+ "00520000": {
+  "avg_teacher_salary": 85830,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "02290000": {
+  "avg_teacher_salary": 92811,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 0.944,
+  "teacher_attendance_pct": 0.949
+ },
+ "02910000": {
+  "avg_teacher_salary": 91473,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.923
+ },
+ "00200000": {
+  "avg_teacher_salary": 96107,
+  "teacher_licensed_pct": 0.986,
+  "classes_licensed_pct": 0.991,
+  "teacher_attendance_pct": 0.932
+ },
+ "00050000": {
+  "avg_teacher_salary": 103238,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.944
+ },
+ "06250000": {
+  "avg_teacher_salary": 100270,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 0.9,
+  "teacher_attendance_pct": 0.937
+ },
+ "00350000": {
+  "avg_teacher_salary": 133127,
+  "teacher_licensed_pct": 0.972,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "00860000": {
+  "avg_teacher_salary": 75127,
+  "teacher_licensed_pct": 0.981,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.918
+ },
+ "07750000": {
+  "avg_teacher_salary": 93919,
+  "teacher_licensed_pct": 0.989,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.943
+ },
+ "00910000": {
+  "avg_teacher_salary": 62616,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.948
+ },
+ "01990000": {
+  "avg_teacher_salary": 101790,
+  "teacher_licensed_pct": 0.988,
+  "classes_licensed_pct": 0.994,
+  "teacher_attendance_pct": 0.936
+ },
+ "02440000": {
+  "avg_teacher_salary": 97920,
+  "teacher_licensed_pct": 0.956,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.921
+ },
+ "03480000": {
+  "avg_teacher_salary": 101529,
+  "teacher_licensed_pct": 0.959,
+  "classes_licensed_pct": 0.683,
+  "teacher_attendance_pct": 0.927
+ },
+ "02650000": {
+  "avg_teacher_salary": 91219,
+  "teacher_licensed_pct": 0.964,
+  "classes_licensed_pct": 0.97,
+  "teacher_attendance_pct": 0.936
+ },
+ "01110000": {
+  "avg_teacher_salary": 70777,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.921
+ },
+ "02730000": {
+  "avg_teacher_salary": 94038,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.926
+ },
+ "00090000": {
+  "avg_teacher_salary": 107624,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 0.909,
+  "teacher_attendance_pct": 0.93
+ },
+ "01390000": {
+  "avg_teacher_salary": 109298,
+  "teacher_licensed_pct": 0.997,
+  "classes_licensed_pct": 0.998,
+  "teacher_attendance_pct": 0.944
+ },
+ "02200000": {
+  "avg_teacher_salary": 92324,
+  "teacher_licensed_pct": 0.997,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.938
+ },
+ "07700000": {
+  "avg_teacher_salary": 83678,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "00070000": {
+  "avg_teacher_salary": 88756,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "00450000": {
+  "avg_teacher_salary": 70168,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.956
+ },
+ "01960000": {
+  "avg_teacher_salary": 85848,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.952
+ },
+ "03220000": {
+  "avg_teacher_salary": 89252,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "00880000": {
+  "avg_teacher_salary": 95625,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.924
+ },
+ "02610000": {
+  "avg_teacher_salary": 87840,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 0.937,
+  "teacher_attendance_pct": 0.934
+ },
+ "02660000": {
+  "avg_teacher_salary": 102426,
+  "teacher_licensed_pct": 0.988,
+  "classes_licensed_pct": 0.935,
+  "teacher_attendance_pct": 0.938
+ },
+ "02140000": {
+  "avg_teacher_salary": 88664,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.956
+ },
+ "02980000": {
+  "avg_teacher_salary": 102507,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.977
+ },
+ "02920000": {
+  "avg_teacher_salary": 90913,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.934
+ },
+ "03150000": {
+  "avg_teacher_salary": 115723,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.946
+ },
+ "06030000": {
+  "avg_teacher_salary": 71349,
+  "teacher_licensed_pct": 0.981,
+  "teacher_attendance_pct": 0.957
+ },
+ "00300000": {
+  "avg_teacher_salary": 87991,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 0.995,
+  "teacher_attendance_pct": 0.925
+ },
+ "06720000": {
+  "avg_teacher_salary": 73629,
+  "teacher_licensed_pct": 0.907,
+  "classes_licensed_pct": 0.679,
+  "teacher_attendance_pct": 0.925
+ },
+ "00650000": {
+  "avg_teacher_salary": 97046,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.955
+ },
+ "02210000": {
+  "avg_teacher_salary": 101141,
+  "teacher_licensed_pct": 0.982,
+  "classes_licensed_pct": 0.987,
+  "teacher_attendance_pct": 0.93
+ },
+ "01980000": {
+  "avg_teacher_salary": 100680,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 0.939,
+  "teacher_attendance_pct": 0.934
+ },
+ "00260000": {
+  "avg_teacher_salary": 111738,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.923
+ },
+ "07450000": {
+  "avg_teacher_salary": 83787,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 0.996,
+  "teacher_attendance_pct": 0.952
+ },
+ "00310000": {
+  "avg_teacher_salary": 108203,
+  "teacher_licensed_pct": 0.999,
+  "classes_licensed_pct": 0.978,
+  "teacher_attendance_pct": 0.923
+ },
+ "02620000": {
+  "avg_teacher_salary": 89778,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.926
+ },
+ "01070000": {
+  "avg_teacher_salary": 86417,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.944
+ },
+ "01670000": {
+  "avg_teacher_salary": 98793,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "00010000": {
+  "avg_teacher_salary": 88409,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.93
+ },
+ "00030000": {
+  "avg_teacher_salary": 77654,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.936
+ },
+ "01500000": {
+  "avg_teacher_salary": 82282,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "02520000": {
+  "avg_teacher_salary": 91446,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.91
+ },
+ "00500000": {
+  "avg_teacher_salary": 106307,
+  "teacher_licensed_pct": 0.989,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.919
+ },
+ "01350000": {
+  "avg_teacher_salary": 80675,
+  "teacher_licensed_pct": 0.949,
+  "classes_licensed_pct": 0.985,
+  "teacher_attendance_pct": 0.963
+ },
+ "01410000": {
+  "avg_teacher_salary": 92228,
+  "teacher_licensed_pct": 0.944,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.916
+ },
+ "02960000": {
+  "avg_teacher_salary": 109424,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 0.989,
+  "teacher_attendance_pct": 0.906
+ },
+ "03270000": {
+  "avg_teacher_salary": 67157,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.921
+ },
+ "00820000": {
+  "avg_teacher_salary": 96993,
+  "teacher_licensed_pct": 0.995,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "02890000": {
+  "avg_teacher_salary": 71986,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.932
+ },
+ "02150000": {
+  "avg_teacher_salary": 72468,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0
+ },
+ "01220000": {
+  "avg_teacher_salary": 104046,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 0.935,
+  "teacher_attendance_pct": 0.935
+ },
+ "02430000": {
+  "avg_teacher_salary": 94955,
+  "teacher_licensed_pct": 0.999,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.942
+ },
+ "02180000": {
+  "avg_teacher_salary": 98966,
+  "teacher_licensed_pct": 0.964,
+  "classes_licensed_pct": 0.989,
+  "teacher_attendance_pct": 0.952
+ },
+ "02510000": {
+  "avg_teacher_salary": 93399,
+  "teacher_licensed_pct": 0.962,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.936
+ },
+ "03140000": {
+  "avg_teacher_salary": 100692,
+  "teacher_licensed_pct": 0.97,
+  "classes_licensed_pct": 0.955,
+  "teacher_attendance_pct": 0.925
+ },
+ "01640000": {
+  "avg_teacher_salary": 103446,
+  "teacher_licensed_pct": 0.994,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "00380000": {
+  "avg_teacher_salary": 89077,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.991
+ },
+ "06740000": {
+  "avg_teacher_salary": 72002,
+  "teacher_licensed_pct": 0.991,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.919
+ },
+ "07250000": {
+  "avg_teacher_salary": 96175,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 0.961,
+  "teacher_attendance_pct": 0.941
+ },
+ "00490000": {
+  "avg_teacher_salary": 107958,
+  "teacher_licensed_pct": 0.979,
+  "classes_licensed_pct": 0.972,
+  "teacher_attendance_pct": 0.941
+ },
+ "00480000": {
+  "avg_teacher_salary": 106851,
+  "teacher_licensed_pct": 0.994,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.928
+ },
+ "01580000": {
+  "avg_teacher_salary": 90487,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 0.993,
+  "teacher_attendance_pct": 0.915
+ },
+ "01710000": {
+  "avg_teacher_salary": 89674,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.943
+ },
+ "01550000": {
+  "avg_teacher_salary": 107428,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 0.969,
+  "teacher_attendance_pct": 0.918
+ },
+ "01730000": {
+  "avg_teacher_salary": 106358,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "01760000": {
+  "avg_teacher_salary": 98518,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 1.0
+ },
+ "07800000": {
+  "avg_teacher_salary": 101369,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.932
+ },
+ "02190000": {
+  "avg_teacher_salary": 100868,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.933
+ },
+ "01360000": {
+  "avg_teacher_salary": 94950,
+  "teacher_licensed_pct": 0.994,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.934
+ },
+ "01450000": {
+  "avg_teacher_salary": 74935,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.927
+ },
+ "01540000": {
+  "avg_teacher_salary": 58563,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "01630000": {
+  "avg_teacher_salary": 100141,
+  "teacher_licensed_pct": 0.904,
+  "classes_licensed_pct": 0.911,
+  "teacher_attendance_pct": 0.907
+ },
+ "02040000": {
+  "avg_teacher_salary": 92090,
+  "teacher_licensed_pct": 0.992,
+  "classes_licensed_pct": 0.988,
+  "teacher_attendance_pct": 0.919
+ },
+ "02460000": {
+  "avg_teacher_salary": 96405,
+  "teacher_licensed_pct": 0.986,
+  "classes_licensed_pct": 0.981,
+  "teacher_attendance_pct": 0.935
+ },
+ "02880000": {
+  "avg_teacher_salary": 102734,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.927
+ },
+ "03210000": {
+  "avg_teacher_salary": 94609,
+  "teacher_licensed_pct": 0.994,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "03250000": {
+  "avg_teacher_salary": 82215,
+  "teacher_licensed_pct": 0.965,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.917
+ },
+ "06500000": {
+  "avg_teacher_salary": 91054,
+  "teacher_licensed_pct": 0.966,
+  "classes_licensed_pct": 0.956,
+  "teacher_attendance_pct": 0.943
+ },
+ "01210000": {
+  "avg_teacher_salary": 59463,
+  "teacher_licensed_pct": 0.706,
+  "teacher_attendance_pct": 0.96
+ },
+ "01250000": {
+  "avg_teacher_salary": 91787,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.931
+ },
+ "01610000": {
+  "avg_teacher_salary": 84196,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 0.98,
+  "teacher_attendance_pct": 0.916
+ },
+ "00850000": {
+  "avg_teacher_salary": 106846,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.956
+ },
+ "01530000": {
+  "avg_teacher_salary": 88631,
+  "teacher_licensed_pct": 0.987,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.94
+ },
+ "01970000": {
+  "avg_teacher_salary": 102575,
+  "teacher_licensed_pct": 0.963,
+  "classes_licensed_pct": 0.956,
+  "teacher_attendance_pct": 0.944
+ },
+ "03460000": {
+  "avg_teacher_salary": 82467,
+  "teacher_licensed_pct": 0.967,
+  "classes_licensed_pct": 0.959,
+  "teacher_attendance_pct": 0.918
+ },
+ "02130000": {
+  "avg_teacher_salary": 102381,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.925
+ },
+ "02780000": {
+  "avg_teacher_salary": 78627,
+  "teacher_licensed_pct": 0.979,
+  "classes_licensed_pct": 0.973,
+  "teacher_attendance_pct": 0.93
+ },
+ "00950000": {
+  "avg_teacher_salary": 82549,
+  "teacher_licensed_pct": 0.842,
+  "teacher_attendance_pct": 0.902
+ },
+ "01380000": {
+  "avg_teacher_salary": 75040,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "02580000": {
+  "avg_teacher_salary": 96388,
+  "teacher_licensed_pct": 0.919,
+  "classes_licensed_pct": 0.984,
+  "teacher_attendance_pct": 0.913
+ },
+ "02340000": {
+  "avg_teacher_salary": 76837,
+  "teacher_licensed_pct": 0.743,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.955
+ },
+ "02690000": {
+  "avg_teacher_salary": 104937,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "02240000": {
+  "avg_teacher_salary": 107821,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.957
+ },
+ "03470000": {
+  "avg_teacher_salary": 99232,
+  "teacher_licensed_pct": 0.976,
+  "classes_licensed_pct": 0.965,
+  "teacher_attendance_pct": 0.931
+ },
+ "02300000": {
+  "avg_teacher_salary": 70457,
+  "teacher_licensed_pct": 0.867,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.922
+ },
+ "03490000": {
+  "avg_teacher_salary": 51237,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.908
+ },
+ "02480000": {
+  "avg_teacher_salary": 93765,
+  "teacher_licensed_pct": 0.97,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.926
+ },
+ "01010000": {
+  "avg_teacher_salary": 92192,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "02260000": {
+  "avg_teacher_salary": 80053,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.93
+ },
+ "00170000": {
+  "avg_teacher_salary": 86267,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.932
+ },
+ "01330000": {
+  "avg_teacher_salary": 82613,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.898
+ },
+ "03230000": {
+  "avg_teacher_salary": 83254,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 0.886,
+  "teacher_attendance_pct": 0.945
+ },
+ "03370000": {
+  "avg_teacher_salary": 59451,
+  "teacher_licensed_pct": 0.976,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.953
+ },
+ "02720000": {
+  "avg_teacher_salary": 63176,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "00430000": {
+  "avg_teacher_salary": 93547,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.942
+ },
+ "00710000": {
+  "avg_teacher_salary": 97514,
+  "teacher_licensed_pct": 0.986,
+  "classes_licensed_pct": 0.991,
+  "teacher_attendance_pct": 0.935
+ },
+ "06150000": {
+  "avg_teacher_salary": 76325,
+  "teacher_licensed_pct": 0.952,
+  "classes_licensed_pct": 0.901,
+  "teacher_attendance_pct": 0.93
+ },
+ "03260000": {
+  "avg_teacher_salary": 90677,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.942
+ },
+ "07120000": {
+  "avg_teacher_salary": 88886,
+  "teacher_licensed_pct": 0.988,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "02170000": {
+  "avg_teacher_salary": 94846,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.941
+ },
+ "00720000": {
+  "avg_teacher_salary": 93106,
+  "teacher_licensed_pct": 0.996,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.924
+ },
+ "01490000": {
+  "avg_teacher_salary": 84516,
+  "teacher_licensed_pct": 0.879,
+  "classes_licensed_pct": 0.933,
+  "teacher_attendance_pct": 0.931
+ },
+ "02840000": {
+  "avg_teacher_salary": 81293,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.933
+ },
+ "01720000": {
+  "avg_teacher_salary": 87851,
+  "teacher_licensed_pct": 0.985,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.937
+ },
+ "02110000": {
+  "avg_teacher_salary": 94771,
+  "teacher_licensed_pct": 0.979,
+  "classes_licensed_pct": 0.95,
+  "teacher_attendance_pct": 0.924
+ },
+ "01170000": {
+  "avg_teacher_salary": 74766,
+  "teacher_licensed_pct": 0.98,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "03160000": {
+  "avg_teacher_salary": 89344,
+  "teacher_licensed_pct": 0.993,
+  "classes_licensed_pct": 0.984,
+  "teacher_attendance_pct": 0.92
+ },
+ "03180000": {
+  "avg_teacher_salary": 82671,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.954
+ },
+ "07660000": {
+  "avg_teacher_salary": 79998,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.931
+ },
+ "00740000": {
+  "avg_teacher_salary": 74475,
+  "teacher_licensed_pct": 0.916,
+  "classes_licensed_pct": 0.969,
+  "teacher_attendance_pct": 0.949
+ },
+ "01030000": {
+  "avg_teacher_salary": 104103,
+  "teacher_licensed_pct": 0.983,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.939
+ },
+ "02080000": {
+  "avg_teacher_salary": 96255,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.945
+ },
+ "00400000": {
+  "avg_teacher_salary": 102103,
+  "teacher_licensed_pct": 0.997,
+  "classes_licensed_pct": 0.983,
+  "teacher_attendance_pct": 0.938
+ },
+ "06550000": {
+  "avg_teacher_salary": 117000,
+  "teacher_licensed_pct": 0.991,
+  "classes_licensed_pct": 0.91,
+  "teacher_attendance_pct": 0.939
+ },
+ "02230000": {
+  "avg_teacher_salary": 84749,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.931
+ },
+ "03430000": {
+  "avg_teacher_salary": 83722,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.947
+ },
+ "02950000": {
+  "avg_teacher_salary": 93284,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.929
+ },
+ "06180000": {
+  "avg_teacher_salary": 90621,
+  "teacher_licensed_pct": 0.966,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.909
+ },
+ "06400000": {
+  "avg_teacher_salary": 126051,
+  "teacher_licensed_pct": 0.99,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.944
+ },
+ "06600000": {
+  "avg_teacher_salary": 101454,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.964
+ },
+ "06900000": {
+  "avg_teacher_salary": 91869,
+  "teacher_licensed_pct": 1.0,
+  "classes_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.884
+ },
+ "06950000": {
+  "avg_teacher_salary": 116612,
+  "teacher_licensed_pct": 0.999,
+  "teacher_attendance_pct": 0.936
+ },
+ "07050000": {
+  "avg_teacher_salary": 111192,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.927
+ },
+ "07300000": {
+  "avg_teacher_salary": 102790,
+  "teacher_licensed_pct": 0.99,
+  "teacher_attendance_pct": 0.918
+ },
+ "07630000": {
+  "avg_teacher_salary": 91835,
+  "teacher_licensed_pct": 1.0,
+  "teacher_attendance_pct": 0.939
+ }
+}

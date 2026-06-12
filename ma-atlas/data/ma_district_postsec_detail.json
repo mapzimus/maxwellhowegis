@@ -1,0 +1,1470 @@
+{
+ "01580000": {
+  "college_enroll_low_income": 0.7,
+  "college_enroll_swd": 0.7059,
+  "college_completion_pct": 0.7383
+ },
+ "06350000": {
+  "college_enroll_low_income": 0.549,
+  "college_enroll_swd": 0.3636,
+  "college_completion_pct": 0.5725
+ },
+ "03300000": {
+  "college_enroll_low_income": 0.9048,
+  "college_enroll_swd": 0.825,
+  "college_enroll_hispanic": 1.0,
+  "college_enroll_black": 1.0,
+  "college_enroll_ell": 0.5,
+  "college_completion_pct": 0.6737
+ },
+ "03350000": {
+  "college_enroll_low_income": 0.7576,
+  "college_enroll_swd": 0.8571,
+  "college_enroll_hispanic": 0.8,
+  "college_enroll_black": 0.8,
+  "college_completion_pct": 0.6981
+ },
+ "03320000": {
+  "college_enroll_low_income": 0.4839,
+  "college_enroll_swd": 0.3231,
+  "college_enroll_hispanic": 0.4697,
+  "college_enroll_black": 0.6,
+  "college_enroll_ell": 0.375,
+  "college_completion_pct": 0.3224
+ },
+ "01520000": {
+  "college_enroll_low_income": 0.5833,
+  "college_enroll_swd": 0.3333,
+  "college_completion_pct": 0.6341
+ },
+ "06600000": {
+  "college_enroll_low_income": 0.5897,
+  "college_enroll_swd": 0.4118,
+  "college_enroll_hispanic": 0.3333,
+  "college_enroll_black": 0.4615,
+  "college_enroll_ell": 0.1667,
+  "college_completion_pct": 0.4444
+ },
+ "02440000": {
+  "college_enroll_low_income": 0.4132,
+  "college_enroll_swd": 0.1667,
+  "college_enroll_hispanic": 0.0909,
+  "college_enroll_black": 0.4189,
+  "college_enroll_ell": 0.3571,
+  "college_completion_pct": 0.2438
+ },
+ "06980000": {
+  "college_enroll_low_income": 0.7895,
+  "college_enroll_swd": 0.75,
+  "college_completion_pct": 0.6754
+ },
+ "06180000": {
+  "college_enroll_low_income": 0.4364,
+  "college_enroll_swd": 0.1875,
+  "college_enroll_hispanic": 0.3636,
+  "college_enroll_ell": 0.2857,
+  "college_completion_pct": 0.3958
+ },
+ "06740000": {
+  "college_enroll_low_income": 0.3548,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.2857,
+  "college_completion_pct": 0.2308
+ },
+ "07730000": {
+  "college_enroll_low_income": 0.4571,
+  "college_enroll_swd": 0.3438,
+  "college_enroll_hispanic": 0.5714,
+  "college_completion_pct": 0.5056
+ },
+ "00790000": {
+  "college_enroll_low_income": 0.4578,
+  "college_enroll_swd": 0.2727,
+  "college_enroll_hispanic": 0.5789,
+  "college_enroll_black": 0.875,
+  "college_enroll_ell": 0.5714,
+  "college_completion_pct": 0.4694
+ },
+ "00440000": {
+  "college_enroll_low_income": 0.2937,
+  "college_enroll_swd": 0.1689,
+  "college_enroll_hispanic": 0.2456,
+  "college_enroll_black": 0.3184,
+  "college_enroll_ell": 0.1378,
+  "college_completion_pct": 0.2121
+ },
+ "01740000": {
+  "college_enroll_low_income": 0.4194,
+  "college_enroll_swd": 0.4167,
+  "college_enroll_hispanic": 0.2941,
+  "college_enroll_ell": 0.1111,
+  "college_completion_pct": 0.4767
+ },
+ "01750000": {
+  "college_enroll_low_income": 0.6538,
+  "college_enroll_swd": 0.8519,
+  "college_enroll_hispanic": 0.3333,
+  "college_completion_pct": 0.7906
+ },
+ "07700000": {
+  "college_enroll_low_income": 0.4,
+  "college_enroll_swd": 0.3226,
+  "college_enroll_hispanic": 0.25,
+  "college_completion_pct": 0.4491
+ },
+ "07150000": {
+  "college_enroll_low_income": 0.48,
+  "college_enroll_swd": 0.5455,
+  "college_completion_pct": 0.5185
+ },
+ "03430000": {
+  "college_enroll_low_income": 0.3077,
+  "college_enroll_swd": 0.1818,
+  "college_completion_pct": 0.1136
+ },
+ "00070000": {
+  "college_enroll_low_income": 0.2791,
+  "college_enroll_swd": 0.3214,
+  "college_enroll_hispanic": 0.3,
+  "college_completion_pct": 0.4709
+ },
+ "00720000": {
+  "college_enroll_low_income": 0.5579,
+  "college_enroll_swd": 0.2895,
+  "college_enroll_hispanic": 0.4706,
+  "college_enroll_black": 0.375,
+  "college_completion_pct": 0.6579
+ },
+ "00500000": {
+  "college_enroll_low_income": 0.5968,
+  "college_enroll_swd": 0.5455,
+  "college_enroll_hispanic": 0.4,
+  "college_enroll_black": 0.5385,
+  "college_completion_pct": 0.6384
+ },
+ "02510000": {
+  "college_enroll_low_income": 0.4198,
+  "college_enroll_swd": 0.2941,
+  "college_enroll_hispanic": 0.2083,
+  "college_enroll_black": 0.2857,
+  "college_enroll_ell": 0.1538,
+  "college_completion_pct": 0.4113
+ },
+ "00710000": {
+  "college_enroll_low_income": 0.5,
+  "college_enroll_swd": 0.4286,
+  "college_enroll_hispanic": 0.75,
+  "college_completion_pct": 0.5194
+ },
+ "02850000": {
+  "college_enroll_low_income": 0.4661,
+  "college_enroll_swd": 0.4118,
+  "college_enroll_hispanic": 0.7097,
+  "college_enroll_black": 0.5385,
+  "college_enroll_ell": 0.4211,
+  "college_completion_pct": 0.5138
+ },
+ "00350000": {
+  "college_enroll_low_income": 0.3775,
+  "college_enroll_swd": 0.2332,
+  "college_enroll_hispanic": 0.3229,
+  "college_enroll_black": 0.4171,
+  "college_enroll_ell": 0.197,
+  "college_completion_pct": 0.2712
+ },
+ "02190000": {
+  "college_enroll_low_income": 0.8421,
+  "college_enroll_swd": 0.8148,
+  "college_completion_pct": 0.7702
+ },
+ "02480000": {
+  "college_enroll_low_income": 0.3688,
+  "college_enroll_swd": 0.2353,
+  "college_enroll_hispanic": 0.3102,
+  "college_enroll_black": 0.5455,
+  "college_enroll_ell": 0.1028,
+  "college_completion_pct": 0.2754
+ },
+ "03050000": {
+  "college_enroll_low_income": 0.6042,
+  "college_enroll_swd": 0.5278,
+  "college_enroll_hispanic": 0.7143,
+  "college_enroll_black": 1.0,
+  "college_completion_pct": 0.6549
+ },
+ "07500000": {
+  "college_enroll_low_income": 0.4167,
+  "college_enroll_swd": 0.1818,
+  "college_completion_pct": 0.5645
+ },
+ "01330000": {
+  "college_enroll_low_income": 0.4222,
+  "college_enroll_swd": 0.4167,
+  "college_enroll_hispanic": 0.3333,
+  "college_enroll_black": 0.5517,
+  "college_enroll_ell": 0.25,
+  "college_completion_pct": 0.3289
+ },
+ "02840000": {
+  "college_enroll_low_income": 0.5283,
+  "college_enroll_swd": 0.4375,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_ell": 0.2857,
+  "college_completion_pct": 0.5436
+ },
+ "01010000": {
+  "college_enroll_low_income": 0.6986,
+  "college_enroll_swd": 0.6119,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.75,
+  "college_completion_pct": 0.7338
+ },
+ "03310000": {
+  "college_enroll_low_income": 0.3333,
+  "college_enroll_swd": 0.1,
+  "college_completion_pct": 0.4096
+ },
+ "06650000": {
+  "college_enroll_low_income": 0.3793,
+  "college_enroll_swd": 0.2667,
+  "college_enroll_black": 0.6667,
+  "college_completion_pct": 0.57
+ },
+ "03360000": {
+  "college_enroll_low_income": 0.3942,
+  "college_enroll_swd": 0.2174,
+  "college_enroll_hispanic": 0.3061,
+  "college_enroll_black": 0.4074,
+  "college_enroll_ell": 0.0769,
+  "college_completion_pct": 0.3874
+ },
+ "00140000": {
+  "college_enroll_low_income": 0.6122,
+  "college_enroll_swd": 0.5185,
+  "college_enroll_hispanic": 0.6296,
+  "college_enroll_ell": 0.5,
+  "college_completion_pct": 0.7283
+ },
+ "07100000": {
+  "college_enroll_low_income": 0.4839,
+  "college_enroll_swd": 0.5,
+  "college_enroll_hispanic": 1.0,
+  "college_completion_pct": 0.6364
+ },
+ "02810000": {
+  "college_enroll_low_income": 0.2915,
+  "college_enroll_swd": 0.1773,
+  "college_enroll_hispanic": 0.2702,
+  "college_enroll_black": 0.3815,
+  "college_enroll_ell": 0.1268,
+  "college_completion_pct": 0.1254
+ },
+ "01220000": {
+  "college_enroll_low_income": 0.6087,
+  "college_enroll_swd": 0.5946,
+  "college_completion_pct": 0.6667
+ },
+ "01070000": {
+  "college_enroll_low_income": 0.3083,
+  "college_enroll_swd": 0.197,
+  "college_enroll_hispanic": 0.1111,
+  "college_enroll_ell": 0.0556,
+  "college_completion_pct": 0.4103
+ },
+ "00250000": {
+  "college_enroll_low_income": 0.4118,
+  "college_enroll_swd": 0.2,
+  "college_enroll_hispanic": 0.1111,
+  "college_enroll_black": 0.5714,
+  "college_completion_pct": 0.3918
+ },
+ "02110000": {
+  "college_enroll_low_income": 0.6569,
+  "college_enroll_swd": 0.4898,
+  "college_enroll_hispanic": 0.6316,
+  "college_enroll_black": 0.6,
+  "college_enroll_ell": 0.2857,
+  "college_completion_pct": 0.6858
+ },
+ "02430000": {
+  "college_enroll_low_income": 0.5528,
+  "college_enroll_swd": 0.3791,
+  "college_enroll_hispanic": 0.1892,
+  "college_enroll_black": 0.5,
+  "college_enroll_ell": 0.3727,
+  "college_completion_pct": 0.4116
+ },
+ "01440000": {
+  "college_enroll_low_income": 0.5806,
+  "college_enroll_swd": 0.375,
+  "college_enroll_hispanic": 0.3333,
+  "college_completion_pct": 0.626
+ },
+ "03070000": {
+  "college_enroll_low_income": 0.4833,
+  "college_enroll_swd": 0.54,
+  "college_enroll_hispanic": 0.2857,
+  "college_enroll_ell": 0.0909,
+  "college_completion_pct": 0.6815
+ },
+ "00730000": {
+  "college_enroll_low_income": 0.6027,
+  "college_enroll_swd": 0.5405,
+  "college_enroll_hispanic": 0.5333,
+  "college_enroll_black": 0.68,
+  "college_enroll_ell": 0.3,
+  "college_completion_pct": 0.5165
+ },
+ "01360000": {
+  "college_enroll_low_income": 0.6333,
+  "college_enroll_swd": 0.697,
+  "college_enroll_hispanic": 0.625,
+  "college_enroll_ell": 0.1667,
+  "college_completion_pct": 0.6825
+ },
+ "07350000": {
+  "college_enroll_low_income": 0.4727,
+  "college_enroll_swd": 0.5714,
+  "college_enroll_hispanic": 0.5385,
+  "college_completion_pct": 0.541
+ },
+ "01980000": {
+  "college_enroll_low_income": 0.6143,
+  "college_enroll_swd": 0.6087,
+  "college_enroll_hispanic": 0.8,
+  "college_enroll_black": 0.5882,
+  "college_enroll_ell": 0.4,
+  "college_completion_pct": 0.6649
+ },
+ "06000000": {
+  "college_enroll_low_income": 0.7273,
+  "college_enroll_swd": 0.7,
+  "college_enroll_hispanic": 0.619,
+  "college_enroll_black": 0.625,
+  "college_enroll_ell": 0.2222,
+  "college_completion_pct": 0.7511
+ },
+ "01280000": {
+  "college_enroll_low_income": 0.2774,
+  "college_enroll_swd": 0.1504,
+  "college_enroll_hispanic": 0.1864,
+  "college_enroll_black": 0.5357,
+  "college_enroll_ell": 0.0755,
+  "college_completion_pct": 0.2789
+ },
+ "07530000": {
+  "college_enroll_low_income": 0.3387,
+  "college_enroll_swd": 0.2083,
+  "college_enroll_hispanic": 0.5714,
+  "college_completion_pct": 0.4271
+ },
+ "06160000": {
+  "college_enroll_low_income": 0.5641,
+  "college_enroll_swd": 0.4167,
+  "college_enroll_hispanic": 0.5,
+  "college_completion_pct": 0.3667
+ },
+ "00860000": {
+  "college_enroll_low_income": 0.375,
+  "college_enroll_swd": 0.0667,
+  "college_enroll_hispanic": 0.4286,
+  "college_completion_pct": 0.3982
+ },
+ "01870000": {
+  "college_enroll_low_income": 0.5833,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.7,
+  "college_completion_pct": 0.6186
+ },
+ "00400000": {
+  "college_enroll_low_income": 0.6265,
+  "college_enroll_swd": 0.5122,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.4615,
+  "college_enroll_ell": 0.25,
+  "college_completion_pct": 0.5685
+ },
+ "07300000": {
+  "college_enroll_low_income": 0.5692,
+  "college_enroll_swd": 0.6719,
+  "college_enroll_hispanic": 0.6296,
+  "college_enroll_ell": 0.1818,
+  "college_completion_pct": 0.7013
+ },
+ "00880000": {
+  "college_enroll_low_income": 0.6477,
+  "college_enroll_swd": 0.629,
+  "college_enroll_hispanic": 0.6,
+  "college_enroll_black": 0.6364,
+  "college_completion_pct": 0.6752
+ },
+ "02910000": {
+  "college_enroll_low_income": 0.6458,
+  "college_enroll_swd": 0.6364,
+  "college_enroll_hispanic": 0.5882,
+  "college_enroll_black": 0.7,
+  "college_enroll_ell": 0.1111,
+  "college_completion_pct": 0.6048
+ },
+ "01610000": {
+  "college_enroll_low_income": 0.45,
+  "college_enroll_swd": 0.1724,
+  "college_enroll_hispanic": 0.5714,
+  "college_enroll_ell": 0.0909,
+  "college_completion_pct": 0.5026
+ },
+ "00460000": {
+  "college_enroll_low_income": 0.6981,
+  "college_enroll_swd": 0.5,
+  "college_enroll_hispanic": 0.6981,
+  "college_enroll_black": 0.7708,
+  "college_enroll_ell": 0.5833,
+  "college_completion_pct": 0.5792
+ },
+ "02070000": {
+  "college_enroll_low_income": 0.6503,
+  "college_enroll_swd": 0.6111,
+  "college_enroll_hispanic": 0.567,
+  "college_enroll_black": 0.7568,
+  "college_enroll_ell": 0.4222,
+  "college_completion_pct": 0.6426
+ },
+ "03440000": {
+  "college_enroll_low_income": 0.7143,
+  "college_enroll_swd": 0.6939,
+  "college_enroll_hispanic": 0.6,
+  "college_enroll_black": 0.7143,
+  "college_completion_pct": 0.7429
+ },
+ "01030000": {
+  "college_enroll_low_income": 0.4331,
+  "college_enroll_swd": 0.3077,
+  "college_enroll_hispanic": 0.439,
+  "college_enroll_black": 0.5,
+  "college_completion_pct": 0.2381
+ },
+ "01650000": {
+  "college_enroll_low_income": 0.4,
+  "college_enroll_swd": 0.2738,
+  "college_enroll_hispanic": 0.2207,
+  "college_enroll_black": 0.5208,
+  "college_enroll_ell": 0.2421,
+  "college_completion_pct": 0.3982
+ },
+ "01970000": {
+  "college_enroll_low_income": 0.3797,
+  "college_enroll_swd": 0.4615,
+  "college_enroll_hispanic": 0.2321,
+  "college_enroll_black": 0.5714,
+  "college_enroll_ell": 0.0,
+  "college_completion_pct": 0.4127
+ },
+ "07780000": {
+  "college_enroll_low_income": 0.3704,
+  "college_enroll_swd": 0.1538,
+  "college_enroll_hispanic": 0.3333,
+  "college_completion_pct": 0.3011
+ },
+ "02100000": {
+  "college_enroll_low_income": 0.4556,
+  "college_enroll_swd": 0.3261,
+  "college_enroll_hispanic": 0.4286,
+  "college_enroll_black": 0.5,
+  "college_enroll_ell": 0.3077,
+  "college_completion_pct": 0.4957
+ },
+ "02010000": {
+  "college_enroll_low_income": 0.1994,
+  "college_enroll_swd": 0.1404,
+  "college_enroll_hispanic": 0.1722,
+  "college_enroll_black": 0.2124,
+  "college_enroll_ell": 0.1057,
+  "college_completion_pct": 0.1595
+ },
+ "00960000": {
+  "college_enroll_low_income": 0.4479,
+  "college_enroll_swd": 0.3871,
+  "college_enroll_hispanic": 0.2667,
+  "college_enroll_black": 0.5,
+  "college_enroll_ell": 0.2308,
+  "college_completion_pct": 0.5025
+ },
+ "03260000": {
+  "college_enroll_low_income": 0.7895,
+  "college_enroll_swd": 0.7755,
+  "college_enroll_hispanic": 0.6667,
+  "college_enroll_ell": 0.8333,
+  "college_completion_pct": 0.7729
+ },
+ "00870000": {
+  "college_enroll_low_income": 0.4878,
+  "college_enroll_swd": 0.4583,
+  "college_enroll_hispanic": 0.5556,
+  "college_enroll_black": 0.8889,
+  "college_completion_pct": 0.6186
+ },
+ "00200000": {
+  "college_enroll_low_income": 0.386,
+  "college_enroll_swd": 0.2742,
+  "college_enroll_hispanic": 0.1765,
+  "college_enroll_black": 0.2941,
+  "college_enroll_ell": 0.1628,
+  "college_completion_pct": 0.4534
+ },
+ "01620000": {
+  "college_enroll_low_income": 0.6,
+  "college_enroll_swd": 0.5556,
+  "college_enroll_hispanic": 0.75,
+  "college_completion_pct": 0.5053
+ },
+ "03160000": {
+  "college_enroll_low_income": 0.3288,
+  "college_enroll_swd": 0.1429,
+  "college_enroll_hispanic": 0.25,
+  "college_enroll_black": 0.4615,
+  "college_enroll_ell": 0.1765,
+  "college_completion_pct": 0.3063
+ },
+ "06030000": {
+  "college_enroll_low_income": 0.4062,
+  "college_enroll_swd": 0.2222,
+  "college_completion_pct": 0.4028
+ },
+ "03150000": {
+  "college_enroll_low_income": 0.8077,
+  "college_enroll_swd": 0.7838,
+  "college_enroll_hispanic": 0.875,
+  "college_enroll_black": 0.7778,
+  "college_completion_pct": 0.7885
+ },
+ "03480000": {
+  "college_enroll_low_income": 0.3751,
+  "college_enroll_swd": 0.2247,
+  "college_enroll_hispanic": 0.2721,
+  "college_enroll_black": 0.604,
+  "college_enroll_ell": 0.2431,
+  "college_completion_pct": 0.2641
+ },
+ "02170000": {
+  "college_enroll_low_income": 0.6875,
+  "college_enroll_swd": 0.6364,
+  "college_enroll_hispanic": 0.6667,
+  "college_completion_pct": 0.6954
+ },
+ "02620000": {
+  "college_enroll_low_income": 0.4746,
+  "college_enroll_swd": 0.2,
+  "college_enroll_hispanic": 0.4815,
+  "college_enroll_black": 0.3333,
+  "college_enroll_ell": 0.381,
+  "college_completion_pct": 0.4921
+ },
+ "02040000": {
+  "college_enroll_low_income": 0.5556,
+  "college_enroll_swd": 0.7273,
+  "college_enroll_hispanic": 0.4167,
+  "college_enroll_ell": 0.1667,
+  "college_completion_pct": 0.6236
+ },
+ "01250000": {
+  "college_enroll_low_income": 0.4545,
+  "college_enroll_swd": 0.6667,
+  "college_completion_pct": 0.7451
+ },
+ "03220000": {
+  "college_enroll_low_income": 0.3793,
+  "college_enroll_swd": 0.125,
+  "college_enroll_hispanic": 0.1667,
+  "college_completion_pct": 0.6271
+ },
+ "06900000": {
+  "college_enroll_low_income": 0.5179,
+  "college_enroll_swd": 0.5,
+  "college_enroll_hispanic": 0.3846,
+  "college_enroll_black": 0.6667,
+  "college_completion_pct": 0.7636
+ },
+ "06400000": {
+  "college_enroll_low_income": 0.7292,
+  "college_enroll_swd": 0.8235,
+  "college_enroll_hispanic": 0.8667,
+  "college_enroll_black": 0.7222,
+  "college_completion_pct": 0.769
+ },
+ "01890000": {
+  "college_enroll_low_income": 0.6154,
+  "college_enroll_swd": 0.6346,
+  "college_enroll_hispanic": 0.5625,
+  "college_enroll_black": 0.7391,
+  "college_enroll_ell": 0.25,
+  "college_completion_pct": 0.6327
+ },
+ "03140000": {
+  "college_enroll_low_income": 0.5393,
+  "college_enroll_swd": 0.4,
+  "college_enroll_hispanic": 0.375,
+  "college_enroll_black": 0.8333,
+  "college_enroll_ell": 0.3103,
+  "college_completion_pct": 0.5934
+ },
+ "00560000": {
+  "college_enroll_low_income": 0.5849,
+  "college_enroll_swd": 0.58,
+  "college_enroll_hispanic": 0.6111,
+  "college_enroll_black": 0.875,
+  "college_completion_pct": 0.6856
+ },
+ "07750000": {
+  "college_enroll_low_income": 0.6838,
+  "college_enroll_swd": 0.5312,
+  "college_enroll_hispanic": 0.6522,
+  "college_enroll_black": 0.8182,
+  "college_completion_pct": 0.6801
+ },
+ "00480000": {
+  "college_enroll_low_income": 0.7193,
+  "college_enroll_swd": 0.6316,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.7857,
+  "college_enroll_ell": 0.3636,
+  "college_completion_pct": 0.6815
+ },
+ "02900000": {
+  "college_enroll_low_income": 0.7083,
+  "college_enroll_swd": 0.5833,
+  "college_completion_pct": 0.5446
+ },
+ "02650000": {
+  "college_enroll_low_income": 0.4595,
+  "college_enroll_swd": 0.4444,
+  "college_enroll_black": 0.5,
+  "college_completion_pct": 0.5878
+ },
+ "01640000": {
+  "college_enroll_low_income": 0.95,
+  "college_enroll_swd": 0.8095,
+  "college_enroll_hispanic": 0.7778,
+  "college_completion_pct": 0.6871
+ },
+ "02660000": {
+  "college_enroll_low_income": 0.6269,
+  "college_enroll_swd": 0.6286,
+  "college_enroll_hispanic": 0.619,
+  "college_enroll_black": 0.6429,
+  "college_completion_pct": 0.7239
+ },
+ "02780000": {
+  "college_enroll_low_income": 0.3871,
+  "college_enroll_swd": 0.3478,
+  "college_enroll_hispanic": 0.5789,
+  "college_enroll_ell": 0.5,
+  "college_completion_pct": 0.5248
+ },
+ "03040000": {
+  "college_enroll_low_income": 0.375,
+  "college_enroll_swd": 0.3,
+  "college_completion_pct": 0.4459
+ },
+ "03420000": {
+  "college_enroll_low_income": 0.5625,
+  "college_enroll_swd": 0.6522,
+  "college_enroll_hispanic": 0.3,
+  "college_completion_pct": 0.6765
+ },
+ "03470000": {
+  "college_enroll_low_income": 0.5441,
+  "college_enroll_swd": 0.5098,
+  "college_enroll_hispanic": 0.2826,
+  "college_enroll_black": 0.8235,
+  "college_enroll_ell": 0.2955,
+  "college_completion_pct": 0.4558
+ },
+ "07630000": {
+  "college_enroll_low_income": 0.5823,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.2857,
+  "college_completion_pct": 0.5
+ },
+ "02930000": {
+  "college_enroll_low_income": 0.3372,
+  "college_enroll_swd": 0.0875,
+  "college_enroll_hispanic": 0.4026,
+  "college_enroll_black": 0.3828,
+  "college_enroll_ell": 0.1765,
+  "college_completion_pct": 0.3786
+ },
+ "00610000": {
+  "college_enroll_low_income": 0.3665,
+  "college_enroll_swd": 0.2353,
+  "college_enroll_hispanic": 0.3184,
+  "college_enroll_black": 0.6957,
+  "college_enroll_ell": 0.2903,
+  "college_completion_pct": 0.2624
+ },
+ "01390000": {
+  "college_enroll_low_income": 0.8205,
+  "college_enroll_swd": 0.7222,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_ell": 0.1667,
+  "college_completion_pct": 0.7549
+ },
+ "01380000": {
+  "college_enroll_low_income": 0.6,
+  "college_enroll_swd": 0.0714,
+  "college_completion_pct": 0.6585
+ },
+ "01170000": {
+  "college_enroll_low_income": 0.5,
+  "college_enroll_swd": 0.5,
+  "college_completion_pct": 0.6038
+ },
+ "01490000": {
+  "college_enroll_low_income": 0.2811,
+  "college_enroll_swd": 0.1507,
+  "college_enroll_hispanic": 0.2812,
+  "college_enroll_black": 0.2857,
+  "college_enroll_ell": 0.1534,
+  "college_completion_pct": 0.0995
+ },
+ "01670000": {
+  "college_enroll_low_income": 0.589,
+  "college_enroll_swd": 0.4815,
+  "college_enroll_hispanic": 0.5263,
+  "college_enroll_black": 0.625,
+  "college_completion_pct": 0.6294
+ },
+ "01710000": {
+  "college_enroll_low_income": 0.5663,
+  "college_enroll_swd": 0.4286,
+  "college_enroll_hispanic": 0.5385,
+  "college_enroll_ell": 0.2857,
+  "college_completion_pct": 0.5922
+ },
+ "06150000": {
+  "college_enroll_low_income": 0.2273,
+  "college_enroll_swd": 0.08,
+  "college_enroll_hispanic": 0.0909,
+  "college_completion_pct": 0.2407
+ },
+ "00300000": {
+  "college_enroll_low_income": 0.6053,
+  "college_enroll_swd": 0.5208,
+  "college_enroll_hispanic": 0.4545,
+  "college_enroll_black": 0.75,
+  "college_enroll_ell": 0.0,
+  "college_completion_pct": 0.513
+ },
+ "01000000": {
+  "college_enroll_low_income": 0.3005,
+  "college_enroll_swd": 0.4554,
+  "college_enroll_hispanic": 0.1734,
+  "college_enroll_black": 0.6486,
+  "college_enroll_ell": 0.0206,
+  "college_completion_pct": 0.4783
+ },
+ "00490000": {
+  "college_enroll_low_income": 0.5992,
+  "college_enroll_swd": 0.5619,
+  "college_enroll_hispanic": 0.5455,
+  "college_enroll_black": 0.6341,
+  "college_enroll_ell": 0.3214,
+  "college_completion_pct": 0.3755
+ },
+ "06800000": {
+  "college_enroll_low_income": 0.6364,
+  "college_enroll_swd": 0.4634,
+  "college_enroll_hispanic": 0.7143,
+  "college_enroll_black": 0.6667,
+  "college_completion_pct": 0.6485
+ },
+ "00940000": {
+  "college_enroll_low_income": 0.5588,
+  "college_enroll_swd": 0.3077,
+  "college_enroll_hispanic": 0.3077,
+  "college_completion_pct": 0.3944
+ },
+ "02180000": {
+  "college_enroll_low_income": 0.5294,
+  "college_enroll_swd": 0.55,
+  "college_enroll_hispanic": 0.5,
+  "college_completion_pct": 0.5054
+ },
+ "00230000": {
+  "college_enroll_low_income": 0.619,
+  "college_enroll_swd": 0.6154,
+  "college_enroll_hispanic": 0.5263,
+  "college_enroll_black": 0.75,
+  "college_completion_pct": 0.6316
+ },
+ "01140000": {
+  "college_enroll_low_income": 0.2903,
+  "college_enroll_swd": 0.1,
+  "college_enroll_hispanic": 0.1176,
+  "college_completion_pct": 0.1753
+ },
+ "01780000": {
+  "college_enroll_low_income": 0.6071,
+  "college_enroll_swd": 0.6279,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.8571,
+  "college_enroll_ell": 0.5714,
+  "college_completion_pct": 0.6723
+ },
+ "01110000": {
+  "college_enroll_low_income": 0.4286,
+  "college_enroll_swd": 0.0714,
+  "college_completion_pct": 0.3514
+ },
+ "00240000": {
+  "college_enroll_low_income": 0.4262,
+  "college_enroll_swd": 0.375,
+  "college_enroll_hispanic": 0.5714,
+  "college_completion_pct": 0.5698
+ },
+ "01680000": {
+  "college_enroll_low_income": 0.6591,
+  "college_enroll_swd": 0.6852,
+  "college_enroll_hispanic": 0.6667,
+  "college_enroll_black": 0.6364,
+  "college_enroll_ell": 0.25,
+  "college_completion_pct": 0.6527
+ },
+ "00160000": {
+  "college_enroll_low_income": 0.3957,
+  "college_enroll_swd": 0.234,
+  "college_enroll_hispanic": 0.3253,
+  "college_enroll_black": 0.7105,
+  "college_enroll_ell": 0.1538,
+  "college_completion_pct": 0.3734
+ },
+ "01850000": {
+  "college_enroll_low_income": 0.2555,
+  "college_enroll_swd": 0.2449,
+  "college_enroll_hispanic": 0.1985,
+  "college_enroll_black": 0.3846,
+  "college_enroll_ell": 0.0459,
+  "college_completion_pct": 0.4559
+ },
+ "03010000": {
+  "college_enroll_low_income": 0.4865,
+  "college_enroll_swd": 0.2941,
+  "college_enroll_hispanic": 0.625,
+  "college_completion_pct": 0.6641
+ },
+ "00010000": {
+  "college_enroll_low_income": 0.4267,
+  "college_enroll_swd": 0.4,
+  "college_enroll_hispanic": 0.2308,
+  "college_enroll_black": 0.6667,
+  "college_enroll_ell": 0.1429,
+  "college_completion_pct": 0.5526
+ },
+ "00360000": {
+  "college_enroll_low_income": 0.4872,
+  "college_enroll_swd": 0.5,
+  "college_completion_pct": 0.4027
+ },
+ "01810000": {
+  "college_enroll_low_income": 0.3922,
+  "college_enroll_swd": 0.2444,
+  "college_enroll_hispanic": 0.317,
+  "college_enroll_black": 0.64,
+  "college_enroll_ell": 0.1757,
+  "college_completion_pct": 0.3368
+ },
+ "06950000": {
+  "college_enroll_low_income": 0.8077,
+  "college_enroll_swd": 0.7324,
+  "college_enroll_hispanic": 0.6316,
+  "college_enroll_black": 0.7778,
+  "college_completion_pct": 0.699
+ },
+ "03230000": {
+  "college_enroll_low_income": 0.4138,
+  "college_enroll_hispanic": 0.375,
+  "college_enroll_black": 0.5714,
+  "college_completion_pct": 0.5364
+ },
+ "07800000": {
+  "college_enroll_low_income": 0.4915,
+  "college_enroll_swd": 0.3111,
+  "college_enroll_hispanic": 0.2917,
+  "college_enroll_black": 0.4375,
+  "college_enroll_ell": 0.0,
+  "college_completion_pct": 0.4821
+ },
+ "06750000": {
+  "college_enroll_low_income": 0.6562,
+  "college_enroll_swd": 0.5294,
+  "college_completion_pct": 0.8125
+ },
+ "00090000": {
+  "college_enroll_low_income": 0.5909,
+  "college_enroll_swd": 0.6533,
+  "college_enroll_hispanic": 0.5556,
+  "college_enroll_black": 0.8571,
+  "college_enroll_ell": 0.5,
+  "college_completion_pct": 0.678
+ },
+ "00970000": {
+  "college_enroll_low_income": 0.3099,
+  "college_enroll_swd": 0.1795,
+  "college_enroll_hispanic": 0.2535,
+  "college_enroll_black": 0.6452,
+  "college_enroll_ell": 0.18,
+  "college_completion_pct": 0.1294
+ },
+ "02610000": {
+  "college_enroll_low_income": 0.5641,
+  "college_enroll_swd": 0.5,
+  "college_completion_pct": 0.6379
+ },
+ "00170000": {
+  "college_enroll_low_income": 0.5294,
+  "college_enroll_swd": 0.2941,
+  "college_enroll_hispanic": 0.6364,
+  "college_enroll_black": 0.5714,
+  "college_completion_pct": 0.6125
+ },
+ "00950000": {
+  "college_enroll_low_income": 0.23,
+  "college_enroll_swd": 0.1136,
+  "college_enroll_hispanic": 0.1487,
+  "college_enroll_black": 0.3855,
+  "college_enroll_ell": 0.0833,
+  "college_completion_pct": 0.2045
+ },
+ "06220000": {
+  "college_enroll_low_income": 0.375,
+  "college_enroll_swd": 0.1304,
+  "college_completion_pct": 0.3884
+ },
+ "06500000": {
+  "college_enroll_low_income": 0.4068,
+  "college_enroll_swd": 0.0556,
+  "college_enroll_hispanic": 0.6667,
+  "college_completion_pct": 0.4764
+ },
+ "01050000": {
+  "college_enroll_low_income": 0.3,
+  "college_enroll_swd": 0.3333,
+  "college_completion_pct": 0.6471
+ },
+ "06450000": {
+  "college_enroll_low_income": 0.43,
+  "college_enroll_swd": 0.3462,
+  "college_enroll_hispanic": 0.2083,
+  "college_enroll_black": 0.5,
+  "college_enroll_ell": 0.0455,
+  "college_completion_pct": 0.3737
+ },
+ "02360000": {
+  "college_enroll_low_income": 0.3267,
+  "college_enroll_swd": 0.2143,
+  "college_enroll_hispanic": 0.3279,
+  "college_enroll_black": 0.3415,
+  "college_enroll_ell": 0.0588,
+  "college_completion_pct": 0.2774
+ },
+ "01990000": {
+  "college_enroll_low_income": 0.7692,
+  "college_enroll_swd": 0.75,
+  "college_enroll_hispanic": 0.7692,
+  "college_completion_pct": 0.7672
+ },
+ "00100000": {
+  "college_enroll_low_income": 0.662,
+  "college_enroll_swd": 0.5862,
+  "college_enroll_hispanic": 0.6,
+  "college_enroll_black": 0.9333,
+  "college_enroll_ell": 0.6667,
+  "college_completion_pct": 0.6572
+ },
+ "06720000": {
+  "college_enroll_low_income": 0.3462,
+  "college_enroll_swd": 0.25,
+  "college_completion_pct": 0.3333
+ },
+ "02580000": {
+  "college_enroll_low_income": 0.3237,
+  "college_enroll_swd": 0.2407,
+  "college_enroll_hispanic": 0.313,
+  "college_enroll_black": 0.4,
+  "college_enroll_ell": 0.1739,
+  "college_completion_pct": 0.3106
+ },
+ "02150000": {
+  "college_enroll_low_income": 0.3125,
+  "college_enroll_swd": 0.1667,
+  "college_completion_pct": 0.3077
+ },
+ "01550000": {
+  "college_enroll_low_income": 0.7882,
+  "college_enroll_swd": 0.7067,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.6923,
+  "college_enroll_ell": 0.6667,
+  "college_completion_pct": 0.7057
+ },
+ "06550000": {
+  "college_enroll_low_income": 0.6875,
+  "college_enroll_swd": 0.6522,
+  "college_enroll_hispanic": 0.6667,
+  "college_enroll_black": 0.5714,
+  "college_completion_pct": 0.75
+ },
+ "00830000": {
+  "college_enroll_low_income": 0.5484,
+  "college_enroll_swd": 0.4688,
+  "college_enroll_black": 0.5714,
+  "college_completion_pct": 0.5448
+ },
+ "01530000": {
+  "college_enroll_low_income": 0.4342,
+  "college_enroll_swd": 0.3398,
+  "college_enroll_hispanic": 0.4088,
+  "college_enroll_black": 0.6591,
+  "college_enroll_ell": 0.2222,
+  "college_completion_pct": 0.3696
+ },
+ "06100000": {
+  "college_enroll_low_income": 0.4468,
+  "college_enroll_swd": 0.4194,
+  "college_enroll_hispanic": 0.6667,
+  "college_completion_pct": 0.5325
+ },
+ "01420000": {
+  "college_enroll_low_income": 0.4615,
+  "college_enroll_swd": 0.2941,
+  "college_completion_pct": 0.3523
+ },
+ "01760000": {
+  "college_enroll_low_income": 0.4146,
+  "college_enroll_swd": 0.3014,
+  "college_enroll_hispanic": 0.3214,
+  "college_enroll_black": 0.65,
+  "college_enroll_ell": 0.2,
+  "college_completion_pct": 0.4192
+ },
+ "00570000": {
+  "college_enroll_low_income": 0.2126,
+  "college_enroll_swd": 0.1395,
+  "college_enroll_hispanic": 0.2064,
+  "college_enroll_black": 0.2353,
+  "college_enroll_ell": 0.1203,
+  "college_completion_pct": 0.1793
+ },
+ "03210000": {
+  "college_enroll_low_income": 0.5902,
+  "college_enroll_swd": 0.5294,
+  "college_enroll_hispanic": 0.1364,
+  "college_enroll_ell": 0.1765,
+  "college_completion_pct": 0.6926
+ },
+ "01700000": {
+  "college_enroll_low_income": 0.3014,
+  "college_enroll_swd": 0.2353,
+  "college_enroll_hispanic": 0.2759,
+  "college_enroll_black": 0.4118,
+  "college_enroll_ell": 0.1456,
+  "college_completion_pct": 0.4106
+ },
+ "01410000": {
+  "college_enroll_low_income": 0.3494,
+  "college_enroll_swd": 0.3125,
+  "college_enroll_hispanic": 0.1613,
+  "college_enroll_ell": 0.0435,
+  "college_completion_pct": 0.5579
+ },
+ "01100000": {
+  "college_enroll_low_income": 0.4828,
+  "college_enroll_swd": 0.4595,
+  "college_enroll_hispanic": 0.2727,
+  "college_enroll_black": 0.5714,
+  "college_completion_pct": 0.5845
+ },
+ "03080000": {
+  "college_enroll_low_income": 0.2744,
+  "college_enroll_swd": 0.3056,
+  "college_enroll_hispanic": 0.1887,
+  "college_enroll_black": 0.6047,
+  "college_enroll_ell": 0.0698,
+  "college_completion_pct": 0.4269
+ },
+ "03100000": {
+  "college_enroll_low_income": 0.4156,
+  "college_enroll_swd": 0.2759,
+  "college_completion_pct": 0.1977
+ },
+ "02290000": {
+  "college_enroll_low_income": 0.438,
+  "college_enroll_swd": 0.3625,
+  "college_enroll_hispanic": 0.3614,
+  "college_enroll_black": 0.4118,
+  "college_enroll_ell": 0.1778,
+  "college_completion_pct": 0.4279
+ },
+ "00260000": {
+  "college_enroll_low_income": 0.7097,
+  "college_enroll_swd": 0.7241,
+  "college_enroll_hispanic": 0.6364,
+  "college_enroll_black": 0.3333,
+  "college_enroll_ell": 0.5,
+  "college_completion_pct": 0.6987
+ },
+ "07050000": {
+  "college_enroll_low_income": 0.6889,
+  "college_enroll_swd": 0.6866,
+  "college_enroll_hispanic": 0.8889,
+  "college_completion_pct": 0.7111
+ },
+ "00640000": {
+  "college_enroll_low_income": 0.4815,
+  "college_enroll_swd": 0.4,
+  "college_enroll_hispanic": 0.425,
+  "college_enroll_black": 0.5,
+  "college_enroll_ell": 0.3333,
+  "college_completion_pct": 0.3238
+ },
+ "01370000": {
+  "college_enroll_low_income": 0.2551,
+  "college_enroll_swd": 0.0962,
+  "college_enroll_hispanic": 0.2393,
+  "college_enroll_black": 0.4545,
+  "college_enroll_ell": 0.101,
+  "college_completion_pct": 0.1358
+ },
+ "00180000": {
+  "college_enroll_low_income": 0.5,
+  "college_enroll_swd": 0.5714,
+  "college_enroll_black": 0.8235,
+  "college_completion_pct": 0.375
+ },
+ "01590000": {
+  "college_enroll_low_income": 0.7105,
+  "college_enroll_swd": 0.6739,
+  "college_enroll_hispanic": 0.4,
+  "college_completion_pct": 0.7729
+ },
+ "07120000": {
+  "college_enroll_low_income": 0.4516,
+  "college_enroll_swd": 0.44,
+  "college_enroll_hispanic": 0.2727,
+  "college_enroll_black": 0.75,
+  "college_completion_pct": 0.4522
+ },
+ "02770000": {
+  "college_enroll_low_income": 0.2069,
+  "college_enroll_swd": 0.0968,
+  "college_enroll_hispanic": 0.1807,
+  "college_enroll_ell": 0.0741,
+  "college_completion_pct": 0.2
+ },
+ "07660000": {
+  "college_enroll_low_income": 0.4211,
+  "college_enroll_swd": 0.25,
+  "college_completion_pct": 0.5399
+ },
+ "01270000": {
+  "college_enroll_low_income": 0.6667,
+  "college_enroll_swd": 0.875,
+  "college_completion_pct": 0.5357
+ },
+ "02310000": {
+  "college_enroll_low_income": 0.675,
+  "college_enroll_swd": 0.4643,
+  "college_completion_pct": 0.5212
+ },
+ "00520000": {
+  "college_enroll_low_income": 0.4,
+  "college_enroll_swd": 0.2963,
+  "college_completion_pct": 0.3942
+ },
+ "00650000": {
+  "college_enroll_low_income": 0.8,
+  "college_enroll_swd": 0.5556,
+  "college_completion_pct": 0.7321
+ },
+ "02390000": {
+  "college_enroll_low_income": 0.3956,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.2353,
+  "college_enroll_black": 0.4615,
+  "college_enroll_ell": 0.0,
+  "college_completion_pct": 0.3965
+ },
+ "07170000": {
+  "college_enroll_low_income": 0.4737,
+  "college_enroll_swd": 0.5,
+  "college_completion_pct": 0.4217
+ },
+ "01630000": {
+  "college_enroll_low_income": 0.2824,
+  "college_enroll_swd": 0.2671,
+  "college_enroll_hispanic": 0.2021,
+  "college_enroll_black": 0.625,
+  "college_enroll_ell": 0.0941,
+  "college_completion_pct": 0.2073
+ },
+ "01860000": {
+  "college_enroll_low_income": 0.4857,
+  "college_enroll_swd": 0.3077,
+  "college_enroll_hispanic": 0.6,
+  "college_enroll_black": 0.5,
+  "college_completion_pct": 0.3465
+ },
+ "02710000": {
+  "college_enroll_low_income": 0.672,
+  "college_enroll_swd": 0.5593,
+  "college_enroll_hispanic": 0.6667,
+  "college_enroll_black": 0.8333,
+  "college_enroll_ell": 0.375,
+  "college_completion_pct": 0.7481
+ },
+ "00990000": {
+  "college_enroll_low_income": 0.7609,
+  "college_enroll_swd": 0.65,
+  "college_enroll_hispanic": 0.9,
+  "college_enroll_black": 0.6471,
+  "college_completion_pct": 0.6622
+ },
+ "02140000": {
+  "college_enroll_low_income": 0.2812,
+  "college_enroll_swd": 0.3125,
+  "college_enroll_hispanic": 0.0625,
+  "college_completion_pct": 0.3684
+ },
+ "07450000": {
+  "college_enroll_low_income": 0.5556,
+  "college_enroll_swd": 0.4688,
+  "college_completion_pct": 0.6541
+ },
+ "01600000": {
+  "college_enroll_low_income": 0.3041,
+  "college_enroll_swd": 0.1376,
+  "college_enroll_hispanic": 0.1759,
+  "college_enroll_black": 0.4878,
+  "college_enroll_ell": 0.2208,
+  "college_completion_pct": 0.3203
+ },
+ "00770000": {
+  "college_enroll_low_income": 0.375,
+  "college_enroll_swd": 0.1111,
+  "college_enroll_hispanic": 0.5714,
+  "college_completion_pct": 0.5152
+ },
+ "00310000": {
+  "college_enroll_low_income": 0.4857,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.4,
+  "college_enroll_black": 0.7647,
+  "college_enroll_ell": 0.1111,
+  "college_completion_pct": 0.5892
+ },
+ "02270000": {
+  "college_enroll_low_income": 0.3269,
+  "college_enroll_swd": 0.1765,
+  "college_enroll_hispanic": 0.5,
+  "college_completion_pct": 0.4206
+ },
+ "03250000": {
+  "college_enroll_low_income": 0.3649,
+  "college_enroll_swd": 0.2561,
+  "college_enroll_hispanic": 0.2778,
+  "college_enroll_black": 0.5556,
+  "college_enroll_ell": 0.0667,
+  "college_completion_pct": 0.3485
+ },
+ "02260000": {
+  "college_enroll_low_income": 0.2453,
+  "college_enroll_swd": 0.1923,
+  "college_enroll_hispanic": 0.2308,
+  "college_completion_pct": 0.344
+ },
+ "00050000": {
+  "college_enroll_low_income": 0.4159,
+  "college_enroll_swd": 0.322,
+  "college_enroll_hispanic": 0.4211,
+  "college_enroll_black": 0.8333,
+  "college_completion_pct": 0.5262
+ },
+ "01510000": {
+  "college_enroll_low_income": 0.4286,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.4706,
+  "college_completion_pct": 0.4425
+ },
+ "06580000": {
+  "college_enroll_low_income": 0.4362,
+  "college_enroll_swd": 0.1923,
+  "college_enroll_hispanic": 0.2857,
+  "college_completion_pct": 0.5641
+ },
+ "06730000": {
+  "college_enroll_low_income": 0.5652,
+  "college_enroll_swd": 0.6154,
+  "college_enroll_hispanic": 0.875,
+  "college_completion_pct": 0.6909
+ },
+ "01500000": {
+  "college_enroll_low_income": 0.3784,
+  "college_enroll_swd": 0.1429,
+  "college_enroll_hispanic": 0.0,
+  "college_completion_pct": 0.3077
+ },
+ "00820000": {
+  "college_enroll_low_income": 0.8438,
+  "college_enroll_swd": 0.7692,
+  "college_completion_pct": 0.6932
+ },
+ "02120000": {
+  "college_enroll_low_income": 0.4667,
+  "college_enroll_swd": 0.2821,
+  "college_enroll_hispanic": 0.4167,
+  "college_enroll_black": 0.4737,
+  "college_completion_pct": 0.6309
+ },
+ "07670000": {
+  "college_enroll_low_income": 0.2807,
+  "college_enroll_swd": 0.1,
+  "college_enroll_hispanic": 0.15,
+  "college_completion_pct": 0.3611
+ },
+ "02920000": {
+  "college_enroll_low_income": 0.3333,
+  "college_enroll_swd": 0.0667,
+  "college_completion_pct": 0.4394
+ },
+ "02090000": {
+  "college_enroll_low_income": 0.2222,
+  "college_enroll_swd": 0.0,
+  "college_completion_pct": 0.2542
+ },
+ "01820000": {
+  "college_enroll_low_income": 0.3671,
+  "college_enroll_swd": 0.1379,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.1429,
+  "college_completion_pct": 0.5067
+ },
+ "03170000": {
+  "college_enroll_low_income": 0.6579,
+  "college_enroll_swd": 0.6923,
+  "college_enroll_hispanic": 0.5882,
+  "college_enroll_black": 0.8182,
+  "college_completion_pct": 0.7227
+ },
+ "01770000": {
+  "college_enroll_low_income": 0.5714,
+  "college_enroll_swd": 0.6957,
+  "college_enroll_hispanic": 0.5,
+  "college_completion_pct": 0.689
+ },
+ "02640000": {
+  "college_enroll_low_income": 0.6829,
+  "college_enroll_swd": 0.5,
+  "college_completion_pct": 0.6542
+ },
+ "01910000": {
+  "college_enroll_low_income": 0.2857,
+  "college_completion_pct": 0.6154
+ },
+ "07200000": {
+  "college_enroll_low_income": 0.5135,
+  "college_enroll_swd": 0.3333,
+  "college_enroll_hispanic": 0.4444,
+  "college_completion_pct": 0.3814
+ },
+ "07650000": {
+  "college_enroll_low_income": 0.5667,
+  "college_enroll_swd": 0.4615,
+  "college_enroll_hispanic": 0.4286,
+  "college_completion_pct": 0.5254
+ },
+ "07250000": {
+  "college_enroll_low_income": 0.425,
+  "college_enroll_swd": 0.6471,
+  "college_enroll_hispanic": 0.5385,
+  "college_enroll_ell": 0.25,
+  "college_completion_pct": 0.6765
+ },
+ "02200000": {
+  "college_enroll_low_income": 0.4921,
+  "college_enroll_swd": 0.4655,
+  "college_enroll_hispanic": 0.3725,
+  "college_enroll_black": 0.5,
+  "college_enroll_ell": 0.1765,
+  "college_completion_pct": 0.5165
+ },
+ "01310000": {
+  "college_enroll_low_income": 0.7105,
+  "college_enroll_swd": 0.6667,
+  "college_enroll_hispanic": 0.8182,
+  "college_completion_pct": 0.7048
+ },
+ "02460000": {
+  "college_enroll_low_income": 0.6087,
+  "college_enroll_swd": 0.6939,
+  "college_enroll_hispanic": 0.8333,
+  "college_enroll_black": 0.3333,
+  "college_completion_pct": 0.7256
+ },
+ "03090000": {
+  "college_enroll_low_income": 0.3429,
+  "college_enroll_swd": 0.0,
+  "college_completion_pct": 0.3088
+ },
+ "06200000": {
+  "college_enroll_low_income": 0.3529,
+  "college_enroll_swd": 0.5,
+  "college_completion_pct": 0.6143
+ },
+ "01720000": {
+  "college_enroll_low_income": 0.5472,
+  "college_enroll_swd": 0.3529,
+  "college_enroll_black": 0.6667,
+  "college_completion_pct": 0.4902
+ },
+ "02950000": {
+  "college_enroll_low_income": 0.5522,
+  "college_enroll_swd": 0.4444,
+  "college_enroll_hispanic": 0.5,
+  "college_enroll_black": 0.625,
+  "college_completion_pct": 0.5663
+ },
+ "03460000": {
+  "college_enroll_low_income": 0.5541,
+  "college_enroll_swd": 0.4583,
+  "college_enroll_hispanic": 0.4091,
+  "college_enroll_ell": 0.6667,
+  "college_completion_pct": 0.5101
+ },
+ "00930000": {
+  "college_enroll_low_income": 0.318,
+  "college_enroll_swd": 0.2895,
+  "college_enroll_hispanic": 0.2219,
+  "college_enroll_black": 0.5833,
+  "college_enroll_ell": 0.1265,
+  "college_completion_pct": 0.2209
+ },
+ "02740000": {
+  "college_enroll_low_income": 0.3744,
+  "college_enroll_swd": 0.3731,
+  "college_enroll_hispanic": 0.3007,
+  "college_enroll_black": 0.6667,
+  "college_enroll_ell": 0.1698,
+  "college_completion_pct": 0.2857
+ },
+ "02520000": {
+  "college_enroll_low_income": 0.5714,
+  "college_enroll_swd": 0.6667,
+  "college_completion_pct": 0.6026
+ },
+ "06250000": {
+  "college_enroll_low_income": 0.4762,
+  "college_enroll_swd": 0.2083,
+  "college_enroll_hispanic": 0.25,
+  "college_enroll_black": 0.7391,
+  "college_completion_pct": 0.5797
+ }
+}

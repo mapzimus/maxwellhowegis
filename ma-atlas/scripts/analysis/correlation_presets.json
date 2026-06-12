@@ -1,0 +1,204 @@
+{
+  "expected": [
+    {
+      "metricA": "acs_median_household_income",
+      "metricB": "mcas_g10_math_me",
+      "labelA": "Median Household Income (ACS)",
+      "labelB": "MCAS Gr10 Math % Meeting/Exceeding",
+      "title": "Household income \u00d7 10th-grade math",
+      "blurb": "The classic gradient: richer towns post far higher MCAS 10th-grade math pass rates. A clean, strong positive relationship that orients you to the map's main north-south spread.",
+      "pearson": 0.828,
+      "spearman": 0.81,
+      "n": 218
+    },
+    {
+      "metricA": "LI_PCT",
+      "metricB": "mcas_g38_ela_me",
+      "labelA": "% Low Income",
+      "labelB": "MCAS Gr3-8 ELA % Meeting/Exceeding",
+      "title": "Low-income share \u00d7 grade 3\u20138 reading",
+      "blurb": "Districts with more low-income students have markedly lower early-grade ELA proficiency \u2014 the single strongest poverty-to-outcome link in the data.",
+      "pearson": -0.841,
+      "spearman": -0.861,
+      "n": 274
+    },
+    {
+      "metricA": "acs_bachelors_plus_pct",
+      "metricB": "mcas_g10_ela_me",
+      "labelA": "% Bachelor",
+      "labelB": "MCAS Gr10 ELA % Meeting/Exceeding",
+      "title": "Adults with degrees \u00d7 10th-grade English",
+      "blurb": "Where more adults hold a bachelor's degree, students score higher on 10th-grade ELA. Parental education tracks achievement almost as tightly as income.",
+      "pearson": 0.841,
+      "spearman": 0.833,
+      "n": 218
+    },
+    {
+      "metricA": "acs_median_household_income",
+      "metricB": "college_enroll_4yr_pct",
+      "labelA": "Median Household Income (ACS)",
+      "labelB": "% Enrolled in 4-Year College",
+      "title": "Income \u00d7 four-year-college enrollment",
+      "blurb": "Wealthier districts send a much larger share of graduates straight to four-year colleges \u2014 opportunity compounds with income.",
+      "pearson": 0.824,
+      "spearman": 0.876,
+      "n": 217
+    },
+    {
+      "metricA": "LI_PCT",
+      "metricB": "chronic_absent_pct",
+      "labelA": "% Low Income",
+      "labelB": "Chronic Absenteeism Rate",
+      "title": "Low income \u00d7 chronic absenteeism",
+      "blurb": "Chronic absence rises steeply with the low-income share \u2014 poverty shows up as missed school days, not just lower test scores.",
+      "pearson": 0.81,
+      "spearman": 0.797,
+      "n": 280
+    },
+    {
+      "metricA": "mcas_g38_ela_me",
+      "metricB": "grad_4yr",
+      "labelA": "MCAS Gr3-8 ELA % Meeting/Exceeding",
+      "labelB": "4-yr Graduation Rate",
+      "title": "Early reading \u00d7 graduation rate",
+      "blurb": "Districts that get more kids reading proficiently by grade 8 graduate more of them on time. Early literacy is an early-warning signal you can see on the map.",
+      "pearson": 0.687,
+      "spearman": 0.712,
+      "n": 216
+    },
+    {
+      "metricA": "acs_bachelors_plus_pct",
+      "metricB": "ap_participation_pct",
+      "labelA": "% Bachelor",
+      "labelB": "% Jr/Sr Taking AP/IB Course",
+      "title": "Educated towns \u00d7 AP enrollment",
+      "blurb": "More college-educated communities push more juniors and seniors into AP/IB courses \u2014 a confirming signal of how expectations scale with adult education.",
+      "pearson": 0.69,
+      "spearman": 0.704,
+      "n": 218
+    },
+    {
+      "metricA": "acs_median_household_income",
+      "metricB": "attendance_rate",
+      "labelA": "Median Household Income (ACS)",
+      "labelB": "Attendance Rate",
+      "title": "Income \u00d7 showing up to school",
+      "blurb": "Higher-income districts have higher daily attendance. A simple, intuitive pairing that makes the wealth gradient tangible.",
+      "pearson": 0.577,
+      "spearman": 0.656,
+      "n": 280
+    }
+  ],
+  "surprising": [
+    {
+      "metricA": "per_pupil",
+      "metricB": "mcas_g10_math_me",
+      "labelA": "Per-Pupil $ (Total)",
+      "labelB": "MCAS Gr10 Math % Meeting/Exceeding",
+      "title": "Spending per pupil \u00d7 math scores",
+      "blurb": "Surprising: total per-pupil spending barely tracks 10th-grade math achievement. The highest-spending districts are NOT the highest-scoring \u2014 money and outcomes decouple, partly because high-need districts spend more by design.",
+      "pearson": 0.126,
+      "spearman": 0.076,
+      "n": 217
+    },
+    {
+      "metricA": "avg_teacher_salary",
+      "metricB": "mcas_math_sgp",
+      "labelA": "Avg Teacher Salary (2024)",
+      "labelB": "MCAS Math \u2014 Avg Growth (SGP)",
+      "title": "Teacher pay \u00d7 student growth",
+      "blurb": "Counterintuitive: districts paying the highest average teacher salaries do not show faster student growth (SGP). Salary tracks local cost-of-living more than how much kids improve year to year.",
+      "pearson": 0.11,
+      "spearman": 0.217,
+      "n": 273
+    },
+    {
+      "metricA": "diversity_index",
+      "metricB": "mcas_ela_sgp",
+      "labelA": "Student Diversity Index",
+      "labelB": "MCAS ELA \u2014 Avg Growth (SGP)",
+      "title": "Diversity \u00d7 student growth",
+      "blurb": "Worth a look: student racial diversity is essentially uncorrelated with academic growth. Diverse districts span the full range of growth \u2014 a useful counter to the assumption that demographics determine progress.",
+      "pearson": 0.053,
+      "spearman": 0.062,
+      "n": 273
+    },
+    {
+      "metricA": "acs_median_commute_min",
+      "metricB": "mcas_g10_math_me",
+      "labelA": "Mean Commute to Work (min, ACS)",
+      "labelB": "MCAS Gr10 Math % Meeting/Exceeding",
+      "title": "Commute time \u00d7 math scores",
+      "blurb": "Unexpected angle: longer average commutes weakly track higher math scores \u2014 a proxy for affluent, car-dependent suburbs that send parents far to work and post strong results.",
+      "pearson": 0.26,
+      "spearman": 0.245,
+      "n": 218
+    },
+    {
+      "metricA": "acs_median_home_value",
+      "metricB": "disc_students_pct",
+      "labelA": "Median Home Value (ACS)",
+      "labelB": "Students Disciplined Rate",
+      "title": "Home values \u00d7 discipline rate",
+      "blurb": "Pricey-housing districts discipline a smaller share of students. Housing cost \u2014 a wealth proxy \u2014 maps onto who gets suspended, a sobering cross-domain pattern.",
+      "pearson": -0.412,
+      "spearman": -0.396,
+      "n": 280
+    },
+    {
+      "metricA": "school_choice_out_pct",
+      "metricB": "mcas_g38_math_me",
+      "labelA": "% Leaving via School Choice",
+      "labelB": "MCAS Gr3-8 Math % Meeting/Exceeding",
+      "title": "Students leaving \u00d7 math scores",
+      "blurb": "Districts losing more resident students to school choice tend to have lower math proficiency \u2014 families voting with their feet, visible as an outflow-vs-outcomes pattern on the map.",
+      "pearson": -0.344,
+      "spearman": -0.578,
+      "n": 227
+    },
+    {
+      "metricA": "students_per_counselor",
+      "metricB": "grad_4yr",
+      "labelA": "Students per Counselor",
+      "labelB": "4-yr Graduation Rate",
+      "title": "Counselor caseload \u00d7 graduation",
+      "blurb": "Surprising how weak it is: the number of students per guidance counselor barely predicts graduation rates. Staffing ratios alone don't tell the outcome story people expect.",
+      "pearson": 0.04,
+      "spearman": 0.133,
+      "n": 220
+    },
+    {
+      "metricA": "acs_median_household_income",
+      "metricB": "sped_separate_pct",
+      "labelA": "Median Household Income (ACS)",
+      "labelB": "% SWD Substantially Separate",
+      "title": "Income \u00d7 separate special-ed placement",
+      "blurb": "Counterintuitive: wealthier districts place FEWER students with disabilities in substantially-separate settings. Lower-income districts lean on segregated placements more \u2014 inclusion tracks money, not need.",
+      "pearson": -0.502,
+      "spearman": -0.499,
+      "n": 251
+    },
+    {
+      "metricA": "stu_tchr_ratio",
+      "metricB": "mcas_g10_math_me",
+      "labelA": "Student : Teacher Ratio",
+      "labelB": "MCAS Gr10 Math % Meeting/Exceeding",
+      "title": "Class crowding \u00d7 math scores",
+      "blurb": "Surprising non-result: the number of students per teacher is essentially unrelated to 10th-grade math scores. Bigger classes don't mean worse outcomes here \u2014 a caution against reading the ratio as a quality signal.",
+      "pearson": 0.046,
+      "spearman": 0.06,
+      "n": 217
+    },
+    {
+      "metricA": "acs_work_from_home_pct",
+      "metricB": "college_enroll_4yr_pct",
+      "labelA": "Worked From Home (ACS)",
+      "labelB": "% Enrolled in 4-Year College",
+      "title": "Work-from-home \u00d7 college-going",
+      "blurb": "An odd but real proxy: districts with more remote workers send more grads to four-year colleges \u2014 remote work concentrates in the same educated, higher-income communities.",
+      "pearson": 0.755,
+      "spearman": 0.787,
+      "n": 217
+    }
+  ]
+}

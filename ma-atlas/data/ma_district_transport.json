@@ -1,0 +1,1379 @@
+{
+ "06250000": {
+  "per_pupil_transportation": 1080.71,
+  "per_pupil_transportation_ood": 285.41,
+  "per_pupil_food": 538.85
+ },
+ "01000000": {
+  "per_pupil_transportation": 1229.51,
+  "per_pupil_transportation_ood": 302.38,
+  "per_pupil_food": 624.64
+ },
+ "01610000": {
+  "per_pupil_transportation": 502.84,
+  "per_pupil_transportation_ood": 455.79,
+  "per_pupil_food": 551.53
+ },
+ "00870000": {
+  "per_pupil_transportation": 724.35,
+  "per_pupil_transportation_ood": 88.8,
+  "per_pupil_food": 457.12
+ },
+ "07670000": {
+  "per_pupil_transportation": 1154.53,
+  "per_pupil_transportation_ood": 386.33,
+  "per_pupil_food": 535.53
+ },
+ "03490000": {
+  "per_pupil_transportation": 424.4,
+  "per_pupil_transportation_ood": 579.01,
+  "per_pupil_food": 511.04
+ },
+ "07660000": {
+  "per_pupil_transportation": 1328.31,
+  "per_pupil_transportation_ood": 148.99,
+  "per_pupil_food": 760.83
+ },
+ "07530000": {
+  "per_pupil_transportation": 1144.52,
+  "per_pupil_transportation_ood": 200.7,
+  "per_pupil_food": 528.46
+ },
+ "07750000": {
+  "per_pupil_transportation": 955.94,
+  "per_pupil_transportation_ood": 350.04,
+  "per_pupil_food": 410.24
+ },
+ "00080000": {
+  "per_pupil_transportation": 645.71,
+  "per_pupil_transportation_ood": 36.19,
+  "per_pupil_food": 629.95
+ },
+ "00440000": {
+  "per_pupil_transportation": 1022.7,
+  "per_pupil_transportation_ood": 132.75,
+  "per_pupil_food": 737.21
+ },
+ "01870000": {
+  "per_pupil_transportation": 545.24,
+  "per_pupil_transportation_ood": 228.09,
+  "per_pupil_food": 527.53
+ },
+ "00300000": {
+  "per_pupil_transportation": 427.1,
+  "per_pupil_transportation_ood": 327.15,
+  "per_pupil_food": 546.56
+ },
+ "03040000": {
+  "per_pupil_transportation": 1051.37,
+  "per_pupil_transportation_ood": 474.49,
+  "per_pupil_food": 686.75
+ },
+ "02650000": {
+  "per_pupil_transportation": 899.98,
+  "per_pupil_transportation_ood": 281.12,
+  "per_pupil_food": 446.33
+ },
+ "00860000": {
+  "per_pupil_transportation": 708.31,
+  "per_pupil_transportation_ood": 343.83,
+  "per_pupil_food": 487.0
+ },
+ "01070000": {
+  "per_pupil_transportation": 57.85,
+  "per_pupil_transportation_ood": 211.91,
+  "per_pupil_food": 514.39
+ },
+ "02360000": {
+  "per_pupil_transportation": 667.76,
+  "per_pupil_transportation_ood": 56.02,
+  "per_pupil_food": 751.31
+ },
+ "01590000": {
+  "per_pupil_transportation": 313.78,
+  "per_pupil_transportation_ood": 27.06,
+  "per_pupil_food": 512.33
+ },
+ "02880000": {
+  "per_pupil_transportation": 1013.4,
+  "per_pupil_transportation_ood": 72.81,
+  "per_pupil_food": 322.31
+ },
+ "00250000": {
+  "per_pupil_transportation": 708.34,
+  "per_pupil_transportation_ood": 641.61,
+  "per_pupil_food": 408.26
+ },
+ "02510000": {
+  "per_pupil_transportation": 540.25,
+  "per_pupil_transportation_ood": 397.4,
+  "per_pupil_food": 650.37
+ },
+ "01630000": {
+  "per_pupil_transportation": 423.52,
+  "per_pupil_transportation_ood": 373.67,
+  "per_pupil_food": 803.7
+ },
+ "02230000": {
+  "per_pupil_transportation": 1150.01,
+  "per_pupil_transportation_ood": 432.6,
+  "per_pupil_food": 808.28
+ },
+ "06400000": {
+  "per_pupil_transportation": 1321.94,
+  "per_pupil_transportation_ood": 39.64,
+  "per_pupil_food": 630.19
+ },
+ "07120000": {
+  "per_pupil_transportation": 932.24,
+  "per_pupil_transportation_ood": 135.73,
+  "per_pupil_food": 585.31
+ },
+ "03050000": {
+  "per_pupil_transportation": 373.72,
+  "per_pupil_transportation_ood": 96.32,
+  "per_pupil_food": 587.49
+ },
+ "07800000": {
+  "per_pupil_transportation": 802.82,
+  "per_pupil_transportation_ood": 138.77,
+  "per_pupil_food": 481.99
+ },
+ "02780000": {
+  "per_pupil_transportation": 785.21,
+  "per_pupil_transportation_ood": 230.72,
+  "per_pupil_food": 496.01
+ },
+ "01500000": {
+  "per_pupil_transportation": 432.92,
+  "per_pupil_transportation_ood": 3.99,
+  "per_pupil_food": 508.72
+ },
+ "03270000": {
+  "per_pupil_transportation": 757.36,
+  "per_pupil_transportation_ood": 929.79,
+  "per_pupil_food": 477.3
+ },
+ "02200000": {
+  "per_pupil_transportation": 716.97,
+  "per_pupil_transportation_ood": 189.42,
+  "per_pupil_food": 576.82
+ },
+ "00260000": {
+  "per_pupil_transportation": 366.72,
+  "per_pupil_transportation_ood": 465.02,
+  "per_pupil_food": 502.13
+ },
+ "07050000": {
+  "per_pupil_transportation": 1082.77,
+  "per_pupil_transportation_ood": 240.75,
+  "per_pupil_food": 661.53
+ },
+ "02180000": {
+  "per_pupil_transportation": 661.92,
+  "per_pupil_transportation_ood": 426.87,
+  "per_pupil_food": 538.15
+ },
+ "01180000": {
+  "per_pupil_transportation": 1748.43,
+  "per_pupil_transportation_ood": 366.83,
+  "per_pupil_food": 705.81
+ },
+ "02620000": {
+  "per_pupil_transportation": 554.31,
+  "per_pupil_transportation_ood": 269.36,
+  "per_pupil_food": 532.34
+ },
+ "03100000": {
+  "per_pupil_transportation": 743.14,
+  "per_pupil_transportation_ood": 455.76,
+  "per_pupil_food": 769.64
+ },
+ "00380000": {
+  "per_pupil_transportation": 628.56,
+  "per_pupil_transportation_ood": 360.09,
+  "per_pupil_food": 489.34
+ },
+ "02290000": {
+  "per_pupil_transportation": 928.61,
+  "per_pupil_transportation_ood": 449.57,
+  "per_pupil_food": 430.84
+ },
+ "00510000": {
+  "per_pupil_transportation": 1013.24,
+  "per_pupil_transportation_ood": 70.54,
+  "per_pupil_food": 599.19
+ },
+ "03400000": {
+  "per_pupil_transportation": 767.96,
+  "per_pupil_transportation_ood": 299.97,
+  "per_pupil_food": 491.01
+ },
+ "02340000": {
+  "per_pupil_transportation": 1095.15,
+  "per_pupil_transportation_ood": 321.67,
+  "per_pupil_food": 897.59
+ },
+ "01330000": {
+  "per_pupil_transportation": 1326.21,
+  "per_pupil_transportation_ood": 1.11,
+  "per_pupil_food": 538.48
+ },
+ "00950000": {
+  "per_pupil_transportation": 1014.7,
+  "per_pupil_transportation_ood": 122.62,
+  "per_pupil_food": 775.0
+ },
+ "00200000": {
+  "per_pupil_transportation": 944.86,
+  "per_pupil_transportation_ood": 7.42,
+  "per_pupil_food": 614.98
+ },
+ "01270000": {
+  "per_pupil_transportation": 640.25,
+  "per_pupil_food": 458.74
+ },
+ "01210000": {
+  "per_pupil_transportation": 947.55,
+  "per_pupil_transportation_ood": 191.62,
+  "per_pupil_food": 57.15
+ },
+ "01730000": {
+  "per_pupil_transportation": 788.86,
+  "per_pupil_transportation_ood": 659.28,
+  "per_pupil_food": 510.05
+ },
+ "06720000": {
+  "per_pupil_transportation": 1508.27,
+  "per_pupil_transportation_ood": 231.33,
+  "per_pupil_food": 726.93
+ },
+ "07630000": {
+  "per_pupil_transportation": 791.72,
+  "per_pupil_transportation_ood": 225.34,
+  "per_pupil_food": 464.8
+ },
+ "03000000": {
+  "per_pupil_transportation": 894.94,
+  "per_pupil_transportation_ood": 1584.86,
+  "per_pupil_food": 897.62
+ },
+ "01410000": {
+  "per_pupil_transportation": 594.41,
+  "per_pupil_transportation_ood": 382.62,
+  "per_pupil_food": 569.63
+ },
+ "02500000": {
+  "per_pupil_transportation": 706.15,
+  "per_pupil_transportation_ood": 357.51,
+  "per_pupil_food": 402.81
+ },
+ "01700000": {
+  "per_pupil_transportation": 558.07,
+  "per_pupil_transportation_ood": 385.06,
+  "per_pupil_food": 692.43
+ },
+ "03140000": {
+  "per_pupil_transportation": 463.04,
+  "per_pupil_transportation_ood": 160.11,
+  "per_pupil_food": 637.6
+ },
+ "01360000": {
+  "per_pupil_transportation": 437.34,
+  "per_pupil_transportation_ood": 687.38,
+  "per_pupil_food": 409.77
+ },
+ "00450000": {
+  "per_pupil_transportation": 601.85,
+  "per_pupil_transportation_ood": 527.93,
+  "per_pupil_food": 606.89
+ },
+ "03080000": {
+  "per_pupil_transportation": 756.4,
+  "per_pupil_transportation_ood": 315.93,
+  "per_pupil_food": 690.25
+ },
+ "02720000": {
+  "per_pupil_transportation": 684.87,
+  "per_pupil_transportation_ood": 285.8,
+  "per_pupil_food": 692.4
+ },
+ "01140000": {
+  "per_pupil_transportation": 763.92,
+  "per_pupil_transportation_ood": 181.02,
+  "per_pupil_food": 846.68
+ },
+ "00730000": {
+  "per_pupil_transportation": 790.84,
+  "per_pupil_transportation_ood": 613.05,
+  "per_pupil_food": 834.19
+ },
+ "06200000": {
+  "per_pupil_transportation": 787.03,
+  "per_pupil_food": 669.26
+ },
+ "01530000": {
+  "per_pupil_transportation": 740.63,
+  "per_pupil_transportation_ood": 203.52,
+  "per_pupil_food": 736.92
+ },
+ "01250000": {
+  "per_pupil_transportation": 984.49,
+  "per_pupil_transportation_ood": 224.92,
+  "per_pupil_food": 780.89
+ },
+ "01680000": {
+  "per_pupil_transportation": 367.46,
+  "per_pupil_transportation_ood": 229.07,
+  "per_pupil_food": 428.81
+ },
+ "02090000": {
+  "per_pupil_transportation": 886.79,
+  "per_pupil_transportation_ood": 85.72,
+  "per_pupil_food": 1076.74
+ },
+ "02270000": {
+  "per_pupil_transportation": 941.21,
+  "per_pupil_transportation_ood": 470.53,
+  "per_pupil_food": 673.13
+ },
+ "01050000": {
+  "per_pupil_transportation": 488.44,
+  "per_pupil_transportation_ood": 192.64,
+  "per_pupil_food": 684.24
+ },
+ "02710000": {
+  "per_pupil_transportation": 895.94,
+  "per_pupil_transportation_ood": 70.4,
+  "per_pupil_food": 566.59
+ },
+ "03260000": {
+  "per_pupil_transportation": 840.25,
+  "per_pupil_transportation_ood": 127.92,
+  "per_pupil_food": 558.44
+ },
+ "07740000": {
+  "per_pupil_transportation": 721.29,
+  "per_pupil_food": 1092.75
+ },
+ "01960000": {
+  "per_pupil_transportation": 382.53,
+  "per_pupil_transportation_ood": 657.42,
+  "per_pupil_food": 306.1
+ },
+ "02130000": {
+  "per_pupil_transportation": 584.23,
+  "per_pupil_transportation_ood": 188.53,
+  "per_pupil_food": 549.1
+ },
+ "06730000": {
+  "per_pupil_transportation": 897.77,
+  "per_pupil_transportation_ood": 102.89,
+  "per_pupil_food": 446.97
+ },
+ "02480000": {
+  "per_pupil_transportation": 894.38,
+  "per_pupil_transportation_ood": 457.84,
+  "per_pupil_food": 783.15
+ },
+ "02040000": {
+  "per_pupil_transportation": 479.61,
+  "per_pupil_transportation_ood": 366.94,
+  "per_pupil_food": 382.48
+ },
+ "06160000": {
+  "per_pupil_transportation": 891.67,
+  "per_pupil_transportation_ood": 274.76,
+  "per_pupil_food": 523.87
+ },
+ "00820000": {
+  "per_pupil_transportation": 694.01,
+  "per_pupil_transportation_ood": 283.98,
+  "per_pupil_food": 415.02
+ },
+ "01990000": {
+  "per_pupil_transportation": 467.56,
+  "per_pupil_transportation_ood": 253.34,
+  "per_pupil_food": 739.43
+ },
+ "01370000": {
+  "per_pupil_transportation": 1234.01,
+  "per_pupil_transportation_ood": 765.37,
+  "per_pupil_food": 755.56
+ },
+ "01760000": {
+  "per_pupil_transportation": 520.61,
+  "per_pupil_transportation_ood": 351.16,
+  "per_pupil_food": 511.65
+ },
+ "06220000": {
+  "per_pupil_transportation": 1132.73,
+  "per_pupil_transportation_ood": 170.28,
+  "per_pupil_food": 666.29
+ },
+ "00790000": {
+  "per_pupil_transportation": 659.07,
+  "per_pupil_transportation_ood": 158.46,
+  "per_pupil_food": 524.79
+ },
+ "01840000": {
+  "per_pupil_transportation": 446.56,
+  "per_pupil_transportation_ood": 258.97,
+  "per_pupil_food": 517.41
+ },
+ "02850000": {
+  "per_pupil_transportation": 797.38,
+  "per_pupil_transportation_ood": 267.73,
+  "per_pupil_food": 480.01
+ },
+ "03440000": {
+  "per_pupil_transportation": 423.17,
+  "per_pupil_transportation_ood": 94.62,
+  "per_pupil_food": 497.34
+ },
+ "02750000": {
+  "per_pupil_transportation": 571.76,
+  "per_pupil_transportation_ood": 160.86,
+  "per_pupil_food": 421.42
+ },
+ "06900000": {
+  "per_pupil_transportation": 787.92,
+  "per_pupil_transportation_ood": 520.73,
+  "per_pupil_food": 442.78
+ },
+ "06450000": {
+  "per_pupil_transportation": 1083.06,
+  "per_pupil_transportation_ood": 298.75,
+  "per_pupil_food": 641.99
+ },
+ "02920000": {
+  "per_pupil_transportation": 673.22,
+  "per_pupil_transportation_ood": 10.78,
+  "per_pupil_food": 543.23
+ },
+ "01740000": {
+  "per_pupil_transportation": 677.82,
+  "per_pupil_transportation_ood": 410.03,
+  "per_pupil_food": 613.2
+ },
+ "03060000": {
+  "per_pupil_transportation": 1517.94,
+  "per_pupil_transportation_ood": 777.01,
+  "per_pupil_food": 1020.73
+ },
+ "00610000": {
+  "per_pupil_transportation": 1505.07,
+  "per_pupil_transportation_ood": 53.93,
+  "per_pupil_food": 948.72
+ },
+ "00180000": {
+  "per_pupil_transportation": 391.56,
+  "per_pupil_transportation_ood": 273.36,
+  "per_pupil_food": 575.35
+ },
+ "00230000": {
+  "per_pupil_transportation": 1125.42,
+  "per_pupil_transportation_ood": 404.46,
+  "per_pupil_food": 436.77
+ },
+ "02810000": {
+  "per_pupil_transportation": 925.74,
+  "per_pupil_transportation_ood": 258.87,
+  "per_pupil_food": 1063.35
+ },
+ "01440000": {
+  "per_pupil_transportation": 489.8,
+  "per_pupil_transportation_ood": 246.82,
+  "per_pupil_food": 395.55
+ },
+ "01220000": {
+  "per_pupil_transportation": 597.86,
+  "per_pupil_transportation_ood": 323.65,
+  "per_pupil_food": 578.51
+ },
+ "01810000": {
+  "per_pupil_transportation": 711.44,
+  "per_pupil_transportation_ood": 464.55,
+  "per_pupil_food": 505.95
+ },
+ "01170000": {
+  "per_pupil_transportation": 1047.42,
+  "per_pupil_transportation_ood": 2.45,
+  "per_pupil_food": 742.26
+ },
+ "01490000": {
+  "per_pupil_transportation": 772.84,
+  "per_pupil_transportation_ood": 281.15,
+  "per_pupil_food": 883.91
+ },
+ "01720000": {
+  "per_pupil_transportation": 951.37,
+  "per_pupil_transportation_ood": 274.81,
+  "per_pupil_food": 667.42
+ },
+ "01890000": {
+  "per_pupil_transportation": 408.72,
+  "per_pupil_transportation_ood": 413.22,
+  "per_pupil_food": 707.46
+ },
+ "02010000": {
+  "per_pupil_transportation": 1060.96,
+  "per_pupil_transportation_ood": 150.7,
+  "per_pupil_food": 936.86
+ },
+ "02190000": {
+  "per_pupil_transportation": 636.63,
+  "per_pupil_transportation_ood": 156.54,
+  "per_pupil_food": 747.21
+ },
+ "01030000": {
+  "per_pupil_transportation": 462.74,
+  "per_pupil_transportation_ood": 481.04,
+  "per_pupil_food": 679.0
+ },
+ "02840000": {
+  "per_pupil_transportation": 374.68,
+  "per_pupil_transportation_ood": 176.79,
+  "per_pupil_food": 558.35
+ },
+ "00960000": {
+  "per_pupil_transportation": 1281.95,
+  "per_pupil_transportation_ood": 151.84,
+  "per_pupil_food": 394.77
+ },
+ "02100000": {
+  "per_pupil_transportation": 690.24,
+  "per_pupil_transportation_ood": 106.37,
+  "per_pupil_food": 432.2
+ },
+ "00740000": {
+  "per_pupil_transportation": 807.53,
+  "per_pupil_food": 503.31
+ },
+ "00170000": {
+  "per_pupil_transportation": 556.39,
+  "per_pupil_transportation_ood": 112.19,
+  "per_pupil_food": 614.84
+ },
+ "03500000": {
+  "per_pupil_transportation": 802.34,
+  "per_pupil_transportation_ood": 64.0,
+  "per_pupil_food": 666.57
+ },
+ "02070000": {
+  "per_pupil_transportation": 831.02,
+  "per_pupil_transportation_ood": 115.15,
+  "per_pupil_food": 404.51
+ },
+ "06000000": {
+  "per_pupil_transportation": 1047.94,
+  "per_pupil_transportation_ood": 140.94,
+  "per_pupil_food": 740.14
+ },
+ "00480000": {
+  "per_pupil_transportation": 613.48,
+  "per_pupil_transportation_ood": 470.06,
+  "per_pupil_food": 497.67
+ },
+ "01570000": {
+  "per_pupil_transportation": 1398.26,
+  "per_pupil_food": 636.21
+ },
+ "01820000": {
+  "per_pupil_transportation": 1159.97,
+  "per_pupil_transportation_ood": 106.9,
+  "per_pupil_food": 429.29
+ },
+ "01350000": {
+  "per_pupil_transportation": 539.01,
+  "per_pupil_transportation_ood": 853.08,
+  "per_pupil_food": 895.13
+ },
+ "06350000": {
+  "per_pupil_transportation": 921.65,
+  "per_pupil_transportation_ood": 230.75,
+  "per_pupil_food": 486.88
+ },
+ "00050000": {
+  "per_pupil_transportation": 724.53,
+  "per_pupil_transportation_ood": 31.44,
+  "per_pupil_food": 606.93
+ },
+ "00560000": {
+  "per_pupil_transportation": 687.48,
+  "per_pupil_transportation_ood": 294.28,
+  "per_pupil_food": 494.99
+ },
+ "03360000": {
+  "per_pupil_transportation": 729.8,
+  "per_pupil_transportation_ood": 266.32,
+  "per_pupil_food": 469.75
+ },
+ "00160000": {
+  "per_pupil_transportation": 755.02,
+  "per_pupil_transportation_ood": 71.19,
+  "per_pupil_food": 556.91
+ },
+ "01450000": {
+  "per_pupil_transportation": 1283.2,
+  "per_pupil_transportation_ood": 214.86,
+  "per_pupil_food": 169.58
+ },
+ "02640000": {
+  "per_pupil_transportation": 693.25,
+  "per_pupil_transportation_ood": 45.36,
+  "per_pupil_food": 570.77
+ },
+ "03470000": {
+  "per_pupil_transportation": 617.47,
+  "per_pupil_transportation_ood": 447.21,
+  "per_pupil_food": 540.86
+ },
+ "06150000": {
+  "per_pupil_transportation": 1149.29,
+  "per_pupil_transportation_ood": 115.47,
+  "per_pupil_food": 589.79
+ },
+ "07700000": {
+  "per_pupil_transportation": 836.68,
+  "per_pupil_food": 476.39
+ },
+ "00830000": {
+  "per_pupil_transportation": 660.09,
+  "per_pupil_transportation_ood": 267.74,
+  "per_pupil_food": 692.79
+ },
+ "01380000": {
+  "per_pupil_transportation": 343.03,
+  "per_pupil_transportation_ood": 109.5,
+  "per_pupil_food": 396.12
+ },
+ "03150000": {
+  "per_pupil_transportation": 850.08,
+  "per_pupil_transportation_ood": 234.18,
+  "per_pupil_food": 495.26
+ },
+ "03230000": {
+  "per_pupil_transportation": 376.72,
+  "per_pupil_transportation_ood": 149.45,
+  "per_pupil_food": 770.24
+ },
+ "02300000": {
+  "per_pupil_transportation": 352.96,
+  "per_pupil_food": 684.32
+ },
+ "06800000": {
+  "per_pupil_transportation": 1145.02,
+  "per_pupil_transportation_ood": 127.5,
+  "per_pupil_food": 550.86
+ },
+ "03070000": {
+  "per_pupil_transportation": 522.44,
+  "per_pupil_transportation_ood": 176.43,
+  "per_pupil_food": 628.19
+ },
+ "06850000": {
+  "per_pupil_transportation": 861.63,
+  "per_pupil_transportation_ood": 428.41,
+  "per_pupil_food": 968.93
+ },
+ "00140000": {
+  "per_pupil_transportation": 663.87,
+  "per_pupil_transportation_ood": 298.67,
+  "per_pupil_food": 588.06
+ },
+ "03430000": {
+  "per_pupil_transportation": 1219.04,
+  "per_pupil_transportation_ood": 112.32,
+  "per_pupil_food": 701.38
+ },
+ "00770000": {
+  "per_pupil_transportation": 969.11,
+  "per_pupil_transportation_ood": 623.47,
+  "per_pupil_food": 567.43
+ },
+ "03300000": {
+  "per_pupil_transportation": 1149.44,
+  "per_pupil_food": 617.69
+ },
+ "01420000": {
+  "per_pupil_transportation": 1329.55,
+  "per_pupil_transportation_ood": 122.78,
+  "per_pupil_food": 659.23
+ },
+ "00570000": {
+  "per_pupil_transportation": 393.68,
+  "per_pupil_transportation_ood": 456.92,
+  "per_pupil_food": 676.54
+ },
+ "00520000": {
+  "per_pupil_transportation": 509.67,
+  "per_pupil_transportation_ood": 461.07,
+  "per_pupil_food": 619.36
+ },
+ "02430000": {
+  "per_pupil_transportation": 554.22,
+  "per_pupil_transportation_ood": 180.61,
+  "per_pupil_food": 563.95
+ },
+ "02950000": {
+  "per_pupil_transportation": 797.22,
+  "per_pupil_transportation_ood": 467.8,
+  "per_pupil_food": 554.94
+ },
+ "06580000": {
+  "per_pupil_transportation": 1030.86,
+  "per_pupil_transportation_ood": 242.48,
+  "per_pupil_food": 613.89
+ },
+ "00070000": {
+  "per_pupil_transportation": 497.1,
+  "per_pupil_transportation_ood": 264.36,
+  "per_pupil_food": 529.68
+ },
+ "02400000": {
+  "per_pupil_transportation": 1069.18,
+  "per_pupil_transportation_ood": 319.66,
+  "per_pupil_food": 2.38
+ },
+ "03090000": {
+  "per_pupil_transportation": 1735.21,
+  "per_pupil_transportation_ood": 53.94,
+  "per_pupil_food": 614.85
+ },
+ "00360000": {
+  "per_pupil_transportation": 1200.71,
+  "per_pupil_transportation_ood": 120.12,
+  "per_pupil_food": 495.46
+ },
+ "00310000": {
+  "per_pupil_transportation": 489.45,
+  "per_pupil_transportation_ood": 559.77,
+  "per_pupil_food": 998.77
+ },
+ "00460000": {
+  "per_pupil_transportation": 543.98,
+  "per_pupil_transportation_ood": 279.72,
+  "per_pupil_food": 530.95
+ },
+ "00940000": {
+  "per_pupil_transportation": 633.06,
+  "per_pupil_transportation_ood": 399.19,
+  "per_pupil_food": 689.43
+ },
+ "03010000": {
+  "per_pupil_transportation": 1057.59,
+  "per_pupil_transportation_ood": 193.35,
+  "per_pupil_food": 422.67
+ },
+ "07730000": {
+  "per_pupil_transportation": 1107.88,
+  "per_pupil_transportation_ood": 317.17,
+  "per_pupil_food": 712.86
+ },
+ "01390000": {
+  "per_pupil_transportation": 774.27,
+  "per_pupil_transportation_ood": 206.99,
+  "per_pupil_food": 514.9
+ },
+ "03480000": {
+  "per_pupil_transportation": 671.05,
+  "per_pupil_transportation_ood": 385.28,
+  "per_pupil_food": 631.63
+ },
+ "01850000": {
+  "per_pupil_transportation": 533.81,
+  "per_pupil_transportation_ood": 389.2,
+  "per_pupil_food": 624.31
+ },
+ "00890000": {
+  "per_pupil_transportation": 574.92,
+  "per_pupil_food": 1181.74
+ },
+ "00650000": {
+  "per_pupil_transportation": 428.55,
+  "per_pupil_transportation_ood": 296.01,
+  "per_pupil_food": 722.77
+ },
+ "00400000": {
+  "per_pupil_transportation": 782.35,
+  "per_pupil_transportation_ood": 28.35,
+  "per_pupil_food": 587.18
+ },
+ "02610000": {
+  "per_pupil_transportation": 933.2,
+  "per_pupil_transportation_ood": 138.34,
+  "per_pupil_food": 532.82
+ },
+ "02760000": {
+  "per_pupil_transportation": 568.82,
+  "per_pupil_transportation_ood": 105.98,
+  "per_pupil_food": 459.01
+ },
+ "06950000": {
+  "per_pupil_transportation": 874.64,
+  "per_pupil_transportation_ood": 651.26,
+  "per_pupil_food": 430.23
+ },
+ "00710000": {
+  "per_pupil_transportation": 623.88,
+  "per_pupil_transportation_ood": 579.48,
+  "per_pupil_food": 515.61
+ },
+ "01770000": {
+  "per_pupil_transportation": 555.49,
+  "per_pupil_transportation_ood": 337.1,
+  "per_pupil_food": 509.35
+ },
+ "00430000": {
+  "per_pupil_transportation": 726.95,
+  "per_pupil_transportation_ood": 365.48,
+  "per_pupil_food": 555.18
+ },
+ "02980000": {
+  "per_pupil_transportation": 503.36,
+  "per_pupil_transportation_ood": 142.04,
+  "per_pupil_food": 498.91
+ },
+ "07200000": {
+  "per_pupil_transportation": 693.53,
+  "per_pupil_transportation_ood": 227.71,
+  "per_pupil_food": 662.15
+ },
+ "03350000": {
+  "per_pupil_transportation": 707.87,
+  "per_pupil_transportation_ood": 195.61,
+  "per_pupil_food": 457.51
+ },
+ "06650000": {
+  "per_pupil_transportation": 1185.35,
+  "per_pupil_transportation_ood": 124.32,
+  "per_pupil_food": 461.47
+ },
+ "06320000": {
+  "per_pupil_transportation": 1115.08,
+  "per_pupil_food": 550.8
+ },
+ "02630000": {
+  "per_pupil_transportation": 939.2,
+  "per_pupil_transportation_ood": 762.46
+ },
+ "06740000": {
+  "per_pupil_transportation": 640.93,
+  "per_pupil_transportation_ood": 180.07,
+  "per_pupil_food": 710.53
+ },
+ "00880000": {
+  "per_pupil_transportation": 678.58,
+  "per_pupil_transportation_ood": 226.3,
+  "per_pupil_food": 454.68
+ },
+ "00500000": {
+  "per_pupil_transportation": 1071.34,
+  "per_pupil_transportation_ood": 103.14,
+  "per_pupil_food": 513.08
+ },
+ "02140000": {
+  "per_pupil_transportation": 729.61,
+  "per_pupil_transportation_ood": 556.89,
+  "per_pupil_food": 488.6
+ },
+ "07150000": {
+  "per_pupil_transportation": 743.93,
+  "per_pupil_transportation_ood": 152.22,
+  "per_pupil_food": 498.98
+ },
+ "02460000": {
+  "per_pupil_transportation": 265.78,
+  "per_pupil_transportation_ood": 205.42,
+  "per_pupil_food": 580.12
+ },
+ "02660000": {
+  "per_pupil_transportation": 440.15,
+  "per_pupil_transportation_ood": 376.42,
+  "per_pupil_food": 634.63
+ },
+ "03220000": {
+  "per_pupil_transportation": 729.12,
+  "per_pupil_transportation_ood": 623.36,
+  "per_pupil_food": 469.59
+ },
+ "02240000": {
+  "per_pupil_transportation": 1421.87,
+  "per_pupil_transportation_ood": 183.69,
+  "per_pupil_food": 952.29
+ },
+ "02080000": {
+  "per_pupil_transportation": 616.77,
+  "per_pupil_transportation_ood": 104.19,
+  "per_pupil_food": 498.22
+ },
+ "06620000": {
+  "per_pupil_transportation": 1650.46,
+  "per_pupil_food": 965.26
+ },
+ "00410000": {
+  "per_pupil_transportation": 868.65,
+  "per_pupil_transportation_ood": 120.97,
+  "per_pupil_food": 667.15
+ },
+ "00910000": {
+  "per_pupil_transportation": 563.65,
+  "per_pupil_transportation_ood": 1514.08,
+  "per_pupil_food": 568.22
+ },
+ "01750000": {
+  "per_pupil_transportation": 670.38,
+  "per_pupil_transportation_ood": 187.99,
+  "per_pupil_food": 527.8
+ },
+ "02530000": {
+  "per_pupil_transportation": 696.59,
+  "per_pupil_transportation_ood": 522.29,
+  "per_pupil_food": 355.56
+ },
+ "01970000": {
+  "per_pupil_transportation": 483.04,
+  "per_pupil_food": 578.92
+ },
+ "02420000": {
+  "per_pupil_transportation": 803.0,
+  "per_pupil_food": 507.27
+ },
+ "01600000": {
+  "per_pupil_transportation": 814.48,
+  "per_pupil_transportation_ood": 45.53,
+  "per_pupil_food": 667.8
+ },
+ "00990000": {
+  "per_pupil_transportation": 794.62,
+  "per_pupil_transportation_ood": 218.59,
+  "per_pupil_food": 636.74
+ },
+ "01710000": {
+  "per_pupil_transportation": 721.11,
+  "per_pupil_transportation_ood": 161.48,
+  "per_pupil_food": 452.53
+ },
+ "00010000": {
+  "per_pupil_transportation": 667.71,
+  "per_pupil_transportation_ood": 379.76,
+  "per_pupil_food": 531.71
+ },
+ "02390000": {
+  "per_pupil_transportation": 1217.04,
+  "per_pupil_transportation_ood": 209.77,
+  "per_pupil_food": 550.37
+ },
+ "07280000": {
+  "per_pupil_transportation": 2116.1,
+  "per_pupil_food": 907.48
+ },
+ "02730000": {
+  "per_pupil_transportation": 720.62,
+  "per_pupil_transportation_ood": 215.71,
+  "per_pupil_food": 507.1
+ },
+ "00090000": {
+  "per_pupil_transportation": 1259.9,
+  "per_pupil_transportation_ood": 39.3,
+  "per_pupil_food": 727.31
+ },
+ "01310000": {
+  "per_pupil_transportation": 553.41,
+  "per_pupil_transportation_ood": 196.14,
+  "per_pupil_food": 463.86
+ },
+ "00680000": {
+  "per_pupil_transportation": 1193.53,
+  "per_pupil_transportation_ood": 133.98,
+  "per_pupil_food": 792.67
+ },
+ "06550000": {
+  "per_pupil_transportation": 949.35,
+  "per_pupil_food": 649.3
+ },
+ "03160000": {
+  "per_pupil_transportation": 1318.88,
+  "per_pupil_transportation_ood": 332.66,
+  "per_pupil_food": 701.09
+ },
+ "07780000": {
+  "per_pupil_transportation": 1826.58,
+  "per_pupil_transportation_ood": 166.1,
+  "per_pupil_food": 677.69
+ },
+ "00670000": {
+  "per_pupil_transportation": 1173.37,
+  "per_pupil_transportation_ood": 103.37,
+  "per_pupil_food": 474.73
+ },
+ "03370000": {
+  "per_pupil_transportation": 367.67,
+  "per_pupil_food": 632.02
+ },
+ "00980000": {
+  "per_pupil_transportation": 1191.74,
+  "per_pupil_transportation_ood": 60.6,
+  "per_pupil_food": 8.32
+ },
+ "01620000": {
+  "per_pupil_transportation": 566.44,
+  "per_pupil_transportation_ood": 218.45
+ },
+ "02150000": {
+  "per_pupil_transportation": 1108.83,
+  "per_pupil_food": 496.75
+ },
+ "02380000": {
+  "per_pupil_transportation": 734.8,
+  "per_pupil_transportation_ood": 183.9,
+  "per_pupil_food": 576.3
+ },
+ "02310000": {
+  "per_pupil_transportation": 1024.54,
+  "per_pupil_transportation_ood": 451.52,
+  "per_pupil_food": 498.59
+ },
+ "03460000": {
+  "per_pupil_transportation": 111.26,
+  "per_pupil_transportation_ood": 346.3,
+  "per_pupil_food": 450.91
+ },
+ "02580000": {
+  "per_pupil_transportation": 783.7,
+  "per_pupil_transportation_ood": 346.61,
+  "per_pupil_food": 1166.82
+ },
+ "02440000": {
+  "per_pupil_transportation": 920.74,
+  "per_pupil_transportation_ood": 34.06,
+  "per_pupil_food": 641.67
+ },
+ "02690000": {
+  "per_pupil_transportation": 594.36,
+  "per_pupil_transportation_ood": 399.4,
+  "per_pupil_food": 523.53
+ },
+ "07100000": {
+  "per_pupil_transportation": 1072.0,
+  "per_pupil_transportation_ood": 498.75,
+  "per_pupil_food": 668.16
+ },
+ "01100000": {
+  "per_pupil_transportation": 680.39,
+  "per_pupil_transportation_ood": 355.55,
+  "per_pupil_food": 411.41
+ },
+ "06750000": {
+  "per_pupil_transportation": 746.51,
+  "per_pupil_transportation_ood": 418.84,
+  "per_pupil_food": 483.79
+ },
+ "06980000": {
+  "per_pupil_transportation": 368.21,
+  "per_pupil_transportation_ood": 586.52,
+  "per_pupil_food": 522.97
+ },
+ "06600000": {
+  "per_pupil_transportation": 1191.58,
+  "per_pupil_transportation_ood": 490.5,
+  "per_pupil_food": 562.68
+ },
+ "03320000": {
+  "per_pupil_transportation": 858.32,
+  "per_pupil_transportation_ood": 122.34,
+  "per_pupil_food": 608.6
+ },
+ "02910000": {
+  "per_pupil_transportation": 277.35,
+  "per_pupil_transportation_ood": 302.07,
+  "per_pupil_food": 368.57
+ },
+ "02260000": {
+  "per_pupil_transportation": 891.2,
+  "per_pupil_transportation_ood": 236.63,
+  "per_pupil_food": 663.15
+ },
+ "07170000": {
+  "per_pupil_transportation": 1239.49,
+  "per_pupil_transportation_ood": 510.34,
+  "per_pupil_food": 598.84
+ },
+ "03170000": {
+  "per_pupil_transportation": 851.59,
+  "per_pupil_transportation_ood": 230.34,
+  "per_pupil_food": 555.85
+ },
+ "00270000": {
+  "per_pupil_transportation": 638.87,
+  "per_pupil_transportation_ood": 79.2,
+  "per_pupil_food": 823.51
+ },
+ "02520000": {
+  "per_pupil_transportation": 560.64,
+  "per_pupil_transportation_ood": 463.45,
+  "per_pupil_food": 744.74
+ },
+ "00720000": {
+  "per_pupil_transportation": 866.69,
+  "per_pupil_transportation_ood": 399.27,
+  "per_pupil_food": 658.98
+ },
+ "00030000": {
+  "per_pupil_transportation": 792.28,
+  "per_pupil_transportation_ood": 159.48,
+  "per_pupil_food": 414.86
+ },
+ "03210000": {
+  "per_pupil_transportation": 913.32,
+  "per_pupil_transportation_ood": 30.54,
+  "per_pupil_food": 93.01
+ },
+ "02770000": {
+  "per_pupil_transportation": 1410.04,
+  "per_pupil_transportation_ood": 297.65,
+  "per_pupil_food": 1122.76
+ },
+ "01980000": {
+  "per_pupil_transportation": 673.72,
+  "per_pupil_transportation_ood": 375.39,
+  "per_pupil_food": 414.33
+ },
+ "07450000": {
+  "per_pupil_transportation": 772.31,
+  "per_pupil_transportation_ood": 359.04,
+  "per_pupil_food": 497.53
+ },
+ "00970000": {
+  "per_pupil_transportation": 878.63,
+  "per_pupil_transportation_ood": 582.37,
+  "per_pupil_food": 736.5
+ },
+ "02490000": {
+  "per_pupil_transportation": 1094.51,
+  "per_pupil_transportation_ood": 203.7,
+  "per_pupil_food": 437.32
+ },
+ "02170000": {
+  "per_pupil_transportation": 578.41,
+  "per_pupil_transportation_ood": 40.22,
+  "per_pupil_food": 453.9
+ },
+ "02740000": {
+  "per_pupil_transportation": 687.08,
+  "per_pupil_transportation_ood": 217.26,
+  "per_pupil_food": 877.34
+ },
+ "02900000": {
+  "per_pupil_transportation": 1021.71,
+  "per_pupil_transportation_ood": 124.75,
+  "per_pupil_food": 562.7
+ },
+ "02960000": {
+  "per_pupil_transportation": 436.19,
+  "per_pupil_food": 822.15
+ },
+ "01540000": {
+  "per_pupil_transportation": 742.74,
+  "per_pupil_transportation_ood": 7.06,
+  "per_pupil_food": 991.42
+ },
+ "01780000": {
+  "per_pupil_transportation": 297.17,
+  "per_pupil_transportation_ood": 340.48,
+  "per_pupil_food": 321.65
+ },
+ "03180000": {
+  "per_pupil_transportation": 1485.9,
+  "per_pupil_food": 928.86
+ },
+ "00850000": {
+  "per_pupil_transportation": 1013.6,
+  "per_pupil_transportation_ood": 115.61,
+  "per_pupil_food": 605.38
+ },
+ "01650000": {
+  "per_pupil_transportation": 336.3,
+  "per_pupil_transportation_ood": 426.17,
+  "per_pupil_food": 671.8
+ },
+ "07250000": {
+  "per_pupil_transportation": 1155.19,
+  "per_pupil_transportation_ood": 23.02,
+  "per_pupil_food": 492.48
+ },
+ "01640000": {
+  "per_pupil_transportation": 672.05,
+  "per_pupil_transportation_ood": 189.76,
+  "per_pupil_food": 782.29
+ },
+ "02210000": {
+  "per_pupil_transportation": 475.57,
+  "per_pupil_food": 890.37
+ },
+ "07500000": {
+  "per_pupil_transportation": 1467.48,
+  "per_pupil_transportation_ood": 124.08,
+  "per_pupil_food": 735.11
+ },
+ "03310000": {
+  "per_pupil_transportation": 1007.98,
+  "per_pupil_transportation_ood": 250.66,
+  "per_pupil_food": 625.03
+ },
+ "07300000": {
+  "per_pupil_transportation": 1265.98,
+  "per_pupil_transportation_ood": 81.88,
+  "per_pupil_food": 500.31
+ },
+ "07650000": {
+  "per_pupil_transportation": 4235.92,
+  "per_pupil_transportation_ood": 4.87,
+  "per_pupil_food": 617.18
+ },
+ "02930000": {
+  "per_pupil_transportation": 1296.65,
+  "per_pupil_transportation_ood": 90.29,
+  "per_pupil_food": 537.35
+ },
+ "07350000": {
+  "per_pupil_transportation": 909.42,
+  "per_pupil_transportation_ood": 464.12,
+  "per_pupil_food": 590.16
+ },
+ "02890000": {
+  "per_pupil_transportation": 804.44,
+  "per_pupil_transportation_ood": 65.16,
+  "per_pupil_food": 822.51
+ },
+ "01690000": {
+  "per_pupil_transportation": 839.18,
+  "per_pupil_transportation_ood": 629.8,
+  "per_pupil_food": 479.57
+ },
+ "00490000": {
+  "per_pupil_transportation": 1082.12,
+  "per_pupil_transportation_ood": 556.93,
+  "per_pupil_food": 713.05
+ },
+ "01280000": {
+  "per_pupil_transportation": 881.37,
+  "per_pupil_transportation_ood": 163.7,
+  "per_pupil_food": 634.09
+ },
+ "06030000": {
+  "per_pupil_transportation": 695.39,
+  "per_pupil_transportation_ood": 33.09,
+  "per_pupil_food": 693.29
+ },
+ "03250000": {
+  "per_pupil_transportation": 921.63,
+  "per_pupil_transportation_ood": 122.78,
+  "per_pupil_food": 566.16
+ },
+ "06180000": {
+  "per_pupil_transportation": 1943.64,
+  "per_pupil_transportation_ood": 684.79,
+  "per_pupil_food": 676.7
+ },
+ "00630000": {
+  "per_pupil_transportation": 579.15,
+  "per_pupil_transportation_ood": 103.87,
+  "per_pupil_food": 4.85
+ },
+ "00240000": {
+  "per_pupil_transportation": 1317.79,
+  "per_pupil_transportation_ood": 80.55,
+  "per_pupil_food": 622.58
+ },
+ "00100000": {
+  "per_pupil_transportation": 324.27,
+  "per_pupil_transportation_ood": 71.51,
+  "per_pupil_food": 550.16
+ },
+ "01510000": {
+  "per_pupil_transportation": 811.35,
+  "per_pupil_transportation_ood": 436.3,
+  "per_pupil_food": 652.32
+ },
+ "01520000": {
+  "per_pupil_transportation": 314.52,
+  "per_pupil_transportation_ood": 29.86,
+  "per_pupil_food": 581.67
+ },
+ "01550000": {
+  "per_pupil_transportation": 889.44,
+  "per_pupil_transportation_ood": 172.87,
+  "per_pupil_food": 619.44
+ },
+ "00350000": {
+  "per_pupil_transportation": 1972.44,
+  "per_pupil_transportation_ood": 632.59,
+  "per_pupil_food": 800.5
+ },
+ "01580000": {
+  "per_pupil_transportation": 745.82,
+  "per_pupil_transportation_ood": 400.49,
+  "per_pupil_food": 619.87
+ },
+ "01860000": {
+  "per_pupil_transportation": 661.81,
+  "per_pupil_transportation_ood": 312.48,
+  "per_pupil_food": 572.26
+ },
+ "06100000": {
+  "per_pupil_transportation": 855.55,
+  "per_pupil_transportation_ood": 245.2,
+  "per_pupil_food": 679.87
+ },
+ "06500000": {
+  "per_pupil_transportation": 916.27,
+  "per_pupil_transportation_ood": 228.67,
+  "per_pupil_food": 446.38
+ },
+ "02110000": {
+  "per_pupil_transportation": 710.59,
+  "per_pupil_transportation_ood": 209.21,
+  "per_pupil_food": 696.54
+ },
+ "01010000": {
+  "per_pupil_transportation": 151.04,
+  "per_pupil_transportation_ood": 316.05
+ },
+ "01910000": {
+  "per_pupil_transportation": 1269.18,
+  "per_pupil_transportation_ood": 288.46,
+  "per_pupil_food": 599.62
+ },
+ "03420000": {
+  "per_pupil_transportation": 609.53,
+  "per_pupil_transportation_ood": 271.76,
+  "per_pupil_food": 762.9
+ },
+ "01110000": {
+  "per_pupil_transportation": 968.0,
+  "per_pupil_transportation_ood": 451.2,
+  "per_pupil_food": 590.98
+ },
+ "01670000": {
+  "per_pupil_transportation": 780.09,
+  "per_pupil_transportation_ood": 261.53,
+  "per_pupil_food": 575.49
+ },
+ "02120000": {
+  "per_pupil_transportation": 582.17,
+  "per_pupil_transportation_ood": 35.89,
+  "per_pupil_food": 707.66
+ },
+ "00930000": {
+  "per_pupil_transportation": 324.84,
+  "per_pupil_transportation_ood": 258.76,
+  "per_pupil_food": 637.76
+ },
+ "00640000": {
+  "per_pupil_transportation": 542.52,
+  "per_pupil_transportation_ood": 410.1,
+  "per_pupil_food": 543.35
+ }
+}

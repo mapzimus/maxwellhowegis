@@ -1,0 +1,1382 @@
+{
+ "01380000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.51,
+  "el_high_proficiency_pct": 0.05
+ },
+ "01100000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01410000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.04
+ },
+ "00640000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00240000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 4.0,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.06
+ },
+ "01970000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06220000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.03
+ },
+ "06800000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 4.0,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.17
+ },
+ "07120000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.51,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03480000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.49,
+  "el_high_proficiency_pct": 0.02
+ },
+ "03010000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.0
+ },
+ "01590000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.1
+ },
+ "01640000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.26,
+  "el_high_proficiency_pct": 0.12
+ },
+ "01750000": {
+  "el_avg_proficiency_level": 3.9,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.1,
+  "el_high_proficiency_pct": 0.1
+ },
+ "00880000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.32,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01610000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.04
+ },
+ "03440000": {
+  "el_avg_proficiency_level": 3.8,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.22,
+  "el_high_proficiency_pct": 0.14
+ },
+ "06720000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.7,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.08
+ },
+ "01980000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.6,
+  "el_beginner_pct": 0.36,
+  "el_high_proficiency_pct": 0.05
+ },
+ "06450000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.05
+ },
+ "07740000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.21,
+  "el_high_proficiency_pct": 0.14
+ },
+ "01720000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.05
+ },
+ "01870000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00850000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 1.9,
+  "el_beginner_pct": 0.4,
+  "el_high_proficiency_pct": 0.2
+ },
+ "00400000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.06
+ },
+ "01000000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.55,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06000000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.6,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.08
+ },
+ "07700000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 6.8,
+  "el_beginner_pct": 0.16,
+  "el_high_proficiency_pct": 0.0
+ },
+ "03430000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 4.2,
+  "el_beginner_pct": 0.26,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00610000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.5,
+  "el_high_proficiency_pct": 0.04
+ },
+ "01680000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 4.5,
+  "el_beginner_pct": 0.24,
+  "el_high_proficiency_pct": 0.09
+ },
+ "00140000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.01
+ },
+ "07450000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.6,
+  "el_beginner_pct": 0.44,
+  "el_high_proficiency_pct": 0.13
+ },
+ "01550000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.16
+ },
+ "01520000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.14,
+  "el_high_proficiency_pct": 0.04
+ },
+ "07750000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.07
+ },
+ "07780000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.16,
+  "el_high_proficiency_pct": 0.08
+ },
+ "07630000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.16,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02120000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.6,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01330000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.56,
+  "el_high_proficiency_pct": 0.01
+ },
+ "06740000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 4.5,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00480000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.5,
+  "el_high_proficiency_pct": 0.03
+ },
+ "07530000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.18,
+  "el_high_proficiency_pct": 0.09
+ },
+ "07650000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.7,
+  "el_beginner_pct": 0.31,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00890000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.44,
+  "el_high_proficiency_pct": 0.03
+ },
+ "07100000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.1
+ },
+ "07200000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.05
+ },
+ "01170000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.51,
+  "el_high_proficiency_pct": 0.0
+ },
+ "01760000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00310000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.36,
+  "el_high_proficiency_pct": 0.05
+ },
+ "02750000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.08
+ },
+ "00300000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.05
+ },
+ "02040000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.06
+ },
+ "06900000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 2.1,
+  "el_beginner_pct": 0.59,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01990000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.6,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.09
+ },
+ "01580000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.37,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01390000": {
+  "el_avg_proficiency_level": 3.8,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.18,
+  "el_high_proficiency_pct": 0.13
+ },
+ "02100000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.09
+ },
+ "01710000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.4,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06200000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.11
+ },
+ "01140000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 4.0,
+  "el_beginner_pct": 0.53,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00180000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02900000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.14,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02010000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.6,
+  "el_beginner_pct": 0.49,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00490000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.1,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.07
+ },
+ "06350000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02090000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.2,
+  "el_beginner_pct": 0.54,
+  "el_high_proficiency_pct": 0.08
+ },
+ "06500000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.7,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00170000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.57,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01620000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02770000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 4.6,
+  "el_beginner_pct": 0.59,
+  "el_high_proficiency_pct": 0.01
+ },
+ "01420000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.61,
+  "el_high_proficiency_pct": 0.08
+ },
+ "02760000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.25,
+  "el_high_proficiency_pct": 0.12
+ },
+ "07670000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02430000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.04
+ },
+ "01070000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.61,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02950000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.26,
+  "el_high_proficiency_pct": 0.1
+ },
+ "03160000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 4.0,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03170000": {
+  "el_avg_proficiency_level": 3.9,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.16,
+  "el_high_proficiency_pct": 0.13
+ },
+ "02190000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 1.9,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.18
+ },
+ "01850000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02070000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.1
+ },
+ "00050000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02480000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.03
+ },
+ "03420000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.11
+ },
+ "07300000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.15
+ },
+ "00870000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.06
+ },
+ "00990000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.07
+ },
+ "06100000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.49,
+  "el_high_proficiency_pct": 0.0
+ },
+ "03210000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.09
+ },
+ "03070000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.36,
+  "el_high_proficiency_pct": 0.06
+ },
+ "02200000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.01
+ },
+ "00570000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.56,
+  "el_high_proficiency_pct": 0.02
+ },
+ "03220000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.37,
+  "el_high_proficiency_pct": 0.05
+ },
+ "01510000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01440000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.51,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00360000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02080000": {
+  "el_avg_proficiency_level": 2.0,
+  "el_avg_years_in_state": 1.3,
+  "el_beginner_pct": 0.81,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03090000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 4.1,
+  "el_beginner_pct": 0.48,
+  "el_high_proficiency_pct": 0.0
+ },
+ "06250000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02150000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 4.4,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02660000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.35,
+  "el_high_proficiency_pct": 0.08
+ },
+ "00270000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.5,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00860000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.1
+ },
+ "00940000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.13
+ },
+ "01670000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.36,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01770000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.37,
+  "el_high_proficiency_pct": 0.03
+ },
+ "03230000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.53,
+  "el_high_proficiency_pct": 0.06
+ },
+ "06600000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.2,
+  "el_high_proficiency_pct": 0.05
+ },
+ "02650000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.04
+ },
+ "00560000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01220000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.26,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01650000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.48,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01740000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01820000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.35,
+  "el_high_proficiency_pct": 0.05
+ },
+ "00350000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.49,
+  "el_high_proficiency_pct": 0.02
+ },
+ "03470000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.49,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03040000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.01
+ },
+ "00500000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.31,
+  "el_high_proficiency_pct": 0.09
+ },
+ "02230000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02840000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.03
+ },
+ "00520000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.6,
+  "el_beginner_pct": 0.23,
+  "el_high_proficiency_pct": 0.13
+ },
+ "06150000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 4.1,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.05
+ },
+ "00790000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.07
+ },
+ "03360000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.05
+ },
+ "07150000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.2,
+  "el_high_proficiency_pct": 0.03
+ },
+ "00160000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.03
+ },
+ "03150000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.13
+ },
+ "01700000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.55,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02180000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00080000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02260000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.7,
+  "el_beginner_pct": 0.36,
+  "el_high_proficiency_pct": 0.0
+ },
+ "01310000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.06
+ },
+ "00260000": {
+  "el_avg_proficiency_level": 3.9,
+  "el_avg_years_in_state": 2.1,
+  "el_beginner_pct": 0.2,
+  "el_high_proficiency_pct": 0.17
+ },
+ "06180000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.01
+ },
+ "07250000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03460000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.44,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02440000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06730000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.2,
+  "el_high_proficiency_pct": 0.07
+ },
+ "01530000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.4,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00440000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.54,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00710000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.55,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00100000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.31,
+  "el_high_proficiency_pct": 0.09
+ },
+ "01370000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 4.9,
+  "el_beginner_pct": 0.53,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02910000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.01
+ },
+ "01110000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 4.6,
+  "el_beginner_pct": 0.2,
+  "el_high_proficiency_pct": 0.07
+ },
+ "02390000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.48,
+  "el_high_proficiency_pct": 0.02
+ },
+ "07350000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.37,
+  "el_high_proficiency_pct": 0.01
+ },
+ "06750000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.31,
+  "el_high_proficiency_pct": 0.0
+ },
+ "03100000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.15
+ },
+ "01010000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02890000": {
+  "el_avg_proficiency_level": 2.5,
+  "el_avg_years_in_state": 1.9,
+  "el_beginner_pct": 0.57,
+  "el_high_proficiency_pct": 0.0
+ },
+ "03050000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.06
+ },
+ "07800000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.01
+ },
+ "02780000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 4.8,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02510000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01860000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.9,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.01
+ },
+ "02850000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.6,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.03
+ },
+ "03260000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.22,
+  "el_high_proficiency_pct": 0.08
+ },
+ "00970000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.6,
+  "el_beginner_pct": 0.53,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03250000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01030000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.48,
+  "el_high_proficiency_pct": 0.03
+ },
+ "00200000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02580000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.04
+ },
+ "00720000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.23,
+  "el_high_proficiency_pct": 0.11
+ },
+ "07660000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 4.3,
+  "el_beginner_pct": 0.15,
+  "el_high_proficiency_pct": 0.05
+ },
+ "03350000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.18,
+  "el_high_proficiency_pct": 0.09
+ },
+ "02110000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.01
+ },
+ "02420000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.38,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00670000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 2.2,
+  "el_beginner_pct": 0.52,
+  "el_high_proficiency_pct": 0.07
+ },
+ "02170000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 1.9,
+  "el_beginner_pct": 0.31,
+  "el_high_proficiency_pct": 0.06
+ },
+ "02740000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.7,
+  "el_beginner_pct": 0.51,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02290000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.51,
+  "el_high_proficiency_pct": 0.01
+ },
+ "02310000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.4,
+  "el_high_proficiency_pct": 0.06
+ },
+ "02640000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.0
+ },
+ "00230000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.41,
+  "el_high_proficiency_pct": 0.08
+ },
+ "00770000": {
+  "el_avg_proficiency_level": 3.9,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.25,
+  "el_high_proficiency_pct": 0.31
+ },
+ "00460000": {
+  "el_avg_proficiency_level": 3.7,
+  "el_avg_years_in_state": 2.0,
+  "el_beginner_pct": 0.28,
+  "el_high_proficiency_pct": 0.13
+ },
+ "00830000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.42,
+  "el_high_proficiency_pct": 0.05
+ },
+ "01490000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.6,
+  "el_beginner_pct": 0.58,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02620000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02710000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 2.4,
+  "el_beginner_pct": 0.25,
+  "el_high_proficiency_pct": 0.11
+ },
+ "01280000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.46,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01250000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.06
+ },
+ "01630000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.53,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02140000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.01
+ },
+ "02210000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.06
+ },
+ "02380000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 2.3,
+  "el_beginner_pct": 0.57,
+  "el_high_proficiency_pct": 0.08
+ },
+ "00730000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.54,
+  "el_high_proficiency_pct": 0.01
+ },
+ "06580000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 4.0,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.06
+ },
+ "01780000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.07
+ },
+ "03500000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.26,
+  "el_high_proficiency_pct": 0.04
+ },
+ "03300000": {
+  "el_avg_proficiency_level": 4.3,
+  "el_avg_years_in_state": 1.7,
+  "el_beginner_pct": 0.15,
+  "el_high_proficiency_pct": 0.4
+ },
+ "02460000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.24,
+  "el_high_proficiency_pct": 0.07
+ },
+ "00410000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.19,
+  "el_high_proficiency_pct": 0.0
+ },
+ "01500000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.35,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06650000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.8,
+  "el_beginner_pct": 0.26,
+  "el_high_proficiency_pct": 0.09
+ },
+ "00960000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.45,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02610000": {
+  "el_avg_proficiency_level": 4.0,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.13,
+  "el_high_proficiency_pct": 0.16
+ },
+ "01840000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.03
+ },
+ "00090000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.06
+ },
+ "02690000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.16,
+  "el_high_proficiency_pct": 0.08
+ },
+ "03080000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.56,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00950000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.53,
+  "el_high_proficiency_pct": 0.02
+ },
+ "00010000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.01
+ },
+ "01570000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.04
+ },
+ "00070000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.57,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01050000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 4.6,
+  "el_beginner_pct": 0.2,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02360000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.56,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06030000": {
+  "el_avg_proficiency_level": 3.5,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.0
+ },
+ "02920000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 4.4,
+  "el_beginner_pct": 0.3,
+  "el_high_proficiency_pct": 0.05
+ },
+ "07730000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.39,
+  "el_high_proficiency_pct": 0.06
+ },
+ "02730000": {
+  "el_avg_proficiency_level": 3.6,
+  "el_avg_years_in_state": 3.2,
+  "el_beginner_pct": 0.18,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02960000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.27,
+  "el_high_proficiency_pct": 0.05
+ },
+ "03140000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.43,
+  "el_high_proficiency_pct": 0.04
+ },
+ "03310000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 4.3,
+  "el_beginner_pct": 0.34,
+  "el_high_proficiency_pct": 0.03
+ },
+ "01450000": {
+  "el_avg_proficiency_level": 2.7,
+  "el_avg_years_in_state": 2.5,
+  "el_beginner_pct": 0.57,
+  "el_high_proficiency_pct": 0.01
+ },
+ "03320000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.35,
+  "el_high_proficiency_pct": 0.06
+ },
+ "00250000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.4,
+  "el_beginner_pct": 0.33,
+  "el_high_proficiency_pct": 0.03
+ },
+ "02880000": {
+  "el_avg_proficiency_level": 3.8,
+  "el_avg_years_in_state": 2.7,
+  "el_beginner_pct": 0.25,
+  "el_high_proficiency_pct": 0.17
+ },
+ "01360000": {
+  "el_avg_proficiency_level": 3.2,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.37,
+  "el_high_proficiency_pct": 0.01
+ },
+ "02810000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.6,
+  "el_beginner_pct": 0.49,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02930000": {
+  "el_avg_proficiency_level": 2.8,
+  "el_avg_years_in_state": 3.1,
+  "el_beginner_pct": 0.54,
+  "el_high_proficiency_pct": 0.02
+ },
+ "02270000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 4.6,
+  "el_beginner_pct": 0.25,
+  "el_high_proficiency_pct": 0.04
+ },
+ "01600000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.02
+ },
+ "01810000": {
+  "el_avg_proficiency_level": 3.1,
+  "el_avg_years_in_state": 3.5,
+  "el_beginner_pct": 0.44,
+  "el_high_proficiency_pct": 0.04
+ },
+ "01890000": {
+  "el_avg_proficiency_level": 3.4,
+  "el_avg_years_in_state": 2.8,
+  "el_beginner_pct": 0.31,
+  "el_high_proficiency_pct": 0.04
+ },
+ "02130000": {
+  "el_avg_proficiency_level": 3.3,
+  "el_avg_years_in_state": 3.0,
+  "el_beginner_pct": 0.37,
+  "el_high_proficiency_pct": 0.04
+ },
+ "00930000": {
+  "el_avg_proficiency_level": 2.9,
+  "el_avg_years_in_state": 3.3,
+  "el_beginner_pct": 0.52,
+  "el_high_proficiency_pct": 0.02
+ },
+ "06160000": {
+  "el_avg_proficiency_level": 3.0,
+  "el_avg_years_in_state": 2.9,
+  "el_beginner_pct": 0.47,
+  "el_high_proficiency_pct": 0.02
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "01490000": {
+  "early_college_participants": 300,
+  "early_college_pct": 0.0852,
+  "early_college_g12_pct": 0.1845,
+  "early_college_credits_per_student": 4.31,
+  "early_college_credit_success_pct": 0.8036
+ },
+ "02740000": {
+  "early_college_participants": 19,
+  "early_college_pct": 0.0133,
+  "early_college_g12_pct": 0.0586,
+  "early_college_credits_per_student": 3.0,
+  "early_college_credit_success_pct": 1.0
+ },
+ "02430000": {
+  "early_college_participants": 241,
+  "early_college_pct": 0.0816,
+  "early_college_g12_pct": 0.1269,
+  "early_college_credits_per_student": 3.46,
+  "early_college_credit_success_pct": 0.9395
+ },
+ "03080000": {
+  "early_college_participants": 114,
+  "early_college_pct": 0.0632,
+  "early_college_g12_pct": 0.0395,
+  "early_college_credits_per_student": 4.51,
+  "early_college_credit_success_pct": 0.9464
+ },
+ "00570000": {
+  "early_college_participants": 196,
+  "early_college_pct": 0.1061,
+  "early_college_g12_pct": 0.2867,
+  "early_college_credits_per_student": 2.62,
+  "early_college_credit_success_pct": 0.6723
+ },
+ "06150000": {
+  "early_college_participants": 65,
+  "early_college_pct": 0.1585,
+  "early_college_g12_pct": 0.3511,
+  "early_college_credits_per_student": 3.43,
+  "early_college_credit_success_pct": 1.0
+ },
+ "01630000": {
+  "early_college_participants": 764,
+  "early_college_pct": 0.1441,
+  "early_college_g12_pct": 0.2069,
+  "early_college_credits_per_student": 3.13,
+  "early_college_credit_success_pct": 0.9366
+ },
+ "03480000": {
+  "early_college_participants": 923,
+  "early_college_pct": 0.1221,
+  "early_college_g12_pct": 0.2583,
+  "early_college_credits_per_student": 2.98,
+  "early_college_credit_success_pct": 0.9048
+ },
+ "00950000": {
+  "early_college_participants": 378,
+  "early_college_pct": 0.1458,
+  "early_college_g12_pct": 0.1522,
+  "early_college_credits_per_student": 3.33,
+  "early_college_credit_success_pct": 0.6976
+ },
+ "01850000": {
+  "early_college_participants": 147,
+  "early_college_pct": 0.1134,
+  "early_college_g12_pct": 0.1453,
+  "early_college_credits_per_student": 2.66,
+  "early_college_credit_success_pct": 0.7238
+ },
+ "02010000": {
+  "early_college_participants": 84,
+  "early_college_pct": 0.027,
+  "early_college_g12_pct": 0.0195,
+  "early_college_credits_per_student": 2.49,
+  "early_college_credit_success_pct": 0.8095
+ },
+ "01650000": {
+  "early_college_participants": 29,
+  "early_college_pct": 0.0154,
+  "early_college_g12_pct": 0.0477
+ },
+ "02480000": {
+  "early_college_participants": 73,
+  "early_college_pct": 0.0333
+ },
+ "01700000": {
+  "early_college_participants": 134,
+  "early_college_pct": 0.1336,
+  "early_college_g12_pct": 0.3222,
+  "early_college_credits_per_student": 4.11,
+  "early_college_credit_success_pct": 0.938
+ },
+ "01000000": {
+  "early_college_participants": 189,
+  "early_college_pct": 0.0743,
+  "early_college_g12_pct": 0.0772,
+  "early_college_credits_per_student": 3.21,
+  "early_college_credit_success_pct": 0.8113
+ },
+ "03250000": {
+  "early_college_participants": 207,
+  "early_college_pct": 0.1304,
+  "early_college_g12_pct": 0.1497,
+  "early_college_credits_per_student": 3.61,
+  "early_college_credit_success_pct": 0.9149
+ },
+ "00350000": {
+  "early_college_participants": 613,
+  "early_college_pct": 0.0428,
+  "early_college_g12_pct": 0.0379,
+  "early_college_credits_per_student": 3.97,
+  "early_college_credit_success_pct": 0.7738
+ },
+ "00490000": {
+  "early_college_participants": 58,
+  "early_college_pct": 0.0296,
+  "early_college_g12_pct": 0.0457,
+  "early_college_credits_per_student": 2.79,
+  "early_college_credit_success_pct": 0.9779
+ },
+ "02090000": {
+  "early_college_participants": 75,
+  "early_college_pct": 0.2459,
+  "early_college_g12_pct": 0.375
+ },
+ "00970000": {
+  "early_college_participants": 130,
+  "early_college_pct": 0.0937,
+  "early_college_g12_pct": 0.1946,
+  "early_college_credits_per_student": 3.17,
+  "early_college_credit_success_pct": 0.9387
+ },
+ "01600000": {
+  "early_college_participants": 402,
+  "early_college_pct": 0.1142,
+  "early_college_g12_pct": 0.2698,
+  "early_college_credits_per_student": 4.39,
+  "early_college_credit_success_pct": 0.9683
+ },
+ "07650000": {
+  "early_college_participants": 153,
+  "early_college_pct": 0.9745,
+  "early_college_g12_pct": 0.9688,
+  "early_college_credits_per_student": 2.89,
+  "early_college_credit_success_pct": 0.8494
+ },
+ "02580000": {
+  "early_college_participants": 186,
+  "early_college_pct": 0.1858,
+  "early_college_g12_pct": 0.395,
+  "early_college_credits_per_student": 3.35,
+  "early_college_credit_success_pct": 0.8596
+ },
+ "01370000": {
+  "early_college_participants": 156,
+  "early_college_pct": 0.0996,
+  "early_college_g12_pct": 0.1418,
+  "early_college_credits_per_student": 2.73,
+  "early_college_credit_success_pct": 0.8366
+ },
+ "00710000": {
+  "early_college_participants": 39,
+  "early_college_pct": 0.0496,
+  "early_college_g12_pct": 0.1038,
+  "early_college_credits_per_student": 2.9,
+  "early_college_credit_success_pct": 0.9667
+ },
+ "01170000": {
+  "early_college_participants": 15,
+  "early_college_pct": 0.1071,
+  "early_college_g12_pct": 0.1364,
+  "early_college_credits_per_student": 3.91,
+  "early_college_credit_success_pct": 0.9053
+ },
+ "07200000": {
+  "early_college_participants": 37,
+  "early_college_pct": 0.1063,
+  "early_college_g12_pct": 0.3333,
+  "early_college_credits_per_student": 3.07,
+  "early_college_credit_success_pct": 1.0
+ },
+ "02810000": {
+  "early_college_participants": 567,
+  "early_college_pct": 0.0807,
+  "early_college_g12_pct": 0.0861,
+  "early_college_credits_per_student": 2.7,
+  "early_college_credit_success_pct": 0.8186
+ },
+ "01530000": {
+  "early_college_participants": 219,
+  "early_college_pct": 0.1122,
+  "early_college_g12_pct": 0.1864,
+  "early_college_credits_per_student": 2.85,
+  "early_college_credit_success_pct": 0.9157
+ },
+ "01280000": {
+  "early_college_participants": 258,
+  "early_college_pct": 0.1242,
+  "early_college_g12_pct": 0.2531,
+  "early_college_credits_per_student": 5.46,
+  "early_college_credit_success_pct": 0.8683
+ },
+ "01030000": {
+  "early_college_participants": 177,
+  "early_college_pct": 0.2314,
+  "early_college_g12_pct": 0.4278,
+  "early_college_credits_per_student": 10.84,
+  "early_college_credit_success_pct": 0.9207
+ }
+}

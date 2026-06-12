@@ -1,0 +1,1069 @@
+{
+ "03440000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06200000": {
+  "bullying_per_100": 0.088,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07670000": {
+  "bullying_per_100": 0.068,
+  "law_referral_per_100": 0.0
+ },
+ "00960000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01760000": {
+  "bullying_per_100": 0.069,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02130000": {
+  "restraint_per_100": 0.0
+ },
+ "06600000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03140000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01530000": {
+  "bullying_per_100": 0.031,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.097
+ },
+ "02430000": {
+  "bullying_per_100": 0.048,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01860000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01980000": {
+  "bullying_per_100": 0.018,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.132
+ },
+ "02230000": {
+  "bullying_per_100": 0.378,
+  "law_referral_per_100": 0.0
+ },
+ "00030000": {
+  "law_referral_per_100": 0.0
+ },
+ "01410000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01820000": {
+  "bullying_per_100": 0.135,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.348
+ },
+ "00970000": {
+  "bullying_per_100": 0.052,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.229
+ },
+ "02310000": {
+  "bullying_per_100": 0.125,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07280000": {
+  "restraint_per_100": 0.0
+ },
+ "00240000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07050000": {
+  "law_referral_per_100": 0.0
+ },
+ "01970000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00890000": {
+  "bullying_per_100": 0.535,
+  "restraint_per_100": 0.0
+ },
+ "02890000": {
+  "restraint_per_100": 0.0
+ },
+ "02010000": {
+  "bullying_per_100": 0.09,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.632
+ },
+ "00380000": {
+  "restraint_per_100": 0.0
+ },
+ "01720000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01110000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01500000": {
+  "bullying_per_100": 0.148,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01540000": {
+  "restraint_per_100": 0.0
+ },
+ "02620000": {
+  "bullying_per_100": 0.143,
+  "law_referral_per_100": 0.1
+ },
+ "00860000": {
+  "bullying_per_100": 0.071,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03230000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02510000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.371
+ },
+ "00440000": {
+  "bullying_per_100": 0.067,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.039
+ },
+ "00200000": {
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.0
+ },
+ "00430000": {
+  "restraint_per_100": 0.0
+ },
+ "02080000": {
+  "bullying_per_100": 0.087,
+  "restraint_per_100": 0.0
+ },
+ "02840000": {
+  "bullying_per_100": 0.041,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01070000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01270000": {
+  "restraint_per_100": 0.0
+ },
+ "02650000": {
+  "bullying_per_100": 0.048,
+  "law_referral_per_100": 0.0
+ },
+ "01600000": {
+  "bullying_per_100": 0.064,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.048
+ },
+ "01610000": {
+  "bullying_per_100": 0.044,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03480000": {
+  "bullying_per_100": 0.139,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.048
+ },
+ "01010000": {
+  "bullying_per_100": 0.021,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01650000": {
+  "bullying_per_100": 0.088,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02200000": {
+  "bullying_per_100": 0.053,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02640000": {
+  "bullying_per_100": 0.036,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01990000": {
+  "bullying_per_100": 0.126,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01030000": {
+  "bullying_per_100": 0.111,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.79
+ },
+ "02190000": {
+  "bullying_per_100": 0.091,
+  "law_referral_per_100": 0.0
+ },
+ "03460000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07630000": {
+  "bullying_per_100": 0.44,
+  "law_referral_per_100": 0.0
+ },
+ "00300000": {
+  "bullying_per_100": 0.043,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.133
+ },
+ "03070000": {
+  "bullying_per_100": 0.055,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00990000": {
+  "bullying_per_100": 0.194,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00640000": {
+  "bullying_per_100": 0.047,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01510000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02040000": {
+  "bullying_per_100": 0.047
+ },
+ "00830000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02850000": {
+  "bullying_per_100": 0.102,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.0
+ },
+ "02110000": {
+  "bullying_per_100": 0.044,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03040000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02760000": {
+  "bullying_per_100": 0.147
+ },
+ "07780000": {
+  "law_referral_per_100": 0.2,
+  "restraint_per_100": 0.0
+ },
+ "01850000": {
+  "bullying_per_100": 0.021,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.155
+ },
+ "01390000": {
+  "bullying_per_100": 0.023,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02180000": {
+  "bullying_per_100": 0.042,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.384
+ },
+ "01370000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.396
+ },
+ "00260000": {
+  "bullying_per_100": 0.175,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00870000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01170000": {
+  "bullying_per_100": 0.186,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01630000": {
+  "bullying_per_100": 0.121,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00950000": {
+  "bullying_per_100": 0.142,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.424
+ },
+ "00170000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01590000": {
+  "bullying_per_100": 0.036,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00140000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01680000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01420000": {
+  "bullying_per_100": 0.136
+ },
+ "00050000": {
+  "bullying_per_100": 0.056,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.173
+ },
+ "03250000": {
+  "bullying_per_100": 0.06,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.671
+ },
+ "03260000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07700000": {
+  "bullying_per_100": 0.056,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01770000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00070000": {
+  "bullying_per_100": 0.053,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02360000": {
+  "bullying_per_100": 0.177,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.903
+ },
+ "02730000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.494
+ },
+ "02770000": {
+  "bullying_per_100": 0.049,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.438
+ },
+ "02400000": {
+  "bullying_per_100": 1.181
+ },
+ "03470000": {
+  "bullying_per_100": 0.021,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.133
+ },
+ "07350000": {
+  "bullying_per_100": 0.335,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01360000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02500000": {
+  "restraint_per_100": 0.0
+ },
+ "00100000": {
+  "bullying_per_100": 0.032,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00770000": {
+  "bullying_per_100": 0.088,
+  "restraint_per_100": 0.0
+ },
+ "02120000": {
+  "bullying_per_100": 0.099,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.181
+ },
+ "03430000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06030000": {
+  "bullying_per_100": 0.095,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03500000": {
+  "restraint_per_100": 0.0
+ },
+ "02980000": {
+  "restraint_per_100": 0.0
+ },
+ "07300000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06580000": {
+  "bullying_per_100": 0.056,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.173
+ },
+ "02710000": {
+  "bullying_per_100": 0.179,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.101
+ },
+ "01310000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02270000": {
+  "bullying_per_100": 0.341,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.732
+ },
+ "03150000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07530000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00400000": {
+  "bullying_per_100": 0.018,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00360000": {
+  "bullying_per_100": 0.063,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02380000": {
+  "restraint_per_100": 0.0
+ },
+ "00930000": {
+  "bullying_per_100": 0.012,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02260000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00570000": {
+  "bullying_per_100": 0.105,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06250000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00350000": {
+  "bullying_per_100": 0.128,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.193
+ },
+ "00010000": {
+  "bullying_per_100": 0.224,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00080000": {
+  "restraint_per_100": 1.445
+ },
+ "02920000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03160000": {
+  "bullying_per_100": 0.054,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 1.636
+ },
+ "06320000": {
+  "restraint_per_100": 0.0
+ },
+ "06500000": {
+  "bullying_per_100": 0.115,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01740000": {
+  "bullying_per_100": 0.079,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01810000": {
+  "bullying_per_100": 0.117,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.248
+ },
+ "03010000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00730000": {
+  "bullying_per_100": 0.072,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00670000": {
+  "bullying_per_100": 0.152,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01330000": {
+  "law_referral_per_100": 0.0
+ },
+ "00270000": {
+  "bullying_per_100": 0.236,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06650000": {
+  "law_referral_per_100": 0.0
+ },
+ "01380000": {
+  "law_referral_per_100": 0.0
+ },
+ "02140000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.326
+ },
+ "06720000": {
+  "bullying_per_100": 0.272,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02460000": {
+  "bullying_per_100": 0.026,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06400000": {
+  "law_referral_per_100": 0.0
+ },
+ "06950000": {
+  "law_referral_per_100": 0.0
+ },
+ "02480000": {
+  "bullying_per_100": 0.013,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.0
+ },
+ "01140000": {
+  "bullying_per_100": 0.068,
+  "law_referral_per_100": 0.0
+ },
+ "01220000": {
+  "bullying_per_100": 0.077,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07200000": {
+  "bullying_per_100": 0.336,
+  "law_referral_per_100": 0.0
+ },
+ "01780000": {
+  "bullying_per_100": 0.127,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02440000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.243
+ },
+ "03090000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02070000": {
+  "bullying_per_100": 0.017,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.112
+ },
+ "01570000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07650000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02090000": {
+  "bullying_per_100": 0.165,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.609
+ },
+ "02950000": {
+  "bullying_per_100": 0.06,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07120000": {
+  "law_referral_per_100": 0.3,
+  "restraint_per_100": 0.0
+ },
+ "02210000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03300000": {
+  "bullying_per_100": 0.048,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07660000": {
+  "bullying_per_100": 0.455,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03420000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.29
+ },
+ "02580000": {
+  "bullying_per_100": 0.123,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.235
+ },
+ "00720000": {
+  "bullying_per_100": 0.03,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06150000": {
+  "bullying_per_100": 0.471,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.561
+ },
+ "07250000": {
+  "bullying_per_100": 0.066,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06900000": {
+  "bullying_per_100": 0.053,
+  "law_referral_per_100": 0.0
+ },
+ "01450000": {
+  "law_referral_per_100": 0.0
+ },
+ "07740000": {
+  "restraint_per_100": 0.0
+ },
+ "00520000": {
+  "bullying_per_100": 0.066,
+  "law_referral_per_100": 0.0
+ },
+ "06000000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02520000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02780000": {
+  "bullying_per_100": 0.18,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07170000": {
+  "law_referral_per_100": 0.1
+ },
+ "06450000": {
+  "bullying_per_100": 0.031,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.229
+ },
+ "06160000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06740000": {
+  "restraint_per_100": 0.0
+ },
+ "03170000": {
+  "bullying_per_100": 0.074,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02390000": {
+  "bullying_per_100": 0.07,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.115
+ },
+ "00460000": {
+  "bullying_per_100": 0.027,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00160000": {
+  "bullying_per_100": 0.232,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.866
+ },
+ "06100000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07730000": {
+  "bullying_per_100": 0.189,
+  "law_referral_per_100": 0.0
+ },
+ "07450000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.268
+ },
+ "00940000": {
+  "bullying_per_100": 0.056,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00490000": {
+  "bullying_per_100": 0.108,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00410000": {
+  "restraint_per_100": 0.0
+ },
+ "02690000": {
+  "restraint_per_100": 0.0
+ },
+ "06800000": {
+  "bullying_per_100": 0.034,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07150000": {
+  "law_referral_per_100": 0.2,
+  "restraint_per_100": 0.0
+ },
+ "07100000": {
+  "bullying_per_100": 0.048,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01000000": {
+  "bullying_per_100": 0.062,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.121
+ },
+ "01690000": {
+  "restraint_per_100": 0.0
+ },
+ "01440000": {
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.0
+ },
+ "01910000": {
+  "bullying_per_100": 0.361,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03080000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01750000": {
+  "bullying_per_100": 0.04,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00090000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03210000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07750000": {
+  "bullying_per_100": 0.03,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03310000": {
+  "bullying_per_100": 0.259,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00230000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00480000": {
+  "bullying_per_100": 0.109,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01670000": {
+  "bullying_per_100": 0.03,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01580000": {
+  "law_referral_per_100": 0.0
+ },
+ "06180000": {
+  "bullying_per_100": 0.859,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01520000": {
+  "bullying_per_100": 0.129,
+  "restraint_per_100": 0.0
+ },
+ "00650000": {
+  "law_referral_per_100": 0.0
+ },
+ "00820000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01640000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01700000": {
+  "bullying_per_100": 0.214,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01050000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03320000": {
+  "bullying_per_100": 0.189,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03350000": {
+  "bullying_per_100": 0.035,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06750000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00560000": {
+  "bullying_per_100": 0.019,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03360000": {
+  "bullying_per_100": 0.034,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.195
+ },
+ "01870000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02660000": {
+  "bullying_per_100": 0.057,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00610000": {
+  "bullying_per_100": 0.028,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.133
+ },
+ "00310000": {
+  "bullying_per_100": 0.078,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01620000": {
+  "bullying_per_100": 0.062,
+  "law_referral_per_100": 0.0
+ },
+ "00850000": {
+  "restraint_per_100": 0.0
+ },
+ "06730000": {
+  "restraint_per_100": 0.0
+ },
+ "00180000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01550000": {
+  "bullying_per_100": 0.029,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.089
+ },
+ "00880000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "06220000": {
+  "bullying_per_100": 0.065,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02290000": {
+  "bullying_per_100": 0.083,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "07500000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02900000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "00500000": {
+  "bullying_per_100": 0.059,
+  "law_referral_per_100": 0.1,
+  "restraint_per_100": 0.0
+ },
+ "01280000": {
+  "bullying_per_100": 0.036,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.176
+ },
+ "02880000": {
+  "bullying_per_100": 0.117,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01350000": {
+  "bullying_per_100": 0.442
+ },
+ "03220000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.867
+ },
+ "00250000": {
+  "bullying_per_100": 0.047,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "03050000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.207
+ },
+ "01100000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02170000": {
+  "law_referral_per_100": 0.0
+ },
+ "01250000": {
+  "restraint_per_100": 0.0
+ },
+ "02930000": {
+  "bullying_per_100": 0.148,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.397
+ },
+ "01490000": {
+  "bullying_per_100": 0.055,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.263
+ },
+ "00790000": {
+  "bullying_per_100": 0.11,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01710000": {
+  "law_referral_per_100": 0.2,
+  "restraint_per_100": 0.0
+ },
+ "06350000": {
+  "bullying_per_100": 0.064,
+  "law_referral_per_100": 0.0
+ },
+ "07800000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "01890000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02150000": {
+  "restraint_per_100": 0.0
+ },
+ "02610000": {
+  "bullying_per_100": 0.046,
+  "law_referral_per_100": 0.1
+ },
+ "00710000": {
+  "bullying_per_100": 0.179,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.185
+ },
+ "03100000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02740000": {
+  "bullying_per_100": 0.176,
+  "law_referral_per_100": 0.0
+ },
+ "00910000": {
+  "restraint_per_100": 0.0
+ },
+ "02810000": {
+  "bullying_per_100": 0.07,
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.351
+ },
+ "02100000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ },
+ "02910000": {
+  "law_referral_per_100": 0.0,
+  "restraint_per_100": 0.0
+ }
+}

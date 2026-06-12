@@ -1,0 +1,1122 @@
+{
+ "03480000": {
+  "gifted_enrollment_pct": 0.0169,
+  "school_police_pct": 0.2623
+ },
+ "03180000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01820000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2402
+ },
+ "02360000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.508
+ },
+ "02910000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03060000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00930000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2803
+ },
+ "03210000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07500000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4453
+ },
+ "02640000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00790000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2316
+ },
+ "02460000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06580000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2933
+ },
+ "02240000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02260000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3994
+ },
+ "06250000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5507
+ },
+ "01580000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01360000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02650000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03270000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06030000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00310000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06620000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02850000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5348
+ },
+ "06150000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01730000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00030000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07730000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2804
+ },
+ "01170000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01280000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01370000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2861
+ },
+ "00490000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "07150000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06850000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01350000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02770000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4041
+ },
+ "01890000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2442
+ },
+ "01540000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02840000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2935
+ },
+ "00980000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02100000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01000000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01620000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2714
+ },
+ "03350000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3216
+ },
+ "07660000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02510000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.314
+ },
+ "07100000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02890000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "07740000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06200000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00650000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5319
+ },
+ "01510000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01520000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5876
+ },
+ "02710000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02810000": {
+  "gifted_enrollment_pct": 0.0148,
+  "school_police_pct": 0.4081
+ },
+ "01630000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2157
+ },
+ "01070000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2751
+ },
+ "02900000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01140000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5619
+ },
+ "01600000": {
+  "gifted_enrollment_pct": 0.0116,
+  "school_police_pct": 0.9983
+ },
+ "07350000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01640000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.9829
+ },
+ "01980000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.6013
+ },
+ "07120000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00410000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02190000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02130000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02310000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07530000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00440000": {
+  "gifted_enrollment_pct": 0.0294,
+  "school_police_pct": 1.0
+ },
+ "03260000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3375
+ },
+ "00610000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07750000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2942
+ },
+ "06100000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01690000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01110000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01010000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02490000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00940000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03010000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5265
+ },
+ "02530000": {
+  "gifted_enrollment_pct": 0.0137,
+  "school_police_pct": 0.0
+ },
+ "07780000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02180000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3024
+ },
+ "00830000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01650000": {
+  "gifted_enrollment_pct": 0.0503,
+  "school_police_pct": 0.952
+ },
+ "06740000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03370000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00180000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02230000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.51
+ },
+ "00140000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02580000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01220000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02090000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02620000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02880000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02080000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00820000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01910000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02040000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03230000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01250000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06220000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07200000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2386
+ },
+ "06900000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00500000": {
+  "gifted_enrollment_pct": 0.0401,
+  "school_police_pct": 0.5176
+ },
+ "00570000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02780000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2928
+ },
+ "07650000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "07280000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00710000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5092
+ },
+ "00360000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2443
+ },
+ "00770000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07250000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.295
+ },
+ "03430000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.236
+ },
+ "03250000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5586
+ },
+ "01330000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01450000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03320000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5211
+ },
+ "01210000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03000000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03150000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00910000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01870000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.6157
+ },
+ "06650000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.8534
+ },
+ "00450000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03160000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06950000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02420000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01390000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3275
+ },
+ "03460000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.297
+ },
+ "02980000": {
+  "gifted_enrollment_pct": 0.0885,
+  "school_police_pct": 0.0
+ },
+ "01030000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00510000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00200000": {
+  "gifted_enrollment_pct": 0.0398,
+  "school_police_pct": 0.9723
+ },
+ "00350000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.474
+ },
+ "02200000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.499
+ },
+ "06550000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01810000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00880000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06600000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00720000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2924
+ },
+ "00080000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01490000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2287
+ },
+ "01970000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06980000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02760000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00460000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06320000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06350000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03420000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5106
+ },
+ "01750000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02520000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06720000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "07800000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2474
+ },
+ "00950000": {
+  "gifted_enrollment_pct": 0.0227,
+  "school_police_pct": 0.392
+ },
+ "01420000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01570000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02110000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06160000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2396
+ },
+ "07670000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00890000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07700000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.6704
+ },
+ "01770000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3091
+ },
+ "00240000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00640000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2408
+ },
+ "02440000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4771
+ },
+ "01380000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00300000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.9743
+ },
+ "02120000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02720000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00560000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06500000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3156
+ },
+ "02920000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01090000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06800000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5936
+ },
+ "01990000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4483
+ },
+ "06400000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01100000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01500000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00230000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01550000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01680000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3352
+ },
+ "02270000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5093
+ },
+ "03100000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.9716
+ },
+ "01590000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3331
+ },
+ "00860000": {
+  "gifted_enrollment_pct": 0.0402,
+  "school_police_pct": 1.0
+ },
+ "02950000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4306
+ },
+ "00270000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01720000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01860000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "07170000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00630000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01530000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4065
+ },
+ "03090000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03080000": {
+  "gifted_enrollment_pct": 0.0418,
+  "school_police_pct": 0.489
+ },
+ "02740000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5667
+ },
+ "02210000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "07630000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03500000": {
+  "gifted_enrollment_pct": 0.0114,
+  "school_police_pct": 1.0
+ },
+ "07450000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4706
+ },
+ "01840000": {
+  "gifted_enrollment_pct": 0.0567,
+  "school_police_pct": 0.0
+ },
+ "01960000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00430000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06180000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01760000": {
+  "gifted_enrollment_pct": 0.0497,
+  "school_police_pct": 0.3252
+ },
+ "03440000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00100000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4524
+ },
+ "02660000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02380000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00050000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.9578
+ },
+ "00090000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3008
+ },
+ "00850000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00870000": {
+  "gifted_enrollment_pct": 0.2147,
+  "school_police_pct": 1.0
+ },
+ "00730000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02730000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01050000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.6517
+ },
+ "02610000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06730000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.9752
+ },
+ "02500000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00400000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2919
+ },
+ "00680000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02070000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3125
+ },
+ "02390000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5485
+ },
+ "02960000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00990000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00250000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02140000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00260000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2817
+ },
+ "01270000": {
+  "gifted_enrollment_pct": 0.0538,
+  "school_police_pct": 0.0
+ },
+ "00520000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02170000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02400000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01740000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00010000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02630000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00380000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03040000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.9739
+ },
+ "06000000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02150000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03220000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00960000": {
+  "gifted_enrollment_pct": 0.0269,
+  "school_police_pct": 0.4262
+ },
+ "07050000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "07300000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02300000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00740000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02480000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01710000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03170000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0499
+ },
+ "03050000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5911
+ },
+ "01850000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "00480000": {
+  "gifted_enrollment_pct": 0.0201,
+  "school_police_pct": 0.5368
+ },
+ "01180000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03400000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "02430000": {
+  "gifted_enrollment_pct": 0.0095,
+  "school_police_pct": 0.5285
+ },
+ "02690000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00170000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02340000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00670000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03300000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03490000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "06450000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4926
+ },
+ "00970000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.468
+ },
+ "01440000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "02930000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.3186
+ },
+ "02750000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "00070000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01700000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2406
+ },
+ "01670000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "01780000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4551
+ },
+ "03070000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "01610000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.8468
+ },
+ "00160000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.2858
+ },
+ "01310000": {
+  "gifted_enrollment_pct": 0.0272,
+  "school_police_pct": 1.0
+ },
+ "03360000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "06750000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.0
+ },
+ "03470000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.5057
+ },
+ "03310000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ },
+ "03140000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4789
+ },
+ "02010000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 0.4035
+ },
+ "01410000": {
+  "gifted_enrollment_pct": 0.0,
+  "school_police_pct": 1.0
+ }
+}

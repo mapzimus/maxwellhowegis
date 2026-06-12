@@ -1,0 +1,2250 @@
+{
+ "00010000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.134732,
+  "acs_gini": 0.3927,
+  "acs_pre1960_housing_pct": 0.440389,
+  "acs_multiunit_pct": 0.175335,
+  "acs_avg_hh_size": 2.62
+ },
+ "00030000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.071494,
+  "acs_gini": 0.4224,
+  "acs_pre1960_housing_pct": 0.36001,
+  "acs_multiunit_pct": 0.028839,
+  "acs_avg_hh_size": 2.57
+ },
+ "00050000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.144136,
+  "acs_gini": 0.4408,
+  "acs_pre1960_housing_pct": 0.342217,
+  "acs_multiunit_pct": 0.188195,
+  "acs_avg_hh_size": 2.38
+ },
+ "00070000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.159171,
+  "acs_gini": 0.4483,
+  "acs_pre1960_housing_pct": 0.444104,
+  "acs_multiunit_pct": 0.266386,
+  "acs_avg_hh_size": 2.25
+ },
+ "00080000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.520803,
+  "acs_gini": 0.5459,
+  "acs_pre1960_housing_pct": 0.3075,
+  "acs_multiunit_pct": 0.332596,
+  "acs_avg_hh_size": 2.21
+ },
+ "00090000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.412717,
+  "acs_gini": 0.452,
+  "acs_pre1960_housing_pct": 0.35514,
+  "acs_multiunit_pct": 0.188437,
+  "acs_avg_hh_size": 2.62
+ },
+ "00100000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.437798,
+  "acs_gini": 0.4671,
+  "acs_pre1960_housing_pct": 0.670955,
+  "acs_multiunit_pct": 0.243458,
+  "acs_avg_hh_size": 2.3
+ },
+ "00140000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.291616,
+  "acs_gini": 0.4198,
+  "acs_pre1960_housing_pct": 0.291932,
+  "acs_multiunit_pct": 0.154221,
+  "acs_avg_hh_size": 2.45
+ },
+ "00160000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.113392,
+  "acs_gini": 0.4231,
+  "acs_pre1960_housing_pct": 0.375702,
+  "acs_multiunit_pct": 0.16001,
+  "acs_avg_hh_size": 2.58
+ },
+ "00170000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.183943,
+  "acs_gini": 0.4048,
+  "acs_pre1960_housing_pct": 0.484239,
+  "acs_multiunit_pct": 0.090065,
+  "acs_avg_hh_size": 2.43
+ },
+ "00180000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.068353,
+  "acs_gini": 0.374,
+  "acs_pre1960_housing_pct": 0.682984,
+  "acs_multiunit_pct": 0.027972,
+  "acs_avg_hh_size": 2.79
+ },
+ "00200000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.179855,
+  "acs_gini": 0.4518,
+  "acs_pre1960_housing_pct": 0.24487,
+  "acs_multiunit_pct": 0.093786,
+  "acs_avg_hh_size": 2.36
+ },
+ "00230000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.373817,
+  "acs_gini": 0.4749,
+  "acs_pre1960_housing_pct": 0.326334,
+  "acs_multiunit_pct": 0.182557,
+  "acs_avg_hh_size": 2.42
+ },
+ "00240000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.238108,
+  "acs_gini": 0.3836,
+  "acs_pre1960_housing_pct": 0.154833,
+  "acs_multiunit_pct": 0.060467,
+  "acs_avg_hh_size": 2.4
+ },
+ "00250000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.127534,
+  "acs_gini": 0.394,
+  "acs_pre1960_housing_pct": 0.249428,
+  "acs_multiunit_pct": 0.11106,
+  "acs_avg_hh_size": 2.72
+ },
+ "00260000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.519351,
+  "acs_gini": 0.4679,
+  "acs_pre1960_housing_pct": 0.7635,
+  "acs_multiunit_pct": 0.102649,
+  "acs_avg_hh_size": 2.59
+ },
+ "00270000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.102275,
+  "acs_gini": 0.3746,
+  "acs_pre1960_housing_pct": 0.167628,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.94
+ },
+ "00300000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.199615,
+  "acs_gini": 0.4765,
+  "acs_pre1960_housing_pct": 0.545768,
+  "acs_multiunit_pct": 0.27546,
+  "acs_avg_hh_size": 2.3
+ },
+ "00310000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.15027,
+  "acs_gini": 0.3623,
+  "acs_pre1960_housing_pct": 0.234896,
+  "acs_multiunit_pct": 0.167088,
+  "acs_avg_hh_size": 2.6
+ },
+ "00350000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.25571,
+  "acs_gini": 0.5325,
+  "acs_pre1960_housing_pct": 0.587831,
+  "acs_multiunit_pct": 0.458134,
+  "acs_avg_hh_size": 2.22
+ },
+ "00360000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.171544,
+  "acs_gini": 0.4441,
+  "acs_pre1960_housing_pct": 0.337105,
+  "acs_multiunit_pct": 0.083952,
+  "acs_avg_hh_size": 2.2
+ },
+ "00380000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.271781,
+  "acs_gini": 0.4714,
+  "acs_pre1960_housing_pct": 0.264706,
+  "acs_multiunit_pct": 0.042408,
+  "acs_avg_hh_size": 2.85
+ },
+ "00400000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.197408,
+  "acs_gini": 0.4165,
+  "acs_pre1960_housing_pct": 0.563465,
+  "acs_multiunit_pct": 0.215607,
+  "acs_avg_hh_size": 2.66
+ },
+ "00410000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.281968,
+  "acs_gini": 0.5268,
+  "acs_pre1960_housing_pct": 0.08867,
+  "acs_multiunit_pct": 0.079779,
+  "acs_avg_hh_size": 2.12
+ },
+ "00430000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.135116,
+  "acs_gini": 0.4579,
+  "acs_pre1960_housing_pct": 0.205113,
+  "acs_multiunit_pct": 0.008521,
+  "acs_avg_hh_size": 2.5
+ },
+ "00440000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.066996,
+  "acs_gini": 0.4698,
+  "acs_pre1960_housing_pct": 0.504035,
+  "acs_multiunit_pct": 0.216301,
+  "acs_avg_hh_size": 2.9
+ },
+ "00450000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.077068,
+  "acs_gini": 0.4619,
+  "acs_pre1960_housing_pct": 0.387451,
+  "acs_multiunit_pct": 0.0511,
+  "acs_avg_hh_size": 2.33
+ },
+ "00460000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.577878,
+  "acs_gini": 0.5209,
+  "acs_pre1960_housing_pct": 0.645618,
+  "acs_multiunit_pct": 0.516745,
+  "acs_avg_hh_size": 2.26
+ },
+ "00480000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.256692,
+  "acs_gini": 0.417,
+  "acs_pre1960_housing_pct": 0.300864,
+  "acs_multiunit_pct": 0.249597,
+  "acs_avg_hh_size": 2.58
+ },
+ "00490000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.503783,
+  "acs_gini": 0.497,
+  "acs_pre1960_housing_pct": 0.542262,
+  "acs_multiunit_pct": 0.543891,
+  "acs_avg_hh_size": 2.06
+ },
+ "00500000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.298359,
+  "acs_gini": 0.4733,
+  "acs_pre1960_housing_pct": 0.272426,
+  "acs_multiunit_pct": 0.298041,
+  "acs_avg_hh_size": 2.49
+ },
+ "00510000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.505296,
+  "acs_gini": 0.4144,
+  "acs_pre1960_housing_pct": 0.20873,
+  "acs_multiunit_pct": 0.030218,
+  "acs_avg_hh_size": 3.02
+ },
+ "00520000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.120937,
+  "acs_gini": 0.4632,
+  "acs_pre1960_housing_pct": 0.113114,
+  "acs_multiunit_pct": 0.021593,
+  "acs_avg_hh_size": 2.45
+ },
+ "00560000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.246278,
+  "acs_gini": 0.3904,
+  "acs_pre1960_housing_pct": 0.312348,
+  "acs_multiunit_pct": 0.186293,
+  "acs_avg_hh_size": 2.66
+ },
+ "00570000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.077317,
+  "acs_gini": 0.4591,
+  "acs_pre1960_housing_pct": 0.61666,
+  "acs_multiunit_pct": 0.427846,
+  "acs_avg_hh_size": 2.85
+ },
+ "00610000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.088061,
+  "acs_gini": 0.4444,
+  "acs_pre1960_housing_pct": 0.55825,
+  "acs_multiunit_pct": 0.175768,
+  "acs_avg_hh_size": 2.25
+ },
+ "00630000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.102318,
+  "acs_gini": 0.3774,
+  "acs_pre1960_housing_pct": 0.513871,
+  "acs_multiunit_pct": 0.007926,
+  "acs_avg_hh_size": 2.37
+ },
+ "00640000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.140278,
+  "acs_gini": 0.3744,
+  "acs_pre1960_housing_pct": 0.536839,
+  "acs_multiunit_pct": 0.254525,
+  "acs_avg_hh_size": 2.31
+ },
+ "00650000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.323414,
+  "acs_gini": 0.5069,
+  "acs_pre1960_housing_pct": 0.462727,
+  "acs_multiunit_pct": 0.099394,
+  "acs_avg_hh_size": 2.67
+ },
+ "00670000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.502338,
+  "acs_gini": 0.469,
+  "acs_pre1960_housing_pct": 0.42317,
+  "acs_multiunit_pct": 0.174985,
+  "acs_avg_hh_size": 2.76
+ },
+ "00680000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.32669,
+  "acs_gini": 0.397,
+  "acs_pre1960_housing_pct": 0.370638,
+  "acs_multiunit_pct": 0.020457,
+  "acs_avg_hh_size": 2.28
+ },
+ "00710000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.17307,
+  "acs_gini": 0.3939,
+  "acs_pre1960_housing_pct": 0.428496,
+  "acs_multiunit_pct": 0.258571,
+  "acs_avg_hh_size": 2.46
+ },
+ "00720000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.151369,
+  "acs_gini": 0.4568,
+  "acs_pre1960_housing_pct": 0.333413,
+  "acs_multiunit_pct": 0.103774,
+  "acs_avg_hh_size": 2.41
+ },
+ "00730000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.258948,
+  "acs_gini": 0.4516,
+  "acs_pre1960_housing_pct": 0.609598,
+  "acs_multiunit_pct": 0.194591,
+  "acs_avg_hh_size": 2.37
+ },
+ "00740000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.230845,
+  "acs_gini": 0.4067,
+  "acs_pre1960_housing_pct": 0.347701,
+  "acs_multiunit_pct": 0.077586,
+  "acs_avg_hh_size": 2.08
+ },
+ "00770000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.172766,
+  "acs_gini": 0.4105,
+  "acs_pre1960_housing_pct": 0.255616,
+  "acs_multiunit_pct": 0.061416,
+  "acs_avg_hh_size": 2.77
+ },
+ "00790000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.09891,
+  "acs_gini": 0.3891,
+  "acs_pre1960_housing_pct": 0.27613,
+  "acs_multiunit_pct": 0.178423,
+  "acs_avg_hh_size": 2.66
+ },
+ "00820000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.34079,
+  "acs_gini": 0.4713,
+  "acs_pre1960_housing_pct": 0.308153,
+  "acs_multiunit_pct": 0.119382,
+  "acs_avg_hh_size": 2.67
+ },
+ "00830000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.094197,
+  "acs_gini": 0.4463,
+  "acs_pre1960_housing_pct": 0.339981,
+  "acs_multiunit_pct": 0.057696,
+  "acs_avg_hh_size": 2.84
+ },
+ "00850000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.248765,
+  "acs_gini": 0.4579,
+  "acs_pre1960_housing_pct": 0.227595,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.02
+ },
+ "00860000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.187158,
+  "acs_gini": 0.4169,
+  "acs_pre1960_housing_pct": 0.420625,
+  "acs_multiunit_pct": 0.169829,
+  "acs_avg_hh_size": 2.01
+ },
+ "00870000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.21946,
+  "acs_gini": 0.4233,
+  "acs_pre1960_housing_pct": 0.434526,
+  "acs_multiunit_pct": 0.089432,
+  "acs_avg_hh_size": 2.7
+ },
+ "00880000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.218367,
+  "acs_gini": 0.4513,
+  "acs_pre1960_housing_pct": 0.224974,
+  "acs_multiunit_pct": 0.173862,
+  "acs_avg_hh_size": 2.49
+ },
+ "00890000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.18036,
+  "acs_gini": 0.6387,
+  "acs_pre1960_housing_pct": 0.188869,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 3.1
+ },
+ "00910000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.092784,
+  "acs_gini": 0.4038,
+  "acs_pre1960_housing_pct": 0.563249,
+  "acs_multiunit_pct": 0.041278,
+  "acs_avg_hh_size": 2.39
+ },
+ "00930000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.072979,
+  "acs_gini": 0.4542,
+  "acs_pre1960_housing_pct": 0.67348,
+  "acs_multiunit_pct": 0.19972,
+  "acs_avg_hh_size": 2.84
+ },
+ "00940000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.091394,
+  "acs_gini": 0.5246,
+  "acs_pre1960_housing_pct": 0.634692,
+  "acs_multiunit_pct": 0.131542,
+  "acs_avg_hh_size": 2.16
+ },
+ "00950000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.057065,
+  "acs_gini": 0.468,
+  "acs_pre1960_housing_pct": 0.628373,
+  "acs_multiunit_pct": 0.300638,
+  "acs_avg_hh_size": 2.21
+ },
+ "00960000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.259141,
+  "acs_gini": 0.4875,
+  "acs_pre1960_housing_pct": 0.313595,
+  "acs_multiunit_pct": 0.051408,
+  "acs_avg_hh_size": 2.22
+ },
+ "00970000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.074462,
+  "acs_gini": 0.448,
+  "acs_pre1960_housing_pct": 0.623739,
+  "acs_multiunit_pct": 0.197325,
+  "acs_avg_hh_size": 2.37
+ },
+ "00980000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.074675,
+  "acs_gini": 0.3267,
+  "acs_pre1960_housing_pct": 0.234286,
+  "acs_multiunit_pct": 0.02,
+  "acs_avg_hh_size": 2.46
+ },
+ "00990000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.232681,
+  "acs_gini": 0.4962,
+  "acs_pre1960_housing_pct": 0.335042,
+  "acs_multiunit_pct": 0.203938,
+  "acs_avg_hh_size": 2.57
+ },
+ "01000000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.204862,
+  "acs_gini": 0.4699,
+  "acs_pre1960_housing_pct": 0.422051,
+  "acs_multiunit_pct": 0.30877,
+  "acs_avg_hh_size": 2.51
+ },
+ "01010000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.244172,
+  "acs_gini": 0.3972,
+  "acs_pre1960_housing_pct": 0.234541,
+  "acs_multiunit_pct": 0.187524,
+  "acs_avg_hh_size": 2.59
+ },
+ "01030000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.071148,
+  "acs_gini": 0.4375,
+  "acs_pre1960_housing_pct": 0.576157,
+  "acs_multiunit_pct": 0.240645,
+  "acs_avg_hh_size": 2.23
+ },
+ "01050000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.234685,
+  "acs_gini": 0.3869,
+  "acs_pre1960_housing_pct": 0.301504,
+  "acs_multiunit_pct": 0.085355,
+  "acs_avg_hh_size": 2.64
+ },
+ "01070000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.158064,
+  "acs_gini": 0.4739,
+  "acs_pre1960_housing_pct": 0.58879,
+  "acs_multiunit_pct": 0.122556,
+  "acs_avg_hh_size": 2.24
+ },
+ "01090000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.039216,
+  "acs_gini": 0.6362,
+  "acs_pre1960_housing_pct": 0.444444,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 1.41
+ },
+ "01100000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.221999,
+  "acs_gini": 0.4094,
+  "acs_pre1960_housing_pct": 0.307943,
+  "acs_multiunit_pct": 0.101854,
+  "acs_avg_hh_size": 2.53
+ },
+ "01110000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.154453,
+  "acs_gini": 0.4397,
+  "acs_pre1960_housing_pct": 0.466763,
+  "acs_multiunit_pct": 0.069003,
+  "acs_avg_hh_size": 2.39
+ },
+ "01140000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.169798,
+  "acs_gini": 0.4494,
+  "acs_pre1960_housing_pct": 0.645098,
+  "acs_multiunit_pct": 0.164937,
+  "acs_avg_hh_size": 2.07
+ },
+ "01170000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.259396,
+  "acs_gini": 0.372,
+  "acs_pre1960_housing_pct": 0.421718,
+  "acs_multiunit_pct": 0.054514,
+  "acs_avg_hh_size": 2.26
+ },
+ "01180000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.094393,
+  "acs_gini": 0.3988,
+  "acs_pre1960_housing_pct": 0.154226,
+  "acs_multiunit_pct": 0.027951,
+  "acs_avg_hh_size": 2.61
+ },
+ "01210000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.188811,
+  "acs_gini": 0.4935,
+  "acs_pre1960_housing_pct": 0.200241,
+  "acs_multiunit_pct": 0.451146,
+  "acs_avg_hh_size": 2.53
+ },
+ "01220000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.224178,
+  "acs_gini": 0.4471,
+  "acs_pre1960_housing_pct": 0.213108,
+  "acs_multiunit_pct": 0.084037,
+  "acs_avg_hh_size": 3.0
+ },
+ "01250000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.290095,
+  "acs_gini": 0.5034,
+  "acs_pre1960_housing_pct": 0.259395,
+  "acs_multiunit_pct": 0.078368,
+  "acs_avg_hh_size": 2.89
+ },
+ "01270000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.178341,
+  "acs_gini": 0.4367,
+  "acs_pre1960_housing_pct": 0.47541,
+  "acs_multiunit_pct": 0.123934,
+  "acs_avg_hh_size": 2.27
+ },
+ "01280000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.10613,
+  "acs_gini": 0.4225,
+  "acs_pre1960_housing_pct": 0.471699,
+  "acs_multiunit_pct": 0.215575,
+  "acs_avg_hh_size": 2.52
+ },
+ "01310000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.35951,
+  "acs_gini": 0.5173,
+  "acs_pre1960_housing_pct": 0.361567,
+  "acs_multiunit_pct": 0.219505,
+  "acs_avg_hh_size": 2.5
+ },
+ "01330000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.109629,
+  "acs_gini": 0.3894,
+  "acs_pre1960_housing_pct": 0.62305,
+  "acs_multiunit_pct": 0.073807,
+  "acs_avg_hh_size": 2.63
+ },
+ "01350000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.114243,
+  "acs_gini": 0.4236,
+  "acs_pre1960_housing_pct": 0.276903,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.21
+ },
+ "01360000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.283989,
+  "acs_gini": 0.4318,
+  "acs_pre1960_housing_pct": 0.338587,
+  "acs_multiunit_pct": 0.087115,
+  "acs_avg_hh_size": 2.63
+ },
+ "01370000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.08859,
+  "acs_gini": 0.4813,
+  "acs_pre1960_housing_pct": 0.617811,
+  "acs_multiunit_pct": 0.376913,
+  "acs_avg_hh_size": 2.36
+ },
+ "01380000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.214542,
+  "acs_gini": 0.4022,
+  "acs_pre1960_housing_pct": 0.505172,
+  "acs_multiunit_pct": 0.090517,
+  "acs_avg_hh_size": 2.74
+ },
+ "01390000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.398993,
+  "acs_gini": 0.4606,
+  "acs_pre1960_housing_pct": 0.202693,
+  "acs_multiunit_pct": 0.107862,
+  "acs_avg_hh_size": 2.85
+ },
+ "01410000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.183706,
+  "acs_gini": 0.4208,
+  "acs_pre1960_housing_pct": 0.310981,
+  "acs_multiunit_pct": 0.200117,
+  "acs_avg_hh_size": 2.47
+ },
+ "01420000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.232447,
+  "acs_gini": 0.4572,
+  "acs_pre1960_housing_pct": 0.674516,
+  "acs_multiunit_pct": 0.158905,
+  "acs_avg_hh_size": 2.21
+ },
+ "01440000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.248133,
+  "acs_gini": 0.511,
+  "acs_pre1960_housing_pct": 0.456459,
+  "acs_multiunit_pct": 0.119298,
+  "acs_avg_hh_size": 2.38
+ },
+ "01450000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.164144,
+  "acs_gini": 0.4187,
+  "acs_pre1960_housing_pct": 0.272358,
+  "acs_multiunit_pct": 0.056557,
+  "acs_avg_hh_size": 2.44
+ },
+ "01490000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.048468,
+  "acs_gini": 0.4628,
+  "acs_pre1960_housing_pct": 0.616368,
+  "acs_multiunit_pct": 0.277929,
+  "acs_avg_hh_size": 2.82
+ },
+ "01500000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.273155,
+  "acs_gini": 0.4765,
+  "acs_pre1960_housing_pct": 0.512642,
+  "acs_multiunit_pct": 0.171302,
+  "acs_avg_hh_size": 2.08
+ },
+ "01510000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.132246,
+  "acs_gini": 0.3566,
+  "acs_pre1960_housing_pct": 0.44186,
+  "acs_multiunit_pct": 0.077366,
+  "acs_avg_hh_size": 2.64
+ },
+ "01520000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.201242,
+  "acs_gini": 0.4902,
+  "acs_pre1960_housing_pct": 0.426764,
+  "acs_multiunit_pct": 0.26964,
+  "acs_avg_hh_size": 2.09
+ },
+ "01530000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.125685,
+  "acs_gini": 0.4412,
+  "acs_pre1960_housing_pct": 0.428813,
+  "acs_multiunit_pct": 0.259587,
+  "acs_avg_hh_size": 2.38
+ },
+ "01540000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.448708,
+  "acs_gini": 0.4346,
+  "acs_pre1960_housing_pct": 0.326223,
+  "acs_multiunit_pct": 0.013802,
+  "acs_avg_hh_size": 2.36
+ },
+ "01550000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.588323,
+  "acs_gini": 0.4629,
+  "acs_pre1960_housing_pct": 0.439315,
+  "acs_multiunit_pct": 0.130603,
+  "acs_avg_hh_size": 2.73
+ },
+ "01570000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.507155,
+  "acs_gini": 0.536,
+  "acs_pre1960_housing_pct": 0.387029,
+  "acs_multiunit_pct": 0.103905,
+  "acs_avg_hh_size": 2.55
+ },
+ "01580000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.341988,
+  "acs_gini": 0.4145,
+  "acs_pre1960_housing_pct": 0.370918,
+  "acs_multiunit_pct": 0.067133,
+  "acs_avg_hh_size": 2.75
+ },
+ "01590000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.326724,
+  "acs_gini": 0.4316,
+  "acs_pre1960_housing_pct": 0.575245,
+  "acs_multiunit_pct": 0.054785,
+  "acs_avg_hh_size": 2.66
+ },
+ "01600000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.118732,
+  "acs_gini": 0.4518,
+  "acs_pre1960_housing_pct": 0.550714,
+  "acs_multiunit_pct": 0.345659,
+  "acs_avg_hh_size": 2.59
+ },
+ "01610000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.077825,
+  "acs_gini": 0.4379,
+  "acs_pre1960_housing_pct": 0.426202,
+  "acs_multiunit_pct": 0.085374,
+  "acs_avg_hh_size": 2.38
+ },
+ "01620000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.173975,
+  "acs_gini": 0.3943,
+  "acs_pre1960_housing_pct": 0.382178,
+  "acs_multiunit_pct": 0.087197,
+  "acs_avg_hh_size": 2.6
+ },
+ "01630000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.078219,
+  "acs_gini": 0.4649,
+  "acs_pre1960_housing_pct": 0.630083,
+  "acs_multiunit_pct": 0.281434,
+  "acs_avg_hh_size": 2.76
+ },
+ "01640000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.302847,
+  "acs_gini": 0.4473,
+  "acs_pre1960_housing_pct": 0.426901,
+  "acs_multiunit_pct": 0.104428,
+  "acs_avg_hh_size": 2.8
+ },
+ "01650000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.187356,
+  "acs_gini": 0.4412,
+  "acs_pre1960_housing_pct": 0.591627,
+  "acs_multiunit_pct": 0.34415,
+  "acs_avg_hh_size": 2.48
+ },
+ "01670000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.216171,
+  "acs_gini": 0.4084,
+  "acs_pre1960_housing_pct": 0.257477,
+  "acs_multiunit_pct": 0.241331,
+  "acs_avg_hh_size": 2.65
+ },
+ "01680000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.350044,
+  "acs_gini": 0.4769,
+  "acs_pre1960_housing_pct": 0.668624,
+  "acs_multiunit_pct": 0.069008,
+  "acs_avg_hh_size": 2.47
+ },
+ "01690000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.211414,
+  "acs_gini": 0.5339,
+  "acs_pre1960_housing_pct": 0.472447,
+  "acs_multiunit_pct": 0.028363,
+  "acs_avg_hh_size": 2.55
+ },
+ "01700000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.171011,
+  "acs_gini": 0.4264,
+  "acs_pre1960_housing_pct": 0.311054,
+  "acs_multiunit_pct": 0.276281,
+  "acs_avg_hh_size": 2.45
+ },
+ "01710000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.200363,
+  "acs_gini": 0.4386,
+  "acs_pre1960_housing_pct": 0.41684,
+  "acs_multiunit_pct": 0.092979,
+  "acs_avg_hh_size": 2.52
+ },
+ "01720000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.178131,
+  "acs_gini": 0.4807,
+  "acs_pre1960_housing_pct": 0.058924,
+  "acs_multiunit_pct": 0.074416,
+  "acs_avg_hh_size": 2.21
+ },
+ "01730000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.234125,
+  "acs_gini": 0.4638,
+  "acs_pre1960_housing_pct": 0.320144,
+  "acs_multiunit_pct": 0.034588,
+  "acs_avg_hh_size": 2.2
+ },
+ "01740000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.314008,
+  "acs_gini": 0.4316,
+  "acs_pre1960_housing_pct": 0.455728,
+  "acs_multiunit_pct": 0.154592,
+  "acs_avg_hh_size": 2.27
+ },
+ "01750000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.375237,
+  "acs_gini": 0.4831,
+  "acs_pre1960_housing_pct": 0.261808,
+  "acs_multiunit_pct": 0.09019,
+  "acs_avg_hh_size": 2.83
+ },
+ "01760000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.272829,
+  "acs_gini": 0.4403,
+  "acs_pre1960_housing_pct": 0.630782,
+  "acs_multiunit_pct": 0.258897,
+  "acs_avg_hh_size": 2.31
+ },
+ "01770000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.220087,
+  "acs_gini": 0.4268,
+  "acs_pre1960_housing_pct": 0.323191,
+  "acs_multiunit_pct": 0.076288,
+  "acs_avg_hh_size": 2.87
+ },
+ "01780000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.283019,
+  "acs_gini": 0.4258,
+  "acs_pre1960_housing_pct": 0.713141,
+  "acs_multiunit_pct": 0.26784,
+  "acs_avg_hh_size": 2.36
+ },
+ "01810000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.105252,
+  "acs_gini": 0.4216,
+  "acs_pre1960_housing_pct": 0.410845,
+  "acs_multiunit_pct": 0.154272,
+  "acs_avg_hh_size": 2.79
+ },
+ "01820000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.088854,
+  "acs_gini": 0.4549,
+  "acs_pre1960_housing_pct": 0.340469,
+  "acs_multiunit_pct": 0.08915,
+  "acs_avg_hh_size": 2.44
+ },
+ "01840000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.16335,
+  "acs_gini": 0.4019,
+  "acs_pre1960_housing_pct": 0.264928,
+  "acs_multiunit_pct": 0.094783,
+  "acs_avg_hh_size": 2.63
+ },
+ "01850000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.125209,
+  "acs_gini": 0.4151,
+  "acs_pre1960_housing_pct": 0.370333,
+  "acs_multiunit_pct": 0.124437,
+  "acs_avg_hh_size": 2.65
+ },
+ "01860000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.144523,
+  "acs_gini": 0.3848,
+  "acs_pre1960_housing_pct": 0.4403,
+  "acs_multiunit_pct": 0.089952,
+  "acs_avg_hh_size": 2.59
+ },
+ "01870000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.194233,
+  "acs_gini": 0.3888,
+  "acs_pre1960_housing_pct": 0.302793,
+  "acs_multiunit_pct": 0.123184,
+  "acs_avg_hh_size": 2.56
+ },
+ "01890000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.371449,
+  "acs_gini": 0.4458,
+  "acs_pre1960_housing_pct": 0.696979,
+  "acs_multiunit_pct": 0.068709,
+  "acs_avg_hh_size": 2.95
+ },
+ "01910000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.086352,
+  "acs_gini": 0.431,
+  "acs_pre1960_housing_pct": 0.439756,
+  "acs_multiunit_pct": 0.036369,
+  "acs_avg_hh_size": 2.38
+ },
+ "01960000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.30724,
+  "acs_gini": 0.5545,
+  "acs_pre1960_housing_pct": 0.751934,
+  "acs_multiunit_pct": 0.100552,
+  "acs_avg_hh_size": 2.04
+ },
+ "01970000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.212727,
+  "acs_gini": 0.4713,
+  "acs_pre1960_housing_pct": 0.23536,
+  "acs_multiunit_pct": 0.020002,
+  "acs_avg_hh_size": 2.78
+ },
+ "01980000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.357907,
+  "acs_gini": 0.451,
+  "acs_pre1960_housing_pct": 0.450752,
+  "acs_multiunit_pct": 0.283404,
+  "acs_avg_hh_size": 2.35
+ },
+ "01990000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.511662,
+  "acs_gini": 0.474,
+  "acs_pre1960_housing_pct": 0.460609,
+  "acs_multiunit_pct": 0.143185,
+  "acs_avg_hh_size": 2.75
+ },
+ "02010000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.050656,
+  "acs_gini": 0.4539,
+  "acs_pre1960_housing_pct": 0.675587,
+  "acs_multiunit_pct": 0.206373,
+  "acs_avg_hh_size": 2.34
+ },
+ "02040000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.284254,
+  "acs_gini": 0.469,
+  "acs_pre1960_housing_pct": 0.566884,
+  "acs_multiunit_pct": 0.133044,
+  "acs_avg_hh_size": 2.33
+ },
+ "02070000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.524407,
+  "acs_gini": 0.4879,
+  "acs_pre1960_housing_pct": 0.687513,
+  "acs_multiunit_pct": 0.157794,
+  "acs_avg_hh_size": 2.59
+ },
+ "02080000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.250465,
+  "acs_gini": 0.3896,
+  "acs_pre1960_housing_pct": 0.175231,
+  "acs_multiunit_pct": 0.014434,
+  "acs_avg_hh_size": 2.96
+ },
+ "02090000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.119221,
+  "acs_gini": 0.5281,
+  "acs_pre1960_housing_pct": 0.739646,
+  "acs_multiunit_pct": 0.198888,
+  "acs_avg_hh_size": 2.05
+ },
+ "02100000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.341213,
+  "acs_gini": 0.4864,
+  "acs_pre1960_housing_pct": 0.53469,
+  "acs_multiunit_pct": 0.230082,
+  "acs_avg_hh_size": 2.0
+ },
+ "02110000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.289142,
+  "acs_gini": 0.4698,
+  "acs_pre1960_housing_pct": 0.276769,
+  "acs_multiunit_pct": 0.250874,
+  "acs_avg_hh_size": 2.61
+ },
+ "02120000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.173707,
+  "acs_gini": 0.4132,
+  "acs_pre1960_housing_pct": 0.380238,
+  "acs_multiunit_pct": 0.161588,
+  "acs_avg_hh_size": 2.38
+ },
+ "02130000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.347529,
+  "acs_gini": 0.4469,
+  "acs_pre1960_housing_pct": 0.259936,
+  "acs_multiunit_pct": 0.084221,
+  "acs_avg_hh_size": 2.71
+ },
+ "02140000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.133556,
+  "acs_gini": 0.4199,
+  "acs_pre1960_housing_pct": 0.372674,
+  "acs_multiunit_pct": 0.141599,
+  "acs_avg_hh_size": 2.39
+ },
+ "02150000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.098112,
+  "acs_gini": 0.4391,
+  "acs_pre1960_housing_pct": 0.55386,
+  "acs_multiunit_pct": 0.103098,
+  "acs_avg_hh_size": 2.49
+ },
+ "02170000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.223476,
+  "acs_gini": 0.4759,
+  "acs_pre1960_housing_pct": 0.307264,
+  "acs_multiunit_pct": 0.151182,
+  "acs_avg_hh_size": 2.64
+ },
+ "02180000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.156456,
+  "acs_gini": 0.3821,
+  "acs_pre1960_housing_pct": 0.227063,
+  "acs_multiunit_pct": 0.121933,
+  "acs_avg_hh_size": 2.61
+ },
+ "02190000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.261522,
+  "acs_gini": 0.4176,
+  "acs_pre1960_housing_pct": 0.346349,
+  "acs_multiunit_pct": 0.039048,
+  "acs_avg_hh_size": 3.04
+ },
+ "02200000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.223305,
+  "acs_gini": 0.478,
+  "acs_pre1960_housing_pct": 0.48349,
+  "acs_multiunit_pct": 0.283504,
+  "acs_avg_hh_size": 2.33
+ },
+ "02210000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.228014,
+  "acs_gini": 0.5189,
+  "acs_pre1960_housing_pct": 0.41765,
+  "acs_multiunit_pct": 0.085627,
+  "acs_avg_hh_size": 2.55
+ },
+ "02230000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.047931,
+  "acs_gini": 0.4252,
+  "acs_pre1960_housing_pct": 0.486679,
+  "acs_multiunit_pct": 0.179396,
+  "acs_avg_hh_size": 2.46
+ },
+ "02240000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.280068,
+  "acs_gini": 0.5165,
+  "acs_pre1960_housing_pct": 0.241781,
+  "acs_multiunit_pct": 0.081232,
+  "acs_avg_hh_size": 2.08
+ },
+ "02260000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.117504,
+  "acs_gini": 0.4104,
+  "acs_pre1960_housing_pct": 0.415787,
+  "acs_multiunit_pct": 0.099844,
+  "acs_avg_hh_size": 2.73
+ },
+ "02270000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.085525,
+  "acs_gini": 0.4273,
+  "acs_pre1960_housing_pct": 0.442852,
+  "acs_multiunit_pct": 0.113605,
+  "acs_avg_hh_size": 2.22
+ },
+ "02290000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.115455,
+  "acs_gini": 0.4509,
+  "acs_pre1960_housing_pct": 0.385396,
+  "acs_multiunit_pct": 0.290058,
+  "acs_avg_hh_size": 2.38
+ },
+ "02300000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.412169,
+  "acs_gini": 0.4168,
+  "acs_pre1960_housing_pct": 0.451411,
+  "acs_multiunit_pct": 0.020376,
+  "acs_avg_hh_size": 2.32
+ },
+ "02310000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.18168,
+  "acs_gini": 0.39,
+  "acs_pre1960_housing_pct": 0.228775,
+  "acs_multiunit_pct": 0.067196,
+  "acs_avg_hh_size": 2.6
+ },
+ "02340000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.24164,
+  "acs_gini": 0.3534,
+  "acs_pre1960_housing_pct": 0.454034,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.4
+ },
+ "02360000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.137941,
+  "acs_gini": 0.4864,
+  "acs_pre1960_housing_pct": 0.677058,
+  "acs_multiunit_pct": 0.161332,
+  "acs_avg_hh_size": 2.17
+ },
+ "02380000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.16438,
+  "acs_gini": 0.439,
+  "acs_pre1960_housing_pct": 0.226902,
+  "acs_multiunit_pct": 0.2226,
+  "acs_avg_hh_size": 2.34
+ },
+ "02390000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.17084,
+  "acs_gini": 0.43,
+  "acs_pre1960_housing_pct": 0.253899,
+  "acs_multiunit_pct": 0.12903,
+  "acs_avg_hh_size": 2.36
+ },
+ "02400000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.101759,
+  "acs_gini": 0.4445,
+  "acs_pre1960_housing_pct": 0.237829,
+  "acs_multiunit_pct": 0.028731,
+  "acs_avg_hh_size": 2.78
+ },
+ "02420000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.324617,
+  "acs_gini": 0.5094,
+  "acs_pre1960_housing_pct": 0.518836,
+  "acs_multiunit_pct": 0.193596,
+  "acs_avg_hh_size": 1.8
+ },
+ "02430000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.20667,
+  "acs_gini": 0.4456,
+  "acs_pre1960_housing_pct": 0.517635,
+  "acs_multiunit_pct": 0.397557,
+  "acs_avg_hh_size": 2.2
+ },
+ "02440000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.121429,
+  "acs_gini": 0.4486,
+  "acs_pre1960_housing_pct": 0.37102,
+  "acs_multiunit_pct": 0.22428,
+  "acs_avg_hh_size": 2.71
+ },
+ "02460000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.307577,
+  "acs_gini": 0.4083,
+  "acs_pre1960_housing_pct": 0.504756,
+  "acs_multiunit_pct": 0.196519,
+  "acs_avg_hh_size": 2.64
+ },
+ "02480000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.078765,
+  "acs_gini": 0.4608,
+  "acs_pre1960_housing_pct": 0.471572,
+  "acs_multiunit_pct": 0.295841,
+  "acs_avg_hh_size": 2.77
+ },
+ "02490000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.300263,
+  "acs_gini": 0.4901,
+  "acs_pre1960_housing_pct": 0.331034,
+  "acs_multiunit_pct": 0.024138,
+  "acs_avg_hh_size": 2.31
+ },
+ "02500000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.164618,
+  "acs_gini": 0.3807,
+  "acs_pre1960_housing_pct": 0.260065,
+  "acs_multiunit_pct": 0.006016,
+  "acs_avg_hh_size": 2.71
+ },
+ "02510000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.099261,
+  "acs_gini": 0.4235,
+  "acs_pre1960_housing_pct": 0.497303,
+  "acs_multiunit_pct": 0.105024,
+  "acs_avg_hh_size": 2.63
+ },
+ "02520000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.282593,
+  "acs_gini": 0.4518,
+  "acs_pre1960_housing_pct": 0.61862,
+  "acs_multiunit_pct": 0.090501,
+  "acs_avg_hh_size": 2.13
+ },
+ "02530000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.068323,
+  "acs_gini": 0.4227,
+  "acs_pre1960_housing_pct": 0.520161,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.61
+ },
+ "02580000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.207026,
+  "acs_gini": 0.4483,
+  "acs_pre1960_housing_pct": 0.607714,
+  "acs_multiunit_pct": 0.30619,
+  "acs_avg_hh_size": 2.16
+ },
+ "02610000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.208809,
+  "acs_gini": 0.4357,
+  "acs_pre1960_housing_pct": 0.162999,
+  "acs_multiunit_pct": 0.041769,
+  "acs_avg_hh_size": 2.5
+ },
+ "02620000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.125434,
+  "acs_gini": 0.4109,
+  "acs_pre1960_housing_pct": 0.485656,
+  "acs_multiunit_pct": 0.161826,
+  "acs_avg_hh_size": 2.65
+ },
+ "02630000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.06563,
+  "acs_gini": 0.4518,
+  "acs_pre1960_housing_pct": 0.263415,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.0
+ },
+ "02640000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.266046,
+  "acs_gini": 0.5027,
+  "acs_pre1960_housing_pct": 0.505959,
+  "acs_multiunit_pct": 0.051209,
+  "acs_avg_hh_size": 2.45
+ },
+ "02650000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.202592,
+  "acs_gini": 0.3959,
+  "acs_pre1960_housing_pct": 0.38093,
+  "acs_multiunit_pct": 0.055503,
+  "acs_avg_hh_size": 2.66
+ },
+ "02660000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.431511,
+  "acs_gini": 0.4289,
+  "acs_pre1960_housing_pct": 0.370571,
+  "acs_multiunit_pct": 0.104505,
+  "acs_avg_hh_size": 2.85
+ },
+ "02690000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.458937,
+  "acs_gini": 0.457,
+  "acs_pre1960_housing_pct": 0.352381,
+  "acs_multiunit_pct": 0.033651,
+  "acs_avg_hh_size": 2.91
+ },
+ "02710000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.357172,
+  "acs_gini": 0.4333,
+  "acs_pre1960_housing_pct": 0.312835,
+  "acs_multiunit_pct": 0.203421,
+  "acs_avg_hh_size": 2.64
+ },
+ "02720000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.392473,
+  "acs_gini": 0.3466,
+  "acs_pre1960_housing_pct": 0.215367,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.45
+ },
+ "02730000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.143466,
+  "acs_gini": 0.4114,
+  "acs_pre1960_housing_pct": 0.476868,
+  "acs_multiunit_pct": 0.047186,
+  "acs_avg_hh_size": 2.45
+ },
+ "02740000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.33415,
+  "acs_gini": 0.4431,
+  "acs_pre1960_housing_pct": 0.691722,
+  "acs_multiunit_pct": 0.299231,
+  "acs_avg_hh_size": 2.19
+ },
+ "02750000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.14896,
+  "acs_gini": 0.4551,
+  "acs_pre1960_housing_pct": 0.18848,
+  "acs_multiunit_pct": 0.06348,
+  "acs_avg_hh_size": 2.52
+ },
+ "02760000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.420583,
+  "acs_gini": 0.4694,
+  "acs_pre1960_housing_pct": 0.259094,
+  "acs_multiunit_pct": 0.036378,
+  "acs_avg_hh_size": 2.78
+ },
+ "02770000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.055327,
+  "acs_gini": 0.4505,
+  "acs_pre1960_housing_pct": 0.60348,
+  "acs_multiunit_pct": 0.207875,
+  "acs_avg_hh_size": 2.43
+ },
+ "02780000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.238964,
+  "acs_gini": 0.4803,
+  "acs_pre1960_housing_pct": 0.492694,
+  "acs_multiunit_pct": 0.11781,
+  "acs_avg_hh_size": 2.09
+ },
+ "02810000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.088948,
+  "acs_gini": 0.4783,
+  "acs_pre1960_housing_pct": 0.661537,
+  "acs_multiunit_pct": 0.210674,
+  "acs_avg_hh_size": 2.57
+ },
+ "02840000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.222962,
+  "acs_gini": 0.422,
+  "acs_pre1960_housing_pct": 0.433889,
+  "acs_multiunit_pct": 0.304719,
+  "acs_avg_hh_size": 2.4
+ },
+ "02850000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.175219,
+  "acs_gini": 0.4307,
+  "acs_pre1960_housing_pct": 0.370615,
+  "acs_multiunit_pct": 0.166314,
+  "acs_avg_hh_size": 2.65
+ },
+ "02880000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.460022,
+  "acs_gini": 0.4081,
+  "acs_pre1960_housing_pct": 0.259231,
+  "acs_multiunit_pct": 0.054763,
+  "acs_avg_hh_size": 2.99
+ },
+ "02890000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.294892,
+  "acs_gini": 0.4361,
+  "acs_pre1960_housing_pct": 0.157513,
+  "acs_multiunit_pct": 0.411399,
+  "acs_avg_hh_size": 2.02
+ },
+ "02900000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.233799,
+  "acs_gini": 0.4037,
+  "acs_pre1960_housing_pct": 0.233314,
+  "acs_multiunit_pct": 0.024808,
+  "acs_avg_hh_size": 2.89
+ },
+ "02910000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.314611,
+  "acs_gini": 0.5078,
+  "acs_pre1960_housing_pct": 0.572764,
+  "acs_multiunit_pct": 0.183834,
+  "acs_avg_hh_size": 2.39
+ },
+ "02920000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.126631,
+  "acs_gini": 0.3637,
+  "acs_pre1960_housing_pct": 0.424189,
+  "acs_multiunit_pct": 0.032006,
+  "acs_avg_hh_size": 2.53
+ },
+ "02930000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.073442,
+  "acs_gini": 0.4291,
+  "acs_pre1960_housing_pct": 0.469599,
+  "acs_multiunit_pct": 0.149135,
+  "acs_avg_hh_size": 2.47
+ },
+ "02950000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.143778,
+  "acs_gini": 0.3872,
+  "acs_pre1960_housing_pct": 0.256069,
+  "acs_multiunit_pct": 0.154258,
+  "acs_avg_hh_size": 2.55
+ },
+ "02960000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.13457,
+  "acs_gini": 0.4073,
+  "acs_pre1960_housing_pct": 0.422115,
+  "acs_multiunit_pct": 0.045194,
+  "acs_avg_hh_size": 2.55
+ },
+ "02980000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.356672,
+  "acs_gini": 0.4095,
+  "acs_pre1960_housing_pct": 0.302285,
+  "acs_multiunit_pct": 0.037085,
+  "acs_avg_hh_size": 2.83
+ },
+ "03000000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.396662,
+  "acs_gini": 0.4613,
+  "acs_pre1960_housing_pct": 0.251729,
+  "acs_multiunit_pct": 0.017444,
+  "acs_avg_hh_size": 1.59
+ },
+ "03010000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.20476,
+  "acs_gini": 0.3951,
+  "acs_pre1960_housing_pct": 0.146917,
+  "acs_multiunit_pct": 0.093743,
+  "acs_avg_hh_size": 2.97
+ },
+ "03040000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.137853,
+  "acs_gini": 0.3389,
+  "acs_pre1960_housing_pct": 0.369159,
+  "acs_multiunit_pct": 0.076024,
+  "acs_avg_hh_size": 2.6
+ },
+ "03050000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.251258,
+  "acs_gini": 0.4265,
+  "acs_pre1960_housing_pct": 0.579559,
+  "acs_multiunit_pct": 0.177251,
+  "acs_avg_hh_size": 2.42
+ },
+ "03060000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.107991,
+  "acs_gini": 0.3762,
+  "acs_pre1960_housing_pct": 0.274211,
+  "acs_multiunit_pct": 0.010881,
+  "acs_avg_hh_size": 2.52
+ },
+ "03070000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.23558,
+  "acs_gini": 0.4094,
+  "acs_pre1960_housing_pct": 0.328495,
+  "acs_multiunit_pct": 0.143234,
+  "acs_avg_hh_size": 2.78
+ },
+ "03080000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.274324,
+  "acs_gini": 0.4347,
+  "acs_pre1960_housing_pct": 0.47959,
+  "acs_multiunit_pct": 0.319838,
+  "acs_avg_hh_size": 2.25
+ },
+ "03090000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.078995,
+  "acs_gini": 0.4051,
+  "acs_pre1960_housing_pct": 0.432744,
+  "acs_multiunit_pct": 0.078157,
+  "acs_avg_hh_size": 2.23
+ },
+ "03100000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.098648,
+  "acs_gini": 0.403,
+  "acs_pre1960_housing_pct": 0.535649,
+  "acs_multiunit_pct": 0.040698,
+  "acs_avg_hh_size": 2.2
+ },
+ "03140000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.35464,
+  "acs_gini": 0.4425,
+  "acs_pre1960_housing_pct": 0.647576,
+  "acs_multiunit_pct": 0.302128,
+  "acs_avg_hh_size": 2.16
+ },
+ "03150000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.446389,
+  "acs_gini": 0.4393,
+  "acs_pre1960_housing_pct": 0.48109,
+  "acs_multiunit_pct": 0.053106,
+  "acs_avg_hh_size": 2.78
+ },
+ "03160000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.062731,
+  "acs_gini": 0.4357,
+  "acs_pre1960_housing_pct": 0.48362,
+  "acs_multiunit_pct": 0.13762,
+  "acs_avg_hh_size": 2.33
+ },
+ "03170000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.551189,
+  "acs_gini": 0.4842,
+  "acs_pre1960_housing_pct": 0.585384,
+  "acs_multiunit_pct": 0.093551,
+  "acs_avg_hh_size": 2.77
+ },
+ "03180000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.355068,
+  "acs_gini": 0.4267,
+  "acs_pre1960_housing_pct": 0.314118,
+  "acs_multiunit_pct": 0.003698,
+  "acs_avg_hh_size": 2.26
+ },
+ "03210000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.366217,
+  "acs_gini": 0.4443,
+  "acs_pre1960_housing_pct": 0.25788,
+  "acs_multiunit_pct": 0.33032,
+  "acs_avg_hh_size": 2.61
+ },
+ "03220000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.160653,
+  "acs_gini": 0.4381,
+  "acs_pre1960_housing_pct": 0.444482,
+  "acs_multiunit_pct": 0.097914,
+  "acs_avg_hh_size": 2.28
+ },
+ "03230000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.117038,
+  "acs_gini": 0.4198,
+  "acs_pre1960_housing_pct": 0.4511,
+  "acs_multiunit_pct": 0.023689,
+  "acs_avg_hh_size": 2.62
+ },
+ "03250000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.115869,
+  "acs_gini": 0.4359,
+  "acs_pre1960_housing_pct": 0.444504,
+  "acs_multiunit_pct": 0.154634,
+  "acs_avg_hh_size": 2.42
+ },
+ "03260000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.378518,
+  "acs_gini": 0.3842,
+  "acs_pre1960_housing_pct": 0.259122,
+  "acs_multiunit_pct": 0.089968,
+  "acs_avg_hh_size": 2.78
+ },
+ "03270000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.207713,
+  "acs_gini": 0.4005,
+  "acs_pre1960_housing_pct": 0.405099,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.43
+ },
+ "03300000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.528258,
+  "acs_gini": 0.5032,
+  "acs_pre1960_housing_pct": 0.433665,
+  "acs_multiunit_pct": 0.053749,
+  "acs_avg_hh_size": 3.02
+ },
+ "03310000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.139496,
+  "acs_gini": 0.4227,
+  "acs_pre1960_housing_pct": 0.336461,
+  "acs_multiunit_pct": 0.038702,
+  "acs_avg_hh_size": 2.41
+ },
+ "03320000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.143284,
+  "acs_gini": 0.4464,
+  "acs_pre1960_housing_pct": 0.487743,
+  "acs_multiunit_pct": 0.252386,
+  "acs_avg_hh_size": 2.26
+ },
+ "03350000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.35531,
+  "acs_gini": 0.451,
+  "acs_pre1960_housing_pct": 0.395385,
+  "acs_multiunit_pct": 0.1914,
+  "acs_avg_hh_size": 2.91
+ },
+ "03360000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.146854,
+  "acs_gini": 0.4264,
+  "acs_pre1960_housing_pct": 0.472477,
+  "acs_multiunit_pct": 0.312424,
+  "acs_avg_hh_size": 2.26
+ },
+ "03370000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.163388,
+  "acs_gini": 0.4269,
+  "acs_pre1960_housing_pct": 0.415385,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.29
+ },
+ "03400000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.336822,
+  "acs_gini": 0.3858,
+  "acs_pre1960_housing_pct": 0.506449,
+  "acs_multiunit_pct": 0.010318,
+  "acs_avg_hh_size": 2.4
+ },
+ "03420000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.184379,
+  "acs_gini": 0.368,
+  "acs_pre1960_housing_pct": 0.294447,
+  "acs_multiunit_pct": 0.10122,
+  "acs_avg_hh_size": 2.92
+ },
+ "03430000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.097026,
+  "acs_gini": 0.4226,
+  "acs_pre1960_housing_pct": 0.386589,
+  "acs_multiunit_pct": 0.089325,
+  "acs_avg_hh_size": 2.66
+ },
+ "03440000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.50839,
+  "acs_gini": 0.4659,
+  "acs_pre1960_housing_pct": 0.584088,
+  "acs_multiunit_pct": 0.13739,
+  "acs_avg_hh_size": 2.8
+ },
+ "03460000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.159478,
+  "acs_gini": 0.4331,
+  "acs_pre1960_housing_pct": 0.71324,
+  "acs_multiunit_pct": 0.282036,
+  "acs_avg_hh_size": 2.36
+ },
+ "03470000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.198931,
+  "acs_gini": 0.4312,
+  "acs_pre1960_housing_pct": 0.402073,
+  "acs_multiunit_pct": 0.261218,
+  "acs_avg_hh_size": 2.5
+ },
+ "03480000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.139933,
+  "acs_gini": 0.478,
+  "acs_pre1960_housing_pct": 0.596303,
+  "acs_multiunit_pct": 0.279849,
+  "acs_avg_hh_size": 2.42
+ },
+ "03490000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.211778,
+  "acs_gini": 0.3964,
+  "acs_pre1960_housing_pct": 0.534056,
+  "acs_multiunit_pct": 0.021672,
+  "acs_avg_hh_size": 2.06
+ },
+ "03500000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.213745,
+  "acs_gini": 0.415,
+  "acs_pre1960_housing_pct": 0.324098,
+  "acs_multiunit_pct": 0.093213,
+  "acs_avg_hh_size": 2.69
+ },
+ "06000000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.442658,
+  "acs_gini": 0.4395,
+  "acs_pre1960_housing_pct": 0.208726,
+  "acs_multiunit_pct": 0.235425,
+  "acs_avg_hh_size": 2.59
+ },
+ "06030000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.086522,
+  "acs_gini": 0.4364,
+  "acs_pre1960_housing_pct": 0.687017,
+  "acs_multiunit_pct": 0.114828,
+  "acs_avg_hh_size": 2.03
+ },
+ "06100000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.177756,
+  "acs_gini": 0.3753,
+  "acs_pre1960_housing_pct": 0.329536,
+  "acs_multiunit_pct": 0.012276,
+  "acs_avg_hh_size": 2.57
+ },
+ "06150000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.06192,
+  "acs_gini": 0.4123,
+  "acs_pre1960_housing_pct": 0.56223,
+  "acs_multiunit_pct": 0.062555,
+  "acs_avg_hh_size": 2.53
+ },
+ "06160000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.160524,
+  "acs_gini": 0.4124,
+  "acs_pre1960_housing_pct": 0.331368,
+  "acs_multiunit_pct": 0.162883,
+  "acs_avg_hh_size": 2.34
+ },
+ "06180000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.276328,
+  "acs_gini": 0.5202,
+  "acs_pre1960_housing_pct": 0.523878,
+  "acs_multiunit_pct": 0.100403,
+  "acs_avg_hh_size": 2.16
+ },
+ "06200000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.224084,
+  "acs_gini": 0.4212,
+  "acs_pre1960_housing_pct": 0.306253,
+  "acs_multiunit_pct": 0.065952,
+  "acs_avg_hh_size": 2.42
+ },
+ "06220000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.113815,
+  "acs_gini": 0.3991,
+  "acs_pre1960_housing_pct": 0.383994,
+  "acs_multiunit_pct": 0.072961,
+  "acs_avg_hh_size": 2.38
+ },
+ "06250000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.161073,
+  "acs_gini": 0.4212,
+  "acs_pre1960_housing_pct": 0.209438,
+  "acs_multiunit_pct": 0.182026,
+  "acs_avg_hh_size": 2.61
+ },
+ "06320000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.188824,
+  "acs_gini": 0.3855,
+  "acs_pre1960_housing_pct": 0.419886,
+  "acs_multiunit_pct": 0.034157,
+  "acs_avg_hh_size": 2.28
+ },
+ "06350000": {
+  "_member_count": 7,
+  "acs_grad_degree_pct": 0.175222,
+  "acs_gini": 0.4215,
+  "acs_pre1960_housing_pct": 0.480084,
+  "acs_multiunit_pct": 0.066132,
+  "acs_avg_hh_size": 2.24
+ },
+ "06450000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.174463,
+  "acs_gini": 0.4623,
+  "acs_pre1960_housing_pct": 0.259067,
+  "acs_multiunit_pct": 0.080334,
+  "acs_avg_hh_size": 2.1
+ },
+ "06500000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.153633,
+  "acs_gini": 0.3552,
+  "acs_pre1960_housing_pct": 0.298862,
+  "acs_multiunit_pct": 0.0204,
+  "acs_avg_hh_size": 2.76
+ },
+ "06550000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.499349,
+  "acs_gini": 0.4515,
+  "acs_pre1960_housing_pct": 0.265994,
+  "acs_multiunit_pct": 0.021139,
+  "acs_avg_hh_size": 3.01
+ },
+ "06580000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.080139,
+  "acs_gini": 0.4098,
+  "acs_pre1960_housing_pct": 0.398137,
+  "acs_multiunit_pct": 0.060536,
+  "acs_avg_hh_size": 2.58
+ },
+ "06620000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.170043,
+  "acs_gini": 0.4344,
+  "acs_pre1960_housing_pct": 0.364401,
+  "acs_multiunit_pct": 0.000539,
+  "acs_avg_hh_size": 2.3
+ },
+ "06650000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.13203,
+  "acs_gini": 0.3694,
+  "acs_pre1960_housing_pct": 0.244427,
+  "acs_multiunit_pct": 0.049557,
+  "acs_avg_hh_size": 2.81
+ },
+ "06720000": {
+  "_member_count": 6,
+  "acs_grad_degree_pct": 0.114007,
+  "acs_gini": 0.3443,
+  "acs_pre1960_housing_pct": 0.446691,
+  "acs_multiunit_pct": 0.02564,
+  "acs_avg_hh_size": 2.44
+ },
+ "06730000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.301879,
+  "acs_gini": 0.4315,
+  "acs_pre1960_housing_pct": 0.269457,
+  "acs_multiunit_pct": 0.053102,
+  "acs_avg_hh_size": 2.96
+ },
+ "06740000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.170237,
+  "acs_gini": 0.3859,
+  "acs_pre1960_housing_pct": 0.574327,
+  "acs_multiunit_pct": 0.12991,
+  "acs_avg_hh_size": 2.29
+ },
+ "06750000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.32104,
+  "acs_gini": 0.4421,
+  "acs_pre1960_housing_pct": 0.550644,
+  "acs_multiunit_pct": 0.080826,
+  "acs_avg_hh_size": 2.76
+ },
+ "06800000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.237726,
+  "acs_gini": 0.4115,
+  "acs_pre1960_housing_pct": 0.4053,
+  "acs_multiunit_pct": 0.05376,
+  "acs_avg_hh_size": 2.62
+ },
+ "06850000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.127603,
+  "acs_gini": 0.4658,
+  "acs_pre1960_housing_pct": 0.441923,
+  "acs_multiunit_pct": 0.029393,
+  "acs_avg_hh_size": 2.05
+ },
+ "06980000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.332625,
+  "acs_gini": 0.4601,
+  "acs_pre1960_housing_pct": 0.471269,
+  "acs_multiunit_pct": 0.084214,
+  "acs_avg_hh_size": 2.55
+ },
+ "07100000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.212084,
+  "acs_gini": 0.3939,
+  "acs_pre1960_housing_pct": 0.235781,
+  "acs_multiunit_pct": 0.030394,
+  "acs_avg_hh_size": 2.83
+ },
+ "07120000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.255735,
+  "acs_gini": 0.4823,
+  "acs_pre1960_housing_pct": 0.285177,
+  "acs_multiunit_pct": 0.039543,
+  "acs_avg_hh_size": 2.1
+ },
+ "07150000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.365955,
+  "acs_gini": 0.4765,
+  "acs_pre1960_housing_pct": 0.524741,
+  "acs_multiunit_pct": 0.106973,
+  "acs_avg_hh_size": 2.12
+ },
+ "07170000": {
+  "_member_count": 9,
+  "acs_grad_degree_pct": 0.2088,
+  "acs_gini": 0.4337,
+  "acs_pre1960_housing_pct": 0.472549,
+  "acs_multiunit_pct": 0.036735,
+  "acs_avg_hh_size": 2.15
+ },
+ "07200000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.087981,
+  "acs_gini": 0.3642,
+  "acs_pre1960_housing_pct": 0.385935,
+  "acs_multiunit_pct": 0.039443,
+  "acs_avg_hh_size": 2.6
+ },
+ "07250000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.320641,
+  "acs_gini": 0.379,
+  "acs_pre1960_housing_pct": 0.306352,
+  "acs_multiunit_pct": 0.05841,
+  "acs_avg_hh_size": 2.63
+ },
+ "07280000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.198102,
+  "acs_gini": 0.4166,
+  "acs_pre1960_housing_pct": 0.387793,
+  "acs_multiunit_pct": 0.0,
+  "acs_avg_hh_size": 2.32
+ },
+ "07350000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.172768,
+  "acs_gini": 0.4017,
+  "acs_pre1960_housing_pct": 0.260387,
+  "acs_multiunit_pct": 0.071608,
+  "acs_avg_hh_size": 2.64
+ },
+ "07450000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.194271,
+  "acs_gini": 0.3617,
+  "acs_pre1960_housing_pct": 0.304183,
+  "acs_multiunit_pct": 0.050275,
+  "acs_avg_hh_size": 2.56
+ },
+ "07500000": {
+  "_member_count": 4,
+  "acs_grad_degree_pct": 0.167308,
+  "acs_gini": 0.384,
+  "acs_pre1960_housing_pct": 0.450894,
+  "acs_multiunit_pct": 0.037352,
+  "acs_avg_hh_size": 2.29
+ },
+ "07530000": {
+  "_member_count": 5,
+  "acs_grad_degree_pct": 0.125863,
+  "acs_gini": 0.3709,
+  "acs_pre1960_housing_pct": 0.358776,
+  "acs_multiunit_pct": 0.037908,
+  "acs_avg_hh_size": 2.62
+ },
+ "07650000": {
+  "_member_count": 5,
+  "acs_grad_degree_pct": 0.262202,
+  "acs_gini": 0.4766,
+  "acs_pre1960_housing_pct": 0.405826,
+  "acs_multiunit_pct": 0.018867,
+  "acs_avg_hh_size": 2.34
+ },
+ "07660000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.144294,
+  "acs_gini": 0.4071,
+  "acs_pre1960_housing_pct": 0.280913,
+  "acs_multiunit_pct": 0.072073,
+  "acs_avg_hh_size": 2.4
+ },
+ "07670000": {
+  "_member_count": 1,
+  "acs_grad_degree_pct": 0.107351,
+  "acs_gini": 0.4211,
+  "acs_pre1960_housing_pct": 0.407222,
+  "acs_multiunit_pct": 0.136835,
+  "acs_avg_hh_size": 2.31
+ },
+ "07700000": {
+  "_member_count": 5,
+  "acs_grad_degree_pct": 0.157808,
+  "acs_gini": 0.4159,
+  "acs_pre1960_housing_pct": 0.274432,
+  "acs_multiunit_pct": 0.061929,
+  "acs_avg_hh_size": 2.42
+ },
+ "07730000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.214522,
+  "acs_gini": 0.403,
+  "acs_pre1960_housing_pct": 0.362302,
+  "acs_multiunit_pct": 0.095812,
+  "acs_avg_hh_size": 2.42
+ },
+ "07740000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.369221,
+  "acs_gini": 0.4929,
+  "acs_pre1960_housing_pct": 0.162675,
+  "acs_multiunit_pct": 0.003818,
+  "acs_avg_hh_size": 3.04
+ },
+ "07750000": {
+  "_member_count": 5,
+  "acs_grad_degree_pct": 0.2406,
+  "acs_gini": 0.3846,
+  "acs_pre1960_housing_pct": 0.304336,
+  "acs_multiunit_pct": 0.070662,
+  "acs_avg_hh_size": 2.72
+ },
+ "07780000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.103443,
+  "acs_gini": 0.423,
+  "acs_pre1960_housing_pct": 0.421062,
+  "acs_multiunit_pct": 0.11453,
+  "acs_avg_hh_size": 2.23
+ },
+ "07800000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.11483,
+  "acs_gini": 0.4091,
+  "acs_pre1960_housing_pct": 0.418056,
+  "acs_multiunit_pct": 0.075209,
+  "acs_avg_hh_size": 2.63
+ },
+ "06400000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.502995,
+  "acs_gini": 0.4569,
+  "acs_pre1960_housing_pct": 0.375505,
+  "acs_multiunit_pct": 0.142807,
+  "acs_avg_hh_size": 2.82
+ },
+ "06600000": {
+  "_member_count": 4,
+  "acs_grad_degree_pct": 0.286281,
+  "acs_gini": 0.4933,
+  "acs_pre1960_housing_pct": 0.191394,
+  "acs_multiunit_pct": 0.050589,
+  "acs_avg_hh_size": 2.11
+ },
+ "06900000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.211878,
+  "acs_gini": 0.4133,
+  "acs_pre1960_housing_pct": 0.244656,
+  "acs_multiunit_pct": 0.104091,
+  "acs_avg_hh_size": 2.68
+ },
+ "06950000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.472607,
+  "acs_gini": 0.4423,
+  "acs_pre1960_housing_pct": 0.293356,
+  "acs_multiunit_pct": 0.067885,
+  "acs_avg_hh_size": 2.87
+ },
+ "07050000": {
+  "_member_count": 3,
+  "acs_grad_degree_pct": 0.251306,
+  "acs_gini": 0.4271,
+  "acs_pre1960_housing_pct": 0.274852,
+  "acs_multiunit_pct": 0.061848,
+  "acs_avg_hh_size": 2.76
+ },
+ "07300000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.376714,
+  "acs_gini": 0.4559,
+  "acs_pre1960_housing_pct": 0.2596,
+  "acs_multiunit_pct": 0.065108,
+  "acs_avg_hh_size": 2.74
+ },
+ "07630000": {
+  "_member_count": 2,
+  "acs_grad_degree_pct": 0.132296,
+  "acs_gini": 0.4014,
+  "acs_pre1960_housing_pct": 0.393008,
+  "acs_multiunit_pct": 0.03439,
+  "acs_avg_hh_size": 2.58
+ }
+}

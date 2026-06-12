@@ -1,0 +1,1082 @@
+{
+ "00360000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 7.5
+ },
+ "06450000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 8.1
+ },
+ "00350000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 12.45
+ },
+ "00490000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.004,
+  "days_lost_per_100": 3.15
+ },
+ "01590000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 2.1
+ },
+ "01670000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 6.0
+ },
+ "01770000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.9
+ },
+ "00990000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 7.45
+ },
+ "02920000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 15.65
+ },
+ "02260000": {
+  "expulsion_pct": 0.001,
+  "emergency_removal_pct": 0.012,
+  "days_lost_per_100": 22.2
+ },
+ "03220000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.6
+ },
+ "01680000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.6
+ },
+ "02190000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.3
+ },
+ "02510000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 12.25
+ },
+ "02840000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 3.85
+ },
+ "02440000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.012,
+  "days_lost_per_100": 17.35
+ },
+ "02210000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.5
+ },
+ "07150000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 5.1
+ },
+ "00790000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 13.35
+ },
+ "07350000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 11.95
+ },
+ "00270000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.8
+ },
+ "02090000": {
+  "expulsion_pct": 0.001,
+  "emergency_removal_pct": 0.053,
+  "days_lost_per_100": 60.75
+ },
+ "00650000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.5
+ },
+ "00610000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 16.9
+ },
+ "00460000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 1.55
+ },
+ "06160000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.2
+ },
+ "03080000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 10.95
+ },
+ "03150000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.65
+ },
+ "01620000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 7.35
+ },
+ "03350000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.15
+ },
+ "07530000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 18.45
+ },
+ "01310000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 1.15
+ },
+ "02850000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 14.9
+ },
+ "01750000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.55
+ },
+ "03430000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 31.6
+ },
+ "02810000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.008,
+  "days_lost_per_100": 26.75
+ },
+ "00250000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 5.6
+ },
+ "00930000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 9.4
+ },
+ "02900000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.35
+ },
+ "01860000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 13.65
+ },
+ "02930000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 42.65
+ },
+ "02110000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.05
+ },
+ "02390000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 18.05
+ },
+ "02290000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 9.7
+ },
+ "01600000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 10.05
+ },
+ "02180000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 9.7
+ },
+ "06580000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 7.1
+ },
+ "00100000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 2.25
+ },
+ "07170000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 11.15
+ },
+ "07780000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.85
+ },
+ "03420000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.2
+ },
+ "01550000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.85
+ },
+ "02520000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 5.55
+ },
+ "00560000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 4.7
+ },
+ "07500000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.45
+ },
+ "06150000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.028,
+  "days_lost_per_100": 44.35
+ },
+ "00970000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.035,
+  "days_lost_per_100": 43.7
+ },
+ "01580000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.8
+ },
+ "07250000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 1.9
+ },
+ "03300000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.9
+ },
+ "02950000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.95
+ },
+ "03250000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.013,
+  "days_lost_per_100": 25.0
+ },
+ "03050000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.5
+ },
+ "02480000": {
+  "expulsion_pct": 0.001,
+  "emergency_removal_pct": 0.021,
+  "days_lost_per_100": 14.3
+ },
+ "06250000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 6.8
+ },
+ "00820000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 2.5
+ },
+ "01910000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 15.25
+ },
+ "01000000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 17.65
+ },
+ "02460000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.0
+ },
+ "06200000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.003,
+  "days_lost_per_100": 7.8
+ },
+ "06800000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 7.85
+ },
+ "07200000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 14.3
+ },
+ "01070000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.4
+ },
+ "01780000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 3.35
+ },
+ "00710000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.004,
+  "days_lost_per_100": 12.85
+ },
+ "01100000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 2.0
+ },
+ "02170000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.3
+ },
+ "02910000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.85
+ },
+ "03010000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.0
+ },
+ "07750000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 3.95
+ },
+ "00730000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 6.45
+ },
+ "00160000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.009,
+  "days_lost_per_100": 13.85
+ },
+ "06650000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 12.05
+ },
+ "02100000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.006,
+  "days_lost_per_100": 9.25
+ },
+ "00260000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.6
+ },
+ "02230000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.25
+ },
+ "02070000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.8
+ },
+ "07730000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.7
+ },
+ "01050000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.7
+ },
+ "01760000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 2.75
+ },
+ "06350000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.006,
+  "days_lost_per_100": 13.9
+ },
+ "07650000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.6
+ },
+ "03320000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.003,
+  "days_lost_per_100": 14.85
+ },
+ "02770000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 41.75
+ },
+ "00960000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.013,
+  "days_lost_per_100": 13.1
+ },
+ "01610000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 17.85
+ },
+ "02730000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.004,
+  "days_lost_per_100": 5.3
+ },
+ "00170000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 6.9
+ },
+ "00400000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.5
+ },
+ "01010000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 7.2
+ },
+ "07120000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.007,
+  "days_lost_per_100": 11.8
+ },
+ "01870000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.9
+ },
+ "02710000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.003,
+  "days_lost_per_100": 4.7
+ },
+ "01990000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.25
+ },
+ "01330000": {
+  "expulsion_pct": 0.001,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 6.9
+ },
+ "00480000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.95
+ },
+ "02780000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 19.0
+ },
+ "03260000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.35
+ },
+ "06220000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 7.75
+ },
+ "01530000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 20.75
+ },
+ "00870000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 9.3
+ },
+ "02200000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.01,
+  "days_lost_per_100": 17.2
+ },
+ "00570000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.023,
+  "days_lost_per_100": 16.05
+ },
+ "01490000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 9.25
+ },
+ "01410000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.009,
+  "days_lost_per_100": 7.4
+ },
+ "00010000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 12.2
+ },
+ "00180000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.011,
+  "days_lost_per_100": 13.35
+ },
+ "03070000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 6.1
+ },
+ "00880000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 5.65
+ },
+ "02010000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.018,
+  "days_lost_per_100": 23.6
+ },
+ "06030000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.046,
+  "days_lost_per_100": 38.1
+ },
+ "00230000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.006,
+  "days_lost_per_100": 3.35
+ },
+ "01170000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.75
+ },
+ "01280000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 15.95
+ },
+ "01510000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.014,
+  "days_lost_per_100": 22.6
+ },
+ "01370000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.026,
+  "days_lost_per_100": 48.45
+ },
+ "00240000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.9
+ },
+ "01440000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.7
+ },
+ "02640000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 3.55
+ },
+ "06000000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 1.15
+ },
+ "02610000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 8.45
+ },
+ "00670000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 2.0
+ },
+ "01390000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.5
+ },
+ "01710000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 4.0
+ },
+ "01720000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 4.7
+ },
+ "01980000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 1.2
+ },
+ "01570000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 3.5
+ },
+ "01030000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 28.95
+ },
+ "00940000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.003,
+  "days_lost_per_100": 20.7
+ },
+ "01740000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 4.3
+ },
+ "03100000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.004,
+  "days_lost_per_100": 32.8
+ },
+ "03470000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.5
+ },
+ "03140000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 2.9
+ },
+ "00070000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.008,
+  "days_lost_per_100": 13.0
+ },
+ "01850000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.006,
+  "days_lost_per_100": 20.9
+ },
+ "00520000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 19.35
+ },
+ "01220000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.55
+ },
+ "00090000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.15
+ },
+ "00500000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 14.3
+ },
+ "07660000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 18.55
+ },
+ "03090000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.027,
+  "days_lost_per_100": 31.5
+ },
+ "01450000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 1.45
+ },
+ "02650000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 7.6
+ },
+ "02310000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 9.1
+ },
+ "03170000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.3
+ },
+ "00200000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.008,
+  "days_lost_per_100": 17.05
+ },
+ "01970000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 10.15
+ },
+ "01820000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.007,
+  "days_lost_per_100": 11.25
+ },
+ "00140000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 9.2
+ },
+ "01700000": {
+  "expulsion_pct": 0.001,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 21.35
+ },
+ "00440000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.016,
+  "days_lost_per_100": 40.95
+ },
+ "01380000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.95
+ },
+ "02430000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 10.15
+ },
+ "02880000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.55
+ },
+ "03230000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 8.25
+ },
+ "06100000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.5
+ },
+ "07700000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 26.8
+ },
+ "01810000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 19.3
+ },
+ "00030000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 5.05
+ },
+ "01640000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 0.45
+ },
+ "00050000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.002,
+  "days_lost_per_100": 11.1
+ },
+ "02270000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.009,
+  "days_lost_per_100": 19.75
+ },
+ "01630000": {
+  "expulsion_pct": 0.001,
+  "emergency_removal_pct": 0.004,
+  "days_lost_per_100": 13.05
+ },
+ "06750000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 1.45
+ },
+ "03460000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.45
+ },
+ "02120000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.003,
+  "days_lost_per_100": 7.6
+ },
+ "03360000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 10.55
+ },
+ "07100000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.25
+ },
+ "03210000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.7
+ },
+ "07800000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.3
+ },
+ "06500000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.007,
+  "days_lost_per_100": 5.65
+ },
+ "07670000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 13.65
+ },
+ "03160000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 57.7
+ },
+ "06720000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 22.6
+ },
+ "07450000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 7.95
+ },
+ "02620000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.004,
+  "days_lost_per_100": 16.0
+ },
+ "01140000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 16.2
+ },
+ "00860000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.005,
+  "days_lost_per_100": 12.35
+ },
+ "01650000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 7.05
+ },
+ "01890000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 0.9
+ },
+ "01500000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 13.2
+ },
+ "01110000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 4.7
+ },
+ "00310000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 7.1
+ },
+ "02740000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.011,
+  "days_lost_per_100": 12.7
+ },
+ "00720000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 5.1
+ },
+ "06180000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 14.95
+ },
+ "02140000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 14.45
+ },
+ "01360000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 1.25
+ },
+ "03040000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 10.3
+ },
+ "00640000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.009,
+  "days_lost_per_100": 13.0
+ },
+ "03440000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 0.1
+ },
+ "02660000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 3.3
+ },
+ "03310000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 23.35
+ },
+ "03480000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.008,
+  "days_lost_per_100": 19.25
+ },
+ "00950000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 50.35
+ },
+ "00300000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 5.3
+ },
+ "02360000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.017,
+  "days_lost_per_100": 61.75
+ },
+ "00830000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 12.25
+ },
+ "02580000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.013,
+  "days_lost_per_100": 10.0
+ },
+ "06400000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 5.55
+ },
+ "06600000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 20.45
+ },
+ "06900000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 4.7
+ },
+ "06950000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 6.1
+ },
+ "07050000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.0,
+  "days_lost_per_100": 2.85
+ },
+ "07300000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.001,
+  "days_lost_per_100": 4.4
+ },
+ "07630000": {
+  "expulsion_pct": 0.0,
+  "emergency_removal_pct": 0.052,
+  "days_lost_per_100": 55.2
+ }
+}

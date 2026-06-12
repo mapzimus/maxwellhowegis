@@ -1,0 +1,1344 @@
+{
+ "00010000": {
+  "cost_of_living_index": -0.252,
+  "livability_index": -0.434,
+  "opportunity_to_learn_index": -0.153
+ },
+ "00030000": {
+  "cost_of_living_index": 0.357,
+  "livability_index": -0.003
+ },
+ "00050000": {
+  "cost_of_living_index": -0.979,
+  "livability_index": -0.807,
+  "opportunity_to_learn_index": -0.069
+ },
+ "00070000": {
+  "cost_of_living_index": 0.661,
+  "livability_index": -0.222,
+  "opportunity_to_learn_index": -0.831
+ },
+ "00080000": {
+  "cost_of_living_index": 0.709,
+  "livability_index": 0.779
+ },
+ "00090000": {
+  "cost_of_living_index": -0.408,
+  "livability_index": 0.926,
+  "opportunity_to_learn_index": 0.748
+ },
+ "00100000": {
+  "cost_of_living_index": -0.253,
+  "livability_index": 0.82,
+  "opportunity_to_learn_index": 1.059
+ },
+ "00140000": {
+  "cost_of_living_index": 0.042,
+  "livability_index": 0.022,
+  "opportunity_to_learn_index": -0.909
+ },
+ "00160000": {
+  "cost_of_living_index": -0.227,
+  "livability_index": -0.541,
+  "opportunity_to_learn_index": -0.341
+ },
+ "00170000": {
+  "cost_of_living_index": -0.336,
+  "livability_index": 0.139,
+  "opportunity_to_learn_index": -0.037
+ },
+ "00180000": {
+  "cost_of_living_index": 0.623,
+  "livability_index": -0.032,
+  "opportunity_to_learn_index": -1.412
+ },
+ "00200000": {
+  "cost_of_living_index": 0.606,
+  "livability_index": -0.443,
+  "opportunity_to_learn_index": 0.065
+ },
+ "00230000": {
+  "cost_of_living_index": -0.101,
+  "livability_index": 1.029,
+  "opportunity_to_learn_index": 0.354
+ },
+ "00240000": {
+  "cost_of_living_index": -0.379,
+  "livability_index": 0.043,
+  "opportunity_to_learn_index": -0.193
+ },
+ "00250000": {
+  "cost_of_living_index": 0.597,
+  "livability_index": -0.387,
+  "opportunity_to_learn_index": -0.158
+ },
+ "00260000": {
+  "cost_of_living_index": 0.236,
+  "livability_index": 1.069,
+  "opportunity_to_learn_index": 0.934
+ },
+ "00270000": {
+  "cost_of_living_index": -2.25,
+  "livability_index": -0.03
+ },
+ "00300000": {
+  "cost_of_living_index": 0.376,
+  "livability_index": -0.066,
+  "opportunity_to_learn_index": 0.062
+ },
+ "00310000": {
+  "cost_of_living_index": -0.131,
+  "livability_index": 0.304,
+  "opportunity_to_learn_index": -0.633
+ },
+ "00350000": {
+  "cost_of_living_index": 0.256,
+  "livability_index": -0.528,
+  "opportunity_to_learn_index": 0.412
+ },
+ "00360000": {
+  "cost_of_living_index": 0.467,
+  "livability_index": -0.084,
+  "opportunity_to_learn_index": 0.015
+ },
+ "00380000": {
+  "cost_of_living_index": 1.018,
+  "livability_index": 0.953
+ },
+ "00400000": {
+  "cost_of_living_index": 0.026,
+  "livability_index": 0.236,
+  "opportunity_to_learn_index": 0.285
+ },
+ "00410000": {
+  "cost_of_living_index": 0.618,
+  "livability_index": 0.451
+ },
+ "00430000": {
+  "cost_of_living_index": 0.064,
+  "livability_index": -0.251
+ },
+ "00440000": {
+  "cost_of_living_index": 0.144,
+  "livability_index": -1.24,
+  "opportunity_to_learn_index": -0.744
+ },
+ "00450000": {
+  "cost_of_living_index": -1.585,
+  "livability_index": -0.254
+ },
+ "00460000": {
+  "cost_of_living_index": 0.747,
+  "livability_index": 0.938,
+  "opportunity_to_learn_index": 0.907
+ },
+ "00480000": {
+  "cost_of_living_index": 0.096,
+  "livability_index": 0.51,
+  "opportunity_to_learn_index": 0.376
+ },
+ "00490000": {
+  "cost_of_living_index": 0.388,
+  "livability_index": 0.501,
+  "opportunity_to_learn_index": 0.597
+ },
+ "00500000": {
+  "cost_of_living_index": 0.557,
+  "livability_index": 0.003,
+  "opportunity_to_learn_index": 0.634
+ },
+ "00510000": {
+  "cost_of_living_index": 1.906,
+  "livability_index": 0.806
+ },
+ "00520000": {
+  "cost_of_living_index": 0.197,
+  "livability_index": -0.23,
+  "opportunity_to_learn_index": -0.155
+ },
+ "00560000": {
+  "cost_of_living_index": 0.104,
+  "livability_index": 0.513,
+  "opportunity_to_learn_index": 0.736
+ },
+ "00570000": {
+  "cost_of_living_index": 0.297,
+  "livability_index": -1.719,
+  "opportunity_to_learn_index": -0.231
+ },
+ "00610000": {
+  "cost_of_living_index": -0.373,
+  "livability_index": -0.642,
+  "opportunity_to_learn_index": -0.314
+ },
+ "00630000": {
+  "cost_of_living_index": -0.154,
+  "livability_index": 0.26
+ },
+ "00640000": {
+  "cost_of_living_index": -1.068,
+  "livability_index": -0.279,
+  "opportunity_to_learn_index": -0.581
+ },
+ "00650000": {
+  "cost_of_living_index": 0.52,
+  "livability_index": 0.119,
+  "opportunity_to_learn_index": 0.633
+ },
+ "00670000": {
+  "cost_of_living_index": 0.71,
+  "livability_index": 0.971
+ },
+ "00680000": {
+  "cost_of_living_index": -1.222,
+  "livability_index": 0.106
+ },
+ "00710000": {
+  "cost_of_living_index": 0.354,
+  "livability_index": 0.318,
+  "opportunity_to_learn_index": 0.279
+ },
+ "00720000": {
+  "cost_of_living_index": -0.113,
+  "livability_index": 0.394,
+  "opportunity_to_learn_index": 0.413
+ },
+ "00730000": {
+  "cost_of_living_index": 0.51,
+  "livability_index": 0.197,
+  "opportunity_to_learn_index": 0.211
+ },
+ "00740000": {
+  "cost_of_living_index": -1.025,
+  "livability_index": 0.655
+ },
+ "00770000": {
+  "cost_of_living_index": -0.12,
+  "livability_index": -0.023,
+  "opportunity_to_learn_index": -0.355
+ },
+ "00790000": {
+  "cost_of_living_index": 0.513,
+  "livability_index": -0.162,
+  "opportunity_to_learn_index": -0.213
+ },
+ "00820000": {
+  "cost_of_living_index": 0.689,
+  "livability_index": 0.443,
+  "opportunity_to_learn_index": 0.907
+ },
+ "00830000": {
+  "cost_of_living_index": 0.341,
+  "livability_index": -0.33,
+  "opportunity_to_learn_index": -0.17
+ },
+ "00850000": {
+  "cost_of_living_index": 1.107,
+  "livability_index": -0.044
+ },
+ "00860000": {
+  "cost_of_living_index": -0.491,
+  "livability_index": 0.174,
+  "opportunity_to_learn_index": -0.197
+ },
+ "00870000": {
+  "cost_of_living_index": -0.428,
+  "livability_index": 0.493,
+  "opportunity_to_learn_index": 0.182
+ },
+ "00880000": {
+  "cost_of_living_index": 0.724,
+  "livability_index": 0.64,
+  "opportunity_to_learn_index": 0.281
+ },
+ "00890000": {
+  "cost_of_living_index": -0.932,
+  "livability_index": 0.189
+ },
+ "00910000": {
+  "cost_of_living_index": -0.337,
+  "livability_index": -0.464
+ },
+ "00930000": {
+  "cost_of_living_index": 0.474,
+  "livability_index": -1.747,
+  "opportunity_to_learn_index": -0.291
+ },
+ "00940000": {
+  "cost_of_living_index": -0.181,
+  "livability_index": -0.133,
+  "opportunity_to_learn_index": -0.406
+ },
+ "00950000": {
+  "cost_of_living_index": -0.135,
+  "livability_index": -1.261,
+  "opportunity_to_learn_index": 0.009
+ },
+ "00960000": {
+  "cost_of_living_index": 0.177,
+  "livability_index": -0.243,
+  "opportunity_to_learn_index": 0.405
+ },
+ "00970000": {
+  "cost_of_living_index": -0.303,
+  "livability_index": -0.666,
+  "opportunity_to_learn_index": -0.38
+ },
+ "00980000": {
+  "cost_of_living_index": -2.676,
+  "livability_index": -1.337
+ },
+ "00990000": {
+  "cost_of_living_index": 0.817,
+  "livability_index": 0.479,
+  "opportunity_to_learn_index": 0.349
+ },
+ "01000000": {
+  "cost_of_living_index": 0.36,
+  "livability_index": -0.814,
+  "opportunity_to_learn_index": 0.099
+ },
+ "01010000": {
+  "cost_of_living_index": -0.011,
+  "livability_index": 0.326,
+  "opportunity_to_learn_index": 0.767
+ },
+ "01030000": {
+  "cost_of_living_index": -0.396,
+  "livability_index": -0.809,
+  "opportunity_to_learn_index": -0.466
+ },
+ "01050000": {
+  "cost_of_living_index": 0.152,
+  "livability_index": 0.187,
+  "opportunity_to_learn_index": -2.186
+ },
+ "01070000": {
+  "cost_of_living_index": 0.279,
+  "livability_index": -0.38,
+  "opportunity_to_learn_index": -0.707
+ },
+ "01090000": {
+  "cost_of_living_index": -0.81,
+  "livability_index": -1.418
+ },
+ "01100000": {
+  "cost_of_living_index": -0.357,
+  "livability_index": -0.189,
+  "opportunity_to_learn_index": 0.286
+ },
+ "01110000": {
+  "cost_of_living_index": 0.851,
+  "livability_index": 0.458,
+  "opportunity_to_learn_index": -0.213
+ },
+ "01140000": {
+  "cost_of_living_index": 0.117,
+  "livability_index": -0.257,
+  "opportunity_to_learn_index": -0.463
+ },
+ "01170000": {
+  "cost_of_living_index": -0.965,
+  "livability_index": 0.451,
+  "opportunity_to_learn_index": 0.032
+ },
+ "01180000": {
+  "cost_of_living_index": -1.051,
+  "livability_index": -0.339
+ },
+ "01210000": {
+  "cost_of_living_index": 0.801,
+  "livability_index": -0.056
+ },
+ "01220000": {
+  "cost_of_living_index": 1.551,
+  "livability_index": 0.208,
+  "opportunity_to_learn_index": 0.321
+ },
+ "01250000": {
+  "cost_of_living_index": 1.308,
+  "livability_index": 0.419,
+  "opportunity_to_learn_index": 0.628
+ },
+ "01270000": {
+  "cost_of_living_index": -1.086,
+  "livability_index": 0.211,
+  "opportunity_to_learn_index": 0.099
+ },
+ "01280000": {
+  "cost_of_living_index": 0.278,
+  "livability_index": -0.536,
+  "opportunity_to_learn_index": -0.037
+ },
+ "01310000": {
+  "cost_of_living_index": 1.359,
+  "livability_index": 0.486,
+  "opportunity_to_learn_index": 0.562
+ },
+ "01330000": {
+  "cost_of_living_index": -0.155,
+  "livability_index": -0.419,
+  "opportunity_to_learn_index": -0.974
+ },
+ "01350000": {
+  "cost_of_living_index": -1.829,
+  "livability_index": -0.502
+ },
+ "01360000": {
+  "cost_of_living_index": -0.185,
+  "livability_index": 0.264,
+  "opportunity_to_learn_index": 0.479
+ },
+ "01370000": {
+  "cost_of_living_index": -0.394,
+  "livability_index": -1.5,
+  "opportunity_to_learn_index": -2.261
+ },
+ "01380000": {
+  "cost_of_living_index": -0.254,
+  "livability_index": 0.115,
+  "opportunity_to_learn_index": 0.143
+ },
+ "01390000": {
+  "cost_of_living_index": 1.3,
+  "livability_index": 0.63,
+  "opportunity_to_learn_index": 0.901
+ },
+ "01410000": {
+  "cost_of_living_index": -0.934,
+  "livability_index": 0.065,
+  "opportunity_to_learn_index": 0.044
+ },
+ "01420000": {
+  "cost_of_living_index": 0.193,
+  "livability_index": -0.12,
+  "opportunity_to_learn_index": 0.222
+ },
+ "01440000": {
+  "cost_of_living_index": 0.528,
+  "livability_index": 0.412,
+  "opportunity_to_learn_index": 0.19
+ },
+ "01450000": {
+  "cost_of_living_index": -0.879,
+  "livability_index": -0.438
+ },
+ "01490000": {
+  "cost_of_living_index": 0.371,
+  "livability_index": -0.82,
+  "opportunity_to_learn_index": -0.084
+ },
+ "01500000": {
+  "cost_of_living_index": 0.656,
+  "livability_index": 0.996,
+  "opportunity_to_learn_index": -0.071
+ },
+ "01510000": {
+  "cost_of_living_index": -1.821,
+  "livability_index": -0.311,
+  "opportunity_to_learn_index": -0.464
+ },
+ "01520000": {
+  "cost_of_living_index": 0.258,
+  "livability_index": 0.442,
+  "opportunity_to_learn_index": -0.4
+ },
+ "01530000": {
+  "cost_of_living_index": -0.195,
+  "livability_index": -0.394,
+  "opportunity_to_learn_index": -2.117
+ },
+ "01540000": {
+  "cost_of_living_index": 0.736,
+  "livability_index": 0.621
+ },
+ "01550000": {
+  "cost_of_living_index": 0.786,
+  "livability_index": 1.258,
+  "opportunity_to_learn_index": 1.36
+ },
+ "01570000": {
+  "cost_of_living_index": 1.203,
+  "livability_index": 0.792
+ },
+ "01580000": {
+  "cost_of_living_index": 0.103,
+  "livability_index": -0.105,
+  "opportunity_to_learn_index": 0.431
+ },
+ "01590000": {
+  "cost_of_living_index": -0.184,
+  "livability_index": 0.681,
+  "opportunity_to_learn_index": 0.531
+ },
+ "01600000": {
+  "cost_of_living_index": -0.044,
+  "livability_index": -0.739,
+  "opportunity_to_learn_index": -0.779
+ },
+ "01610000": {
+  "cost_of_living_index": -0.428,
+  "livability_index": -0.143,
+  "opportunity_to_learn_index": -0.273
+ },
+ "01620000": {
+  "cost_of_living_index": -0.607,
+  "livability_index": -0.076,
+  "opportunity_to_learn_index": -0.328
+ },
+ "01630000": {
+  "cost_of_living_index": 0.397,
+  "livability_index": -1.149,
+  "opportunity_to_learn_index": -0.3
+ },
+ "01640000": {
+  "cost_of_living_index": 1.248,
+  "livability_index": 0.32,
+  "opportunity_to_learn_index": 0.717
+ },
+ "01650000": {
+  "cost_of_living_index": 0.125,
+  "livability_index": -1.004,
+  "opportunity_to_learn_index": -0.317
+ },
+ "01670000": {
+  "cost_of_living_index": -0.678,
+  "livability_index": 0.184,
+  "opportunity_to_learn_index": 0.272
+ },
+ "01680000": {
+  "cost_of_living_index": 0.314,
+  "livability_index": 0.597,
+  "opportunity_to_learn_index": 0.566
+ },
+ "01690000": {
+  "cost_of_living_index": -0.092,
+  "livability_index": 0.467
+ },
+ "01700000": {
+  "cost_of_living_index": 0.238,
+  "livability_index": -0.513,
+  "opportunity_to_learn_index": -0.178
+ },
+ "01710000": {
+  "cost_of_living_index": 0.636,
+  "livability_index": -0.007,
+  "opportunity_to_learn_index": -0.545
+ },
+ "01720000": {
+  "cost_of_living_index": 0.346,
+  "livability_index": -0.216,
+  "opportunity_to_learn_index": 0.305
+ },
+ "01730000": {
+  "cost_of_living_index": -0.993,
+  "livability_index": 0.688
+ },
+ "01740000": {
+  "cost_of_living_index": -0.323,
+  "livability_index": 0.678,
+  "opportunity_to_learn_index": 0.286
+ },
+ "01750000": {
+  "cost_of_living_index": 1.596,
+  "livability_index": 0.682,
+  "opportunity_to_learn_index": 0.673
+ },
+ "01760000": {
+  "cost_of_living_index": -0.21,
+  "livability_index": -0.137,
+  "opportunity_to_learn_index": -0.436
+ },
+ "01770000": {
+  "cost_of_living_index": -0.272,
+  "livability_index": 0.573,
+  "opportunity_to_learn_index": 0.52
+ },
+ "01780000": {
+  "cost_of_living_index": 0.239,
+  "livability_index": 0.231,
+  "opportunity_to_learn_index": 0.798
+ },
+ "01810000": {
+  "cost_of_living_index": 0.236,
+  "livability_index": -0.41,
+  "opportunity_to_learn_index": -0.23
+ },
+ "01820000": {
+  "cost_of_living_index": 0.646,
+  "livability_index": -0.463,
+  "opportunity_to_learn_index": 0.033
+ },
+ "01840000": {
+  "cost_of_living_index": -0.55,
+  "livability_index": 0.371
+ },
+ "01850000": {
+  "cost_of_living_index": 0.086,
+  "livability_index": -1.265,
+  "opportunity_to_learn_index": 0.107
+ },
+ "01860000": {
+  "cost_of_living_index": -0.497,
+  "livability_index": -0.13,
+  "opportunity_to_learn_index": -0.299
+ },
+ "01870000": {
+  "cost_of_living_index": 0.784,
+  "livability_index": 0.243,
+  "opportunity_to_learn_index": -0.029
+ },
+ "01890000": {
+  "cost_of_living_index": 0.628,
+  "livability_index": 0.711,
+  "opportunity_to_learn_index": 0.747
+ },
+ "01910000": {
+  "cost_of_living_index": -0.272,
+  "livability_index": -0.63,
+  "opportunity_to_learn_index": -1.952
+ },
+ "01960000": {
+  "cost_of_living_index": 0.699,
+  "livability_index": 0.027
+ },
+ "01970000": {
+  "cost_of_living_index": 0.872,
+  "livability_index": -0.184,
+  "opportunity_to_learn_index": -0.264
+ },
+ "01980000": {
+  "cost_of_living_index": -0.129,
+  "livability_index": 0.543,
+  "opportunity_to_learn_index": 0.697
+ },
+ "01990000": {
+  "cost_of_living_index": 1.278,
+  "livability_index": 1.119,
+  "opportunity_to_learn_index": 0.87
+ },
+ "02010000": {
+  "cost_of_living_index": -0.241,
+  "livability_index": -1.149,
+  "opportunity_to_learn_index": -0.589
+ },
+ "02040000": {
+  "cost_of_living_index": -0.169,
+  "livability_index": 0.798,
+  "opportunity_to_learn_index": 0.312
+ },
+ "02070000": {
+  "cost_of_living_index": 0.422,
+  "livability_index": 1.141,
+  "opportunity_to_learn_index": 0.917
+ },
+ "02080000": {
+  "cost_of_living_index": 0.201,
+  "livability_index": 0.122
+ },
+ "02090000": {
+  "cost_of_living_index": 0.109,
+  "livability_index": -0.398,
+  "opportunity_to_learn_index": -0.427
+ },
+ "02100000": {
+  "cost_of_living_index": 0.101,
+  "livability_index": 0.493,
+  "opportunity_to_learn_index": 0.83
+ },
+ "02110000": {
+  "cost_of_living_index": 0.351,
+  "livability_index": 0.006,
+  "opportunity_to_learn_index": 0.272
+ },
+ "02120000": {
+  "cost_of_living_index": -0.46,
+  "livability_index": -0.007,
+  "opportunity_to_learn_index": 0.354
+ },
+ "02130000": {
+  "cost_of_living_index": 0.311,
+  "livability_index": 0.535
+ },
+ "02140000": {
+  "cost_of_living_index": -0.654,
+  "livability_index": -0.452,
+  "opportunity_to_learn_index": -0.589
+ },
+ "02150000": {
+  "cost_of_living_index": -0.558,
+  "livability_index": -1.387,
+  "opportunity_to_learn_index": -2.162
+ },
+ "02170000": {
+  "cost_of_living_index": 1.196,
+  "livability_index": 0.644,
+  "opportunity_to_learn_index": 0.275
+ },
+ "02180000": {
+  "cost_of_living_index": -0.563,
+  "livability_index": 0.04,
+  "opportunity_to_learn_index": -0.33
+ },
+ "02190000": {
+  "cost_of_living_index": 1.329,
+  "livability_index": 0.664,
+  "opportunity_to_learn_index": 0.936
+ },
+ "02200000": {
+  "cost_of_living_index": 0.216,
+  "livability_index": -0.203,
+  "opportunity_to_learn_index": 0.223
+ },
+ "02210000": {
+  "cost_of_living_index": 1.248,
+  "livability_index": 0.067
+ },
+ "02230000": {
+  "cost_of_living_index": -0.577,
+  "livability_index": -0.487
+ },
+ "02240000": {
+  "cost_of_living_index": 0.511,
+  "livability_index": 1.304
+ },
+ "02260000": {
+  "cost_of_living_index": 0.238,
+  "livability_index": -0.388,
+  "opportunity_to_learn_index": -0.422
+ },
+ "02270000": {
+  "cost_of_living_index": -0.548,
+  "livability_index": -0.47,
+  "opportunity_to_learn_index": -0.496
+ },
+ "02290000": {
+  "cost_of_living_index": 0.558,
+  "livability_index": -0.377,
+  "opportunity_to_learn_index": -0.527
+ },
+ "02300000": {
+  "cost_of_living_index": -0.596,
+  "livability_index": 0.462
+ },
+ "02310000": {
+  "cost_of_living_index": -0.141,
+  "livability_index": -0.073,
+  "opportunity_to_learn_index": 0.537
+ },
+ "02340000": {
+  "cost_of_living_index": -2.17,
+  "livability_index": -0.091
+ },
+ "02360000": {
+  "cost_of_living_index": -0.165,
+  "livability_index": -0.427,
+  "opportunity_to_learn_index": -0.122
+ },
+ "02380000": {
+  "cost_of_living_index": 0.505,
+  "livability_index": -0.039
+ },
+ "02390000": {
+  "cost_of_living_index": 0.152,
+  "livability_index": -0.103,
+  "opportunity_to_learn_index": 0.033
+ },
+ "02400000": {
+  "cost_of_living_index": -1.079,
+  "livability_index": -0.124
+ },
+ "02420000": {
+  "cost_of_living_index": 0.962,
+  "livability_index": -0.241
+ },
+ "02430000": {
+  "cost_of_living_index": -0.06,
+  "livability_index": -0.304,
+  "opportunity_to_learn_index": 0.051
+ },
+ "02440000": {
+  "cost_of_living_index": 0.651,
+  "livability_index": -0.707,
+  "opportunity_to_learn_index": -0.914
+ },
+ "02460000": {
+  "cost_of_living_index": -0.952,
+  "livability_index": 0.322,
+  "opportunity_to_learn_index": 0.263
+ },
+ "02480000": {
+  "cost_of_living_index": 0.582,
+  "livability_index": -1.365,
+  "opportunity_to_learn_index": 0.027
+ },
+ "02490000": {
+  "cost_of_living_index": 0.509,
+  "livability_index": 0.906
+ },
+ "02500000": {
+  "cost_of_living_index": -0.875,
+  "livability_index": 0.183
+ },
+ "02510000": {
+  "cost_of_living_index": 0.185,
+  "livability_index": -0.168,
+  "opportunity_to_learn_index": -0.027
+ },
+ "02520000": {
+  "cost_of_living_index": 1.01,
+  "livability_index": -0.068,
+  "opportunity_to_learn_index": 0.007
+ },
+ "02530000": {
+  "cost_of_living_index": -2.734,
+  "livability_index": -0.748
+ },
+ "02580000": {
+  "cost_of_living_index": 0.153,
+  "livability_index": 0.069,
+  "opportunity_to_learn_index": 0.025
+ },
+ "02610000": {
+  "cost_of_living_index": -0.624,
+  "livability_index": 0.274,
+  "opportunity_to_learn_index": 0.138
+ },
+ "02620000": {
+  "cost_of_living_index": 0.176,
+  "livability_index": -0.453,
+  "opportunity_to_learn_index": -0.047
+ },
+ "02630000": {
+  "cost_of_living_index": 0.522,
+  "livability_index": -1.141
+ },
+ "02640000": {
+  "cost_of_living_index": 0.414,
+  "livability_index": 0.307,
+  "opportunity_to_learn_index": 1.024
+ },
+ "02650000": {
+  "cost_of_living_index": -0.556,
+  "livability_index": 0.616,
+  "opportunity_to_learn_index": -0.015
+ },
+ "02660000": {
+  "cost_of_living_index": 0.359,
+  "livability_index": 0.426,
+  "opportunity_to_learn_index": 0.714
+ },
+ "02690000": {
+  "cost_of_living_index": 0.754,
+  "livability_index": 0.366
+ },
+ "02710000": {
+  "cost_of_living_index": -0.506,
+  "livability_index": 0.206,
+  "opportunity_to_learn_index": 0.741
+ },
+ "02720000": {
+  "cost_of_living_index": -1.387,
+  "livability_index": 0.132
+ },
+ "02730000": {
+  "cost_of_living_index": -0.167,
+  "livability_index": 0.076
+ },
+ "02740000": {
+  "cost_of_living_index": -0.169,
+  "livability_index": 0.066,
+  "opportunity_to_learn_index": -0.066
+ },
+ "02750000": {
+  "cost_of_living_index": -0.655,
+  "livability_index": 0.377
+ },
+ "02760000": {
+  "cost_of_living_index": -0.67,
+  "livability_index": 0.373
+ },
+ "02770000": {
+  "cost_of_living_index": -0.038,
+  "livability_index": -1.023,
+  "opportunity_to_learn_index": -1.519
+ },
+ "02780000": {
+  "cost_of_living_index": -0.75,
+  "livability_index": 0.102,
+  "opportunity_to_learn_index": -0.446
+ },
+ "02810000": {
+  "cost_of_living_index": 0.019,
+  "livability_index": -0.903,
+  "opportunity_to_learn_index": -0.725
+ },
+ "02840000": {
+  "cost_of_living_index": -0.252,
+  "livability_index": 0.155,
+  "opportunity_to_learn_index": 0.443
+ },
+ "02850000": {
+  "cost_of_living_index": 0.881,
+  "livability_index": 0.114,
+  "opportunity_to_learn_index": -0.375
+ },
+ "02880000": {
+  "cost_of_living_index": 0.048,
+  "livability_index": 1.15
+ },
+ "02890000": {
+  "cost_of_living_index": 0.965,
+  "livability_index": -0.084
+ },
+ "02900000": {
+  "cost_of_living_index": -1.111,
+  "livability_index": -0.099,
+  "opportunity_to_learn_index": 0.357
+ },
+ "02910000": {
+  "cost_of_living_index": 0.345,
+  "livability_index": 0.273,
+  "opportunity_to_learn_index": 0.418
+ },
+ "02920000": {
+  "cost_of_living_index": -0.185,
+  "livability_index": -0.21,
+  "opportunity_to_learn_index": -0.544
+ },
+ "02930000": {
+  "cost_of_living_index": -0.002,
+  "livability_index": -0.736,
+  "opportunity_to_learn_index": -0.17
+ },
+ "02950000": {
+  "cost_of_living_index": -0.129,
+  "livability_index": 0.206,
+  "opportunity_to_learn_index": 0.35
+ },
+ "02960000": {
+  "cost_of_living_index": 0.311,
+  "livability_index": -1.005
+ },
+ "02980000": {
+  "cost_of_living_index": 0.732,
+  "livability_index": 0.748
+ },
+ "03000000": {
+  "cost_of_living_index": 1.024,
+  "livability_index": 0.329
+ },
+ "03010000": {
+  "cost_of_living_index": 1.177,
+  "livability_index": 0.097,
+  "opportunity_to_learn_index": -0.275
+ },
+ "03040000": {
+  "cost_of_living_index": -1.247,
+  "livability_index": -0.783,
+  "opportunity_to_learn_index": -0.422
+ },
+ "03050000": {
+  "cost_of_living_index": -0.141,
+  "livability_index": -0.246,
+  "opportunity_to_learn_index": 0.129
+ },
+ "03060000": {
+  "cost_of_living_index": -1.977,
+  "livability_index": -0.712
+ },
+ "03070000": {
+  "cost_of_living_index": -0.274,
+  "livability_index": 0.532,
+  "opportunity_to_learn_index": 0.402
+ },
+ "03080000": {
+  "cost_of_living_index": -0.092,
+  "livability_index": 0.045,
+  "opportunity_to_learn_index": -0.037
+ },
+ "03090000": {
+  "cost_of_living_index": -0.161,
+  "livability_index": -0.6,
+  "opportunity_to_learn_index": -0.957
+ },
+ "03100000": {
+  "cost_of_living_index": -0.104,
+  "livability_index": -0.559,
+  "opportunity_to_learn_index": -0.957
+ },
+ "03140000": {
+  "cost_of_living_index": -0.105,
+  "livability_index": 0.602,
+  "opportunity_to_learn_index": -0.305
+ },
+ "03150000": {
+  "cost_of_living_index": -0.034,
+  "livability_index": 0.873,
+  "opportunity_to_learn_index": 0.603
+ },
+ "03160000": {
+  "cost_of_living_index": -0.205,
+  "livability_index": -0.894,
+  "opportunity_to_learn_index": -0.405
+ },
+ "03170000": {
+  "cost_of_living_index": 0.767,
+  "livability_index": 0.944,
+  "opportunity_to_learn_index": 0.807
+ },
+ "03180000": {
+  "cost_of_living_index": -1.023,
+  "livability_index": 0.322
+ },
+ "03210000": {
+  "cost_of_living_index": -0.418,
+  "livability_index": 0.355,
+  "opportunity_to_learn_index": 0.299
+ },
+ "03220000": {
+  "cost_of_living_index": -1.29,
+  "livability_index": 0.501,
+  "opportunity_to_learn_index": -0.293
+ },
+ "03230000": {
+  "cost_of_living_index": -0.257,
+  "livability_index": 0.198,
+  "opportunity_to_learn_index": -0.128
+ },
+ "03250000": {
+  "cost_of_living_index": -0.469,
+  "livability_index": -0.172,
+  "opportunity_to_learn_index": -0.657
+ },
+ "03260000": {
+  "cost_of_living_index": 0.056,
+  "livability_index": 0.735,
+  "opportunity_to_learn_index": 0.523
+ },
+ "03270000": {
+  "cost_of_living_index": -1.336,
+  "livability_index": 0.469
+ },
+ "03300000": {
+  "cost_of_living_index": 2.102,
+  "livability_index": 1.414,
+  "opportunity_to_learn_index": 1.156
+ },
+ "03310000": {
+  "cost_of_living_index": -0.154,
+  "livability_index": -0.629,
+  "opportunity_to_learn_index": -1.376
+ },
+ "03320000": {
+  "cost_of_living_index": 0.224,
+  "livability_index": -0.43,
+  "opportunity_to_learn_index": 0.028
+ },
+ "03350000": {
+  "cost_of_living_index": 1.02,
+  "livability_index": 0.705,
+  "opportunity_to_learn_index": 0.747
+ },
+ "03360000": {
+  "cost_of_living_index": 0.166,
+  "livability_index": -0.414,
+  "opportunity_to_learn_index": 0.178
+ },
+ "03370000": {
+  "cost_of_living_index": -1.221,
+  "livability_index": 0.567
+ },
+ "03400000": {
+  "cost_of_living_index": 0.051,
+  "livability_index": 0.712
+ },
+ "03420000": {
+  "cost_of_living_index": 0.761,
+  "livability_index": 0.278,
+  "opportunity_to_learn_index": 0.161
+ },
+ "03430000": {
+  "cost_of_living_index": -0.201,
+  "livability_index": -0.932,
+  "opportunity_to_learn_index": -1.891
+ },
+ "03440000": {
+  "cost_of_living_index": 0.028,
+  "livability_index": 0.934,
+  "opportunity_to_learn_index": 0.896
+ },
+ "03460000": {
+  "cost_of_living_index": 0.285,
+  "livability_index": -0.309,
+  "opportunity_to_learn_index": 0.092
+ },
+ "03470000": {
+  "cost_of_living_index": 0.506,
+  "livability_index": 0.249,
+  "opportunity_to_learn_index": -0.038
+ },
+ "03480000": {
+  "cost_of_living_index": -0.014,
+  "livability_index": -0.668,
+  "opportunity_to_learn_index": 0.13
+ },
+ "03490000": {
+  "cost_of_living_index": -0.686,
+  "livability_index": -1.121
+ },
+ "03500000": {
+  "cost_of_living_index": -0.251,
+  "livability_index": 0.105
+ },
+ "06000000": {
+  "cost_of_living_index": 0.215,
+  "livability_index": 0.612,
+  "opportunity_to_learn_index": 0.568
+ },
+ "06030000": {
+  "cost_of_living_index": -0.484,
+  "livability_index": -0.448,
+  "opportunity_to_learn_index": -0.008
+ },
+ "06100000": {
+  "cost_of_living_index": 0.978,
+  "livability_index": 0.056,
+  "opportunity_to_learn_index": -0.236
+ },
+ "06150000": {
+  "cost_of_living_index": -0.026,
+  "livability_index": -0.745,
+  "opportunity_to_learn_index": -0.599
+ },
+ "06160000": {
+  "cost_of_living_index": -0.461,
+  "livability_index": -0.373,
+  "opportunity_to_learn_index": -0.083
+ },
+ "06180000": {
+  "cost_of_living_index": 0.134,
+  "livability_index": 0.023,
+  "opportunity_to_learn_index": -0.377
+ },
+ "06200000": {
+  "cost_of_living_index": -0.254,
+  "livability_index": 0.217,
+  "opportunity_to_learn_index": -0.062
+ },
+ "06220000": {
+  "cost_of_living_index": -0.159,
+  "livability_index": -0.535,
+  "opportunity_to_learn_index": -0.34
+ },
+ "06250000": {
+  "cost_of_living_index": 0.193,
+  "livability_index": -0.073,
+  "opportunity_to_learn_index": -0.043
+ },
+ "06320000": {
+  "cost_of_living_index": -0.078,
+  "livability_index": -0.216
+ },
+ "06350000": {
+  "cost_of_living_index": -1.117,
+  "livability_index": -0.333,
+  "opportunity_to_learn_index": -0.166
+ },
+ "06450000": {
+  "cost_of_living_index": 0.803,
+  "livability_index": -0.164,
+  "opportunity_to_learn_index": 0.063
+ },
+ "06500000": {
+  "cost_of_living_index": -1.447,
+  "livability_index": -0.062,
+  "opportunity_to_learn_index": -0.291
+ },
+ "06550000": {
+  "cost_of_living_index": 0.431,
+  "livability_index": 0.595,
+  "opportunity_to_learn_index": 0.651
+ },
+ "06580000": {
+  "cost_of_living_index": -0.55,
+  "livability_index": 0.009,
+  "opportunity_to_learn_index": -0.102
+ },
+ "06620000": {
+  "cost_of_living_index": 0.55,
+  "livability_index": -1.127
+ },
+ "06650000": {
+  "cost_of_living_index": -0.057,
+  "livability_index": 0.043,
+  "opportunity_to_learn_index": 0.194
+ },
+ "06720000": {
+  "cost_of_living_index": -1.325,
+  "livability_index": -1.048,
+  "opportunity_to_learn_index": -0.741
+ },
+ "06730000": {
+  "cost_of_living_index": -0.094,
+  "livability_index": 0.309,
+  "opportunity_to_learn_index": 0.287
+ },
+ "06740000": {
+  "cost_of_living_index": 0.049,
+  "livability_index": -0.216,
+  "opportunity_to_learn_index": -0.607
+ },
+ "06750000": {
+  "cost_of_living_index": 0.89,
+  "livability_index": 0.721,
+  "opportunity_to_learn_index": 0.581
+ },
+ "06800000": {
+  "cost_of_living_index": -0.068,
+  "livability_index": 0.137,
+  "opportunity_to_learn_index": 0.179
+ },
+ "06850000": {
+  "cost_of_living_index": -0.38,
+  "livability_index": -0.911
+ },
+ "06980000": {
+  "cost_of_living_index": 0.011,
+  "livability_index": 0.64,
+  "opportunity_to_learn_index": 0.787
+ },
+ "07100000": {
+  "cost_of_living_index": 0.671,
+  "livability_index": 0.119,
+  "opportunity_to_learn_index": 0.481
+ },
+ "07120000": {
+  "cost_of_living_index": 0.314,
+  "livability_index": 0.284,
+  "opportunity_to_learn_index": 0.329
+ },
+ "07150000": {
+  "cost_of_living_index": -0.307,
+  "livability_index": 0.939,
+  "opportunity_to_learn_index": 0.416
+ },
+ "07170000": {
+  "cost_of_living_index": -0.414,
+  "livability_index": -0.561,
+  "opportunity_to_learn_index": -0.192
+ },
+ "07200000": {
+  "cost_of_living_index": -0.388,
+  "livability_index": -0.31,
+  "opportunity_to_learn_index": -0.389
+ },
+ "07250000": {
+  "cost_of_living_index": -0.196,
+  "livability_index": 0.288,
+  "opportunity_to_learn_index": 0.456
+ },
+ "07280000": {
+  "cost_of_living_index": 0.803,
+  "livability_index": -0.943
+ },
+ "07350000": {
+  "cost_of_living_index": -0.708,
+  "livability_index": -0.446,
+  "opportunity_to_learn_index": 0.244
+ },
+ "07450000": {
+  "cost_of_living_index": 0.599,
+  "livability_index": 0.001,
+  "opportunity_to_learn_index": 0.233
+ },
+ "07500000": {
+  "cost_of_living_index": -0.621,
+  "livability_index": -0.453,
+  "opportunity_to_learn_index": 0.818
+ },
+ "07530000": {
+  "cost_of_living_index": -0.706,
+  "livability_index": -0.611,
+  "opportunity_to_learn_index": 0.917
+ },
+ "07650000": {
+  "cost_of_living_index": -0.303,
+  "livability_index": -0.292,
+  "opportunity_to_learn_index": 0.376
+ },
+ "07660000": {
+  "cost_of_living_index": 0.037,
+  "livability_index": -0.099,
+  "opportunity_to_learn_index": -1.079
+ },
+ "07670000": {
+  "cost_of_living_index": -0.281,
+  "livability_index": -0.776,
+  "opportunity_to_learn_index": -0.192
+ },
+ "07700000": {
+  "cost_of_living_index": -0.825,
+  "livability_index": -0.312,
+  "opportunity_to_learn_index": 0.039
+ },
+ "07730000": {
+  "cost_of_living_index": 0.284,
+  "livability_index": 0.087,
+  "opportunity_to_learn_index": -0.282
+ },
+ "07740000": {
+  "cost_of_living_index": 0.154,
+  "livability_index": 0.33
+ },
+ "07750000": {
+  "cost_of_living_index": -0.674,
+  "livability_index": 0.338,
+  "opportunity_to_learn_index": 0.197
+ },
+ "07780000": {
+  "cost_of_living_index": -1.106,
+  "livability_index": -0.75,
+  "opportunity_to_learn_index": -1.052
+ },
+ "07800000": {
+  "cost_of_living_index": 0.445,
+  "livability_index": -0.436,
+  "opportunity_to_learn_index": 0.063
+ },
+ "06400000": {
+  "cost_of_living_index": 0.976,
+  "livability_index": 0.834,
+  "opportunity_to_learn_index": 0.45
+ },
+ "06950000": {
+  "cost_of_living_index": 0.356,
+  "livability_index": 1.091,
+  "opportunity_to_learn_index": 0.143
+ },
+ "06600000": {
+  "cost_of_living_index": 0.431,
+  "livability_index": 0.342,
+  "opportunity_to_learn_index": 0.447
+ },
+ "06900000": {
+  "cost_of_living_index": 0.125,
+  "livability_index": -0.016,
+  "opportunity_to_learn_index": 0.818
+ },
+ "07050000": {
+  "cost_of_living_index": 0.317,
+  "livability_index": 0.413,
+  "opportunity_to_learn_index": 0.42
+ },
+ "07300000": {
+  "cost_of_living_index": -0.081,
+  "livability_index": 0.308,
+  "opportunity_to_learn_index": 0.744
+ },
+ "07630000": {
+  "cost_of_living_index": -0.531,
+  "livability_index": -0.065,
+  "opportunity_to_learn_index": 0.068
+ }
+}

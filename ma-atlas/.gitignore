@@ -1,0 +1,48 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+node_modules/
+.env
+.env.local
+__pycache__/
+*.pyc
+
+# Cached raw federal CRDC / Urban API pulls (rebuild via scripts/fetch_crdc.py /
+# scripts/fetch_crdc_equity.py; only the small derived data/ma_district_crdc*.json
+# are committed)
+scripts/.crdc_cache/
+scripts/.crdc_equity_cache/
+scripts/.crdc_courses_cache/
+
+# Cached raw Stanford SEDA CSVs + CCD directory (rebuild via scripts/fetch_seda.py /
+# scripts/fetch_seda_gaps.py; only the small derived data/ma_district_seda*.json
+# are committed)
+scripts/.seda_cache/
+
+# Regenerable analysis artifacts (rebuild via scripts/analysis/*.py)
+scripts/analysis/all_correlations.csv
+scripts/analysis/__pycache__/
+**/__pycache__/
+scripts/analysis/preview_palettes.svg
+# gap-audit local dry-run output (only written when --sync-issues runs without a token)
+scripts/analysis/gaps_issues_plan.md
+# Playwright MCP verification artifacts (screenshots, console logs)
+.playwright-mcp/
+cc-*-fixed.png
+# Hand-downloaded raw civic source files (DLS/SoS/MBLC); parsed by scripts/parse_civic.py.
+# Only the derived data/ma_muni_*.json + ma_district_*.json get committed, not these.
+data/raw/*
+!data/raw/README.md
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Local agent / tooling
+.claude/
+scripts/.mobility_cache/

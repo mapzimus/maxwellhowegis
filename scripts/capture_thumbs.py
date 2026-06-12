@@ -47,7 +47,7 @@ if __name__ == "__main__":
         )
     if target in ("lynn-data-dive", "lynn", "all"):
         capture(
-            "https://mapzimus.github.io/lehs-data-dive/",
+            "https://maxwellhowegis.com/Lynn-data-dive/maps/",
             "lynn-data-dive-thumb.png",
             wait_ms=6000,
             wait_selector="canvas, .maplibregl-canvas, .leaflet-container, .mapboxgl-canvas",

@@ -1,0 +1,1022 @@
+{
+ "01280000": {
+  "athletics_participants": 637,
+  "athletics_participation_pct": 0.082,
+  "athletics_girls_share": 0.4851
+ },
+ "01530000": {
+  "athletics_participants": 629,
+  "athletics_participation_pct": 0.1075,
+  "athletics_girls_share": 0.4388
+ },
+ "00650000": {
+  "athletics_participants": 674,
+  "athletics_participation_pct": 0.4677,
+  "athletics_girls_share": 0.4733
+ },
+ "03350000": {
+  "athletics_participants": 946,
+  "athletics_participation_pct": 0.32,
+  "athletics_girls_share": 0.5254
+ },
+ "02920000": {
+  "athletics_participants": 290,
+  "athletics_participation_pct": 0.1438,
+  "athletics_girls_share": 0.4034
+ },
+ "00990000": {
+  "athletics_participants": 729,
+  "athletics_participation_pct": 0.2977,
+  "athletics_girls_share": 0.4705
+ },
+ "03150000": {
+  "athletics_participants": 808,
+  "athletics_participation_pct": 0.2994,
+  "athletics_girls_share": 0.4356
+ },
+ "06550000": {
+  "athletics_participants": 676,
+  "athletics_participation_pct": 0.5695,
+  "athletics_girls_share": 0.4541
+ },
+ "02850000": {
+  "athletics_participants": 718,
+  "athletics_participation_pct": 0.2119,
+  "athletics_girls_share": 0.4833
+ },
+ "03140000": {
+  "athletics_participants": 535,
+  "athletics_participation_pct": 0.2118,
+  "athletics_girls_share": 0.4692
+ },
+ "00180000": {
+  "athletics_participants": 127,
+  "athletics_participation_pct": 0.1859,
+  "athletics_girls_share": 0.4803
+ },
+ "02110000": {
+  "athletics_participants": 1136,
+  "athletics_participation_pct": 0.2519,
+  "athletics_girls_share": 0.4736
+ },
+ "01440000": {
+  "athletics_participants": 303,
+  "athletics_participation_pct": 0.1902,
+  "athletics_girls_share": 0.5347
+ },
+ "02840000": {
+  "athletics_participants": 716,
+  "athletics_participation_pct": 0.3178,
+  "athletics_girls_share": 0.5154
+ },
+ "03230000": {
+  "athletics_participants": 616,
+  "athletics_participation_pct": 0.4477,
+  "athletics_girls_share": 0.5179
+ },
+ "07800000": {
+  "athletics_participants": 601,
+  "athletics_participation_pct": 0.1679,
+  "athletics_girls_share": 0.4376
+ },
+ "06580000": {
+  "athletics_participants": 480,
+  "athletics_participation_pct": 0.1397,
+  "athletics_girls_share": 0.4625
+ },
+ "00520000": {
+  "athletics_participants": 323,
+  "athletics_participation_pct": 0.2191,
+  "athletics_girls_share": 0.4118
+ },
+ "01220000": {
+  "athletics_participants": 831,
+  "athletics_participation_pct": 0.3169,
+  "athletics_girls_share": 0.4777
+ },
+ "01370000": {
+  "athletics_participants": 357,
+  "athletics_participation_pct": 0.0693,
+  "athletics_girls_share": 0.4454
+ },
+ "00570000": {
+  "athletics_participants": 95,
+  "athletics_participation_pct": 0.016,
+  "athletics_girls_share": 0.4105
+ },
+ "01650000": {
+  "athletics_participants": 258,
+  "athletics_participation_pct": 0.0422,
+  "athletics_girls_share": 0.5853
+ },
+ "01070000": {
+  "athletics_participants": 603,
+  "athletics_participation_pct": 0.2182,
+  "athletics_girls_share": 0.5025
+ },
+ "01250000": {
+  "athletics_participants": 6,
+  "athletics_participation_pct": 0.006,
+  "athletics_girls_share": 0.5
+ },
+ "01420000": {
+  "athletics_participants": 210,
+  "athletics_participation_pct": 0.2628,
+  "athletics_girls_share": 0.519
+ },
+ "06100000": {
+  "athletics_participants": 437,
+  "athletics_participation_pct": 0.1993,
+  "athletics_girls_share": 0.4645
+ },
+ "00400000": {
+  "athletics_participants": 1108,
+  "athletics_participation_pct": 0.2031,
+  "athletics_girls_share": 0.4937
+ },
+ "00860000": {
+  "athletics_participants": 269,
+  "athletics_participation_pct": 0.1855,
+  "athletics_girls_share": 0.5428
+ },
+ "06800000": {
+  "athletics_participants": 776,
+  "athletics_participation_pct": 0.2709,
+  "athletics_girls_share": 0.4407
+ },
+ "00100000": {
+  "athletics_participants": 1162,
+  "athletics_participation_pct": 0.203,
+  "athletics_girls_share": 0.512
+ },
+ "02120000": {
+  "athletics_participants": 260,
+  "athletics_participation_pct": 0.0661,
+  "athletics_girls_share": 0.4231
+ },
+ "00010000": {
+  "athletics_participants": 321,
+  "athletics_participation_pct": 0.1516,
+  "athletics_girls_share": 0.5234
+ },
+ "01270000": {
+  "athletics_participants": 58,
+  "athletics_participation_pct": 0.1461,
+  "athletics_girls_share": 0.431
+ },
+ "01590000": {
+  "athletics_participants": 898,
+  "athletics_participation_pct": 0.3267,
+  "athletics_girls_share": 0.4911
+ },
+ "01850000": {
+  "athletics_participants": 682,
+  "athletics_participation_pct": 0.1612,
+  "athletics_girls_share": 0.4311
+ },
+ "02950000": {
+  "athletics_participants": 784,
+  "athletics_participation_pct": 0.2465,
+  "athletics_girls_share": 0.5128
+ },
+ "01330000": {
+  "athletics_participants": 157,
+  "athletics_participation_pct": 0.1239,
+  "athletics_girls_share": 0.5032
+ },
+ "07500000": {
+  "athletics_participants": 92,
+  "athletics_participation_pct": 0.1494,
+  "athletics_girls_share": 0.5652
+ },
+ "07530000": {
+  "athletics_participants": 425,
+  "athletics_participation_pct": 0.2034,
+  "athletics_girls_share": 0.4706
+ },
+ "01630000": {
+  "athletics_participants": 918,
+  "athletics_participation_pct": 0.0589,
+  "athletics_girls_share": 0.3704
+ },
+ "02180000": {
+  "athletics_participants": 682,
+  "athletics_participation_pct": 0.2891,
+  "athletics_girls_share": 0.4692
+ },
+ "02270000": {
+  "athletics_participants": 191,
+  "athletics_participation_pct": 0.1597,
+  "athletics_girls_share": 0.5707
+ },
+ "02430000": {
+  "athletics_participants": 791,
+  "athletics_participation_pct": 0.0835,
+  "athletics_girls_share": 0.4273
+ },
+ "02770000": {
+  "athletics_participants": 23,
+  "athletics_participation_pct": 0.0123,
+  "athletics_girls_share": 0.0
+ },
+ "03420000": {
+  "athletics_participants": 766,
+  "athletics_participation_pct": 0.2707,
+  "athletics_girls_share": 0.5157
+ },
+ "06500000": {
+  "athletics_participants": 596,
+  "athletics_participation_pct": 0.2278,
+  "athletics_girls_share": 0.4312
+ },
+ "00960000": {
+  "athletics_participants": 612,
+  "athletics_participation_pct": 0.202,
+  "athletics_girls_share": 0.469
+ },
+ "01100000": {
+  "athletics_participants": 517,
+  "athletics_participation_pct": 0.1659,
+  "athletics_girls_share": 0.4197
+ },
+ "01030000": {
+  "athletics_participants": 344,
+  "athletics_participation_pct": 0.1558,
+  "athletics_girls_share": 0.4477
+ },
+ "06450000": {
+  "athletics_participants": 480,
+  "athletics_participation_pct": 0.1758,
+  "athletics_girls_share": 0.4979
+ },
+ "07350000": {
+  "athletics_participants": 569,
+  "athletics_participation_pct": 0.1967,
+  "athletics_girls_share": 0.464
+ },
+ "02650000": {
+  "athletics_participants": 398,
+  "athletics_participation_pct": 0.1948,
+  "athletics_girls_share": 0.4975
+ },
+ "07670000": {
+  "athletics_participants": 240,
+  "athletics_participation_pct": 0.1803,
+  "athletics_girls_share": 0.4667
+ },
+ "06220000": {
+  "athletics_participants": 190,
+  "athletics_participation_pct": 0.1213,
+  "athletics_girls_share": 0.5368
+ },
+ "06600000": {
+  "athletics_participants": 209,
+  "athletics_participation_pct": 0.1679,
+  "athletics_girls_share": 0.4067
+ },
+ "00950000": {
+  "athletics_participants": 446,
+  "athletics_participation_pct": 0.0446,
+  "athletics_girls_share": 0.4372
+ },
+ "00230000": {
+  "athletics_participants": 746,
+  "athletics_participation_pct": 0.2874,
+  "athletics_girls_share": 0.4812
+ },
+ "01710000": {
+  "athletics_participants": 974,
+  "athletics_participation_pct": 0.2572,
+  "athletics_girls_share": 0.46
+ },
+ "01990000": {
+  "athletics_participants": 1383,
+  "athletics_participation_pct": 0.2521,
+  "athletics_girls_share": 0.4888
+ },
+ "07200000": {
+  "athletics_participants": 211,
+  "athletics_participation_pct": 0.1592,
+  "athletics_girls_share": 0.5687
+ },
+ "01310000": {
+  "athletics_participants": 945,
+  "athletics_participation_pct": 0.2428,
+  "athletics_girls_share": 0.4561
+ },
+ "00310000": {
+  "athletics_participants": 980,
+  "athletics_participation_pct": 0.2195,
+  "athletics_girls_share": 0.4939
+ },
+ "00240000": {
+  "athletics_participants": 439,
+  "athletics_participation_pct": 0.2048,
+  "athletics_girls_share": 0.4761
+ },
+ "02510000": {
+  "athletics_participants": 157,
+  "athletics_participation_pct": 0.0722,
+  "athletics_girls_share": 0.5223
+ },
+ "03010000": {
+  "athletics_participants": 279,
+  "athletics_participation_pct": 0.1785,
+  "athletics_girls_share": 0.5412
+ },
+ "06000000": {
+  "athletics_participants": 956,
+  "athletics_participation_pct": 0.1836,
+  "athletics_girls_share": 0.4613
+ },
+ "01600000": {
+  "athletics_participants": 715,
+  "athletics_participation_pct": 0.0512,
+  "athletics_girls_share": 0.372
+ },
+ "03460000": {
+  "athletics_participants": 537,
+  "athletics_participation_pct": 0.2898,
+  "athletics_girls_share": 0.4972
+ },
+ "01980000": {
+  "athletics_participants": 1296,
+  "athletics_participation_pct": 0.2456,
+  "athletics_girls_share": 0.4799
+ },
+ "02190000": {
+  "athletics_participants": 756,
+  "athletics_participation_pct": 0.3466,
+  "athletics_girls_share": 0.5172
+ },
+ "00710000": {
+  "athletics_participants": 388,
+  "athletics_participation_pct": 0.1173,
+  "athletics_girls_share": 0.4871
+ },
+ "06750000": {
+  "athletics_participants": 360,
+  "athletics_participation_pct": 0.2131,
+  "athletics_girls_share": 0.475
+ },
+ "00200000": {
+  "athletics_participants": 750,
+  "athletics_participation_pct": 0.1593,
+  "athletics_girls_share": 0.4667
+ },
+ "00460000": {
+  "athletics_participants": 649,
+  "athletics_participation_pct": 0.0942,
+  "athletics_girls_share": 0.4761
+ },
+ "01870000": {
+  "athletics_participants": 380,
+  "athletics_participation_pct": 0.3287,
+  "athletics_girls_share": 0.4921
+ },
+ "00970000": {
+  "athletics_participants": 376,
+  "athletics_participation_pct": 0.0734,
+  "athletics_girls_share": 0.4388
+ },
+ "06200000": {
+  "athletics_participants": 219,
+  "athletics_girls_share": 0.4749
+ },
+ "00560000": {
+  "athletics_participants": 726,
+  "athletics_participation_pct": 0.1504,
+  "athletics_girls_share": 0.4669
+ },
+ "01860000": {
+  "athletics_participants": 157,
+  "athletics_participation_pct": 0.0992,
+  "athletics_girls_share": 0.4204
+ },
+ "03210000": {
+  "athletics_participants": 868,
+  "athletics_participation_pct": 0.2268,
+  "athletics_girls_share": 0.4228
+ },
+ "01520000": {
+  "athletics_participants": 299,
+  "athletics_participation_pct": 0.3987,
+  "athletics_girls_share": 0.4615
+ },
+ "02740000": {
+  "athletics_participants": 474,
+  "athletics_participation_pct": 0.1012,
+  "athletics_girls_share": 0.3734
+ },
+ "02090000": {
+  "athletics_participants": 120,
+  "athletics_participation_pct": 0.098,
+  "athletics_girls_share": 0.525
+ },
+ "01780000": {
+  "athletics_participants": 821,
+  "athletics_participation_pct": 0.2218,
+  "athletics_girls_share": 0.4689
+ },
+ "02460000": {
+  "athletics_participants": 1067,
+  "athletics_participation_pct": 0.2701,
+  "athletics_girls_share": 0.4292
+ },
+ "02640000": {
+  "athletics_participants": 596,
+  "athletics_participation_pct": 0.209,
+  "athletics_girls_share": 0.5554
+ },
+ "02910000": {
+  "athletics_participants": 647,
+  "athletics_participation_pct": 0.3036,
+  "athletics_girls_share": 0.4621
+ },
+ "03250000": {
+  "athletics_participants": 687,
+  "athletics_participation_pct": 0.1393,
+  "athletics_girls_share": 0.4731
+ },
+ "00500000": {
+  "athletics_participants": 590,
+  "athletics_participation_pct": 0.1866,
+  "athletics_girls_share": 0.5339
+ },
+ "06030000": {
+  "athletics_participants": 192,
+  "athletics_participation_pct": 0.1827,
+  "athletics_girls_share": 0.4271
+ },
+ "02610000": {
+  "athletics_participants": 601,
+  "athletics_participation_pct": 0.2582,
+  "athletics_girls_share": 0.5141
+ },
+ "00490000": {
+  "athletics_participants": 548,
+  "athletics_participation_pct": 0.0821,
+  "athletics_girls_share": 0.4288
+ },
+ "03090000": {
+  "athletics_participants": 219,
+  "athletics_girls_share": 0.5388
+ },
+ "02260000": {
+  "athletics_participants": 171,
+  "athletics_participation_pct": 0.1176,
+  "athletics_girls_share": 0.5263
+ },
+ "00730000": {
+  "athletics_participants": 409,
+  "athletics_participation_pct": 0.1601,
+  "athletics_girls_share": 0.4866
+ },
+ "06950000": {
+  "athletics_participants": 1033,
+  "athletics_participation_pct": 0.6774,
+  "athletics_girls_share": 0.4782
+ },
+ "02780000": {
+  "athletics_participants": 421,
+  "athletics_participation_pct": 0.2391,
+  "athletics_girls_share": 0.5154
+ },
+ "00360000": {
+  "athletics_participants": 204,
+  "athletics_participation_pct": 0.1239,
+  "athletics_girls_share": 0.451
+ },
+ "02660000": {
+  "athletics_participants": 630,
+  "athletics_participation_pct": 0.2405,
+  "athletics_girls_share": 0.4683
+ },
+ "06350000": {
+  "athletics_participants": 280,
+  "athletics_participation_pct": 0.1848,
+  "athletics_girls_share": 0.4643
+ },
+ "02310000": {
+  "athletics_participants": 148,
+  "athletics_participation_pct": 0.0569,
+  "athletics_girls_share": 0.2297
+ },
+ "02070000": {
+  "athletics_participants": 1963,
+  "athletics_participation_pct": 0.1634,
+  "athletics_girls_share": 0.4666
+ },
+ "01580000": {
+  "athletics_participants": 470,
+  "athletics_participation_pct": 0.3003,
+  "athletics_girls_share": 0.4404
+ },
+ "03040000": {
+  "athletics_participants": 391,
+  "athletics_participation_pct": 0.2444,
+  "athletics_girls_share": 0.445
+ },
+ "06180000": {
+  "athletics_participants": 424,
+  "athletics_participation_pct": 0.3639,
+  "athletics_girls_share": 0.4646
+ },
+ "03320000": {
+  "athletics_participants": 597,
+  "athletics_participation_pct": 0.1526,
+  "athletics_girls_share": 0.5159
+ },
+ "01670000": {
+  "athletics_participants": 897,
+  "athletics_participation_pct": 0.2559,
+  "athletics_girls_share": 0.4504
+ },
+ "00160000": {
+  "athletics_participants": 769,
+  "athletics_participation_pct": 0.1336,
+  "athletics_girls_share": 0.5423
+ },
+ "02040000": {
+  "athletics_participants": 499,
+  "athletics_participation_pct": 0.2347,
+  "athletics_girls_share": 0.4709
+ },
+ "00640000": {
+  "athletics_participants": 333,
+  "athletics_girls_share": 0.4204
+ },
+ "00300000": {
+  "athletics_participants": 656,
+  "athletics_participation_pct": 0.1417,
+  "athletics_girls_share": 0.4543
+ },
+ "00870000": {
+  "athletics_participants": 732,
+  "athletics_participation_pct": 0.3032,
+  "athletics_girls_share": 0.4795
+ },
+ "01490000": {
+  "athletics_participants": 151,
+  "athletics_participation_pct": 0.0121,
+  "athletics_girls_share": 0.0927
+ },
+ "01740000": {
+  "athletics_participants": 152,
+  "athletics_girls_share": 0.4934
+ },
+ "02200000": {
+  "athletics_participants": 738,
+  "athletics_participation_pct": 0.2183,
+  "athletics_girls_share": 0.4593
+ },
+ "06650000": {
+  "athletics_participants": 499,
+  "athletics_participation_pct": 0.1848,
+  "athletics_girls_share": 0.4669
+ },
+ "02140000": {
+  "athletics_participants": 204,
+  "athletics_participation_pct": 0.1054,
+  "athletics_girls_share": 0.3824
+ },
+ "02360000": {
+  "athletics_participants": 1154,
+  "athletics_participation_pct": 0.2302,
+  "athletics_girls_share": 0.4237
+ },
+ "06720000": {
+  "athletics_participants": 134,
+  "athletics_participation_pct": 0.1787,
+  "athletics_girls_share": 0.4851
+ },
+ "01610000": {
+  "athletics_participants": 419,
+  "athletics_participation_pct": 0.1758,
+  "athletics_girls_share": 0.4511
+ },
+ "07150000": {
+  "athletics_participants": 303,
+  "athletics_participation_pct": 0.2767,
+  "athletics_girls_share": 0.505
+ },
+ "07660000": {
+  "athletics_participants": 187,
+  "athletics_participation_pct": 0.1341,
+  "athletics_girls_share": 0.4492
+ },
+ "00480000": {
+  "athletics_participants": 828,
+  "athletics_participation_pct": 0.2484,
+  "athletics_girls_share": 0.4215
+ },
+ "01890000": {
+  "athletics_participants": 622,
+  "athletics_participation_pct": 0.1428,
+  "athletics_girls_share": 0.4823
+ },
+ "03470000": {
+  "athletics_participants": 940,
+  "athletics_participation_pct": 0.2198,
+  "athletics_girls_share": 0.5128
+ },
+ "06730000": {
+  "athletics_participants": 524,
+  "athletics_participation_pct": 0.2321,
+  "athletics_girls_share": 0.3321
+ },
+ "02170000": {
+  "athletics_participants": 510,
+  "athletics_participation_pct": 0.2208,
+  "athletics_girls_share": 0.4824
+ },
+ "00140000": {
+  "athletics_participants": 598,
+  "athletics_participation_pct": 0.2193,
+  "athletics_girls_share": 0.413
+ },
+ "00880000": {
+  "athletics_participants": 1002,
+  "athletics_participation_pct": 0.2944,
+  "athletics_girls_share": 0.4052
+ },
+ "00250000": {
+  "athletics_participants": 469,
+  "athletics_participation_pct": 0.2366,
+  "athletics_girls_share": 0.3945
+ },
+ "02480000": {
+  "athletics_participants": 837,
+  "athletics_participation_pct": 0.1169,
+  "athletics_girls_share": 0.5054
+ },
+ "07650000": {
+  "athletics_participants": 218,
+  "athletics_participation_pct": 0.3385,
+  "athletics_girls_share": 0.4725
+ },
+ "02710000": {
+  "athletics_participants": 1154,
+  "athletics_participation_pct": 0.193,
+  "athletics_girls_share": 0.4749
+ },
+ "03440000": {
+  "athletics_participants": 941,
+  "athletics_participation_pct": 0.2093,
+  "athletics_girls_share": 0.4591
+ },
+ "07100000": {
+  "athletics_participants": 524,
+  "athletics_participation_pct": 0.2419,
+  "athletics_girls_share": 0.5019
+ },
+ "07730000": {
+  "athletics_participants": 657,
+  "athletics_participation_pct": 0.3019,
+  "athletics_girls_share": 0.4323
+ },
+ "00350000": {
+  "athletics_participants": 728,
+  "athletics_participation_pct": 0.0144,
+  "athletics_girls_share": 0.3929
+ },
+ "00260000": {
+  "athletics_participants": 1034,
+  "athletics_participation_pct": 0.2339,
+  "athletics_girls_share": 0.5039
+ },
+ "00830000": {
+  "athletics_participants": 571,
+  "athletics_girls_share": 0.4238
+ },
+ "01550000": {
+  "athletics_participants": 1165,
+  "athletics_participation_pct": 0.1621,
+  "athletics_girls_share": 0.4489
+ },
+ "00440000": {
+  "athletics_participants": 844,
+  "athletics_participation_pct": 0.0549,
+  "athletics_girls_share": 0.4941
+ },
+ "03260000": {
+  "athletics_participants": 885,
+  "athletics_participation_pct": 0.1876,
+  "athletics_girls_share": 0.4328
+ },
+ "03300000": {
+  "athletics_participants": 352,
+  "athletics_participation_pct": 0.1848,
+  "athletics_girls_share": 0.4631
+ },
+ "07120000": {
+  "athletics_participants": 346,
+  "athletics_participation_pct": 0.1961,
+  "athletics_girls_share": 0.4595
+ },
+ "01380000": {
+  "athletics_participants": 446,
+  "athletics_participation_pct": 0.4029,
+  "athletics_girls_share": 0.5112
+ },
+ "00090000": {
+  "athletics_participants": 1357,
+  "athletics_participation_pct": 0.2436,
+  "athletics_girls_share": 0.5099
+ },
+ "02150000": {
+  "athletics_participants": 31,
+  "athletics_participation_pct": 0.053,
+  "athletics_girls_share": 0.4516
+ },
+ "03360000": {
+  "athletics_participants": 1095,
+  "athletics_participation_pct": 0.1961,
+  "athletics_girls_share": 0.5288
+ },
+ "03170000": {
+  "athletics_participants": 1600,
+  "athletics_participation_pct": 0.3605,
+  "athletics_girls_share": 0.4462
+ },
+ "01640000": {
+  "athletics_participants": 380,
+  "athletics_participation_pct": 0.1754,
+  "athletics_girls_share": 0.4947
+ },
+ "01050000": {
+  "athletics_participants": 232,
+  "athletics_participation_pct": 0.1909,
+  "athletics_girls_share": 0.5819
+ },
+ "00770000": {
+  "athletics_participants": 202,
+  "athletics_participation_pct": 0.1833,
+  "athletics_girls_share": 0.4505
+ },
+ "01810000": {
+  "athletics_participants": 834,
+  "athletics_participation_pct": 0.1293,
+  "athletics_girls_share": 0.482
+ },
+ "00940000": {
+  "athletics_participants": 324,
+  "athletics_participation_pct": 0.1695,
+  "athletics_girls_share": 0.4568
+ },
+ "06740000": {
+  "athletics_participants": 198,
+  "athletics_participation_pct": 0.2349,
+  "athletics_girls_share": 0.5253
+ },
+ "01510000": {
+  "athletics_participants": 118,
+  "athletics_participation_pct": 0.086,
+  "athletics_girls_share": 0.5085
+ },
+ "07170000": {
+  "athletics_participants": 122,
+  "athletics_participation_pct": 0.1651,
+  "athletics_girls_share": 0.5082
+ },
+ "07700000": {
+  "athletics_participants": 384,
+  "athletics_participation_pct": 0.2213,
+  "athletics_girls_share": 0.612
+ },
+ "00610000": {
+  "athletics_participants": 924,
+  "athletics_participation_pct": 0.135,
+  "athletics_girls_share": 0.5584
+ },
+ "01680000": {
+  "athletics_participants": 1174,
+  "athletics_participation_pct": 0.4347,
+  "athletics_girls_share": 0.5043
+ },
+ "01770000": {
+  "athletics_participants": 653,
+  "athletics_participation_pct": 0.315,
+  "athletics_girls_share": 0.5237
+ },
+ "02390000": {
+  "athletics_participants": 1442,
+  "athletics_participation_pct": 0.2036,
+  "athletics_girls_share": 0.4736
+ },
+ "01970000": {
+  "athletics_participants": 372,
+  "athletics_participation_pct": 0.2233,
+  "athletics_girls_share": 0.5242
+ },
+ "07780000": {
+  "athletics_participants": 276,
+  "athletics_participation_pct": 0.2304,
+  "athletics_girls_share": 0.5072
+ },
+ "03480000": {
+  "athletics_participants": 1061,
+  "athletics_participation_pct": 0.0442,
+  "athletics_girls_share": 0.4788
+ },
+ "01760000": {
+  "athletics_participants": 570,
+  "athletics_participation_pct": 0.1447,
+  "athletics_girls_share": 0.4912
+ },
+ "00790000": {
+  "athletics_participants": 610,
+  "athletics_participation_pct": 0.1667,
+  "athletics_girls_share": 0.459
+ },
+ "00930000": {
+  "athletics_participants": 360,
+  "athletics_participation_pct": 0.0523,
+  "athletics_girls_share": 0.4889
+ },
+ "06150000": {
+  "athletics_participants": 237,
+  "athletics_participation_pct": 0.1663,
+  "athletics_girls_share": 0.4008
+ },
+ "03050000": {
+  "athletics_participants": 545,
+  "athletics_participation_pct": 0.1648,
+  "athletics_girls_share": 0.5211
+ },
+ "02290000": {
+  "athletics_participants": 885,
+  "athletics_participation_pct": 0.1533,
+  "athletics_girls_share": 0.5085
+ },
+ "01390000": {
+  "athletics_participants": 1022,
+  "athletics_participation_pct": 0.2598,
+  "athletics_girls_share": 0.4462
+ },
+ "02100000": {
+  "athletics_participants": 624,
+  "athletics_participation_pct": 0.2431,
+  "athletics_girls_share": 0.4006
+ },
+ "01010000": {
+  "athletics_participants": 898,
+  "athletics_participation_pct": 0.1861,
+  "athletics_girls_share": 0.49
+ },
+ "01620000": {
+  "athletics_participants": 247,
+  "athletics_participation_pct": 0.1553,
+  "athletics_girls_share": 0.4413
+ },
+ "06160000": {
+  "athletics_participants": 253,
+  "athletics_participation_pct": 0.1579,
+  "athletics_girls_share": 0.498
+ },
+ "06250000": {
+  "athletics_participants": 832,
+  "athletics_participation_pct": 0.1578,
+  "athletics_girls_share": 0.4375
+ },
+ "01110000": {
+  "athletics_participants": 160,
+  "athletics_participation_pct": 0.2241,
+  "athletics_girls_share": 0.5062
+ },
+ "01360000": {
+  "athletics_participants": 711,
+  "athletics_participation_pct": 0.257,
+  "athletics_girls_share": 0.4909
+ },
+ "02520000": {
+  "athletics_participants": 259,
+  "athletics_participation_pct": 0.3399,
+  "athletics_girls_share": 0.4247
+ },
+ "03080000": {
+  "athletics_participants": 602,
+  "athletics_participation_pct": 0.1093,
+  "athletics_girls_share": 0.4086
+ },
+ "07450000": {
+  "athletics_participants": 663,
+  "athletics_participation_pct": 0.2986,
+  "athletics_girls_share": 0.4902
+ },
+ "03070000": {
+  "athletics_participants": 1119,
+  "athletics_participation_pct": 0.3064,
+  "athletics_girls_share": 0.4602
+ },
+ "00820000": {
+  "athletics_participants": 1433,
+  "athletics_participation_pct": 0.5138,
+  "athletics_girls_share": 0.4403
+ },
+ "00170000": {
+  "athletics_participants": 355,
+  "athletics_participation_pct": 0.141,
+  "athletics_girls_share": 0.5296
+ },
+ "02010000": {
+  "athletics_participants": 450,
+  "athletics_participation_pct": 0.0358,
+  "athletics_girls_share": 0.4667
+ },
+ "02930000": {
+  "athletics_participants": 985,
+  "athletics_participation_pct": 0.1274,
+  "athletics_girls_share": 0.4477
+ },
+ "03160000": {
+  "athletics_participants": 31,
+  "athletics_participation_pct": 0.0185,
+  "athletics_girls_share": 0.2258
+ },
+ "06980000": {
+  "athletics_participants": 502,
+  "athletics_participation_pct": 0.3978,
+  "athletics_girls_share": 0.4183
+ },
+ "07050000": {
+  "athletics_participants": 681,
+  "athletics_participation_pct": 0.4042,
+  "athletics_girls_share": 0.5433
+ },
+ "02440000": {
+  "athletics_participants": 287,
+  "athletics_participation_pct": 0.1079,
+  "athletics_girls_share": 0.439
+ },
+ "02810000": {
+  "athletics_participants": 791,
+  "athletics_participation_pct": 0.0326,
+  "athletics_girls_share": 0.4046
+ },
+ "06900000": {
+  "athletics_participants": 994,
+  "athletics_participation_pct": 0.5108,
+  "athletics_girls_share": 0.4668
+ },
+ "01000000": {
+  "athletics_participants": 1029,
+  "athletics_participation_pct": 0.1164,
+  "athletics_girls_share": 0.4354
+ },
+ "01500000": {
+  "athletics_participants": 170,
+  "athletics_participation_pct": 0.2489,
+  "athletics_girls_share": 0.5882
+ },
+ "00070000": {
+  "athletics_participants": 404,
+  "athletics_participation_pct": 0.2181,
+  "athletics_girls_share": 0.401
+ },
+ "02620000": {
+  "athletics_participants": 420,
+  "athletics_participation_pct": 0.1829,
+  "athletics_girls_share": 0.4786
+ },
+ "06400000": {
+  "athletics_participants": 1244,
+  "athletics_participation_pct": 0.9482,
+  "athletics_girls_share": 0.4727
+ },
+ "07630000": {
+  "athletics_participants": 507,
+  "athletics_participation_pct": 0.5065,
+  "athletics_girls_share": 0.4339
+ },
+ "01750000": {
+  "athletics_participants": 709,
+  "athletics_participation_pct": 0.281,
+  "athletics_girls_share": 0.5021
+ },
+ "01410000": {
+  "athletics_participants": 173,
+  "athletics_participation_pct": 0.0715,
+  "athletics_girls_share": 0.5491
+ },
+ "01820000": {
+  "athletics_participants": 647,
+  "athletics_participation_pct": 0.2219,
+  "athletics_girls_share": 0.4668
+ },
+ "07250000": {
+  "athletics_participants": 861,
+  "athletics_participation_pct": 0.2797,
+  "athletics_girls_share": 0.4669
+ },
+ "03100000": {
+  "athletics_participants": 380,
+  "athletics_participation_pct": 0.1912,
+  "athletics_girls_share": 0.5079
+ },
+ "00720000": {
+  "athletics_participants": 661,
+  "athletics_participation_pct": 0.1933,
+  "athletics_girls_share": 0.4705
+ }
+}

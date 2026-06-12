@@ -1,0 +1,2250 @@
+{
+ "00010000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.66,
+  "acs_broadband_pct": 0.77959,
+  "acs_median_age": 40.4,
+  "acs_owner_occupied_pct": 0.742001,
+  "acs_median_home_value": 516300
+ },
+ "00030000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.62,
+  "acs_broadband_pct": 0.840361,
+  "acs_median_age": 46.1,
+  "acs_owner_occupied_pct": 0.878138,
+  "acs_median_home_value": 408300
+ },
+ "00050000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 22.82,
+  "acs_broadband_pct": 0.661889,
+  "acs_median_age": 46.1,
+  "acs_owner_occupied_pct": 0.736855,
+  "acs_median_home_value": 290000
+ },
+ "00070000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.58,
+  "acs_broadband_pct": 0.848774,
+  "acs_median_age": 44.2,
+  "acs_owner_occupied_pct": 0.683499,
+  "acs_median_home_value": 475400
+ },
+ "00080000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 19.01,
+  "acs_broadband_pct": 0.845005,
+  "acs_median_age": 21.3,
+  "acs_owner_occupied_pct": 0.459122,
+  "acs_median_home_value": 454000
+ },
+ "00090000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.64,
+  "acs_broadband_pct": 0.918744,
+  "acs_median_age": 42.7,
+  "acs_owner_occupied_pct": 0.80488,
+  "acs_median_home_value": 813800
+ },
+ "00100000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.18,
+  "acs_broadband_pct": 0.881076,
+  "acs_median_age": 41.3,
+  "acs_owner_occupied_pct": 0.606155,
+  "acs_median_home_value": 885000
+ },
+ "00140000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.51,
+  "acs_broadband_pct": 0.845504,
+  "acs_median_age": 41.7,
+  "acs_owner_occupied_pct": 0.755447,
+  "acs_median_home_value": 586000
+ },
+ "00160000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.1,
+  "acs_broadband_pct": 0.798943,
+  "acs_median_age": 39.4,
+  "acs_owner_occupied_pct": 0.661493,
+  "acs_median_home_value": 409100
+ },
+ "00170000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.86,
+  "acs_broadband_pct": 0.781441,
+  "acs_median_age": 45.6,
+  "acs_owner_occupied_pct": 0.802013,
+  "acs_median_home_value": 363100
+ },
+ "00180000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.18,
+  "acs_broadband_pct": 0.8396,
+  "acs_median_age": 37.3,
+  "acs_owner_occupied_pct": 0.790834,
+  "acs_median_home_value": 482800
+ },
+ "00200000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.13,
+  "acs_broadband_pct": 0.822887,
+  "acs_median_age": 48.6,
+  "acs_owner_occupied_pct": 0.748617,
+  "acs_median_home_value": 559200
+ },
+ "00230000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 23.38,
+  "acs_broadband_pct": 0.867518,
+  "acs_median_age": 44.1,
+  "acs_owner_occupied_pct": 0.715543,
+  "acs_median_home_value": 878200
+ },
+ "00240000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.24,
+  "acs_broadband_pct": 0.807458,
+  "acs_median_age": 43.9,
+  "acs_owner_occupied_pct": 0.842721,
+  "acs_median_home_value": 350100
+ },
+ "00250000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.59,
+  "acs_broadband_pct": 0.856734,
+  "acs_median_age": 38.4,
+  "acs_owner_occupied_pct": 0.785021,
+  "acs_median_home_value": 425900
+ },
+ "00260000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.49,
+  "acs_broadband_pct": 0.895829,
+  "acs_median_age": 42.4,
+  "acs_owner_occupied_pct": 0.642402,
+  "acs_median_home_value": 1108800
+ },
+ "00270000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.66,
+  "acs_broadband_pct": 0.916848,
+  "acs_median_age": 43.8,
+  "acs_owner_occupied_pct": 0.979539,
+  "acs_median_home_value": 472100
+ },
+ "00300000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.84,
+  "acs_broadband_pct": 0.822111,
+  "acs_median_age": 39.5,
+  "acs_owner_occupied_pct": 0.60136,
+  "acs_median_home_value": 621900
+ },
+ "00310000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.98,
+  "acs_broadband_pct": 0.852105,
+  "acs_median_age": 43.3,
+  "acs_owner_occupied_pct": 0.781192,
+  "acs_median_home_value": 570500
+ },
+ "00350000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.25,
+  "acs_broadband_pct": 0.80143,
+  "acs_median_age": 33.2,
+  "acs_owner_occupied_pct": 0.353894,
+  "acs_median_home_value": 710400
+ },
+ "00360000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.8,
+  "acs_broadband_pct": 0.851312,
+  "acs_median_age": 51.7,
+  "acs_owner_occupied_pct": 0.752411,
+  "acs_median_home_value": 543100
+ },
+ "00380000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.5,
+  "acs_broadband_pct": 0.918674,
+  "acs_median_age": 49.3,
+  "acs_owner_occupied_pct": 0.944154,
+  "acs_median_home_value": 879900
+ },
+ "00400000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.66,
+  "acs_broadband_pct": 0.837227,
+  "acs_median_age": 41.3,
+  "acs_owner_occupied_pct": 0.771183,
+  "acs_median_home_value": 623200
+ },
+ "00410000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 24.06,
+  "acs_broadband_pct": 0.814745,
+  "acs_median_age": 59.6,
+  "acs_owner_occupied_pct": 0.793024,
+  "acs_median_home_value": 621300
+ },
+ "00430000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.36,
+  "acs_broadband_pct": 0.830291,
+  "acs_median_age": 44.8,
+  "acs_owner_occupied_pct": 0.873563,
+  "acs_median_home_value": 379700
+ },
+ "00440000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.87,
+  "acs_broadband_pct": 0.727914,
+  "acs_median_age": 36.5,
+  "acs_owner_occupied_pct": 0.570008,
+  "acs_median_home_value": 405500
+ },
+ "00450000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.97,
+  "acs_broadband_pct": 0.745418,
+  "acs_median_age": 51.5,
+  "acs_owner_occupied_pct": 0.846572,
+  "acs_median_home_value": 313200
+ },
+ "00460000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.06,
+  "acs_broadband_pct": 0.867328,
+  "acs_median_age": 35.0,
+  "acs_owner_occupied_pct": 0.461227,
+  "acs_median_home_value": 1233100
+ },
+ "00480000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.95,
+  "acs_broadband_pct": 0.901054,
+  "acs_median_age": 44.9,
+  "acs_owner_occupied_pct": 0.745923,
+  "acs_median_home_value": 679400
+ },
+ "00490000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.1,
+  "acs_broadband_pct": 0.857033,
+  "acs_median_age": 30.5,
+  "acs_owner_occupied_pct": 0.337111,
+  "acs_median_home_value": 1040500
+ },
+ "00500000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.39,
+  "acs_broadband_pct": 0.837553,
+  "acs_median_age": 42.8,
+  "acs_owner_occupied_pct": 0.755193,
+  "acs_median_home_value": 665500
+ },
+ "00510000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.58,
+  "acs_broadband_pct": 0.933372,
+  "acs_median_age": 45.2,
+  "acs_owner_occupied_pct": 0.940904,
+  "acs_median_home_value": 1055600
+ },
+ "00520000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.05,
+  "acs_broadband_pct": 0.832206,
+  "acs_median_age": 47.0,
+  "acs_owner_occupied_pct": 0.886729,
+  "acs_median_home_value": 409800
+ },
+ "00560000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.65,
+  "acs_broadband_pct": 0.900044,
+  "acs_median_age": 42.8,
+  "acs_owner_occupied_pct": 0.831654,
+  "acs_median_home_value": 565000
+ },
+ "00570000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.52,
+  "acs_broadband_pct": 0.613975,
+  "acs_median_age": 34.5,
+  "acs_owner_occupied_pct": 0.291697,
+  "acs_median_home_value": 476500
+ },
+ "00610000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.06,
+  "acs_broadband_pct": 0.706845,
+  "acs_median_age": 41.1,
+  "acs_owner_occupied_pct": 0.572255,
+  "acs_median_home_value": 251800
+ },
+ "00630000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.45,
+  "acs_broadband_pct": 0.800275,
+  "acs_median_age": 48.8,
+  "acs_owner_occupied_pct": 0.848485,
+  "acs_median_home_value": 212500
+ },
+ "00640000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.4,
+  "acs_broadband_pct": 0.809395,
+  "acs_median_age": 37.0,
+  "acs_owner_occupied_pct": 0.529191,
+  "acs_median_home_value": 348000
+ },
+ "00650000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 42.6,
+  "acs_broadband_pct": 0.91798,
+  "acs_median_age": 45.6,
+  "acs_owner_occupied_pct": 0.832422,
+  "acs_median_home_value": 1092500
+ },
+ "00670000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.09,
+  "acs_broadband_pct": 0.914876,
+  "acs_median_age": 44.8,
+  "acs_owner_occupied_pct": 0.789225,
+  "acs_median_home_value": 1134500
+ },
+ "00680000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.49,
+  "acs_broadband_pct": 0.815824,
+  "acs_median_age": 55.1,
+  "acs_owner_occupied_pct": 0.9131,
+  "acs_median_home_value": 376700
+ },
+ "00710000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.97,
+  "acs_broadband_pct": 0.840504,
+  "acs_median_age": 45.5,
+  "acs_owner_occupied_pct": 0.689249,
+  "acs_median_home_value": 611200
+ },
+ "00720000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.05,
+  "acs_broadband_pct": 0.837223,
+  "acs_median_age": 42.1,
+  "acs_owner_occupied_pct": 0.768894,
+  "acs_median_home_value": 470500
+ },
+ "00730000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.21,
+  "acs_broadband_pct": 0.83199,
+  "acs_median_age": 43.5,
+  "acs_owner_occupied_pct": 0.726814,
+  "acs_median_home_value": 630400
+ },
+ "00740000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 17.41,
+  "acs_broadband_pct": 0.793191,
+  "acs_median_age": 51.9,
+  "acs_owner_occupied_pct": 0.794468,
+  "acs_median_home_value": 385000
+ },
+ "00770000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.21,
+  "acs_broadband_pct": 0.861365,
+  "acs_median_age": 44.9,
+  "acs_owner_occupied_pct": 0.832115,
+  "acs_median_home_value": 439800
+ },
+ "00790000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.49,
+  "acs_broadband_pct": 0.813833,
+  "acs_median_age": 41.9,
+  "acs_owner_occupied_pct": 0.796953,
+  "acs_median_home_value": 465900
+ },
+ "00820000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.24,
+  "acs_broadband_pct": 0.919064,
+  "acs_median_age": 47.7,
+  "acs_owner_occupied_pct": 0.900167,
+  "acs_median_home_value": 826300
+ },
+ "00830000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.51,
+  "acs_broadband_pct": 0.837099,
+  "acs_median_age": 40.5,
+  "acs_owner_occupied_pct": 0.831946,
+  "acs_median_home_value": 474000
+ },
+ "00850000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.53,
+  "acs_broadband_pct": 0.843357,
+  "acs_median_age": 60.2,
+  "acs_owner_occupied_pct": 0.889161,
+  "acs_median_home_value": 668400
+ },
+ "00860000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 22.4,
+  "acs_broadband_pct": 0.797072,
+  "acs_median_age": 47.0,
+  "acs_owner_occupied_pct": 0.598814,
+  "acs_median_home_value": 343800
+ },
+ "00870000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.99,
+  "acs_broadband_pct": 0.789322,
+  "acs_median_age": 42.7,
+  "acs_owner_occupied_pct": 0.864746,
+  "acs_median_home_value": 342000
+ },
+ "00880000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.43,
+  "acs_broadband_pct": 0.8861,
+  "acs_median_age": 43.1,
+  "acs_owner_occupied_pct": 0.783462,
+  "acs_median_home_value": 560200
+ },
+ "00890000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 11.24,
+  "acs_broadband_pct": 0.894358,
+  "acs_median_age": 52.6,
+  "acs_owner_occupied_pct": 0.789916,
+  "acs_median_home_value": 1171700
+ },
+ "00910000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.02,
+  "acs_broadband_pct": 0.781022,
+  "acs_median_age": 40.9,
+  "acs_owner_occupied_pct": 0.766423,
+  "acs_median_home_value": 241500
+ },
+ "00930000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.31,
+  "acs_broadband_pct": 0.760688,
+  "acs_median_age": 35.8,
+  "acs_owner_occupied_pct": 0.365195,
+  "acs_median_home_value": 605200
+ },
+ "00940000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.6,
+  "acs_broadband_pct": 0.779444,
+  "acs_median_age": 50.0,
+  "acs_owner_occupied_pct": 0.738333,
+  "acs_median_home_value": 407300
+ },
+ "00950000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.49,
+  "acs_broadband_pct": 0.669491,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.363032,
+  "acs_median_home_value": 357800
+ },
+ "00960000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.37,
+  "acs_broadband_pct": 0.80755,
+  "acs_median_age": 56.8,
+  "acs_owner_occupied_pct": 0.82735,
+  "acs_median_home_value": 580000
+ },
+ "00970000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.09,
+  "acs_broadband_pct": 0.813863,
+  "acs_median_age": 37.5,
+  "acs_owner_occupied_pct": 0.563863,
+  "acs_median_home_value": 295500
+ },
+ "00980000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.39,
+  "acs_broadband_pct": 0.444444,
+  "acs_median_age": 50.3,
+  "acs_owner_occupied_pct": 0.895238,
+  "acs_median_home_value": 220600
+ },
+ "00990000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.51,
+  "acs_broadband_pct": 0.840564,
+  "acs_median_age": 43.4,
+  "acs_owner_occupied_pct": 0.729809,
+  "acs_median_home_value": 581900
+ },
+ "01000000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.96,
+  "acs_broadband_pct": 0.805399,
+  "acs_median_age": 37.7,
+  "acs_owner_occupied_pct": 0.547849,
+  "acs_median_home_value": 600600
+ },
+ "01010000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.28,
+  "acs_broadband_pct": 0.885242,
+  "acs_median_age": 42.1,
+  "acs_owner_occupied_pct": 0.783532,
+  "acs_median_home_value": 567100
+ },
+ "01030000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.99,
+  "acs_broadband_pct": 0.740795,
+  "acs_median_age": 43.5,
+  "acs_owner_occupied_pct": 0.567467,
+  "acs_median_home_value": 271300
+ },
+ "01050000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.75,
+  "acs_broadband_pct": 0.872961,
+  "acs_median_age": 43.5,
+  "acs_owner_occupied_pct": 0.84128,
+  "acs_median_home_value": 610800
+ },
+ "01070000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.99,
+  "acs_broadband_pct": 0.783687,
+  "acs_median_age": 51.0,
+  "acs_owner_occupied_pct": 0.633308,
+  "acs_median_home_value": 587800
+ },
+ "01090000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 9.58,
+  "acs_broadband_pct": 0.111111,
+  "acs_median_age": 60.8,
+  "acs_owner_occupied_pct": 0.444444,
+  "acs_median_home_value": 700000
+ },
+ "01100000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.68,
+  "acs_broadband_pct": 0.838571,
+  "acs_median_age": 40.6,
+  "acs_owner_occupied_pct": 0.729091,
+  "acs_median_home_value": 481500
+ },
+ "01110000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 23.48,
+  "acs_broadband_pct": 0.847184,
+  "acs_median_age": 47.9,
+  "acs_owner_occupied_pct": 0.945648,
+  "acs_median_home_value": 319600
+ },
+ "01140000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 17.85,
+  "acs_broadband_pct": 0.731782,
+  "acs_median_age": 44.1,
+  "acs_owner_occupied_pct": 0.545698,
+  "acs_median_home_value": 252000
+ },
+ "01170000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.33,
+  "acs_broadband_pct": 0.874836,
+  "acs_median_age": 47.5,
+  "acs_owner_occupied_pct": 0.742695,
+  "acs_median_home_value": 453300
+ },
+ "01180000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.84,
+  "acs_broadband_pct": 0.801012,
+  "acs_median_age": 41.3,
+  "acs_owner_occupied_pct": 0.96054,
+  "acs_median_home_value": 442800
+ },
+ "01210000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.73,
+  "acs_broadband_pct": 0.762658,
+  "acs_median_age": 48.5,
+  "acs_owner_occupied_pct": 0.778481,
+  "acs_median_home_value": 348300
+ },
+ "01220000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.54,
+  "acs_broadband_pct": 0.872553,
+  "acs_median_age": 41.4,
+  "acs_owner_occupied_pct": 0.865212,
+  "acs_median_home_value": 706200
+ },
+ "01250000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.45,
+  "acs_broadband_pct": 0.914243,
+  "acs_median_age": 42.2,
+  "acs_owner_occupied_pct": 0.888122,
+  "acs_median_home_value": 798300
+ },
+ "01270000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 20.33,
+  "acs_broadband_pct": 0.757202,
+  "acs_median_age": 44.0,
+  "acs_owner_occupied_pct": 0.747599,
+  "acs_median_home_value": 440000
+ },
+ "01280000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.78,
+  "acs_broadband_pct": 0.822053,
+  "acs_median_age": 38.7,
+  "acs_owner_occupied_pct": 0.613194,
+  "acs_median_home_value": 426900
+ },
+ "01310000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 37.87,
+  "acs_broadband_pct": 0.814919,
+  "acs_median_age": 47.6,
+  "acs_owner_occupied_pct": 0.802678,
+  "acs_median_home_value": 1075100
+ },
+ "01330000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 38.24,
+  "acs_broadband_pct": 0.79453,
+  "acs_median_age": 42.8,
+  "acs_owner_occupied_pct": 0.833567,
+  "acs_median_home_value": 436500
+ },
+ "01350000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.51,
+  "acs_broadband_pct": 0.756873,
+  "acs_median_age": 49.5,
+  "acs_owner_occupied_pct": 0.959622,
+  "acs_median_home_value": 288700
+ },
+ "01360000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.86,
+  "acs_broadband_pct": 0.860276,
+  "acs_median_age": 45.1,
+  "acs_owner_occupied_pct": 0.867881,
+  "acs_median_home_value": 620500
+ },
+ "01370000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 19.42,
+  "acs_broadband_pct": 0.525767,
+  "acs_median_age": 39.1,
+  "acs_owner_occupied_pct": 0.41555,
+  "acs_median_home_value": 255300
+ },
+ "01380000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.9,
+  "acs_broadband_pct": 0.807462,
+  "acs_median_age": 43.8,
+  "acs_owner_occupied_pct": 0.767849,
+  "acs_median_home_value": 456000
+ },
+ "01390000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.74,
+  "acs_broadband_pct": 0.900045,
+  "acs_median_age": 40.9,
+  "acs_owner_occupied_pct": 0.853309,
+  "acs_median_home_value": 726100
+ },
+ "01410000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.4,
+  "acs_broadband_pct": 0.868797,
+  "acs_median_age": 43.3,
+  "acs_owner_occupied_pct": 0.745181,
+  "acs_median_home_value": 480300
+ },
+ "01420000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.39,
+  "acs_broadband_pct": 0.837377,
+  "acs_median_age": 55.1,
+  "acs_owner_occupied_pct": 0.811148,
+  "acs_median_home_value": 606100
+ },
+ "01440000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.3,
+  "acs_broadband_pct": 0.860518,
+  "acs_median_age": 48.0,
+  "acs_owner_occupied_pct": 0.725725,
+  "acs_median_home_value": 701400
+ },
+ "01450000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.26,
+  "acs_broadband_pct": 0.714621,
+  "acs_median_age": 45.2,
+  "acs_owner_occupied_pct": 0.837029,
+  "acs_median_home_value": 562000
+ },
+ "01490000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 23.25,
+  "acs_broadband_pct": 0.700087,
+  "acs_median_age": 32.6,
+  "acs_owner_occupied_pct": 0.303364,
+  "acs_median_home_value": 393500
+ },
+ "01500000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 18.72,
+  "acs_broadband_pct": 0.841454,
+  "acs_median_age": 54.4,
+  "acs_owner_occupied_pct": 0.784108,
+  "acs_median_home_value": 328900
+ },
+ "01510000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.06,
+  "acs_broadband_pct": 0.800878,
+  "acs_median_age": 42.5,
+  "acs_owner_occupied_pct": 0.881162,
+  "acs_median_home_value": 377800
+ },
+ "01520000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 24.5,
+  "acs_broadband_pct": 0.812912,
+  "acs_median_age": 55.4,
+  "acs_owner_occupied_pct": 0.71278,
+  "acs_median_home_value": 469600
+ },
+ "01530000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.07,
+  "acs_broadband_pct": 0.819769,
+  "acs_median_age": 41.8,
+  "acs_owner_occupied_pct": 0.628556,
+  "acs_median_home_value": 345000
+ },
+ "01540000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.34,
+  "acs_broadband_pct": 0.893557,
+  "acs_median_age": 51.3,
+  "acs_owner_occupied_pct": 0.879552,
+  "acs_median_home_value": 444700
+ },
+ "01550000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.46,
+  "acs_broadband_pct": 0.922185,
+  "acs_median_age": 46.6,
+  "acs_owner_occupied_pct": 0.810408,
+  "acs_median_home_value": 1147900
+ },
+ "01570000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.51,
+  "acs_broadband_pct": 0.906367,
+  "acs_median_age": 43.2,
+  "acs_owner_occupied_pct": 0.624719,
+  "acs_median_home_value": 1180100
+ },
+ "01580000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 37.02,
+  "acs_broadband_pct": 0.898543,
+  "acs_median_age": 43.1,
+  "acs_owner_occupied_pct": 0.845202,
+  "acs_median_home_value": 633000
+ },
+ "01590000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 23.51,
+  "acs_broadband_pct": 0.871651,
+  "acs_median_age": 44.8,
+  "acs_owner_occupied_pct": 0.919279,
+  "acs_median_home_value": 425800
+ },
+ "01600000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.55,
+  "acs_broadband_pct": 0.750395,
+  "acs_median_age": 35.5,
+  "acs_owner_occupied_pct": 0.440035,
+  "acs_median_home_value": 395100
+ },
+ "01610000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.85,
+  "acs_broadband_pct": 0.714185,
+  "acs_median_age": 44.3,
+  "acs_owner_occupied_pct": 0.74406,
+  "acs_median_home_value": 303900
+ },
+ "01620000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.94,
+  "acs_broadband_pct": 0.894016,
+  "acs_median_age": 42.4,
+  "acs_owner_occupied_pct": 0.812983,
+  "acs_median_home_value": 442800
+ },
+ "01630000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.34,
+  "acs_broadband_pct": 0.744302,
+  "acs_median_age": 36.8,
+  "acs_owner_occupied_pct": 0.503936,
+  "acs_median_home_value": 472600
+ },
+ "01640000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.63,
+  "acs_broadband_pct": 0.87968,
+  "acs_median_age": 41.0,
+  "acs_owner_occupied_pct": 0.864531,
+  "acs_median_home_value": 904200
+ },
+ "01650000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.68,
+  "acs_broadband_pct": 0.805312,
+  "acs_median_age": 35.8,
+  "acs_owner_occupied_pct": 0.420609,
+  "acs_median_home_value": 607500
+ },
+ "01670000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.96,
+  "acs_broadband_pct": 0.895768,
+  "acs_median_age": 41.3,
+  "acs_owner_occupied_pct": 0.726837,
+  "acs_median_home_value": 571000
+ },
+ "01680000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.44,
+  "acs_broadband_pct": 0.866862,
+  "acs_median_age": 49.1,
+  "acs_owner_occupied_pct": 0.827654,
+  "acs_median_home_value": 906200
+ },
+ "01690000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 37.01,
+  "acs_broadband_pct": 0.872081,
+  "acs_median_age": 46.8,
+  "acs_owner_occupied_pct": 0.84467,
+  "acs_median_home_value": 585500
+ },
+ "01700000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.38,
+  "acs_broadband_pct": 0.806355,
+  "acs_median_age": 37.2,
+  "acs_owner_occupied_pct": 0.561715,
+  "acs_median_home_value": 485400
+ },
+ "01710000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.19,
+  "acs_broadband_pct": 0.877783,
+  "acs_median_age": 46.7,
+  "acs_owner_occupied_pct": 0.810005,
+  "acs_median_home_value": 621300
+ },
+ "01720000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.87,
+  "acs_broadband_pct": 0.818182,
+  "acs_median_age": 55.4,
+  "acs_owner_occupied_pct": 0.83219,
+  "acs_median_home_value": 515800
+ },
+ "01730000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.5,
+  "acs_broadband_pct": 0.811701,
+  "acs_median_age": 56.0,
+  "acs_owner_occupied_pct": 0.788837,
+  "acs_median_home_value": 671900
+ },
+ "01740000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.12,
+  "acs_broadband_pct": 0.868607,
+  "acs_median_age": 43.2,
+  "acs_owner_occupied_pct": 0.770169,
+  "acs_median_home_value": 494200
+ },
+ "01750000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.15,
+  "acs_broadband_pct": 0.903488,
+  "acs_median_age": 40.8,
+  "acs_owner_occupied_pct": 0.863567,
+  "acs_median_home_value": 869400
+ },
+ "01760000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.81,
+  "acs_broadband_pct": 0.828178,
+  "acs_median_age": 36.1,
+  "acs_owner_occupied_pct": 0.530604,
+  "acs_median_home_value": 715500
+ },
+ "01770000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.69,
+  "acs_broadband_pct": 0.888476,
+  "acs_median_age": 39.5,
+  "acs_owner_occupied_pct": 0.874043,
+  "acs_median_home_value": 588900
+ },
+ "01780000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.66,
+  "acs_broadband_pct": 0.877183,
+  "acs_median_age": 44.3,
+  "acs_owner_occupied_pct": 0.678202,
+  "acs_median_home_value": 796100
+ },
+ "01810000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.31,
+  "acs_broadband_pct": 0.838967,
+  "acs_median_age": 40.5,
+  "acs_owner_occupied_pct": 0.726935,
+  "acs_median_home_value": 472200
+ },
+ "01820000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.36,
+  "acs_broadband_pct": 0.835341,
+  "acs_median_age": 43.0,
+  "acs_owner_occupied_pct": 0.770314,
+  "acs_median_home_value": 426800
+ },
+ "01840000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.51,
+  "acs_broadband_pct": 0.89415,
+  "acs_median_age": 44.5,
+  "acs_owner_occupied_pct": 0.924306,
+  "acs_median_home_value": 713000
+ },
+ "01850000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.79,
+  "acs_broadband_pct": 0.810041,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.681578,
+  "acs_median_home_value": 442500
+ },
+ "01860000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.13,
+  "acs_broadband_pct": 0.818783,
+  "acs_median_age": 43.3,
+  "acs_owner_occupied_pct": 0.738851,
+  "acs_median_home_value": 415600
+ },
+ "01870000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.05,
+  "acs_broadband_pct": 0.899202,
+  "acs_median_age": 47.3,
+  "acs_owner_occupied_pct": 0.83624,
+  "acs_median_home_value": 570300
+ },
+ "01890000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.13,
+  "acs_broadband_pct": 0.891017,
+  "acs_median_age": 40.2,
+  "acs_owner_occupied_pct": 0.846701,
+  "acs_median_home_value": 896500
+ },
+ "01910000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.57,
+  "acs_broadband_pct": 0.800236,
+  "acs_median_age": 49.3,
+  "acs_owner_occupied_pct": 0.835055,
+  "acs_median_home_value": 315500
+ },
+ "01960000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.88,
+  "acs_broadband_pct": 0.855985,
+  "acs_median_age": 58.6,
+  "acs_owner_occupied_pct": 0.841646,
+  "acs_median_home_value": 686000
+ },
+ "01970000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 15.17,
+  "acs_broadband_pct": 0.874604,
+  "acs_median_age": 40.8,
+  "acs_owner_occupied_pct": 0.764857,
+  "acs_median_home_value": 1387000
+ },
+ "01980000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.5,
+  "acs_broadband_pct": 0.85476,
+  "acs_median_age": 42.7,
+  "acs_owner_occupied_pct": 0.67519,
+  "acs_median_home_value": 740700
+ },
+ "01990000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.59,
+  "acs_broadband_pct": 0.896062,
+  "acs_median_age": 43.0,
+  "acs_owner_occupied_pct": 0.843084,
+  "acs_median_home_value": 1146000
+ },
+ "02010000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.22,
+  "acs_broadband_pct": 0.685033,
+  "acs_median_age": 37.0,
+  "acs_owner_occupied_pct": 0.399687,
+  "acs_median_home_value": 324400
+ },
+ "02040000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.34,
+  "acs_broadband_pct": 0.878722,
+  "acs_median_age": 47.3,
+  "acs_owner_occupied_pct": 0.762192,
+  "acs_median_home_value": 792400
+ },
+ "02070000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.67,
+  "acs_broadband_pct": 0.900473,
+  "acs_median_age": 42.0,
+  "acs_owner_occupied_pct": 0.710054,
+  "acs_median_home_value": 1202500
+ },
+ "02080000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 38.85,
+  "acs_broadband_pct": 0.920262,
+  "acs_median_age": 41.1,
+  "acs_owner_occupied_pct": 0.951205,
+  "acs_median_home_value": 694300
+ },
+ "02090000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 17.31,
+  "acs_broadband_pct": 0.73486,
+  "acs_median_age": 44.4,
+  "acs_owner_occupied_pct": 0.532015,
+  "acs_median_home_value": 185300
+ },
+ "02100000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.59,
+  "acs_broadband_pct": 0.795752,
+  "acs_median_age": 41.7,
+  "acs_owner_occupied_pct": 0.577371,
+  "acs_median_home_value": 398000
+ },
+ "02110000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.41,
+  "acs_broadband_pct": 0.875098,
+  "acs_median_age": 39.7,
+  "acs_owner_occupied_pct": 0.69855,
+  "acs_median_home_value": 670000
+ },
+ "02120000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.34,
+  "acs_broadband_pct": 0.832205,
+  "acs_median_age": 42.9,
+  "acs_owner_occupied_pct": 0.711941,
+  "acs_median_home_value": 462700
+ },
+ "02130000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.44,
+  "acs_broadband_pct": 0.932283,
+  "acs_median_age": 44.7,
+  "acs_owner_occupied_pct": 0.854068,
+  "acs_median_home_value": 598500
+ },
+ "02140000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.62,
+  "acs_broadband_pct": 0.811144,
+  "acs_median_age": 43.6,
+  "acs_owner_occupied_pct": 0.670431,
+  "acs_median_home_value": 429600
+ },
+ "02150000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 38.03,
+  "acs_broadband_pct": 0.746442,
+  "acs_median_age": 47.5,
+  "acs_owner_occupied_pct": 0.714286,
+  "acs_median_home_value": 316500
+ },
+ "02170000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.87,
+  "acs_broadband_pct": 0.893101,
+  "acs_median_age": 43.1,
+  "acs_owner_occupied_pct": 0.838456,
+  "acs_median_home_value": 680000
+ },
+ "02180000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.51,
+  "acs_broadband_pct": 0.860171,
+  "acs_median_age": 39.8,
+  "acs_owner_occupied_pct": 0.844922,
+  "acs_median_home_value": 476900
+ },
+ "02190000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.22,
+  "acs_broadband_pct": 0.912984,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.914905,
+  "acs_median_home_value": 799600
+ },
+ "02200000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.16,
+  "acs_broadband_pct": 0.857358,
+  "acs_median_age": 39.4,
+  "acs_owner_occupied_pct": 0.517633,
+  "acs_median_home_value": 613500
+ },
+ "02210000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 13.54,
+  "acs_broadband_pct": 0.806202,
+  "acs_median_age": 45.0,
+  "acs_owner_occupied_pct": 0.710271,
+  "acs_median_home_value": 893000
+ },
+ "02230000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.27,
+  "acs_broadband_pct": 0.796921,
+  "acs_median_age": 42.9,
+  "acs_owner_occupied_pct": 0.669178,
+  "acs_median_home_value": 223900
+ },
+ "02240000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 24.62,
+  "acs_broadband_pct": 0.897735,
+  "acs_median_age": 63.9,
+  "acs_owner_occupied_pct": 0.780813,
+  "acs_median_home_value": 816700
+ },
+ "02260000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.42,
+  "acs_broadband_pct": 0.775502,
+  "acs_median_age": 41.4,
+  "acs_owner_occupied_pct": 0.811757,
+  "acs_median_home_value": 345000
+ },
+ "02270000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.76,
+  "acs_broadband_pct": 0.818067,
+  "acs_median_age": 50.5,
+  "acs_owner_occupied_pct": 0.699964,
+  "acs_median_home_value": 255000
+ },
+ "02290000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.23,
+  "acs_broadband_pct": 0.795808,
+  "acs_median_age": 46.6,
+  "acs_owner_occupied_pct": 0.656282,
+  "acs_median_home_value": 566200
+ },
+ "02300000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 23.54,
+  "acs_broadband_pct": 0.83101,
+  "acs_median_age": 46.7,
+  "acs_owner_occupied_pct": 0.761324,
+  "acs_median_home_value": 412800
+ },
+ "02310000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.24,
+  "acs_broadband_pct": 0.843112,
+  "acs_median_age": 45.8,
+  "acs_owner_occupied_pct": 0.88651,
+  "acs_median_home_value": 550300
+ },
+ "02340000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.26,
+  "acs_broadband_pct": 0.684665,
+  "acs_median_age": 55.5,
+  "acs_owner_occupied_pct": 0.907127,
+  "acs_median_home_value": 375000
+ },
+ "02360000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 18.1,
+  "acs_broadband_pct": 0.789584,
+  "acs_median_age": 43.2,
+  "acs_owner_occupied_pct": 0.616784,
+  "acs_median_home_value": 233700
+ },
+ "02380000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.68,
+  "acs_broadband_pct": 0.796905,
+  "acs_median_age": 43.6,
+  "acs_owner_occupied_pct": 0.645,
+  "acs_median_home_value": 461200
+ },
+ "02390000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.39,
+  "acs_broadband_pct": 0.837116,
+  "acs_median_age": 47.2,
+  "acs_owner_occupied_pct": 0.797614,
+  "acs_median_home_value": 494700
+ },
+ "02400000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.31,
+  "acs_broadband_pct": 0.810115,
+  "acs_median_age": 45.6,
+  "acs_owner_occupied_pct": 0.944656,
+  "acs_median_home_value": 499300
+ },
+ "02420000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 19.73,
+  "acs_broadband_pct": 0.808751,
+  "acs_median_age": 56.8,
+  "acs_owner_occupied_pct": 0.711898,
+  "acs_median_home_value": 769500
+ },
+ "02430000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.19,
+  "acs_broadband_pct": 0.828268,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.449606,
+  "acs_median_home_value": 598100
+ },
+ "02440000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 37.42,
+  "acs_broadband_pct": 0.828847,
+  "acs_median_age": 41.0,
+  "acs_owner_occupied_pct": 0.694981,
+  "acs_median_home_value": 463500
+ },
+ "02460000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.61,
+  "acs_broadband_pct": 0.879674,
+  "acs_median_age": 44.1,
+  "acs_owner_occupied_pct": 0.831001,
+  "acs_median_home_value": 741100
+ },
+ "02480000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.11,
+  "acs_broadband_pct": 0.736659,
+  "acs_median_age": 39.4,
+  "acs_owner_occupied_pct": 0.500976,
+  "acs_median_home_value": 566200
+ },
+ "02490000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.1,
+  "acs_broadband_pct": 0.85786,
+  "acs_median_age": 58.3,
+  "acs_owner_occupied_pct": 0.889632,
+  "acs_median_home_value": 537700
+ },
+ "02500000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.7,
+  "acs_broadband_pct": 0.843294,
+  "acs_median_age": 42.9,
+  "acs_owner_occupied_pct": 0.878588,
+  "acs_median_home_value": 541600
+ },
+ "02510000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.76,
+  "acs_broadband_pct": 0.831732,
+  "acs_median_age": 39.8,
+  "acs_owner_occupied_pct": 0.780696,
+  "acs_median_home_value": 452300
+ },
+ "02520000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.03,
+  "acs_broadband_pct": 0.7962,
+  "acs_median_age": 59.7,
+  "acs_owner_occupied_pct": 0.691695,
+  "acs_median_home_value": 692500
+ },
+ "02530000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.53,
+  "acs_broadband_pct": 0.783333,
+  "acs_median_age": 43.2,
+  "acs_owner_occupied_pct": 0.922222,
+  "acs_median_home_value": 262100
+ },
+ "02580000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.85,
+  "acs_broadband_pct": 0.812623,
+  "acs_median_age": 38.5,
+  "acs_owner_occupied_pct": 0.513568,
+  "acs_median_home_value": 497400
+ },
+ "02610000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.79,
+  "acs_broadband_pct": 0.889452,
+  "acs_median_age": 50.8,
+  "acs_owner_occupied_pct": 0.89748,
+  "acs_median_home_value": 545000
+ },
+ "02620000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.08,
+  "acs_broadband_pct": 0.848332,
+  "acs_median_age": 43.5,
+  "acs_owner_occupied_pct": 0.738996,
+  "acs_median_home_value": 589500
+ },
+ "02630000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.03,
+  "acs_broadband_pct": 0.530055,
+  "acs_median_age": 50.0,
+  "acs_owner_occupied_pct": 0.92623,
+  "acs_median_home_value": 267200
+ },
+ "02640000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 38.32,
+  "acs_broadband_pct": 0.879897,
+  "acs_median_age": 47.5,
+  "acs_owner_occupied_pct": 0.884939,
+  "acs_median_home_value": 789000
+ },
+ "02650000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.4,
+  "acs_broadband_pct": 0.85531,
+  "acs_median_age": 46.1,
+  "acs_owner_occupied_pct": 0.851206,
+  "acs_median_home_value": 461600
+ },
+ "02660000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 37.13,
+  "acs_broadband_pct": 0.881159,
+  "acs_median_age": 42.5,
+  "acs_owner_occupied_pct": 0.867214,
+  "acs_median_home_value": 697900
+ },
+ "02690000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 39.64,
+  "acs_broadband_pct": 0.92791,
+  "acs_median_age": 42.3,
+  "acs_owner_occupied_pct": 0.893519,
+  "acs_median_home_value": 944400
+ },
+ "02710000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.44,
+  "acs_broadband_pct": 0.851186,
+  "acs_median_age": 40.5,
+  "acs_owner_occupied_pct": 0.721119,
+  "acs_median_home_value": 555500
+ },
+ "02720000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.68,
+  "acs_broadband_pct": 0.826544,
+  "acs_median_age": 52.8,
+  "acs_owner_occupied_pct": 0.923784,
+  "acs_median_home_value": 335100
+ },
+ "02730000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.7,
+  "acs_broadband_pct": 0.807127,
+  "acs_median_age": 47.0,
+  "acs_owner_occupied_pct": 0.844396,
+  "acs_median_home_value": 389400
+ },
+ "02740000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.71,
+  "acs_broadband_pct": 0.844554,
+  "acs_median_age": 32.3,
+  "acs_owner_occupied_pct": 0.3431,
+  "acs_median_home_value": 899400
+ },
+ "02750000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.25,
+  "acs_broadband_pct": 0.907062,
+  "acs_median_age": 47.3,
+  "acs_owner_occupied_pct": 0.895698,
+  "acs_median_home_value": 426900
+ },
+ "02760000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.26,
+  "acs_broadband_pct": 0.932363,
+  "acs_median_age": 42.7,
+  "acs_owner_occupied_pct": 0.892212,
+  "acs_median_home_value": 796700
+ },
+ "02770000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.17,
+  "acs_broadband_pct": 0.750965,
+  "acs_median_age": 40.6,
+  "acs_owner_occupied_pct": 0.442806,
+  "acs_median_home_value": 267000
+ },
+ "02780000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 22.98,
+  "acs_broadband_pct": 0.808308,
+  "acs_median_age": 43.6,
+  "acs_owner_occupied_pct": 0.769114,
+  "acs_median_home_value": 324800
+ },
+ "02810000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 20.88,
+  "acs_broadband_pct": 0.667505,
+  "acs_median_age": 33.7,
+  "acs_owner_occupied_pct": 0.494901,
+  "acs_median_home_value": 222700
+ },
+ "02840000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.93,
+  "acs_broadband_pct": 0.852731,
+  "acs_median_age": 42.2,
+  "acs_owner_occupied_pct": 0.711029,
+  "acs_median_home_value": 629000
+ },
+ "02850000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.24,
+  "acs_broadband_pct": 0.852131,
+  "acs_median_age": 43.4,
+  "acs_owner_occupied_pct": 0.772673,
+  "acs_median_home_value": 496700
+ },
+ "02880000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.73,
+  "acs_broadband_pct": 0.942785,
+  "acs_median_age": 43.5,
+  "acs_owner_occupied_pct": 0.902007,
+  "acs_median_home_value": 939400
+ },
+ "02890000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 18.94,
+  "acs_broadband_pct": 0.872483,
+  "acs_median_age": 34.7,
+  "acs_owner_occupied_pct": 0.402685,
+  "acs_median_home_value": 391200
+ },
+ "02900000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.18,
+  "acs_broadband_pct": 0.820142,
+  "acs_median_age": 44.6,
+  "acs_owner_occupied_pct": 0.868186,
+  "acs_median_home_value": 523000
+ },
+ "02910000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 35.2,
+  "acs_broadband_pct": 0.885977,
+  "acs_median_age": 45.3,
+  "acs_owner_occupied_pct": 0.74067,
+  "acs_median_home_value": 690800
+ },
+ "02920000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.82,
+  "acs_broadband_pct": 0.79009,
+  "acs_median_age": 44.4,
+  "acs_owner_occupied_pct": 0.866192,
+  "acs_median_home_value": 414900
+ },
+ "02930000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.19,
+  "acs_broadband_pct": 0.770768,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.62909,
+  "acs_median_home_value": 388200
+ },
+ "02950000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.42,
+  "acs_broadband_pct": 0.861477,
+  "acs_median_age": 47.0,
+  "acs_owner_occupied_pct": 0.849744,
+  "acs_median_home_value": 543800
+ },
+ "02960000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 21.08,
+  "acs_broadband_pct": 0.754507,
+  "acs_median_age": 52.5,
+  "acs_owner_occupied_pct": 0.620891,
+  "acs_median_home_value": 943300
+ },
+ "02980000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.8,
+  "acs_broadband_pct": 0.919376,
+  "acs_median_age": 42.3,
+  "acs_owner_occupied_pct": 0.904232,
+  "acs_median_home_value": 810400
+ },
+ "03000000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.69,
+  "acs_broadband_pct": 0.844255,
+  "acs_median_age": 66.2,
+  "acs_owner_occupied_pct": 0.837607,
+  "acs_median_home_value": 771000
+ },
+ "03010000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 24.63,
+  "acs_broadband_pct": 0.863822,
+  "acs_median_age": 39.7,
+  "acs_owner_occupied_pct": 0.864541,
+  "acs_median_home_value": 533300
+ },
+ "03040000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 36.02,
+  "acs_broadband_pct": 0.874338,
+  "acs_median_age": 41.8,
+  "acs_owner_occupied_pct": 0.804932,
+  "acs_median_home_value": 415500
+ },
+ "03050000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.81,
+  "acs_broadband_pct": 0.844569,
+  "acs_median_age": 42.9,
+  "acs_owner_occupied_pct": 0.70441,
+  "acs_median_home_value": 670100
+ },
+ "03060000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.5,
+  "acs_broadband_pct": 0.843342,
+  "acs_median_age": 41.2,
+  "acs_owner_occupied_pct": 0.913838,
+  "acs_median_home_value": 272600
+ },
+ "03070000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.37,
+  "acs_broadband_pct": 0.886516,
+  "acs_median_age": 40.4,
+  "acs_owner_occupied_pct": 0.825878,
+  "acs_median_home_value": 647600
+ },
+ "03080000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 24.61,
+  "acs_broadband_pct": 0.84363,
+  "acs_median_age": 35.1,
+  "acs_owner_occupied_pct": 0.488045,
+  "acs_median_home_value": 705700
+ },
+ "03090000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.64,
+  "acs_broadband_pct": 0.796791,
+  "acs_median_age": 44.3,
+  "acs_owner_occupied_pct": 0.739082,
+  "acs_median_home_value": 269400
+ },
+ "03100000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.12,
+  "acs_broadband_pct": 0.7882,
+  "acs_median_age": 53.1,
+  "acs_owner_occupied_pct": 0.814687,
+  "acs_median_home_value": 398000
+ },
+ "03140000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.18,
+  "acs_broadband_pct": 0.86607,
+  "acs_median_age": 38.8,
+  "acs_owner_occupied_pct": 0.488155,
+  "acs_median_home_value": 737600
+ },
+ "03150000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.85,
+  "acs_broadband_pct": 0.932094,
+  "acs_median_age": 44.5,
+  "acs_owner_occupied_pct": 0.904002,
+  "acs_median_home_value": 936900
+ },
+ "03160000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.98,
+  "acs_broadband_pct": 0.72188,
+  "acs_median_age": 40.0,
+  "acs_owner_occupied_pct": 0.579941,
+  "acs_median_home_value": 339600
+ },
+ "03170000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.27,
+  "acs_broadband_pct": 0.912867,
+  "acs_median_age": 38.1,
+  "acs_owner_occupied_pct": 0.839688,
+  "acs_median_home_value": 1513400
+ },
+ "03180000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.69,
+  "acs_broadband_pct": 0.877339,
+  "acs_median_age": 55.7,
+  "acs_owner_occupied_pct": 0.836798,
+  "acs_median_home_value": 751000
+ },
+ "03210000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.99,
+  "acs_broadband_pct": 0.873404,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.606944,
+  "acs_median_home_value": 637900
+ },
+ "03220000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.22,
+  "acs_broadband_pct": 0.813605,
+  "acs_median_age": 46.2,
+  "acs_owner_occupied_pct": 0.795578,
+  "acs_median_home_value": 399200
+ },
+ "03230000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 27.77,
+  "acs_broadband_pct": 0.83484,
+  "acs_median_age": 41.1,
+  "acs_owner_occupied_pct": 0.837969,
+  "acs_median_home_value": 501000
+ },
+ "03250000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.21,
+  "acs_broadband_pct": 0.756205,
+  "acs_median_age": 39.0,
+  "acs_owner_occupied_pct": 0.679959,
+  "acs_median_home_value": 295500
+ },
+ "03260000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.02,
+  "acs_broadband_pct": 0.915362,
+  "acs_median_age": 43.3,
+  "acs_owner_occupied_pct": 0.884615,
+  "acs_median_home_value": 689400
+ },
+ "03270000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.37,
+  "acs_broadband_pct": 0.776527,
+  "acs_median_age": 53.3,
+  "acs_owner_occupied_pct": 0.924437,
+  "acs_median_home_value": 394800
+ },
+ "03300000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 26.58,
+  "acs_broadband_pct": 0.90487,
+  "acs_median_age": 44.9,
+  "acs_owner_occupied_pct": 0.90402,
+  "acs_median_home_value": 1586100
+ },
+ "03310000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 28.78,
+  "acs_broadband_pct": 0.795602,
+  "acs_median_age": 50.5,
+  "acs_owner_occupied_pct": 0.840024,
+  "acs_median_home_value": 483800
+ },
+ "03320000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 18.81,
+  "acs_broadband_pct": 0.686379,
+  "acs_median_age": 39.4,
+  "acs_owner_occupied_pct": 0.585331,
+  "acs_median_home_value": 307900
+ },
+ "03350000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.16,
+  "acs_broadband_pct": 0.875091,
+  "acs_median_age": 43.3,
+  "acs_owner_occupied_pct": 0.87236,
+  "acs_median_home_value": 985800
+ },
+ "03360000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.8,
+  "acs_broadband_pct": 0.819123,
+  "acs_median_age": 43.8,
+  "acs_owner_occupied_pct": 0.677576,
+  "acs_median_home_value": 516200
+ },
+ "03370000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.75,
+  "acs_broadband_pct": 0.781487,
+  "acs_median_age": 51.6,
+  "acs_owner_occupied_pct": 0.85129,
+  "acs_median_home_value": 393200
+ },
+ "03400000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 24.71,
+  "acs_broadband_pct": 0.883865,
+  "acs_median_age": 49.3,
+  "acs_owner_occupied_pct": 0.838652,
+  "acs_median_home_value": 379500
+ },
+ "03420000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 29.94,
+  "acs_broadband_pct": 0.879685,
+  "acs_median_age": 42.1,
+  "acs_owner_occupied_pct": 0.86914,
+  "acs_median_home_value": 646200
+ },
+ "03430000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 33.26,
+  "acs_broadband_pct": 0.848795,
+  "acs_median_age": 40.5,
+  "acs_owner_occupied_pct": 0.77804,
+  "acs_median_home_value": 295400
+ },
+ "03440000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 30.82,
+  "acs_broadband_pct": 0.895952,
+  "acs_median_age": 43.0,
+  "acs_owner_occupied_pct": 0.833623,
+  "acs_median_home_value": 1181700
+ },
+ "03460000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 32.88,
+  "acs_broadband_pct": 0.792498,
+  "acs_median_age": 43.6,
+  "acs_owner_occupied_pct": 0.55557,
+  "acs_median_home_value": 606900
+ },
+ "03470000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.92,
+  "acs_broadband_pct": 0.840098,
+  "acs_median_age": 39.5,
+  "acs_owner_occupied_pct": 0.576345,
+  "acs_median_home_value": 641800
+ },
+ "03480000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.08,
+  "acs_broadband_pct": 0.749447,
+  "acs_median_age": 34.1,
+  "acs_owner_occupied_pct": 0.4237,
+  "acs_median_home_value": 339500
+ },
+ "03490000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 39.61,
+  "acs_broadband_pct": 0.694553,
+  "acs_median_age": 60.0,
+  "acs_owner_occupied_pct": 0.935798,
+  "acs_median_home_value": 346800
+ },
+ "03500000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 31.6,
+  "acs_broadband_pct": 0.844141,
+  "acs_median_age": 47.6,
+  "acs_owner_occupied_pct": 0.853925,
+  "acs_median_home_value": 599500
+ },
+ "06000000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 34.19,
+  "acs_broadband_pct": 0.890193,
+  "acs_median_age": 43.86,
+  "acs_owner_occupied_pct": 0.762692,
+  "acs_median_home_value": 741577
+ },
+ "06030000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 24.94,
+  "acs_broadband_pct": 0.728777,
+  "acs_median_age": 50.0,
+  "acs_owner_occupied_pct": 0.690242,
+  "acs_median_home_value": 210409
+ },
+ "06100000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 31.44,
+  "acs_broadband_pct": 0.83501,
+  "acs_median_age": 44.87,
+  "acs_owner_occupied_pct": 0.911804,
+  "acs_median_home_value": 382802
+ },
+ "06150000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 28.46,
+  "acs_broadband_pct": 0.746703,
+  "acs_median_age": 42.53,
+  "acs_owner_occupied_pct": 0.743178,
+  "acs_median_home_value": 252842
+ },
+ "06160000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 34.9,
+  "acs_broadband_pct": 0.809124,
+  "acs_median_age": 41.73,
+  "acs_owner_occupied_pct": 0.757348,
+  "acs_median_home_value": 415492
+ },
+ "06180000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 20.98,
+  "acs_broadband_pct": 0.825724,
+  "acs_median_age": 50.79,
+  "acs_owner_occupied_pct": 0.739412,
+  "acs_median_home_value": 486558
+ },
+ "06200000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 31.0,
+  "acs_broadband_pct": 0.859002,
+  "acs_median_age": 48.67,
+  "acs_owner_occupied_pct": 0.798472,
+  "acs_median_home_value": 573899
+ },
+ "06220000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 34.86,
+  "acs_broadband_pct": 0.822601,
+  "acs_median_age": 44.66,
+  "acs_owner_occupied_pct": 0.775226,
+  "acs_median_home_value": 400572
+ },
+ "06250000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 32.75,
+  "acs_broadband_pct": 0.843468,
+  "acs_median_age": 38.89,
+  "acs_owner_occupied_pct": 0.755425,
+  "acs_median_home_value": 503381
+ },
+ "06320000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 31.6,
+  "acs_broadband_pct": 0.68267,
+  "acs_median_age": 51.3,
+  "acs_owner_occupied_pct": 0.874825,
+  "acs_median_home_value": 350233
+ },
+ "06350000": {
+  "_member_count": 7,
+  "acs_median_commute_min": 24.84,
+  "acs_broadband_pct": 0.716735,
+  "acs_median_age": 50.52,
+  "acs_owner_occupied_pct": 0.832393,
+  "acs_median_home_value": 302003
+ },
+ "06450000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 23.14,
+  "acs_broadband_pct": 0.845202,
+  "acs_median_age": 56.65,
+  "acs_owner_occupied_pct": 0.80014,
+  "acs_median_home_value": 511669
+ },
+ "06500000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 28.55,
+  "acs_broadband_pct": 0.844188,
+  "acs_median_age": 45.56,
+  "acs_owner_occupied_pct": 0.905376,
+  "acs_median_home_value": 486961
+ },
+ "06550000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 38.21,
+  "acs_broadband_pct": 0.934746,
+  "acs_median_age": 44.19,
+  "acs_owner_occupied_pct": 0.937098,
+  "acs_median_home_value": 1139784
+ },
+ "06580000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 25.02,
+  "acs_broadband_pct": 0.819271,
+  "acs_median_age": 40.3,
+  "acs_owner_occupied_pct": 0.707873,
+  "acs_median_home_value": 372400
+ },
+ "06620000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 33.09,
+  "acs_broadband_pct": 0.647073,
+  "acs_median_age": 53.51,
+  "acs_owner_occupied_pct": 0.901688,
+  "acs_median_home_value": 362007
+ },
+ "06650000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 33.02,
+  "acs_broadband_pct": 0.876019,
+  "acs_median_age": 42.36,
+  "acs_owner_occupied_pct": 0.848198,
+  "acs_median_home_value": 515227
+ },
+ "06720000": {
+  "_member_count": 6,
+  "acs_median_commute_min": 33.02,
+  "acs_broadband_pct": 0.643544,
+  "acs_median_age": 48.24,
+  "acs_owner_occupied_pct": 0.889465,
+  "acs_median_home_value": 288340
+ },
+ "06730000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 32.31,
+  "acs_broadband_pct": 0.894732,
+  "acs_median_age": 40.68,
+  "acs_owner_occupied_pct": 0.908843,
+  "acs_median_home_value": 662158
+ },
+ "06740000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 22.47,
+  "acs_broadband_pct": 0.767061,
+  "acs_median_age": 44.18,
+  "acs_owner_occupied_pct": 0.638961,
+  "acs_median_home_value": 273052
+ },
+ "06750000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 31.9,
+  "acs_broadband_pct": 0.907275,
+  "acs_median_age": 38.26,
+  "acs_owner_occupied_pct": 0.840099,
+  "acs_median_home_value": 748412
+ },
+ "06800000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 27.01,
+  "acs_broadband_pct": 0.776741,
+  "acs_median_age": 46.53,
+  "acs_owner_occupied_pct": 0.918678,
+  "acs_median_home_value": 374395
+ },
+ "06850000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 29.11,
+  "acs_broadband_pct": 0.522758,
+  "acs_median_age": 54.8,
+  "acs_owner_occupied_pct": 0.8225,
+  "acs_median_home_value": 306995
+ },
+ "06980000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 27.87,
+  "acs_broadband_pct": 0.879329,
+  "acs_median_age": 46.41,
+  "acs_owner_occupied_pct": 0.728786,
+  "acs_median_home_value": 889172
+ },
+ "07100000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 34.64,
+  "acs_broadband_pct": 0.886501,
+  "acs_median_age": 45.37,
+  "acs_owner_occupied_pct": 0.906246,
+  "acs_median_home_value": 580585
+ },
+ "07120000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 24.36,
+  "acs_broadband_pct": 0.854543,
+  "acs_median_age": 60.58,
+  "acs_owner_occupied_pct": 0.857565,
+  "acs_median_home_value": 677051
+ },
+ "07150000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 16.47,
+  "acs_broadband_pct": 0.801051,
+  "acs_median_age": 37.49,
+  "acs_owner_occupied_pct": 0.792014,
+  "acs_median_home_value": 402323
+ },
+ "07170000": {
+  "_member_count": 9,
+  "acs_median_commute_min": 29.7,
+  "acs_broadband_pct": 0.699649,
+  "acs_median_age": 53.21,
+  "acs_owner_occupied_pct": 0.792261,
+  "acs_median_home_value": 313006
+ },
+ "07200000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 31.19,
+  "acs_broadband_pct": 0.811641,
+  "acs_median_age": 42.12,
+  "acs_owner_occupied_pct": 0.870351,
+  "acs_median_home_value": 327549
+ },
+ "07250000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 34.05,
+  "acs_broadband_pct": 0.902961,
+  "acs_median_age": 43.0,
+  "acs_owner_occupied_pct": 0.870069,
+  "acs_median_home_value": 599312
+ },
+ "07280000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 28.22,
+  "acs_broadband_pct": 0.654732,
+  "acs_median_age": 53.66,
+  "acs_owner_occupied_pct": 0.860687,
+  "acs_median_home_value": 311486
+ },
+ "07350000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 35.89,
+  "acs_broadband_pct": 0.827033,
+  "acs_median_age": 43.39,
+  "acs_owner_occupied_pct": 0.85012,
+  "acs_median_home_value": 420982
+ },
+ "07450000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 32.46,
+  "acs_broadband_pct": 0.854882,
+  "acs_median_age": 46.93,
+  "acs_owner_occupied_pct": 0.87852,
+  "acs_median_home_value": 605654
+ },
+ "07500000": {
+  "_member_count": 4,
+  "acs_median_commute_min": 27.4,
+  "acs_broadband_pct": 0.753731,
+  "acs_median_age": 49.55,
+  "acs_owner_occupied_pct": 0.861324,
+  "acs_median_home_value": 323002
+ },
+ "07530000": {
+  "_member_count": 5,
+  "acs_median_commute_min": 37.3,
+  "acs_broadband_pct": 0.767899,
+  "acs_median_age": 42.09,
+  "acs_owner_occupied_pct": 0.801894,
+  "acs_median_home_value": 333567
+ },
+ "07650000": {
+  "_member_count": 5,
+  "acs_median_commute_min": 26.0,
+  "acs_broadband_pct": 0.741423,
+  "acs_median_age": 54.16,
+  "acs_owner_occupied_pct": 0.833222,
+  "acs_median_home_value": 485278
+ },
+ "07660000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 27.34,
+  "acs_broadband_pct": 0.760184,
+  "acs_median_age": 48.42,
+  "acs_owner_occupied_pct": 0.81709,
+  "acs_median_home_value": 373545
+ },
+ "07670000": {
+  "_member_count": 1,
+  "acs_median_commute_min": 34.15,
+  "acs_broadband_pct": 0.804284,
+  "acs_median_age": 48.9,
+  "acs_owner_occupied_pct": 0.651412,
+  "acs_median_home_value": 368300
+ },
+ "07700000": {
+  "_member_count": 5,
+  "acs_median_commute_min": 36.61,
+  "acs_broadband_pct": 0.833844,
+  "acs_median_age": 46.3,
+  "acs_owner_occupied_pct": 0.877073,
+  "acs_median_home_value": 356539
+ },
+ "07730000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 27.6,
+  "acs_broadband_pct": 0.822091,
+  "acs_median_age": 50.06,
+  "acs_owner_occupied_pct": 0.803197,
+  "acs_median_home_value": 600632
+ },
+ "07740000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 21.28,
+  "acs_broadband_pct": 0.900461,
+  "acs_median_age": 52.39,
+  "acs_owner_occupied_pct": 0.89042,
+  "acs_median_home_value": 1460708
+ },
+ "07750000": {
+  "_member_count": 5,
+  "acs_median_commute_min": 30.86,
+  "acs_broadband_pct": 0.896937,
+  "acs_median_age": 43.5,
+  "acs_owner_occupied_pct": 0.875656,
+  "acs_median_home_value": 448808
+ },
+ "07780000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 39.65,
+  "acs_broadband_pct": 0.882894,
+  "acs_median_age": 48.52,
+  "acs_owner_occupied_pct": 0.720555,
+  "acs_median_home_value": 336718
+ },
+ "07800000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 34.33,
+  "acs_broadband_pct": 0.80748,
+  "acs_median_age": 42.56,
+  "acs_owner_occupied_pct": 0.799489,
+  "acs_median_home_value": 472756
+ },
+ "06400000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 32.2,
+  "acs_broadband_pct": 0.918987,
+  "acs_median_age": 44.89,
+  "acs_owner_occupied_pct": 0.822939,
+  "acs_median_home_value": 1116963
+ },
+ "06600000": {
+  "_member_count": 4,
+  "acs_median_commute_min": 26.34,
+  "acs_broadband_pct": 0.850685,
+  "acs_median_age": 60.11,
+  "acs_owner_occupied_pct": 0.817931,
+  "acs_median_home_value": 698687
+ },
+ "06900000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 33.23,
+  "acs_broadband_pct": 0.856394,
+  "acs_median_age": 44.2,
+  "acs_owner_occupied_pct": 0.826108,
+  "acs_median_home_value": 591502
+ },
+ "06950000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 33.0,
+  "acs_broadband_pct": 0.933061,
+  "acs_median_age": 43.42,
+  "acs_owner_occupied_pct": 0.827965,
+  "acs_median_home_value": 1003672
+ },
+ "07050000": {
+  "_member_count": 3,
+  "acs_median_commute_min": 32.05,
+  "acs_broadband_pct": 0.909092,
+  "acs_median_age": 45.51,
+  "acs_owner_occupied_pct": 0.925562,
+  "acs_median_home_value": 794811
+ },
+ "07300000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 31.77,
+  "acs_broadband_pct": 0.932315,
+  "acs_median_age": 43.9,
+  "acs_owner_occupied_pct": 0.869307,
+  "acs_median_home_value": 677681
+ },
+ "07630000": {
+  "_member_count": 2,
+  "acs_median_commute_min": 28.88,
+  "acs_broadband_pct": 0.836881,
+  "acs_median_age": 46.13,
+  "acs_owner_occupied_pct": 0.881044,
+  "acs_median_home_value": 411827
+ }
+}

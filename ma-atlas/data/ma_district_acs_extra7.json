@@ -1,0 +1,2250 @@
+{
+ "00010000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.125412,
+  "acs_school_age_pct": 0.171508,
+  "acs_vacancy_pct": 0.020985,
+  "acs_public_transit_pct": 0.041283,
+  "acs_family_hh_pct": 0.636067
+ },
+ "00030000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.224652,
+  "acs_school_age_pct": 0.147307,
+  "acs_vacancy_pct": 0.013939,
+  "acs_public_transit_pct": 0.007877,
+  "acs_family_hh_pct": 0.713624
+ },
+ "00050000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.217187,
+  "acs_school_age_pct": 0.131392,
+  "acs_vacancy_pct": 0.035971,
+  "acs_public_transit_pct": 0.009235,
+  "acs_family_hh_pct": 0.631106
+ },
+ "00070000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.179661,
+  "acs_school_age_pct": 0.140592,
+  "acs_vacancy_pct": 0.036029,
+  "acs_public_transit_pct": 0.012524,
+  "acs_family_hh_pct": 0.620808
+ },
+ "00080000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.098754,
+  "acs_school_age_pct": 0.068223,
+  "acs_vacancy_pct": 0.130865,
+  "acs_public_transit_pct": 0.082053,
+  "acs_family_hh_pct": 0.434451
+ },
+ "00090000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.158865,
+  "acs_school_age_pct": 0.18851,
+  "acs_vacancy_pct": 0.037963,
+  "acs_public_transit_pct": 0.026703,
+  "acs_family_hh_pct": 0.752918
+ },
+ "00100000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.168901,
+  "acs_school_age_pct": 0.156732,
+  "acs_vacancy_pct": 0.036215,
+  "acs_public_transit_pct": 0.125299,
+  "acs_family_hh_pct": 0.59326
+ },
+ "00140000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.172997,
+  "acs_school_age_pct": 0.135552,
+  "acs_vacancy_pct": 0.052783,
+  "acs_public_transit_pct": 0.055677,
+  "acs_family_hh_pct": 0.694309
+ },
+ "00160000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.155294,
+  "acs_school_age_pct": 0.156068,
+  "acs_vacancy_pct": 0.066859,
+  "acs_public_transit_pct": 0.026165,
+  "acs_family_hh_pct": 0.665429
+ },
+ "00170000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.221259,
+  "acs_school_age_pct": 0.174466,
+  "acs_vacancy_pct": 0.035463,
+  "acs_public_transit_pct": 0.013899,
+  "acs_family_hh_pct": 0.631602
+ },
+ "00180000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.174416,
+  "acs_school_age_pct": 0.155691,
+  "acs_vacancy_pct": 0.008159,
+  "acs_public_transit_pct": 0.048576,
+  "acs_family_hh_pct": 0.648649
+ },
+ "00200000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.25323,
+  "acs_school_age_pct": 0.123213,
+  "acs_vacancy_pct": 0.250073,
+  "acs_public_transit_pct": 0.016108,
+  "acs_family_hh_pct": 0.660231
+ },
+ "00230000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.181273,
+  "acs_school_age_pct": 0.172976,
+  "acs_vacancy_pct": 0.01829,
+  "acs_public_transit_pct": 0.008769,
+  "acs_family_hh_pct": 0.690875
+ },
+ "00240000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.200703,
+  "acs_school_age_pct": 0.139464,
+  "acs_vacancy_pct": 0.021377,
+  "acs_public_transit_pct": 0.014929,
+  "acs_family_hh_pct": 0.681698
+ },
+ "00250000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.146445,
+  "acs_school_age_pct": 0.175233,
+  "acs_vacancy_pct": 0.04058,
+  "acs_public_transit_pct": 0.013556,
+  "acs_family_hh_pct": 0.711401
+ },
+ "00260000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.182754,
+  "acs_school_age_pct": 0.194083,
+  "acs_vacancy_pct": 0.043848,
+  "acs_public_transit_pct": 0.111183,
+  "acs_family_hh_pct": 0.736049
+ },
+ "00270000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.147444,
+  "acs_school_age_pct": 0.176757,
+  "acs_vacancy_pct": 0.053954,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.815411
+ },
+ "00300000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.185955,
+  "acs_school_age_pct": 0.133913,
+  "acs_vacancy_pct": 0.042457,
+  "acs_public_transit_pct": 0.071169,
+  "acs_family_hh_pct": 0.594561
+ },
+ "00310000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.179448,
+  "acs_school_age_pct": 0.142014,
+  "acs_vacancy_pct": 0.010806,
+  "acs_public_transit_pct": 0.016685,
+  "acs_family_hh_pct": 0.716284
+ },
+ "00350000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.126623,
+  "acs_school_age_pct": 0.10616,
+  "acs_vacancy_pct": 0.092983,
+  "acs_public_transit_pct": 0.240297,
+  "acs_family_hh_pct": 0.459977
+ },
+ "00360000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.292888,
+  "acs_school_age_pct": 0.119544,
+  "acs_vacancy_pct": 0.229746,
+  "acs_public_transit_pct": 0.00675,
+  "acs_family_hh_pct": 0.643081
+ },
+ "00380000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.201104,
+  "acs_school_age_pct": 0.203924,
+  "acs_vacancy_pct": 0.020178,
+  "acs_public_transit_pct": 0.014095,
+  "acs_family_hh_pct": 0.813962
+ },
+ "00400000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.177622,
+  "acs_school_age_pct": 0.156468,
+  "acs_vacancy_pct": 0.046102,
+  "acs_public_transit_pct": 0.093827,
+  "acs_family_hh_pct": 0.676198
+ },
+ "00410000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.374843,
+  "acs_school_age_pct": 0.129449,
+  "acs_vacancy_pct": 0.424727,
+  "acs_public_transit_pct": 0.018245,
+  "acs_family_hh_pct": 0.611738
+ },
+ "00430000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.21765,
+  "acs_school_age_pct": 0.159448,
+  "acs_vacancy_pct": 0.099817,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.706558
+ },
+ "00440000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.139846,
+  "acs_school_age_pct": 0.188694,
+  "acs_vacancy_pct": 0.04837,
+  "acs_public_transit_pct": 0.049669,
+  "acs_family_hh_pct": 0.717299
+ },
+ "00450000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.256246,
+  "acs_school_age_pct": 0.122313,
+  "acs_vacancy_pct": 0.047219,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.590631
+ },
+ "00460000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.153991,
+  "acs_school_age_pct": 0.139633,
+  "acs_vacancy_pct": 0.051751,
+  "acs_public_transit_pct": 0.201453,
+  "acs_family_hh_pct": 0.503124
+ },
+ "00480000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.215193,
+  "acs_school_age_pct": 0.131755,
+  "acs_vacancy_pct": 0.045286,
+  "acs_public_transit_pct": 0.030006,
+  "acs_family_hh_pct": 0.731205
+ },
+ "00490000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.122188,
+  "acs_school_age_pct": 0.082296,
+  "acs_vacancy_pct": 0.091921,
+  "acs_public_transit_pct": 0.193911,
+  "acs_family_hh_pct": 0.396838
+ },
+ "00500000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.196247,
+  "acs_school_age_pct": 0.155607,
+  "acs_vacancy_pct": 0.027926,
+  "acs_public_transit_pct": 0.077267,
+  "acs_family_hh_pct": 0.694533
+ },
+ "00510000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.213477,
+  "acs_school_age_pct": 0.216164,
+  "acs_vacancy_pct": 0.034135,
+  "acs_public_transit_pct": 0.028726,
+  "acs_family_hh_pct": 0.851101
+ },
+ "00520000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.219751,
+  "acs_school_age_pct": 0.137398,
+  "acs_vacancy_pct": 0.062599,
+  "acs_public_transit_pct": 0.014623,
+  "acs_family_hh_pct": 0.674768
+ },
+ "00560000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.183655,
+  "acs_school_age_pct": 0.159829,
+  "acs_vacancy_pct": 0.034483,
+  "acs_public_transit_pct": 0.014983,
+  "acs_family_hh_pct": 0.729253
+ },
+ "00570000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.111911,
+  "acs_school_age_pct": 0.167435,
+  "acs_vacancy_pct": 0.04514,
+  "acs_public_transit_pct": 0.202556,
+  "acs_family_hh_pct": 0.554439
+ },
+ "00610000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.191694,
+  "acs_school_age_pct": 0.149838,
+  "acs_vacancy_pct": 0.052335,
+  "acs_public_transit_pct": 0.010851,
+  "acs_family_hh_pct": 0.571635
+ },
+ "00630000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.260012,
+  "acs_school_age_pct": 0.142194,
+  "acs_vacancy_pct": 0.040951,
+  "acs_public_transit_pct": 0.001091,
+  "acs_family_hh_pct": 0.65427
+ },
+ "00640000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.139469,
+  "acs_school_age_pct": 0.126118,
+  "acs_vacancy_pct": 0.050449,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.511481
+ },
+ "00650000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.178631,
+  "acs_school_age_pct": 0.184135,
+  "acs_vacancy_pct": 0.057879,
+  "acs_public_transit_pct": 0.132191,
+  "acs_family_hh_pct": 0.740109
+ },
+ "00670000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.205201,
+  "acs_school_age_pct": 0.225667,
+  "acs_vacancy_pct": 0.07078,
+  "acs_public_transit_pct": 0.041191,
+  "acs_family_hh_pct": 0.745768
+ },
+ "00680000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.309619,
+  "acs_school_age_pct": 0.140011,
+  "acs_vacancy_pct": 0.072202,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.709468
+ },
+ "00710000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.221566,
+  "acs_school_age_pct": 0.124481,
+  "acs_vacancy_pct": 0.031916,
+  "acs_public_transit_pct": 0.025909,
+  "acs_family_hh_pct": 0.664704
+ },
+ "00720000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.19187,
+  "acs_school_age_pct": 0.120965,
+  "acs_vacancy_pct": 0.056893,
+  "acs_public_transit_pct": 0.004767,
+  "acs_family_hh_pct": 0.700817
+ },
+ "00730000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.202875,
+  "acs_school_age_pct": 0.136047,
+  "acs_vacancy_pct": 0.032964,
+  "acs_public_transit_pct": 0.054319,
+  "acs_family_hh_pct": 0.625134
+ },
+ "00740000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.2206,
+  "acs_school_age_pct": 0.133372,
+  "acs_vacancy_pct": 0.035304,
+  "acs_public_transit_pct": 0.016548,
+  "acs_family_hh_pct": 0.613191
+ },
+ "00770000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.141051,
+  "acs_school_age_pct": 0.187555,
+  "acs_vacancy_pct": 0.066818,
+  "acs_public_transit_pct": 0.013589,
+  "acs_family_hh_pct": 0.7727
+ },
+ "00790000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.178854,
+  "acs_school_age_pct": 0.169428,
+  "acs_vacancy_pct": 0.026531,
+  "acs_public_transit_pct": 0.013078,
+  "acs_family_hh_pct": 0.712227
+ },
+ "00820000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.232526,
+  "acs_school_age_pct": 0.180944,
+  "acs_vacancy_pct": 0.056931,
+  "acs_public_transit_pct": 0.049373,
+  "acs_family_hh_pct": 0.780268
+ },
+ "00830000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.154092,
+  "acs_school_age_pct": 0.162899,
+  "acs_vacancy_pct": 0.02304,
+  "acs_public_transit_pct": 0.033124,
+  "acs_family_hh_pct": 0.781015
+ },
+ "00850000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.405405,
+  "acs_school_age_pct": 0.115558,
+  "acs_vacancy_pct": 0.549535,
+  "acs_public_transit_pct": 0.014555,
+  "acs_family_hh_pct": 0.58042
+ },
+ "00860000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.237161,
+  "acs_school_age_pct": 0.14016,
+  "acs_vacancy_pct": 0.066117,
+  "acs_public_transit_pct": 0.008098,
+  "acs_family_hh_pct": 0.547198
+ },
+ "00870000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.213465,
+  "acs_school_age_pct": 0.188294,
+  "acs_vacancy_pct": 0.031835,
+  "acs_public_transit_pct": 0.010612,
+  "acs_family_hh_pct": 0.702712
+ },
+ "00880000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.19748,
+  "acs_school_age_pct": 0.154121,
+  "acs_vacancy_pct": 0.013333,
+  "acs_public_transit_pct": 0.024767,
+  "acs_family_hh_pct": 0.702703
+ },
+ "00890000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.237913,
+  "acs_school_age_pct": 0.101305,
+  "acs_vacancy_pct": 0.676944,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.635654
+ },
+ "00910000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.200122,
+  "acs_school_age_pct": 0.129957,
+  "acs_vacancy_pct": 0.087883,
+  "acs_public_transit_pct": 0.013683,
+  "acs_family_hh_pct": 0.635036
+ },
+ "00930000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.108904,
+  "acs_school_age_pct": 0.159497,
+  "acs_vacancy_pct": 0.068982,
+  "acs_public_transit_pct": 0.174237,
+  "acs_family_hh_pct": 0.684162
+ },
+ "00940000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.256015,
+  "acs_school_age_pct": 0.128291,
+  "acs_vacancy_pct": 0.074193,
+  "acs_public_transit_pct": 0.007118,
+  "acs_family_hh_pct": 0.579444
+ },
+ "00950000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.158622,
+  "acs_school_age_pct": 0.156073,
+  "acs_vacancy_pct": 0.057981,
+  "acs_public_transit_pct": 0.012994,
+  "acs_family_hh_pct": 0.562184
+ },
+ "00960000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.333364,
+  "acs_school_age_pct": 0.101459,
+  "acs_vacancy_pct": 0.341217,
+  "acs_public_transit_pct": 0.014755,
+  "acs_family_hh_pct": 0.618937
+ },
+ "00970000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.138712,
+  "acs_school_age_pct": 0.14061,
+  "acs_vacancy_pct": 0.059348,
+  "acs_public_transit_pct": 0.022972,
+  "acs_family_hh_pct": 0.575237
+ },
+ "00980000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.245478,
+  "acs_school_age_pct": 0.161499,
+  "acs_vacancy_pct": 0.1,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.72381
+ },
+ "00990000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.172121,
+  "acs_school_age_pct": 0.162238,
+  "acs_vacancy_pct": 0.033046,
+  "acs_public_transit_pct": 0.03311,
+  "acs_family_hh_pct": 0.688799
+ },
+ "01000000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.15786,
+  "acs_school_age_pct": 0.156791,
+  "acs_vacancy_pct": 0.03396,
+  "acs_public_transit_pct": 0.028116,
+  "acs_family_hh_pct": 0.657608
+ },
+ "01010000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.139989,
+  "acs_school_age_pct": 0.160311,
+  "acs_vacancy_pct": 0.042672,
+  "acs_public_transit_pct": 0.032899,
+  "acs_family_hh_pct": 0.73677
+ },
+ "01030000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.192503,
+  "acs_school_age_pct": 0.133523,
+  "acs_vacancy_pct": 0.061031,
+  "acs_public_transit_pct": 0.022085,
+  "acs_family_hh_pct": 0.607207
+ },
+ "01050000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.186775,
+  "acs_school_age_pct": 0.182162,
+  "acs_vacancy_pct": 0.021185,
+  "acs_public_transit_pct": 0.010244,
+  "acs_family_hh_pct": 0.739962
+ },
+ "01070000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.254538,
+  "acs_school_age_pct": 0.100395,
+  "acs_vacancy_pct": 0.099111,
+  "acs_public_transit_pct": 0.024862,
+  "acs_family_hh_pct": 0.585812
+ },
+ "01090000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.372549,
+  "acs_school_age_pct": 0.0,
+  "acs_vacancy_pct": 0.857143,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.37037
+ },
+ "01100000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.147337,
+  "acs_school_age_pct": 0.153103,
+  "acs_vacancy_pct": 0.035329,
+  "acs_public_transit_pct": 0.013634,
+  "acs_family_hh_pct": 0.677922
+ },
+ "01110000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.219612,
+  "acs_school_age_pct": 0.117608,
+  "acs_vacancy_pct": 0.082731,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.795195
+ },
+ "01140000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.237855,
+  "acs_school_age_pct": 0.14183,
+  "acs_vacancy_pct": 0.053518,
+  "acs_public_transit_pct": 0.005859,
+  "acs_family_hh_pct": 0.514867
+ },
+ "01170000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.242876,
+  "acs_school_age_pct": 0.147952,
+  "acs_vacancy_pct": 0.0,
+  "acs_public_transit_pct": 0.03668,
+  "acs_family_hh_pct": 0.619276
+ },
+ "01180000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.174166,
+  "acs_school_age_pct": 0.190458,
+  "acs_vacancy_pct": 0.024992,
+  "acs_public_transit_pct": 0.011942,
+  "acs_family_hh_pct": 0.709275
+ },
+ "01210000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.245614,
+  "acs_school_age_pct": 0.093985,
+  "acs_vacancy_pct": 0.618818,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.661392
+ },
+ "01220000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.155743,
+  "acs_school_age_pct": 0.212162,
+  "acs_vacancy_pct": 0.014073,
+  "acs_public_transit_pct": 0.040717,
+  "acs_family_hh_pct": 0.779568
+ },
+ "01250000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.142131,
+  "acs_school_age_pct": 0.142857,
+  "acs_vacancy_pct": 0.070119,
+  "acs_public_transit_pct": 0.019117,
+  "acs_family_hh_pct": 0.77378
+ },
+ "01270000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.231348,
+  "acs_school_age_pct": 0.109807,
+  "acs_vacancy_pct": 0.043934,
+  "acs_public_transit_pct": 0.019792,
+  "acs_family_hh_pct": 0.675583
+ },
+ "01280000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.153917,
+  "acs_school_age_pct": 0.159096,
+  "acs_vacancy_pct": 0.046963,
+  "acs_public_transit_pct": 0.017009,
+  "acs_family_hh_pct": 0.636426
+ },
+ "01310000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.248625,
+  "acs_school_age_pct": 0.183006,
+  "acs_vacancy_pct": 0.049806,
+  "acs_public_transit_pct": 0.112365,
+  "acs_family_hh_pct": 0.683616
+ },
+ "01330000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.180477,
+  "acs_school_age_pct": 0.154417,
+  "acs_vacancy_pct": 0.003958,
+  "acs_public_transit_pct": 0.044411,
+  "acs_family_hh_pct": 0.69238
+ },
+ "01350000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.242236,
+  "acs_school_age_pct": 0.117236,
+  "acs_vacancy_pct": 0.23622,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.619416
+ },
+ "01360000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.192796,
+  "acs_school_age_pct": 0.181703,
+  "acs_vacancy_pct": 0.020783,
+  "acs_public_transit_pct": 0.015836,
+  "acs_family_hh_pct": 0.783516
+ },
+ "01370000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.18596,
+  "acs_school_age_pct": 0.151651,
+  "acs_vacancy_pct": 0.089875,
+  "acs_public_transit_pct": 0.026529,
+  "acs_family_hh_pct": 0.564352
+ },
+ "01380000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.192231,
+  "acs_school_age_pct": 0.211321,
+  "acs_vacancy_pct": 0.064224,
+  "acs_public_transit_pct": 0.004313,
+  "acs_family_hh_pct": 0.734224
+ },
+ "01390000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.126142,
+  "acs_school_age_pct": 0.228346,
+  "acs_vacancy_pct": 0.03967,
+  "acs_public_transit_pct": 0.023412,
+  "acs_family_hh_pct": 0.809287
+ },
+ "01410000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.184729,
+  "acs_school_age_pct": 0.152913,
+  "acs_vacancy_pct": 0.060631,
+  "acs_public_transit_pct": 0.011457,
+  "acs_family_hh_pct": 0.654894
+ },
+ "01420000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.249356,
+  "acs_school_age_pct": 0.091602,
+  "acs_vacancy_pct": 0.201988,
+  "acs_public_transit_pct": 0.066896,
+  "acs_family_hh_pct": 0.571803
+ },
+ "01440000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.225687,
+  "acs_school_age_pct": 0.146237,
+  "acs_vacancy_pct": 0.081818,
+  "acs_public_transit_pct": 0.031363,
+  "acs_family_hh_pct": 0.645475
+ },
+ "01450000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.220432,
+  "acs_school_age_pct": 0.168118,
+  "acs_vacancy_pct": 0.019618,
+  "acs_public_transit_pct": 0.023072,
+  "acs_family_hh_pct": 0.651884
+ },
+ "01490000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.100264,
+  "acs_school_age_pct": 0.190901,
+  "acs_vacancy_pct": 0.028814,
+  "acs_public_transit_pct": 0.035873,
+  "acs_family_hh_pct": 0.68464
+ },
+ "01500000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.3502,
+  "acs_school_age_pct": 0.13302,
+  "acs_vacancy_pct": 0.156764,
+  "acs_public_transit_pct": 0.00979,
+  "acs_family_hh_pct": 0.532234
+ },
+ "01510000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.174973,
+  "acs_school_age_pct": 0.153034,
+  "acs_vacancy_pct": 0.056413,
+  "acs_public_transit_pct": 0.004021,
+  "acs_family_hh_pct": 0.728648
+ },
+ "01520000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.353231,
+  "acs_school_age_pct": 0.115445,
+  "acs_vacancy_pct": 0.242011,
+  "acs_public_transit_pct": 0.020564,
+  "acs_family_hh_pct": 0.610892
+ },
+ "01530000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.182507,
+  "acs_school_age_pct": 0.149301,
+  "acs_vacancy_pct": 0.039405,
+  "acs_public_transit_pct": 0.009973,
+  "acs_family_hh_pct": 0.635146
+ },
+ "01540000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.330399,
+  "acs_school_age_pct": 0.126174,
+  "acs_vacancy_pct": 0.104141,
+  "acs_public_transit_pct": 0.008168,
+  "acs_family_hh_pct": 0.613445
+ },
+ "01550000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.210092,
+  "acs_school_age_pct": 0.227519,
+  "acs_vacancy_pct": 0.026436,
+  "acs_public_transit_pct": 0.056918,
+  "acs_family_hh_pct": 0.788684
+ },
+ "01570000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.205442,
+  "acs_school_age_pct": 0.198819,
+  "acs_vacancy_pct": 0.069038,
+  "acs_public_transit_pct": 0.026378,
+  "acs_family_hh_pct": 0.711236
+ },
+ "01580000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.175468,
+  "acs_school_age_pct": 0.157635,
+  "acs_vacancy_pct": 0.057284,
+  "acs_public_transit_pct": 0.022066,
+  "acs_family_hh_pct": 0.770965
+ },
+ "01590000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.223862,
+  "acs_school_age_pct": 0.190219,
+  "acs_vacancy_pct": 0.034325,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.751532
+ },
+ "01600000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.12359,
+  "acs_school_age_pct": 0.154784,
+  "acs_vacancy_pct": 0.039152,
+  "acs_public_transit_pct": 0.019603,
+  "acs_family_hh_pct": 0.599273
+ },
+ "01610000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.224168,
+  "acs_school_age_pct": 0.131968,
+  "acs_vacancy_pct": 0.053651,
+  "acs_public_transit_pct": 0.000864,
+  "acs_family_hh_pct": 0.713009
+ },
+ "01620000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.167655,
+  "acs_school_age_pct": 0.183921,
+  "acs_vacancy_pct": 0.036793,
+  "acs_public_transit_pct": 0.031865,
+  "acs_family_hh_pct": 0.773902
+ },
+ "01630000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.138576,
+  "acs_school_age_pct": 0.176909,
+  "acs_vacancy_pct": 0.040186,
+  "acs_public_transit_pct": 0.073473,
+  "acs_family_hh_pct": 0.659106
+ },
+ "01640000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.184588,
+  "acs_school_age_pct": 0.205955,
+  "acs_vacancy_pct": 0.034879,
+  "acs_public_transit_pct": 0.014595,
+  "acs_family_hh_pct": 0.787708
+ },
+ "01650000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.132302,
+  "acs_school_age_pct": 0.121373,
+  "acs_vacancy_pct": 0.061477,
+  "acs_public_transit_pct": 0.192721,
+  "acs_family_hh_pct": 0.610661
+ },
+ "01670000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.144791,
+  "acs_school_age_pct": 0.165877,
+  "acs_vacancy_pct": 0.026875,
+  "acs_public_transit_pct": 0.053517,
+  "acs_family_hh_pct": 0.724053
+ },
+ "01680000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.226025,
+  "acs_school_age_pct": 0.190322,
+  "acs_vacancy_pct": 0.075333,
+  "acs_public_transit_pct": 0.056415,
+  "acs_family_hh_pct": 0.71528
+ },
+ "01690000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.230798,
+  "acs_school_age_pct": 0.154367,
+  "acs_vacancy_pct": 0.201783,
+  "acs_public_transit_pct": 0.017363,
+  "acs_family_hh_pct": 0.699492
+ },
+ "01700000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.147471,
+  "acs_school_age_pct": 0.133654,
+  "acs_vacancy_pct": 0.041508,
+  "acs_public_transit_pct": 0.007333,
+  "acs_family_hh_pct": 0.625683
+ },
+ "01710000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.199612,
+  "acs_school_age_pct": 0.150688,
+  "acs_vacancy_pct": 0.114095,
+  "acs_public_transit_pct": 0.034239,
+  "acs_family_hh_pct": 0.725257
+ },
+ "01720000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.319548,
+  "acs_school_age_pct": 0.10772,
+  "acs_vacancy_pct": 0.348698,
+  "acs_public_transit_pct": 0.007892,
+  "acs_family_hh_pct": 0.625857
+ },
+ "01730000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.289654,
+  "acs_school_age_pct": 0.140637,
+  "acs_vacancy_pct": 0.177089,
+  "acs_public_transit_pct": 0.004066,
+  "acs_family_hh_pct": 0.648958
+ },
+ "01740000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.15521,
+  "acs_school_age_pct": 0.155866,
+  "acs_vacancy_pct": 0.035501,
+  "acs_public_transit_pct": 0.012496,
+  "acs_family_hh_pct": 0.626364
+ },
+ "01750000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.14184,
+  "acs_school_age_pct": 0.213882,
+  "acs_vacancy_pct": 0.025647,
+  "acs_public_transit_pct": 0.077357,
+  "acs_family_hh_pct": 0.789428
+ },
+ "01760000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.157597,
+  "acs_school_age_pct": 0.093783,
+  "acs_vacancy_pct": 0.050504,
+  "acs_public_transit_pct": 0.141361,
+  "acs_family_hh_pct": 0.552662
+ },
+ "01770000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.145725,
+  "acs_school_age_pct": 0.166704,
+  "acs_vacancy_pct": 0.006086,
+  "acs_public_transit_pct": 0.011277,
+  "acs_family_hh_pct": 0.770391
+ },
+ "01780000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.207169,
+  "acs_school_age_pct": 0.147111,
+  "acs_vacancy_pct": 0.027979,
+  "acs_public_transit_pct": 0.156596,
+  "acs_family_hh_pct": 0.643111
+ },
+ "01810000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.169806,
+  "acs_school_age_pct": 0.16628,
+  "acs_vacancy_pct": 0.035621,
+  "acs_public_transit_pct": 0.010564,
+  "acs_family_hh_pct": 0.73193
+ },
+ "01820000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.209483,
+  "acs_school_age_pct": 0.144048,
+  "acs_vacancy_pct": 0.042424,
+  "acs_public_transit_pct": 0.008679,
+  "acs_family_hh_pct": 0.662617
+ },
+ "01840000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.184743,
+  "acs_school_age_pct": 0.132929,
+  "acs_vacancy_pct": 0.038841,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.746381
+ },
+ "01850000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.180042,
+  "acs_school_age_pct": 0.149056,
+  "acs_vacancy_pct": 0.035979,
+  "acs_public_transit_pct": 0.012441,
+  "acs_family_hh_pct": 0.688195
+ },
+ "01860000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.194259,
+  "acs_school_age_pct": 0.155047,
+  "acs_vacancy_pct": 0.055506,
+  "acs_public_transit_pct": 0.012099,
+  "acs_family_hh_pct": 0.730915
+ },
+ "01870000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.23336,
+  "acs_school_age_pct": 0.137717,
+  "acs_vacancy_pct": 0.055028,
+  "acs_public_transit_pct": 0.010334,
+  "acs_family_hh_pct": 0.717115
+ },
+ "01890000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.159194,
+  "acs_school_age_pct": 0.212633,
+  "acs_vacancy_pct": 0.027973,
+  "acs_public_transit_pct": 0.088233,
+  "acs_family_hh_pct": 0.779626
+ },
+ "01910000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.233571,
+  "acs_school_age_pct": 0.128476,
+  "acs_vacancy_pct": 0.059134,
+  "acs_public_transit_pct": 0.011483,
+  "acs_family_hh_pct": 0.662437
+ },
+ "01960000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.323918,
+  "acs_school_age_pct": 0.065505,
+  "acs_vacancy_pct": 0.113812,
+  "acs_public_transit_pct": 0.034146,
+  "acs_family_hh_pct": 0.572319
+ },
+ "01970000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.155046,
+  "acs_school_age_pct": 0.157773,
+  "acs_vacancy_pct": 0.594506,
+  "acs_public_transit_pct": 0.008107,
+  "acs_family_hh_pct": 0.653526
+ },
+ "01980000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.189887,
+  "acs_school_age_pct": 0.162285,
+  "acs_vacancy_pct": 0.03021,
+  "acs_public_transit_pct": 0.068991,
+  "acs_family_hh_pct": 0.652281
+ },
+ "01990000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.175427,
+  "acs_school_age_pct": 0.234723,
+  "acs_vacancy_pct": 0.030032,
+  "acs_public_transit_pct": 0.075505,
+  "acs_family_hh_pct": 0.800456
+ },
+ "02010000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.158372,
+  "acs_school_age_pct": 0.171328,
+  "acs_vacancy_pct": 0.050261,
+  "acs_public_transit_pct": 0.025566,
+  "acs_family_hh_pct": 0.574124
+ },
+ "02040000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.229343,
+  "acs_school_age_pct": 0.183474,
+  "acs_vacancy_pct": 0.060979,
+  "acs_public_transit_pct": 0.030375,
+  "acs_family_hh_pct": 0.634882
+ },
+ "02070000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.191392,
+  "acs_school_age_pct": 0.167111,
+  "acs_vacancy_pct": 0.053711,
+  "acs_public_transit_pct": 0.087473,
+  "acs_family_hh_pct": 0.7185
+ },
+ "02080000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.133004,
+  "acs_school_age_pct": 0.1883,
+  "acs_vacancy_pct": 0.029734,
+  "acs_public_transit_pct": 0.052578,
+  "acs_family_hh_pct": 0.825052
+ },
+ "02090000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.22654,
+  "acs_school_age_pct": 0.131675,
+  "acs_vacancy_pct": 0.156593,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.500087
+ },
+ "02100000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.205447,
+  "acs_school_age_pct": 0.12287,
+  "acs_vacancy_pct": 0.052432,
+  "acs_public_transit_pct": 0.02927,
+  "acs_family_hh_pct": 0.502316
+ },
+ "02110000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.159199,
+  "acs_school_age_pct": 0.16455,
+  "acs_vacancy_pct": 0.040716,
+  "acs_public_transit_pct": 0.025487,
+  "acs_family_hh_pct": 0.667911
+ },
+ "02120000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.16578,
+  "acs_school_age_pct": 0.163284,
+  "acs_vacancy_pct": 0.020646,
+  "acs_public_transit_pct": 0.024624,
+  "acs_family_hh_pct": 0.638818
+ },
+ "02130000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.167707,
+  "acs_school_age_pct": 0.177074,
+  "acs_vacancy_pct": 0.033486,
+  "acs_public_transit_pct": 0.017274,
+  "acs_family_hh_pct": 0.761505
+ },
+ "02140000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.164323,
+  "acs_school_age_pct": 0.180156,
+  "acs_vacancy_pct": 0.04417,
+  "acs_public_transit_pct": 0.007377,
+  "acs_family_hh_pct": 0.681724
+ },
+ "02150000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.197299,
+  "acs_school_age_pct": 0.134417,
+  "acs_vacancy_pct": 0.122977,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.644702
+ },
+ "02170000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.14315,
+  "acs_school_age_pct": 0.176474,
+  "acs_vacancy_pct": 0.010811,
+  "acs_public_transit_pct": 0.011874,
+  "acs_family_hh_pct": 0.739413
+ },
+ "02180000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.159175,
+  "acs_school_age_pct": 0.14012,
+  "acs_vacancy_pct": 0.024833,
+  "acs_public_transit_pct": 0.022401,
+  "acs_family_hh_pct": 0.724001
+ },
+ "02190000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.15439,
+  "acs_school_age_pct": 0.204527,
+  "acs_vacancy_pct": 0.025675,
+  "acs_public_transit_pct": 0.042427,
+  "acs_family_hh_pct": 0.830909
+ },
+ "02200000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.18703,
+  "acs_school_age_pct": 0.132377,
+  "acs_vacancy_pct": 0.047418,
+  "acs_public_transit_pct": 0.095643,
+  "acs_family_hh_pct": 0.616437
+ },
+ "02210000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.253073,
+  "acs_school_age_pct": 0.179888,
+  "acs_vacancy_pct": 0.549148,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.636628
+ },
+ "02230000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.207042,
+  "acs_school_age_pct": 0.174601,
+  "acs_vacancy_pct": 0.096211,
+  "acs_public_transit_pct": 0.026265,
+  "acs_family_hh_pct": 0.591222
+ },
+ "02240000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.469253,
+  "acs_school_age_pct": 0.096815,
+  "acs_vacancy_pct": 0.477822,
+  "acs_public_transit_pct": 0.003072,
+  "acs_family_hh_pct": 0.598268
+ },
+ "02260000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.151622,
+  "acs_school_age_pct": 0.171773,
+  "acs_vacancy_pct": 0.046112,
+  "acs_public_transit_pct": 0.002687,
+  "acs_family_hh_pct": 0.700533
+ },
+ "02270000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.20805,
+  "acs_school_age_pct": 0.09861,
+  "acs_vacancy_pct": 0.042472,
+  "acs_public_transit_pct": 0.002845,
+  "acs_family_hh_pct": 0.575911
+ },
+ "02290000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.242986,
+  "acs_school_age_pct": 0.118254,
+  "acs_vacancy_pct": 0.033758,
+  "acs_public_transit_pct": 0.025345,
+  "acs_family_hh_pct": 0.618452
+ },
+ "02300000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.261261,
+  "acs_school_age_pct": 0.157658,
+  "acs_vacancy_pct": 0.100313,
+  "acs_public_transit_pct": 0.017214,
+  "acs_family_hh_pct": 0.573171
+ },
+ "02310000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.187728,
+  "acs_school_age_pct": 0.143223,
+  "acs_vacancy_pct": 0.023421,
+  "acs_public_transit_pct": 0.021573,
+  "acs_family_hh_pct": 0.706067
+ },
+ "02340000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.278772,
+  "acs_school_age_pct": 0.117647,
+  "acs_vacancy_pct": 0.131332,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.701944
+ },
+ "02360000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.201152,
+  "acs_school_age_pct": 0.125806,
+  "acs_vacancy_pct": 0.093705,
+  "acs_public_transit_pct": 0.01774,
+  "acs_family_hh_pct": 0.5484
+ },
+ "02380000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.213533,
+  "acs_school_age_pct": 0.132293,
+  "acs_vacancy_pct": 0.048913,
+  "acs_public_transit_pct": 0.019564,
+  "acs_family_hh_pct": 0.699762
+ },
+ "02390000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.240791,
+  "acs_school_age_pct": 0.126005,
+  "acs_vacancy_pct": 0.09707,
+  "acs_public_transit_pct": 0.013229,
+  "acs_family_hh_pct": 0.669507
+ },
+ "02400000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.222222,
+  "acs_school_age_pct": 0.174847,
+  "acs_vacancy_pct": 0.163607,
+  "acs_public_transit_pct": 0.008746,
+  "acs_family_hh_pct": 0.829198
+ },
+ "02420000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.258354,
+  "acs_school_age_pct": 0.038576,
+  "acs_vacancy_pct": 0.574299,
+  "acs_public_transit_pct": 0.01704,
+  "acs_family_hh_pct": 0.378564
+ },
+ "02430000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.1771,
+  "acs_school_age_pct": 0.101597,
+  "acs_vacancy_pct": 0.055073,
+  "acs_public_transit_pct": 0.177109,
+  "acs_family_hh_pct": 0.516864
+ },
+ "02440000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.175273,
+  "acs_school_age_pct": 0.143442,
+  "acs_vacancy_pct": 0.033068,
+  "acs_public_transit_pct": 0.08848,
+  "acs_family_hh_pct": 0.691814
+ },
+ "02460000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.204692,
+  "acs_school_age_pct": 0.175141,
+  "acs_vacancy_pct": 0.031168,
+  "acs_public_transit_pct": 0.051115,
+  "acs_family_hh_pct": 0.730938
+ },
+ "02480000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.153955,
+  "acs_school_age_pct": 0.14004,
+  "acs_vacancy_pct": 0.082448,
+  "acs_public_transit_pct": 0.239382,
+  "acs_family_hh_pct": 0.608962
+ },
+ "02490000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.349138,
+  "acs_school_age_pct": 0.136494,
+  "acs_vacancy_pct": 0.312644,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.683946
+ },
+ "02500000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.206239,
+  "acs_school_age_pct": 0.150087,
+  "acs_vacancy_pct": 0.016659,
+  "acs_public_transit_pct": 0.002569,
+  "acs_family_hh_pct": 0.724235
+ },
+ "02510000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.151844,
+  "acs_school_age_pct": 0.142809,
+  "acs_vacancy_pct": 0.054499,
+  "acs_public_transit_pct": 0.02011,
+  "acs_family_hh_pct": 0.69964
+ },
+ "02520000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.397735,
+  "acs_school_age_pct": 0.084134,
+  "acs_vacancy_pct": 0.22897,
+  "acs_public_transit_pct": 0.020872,
+  "acs_family_hh_pct": 0.657064
+ },
+ "02530000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.260128,
+  "acs_school_age_pct": 0.198294,
+  "acs_vacancy_pct": 0.274194,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.722222
+ },
+ "02580000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.164711,
+  "acs_school_age_pct": 0.118216,
+  "acs_vacancy_pct": 0.057667,
+  "acs_public_transit_pct": 0.062522,
+  "acs_family_hh_pct": 0.528829
+ },
+ "02610000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.262511,
+  "acs_school_age_pct": 0.144256,
+  "acs_vacancy_pct": 0.175224,
+  "acs_public_transit_pct": 0.011547,
+  "acs_family_hh_pct": 0.708622
+ },
+ "02620000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.216581,
+  "acs_school_age_pct": 0.128256,
+  "acs_vacancy_pct": 0.04956,
+  "acs_public_transit_pct": 0.034625,
+  "acs_family_hh_pct": 0.69601
+ },
+ "02630000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.304229,
+  "acs_school_age_pct": 0.122783,
+  "acs_vacancy_pct": 0.107317,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.571038
+ },
+ "02640000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.225385,
+  "acs_school_age_pct": 0.163907,
+  "acs_vacancy_pct": 0.087316,
+  "acs_public_transit_pct": 0.079434,
+  "acs_family_hh_pct": 0.666968
+ },
+ "02650000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.173826,
+  "acs_school_age_pct": 0.167726,
+  "acs_vacancy_pct": 0.075427,
+  "acs_public_transit_pct": 0.02252,
+  "acs_family_hh_pct": 0.756114
+ },
+ "02660000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.174694,
+  "acs_school_age_pct": 0.210304,
+  "acs_vacancy_pct": 0.030931,
+  "acs_public_transit_pct": 0.138726,
+  "acs_family_hh_pct": 0.817013
+ },
+ "02690000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.152134,
+  "acs_school_age_pct": 0.216848,
+  "acs_vacancy_pct": 0.04,
+  "acs_public_transit_pct": 0.118103,
+  "acs_family_hh_pct": 0.825397
+ },
+ "02710000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.15679,
+  "acs_school_age_pct": 0.178356,
+  "acs_vacancy_pct": 0.052879,
+  "acs_public_transit_pct": 0.01189,
+  "acs_family_hh_pct": 0.720568
+ },
+ "02720000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.245313,
+  "acs_school_age_pct": 0.108195,
+  "acs_vacancy_pct": 0.114086,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.678055
+ },
+ "02730000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.247835,
+  "acs_school_age_pct": 0.149129,
+  "acs_vacancy_pct": 0.030974,
+  "acs_public_transit_pct": 0.001615,
+  "acs_family_hh_pct": 0.710147
+ },
+ "02740000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.09511,
+  "acs_school_age_pct": 0.064756,
+  "acs_vacancy_pct": 0.057366,
+  "acs_public_transit_pct": 0.196197,
+  "acs_family_hh_pct": 0.385469
+ },
+ "02750000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.218448,
+  "acs_school_age_pct": 0.141178,
+  "acs_vacancy_pct": 0.034483,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.778815
+ },
+ "02760000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.130351,
+  "acs_school_age_pct": 0.202184,
+  "acs_vacancy_pct": 0.028788,
+  "acs_public_transit_pct": 0.032997,
+  "acs_family_hh_pct": 0.792509
+ },
+ "02770000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.14394,
+  "acs_school_age_pct": 0.161575,
+  "acs_vacancy_pct": 0.050759,
+  "acs_public_transit_pct": 0.002053,
+  "acs_family_hh_pct": 0.623897
+ },
+ "02780000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.231878,
+  "acs_school_age_pct": 0.115681,
+  "acs_vacancy_pct": 0.046202,
+  "acs_public_transit_pct": 0.001944,
+  "acs_family_hh_pct": 0.607646
+ },
+ "02810000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.132335,
+  "acs_school_age_pct": 0.176755,
+  "acs_vacancy_pct": 0.074418,
+  "acs_public_transit_pct": 0.037702,
+  "acs_family_hh_pct": 0.604779
+ },
+ "02840000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.206735,
+  "acs_school_age_pct": 0.134038,
+  "acs_vacancy_pct": 0.031733,
+  "acs_public_transit_pct": 0.041485,
+  "acs_family_hh_pct": 0.629202
+ },
+ "02850000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.194229,
+  "acs_school_age_pct": 0.14697,
+  "acs_vacancy_pct": 0.042746,
+  "acs_public_transit_pct": 0.032092,
+  "acs_family_hh_pct": 0.69837
+ },
+ "02880000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.156134,
+  "acs_school_age_pct": 0.215084,
+  "acs_vacancy_pct": 0.018461,
+  "acs_public_transit_pct": 0.014989,
+  "acs_family_hh_pct": 0.837522
+ },
+ "02890000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.165617,
+  "acs_school_age_pct": 0.068437,
+  "acs_vacancy_pct": 0.073575,
+  "acs_public_transit_pct": 0.086334,
+  "acs_family_hh_pct": 0.40604
+ },
+ "02900000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.168709,
+  "acs_school_age_pct": 0.155174,
+  "acs_vacancy_pct": 0.041051,
+  "acs_public_transit_pct": 0.006096,
+  "acs_family_hh_pct": 0.784416
+ },
+ "02910000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.193044,
+  "acs_school_age_pct": 0.131304,
+  "acs_vacancy_pct": 0.050369,
+  "acs_public_transit_pct": 0.12433,
+  "acs_family_hh_pct": 0.678418
+ },
+ "02920000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.218966,
+  "acs_school_age_pct": 0.14294,
+  "acs_vacancy_pct": 0.005752,
+  "acs_public_transit_pct": 0.000223,
+  "acs_family_hh_pct": 0.712061
+ },
+ "02930000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.147173,
+  "acs_school_age_pct": 0.160184,
+  "acs_vacancy_pct": 0.048888,
+  "acs_public_transit_pct": 0.006849,
+  "acs_family_hh_pct": 0.65699
+ },
+ "02950000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.200879,
+  "acs_school_age_pct": 0.120765,
+  "acs_vacancy_pct": 0.031176,
+  "acs_public_transit_pct": 0.013264,
+  "acs_family_hh_pct": 0.691192
+ },
+ "02960000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.235597,
+  "acs_school_age_pct": 0.125926,
+  "acs_vacancy_pct": 0.431757,
+  "acs_public_transit_pct": 0.03858,
+  "acs_family_hh_pct": 0.421527
+ },
+ "02980000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.218975,
+  "acs_school_age_pct": 0.18531,
+  "acs_vacancy_pct": 0.03191,
+  "acs_public_transit_pct": 0.044799,
+  "acs_family_hh_pct": 0.808909
+ },
+ "03000000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.56,
+  "acs_school_age_pct": 0.029851,
+  "acs_vacancy_pct": 0.683308,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.439696
+ },
+ "03010000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.136832,
+  "acs_school_age_pct": 0.157759,
+  "acs_vacancy_pct": 0.044006,
+  "acs_public_transit_pct": 0.004621,
+  "acs_family_hh_pct": 0.792855
+ },
+ "03040000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.166853,
+  "acs_school_age_pct": 0.13696,
+  "acs_vacancy_pct": 0.015996,
+  "acs_public_transit_pct": 0.002049,
+  "acs_family_hh_pct": 0.706849
+ },
+ "03050000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.19253,
+  "acs_school_age_pct": 0.132092,
+  "acs_vacancy_pct": 0.03991,
+  "acs_public_transit_pct": 0.069199,
+  "acs_family_hh_pct": 0.64296
+ },
+ "03060000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.161391,
+  "acs_school_age_pct": 0.174883,
+  "acs_vacancy_pct": 0.166485,
+  "acs_public_transit_pct": 0.008484,
+  "acs_family_hh_pct": 0.663185
+ },
+ "03070000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.164182,
+  "acs_school_age_pct": 0.200578,
+  "acs_vacancy_pct": 0.049132,
+  "acs_public_transit_pct": 0.066121,
+  "acs_family_hh_pct": 0.717305
+ },
+ "03080000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.153176,
+  "acs_school_age_pct": 0.083649,
+  "acs_vacancy_pct": 0.043758,
+  "acs_public_transit_pct": 0.05401,
+  "acs_family_hh_pct": 0.525446
+ },
+ "03090000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.200759,
+  "acs_school_age_pct": 0.135138,
+  "acs_vacancy_pct": 0.076923,
+  "acs_public_transit_pct": 0.002566,
+  "acs_family_hh_pct": 0.651961
+ },
+ "03100000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.275467,
+  "acs_school_age_pct": 0.106432,
+  "acs_vacancy_pct": 0.199969,
+  "acs_public_transit_pct": 0.004717,
+  "acs_family_hh_pct": 0.645343
+ },
+ "03140000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.179246,
+  "acs_school_age_pct": 0.093677,
+  "acs_vacancy_pct": 0.049768,
+  "acs_public_transit_pct": 0.081993,
+  "acs_family_hh_pct": 0.530845
+ },
+ "03150000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.195284,
+  "acs_school_age_pct": 0.193982,
+  "acs_vacancy_pct": 0.030374,
+  "acs_public_transit_pct": 0.01862,
+  "acs_family_hh_pct": 0.797292
+ },
+ "03160000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.190053,
+  "acs_school_age_pct": 0.149146,
+  "acs_vacancy_pct": 0.090488,
+  "acs_public_transit_pct": 0.00967,
+  "acs_family_hh_pct": 0.572844
+ },
+ "03170000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.160469,
+  "acs_school_age_pct": 0.186116,
+  "acs_vacancy_pct": 0.034684,
+  "acs_public_transit_pct": 0.048588,
+  "acs_family_hh_pct": 0.771014
+ },
+ "03180000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.285747,
+  "acs_school_age_pct": 0.13887,
+  "acs_vacancy_pct": 0.581466,
+  "acs_public_transit_pct": 0.0095,
+  "acs_family_hh_pct": 0.60395
+ },
+ "03210000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.15701,
+  "acs_school_age_pct": 0.201195,
+  "acs_vacancy_pct": 0.04068,
+  "acs_public_transit_pct": 0.030031,
+  "acs_family_hh_pct": 0.707006
+ },
+ "03220000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.255691,
+  "acs_school_age_pct": 0.125841,
+  "acs_vacancy_pct": 0.010767,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.619388
+ },
+ "03230000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.192398,
+  "acs_school_age_pct": 0.143452,
+  "acs_vacancy_pct": 0.026734,
+  "acs_public_transit_pct": 0.00575,
+  "acs_family_hh_pct": 0.747218
+ },
+ "03250000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.186414,
+  "acs_school_age_pct": 0.158016,
+  "acs_vacancy_pct": 0.061722,
+  "acs_public_transit_pct": 0.020373,
+  "acs_family_hh_pct": 0.64442
+ },
+ "03260000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.142572,
+  "acs_school_age_pct": 0.216889,
+  "acs_vacancy_pct": 0.039974,
+  "acs_public_transit_pct": 0.015627,
+  "acs_family_hh_pct": 0.811096
+ },
+ "03270000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.253633,
+  "acs_school_age_pct": 0.151255,
+  "acs_vacancy_pct": 0.11898,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.737942
+ },
+ "03300000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.190946,
+  "acs_school_age_pct": 0.214454,
+  "acs_vacancy_pct": 0.073938,
+  "acs_public_transit_pct": 0.03595,
+  "acs_family_hh_pct": 0.84513
+ },
+ "03310000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.25644,
+  "acs_school_age_pct": 0.132585,
+  "acs_vacancy_pct": 0.117019,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.719451
+ },
+ "03320000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.163646,
+  "acs_school_age_pct": 0.136546,
+  "acs_vacancy_pct": 0.037953,
+  "acs_public_transit_pct": 0.001702,
+  "acs_family_hh_pct": 0.575964
+ },
+ "03350000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.183371,
+  "acs_school_age_pct": 0.213964,
+  "acs_vacancy_pct": 0.040028,
+  "acs_public_transit_pct": 0.057887,
+  "acs_family_hh_pct": 0.788602
+ },
+ "03360000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.190375,
+  "acs_school_age_pct": 0.113799,
+  "acs_vacancy_pct": 0.032913,
+  "acs_public_transit_pct": 0.086272,
+  "acs_family_hh_pct": 0.599905
+ },
+ "03370000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.262985,
+  "acs_school_age_pct": 0.13741,
+  "acs_vacancy_pct": 0.078322,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.663126
+ },
+ "03400000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.217231,
+  "acs_school_age_pct": 0.16458,
+  "acs_vacancy_pct": 0.030095,
+  "acs_public_transit_pct": 0.004811,
+  "acs_family_hh_pct": 0.683511
+ },
+ "03420000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.147316,
+  "acs_school_age_pct": 0.170382,
+  "acs_vacancy_pct": 0.020045,
+  "acs_public_transit_pct": 0.037385,
+  "acs_family_hh_pct": 0.777284
+ },
+ "03430000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.182448,
+  "acs_school_age_pct": 0.156851,
+  "acs_vacancy_pct": 0.076253,
+  "acs_public_transit_pct": 0.006691,
+  "acs_family_hh_pct": 0.746331
+ },
+ "03440000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.177281,
+  "acs_school_age_pct": 0.229376,
+  "acs_vacancy_pct": 0.027647,
+  "acs_public_transit_pct": 0.071187,
+  "acs_family_hh_pct": 0.753787
+ },
+ "03460000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.196682,
+  "acs_school_age_pct": 0.148349,
+  "acs_vacancy_pct": 0.06484,
+  "acs_public_transit_pct": 0.147956,
+  "acs_family_hh_pct": 0.559611
+ },
+ "03470000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.156413,
+  "acs_school_age_pct": 0.120422,
+  "acs_vacancy_pct": 0.036627,
+  "acs_public_transit_pct": 0.036709,
+  "acs_family_hh_pct": 0.650306
+ },
+ "03480000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.132637,
+  "acs_school_age_pct": 0.141581,
+  "acs_vacancy_pct": 0.073585,
+  "acs_public_transit_pct": 0.027208,
+  "acs_family_hh_pct": 0.574151
+ },
+ "03490000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.367578,
+  "acs_school_age_pct": 0.086711,
+  "acs_vacancy_pct": 0.204334,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.723735
+ },
+ "03500000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.211134,
+  "acs_school_age_pct": 0.160666,
+  "acs_vacancy_pct": 0.056057,
+  "acs_public_transit_pct": 0.022948,
+  "acs_family_hh_pct": 0.788396
+ },
+ "06000000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.157974,
+  "acs_school_age_pct": 0.201808,
+  "acs_vacancy_pct": 0.01589,
+  "acs_public_transit_pct": 0.028255,
+  "acs_family_hh_pct": 0.727432
+ },
+ "06030000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.270546,
+  "acs_school_age_pct": 0.111111,
+  "acs_vacancy_pct": 0.093022,
+  "acs_public_transit_pct": 0.018532,
+  "acs_family_hh_pct": 0.525706
+ },
+ "06100000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.219104,
+  "acs_school_age_pct": 0.17725,
+  "acs_vacancy_pct": 0.110924,
+  "acs_public_transit_pct": 0.004248,
+  "acs_family_hh_pct": 0.765849
+ },
+ "06150000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.195282,
+  "acs_school_age_pct": 0.15941,
+  "acs_vacancy_pct": 0.093134,
+  "acs_public_transit_pct": 0.006919,
+  "acs_family_hh_pct": 0.634813
+ },
+ "06160000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.169139,
+  "acs_school_age_pct": 0.140186,
+  "acs_vacancy_pct": 0.056181,
+  "acs_public_transit_pct": 0.021939,
+  "acs_family_hh_pct": 0.58815
+ },
+ "06180000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.282084,
+  "acs_school_age_pct": 0.114801,
+  "acs_vacancy_pct": 0.267907,
+  "acs_public_transit_pct": 0.012599,
+  "acs_family_hh_pct": 0.603607
+ },
+ "06200000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.243573,
+  "acs_school_age_pct": 0.12002,
+  "acs_vacancy_pct": 0.024493,
+  "acs_public_transit_pct": 0.003084,
+  "acs_family_hh_pct": 0.710483
+ },
+ "06220000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.180723,
+  "acs_school_age_pct": 0.149107,
+  "acs_vacancy_pct": 0.028174,
+  "acs_public_transit_pct": 0.005718,
+  "acs_family_hh_pct": 0.657683
+ },
+ "06250000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.183378,
+  "acs_school_age_pct": 0.137022,
+  "acs_vacancy_pct": 0.038365,
+  "acs_public_transit_pct": 0.029726,
+  "acs_family_hh_pct": 0.73763
+ },
+ "06320000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.275791,
+  "acs_school_age_pct": 0.105236,
+  "acs_vacancy_pct": 0.235848,
+  "acs_public_transit_pct": 0.004419,
+  "acs_family_hh_pct": 0.715456
+ },
+ "06350000": {
+  "_member_count": 7,
+  "acs_age65_plus_pct": 0.243353,
+  "acs_school_age_pct": 0.13143,
+  "acs_vacancy_pct": 0.189617,
+  "acs_public_transit_pct": 0.016375,
+  "acs_family_hh_pct": 0.637356
+ },
+ "06450000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.358299,
+  "acs_school_age_pct": 0.090916,
+  "acs_vacancy_pct": 0.410125,
+  "acs_public_transit_pct": 0.011577,
+  "acs_family_hh_pct": 0.587628
+ },
+ "06500000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.181788,
+  "acs_school_age_pct": 0.157327,
+  "acs_vacancy_pct": 0.048871,
+  "acs_public_transit_pct": 0.008074,
+  "acs_family_hh_pct": 0.794464
+ },
+ "06550000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.158881,
+  "acs_school_age_pct": 0.210546,
+  "acs_vacancy_pct": 0.028548,
+  "acs_public_transit_pct": 0.083365,
+  "acs_family_hh_pct": 0.859771
+ },
+ "06580000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.162292,
+  "acs_school_age_pct": 0.175164,
+  "acs_vacancy_pct": 0.009313,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.663925
+ },
+ "06620000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.287997,
+  "acs_school_age_pct": 0.109509,
+  "acs_vacancy_pct": 0.526732,
+  "acs_public_transit_pct": 0.014976,
+  "acs_family_hh_pct": 0.659636
+ },
+ "06650000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.166364,
+  "acs_school_age_pct": 0.160065,
+  "acs_vacancy_pct": 0.053702,
+  "acs_public_transit_pct": 0.001661,
+  "acs_family_hh_pct": 0.770988
+ },
+ "06720000": {
+  "_member_count": 6,
+  "acs_age65_plus_pct": 0.19564,
+  "acs_school_age_pct": 0.130936,
+  "acs_vacancy_pct": 0.153032,
+  "acs_public_transit_pct": 0.002724,
+  "acs_family_hh_pct": 0.703474
+ },
+ "06730000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.156352,
+  "acs_school_age_pct": 0.219536,
+  "acs_vacancy_pct": 0.029515,
+  "acs_public_transit_pct": 0.008531,
+  "acs_family_hh_pct": 0.781472
+ },
+ "06740000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.208769,
+  "acs_school_age_pct": 0.129017,
+  "acs_vacancy_pct": 0.049848,
+  "acs_public_transit_pct": 0.005507,
+  "acs_family_hh_pct": 0.578979
+ },
+ "06750000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.179186,
+  "acs_school_age_pct": 0.165747,
+  "acs_vacancy_pct": 0.05776,
+  "acs_public_transit_pct": 0.053261,
+  "acs_family_hh_pct": 0.795226
+ },
+ "06800000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.238557,
+  "acs_school_age_pct": 0.159637,
+  "acs_vacancy_pct": 0.047313,
+  "acs_public_transit_pct": 0.006036,
+  "acs_family_hh_pct": 0.741803
+ },
+ "06850000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.344413,
+  "acs_school_age_pct": 0.075672,
+  "acs_vacancy_pct": 0.191271,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.589551
+ },
+ "06980000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.206013,
+  "acs_school_age_pct": 0.193634,
+  "acs_vacancy_pct": 0.073158,
+  "acs_public_transit_pct": 0.056629,
+  "acs_family_hh_pct": 0.718996
+ },
+ "07100000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.177425,
+  "acs_school_age_pct": 0.179235,
+  "acs_vacancy_pct": 0.036975,
+  "acs_public_transit_pct": 0.009995,
+  "acs_family_hh_pct": 0.806304
+ },
+ "07120000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.400566,
+  "acs_school_age_pct": 0.08864,
+  "acs_vacancy_pct": 0.462681,
+  "acs_public_transit_pct": 0.011019,
+  "acs_family_hh_pct": 0.612985
+ },
+ "07150000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.230183,
+  "acs_school_age_pct": 0.137957,
+  "acs_vacancy_pct": 0.180704,
+  "acs_public_transit_pct": 0.005284,
+  "acs_family_hh_pct": 0.596477
+ },
+ "07170000": {
+  "_member_count": 9,
+  "acs_age65_plus_pct": 0.315815,
+  "acs_school_age_pct": 0.10931,
+  "acs_vacancy_pct": 0.153979,
+  "acs_public_transit_pct": 0.000603,
+  "acs_family_hh_pct": 0.613721
+ },
+ "07200000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.149971,
+  "acs_school_age_pct": 0.151455,
+  "acs_vacancy_pct": 0.091855,
+  "acs_public_transit_pct": 0.000997,
+  "acs_family_hh_pct": 0.736013
+ },
+ "07250000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.178785,
+  "acs_school_age_pct": 0.170137,
+  "acs_vacancy_pct": 0.025605,
+  "acs_public_transit_pct": 0.014085,
+  "acs_family_hh_pct": 0.766385
+ },
+ "07280000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.253469,
+  "acs_school_age_pct": 0.122198,
+  "acs_vacancy_pct": 0.11715,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.661848
+ },
+ "07350000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.171493,
+  "acs_school_age_pct": 0.143581,
+  "acs_vacancy_pct": 0.030703,
+  "acs_public_transit_pct": 0.008086,
+  "acs_family_hh_pct": 0.723026
+ },
+ "07450000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.22507,
+  "acs_school_age_pct": 0.137021,
+  "acs_vacancy_pct": 0.050472,
+  "acs_public_transit_pct": 0.006224,
+  "acs_family_hh_pct": 0.748865
+ },
+ "07500000": {
+  "_member_count": 4,
+  "acs_age65_plus_pct": 0.225522,
+  "acs_school_age_pct": 0.128074,
+  "acs_vacancy_pct": 0.096556,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.703725
+ },
+ "07530000": {
+  "_member_count": 5,
+  "acs_age65_plus_pct": 0.181409,
+  "acs_school_age_pct": 0.147154,
+  "acs_vacancy_pct": 0.062753,
+  "acs_public_transit_pct": 0.01548,
+  "acs_family_hh_pct": 0.716104
+ },
+ "07650000": {
+  "_member_count": 5,
+  "acs_age65_plus_pct": 0.28508,
+  "acs_school_age_pct": 0.102953,
+  "acs_vacancy_pct": 0.305252,
+  "acs_public_transit_pct": 0.029566,
+  "acs_family_hh_pct": 0.680447
+ },
+ "07660000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.21914,
+  "acs_school_age_pct": 0.149943,
+  "acs_vacancy_pct": 0.109723,
+  "acs_public_transit_pct": 0.000376,
+  "acs_family_hh_pct": 0.643517
+ },
+ "07670000": {
+  "_member_count": 1,
+  "acs_age65_plus_pct": 0.259092,
+  "acs_school_age_pct": 0.129421,
+  "acs_vacancy_pct": 0.11282,
+  "acs_public_transit_pct": 0.021834,
+  "acs_family_hh_pct": 0.659007
+ },
+ "07700000": {
+  "_member_count": 5,
+  "acs_age65_plus_pct": 0.210191,
+  "acs_school_age_pct": 0.159606,
+  "acs_vacancy_pct": 0.099763,
+  "acs_public_transit_pct": 0.000759,
+  "acs_family_hh_pct": 0.695236
+ },
+ "07730000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.238042,
+  "acs_school_age_pct": 0.129151,
+  "acs_vacancy_pct": 0.119292,
+  "acs_public_transit_pct": 0.003065,
+  "acs_family_hh_pct": 0.693156
+ },
+ "07740000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.308863,
+  "acs_school_age_pct": 0.124001,
+  "acs_vacancy_pct": 0.613751,
+  "acs_public_transit_pct": 0.020516,
+  "acs_family_hh_pct": 0.756065
+ },
+ "07750000": {
+  "_member_count": 5,
+  "acs_age65_plus_pct": 0.175559,
+  "acs_school_age_pct": 0.181884,
+  "acs_vacancy_pct": 0.022922,
+  "acs_public_transit_pct": 0.01309,
+  "acs_family_hh_pct": 0.759951
+ },
+ "07780000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.233458,
+  "acs_school_age_pct": 0.150721,
+  "acs_vacancy_pct": 0.089028,
+  "acs_public_transit_pct": 0.0,
+  "acs_family_hh_pct": 0.549282
+ },
+ "07800000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.167712,
+  "acs_school_age_pct": 0.165853,
+  "acs_vacancy_pct": 0.031794,
+  "acs_public_transit_pct": 0.031649,
+  "acs_family_hh_pct": 0.70387
+ },
+ "06400000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.207041,
+  "acs_school_age_pct": 0.223555,
+  "acs_vacancy_pct": 0.062635,
+  "acs_public_transit_pct": 0.03842,
+  "acs_family_hh_pct": 0.769181
+ },
+ "06600000": {
+  "_member_count": 4,
+  "acs_age65_plus_pct": 0.389207,
+  "acs_school_age_pct": 0.120289,
+  "acs_vacancy_pct": 0.48961,
+  "acs_public_transit_pct": 0.012445,
+  "acs_family_hh_pct": 0.600557
+ },
+ "06900000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.185071,
+  "acs_school_age_pct": 0.161829,
+  "acs_vacancy_pct": 0.044949,
+  "acs_public_transit_pct": 0.032108,
+  "acs_family_hh_pct": 0.775015
+ },
+ "06950000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.1693,
+  "acs_school_age_pct": 0.210741,
+  "acs_vacancy_pct": 0.031966,
+  "acs_public_transit_pct": 0.01803,
+  "acs_family_hh_pct": 0.803801
+ },
+ "07050000": {
+  "_member_count": 3,
+  "acs_age65_plus_pct": 0.199369,
+  "acs_school_age_pct": 0.17066,
+  "acs_vacancy_pct": 0.030753,
+  "acs_public_transit_pct": 0.016698,
+  "acs_family_hh_pct": 0.785687
+ },
+ "07300000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.152783,
+  "acs_school_age_pct": 0.187106,
+  "acs_vacancy_pct": 0.031609,
+  "acs_public_transit_pct": 0.023555,
+  "acs_family_hh_pct": 0.773891
+ },
+ "07630000": {
+  "_member_count": 2,
+  "acs_age65_plus_pct": 0.220611,
+  "acs_school_age_pct": 0.156621,
+  "acs_vacancy_pct": 0.037206,
+  "acs_public_transit_pct": 0.001177,
+  "acs_family_hh_pct": 0.738693
+ }
+}

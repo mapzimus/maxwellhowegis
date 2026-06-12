@@ -1,0 +1,642 @@
+{
+ "02090000": {
+  "grad_pct_employed": 0.0886,
+  "grad_pct_disconnected": 0.5316
+ },
+ "03100000": {
+  "grad_pct_employed": 0.1404,
+  "grad_pct_disconnected": 0.3509
+ },
+ "01850000": {
+  "grad_pct_employed": 0.0491,
+  "grad_pct_disconnected": 0.2868
+ },
+ "03480000": {
+  "grad_pct_employed": 0.0881,
+  "grad_pct_disconnected": 0.3944
+ },
+ "00350000": {
+  "grad_pct_employed": 0.1079,
+  "grad_pct_disconnected": 0.3735
+ },
+ "00490000": {
+  "grad_pct_employed": 0.07,
+  "grad_pct_disconnected": 0.212
+ },
+ "01030000": {
+  "grad_pct_employed": 0.0508,
+  "grad_pct_disconnected": 0.5076
+ },
+ "00720000": {
+  "grad_pct_employed": 0.0913,
+  "grad_pct_disconnected": 0.1111
+ },
+ "02460000": {
+  "grad_pct_employed": 0.0392,
+  "grad_pct_disconnected": 0.1176
+ },
+ "00200000": {
+  "grad_pct_employed": 0.0735,
+  "grad_pct_disconnected": 0.2882
+ },
+ "06150000": {
+  "grad_pct_employed": 0.0759,
+  "grad_pct_disconnected": 0.481
+ },
+ "06580000": {
+  "grad_pct_employed": 0.026,
+  "grad_pct_disconnected": 0.2268
+ },
+ "06650000": {
+  "grad_pct_employed": 0.0571,
+  "grad_pct_disconnected": 0.2229
+ },
+ "01590000": {
+  "grad_pct_employed": 0.0388,
+  "grad_pct_disconnected": 0.093
+ },
+ "07350000": {
+  "grad_pct_employed": 0.0467,
+  "grad_pct_disconnected": 0.2196
+ },
+ "01520000": {
+  "grad_pct_employed": 0.1129,
+  "grad_pct_disconnected": 0.2097
+ },
+ "06400000": {
+  "grad_pct_employed": 0.0333,
+  "grad_pct_disconnected": 0.1133
+ },
+ "01600000": {
+  "grad_pct_employed": 0.0582,
+  "grad_pct_disconnected": 0.3816
+ },
+ "03040000": {
+  "grad_pct_employed": 0.1212,
+  "grad_pct_disconnected": 0.3182
+ },
+ "06000000": {
+  "grad_pct_employed": 0.0333,
+  "grad_pct_disconnected": 0.1153
+ },
+ "00070000": {
+  "grad_pct_employed": 0.0397,
+  "grad_pct_disconnected": 0.2649
+ },
+ "07450000": {
+  "grad_pct_employed": 0.033,
+  "grad_pct_disconnected": 0.1484
+ },
+ "00570000": {
+  "grad_pct_employed": 0.0802,
+  "grad_pct_disconnected": 0.5463
+ },
+ "00100000": {
+  "grad_pct_employed": 0.0409,
+  "grad_pct_disconnected": 0.1754
+ },
+ "02650000": {
+  "grad_pct_employed": 0.0709,
+  "grad_pct_disconnected": 0.1702
+ },
+ "03070000": {
+  "grad_pct_employed": 0.0418,
+  "grad_pct_disconnected": 0.1141
+ },
+ "06220000": {
+  "grad_pct_employed": 0.0577,
+  "grad_pct_disconnected": 0.375
+ },
+ "00250000": {
+  "grad_pct_employed": 0.0714,
+  "grad_pct_disconnected": 0.3442
+ },
+ "06900000": {
+  "grad_pct_employed": 0.0213,
+  "grad_pct_disconnected": 0.122
+ },
+ "01140000": {
+  "grad_pct_employed": 0.0882,
+  "grad_pct_disconnected": 0.3088
+ },
+ "02930000": {
+  "grad_pct_employed": 0.1344,
+  "grad_pct_disconnected": 0.3478
+ },
+ "03320000": {
+  "grad_pct_employed": 0.0502,
+  "grad_pct_disconnected": 0.319
+ },
+ "00770000": {
+  "grad_pct_employed": 0.0714,
+  "grad_pct_disconnected": 0.2347
+ },
+ "02620000": {
+  "grad_pct_employed": 0.0988,
+  "grad_pct_disconnected": 0.2346
+ },
+ "02480000": {
+  "grad_pct_employed": 0.1121,
+  "grad_pct_disconnected": 0.3707
+ },
+ "06800000": {
+  "grad_pct_employed": 0.0232,
+  "grad_pct_disconnected": 0.1892
+ },
+ "03470000": {
+  "grad_pct_employed": 0.0619,
+  "grad_pct_disconnected": 0.299
+ },
+ "02070000": {
+  "grad_pct_employed": 0.0399,
+  "grad_pct_disconnected": 0.1456
+ },
+ "02110000": {
+  "grad_pct_employed": 0.0243,
+  "grad_pct_disconnected": 0.1368
+ },
+ "00820000": {
+  "grad_pct_employed": 0.0392,
+  "grad_pct_disconnected": 0.0863
+ },
+ "03170000": {
+  "grad_pct_employed": 0.0237,
+  "grad_pct_disconnected": 0.0792
+ },
+ "02360000": {
+  "grad_pct_employed": 0.0671,
+  "grad_pct_disconnected": 0.3732
+ },
+ "00140000": {
+  "grad_pct_employed": 0.0318,
+  "grad_pct_disconnected": 0.1227
+ },
+ "00010000": {
+  "grad_pct_employed": 0.0522,
+  "grad_pct_disconnected": 0.2
+ },
+ "06100000": {
+  "grad_pct_employed": 0.0613,
+  "grad_pct_disconnected": 0.2086
+ },
+ "01670000": {
+  "grad_pct_employed": 0.033,
+  "grad_pct_disconnected": 0.0924
+ },
+ "02440000": {
+  "grad_pct_employed": 0.0588,
+  "grad_pct_disconnected": 0.2941
+ },
+ "06160000": {
+  "grad_pct_employed": 0.0673,
+  "grad_pct_disconnected": 0.2115
+ },
+ "03210000": {
+  "grad_pct_employed": 0.0267,
+  "grad_pct_disconnected": 0.1107
+ },
+ "02100000": {
+  "grad_pct_employed": 0.0558,
+  "grad_pct_disconnected": 0.198
+ },
+ "01010000": {
+  "grad_pct_employed": 0.0259,
+  "grad_pct_disconnected": 0.1014
+ },
+ "02710000": {
+  "grad_pct_employed": 0.0264,
+  "grad_pct_disconnected": 0.1098
+ },
+ "01990000": {
+  "grad_pct_employed": 0.0223,
+  "grad_pct_disconnected": 0.0866
+ },
+ "02810000": {
+  "grad_pct_employed": 0.0724,
+  "grad_pct_disconnected": 0.5832
+ },
+ "07700000": {
+  "grad_pct_employed": 0.0206,
+  "grad_pct_disconnected": 0.3162
+ },
+ "02270000": {
+  "grad_pct_employed": 0.0723,
+  "grad_pct_disconnected": 0.4096
+ },
+ "01440000": {
+  "grad_pct_employed": 0.0752,
+  "grad_pct_disconnected": 0.1805
+ },
+ "01810000": {
+  "grad_pct_employed": 0.064,
+  "grad_pct_disconnected": 0.351
+ },
+ "01780000": {
+  "grad_pct_employed": 0.0686,
+  "grad_pct_disconnected": 0.1372
+ },
+ "07800000": {
+  "grad_pct_employed": 0.0634,
+  "grad_pct_disconnected": 0.209
+ },
+ "03260000": {
+  "grad_pct_employed": 0.0237,
+  "grad_pct_disconnected": 0.0782
+ },
+ "06600000": {
+  "grad_pct_employed": 0.0633,
+  "grad_pct_disconnected": 0.2489
+ },
+ "00240000": {
+  "grad_pct_employed": 0.0471,
+  "grad_pct_disconnected": 0.2471
+ },
+ "02290000": {
+  "grad_pct_employed": 0.1075,
+  "grad_pct_disconnected": 0.2687
+ },
+ "02910000": {
+  "grad_pct_employed": 0.0563,
+  "grad_pct_disconnected": 0.1313
+ },
+ "03050000": {
+  "grad_pct_employed": 0.042,
+  "grad_pct_disconnected": 0.1374
+ },
+ "02120000": {
+  "grad_pct_employed": 0.0632,
+  "grad_pct_disconnected": 0.1719
+ },
+ "03250000": {
+  "grad_pct_employed": 0.0653,
+  "grad_pct_disconnected": 0.3964
+ },
+ "00260000": {
+  "grad_pct_employed": 0.0571,
+  "grad_pct_disconnected": 0.1141
+ },
+ "02170000": {
+  "grad_pct_employed": 0.0398,
+  "grad_pct_disconnected": 0.1393
+ },
+ "00090000": {
+  "grad_pct_employed": 0.0254,
+  "grad_pct_disconnected": 0.1085
+ },
+ "00860000": {
+  "grad_pct_employed": 0.0508,
+  "grad_pct_disconnected": 0.322
+ },
+ "07630000": {
+  "grad_pct_employed": 0.0754,
+  "grad_pct_disconnected": 0.1349
+ },
+ "00830000": {
+  "grad_pct_employed": 0.0592,
+  "grad_pct_disconnected": 0.2189
+ },
+ "02390000": {
+  "grad_pct_employed": 0.0599,
+  "grad_pct_disconnected": 0.331
+ },
+ "03150000": {
+  "grad_pct_employed": 0.0297,
+  "grad_pct_disconnected": 0.0594
+ },
+ "01000000": {
+  "grad_pct_employed": 0.0408,
+  "grad_pct_disconnected": 0.2816
+ },
+ "02840000": {
+  "grad_pct_employed": 0.0442,
+  "grad_pct_disconnected": 0.1823
+ },
+ "07730000": {
+  "grad_pct_employed": 0.0805,
+  "grad_pct_disconnected": 0.2816
+ },
+ "02010000": {
+  "grad_pct_employed": 0.1859,
+  "grad_pct_disconnected": 0.5374
+ },
+ "00230000": {
+  "grad_pct_employed": 0.0619,
+  "grad_pct_disconnected": 0.1546
+ },
+ "01710000": {
+  "grad_pct_employed": 0.0554,
+  "grad_pct_disconnected": 0.1631
+ },
+ "01550000": {
+  "grad_pct_employed": 0.029,
+  "grad_pct_disconnected": 0.1252
+ },
+ "01100000": {
+  "grad_pct_employed": 0.0615,
+  "grad_pct_disconnected": 0.1538
+ },
+ "02740000": {
+  "grad_pct_employed": 0.0535,
+  "grad_pct_disconnected": 0.4088
+ },
+ "01970000": {
+  "grad_pct_employed": 0.0547,
+  "grad_pct_disconnected": 0.2812
+ },
+ "00930000": {
+  "grad_pct_employed": 0.059,
+  "grad_pct_disconnected": 0.4458
+ },
+ "07300000": {
+  "grad_pct_employed": 0.0297,
+  "grad_pct_disconnected": 0.1098
+ },
+ "02310000": {
+  "grad_pct_employed": 0.0314,
+  "grad_pct_disconnected": 0.2251
+ },
+ "03420000": {
+  "grad_pct_employed": 0.0423,
+  "grad_pct_disconnected": 0.1596
+ },
+ "00160000": {
+  "grad_pct_employed": 0.0903,
+  "grad_pct_disconnected": 0.2898
+ },
+ "02040000": {
+  "grad_pct_employed": 0.0506,
+  "grad_pct_disconnected": 0.1011
+ },
+ "00610000": {
+  "grad_pct_employed": 0.0634,
+  "grad_pct_disconnected": 0.4479
+ },
+ "00460000": {
+  "grad_pct_employed": 0.0402,
+  "grad_pct_disconnected": 0.1543
+ },
+ "02430000": {
+  "grad_pct_employed": 0.0495,
+  "grad_pct_disconnected": 0.2597
+ },
+ "02660000": {
+  "grad_pct_employed": 0.0228,
+  "grad_pct_disconnected": 0.0951
+ },
+ "02780000": {
+  "grad_pct_employed": 0.0496,
+  "grad_pct_disconnected": 0.1986
+ },
+ "03080000": {
+  "grad_pct_employed": 0.0355,
+  "grad_pct_disconnected": 0.3858
+ },
+ "00970000": {
+  "grad_pct_employed": 0.0836,
+  "grad_pct_disconnected": 0.6005
+ },
+ "07530000": {
+  "grad_pct_employed": 0.0567,
+  "grad_pct_disconnected": 0.234
+ },
+ "00880000": {
+  "grad_pct_employed": 0.0385,
+  "grad_pct_disconnected": 0.1
+ },
+ "03360000": {
+  "grad_pct_employed": 0.0409,
+  "grad_pct_disconnected": 0.3534
+ },
+ "03350000": {
+  "grad_pct_employed": 0.0546,
+  "grad_pct_disconnected": 0.0714
+ },
+ "01650000": {
+  "grad_pct_employed": 0.0882,
+  "grad_pct_disconnected": 0.2972
+ },
+ "01510000": {
+  "grad_pct_employed": 0.0635,
+  "grad_pct_disconnected": 0.2778
+ },
+ "07660000": {
+  "grad_pct_employed": 0.0877,
+  "grad_pct_disconnected": 0.2456
+ },
+ "02950000": {
+  "grad_pct_employed": 0.0531,
+  "grad_pct_disconnected": 0.2522
+ },
+ "00400000": {
+  "grad_pct_employed": 0.041,
+  "grad_pct_disconnected": 0.1687
+ },
+ "01720000": {
+  "grad_pct_employed": 0.055,
+  "grad_pct_disconnected": 0.2385
+ },
+ "06500000": {
+  "grad_pct_employed": 0.0966,
+  "grad_pct_disconnected": 0.2443
+ },
+ "01610000": {
+  "grad_pct_employed": 0.0471,
+  "grad_pct_disconnected": 0.2147
+ },
+ "01770000": {
+  "grad_pct_employed": 0.0421,
+  "grad_pct_disconnected": 0.1158
+ },
+ "03460000": {
+  "grad_pct_employed": 0.072,
+  "grad_pct_disconnected": 0.144
+ },
+ "06950000": {
+  "grad_pct_employed": 0.0169,
+  "grad_pct_disconnected": 0.1017
+ },
+ "00500000": {
+  "grad_pct_employed": 0.0293,
+  "grad_pct_disconnected": 0.1255
+ },
+ "01360000": {
+  "grad_pct_employed": 0.0356,
+  "grad_pct_disconnected": 0.1378
+ },
+ "01630000": {
+  "grad_pct_employed": 0.1194,
+  "grad_pct_disconnected": 0.4633
+ },
+ "06250000": {
+  "grad_pct_employed": 0.0489,
+  "grad_pct_disconnected": 0.2228
+ },
+ "06980000": {
+  "grad_pct_employed": 0.0714,
+  "grad_pct_disconnected": 0.0714
+ },
+ "01330000": {
+  "grad_pct_employed": 0.0986,
+  "grad_pct_disconnected": 0.2676
+ },
+ "00730000": {
+  "grad_pct_employed": 0.0303,
+  "grad_pct_disconnected": 0.2222
+ },
+ "02580000": {
+  "grad_pct_employed": 0.1324,
+  "grad_pct_disconnected": 0.3607
+ },
+ "00940000": {
+  "grad_pct_employed": 0.0875,
+  "grad_pct_disconnected": 0.2437
+ },
+ "02260000": {
+  "grad_pct_employed": 0.0787,
+  "grad_pct_disconnected": 0.3146
+ },
+ "07100000": {
+  "grad_pct_employed": 0.0596,
+  "grad_pct_disconnected": 0.1457
+ },
+ "02200000": {
+  "grad_pct_employed": 0.0688,
+  "grad_pct_disconnected": 0.251
+ },
+ "00960000": {
+  "grad_pct_employed": 0.066,
+  "grad_pct_disconnected": 0.203
+ },
+ "00790000": {
+  "grad_pct_employed": 0.0457,
+  "grad_pct_disconnected": 0.2132
+ },
+ "06350000": {
+  "grad_pct_employed": 0.0702,
+  "grad_pct_disconnected": 0.2544
+ },
+ "01530000": {
+  "grad_pct_employed": 0.0709,
+  "grad_pct_disconnected": 0.3924
+ },
+ "00480000": {
+  "grad_pct_employed": 0.0312,
+  "grad_pct_disconnected": 0.1484
+ },
+ "01070000": {
+  "grad_pct_employed": 0.1243,
+  "grad_pct_disconnected": 0.3842
+ },
+ "07050000": {
+  "grad_pct_employed": 0.0214,
+  "grad_pct_disconnected": 0.0854
+ },
+ "06450000": {
+  "grad_pct_employed": 0.0995,
+  "grad_pct_disconnected": 0.3351
+ },
+ "03440000": {
+  "grad_pct_employed": 0.0413,
+  "grad_pct_disconnected": 0.0914
+ },
+ "00440000": {
+  "grad_pct_employed": 0.0508,
+  "grad_pct_disconnected": 0.5196
+ },
+ "00990000": {
+  "grad_pct_employed": 0.0481,
+  "grad_pct_disconnected": 0.1587
+ },
+ "01280000": {
+  "grad_pct_employed": 0.046,
+  "grad_pct_disconnected": 0.3777
+ },
+ "00640000": {
+  "grad_pct_employed": 0.0962,
+  "grad_pct_disconnected": 0.3173
+ },
+ "01760000": {
+  "grad_pct_employed": 0.0495,
+  "grad_pct_disconnected": 0.3267
+ },
+ "01820000": {
+  "grad_pct_employed": 0.0743,
+  "grad_pct_disconnected": 0.3314
+ },
+ "02640000": {
+  "grad_pct_employed": 0.0533,
+  "grad_pct_disconnected": 0.1511
+ },
+ "00300000": {
+  "grad_pct_employed": 0.0727,
+  "grad_pct_disconnected": 0.1799
+ },
+ "01370000": {
+  "grad_pct_employed": 0.1086,
+  "grad_pct_disconnected": 0.5559
+ },
+ "01700000": {
+  "grad_pct_employed": 0.0607,
+  "grad_pct_disconnected": 0.3725
+ },
+ "00050000": {
+  "grad_pct_employed": 0.0377,
+  "grad_pct_disconnected": 0.3019
+ },
+ "01490000": {
+  "grad_pct_employed": 0.1001,
+  "grad_pct_disconnected": 0.4914
+ },
+ "02520000": {
+  "grad_pct_employed": 0.1067,
+  "grad_pct_disconnected": 0.2
+ },
+ "02920000": {
+  "grad_pct_employed": 0.093,
+  "grad_pct_disconnected": 0.2946
+ },
+ "00310000": {
+  "grad_pct_employed": 0.0468,
+  "grad_pct_disconnected": 0.1696
+ },
+ "07750000": {
+  "grad_pct_employed": 0.0203,
+  "grad_pct_disconnected": 0.1643
+ },
+ "01390000": {
+  "grad_pct_employed": 0.0339,
+  "grad_pct_disconnected": 0.0881
+ },
+ "01890000": {
+  "grad_pct_employed": 0.0442,
+  "grad_pct_disconnected": 0.0796
+ },
+ "00170000": {
+  "grad_pct_employed": 0.0389,
+  "grad_pct_disconnected": 0.2111
+ },
+ "02180000": {
+  "grad_pct_employed": 0.0722,
+  "grad_pct_disconnected": 0.1778
+ },
+ "00950000": {
+  "grad_pct_employed": 0.141,
+  "grad_pct_disconnected": 0.4701
+ },
+ "01310000": {
+  "grad_pct_employed": 0.0227,
+  "grad_pct_disconnected": 0.0874
+ },
+ "00560000": {
+  "grad_pct_employed": 0.0275,
+  "grad_pct_disconnected": 0.1154
+ },
+ "01980000": {
+  "grad_pct_employed": 0.0394,
+  "grad_pct_disconnected": 0.1021
+ },
+ "00710000": {
+  "grad_pct_employed": 0.0739,
+  "grad_pct_disconnected": 0.1913
+ }
+}

@@ -1,0 +1,1092 @@
+{
+ "07700000": {
+  "oss_low_income": 0.07,
+  "oss_swd": 0.063,
+  "oss_hispanic": 0.046
+ },
+ "01610000": {
+  "oss_low_income": 0.065,
+  "oss_swd": 0.068,
+  "oss_hispanic": 0.072
+ },
+ "01650000": {
+  "oss_low_income": 0.018,
+  "oss_swd": 0.039,
+  "oss_ell": 0.011,
+  "oss_black": 0.018,
+  "oss_hispanic": 0.018
+ },
+ "01630000": {
+  "oss_low_income": 0.033,
+  "oss_swd": 0.049,
+  "oss_ell": 0.025,
+  "oss_black": 0.049,
+  "oss_hispanic": 0.03
+ },
+ "02360000": {
+  "oss_low_income": 0.098,
+  "oss_swd": 0.154,
+  "oss_ell": 0.037,
+  "oss_black": 0.094,
+  "oss_hispanic": 0.074
+ },
+ "02810000": {
+  "oss_low_income": 0.053,
+  "oss_swd": 0.066,
+  "oss_ell": 0.037,
+  "oss_black": 0.063,
+  "oss_hispanic": 0.05
+ },
+ "00300000": {
+  "oss_low_income": 0.026,
+  "oss_swd": 0.028,
+  "oss_ell": 0.0,
+  "oss_black": 0.017,
+  "oss_hispanic": 0.019
+ },
+ "01490000": {
+  "oss_low_income": 0.022,
+  "oss_swd": 0.028,
+  "oss_ell": 0.022,
+  "oss_hispanic": 0.022
+ },
+ "01720000": {
+  "oss_low_income": 0.019,
+  "oss_swd": 0.023
+ },
+ "01410000": {
+  "oss_low_income": 0.018,
+  "oss_swd": 0.017,
+  "oss_ell": 0.008,
+  "oss_hispanic": 0.012
+ },
+ "02840000": {
+  "oss_low_income": 0.003,
+  "oss_swd": 0.009,
+  "oss_hispanic": 0.003
+ },
+ "02920000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.02
+ },
+ "03310000": {
+  "oss_low_income": 0.069,
+  "oss_swd": 0.056,
+  "oss_hispanic": 0.037
+ },
+ "02120000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.031,
+  "oss_black": 0.016,
+  "oss_hispanic": 0.019
+ },
+ "01680000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.011
+ },
+ "06100000": {
+  "oss_low_income": 0.013,
+  "oss_swd": 0.015
+ },
+ "00140000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.045,
+  "oss_ell": 0.043,
+  "oss_hispanic": 0.035
+ },
+ "06150000": {
+  "oss_low_income": 0.083,
+  "oss_swd": 0.115,
+  "oss_ell": 0.075,
+  "oss_hispanic": 0.086
+ },
+ "02730000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.02
+ },
+ "01010000": {
+  "oss_low_income": 0.023,
+  "oss_swd": 0.016,
+  "oss_black": 0.043,
+  "oss_hispanic": 0.008
+ },
+ "02140000": {
+  "oss_low_income": 0.055,
+  "oss_swd": 0.071,
+  "oss_hispanic": 0.034
+ },
+ "02740000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.04,
+  "oss_ell": 0.01,
+  "oss_black": 0.033,
+  "oss_hispanic": 0.015
+ },
+ "00830000": {
+  "oss_low_income": 0.036,
+  "oss_swd": 0.036,
+  "oss_ell": 0.051,
+  "oss_black": 0.043,
+  "oss_hispanic": 0.034
+ },
+ "00400000": {
+  "oss_low_income": 0.018,
+  "oss_swd": 0.021,
+  "oss_black": 0.025,
+  "oss_hispanic": 0.02
+ },
+ "02190000": {
+  "oss_swd": 0.011
+ },
+ "00240000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.026
+ },
+ "01860000": {
+  "oss_low_income": 0.046,
+  "oss_swd": 0.045,
+  "oss_hispanic": 0.036
+ },
+ "03320000": {
+  "oss_low_income": 0.036,
+  "oss_swd": 0.053,
+  "oss_ell": 0.024,
+  "oss_black": 0.02,
+  "oss_hispanic": 0.048
+ },
+ "00560000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.016,
+  "oss_black": 0.013,
+  "oss_hispanic": 0.018
+ },
+ "02090000": {
+  "oss_low_income": 0.092,
+  "oss_swd": 0.117,
+  "oss_black": 0.194,
+  "oss_hispanic": 0.06
+ },
+ "01570000": {
+  "oss_low_income": 0.069,
+  "oss_swd": 0.032,
+  "oss_black": 0.051
+ },
+ "02660000": {
+  "oss_low_income": 0.018,
+  "oss_swd": 0.025,
+  "oss_black": 0.017
+ },
+ "02580000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.044,
+  "oss_ell": 0.023,
+  "oss_black": 0.02,
+  "oss_hispanic": 0.034
+ },
+ "00950000": {
+  "oss_low_income": 0.092,
+  "oss_swd": 0.126,
+  "oss_ell": 0.064,
+  "oss_black": 0.099,
+  "oss_hispanic": 0.088
+ },
+ "01740000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.019
+ },
+ "02640000": {
+  "oss_low_income": 0.009,
+  "oss_swd": 0.005,
+  "oss_hispanic": 0.034
+ },
+ "03080000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.038,
+  "oss_ell": 0.024,
+  "oss_black": 0.024,
+  "oss_hispanic": 0.03
+ },
+ "02230000": {
+  "oss_low_income": 0.019,
+  "oss_swd": 0.056
+ },
+ "03420000": {
+  "oss_low_income": 0.013,
+  "oss_swd": 0.028
+ },
+ "01990000": {
+  "oss_low_income": 0.019,
+  "oss_swd": 0.01,
+  "oss_black": 0.016,
+  "oss_hispanic": 0.02
+ },
+ "06800000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.04,
+  "oss_black": 0.068,
+  "oss_hispanic": 0.051
+ },
+ "07450000": {
+  "oss_low_income": 0.041,
+  "oss_swd": 0.026
+ },
+ "03360000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.047,
+  "oss_ell": 0.014,
+  "oss_black": 0.041,
+  "oss_hispanic": 0.033
+ },
+ "00260000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.024,
+  "oss_black": 0.036
+ },
+ "07780000": {
+  "oss_low_income": 0.027
+ },
+ "06650000": {
+  "oss_low_income": 0.061,
+  "oss_swd": 0.069
+ },
+ "00930000": {
+  "oss_low_income": 0.018,
+  "oss_swd": 0.023,
+  "oss_ell": 0.015,
+  "oss_black": 0.025,
+  "oss_hispanic": 0.017
+ },
+ "01780000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.018
+ },
+ "06180000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.055,
+  "oss_ell": 0.045,
+  "oss_hispanic": 0.056
+ },
+ "00570000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.044,
+  "oss_ell": 0.026,
+  "oss_black": 0.04,
+  "oss_hispanic": 0.028
+ },
+ "00790000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.037,
+  "oss_ell": 0.023,
+  "oss_black": 0.017,
+  "oss_hispanic": 0.03
+ },
+ "01440000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.014
+ },
+ "01390000": {
+  "oss_low_income": 0.013,
+  "oss_swd": 0.017
+ },
+ "07170000": {
+  "oss_low_income": 0.051,
+  "oss_swd": 0.07
+ },
+ "02440000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.076,
+  "oss_ell": 0.013,
+  "oss_black": 0.037,
+  "oss_hispanic": 0.049
+ },
+ "01170000": {
+  "oss_low_income": 0.022
+ },
+ "06030000": {
+  "oss_low_income": 0.041,
+  "oss_swd": 0.063,
+  "oss_hispanic": 0.058
+ },
+ "00010000": {
+  "oss_low_income": 0.039,
+  "oss_swd": 0.032,
+  "oss_ell": 0.01,
+  "oss_black": 0.053,
+  "oss_hispanic": 0.027
+ },
+ "02900000": {
+  "oss_swd": 0.008
+ },
+ "07670000": {
+  "oss_low_income": 0.042,
+  "oss_swd": 0.038,
+  "oss_hispanic": 0.04
+ },
+ "00970000": {
+  "oss_low_income": 0.053,
+  "oss_swd": 0.06,
+  "oss_ell": 0.035,
+  "oss_black": 0.045,
+  "oss_hispanic": 0.054
+ },
+ "00090000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.012,
+  "oss_hispanic": 0.012
+ },
+ "07750000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.02,
+  "oss_hispanic": 0.021
+ },
+ "00350000": {
+  "oss_low_income": 0.039,
+  "oss_swd": 0.053,
+  "oss_ell": 0.026,
+  "oss_black": 0.044,
+  "oss_hispanic": 0.034
+ },
+ "01590000": {
+  "oss_low_income": 0.01,
+  "oss_swd": 0.018
+ },
+ "07120000": {
+  "oss_low_income": 0.045,
+  "oss_swd": 0.054,
+  "oss_black": 0.046,
+  "oss_hispanic": 0.02
+ },
+ "07350000": {
+  "oss_low_income": 0.049,
+  "oss_swd": 0.041,
+  "oss_hispanic": 0.062
+ },
+ "02880000": {
+  "oss_low_income": 0.012,
+  "oss_swd": 0.01
+ },
+ "02310000": {
+  "oss_low_income": 0.026,
+  "oss_swd": 0.025
+ },
+ "02390000": {
+  "oss_low_income": 0.044,
+  "oss_swd": 0.049,
+  "oss_ell": 0.015,
+  "oss_black": 0.064,
+  "oss_hispanic": 0.022
+ },
+ "00520000": {
+  "oss_low_income": 0.054,
+  "oss_swd": 0.028
+ },
+ "02910000": {
+  "oss_low_income": 0.034,
+  "oss_swd": 0.021,
+  "oss_black": 0.06,
+  "oss_hispanic": 0.015
+ },
+ "06720000": {
+  "oss_low_income": 0.064,
+  "oss_swd": 0.1
+ },
+ "02510000": {
+  "oss_low_income": 0.057,
+  "oss_swd": 0.062,
+  "oss_ell": 0.039,
+  "oss_black": 0.07,
+  "oss_hispanic": 0.043
+ },
+ "00610000": {
+  "oss_low_income": 0.05,
+  "oss_swd": 0.056,
+  "oss_ell": 0.031,
+  "oss_black": 0.053,
+  "oss_hispanic": 0.049
+ },
+ "00960000": {
+  "oss_low_income": 0.04,
+  "oss_swd": 0.054,
+  "oss_ell": 0.019,
+  "oss_black": 0.058,
+  "oss_hispanic": 0.027
+ },
+ "06500000": {
+  "oss_low_income": 0.019,
+  "oss_swd": 0.019,
+  "oss_hispanic": 0.016
+ },
+ "00310000": {
+  "oss_low_income": 0.026,
+  "oss_swd": 0.031,
+  "oss_black": 0.018,
+  "oss_hispanic": 0.026
+ },
+ "01850000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.07,
+  "oss_ell": 0.044,
+  "oss_black": 0.039,
+  "oss_hispanic": 0.038
+ },
+ "06250000": {
+  "oss_low_income": 0.016,
+  "oss_swd": 0.022,
+  "oss_black": 0.026
+ },
+ "03470000": {
+  "oss_low_income": 0.023,
+  "oss_swd": 0.024,
+  "oss_ell": 0.008,
+  "oss_black": 0.031,
+  "oss_hispanic": 0.011
+ },
+ "03140000": {
+  "oss_low_income": 0.01,
+  "oss_swd": 0.015,
+  "oss_ell": 0.009,
+  "oss_hispanic": 0.015
+ },
+ "00710000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.045,
+  "oss_ell": 0.022,
+  "oss_black": 0.025,
+  "oss_hispanic": 0.05
+ },
+ "03440000": {
+  "oss_swd": 0.004
+ },
+ "07530000": {
+  "oss_low_income": 0.039,
+  "oss_swd": 0.046,
+  "oss_hispanic": 0.065
+ },
+ "03160000": {
+  "oss_low_income": 0.09,
+  "oss_swd": 0.132,
+  "oss_ell": 0.077,
+  "oss_black": 0.053,
+  "oss_hispanic": 0.113
+ },
+ "02430000": {
+  "oss_low_income": 0.028,
+  "oss_swd": 0.044,
+  "oss_ell": 0.017,
+  "oss_black": 0.05,
+  "oss_hispanic": 0.042
+ },
+ "03100000": {
+  "oss_low_income": 0.08,
+  "oss_swd": 0.109,
+  "oss_black": 0.129,
+  "oss_hispanic": 0.073
+ },
+ "01330000": {
+  "oss_low_income": 0.022,
+  "oss_swd": 0.027,
+  "oss_ell": 0.021,
+  "oss_black": 0.026
+ },
+ "03010000": {
+  "oss_low_income": 0.034,
+  "oss_swd": 0.029
+ },
+ "07150000": {
+  "oss_low_income": 0.019,
+  "oss_swd": 0.019
+ },
+ "00360000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.038
+ },
+ "03150000": {
+  "oss_low_income": 0.011,
+  "oss_swd": 0.009
+ },
+ "03040000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.041
+ },
+ "01640000": {
+  "oss_swd": 0.009
+ },
+ "03210000": {
+  "oss_low_income": 0.016,
+  "oss_swd": 0.013,
+  "oss_ell": 0.015,
+  "oss_hispanic": 0.018
+ },
+ "01670000": {
+  "oss_low_income": 0.038,
+  "oss_swd": 0.041,
+  "oss_black": 0.018,
+  "oss_hispanic": 0.034
+ },
+ "01910000": {
+  "oss_low_income": 0.053,
+  "oss_swd": 0.091
+ },
+ "01980000": {
+  "oss_low_income": 0.008,
+  "oss_swd": 0.011,
+  "oss_hispanic": 0.003
+ },
+ "03090000": {
+  "oss_low_income": 0.036,
+  "oss_swd": 0.048
+ },
+ "02110000": {
+  "oss_low_income": 0.016,
+  "oss_swd": 0.014,
+  "oss_hispanic": 0.015
+ },
+ "06450000": {
+  "oss_low_income": 0.025,
+  "oss_swd": 0.023,
+  "oss_ell": 0.009,
+  "oss_black": 0.026,
+  "oss_hispanic": 0.011
+ },
+ "07100000": {
+  "oss_low_income": 0.023,
+  "oss_swd": 0.015
+ },
+ "00820000": {
+  "oss_swd": 0.012
+ },
+ "01750000": {
+  "oss_low_income": 0.015,
+  "oss_swd": 0.015
+ },
+ "02200000": {
+  "oss_low_income": 0.049,
+  "oss_swd": 0.053,
+  "oss_ell": 0.012,
+  "oss_black": 0.076,
+  "oss_hispanic": 0.039
+ },
+ "02610000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.042,
+  "oss_hispanic": 0.03
+ },
+ "00880000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.018,
+  "oss_black": 0.021,
+  "oss_hispanic": 0.021
+ },
+ "00940000": {
+  "oss_low_income": 0.064,
+  "oss_swd": 0.061,
+  "oss_black": 0.15,
+  "oss_hispanic": 0.114
+ },
+ "01380000": {
+  "oss_low_income": 0.01,
+  "oss_swd": 0.016
+ },
+ "03070000": {
+  "oss_low_income": 0.039,
+  "oss_swd": 0.038,
+  "oss_black": 0.034,
+  "oss_hispanic": 0.036
+ },
+ "06350000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.044
+ },
+ "07660000": {
+  "oss_low_income": 0.028,
+  "oss_swd": 0.031,
+  "oss_hispanic": 0.028
+ },
+ "01140000": {
+  "oss_low_income": 0.051,
+  "oss_swd": 0.06,
+  "oss_hispanic": 0.051
+ },
+ "01760000": {
+  "oss_low_income": 0.01,
+  "oss_swd": 0.019,
+  "oss_black": 0.013,
+  "oss_hispanic": 0.008
+ },
+ "01700000": {
+  "oss_low_income": 0.054,
+  "oss_swd": 0.091,
+  "oss_ell": 0.04,
+  "oss_black": 0.045,
+  "oss_hispanic": 0.052
+ },
+ "03430000": {
+  "oss_low_income": 0.065,
+  "oss_swd": 0.048,
+  "oss_hispanic": 0.046
+ },
+ "02270000": {
+  "oss_low_income": 0.076,
+  "oss_swd": 0.113,
+  "oss_hispanic": 0.08
+ },
+ "03250000": {
+  "oss_low_income": 0.055,
+  "oss_swd": 0.077,
+  "oss_ell": 0.024,
+  "oss_black": 0.144,
+  "oss_hispanic": 0.076
+ },
+ "06580000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.028,
+  "oss_hispanic": 0.034
+ },
+ "07730000": {
+  "oss_low_income": 0.019,
+  "oss_swd": 0.029
+ },
+ "03170000": {
+  "oss_low_income": 0.008,
+  "oss_swd": 0.009,
+  "oss_black": 0.019
+ },
+ "02770000": {
+  "oss_low_income": 0.068,
+  "oss_swd": 0.11,
+  "oss_ell": 0.028,
+  "oss_black": 0.05,
+  "oss_hispanic": 0.062
+ },
+ "00030000": {
+  "oss_low_income": 0.022,
+  "oss_swd": 0.022
+ },
+ "02460000": {
+  "oss_low_income": 0.025,
+  "oss_swd": 0.01,
+  "oss_black": 0.07
+ },
+ "02620000": {
+  "oss_low_income": 0.063,
+  "oss_swd": 0.073,
+  "oss_ell": 0.024,
+  "oss_black": 0.082,
+  "oss_hispanic": 0.052
+ },
+ "02930000": {
+  "oss_low_income": 0.09,
+  "oss_swd": 0.115,
+  "oss_ell": 0.056,
+  "oss_black": 0.081,
+  "oss_hispanic": 0.098
+ },
+ "06160000": {
+  "oss_low_income": 0.012,
+  "oss_swd": 0.023
+ },
+ "00860000": {
+  "oss_low_income": 0.055,
+  "oss_swd": 0.065,
+  "oss_hispanic": 0.052
+ },
+ "01000000": {
+  "oss_low_income": 0.042,
+  "oss_swd": 0.062,
+  "oss_ell": 0.028,
+  "oss_black": 0.053,
+  "oss_hispanic": 0.034
+ },
+ "03220000": {
+  "oss_low_income": 0.043,
+  "oss_hispanic": 0.047
+ },
+ "00160000": {
+  "oss_low_income": 0.032,
+  "oss_swd": 0.054,
+  "oss_ell": 0.027,
+  "oss_black": 0.04,
+  "oss_hispanic": 0.032
+ },
+ "01510000": {
+  "oss_low_income": 0.043,
+  "oss_swd": 0.036,
+  "oss_black": 0.047,
+  "oss_hispanic": 0.039
+ },
+ "01280000": {
+  "oss_low_income": 0.037,
+  "oss_swd": 0.04,
+  "oss_ell": 0.031,
+  "oss_black": 0.024,
+  "oss_hispanic": 0.038
+ },
+ "07200000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.029,
+  "oss_hispanic": 0.025
+ },
+ "03230000": {
+  "oss_low_income": 0.016,
+  "oss_swd": 0.029,
+  "oss_black": 0.014,
+  "oss_hispanic": 0.0
+ },
+ "01110000": {
+  "oss_low_income": 0.016,
+  "oss_swd": 0.023
+ },
+ "00170000": {
+  "oss_low_income": 0.027,
+  "oss_swd": 0.045,
+  "oss_ell": 0.028,
+  "oss_hispanic": 0.025
+ },
+ "00990000": {
+  "oss_low_income": 0.02,
+  "oss_swd": 0.03,
+  "oss_black": 0.016
+ },
+ "00670000": {
+  "oss_low_income": 0.028,
+  "oss_swd": 0.014,
+  "oss_black": 0.034
+ },
+ "02520000": {
+  "oss_low_income": 0.006,
+  "oss_swd": 0.007
+ },
+ "02650000": {
+  "oss_low_income": 0.026,
+  "oss_swd": 0.02
+ },
+ "02950000": {
+  "oss_low_income": 0.023,
+  "oss_swd": 0.014,
+  "oss_hispanic": 0.018
+ },
+ "02850000": {
+  "oss_low_income": 0.032,
+  "oss_swd": 0.043,
+  "oss_ell": 0.024,
+  "oss_black": 0.031,
+  "oss_hispanic": 0.039
+ },
+ "06000000": {
+  "oss_low_income": 0.003,
+  "oss_swd": 0.005,
+  "oss_ell": 0.002,
+  "oss_hispanic": 0.008
+ },
+ "00270000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.02
+ },
+ "01070000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.036,
+  "oss_ell": 0.015,
+  "oss_hispanic": 0.018
+ },
+ "01870000": {
+  "oss_low_income": 0.025
+ },
+ "06200000": {
+  "oss_low_income": 0.053,
+  "oss_swd": 0.05
+ },
+ "00250000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.018,
+  "oss_hispanic": 0.013
+ },
+ "00480000": {
+  "oss_low_income": 0.022,
+  "oss_swd": 0.026,
+  "oss_ell": 0.009,
+  "oss_black": 0.028,
+  "oss_hispanic": 0.019
+ },
+ "02290000": {
+  "oss_low_income": 0.028,
+  "oss_swd": 0.034,
+  "oss_ell": 0.02,
+  "oss_black": 0.015,
+  "oss_hispanic": 0.024
+ },
+ "01500000": {
+  "oss_low_income": 0.039,
+  "oss_swd": 0.038
+ },
+ "00720000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.034,
+  "oss_hispanic": 0.042
+ },
+ "00490000": {
+  "oss_low_income": 0.017,
+  "oss_swd": 0.024,
+  "oss_black": 0.019,
+  "oss_hispanic": 0.013
+ },
+ "02780000": {
+  "oss_low_income": 0.07,
+  "oss_swd": 0.065,
+  "oss_ell": 0.043,
+  "oss_hispanic": 0.065
+ },
+ "06750000": {
+  "oss_swd": 0.012
+ },
+ "00100000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.014,
+  "oss_black": 0.014,
+  "oss_hispanic": 0.009
+ },
+ "01550000": {
+  "oss_low_income": 0.006,
+  "oss_swd": 0.008,
+  "oss_black": 0.005,
+  "oss_hispanic": 0.013
+ },
+ "00180000": {
+  "oss_low_income": 0.029,
+  "oss_swd": 0.046,
+  "oss_black": 0.047
+ },
+ "02010000": {
+  "oss_low_income": 0.045,
+  "oss_swd": 0.062,
+  "oss_ell": 0.025,
+  "oss_black": 0.048,
+  "oss_hispanic": 0.04
+ },
+ "01620000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.037,
+  "oss_hispanic": 0.039
+ },
+ "02180000": {
+  "oss_low_income": 0.037,
+  "oss_swd": 0.041
+ },
+ "01100000": {
+  "oss_low_income": 0.008,
+  "oss_swd": 0.006
+ },
+ "01970000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.035,
+  "oss_ell": 0.012,
+  "oss_black": 0.056,
+  "oss_hispanic": 0.011
+ },
+ "01370000": {
+  "oss_low_income": 0.105,
+  "oss_swd": 0.123,
+  "oss_ell": 0.088,
+  "oss_black": 0.089,
+  "oss_hispanic": 0.101
+ },
+ "01220000": {
+  "oss_swd": 0.007
+ },
+ "01770000": {
+  "oss_low_income": 0.02,
+  "oss_swd": 0.026,
+  "oss_hispanic": 0.022
+ },
+ "01810000": {
+  "oss_low_income": 0.055,
+  "oss_swd": 0.065,
+  "oss_ell": 0.069,
+  "oss_black": 0.055,
+  "oss_hispanic": 0.055
+ },
+ "02100000": {
+  "oss_low_income": 0.032,
+  "oss_swd": 0.043,
+  "oss_hispanic": 0.047
+ },
+ "06220000": {
+  "oss_low_income": 0.024,
+  "oss_swd": 0.033,
+  "oss_hispanic": 0.029
+ },
+ "03350000": {
+  "oss_low_income": 0.02,
+  "oss_swd": 0.012,
+  "oss_hispanic": 0.01
+ },
+ "01030000": {
+  "oss_low_income": 0.067,
+  "oss_swd": 0.087,
+  "oss_ell": 0.056,
+  "oss_hispanic": 0.063
+ },
+ "07800000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.018,
+  "oss_black": 0.019
+ },
+ "00230000": {
+  "oss_low_income": 0.026,
+  "oss_swd": 0.02,
+  "oss_ell": 0.008,
+  "oss_black": 0.031,
+  "oss_hispanic": 0.03
+ },
+ "00870000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.031,
+  "oss_hispanic": 0.008
+ },
+ "02070000": {
+  "oss_low_income": 0.01,
+  "oss_swd": 0.011,
+  "oss_ell": 0.006,
+  "oss_black": 0.005,
+  "oss_hispanic": 0.01
+ },
+ "00460000": {
+  "oss_low_income": 0.009,
+  "oss_swd": 0.009,
+  "oss_black": 0.017,
+  "oss_hispanic": 0.004
+ },
+ "00730000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.031,
+  "oss_ell": 0.015,
+  "oss_black": 0.035,
+  "oss_hispanic": 0.015
+ },
+ "00070000": {
+  "oss_low_income": 0.046,
+  "oss_swd": 0.052,
+  "oss_hispanic": 0.037
+ },
+ "01310000": {
+  "oss_low_income": 0.009,
+  "oss_swd": 0.007
+ },
+ "07250000": {
+  "oss_swd": 0.008
+ },
+ "01710000": {
+  "oss_low_income": 0.015,
+  "oss_swd": 0.017
+ },
+ "02480000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.022,
+  "oss_ell": 0.017,
+  "oss_black": 0.039,
+  "oss_hispanic": 0.018
+ },
+ "02710000": {
+  "oss_low_income": 0.013,
+  "oss_swd": 0.023,
+  "oss_ell": 0.009,
+  "oss_hispanic": 0.018
+ },
+ "01530000": {
+  "oss_low_income": 0.028,
+  "oss_swd": 0.041,
+  "oss_ell": 0.016,
+  "oss_black": 0.021,
+  "oss_hispanic": 0.027
+ },
+ "03050000": {
+  "oss_low_income": 0.014,
+  "oss_swd": 0.01,
+  "oss_hispanic": 0.015
+ },
+ "00440000": {
+  "oss_low_income": 0.05,
+  "oss_swd": 0.063,
+  "oss_ell": 0.044,
+  "oss_black": 0.052,
+  "oss_hispanic": 0.038
+ },
+ "00640000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.062,
+  "oss_ell": 0.03,
+  "oss_hispanic": 0.028
+ },
+ "01360000": {
+  "oss_swd": 0.01
+ },
+ "00500000": {
+  "oss_low_income": 0.056,
+  "oss_swd": 0.061,
+  "oss_ell": 0.038,
+  "oss_black": 0.074,
+  "oss_hispanic": 0.026
+ },
+ "00050000": {
+  "oss_low_income": 0.021,
+  "oss_swd": 0.035,
+  "oss_hispanic": 0.012
+ },
+ "01600000": {
+  "oss_low_income": 0.033,
+  "oss_swd": 0.053,
+  "oss_ell": 0.023,
+  "oss_black": 0.025,
+  "oss_hispanic": 0.038
+ },
+ "01820000": {
+  "oss_low_income": 0.026,
+  "oss_swd": 0.038,
+  "oss_black": 0.025
+ },
+ "03480000": {
+  "oss_low_income": 0.038,
+  "oss_swd": 0.059,
+  "oss_ell": 0.031,
+  "oss_black": 0.031,
+  "oss_hispanic": 0.042
+ },
+ "02260000": {
+  "oss_low_income": 0.07,
+  "oss_swd": 0.054,
+  "oss_hispanic": 0.073
+ },
+ "00200000": {
+  "oss_low_income": 0.03,
+  "oss_swd": 0.057,
+  "oss_ell": 0.023,
+  "oss_black": 0.044,
+  "oss_hispanic": 0.02
+ },
+ "06400000": {
+  "oss_low_income": 0.031,
+  "oss_swd": 0.027
+ },
+ "06600000": {
+  "oss_low_income": 0.072,
+  "oss_swd": 0.105,
+  "oss_black": 0.061
+ },
+ "06900000": {
+  "oss_low_income": 0.008,
+  "oss_swd": 0.006,
+  "oss_hispanic": 0.016
+ },
+ "06950000": {
+  "oss_low_income": 0.068,
+  "oss_swd": 0.042,
+  "oss_black": 0.097
+ },
+ "07050000": {
+  "oss_swd": 0.022
+ },
+ "07630000": {
+  "oss_low_income": 0.065,
+  "oss_swd": 0.095,
+  "oss_hispanic": 0.088
+ }
+}

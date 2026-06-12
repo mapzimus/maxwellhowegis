@@ -1,0 +1,1075 @@
+{
+ "00460000": {
+  "grad_avg_earnings": 33620,
+  "grad_employment_pct": 0.3326,
+  "grad_avg_earnings_lowincome": 27918
+ },
+ "01670000": {
+  "grad_avg_earnings": 37509,
+  "grad_employment_pct": 0.479,
+  "grad_avg_earnings_lowincome": 30882
+ },
+ "02950000": {
+  "grad_avg_earnings": 35352,
+  "grad_employment_pct": 0.5542,
+  "grad_avg_earnings_lowincome": 36118
+ },
+ "06450000": {
+  "grad_avg_earnings": 30682,
+  "grad_employment_pct": 0.4746,
+  "grad_avg_earnings_lowincome": 28448
+ },
+ "02190000": {
+  "grad_avg_earnings": 40967,
+  "grad_employment_pct": 0.5556,
+  "grad_avg_earnings_lowincome": 38157
+ },
+ "01780000": {
+  "grad_avg_earnings": 43401,
+  "grad_employment_pct": 0.4832,
+  "grad_avg_earnings_lowincome": 32161
+ },
+ "01630000": {
+  "grad_avg_earnings": 33635,
+  "grad_employment_pct": 0.5363,
+  "grad_avg_earnings_lowincome": 33283
+ },
+ "02480000": {
+  "grad_avg_earnings": 34418,
+  "grad_employment_pct": 0.4877,
+  "grad_avg_earnings_lowincome": 33113
+ },
+ "02660000": {
+  "grad_avg_earnings": 42410,
+  "grad_employment_pct": 0.373,
+  "grad_avg_earnings_lowincome": 37498
+ },
+ "02810000": {
+  "grad_avg_earnings": 25554,
+  "grad_employment_pct": 0.5523,
+  "grad_avg_earnings_lowincome": 25068
+ },
+ "06350000": {
+  "grad_avg_earnings": 37288,
+  "grad_employment_pct": 0.5656,
+  "grad_avg_earnings_lowincome": 33617
+ },
+ "07200000": {
+  "grad_avg_earnings": 32643,
+  "grad_employment_pct": 0.4419,
+  "grad_avg_earnings_lowincome": 28637
+ },
+ "03360000": {
+  "grad_avg_earnings": 38639,
+  "grad_employment_pct": 0.5051,
+  "grad_avg_earnings_lowincome": 33438
+ },
+ "03420000": {
+  "grad_avg_earnings": 45345,
+  "grad_employment_pct": 0.5274,
+  "grad_avg_earnings_lowincome": 32175
+ },
+ "01990000": {
+  "grad_avg_earnings": 46249,
+  "grad_employment_pct": 0.4866,
+  "grad_avg_earnings_lowincome": 30798
+ },
+ "02460000": {
+  "grad_avg_earnings": 39475,
+  "grad_employment_pct": 0.4861,
+  "grad_avg_earnings_lowincome": 33510
+ },
+ "01070000": {
+  "grad_avg_earnings": 39873,
+  "grad_employment_pct": 0.4882,
+  "grad_avg_earnings_lowincome": 33940
+ },
+ "01100000": {
+  "grad_avg_earnings": 40971,
+  "grad_employment_pct": 0.5194,
+  "grad_avg_earnings_lowincome": 26128
+ },
+ "06030000": {
+  "grad_avg_earnings": 29664,
+  "grad_employment_pct": 0.625,
+  "grad_avg_earnings_lowincome": 30521
+ },
+ "00770000": {
+  "grad_avg_earnings": 41771,
+  "grad_employment_pct": 0.4773,
+  "grad_avg_earnings_lowincome": 63654
+ },
+ "03100000": {
+  "grad_avg_earnings": 33127,
+  "grad_employment_pct": 0.5816,
+  "grad_avg_earnings_lowincome": 29875
+ },
+ "01640000": {
+  "grad_avg_earnings": 42121,
+  "grad_employment_pct": 0.5123,
+  "grad_avg_earnings_lowincome": 26253
+ },
+ "03220000": {
+  "grad_avg_earnings": 47100,
+  "grad_employment_pct": 0.5818,
+  "grad_avg_earnings_lowincome": 44628
+ },
+ "06800000": {
+  "grad_avg_earnings": 38229,
+  "grad_employment_pct": 0.424,
+  "grad_avg_earnings_lowincome": 35318
+ },
+ "07660000": {
+  "grad_avg_earnings": 31550,
+  "grad_employment_pct": 0.5066,
+  "grad_avg_earnings_lowincome": 36710
+ },
+ "00860000": {
+  "grad_avg_earnings": 32084,
+  "grad_employment_pct": 0.5196,
+  "grad_avg_earnings_lowincome": 28387
+ },
+ "02740000": {
+  "grad_avg_earnings": 38129,
+  "grad_employment_pct": 0.4393,
+  "grad_avg_earnings_lowincome": 37057
+ },
+ "00830000": {
+  "grad_avg_earnings": 35478,
+  "grad_employment_pct": 0.4085,
+  "grad_avg_earnings_lowincome": 21354
+ },
+ "00400000": {
+  "grad_avg_earnings": 38298,
+  "grad_employment_pct": 0.5373,
+  "grad_avg_earnings_lowincome": 33859
+ },
+ "00440000": {
+  "grad_avg_earnings": 29551,
+  "grad_employment_pct": 0.4938,
+  "grad_avg_earnings_lowincome": 27281
+ },
+ "00870000": {
+  "grad_avg_earnings": 31713,
+  "grad_employment_pct": 0.4661,
+  "grad_avg_earnings_lowincome": 30645
+ },
+ "01310000": {
+  "grad_avg_earnings": 41381,
+  "grad_employment_pct": 0.5071,
+  "grad_avg_earnings_lowincome": 34809
+ },
+ "01380000": {
+  "grad_avg_earnings": 34712,
+  "grad_employment_pct": 0.4872,
+  "grad_avg_earnings_lowincome": 28062
+ },
+ "03320000": {
+  "grad_avg_earnings": 26901,
+  "grad_employment_pct": 0.484,
+  "grad_avg_earnings_lowincome": 25448
+ },
+ "00520000": {
+  "grad_avg_earnings": 29995,
+  "grad_employment_pct": 0.5208,
+  "grad_avg_earnings_lowincome": 28926
+ },
+ "01820000": {
+  "grad_avg_earnings": 37936,
+  "grad_employment_pct": 0.5446,
+  "grad_avg_earnings_lowincome": 29778
+ },
+ "01490000": {
+  "grad_avg_earnings": 27315,
+  "grad_employment_pct": 0.478,
+  "grad_avg_earnings_lowincome": 27093
+ },
+ "06580000": {
+  "grad_avg_earnings": 36375,
+  "grad_employment_pct": 0.5426,
+  "grad_avg_earnings_lowincome": 28479
+ },
+ "00490000": {
+  "grad_avg_earnings": 27588,
+  "grad_employment_pct": 0.3996,
+  "grad_avg_earnings_lowincome": 27679
+ },
+ "00200000": {
+  "grad_avg_earnings": 34037,
+  "grad_employment_pct": 0.5138,
+  "grad_avg_earnings_lowincome": 29166
+ },
+ "03010000": {
+  "grad_avg_earnings": 39398,
+  "grad_employment_pct": 0.4841,
+  "grad_avg_earnings_lowincome": 24120
+ },
+ "03310000": {
+  "grad_avg_earnings": 26206,
+  "grad_employment_pct": 0.5132,
+  "grad_avg_earnings_lowincome": 22941
+ },
+ "03250000": {
+  "grad_avg_earnings": 33203,
+  "grad_employment_pct": 0.5154,
+  "grad_avg_earnings_lowincome": 27965
+ },
+ "00720000": {
+  "grad_avg_earnings": 36632,
+  "grad_employment_pct": 0.4862,
+  "grad_avg_earnings_lowincome": 29192
+ },
+ "01600000": {
+  "grad_avg_earnings": 31930,
+  "grad_employment_pct": 0.4687,
+  "grad_avg_earnings_lowincome": 30659
+ },
+ "01030000": {
+  "grad_avg_earnings": 27793,
+  "grad_employment_pct": 0.5933,
+  "grad_avg_earnings_lowincome": 27647
+ },
+ "02510000": {
+  "grad_avg_earnings": 33677,
+  "grad_employment_pct": 0.5308,
+  "grad_avg_earnings_lowincome": 28727
+ },
+ "01580000": {
+  "grad_avg_earnings": 50749,
+  "grad_employment_pct": 0.5364,
+  "grad_avg_earnings_lowincome": 46038
+ },
+ "06200000": {
+  "grad_avg_earnings": 37148,
+  "grad_employment_pct": 0.5075
+ },
+ "01050000": {
+  "grad_avg_earnings": 44204,
+  "grad_employment_pct": 0.42,
+  "grad_avg_earnings_lowincome": 36413
+ },
+ "00010000": {
+  "grad_avg_earnings": 35327,
+  "grad_employment_pct": 0.5536,
+  "grad_avg_earnings_lowincome": 33961
+ },
+ "00070000": {
+  "grad_avg_earnings": 33088,
+  "grad_employment_pct": 0.4099,
+  "grad_avg_earnings_lowincome": 23540
+ },
+ "07500000": {
+  "grad_avg_earnings": 33353,
+  "grad_employment_pct": 0.377,
+  "grad_avg_earnings_lowincome": 23239
+ },
+ "01250000": {
+  "grad_avg_earnings": 45069,
+  "grad_employment_pct": 0.31
+ },
+ "01850000": {
+  "grad_avg_earnings": 33979,
+  "grad_employment_pct": 0.5064,
+  "grad_avg_earnings_lowincome": 36947
+ },
+ "07800000": {
+  "grad_avg_earnings": 38211,
+  "grad_employment_pct": 0.5302,
+  "grad_avg_earnings_lowincome": 37381
+ },
+ "06180000": {
+  "grad_avg_earnings": 28125,
+  "grad_employment_pct": 0.4574,
+  "grad_avg_earnings_lowincome": 28297
+ },
+ "07170000": {
+  "grad_avg_earnings": 32321,
+  "grad_employment_pct": 0.507,
+  "grad_avg_earnings_lowincome": 30651
+ },
+ "01740000": {
+  "grad_avg_earnings": 27456,
+  "grad_employment_pct": 0.4487,
+  "grad_avg_earnings_lowincome": 16910
+ },
+ "02040000": {
+  "grad_avg_earnings": 35792,
+  "grad_employment_pct": 0.4104,
+  "grad_avg_earnings_lowincome": 25145
+ },
+ "06980000": {
+  "grad_avg_earnings": 39268,
+  "grad_employment_pct": 0.4035
+ },
+ "07530000": {
+  "grad_avg_earnings": 35188,
+  "grad_employment_pct": 0.5304,
+  "grad_avg_earnings_lowincome": 32902
+ },
+ "00300000": {
+  "grad_avg_earnings": 34425,
+  "grad_employment_pct": 0.4608,
+  "grad_avg_earnings_lowincome": 28282
+ },
+ "06720000": {
+  "grad_avg_earnings": 43526,
+  "grad_employment_pct": 0.4921,
+  "grad_avg_earnings_lowincome": 39493
+ },
+ "01650000": {
+  "grad_avg_earnings": 31835,
+  "grad_employment_pct": 0.4713,
+  "grad_avg_earnings_lowincome": 29664
+ },
+ "02440000": {
+  "grad_avg_earnings": 27616,
+  "grad_employment_pct": 0.5115,
+  "grad_avg_earnings_lowincome": 26109
+ },
+ "02930000": {
+  "grad_avg_earnings": 31765,
+  "grad_employment_pct": 0.5254,
+  "grad_avg_earnings_lowincome": 26753
+ },
+ "00050000": {
+  "grad_avg_earnings": 31781,
+  "grad_employment_pct": 0.4985,
+  "grad_avg_earnings_lowincome": 29844
+ },
+ "00310000": {
+  "grad_avg_earnings": 35016,
+  "grad_employment_pct": 0.5049,
+  "grad_avg_earnings_lowincome": 25937
+ },
+ "00500000": {
+  "grad_avg_earnings": 41641,
+  "grad_employment_pct": 0.4978,
+  "grad_avg_earnings_lowincome": 37774
+ },
+ "02170000": {
+  "grad_avg_earnings": 39199,
+  "grad_employment_pct": 0.4415,
+  "grad_avg_earnings_lowincome": 33687
+ },
+ "06000000": {
+  "grad_avg_earnings": 45903,
+  "grad_employment_pct": 0.3638,
+  "grad_avg_earnings_lowincome": 46850
+ },
+ "06550000": {
+  "grad_avg_earnings": 36689,
+  "grad_employment_pct": 0.5029,
+  "grad_avg_earnings_lowincome": 23193
+ },
+ "02090000": {
+  "grad_avg_earnings": 27738,
+  "grad_employment_pct": 0.5934,
+  "grad_avg_earnings_lowincome": 21439
+ },
+ "06950000": {
+  "grad_avg_earnings": 44269,
+  "grad_employment_pct": 0.4364,
+  "grad_avg_earnings_lowincome": 26411
+ },
+ "07350000": {
+  "grad_avg_earnings": 34941,
+  "grad_employment_pct": 0.3948,
+  "grad_avg_earnings_lowincome": 37089
+ },
+ "02200000": {
+  "grad_avg_earnings": 36768,
+  "grad_employment_pct": 0.4833,
+  "grad_avg_earnings_lowincome": 26000
+ },
+ "07750000": {
+  "grad_avg_earnings": 36876,
+  "grad_employment_pct": 0.4738,
+  "grad_avg_earnings_lowincome": 35335
+ },
+ "02150000": {
+  "grad_avg_earnings": 29100,
+  "grad_employment_pct": 0.5263,
+  "grad_avg_earnings_lowincome": 22108
+ },
+ "01270000": {
+  "grad_avg_earnings": 26269,
+  "grad_employment_pct": 0.4483
+ },
+ "03440000": {
+  "grad_avg_earnings": 41483,
+  "grad_employment_pct": 0.4516,
+  "grad_avg_earnings_lowincome": 21548
+ },
+ "01390000": {
+  "grad_avg_earnings": 44342,
+  "grad_employment_pct": 0.4408,
+  "grad_avg_earnings_lowincome": 34451
+ },
+ "01810000": {
+  "grad_avg_earnings": 33733,
+  "grad_employment_pct": 0.4527,
+  "grad_avg_earnings_lowincome": 34228
+ },
+ "02140000": {
+  "grad_avg_earnings": 33482,
+  "grad_employment_pct": 0.539,
+  "grad_avg_earnings_lowincome": 28892
+ },
+ "06900000": {
+  "grad_avg_earnings": 40001,
+  "grad_employment_pct": 0.4903,
+  "grad_avg_earnings_lowincome": 33779
+ },
+ "01980000": {
+  "grad_avg_earnings": 40633,
+  "grad_employment_pct": 0.4603,
+  "grad_avg_earnings_lowincome": 37271
+ },
+ "03350000": {
+  "grad_avg_earnings": 41014,
+  "grad_employment_pct": 0.4167,
+  "grad_avg_earnings_lowincome": 28337
+ },
+ "02260000": {
+  "grad_avg_earnings": 34936,
+  "grad_employment_pct": 0.6053,
+  "grad_avg_earnings_lowincome": 30456
+ },
+ "06500000": {
+  "grad_avg_earnings": 31413,
+  "grad_employment_pct": 0.4378,
+  "grad_avg_earnings_lowincome": 34462
+ },
+ "00640000": {
+  "grad_avg_earnings": 31318,
+  "grad_employment_pct": 0.54,
+  "grad_avg_earnings_lowincome": 30730
+ },
+ "00360000": {
+  "grad_avg_earnings": 31851,
+  "grad_employment_pct": 0.5899,
+  "grad_avg_earnings_lowincome": 27315
+ },
+ "01910000": {
+  "grad_avg_earnings": 30205,
+  "grad_employment_pct": 0.4778,
+  "grad_avg_earnings_lowincome": 25542
+ },
+ "01970000": {
+  "grad_avg_earnings": 39320,
+  "grad_employment_pct": 0.4643,
+  "grad_avg_earnings_lowincome": 40272
+ },
+ "06250000": {
+  "grad_avg_earnings": 38403,
+  "grad_employment_pct": 0.535,
+  "grad_avg_earnings_lowincome": 32544
+ },
+ "02010000": {
+  "grad_avg_earnings": 29519,
+  "grad_employment_pct": 0.4665,
+  "grad_avg_earnings_lowincome": 28893
+ },
+ "02390000": {
+  "grad_avg_earnings": 37515,
+  "grad_employment_pct": 0.518,
+  "grad_avg_earnings_lowincome": 34422
+ },
+ "01590000": {
+  "grad_avg_earnings": 37687,
+  "grad_employment_pct": 0.4125,
+  "grad_avg_earnings_lowincome": 33669
+ },
+ "00180000": {
+  "grad_avg_earnings": 30615,
+  "grad_employment_pct": 0.625,
+  "grad_avg_earnings_lowincome": 24665
+ },
+ "03040000": {
+  "grad_avg_earnings": 32798,
+  "grad_employment_pct": 0.5235,
+  "grad_avg_earnings_lowincome": 24494
+ },
+ "00940000": {
+  "grad_avg_earnings": 41426,
+  "grad_employment_pct": 0.5595,
+  "grad_avg_earnings_lowincome": 46922
+ },
+ "01680000": {
+  "grad_avg_earnings": 44965,
+  "grad_employment_pct": 0.4431,
+  "grad_avg_earnings_lowincome": 33273
+ },
+ "02920000": {
+  "grad_avg_earnings": 28174,
+  "grad_employment_pct": 0.5041,
+  "grad_avg_earnings_lowincome": 25181
+ },
+ "01700000": {
+  "grad_avg_earnings": 34759,
+  "grad_employment_pct": 0.487,
+  "grad_avg_earnings_lowincome": 32835
+ },
+ "02640000": {
+  "grad_avg_earnings": 39152,
+  "grad_employment_pct": 0.5619,
+  "grad_avg_earnings_lowincome": 33416
+ },
+ "02650000": {
+  "grad_avg_earnings": 29505,
+  "grad_employment_pct": 0.3151,
+  "grad_avg_earnings_lowincome": 24272
+ },
+ "01370000": {
+  "grad_avg_earnings": 27529,
+  "grad_employment_pct": 0.5833,
+  "grad_avg_earnings_lowincome": 26408
+ },
+ "03160000": {
+  "grad_avg_earnings": 31189,
+  "grad_employment_pct": 0.5325,
+  "grad_avg_earnings_lowincome": 31791
+ },
+ "02120000": {
+  "grad_avg_earnings": 35681,
+  "grad_employment_pct": 0.4384,
+  "grad_avg_earnings_lowincome": 35478
+ },
+ "03170000": {
+  "grad_avg_earnings": 46580,
+  "grad_employment_pct": 0.383,
+  "grad_avg_earnings_lowincome": 35707
+ },
+ "00260000": {
+  "grad_avg_earnings": 44232,
+  "grad_employment_pct": 0.4281,
+  "grad_avg_earnings_lowincome": 35797
+ },
+ "07100000": {
+  "grad_avg_earnings": 41538,
+  "grad_employment_pct": 0.538,
+  "grad_avg_earnings_lowincome": 26260
+ },
+ "03230000": {
+  "grad_avg_earnings": 41799,
+  "grad_employment_pct": 0.5818,
+  "grad_avg_earnings_lowincome": 34927
+ },
+ "03070000": {
+  "grad_avg_earnings": 42099,
+  "grad_employment_pct": 0.4599,
+  "grad_avg_earnings_lowincome": 32456
+ },
+ "03430000": {
+  "grad_avg_earnings": 34599,
+  "grad_employment_pct": 0.575,
+  "grad_avg_earnings_lowincome": 34529
+ },
+ "00100000": {
+  "grad_avg_earnings": 43186,
+  "grad_employment_pct": 0.4127,
+  "grad_avg_earnings_lowincome": 38086
+ },
+ "00990000": {
+  "grad_avg_earnings": 41227,
+  "grad_employment_pct": 0.4886,
+  "grad_avg_earnings_lowincome": 33692
+ },
+ "02180000": {
+  "grad_avg_earnings": 35324,
+  "grad_employment_pct": 0.5217,
+  "grad_avg_earnings_lowincome": 31860
+ },
+ "02290000": {
+  "grad_avg_earnings": 34227,
+  "grad_employment_pct": 0.5427,
+  "grad_avg_earnings_lowincome": 28484
+ },
+ "07670000": {
+  "grad_avg_earnings": 34105,
+  "grad_employment_pct": 0.4598,
+  "grad_avg_earnings_lowincome": 27421
+ },
+ "01220000": {
+  "grad_avg_earnings": 40657,
+  "grad_employment_pct": 0.4976,
+  "grad_avg_earnings_lowincome": 35235
+ },
+ "02780000": {
+  "grad_avg_earnings": 33439,
+  "grad_employment_pct": 0.5852,
+  "grad_avg_earnings_lowincome": 28162
+ },
+ "07700000": {
+  "grad_avg_earnings": 38370,
+  "grad_employment_pct": 0.5336,
+  "grad_avg_earnings_lowincome": 33792
+ },
+ "00240000": {
+  "grad_avg_earnings": 32839,
+  "grad_employment_pct": 0.4327,
+  "grad_avg_earnings_lowincome": 30014
+ },
+ "01330000": {
+  "grad_avg_earnings": 26548,
+  "grad_employment_pct": 0.4,
+  "grad_avg_earnings_lowincome": 26033
+ },
+ "01860000": {
+  "grad_avg_earnings": 32943,
+  "grad_employment_pct": 0.604,
+  "grad_avg_earnings_lowincome": 31780
+ },
+ "02310000": {
+  "grad_avg_earnings": 39029,
+  "grad_employment_pct": 0.5482,
+  "grad_avg_earnings_lowincome": 37324
+ },
+ "01550000": {
+  "grad_avg_earnings": 41477,
+  "grad_employment_pct": 0.3883,
+  "grad_avg_earnings_lowincome": 33359
+ },
+ "01410000": {
+  "grad_avg_earnings": 39564,
+  "grad_employment_pct": 0.5165,
+  "grad_avg_earnings_lowincome": 37289
+ },
+ "02610000": {
+  "grad_avg_earnings": 38354,
+  "grad_employment_pct": 0.5399,
+  "grad_avg_earnings_lowincome": 30793
+ },
+ "07450000": {
+  "grad_avg_earnings": 36558,
+  "grad_employment_pct": 0.4277,
+  "grad_avg_earnings_lowincome": 24419
+ },
+ "02620000": {
+  "grad_avg_earnings": 35013,
+  "grad_employment_pct": 0.5353,
+  "grad_avg_earnings_lowincome": 26285
+ },
+ "01520000": {
+  "grad_avg_earnings": 35276,
+  "grad_employment_pct": 0.4762
+ },
+ "00880000": {
+  "grad_avg_earnings": 40705,
+  "grad_employment_pct": 0.487,
+  "grad_avg_earnings_lowincome": 33084
+ },
+ "00710000": {
+  "grad_avg_earnings": 36255,
+  "grad_employment_pct": 0.5569,
+  "grad_avg_earnings_lowincome": 32135
+ },
+ "01140000": {
+  "grad_avg_earnings": 32866,
+  "grad_employment_pct": 0.5513,
+  "grad_avg_earnings_lowincome": 29375
+ },
+ "01110000": {
+  "grad_avg_earnings": 29507,
+  "grad_employment_pct": 0.4714,
+  "grad_avg_earnings_lowincome": 27102
+ },
+ "01280000": {
+  "grad_avg_earnings": 29301,
+  "grad_employment_pct": 0.513,
+  "grad_avg_earnings_lowincome": 24625
+ },
+ "00350000": {
+  "grad_avg_earnings": 31403,
+  "grad_employment_pct": 0.4754,
+  "grad_avg_earnings_lowincome": 29722
+ },
+ "00970000": {
+  "grad_avg_earnings": 27500,
+  "grad_employment_pct": 0.6017,
+  "grad_avg_earnings_lowincome": 25713
+ },
+ "01010000": {
+  "grad_avg_earnings": 39864,
+  "grad_employment_pct": 0.4901,
+  "grad_avg_earnings_lowincome": 40238
+ },
+ "03080000": {
+  "grad_avg_earnings": 41536,
+  "grad_employment_pct": 0.5839,
+  "grad_avg_earnings_lowincome": 40101
+ },
+ "03090000": {
+  "grad_avg_earnings": 42530,
+  "grad_employment_pct": 0.5636,
+  "grad_avg_earnings_lowincome": 44513
+ },
+ "01610000": {
+  "grad_avg_earnings": 28373,
+  "grad_employment_pct": 0.4948,
+  "grad_avg_earnings_lowincome": 22894
+ },
+ "02850000": {
+  "grad_avg_earnings": 38632,
+  "grad_employment_pct": 0.5394,
+  "grad_avg_earnings_lowincome": 34142
+ },
+ "03140000": {
+  "grad_avg_earnings": 39411,
+  "grad_employment_pct": 0.4242,
+  "grad_avg_earnings_lowincome": 38115
+ },
+ "03470000": {
+  "grad_avg_earnings": 38741,
+  "grad_employment_pct": 0.5235,
+  "grad_avg_earnings_lowincome": 36318
+ },
+ "01510000": {
+  "grad_avg_earnings": 35876,
+  "grad_employment_pct": 0.5588,
+  "grad_avg_earnings_lowincome": 30126
+ },
+ "06650000": {
+  "grad_avg_earnings": 42734,
+  "grad_employment_pct": 0.456,
+  "grad_avg_earnings_lowincome": 43305
+ },
+ "06400000": {
+  "grad_avg_earnings": 44225,
+  "grad_employment_pct": 0.3344,
+  "grad_avg_earnings_lowincome": 25601
+ },
+ "03210000": {
+  "grad_avg_earnings": 45481,
+  "grad_employment_pct": 0.4337,
+  "grad_avg_earnings_lowincome": 33926
+ },
+ "07650000": {
+  "grad_avg_earnings": 27044,
+  "grad_employment_pct": 0.4561,
+  "grad_avg_earnings_lowincome": 37415
+ },
+ "00950000": {
+  "grad_avg_earnings": 26746,
+  "grad_employment_pct": 0.5057,
+  "grad_avg_earnings_lowincome": 26130
+ },
+ "01760000": {
+  "grad_avg_earnings": 36352,
+  "grad_employment_pct": 0.4492,
+  "grad_avg_earnings_lowincome": 35948
+ },
+ "00480000": {
+  "grad_avg_earnings": 42434,
+  "grad_employment_pct": 0.4819,
+  "grad_avg_earnings_lowincome": 35752
+ },
+ "03150000": {
+  "grad_avg_earnings": 40511,
+  "grad_employment_pct": 0.4714,
+  "grad_avg_earnings_lowincome": 30916
+ },
+ "07250000": {
+  "grad_avg_earnings": 47773,
+  "grad_employment_pct": 0.4466,
+  "grad_avg_earnings_lowincome": 38183
+ },
+ "06740000": {
+  "grad_avg_earnings": 31022,
+  "grad_employment_pct": 0.6275,
+  "grad_avg_earnings_lowincome": 32046
+ },
+ "00250000": {
+  "grad_avg_earnings": 31203,
+  "grad_employment_pct": 0.6282,
+  "grad_avg_earnings_lowincome": 24590
+ },
+ "00570000": {
+  "grad_avg_earnings": 33242,
+  "grad_employment_pct": 0.5077,
+  "grad_avg_earnings_lowincome": 31858
+ },
+ "00610000": {
+  "grad_avg_earnings": 31987,
+  "grad_employment_pct": 0.5638,
+  "grad_avg_earnings_lowincome": 29726
+ },
+ "02360000": {
+  "grad_avg_earnings": 28598,
+  "grad_employment_pct": 0.582,
+  "grad_avg_earnings_lowincome": 24664
+ },
+ "00230000": {
+  "grad_avg_earnings": 45784,
+  "grad_employment_pct": 0.348,
+  "grad_avg_earnings_lowincome": 35453
+ },
+ "06160000": {
+  "grad_avg_earnings": 36441,
+  "grad_employment_pct": 0.5444,
+  "grad_avg_earnings_lowincome": 32241
+ },
+ "00560000": {
+  "grad_avg_earnings": 40406,
+  "grad_employment_pct": 0.453,
+  "grad_avg_earnings_lowincome": 43609
+ },
+ "03050000": {
+  "grad_avg_earnings": 42928,
+  "grad_employment_pct": 0.5,
+  "grad_avg_earnings_lowincome": 43969
+ },
+ "00090000": {
+  "grad_avg_earnings": 44988,
+  "grad_employment_pct": 0.3954,
+  "grad_avg_earnings_lowincome": 39260
+ },
+ "07050000": {
+  "grad_avg_earnings": 45572,
+  "grad_employment_pct": 0.4333,
+  "grad_avg_earnings_lowincome": 39490
+ },
+ "06150000": {
+  "grad_avg_earnings": 29103,
+  "grad_employment_pct": 0.5647,
+  "grad_avg_earnings_lowincome": 22491
+ },
+ "02580000": {
+  "grad_avg_earnings": 31450,
+  "grad_employment_pct": 0.5064,
+  "grad_avg_earnings_lowincome": 31821
+ },
+ "01710000": {
+  "grad_avg_earnings": 37723,
+  "grad_employment_pct": 0.5248,
+  "grad_avg_earnings_lowincome": 38565
+ },
+ "01890000": {
+  "grad_avg_earnings": 39059,
+  "grad_employment_pct": 0.4459,
+  "grad_avg_earnings_lowincome": 35143
+ },
+ "06730000": {
+  "grad_avg_earnings": 46109,
+  "grad_employment_pct": 0.4136,
+  "grad_avg_earnings_lowincome": 36708
+ },
+ "01440000": {
+  "grad_avg_earnings": 33393,
+  "grad_employment_pct": 0.3858,
+  "grad_avg_earnings_lowincome": 31297
+ },
+ "07120000": {
+  "grad_avg_earnings": 31804,
+  "grad_employment_pct": 0.4587,
+  "grad_avg_earnings_lowincome": 33336
+ },
+ "01530000": {
+  "grad_avg_earnings": 33312,
+  "grad_employment_pct": 0.5435,
+  "grad_avg_earnings_lowincome": 28844
+ },
+ "01620000": {
+  "grad_avg_earnings": 34001,
+  "grad_employment_pct": 0.5161,
+  "grad_avg_earnings_lowincome": 30442
+ },
+ "01000000": {
+  "grad_avg_earnings": 35123,
+  "grad_employment_pct": 0.5052,
+  "grad_avg_earnings_lowincome": 36704
+ },
+ "00140000": {
+  "grad_avg_earnings": 43051,
+  "grad_employment_pct": 0.5135,
+  "grad_avg_earnings_lowincome": 43376
+ },
+ "02520000": {
+  "grad_avg_earnings": 35655,
+  "grad_employment_pct": 0.4744,
+  "grad_avg_earnings_lowincome": 36451
+ },
+ "02430000": {
+  "grad_avg_earnings": 36292,
+  "grad_employment_pct": 0.4471,
+  "grad_avg_earnings_lowincome": 35534
+ },
+ "02710000": {
+  "grad_avg_earnings": 43038,
+  "grad_employment_pct": 0.4242,
+  "grad_avg_earnings_lowincome": 32982
+ },
+ "00170000": {
+  "grad_avg_earnings": 34903,
+  "grad_employment_pct": 0.519,
+  "grad_avg_earnings_lowincome": 35124
+ },
+ "02840000": {
+  "grad_avg_earnings": 35076,
+  "grad_employment_pct": 0.4965,
+  "grad_avg_earnings_lowincome": 26263
+ },
+ "01770000": {
+  "grad_avg_earnings": 38292,
+  "grad_employment_pct": 0.4927,
+  "grad_avg_earnings_lowincome": 32196
+ },
+ "01870000": {
+  "grad_avg_earnings": 33069,
+  "grad_employment_pct": 0.5729,
+  "grad_avg_earnings_lowincome": 22510
+ },
+ "01170000": {
+  "grad_avg_earnings": 42979,
+  "grad_employment_pct": 0.5769,
+  "grad_avg_earnings_lowincome": 41980
+ },
+ "02270000": {
+  "grad_avg_earnings": 32181,
+  "grad_employment_pct": 0.5773,
+  "grad_avg_earnings_lowincome": 28272
+ },
+ "07300000": {
+  "grad_avg_earnings": 40812,
+  "grad_employment_pct": 0.4806,
+  "grad_avg_earnings_lowincome": 35770
+ },
+ "00960000": {
+  "grad_avg_earnings": 40028,
+  "grad_employment_pct": 0.4947,
+  "grad_avg_earnings_lowincome": 30063
+ },
+ "07780000": {
+  "grad_avg_earnings": 33741,
+  "grad_employment_pct": 0.4889,
+  "grad_avg_earnings_lowincome": 29543
+ },
+ "06600000": {
+  "grad_avg_earnings": 37731,
+  "grad_employment_pct": 0.4568,
+  "grad_avg_earnings_lowincome": 39092
+ },
+ "01360000": {
+  "grad_avg_earnings": 39596,
+  "grad_employment_pct": 0.4327,
+  "grad_avg_earnings_lowincome": 31116
+ },
+ "02900000": {
+  "grad_avg_earnings": 40029,
+  "grad_employment_pct": 0.5421,
+  "grad_avg_earnings_lowincome": 44038
+ },
+ "07630000": {
+  "grad_avg_earnings": 32949,
+  "grad_employment_pct": 0.513,
+  "grad_avg_earnings_lowincome": 31867
+ },
+ "00790000": {
+  "grad_avg_earnings": 38870,
+  "grad_employment_pct": 0.4435,
+  "grad_avg_earnings_lowincome": 35843
+ },
+ "01750000": {
+  "grad_avg_earnings": 43828,
+  "grad_employment_pct": 0.4936,
+  "grad_avg_earnings_lowincome": 35651
+ },
+ "03460000": {
+  "grad_avg_earnings": 32113,
+  "grad_employment_pct": 0.5299,
+  "grad_avg_earnings_lowincome": 30261
+ },
+ "06100000": {
+  "grad_avg_earnings": 36700,
+  "grad_employment_pct": 0.463,
+  "grad_avg_earnings_lowincome": 35352
+ },
+ "00650000": {
+  "grad_avg_earnings": 41635,
+  "grad_employment_pct": 0.4554
+ },
+ "00160000": {
+  "grad_avg_earnings": 32359,
+  "grad_employment_pct": 0.4689,
+  "grad_avg_earnings_lowincome": 32529
+ },
+ "02070000": {
+  "grad_avg_earnings": 36627,
+  "grad_employment_pct": 0.42,
+  "grad_avg_earnings_lowincome": 27433
+ },
+ "02100000": {
+  "grad_avg_earnings": 28985,
+  "grad_employment_pct": 0.3894,
+  "grad_avg_earnings_lowincome": 24622
+ },
+ "06220000": {
+  "grad_avg_earnings": 35049,
+  "grad_employment_pct": 0.5086,
+  "grad_avg_earnings_lowincome": 28063
+ },
+ "03300000": {
+  "grad_avg_earnings": 35659,
+  "grad_employment_pct": 0.383,
+  "grad_avg_earnings_lowincome": 29151
+ },
+ "00930000": {
+  "grad_avg_earnings": 31954,
+  "grad_employment_pct": 0.4926,
+  "grad_avg_earnings_lowincome": 31337
+ },
+ "03480000": {
+  "grad_avg_earnings": 29282,
+  "grad_employment_pct": 0.5274,
+  "grad_avg_earnings_lowincome": 28587
+ },
+ "01420000": {
+  "grad_avg_earnings": 27478,
+  "grad_employment_pct": 0.4868,
+  "grad_avg_earnings_lowincome": 23621
+ },
+ "00730000": {
+  "grad_avg_earnings": 38706,
+  "grad_employment_pct": 0.467,
+  "grad_avg_earnings_lowincome": 34591
+ },
+ "03260000": {
+  "grad_avg_earnings": 49620,
+  "grad_employment_pct": 0.4313,
+  "grad_avg_earnings_lowincome": 27296
+ },
+ "02770000": {
+  "grad_avg_earnings": 30204,
+  "grad_employment_pct": 0.5175,
+  "grad_avg_earnings_lowincome": 29910
+ },
+ "01720000": {
+  "grad_avg_earnings": 35141,
+  "grad_employment_pct": 0.5521,
+  "grad_avg_earnings_lowincome": 31385
+ },
+ "02110000": {
+  "grad_avg_earnings": 39183,
+  "grad_employment_pct": 0.4787,
+  "grad_avg_earnings_lowincome": 29562
+ },
+ "06750000": {
+  "grad_avg_earnings": 36181,
+  "grad_employment_pct": 0.441
+ },
+ "07150000": {
+  "grad_avg_earnings": 31166,
+  "grad_employment_pct": 0.3974,
+  "grad_avg_earnings_lowincome": 23342
+ },
+ "01500000": {
+  "grad_avg_earnings": 27786,
+  "grad_employment_pct": 0.4068,
+  "grad_avg_earnings_lowincome": 34871
+ },
+ "00820000": {
+  "grad_avg_earnings": 42751,
+  "grad_employment_pct": 0.5226,
+  "grad_avg_earnings_lowincome": 37908
+ }
+}

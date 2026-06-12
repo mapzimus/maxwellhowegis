@@ -1,0 +1,1071 @@
+{
+ "00010000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0142
+ },
+ "00030000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0298
+ },
+ "00050000": {
+  "choice_in_pct": 0.019,
+  "choice_net_pct": 0.002
+ },
+ "00070000": {
+  "choice_in_pct": 0.0392,
+  "choice_net_pct": -0.0058
+ },
+ "00080000": {
+  "choice_in_pct": 0.0831,
+  "choice_net_pct": 0.0005
+ },
+ "00090000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0022
+ },
+ "00100000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0014
+ },
+ "00140000": {
+  "choice_in_pct": 0.0234,
+  "choice_net_pct": 0.019
+ },
+ "00160000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0138
+ },
+ "00170000": {
+  "choice_in_pct": 0.0274,
+  "choice_net_pct": 0.0185
+ },
+ "00180000": {
+  "choice_in_pct": 0.2281,
+  "choice_net_pct": 0.2236
+ },
+ "00200000": {
+  "choice_in_pct": 0.0295,
+  "choice_net_pct": -0.0259
+ },
+ "00230000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0025
+ },
+ "00240000": {
+  "choice_in_pct": 0.0702,
+  "choice_net_pct": 0.0119
+ },
+ "00250000": {
+  "choice_in_pct": 0.0277,
+  "choice_net_pct": -0.028
+ },
+ "00260000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0012
+ },
+ "00270000": {
+  "choice_in_pct": 0.227,
+  "choice_net_pct": 0.1658
+ },
+ "00300000": {
+  "choice_in_pct": 0.032,
+  "choice_net_pct": 0.0115
+ },
+ "00310000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0076
+ },
+ "00350000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0051
+ },
+ "00360000": {
+  "choice_in_pct": 0.0781,
+  "choice_net_pct": -0.0243
+ },
+ "00380000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0015
+ },
+ "00400000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0042
+ },
+ "00410000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0564
+ },
+ "00430000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.019
+ },
+ "00440000": {
+  "choice_in_pct": 0.0008,
+  "choice_net_pct": -0.018
+ },
+ "00450000": {
+  "choice_in_pct": 0.2257,
+  "choice_net_pct": 0.1395
+ },
+ "00460000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0008
+ },
+ "00480000": {
+  "choice_in_pct": 0.0043,
+  "choice_net_pct": -0.0022
+ },
+ "00490000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0026
+ },
+ "00500000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0026
+ },
+ "00510000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": 0.0
+ },
+ "00520000": {
+  "choice_in_pct": 0.0543,
+  "choice_net_pct": 0.0425
+ },
+ "00560000": {
+  "choice_in_pct": 0.0072,
+  "choice_net_pct": 0.002
+ },
+ "00570000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0033
+ },
+ "00610000": {
+  "choice_in_pct": 0.0112,
+  "choice_net_pct": -0.0235
+ },
+ "00630000": {
+  "choice_in_pct": 0.1469,
+  "choice_net_pct": 0.046
+ },
+ "00640000": {
+  "choice_in_pct": 0.0303,
+  "choice_net_pct": -0.0088
+ },
+ "00650000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0022
+ },
+ "00670000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0008
+ },
+ "00680000": {
+  "choice_in_pct": 0.3493,
+  "choice_net_pct": 0.3101
+ },
+ "00710000": {
+  "choice_in_pct": 0.0045,
+  "choice_net_pct": -0.0117
+ },
+ "00720000": {
+  "choice_in_pct": 0.0327,
+  "choice_net_pct": 0.017
+ },
+ "00730000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0037
+ },
+ "00740000": {
+  "choice_in_pct": 0.1502,
+  "choice_net_pct": 0.0231
+ },
+ "00770000": {
+  "choice_in_pct": 0.0743,
+  "choice_net_pct": 0.0234
+ },
+ "00790000": {
+  "choice_in_pct": 0.0069,
+  "choice_net_pct": -0.0069
+ },
+ "00820000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0019
+ },
+ "00830000": {
+  "choice_in_pct": 0.0172,
+  "choice_net_pct": 0.0014
+ },
+ "00850000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0582
+ },
+ "00860000": {
+  "choice_in_pct": 0.0739,
+  "choice_net_pct": -0.013
+ },
+ "00870000": {
+  "choice_in_pct": 0.0221,
+  "choice_net_pct": 0.0095
+ },
+ "00880000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0079
+ },
+ "00890000": {
+  "choice_in_pct": 0.0225,
+  "choice_net_pct": -0.0133
+ },
+ "00910000": {
+  "choice_in_pct": 0.066,
+  "choice_net_pct": -0.0423
+ },
+ "00930000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0045
+ },
+ "00940000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0273
+ },
+ "00950000": {
+  "choice_in_pct": 0.0022,
+  "choice_net_pct": -0.0185
+ },
+ "00960000": {
+  "choice_in_pct": 0.069,
+  "choice_net_pct": 0.047
+ },
+ "00970000": {
+  "choice_in_pct": 0.0121,
+  "choice_net_pct": -0.0506
+ },
+ "00980000": {
+  "choice_in_pct": 0.3088,
+  "choice_net_pct": 0.2464
+ },
+ "00990000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0113
+ },
+ "01000000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0099
+ },
+ "01010000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0085
+ },
+ "01030000": {
+  "choice_in_pct": 0.047,
+  "choice_net_pct": -0.0076
+ },
+ "01050000": {
+  "choice_in_pct": 0.0302,
+  "choice_net_pct": -0.0371
+ },
+ "01070000": {
+  "choice_in_pct": 0.0104,
+  "choice_net_pct": -0.0608
+ },
+ "01100000": {
+  "choice_in_pct": 0.0388,
+  "choice_net_pct": 0.0299
+ },
+ "01110000": {
+  "choice_in_pct": 0.1246,
+  "choice_net_pct": 0.0531
+ },
+ "01140000": {
+  "choice_in_pct": 0.0412,
+  "choice_net_pct": -0.1355
+ },
+ "01170000": {
+  "choice_in_pct": 0.2877,
+  "choice_net_pct": 0.2528
+ },
+ "01180000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0056
+ },
+ "01210000": {
+  "choice_in_pct": 0.1591,
+  "choice_net_pct": -0.0127
+ },
+ "01220000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0035
+ },
+ "01250000": {
+  "choice_in_pct": 0.0507,
+  "choice_net_pct": 0.0498
+ },
+ "01270000": {
+  "choice_in_pct": 0.3444,
+  "choice_net_pct": 0.1759
+ },
+ "01280000": {
+  "choice_in_pct": 0.0005,
+  "choice_net_pct": -0.0151
+ },
+ "01310000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0008
+ },
+ "01330000": {
+  "choice_in_pct": 0.0038,
+  "choice_net_pct": -0.0098
+ },
+ "01350000": {
+  "choice_in_pct": 0.2156,
+  "choice_net_pct": 0.1274
+ },
+ "01360000": {
+  "choice_in_pct": 0.0468,
+  "choice_net_pct": 0.0392
+ },
+ "01370000": {
+  "choice_in_pct": 0.0234,
+  "choice_net_pct": -0.06
+ },
+ "01380000": {
+  "choice_in_pct": 0.1638,
+  "choice_net_pct": 0.1638
+ },
+ "01390000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0033
+ },
+ "01410000": {
+  "choice_in_pct": 0.0738,
+  "choice_net_pct": 0.0592
+ },
+ "01420000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0112
+ },
+ "01440000": {
+  "choice_in_pct": 0.0245,
+  "choice_net_pct": 0.0092
+ },
+ "01450000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0052
+ },
+ "01490000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.006
+ },
+ "01500000": {
+  "choice_in_pct": 0.2562,
+  "choice_net_pct": 0.1445
+ },
+ "01510000": {
+  "choice_in_pct": 0.0612,
+  "choice_net_pct": 0.0
+ },
+ "01520000": {
+  "choice_in_pct": 0.4187,
+  "choice_net_pct": 0.6108
+ },
+ "01530000": {
+  "choice_in_pct": 0.0429,
+  "choice_net_pct": 0.0186
+ },
+ "01540000": {
+  "choice_in_pct": 0.2296,
+  "choice_net_pct": 0.1294
+ },
+ "01550000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0014
+ },
+ "01570000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": 0.0
+ },
+ "01580000": {
+  "choice_in_pct": 0.06,
+  "choice_net_pct": 0.0488
+ },
+ "01590000": {
+  "choice_in_pct": 0.0122,
+  "choice_net_pct": 0.0107
+ },
+ "01600000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0093
+ },
+ "01610000": {
+  "choice_in_pct": 0.0343,
+  "choice_net_pct": 0.0014
+ },
+ "01620000": {
+  "choice_in_pct": 0.007,
+  "choice_net_pct": -0.0272
+ },
+ "01630000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0107
+ },
+ "01640000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0014
+ },
+ "01650000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0053
+ },
+ "01670000": {
+  "choice_in_pct": 0.0108,
+  "choice_net_pct": 0.0009
+ },
+ "01680000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0033
+ },
+ "01690000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0205
+ },
+ "01700000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0255
+ },
+ "01710000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0022
+ },
+ "01720000": {
+  "choice_in_pct": 0.0734,
+  "choice_net_pct": 0.0021
+ },
+ "01730000": {
+  "choice_in_pct": 0.0383,
+  "choice_net_pct": 0.0143
+ },
+ "01740000": {
+  "choice_in_pct": 0.0074,
+  "choice_net_pct": 0.0
+ },
+ "01750000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0004
+ },
+ "01760000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0038
+ },
+ "01770000": {
+  "choice_in_pct": 0.032,
+  "choice_net_pct": 0.0166
+ },
+ "01780000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0035
+ },
+ "01810000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0079
+ },
+ "01820000": {
+  "choice_in_pct": 0.007,
+  "choice_net_pct": -0.018
+ },
+ "01840000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0024
+ },
+ "01850000": {
+  "choice_in_pct": 0.0191,
+  "choice_net_pct": -0.0348
+ },
+ "01860000": {
+  "choice_in_pct": 0.0229,
+  "choice_net_pct": -0.0052
+ },
+ "01870000": {
+  "choice_in_pct": 0.0385,
+  "choice_net_pct": 0.0201
+ },
+ "01890000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0014
+ },
+ "01910000": {
+  "choice_in_pct": 0.0825,
+  "choice_net_pct": 0.0285
+ },
+ "01960000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0035
+ },
+ "01970000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": 0.0
+ },
+ "01980000": {
+  "choice_in_pct": 0.001,
+  "choice_net_pct": -0.0008
+ },
+ "01990000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0015
+ },
+ "02010000": {
+  "choice_in_pct": 0.0036,
+  "choice_net_pct": -0.0141
+ },
+ "02040000": {
+  "choice_in_pct": 0.0898,
+  "choice_net_pct": 0.0869
+ },
+ "02070000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0009
+ },
+ "02080000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0045
+ },
+ "02090000": {
+  "choice_in_pct": 0.0451,
+  "choice_net_pct": -0.0736
+ },
+ "02100000": {
+  "choice_in_pct": 0.0596,
+  "choice_net_pct": 0.0245
+ },
+ "02110000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0039
+ },
+ "02120000": {
+  "choice_in_pct": 0.0138,
+  "choice_net_pct": 0.0057
+ },
+ "02130000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0069
+ },
+ "02140000": {
+  "choice_in_pct": 0.036,
+  "choice_net_pct": -0.0513
+ },
+ "02150000": {
+  "choice_in_pct": 0.1003,
+  "choice_net_pct": -0.2774
+ },
+ "02170000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0038
+ },
+ "02180000": {
+  "choice_in_pct": 0.0913,
+  "choice_net_pct": 0.073
+ },
+ "02190000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0005
+ },
+ "02200000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.004
+ },
+ "02210000": {
+  "choice_in_pct": 0.0821,
+  "choice_net_pct": 0.0188
+ },
+ "02230000": {
+  "choice_in_pct": 0.006,
+  "choice_net_pct": -0.0779
+ },
+ "02240000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0418
+ },
+ "02260000": {
+  "choice_in_pct": 0.0423,
+  "choice_net_pct": -0.0089
+ },
+ "02270000": {
+  "choice_in_pct": 0.0169,
+  "choice_net_pct": -0.0681
+ },
+ "02290000": {
+  "choice_in_pct": 0.0106,
+  "choice_net_pct": -0.0067
+ },
+ "02300000": {
+  "choice_in_pct": 0.5433,
+  "choice_net_pct": 0.3986
+ },
+ "02310000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0074
+ },
+ "02340000": {
+  "choice_in_pct": 0.4286,
+  "choice_net_pct": 0.1299
+ },
+ "02360000": {
+  "choice_in_pct": 0.0156,
+  "choice_net_pct": -0.1121
+ },
+ "02380000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0232
+ },
+ "02390000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.014
+ },
+ "02400000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0066
+ },
+ "02420000": {
+  "choice_in_pct": 0.5547,
+  "choice_net_pct": 0.7423
+ },
+ "02430000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0027
+ },
+ "02440000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0252
+ },
+ "02460000": {
+  "choice_in_pct": 0.0199,
+  "choice_net_pct": 0.0181
+ },
+ "02480000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.008
+ },
+ "02490000": {
+  "choice_in_pct": 0.3503,
+  "choice_net_pct": 0.3254
+ },
+ "02500000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0135
+ },
+ "02510000": {
+  "choice_in_pct": 0.0358,
+  "choice_net_pct": 0.023
+ },
+ "02520000": {
+  "choice_in_pct": 0.2299,
+  "choice_net_pct": 0.1943
+ },
+ "02530000": {
+  "choice_in_pct": 0.5882,
+  "choice_net_pct": 0.7436
+ },
+ "02580000": {
+  "choice_in_pct": 0.0244,
+  "choice_net_pct": -0.0029
+ },
+ "02610000": {
+  "choice_in_pct": 0.0745,
+  "choice_net_pct": 0.0339
+ },
+ "02620000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0104
+ },
+ "02630000": {
+  "choice_in_pct": 0.5,
+  "choice_net_pct": 0.1111
+ },
+ "02640000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0022
+ },
+ "02650000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0038
+ },
+ "02660000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0024
+ },
+ "02690000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0022
+ },
+ "02710000": {
+  "choice_in_pct": 0.0007,
+  "choice_net_pct": -0.0049
+ },
+ "02720000": {
+  "choice_in_pct": 0.1157,
+  "choice_net_pct": 0.0048
+ },
+ "02730000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0088
+ },
+ "02740000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0029
+ },
+ "02750000": {
+  "choice_in_pct": 0.0805,
+  "choice_net_pct": 0.0196
+ },
+ "02760000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0045
+ },
+ "02770000": {
+  "choice_in_pct": 0.0085,
+  "choice_net_pct": -0.1003
+ },
+ "02780000": {
+  "choice_in_pct": 0.0569,
+  "choice_net_pct": -0.0222
+ },
+ "02810000": {
+  "choice_in_pct": 0.0004,
+  "choice_net_pct": -0.0236
+ },
+ "02840000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0053
+ },
+ "02850000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0079
+ },
+ "02880000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0008
+ },
+ "02890000": {
+  "choice_in_pct": 0.1618,
+  "choice_net_pct": -0.0068
+ },
+ "02900000": {
+  "choice_in_pct": 0.0311,
+  "choice_net_pct": 0.003
+ },
+ "02910000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0064
+ },
+ "02920000": {
+  "choice_in_pct": 0.0076,
+  "choice_net_pct": -0.006
+ },
+ "02930000": {
+  "choice_in_pct": 0.0176,
+  "choice_net_pct": -0.0147
+ },
+ "02950000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.006
+ },
+ "02960000": {
+  "choice_in_pct": 0.0278,
+  "choice_net_pct": -0.0976
+ },
+ "02980000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0057
+ },
+ "03000000": {
+  "choice_in_pct": 0.2535,
+  "choice_net_pct": -0.205
+ },
+ "03010000": {
+  "choice_in_pct": 0.022,
+  "choice_net_pct": 0.0057
+ },
+ "03040000": {
+  "choice_in_pct": 0.0685,
+  "choice_net_pct": -0.0073
+ },
+ "03050000": {
+  "choice_in_pct": 0.0009,
+  "choice_net_pct": -0.0011
+ },
+ "03060000": {
+  "choice_in_pct": 0.0654,
+  "choice_net_pct": -0.0708
+ },
+ "03070000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.003
+ },
+ "03080000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0031
+ },
+ "03090000": {
+  "choice_in_pct": 0.0291,
+  "choice_net_pct": -0.1091
+ },
+ "03100000": {
+  "choice_in_pct": 0.0221,
+  "choice_net_pct": -0.0709
+ },
+ "03140000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0059
+ },
+ "03150000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0004
+ },
+ "03160000": {
+  "choice_in_pct": 0.0081,
+  "choice_net_pct": -0.0798
+ },
+ "03170000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0008
+ },
+ "03180000": {
+  "choice_in_pct": 0.0488,
+  "choice_net_pct": -0.0961
+ },
+ "03210000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.004
+ },
+ "03220000": {
+  "choice_in_pct": 0.1218,
+  "choice_net_pct": 0.0928
+ },
+ "03230000": {
+  "choice_in_pct": 0.1684,
+  "choice_net_pct": 0.1733
+ },
+ "03250000": {
+  "choice_in_pct": 0.0347,
+  "choice_net_pct": 0.0045
+ },
+ "03260000": {
+  "choice_in_pct": 0.019,
+  "choice_net_pct": 0.0154
+ },
+ "03270000": {
+  "choice_in_pct": 0.2935,
+  "choice_net_pct": 0.1242
+ },
+ "03300000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0005
+ },
+ "03310000": {
+  "choice_in_pct": 0.0132,
+  "choice_net_pct": -0.0272
+ },
+ "03320000": {
+  "choice_in_pct": 0.0021,
+  "choice_net_pct": -0.0147
+ },
+ "03350000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0022
+ },
+ "03360000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0068
+ },
+ "03370000": {
+  "choice_in_pct": 0.2624,
+  "choice_net_pct": 0.1186
+ },
+ "03400000": {
+  "choice_in_pct": 0.1636,
+  "choice_net_pct": -0.0393
+ },
+ "03420000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0074
+ },
+ "03430000": {
+  "choice_in_pct": 0.0186,
+  "choice_net_pct": -0.0688
+ },
+ "03440000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0005
+ },
+ "03460000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0024
+ },
+ "03470000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0108
+ },
+ "03480000": {
+  "choice_in_pct": 0.003,
+  "choice_net_pct": -0.0157
+ },
+ "03490000": {
+  "choice_in_pct": 0.2192,
+  "choice_net_pct": 0.0167
+ },
+ "03500000": {
+  "choice_in_pct": 0.0,
+  "choice_net_pct": -0.0045
+ },
+ "06000000": {
+  "choice_in_pct": 0.0004
+ },
+ "06030000": {
+  "choice_in_pct": 0.0423
+ },
+ "06100000": {
+  "choice_in_pct": 0.0239
+ },
+ "06150000": {
+  "choice_in_pct": 0.0147
+ },
+ "06160000": {
+  "choice_in_pct": 0.0489
+ },
+ "06180000": {
+  "choice_in_pct": 0.2173
+ },
+ "06200000": {
+  "choice_in_pct": 0.0586
+ },
+ "06220000": {
+  "choice_in_pct": 0.024
+ },
+ "06250000": {
+  "choice_in_pct": 0.0044
+ },
+ "06320000": {
+  "choice_in_pct": 0.1016
+ },
+ "06350000": {
+  "choice_in_pct": 0.1641
+ },
+ "06450000": {
+  "choice_in_pct": 0.0434
+ },
+ "06500000": {
+  "choice_in_pct": 0.0044
+ },
+ "06550000": {
+  "choice_in_pct": 0.0
+ },
+ "06580000": {
+  "choice_in_pct": 0.0517
+ },
+ "06620000": {
+  "choice_in_pct": 0.181
+ },
+ "06650000": {
+  "choice_in_pct": 0.0197
+ },
+ "06720000": {
+  "choice_in_pct": 0.0485
+ },
+ "06730000": {
+  "choice_in_pct": 0.0075
+ },
+ "06740000": {
+  "choice_in_pct": 0.1287
+ },
+ "06750000": {
+  "choice_in_pct": 0.0317
+ },
+ "06800000": {
+  "choice_in_pct": 0.0441
+ },
+ "06850000": {
+  "choice_in_pct": 0.3014
+ },
+ "06980000": {
+  "choice_in_pct": 0.0744
+ },
+ "07100000": {
+  "choice_in_pct": 0.0839
+ },
+ "07120000": {
+  "choice_in_pct": 0.1387
+ },
+ "07150000": {
+  "choice_in_pct": 0.0813
+ },
+ "07170000": {
+  "choice_in_pct": 0.1673
+ },
+ "07200000": {
+  "choice_in_pct": 0.0806
+ },
+ "07250000": {
+  "choice_in_pct": 0.0185
+ },
+ "07280000": {
+  "choice_in_pct": 0.2214
+ },
+ "07350000": {
+  "choice_in_pct": 0.009
+ },
+ "07450000": {
+  "choice_in_pct": 0.0079
+ },
+ "07500000": {
+  "choice_in_pct": 0.0768
+ },
+ "07530000": {
+  "choice_in_pct": 0.127
+ },
+ "07650000": {
+  "choice_in_pct": 0.14
+ },
+ "07660000": {
+  "choice_in_pct": 0.0968
+ },
+ "07670000": {
+  "choice_in_pct": 0.0402
+ },
+ "07700000": {
+  "choice_in_pct": 0.1348
+ },
+ "07730000": {
+  "choice_in_pct": 0.0414
+ },
+ "07740000": {
+  "choice_in_pct": 0.1544
+ },
+ "07750000": {
+  "choice_in_pct": 0.003
+ },
+ "07780000": {
+  "choice_in_pct": 0.159
+ },
+ "07800000": {
+  "choice_in_pct": 0.0222
+ },
+ "06400000": {
+  "choice_in_pct": 0.0
+ },
+ "06950000": {
+  "choice_in_pct": 0.0
+ },
+ "06600000": {
+  "choice_in_pct": 0.1536
+ },
+ "06900000": {
+  "choice_in_pct": 0.0
+ },
+ "07050000": {
+  "choice_in_pct": 0.0341
+ },
+ "07300000": {
+  "choice_in_pct": 0.0
+ },
+ "07630000": {
+  "choice_in_pct": 0.058
+ }
+}

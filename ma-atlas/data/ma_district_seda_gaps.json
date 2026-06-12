@@ -1,0 +1,1218 @@
+{
+ "07530000": {
+  "seda_gap_econ": 1.376,
+  "seda_gap_white_hispanic": 1.331
+ },
+ "07670000": {
+  "seda_gap_econ": 1.276,
+  "seda_gap_white_black": 1.167,
+  "seda_gap_white_hispanic": 0.67
+ },
+ "07660000": {
+  "seda_gap_econ": 1.126,
+  "seda_gap_white_black": 1.243,
+  "seda_gap_white_hispanic": 0.758
+ },
+ "06320000": {
+  "seda_gap_econ": 0.861
+ },
+ "07740000": {
+  "seda_gap_econ": 0.891,
+  "seda_gap_white_black": 2.631,
+  "seda_gap_white_hispanic": 1.806
+ },
+ "06980000": {
+  "seda_gap_econ": 1.335
+ },
+ "06160000": {
+  "seda_gap_econ": 1.7,
+  "seda_gap_white_black": 1.379,
+  "seda_gap_white_hispanic": 1.191
+ },
+ "07120000": {
+  "seda_gap_econ": 1.59,
+  "seda_gap_white_black": 2.357,
+  "seda_gap_white_hispanic": 1.727
+ },
+ "00010000": {
+  "seda_gap_econ": 1.243,
+  "seda_gap_white_black": 1.223,
+  "seda_gap_white_hispanic": 0.976
+ },
+ "06000000": {
+  "seda_gap_econ": 2.796,
+  "seda_gap_white_black": 1.983,
+  "seda_gap_white_hispanic": 1.306
+ },
+ "00030000": {
+  "seda_gap_econ": 1.285
+ },
+ "06030000": {
+  "seda_gap_econ": 1.188,
+  "seda_gap_white_black": 0.589,
+  "seda_gap_white_hispanic": 0.395
+ },
+ "00050000": {
+  "seda_gap_econ": 1.269,
+  "seda_gap_white_black": 1.395,
+  "seda_gap_white_hispanic": 1.371
+ },
+ "00070000": {
+  "seda_gap_econ": 2.146,
+  "seda_gap_white_black": 1.803,
+  "seda_gap_white_hispanic": 1.479
+ },
+ "00080000": {
+  "seda_gap_econ": 3.252,
+  "seda_gap_white_black": 2.938,
+  "seda_gap_white_hispanic": 2.954
+ },
+ "00090000": {
+  "seda_gap_econ": 2.739,
+  "seda_gap_white_black": 1.17,
+  "seda_gap_white_hispanic": 2.004
+ },
+ "00100000": {
+  "seda_gap_econ": 2.535,
+  "seda_gap_white_black": 2.886,
+  "seda_gap_white_hispanic": 1.509
+ },
+ "06100000": {
+  "seda_gap_econ": 1.261,
+  "seda_gap_white_black": 1.652,
+  "seda_gap_white_hispanic": 0.552
+ },
+ "00140000": {
+  "seda_gap_econ": 2.362,
+  "seda_gap_white_black": 1.178,
+  "seda_gap_white_hispanic": 2.266
+ },
+ "06150000": {
+  "seda_gap_econ": 1.347,
+  "seda_gap_white_black": 0.489,
+  "seda_gap_white_hispanic": 0.771
+ },
+ "00160000": {
+  "seda_gap_econ": 1.724,
+  "seda_gap_white_black": 1.426,
+  "seda_gap_white_hispanic": 1.359
+ },
+ "00170000": {
+  "seda_gap_econ": 1.593,
+  "seda_gap_white_black": 0.807,
+  "seda_gap_white_hispanic": 1.226
+ },
+ "00180000": {
+  "seda_gap_econ": 1.09,
+  "seda_gap_white_black": 1.35,
+  "seda_gap_white_hispanic": 0.993
+ },
+ "00200000": {
+  "seda_gap_econ": 1.96,
+  "seda_gap_white_black": 2.421,
+  "seda_gap_white_hispanic": 1.919
+ },
+ "00230000": {
+  "seda_gap_econ": 2.648,
+  "seda_gap_white_black": 2.584,
+  "seda_gap_white_hispanic": 1.055
+ },
+ "00240000": {
+  "seda_gap_econ": 1.604,
+  "seda_gap_white_black": 0.412,
+  "seda_gap_white_hispanic": 1.162
+ },
+ "00250000": {
+  "seda_gap_econ": 1.378,
+  "seda_gap_white_black": 1.375,
+  "seda_gap_white_hispanic": 0.798
+ },
+ "00260000": {
+  "seda_gap_econ": 2.281,
+  "seda_gap_white_black": 3.074,
+  "seda_gap_white_hispanic": 1.167
+ },
+ "00270000": {
+  "seda_gap_econ": 1.385,
+  "seda_gap_white_hispanic": 1.422
+ },
+ "06180000": {
+  "seda_gap_econ": 1.359,
+  "seda_gap_white_hispanic": 1.203
+ },
+ "00300000": {
+  "seda_gap_econ": 2.211,
+  "seda_gap_white_black": 2.119,
+  "seda_gap_white_hispanic": 1.716
+ },
+ "00310000": {
+  "seda_gap_econ": 1.435,
+  "seda_gap_white_black": 0.598,
+  "seda_gap_white_hispanic": 0.759
+ },
+ "06220000": {
+  "seda_gap_econ": 1.282,
+  "seda_gap_white_black": 0.769,
+  "seda_gap_white_hispanic": 0.946
+ },
+ "00350000": {
+  "seda_gap_econ": 1.775,
+  "seda_gap_white_black": 2.463,
+  "seda_gap_white_hispanic": 2.3
+ },
+ "00360000": {
+  "seda_gap_econ": 1.495,
+  "seda_gap_white_black": 1.874,
+  "seda_gap_white_hispanic": 1.022
+ },
+ "00380000": {
+  "seda_gap_econ": 1.818,
+  "seda_gap_white_hispanic": 1.279
+ },
+ "00400000": {
+  "seda_gap_econ": 1.607,
+  "seda_gap_white_black": 1.53,
+  "seda_gap_white_hispanic": 1.334
+ },
+ "00410000": {
+  "seda_gap_econ": 1.436
+ },
+ "06250000": {
+  "seda_gap_econ": 1.549,
+  "seda_gap_white_black": 1.184,
+  "seda_gap_white_hispanic": 1.025
+ },
+ "00430000": {
+  "seda_gap_econ": 0.94
+ },
+ "00440000": {
+  "seda_gap_econ": 1.39,
+  "seda_gap_white_black": 1.406,
+  "seda_gap_white_hispanic": 1.272
+ },
+ "00450000": {
+  "seda_gap_econ": 1.269,
+  "seda_gap_white_hispanic": 1.197
+ },
+ "00460000": {
+  "seda_gap_econ": 3.188,
+  "seda_gap_white_black": 3.296,
+  "seda_gap_white_hispanic": 1.987
+ },
+ "00480000": {
+  "seda_gap_econ": 1.859,
+  "seda_gap_white_black": 1.36,
+  "seda_gap_white_hispanic": 0.787
+ },
+ "00490000": {
+  "seda_gap_econ": 2.456,
+  "seda_gap_white_black": 2.835,
+  "seda_gap_white_hispanic": 2.621
+ },
+ "00500000": {
+  "seda_gap_econ": 2.302,
+  "seda_gap_white_black": 2.31,
+  "seda_gap_white_hispanic": 1.411
+ },
+ "00510000": {
+  "seda_gap_econ": 1.991,
+  "seda_gap_white_hispanic": 0.747
+ },
+ "00520000": {
+  "seda_gap_econ": 1.391,
+  "seda_gap_white_black": 1.318
+ },
+ "06350000": {
+  "seda_gap_econ": 1.336,
+  "seda_gap_white_hispanic": 0.141
+ },
+ "00560000": {
+  "seda_gap_econ": 2.005,
+  "seda_gap_white_black": 1.107,
+  "seda_gap_white_hispanic": 1.244
+ },
+ "00570000": {
+  "seda_gap_econ": 0.944,
+  "seda_gap_white_black": 1.001,
+  "seda_gap_white_hispanic": 0.737
+ },
+ "00610000": {
+  "seda_gap_econ": 1.304,
+  "seda_gap_white_black": 0.847,
+  "seda_gap_white_hispanic": 1.334
+ },
+ "00630000": {
+  "seda_gap_econ": 1.084
+ },
+ "00640000": {
+  "seda_gap_econ": 1.597,
+  "seda_gap_white_black": 1.252,
+  "seda_gap_white_hispanic": 1.421
+ },
+ "00650000": {
+  "seda_gap_econ": 1.646,
+  "seda_gap_white_black": 1.984
+ },
+ "00670000": {
+  "seda_gap_econ": 2.575,
+  "seda_gap_white_black": 3.168,
+  "seda_gap_white_hispanic": 1.125
+ },
+ "00680000": {
+  "seda_gap_econ": 0.818
+ },
+ "00710000": {
+  "seda_gap_econ": 1.538,
+  "seda_gap_white_black": 1.679,
+  "seda_gap_white_hispanic": 1.134
+ },
+ "00720000": {
+  "seda_gap_econ": 1.423,
+  "seda_gap_white_black": 0.929,
+  "seda_gap_white_hispanic": 1.058
+ },
+ "00730000": {
+  "seda_gap_econ": 1.825,
+  "seda_gap_white_black": 2.122,
+  "seda_gap_white_hispanic": 1.63
+ },
+ "00740000": {
+  "seda_gap_econ": 1.626,
+  "seda_gap_white_hispanic": 1.411
+ },
+ "06450000": {
+  "seda_gap_econ": 1.587,
+  "seda_gap_white_black": 1.678,
+  "seda_gap_white_hispanic": 1.28
+ },
+ "06500000": {
+  "seda_gap_econ": 1.501,
+  "seda_gap_white_black": 1.817,
+  "seda_gap_white_hispanic": 1.257
+ },
+ "00770000": {
+  "seda_gap_econ": 1.597,
+  "seda_gap_white_hispanic": 0.548
+ },
+ "00790000": {
+  "seda_gap_econ": 1.195,
+  "seda_gap_white_black": 0.578,
+  "seda_gap_white_hispanic": 0.846
+ },
+ "06580000": {
+  "seda_gap_econ": 1.394,
+  "seda_gap_white_black": 0.481,
+  "seda_gap_white_hispanic": 1.122
+ },
+ "00820000": {
+  "seda_gap_econ": 1.43,
+  "seda_gap_white_hispanic": 0.294
+ },
+ "00830000": {
+  "seda_gap_econ": 1.468,
+  "seda_gap_white_black": 1.376,
+  "seda_gap_white_hispanic": 0.322
+ },
+ "00870000": {
+  "seda_gap_econ": 1.333,
+  "seda_gap_white_black": 1.693,
+  "seda_gap_white_hispanic": 1.205
+ },
+ "00860000": {
+  "seda_gap_econ": 1.542,
+  "seda_gap_white_black": 1.049,
+  "seda_gap_white_hispanic": 1.277
+ },
+ "00880000": {
+  "seda_gap_econ": 1.825,
+  "seda_gap_white_black": 1.653,
+  "seda_gap_white_hispanic": 1.153
+ },
+ "02210000": {
+  "seda_gap_econ": 1.629,
+  "seda_gap_white_black": 1.853,
+  "seda_gap_white_hispanic": 1.471
+ },
+ "00910000": {
+  "seda_gap_econ": 1.025
+ },
+ "00930000": {
+  "seda_gap_econ": 0.797,
+  "seda_gap_white_black": 0.856,
+  "seda_gap_white_hispanic": 0.6
+ },
+ "00940000": {
+  "seda_gap_econ": 1.172,
+  "seda_gap_white_black": 1.094,
+  "seda_gap_white_hispanic": 0.707
+ },
+ "00950000": {
+  "seda_gap_econ": 1.753,
+  "seda_gap_white_black": 1.197,
+  "seda_gap_white_hispanic": 1.534
+ },
+ "00960000": {
+  "seda_gap_econ": 1.98,
+  "seda_gap_white_black": 2.324,
+  "seda_gap_white_hispanic": 1.365
+ },
+ "00970000": {
+  "seda_gap_econ": 1.708,
+  "seda_gap_white_black": 1.012,
+  "seda_gap_white_hispanic": 1.576
+ },
+ "00980000": {
+  "seda_gap_econ": 0.603
+ },
+ "00990000": {
+  "seda_gap_econ": 1.812,
+  "seda_gap_white_black": 2.036,
+  "seda_gap_white_hispanic": 1.189
+ },
+ "01000000": {
+  "seda_gap_econ": 2.782,
+  "seda_gap_white_black": 2.019,
+  "seda_gap_white_hispanic": 2.548
+ },
+ "01010000": {
+  "seda_gap_econ": 2.258,
+  "seda_gap_white_black": 1.492,
+  "seda_gap_white_hispanic": 0.88
+ },
+ "06650000": {
+  "seda_gap_econ": 1.823,
+  "seda_gap_white_black": 1.773,
+  "seda_gap_white_hispanic": 0.931
+ },
+ "01030000": {
+  "seda_gap_econ": 1.59,
+  "seda_gap_white_black": 0.477,
+  "seda_gap_white_hispanic": 1.292
+ },
+ "06720000": {
+  "seda_gap_econ": 1.25,
+  "seda_gap_white_hispanic": 1.178
+ },
+ "01050000": {
+  "seda_gap_econ": 1.525,
+  "seda_gap_white_hispanic": 0.933
+ },
+ "06740000": {
+  "seda_gap_econ": 1.129,
+  "seda_gap_white_hispanic": 1.66
+ },
+ "01070000": {
+  "seda_gap_econ": 1.725,
+  "seda_gap_white_black": 1.268,
+  "seda_gap_white_hispanic": 1.696
+ },
+ "01100000": {
+  "seda_gap_econ": 2.427,
+  "seda_gap_white_black": 1.887,
+  "seda_gap_white_hispanic": 1.657
+ },
+ "01110000": {
+  "seda_gap_econ": 1.633,
+  "seda_gap_white_hispanic": 1.501
+ },
+ "01140000": {
+  "seda_gap_econ": 1.844,
+  "seda_gap_white_black": 1.246,
+  "seda_gap_white_hispanic": 1.677
+ },
+ "06730000": {
+  "seda_gap_econ": 1.905,
+  "seda_gap_white_black": 1.369,
+  "seda_gap_white_hispanic": 1.047
+ },
+ "01170000": {
+  "seda_gap_econ": 2.245,
+  "seda_gap_white_black": 2.662,
+  "seda_gap_white_hispanic": 1.609
+ },
+ "01180000": {
+  "seda_gap_econ": 1.343
+ },
+ "06750000": {
+  "seda_gap_econ": 1.03,
+  "seda_gap_white_hispanic": 0.942
+ },
+ "06800000": {
+  "seda_gap_econ": 1.676,
+  "seda_gap_white_black": 1.605,
+  "seda_gap_white_hispanic": 0.835
+ },
+ "01220000": {
+  "seda_gap_econ": 1.767,
+  "seda_gap_white_black": 1.598,
+  "seda_gap_white_hispanic": 1.652
+ },
+ "01250000": {
+  "seda_gap_econ": 1.849,
+  "seda_gap_white_black": 0.214,
+  "seda_gap_white_hispanic": 1.347
+ },
+ "01270000": {
+  "seda_gap_econ": 1.192
+ },
+ "01280000": {
+  "seda_gap_econ": 2.075,
+  "seda_gap_white_black": 1.245,
+  "seda_gap_white_hispanic": 2.02
+ },
+ "06850000": {
+  "seda_gap_econ": 0.917
+ },
+ "01310000": {
+  "seda_gap_econ": 2.249,
+  "seda_gap_white_black": 2.409,
+  "seda_gap_white_hispanic": 0.97
+ },
+ "01330000": {
+  "seda_gap_econ": 1.156,
+  "seda_gap_white_black": 1.133,
+  "seda_gap_white_hispanic": 0.601
+ },
+ "01350000": {
+  "seda_gap_econ": 1.182
+ },
+ "01360000": {
+  "seda_gap_econ": 1.877,
+  "seda_gap_white_black": 1.171,
+  "seda_gap_white_hispanic": 2.07
+ },
+ "01370000": {
+  "seda_gap_econ": 1.892,
+  "seda_gap_white_black": 1.816,
+  "seda_gap_white_hispanic": 2.074
+ },
+ "01380000": {
+  "seda_gap_econ": 1.561,
+  "seda_gap_white_hispanic": 0.944
+ },
+ "01390000": {
+  "seda_gap_econ": 2.102,
+  "seda_gap_white_black": 1.347,
+  "seda_gap_white_hispanic": 1.843
+ },
+ "01410000": {
+  "seda_gap_econ": 1.89,
+  "seda_gap_white_black": 1.704,
+  "seda_gap_white_hispanic": 1.769
+ },
+ "01420000": {
+  "seda_gap_econ": 1.764,
+  "seda_gap_white_hispanic": 1.158
+ },
+ "01440000": {
+  "seda_gap_econ": 2.025,
+  "seda_gap_white_hispanic": 1.563
+ },
+ "01450000": {
+  "seda_gap_econ": 1.442,
+  "seda_gap_white_black": 1.662
+ },
+ "01490000": {
+  "seda_gap_econ": 1.115,
+  "seda_gap_white_black": 0.5,
+  "seda_gap_white_hispanic": 0.873
+ },
+ "01500000": {
+  "seda_gap_econ": 1.626,
+  "seda_gap_white_hispanic": 1.414
+ },
+ "01510000": {
+  "seda_gap_econ": 1.38,
+  "seda_gap_white_black": 1.688,
+  "seda_gap_white_hispanic": 0.791
+ },
+ "01520000": {
+  "seda_gap_econ": 1.768,
+  "seda_gap_white_hispanic": 1.792
+ },
+ "01530000": {
+  "seda_gap_econ": 1.977,
+  "seda_gap_white_black": 1.348,
+  "seda_gap_white_hispanic": 1.941
+ },
+ "01540000": {
+  "seda_gap_econ": 1.364
+ },
+ "01550000": {
+  "seda_gap_econ": 2.907,
+  "seda_gap_white_black": 3.072,
+  "seda_gap_white_hispanic": 0.979
+ },
+ "01570000": {
+  "seda_gap_econ": 1.784,
+  "seda_gap_white_black": 1.873,
+  "seda_gap_white_hispanic": 1.822
+ },
+ "01580000": {
+  "seda_gap_econ": 2.188,
+  "seda_gap_white_black": 1.189,
+  "seda_gap_white_hispanic": 2.133
+ },
+ "01590000": {
+  "seda_gap_econ": 1.644,
+  "seda_gap_white_black": 0.989,
+  "seda_gap_white_hispanic": 1.117
+ },
+ "01600000": {
+  "seda_gap_econ": 1.748,
+  "seda_gap_white_black": 0.859,
+  "seda_gap_white_hispanic": 1.609
+ },
+ "01610000": {
+  "seda_gap_econ": 1.31,
+  "seda_gap_white_black": 0.893,
+  "seda_gap_white_hispanic": 1.261
+ },
+ "01620000": {
+  "seda_gap_econ": 1.373,
+  "seda_gap_white_black": 0.802,
+  "seda_gap_white_hispanic": 1.186
+ },
+ "01630000": {
+  "seda_gap_econ": 1.422,
+  "seda_gap_white_black": 1.316,
+  "seda_gap_white_hispanic": 1.433
+ },
+ "01640000": {
+  "seda_gap_econ": 1.6,
+  "seda_gap_white_black": 1.616,
+  "seda_gap_white_hispanic": 0.826
+ },
+ "01650000": {
+  "seda_gap_econ": 1.346,
+  "seda_gap_white_black": 1.431,
+  "seda_gap_white_hispanic": 1.108
+ },
+ "01670000": {
+  "seda_gap_econ": 2.062,
+  "seda_gap_white_black": 1.854,
+  "seda_gap_white_hispanic": 0.855
+ },
+ "01680000": {
+  "seda_gap_econ": 2.355,
+  "seda_gap_white_black": 2.685,
+  "seda_gap_white_hispanic": 1.9
+ },
+ "01690000": {
+  "seda_gap_econ": 1.484,
+  "seda_gap_white_black": 1.36
+ },
+ "01700000": {
+  "seda_gap_econ": 2.477,
+  "seda_gap_white_black": 1.869,
+  "seda_gap_white_hispanic": 2.105
+ },
+ "01710000": {
+  "seda_gap_econ": 1.378,
+  "seda_gap_white_black": 1.918,
+  "seda_gap_white_hispanic": 1.008
+ },
+ "01720000": {
+  "seda_gap_econ": 1.652,
+  "seda_gap_white_black": 1.873,
+  "seda_gap_white_hispanic": 0.68
+ },
+ "01730000": {
+  "seda_gap_econ": 1.777,
+  "seda_gap_white_black": 1.796,
+  "seda_gap_white_hispanic": 0.875
+ },
+ "01740000": {
+  "seda_gap_econ": 2.225,
+  "seda_gap_white_black": 1.356,
+  "seda_gap_white_hispanic": 1.231
+ },
+ "01750000": {
+  "seda_gap_econ": 2.186,
+  "seda_gap_white_black": 2.18,
+  "seda_gap_white_hispanic": 0.786
+ },
+ "01760000": {
+  "seda_gap_econ": 1.572,
+  "seda_gap_white_black": 1.621,
+  "seda_gap_white_hispanic": 0.888
+ },
+ "01770000": {
+  "seda_gap_econ": 1.881,
+  "seda_gap_white_black": 1.229,
+  "seda_gap_white_hispanic": 1.084
+ },
+ "01780000": {
+  "seda_gap_econ": 2.042,
+  "seda_gap_white_black": 2.301,
+  "seda_gap_white_hispanic": 1.214
+ },
+ "07100000": {
+  "seda_gap_econ": 1.918,
+  "seda_gap_white_hispanic": 0.789
+ },
+ "01810000": {
+  "seda_gap_econ": 1.911,
+  "seda_gap_white_black": 1.291,
+  "seda_gap_white_hispanic": 1.929
+ },
+ "01820000": {
+  "seda_gap_econ": 1.513,
+  "seda_gap_white_black": 1.785,
+  "seda_gap_white_hispanic": 0.908
+ },
+ "01840000": {
+  "seda_gap_econ": 1.265,
+  "seda_gap_white_hispanic": 0.802
+ },
+ "01850000": {
+  "seda_gap_econ": 2.056,
+  "seda_gap_white_black": 1.474,
+  "seda_gap_white_hispanic": 1.656
+ },
+ "01860000": {
+  "seda_gap_econ": 1.375,
+  "seda_gap_white_black": 1.827,
+  "seda_gap_white_hispanic": 1.117
+ },
+ "01870000": {
+  "seda_gap_econ": 1.394,
+  "seda_gap_white_black": 0.991,
+  "seda_gap_white_hispanic": 0.563
+ },
+ "01890000": {
+  "seda_gap_econ": 2.422,
+  "seda_gap_white_black": 2.603,
+  "seda_gap_white_hispanic": 1.198
+ },
+ "07170000": {
+  "seda_gap_econ": 1.387,
+  "seda_gap_white_hispanic": -0.131
+ },
+ "01910000": {
+  "seda_gap_econ": 1.107,
+  "seda_gap_white_hispanic": 0.759
+ },
+ "07150000": {
+  "seda_gap_econ": 2.227,
+  "seda_gap_white_hispanic": 0.515
+ },
+ "01960000": {
+  "seda_gap_econ": 0.695
+ },
+ "01970000": {
+  "seda_gap_econ": 1.64,
+  "seda_gap_white_black": 2.453,
+  "seda_gap_white_hispanic": 2.265
+ },
+ "07200000": {
+  "seda_gap_econ": 1.087,
+  "seda_gap_white_hispanic": 0.678
+ },
+ "07250000": {
+  "seda_gap_econ": 2.28,
+  "seda_gap_white_black": 1.553,
+  "seda_gap_white_hispanic": 1.757
+ },
+ "01980000": {
+  "seda_gap_econ": 2.307,
+  "seda_gap_white_black": 2.213,
+  "seda_gap_white_hispanic": 1.873
+ },
+ "01990000": {
+  "seda_gap_econ": 2.612,
+  "seda_gap_white_black": 2.493,
+  "seda_gap_white_hispanic": 1.342
+ },
+ "02010000": {
+  "seda_gap_econ": 1.345,
+  "seda_gap_white_black": 0.905,
+  "seda_gap_white_hispanic": 1.019
+ },
+ "07280000": {
+  "seda_gap_econ": 1.355
+ },
+ "02040000": {
+  "seda_gap_econ": 2.417,
+  "seda_gap_white_black": 1.734,
+  "seda_gap_white_hispanic": 1.826
+ },
+ "02070000": {
+  "seda_gap_econ": 2.792,
+  "seda_gap_white_black": 3.136,
+  "seda_gap_white_hispanic": 1.972
+ },
+ "02080000": {
+  "seda_gap_econ": 2.025,
+  "seda_gap_white_black": 1.475,
+  "seda_gap_white_hispanic": 0.903
+ },
+ "02090000": {
+  "seda_gap_econ": 1.639,
+  "seda_gap_white_black": 1.037,
+  "seda_gap_white_hispanic": 0.312
+ },
+ "02110000": {
+  "seda_gap_econ": 2.392,
+  "seda_gap_white_black": 1.446,
+  "seda_gap_white_hispanic": 2.069
+ },
+ "02120000": {
+  "seda_gap_econ": 1.826,
+  "seda_gap_white_black": 0.983,
+  "seda_gap_white_hispanic": 1.247
+ },
+ "02150000": {
+  "seda_gap_econ": 1.142,
+  "seda_gap_white_hispanic": 0.349
+ },
+ "07350000": {
+  "seda_gap_econ": 1.465,
+  "seda_gap_white_black": 1.354,
+  "seda_gap_white_hispanic": 0.793
+ },
+ "02170000": {
+  "seda_gap_econ": 1.468,
+  "seda_gap_white_hispanic": 0.146
+ },
+ "02100000": {
+  "seda_gap_econ": 2.667,
+  "seda_gap_white_black": 1.908,
+  "seda_gap_white_hispanic": 2.556
+ },
+ "02130000": {
+  "seda_gap_econ": 2.014,
+  "seda_gap_white_black": 1.077,
+  "seda_gap_white_hispanic": 1.373
+ },
+ "02140000": {
+  "seda_gap_econ": 2.065,
+  "seda_gap_white_hispanic": 1.049
+ },
+ "02180000": {
+  "seda_gap_econ": 1.611,
+  "seda_gap_white_black": 1.501,
+  "seda_gap_white_hispanic": 1.586
+ },
+ "02190000": {
+  "seda_gap_econ": 1.613,
+  "seda_gap_white_black": 1.797,
+  "seda_gap_white_hispanic": 1.111
+ },
+ "02200000": {
+  "seda_gap_econ": 1.868,
+  "seda_gap_white_black": 1.984,
+  "seda_gap_white_hispanic": 1.775
+ },
+ "00890000": {
+  "seda_gap_econ": 1.177,
+  "seda_gap_white_hispanic": 1.416
+ },
+ "02230000": {
+  "seda_gap_econ": 1.435,
+  "seda_gap_white_black": 0.346,
+  "seda_gap_white_hispanic": 0.764
+ },
+ "02240000": {
+  "seda_gap_econ": 1.536,
+  "seda_gap_white_black": 1.315,
+  "seda_gap_white_hispanic": 1.442
+ },
+ "02260000": {
+  "seda_gap_econ": 1.506,
+  "seda_gap_white_black": 1.194,
+  "seda_gap_white_hispanic": 1.653
+ },
+ "02270000": {
+  "seda_gap_econ": 1.391,
+  "seda_gap_white_black": 0.445,
+  "seda_gap_white_hispanic": 1.197
+ },
+ "02290000": {
+  "seda_gap_econ": 1.537,
+  "seda_gap_white_black": 1.185,
+  "seda_gap_white_hispanic": 1.677
+ },
+ "02300000": {
+  "seda_gap_econ": 1.743
+ },
+ "02310000": {
+  "seda_gap_econ": 1.296,
+  "seda_gap_white_black": 1.162,
+  "seda_gap_white_hispanic": 0.658
+ },
+ "07450000": {
+  "seda_gap_econ": 1.893,
+  "seda_gap_white_hispanic": 1.067
+ },
+ "02340000": {
+  "seda_gap_econ": 0.673
+ },
+ "07500000": {
+  "seda_gap_econ": 0.968,
+  "seda_gap_white_hispanic": 0.513
+ },
+ "02360000": {
+  "seda_gap_econ": 1.997,
+  "seda_gap_white_black": 1.457,
+  "seda_gap_white_hispanic": 1.53
+ },
+ "02380000": {
+  "seda_gap_econ": 1.809,
+  "seda_gap_white_black": 1.983,
+  "seda_gap_white_hispanic": 1.32
+ },
+ "02390000": {
+  "seda_gap_econ": 1.682,
+  "seda_gap_white_black": 2.419,
+  "seda_gap_white_hispanic": 1.453
+ },
+ "02400000": {
+  "seda_gap_econ": 1.04
+ },
+ "02420000": {
+  "seda_gap_econ": 0.665,
+  "seda_gap_white_black": 0.348,
+  "seda_gap_white_hispanic": 0.725
+ },
+ "02430000": {
+  "seda_gap_econ": 1.263,
+  "seda_gap_white_black": 1.962,
+  "seda_gap_white_hispanic": 1.786
+ },
+ "02440000": {
+  "seda_gap_econ": 1.222,
+  "seda_gap_white_black": 1.447,
+  "seda_gap_white_hispanic": 1.286
+ },
+ "02460000": {
+  "seda_gap_econ": 2.077,
+  "seda_gap_white_black": 2.518,
+  "seda_gap_white_hispanic": 1.245
+ },
+ "02480000": {
+  "seda_gap_econ": 1.026,
+  "seda_gap_white_black": 0.891,
+  "seda_gap_white_hispanic": 0.839
+ },
+ "02490000": {
+  "seda_gap_econ": 1.538
+ },
+ "02500000": {
+  "seda_gap_econ": 0.907,
+  "seda_gap_white_black": 2.165
+ },
+ "02510000": {
+  "seda_gap_econ": 1.331,
+  "seda_gap_white_black": 1.5,
+  "seda_gap_white_hispanic": 0.85
+ },
+ "02520000": {
+  "seda_gap_econ": 1.46,
+  "seda_gap_white_hispanic": 0.55
+ },
+ "02530000": {
+  "seda_gap_econ": 1.114
+ },
+ "02580000": {
+  "seda_gap_econ": 2.368,
+  "seda_gap_white_black": 1.625,
+  "seda_gap_white_hispanic": 2.215
+ },
+ "02610000": {
+  "seda_gap_econ": 1.201,
+  "seda_gap_white_black": 1.677,
+  "seda_gap_white_hispanic": 1.079
+ },
+ "02620000": {
+  "seda_gap_econ": 0.992,
+  "seda_gap_white_black": 0.624,
+  "seda_gap_white_hispanic": 0.558
+ },
+ "02640000": {
+  "seda_gap_econ": 1.95,
+  "seda_gap_white_black": 2.64,
+  "seda_gap_white_hispanic": 1.392
+ },
+ "02650000": {
+  "seda_gap_econ": 1.419,
+  "seda_gap_white_black": 1.028,
+  "seda_gap_white_hispanic": 1.214
+ },
+ "02660000": {
+  "seda_gap_econ": 2.243,
+  "seda_gap_white_black": 2.176,
+  "seda_gap_white_hispanic": 1.16
+ },
+ "02710000": {
+  "seda_gap_econ": 2.386,
+  "seda_gap_white_black": 1.728,
+  "seda_gap_white_hispanic": 1.624
+ },
+ "02720000": {
+  "seda_gap_econ": 1.054
+ },
+ "02730000": {
+  "seda_gap_econ": 1.472,
+  "seda_gap_white_black": 1.406,
+  "seda_gap_white_hispanic": 1.218
+ },
+ "02740000": {
+  "seda_gap_econ": 2.373,
+  "seda_gap_white_black": 2.791,
+  "seda_gap_white_hispanic": 2.474
+ },
+ "02780000": {
+  "seda_gap_econ": 1.935,
+  "seda_gap_white_black": 1.075,
+  "seda_gap_white_hispanic": 1.304
+ },
+ "02750000": {
+  "seda_gap_econ": 1.789,
+  "seda_gap_white_hispanic": 1.502
+ },
+ "02760000": {
+  "seda_gap_econ": 1.915,
+  "seda_gap_white_hispanic": 0.942
+ },
+ "02770000": {
+  "seda_gap_econ": 1.935,
+  "seda_gap_white_black": 0.347,
+  "seda_gap_white_hispanic": 1.694
+ },
+ "07650000": {
+  "seda_gap_econ": 1.428,
+  "seda_gap_white_hispanic": 0.278
+ },
+ "02810000": {
+  "seda_gap_econ": 1.672,
+  "seda_gap_white_black": 1.069,
+  "seda_gap_white_hispanic": 1.538
+ },
+ "02840000": {
+  "seda_gap_econ": 1.721,
+  "seda_gap_white_black": 1.024,
+  "seda_gap_white_hispanic": 1.829
+ },
+ "02850000": {
+  "seda_gap_econ": 1.576,
+  "seda_gap_white_black": 1.512,
+  "seda_gap_white_hispanic": 0.961
+ },
+ "02880000": {
+  "seda_gap_econ": 2.404,
+  "seda_gap_white_black": 2.545,
+  "seda_gap_white_hispanic": 1.285
+ },
+ "02890000": {
+  "seda_gap_econ": 1.336,
+  "seda_gap_white_hispanic": 1.267
+ },
+ "02900000": {
+  "seda_gap_econ": 1.558,
+  "seda_gap_white_hispanic": 0.957
+ },
+ "02910000": {
+  "seda_gap_econ": 1.724,
+  "seda_gap_white_black": 1.634,
+  "seda_gap_white_hispanic": 1.127
+ },
+ "02920000": {
+  "seda_gap_econ": 1.175,
+  "seda_gap_white_black": 1.427,
+  "seda_gap_white_hispanic": 0.61
+ },
+ "02930000": {
+  "seda_gap_econ": 1.79,
+  "seda_gap_white_black": 1.519,
+  "seda_gap_white_hispanic": 1.438
+ },
+ "02950000": {
+  "seda_gap_econ": 1.466,
+  "seda_gap_white_black": 1.014,
+  "seda_gap_white_hispanic": 0.947
+ },
+ "02980000": {
+  "seda_gap_econ": 1.407,
+  "seda_gap_white_hispanic": 0.428
+ },
+ "03000000": {
+  "seda_gap_econ": 0.88
+ },
+ "07730000": {
+  "seda_gap_econ": 1.752,
+  "seda_gap_white_black": 0.447,
+  "seda_gap_white_hispanic": 1.567
+ },
+ "03010000": {
+  "seda_gap_econ": 1.69,
+  "seda_gap_white_black": 0.878,
+  "seda_gap_white_hispanic": 0.794
+ },
+ "03040000": {
+  "seda_gap_econ": 1.291,
+  "seda_gap_white_black": 1.057,
+  "seda_gap_white_hispanic": 0.906
+ },
+ "07750000": {
+  "seda_gap_econ": 1.787,
+  "seda_gap_white_black": 1.118,
+  "seda_gap_white_hispanic": 0.853
+ },
+ "03050000": {
+  "seda_gap_econ": 1.719,
+  "seda_gap_white_black": 1.9,
+  "seda_gap_white_hispanic": 1.18
+ },
+ "03060000": {
+  "seda_gap_econ": 0.675
+ },
+ "03070000": {
+  "seda_gap_econ": 2.1,
+  "seda_gap_white_black": 2.264,
+  "seda_gap_white_hispanic": 1.404
+ },
+ "03080000": {
+  "seda_gap_econ": 2.019,
+  "seda_gap_white_black": 1.884,
+  "seda_gap_white_hispanic": 2.205
+ },
+ "03090000": {
+  "seda_gap_econ": 1.451,
+  "seda_gap_white_black": 0.357,
+  "seda_gap_white_hispanic": 0.947
+ },
+ "03100000": {
+  "seda_gap_econ": 1.461,
+  "seda_gap_white_black": 1.288,
+  "seda_gap_white_hispanic": 0.798
+ },
+ "07780000": {
+  "seda_gap_econ": 1.414,
+  "seda_gap_white_hispanic": 1.012
+ },
+ "03140000": {
+  "seda_gap_econ": 1.865,
+  "seda_gap_white_black": 1.374,
+  "seda_gap_white_hispanic": 1.646
+ },
+ "03150000": {
+  "seda_gap_econ": 2.721,
+  "seda_gap_white_black": 3.02,
+  "seda_gap_white_hispanic": 0.942
+ },
+ "03160000": {
+  "seda_gap_econ": 1.535,
+  "seda_gap_white_black": 1.109,
+  "seda_gap_white_hispanic": 1.308
+ },
+ "03170000": {
+  "seda_gap_econ": 2.669,
+  "seda_gap_white_black": 2.915,
+  "seda_gap_white_hispanic": 1.752
+ },
+ "03220000": {
+  "seda_gap_econ": 1.636,
+  "seda_gap_white_hispanic": 0.629
+ },
+ "03230000": {
+  "seda_gap_econ": 1.459,
+  "seda_gap_white_black": 1.263,
+  "seda_gap_white_hispanic": 0.896
+ },
+ "03320000": {
+  "seda_gap_econ": 1.994,
+  "seda_gap_white_black": 1.499,
+  "seda_gap_white_hispanic": 1.746
+ },
+ "02960000": {
+  "seda_gap_econ": 1.798,
+  "seda_gap_white_hispanic": 1.378
+ },
+ "03210000": {
+  "seda_gap_econ": 2.696,
+  "seda_gap_white_black": 2.201,
+  "seda_gap_white_hispanic": 2.423
+ },
+ "03250000": {
+  "seda_gap_econ": 1.815,
+  "seda_gap_white_black": 1.475,
+  "seda_gap_white_hispanic": 2.035
+ },
+ "03260000": {
+  "seda_gap_econ": 2.317,
+  "seda_gap_white_black": 1.545,
+  "seda_gap_white_hispanic": 1.333
+ },
+ "03270000": {
+  "seda_gap_econ": 1.472,
+  "seda_gap_white_hispanic": 1.218
+ },
+ "03300000": {
+  "seda_gap_econ": 2.253,
+  "seda_gap_white_black": 2.383,
+  "seda_gap_white_hispanic": 1.147
+ },
+ "03310000": {
+  "seda_gap_econ": 1.417,
+  "seda_gap_white_hispanic": 0.403
+ },
+ "03350000": {
+  "seda_gap_econ": 1.726,
+  "seda_gap_white_black": 1.461,
+  "seda_gap_white_hispanic": 0.947
+ },
+ "03360000": {
+  "seda_gap_econ": 1.672,
+  "seda_gap_white_black": 1.752,
+  "seda_gap_white_hispanic": 1.157
+ },
+ "03370000": {
+  "seda_gap_econ": 1.142
+ },
+ "07800000": {
+  "seda_gap_econ": 1.213,
+  "seda_gap_white_black": 1.559,
+  "seda_gap_white_hispanic": 1.156
+ },
+ "03400000": {
+  "seda_gap_econ": 1.375
+ },
+ "03420000": {
+  "seda_gap_econ": 1.758,
+  "seda_gap_white_black": 1.218,
+  "seda_gap_white_hispanic": 1.152
+ },
+ "03430000": {
+  "seda_gap_econ": 1.106,
+  "seda_gap_white_black": 0.514,
+  "seda_gap_white_hispanic": 0.712
+ },
+ "03440000": {
+  "seda_gap_econ": 2.188,
+  "seda_gap_white_black": 2.257,
+  "seda_gap_white_hispanic": 1.105
+ },
+ "03460000": {
+  "seda_gap_econ": 1.467,
+  "seda_gap_white_black": 2.017,
+  "seda_gap_white_hispanic": 1.139
+ },
+ "03470000": {
+  "seda_gap_econ": 1.531,
+  "seda_gap_white_black": 0.971,
+  "seda_gap_white_hispanic": 1.153
+ },
+ "03480000": {
+  "seda_gap_econ": 2.207,
+  "seda_gap_white_black": 1.296,
+  "seda_gap_white_hispanic": 2.017
+ },
+ "03500000": {
+  "seda_gap_econ": 1.888,
+  "seda_gap_white_hispanic": 1.211
+ },
+ "06620000": {
+  "seda_gap_econ": 0.781
+ }
+}

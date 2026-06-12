@@ -1,0 +1,1371 @@
+{
+ "02230000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "00870000": {
+  "arts_enrollment_pct": 0.809,
+  "arts_music_pct": 0.62,
+  "dlcs_course_pct": 0.245
+ },
+ "01570000": {
+  "arts_enrollment_pct": 0.995,
+  "arts_music_pct": 0.989,
+  "dlcs_course_pct": 0.832
+ },
+ "03150000": {
+  "arts_enrollment_pct": 0.858,
+  "arts_music_pct": 0.771,
+  "dlcs_course_pct": 0.419
+ },
+ "03160000": {
+  "arts_enrollment_pct": 0.916,
+  "arts_music_pct": 0.875,
+  "dlcs_course_pct": 0.434
+ },
+ "00930000": {
+  "arts_enrollment_pct": 0.839,
+  "arts_music_pct": 0.711,
+  "dlcs_course_pct": 0.606
+ },
+ "02080000": {
+  "arts_enrollment_pct": 0.961,
+  "arts_music_pct": 0.878
+ },
+ "06800000": {
+  "arts_enrollment_pct": 0.749,
+  "arts_music_pct": 0.583,
+  "dlcs_course_pct": 0.133
+ },
+ "02200000": {
+  "arts_enrollment_pct": 0.894,
+  "arts_music_pct": 0.682,
+  "dlcs_course_pct": 0.763
+ },
+ "07120000": {
+  "arts_enrollment_pct": 0.845,
+  "arts_music_pct": 0.534,
+  "dlcs_course_pct": 0.634
+ },
+ "01610000": {
+  "arts_enrollment_pct": 0.796,
+  "arts_music_pct": 0.558,
+  "dlcs_course_pct": 0.155
+ },
+ "02090000": {
+  "arts_enrollment_pct": 0.827,
+  "arts_music_pct": 0.632,
+  "dlcs_course_pct": 0.031
+ },
+ "01250000": {
+  "arts_enrollment_pct": 0.928,
+  "arts_music_pct": 0.644,
+  "dlcs_course_pct": 0.707
+ },
+ "00950000": {
+  "arts_enrollment_pct": 0.82,
+  "arts_music_pct": 0.645,
+  "dlcs_course_pct": 0.267
+ },
+ "01540000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "00570000": {
+  "arts_enrollment_pct": 0.863,
+  "arts_music_pct": 0.763,
+  "dlcs_course_pct": 0.243
+ },
+ "06750000": {
+  "arts_enrollment_pct": 0.92,
+  "arts_music_pct": 0.731,
+  "dlcs_course_pct": 0.627
+ },
+ "02710000": {
+  "arts_enrollment_pct": 0.837,
+  "arts_music_pct": 0.641,
+  "dlcs_course_pct": 0.126
+ },
+ "07650000": {
+  "arts_enrollment_pct": 0.892,
+  "arts_music_pct": 0.762,
+  "dlcs_course_pct": 0.202
+ },
+ "01370000": {
+  "arts_enrollment_pct": 0.788,
+  "arts_music_pct": 0.582,
+  "dlcs_course_pct": 0.521
+ },
+ "02300000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "00560000": {
+  "arts_enrollment_pct": 0.89,
+  "arts_music_pct": 0.704,
+  "dlcs_course_pct": 0.82
+ },
+ "02440000": {
+  "arts_enrollment_pct": 0.876,
+  "arts_music_pct": 0.728,
+  "dlcs_course_pct": 0.205
+ },
+ "00510000": {
+  "arts_enrollment_pct": 0.998,
+  "arts_music_pct": 0.992
+ },
+ "00770000": {
+  "arts_enrollment_pct": 0.86,
+  "arts_music_pct": 0.745,
+  "dlcs_course_pct": 0.315
+ },
+ "07300000": {
+  "arts_enrollment_pct": 0.434,
+  "arts_music_pct": 0.163,
+  "dlcs_course_pct": 0.397
+ },
+ "00960000": {
+  "arts_enrollment_pct": 0.875,
+  "arts_music_pct": 0.741,
+  "dlcs_course_pct": 0.735
+ },
+ "02810000": {
+  "arts_enrollment_pct": 0.698,
+  "arts_music_pct": 0.47,
+  "dlcs_course_pct": 0.493
+ },
+ "00300000": {
+  "arts_enrollment_pct": 0.91,
+  "arts_music_pct": 0.515,
+  "dlcs_course_pct": 0.134
+ },
+ "03010000": {
+  "arts_enrollment_pct": 0.92,
+  "arts_music_pct": 0.781,
+  "dlcs_course_pct": 0.347
+ },
+ "02770000": {
+  "arts_enrollment_pct": 0.931,
+  "arts_music_pct": 0.721,
+  "dlcs_course_pct": 0.581
+ },
+ "02180000": {
+  "arts_enrollment_pct": 0.858,
+  "arts_music_pct": 0.728,
+  "dlcs_course_pct": 0.764
+ },
+ "02390000": {
+  "arts_enrollment_pct": 0.855,
+  "arts_music_pct": 0.652,
+  "dlcs_course_pct": 0.726
+ },
+ "03100000": {
+  "arts_enrollment_pct": 0.87,
+  "arts_music_pct": 0.617,
+  "dlcs_course_pct": 0.357
+ },
+ "03230000": {
+  "arts_enrollment_pct": 0.9,
+  "arts_music_pct": 0.696,
+  "dlcs_course_pct": 0.148
+ },
+ "06620000": {
+  "arts_enrollment_pct": 0.909,
+  "arts_music_pct": 0.909,
+  "dlcs_course_pct": 0.909
+ },
+ "00670000": {
+  "arts_enrollment_pct": 0.995,
+  "arts_music_pct": 0.968,
+  "dlcs_course_pct": 0.245
+ },
+ "06950000": {
+  "arts_enrollment_pct": 0.599,
+  "arts_music_pct": 0.15,
+  "dlcs_course_pct": 0.391
+ },
+ "00740000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "01740000": {
+  "arts_enrollment_pct": 0.924,
+  "arts_music_pct": 0.788,
+  "dlcs_course_pct": 0.842
+ },
+ "00230000": {
+  "arts_enrollment_pct": 0.815,
+  "arts_music_pct": 0.643,
+  "dlcs_course_pct": 0.289
+ },
+ "02520000": {
+  "arts_enrollment_pct": 0.992,
+  "arts_music_pct": 0.852,
+  "dlcs_course_pct": 0.571
+ },
+ "02260000": {
+  "arts_enrollment_pct": 0.929,
+  "arts_music_pct": 0.734,
+  "dlcs_course_pct": 0.155
+ },
+ "00240000": {
+  "arts_enrollment_pct": 0.91,
+  "arts_music_pct": 0.808,
+  "dlcs_course_pct": 0.252
+ },
+ "01850000": {
+  "arts_enrollment_pct": 0.815,
+  "arts_music_pct": 0.673,
+  "dlcs_course_pct": 0.494
+ },
+ "01690000": {
+  "arts_enrollment_pct": 0.991,
+  "arts_music_pct": 0.991
+ },
+ "03000000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "03300000": {
+  "arts_enrollment_pct": 0.916,
+  "arts_music_pct": 0.742,
+  "dlcs_course_pct": 0.765
+ },
+ "07800000": {
+  "arts_enrollment_pct": 0.859,
+  "arts_music_pct": 0.598,
+  "dlcs_course_pct": 0.284
+ },
+ "00100000": {
+  "arts_enrollment_pct": 0.864,
+  "arts_music_pct": 0.752,
+  "dlcs_course_pct": 0.29
+ },
+ "00650000": {
+  "arts_enrollment_pct": 0.975,
+  "arts_music_pct": 0.837,
+  "dlcs_course_pct": 0.177
+ },
+ "00640000": {
+  "arts_enrollment_pct": 0.79,
+  "arts_music_pct": 0.6,
+  "dlcs_course_pct": 0.607
+ },
+ "01670000": {
+  "arts_enrollment_pct": 0.839,
+  "arts_music_pct": 0.588,
+  "dlcs_course_pct": 0.222
+ },
+ "02630000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "06220000": {
+  "arts_enrollment_pct": 0.931,
+  "arts_music_pct": 0.64,
+  "dlcs_course_pct": 0.46
+ },
+ "07170000": {
+  "arts_enrollment_pct": 0.862,
+  "arts_music_pct": 0.646,
+  "dlcs_course_pct": 0.242
+ },
+ "01390000": {
+  "arts_enrollment_pct": 0.856,
+  "arts_music_pct": 0.714,
+  "dlcs_course_pct": 0.309
+ },
+ "00730000": {
+  "arts_enrollment_pct": 0.868,
+  "arts_music_pct": 0.716,
+  "dlcs_course_pct": 0.788
+ },
+ "01980000": {
+  "arts_enrollment_pct": 0.9,
+  "arts_music_pct": 0.649,
+  "dlcs_course_pct": 0.364
+ },
+ "06550000": {
+  "arts_enrollment_pct": 0.865,
+  "arts_music_pct": 0.573,
+  "dlcs_course_pct": 0.613
+ },
+ "06740000": {
+  "arts_enrollment_pct": 0.903,
+  "arts_music_pct": 0.654,
+  "dlcs_course_pct": 0.187
+ },
+ "07630000": {
+  "arts_enrollment_pct": 0.601,
+  "arts_music_pct": 0.144,
+  "dlcs_course_pct": 0.197
+ },
+ "00010000": {
+  "arts_enrollment_pct": 0.872,
+  "arts_music_pct": 0.738,
+  "dlcs_course_pct": 0.23
+ },
+ "00500000": {
+  "arts_enrollment_pct": 0.91,
+  "arts_music_pct": 0.747,
+  "dlcs_course_pct": 0.739
+ },
+ "00440000": {
+  "arts_enrollment_pct": 0.863,
+  "arts_music_pct": 0.74,
+  "dlcs_course_pct": 0.118
+ },
+ "02190000": {
+  "arts_enrollment_pct": 0.939,
+  "arts_music_pct": 0.662,
+  "dlcs_course_pct": 0.668
+ },
+ "03420000": {
+  "arts_enrollment_pct": 0.946,
+  "arts_music_pct": 0.809,
+  "dlcs_course_pct": 0.737
+ },
+ "00050000": {
+  "arts_enrollment_pct": 0.838,
+  "arts_music_pct": 0.684,
+  "dlcs_course_pct": 0.383
+ },
+ "00820000": {
+  "arts_enrollment_pct": 0.856,
+  "arts_music_pct": 0.75,
+  "dlcs_course_pct": 0.779
+ },
+ "01640000": {
+  "arts_enrollment_pct": 0.873,
+  "arts_music_pct": 0.622,
+  "dlcs_course_pct": 0.393
+ },
+ "01860000": {
+  "arts_enrollment_pct": 0.882,
+  "arts_music_pct": 0.698,
+  "dlcs_course_pct": 0.602
+ },
+ "01270000": {
+  "arts_enrollment_pct": 0.921,
+  "arts_music_pct": 0.748,
+  "dlcs_course_pct": 0.759
+ },
+ "01760000": {
+  "arts_enrollment_pct": 0.781,
+  "arts_music_pct": 0.709,
+  "dlcs_course_pct": 0.727
+ },
+ "03140000": {
+  "arts_enrollment_pct": 0.869,
+  "arts_music_pct": 0.694,
+  "dlcs_course_pct": 0.792
+ },
+ "02130000": {
+  "arts_enrollment_pct": 0.997,
+  "arts_music_pct": 0.943,
+  "dlcs_course_pct": 0.344
+ },
+ "07350000": {
+  "arts_enrollment_pct": 0.903,
+  "arts_music_pct": 0.797,
+  "dlcs_course_pct": 0.805
+ },
+ "01100000": {
+  "arts_enrollment_pct": 0.868,
+  "arts_music_pct": 0.746,
+  "dlcs_course_pct": 0.611
+ },
+ "01590000": {
+  "arts_enrollment_pct": 0.805,
+  "arts_music_pct": 0.732,
+  "dlcs_course_pct": 0.463
+ },
+ "01650000": {
+  "arts_enrollment_pct": 0.813,
+  "arts_music_pct": 0.599,
+  "dlcs_course_pct": 0.047
+ },
+ "06000000": {
+  "arts_enrollment_pct": 0.811,
+  "arts_music_pct": 0.671,
+  "dlcs_course_pct": 0.194
+ },
+ "00710000": {
+  "arts_enrollment_pct": 0.922,
+  "arts_music_pct": 0.754,
+  "dlcs_course_pct": 0.316
+ },
+ "02580000": {
+  "arts_enrollment_pct": 0.818,
+  "arts_music_pct": 0.711,
+  "dlcs_course_pct": 0.429
+ },
+ "02210000": {
+  "arts_enrollment_pct": 0.966,
+  "arts_music_pct": 0.966,
+  "dlcs_course_pct": 0.966
+ },
+ "01280000": {
+  "arts_enrollment_pct": 0.884,
+  "arts_music_pct": 0.748,
+  "dlcs_course_pct": 0.346
+ },
+ "03370000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "07740000": {
+  "arts_enrollment_pct": 0.843,
+  "arts_music_pct": 0.787,
+  "dlcs_course_pct": 0.379
+ },
+ "02360000": {
+  "arts_enrollment_pct": 0.787,
+  "arts_music_pct": 0.531,
+  "dlcs_course_pct": 0.211
+ },
+ "01530000": {
+  "arts_enrollment_pct": 0.768,
+  "arts_music_pct": 0.65,
+  "dlcs_course_pct": 0.264
+ },
+ "01840000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 0.407
+ },
+ "06250000": {
+  "arts_enrollment_pct": 0.814,
+  "arts_music_pct": 0.651,
+  "dlcs_course_pct": 0.244
+ },
+ "02930000": {
+  "arts_enrollment_pct": 0.784,
+  "arts_music_pct": 0.657,
+  "dlcs_course_pct": 0.301
+ },
+ "06160000": {
+  "arts_enrollment_pct": 0.939,
+  "arts_music_pct": 0.821,
+  "dlcs_course_pct": 0.812
+ },
+ "00350000": {
+  "arts_enrollment_pct": 0.769,
+  "arts_music_pct": 0.398,
+  "dlcs_course_pct": 0.136
+ },
+ "02310000": {
+  "arts_enrollment_pct": 0.847,
+  "arts_music_pct": 0.7,
+  "dlcs_course_pct": 0.262
+ },
+ "06900000": {
+  "arts_enrollment_pct": 0.647,
+  "arts_music_pct": 0.33,
+  "dlcs_course_pct": 0.218
+ },
+ "07730000": {
+  "arts_enrollment_pct": 0.884,
+  "arts_music_pct": 0.692,
+  "dlcs_course_pct": 0.613
+ },
+ "03070000": {
+  "arts_enrollment_pct": 0.932,
+  "arts_music_pct": 0.79,
+  "dlcs_course_pct": 0.783
+ },
+ "02530000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "06030000": {
+  "arts_enrollment_pct": 0.844,
+  "arts_music_pct": 0.688,
+  "dlcs_course_pct": 0.717
+ },
+ "01500000": {
+  "arts_enrollment_pct": 0.886,
+  "arts_music_pct": 0.64,
+  "dlcs_course_pct": 0.222
+ },
+ "02650000": {
+  "arts_enrollment_pct": 0.917,
+  "arts_music_pct": 0.697,
+  "dlcs_course_pct": 0.779
+ },
+ "06350000": {
+  "arts_enrollment_pct": 0.827,
+  "arts_music_pct": 0.733,
+  "dlcs_course_pct": 0.306
+ },
+ "00140000": {
+  "arts_enrollment_pct": 0.879,
+  "arts_music_pct": 0.746,
+  "dlcs_course_pct": 0.787
+ },
+ "06150000": {
+  "arts_enrollment_pct": 0.837,
+  "arts_music_pct": 0.758,
+  "dlcs_course_pct": 0.496
+ },
+ "06320000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "00410000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "06500000": {
+  "arts_enrollment_pct": 0.911,
+  "arts_music_pct": 0.642,
+  "dlcs_course_pct": 0.619
+ },
+ "01450000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "01580000": {
+  "arts_enrollment_pct": 0.681,
+  "arts_music_pct": 0.532,
+  "dlcs_course_pct": 0.289
+ },
+ "01870000": {
+  "arts_enrollment_pct": 0.83,
+  "arts_music_pct": 0.734,
+  "dlcs_course_pct": 0.267
+ },
+ "00790000": {
+  "arts_enrollment_pct": 0.847,
+  "arts_music_pct": 0.723,
+  "dlcs_course_pct": 0.667
+ },
+ "00830000": {
+  "arts_enrollment_pct": 0.928,
+  "arts_music_pct": 0.798,
+  "dlcs_course_pct": 0.692
+ },
+ "01550000": {
+  "arts_enrollment_pct": 0.919,
+  "arts_music_pct": 0.668,
+  "dlcs_course_pct": 0.325
+ },
+ "02290000": {
+  "arts_enrollment_pct": 0.858,
+  "arts_music_pct": 0.646,
+  "dlcs_course_pct": 0.194
+ },
+ "03490000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "02240000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "02640000": {
+  "arts_enrollment_pct": 0.897,
+  "arts_music_pct": 0.785,
+  "dlcs_course_pct": 0.263
+ },
+ "03350000": {
+  "arts_enrollment_pct": 0.905,
+  "arts_music_pct": 0.755,
+  "dlcs_course_pct": 0.612
+ },
+ "00180000": {
+  "arts_enrollment_pct": 0.843,
+  "arts_music_pct": 0.675,
+  "dlcs_course_pct": 0.494
+ },
+ "00480000": {
+  "arts_enrollment_pct": 0.752,
+  "arts_music_pct": 0.655,
+  "dlcs_course_pct": 0.294
+ },
+ "01700000": {
+  "arts_enrollment_pct": 0.938,
+  "arts_music_pct": 0.831,
+  "dlcs_course_pct": 0.775
+ },
+ "01750000": {
+  "arts_enrollment_pct": 0.906,
+  "arts_music_pct": 0.695,
+  "dlcs_course_pct": 0.185
+ },
+ "03500000": {
+  "arts_enrollment_pct": 0.998,
+  "arts_music_pct": 0.594,
+  "dlcs_course_pct": 0.998
+ },
+ "02890000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "07150000": {
+  "arts_enrollment_pct": 0.802,
+  "arts_music_pct": 0.681,
+  "dlcs_course_pct": 0.309
+ },
+ "02950000": {
+  "arts_enrollment_pct": 0.838,
+  "arts_music_pct": 0.705,
+  "dlcs_course_pct": 0.866
+ },
+ "01810000": {
+  "arts_enrollment_pct": 0.9,
+  "arts_music_pct": 0.765,
+  "dlcs_course_pct": 0.054
+ },
+ "02910000": {
+  "arts_enrollment_pct": 0.898,
+  "arts_music_pct": 0.739,
+  "dlcs_course_pct": 0.697
+ },
+ "01030000": {
+  "arts_enrollment_pct": 0.792,
+  "arts_music_pct": 0.574,
+  "dlcs_course_pct": 0.277
+ },
+ "00910000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 0.98
+ },
+ "02610000": {
+  "arts_enrollment_pct": 0.913,
+  "arts_music_pct": 0.766,
+  "dlcs_course_pct": 0.62
+ },
+ "02170000": {
+  "arts_enrollment_pct": 0.861,
+  "arts_music_pct": 0.73,
+  "dlcs_course_pct": 0.275
+ },
+ "02760000": {
+  "arts_enrollment_pct": 0.946,
+  "arts_music_pct": 0.873,
+  "dlcs_course_pct": 0.334
+ },
+ "00450000": {
+  "arts_enrollment_pct": 0.852,
+  "arts_music_pct": 0.852
+ },
+ "00520000": {
+  "arts_enrollment_pct": 0.809,
+  "arts_music_pct": 0.697,
+  "dlcs_course_pct": 0.764
+ },
+ "02430000": {
+  "arts_enrollment_pct": 0.783,
+  "arts_music_pct": 0.7,
+  "dlcs_course_pct": 0.311
+ },
+ "03090000": {
+  "arts_enrollment_pct": 0.878,
+  "arts_music_pct": 0.692,
+  "dlcs_course_pct": 0.22
+ },
+ "07250000": {
+  "arts_enrollment_pct": 0.901,
+  "arts_music_pct": 0.778,
+  "dlcs_course_pct": 0.801
+ },
+ "02110000": {
+  "arts_enrollment_pct": 0.9,
+  "arts_music_pct": 0.744,
+  "dlcs_course_pct": 0.29
+ },
+ "02490000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 0.924,
+  "dlcs_course_pct": 1.0
+ },
+ "07200000": {
+  "arts_enrollment_pct": 0.77,
+  "arts_music_pct": 0.683,
+  "dlcs_course_pct": 0.726
+ },
+ "01780000": {
+  "arts_enrollment_pct": 0.848,
+  "arts_music_pct": 0.757,
+  "dlcs_course_pct": 0.664
+ },
+ "01420000": {
+  "arts_enrollment_pct": 0.865,
+  "arts_music_pct": 0.656,
+  "dlcs_course_pct": 0.696
+ },
+ "02400000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "02420000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 0.736,
+  "dlcs_course_pct": 0.38
+ },
+ "02460000": {
+  "arts_enrollment_pct": 0.86,
+  "arts_music_pct": 0.726,
+  "dlcs_course_pct": 0.169
+ },
+ "02100000": {
+  "arts_enrollment_pct": 0.784,
+  "arts_music_pct": 0.618,
+  "dlcs_course_pct": 0.148
+ },
+ "03470000": {
+  "arts_enrollment_pct": 0.837,
+  "arts_music_pct": 0.738,
+  "dlcs_course_pct": 0.294
+ },
+ "06980000": {
+  "arts_enrollment_pct": 0.84,
+  "arts_music_pct": 0.681,
+  "dlcs_course_pct": 0.773
+ },
+ "00200000": {
+  "arts_enrollment_pct": 0.798,
+  "arts_music_pct": 0.63,
+  "dlcs_course_pct": 0.306
+ },
+ "01520000": {
+  "arts_enrollment_pct": 0.849,
+  "arts_music_pct": 0.565,
+  "dlcs_course_pct": 0.671
+ },
+ "02480000": {
+  "arts_enrollment_pct": 0.793,
+  "arts_music_pct": 0.682,
+  "dlcs_course_pct": 0.582
+ },
+ "01730000": {
+  "arts_enrollment_pct": 0.992,
+  "arts_music_pct": 0.992,
+  "dlcs_course_pct": 0.992
+ },
+ "03250000": {
+  "arts_enrollment_pct": 0.805,
+  "arts_music_pct": 0.607,
+  "dlcs_course_pct": 0.66
+ },
+ "02920000": {
+  "arts_enrollment_pct": 0.788,
+  "arts_music_pct": 0.584,
+  "dlcs_course_pct": 0.336
+ },
+ "03310000": {
+  "arts_enrollment_pct": 0.882,
+  "arts_music_pct": 0.744,
+  "dlcs_course_pct": 0.625
+ },
+ "00610000": {
+  "arts_enrollment_pct": 0.753,
+  "arts_music_pct": 0.367,
+  "dlcs_course_pct": 0.511
+ },
+ "02840000": {
+  "arts_enrollment_pct": 0.94,
+  "arts_music_pct": 0.75,
+  "dlcs_course_pct": 0.708
+ },
+ "01070000": {
+  "arts_enrollment_pct": 0.878,
+  "arts_music_pct": 0.589,
+  "dlcs_course_pct": 0.121
+ },
+ "03260000": {
+  "arts_enrollment_pct": 0.842,
+  "arts_music_pct": 0.648,
+  "dlcs_course_pct": 0.321
+ },
+ "00360000": {
+  "arts_enrollment_pct": 0.905,
+  "arts_music_pct": 0.82,
+  "dlcs_course_pct": 0.775
+ },
+ "02740000": {
+  "arts_enrollment_pct": 0.877,
+  "arts_music_pct": 0.735,
+  "dlcs_course_pct": 0.049
+ },
+ "02340000": {
+  "arts_enrollment_pct": 1.0,
+  "dlcs_course_pct": 0.128
+ },
+ "03360000": {
+  "arts_enrollment_pct": 0.782,
+  "arts_music_pct": 0.641,
+  "dlcs_course_pct": 0.148
+ },
+ "01720000": {
+  "arts_enrollment_pct": 0.857,
+  "arts_music_pct": 0.677,
+  "dlcs_course_pct": 0.745
+ },
+ "02380000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "07670000": {
+  "arts_enrollment_pct": 0.897,
+  "arts_music_pct": 0.686,
+  "dlcs_course_pct": 0.013
+ },
+ "07750000": {
+  "arts_enrollment_pct": 0.865,
+  "arts_music_pct": 0.784,
+  "dlcs_course_pct": 0.126
+ },
+ "03430000": {
+  "arts_enrollment_pct": 0.943,
+  "arts_music_pct": 0.754,
+  "dlcs_course_pct": 0.789
+ },
+ "03080000": {
+  "arts_enrollment_pct": 0.86,
+  "arts_music_pct": 0.705,
+  "dlcs_course_pct": 0.222
+ },
+ "07700000": {
+  "arts_enrollment_pct": 0.683,
+  "arts_music_pct": 0.394,
+  "dlcs_course_pct": 0.358
+ },
+ "03480000": {
+  "arts_enrollment_pct": 0.806,
+  "arts_music_pct": 0.652,
+  "dlcs_course_pct": 0.518
+ },
+ "02620000": {
+  "arts_enrollment_pct": 0.876,
+  "arts_music_pct": 0.581,
+  "dlcs_course_pct": 0.63
+ },
+ "02750000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "01350000": {
+  "arts_enrollment_pct": 0.807,
+  "arts_music_pct": 0.807
+ },
+ "00030000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 0.935,
+  "dlcs_course_pct": 0.53
+ },
+ "01990000": {
+  "arts_enrollment_pct": 0.918,
+  "arts_music_pct": 0.664,
+  "dlcs_course_pct": 0.255
+ },
+ "07500000": {
+  "arts_enrollment_pct": 0.896,
+  "arts_music_pct": 0.672,
+  "dlcs_course_pct": 0.707
+ },
+ "03170000": {
+  "arts_enrollment_pct": 0.862,
+  "arts_music_pct": 0.667,
+  "dlcs_course_pct": 0.085
+ },
+ "02960000": {
+  "arts_enrollment_pct": 0.977,
+  "arts_music_pct": 0.977,
+  "dlcs_course_pct": 0.977
+ },
+ "01180000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "02720000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "00970000": {
+  "arts_enrollment_pct": 0.872,
+  "arts_music_pct": 0.74,
+  "dlcs_course_pct": 0.303
+ },
+ "02850000": {
+  "arts_enrollment_pct": 0.915,
+  "arts_music_pct": 0.645,
+  "dlcs_course_pct": 0.772
+ },
+ "07530000": {
+  "arts_enrollment_pct": 0.79,
+  "arts_music_pct": 0.638,
+  "dlcs_course_pct": 0.66
+ },
+ "02120000": {
+  "arts_enrollment_pct": 0.902,
+  "arts_music_pct": 0.694,
+  "dlcs_course_pct": 0.315
+ },
+ "01510000": {
+  "arts_enrollment_pct": 0.899,
+  "arts_music_pct": 0.688,
+  "dlcs_course_pct": 0.662
+ },
+ "00250000": {
+  "arts_enrollment_pct": 0.891,
+  "arts_music_pct": 0.625,
+  "dlcs_course_pct": 0.296
+ },
+ "06720000": {
+  "arts_enrollment_pct": 0.927,
+  "arts_music_pct": 0.789,
+  "dlcs_course_pct": 0.011
+ },
+ "07450000": {
+  "arts_enrollment_pct": 0.868,
+  "arts_music_pct": 0.72,
+  "dlcs_course_pct": 0.171
+ },
+ "01630000": {
+  "arts_enrollment_pct": 0.774,
+  "arts_music_pct": 0.633,
+  "dlcs_course_pct": 0.649
+ },
+ "01680000": {
+  "arts_enrollment_pct": 0.85,
+  "arts_music_pct": 0.611,
+  "dlcs_course_pct": 0.211
+ },
+ "07660000": {
+  "arts_enrollment_pct": 0.867,
+  "arts_music_pct": 0.587,
+  "dlcs_course_pct": 0.696
+ },
+ "00090000": {
+  "arts_enrollment_pct": 0.897,
+  "arts_music_pct": 0.749,
+  "dlcs_course_pct": 0.305
+ },
+ "01770000": {
+  "arts_enrollment_pct": 0.921,
+  "arts_music_pct": 0.76,
+  "dlcs_course_pct": 0.395
+ },
+ "03060000": {
+  "arts_enrollment_pct": 0.787,
+  "arts_music_pct": 0.787
+ },
+ "00980000": {
+  "arts_enrollment_pct": 0.971,
+  "arts_music_pct": 0.971
+ },
+ "06450000": {
+  "arts_enrollment_pct": 0.927,
+  "arts_music_pct": 0.754,
+  "dlcs_course_pct": 0.824
+ },
+ "07100000": {
+  "arts_enrollment_pct": 0.851,
+  "arts_music_pct": 0.693,
+  "dlcs_course_pct": 0.722
+ },
+ "01360000": {
+  "arts_enrollment_pct": 0.902,
+  "arts_music_pct": 0.728,
+  "dlcs_course_pct": 0.541
+ },
+ "02690000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "07280000": {
+  "arts_enrollment_pct": 0.879,
+  "arts_music_pct": 0.879
+ },
+ "03040000": {
+  "arts_enrollment_pct": 0.78,
+  "arts_music_pct": 0.54,
+  "dlcs_course_pct": 0.305
+ },
+ "02780000": {
+  "arts_enrollment_pct": 0.742,
+  "arts_music_pct": 0.396,
+  "dlcs_course_pct": 0.276
+ },
+ "06650000": {
+  "arts_enrollment_pct": 0.866,
+  "arts_music_pct": 0.74,
+  "dlcs_course_pct": 0.25
+ },
+ "01890000": {
+  "arts_enrollment_pct": 0.89,
+  "arts_music_pct": 0.714,
+  "dlcs_course_pct": 0.562
+ },
+ "02270000": {
+  "arts_enrollment_pct": 0.887,
+  "arts_music_pct": 0.685
+ },
+ "01310000": {
+  "arts_enrollment_pct": 0.759,
+  "arts_music_pct": 0.649,
+  "dlcs_course_pct": 0.561
+ },
+ "06200000": {
+  "arts_enrollment_pct": 0.862,
+  "arts_music_pct": 0.718,
+  "dlcs_course_pct": 0.791
+ },
+ "01110000": {
+  "arts_enrollment_pct": 0.843,
+  "arts_music_pct": 0.555,
+  "dlcs_course_pct": 0.865
+ },
+ "03220000": {
+  "arts_enrollment_pct": 0.909,
+  "arts_music_pct": 0.739,
+  "dlcs_course_pct": 0.145
+ },
+ "03400000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "06600000": {
+  "arts_enrollment_pct": 0.672,
+  "arts_music_pct": 0.223,
+  "dlcs_course_pct": 0.266
+ },
+ "01970000": {
+  "arts_enrollment_pct": 0.881,
+  "arts_music_pct": 0.716,
+  "dlcs_course_pct": 0.335
+ },
+ "02900000": {
+  "arts_enrollment_pct": 0.786,
+  "arts_music_pct": 0.569,
+  "dlcs_course_pct": 0.369
+ },
+ "01380000": {
+  "arts_enrollment_pct": 0.896,
+  "arts_music_pct": 0.764,
+  "dlcs_course_pct": 0.675
+ },
+ "06180000": {
+  "arts_enrollment_pct": 0.848,
+  "arts_music_pct": 0.651,
+  "dlcs_course_pct": 0.681
+ },
+ "00260000": {
+  "arts_enrollment_pct": 0.838,
+  "arts_music_pct": 0.696,
+  "dlcs_course_pct": 0.46
+ },
+ "00310000": {
+  "arts_enrollment_pct": 0.885,
+  "arts_music_pct": 0.662,
+  "dlcs_course_pct": 0.565
+ },
+ "06580000": {
+  "arts_enrollment_pct": 0.86,
+  "arts_music_pct": 0.781,
+  "dlcs_course_pct": 0.671
+ },
+ "06400000": {
+  "arts_enrollment_pct": 0.515,
+  "arts_music_pct": 0.141,
+  "dlcs_course_pct": 0.119
+ },
+ "00170000": {
+  "arts_enrollment_pct": 0.897,
+  "arts_music_pct": 0.645,
+  "dlcs_course_pct": 0.69
+ },
+ "00160000": {
+  "arts_enrollment_pct": 0.864,
+  "arts_music_pct": 0.707,
+  "dlcs_course_pct": 0.041
+ },
+ "00990000": {
+  "arts_enrollment_pct": 0.871,
+  "arts_music_pct": 0.715,
+  "dlcs_course_pct": 0.271
+ },
+ "03270000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "02880000": {
+  "arts_enrollment_pct": 0.98,
+  "arts_music_pct": 0.889,
+  "dlcs_course_pct": 0.261
+ },
+ "01620000": {
+  "arts_enrollment_pct": 0.901,
+  "arts_music_pct": 0.752,
+  "dlcs_course_pct": 0.135
+ },
+ "02660000": {
+  "arts_enrollment_pct": 0.874,
+  "arts_music_pct": 0.745,
+  "dlcs_course_pct": 0.305
+ },
+ "00940000": {
+  "arts_enrollment_pct": 0.788,
+  "arts_music_pct": 0.582,
+  "dlcs_course_pct": 0.327
+ },
+ "01050000": {
+  "arts_enrollment_pct": 0.941,
+  "arts_music_pct": 0.776,
+  "dlcs_course_pct": 0.691
+ },
+ "01910000": {
+  "arts_enrollment_pct": 0.871,
+  "arts_music_pct": 0.348,
+  "dlcs_course_pct": 0.644
+ },
+ "06850000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "03460000": {
+  "arts_enrollment_pct": 0.853,
+  "arts_music_pct": 0.693,
+  "dlcs_course_pct": 0.576
+ },
+ "00720000": {
+  "arts_enrollment_pct": 0.883,
+  "arts_music_pct": 0.743,
+  "dlcs_course_pct": 0.375
+ },
+ "02010000": {
+  "arts_enrollment_pct": 0.895,
+  "arts_music_pct": 0.756,
+  "dlcs_course_pct": 0.37
+ },
+ "07780000": {
+  "arts_enrollment_pct": 0.858,
+  "arts_music_pct": 0.65,
+  "dlcs_course_pct": 0.767
+ },
+ "06100000": {
+  "arts_enrollment_pct": 0.862,
+  "arts_music_pct": 0.737,
+  "dlcs_course_pct": 0.785
+ },
+ "03210000": {
+  "arts_enrollment_pct": 0.83,
+  "arts_music_pct": 0.629,
+  "dlcs_course_pct": 0.233
+ },
+ "01710000": {
+  "arts_enrollment_pct": 0.809,
+  "arts_music_pct": 0.724,
+  "dlcs_course_pct": 0.295
+ },
+ "06730000": {
+  "arts_enrollment_pct": 0.889,
+  "arts_music_pct": 0.692,
+  "dlcs_course_pct": 0.23
+ },
+ "00490000": {
+  "arts_enrollment_pct": 0.85,
+  "arts_music_pct": 0.696,
+  "dlcs_course_pct": 0.068
+ },
+ "00680000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "03180000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "00890000": {
+  "arts_enrollment_pct": 0.977,
+  "arts_music_pct": 0.943,
+  "dlcs_course_pct": 0.895
+ },
+ "00860000": {
+  "arts_enrollment_pct": 0.899,
+  "arts_music_pct": 0.684,
+  "dlcs_course_pct": 0.149
+ },
+ "01170000": {
+  "arts_enrollment_pct": 0.866,
+  "arts_music_pct": 0.691,
+  "dlcs_course_pct": 0.128
+ },
+ "03320000": {
+  "arts_enrollment_pct": 0.863,
+  "arts_music_pct": 0.624,
+  "dlcs_course_pct": 0.714
+ },
+ "01220000": {
+  "arts_enrollment_pct": 0.878,
+  "arts_music_pct": 0.78,
+  "dlcs_course_pct": 0.619
+ },
+ "00430000": {
+  "arts_enrollment_pct": 0.92,
+  "arts_music_pct": 0.92
+ },
+ "01330000": {
+  "arts_enrollment_pct": 0.894,
+  "arts_music_pct": 0.596,
+  "dlcs_course_pct": 0.712
+ },
+ "01140000": {
+  "arts_enrollment_pct": 0.888,
+  "arts_music_pct": 0.446,
+  "dlcs_course_pct": 0.314
+ },
+ "02070000": {
+  "arts_enrollment_pct": 0.818,
+  "arts_music_pct": 0.664,
+  "dlcs_course_pct": 0.284
+ },
+ "00380000": {
+  "arts_enrollment_pct": 0.999,
+  "arts_music_pct": 0.999,
+  "dlcs_course_pct": 0.999
+ },
+ "01600000": {
+  "arts_enrollment_pct": 0.833,
+  "arts_music_pct": 0.757,
+  "dlcs_course_pct": 0.284
+ },
+ "00880000": {
+  "arts_enrollment_pct": 0.806,
+  "arts_music_pct": 0.64,
+  "dlcs_course_pct": 0.238
+ },
+ "02730000": {
+  "arts_enrollment_pct": 0.997,
+  "arts_music_pct": 0.991,
+  "dlcs_course_pct": 0.997
+ },
+ "00400000": {
+  "arts_enrollment_pct": 0.843,
+  "arts_music_pct": 0.636,
+  "dlcs_course_pct": 0.408
+ },
+ "01000000": {
+  "arts_enrollment_pct": 0.879,
+  "arts_music_pct": 0.738,
+  "dlcs_course_pct": 0.761
+ },
+ "02140000": {
+  "arts_enrollment_pct": 0.92,
+  "arts_music_pct": 0.72,
+  "dlcs_course_pct": 0.534
+ },
+ "02040000": {
+  "arts_enrollment_pct": 0.835,
+  "arts_music_pct": 0.607,
+  "dlcs_course_pct": 0.493
+ },
+ "00630000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 0.88
+ },
+ "02510000": {
+  "arts_enrollment_pct": 0.865,
+  "arts_music_pct": 0.776,
+  "dlcs_course_pct": 0.343
+ },
+ "03440000": {
+  "arts_enrollment_pct": 0.768,
+  "arts_music_pct": 0.651,
+  "dlcs_course_pct": 0.29
+ },
+ "01960000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "00270000": {
+  "arts_enrollment_pct": 0.844,
+  "arts_music_pct": 0.844,
+  "dlcs_course_pct": 0.757
+ },
+ "01210000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 0.974,
+  "dlcs_course_pct": 0.974
+ },
+ "00080000": {
+  "arts_enrollment_pct": 0.998,
+  "arts_music_pct": 0.997,
+  "dlcs_course_pct": 0.996
+ },
+ "00070000": {
+  "arts_enrollment_pct": 0.934,
+  "arts_music_pct": 0.761,
+  "dlcs_course_pct": 0.774
+ },
+ "07050000": {
+  "arts_enrollment_pct": 0.679,
+  "arts_music_pct": 0.303,
+  "dlcs_course_pct": 0.173
+ },
+ "00460000": {
+  "arts_enrollment_pct": 0.871,
+  "arts_music_pct": 0.734,
+  "dlcs_course_pct": 0.065
+ },
+ "01820000": {
+  "arts_enrollment_pct": 0.924,
+  "arts_music_pct": 0.769,
+  "dlcs_course_pct": 0.796
+ },
+ "03050000": {
+  "arts_enrollment_pct": 0.909,
+  "arts_music_pct": 0.749,
+  "dlcs_course_pct": 0.673
+ },
+ "01410000": {
+  "arts_enrollment_pct": 0.907,
+  "arts_music_pct": 0.682,
+  "dlcs_course_pct": 0.712
+ },
+ "00850000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0,
+  "dlcs_course_pct": 1.0
+ },
+ "02500000": {
+  "arts_enrollment_pct": 0.998,
+  "arts_music_pct": 0.996
+ },
+ "01440000": {
+  "arts_enrollment_pct": 0.926,
+  "arts_music_pct": 0.818,
+  "dlcs_course_pct": 0.342
+ },
+ "01010000": {
+  "arts_enrollment_pct": 0.861,
+  "arts_music_pct": 0.569,
+  "dlcs_course_pct": 0.733
+ },
+ "02980000": {
+  "arts_enrollment_pct": 1.0,
+  "arts_music_pct": 1.0
+ },
+ "01490000": {
+  "arts_enrollment_pct": 0.798,
+  "arts_music_pct": 0.439,
+  "dlcs_course_pct": 0.22
+ }
+}

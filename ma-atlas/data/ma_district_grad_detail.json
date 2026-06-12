@@ -1,0 +1,1310 @@
+{
+ "01330000": {
+  "still_enrolled_pct": 0.027,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00170000": {
+  "still_enrolled_pct": 0.022,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01220000": {
+  "still_enrolled_pct": 0.023,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07250000": {
+  "still_enrolled_pct": 0.039,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06730000": {
+  "still_enrolled_pct": 0.041,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.006,
+  "permanently_excluded_pct": 0.0
+ },
+ "01490000": {
+  "still_enrolled_pct": 0.071,
+  "ged_pct": 0.001,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.0
+ },
+ "00460000": {
+  "still_enrolled_pct": 0.022,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00230000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06220000": {
+  "still_enrolled_pct": 0.03,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01000000": {
+  "still_enrolled_pct": 0.069,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.029,
+  "permanently_excluded_pct": 0.0
+ },
+ "01640000": {
+  "still_enrolled_pct": 0.014,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02900000": {
+  "still_enrolled_pct": 0.039,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07700000": {
+  "still_enrolled_pct": 0.024,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01420000": {
+  "still_enrolled_pct": 0.016,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01870000": {
+  "still_enrolled_pct": 0.024,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00500000": {
+  "still_enrolled_pct": 0.026,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.004
+ },
+ "03050000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01010000": {
+  "still_enrolled_pct": 0.02,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01750000": {
+  "still_enrolled_pct": 0.022,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01410000": {
+  "still_enrolled_pct": 0.058,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03090000": {
+  "still_enrolled_pct": 0.047,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00360000": {
+  "still_enrolled_pct": 0.048,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02150000": {
+  "still_enrolled_pct": 0.12,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00960000": {
+  "still_enrolled_pct": 0.029,
+  "ged_pct": 0.019,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00720000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06030000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00250000": {
+  "still_enrolled_pct": 0.054,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00300000": {
+  "still_enrolled_pct": 0.058,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.003
+ },
+ "01620000": {
+  "still_enrolled_pct": 0.01,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02110000": {
+  "still_enrolled_pct": 0.009,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.006,
+  "permanently_excluded_pct": 0.0
+ },
+ "01610000": {
+  "still_enrolled_pct": 0.039,
+  "ged_pct": 0.01,
+  "non_grad_completer_pct": 0.015,
+  "permanently_excluded_pct": 0.0
+ },
+ "00440000": {
+  "still_enrolled_pct": 0.112,
+  "ged_pct": 0.001,
+  "non_grad_completer_pct": 0.016,
+  "permanently_excluded_pct": 0.0
+ },
+ "00490000": {
+  "still_enrolled_pct": 0.058,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02260000": {
+  "still_enrolled_pct": 0.019,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02440000": {
+  "still_enrolled_pct": 0.056,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ },
+ "01280000": {
+  "still_enrolled_pct": 0.047,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.004,
+  "permanently_excluded_pct": 0.0
+ },
+ "06200000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00260000": {
+  "still_enrolled_pct": 0.033,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01630000": {
+  "still_enrolled_pct": 0.039,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.0
+ },
+ "02310000": {
+  "still_enrolled_pct": 0.034,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03360000": {
+  "still_enrolled_pct": 0.037,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.0
+ },
+ "00880000": {
+  "still_enrolled_pct": 0.017,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00730000": {
+  "still_enrolled_pct": 0.049,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06160000": {
+  "still_enrolled_pct": 0.024,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00240000": {
+  "still_enrolled_pct": 0.021,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.007,
+  "permanently_excluded_pct": 0.0
+ },
+ "01170000": {
+  "still_enrolled_pct": 0.048,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00560000": {
+  "still_enrolled_pct": 0.012,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01980000": {
+  "still_enrolled_pct": 0.023,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "07800000": {
+  "still_enrolled_pct": 0.052,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.004,
+  "permanently_excluded_pct": 0.0
+ },
+ "00940000": {
+  "still_enrolled_pct": 0.033,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03070000": {
+  "still_enrolled_pct": 0.029,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03260000": {
+  "still_enrolled_pct": 0.016,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01440000": {
+  "still_enrolled_pct": 0.041,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03470000": {
+  "still_enrolled_pct": 0.035,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00570000": {
+  "still_enrolled_pct": 0.141,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07730000": {
+  "still_enrolled_pct": 0.038,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01110000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01820000": {
+  "still_enrolled_pct": 0.045,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02430000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06800000": {
+  "still_enrolled_pct": 0.008,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.008,
+  "permanently_excluded_pct": 0.0
+ },
+ "00870000": {
+  "still_enrolled_pct": 0.011,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01310000": {
+  "still_enrolled_pct": 0.033,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.004
+ },
+ "02200000": {
+  "still_enrolled_pct": 0.035,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02510000": {
+  "still_enrolled_pct": 0.049,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02740000": {
+  "still_enrolled_pct": 0.04,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01670000": {
+  "still_enrolled_pct": 0.016,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06350000": {
+  "still_enrolled_pct": 0.025,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01140000": {
+  "still_enrolled_pct": 0.022,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.044,
+  "permanently_excluded_pct": 0.0
+ },
+ "01250000": {
+  "still_enrolled_pct": 0.045,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00970000": {
+  "still_enrolled_pct": 0.059,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "01720000": {
+  "still_enrolled_pct": 0.06,
+  "ged_pct": 0.009,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06000000": {
+  "still_enrolled_pct": 0.034,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01810000": {
+  "still_enrolled_pct": 0.024,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.007,
+  "permanently_excluded_pct": 0.0
+ },
+ "00950000": {
+  "still_enrolled_pct": 0.071,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.008,
+  "permanently_excluded_pct": 0.0
+ },
+ "01360000": {
+  "still_enrolled_pct": 0.039,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06980000": {
+  "still_enrolled_pct": 0.009,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01500000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03250000": {
+  "still_enrolled_pct": 0.021,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.007,
+  "permanently_excluded_pct": 0.0
+ },
+ "00710000": {
+  "still_enrolled_pct": 0.046,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03300000": {
+  "still_enrolled_pct": 0.023,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03040000": {
+  "still_enrolled_pct": 0.074,
+  "ged_pct": 0.014,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02920000": {
+  "still_enrolled_pct": 0.023,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02390000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03220000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02190000": {
+  "still_enrolled_pct": 0.013,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06500000": {
+  "still_enrolled_pct": 0.047,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01890000": {
+  "still_enrolled_pct": 0.03,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01390000": {
+  "still_enrolled_pct": 0.036,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "07200000": {
+  "still_enrolled_pct": 0.034,
+  "ged_pct": 0.011,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07450000": {
+  "still_enrolled_pct": 0.006,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02480000": {
+  "still_enrolled_pct": 0.066,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02090000": {
+  "still_enrolled_pct": 0.08,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02070000": {
+  "still_enrolled_pct": 0.03,
+  "ged_pct": 0.001,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02180000": {
+  "still_enrolled_pct": 0.006,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.006,
+  "permanently_excluded_pct": 0.0
+ },
+ "02170000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01710000": {
+  "still_enrolled_pct": 0.025,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02770000": {
+  "still_enrolled_pct": 0.048,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.024,
+  "permanently_excluded_pct": 0.0
+ },
+ "01770000": {
+  "still_enrolled_pct": 0.017,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00010000": {
+  "still_enrolled_pct": 0.044,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00830000": {
+  "still_enrolled_pct": 0.024,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02840000": {
+  "still_enrolled_pct": 0.027,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03150000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.009,
+  "permanently_excluded_pct": 0.0
+ },
+ "03210000": {
+  "still_enrolled_pct": 0.027,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07350000": {
+  "still_enrolled_pct": 0.047,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00070000": {
+  "still_enrolled_pct": 0.149,
+  "ged_pct": 0.015,
+  "non_grad_completer_pct": 0.007,
+  "permanently_excluded_pct": 0.0
+ },
+ "01650000": {
+  "still_enrolled_pct": 0.053,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06740000": {
+  "still_enrolled_pct": 0.041,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07530000": {
+  "still_enrolled_pct": 0.049,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.008,
+  "permanently_excluded_pct": 0.0
+ },
+ "01270000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02930000": {
+  "still_enrolled_pct": 0.031,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00520000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00860000": {
+  "still_enrolled_pct": 0.02,
+  "ged_pct": 0.01,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02100000": {
+  "still_enrolled_pct": 0.038,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.004,
+  "permanently_excluded_pct": 0.0
+ },
+ "03460000": {
+  "still_enrolled_pct": 0.031,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03420000": {
+  "still_enrolled_pct": 0.039,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.013,
+  "permanently_excluded_pct": 0.0
+ },
+ "02460000": {
+  "still_enrolled_pct": 0.011,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00350000": {
+  "still_enrolled_pct": 0.095,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.001,
+  "permanently_excluded_pct": 0.0
+ },
+ "00770000": {
+  "still_enrolled_pct": 0.015,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00640000": {
+  "still_enrolled_pct": 0.062,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.008,
+  "permanently_excluded_pct": 0.0
+ },
+ "01860000": {
+  "still_enrolled_pct": 0.023,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02010000": {
+  "still_enrolled_pct": 0.051,
+  "ged_pct": 0.009,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "03320000": {
+  "still_enrolled_pct": 0.031,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02610000": {
+  "still_enrolled_pct": 0.053,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00200000": {
+  "still_enrolled_pct": 0.054,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.015,
+  "permanently_excluded_pct": 0.0
+ },
+ "01050000": {
+  "still_enrolled_pct": 0.015,
+  "ged_pct": 0.015,
+  "non_grad_completer_pct": 0.015,
+  "permanently_excluded_pct": 0.0
+ },
+ "06720000": {
+  "still_enrolled_pct": 0.108,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03170000": {
+  "still_enrolled_pct": 0.041,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01530000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01100000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01510000": {
+  "still_enrolled_pct": 0.056,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02660000": {
+  "still_enrolled_pct": 0.028,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02950000": {
+  "still_enrolled_pct": 0.027,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ },
+ "06100000": {
+  "still_enrolled_pct": 0.02,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03440000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00480000": {
+  "still_enrolled_pct": 0.016,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00820000": {
+  "still_enrolled_pct": 0.013,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00100000": {
+  "still_enrolled_pct": 0.025,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.002
+ },
+ "03080000": {
+  "still_enrolled_pct": 0.066,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.018,
+  "permanently_excluded_pct": 0.0
+ },
+ "03160000": {
+  "still_enrolled_pct": 0.128,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06250000": {
+  "still_enrolled_pct": 0.034,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01990000": {
+  "still_enrolled_pct": 0.017,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03140000": {
+  "still_enrolled_pct": 0.048,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02360000": {
+  "still_enrolled_pct": 0.064,
+  "ged_pct": 0.014,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.0
+ },
+ "07100000": {
+  "still_enrolled_pct": 0.025,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02710000": {
+  "still_enrolled_pct": 0.04,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06580000": {
+  "still_enrolled_pct": 0.038,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ },
+ "01740000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.012,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02640000": {
+  "still_enrolled_pct": 0.029,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02810000": {
+  "still_enrolled_pct": 0.079,
+  "ged_pct": 0.001,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.001
+ },
+ "00650000": {
+  "still_enrolled_pct": 0.029,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02580000": {
+  "still_enrolled_pct": 0.078,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07650000": {
+  "still_enrolled_pct": 0.05,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00140000": {
+  "still_enrolled_pct": 0.009,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.022,
+  "permanently_excluded_pct": 0.0
+ },
+ "00310000": {
+  "still_enrolled_pct": 0.013,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "07170000": {
+  "still_enrolled_pct": 0.048,
+  "ged_pct": 0.024,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07120000": {
+  "still_enrolled_pct": 0.019,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07500000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01850000": {
+  "still_enrolled_pct": 0.043,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "07670000": {
+  "still_enrolled_pct": 0.053,
+  "ged_pct": 0.027,
+  "non_grad_completer_pct": 0.027,
+  "permanently_excluded_pct": 0.013
+ },
+ "02780000": {
+  "still_enrolled_pct": 0.03,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.015,
+  "permanently_excluded_pct": 0.0
+ },
+ "00930000": {
+  "still_enrolled_pct": 0.081,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.001,
+  "permanently_excluded_pct": 0.0
+ },
+ "02040000": {
+  "still_enrolled_pct": 0.015,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ },
+ "03350000": {
+  "still_enrolled_pct": 0.005,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01520000": {
+  "still_enrolled_pct": 0.017,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02520000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.022,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00400000": {
+  "still_enrolled_pct": 0.007,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01370000": {
+  "still_enrolled_pct": 0.072,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.002
+ },
+ "03010000": {
+  "still_enrolled_pct": 0.019,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01760000": {
+  "still_enrolled_pct": 0.034,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01070000": {
+  "still_enrolled_pct": 0.05,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ },
+ "01590000": {
+  "still_enrolled_pct": 0.03,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02650000": {
+  "still_enrolled_pct": 0.013,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01680000": {
+  "still_enrolled_pct": 0.02,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06650000": {
+  "still_enrolled_pct": 0.028,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.006,
+  "permanently_excluded_pct": 0.0
+ },
+ "00790000": {
+  "still_enrolled_pct": 0.042,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03230000": {
+  "still_enrolled_pct": 0.03,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03310000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.01,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07780000": {
+  "still_enrolled_pct": 0.012,
+  "ged_pct": 0.012,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02120000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03100000": {
+  "still_enrolled_pct": 0.14,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.009,
+  "permanently_excluded_pct": 0.0
+ },
+ "01600000": {
+  "still_enrolled_pct": 0.059,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.009,
+  "permanently_excluded_pct": 0.0
+ },
+ "03480000": {
+  "still_enrolled_pct": 0.055,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.0
+ },
+ "01380000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06150000": {
+  "still_enrolled_pct": 0.075,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.008,
+  "permanently_excluded_pct": 0.0
+ },
+ "00990000": {
+  "still_enrolled_pct": 0.035,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07660000": {
+  "still_enrolled_pct": 0.035,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01970000": {
+  "still_enrolled_pct": 0.025,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.006,
+  "permanently_excluded_pct": 0.0
+ },
+ "00610000": {
+  "still_enrolled_pct": 0.015,
+  "ged_pct": 0.015,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02910000": {
+  "still_enrolled_pct": 0.041,
+  "ged_pct": 0.006,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01550000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02140000": {
+  "still_enrolled_pct": 0.018,
+  "ged_pct": 0.018,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01910000": {
+  "still_enrolled_pct": 0.1,
+  "ged_pct": 0.033,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02620000": {
+  "still_enrolled_pct": 0.062,
+  "ged_pct": 0.005,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "03430000": {
+  "still_enrolled_pct": 0.04,
+  "ged_pct": 0.013,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01580000": {
+  "still_enrolled_pct": 0.016,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06180000": {
+  "still_enrolled_pct": 0.035,
+  "ged_pct": 0.007,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06450000": {
+  "still_enrolled_pct": 0.057,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ },
+ "07750000": {
+  "still_enrolled_pct": 0.035,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00050000": {
+  "still_enrolled_pct": 0.025,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00090000": {
+  "still_enrolled_pct": 0.017,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "00160000": {
+  "still_enrolled_pct": 0.034,
+  "ged_pct": 0.002,
+  "non_grad_completer_pct": 0.002,
+  "permanently_excluded_pct": 0.0
+ },
+ "00180000": {
+  "still_enrolled_pct": 0.05,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "01700000": {
+  "still_enrolled_pct": 0.047,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02290000": {
+  "still_enrolled_pct": 0.08,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.003,
+  "permanently_excluded_pct": 0.0
+ },
+ "06550000": {
+  "still_enrolled_pct": 0.019,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06750000": {
+  "still_enrolled_pct": 0.027,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07150000": {
+  "still_enrolled_pct": 0.0,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "02850000": {
+  "still_enrolled_pct": 0.046,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.007,
+  "permanently_excluded_pct": 0.0
+ },
+ "01030000": {
+  "still_enrolled_pct": 0.055,
+  "ged_pct": 0.008,
+  "non_grad_completer_pct": 0.004,
+  "permanently_excluded_pct": 0.0
+ },
+ "02270000": {
+  "still_enrolled_pct": 0.038,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.013,
+  "permanently_excluded_pct": 0.0
+ },
+ "01780000": {
+  "still_enrolled_pct": 0.016,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.004
+ },
+ "06400000": {
+  "still_enrolled_pct": 0.026,
+  "ged_pct": 0.003,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06600000": {
+  "still_enrolled_pct": 0.029,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06900000": {
+  "still_enrolled_pct": 0.022,
+  "ged_pct": 0.004,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "06950000": {
+  "still_enrolled_pct": 0.015,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07050000": {
+  "still_enrolled_pct": 0.022,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07300000": {
+  "still_enrolled_pct": 0.013,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.0,
+  "permanently_excluded_pct": 0.0
+ },
+ "07630000": {
+  "still_enrolled_pct": 0.032,
+  "ged_pct": 0.0,
+  "non_grad_completer_pct": 0.005,
+  "permanently_excluded_pct": 0.0
+ }
+}

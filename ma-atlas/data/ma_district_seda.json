@@ -1,0 +1,1315 @@
+{
+ "07530000": {
+  "seda_achievement": 1.038,
+  "seda_learning_rate": 1.065,
+  "seda_trend": -0.0336
+ },
+ "07670000": {
+  "seda_achievement": 0.333,
+  "seda_learning_rate": 0.884,
+  "seda_trend": -0.0463
+ },
+ "07660000": {
+  "seda_achievement": 1.012,
+  "seda_learning_rate": 0.891,
+  "seda_trend": -0.1388
+ },
+ "06320000": {
+  "seda_achievement": 1.254,
+  "seda_trend": -0.0663
+ },
+ "07740000": {
+  "seda_achievement": 1.836,
+  "seda_learning_rate": 1.05,
+  "seda_trend": -0.0781
+ },
+ "06980000": {
+  "seda_achievement": 2.677,
+  "seda_learning_rate": 1.004,
+  "seda_trend": -0.071
+ },
+ "06160000": {
+  "seda_achievement": 0.862,
+  "seda_learning_rate": 0.995,
+  "seda_trend": -0.0226
+ },
+ "07120000": {
+  "seda_achievement": 1.334,
+  "seda_learning_rate": 1.047,
+  "seda_trend": -0.0293
+ },
+ "00010000": {
+  "seda_achievement": 1.278,
+  "seda_learning_rate": 1.079,
+  "seda_trend": -0.0067
+ },
+ "06000000": {
+  "seda_achievement": 3.312,
+  "seda_learning_rate": 1.292,
+  "seda_trend": -0.0113
+ },
+ "00030000": {
+  "seda_achievement": 1.099,
+  "seda_learning_rate": 0.957,
+  "seda_trend": -0.0235
+ },
+ "06030000": {
+  "seda_achievement": -0.111,
+  "seda_learning_rate": 1.055,
+  "seda_trend": -0.057
+ },
+ "00050000": {
+  "seda_achievement": 1.12,
+  "seda_learning_rate": 0.894,
+  "seda_trend": -0.0373
+ },
+ "00070000": {
+  "seda_achievement": 1.097,
+  "seda_learning_rate": 0.93,
+  "seda_trend": -0.0444
+ },
+ "00080000": {
+  "seda_achievement": 1.556,
+  "seda_learning_rate": 1.09,
+  "seda_trend": -0.1144
+ },
+ "00090000": {
+  "seda_achievement": 2.857,
+  "seda_learning_rate": 1.118,
+  "seda_trend": -0.0785
+ },
+ "00100000": {
+  "seda_achievement": 2.819,
+  "seda_learning_rate": 1.089,
+  "seda_trend": -0.0362
+ },
+ "06100000": {
+  "seda_achievement": 1.0,
+  "seda_learning_rate": 1.152,
+  "seda_trend": -0.0038
+ },
+ "00140000": {
+  "seda_achievement": 1.862,
+  "seda_learning_rate": 1.368,
+  "seda_trend": 0.0398
+ },
+ "06150000": {
+  "seda_achievement": -0.281,
+  "seda_learning_rate": 0.962,
+  "seda_trend": -0.0715
+ },
+ "00160000": {
+  "seda_achievement": 1.182,
+  "seda_learning_rate": 0.922,
+  "seda_trend": -0.0188
+ },
+ "00170000": {
+  "seda_achievement": 1.664,
+  "seda_learning_rate": 0.918,
+  "seda_trend": -0.0207
+ },
+ "00180000": {
+  "seda_achievement": 1.517,
+  "seda_learning_rate": 0.94,
+  "seda_trend": -0.0644
+ },
+ "00200000": {
+  "seda_achievement": 1.066,
+  "seda_learning_rate": 0.789,
+  "seda_trend": -0.1221
+ },
+ "00230000": {
+  "seda_achievement": 2.631,
+  "seda_learning_rate": 1.074,
+  "seda_trend": 0.0165
+ },
+ "00240000": {
+  "seda_achievement": 0.86,
+  "seda_learning_rate": 1.016,
+  "seda_trend": -0.0758
+ },
+ "00250000": {
+  "seda_achievement": 0.863,
+  "seda_learning_rate": 0.886,
+  "seda_trend": -0.0763
+ },
+ "00260000": {
+  "seda_achievement": 3.435,
+  "seda_learning_rate": 1.257,
+  "seda_trend": 0.0684
+ },
+ "00270000": {
+  "seda_achievement": 1.002,
+  "seda_learning_rate": 0.968,
+  "seda_trend": 0.0481
+ },
+ "06180000": {
+  "seda_achievement": 0.923,
+  "seda_learning_rate": 1.064,
+  "seda_trend": -0.0701
+ },
+ "00300000": {
+  "seda_achievement": 1.373,
+  "seda_learning_rate": 1.008,
+  "seda_trend": -0.0049
+ },
+ "00310000": {
+  "seda_achievement": 1.097,
+  "seda_learning_rate": 1.02,
+  "seda_trend": -0.0101
+ },
+ "06220000": {
+  "seda_achievement": 1.029,
+  "seda_learning_rate": 0.961,
+  "seda_trend": -0.0729
+ },
+ "00350000": {
+  "seda_achievement": -0.205,
+  "seda_learning_rate": 1.053,
+  "seda_trend": 0.0046
+ },
+ "00360000": {
+  "seda_achievement": 0.867,
+  "seda_learning_rate": 0.972,
+  "seda_trend": -0.0676
+ },
+ "00380000": {
+  "seda_achievement": 2.617,
+  "seda_learning_rate": 1.158,
+  "seda_trend": -0.0086
+ },
+ "00400000": {
+  "seda_achievement": 2.296,
+  "seda_learning_rate": 1.077,
+  "seda_trend": -0.0286
+ },
+ "00410000": {
+  "seda_achievement": 1.884,
+  "seda_trend": -0.1912
+ },
+ "06250000": {
+  "seda_achievement": 1.395,
+  "seda_learning_rate": 1.094,
+  "seda_trend": 0.0402
+ },
+ "00430000": {
+  "seda_achievement": 2.495,
+  "seda_trend": 0.016
+ },
+ "00440000": {
+  "seda_achievement": -0.732,
+  "seda_learning_rate": 0.963,
+  "seda_trend": -0.0922
+ },
+ "00450000": {
+  "seda_achievement": 1.563,
+  "seda_trend": -0.0071
+ },
+ "00460000": {
+  "seda_achievement": 3.238,
+  "seda_learning_rate": 1.31,
+  "seda_trend": 0.0288
+ },
+ "00480000": {
+  "seda_achievement": 1.436,
+  "seda_learning_rate": 0.989,
+  "seda_trend": -0.055
+ },
+ "00490000": {
+  "seda_achievement": 1.128,
+  "seda_learning_rate": 1.08,
+  "seda_trend": 0.0684
+ },
+ "00500000": {
+  "seda_achievement": 2.339,
+  "seda_learning_rate": 0.98,
+  "seda_trend": -0.031
+ },
+ "00510000": {
+  "seda_achievement": 3.698,
+  "seda_learning_rate": 1.418,
+  "seda_trend": 0.036
+ },
+ "00520000": {
+  "seda_achievement": 0.779,
+  "seda_learning_rate": 0.986,
+  "seda_trend": -0.0263
+ },
+ "06350000": {
+  "seda_achievement": 0.717,
+  "seda_learning_rate": 0.842,
+  "seda_trend": -0.0757
+ },
+ "00560000": {
+  "seda_achievement": 2.416,
+  "seda_learning_rate": 1.138,
+  "seda_trend": -0.0367
+ },
+ "00570000": {
+  "seda_achievement": -0.723,
+  "seda_learning_rate": 0.637,
+  "seda_trend": -0.0997
+ },
+ "00610000": {
+  "seda_achievement": 0.292,
+  "seda_learning_rate": 0.906,
+  "seda_trend": 0.0451
+ },
+ "00630000": {
+  "seda_achievement": 0.356,
+  "seda_learning_rate": 0.805,
+  "seda_trend": -0.0465
+ },
+ "00640000": {
+  "seda_achievement": 0.158,
+  "seda_learning_rate": 0.824,
+  "seda_trend": -0.1061
+ },
+ "00650000": {
+  "seda_achievement": 2.561,
+  "seda_learning_rate": 1.064,
+  "seda_trend": -0.0829
+ },
+ "00670000": {
+  "seda_achievement": 3.636,
+  "seda_learning_rate": 1.121,
+  "seda_trend": 0.0215
+ },
+ "00680000": {
+  "seda_achievement": 2.155,
+  "seda_trend": -0.0009
+ },
+ "00710000": {
+  "seda_achievement": 1.046,
+  "seda_learning_rate": 0.785,
+  "seda_trend": -0.0928
+ },
+ "00720000": {
+  "seda_achievement": 1.49,
+  "seda_learning_rate": 1.074,
+  "seda_trend": -0.016
+ },
+ "00730000": {
+  "seda_achievement": 1.578,
+  "seda_learning_rate": 0.928,
+  "seda_trend": -0.0452
+ },
+ "00740000": {
+  "seda_achievement": 1.225,
+  "seda_learning_rate": 0.892,
+  "seda_trend": -0.0499
+ },
+ "06450000": {
+  "seda_achievement": 0.336,
+  "seda_learning_rate": 0.928,
+  "seda_trend": -0.0633
+ },
+ "06500000": {
+  "seda_achievement": 1.185,
+  "seda_learning_rate": 1.02,
+  "seda_trend": -0.0262
+ },
+ "00770000": {
+  "seda_achievement": 1.095,
+  "seda_learning_rate": 0.991,
+  "seda_trend": 0.0272
+ },
+ "00790000": {
+  "seda_achievement": 0.99,
+  "seda_learning_rate": 0.952,
+  "seda_trend": 0.0288
+ },
+ "06580000": {
+  "seda_achievement": 1.438,
+  "seda_learning_rate": 0.881,
+  "seda_trend": -0.052
+ },
+ "00820000": {
+  "seda_achievement": 2.573,
+  "seda_learning_rate": 1.041,
+  "seda_trend": -0.0373
+ },
+ "00830000": {
+  "seda_achievement": 1.758,
+  "seda_learning_rate": 1.093,
+  "seda_trend": -0.0581
+ },
+ "00870000": {
+  "seda_achievement": 1.579,
+  "seda_learning_rate": 1.065,
+  "seda_trend": 0.0197
+ },
+ "00850000": {
+  "seda_achievement": 2.181,
+  "seda_trend": -0.0524
+ },
+ "00860000": {
+  "seda_achievement": 0.514,
+  "seda_learning_rate": 0.94,
+  "seda_trend": -0.029
+ },
+ "00880000": {
+  "seda_achievement": 2.1,
+  "seda_learning_rate": 1.168,
+  "seda_trend": -0.0085
+ },
+ "02210000": {
+  "seda_achievement": 1.688,
+  "seda_learning_rate": 1.022,
+  "seda_trend": -0.0894
+ },
+ "00910000": {
+  "seda_achievement": 0.849,
+  "seda_trend": -0.1502
+ },
+ "00930000": {
+  "seda_achievement": 0.119,
+  "seda_learning_rate": 0.94,
+  "seda_trend": 0.0047
+ },
+ "00940000": {
+  "seda_achievement": 1.089,
+  "seda_learning_rate": 0.798,
+  "seda_trend": -0.0089
+ },
+ "00950000": {
+  "seda_achievement": -0.288,
+  "seda_learning_rate": 0.945,
+  "seda_trend": -0.0041
+ },
+ "00960000": {
+  "seda_achievement": 1.774,
+  "seda_learning_rate": 1.082,
+  "seda_trend": -0.0082
+ },
+ "00970000": {
+  "seda_achievement": -0.594,
+  "seda_learning_rate": 0.906,
+  "seda_trend": -0.02
+ },
+ "00980000": {
+  "seda_achievement": 0.612,
+  "seda_learning_rate": 0.837,
+  "seda_trend": -0.1006
+ },
+ "00990000": {
+  "seda_achievement": 1.36,
+  "seda_learning_rate": 0.98,
+  "seda_trend": -0.0461
+ },
+ "01000000": {
+  "seda_achievement": 0.434,
+  "seda_learning_rate": 1.005,
+  "seda_trend": -0.1006
+ },
+ "01010000": {
+  "seda_achievement": 2.548,
+  "seda_learning_rate": 0.971,
+  "seda_trend": -0.0452
+ },
+ "06650000": {
+  "seda_achievement": 1.465,
+  "seda_learning_rate": 1.11,
+  "seda_trend": -0.0198
+ },
+ "01030000": {
+  "seda_achievement": -0.329,
+  "seda_learning_rate": 0.776,
+  "seda_trend": -0.194
+ },
+ "06720000": {
+  "seda_achievement": 0.526,
+  "seda_learning_rate": 0.864,
+  "seda_trend": 0.0248
+ },
+ "01050000": {
+  "seda_achievement": 1.667,
+  "seda_learning_rate": 0.97,
+  "seda_trend": -0.0111
+ },
+ "06740000": {
+  "seda_achievement": -0.095,
+  "seda_learning_rate": 0.924,
+  "seda_trend": -0.0905
+ },
+ "01070000": {
+  "seda_achievement": 0.729,
+  "seda_learning_rate": 0.969,
+  "seda_trend": 0.0389
+ },
+ "01100000": {
+  "seda_achievement": 2.051,
+  "seda_learning_rate": 1.092,
+  "seda_trend": -0.0021
+ },
+ "01110000": {
+  "seda_achievement": 1.648,
+  "seda_learning_rate": 0.92,
+  "seda_trend": -0.0926
+ },
+ "01140000": {
+  "seda_achievement": 0.08,
+  "seda_learning_rate": 0.857,
+  "seda_trend": -0.0485
+ },
+ "06730000": {
+  "seda_achievement": 2.369,
+  "seda_learning_rate": 1.068,
+  "seda_trend": -0.0387
+ },
+ "01170000": {
+  "seda_achievement": 2.021,
+  "seda_learning_rate": 1.149,
+  "seda_trend": 0.0071
+ },
+ "01180000": {
+  "seda_achievement": 1.993,
+  "seda_learning_rate": 1.594,
+  "seda_trend": 0.0109
+ },
+ "06750000": {
+  "seda_achievement": 2.336,
+  "seda_learning_rate": 1.093,
+  "seda_trend": 0.0422
+ },
+ "06800000": {
+  "seda_achievement": 1.519,
+  "seda_learning_rate": 1.048,
+  "seda_trend": -0.0524
+ },
+ "01210000": {
+  "seda_achievement": 0.988
+ },
+ "01220000": {
+  "seda_achievement": 1.941,
+  "seda_learning_rate": 1.027,
+  "seda_trend": -0.0185
+ },
+ "01250000": {
+  "seda_achievement": 3.055,
+  "seda_learning_rate": 1.201,
+  "seda_trend": 0.0121
+ },
+ "01270000": {
+  "seda_achievement": 1.349,
+  "seda_learning_rate": 0.846,
+  "seda_trend": -0.0313
+ },
+ "01280000": {
+  "seda_achievement": -0.09,
+  "seda_learning_rate": 0.934,
+  "seda_trend": -0.022
+ },
+ "06850000": {
+  "seda_achievement": 0.157,
+  "seda_trend": -0.1051
+ },
+ "01310000": {
+  "seda_achievement": 3.35,
+  "seda_learning_rate": 1.116,
+  "seda_trend": 0.0462
+ },
+ "01330000": {
+  "seda_achievement": 1.277,
+  "seda_learning_rate": 0.94,
+  "seda_trend": -0.0193
+ },
+ "01350000": {
+  "seda_achievement": 1.484,
+  "seda_trend": 0.0457
+ },
+ "01360000": {
+  "seda_achievement": 2.3,
+  "seda_learning_rate": 1.197,
+  "seda_trend": -0.0703
+ },
+ "01370000": {
+  "seda_achievement": -1.789,
+  "seda_learning_rate": 0.929,
+  "seda_trend": -0.0352
+ },
+ "01380000": {
+  "seda_achievement": 2.41,
+  "seda_learning_rate": 1.02,
+  "seda_trend": 0.037
+ },
+ "01390000": {
+  "seda_achievement": 2.871,
+  "seda_learning_rate": 1.224,
+  "seda_trend": 0.0817
+ },
+ "01410000": {
+  "seda_achievement": 1.046,
+  "seda_learning_rate": 1.022,
+  "seda_trend": -0.0212
+ },
+ "01420000": {
+  "seda_achievement": 1.264,
+  "seda_learning_rate": 0.992,
+  "seda_trend": 0.077
+ },
+ "01440000": {
+  "seda_achievement": 2.078,
+  "seda_learning_rate": 1.18,
+  "seda_trend": -0.0016
+ },
+ "01450000": {
+  "seda_achievement": 1.643,
+  "seda_learning_rate": 1.105,
+  "seda_trend": -0.0208
+ },
+ "01490000": {
+  "seda_achievement": -0.587,
+  "seda_learning_rate": 0.926,
+  "seda_trend": 0.0656
+ },
+ "01500000": {
+  "seda_achievement": 1.068,
+  "seda_learning_rate": 1.075,
+  "seda_trend": 0.0305
+ },
+ "01510000": {
+  "seda_achievement": 0.465,
+  "seda_learning_rate": 0.969,
+  "seda_trend": -0.1395
+ },
+ "01520000": {
+  "seda_achievement": 2.221,
+  "seda_learning_rate": 1.124,
+  "seda_trend": 0.082
+ },
+ "01530000": {
+  "seda_achievement": 0.726,
+  "seda_learning_rate": 0.901,
+  "seda_trend": 0.0018
+ },
+ "01540000": {
+  "seda_achievement": 1.813,
+  "seda_trend": 0.0469
+ },
+ "01550000": {
+  "seda_achievement": 4.108,
+  "seda_learning_rate": 1.367,
+  "seda_trend": 0.0122
+ },
+ "01570000": {
+  "seda_achievement": 2.026,
+  "seda_learning_rate": 1.142,
+  "seda_trend": -0.001
+ },
+ "01580000": {
+  "seda_achievement": 2.165,
+  "seda_learning_rate": 1.129,
+  "seda_trend": -0.0023
+ },
+ "01590000": {
+  "seda_achievement": 2.459,
+  "seda_learning_rate": 1.266,
+  "seda_trend": 0.0255
+ },
+ "01600000": {
+  "seda_achievement": -0.263,
+  "seda_learning_rate": 0.983,
+  "seda_trend": 0.0532
+ },
+ "01610000": {
+  "seda_achievement": 0.589,
+  "seda_learning_rate": 0.916,
+  "seda_trend": -0.0862
+ },
+ "01620000": {
+  "seda_achievement": 1.35,
+  "seda_learning_rate": 1.131,
+  "seda_trend": -0.0694
+ },
+ "01630000": {
+  "seda_achievement": -0.24,
+  "seda_learning_rate": 0.923,
+  "seda_trend": 0.0178
+ },
+ "01640000": {
+  "seda_achievement": 2.794,
+  "seda_learning_rate": 0.904,
+  "seda_trend": 0.0271
+ },
+ "01650000": {
+  "seda_achievement": 0.755,
+  "seda_learning_rate": 1.172,
+  "seda_trend": 0.0254
+ },
+ "01670000": {
+  "seda_achievement": 2.067,
+  "seda_learning_rate": 1.065,
+  "seda_trend": -0.0287
+ },
+ "01680000": {
+  "seda_achievement": 2.223,
+  "seda_learning_rate": 1.158,
+  "seda_trend": -0.0401
+ },
+ "01690000": {
+  "seda_achievement": 2.174,
+  "seda_trend": 0.0134
+ },
+ "01700000": {
+  "seda_achievement": 0.882,
+  "seda_learning_rate": 1.055,
+  "seda_trend": -0.1188
+ },
+ "01710000": {
+  "seda_achievement": 2.417,
+  "seda_learning_rate": 1.074,
+  "seda_trend": 0.0288
+ },
+ "01720000": {
+  "seda_achievement": 0.918,
+  "seda_learning_rate": 0.94,
+  "seda_trend": 0.0084
+ },
+ "01730000": {
+  "seda_achievement": 2.559,
+  "seda_learning_rate": 1.098,
+  "seda_trend": 0.0591
+ },
+ "01740000": {
+  "seda_achievement": 0.749,
+  "seda_learning_rate": 0.908,
+  "seda_trend": -0.0568
+ },
+ "01750000": {
+  "seda_achievement": 2.713,
+  "seda_learning_rate": 1.213,
+  "seda_trend": -0.0083
+ },
+ "01760000": {
+  "seda_achievement": 0.445,
+  "seda_learning_rate": 1.023,
+  "seda_trend": -0.0195
+ },
+ "01770000": {
+  "seda_achievement": 2.392,
+  "seda_learning_rate": 1.08,
+  "seda_trend": 0.0085
+ },
+ "01780000": {
+  "seda_achievement": 2.174,
+  "seda_learning_rate": 1.055,
+  "seda_trend": 0.0968
+ },
+ "07100000": {
+  "seda_achievement": 1.646,
+  "seda_learning_rate": 0.999,
+  "seda_trend": -0.0259
+ },
+ "01810000": {
+  "seda_achievement": 0.339,
+  "seda_learning_rate": 0.995,
+  "seda_trend": 0.0105
+ },
+ "01820000": {
+  "seda_achievement": 0.539,
+  "seda_learning_rate": 0.979,
+  "seda_trend": 0.0219
+ },
+ "01840000": {
+  "seda_achievement": 2.483,
+  "seda_learning_rate": 1.253,
+  "seda_trend": -0.0359
+ },
+ "01850000": {
+  "seda_achievement": 1.115,
+  "seda_learning_rate": 1.041,
+  "seda_trend": -0.1019
+ },
+ "01860000": {
+  "seda_achievement": 1.11,
+  "seda_learning_rate": 0.88,
+  "seda_trend": -0.0659
+ },
+ "01870000": {
+  "seda_achievement": 1.671,
+  "seda_learning_rate": 1.032,
+  "seda_trend": 0.013
+ },
+ "01890000": {
+  "seda_achievement": 2.542,
+  "seda_learning_rate": 0.994,
+  "seda_trend": -0.0033
+ },
+ "07170000": {
+  "seda_achievement": 0.893,
+  "seda_learning_rate": 0.9,
+  "seda_trend": -0.0241
+ },
+ "01910000": {
+  "seda_achievement": 0.503,
+  "seda_learning_rate": 1.007,
+  "seda_trend": 0.0145
+ },
+ "07150000": {
+  "seda_achievement": 2.512,
+  "seda_learning_rate": 1.194,
+  "seda_trend": 0.0869
+ },
+ "01960000": {
+  "seda_achievement": 1.857,
+  "seda_trend": -0.0269
+ },
+ "01970000": {
+  "seda_achievement": 0.375,
+  "seda_learning_rate": 1.017,
+  "seda_trend": -0.0814
+ },
+ "07200000": {
+  "seda_achievement": 0.397,
+  "seda_learning_rate": 1.071,
+  "seda_trend": -0.0387
+ },
+ "07250000": {
+  "seda_achievement": 2.556,
+  "seda_learning_rate": 1.201,
+  "seda_trend": 0.0519
+ },
+ "01980000": {
+  "seda_achievement": 2.33,
+  "seda_learning_rate": 1.017,
+  "seda_trend": -0.0476
+ },
+ "01990000": {
+  "seda_achievement": 2.95,
+  "seda_learning_rate": 1.365,
+  "seda_trend": 0.0418
+ },
+ "02010000": {
+  "seda_achievement": -0.403,
+  "seda_learning_rate": 0.693,
+  "seda_trend": -0.0123
+ },
+ "07280000": {
+  "seda_achievement": 1.692,
+  "seda_trend": -0.0978
+ },
+ "02040000": {
+  "seda_achievement": 1.54,
+  "seda_learning_rate": 1.254,
+  "seda_trend": -0.0217
+ },
+ "02070000": {
+  "seda_achievement": 3.108,
+  "seda_learning_rate": 1.144,
+  "seda_trend": -0.0338
+ },
+ "02080000": {
+  "seda_achievement": 2.701,
+  "seda_learning_rate": 0.93,
+  "seda_trend": -0.021
+ },
+ "02090000": {
+  "seda_achievement": -0.169,
+  "seda_learning_rate": 0.738,
+  "seda_trend": -0.0361
+ },
+ "02110000": {
+  "seda_achievement": 1.935,
+  "seda_learning_rate": 1.164,
+  "seda_trend": 0.0045
+ },
+ "02120000": {
+  "seda_achievement": 1.883,
+  "seda_learning_rate": 1.032,
+  "seda_trend": -0.0398
+ },
+ "02150000": {
+  "seda_achievement": 0.331,
+  "seda_learning_rate": 0.855,
+  "seda_trend": -0.1418
+ },
+ "07350000": {
+  "seda_achievement": 1.233,
+  "seda_learning_rate": 1.086,
+  "seda_trend": 0.02
+ },
+ "02170000": {
+  "seda_achievement": 2.343,
+  "seda_learning_rate": 1.01,
+  "seda_trend": 0.0247
+ },
+ "02100000": {
+  "seda_achievement": 0.737,
+  "seda_learning_rate": 1.114,
+  "seda_trend": -0.0076
+ },
+ "02130000": {
+  "seda_achievement": 1.988,
+  "seda_learning_rate": 1.075,
+  "seda_trend": -0.0128
+ },
+ "02140000": {
+  "seda_achievement": 0.693,
+  "seda_learning_rate": 1.054,
+  "seda_trend": -0.0691
+ },
+ "02180000": {
+  "seda_achievement": 1.579,
+  "seda_learning_rate": 1.081,
+  "seda_trend": -0.0573
+ },
+ "02190000": {
+  "seda_achievement": 2.449,
+  "seda_learning_rate": 0.993,
+  "seda_trend": -0.1163
+ },
+ "02200000": {
+  "seda_achievement": 1.395,
+  "seda_learning_rate": 0.893,
+  "seda_trend": -0.0139
+ },
+ "00890000": {
+  "seda_achievement": 1.714,
+  "seda_learning_rate": 1.089,
+  "seda_trend": -0.0972
+ },
+ "02230000": {
+  "seda_achievement": -0.13,
+  "seda_learning_rate": 1.016,
+  "seda_trend": -0.1014
+ },
+ "02240000": {
+  "seda_achievement": 2.21,
+  "seda_learning_rate": 0.975,
+  "seda_trend": -0.0614
+ },
+ "02260000": {
+  "seda_achievement": 0.79,
+  "seda_learning_rate": 0.959,
+  "seda_trend": -0.0488
+ },
+ "02270000": {
+  "seda_achievement": 0.296,
+  "seda_learning_rate": 0.84,
+  "seda_trend": -0.0929
+ },
+ "02290000": {
+  "seda_achievement": 0.671,
+  "seda_learning_rate": 0.909,
+  "seda_trend": -0.059
+ },
+ "02300000": {
+  "seda_achievement": 2.332,
+  "seda_trend": -0.0116
+ },
+ "02310000": {
+  "seda_achievement": 1.854,
+  "seda_learning_rate": 0.979,
+  "seda_trend": -0.023
+ },
+ "07450000": {
+  "seda_achievement": 1.446,
+  "seda_learning_rate": 0.939,
+  "seda_trend": -0.1404
+ },
+ "02340000": {
+  "seda_achievement": 0.924,
+  "seda_trend": -0.1102
+ },
+ "07500000": {
+  "seda_achievement": 0.86,
+  "seda_learning_rate": 1.107,
+  "seda_trend": 0.017
+ },
+ "02360000": {
+  "seda_achievement": 0.278,
+  "seda_learning_rate": 0.792,
+  "seda_trend": -0.1553
+ },
+ "02380000": {
+  "seda_achievement": 1.794,
+  "seda_learning_rate": 1.571,
+  "seda_trend": -0.0816
+ },
+ "02390000": {
+  "seda_achievement": 1.167,
+  "seda_learning_rate": 0.943,
+  "seda_trend": -0.0715
+ },
+ "02400000": {
+  "seda_achievement": 1.845,
+  "seda_trend": 0.0476
+ },
+ "02420000": {
+  "seda_achievement": 0.583,
+  "seda_learning_rate": 0.814,
+  "seda_trend": 0.0209
+ },
+ "02430000": {
+  "seda_achievement": 1.271,
+  "seda_learning_rate": 1.112,
+  "seda_trend": 0.063
+ },
+ "02440000": {
+  "seda_achievement": -0.413,
+  "seda_learning_rate": 0.914,
+  "seda_trend": 0.0042
+ },
+ "02460000": {
+  "seda_achievement": 2.266,
+  "seda_learning_rate": 1.204,
+  "seda_trend": -0.0364
+ },
+ "02480000": {
+  "seda_achievement": 0.635,
+  "seda_learning_rate": 0.944,
+  "seda_trend": -0.0052
+ },
+ "02490000": {
+  "seda_achievement": 1.596,
+  "seda_learning_rate": 1.074,
+  "seda_trend": 0.0191
+ },
+ "02500000": {
+  "seda_achievement": 2.121,
+  "seda_learning_rate": 1.246,
+  "seda_trend": -0.0409
+ },
+ "02510000": {
+  "seda_achievement": 0.521,
+  "seda_learning_rate": 0.935,
+  "seda_trend": 0.0053
+ },
+ "02520000": {
+  "seda_achievement": 1.515,
+  "seda_learning_rate": 1.027,
+  "seda_trend": -0.0913
+ },
+ "02530000": {
+  "seda_achievement": 1.591,
+  "seda_trend": -0.0979
+ },
+ "02580000": {
+  "seda_achievement": 0.033,
+  "seda_learning_rate": 1.053,
+  "seda_trend": 0.0185
+ },
+ "02610000": {
+  "seda_achievement": 1.751,
+  "seda_learning_rate": 1.099,
+  "seda_trend": -0.099
+ },
+ "02620000": {
+  "seda_achievement": 0.819,
+  "seda_learning_rate": 0.914,
+  "seda_trend": 0.0283
+ },
+ "02630000": {
+  "seda_achievement": 1.734
+ },
+ "02640000": {
+  "seda_achievement": 2.738,
+  "seda_learning_rate": 0.885,
+  "seda_trend": -0.0793
+ },
+ "02650000": {
+  "seda_achievement": 1.884,
+  "seda_learning_rate": 1.023,
+  "seda_trend": -0.0125
+ },
+ "02660000": {
+  "seda_achievement": 3.162,
+  "seda_learning_rate": 1.074,
+  "seda_trend": 0.0247
+ },
+ "02690000": {
+  "seda_achievement": 3.486,
+  "seda_trend": 0.0763
+ },
+ "02710000": {
+  "seda_achievement": 3.159,
+  "seda_learning_rate": 0.895,
+  "seda_trend": -0.0641
+ },
+ "02720000": {
+  "seda_achievement": 2.127,
+  "seda_trend": -0.0285
+ },
+ "02730000": {
+  "seda_achievement": 1.276,
+  "seda_learning_rate": 1.083,
+  "seda_trend": -0.0341
+ },
+ "02740000": {
+  "seda_achievement": 0.333,
+  "seda_learning_rate": 1.117,
+  "seda_trend": 0.1025
+ },
+ "02780000": {
+  "seda_achievement": 0.904,
+  "seda_learning_rate": 0.884,
+  "seda_trend": -0.0441
+ },
+ "02750000": {
+  "seda_achievement": 1.077,
+  "seda_trend": -0.0205
+ },
+ "02760000": {
+  "seda_achievement": 2.71,
+  "seda_learning_rate": 1.048,
+  "seda_trend": 0.1448
+ },
+ "02770000": {
+  "seda_achievement": -1.317,
+  "seda_learning_rate": 0.529,
+  "seda_trend": -0.2135
+ },
+ "07650000": {
+  "seda_achievement": 0.796,
+  "seda_learning_rate": 1.073,
+  "seda_trend": -0.0691
+ },
+ "02810000": {
+  "seda_achievement": -0.935,
+  "seda_learning_rate": 0.671,
+  "seda_trend": 0.0198
+ },
+ "02840000": {
+  "seda_achievement": 1.493,
+  "seda_learning_rate": 1.133,
+  "seda_trend": 0.0228
+ },
+ "02850000": {
+  "seda_achievement": 1.181,
+  "seda_learning_rate": 0.987,
+  "seda_trend": -0.0331
+ },
+ "02880000": {
+  "seda_achievement": 3.46,
+  "seda_learning_rate": 1.079,
+  "seda_trend": -0.0527
+ },
+ "02890000": {
+  "seda_achievement": 1.758,
+  "seda_trend": -0.0502
+ },
+ "02900000": {
+  "seda_achievement": 1.549,
+  "seda_learning_rate": 1.168,
+  "seda_trend": -0.0268
+ },
+ "02910000": {
+  "seda_achievement": 1.786,
+  "seda_learning_rate": 0.964,
+  "seda_trend": -0.0357
+ },
+ "02920000": {
+  "seda_achievement": 1.111,
+  "seda_learning_rate": 0.854,
+  "seda_trend": -0.0117
+ },
+ "02930000": {
+  "seda_achievement": 0.427,
+  "seda_learning_rate": 0.747,
+  "seda_trend": -0.122
+ },
+ "02950000": {
+  "seda_achievement": 1.164,
+  "seda_learning_rate": 1.076,
+  "seda_trend": 0.0451
+ },
+ "02980000": {
+  "seda_achievement": 2.548,
+  "seda_learning_rate": 1.008,
+  "seda_trend": -0.1006
+ },
+ "03000000": {
+  "seda_achievement": 1.831,
+  "seda_trend": -0.1198
+ },
+ "07730000": {
+  "seda_achievement": 1.707,
+  "seda_learning_rate": 1.023,
+  "seda_trend": -0.0923
+ },
+ "03010000": {
+  "seda_achievement": 1.39,
+  "seda_learning_rate": 1.066,
+  "seda_trend": -0.0178
+ },
+ "03040000": {
+  "seda_achievement": 0.947,
+  "seda_learning_rate": 0.988,
+  "seda_trend": -0.0282
+ },
+ "07750000": {
+  "seda_achievement": 2.422,
+  "seda_learning_rate": 1.071,
+  "seda_trend": -0.012
+ },
+ "03050000": {
+  "seda_achievement": 1.585,
+  "seda_learning_rate": 0.895,
+  "seda_trend": -0.086
+ },
+ "03060000": {
+  "seda_achievement": 1.685,
+  "seda_trend": -0.0157
+ },
+ "03070000": {
+  "seda_achievement": 2.259,
+  "seda_learning_rate": 1.005,
+  "seda_trend": 0.0047
+ },
+ "03080000": {
+  "seda_achievement": 0.851,
+  "seda_learning_rate": 1.096,
+  "seda_trend": -0.0242
+ },
+ "03090000": {
+  "seda_achievement": 0.282,
+  "seda_learning_rate": 0.939,
+  "seda_trend": -0.1028
+ },
+ "03100000": {
+  "seda_achievement": 0.139,
+  "seda_learning_rate": 0.833,
+  "seda_trend": -0.0971
+ },
+ "07780000": {
+  "seda_achievement": 0.901,
+  "seda_learning_rate": 0.937,
+  "seda_trend": 0.0411
+ },
+ "03140000": {
+  "seda_achievement": 1.058,
+  "seda_learning_rate": 1.004,
+  "seda_trend": -0.0662
+ },
+ "03150000": {
+  "seda_achievement": 3.113,
+  "seda_learning_rate": 1.356,
+  "seda_trend": 0.0341
+ },
+ "03160000": {
+  "seda_achievement": -0.909,
+  "seda_learning_rate": 0.732,
+  "seda_trend": -0.1107
+ },
+ "03170000": {
+  "seda_achievement": 3.069,
+  "seda_learning_rate": 1.177,
+  "seda_trend": 0.0467
+ },
+ "03180000": {
+  "seda_achievement": 2.095
+ },
+ "03220000": {
+  "seda_achievement": 1.818,
+  "seda_learning_rate": 1.004,
+  "seda_trend": 0.047
+ },
+ "03230000": {
+  "seda_achievement": 1.634,
+  "seda_learning_rate": 0.78,
+  "seda_trend": -0.0779
+ },
+ "03320000": {
+  "seda_achievement": 1.017,
+  "seda_learning_rate": 0.905,
+  "seda_trend": -0.0177
+ },
+ "02960000": {
+  "seda_achievement": 2.653,
+  "seda_learning_rate": 0.904,
+  "seda_trend": 0.0064
+ },
+ "03210000": {
+  "seda_achievement": 2.961,
+  "seda_learning_rate": 1.293,
+  "seda_trend": 0.0349
+ },
+ "03250000": {
+  "seda_achievement": 0.598,
+  "seda_learning_rate": 0.945,
+  "seda_trend": 0.013
+ },
+ "03260000": {
+  "seda_achievement": 3.426,
+  "seda_learning_rate": 1.214,
+  "seda_trend": -0.0522
+ },
+ "03270000": {
+  "seda_achievement": 1.797,
+  "seda_learning_rate": 0.76,
+  "seda_trend": 0.036
+ },
+ "03300000": {
+  "seda_achievement": 3.512,
+  "seda_learning_rate": 1.115,
+  "seda_trend": 0.0508
+ },
+ "03310000": {
+  "seda_achievement": 1.188,
+  "seda_learning_rate": 0.979,
+  "seda_trend": -0.026
+ },
+ "03350000": {
+  "seda_achievement": 3.425,
+  "seda_learning_rate": 0.966,
+  "seda_trend": -0.0016
+ },
+ "03360000": {
+  "seda_achievement": 0.795,
+  "seda_learning_rate": 0.702,
+  "seda_trend": -0.0598
+ },
+ "03370000": {
+  "seda_achievement": 1.204,
+  "seda_trend": 0.0148
+ },
+ "07800000": {
+  "seda_achievement": 0.989,
+  "seda_learning_rate": 0.849,
+  "seda_trend": -0.056
+ },
+ "03400000": {
+  "seda_achievement": 1.689,
+  "seda_trend": -0.1171
+ },
+ "03420000": {
+  "seda_achievement": 1.84,
+  "seda_learning_rate": 1.038,
+  "seda_trend": 0.0164
+ },
+ "03430000": {
+  "seda_achievement": -0.475,
+  "seda_learning_rate": 0.798,
+  "seda_trend": -0.0291
+ },
+ "03440000": {
+  "seda_achievement": 3.63,
+  "seda_learning_rate": 1.086,
+  "seda_trend": 0.0289
+ },
+ "03460000": {
+  "seda_achievement": 0.957,
+  "seda_learning_rate": 1.058,
+  "seda_trend": 0.0704
+ },
+ "03470000": {
+  "seda_achievement": 1.269,
+  "seda_learning_rate": 0.854,
+  "seda_trend": -0.0584
+ },
+ "03480000": {
+  "seda_achievement": -0.183,
+  "seda_learning_rate": 0.955,
+  "seda_trend": -0.0302
+ },
+ "03500000": {
+  "seda_achievement": 2.476,
+  "seda_learning_rate": 1.242,
+  "seda_trend": 0.0174
+ },
+ "06620000": {
+  "seda_achievement": 0.776,
+  "seda_trend": -0.0886
+ }
+}
