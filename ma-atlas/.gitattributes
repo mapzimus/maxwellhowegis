@@ -1,8 +1,0 @@
-# The gap-audit registry is one self-contained, fingerprint-sorted JSON object per
-# line. Union-merge so concurrent edits from multiple machines / CI never conflict
-# (a re-run normalizes ordering and dedupes afterward). Force LF so the byte-identical
-# re-run guarantee holds on Windows too (the tool writes LF; autocrlf must not churn it).
-scripts/analysis/registry.jsonl merge=union text eol=lf
-scripts/analysis/gaps.md   text eol=lf
-scripts/analysis/gaps.csv  text eol=lf
-scripts/analysis/gap_audit/provenance_manifest.json text eol=lf
