@@ -19,11 +19,44 @@ Plain HTML/CSS/JS, no build step, no framework. Deployed via GitHub Pages from `
 
 ## Submodules & vendored apps
 
-- [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) — `/geopuesto/` + `/geopuesto/playground/`. Git submodule. Promoted out of this repo in May 2026 (via `git filter-repo --subdirectory-filter` preserving 14 commits of history) so the antipode app + geometry sandbox have their own README, stars, and issue tracker. **Must remain public** — the Pages workflow checks it out with the default token, which cannot read private submodules.
-- `ma-atlas/` — **vendored copy** (June 2026), no longer a submodule. The source repo `mapzimus/ma-education-atlas` is private; its served files are committed here directly. To publish atlas changes, run `deploy/sync_public_maps.ps1` in the `lehs-data-dive` repo (copies atlas + Lynn map files here), review the diff, commit, push.
-- `Lynn-data-dive/maps/` — **vendored copy** of the Lynn map from the private `mapzimus/lehs-data-dive` repo (replaced the old redirect to mapzimus.github.io in June 2026). Published the same way, via `sync_public_maps.ps1`.
+All submodules must be **public** — the Pages workflow checks them out with the default token, which cannot read private repos.
 
-GitHub Pages fetches the remaining submodule via `submodules: recursive` in `.github/workflows/pages.yml`. After pushing changes inside `geopuesto`, run `git submodule update --remote` here, commit the pointer bump, push.
+| Path | How it's served | Source |
+|---|---|---|
+| `/geopuesto/` | git submodule | [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) |
+| `/bugwars/` | git submodule | [`mapzimus/bug-wars`](https://github.com/mapzimus/bug-wars) |
+| `/truescale/` | git submodule | [`mapzimus/true-scale`](https://github.com/mapzimus/true-scale) |
+| `/quabbin/` | git submodule | [`mapzimus/quabbin`](https://github.com/mapzimus/quabbin) |
+| `/ma-atlas/` | vendored copy | private `mapzimus/ma-education-atlas` — sync via `deploy/sync_public_maps.ps1` in `lehs-data-dive` |
+| `/Lynn-data-dive/maps/` | vendored copy | private `mapzimus/lehs-data-dive` — same sync script |
+
+After pushing changes inside a submodule, run `git submodule update --remote <path>` here, commit the pointer bump, push.
+
+### Bootstrapping a new submodule (first time)
+
+Use `git subtree split` on `main` to seed the new repo with the subdirectory's full history, then register it as a submodule:
+
+```bash
+# Example: bootstrap bug-wars from the bugwars/ subtree
+git subtree split --prefix=bugwars -b bootstrap/bug-wars
+git push https://github.com/mapzimus/bug-wars bootstrap/bug-wars:main --force
+git branch -D bootstrap/bug-wars
+
+# Then register it as a submodule (replaces the plain directory)
+git rm -r bugwars/
+git submodule add https://github.com/mapzimus/bug-wars bugwars
+git commit -m "convert bugwars/ to submodule mapzimus/bug-wars"
+```
+
+Repeat for `truescale/` → `mapzimus/true-scale` and `quabbin/` → `mapzimus/quabbin`.
+
+**Whydah Navigator** was extracted from `whydah/navigator/` — push it to a branch in `mapzimus/Whydah-Unit`:
+
+```bash
+git subtree split --prefix=whydah/navigator -b bootstrap/whydah-navigator
+git push https://github.com/mapzimus/Whydah-Unit bootstrap/whydah-navigator:feat/navigator-game
+git branch -D bootstrap/whydah-navigator
+```
 
 ## Local development
 
