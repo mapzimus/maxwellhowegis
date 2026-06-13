@@ -1132,6 +1132,16 @@ main { flex: 1; }
     border: none;
 }
 
+/* Taller variant for full-app embeds (e.g. the Tappymaps editor) */
+.embed-frame.tall {
+    aspect-ratio: auto;
+    height: 780px;
+}
+
+@media (max-width: 768px) {
+    .embed-frame.tall { height: 700px; border-radius: var(--radius-md); }
+}
+
 .feature-detail-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
