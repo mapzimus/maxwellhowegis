@@ -1,0 +1,183 @@
+:root {
+  --ocean: #0d3b5c;
+  --ocean-deep: #0a2f49;
+  --land: #d9c8a1;
+  --land-edge: #9c8a5e;
+  --grid: rgba(255, 255, 255, 0.16);
+  --grid-label: rgba(255, 255, 255, 0.55);
+  --parchment: #f3e6c8;
+  --ink: #2a2118;
+  --gold: #e8c170;
+  --danger: #c0392b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--ocean-deep);
+  color: var(--parchment);
+}
+
+header {
+  padding: 14px 20px;
+  text-align: center;
+  background: linear-gradient(#10293c, #0a2f49);
+  border-bottom: 1px solid #08263b;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+}
+header p { margin: 4px 0 0; opacity: 0.85; font-style: italic; }
+
+main {
+  display: flex;
+  gap: 18px;
+  padding: 18px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#chart-wrap {
+  background: var(--ocean);
+  border: 3px solid #08263b;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  line-height: 0;
+}
+#chart {
+  display: block;
+  height: min(90vh, 1300px);
+  width: auto;
+  background: radial-gradient(circle at 40% 22%, #14466b, var(--ocean) 70%);
+}
+
+#panel {
+  width: 320px;
+  max-width: 90vw;
+  background: var(--parchment);
+  color: var(--ink);
+  border-radius: 8px;
+  padding: 16px 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+.panel-hint { font-size: 0.97rem; line-height: 1.55; }
+
+/* --- chart layers --- */
+.land { fill: var(--land); stroke: var(--land-edge); stroke-width: 1; }
+.grid-line { stroke: var(--grid); stroke-width: 1; }
+.grid-label { fill: var(--grid-label); font-size: 11px; font-family: monospace; }
+.hazard {
+  fill: rgba(192, 57, 43, 0.28);
+  stroke: var(--danger);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+}
+.current { stroke: #5aa9e6; stroke-width: 1.6; opacity: 0.75; }
+.current.strong { stroke: #7fd3ff; stroke-width: 2.4; opacity: 0.95; }
+.wind { stroke: #cfe8ff; stroke-width: 2; }
+.wind-label { fill: #cfe8ff; font-size: 11px; text-anchor: middle; }
+.mark-start { fill: #2ecc71; stroke: #0b9b46; stroke-width: 2; }
+.mark-dest { fill: var(--gold); stroke: #a87b1c; stroke-width: 2; }
+.dest-zone {
+  fill: rgba(232, 193, 112, 0.14);
+  stroke: var(--gold);
+  stroke-width: 1.4;
+  stroke-dasharray: 5 4;
+}
+.mark-label {
+  fill: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.55);
+  stroke-width: 3px;
+}
+
+.place { stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
+.place-peril { fill: #ff7a66; }
+.place-cape { fill: #cfe8ff; }
+.place-mark { fill: #fff; }
+.place-label {
+  font-size: 11px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.55);
+  stroke-width: 3px;
+}
+.place-label.place-peril { fill: #ff9c8c; }
+.place-label.place-cape { fill: #dff0ff; }
+.place-label.place-mark { fill: #fff; }
+
+/* voyage objective markers */
+.zone { fill: none; stroke-width: 1.4; }
+.zone-required { stroke: #cfe0ff; stroke-dasharray: 5 4; fill: rgba(207, 224, 255, 0.05); }
+.zone-bonus { stroke: #ffd34d; stroke-dasharray: 3 3; fill: rgba(255, 211, 77, 0.13); }
+.zone-final { stroke: var(--gold); stroke-dasharray: 6 4; fill: rgba(232, 193, 112, 0.14); }
+.obj { stroke: rgba(0, 0, 0, 0.55); stroke-width: 1.5; }
+.obj-start { fill: #2ecc71; }
+.obj-landmark { fill: #cfd8e3; }
+.obj-required { fill: #9ec5ff; }
+.obj-bonus { fill: #ffcf33; }
+.obj-final { fill: var(--gold); }
+.obj-label {
+  font-size: 12px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.6);
+  stroke-width: 3px;
+  fill: #fff;
+}
+.obj-label.obj-start { fill: #b6f3cf; }
+.obj-label.obj-bonus { fill: #ffe08a; }
+.obj-label.obj-final { fill: var(--gold); }
+
+#error-banner {
+  display: none;
+  background: var(--danger);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* --- helm console --- */
+#console { margin-top: 16px; border-top: 2px solid #d8c9a3; padding-top: 12px; }
+.console-title { margin: 0 0 10px; font-size: 1.05rem; color: #6b4f1d; }
+#compass { display: flex; justify-content: center; }
+.dial { width: 170px; height: 170px; touch-action: none; cursor: grab; }
+.dial:active { cursor: grabbing; }
+.dial-face { fill: #11324a; stroke: #d8c9a3; stroke-width: 2; }
+.dial-tick { stroke: #7fa8c9; stroke-width: 1.5; }
+.dial-card { fill: #f3e6c8; font-size: 13px; font-weight: 700; text-anchor: middle; }
+.dial-pointer { stroke: #e8c170; stroke-width: 3; stroke-linecap: round; }
+.dial-hub { fill: #e8c170; }
+.readout-big { display: flex; justify-content: space-between; align-items: baseline; margin: 10px 2px 6px; }
+.readout-big #heading-readout { font-size: 1.6rem; font-weight: 800; color: #11324a; font-variant-numeric: tabular-nums; }
+.rlabel { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: #6b4f1d; }
+.dist-row { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; margin: 8px 2px; }
+.dist-row input[type="range"] { width: 100%; }
+.btn-row { display: flex; gap: 8px; margin: 12px 0 8px; }
+.btn-row button { flex: 1; padding: 10px; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; }
+#add-leg { background: #2e6f4e; color: #fff; }
+#undo-leg { background: #cdbd96; color: #2a2118; }
+#route-info { font-size: 0.9rem; color: #2a2118; }
+#route-info > div { margin: 3px 0; }
+
+/* --- plotted route on the chart --- */
+.route-line { fill: none; stroke: #ffe08a; stroke-width: 2.5; stroke-dasharray: 7 4; }
+.route-wp { fill: #fff; stroke: #b9892b; stroke-width: 1.5; }
+.route-ship { fill: #e8c170; stroke: #6b4f1d; stroke-width: 1.5; }
+.route-label {
+  fill: #ffe08a;
+  font-size: 10px;
+  font-family: monospace;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.6);
+  stroke-width: 2.5px;
+}
