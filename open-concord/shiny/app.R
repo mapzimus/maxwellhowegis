@@ -79,7 +79,8 @@ catalog <- function() {
 # curated popup HTML per feature (key non-empty fields, internal cols dropped)
 build_popup <- function(g, schema, table) {
   df <- sf::st_drop_geometry(g)
-  df <- df[, !grepl("^(geom|wkb|globalid|objectid|gid)$|^se_anno|^shape_", names(df), ignore.case = TRUE), drop = FALSE]
+  df <- df[, !grepl("^(geom|geometry|wkb|globalid|objectid|gid|fid|oid|id)$|_id$|code$|^se_anno|shape[_.]",
+                    names(df), ignore.case = TRUE), drop = FALSE]
   cat_label <- CATEGORIES[[schema]]$label %||% schema
   cat_color <- CATEGORIES[[schema]]$color %||% "#475569"
   tcands <- c("name", "primary_name", "title", "sch_name", "school_name", "facility", "fac_name", "label")
@@ -130,30 +131,41 @@ add_oc_layer <- function(proxy, id, g, color, highlight = FALSE) {
   k <- geom_kind(g)
   if (k == "poly") {
     add_fill_layer(proxy, id = id, source = g, fill_color = color,
-      fill_opacity = if (highlight) 0.5 else 0.22, fill_outline_color = color, popup = pop)
+      fill_opacity = if (highlight) 0.5 else 0.2, fill_outline_color = color, popup = pop)
   } else if (k == "line") {
     add_line_layer(proxy, id = id, source = g, line_color = color,
-      line_width = if (highlight) 2.5 else 1.4, popup = pop)
+      line_width = if (highlight) 2.6 else 1.6, line_opacity = 0.9, popup = pop)
   } else {
     add_circle_layer(proxy, id = id, source = g, circle_color = color,
-      circle_radius = if (highlight) 6 else 4, circle_stroke_color = "#ffffff",
-      circle_stroke_width = 0.8, circle_opacity = 0.85, popup = pop)
+      circle_radius = if (highlight) 6.5 else 4.5, circle_stroke_color = "#ffffff",
+      circle_stroke_width = 1.2, circle_opacity = 0.9, popup = pop)
   }
 }
 
 # ------------------------------------------------------------------- UI ----
 ui <- page_sidebar(
-  theme = bs_theme(version = 5, primary = "#2563eb"),
-  title = tags$span(
-    tags$span("Open Concord", style = "font-weight:600"),
-    tags$span("Concord, NH · live from PostGIS",
-              style = "font-weight:400;color:#9ca3af;font-size:13px;margin-left:10px")),
+  theme = bs_theme(version = 5, primary = "#2563eb",
+                   base_font = font_google("Inter", local = FALSE),
+                   heading_font = font_google("Inter", local = FALSE)),
+  title = tags$span(style = "display:flex;align-items:baseline;gap:10px",
+    tags$span("Open Concord", style = "font-weight:600;letter-spacing:-0.01em"),
+    tags$span("Concord, NH · live geospatial data",
+              style = "font-weight:400;color:#9ca3af;font-size:12.5px")),
   tags$head(tags$style(HTML(
     ".maplibregl-map,.html-widget{height:100% !important}
-     .accordion-button{padding:8px 12px;font-size:13px}
-     .accordion-body{padding:6px 12px 10px}
-     .form-check-label{width:100%;font-size:12.5px}
-     .shiny-input-checkboxgroup .form-check{margin-bottom:2px}"))),
+     .accordion{--bs-accordion-border-color:transparent}
+     .accordion-item{border:0;margin-bottom:1px}
+     .accordion-button{padding:7px 10px;font-size:13px;border-radius:7px!important;background:transparent}
+     .accordion-button:not(.collapsed){background:#eef2f7;color:inherit;box-shadow:none}
+     .accordion-button:focus{box-shadow:none}
+     .accordion-button::after{width:0.9rem;height:0.9rem;background-size:0.9rem}
+     .accordion-body{padding:3px 10px 8px}
+     .shiny-input-checkboxgroup .checkbox{margin:0 0 2px}
+     .shiny-input-checkboxgroup .checkbox label{display:flex;align-items:center;gap:8px;width:100%;margin:0;font-size:12.5px;font-weight:400;cursor:pointer}
+     .shiny-input-checkboxgroup .checkbox input{margin:0;flex:0 0 auto;cursor:pointer}
+     .shiny-input-checkboxgroup .checkbox label>span{flex:1 1 auto;min-width:0}
+     .maplibregl-ctrl-attrib{font-size:10px;opacity:0.7}
+     .maplibregl-ctrl-group button{width:27px;height:27px}"))),
   sidebar = sidebar(
     width = 320, gap = "8px",
     radioButtons("basemap", "Basemap", inline = TRUE,
@@ -198,6 +210,7 @@ server <- function(input, output, session) {
         "<span style='display:inline-flex;justify-content:space-between;width:100%%;gap:8px'><span>%s</span><span style='color:#9ca3af;font-size:11px'>%s</span></span>",
         nice_label(sub$table_name[i]), format(sub$n_features[i], big.mark = ","))))
       accordion_panel(
+        value = sch,
         title = HTML(sprintf(
           "<span style='width:9px;height:9px;border-radius:50%%;background:%s;display:inline-block;margin-right:8px'></span>%s <span style='color:#9ca3af;font-size:11px;margin-left:5px'>%d</span>",
           meta$color, meta$label, nrow(sub))),
@@ -206,8 +219,9 @@ server <- function(input, output, session) {
           selected = intersect(DEFAULT_ON, ids))
       )
     })
+    open_grp <- if ("schools" %in% df$schema_name) "schools" else intersect(CATEGORY_ORDER, unique(df$schema_name))[1]
     do.call(accordion, c(Filter(Negate(is.null), panels),
-                         list(open = FALSE, multiple = TRUE)))
+                         list(open = open_grp, multiple = TRUE)))
   })
 
   selected <- debounce(reactive({
@@ -217,7 +231,7 @@ server <- function(input, output, session) {
 
   output$map <- renderMaplibre({
     maplibre(style = carto_style("positron"), center = CONCORD_CENTER, zoom = 12) |>
-      add_draw_control(position = "top-left")
+      add_draw_control(position = "top-left", orientation = "horizontal")
   })
 
   # diff-based: add newly checked layers, clear newly unchecked ones
