@@ -3,12 +3,12 @@
 # MapLibre GL (via {mapgl}) over the live PostGIS DB. A grouped, collapsible
 # legend with per-group + per-layer feature counts (empty layers hidden) and
 # human names; curated click-popups; a Light/Dark/Satellite basemap switcher;
+# a dedicated 3D-buildings toggle (USA Structures extruded by LiDAR HEIGHT);
 # and the retained draw-to-identify + server-side attribute filter.
 #
 # Why MapLibre: WebGL rendering on the GPU handles the big layers (osm.roads
 # 103k, osm.buildings 88k) smoothly where Leaflet's per-feature SVG froze.
 # get_layer() also st_simplify()s large non-point layers to shrink the payload.
-# (True instant-any-zoom for the mega layers is the optional pg_tileserv phase.)
 #
 # v1 (Leaflet) is preserved as app-leaflet-v1.R.
 
@@ -32,30 +32,21 @@ pool <- dbPool(
 )
 onStop(function() poolClose(pool))
 
-# ---- category metadata: label + color, keyed by schema, in display order ----
+# ---- category metadata: label + color, keyed by schema, in DISPLAY ORDER ----
 CATEGORIES <- list(
   city      = list(label = "City of Concord", color = "#2563eb"),
-  external  = list(label = "Federal & state", color = "#059669"),
-  osm       = list(label = "OpenStreetMap",   color = "#7c3aed"),
   schools   = list(label = "Schools",         color = "#dc2626"),
-  apis      = list(label = "APIs & sensors",  color = "#d97706"),
   business  = list(label = "Business",        color = "#db2777"),
+  osm       = list(label = "OpenStreetMap",   color = "#7c3aed"),
+  external  = list(label = "Federal & state", color = "#059669"),
+  apis      = list(label = "APIs & sensors",  color = "#d97706"),
   knowledge = list(label = "Knowledge",       color = "#0891b2"),
   web       = list(label = "Web exports",     color = "#475569")
 )
 CATEGORY_ORDER <- names(CATEGORIES)
 CONCORD_CENTER <- c(-71.538, 43.207)
-DEFAULT_ON <- c("schools.public_schools_districts")
-
-# free satellite basemap (Esri World Imagery raster) as a MapLibre style object
-SATELLITE_STYLE <- list(
-  version = 8,
-  sources = list(esri = list(
-    type = "raster", tileSize = 256,
-    tiles = list("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"),
-    attribution = "Esri, Maxar, Earthstar Geographics")),
-  layers = list(list(id = "esri", type = "raster", source = "esri"))
-)
+DOWNTOWN       <- c(-71.5374, 43.2069)        # State House — for the 3D fly-to
+BUILDINGS_TBL  <- list(schema = "external", table = "usa_structures")  # 3D toggle owns this
 
 # prettify a table slug into a human, sentence-case label (acronyms upper-cased)
 nice_label <- function(table) {
@@ -65,13 +56,14 @@ nice_label <- function(table) {
   paste0(toupper(substr(s, 1, 1)), substr(s, 2, nchar(s)))
 }
 
-# map+db layers with at least one feature (empties hidden), biggest first per group
+# map+db layers with >=1 feature; the 3D-buildings layer is handled separately
 catalog <- function() {
   tryCatch(
     dbGetQuery(pool,
       "SELECT schema_name, table_name, n_features
          FROM public.catalog
         WHERE target = 'map+db' AND n_features > 0
+          AND NOT (schema_name = 'external' AND table_name = 'usa_structures')
         ORDER BY schema_name, n_features DESC"),
     error = function(e) data.frame())
 }
@@ -120,12 +112,22 @@ get_layer <- function(schema, table, where = "1=1") {
   g
 }
 
+# USA Structures footprints + LiDAR height (only the cols we need; no simplify)
+get_buildings <- function() {
+  con <- poolCheckout(pool); on.exit(poolReturn(con))
+  g <- tryCatch(st_transform(st_read(con, query =
+    'SELECT "HEIGHT","OCC_CLS","PROP_ADDR","SQFEET", geometry FROM external.usa_structures',
+    quiet = TRUE), 4326), error = function(e) NULL)
+  if (is.null(g) || !nrow(g)) return(g)
+  g$HEIGHT[is.na(g$HEIGHT) | g$HEIGHT < 2] <- 3   # show unknown/flat footprints at ~1 storey
+  g
+}
+
 geom_kind <- function(g) {
   gt <- as.character(st_geometry_type(g, by_geometry = FALSE))
   if (grepl("POLY", gt)) "poly" else if (grepl("LINE", gt)) "line" else "point"
 }
 
-# add an sf layer to the map proxy, styled by geometry kind
 add_oc_layer <- function(proxy, id, g, color, highlight = FALSE) {
   pop <- if ("popup_html" %in% names(g)) "popup_html" else NULL
   k <- geom_kind(g)
@@ -160,17 +162,22 @@ ui <- page_sidebar(
      .accordion-button:focus{box-shadow:none}
      .accordion-button::after{width:0.9rem;height:0.9rem;background-size:0.9rem}
      .accordion-body{padding:3px 10px 8px}
-     .shiny-input-checkboxgroup .checkbox{margin:0 0 2px}
-     .shiny-input-checkboxgroup .checkbox label{display:flex;align-items:center;gap:8px;width:100%;margin:0;font-size:12.5px;font-weight:400;cursor:pointer}
-     .shiny-input-checkboxgroup .checkbox input{margin:0;flex:0 0 auto;cursor:pointer}
-     .shiny-input-checkboxgroup .checkbox label>span{flex:1 1 auto;min-width:0}
+     .form-check{margin-bottom:1px;min-height:auto}
+     .form-check-label{width:100%;font-size:12.5px;cursor:pointer}
+     .form-check-input{cursor:pointer;margin-top:0.18rem}
+     #b3d_box .form-check-label{font-size:13px;font-weight:500}
      .maplibregl-ctrl-attrib{font-size:10px;opacity:0.7}
      .maplibregl-ctrl-group button{width:27px;height:27px}"))),
   sidebar = sidebar(
-    width = 320, gap = "8px",
+    width = 320, gap = "10px",
     radioButtons("basemap", "Basemap", inline = TRUE,
       choices = c(Light = "positron", Dark = "dark-matter", Satellite = "satellite"),
       selected = "positron"),
+    div(id = "b3d_box",
+        style = "border:1px solid #e5e7eb;border-radius:9px;padding:8px 10px;background:#f8fafc",
+        checkboxInput("b3d", "3D buildings (LiDAR heights)", value = FALSE),
+        div(style = "font-size:11px;color:#9ca3af;margin-top:-6px",
+            "Extrudes ~15.5k buildings and tilts to downtown.")),
     div(style = "font-size:11px;color:#9ca3af", textOutput("summary", inline = TRUE)),
     uiOutput("legend"),
     tags$details(
@@ -193,8 +200,7 @@ server <- function(input, output, session) {
   output$summary <- renderText({
     df <- cat_df()
     if (!nrow(df)) return("No layers loaded — run the ETL.")
-    sprintf("%d layers · %s features · empties hidden",
-            nrow(df), format(sum(df$n_features), big.mark = ","))
+    sprintf("%d map layers across %d groups", nrow(df), length(unique(df$schema_name)))
   })
 
   output$legend <- renderUI({
@@ -215,11 +221,10 @@ server <- function(input, output, session) {
           "<span style='width:9px;height:9px;border-radius:50%%;background:%s;display:inline-block;margin-right:8px'></span>%s <span style='color:#9ca3af;font-size:11px;margin-left:5px'>%d</span>",
           meta$color, meta$label, nrow(sub))),
         checkboxGroupInput(paste0("grp_", sch), NULL,
-          choiceNames = names_html, choiceValues = ids,
-          selected = intersect(DEFAULT_ON, ids))
+          choiceNames = names_html, choiceValues = ids)
       )
     })
-    open_grp <- if ("schools" %in% df$schema_name) "schools" else intersect(CATEGORY_ORDER, unique(df$schema_name))[1]
+    open_grp <- intersect(CATEGORY_ORDER, unique(df$schema_name))[1]
     do.call(accordion, c(Filter(Negate(is.null), panels),
                          list(open = open_grp, multiple = TRUE)))
   })
@@ -248,6 +253,33 @@ server <- function(input, output, session) {
     }
     shown(sel)
   })
+
+  # 3D buildings: extrude USA Structures by LiDAR HEIGHT, tilt to downtown
+  observeEvent(input$b3d, {
+    proxy <- maplibre_proxy("map")
+    if (isTRUE(input$b3d)) {
+      g <- get_buildings()
+      if (is.null(g) || !nrow(g)) {
+        output$status <- renderText("Buildings layer unavailable.")
+        return()
+      }
+      proxy |>
+        add_fill_extrusion_layer(
+          id = "buildings3d", source = g,
+          fill_extrusion_base = 0, fill_extrusion_opacity = 0.92,
+          fill_extrusion_height = get_column("HEIGHT"),
+          fill_extrusion_color = interpolate(column = "HEIGHT",
+            values = c(2, 8, 20), stops = c("#e2e8f0", "#7c93c0", "#1d4ed8"),
+            na_color = "#cbd5e1"),
+          tooltip = concat("Height: ", get_column("HEIGHT"), " m")) |>
+        fly_to(center = DOWNTOWN, zoom = 15, pitch = 55, bearing = -17)
+      output$status <- renderText("3D buildings on — LiDAR heights (downtown view).")
+    } else {
+      proxy |>
+        clear_layer("buildings3d") |>
+        fly_to(center = CONCORD_CENTER, zoom = 12, pitch = 0, bearing = 0)
+    }
+  }, ignoreInit = TRUE)
 
   observeEvent(input$basemap, {
     style <- switch(input$basemap,
@@ -295,5 +327,15 @@ server <- function(input, output, session) {
     }
   })
 }
+
+# free satellite basemap (Esri World Imagery raster) as a MapLibre style object
+SATELLITE_STYLE <- list(
+  version = 8,
+  sources = list(esri = list(
+    type = "raster", tileSize = 256,
+    tiles = list("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"),
+    attribution = "Esri, Maxar, Earthstar Geographics")),
+  layers = list(list(id = "esri", type = "raster", source = "esri"))
+)
 
 shinyApp(ui, server)
