@@ -36,6 +36,7 @@ Suggests:
     targets,
     tarchetypes,
     shiny,
+    bslib,
     leaflet,
     leaflet.extras,
     pool,
