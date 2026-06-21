@@ -1,6 +1,15 @@
 import { bakeGeoJSON, geojsonBbox } from './bake.js';
 import { writePMTiles } from './pmtiles-writer.js';
 import { SUPABASE_URL, SUPABASE_ANON, STORAGE_BUCKET, supabaseConfigured } from '../config.js';
+import {
+    TerraDraw,
+    TerraDrawPolygonMode,
+    TerraDrawLineStringMode,
+    TerraDrawPointMode,
+    TerraDrawSelectMode,
+    TerraDrawFreehandMode,
+} from 'https://esm.sh/terra-draw@1';
+import { TerraDrawMapLibreGLAdapter } from 'https://esm.sh/terra-draw-maplibre-gl-adapter@1';
 
 // ── MapLibre + PMTiles setup ──────────────────────────────────────────────────
 
@@ -26,16 +35,6 @@ map.addControl(new maplibregl.GeolocateControl({
 let draw;
 
 map.on('load', () => {
-    const {
-        TerraDraw,
-        TerraDrawMapLibreGLAdapter,
-        TerraDrawPolygonMode,
-        TerraDrawLineStringMode,
-        TerraDrawPointMode,
-        TerraDrawSelectMode,
-        TerraDrawFreehandPolygonMode,
-    } = window.TerraDraw;
-
     draw = new TerraDraw({
         adapter: new TerraDrawMapLibreGLAdapter({ map }),
         modes: [
@@ -50,7 +49,7 @@ map.on('load', () => {
             new TerraDrawPolygonMode({ snapping: false }),
             new TerraDrawLineStringMode(),
             new TerraDrawPointMode(),
-            new TerraDrawFreehandPolygonMode(),
+            new TerraDrawFreehandMode(),
         ],
     });
     draw.start();
@@ -74,7 +73,9 @@ map.on('load', () => {
 
 function getFeatureCollection() {
     if (!draw) return { type: 'FeatureCollection', features: [] };
-    return draw.getSnapshot();
+    // Terra Draw getSnapshot() returns Feature[] (not a FeatureCollection)
+    const features = draw.getSnapshot();
+    return { type: 'FeatureCollection', features: Array.isArray(features) ? features : [] };
 }
 
 function featureCount() {
