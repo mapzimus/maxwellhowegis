@@ -16,8 +16,7 @@
     <!-- PMTiles -->
     <script src="https://unpkg.com/pmtiles@3/dist/pmtiles.js"></script>
 
-    <!-- Terra Draw -->
-    <script src="https://cdn.jsdelivr.net/npm/terra-draw@1/dist/terra-draw.umd.js"></script>
+    <!-- Terra Draw and its MapLibre adapter are loaded via ESM in studio.js -->
 
     <!-- QR Code (optional, for share panel) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -52,7 +51,7 @@
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 12 3 21 8 18 18 6 20"/></svg>
                     Polygon
                 </button>
-                <button class="tool-btn" data-mode="freehand" title="Freehand polygon">
+                <button class="tool-btn" data-mode="freehand" title="Freehand draw (hold and drag)">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c2-6 8-8 12-4s5 10 2 14"/></svg>
                     Freehand
                 </button>
