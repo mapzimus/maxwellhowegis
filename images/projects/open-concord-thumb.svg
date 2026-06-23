@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="grd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <clipPath id="map-clip">
+      <rect x="90" y="0" width="310" height="250"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="250" fill="url(#bg)"/>
+  <g clip-path="url(#map-clip)" opacity="0.15">
+    <line x1="130" y1="0" x2="130" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="170" y1="0" x2="170" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="210" y1="0" x2="210" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="250" y1="0" x2="250" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="290" y1="0" x2="290" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="330" y1="0" x2="330" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="370" y1="0" x2="370" y2="250" stroke="#334155" stroke-width="0.5"/>
+    <line x1="90" y1="50" x2="400" y2="50" stroke="#334155" stroke-width="0.5"/>
+    <line x1="90" y1="100" x2="400" y2="100" stroke="#334155" stroke-width="0.5"/>
+    <line x1="90" y1="150" x2="400" y2="150" stroke="#334155" stroke-width="0.5"/>
+    <line x1="90" y1="200" x2="400" y2="200" stroke="#334155" stroke-width="0.5"/>
+  </g>
+  <g opacity="0.5">
+    <path d="M 110,80 Q 160,60 200,75 Q 240,90 290,70 Q 330,55 380,65" fill="none" stroke="#475569" stroke-width="1.5"/>
+    <path d="M 120,125 L 380,125" fill="none" stroke="#475569" stroke-width="2"/>
+    <path d="M 200,20 L 200,230" fill="none" stroke="#475569" stroke-width="1.5"/>
+    <path d="M 155,20 Q 150,80 160,125 Q 165,175 150,230" fill="none" stroke="#475569" stroke-width="1"/>
+    <path d="M 270,20 Q 268,80 265,125 Q 262,175 268,230" fill="none" stroke="#475569" stroke-width="1"/>
+    <path d="M 110,170 Q 180,165 230,175 Q 290,185 380,175" fill="none" stroke="#475569" stroke-width="1"/>
+  </g>
+  <g opacity="0.65">
+    <polygon points="110,30 200,30 200,125 110,125" fill="#1e40af" opacity="0.5"/>
+    <polygon points="200,30 290,30 290,125 200,125" fill="#2563eb" opacity="0.45"/>
+    <polygon points="290,30 400,30 400,125 290,125" fill="#3b82f6" opacity="0.4"/>
+    <polygon points="110,125 200,125 200,220 110,220" fill="#1d4ed8" opacity="0.55"/>
+    <polygon points="200,125 290,125 290,220 200,220" fill="#60a5fa" opacity="0.35"/>
+    <polygon points="290,125 400,125 400,220 290,220" fill="#93c5fd" opacity="0.3"/>
+  </g>
+  <g fill="none" stroke="#1e3a5f" stroke-width="0.8" opacity="0.7">
+    <rect x="110" y="30" width="90" height="95"/>
+    <rect x="200" y="30" width="90" height="95"/>
+    <rect x="290" y="30" width="110" height="95"/>
+    <rect x="110" y="125" width="90" height="95"/>
+    <rect x="200" y="125" width="90" height="95"/>
+    <rect x="290" y="125" width="110" height="95"/>
+  </g>
+  <circle cx="160" cy="75" r="4" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="240" cy="95" r="4" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="320" cy="65" r="4" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="175" cy="165" r="5" fill="#22c55e" opacity="0.85"/>
+  <circle cx="330" cy="175" r="4" fill="#22c55e" opacity="0.85"/>
+  <circle cx="210" cy="140" r="5.5" fill="#f43f5e" opacity="0.9"/>
+  <circle cx="260" cy="110" r="3.5" fill="#f43f5e" opacity="0.8"/>
+  <circle cx="145" cy="195" r="3.5" fill="#a78bfa" opacity="0.85"/>
+  <circle cx="360" cy="140" r="3.5" fill="#a78bfa" opacity="0.85"/>
+  <circle cx="210" cy="140" r="10" fill="none" stroke="#f43f5e" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="210" cy="140" r="16" fill="none" stroke="#f43f5e" stroke-width="0.8" opacity="0.2"/>
+  <rect x="0" y="0" width="90" height="250" fill="#0f172a"/>
+  <line x1="90" y1="0" x2="90" y2="250" stroke="#1e2a3a" stroke-width="1"/>
+  <rect x="6" y="10" width="78" height="22" rx="4" fill="#1e3a5f"/>
+  <text x="45" y="25" text-anchor="middle" fill="#7dd3fc" font-size="8" font-family="'JetBrains Mono', monospace" font-weight="500">Layers</text>
+  <rect x="6" y="34" width="37" height="18" rx="3" fill="#0d1117"/>
+  <text x="24" y="46" text-anchor="middle" fill="#64748b" font-size="7" font-family="'JetBrains Mono', monospace">Thematic</text>
+  <rect x="46" y="34" width="38" height="18" rx="3" fill="#0d1117"/>
+  <text x="65" y="46" text-anchor="middle" fill="#64748b" font-size="7" font-family="'JetBrains Mono', monospace">Tools</text>
+  <g font-family="'Inter', sans-serif" font-size="7">
+    <rect x="8" y="60" width="6" height="6" rx="1" fill="#2563eb"/>
+    <text x="18" y="67" fill="#94a3b8">city.parcels</text>
+    <rect x="8" y="72" width="6" height="6" rx="1" fill="#22c55e"/>
+    <text x="18" y="79" fill="#94a3b8">osm.parks</text>
+    <rect x="8" y="84" width="6" height="6" rx="1" fill="#f59e0b"/>
+    <text x="18" y="91" fill="#94a3b8">schools</text>
+    <rect x="8" y="96" width="6" height="6" rx="1" fill="#f43f5e"/>
+    <text x="18" y="103" fill="#94a3b8">city.roads</text>
+    <rect x="8" y="108" width="6" height="6" rx="1" fill="#a78bfa"/>
+    <text x="18" y="115" fill="#94a3b8">knowledge</text>
+    <text x="8" y="128" fill="#475569">+ 160 more…</text>
+  </g>
+  <rect x="0" y="234" width="400" height="16" fill="#0a0f1a"/>
+  <text x="95" y="245" fill="#334155" font-size="7" font-family="'JetBrains Mono', monospace">165 layers · PostGIS · Concord, NH  43.2°N 71.5°W</text>
+  <text x="395" y="16" text-anchor="end" fill="#3b82f6" font-size="9" font-family="'JetBrains Mono', monospace" font-weight="500" opacity="0.7">Open Concord NH</text>
+  <rect x="90" y="0" width="310" height="3" fill="url(#grd)" opacity="0.6"/>
+</svg>
