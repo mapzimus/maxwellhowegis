@@ -3,6 +3,24 @@
 // era: "school"   → MS GIS coursework at Salem State, 2023–2025
 const projects = [
     {
+        id: 19,
+        era: "current",
+        title: "Northeast Appalachians Explorer",
+        category: "Web Mapping",
+        type: "map",
+        tags: ["MapLibre GL JS", "GeoJSON", "USGS Physiography", "Geology"],
+        summary: "Interactive recreation of the Northeast Appalachian physiographic provinces — click any province or named range for its geology, formative orogeny, and highest peak.",
+        description: "A data-backed remake of the classic 'Northeast Appalachians' diagram. The six colored provinces — Adirondack, White, Green and Taconic Mountains, the Allegheny Plateau, and the Ridge and Valley — are dissolved straight from the USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946), clipped to New York and New England. Nine named subranges (Adirondacks, Catskills, Berkshires, Poconos, Mahoosucs, Taconics, Hudson Highlands, plus the Green and White Mountains) sit on top as lettered badges. Clicking a province or range opens a card with its dominant rock, age, the orogeny that built it (Grenville, Taconic, Acadian, or Alleghanian), and its highest summit. A keyless terrain toggle adds hillshade and 3D relief. Built as a single self-contained MapLibre page with static GeoJSON — no build step, no API keys.",
+        tools: ["MapLibre GL JS", "OpenFreeMap", "USGS Physiographic Divisions", "mapshaper", "GeoJSON"],
+        year: "2026",
+        thumb: "images/projects/appalachians-thumb.png",
+        gallery: [
+            { src: "images/projects/appalachians/overview.png", caption: "Six physiographic provinces of the Northeast Appalachians, dissolved from USGS Fenneman divisions" }
+        ],
+        liveUrl: "appalachians/",
+        repoUrl: null
+    },
+    {
         id: 1,
         era: "school",
         title: "Chronic Absenteeism in Lynn Public Schools",
