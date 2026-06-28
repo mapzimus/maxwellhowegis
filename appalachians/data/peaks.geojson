@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "name": "peaks",
+  "features": [
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-73.9237, 44.1126] },
+      "properties": { "name": "Mount Marcy", "range": "Adirondacks", "province": "adirondack", "elev_m": 1629, "elev_ft": 5344 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-72.8145, 44.5437] },
+      "properties": { "name": "Mount Mansfield", "range": "Green Mountains", "province": "green", "elev_m": 1340, "elev_ft": 4395 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-74.3857, 42.0140] },
+      "properties": { "name": "Slide Mountain", "range": "Catskills", "province": "plateau", "elev_m": 1274, "elev_ft": 4180 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-71.3033, 44.2705] },
+      "properties": { "name": "Mount Washington", "range": "White Mountains", "province": "white", "elev_m": 1917, "elev_ft": 6288 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-73.1662, 42.6376] },
+      "properties": { "name": "Mount Greylock", "range": "Berkshires", "province": "taconic", "elev_m": 1064, "elev_ft": 3489 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-73.1117, 43.1646] },
+      "properties": { "name": "Mount Equinox", "range": "Taconics", "province": "taconic", "elev_m": 1163, "elev_ft": 3816 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-70.9479, 44.5550] },
+      "properties": { "name": "Old Speck Mountain", "range": "Mahoosucs", "province": "white", "elev_m": 1274, "elev_ft": 4180 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-75.3400, 41.8430] },
+      "properties": { "name": "Mount Ararat", "range": "Poconos", "province": "ridge_valley", "elev_m": 820, "elev_ft": 2690 } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-73.9888, 41.3126] },
+      "properties": { "name": "Bear Mountain", "range": "Hudson Highlands", "province": "ridge_valley", "elev_m": 391, "elev_ft": 1283 } }
+  ]
+}
