@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 # ============================================================
 # build_appalachians_data.sh
-# Regenerates appalachians/data/provinces.geojson from the USGS
+# Regenerates appalachians/data/regions.geojson from the USGS
 # Physiographic Divisions of the Conterminous U.S. (Fenneman &
-# Johnson, 1946). One-time offline prep; output is committed.
+# Johnson, 1946) — the six Appalachian Highlands regions,
+# full range, Georgia to Maine.
 #
 # Requires: curl, unzip, npx (mapshaper), jq. No GDAL needed.
 # Run from the repo root:  bash scripts/build_appalachians_data.sh
 # ============================================================
 set -euo pipefail
 
-OUT="appalachians/data/provinces.geojson"
+OUT="appalachians/data/regions.geojson"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
@@ -19,30 +20,31 @@ curl -sS -L --max-time 120 -o "$TMP/physio_shp.zip" \
   "https://water.usgs.gov/GIS/dsdl/physio_shp.zip"
 unzip -o -q "$TMP/physio_shp.zip" -d "$TMP/physio"
 
-# Map USGS PROVINCE/SECTION → the 6 poster legend groups.
-ASSIGN='province = PROVINCE=="ADIRONDACK" ? "adirondack"
-  : (PROVINCE=="NEW ENGLAND"&&SECTION=="WHITE MOUNTAIN") ? "white"
-  : (PROVINCE=="NEW ENGLAND"&&SECTION=="GREEN MOUNTAIN") ? "green"
-  : (PROVINCE=="NEW ENGLAND"&&SECTION=="TACONIC") ? "taconic"
-  : (PROVINCE=="APPALACHIAN PLATEAUS"&&(SECTION=="CATSKILL"||SECTION=="SOUTHERN NEW YORK")) ? "plateau"
-  : (PROVINCE=="VALLEY AND RIDGE"&&(SECTION=="HUDSON VALLEY"||SECTION=="MIDDLE")) ? "ridge_valley"
+# Map the Appalachian Highlands provinces → 6 legend regions.
+# (New England excludes its coastal Seaboard Lowland section.)
+ASSIGN='region = PROVINCE=="BLUE RIDGE" ? "blue_ridge"
+  : PROVINCE=="PIEDMONT" ? "piedmont"
+  : PROVINCE=="VALLEY AND RIDGE" ? "valley_ridge"
+  : PROVINCE=="APPALACHIAN PLATEAUS" ? "plateau"
+  : (PROVINCE=="NEW ENGLAND" && SECTION!="SEABOARD LOWLAND") ? "new_england"
+  : PROVINCE=="ADIRONDACK" ? "adirondack"
   : ""'
 
-echo "→ filtering, clipping to the Northeast, simplifying, dissolving"
+echo "→ filtering, clipping to the eastern U.S., simplifying, dissolving"
 npx -y mapshaper@0.6.102 "$TMP/physio/physio.shp" \
-  -each "$ASSIGN" \
-  -filter 'province !== ""' \
-  -clip bbox=-80.5,39.8,-69.2,45.7 \
-  -simplify 18% keep-shapes \
-  -dissolve province copy-fields=province \
-  -o format=geojson precision=0.0001 "$TMP/prec.geojson"
+  -each "$ASSIGN" -filter 'region !== ""' \
+  -clip bbox=-89,32,-66,47.8 \
+  -simplify 8% keep-shapes -clean \
+  -dissolve region copy-fields=region \
+  -o format=geojson precision=0.001 "$TMP/regions_raw.geojson"
 
-echo "→ attaching human labels → $OUT"
+echo "→ attaching labels → $OUT"
 jq -c '
-  def lbl: {adirondack:"Adirondack Mountains",white:"White Mountains",green:"Green Mountains",
-            taconic:"Taconic Mountains",plateau:"Allegheny Plateau",ridge_valley:"Ridge and Valley"};
-  .features |= map(.properties = {province:.properties.province, label:(lbl[.properties.province])})
-' "$TMP/prec.geojson" > "$OUT"
+  def lbl: {blue_ridge:"Blue Ridge",piedmont:"Piedmont",valley_ridge:"Ridge & Valley",
+            plateau:"Appalachian Plateau",new_england:"New England Upland",adirondack:"Adirondacks"};
+  .features |= map(.properties = {region:.properties.region, label:(lbl[.properties.region])})
+' "$TMP/regions_raw.geojson" > "$OUT"
 
-echo "✓ wrote $(jq '.features|length' "$OUT") provinces to $OUT"
-echo "  NOTE: subranges.geojson and peaks.geojson are hand-curated — not regenerated here."
+echo "✓ wrote $(jq '.features|length' "$OUT") regions to $OUT"
+echo "  NOTE: ranges.geojson, peaks.geojson, appalachian_trail.geojson and states.geojson"
+echo "        are vendored separately (curated / NPS ANST / US Census)."

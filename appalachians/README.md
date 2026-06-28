@@ -1,52 +1,65 @@
-# Northeast Appalachians — Physiographic Province Explorer
+# The Appalachians — Regions Explorer
 
-An interactive recreation of the classic "Northeast Appalachians" diagram: the six
-physiographic **provinces** of New York and New England as colored polygons, plus the
-named **subranges** within them as lettered badges. Click any province or range for its
-geology, formative orogeny, and highest peak.
+An interactive map of the **entire Appalachian range**, Georgia to Maine: its six
+physiographic **regions**, named mountain ranges, notable summits, and the full
+Appalachian Trail. Tap any region or range for its geology, formative orogeny, and
+highest peak.
 
 Live: [`/appalachians/`](https://maxwellhowegis.com/appalachians/)
 
 ## Stack
 
-- **MapLibre GL JS 4** — data-driven province fills, hover state, optional 3D terrain
-- **OpenFreeMap** (`positron` style) — keyless vector basemap
-- **AWS Open Data terrain tiles** (terrarium) — keyless hillshade + `setTerrain` 3D (toggle)
-- Static **GeoJSON**, no build step at runtime
+- **MapLibre GL JS 4** — data-driven region fills, hover, 3D terrain
+- **6 keyless basemaps** — OpenFreeMap (vector) + Esri / USGS / Carto raster, switched by
+  raster-layer visibility so custom overlays are never wiped
+- **AWS Open Data terrain tiles** (terrarium) — hillshade + `setTerrain` 3D
+- Static **GeoJSON**, no build step at runtime; mobile-first responsive UI
 
 ## Data
 
 | File | What | Source |
 |---|---|---|
-| `data/provinces.geojson` | 6 legend provinces (dissolved polygons) | USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946) |
-| `data/subranges.geojson` | 9 named ranges (lettered label points) | Hand-curated |
-| `data/peaks.geojson` | Highest summit per range | Hand-curated, USGS elevations |
+| `data/regions.geojson` | 6 geologic regions (dissolved polygons) | USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946) |
+| `data/ranges.geojson` | 13 named ranges (label points) | Hand-curated |
+| `data/peaks.geojson` | 10 notable summits | Hand-curated, USGS elevations |
+| `data/appalachian_trail.geojson` | Full ANST centerline (GA→ME) | NPS ArcGIS FeatureServer |
+| `data/states.geojson` | 17 state outlines | US Census / PublicaMundi |
 
-### Province legend → USGS unit
+### Region legend → USGS province
 
-| Legend | USGS province / section |
+| Region | USGS province |
 |---|---|
-| Adirondack Mountains | Adirondack Province |
-| White Mountains | New England → White Mountain section |
-| Green Mountains | New England → Green Mountain section |
-| Taconic Mountains | New England → Taconic section |
-| Allegheny Plateau | Appalachian Plateaus → Catskill + Southern New York sections |
-| Ridge and Valley | Valley and Ridge → Hudson Valley + Middle sections |
+| Blue Ridge | Blue Ridge |
+| Ridge & Valley | Valley and Ridge |
+| Appalachian Plateau | Appalachian Plateaus |
+| New England Upland | New England (excl. Seaboard Lowland) |
+| Adirondacks | Adirondack |
+| Piedmont | Piedmont |
 
-### Regenerating `provinces.geojson`
+All six belong to Fenneman's **Appalachian Highlands** division.
+
+### Regenerating `regions.geojson`
 
 ```bash
 # from repo root (needs curl, unzip, npx/mapshaper, jq — no GDAL)
 bash scripts/build_appalachians_data.sh
 ```
 
-The script fetches the national USGS shapefile, maps PROVINCE/SECTION attributes to the six
-poster legend groups, clips to the Northeast (bbox `-80.5,39.8,-69.2,45.7`), simplifies, and
-dissolves. `subranges.geojson` and `peaks.geojson` are hand-curated and not regenerated.
+Fetches the national USGS shapefile, maps the Appalachian Highlands provinces to the six
+legend regions, clips to the eastern U.S., simplifies, and dissolves. `ranges.geojson`,
+`peaks.geojson`, `appalachian_trail.geojson`, and `states.geojson` are vendored separately.
 
 ## Local development
 
 ```bash
-python -m http.server 8001   # from repo root
-# → http://localhost:8001/appalachians/
+python -m http.server 8001   # from repo root → http://localhost:8001/appalachians/
 ```
+
+## Features
+
+- Six keyless basemaps (Minimal / Streets / Satellite / Topo / Relief / Dark)
+- Layers panel: per-layer toggles + opacity, region filtering, jump-to menu
+- Named ranges, notable summits, region labels, state outlines, Appalachian Trail
+- Place search (Nominatim), geolocate, fullscreen, scale, measure-distance
+- 3D terrain with exaggeration control; shareable URL-hash (view + basemap + layers)
+- Mobile-first: bottom-sheet detail cards, touch-friendly controls
