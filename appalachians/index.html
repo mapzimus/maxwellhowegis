@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Northeast Appalachians — Physiographic Provinces</title>
-<meta name="description" content="An interactive recreation of the Northeast Appalachian physiographic provinces — click any province or named range for its geology, formative orogeny, and highest peak. Built on USGS Fenneman physiographic divisions." />
+<title>Northeast Appalachians — Physiographic Provinces Explorer</title>
+<meta name="description" content="An interactive recreation of the Northeast Appalachian physiographic provinces — six provinces, named ranges, summits, the Appalachian Trail, multiple basemaps, 3D terrain, search and measure tools. Built on USGS Fenneman physiographic divisions." />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css" />
@@ -14,88 +14,128 @@
 
 <style>
   :root {
-    --white:        #D9D2B0;
-    --green:        #A7C34A;
-    --adirondack:   #C8956A;
-    --taconic:      #D98C8C;
-    --plateau:      #D6E04A;
-    --ridge_valley: #E0A6D2;
-    --anchor: #1B2A41;
-    --ink: #1d2733;
-    --muted: #5a6675;
-    --panel: rgba(255,255,255,0.96);
-    --hair: rgba(20,30,45,0.10);
-    --shadow: 0 2px 16px rgba(15,25,40,0.18);
+    --white:#D9D2B0; --green:#A7C34A; --adirondack:#C8956A;
+    --taconic:#D98C8C; --plateau:#D6E04A; --ridge_valley:#E0A6D2;
+    --trail:#B5341F; --river:#3E7CB1; --state:#7a869a;
+    --anchor:#1B2A41; --ink:#19222e; --muted:#54606e;
+    --panel:rgba(255,255,255,0.97); --hair:rgba(20,30,45,0.10);
+    --shadow:0 2px 18px rgba(15,25,40,0.20);
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; font-family: "Inter", system-ui, -apple-system, sans-serif; color: var(--ink); }
-  #map { position: absolute; inset: 0; background: #e8eef2; }
+  html, body { margin:0; height:100%; font-family:"Inter",system-ui,-apple-system,sans-serif; color:var(--ink); }
+  #map { position:absolute; inset:0; background:#e8eef2; }
+  button { font-family:inherit; }
 
-  .panel { background: var(--panel); border: 1px solid var(--hair); border-radius: 12px; box-shadow: var(--shadow); backdrop-filter: blur(6px); }
+  .panel { background:var(--panel); border:1px solid var(--hair); border-radius:12px; box-shadow:var(--shadow); backdrop-filter:blur(6px); }
 
-  /* Title card */
-  .title-card { position: absolute; top: 14px; left: 14px; z-index: 5; padding: 14px 16px; max-width: 330px; }
-  .title-card .brand { display: flex; align-items: center; gap: 9px; }
-  .title-card .brand .dot { width: 28px; height: 28px; border-radius: 7px; background: var(--anchor); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 17px; flex: none; }
-  .title-card h1 { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; }
-  .title-card .sub { margin: 7px 0 0; font-size: 12.5px; color: var(--muted); line-height: 1.45; }
-  .title-card .meta { margin: 10px 0 0; padding-top: 9px; border-top: 1px solid var(--hair); font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
-  .title-card .meta b { color: var(--ink); font-weight: 600; }
-  .title-card .meta a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  /* ---- Title ---- */
+  .title-card { position:absolute; top:14px; left:14px; z-index:6; padding:12px 15px; max-width:320px; }
+  .title-card .brand { display:flex; align-items:center; gap:9px; }
+  .title-card .brand .dot { width:28px; height:28px; border-radius:7px; background:var(--anchor); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; flex:none; }
+  .title-card h1 { margin:0; font-size:16px; font-weight:700; letter-spacing:-0.01em; line-height:1.15; }
+  .title-card .sub { margin:7px 0 0; font-size:12px; color:var(--muted); line-height:1.45; }
+  .title-card .meta { margin:9px 0 0; padding-top:8px; border-top:1px solid var(--hair); font-size:10.5px; color:var(--muted); display:flex; align-items:center; gap:6px; }
+  .title-card .meta a { color:var(--muted); text-decoration:none; border-bottom:1px dotted var(--muted); }
 
-  /* Toolbar */
-  .toolbar { position: absolute; top: 14px; right: 14px; z-index: 5; display: flex; gap: 6px; padding: 6px; }
-  .toolbar button { font-family: inherit; font-size: 12px; font-weight: 500; color: var(--ink); background: #fff; border: 1px solid var(--hair); border-radius: 8px; padding: 7px 10px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: background .12s, border-color .12s; }
-  .toolbar button:hover { background: #f1f5f8; border-color: rgba(20,30,45,0.2); }
-  .toolbar button:active { transform: translateY(1px); }
-  .toolbar button.on { background: var(--anchor); color: #fff; border-color: var(--anchor); }
-  .toolbar button i { font-size: 15px; }
+  /* ---- Search ---- */
+  .search-wrap { position:absolute; top:14px; left:50%; transform:translateX(-50%); z-index:6; width:340px; max-width:46vw; }
+  .search-box { display:flex; align-items:center; gap:8px; padding:8px 12px; }
+  .search-box i { color:var(--muted); font-size:17px; }
+  .search-box input { flex:1; border:none; outline:none; background:transparent; font-size:13.5px; color:var(--ink); }
+  .search-results { margin-top:6px; max-height:280px; overflow-y:auto; padding:4px; display:none; }
+  .search-results.show { display:block; }
+  .search-results .r { padding:8px 10px; font-size:12.5px; border-radius:7px; cursor:pointer; line-height:1.35; }
+  .search-results .r:hover, .search-results .r.active { background:#eef3f7; }
 
-  /* Legend */
-  .legend { position: absolute; bottom: 22px; left: 14px; z-index: 5; padding: 12px 14px; max-width: 232px; font-size: 12px; line-height: 1.3; }
-  .legend h2 { margin: 0 0 8px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
-  .legend .row { display: flex; align-items: center; gap: 8px; margin: 3px 0; cursor: pointer; user-select: none; padding: 2px 3px; border-radius: 6px; transition: background .12s, opacity .12s; }
-  .legend .row:hover { background: #f1f5f8; }
-  .legend .row.off { opacity: 0.4; }
-  .legend .bar { width: 17px; height: 13px; border-radius: 3px; flex: none; border: 1px solid rgba(0,0,0,0.12); }
-  .legend .sec { margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--hair); font-size: 11px; color: var(--muted); }
+  /* ---- Toolbar ---- */
+  .toolbar { position:absolute; top:14px; right:14px; z-index:6; display:flex; gap:6px; padding:6px; }
+  .toolbar button { font-size:12px; font-weight:500; color:var(--ink); background:#fff; border:1px solid var(--hair); border-radius:8px; padding:8px 10px; display:inline-flex; align-items:center; gap:6px; cursor:pointer; transition:background .12s,border-color .12s,color .12s; }
+  .toolbar button:hover { background:#f1f5f8; border-color:rgba(20,30,45,0.2); }
+  .toolbar button.on { background:var(--anchor); color:#fff; border-color:var(--anchor); }
+  .toolbar button i { font-size:16px; }
 
-  /* Info card (slide-in) */
-  .info { position: absolute; top: 0; right: 0; bottom: 0; z-index: 8; width: 340px; max-width: 88vw; padding: 18px 20px 22px; overflow-y: auto; border-radius: 0; border-left: 1px solid var(--hair); transform: translateX(100%); transition: transform .26s cubic-bezier(.4,0,.2,1); }
-  .info.open { transform: translateX(0); }
-  .info .close { position: absolute; top: 13px; right: 13px; width: 28px; height: 28px; border: none; background: #f1f4f7; border-radius: 7px; color: var(--muted); font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-  .info .close:hover { background: #e6ebf0; color: var(--ink); }
-  .info .ic-head { display: flex; align-items: center; gap: 10px; margin: 2px 0 4px; }
-  .info .ic-head .sw { width: 20px; height: 20px; border-radius: 6px; flex: none; border: 1px solid rgba(0,0,0,0.12); }
-  .info .kicker { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
-  .info h3 { margin: 6px 0 2px; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
-  .info .class { font-size: 12px; color: var(--muted); margin: 0 0 12px; }
-  .info .blurb { font-size: 13.5px; line-height: 1.55; color: #36424f; margin: 0 0 14px; }
-  .info dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 7px 12px; font-size: 12.5px; align-items: baseline; }
-  .info dt { color: var(--muted); font-weight: 600; white-space: nowrap; }
-  .info dd { margin: 0; color: var(--ink); }
-  .info .peak { margin-top: 14px; padding: 10px 12px; background: #f6f8fa; border: 1px solid var(--hair); border-radius: 9px; display: flex; align-items: center; gap: 10px; }
-  .info .peak i { font-size: 20px; color: var(--anchor); }
-  .info .peak .pk-name { font-size: 13px; font-weight: 600; }
-  .info .peak .pk-elev { font-size: 11.5px; color: var(--muted); }
-  .info .wiki { display: inline-flex; align-items: center; gap: 6px; margin-top: 15px; font-size: 12.5px; font-weight: 600; color: var(--anchor); text-decoration: none; border-bottom: 1px solid transparent; }
-  .info .wiki:hover { border-bottom-color: var(--anchor); }
+  /* ---- Layers / basemap panel ---- */
+  .layers { position:absolute; top:62px; right:14px; z-index:7; width:268px; max-width:84vw; max-height:calc(100vh - 90px); overflow-y:auto; padding:14px 15px; display:none; }
+  .layers.open { display:block; }
+  .layers h2 { margin:0 0 9px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--muted); }
+  .layers .grp { margin-bottom:14px; }
+  .basemaps { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+  .basemaps .bm { display:flex; align-items:center; gap:7px; padding:7px 8px; border:1px solid var(--hair); border-radius:8px; font-size:12px; cursor:pointer; background:#fff; }
+  .basemaps .bm:hover { background:#f3f6f9; }
+  .basemaps .bm.sel { border-color:var(--anchor); box-shadow:0 0 0 1px var(--anchor); font-weight:600; }
+  .basemaps .bm i { font-size:15px; color:var(--muted); }
+  .basemaps .bm.sel i { color:var(--anchor); }
+  .ly { display:flex; align-items:center; gap:9px; padding:5px 2px; }
+  .ly .sw { width:15px; height:15px; border-radius:4px; flex:none; border:1px solid rgba(0,0,0,0.14); }
+  .ly .sw.line { height:0; border-radius:0; border:none; border-top:3px solid; width:17px; }
+  .ly label { flex:1; font-size:12.5px; cursor:pointer; user-select:none; }
+  .switch { position:relative; width:34px; height:19px; flex:none; cursor:pointer; }
+  .switch input { opacity:0; width:0; height:0; position:absolute; }
+  .switch .sl { position:absolute; inset:0; background:#cfd7e0; border-radius:20px; transition:.16s; }
+  .switch .sl::before { content:""; position:absolute; width:15px; height:15px; left:2px; top:2px; background:#fff; border-radius:50%; transition:.16s; box-shadow:0 1px 2px rgba(0,0,0,.3); }
+  .switch input:checked + .sl { background:var(--anchor); }
+  .switch input:checked + .sl::before { transform:translateX(15px); }
+  .ly-opacity { padding:0 2px 6px 26px; }
+  .ly-opacity input[type=range] { width:100%; accent-color:var(--anchor); }
+  .slider-row { display:flex; align-items:center; gap:9px; padding:4px 2px; font-size:12.5px; }
+  .slider-row input[type=range] { flex:1; accent-color:var(--anchor); }
+  .slider-row .v { font-size:11px; color:var(--muted); width:30px; text-align:right; }
+  .jump select { width:100%; padding:7px 9px; border:1px solid var(--hair); border-radius:8px; font-size:12.5px; font-family:inherit; background:#fff; color:var(--ink); }
 
-  /* Subrange badge markers */
-  .badge { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: var(--anchor); color: #fff; font-size: 14px; font-weight: 700; border: 2px solid #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.42); cursor: pointer; transition: transform .1s; }
-  .badge:hover { transform: scale(1.15); }
+  /* ---- Legend ---- */
+  .legend { position:absolute; bottom:20px; left:14px; z-index:6; padding:11px 13px; max-width:220px; font-size:12px; line-height:1.3; }
+  .legend h2 { margin:0 0 7px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); }
+  .legend .row { display:flex; align-items:center; gap:8px; margin:2px 0; cursor:pointer; user-select:none; padding:2px 3px; border-radius:6px; transition:background .12s,opacity .12s; }
+  .legend .row:hover { background:#f1f5f8; }
+  .legend .row.off { opacity:0.38; }
+  .legend .bar { width:16px; height:12px; border-radius:3px; flex:none; border:1px solid rgba(0,0,0,0.12); }
+  .legend .sec { margin-top:9px; padding-top:8px; border-top:1px solid var(--hair); font-size:10.5px; color:var(--muted); }
 
-  .maplibregl-ctrl-attrib { font-size: 10px !important; font-family: "Inter", sans-serif; }
-  .maplibregl-popup-content { font-family: "Inter", sans-serif; border-radius: 10px; box-shadow: var(--shadow); padding: 9px 12px; font-size: 12.5px; }
+  /* ---- Info card ---- */
+  .info { position:absolute; top:0; right:0; bottom:0; z-index:9; width:348px; max-width:90vw; padding:18px 20px 24px; overflow-y:auto; border-radius:0; border-left:1px solid var(--hair); transform:translateX(100%); transition:transform .26s cubic-bezier(.4,0,.2,1); outline:none; }
+  .info.open { transform:translateX(0); }
+  .info .close { position:absolute; top:13px; right:13px; width:30px; height:30px; border:none; background:#f1f4f7; border-radius:8px; color:var(--muted); font-size:17px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+  .info .close:hover { background:#e6ebf0; color:var(--ink); }
+  .info .ic-head { display:flex; align-items:center; gap:10px; margin:2px 0 4px; }
+  .info .ic-head .sw { width:20px; height:20px; border-radius:6px; flex:none; border:1px solid rgba(0,0,0,0.12); }
+  .info .kicker { font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--muted); }
+  .info h3 { margin:6px 0 2px; font-size:21px; font-weight:700; letter-spacing:-0.01em; line-height:1.1; }
+  .info .class { font-size:12px; color:var(--muted); margin:0 0 12px; }
+  .info .blurb { font-size:13.5px; line-height:1.55; color:#36424f; margin:0 0 14px; }
+  .info dl { margin:0; display:grid; grid-template-columns:auto 1fr; gap:7px 12px; font-size:12.5px; align-items:baseline; }
+  .info dt { color:var(--muted); font-weight:600; white-space:nowrap; }
+  .info dd { margin:0; }
+  .info .peak { margin-top:14px; padding:10px 12px; background:#f6f8fa; border:1px solid var(--hair); border-radius:9px; display:flex; align-items:center; gap:10px; }
+  .info .peak i { font-size:20px; color:var(--anchor); }
+  .info .peak .pk-name { font-size:13px; font-weight:600; }
+  .info .peak .pk-elev { font-size:11.5px; color:var(--muted); }
+  .info .actions { margin-top:15px; display:flex; gap:8px; flex-wrap:wrap; }
+  .info .actions a, .info .actions button { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; padding:7px 11px; border-radius:8px; text-decoration:none; cursor:pointer; border:1px solid var(--hair); background:#fff; color:var(--ink); }
+  .info .actions .primary { background:var(--anchor); color:#fff; border-color:var(--anchor); }
 
-  @media (max-width: 640px) {
-    .title-card { max-width: 220px; padding: 11px 12px; top: 10px; left: 10px; }
-    .title-card h1 { font-size: 15px; }
-    .title-card .sub { display: none; }
-    .toolbar { top: 10px; right: 10px; }
-    .toolbar button span { display: none; }
-    .legend { max-width: 170px; bottom: 14px; left: 10px; padding: 10px 11px; }
-    .info { width: 300px; }
+  /* ---- Subrange badge markers ---- */
+  .badge { display:flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:var(--anchor); color:#fff; font-size:14px; font-weight:700; border:2px solid #fff; box-shadow:0 1px 5px rgba(0,0,0,0.42); cursor:pointer; transition:transform .1s; padding:0; }
+  .badge:hover, .badge:focus-visible { transform:scale(1.16); outline:2px solid #fff; }
+
+  /* ---- Readouts / hints ---- */
+  .readout { position:absolute; bottom:20px; left:50%; transform:translateX(-50%); z-index:6; padding:8px 14px; font-size:12.5px; font-weight:600; color:var(--ink); display:none; align-items:center; gap:8px; }
+  .readout.show { display:flex; }
+  .readout i { color:#d98a17; }
+  .toast { position:absolute; bottom:74px; left:50%; transform:translateX(-50%); z-index:10; background:var(--anchor); color:#fff; font-size:12.5px; padding:9px 14px; border-radius:9px; box-shadow:var(--shadow); opacity:0; transition:opacity .2s; pointer-events:none; }
+  .toast.show { opacity:1; }
+
+  .maplibregl-ctrl-attrib { font-size:10px !important; font-family:"Inter",sans-serif; max-width:60vw; }
+  .maplibregl-popup-content { font-family:"Inter",sans-serif; border-radius:10px; box-shadow:var(--shadow); padding:10px 13px; font-size:12.5px; }
+  .maplibregl-popup-content b { font-weight:600; }
+
+  @media (max-width:680px) {
+    .title-card { max-width:200px; padding:10px 12px; }
+    .title-card .sub { display:none; }
+    .search-wrap { left:14px; transform:none; top:auto; bottom:74px; width:auto; right:14px; max-width:none; }
+    .toolbar button span { display:none; }
+    .layers { width:240px; }
+    .legend { max-width:165px; bottom:14px; padding:9px 10px; }
+    .info { width:320px; }
   }
 </style>
 </head>
@@ -103,276 +143,372 @@
 <div id="map" role="application" aria-label="Interactive map of Northeast Appalachian physiographic provinces"></div>
 
 <div class="title-card panel">
-  <div class="brand">
-    <div class="dot"><i class="ti ti-mountain"></i></div>
-    <h1>Northeast Appalachians</h1>
+  <div class="brand"><div class="dot"><i class="ti ti-mountain"></i></div>
+    <h1>Northeast Appalachians</h1></div>
+  <p class="sub">Physiographic provinces of New York &amp; New England, their named ranges, summits, and the Appalachian Trail. Click anything.</p>
+  <div class="meta"><i class="ti ti-database"></i>
+    <span>USGS Fenneman divisions · NPS · OSM · <a href="../portfolio.html">maxwellhowegis</a></span></div>
+</div>
+
+<div class="search-wrap">
+  <div class="search-box panel">
+    <i class="ti ti-search"></i>
+    <input id="search" type="text" placeholder="Search a place…" autocomplete="off" aria-label="Search for a place" />
+    <i class="ti ti-loader-2" id="search-spin" style="display:none"></i>
   </div>
-  <p class="sub">The physiographic provinces of New York and New England — and the named ranges within them. Click any colored province or lettered range.</p>
-  <div class="meta">
-    <i class="ti ti-database"></i>
-    <span><b>USGS</b> Fenneman physiographic divisions · <a href="../portfolio.html">maxwellhowegis</a></span>
-  </div>
+  <div class="search-results panel" id="search-results" role="listbox"></div>
 </div>
 
 <div class="toolbar panel">
-  <button id="btn-labels" class="on" title="Toggle range labels"><i class="ti ti-tag"></i><span>Labels</span></button>
-  <button id="btn-terrain" title="Toggle 3D terrain &amp; hillshade"><i class="ti ti-mountain"></i><span>Terrain</span></button>
+  <button id="btn-layers" title="Layers &amp; basemap" aria-pressed="false"><i class="ti ti-stack-2"></i><span>Layers</span></button>
+  <button id="btn-terrain" title="3D terrain"><i class="ti ti-mountain"></i><span>3D</span></button>
+  <button id="btn-measure" title="Measure distance"><i class="ti ti-ruler-2"></i><span>Measure</span></button>
+  <button id="btn-share" title="Copy share link"><i class="ti ti-share"></i><span>Share</span></button>
   <button id="btn-reset" title="Reset view"><i class="ti ti-focus-2"></i><span>Reset</span></button>
+</div>
+
+<div class="layers panel" id="layers-panel">
+  <div class="grp">
+    <h2>Basemap</h2>
+    <div class="basemaps" id="basemap-grid"></div>
+  </div>
+  <div class="grp">
+    <h2>Overlays</h2>
+    <div id="overlay-list"></div>
+  </div>
+  <div class="grp">
+    <h2>3D Terrain</h2>
+    <div class="slider-row">
+      <span>Exaggeration</span>
+      <input id="exag" type="range" min="1" max="3" step="0.1" value="1.4" />
+      <span class="v" id="exag-v">1.4×</span>
+    </div>
+  </div>
+  <div class="grp jump">
+    <h2>Jump to</h2>
+    <select id="jump" aria-label="Jump to a province or range"></select>
+  </div>
 </div>
 
 <div class="legend panel">
   <h2>Physiographic Provinces</h2>
   <div id="legend-rows"></div>
-  <div class="sec">Letters mark named ranges. Click for geology &amp; highest peak.</div>
+  <div class="sec">Click a province to filter it. Letters mark named ranges.</div>
 </div>
 
-<div id="info" class="info panel" aria-live="polite"></div>
+<div class="readout panel" id="readout"><i class="ti ti-ruler-2"></i><span id="readout-text">Click to add points</span></div>
+<div class="toast" id="toast"></div>
+<div id="info" class="info panel" role="dialog" aria-modal="false" aria-label="Region details" tabindex="-1"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <script>
 /* ============================================================
-   Northeast Appalachians — physiographic province explorer
+   Northeast Appalachians — physiographic province explorer (v2)
    Data provenance:
      · Provinces  — USGS Physiographic Divisions of the Conterminous U.S.
-                    (Fenneman & Johnson, 1946), clipped to the Northeast,
-                    sections dissolved into the 6 poster legend groups.
-     · Subranges  — curated label points (well-known summit regions).
-     · Peaks      — highest summit per range (USGS elevations).
-   Stack: MapLibre GL JS + OpenFreeMap (keyless) + static GeoJSON.
+                    (Fenneman & Johnson, 1946), dissolved to the 6 legend groups.
+     · Subranges / peaks — curated (USGS elevations).
+     · Appalachian Trail — NPS ANST centerline (ArcGIS), clipped & dissolved.
+     · State outlines, rivers — US Census / OSM, clipped to the bbox.
+   Basemaps: OpenFreeMap (vector) + Esri / USGS / Carto raster — all keyless.
    ============================================================ */
 
-const HOME = { center: [-74.2, 43.0], zoom: 6.15, pitch: 0, bearing: 0 };
+const HOME = { center:[-74.2, 43.0], zoom:6.15, pitch:0, bearing:0 };
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-// Poster palette — keyed by the `province` join field.
-const COLORS = {
-  white: "#D9D2B0", green: "#A7C34A", adirondack: "#C8956A",
-  taconic: "#D98C8C", plateau: "#D6E04A", ridge_valley: "#E0A6D2"
-};
-const ORDER = ["white", "green", "adirondack", "taconic", "plateau", "ridge_valley"];
-const LABELS = {
-  white: "White Mountains", green: "Green Mountains", adirondack: "Adirondack Mountains",
-  taconic: "Taconic Mountains", plateau: "Allegheny Plateau", ridge_valley: "Ridge and Valley"
-};
+const COLORS = { white:"#D9D2B0", green:"#A7C34A", adirondack:"#C8956A", taconic:"#D98C8C", plateau:"#D6E04A", ridge_valley:"#E0A6D2" };
+const ORDER = ["white","green","adirondack","taconic","plateau","ridge_valley"];
+const LABELS = { white:"White Mountains", green:"Green Mountains", adirondack:"Adirondack Mountains", taconic:"Taconic Mountains", plateau:"Allegheny Plateau", ridge_valley:"Ridge and Valley" };
 
-// Geology metadata for the info card, keyed by province.
 const GEO = {
-  adirondack: {
-    classification: "Adirondack Province",
-    rock: "Anorthosite, gneiss & metasediments",
-    age: "~1.1 billion yrs (Grenville basement)",
-    orogeny: "Grenville (~1.1 Ga); recently domed up",
-    blurb: "A roughly circular dome of ancient Grenville-age basement — the same Precambrian rock as the Canadian Shield. Geologically these aren't Appalachian at all; a young, possibly still-active uplift has pushed billion-year-old rock into a high, rounded massif.",
-    wiki: "https://en.wikipedia.org/wiki/Adirondack_Mountains"
-  },
-  white: {
-    classification: "New England Province · White Mountain Section",
-    rock: "Granite & schist (White Mountain plutonic series)",
-    age: "Devonian intrusions (~360 Ma)",
-    orogeny: "Acadian (~375 Ma)",
-    blurb: "Resistant granites and metamorphic rock intruded and cooked during the Acadian orogeny, when a microcontinent collided with North America. Erosion has since stripped them into the highest summits of the Northeast.",
-    wiki: "https://en.wikipedia.org/wiki/White_Mountains_(New_Hampshire)"
-  },
-  green: {
-    classification: "New England Province · Green Mountain Section",
-    rock: "Gneiss, schist & quartzite",
-    age: "Precambrian–early Paleozoic",
-    orogeny: "Taconic & Acadian",
-    blurb: "Vermont's north–south spine: old basement and a cover of metamorphosed sediment, stacked and squeezed during successive Appalachian mountain-building events and worn into long, parallel ridges.",
-    wiki: "https://en.wikipedia.org/wiki/Green_Mountains"
-  },
-  taconic: {
-    classification: "New England Province · Taconic Section",
-    rock: "Slate, phyllite & schist (Taconic allochthon)",
-    age: "Cambrian–Ordovician",
-    orogeny: "Taconic (~450 Ma)",
-    blurb: "The classic allochthon — deep-ocean muds thrust dozens of miles westward over the continental shelf when an island arc slammed into Laurentia. The rock you see formed far out to sea from where it now sits.",
-    wiki: "https://en.wikipedia.org/wiki/Taconic_Mountains"
-  },
-  plateau: {
-    classification: "Appalachian Plateaus Province · Catskill & Southern NY Sections",
-    rock: "Flat-lying sandstone, shale & conglomerate",
-    age: "Devonian (~380 Ma)",
-    orogeny: "Acadian (sediment source) — uplifted, never folded",
-    blurb: "Not folded mountains but a dissected plateau. Sediment shed westward off the rising Acadian highlands piled up as the Catskill Delta, then was uplifted and carved by streams into peaks — the layers underneath stay nearly horizontal.",
-    wiki: "https://en.wikipedia.org/wiki/Allegheny_Plateau"
-  },
-  ridge_valley: {
-    classification: "Valley and Ridge Province",
-    rock: "Folded sandstone, limestone & shale",
-    age: "Cambrian–Pennsylvanian",
-    orogeny: "Alleghanian (~300 Ma)",
-    blurb: "The corrugated heart of the Appalachians: thick Paleozoic sediments crumpled into long parallel folds during the Alleghanian orogeny, when Africa collided with North America to build Pangaea. Erosion left resistant sandstone as ridges, soft shale and limestone as valleys.",
-    wiki: "https://en.wikipedia.org/wiki/Ridge-and-Valley_Appalachians"
-  }
+  adirondack:{ classification:"Adirondack Province", rock:"Anorthosite, gneiss & metasediments", age:"~1.1 billion yrs (Grenville basement)", orogeny:"Grenville (~1.1 Ga); recently domed up", blurb:"A roughly circular dome of ancient Grenville-age basement — the same Precambrian rock as the Canadian Shield. Geologically these aren't Appalachian at all; a young, possibly still-active uplift has pushed billion-year-old rock into a high, rounded massif.", wiki:"https://en.wikipedia.org/wiki/Adirondack_Mountains" },
+  white:{ classification:"New England Province · White Mountain Section", rock:"Granite & schist (White Mountain plutonic series)", age:"Devonian intrusions (~360 Ma)", orogeny:"Acadian (~375 Ma)", blurb:"Resistant granites and metamorphic rock intruded and cooked during the Acadian orogeny, when a microcontinent collided with North America. Erosion has since stripped them into the highest summits of the Northeast.", wiki:"https://en.wikipedia.org/wiki/White_Mountains_(New_Hampshire)" },
+  green:{ classification:"New England Province · Green Mountain Section", rock:"Gneiss, schist & quartzite", age:"Precambrian–early Paleozoic", orogeny:"Taconic & Acadian", blurb:"Vermont's north–south spine: old basement and a cover of metamorphosed sediment, stacked and squeezed during successive Appalachian mountain-building events and worn into long, parallel ridges.", wiki:"https://en.wikipedia.org/wiki/Green_Mountains" },
+  taconic:{ classification:"New England Province · Taconic Section", rock:"Slate, phyllite & schist (Taconic allochthon)", age:"Cambrian–Ordovician", orogeny:"Taconic (~450 Ma)", blurb:"The classic allochthon — deep-ocean muds thrust dozens of miles westward over the continental shelf when an island arc slammed into Laurentia. The rock you see formed far out to sea from where it now sits.", wiki:"https://en.wikipedia.org/wiki/Taconic_Mountains" },
+  plateau:{ classification:"Appalachian Plateaus Province · Catskill & Southern NY Sections", rock:"Flat-lying sandstone, shale & conglomerate", age:"Devonian (~380 Ma)", orogeny:"Acadian (sediment source) — uplifted, never folded", blurb:"Not folded mountains but a dissected plateau. Sediment shed westward off the rising Acadian highlands piled up as the Catskill Delta, then was uplifted and carved by streams into peaks — the layers underneath stay nearly horizontal.", wiki:"https://en.wikipedia.org/wiki/Allegheny_Plateau" },
+  ridge_valley:{ classification:"Valley and Ridge Province", rock:"Folded sandstone, limestone & shale", age:"Cambrian–Pennsylvanian", orogeny:"Alleghanian (~300 Ma)", blurb:"The corrugated heart of the Appalachians: thick Paleozoic sediments crumpled into long parallel folds during the Alleghanian orogeny, when Africa collided with North America to build Pangaea. Erosion left resistant sandstone as ridges, soft shale and limestone as valleys.", wiki:"https://en.wikipedia.org/wiki/Ridge-and-Valley_Appalachians" }
 };
 
-const fillColorExpr = ["match", ["get", "province"], ...ORDER.flatMap(k => [k, COLORS[k]]), "#cccccc"];
+/* ---- Basemaps: positron vector base + keyless raster overlays (toggled by visibility) ---- */
+const RASTER_BASEMAPS = {
+  streets:   { label:"Streets",   icon:"ti-road",          tiles:["https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"], attribution:"© OpenStreetMap contributors © CARTO" },
+  satellite: { label:"Satellite", icon:"ti-satellite",     tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"], attribution:"Esri, Maxar, Earthstar Geographics" },
+  topo:      { label:"Topo",      icon:"ti-mountain",       tiles:["https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}"], attribution:"USGS The National Map" },
+  relief:    { label:"Relief",    icon:"ti-mountain-off",   tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}"], attribution:"Esri, NASA, NGA, USGS" },
+  dark:      { label:"Dark",      icon:"ti-moon",           tiles:["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"], attribution:"© OpenStreetMap contributors © CARTO" }
+};
+const BASEMAP_IDS = ["minimal", ...Object.keys(RASTER_BASEMAPS)];
+
+/* ---- Overlay layer registry (one row each; some control multiple map layers) ---- */
+const OVERLAYS = [
+  { id:"provinces", label:"Provinces",        sw:"grad",            on:true,  layers:["prov-fill","prov-line"], opacity:{layer:"prov-fill",prop:"fill-opacity",def:0.55} },
+  { id:"labels",    label:"Province labels",  sw:"#1B2A41",         on:false, layers:["prov-label"] },
+  { id:"summits",   label:"Summits",          sw:"#7a3b2e",         on:false, layers:["peak-dot","peak-label"] },
+  { id:"trail",     label:"Appalachian Trail",sw:"line:#B5341F",    on:true,  layers:["at-line"], opacity:{layer:"at-line",prop:"line-opacity",def:0.9} },
+  { id:"rivers",    label:"Rivers",           sw:"line:#3E7CB1",    on:false, layers:["river-line"] },
+  { id:"states",    label:"State outlines",   sw:"line:#7a869a",    on:false, layers:["state-line"] }
+];
+
+const fillColorExpr = ["match",["get","province"], ...ORDER.flatMap(k=>[k,COLORS[k]]), "#ccc"];
 
 const map = new maplibregl.Map({
-  container: "map",
-  style: "https://tiles.openfreemap.org/styles/positron",
-  center: HOME.center, zoom: HOME.zoom, attributionControl: false
+  container:"map", style:"https://tiles.openfreemap.org/styles/positron",
+  center:HOME.center, zoom:HOME.zoom, attributionControl:false, hash:false
 });
-map.addControl(new maplibregl.AttributionControl({
-  customAttribution: "Provinces: USGS Fenneman physiographic divisions · Basemap © OpenFreeMap / OpenMapTiles / OSM"
-}), "bottom-right");
-map.addControl(new maplibregl.NavigationControl({ showCompass: true }), "bottom-right");
+map.addControl(new maplibregl.AttributionControl({ compact:true, customAttribution:"Provinces: USGS Fenneman · Trail: NPS · Basemaps: OpenFreeMap/Esri/USGS/Carto/OSM" }), "bottom-right");
+map.addControl(new maplibregl.NavigationControl({ visualizePitch:true }), "bottom-right");
+map.addControl(new maplibregl.ScaleControl({ unit:"imperial" }), "bottom-left");
+map.addControl(new maplibregl.FullscreenControl(), "bottom-right");
+map.addControl(new maplibregl.GeolocateControl({ positionOptions:{enableHighAccuracy:true}, trackUserLocation:true, showUserLocation:true }), "bottom-right");
 
-const hidden = new Set();   // provinces toggled off in the legend
-const badgeMarkers = [];
-let peaksByProvince = {};
+const activeOverlays = new Set(OVERLAYS.filter(o=>o.on).map(o=>o.id));
+let currentBasemap = "minimal";
+let peaksByProvince = {}, peaksByName = {}, provincesData = null, subrangesData = null;
+let terrainOn = false, measuring = false, measurePts = [];
 
 map.on("load", async () => {
-  const [prov, subs, peaks] = await Promise.all([
-    fetch("data/provinces.geojson").then(r => r.json()),
-    fetch("data/subranges.geojson").then(r => r.json()),
-    fetch("data/peaks.geojson").then(r => r.json())
-  ]);
+  const names = ["provinces","subranges","peaks","appalachian_trail","rivers","states"];
+  const [prov, subs, peaks, trail, rivers, states] = await Promise.all(
+    names.map(n => fetch(`data/${n}.geojson`).then(r=>r.json()))
+  );
+  provincesData = prov; subrangesData = subs;
+  for (const f of peaks.features){ const p=f.properties; peaksByName[p.range]=p; if(!peaksByProvince[p.province]||p.elev_m>peaksByProvince[p.province].elev_m) peaksByProvince[p.province]=p; }
 
-  // highest peak per province
-  for (const f of peaks.features) {
-    const p = f.properties, k = p.province;
-    if (!peaksByProvince[k] || p.elev_m > peaksByProvince[k].elev_m) peaksByProvince[k] = p;
+  // raster basemaps (added first → sit just above positron, below overlays). Hidden until selected.
+  for (const [id,b] of Object.entries(RASTER_BASEMAPS)){
+    map.addSource("bm-"+id,{ type:"raster", tiles:b.tiles, tileSize:256, attribution:b.attribution });
+    map.addLayer({ id:"bm-"+id, type:"raster", source:"bm-"+id, layout:{visibility:"none"}, paint:{"raster-opacity":1} });
   }
+  // terrain DEM
+  map.addSource("dem",{ type:"raster-dem", tiles:["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"], encoding:"terrarium", tileSize:256, maxzoom:13 });
+  map.addLayer({ id:"hillshade", type:"hillshade", source:"dem", layout:{visibility:"none"}, paint:{"hillshade-exaggeration":0.5} });
 
-  // Insert province layers BELOW basemap labels so place names stay legible.
-  let firstLabel;
-  for (const l of map.getStyle().layers) { if (l.type === "symbol") { firstLabel = l.id; break; } }
+  // state outlines
+  map.addSource("states",{ type:"geojson", data:states });
+  map.addLayer({ id:"state-line", type:"line", source:"states", layout:{visibility:"none"}, paint:{"line-color":"#7a869a","line-width":1,"line-dasharray":[3,2],"line-opacity":0.8} });
+  // rivers
+  map.addSource("rivers",{ type:"geojson", data:rivers });
+  map.addLayer({ id:"river-line", type:"line", source:"rivers", layout:{visibility:"none","line-join":"round"}, paint:{"line-color":"#3E7CB1","line-width":["interpolate",["linear"],["zoom"],6,1,10,2.6],"line-opacity":0.85} });
+  // provinces
+  map.addSource("prov",{ type:"geojson", data:prov, generateId:true });
+  map.addLayer({ id:"prov-fill", type:"fill", source:"prov", paint:{"fill-color":fillColorExpr,"fill-opacity":["case",["boolean",["feature-state","hover"],false],0.78,0.55]} });
+  map.addLayer({ id:"prov-line", type:"line", source:"prov", paint:{"line-color":"#6b3a52","line-width":1.1,"line-opacity":0.65} });
+  map.addLayer({ id:"prov-label", type:"symbol", source:"prov", layout:{ visibility:"none","text-field":["get","label"],"text-font":["Noto Sans Regular"],"text-size":13,"text-letter-spacing":0.02,"symbol-placement":"point" }, paint:{"text-color":"#3a2230","text-halo-color":"#fff","text-halo-width":1.6} });
+  // Appalachian Trail
+  map.addSource("at",{ type:"geojson", data:trail });
+  map.addLayer({ id:"at-line", type:"line", source:"at", layout:{"line-join":"round","line-cap":"round"}, paint:{"line-color":"#B5341F","line-width":["interpolate",["linear"],["zoom"],6,1.6,11,3.2],"line-opacity":0.9,"line-dasharray":[1,1.2]} });
+  // summits
+  map.addSource("peaks",{ type:"geojson", data:peaks });
+  map.addLayer({ id:"peak-dot", type:"circle", source:"peaks", layout:{visibility:"none"}, paint:{"circle-radius":5,"circle-color":"#7a3b2e","circle-stroke-color":"#fff","circle-stroke-width":2} });
+  map.addLayer({ id:"peak-label", type:"symbol", source:"peaks", layout:{ visibility:"none","text-field":["concat",["get","name"],"  ",["to-string",["get","elev_ft"]]," ft"],"text-font":["Noto Sans Regular"],"text-size":11,"text-offset":[0,1.1],"text-anchor":"top" }, paint:{"text-color":"#5a2d22","text-halo-color":"#fff","text-halo-width":1.6} });
+  // measure
+  map.addSource("measure",{ type:"geojson", data:emptyFC() });
+  map.addLayer({ id:"measure-line", type:"line", source:"measure", filter:["==","$type","LineString"], paint:{"line-color":"#d98a17","line-width":2.5,"line-dasharray":[2,1]} });
+  map.addLayer({ id:"measure-pts", type:"circle", source:"measure", filter:["==","$type","Point"], paint:{"circle-radius":4,"circle-color":"#fff","circle-stroke-color":"#d98a17","circle-stroke-width":2} });
 
-  map.addSource("prov", { type: "geojson", data: prov, generateId: true });
-  map.addLayer({
-    id: "prov-fill", type: "fill", source: "prov",
-    paint: {
-      "fill-color": fillColorExpr,
-      "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.78, 0.55]
-    }
-  }, firstLabel);
-  map.addLayer({
-    id: "prov-line", type: "line", source: "prov",
-    paint: { "line-color": "#6b3a52", "line-width": 1.1, "line-opacity": 0.65 }
-  }, firstLabel);
-
-  // hillshade source (keyless AWS open terrain tiles) — added now, terrain enabled on toggle
-  map.addSource("dem", {
-    type: "raster-dem", tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
-    encoding: "terrarium", tileSize: 256, maxzoom: 13,
-    attribution: "Terrain: AWS Open Data terrain tiles"
-  });
-  map.addLayer({ id: "hillshade", type: "hillshade", source: "dem",
-    layout: { visibility: "none" }, paint: { "hillshade-exaggeration": 0.45 } }, "prov-fill");
-
-  // Subrange badge markers
-  for (const f of subs.features) {
-    const el = document.createElement("div");
-    el.className = "badge";
-    el.textContent = f.properties.code;
-    el.title = f.properties.name;
-    el.addEventListener("click", (e) => { e.stopPropagation(); openSubrange(f.properties); });
-    const m = new maplibregl.Marker({ element: el }).setLngLat(f.geometry.coordinates).addTo(map);
-    badgeMarkers.push(m);
-  }
-
-  // Province hover + click
-  let hoverId = null;
-  map.on("mousemove", "prov-fill", (e) => {
-    map.getCanvas().style.cursor = "pointer";
-    if (!e.features.length) return;
-    if (hoverId !== null) map.setFeatureState({ source: "prov", id: hoverId }, { hover: false });
-    hoverId = e.features[0].id;
-    map.setFeatureState({ source: "prov", id: hoverId }, { hover: true });
-  });
-  map.on("mouseleave", "prov-fill", () => {
-    map.getCanvas().style.cursor = "";
-    if (hoverId !== null) map.setFeatureState({ source: "prov", id: hoverId }, { hover: false });
-    hoverId = null;
-  });
-  map.on("click", "prov-fill", (e) => { if (e.features.length) openProvince(e.features[0].properties.province); });
-
-  buildLegend();
+  addBadges(subs);
+  buildUI();
+  wireInteractions();
+  decodeHash();
 });
+
+/* ---------- Subrange badges (keyboard-accessible buttons) ---------- */
+const badgeMarkers = [];
+function addBadges(subs){
+  for (const f of subs.features){
+    const el = document.createElement("button");
+    el.className="badge"; el.textContent=f.properties.code;
+    el.setAttribute("aria-label", f.properties.name); el.title=f.properties.name;
+    el.addEventListener("click",(e)=>{ e.stopPropagation(); openSubrange(f.properties); });
+    badgeMarkers.push(new maplibregl.Marker({element:el}).setLngLat(f.geometry.coordinates).addTo(map));
+  }
+}
+
+/* ---------- Interactions ---------- */
+function wireInteractions(){
+  let hoverId=null;
+  map.on("mousemove","prov-fill",(e)=>{
+    if(measuring) return;
+    map.getCanvas().style.cursor="pointer";
+    if(!e.features.length) return;
+    if(hoverId!==null) map.setFeatureState({source:"prov",id:hoverId},{hover:false});
+    hoverId=e.features[0].id; map.setFeatureState({source:"prov",id:hoverId},{hover:true});
+  });
+  map.on("mouseleave","prov-fill",()=>{ map.getCanvas().style.cursor=measuring?"crosshair":""; if(hoverId!==null) map.setFeatureState({source:"prov",id:hoverId},{hover:false}); hoverId=null; });
+  map.on("click","prov-fill",(e)=>{ if(measuring||!e.features.length) return; openProvince(e.features[0].properties.province); });
+  // summit popups
+  map.on("click","peak-dot",(e)=>{ if(measuring) return; const p=e.features[0].properties; new maplibregl.Popup({offset:12}).setLngLat(e.features[0].geometry.coordinates).setHTML(`<b>${esc(p.name)}</b><br>${esc(p.range)} · ${Number(p.elev_ft).toLocaleString()} ft`).addTo(map); });
+  map.on("mouseenter","peak-dot",()=>{ if(!measuring) map.getCanvas().style.cursor="pointer"; });
+  map.on("mouseleave","peak-dot",()=>{ map.getCanvas().style.cursor=measuring?"crosshair":""; });
+  // measure clicks
+  map.on("click",(e)=>{ if(!measuring) return; addMeasurePoint(e.lngLat); });
+  map.on("moveend", encodeHash);
+  // keyboard: ESC closes card / cancels measure
+  document.addEventListener("keydown",(e)=>{ if(e.key==="Escape"){ if(measuring) toggleMeasure(false); else closeInfo(); if(document.getElementById("search-results").classList.contains("show")){ clearSearch(); } } });
+}
 
 /* ---------- Info card ---------- */
 const info = document.getElementById("info");
-function fmtPeak(pk) {
-  if (!pk) return "";
-  return `<div class="peak"><i class="ti ti-triangle"></i><div>
-    <div class="pk-name">${pk.name}</div>
-    <div class="pk-elev">Highest summit · ${pk.elev_ft.toLocaleString()} ft · ${pk.elev_m.toLocaleString()} m</div>
-  </div></div>`;
-}
-function shell(kicker, swatchKey, title, classLine, blurb, rows, peak, wiki) {
-  const sw = swatchKey ? `<span class="sw" style="background:${COLORS[swatchKey]}"></span>` : "";
-  const dl = rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+let lastFocus = null;
+function fmtPeak(pk){ if(!pk) return ""; return `<div class="peak"><i class="ti ti-triangle"></i><div><div class="pk-name">${esc(pk.name)}</div><div class="pk-elev">Highest summit · ${Number(pk.elev_ft).toLocaleString()} ft · ${Number(pk.elev_m).toLocaleString()} m</div></div></div>`; }
+function shell(kicker, swKey, title, classLine, blurb, rows, peak, wiki, flyKey, flyKind){
+  const sw = swKey?`<span class="sw" style="background:${COLORS[swKey]}"></span>`:"";
+  const dl = rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("");
   info.innerHTML = `
-    <button class="close" aria-label="Close">&times;</button>
-    <div class="ic-head">${sw}<div class="kicker">${kicker}</div></div>
-    <h3>${title}</h3>
-    <p class="class">${classLine}</p>
-    <p class="blurb">${blurb}</p>
+    <button class="close" aria-label="Close details">&times;</button>
+    <div class="ic-head">${sw}<div class="kicker">${esc(kicker)}</div></div>
+    <h3>${esc(title)}</h3>
+    <p class="class">${esc(classLine)}</p>
+    <p class="blurb">${esc(blurb)}</p>
     <dl>${dl}</dl>
     ${fmtPeak(peak)}
-    <a class="wiki" href="${wiki}" target="_blank" rel="noopener">Read more on Wikipedia <i class="ti ti-external-link"></i></a>`;
-  info.querySelector(".close").addEventListener("click", closeInfo);
-  info.classList.add("open");
+    <div class="actions">
+      <button class="primary" id="ic-fly"><i class="ti ti-viewfinder"></i> Zoom to</button>
+      <a href="${esc(wiki)}" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> Wikipedia</a>
+    </div>`;
+  info.querySelector(".close").addEventListener("click",closeInfo);
+  info.querySelector("#ic-fly").addEventListener("click",()=>{ if(flyKind==="province") flyToProvince(flyKey); else if(flyKind==="point") map.flyTo({center:flyKey,zoom:9,duration:900}); });
+  lastFocus = document.activeElement;
+  info.classList.add("open"); info.focus();
 }
-function openProvince(key) {
-  const g = GEO[key]; if (!g) return;
-  shell("Physiographic Province", key, LABELS[key], g.classification, g.blurb,
-    [["Dominant rock", g.rock], ["Age", g.age], ["Formed by", g.orogeny]],
-    peaksByProvince[key], g.wiki);
-}
-function openSubrange(p) {
-  const g = GEO[p.province] || {};
-  const pk = window._peaksByName ? window._peaksByName[p.name] : null;
-  shell("Named Range", p.province, p.name,
-    LABELS[p.province] ? `Within the ${LABELS[p.province]}` : "",
-    p.note,
-    [["Province", LABELS[p.province] || "—"], ["Formed by", g.orogeny || "—"]],
-    pk, p.wiki);
-}
-function closeInfo() { info.classList.remove("open"); }
+function openProvince(key){ const g=GEO[key]; if(!g) return; shell("Physiographic Province",key,LABELS[key],g.classification,g.blurb,[["Dominant rock",g.rock],["Age",g.age],["Formed by",g.orogeny]],peaksByProvince[key],g.wiki,key,"province"); }
+function openSubrange(p){ const g=GEO[p.province]||{}; const pk=peaksByName[p.name]||null; const center = subrangesData.features.find(f=>f.properties.code===p.code)?.geometry.coordinates; shell("Named Range",p.province,p.name,LABELS[p.province]?("Within the "+LABELS[p.province]):"",p.note,[["Province",LABELS[p.province]||"—"],["Formed by",g.orogeny||"—"]],pk,p.wiki,center,"point"); }
+function closeInfo(){ info.classList.remove("open"); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
 
-/* ---------- Legend (clickable layer toggles) ---------- */
-function buildLegend() {
-  const host = document.getElementById("legend-rows");
-  host.innerHTML = ORDER.map(k =>
-    `<div class="row" data-k="${k}"><span class="bar" style="background:${COLORS[k]}"></span><span>${LABELS[k]}</span></div>`
-  ).join("");
-  host.querySelectorAll(".row").forEach(row => {
-    row.addEventListener("click", () => {
-      const k = row.dataset.k;
-      if (hidden.has(k)) { hidden.delete(k); row.classList.remove("off"); }
-      else { hidden.add(k); row.classList.add("off"); }
-      const visible = ORDER.filter(p => !hidden.has(p));
-      const filter = ["in", ["get", "province"], ["literal", visible]];
-      map.setFilter("prov-fill", filter);
-      map.setFilter("prov-line", filter);
-    });
-  });
+/* ---------- Fly-to ---------- */
+function bboxOf(geom){ let w=Infinity,s=Infinity,e=-Infinity,n=-Infinity; (function walk(c){ if(typeof c[0]==="number"){ if(c[0]<w)w=c[0]; if(c[0]>e)e=c[0]; if(c[1]<s)s=c[1]; if(c[1]>n)n=c[1]; } else c.forEach(walk); })(geom.coordinates); return [w,s,e,n]; }
+function flyToProvince(key){ const f=provincesData.features.find(f=>f.properties.province===key); if(!f) return; const [w,s,e,n]=bboxOf(f.geometry); map.fitBounds([[w,s],[e,n]],{padding:{top:60,bottom:60,left:60,right:360},maxZoom:9,duration:800}); }
+
+/* ---------- Build UI ---------- */
+function buildUI(){
+  // basemaps
+  const bg = document.getElementById("basemap-grid");
+  bg.innerHTML = BASEMAP_IDS.map(id=>{
+    const label = id==="minimal" ? "Minimal" : RASTER_BASEMAPS[id].label;
+    const icon  = id==="minimal" ? "ti-map" : RASTER_BASEMAPS[id].icon;
+    return `<div class="bm${id===currentBasemap?' sel':''}" data-bm="${id}" role="button" tabindex="0"><i class="ti ${icon}"></i>${label}</div>`;
+  }).join("");
+  bg.querySelectorAll(".bm").forEach(el=>{ const go=()=>switchBasemap(el.dataset.bm); el.addEventListener("click",go); el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}}); });
+
+  // overlays
+  const ol = document.getElementById("overlay-list");
+  ol.innerHTML = OVERLAYS.map(o=>{
+    let sw;
+    if(o.sw==="grad") sw=`<span class="sw" style="background:linear-gradient(90deg,#C8956A,#A7C34A,#E0A6D2)"></span>`;
+    else if(o.sw.startsWith("line:")) sw=`<span class="sw line" style="border-top-color:${o.sw.slice(5)}"></span>`;
+    else sw=`<span class="sw" style="background:${o.sw}"></span>`;
+    const op = o.opacity ? `<div class="ly-opacity"><input type="range" min="0" max="1" step="0.05" value="${o.opacity.def}" data-op="${o.id}" aria-label="${o.label} opacity"></div>` : "";
+    return `<div class="ly">${sw}<label for="tg-${o.id}">${o.label}</label><span class="switch"><input type="checkbox" id="tg-${o.id}" data-ly="${o.id}" ${o.on?'checked':''}><span class="sl"></span></span></div>${op}`;
+  }).join("");
+  ol.querySelectorAll("input[data-ly]").forEach(inp=> inp.addEventListener("change",()=>toggleOverlay(inp.dataset.ly,inp.checked)));
+  ol.querySelectorAll("input[data-op]").forEach(inp=> inp.addEventListener("input",()=>{ const o=OVERLAYS.find(x=>x.id===inp.dataset.op); map.setPaintProperty(o.opacity.layer,o.opacity.prop,Number(inp.value)); }));
+
+  // legend
+  const host=document.getElementById("legend-rows");
+  host.innerHTML = ORDER.map(k=>`<div class="row" data-k="${k}"><span class="bar" style="background:${COLORS[k]}"></span><span>${LABELS[k]}</span></div>`).join("");
+  host.querySelectorAll(".row").forEach(row=> row.addEventListener("click",()=>toggleProvince(row)));
+
+  // jump-to
+  const jump=document.getElementById("jump");
+  const provOpts = ORDER.map(k=>`<option value="prov:${k}">${LABELS[k]}</option>`).join("");
+  const rangeOpts = subrangesData.features.map(f=>`<option value="sub:${f.properties.code}">${f.properties.name}</option>`).join("");
+  jump.innerHTML = `<option value="">Select…</option><optgroup label="Provinces">${provOpts}</optgroup><optgroup label="Named ranges">${rangeOpts}</optgroup>`;
+  jump.addEventListener("change",()=>{ const v=jump.value; if(!v) return; const [t,k]=v.split(":"); if(t==="prov"){ flyToProvince(k); openProvince(k); } else { const f=subrangesData.features.find(f=>f.properties.code===k); if(f){ map.flyTo({center:f.geometry.coordinates,zoom:9,duration:800}); openSubrange(f.properties);} } jump.value=""; });
+
+  document.getElementById("exag").addEventListener("input",e=>{ document.getElementById("exag-v").textContent=(+e.target.value).toFixed(1)+"×"; if(terrainOn) map.setTerrain({source:"dem",exaggeration:+e.target.value}); });
 }
+
+const hiddenProv = new Set();
+function toggleProvince(row){ const k=row.dataset.k; if(hiddenProv.has(k)){hiddenProv.delete(k);row.classList.remove("off");}else{hiddenProv.add(k);row.classList.add("off");} const vis=ORDER.filter(p=>!hiddenProv.has(p)); const f=["in",["get","province"],["literal",vis]]; map.setFilter("prov-fill",f); map.setFilter("prov-line",f); }
+
+function toggleOverlay(id,on){ const o=OVERLAYS.find(x=>x.id===id); if(!o) return; o.layers.forEach(l=> map.setLayoutProperty(l,"visibility",on?"visible":"none")); if(on) activeOverlays.add(id); else activeOverlays.delete(id); encodeHash(); }
+
+/* ---------- Basemap switch (visibility toggle, overlays preserved) ---------- */
+function switchBasemap(id){
+  currentBasemap=id;
+  Object.keys(RASTER_BASEMAPS).forEach(k=> map.setLayoutProperty("bm-"+k,"visibility", k===id?"visible":"none"));
+  document.querySelectorAll(".bm").forEach(el=> el.classList.toggle("sel", el.dataset.bm===id));
+  // tweak province outline for dark/satellite legibility
+  const dark = (id==="satellite"||id==="dark");
+  map.setPaintProperty("prov-line","line-color", dark?"#ffffff":"#6b3a52");
+  map.setPaintProperty("prov-line","line-opacity", dark?0.5:0.65);
+  encodeHash();
+}
+
+/* ---------- Terrain ---------- */
+function toggleTerrain(on){
+  terrainOn=on; document.getElementById("btn-terrain").classList.toggle("on",on);
+  map.setLayoutProperty("hillshade","visibility",on?"visible":"none");
+  if(on){ map.setTerrain({source:"dem",exaggeration:+document.getElementById("exag").value}); map.easeTo({pitch:55,duration:900}); }
+  else { map.setTerrain(null); map.easeTo({pitch:0,bearing:0,duration:900}); }
+}
+
+/* ---------- Measure ---------- */
+function emptyFC(){ return {type:"FeatureCollection",features:[]}; }
+function haversine(a,b){ const R=6371000,t=d=>d*Math.PI/180; const dLat=t(b[1]-a[1]),dLng=t(b[0]-a[0]); const h=Math.sin(dLat/2)**2+Math.cos(t(a[1]))*Math.cos(t(b[1]))*Math.sin(dLng/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
+function addMeasurePoint(lngLat){
+  measurePts.push([lngLat.lng,lngLat.lat]);
+  const feats=measurePts.map(p=>({type:"Feature",geometry:{type:"Point",coordinates:p}}));
+  if(measurePts.length>1) feats.push({type:"Feature",geometry:{type:"LineString",coordinates:measurePts}});
+  map.getSource("measure").setData({type:"FeatureCollection",features:feats});
+  let m=0; for(let i=1;i<measurePts.length;i++) m+=haversine(measurePts[i-1],measurePts[i]);
+  const mi=m/1609.344, km=m/1000;
+  document.getElementById("readout-text").textContent = measurePts.length<2 ? "Click to add another point · Esc to finish" : `${mi.toFixed(1)} mi · ${km.toFixed(1)} km  (${measurePts.length} pts)`;
+}
+function toggleMeasure(on){
+  measuring=on; document.getElementById("btn-measure").classList.toggle("on",on);
+  document.getElementById("readout").classList.toggle("show",on);
+  map.getCanvas().style.cursor = on?"crosshair":"";
+  if(on){ measurePts=[]; map.getSource("measure").setData(emptyFC()); document.getElementById("readout-text").textContent="Click to add points · Esc to finish"; }
+  else { measurePts=[]; map.getSource("measure").setData(emptyFC()); }
+}
+
+/* ---------- Geocoder (Nominatim) ---------- */
+const sInput=document.getElementById("search"), sResults=document.getElementById("search-results"), sSpin=document.getElementById("search-spin");
+const debounce=(fn,ms)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms);};};
+function clearSearch(){ sResults.innerHTML=""; sResults.classList.remove("show"); }
+const runSearch=debounce(async()=>{
+  const q=sInput.value.trim(); if(q.length<3){ clearSearch(); return; }
+  sSpin.style.display="inline-block";
+  try{
+    const url="https://nominatim.openstreetmap.org/search?format=jsonv2&limit=6&viewbox=-80.5,45.7,-69.2,39.8&q="+encodeURIComponent(q);
+    const res=await fetch(url,{headers:{"Accept-Language":"en"}});
+    const list=res.ok?await res.json():[];
+    sResults.innerHTML="";
+    if(!list.length){ sResults.innerHTML=`<div class="r" style="color:var(--muted)">No results</div>`; }
+    list.forEach(r=>{ const el=document.createElement("div"); el.className="r"; el.setAttribute("role","option"); el.textContent=r.display_name;
+      el.addEventListener("click",()=>{ if(r.boundingbox){ const [s,n,w,e]=r.boundingbox.map(Number); map.fitBounds([[w,s],[e,n]],{padding:60,maxZoom:13,duration:900}); } else map.flyTo({center:[+r.lon,+r.lat],zoom:11}); sInput.value=r.display_name.split(",")[0]; clearSearch(); });
+      sResults.appendChild(el); });
+    sResults.classList.add("show");
+  }catch(err){ sResults.innerHTML=`<div class="r" style="color:var(--muted)">Search unavailable</div>`; sResults.classList.add("show"); }
+  finally{ sSpin.style.display="none"; }
+},350);
+sInput.addEventListener("input",runSearch);
+sInput.addEventListener("focus",()=>{ if(sResults.innerHTML) sResults.classList.add("show"); });
 
 /* ---------- Toolbar ---------- */
-document.getElementById("btn-reset").addEventListener("click", () => {
-  map.easeTo({ ...HOME, duration: 800 });
-});
-document.getElementById("btn-labels").addEventListener("click", (e) => {
-  const btn = e.currentTarget; const show = !btn.classList.contains("on");
-  btn.classList.toggle("on", show);
-  badgeMarkers.forEach(m => m.getElement().style.display = show ? "" : "none");
-});
-document.getElementById("btn-terrain").addEventListener("click", (e) => {
-  const btn = e.currentTarget; const on = !btn.classList.contains("on");
-  btn.classList.toggle("on", on);
-  map.setLayoutProperty("hillshade", "visibility", on ? "visible" : "none");
-  if (on) { map.setTerrain({ source: "dem", exaggeration: 1.3 }); map.easeTo({ pitch: 55, duration: 900 }); }
-  else { map.setTerrain(null); map.easeTo({ pitch: 0, bearing: 0, duration: 900 }); }
-});
+document.getElementById("btn-reset").addEventListener("click",()=>{ map.easeTo({...HOME,duration:800}); });
+document.getElementById("btn-terrain").addEventListener("click",()=>toggleTerrain(!terrainOn));
+document.getElementById("btn-measure").addEventListener("click",()=>toggleMeasure(!measuring));
+document.getElementById("btn-layers").addEventListener("click",e=>{ const p=document.getElementById("layers-panel"); const open=p.classList.toggle("open"); e.currentTarget.classList.toggle("on",open); e.currentTarget.setAttribute("aria-pressed",open); });
+document.getElementById("btn-share").addEventListener("click",()=>{ encodeHash(); navigator.clipboard?.writeText(location.href).then(()=>toast("Share link copied")).catch(()=>toast("Copy failed")); });
+function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),1800); }
 
-// quick name→peak lookup for subrange cards
-fetch("data/peaks.geojson").then(r => r.json()).then(d => {
-  window._peaksByName = {};
-  d.features.forEach(f => { window._peaksByName[f.properties.range] = f.properties; });
-});
+/* ---------- URL hash state ---------- */
+function encodeHash(){
+  if(!map.isStyleLoaded&&!map.loaded()) return;
+  const c=map.getCenter();
+  const view=[map.getZoom().toFixed(2),c.lat.toFixed(5),c.lng.toFixed(5),Math.round(map.getBearing()),Math.round(map.getPitch())].join("/");
+  const p=new URLSearchParams(); p.set("v",view); p.set("b",currentBasemap); p.set("l",[...activeOverlays].join(","));
+  history.replaceState(null,"","#"+p.toString());
+}
+function decodeHash(){
+  if(!location.hash) { encodeHash(); return; }
+  const p=new URLSearchParams(location.hash.slice(1));
+  const v=p.get("v"); if(v){ const [z,lat,lng,brg,pitch]=v.split("/").map(Number); map.jumpTo({center:[lng,lat],zoom:z,bearing:brg||0,pitch:pitch||0}); if(pitch>0){ document.getElementById("btn-terrain").click(); } }
+  if(p.get("b")&&p.get("b")!=="minimal") switchBasemap(p.get("b"));
+  if(p.get("l")!=null){ const want=new Set(p.get("l")?p.get("l").split(","):[]); OVERLAYS.forEach(o=>{ const on=want.has(o.id); const box=document.getElementById("tg-"+o.id); if(box){ box.checked=on; } toggleOverlay(o.id,on); }); }
+}
 </script>
 </body>
 </html>
