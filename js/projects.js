@@ -205,6 +205,24 @@ const projects = [
     },
     // ─── Current / Active ─────────────────────────────────────────────────────
     {
+        id: 19,
+        era: "current",
+        title: "Northeast Appalachians Explorer",
+        category: "Web Mapping",
+        type: "map",
+        tags: ["MapLibre GL JS", "GeoJSON", "USGS Physiography", "Geology"],
+        summary: "Interactive recreation of the Northeast Appalachian physiographic provinces — click any province or named range for its geology, formative orogeny, and highest peak.",
+        description: "A data-backed remake of the classic 'Northeast Appalachians' diagram. The six colored provinces — Adirondack, White, Green and Taconic Mountains, the Allegheny Plateau, and the Ridge and Valley — are dissolved straight from the USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946), clipped to New York and New England. Nine named subranges (Adirondacks, Catskills, Berkshires, Poconos, Mahoosucs, Taconics, Hudson Highlands, plus the Green and White Mountains) sit on top as lettered badges. Clicking a province or range opens a card with its dominant rock, age, the orogeny that built it (Grenville, Taconic, Acadian, or Alleghanian), and its highest summit. A keyless terrain toggle adds hillshade and 3D relief. Built as a single self-contained MapLibre page with static GeoJSON — no build step, no API keys.",
+        tools: ["MapLibre GL JS", "OpenFreeMap", "USGS Physiographic Divisions", "mapshaper", "GeoJSON"],
+        year: "2026",
+        thumb: "images/projects/appalachians-thumb.png",
+        gallery: [
+            { src: "images/projects/appalachians/overview.png", caption: "Six physiographic provinces of the Northeast Appalachians, dissolved from USGS Fenneman divisions" }
+        ],
+        liveUrl: "appalachians/",
+        repoUrl: null
+    },
+    {
         id: 17,
         era: "current",
         title: "The Quabbin Reservoir and the Lost Towns of the Swift River Valley",
@@ -238,23 +256,6 @@ const projects = [
         ],
         liveUrl: "quabbin.html",
         repoUrl: "https://github.com/mapzimus/maxwellhowegis/tree/main/quabbin"
-    },
-    {
-        id: 18,
-        era: "current",
-        title: "Open Concord, NH",
-        category: "GIS Data Platform",
-        type: "map",
-        tags: ["R", "PostGIS", "MapLibre GL", "Shiny", "targets", "ETL Pipeline", "165 Layers"],
-        summary: "Full-stack R + PostGIS geospatial data platform for Concord, NH — 165 layers from city ArcGIS, federal, OSM, Census, CDC, EPA, biodiversity, and knowledge APIs, explored through a rich interactive Shiny map.",
-        description: "A complete, self-hosted GIS data platform for Concord, NH built entirely in R. A {targets} ETL pipeline acquires every public dataset — city ArcGIS (~91 layers: parcels, zoning, roads, utilities), federal/state ArcGIS, OpenStreetMap, US Census ACS 2023, CDC PLACES health indicators, EPA FRS, USGS streamgages, GBIF biodiversity, and Wikidata/Wikipedia — loading each into PostGIS tagged as map+db or db. The R Shiny frontend (bslib + mapgl) queries PostGIS live with four panels: a searchable layer accordion, a thematic choropleth picker (ACS income/population/rent, CDC mental health), analysis tools (Nominatim geocoder, SQL filter, draw-to-measure, GeoJSON/CSV export), and a Knowledge tab with Wikidata facts and notable people. Click any feature → right-panel inspector with full attributes and Wikipedia links.",
-        tools: ["R", "PostGIS", "Shiny", "bslib", "mapgl", "MapLibre GL", "targets", "sf", "arcgislayers", "tidycensus", "osmdata", "httr2", "Docker", "Caddy"],
-        year: "2025–2026",
-        thumb: "images/projects/open-concord-thumb.svg",
-        gallery: [],
-        liveUrl: "concord.html",
-        repoUrl: "https://github.com/mapzimus/open-concord-nh",
-        status: "in development"
     },
     {
         id: 16,
@@ -367,6 +368,23 @@ const projects = [
         liveUrl: null,
         repoUrl: "https://github.com/mapzimus/optitrek",
         status: "development"
+    },
+    {
+        id: 18,
+        era: "current",
+        title: "Open Concord, NH",
+        category: "GIS Data Platform",
+        type: "map",
+        tags: ["R", "PostGIS", "MapLibre GL", "Shiny", "targets", "ETL Pipeline", "165 Layers"],
+        summary: "Full-stack R + PostGIS geospatial data platform for Concord, NH — 165 layers from city ArcGIS, federal, OSM, Census, CDC, EPA, biodiversity, and knowledge APIs, explored through a rich interactive Shiny map.",
+        description: "A complete, self-hosted GIS data platform for Concord, NH built entirely in R. A {targets} ETL pipeline acquires every public dataset — city ArcGIS (~91 layers: parcels, zoning, roads, utilities), federal/state ArcGIS, OpenStreetMap, US Census ACS 2023, CDC PLACES health indicators, EPA FRS, USGS streamgages, GBIF biodiversity, and Wikidata/Wikipedia — loading each into PostGIS tagged as map+db or db. The R Shiny frontend (bslib + mapgl) queries PostGIS live with four panels: a searchable layer accordion, a thematic choropleth picker (ACS income/population/rent, CDC mental health), analysis tools (Nominatim geocoder, SQL filter, draw-to-measure, GeoJSON/CSV export), and a Knowledge tab with Wikidata facts and notable people. Click any feature → right-panel inspector with full attributes and Wikipedia links.",
+        tools: ["R", "PostGIS", "Shiny", "bslib", "mapgl", "MapLibre GL", "targets", "sf", "arcgislayers", "tidycensus", "osmdata", "httr2", "Docker", "Caddy"],
+        year: "2025–2026",
+        thumb: "images/projects/open-concord-thumb.svg",
+        gallery: [],
+        liveUrl: "concord.html",
+        repoUrl: "https://github.com/mapzimus/open-concord-nh",
+        status: "in development"
     }
 ];
 
