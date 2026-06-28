@@ -207,17 +207,20 @@ const projects = [
     {
         id: 19,
         era: "current",
-        title: "Northeast Appalachians Explorer",
+        title: "The Appalachians — Regions Explorer",
         category: "Web Mapping",
         type: "map",
-        tags: ["MapLibre GL JS", "GeoJSON", "USGS Physiography", "Geology"],
-        summary: "Interactive recreation of the Northeast Appalachian physiographic provinces — click any province or named range for its geology, formative orogeny, and highest peak.",
-        description: "A data-backed remake of the classic 'Northeast Appalachians' diagram. The six colored provinces — Adirondack, White, Green and Taconic Mountains, the Allegheny Plateau, and the Ridge and Valley — are dissolved straight from the USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946), clipped to New York and New England. Nine named subranges (Adirondacks, Catskills, Berkshires, Poconos, Mahoosucs, Taconics, Hudson Highlands, plus the Green and White Mountains) sit on top as lettered badges. Clicking a province or range opens a card with its dominant rock, age, the orogeny that built it (Grenville, Taconic, Acadian, or Alleghanian), and its highest summit. A keyless terrain toggle adds hillshade and 3D relief. Built as a single self-contained MapLibre page with static GeoJSON — no build step, no API keys.",
-        tools: ["MapLibre GL JS", "OpenFreeMap", "USGS Physiographic Divisions", "mapshaper", "GeoJSON"],
+        tags: ["MapLibre GL JS", "GeoJSON", "USGS Physiography", "Appalachian Trail", "Geology"],
+        summary: "Interactive map of the entire Appalachian range, Georgia to Maine — its six geologic regions, named ranges, summits, and the Appalachian Trail. Tap any region or range for its geology, formative orogeny, and highest peak.",
+        description: "An interactive map of the whole Appalachian system, from the Great Smoky Mountains in the south to Katahdin in Maine. The six colored regions — Blue Ridge, Ridge & Valley, the Appalachian Plateau, the New England Upland, the Adirondacks, and the Piedmont — are dissolved straight from the USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946). On top sit the named ranges (Great Smokies, Shenandoah, Catskills, Poconos, White Mountains, Longfellow Mountains and more), notable summits from Mount Mitchell to Mount Washington, and the full NPS Appalachian Trail centerline. Tap a region or range for its dominant rock, age, the orogeny that built it (Grenville, Taconic, Acadian, or Alleghanian), and its highest summit. Six keyless basemaps (street, satellite, topo, relief, dark), a layers panel with per-layer opacity, place search, a measure tool, 3D terrain, and shareable view links. Mobile-first, built as a single self-contained MapLibre page with static GeoJSON — no build step, no API keys.",
+        tools: ["MapLibre GL JS", "OpenFreeMap", "Esri", "USGS Physiographic Divisions", "NPS Appalachian Trail", "mapshaper", "GeoJSON"],
         year: "2026",
         thumb: "images/projects/appalachians-thumb.png",
         gallery: [
-            { src: "images/projects/appalachians/overview.png", caption: "Six physiographic provinces of the Northeast Appalachians, dissolved from USGS Fenneman divisions" }
+            { src: "images/projects/appalachians/full-range.png", caption: "The entire Appalachian range, Georgia to Maine — six geologic regions and the Appalachian Trail" },
+            { src: "images/projects/appalachians/overview.png", caption: "Full interface — basemaps, layer controls, search, and a clickable legend" },
+            { src: "images/projects/appalachians/region-card.png", caption: "Tap a region for its geology, formative orogeny, and highest summit" },
+            { src: "images/projects/appalachians/mobile.png", caption: "Mobile layout — bottom-sheet detail cards and a touch-friendly toolbar" }
         ],
         liveUrl: "appalachians/",
         repoUrl: null
