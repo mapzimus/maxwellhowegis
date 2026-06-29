@@ -156,7 +156,7 @@
 <div class="title-card panel">
   <div class="brand"><div class="dot"><i class="ti ti-mountain" aria-hidden="true"></i></div>
     <h1>The Appalachians</h1></div>
-  <p class="sub">The entire range, Georgia to Maine — its six geologic regions, named ranges, summits, and the Appalachian Trail. Tap anything.</p>
+  <p class="sub">The entire range, Georgia to Newfoundland — its geologic regions, named ranges, summits, and the Appalachian &amp; International Appalachian Trails. Tap anything.</p>
   <div class="meta"><i class="ti ti-database" aria-hidden="true"></i>
     <span>USGS physiography · NPS · OSM · <a href="../portfolio.html">maxwellhowegis</a></span></div>
 </div>
@@ -188,7 +188,7 @@
   </div>
   <div class="grp"><h2>Overlays</h2><div id="overlay-list"></div></div>
   <div class="grp"><h2>3D Terrain</h2>
-    <div class="slider-row"><span>Exaggeration</span><input id="exag" type="range" min="1" max="3" step="0.1" value="1.5" /><span class="v" id="exag-v">1.5×</span></div>
+    <div class="slider-row"><span>Exaggeration</span><input id="exag" type="range" min="1" max="4.5" step="0.1" value="2.2" /><span class="v" id="exag-v">2.2×</span></div>
   </div>
   <div class="grp jump"><h2>Jump to</h2><select id="jump" aria-label="Jump to a region or range"></select></div>
 </div>
@@ -211,12 +211,12 @@
    curated ranges & summits; US Census state outlines.
    Basemaps: OpenFreeMap (vector) + Esri/USGS/Carto raster — all keyless.
    ============================================================ */
-const HOME_BOUNDS = [[-87.5, 32.2], [-67.2, 47.6]];
+const HOME_BOUNDS = [[-87.5, 32.0], [-52.3, 51.8]];
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-const COLORS = { blue_ridge:"#5E8C6A", valley_ridge:"#D98C5A", plateau:"#AEC16A", new_england:"#6BA39C", adirondack:"#A98BC2", piedmont:"#CBB78E" };
-const ORDER = ["blue_ridge","valley_ridge","plateau","new_england","adirondack","piedmont"];
-const LABELS = { blue_ridge:"Blue Ridge", valley_ridge:"Ridge & Valley", plateau:"Appalachian Plateau", new_england:"New England Upland", adirondack:"Adirondacks", piedmont:"Piedmont" };
+const COLORS = { blue_ridge:"#5E8C6A", valley_ridge:"#D98C5A", plateau:"#AEC16A", new_england:"#6BA39C", adirondack:"#A98BC2", piedmont:"#CBB78E", gaspe_maritime:"#6E94C4", newfoundland:"#B9789E" };
+const ORDER = ["blue_ridge","valley_ridge","plateau","new_england","adirondack","piedmont","gaspe_maritime","newfoundland"];
+const LABELS = { blue_ridge:"Blue Ridge", valley_ridge:"Ridge & Valley", plateau:"Appalachian Plateau", new_england:"New England Upland", adirondack:"Adirondacks", piedmont:"Piedmont", gaspe_maritime:"Gaspé & Maritimes", newfoundland:"Newfoundland Highlands" };
 
 const GEO = {
   blue_ridge:{ classification:"Blue Ridge Province", rock:"Ancient basement gneiss & metamorphic rock", age:"~1.1 Ga basement; 750–540 Ma cover", orogeny:"Grenville, then the Paleozoic Appalachian orogenies", blurb:"The high, forested eastern wall and backbone of the southern Appalachians — home to the highest summits in eastern North America, including Mount Mitchell and the Great Smokies. Built from some of the oldest rock in the entire mountain belt.", wiki:"https://en.wikipedia.org/wiki/Blue_Ridge_Mountains" },
@@ -224,7 +224,9 @@ const GEO = {
   plateau:{ classification:"Appalachian Plateaus Province", rock:"Flat-lying sandstone, shale & coal", age:"Devonian–Pennsylvanian", orogeny:"Uplifted, never folded — carved by rivers", blurb:"Not folded mountains but a vast uplifted tableland — the Catskills and Poconos in the north, the Allegheny and Cumberland plateaus in the south. Streams have dissected nearly flat-lying rock into rugged peaks, hollows, and gorges.", wiki:"https://en.wikipedia.org/wiki/Appalachian_Plateau" },
   new_england:{ classification:"New England Province", rock:"Granite, schist & gneiss", age:"Precambrian basement; Paleozoic intrusions", orogeny:"Taconic & Acadian (~450–375 Ma)", blurb:"The northern Appalachians of Vermont, New Hampshire, and Maine — the Green, White, and Longfellow Mountains — built and metamorphosed when island arcs and a microcontinent collided with North America, then scoured and sculpted by Ice-Age glaciers.", wiki:"https://en.wikipedia.org/wiki/New_England/Acadian_forests" },
   adirondack:{ classification:"Adirondack Province", rock:"Anorthosite & Grenville gneiss", age:"~1.1 billion years (Grenville basement)", orogeny:"Grenville; recently domed up", blurb:"A roughly circular dome of billion-year-old basement rock — geologically a southern extension of the Canadian Shield rather than the Appalachians proper, pushed up into a high massif by a young, possibly still-active uplift.", wiki:"https://en.wikipedia.org/wiki/Adirondack_Mountains" },
-  piedmont:{ classification:"Piedmont Province", rock:"Deeply eroded metamorphic & igneous rock", age:"Paleozoic and older, eroded to a low surface", orogeny:"The worn-down roots of older Appalachian mountains", blurb:"The gently rolling eastern foothills between the Blue Ridge and the Atlantic coastal plain — a surface of ancient mountain roots eroded nearly flat over hundreds of millions of years, dotted with isolated monadnocks like Stone Mountain.", wiki:"https://en.wikipedia.org/wiki/Piedmont_(United_States)" }
+  piedmont:{ classification:"Piedmont Province", rock:"Deeply eroded metamorphic & igneous rock", age:"Paleozoic and older, eroded to a low surface", orogeny:"The worn-down roots of older Appalachian mountains", blurb:"The gently rolling eastern foothills between the Blue Ridge and the Atlantic coastal plain — a surface of ancient mountain roots eroded nearly flat over hundreds of millions of years, dotted with isolated monadnocks like Stone Mountain.", wiki:"https://en.wikipedia.org/wiki/Piedmont_(United_States)" },
+  gaspe_maritime:{ classification:"Appalachian Uplands (Canada)", rock:"Folded & metamorphosed Paleozoic rock", age:"Cambrian–Devonian", orogeny:"Taconic & Acadian — the same belt as New England", blurb:"The Appalachians cross the border as the Notre Dame and Chic-Choc Mountains of Quebec's Gaspé Peninsula and the highlands of New Brunswick and Cape Breton — a direct continuation of the New England ranges, capped by arctic-alpine tundra on the highest summits and home to the International Appalachian Trail.", wiki:"https://en.wikipedia.org/wiki/Notre_Dame_Mountains" },
+  newfoundland:{ classification:"Appalachian Uplands (Canada) · Long Range", rock:"Grenville basement gneiss & uplifted mantle rock", age:"~1 Ga basement; Paleozoic assembly", orogeny:"Taconic — the Appalachians' northern end", blurb:"The Long Range Mountains of western Newfoundland are the northern terminus of the entire Appalachian chain. At Gros Morne the Tablelands expose orange peridotite — a slab of the Earth's mantle thrust onto the continent during the Taconic orogeny — making it a UNESCO World Heritage site.", wiki:"https://en.wikipedia.org/wiki/Long_Range_Mountains" }
 };
 
 const RASTER_BASEMAPS = {
@@ -241,7 +243,9 @@ const OVERLAYS = [
   { id:"labels",  label:"Region labels",     sw:"#3a2230",      on:true,  layers:["region-label"] },
   { id:"summits", label:"Notable summits",   sw:"dot:#7a3b2e",  on:false, layers:["peak-dot","peak-label"] },
   { id:"trail",   label:"Appalachian Trail", sw:"line:#B5341F", on:true,  layers:["at-line"], opacity:{layer:"at-line",prop:"line-opacity",def:0.92} },
-  { id:"states",  label:"State outlines",    sw:"line:#7a869a", on:false, layers:["state-line"] }
+  { id:"iat",     label:"Int'l Appalachian Trail", sw:"line:#1f7a99", on:true, layers:["iat-line"] },
+  { id:"relief",  label:"Relief shading",    sw:"#8a7f6b",      on:false, layers:["hillshade"] },
+  { id:"states",  label:"State & province outlines", sw:"line:#7a869a", on:false, layers:["state-line"] }
 ];
 
 const fillColorExpr = ["match",["get","region"], ...ORDER.flatMap(k=>[k,COLORS[k]]), "#ccc"];
@@ -277,7 +281,7 @@ map.on("load", async () => {
     map.addLayer({ id:"bm-"+id, type:"raster", source:"bm-"+id, layout:{visibility:"none"}, paint:{"raster-opacity":1} });
   }
   map.addSource("dem",{ type:"raster-dem", tiles:["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"], encoding:"terrarium", tileSize:256, maxzoom:13 });
-  map.addLayer({ id:"hillshade", type:"hillshade", source:"dem", layout:{visibility:"none"}, paint:{"hillshade-exaggeration":0.5} });
+  map.addLayer({ id:"hillshade", type:"hillshade", source:"dem", layout:{visibility:"none"}, paint:{"hillshade-exaggeration":0.85,"hillshade-shadow-color":"#2e2a22","hillshade-highlight-color":"#fffdf5","hillshade-accent-color":"#5a5040"} });
 
   map.addSource("states",{ type:"geojson", data:states });
   map.addLayer({ id:"state-line", type:"line", source:"states", layout:{visibility:"none"}, paint:{"line-color":"#7a869a","line-width":1,"line-dasharray":[3,2],"line-opacity":0.85} });
@@ -289,6 +293,11 @@ map.on("load", async () => {
 
   map.addSource("at",{ type:"geojson", data:trail });
   map.addLayer({ id:"at-line", type:"line", source:"at", layout:{"line-join":"round","line-cap":"round"}, paint:{"line-color":"#B5341F","line-width":["interpolate",["linear"],["zoom"],4,1.4,8,2.8,11,3.6],"line-opacity":0.92} });
+
+  // International Appalachian Trail (Canadian continuation) — optional layer
+  let iat; try { iat = await fetchJSON("data/iat.geojson"); } catch(e){ iat = emptyFC(); console.warn("IAT layer unavailable:",e); }
+  map.addSource("iat",{ type:"geojson", data:iat });
+  map.addLayer({ id:"iat-line", type:"line", source:"iat", layout:{"line-join":"round","line-cap":"round"}, paint:{"line-color":"#1f7a99","line-width":["interpolate",["linear"],["zoom"],4,1.3,8,2.6,11,3.4],"line-opacity":0.9,"line-dasharray":[2,1.5]} });
 
   map.addSource("peaks",{ type:"geojson", data:peaks });
   map.addLayer({ id:"peak-dot", type:"circle", source:"peaks", layout:{visibility:"none"}, paint:{"circle-radius":["interpolate",["linear"],["zoom"],4,3.5,8,6],"circle-color":"#7a3b2e","circle-stroke-color":"#fff","circle-stroke-width":2} });
@@ -385,7 +394,14 @@ function toggleOverlay(id,on){ const o=OVERLAYS.find(x=>x.id===id); if(!o) retur
 
 function switchBasemap(id){ currentBasemap=id; Object.keys(RASTER_BASEMAPS).forEach(k=>map.setLayoutProperty("bm-"+k,"visibility",k===id?"visible":"none")); document.querySelectorAll(".bm").forEach(el=>el.classList.toggle("sel",el.dataset.bm===id)); const dark=(id==="satellite"||id==="dark"); map.setPaintProperty("region-line","line-color",dark?"#ffffff":"#5a4a3a"); map.setPaintProperty("region-line","line-opacity",dark?0.5:0.55); map.setPaintProperty("region-label","text-color",dark?"#ffffff":"#43342a"); map.setPaintProperty("region-label","text-halo-color",dark?"rgba(0,0,0,0.6)":"rgba(255,255,255,0.9)"); encodeHash(); }
 
-function toggleTerrain(on,targetPitch){ terrainOn=on; document.getElementById("btn-terrain").classList.toggle("on",on); map.setLayoutProperty("hillshade","visibility",on?"visible":"none"); if(on){ map.setTerrain({source:"dem",exaggeration:+document.getElementById("exag").value}); map.easeTo({pitch:(targetPitch!=null&&targetPitch>0)?targetPitch:55,duration:900}); } else { map.setTerrain(null); map.easeTo({pitch:0,bearing:0,duration:900}); } }
+function toggleTerrain(on,targetPitch){
+  terrainOn=on; document.getElementById("btn-terrain").classList.toggle("on",on);
+  if(on){
+    map.setTerrain({source:"dem",exaggeration:+document.getElementById("exag").value});
+    const rb=document.getElementById("tg-relief"); if(rb && !rb.checked){ rb.checked=true; toggleOverlay("relief",true); }  // relief shading on for a pronounced 3D look
+    map.easeTo({pitch:(targetPitch!=null&&targetPitch>0)?targetPitch:60,duration:900});
+  } else { map.setTerrain(null); map.easeTo({pitch:0,bearing:0,duration:900}); }
+}
 
 function emptyFC(){ return {type:"FeatureCollection",features:[]}; }
 function haversine(a,b){ const R=6371000,t=d=>d*Math.PI/180; const dLat=t(b[1]-a[1]),dLng=t(b[0]-a[0]); const h=Math.sin(dLat/2)**2+Math.cos(t(a[1]))*Math.cos(t(b[1]))*Math.sin(dLng/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
@@ -401,7 +417,7 @@ function selectResult(r){ if(r.boundingbox){ const [s,n,w,e]=r.boundingbox.map(N
 function opts(){ return [...sResults.querySelectorAll('.r[role=option]')]; }
 function highlight(i){ const o=opts(); if(!o.length) return; activeIdx=(i+o.length)%o.length; o.forEach((el,k)=>{ const on=k===activeIdx; el.classList.toggle("active",on); el.setAttribute("aria-selected",on?"true":"false"); if(on){ el.scrollIntoView({block:"nearest"}); sInput.setAttribute("aria-activedescendant",el.id); } }); }
 const runSearch=debounce(async()=>{ const q=sInput.value.trim(); if(q.length<3){ clearSearch(); return; } sSpin.style.display="inline-block";
-  try{ const res=await fetch("https://nominatim.openstreetmap.org/search?format=jsonv2&limit=6&viewbox=-89,48,-66,32&q="+encodeURIComponent(q),{headers:{"Accept-Language":"en"}}); const list=res.ok?await res.json():[]; sResults.innerHTML=""; activeIdx=-1;
+  try{ const res=await fetch("https://nominatim.openstreetmap.org/search?format=jsonv2&limit=6&viewbox=-89,52,-52,32&q="+encodeURIComponent(q),{headers:{"Accept-Language":"en"}}); const list=res.ok?await res.json():[]; sResults.innerHTML=""; activeIdx=-1;
     if(!list.length) sResults.innerHTML=`<div class="r" style="color:var(--muted)">No results</div>`;
     list.forEach((r,i)=>{ const el=document.createElement("div"); el.className="r"; el.id="sr-opt-"+i; el.setAttribute("role","option"); el.setAttribute("aria-selected","false"); el.textContent=r.display_name; el.addEventListener("click",()=>selectResult(r)); el.addEventListener("mousemove",()=>highlight(i)); sResults.appendChild(el); });
     sResults.classList.add("show"); sInput.setAttribute("aria-expanded","true");

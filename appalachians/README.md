@@ -1,9 +1,9 @@
 # The Appalachians — Regions Explorer
 
-An interactive map of the **entire Appalachian range**, Georgia to Maine: its six
-physiographic **regions**, named mountain ranges, notable summits, and the full
-Appalachian Trail. Tap any region or range for its geology, formative orogeny, and
-highest peak.
+An interactive map of the **entire Appalachian range**, Georgia to Newfoundland: its eight
+physiographic **regions** (six in the U.S., two in Canada), named mountain ranges, notable
+summits, and both the Appalachian Trail and its Canadian continuation, the International
+Appalachian Trail. Tap any region or range for its geology, formative orogeny, and highest peak.
 
 Live: [`/appalachians/`](https://maxwellhowegis.com/appalachians/)
 
@@ -19,24 +19,28 @@ Live: [`/appalachians/`](https://maxwellhowegis.com/appalachians/)
 
 | File | What | Source |
 |---|---|---|
-| `data/regions.geojson` | 6 geologic regions (dissolved polygons) | USGS Physiographic Divisions of the Conterminous U.S. (Fenneman & Johnson, 1946) |
-| `data/ranges.geojson` | 13 named ranges (label points) | Hand-curated |
-| `data/peaks.geojson` | 10 notable summits | Hand-curated, USGS elevations |
+| `data/regions.geojson` | 8 geologic regions (dissolved polygons) | USGS Physiographic Divisions (U.S.) + Natural Resources Canada "Appalachian Uplands" physiographic region (Canada) |
+| `data/ranges.geojson` | 18 named ranges (label points) | Hand-curated |
+| `data/peaks.geojson` | 15 notable summits | Hand-curated, USGS/NRCan elevations |
 | `data/appalachian_trail.geojson` | Full ANST centerline (GA→ME) | NPS ArcGIS FeatureServer |
-| `data/states.geojson` | 17 state outlines | US Census / PublicaMundi |
+| `data/iat.geojson` | International Appalachian Trail (ME→Gaspé→Newfoundland) | OpenStreetMap (Overpass) |
+| `data/states.geojson` | 22 state & province outlines | US Census / PublicaMundi + Natural Earth (Canada) |
 
-### Region legend → USGS province
+### Region legend → physiographic province
 
-| Region | USGS province |
-|---|---|
-| Blue Ridge | Blue Ridge |
-| Ridge & Valley | Valley and Ridge |
-| Appalachian Plateau | Appalachian Plateaus |
-| New England Upland | New England (excl. Seaboard Lowland) |
-| Adirondacks | Adirondack |
-| Piedmont | Piedmont |
+| Region | Province | Source |
+|---|---|---|
+| Blue Ridge | Blue Ridge | USGS |
+| Ridge & Valley | Valley and Ridge | USGS |
+| Appalachian Plateau | Appalachian Plateaus | USGS |
+| New England Upland | New England (excl. Seaboard Lowland) | USGS |
+| Adirondacks | Adirondack | USGS |
+| Piedmont | Piedmont | USGS |
+| Gaspé & Maritimes | Appalachian Uplands (Gaspé, NB, NS) | NRCan |
+| Newfoundland Highlands | Appalachian Uplands (Long Range Mtns) | NRCan |
 
-All six belong to Fenneman's **Appalachian Highlands** division.
+The six U.S. regions belong to Fenneman's **Appalachian Highlands** division; the two Canadian
+regions come from the NRCan **Appalachian Uplands** physiographic region, split at the Cabot Strait.
 
 ### Regenerating `regions.geojson`
 
