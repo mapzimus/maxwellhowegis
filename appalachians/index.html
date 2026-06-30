@@ -142,9 +142,11 @@
     .layers { top:auto; bottom:0; left:0; right:0; width:auto; max-width:none; border-radius:16px 16px 0 0; max-height:72dvh; z-index:15; }
     .legend { display:none; }
     /* info card → bottom sheet */
-    .info { top:auto; left:0; right:0; bottom:0; width:auto; max-width:none; height:66dvh; border-left:none; border-top:1px solid var(--hair); border-radius:18px 18px 0 0; transform:translateY(101%); padding:8px 18px 24px; }
+    .info { position:fixed; top:auto; left:0; right:0; bottom:0; width:auto; max-width:none; height:auto; max-height:82vh; max-height:82dvh; border-left:none; border-top:1px solid var(--hair); border-radius:18px 18px 0 0; transform:translateY(101%); padding:6px 16px calc(22px + env(safe-area-inset-bottom)); overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }
     .info.open { transform:translateY(0); }
-    .info .grab { display:block; width:38px; height:4px; border-radius:3px; background:#cdd5de; margin:4px auto 10px; }
+    .info .grab { display:block; position:sticky; top:0; z-index:3; width:100%; text-align:center; padding:8px 0 10px; margin:0 0 2px; background:linear-gradient(#fff 60%, rgba(255,255,255,0)); cursor:pointer; }
+    .info .grab::before { content:""; display:inline-block; width:44px; height:5px; border-radius:3px; background:#cdd5de; }
+    .info .close { top:10px; right:10px; z-index:4; }
     .readout { bottom:auto; top:106px; }
   }
   @media (max-width:680px) and (display-mode:browser) { #map { bottom:0; } }
@@ -323,7 +325,14 @@ function wireInteractions(){
   map.on("click","range-label",(e)=>{ if(measuring) return; e.preventDefault(); openRange(e.features[0].properties); });
   map.on("click","peak-dot",(e)=>{ if(measuring) return; e.preventDefault(); openPeak(e.features[0].properties); });
   ["range-dot","range-label","peak-dot"].forEach(l=>{ map.on("mouseenter",l,()=>{ if(!measuring) map.getCanvas().style.cursor="pointer"; }); map.on("mouseleave",l,()=>{ map.getCanvas().style.cursor=measuring?"crosshair":""; }); });
-  map.on("click",(e)=>{ if(measuring) addMeasurePoint(e.lngLat); });
+  map.on("click",(e)=>{
+    if(measuring){ addMeasurePoint(e.lngLat); return; }
+    // tap on empty map (no region/range/peak under the point) dismisses the open card
+    if(document.body.classList.contains("info-open")){
+      const hit=map.queryRenderedFeatures(e.point,{layers:["region-fill","range-dot","range-label","peak-dot"]});
+      if(!hit.length) closeInfo();
+    }
+  });
   map.on("moveend", encodeHash);
   document.addEventListener("keydown",(e)=>{ if(e.key==="Escape"){ if(measuring) toggleMeasure(false); else if(document.getElementById("search-results").classList.contains("show")) clearSearch(); else closeInfo(); } });
 }
@@ -344,9 +353,10 @@ function shell(kicker,swKey,title,classLine,blurb,rows,peakHTML,wiki,fly){
     <div class="actions"><button class="primary" id="ic-fly"><i class="ti ti-viewfinder" aria-hidden="true"></i> Zoom to</button>
       <a href="${esc(wiki)}" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> Wikipedia</a></div>`;
   info.querySelector(".close").addEventListener("click",closeInfo);
+  info.querySelector(".grab").addEventListener("click",closeInfo);
   info.querySelector("#ic-fly").addEventListener("click",fly);
   const lp=document.getElementById("layers-panel"); if(lp.classList.contains("open")){ lp.classList.remove("open"); const lb=document.getElementById("btn-layers"); lb.classList.remove("on"); lb.setAttribute("aria-expanded","false"); }
-  lastFocus=document.activeElement; document.body.classList.add("info-open"); info.classList.add("open"); info.scrollTop=0; info.focus();
+  lastFocus=document.activeElement; document.body.classList.add("info-open"); info.classList.add("open"); info.scrollTop=0; info.focus({preventScroll:true});
 }
 function openRegion(key){ const g=GEO[key]; if(!g) return; shell("Geologic Region",key,LABELS[key],g.classification,g.blurb,[["Dominant rock",g.rock],["Age",g.age],["Formed by",g.orogeny]],fmtPeak(peaksByRegion[key],"Highest summit"),g.wiki,()=>flyToRegion(key)); }
 function openRange(p){ const g=GEO[p.region]||{}; shell("Named Range",p.region,p.name,LABELS[p.region]?("In the "+LABELS[p.region]):"",p.note,[["Region",LABELS[p.region]||"—"],["Formed by",g.orogeny||"—"]],"",g.wiki||"#",()=>{ const f=rangesData.features.find(f=>f.properties.name===p.name); if(f) map.flyTo({center:f.geometry.coordinates,zoom:8,duration:900}); }); }
