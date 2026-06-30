@@ -1,0 +1,3 @@
+# Build caches for scripts/build_interstate_data.py (geocode, OSRM matrix,
+# route geometry, logs). Regenerated on demand; not source.
+scripts/.cache/
