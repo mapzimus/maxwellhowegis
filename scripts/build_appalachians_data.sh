@@ -20,13 +20,20 @@ curl -sS -L --max-time 120 -o "$TMP/physio_shp.zip" \
   "https://water.usgs.gov/GIS/dsdl/physio_shp.zip"
 unzip -o -q "$TMP/physio_shp.zip" -d "$TMP/physio"
 
-# Map the Appalachian Highlands provinces → 6 legend regions.
-# (New England excludes its coastal Seaboard Lowland section.)
-ASSIGN='region = PROVINCE=="BLUE RIDGE" ? "blue_ridge"
+# Map the Appalachian Highlands provinces/sections → 12 legend regions
+# (section-level, so the New England ranges and the Plateau read separately).
+ASSIGN='region =
+  (PROVINCE=="BLUE RIDGE" && SECTION=="SOUTHERN") ? "blue_ridge_s"
+  : PROVINCE=="BLUE RIDGE" ? "blue_ridge_n"
   : PROVINCE=="PIEDMONT" ? "piedmont"
   : PROVINCE=="VALLEY AND RIDGE" ? "valley_ridge"
-  : PROVINCE=="APPALACHIAN PLATEAUS" ? "plateau"
-  : (PROVINCE=="NEW ENGLAND" && SECTION!="SEABOARD LOWLAND") ? "new_england"
+  : (PROVINCE=="APPALACHIAN PLATEAUS" && SECTION=="CATSKILL") ? "catskill"
+  : (PROVINCE=="APPALACHIAN PLATEAUS" && (SECTION=="CUMBERLAND PLATEAU" || SECTION=="CUMBERLAND MOUNTAIN")) ? "cumberland"
+  : PROVINCE=="APPALACHIAN PLATEAUS" ? "allegheny"
+  : (PROVINCE=="NEW ENGLAND" && SECTION=="WHITE MOUNTAIN") ? "white"
+  : (PROVINCE=="NEW ENGLAND" && SECTION=="GREEN MOUNTAIN") ? "green"
+  : (PROVINCE=="NEW ENGLAND" && SECTION=="TACONIC") ? "taconic"
+  : (PROVINCE=="NEW ENGLAND" && SECTION=="NEW ENGLAND UPLAND") ? "ne_upland"
   : PROVINCE=="ADIRONDACK" ? "adirondack"
   : ""'
 
@@ -40,8 +47,10 @@ npx -y mapshaper@0.6.102 "$TMP/physio/physio.shp" \
 
 echo "→ attaching labels → $OUT"
 jq -c '
-  def lbl: {blue_ridge:"Blue Ridge",piedmont:"Piedmont",valley_ridge:"Ridge & Valley",
-            plateau:"Appalachian Plateau",new_england:"New England Upland",adirondack:"Adirondacks"};
+  def lbl: {white:"White Mountains",green:"Green Mountains",taconic:"Taconic Mountains",
+            ne_upland:"New England Upland",adirondack:"Adirondacks",catskill:"Catskills",
+            allegheny:"Allegheny Plateau",cumberland:"Cumberland Plateau",valley_ridge:"Ridge & Valley",
+            blue_ridge_n:"Northern Blue Ridge",blue_ridge_s:"Southern Blue Ridge",piedmont:"Piedmont"};
   .features |= map(.properties = {region:.properties.region, label:(lbl[.properties.region])})
 ' "$TMP/regions_raw.geojson" > "$OUT"
 

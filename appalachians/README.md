@@ -1,9 +1,10 @@
 # The Appalachians — Regions Explorer
 
-An interactive map of the **entire Appalachian range**, Georgia to Newfoundland: its eight
-physiographic **regions** (six in the U.S., two in Canada), named mountain ranges, notable
-summits, and both the Appalachian Trail and its Canadian continuation, the International
-Appalachian Trail. Tap any region or range for its geology, formative orogeny, and highest peak.
+An interactive map of the **entire Appalachian range**, Georgia to Newfoundland: its fourteen
+physiographic **regions** (twelve in the U.S. at USGS section level, two in Canada), named
+mountain ranges, notable summits, and both the Appalachian Trail and its Canadian continuation,
+the International Appalachian Trail. Tap any region or range for its geology, formative orogeny,
+and highest peak.
 
 Live: [`/appalachians/`](https://maxwellhowegis.com/appalachians/)
 
@@ -28,19 +29,27 @@ Live: [`/appalachians/`](https://maxwellhowegis.com/appalachians/)
 
 ### Region legend → physiographic province
 
-| Region | Province | Source |
+| Region | USGS province · section | Source |
 |---|---|---|
-| Blue Ridge | Blue Ridge | USGS |
-| Ridge & Valley | Valley and Ridge | USGS |
-| Appalachian Plateau | Appalachian Plateaus | USGS |
-| New England Upland | New England (excl. Seaboard Lowland) | USGS |
+| White Mountains | New England · White Mountain | USGS |
+| Green Mountains | New England · Green Mountain | USGS |
+| Taconic Mountains | New England · Taconic | USGS |
+| New England Upland | New England · New England Upland | USGS |
 | Adirondacks | Adirondack | USGS |
+| Catskills | Appalachian Plateaus · Catskill | USGS |
+| Allegheny Plateau | Appalachian Plateaus · Allegheny/Kanawha/Southern NY/Mohawk | USGS |
+| Cumberland Plateau | Appalachian Plateaus · Cumberland | USGS |
+| Ridge & Valley | Valley and Ridge | USGS |
+| Northern Blue Ridge | Blue Ridge · Northern | USGS |
+| Southern Blue Ridge | Blue Ridge · Southern | USGS |
 | Piedmont | Piedmont | USGS |
 | Gaspé & Maritimes | Appalachian Uplands (Gaspé, NB, NS) | NRCan |
 | Newfoundland Highlands | Appalachian Uplands (Long Range Mtns) | NRCan |
 
-The six U.S. regions belong to Fenneman's **Appalachian Highlands** division; the two Canadian
-regions come from the NRCan **Appalachian Uplands** physiographic region, split at the Cabot Strait.
+The twelve U.S. regions are USGS **sections** within Fenneman's **Appalachian Highlands**
+division (the New England province split into White/Green/Taconic/Upland, the Plateau into
+Catskill/Allegheny/Cumberland, the Blue Ridge into Northern/Southern); the two Canadian regions
+come from the NRCan **Appalachian Uplands** physiographic region, split at the Cabot Strait.
 
 ### Regenerating `regions.geojson`
 
