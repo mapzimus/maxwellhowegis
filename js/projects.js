@@ -226,23 +226,6 @@ const projects = [
         repoUrl: null
     },
     {
-        id: 20,
-        era: "current",
-        title: "The Sequential Interstate Challenge",
-        category: "Spatial Analysis",
-        type: "map",
-        tags: ["Optitrek", "OSRM", "Rural Postman / TSP", "MapLibre GL JS", "Route Optimization", "Python"],
-        summary: "An Optitrek test case: drive every two-digit Interstate in the contiguous US end to end. Version A follows strict numerical order; Version B lets the solver choose the order and each route's orientation to minimize the miles driven between Interstates. An interactive A-vs-B comparison with the distance-delta headline.",
-        description: "A clean, self-contained optimization test case for Optitrek. The constraint: traverse all 69 two-digit primary Interstates (the five reused numbers — I-76, I-84, I-86, I-87, I-88 — count as two physical highways each; the segmented I-49/I-69/I-74 are one edge each with internal gaps bridged) fully, end to end. Mainline mileage (~43,000 mi) is a fixed cost, so the real target is the sum of connector legs between traversals. Version A is the naive baseline — visit the Interstates in strict numerical order, with the only freedom being which terminus of the next route you start from (solved exactly by a 2-state dynamic program over orientations). Version B is the Optitrek-style optimization — free order and free orientation, modeled as a Rural-Postman / sequential-edge TSP and solved with multi-start nearest-neighbor plus 2-opt / Or-opt / orientation-flip local search. A Python pipeline geocodes the termini (Nominatim), builds the endpoint-to-endpoint connector matrix from a routing engine (OSRM), runs both solvers, and bakes the routes to static GeoJSON. The page is a single keyless MapLibre GL map: the termini, both connector networks, an A/B/both toggle, an itinerary drawer, and the headline showing how much intelligent sequencing saves over naive numerical order.",
-        tools: ["Python 3.11", "OSRM (public demo)", "Nominatim", "MapLibre GL JS", "GeoJSON", "Local-search TSP / DP"],
-        year: "2026",
-        thumb: "images/projects/interstate-challenge-thumb.png",
-        gallery: [],
-        liveUrl: "interstate-challenge/",
-        repoUrl: "https://github.com/mapzimus/optitrek",
-        status: "development"
-    },
-    {
         id: 17,
         era: "current",
         title: "The Quabbin Reservoir and the Lost Towns of the Swift River Valley",

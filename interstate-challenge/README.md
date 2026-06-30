@@ -14,10 +14,13 @@ Mainline mileage (~43,000 mi — the sum of the seed table's reference lengths; 
 estimate was ~47,000) is a fixed cost incurred either way, so the objective is purely the sum of
 connector legs. The headline is the Version A − Version B delta.
 
-**Result (latest run):** strict numerical order racks up **~67,400 connector mi** — because
-numerical adjacency is not geographic adjacency, naive order forces ~20 transcontinental hops
-(I-4 FL → I-5 CA, I-40 CA → NC, I-90 WA → MA …). Optimized order + orientation cuts that to
-**~9,800 connector mi** — a **~57,700 mi (≈86%)** saving. See `data/summary.json` for exact figures.
+**Result (latest run, optimized on drive time):** strict numerical order racks up
+**~1,223 h / ~67,500 mi of connectors** — because numerical adjacency is not geographic adjacency,
+naive order forces ~20 transcontinental hops (I-4 FL → I-5 CA, I-40 CA → NC, I-90 WA → MA …).
+Optimized order + orientation cuts that to **~171 h / ~9,000 mi** — saving **~1,051 h (≈86% of
+connector drive time)** and **~58,400 mi**, i.e. roughly **130 fewer 8-hour driving days**.
+Totals incl. the fixed ~790 h / ~42,900 mi mainline: Version A ≈ 2,013 h, Version B ≈ 962 h.
+See `data/summary.json` for exact figures.
 
 ## Problem shape
 
@@ -32,9 +35,10 @@ fixed mainline. The solver chooses (a) the permutation of edges and (b) the orie
 `scripts/build_interstate_data.py` (run from the repo root):
 
 1. **Geocode** the termini in `scripts/interstate_termini.csv` via Nominatim (cached).
-2. **Connector matrix** — endpoint-to-endpoint driving distance from the **OSRM public demo**
-   (`router.project-osrm.org`), requested as tiled `/table` calls; any unreachable cell falls back
-   to haversine × 1.2. Cached.
+2. **Connector matrix** — endpoint-to-endpoint driving **distance and duration** from the
+   **OSRM public demo** (`router.project-osrm.org`), requested as tiled `/table` calls; any
+   unreachable cell falls back to haversine. Cached. The solvers minimize **drive time** by default
+   (`INTERSTATE_METRIC=duration`; set `=distance` to optimize miles instead).
 3. **Version A** — locked numerical order, orientation chosen by DP to minimize connectors.
 4. **Version B** — multi-start nearest-neighbor + 2-opt / Or-opt / orientation-flip local search.
 5. **Geometry** — OSRM route shapes for the connectors (and a schematic mainline trace per edge).
@@ -52,13 +56,15 @@ distance-delta headline. No build step, no API keys.
 
 ## Caveats (v1)
 
-- **Connector metric is distance**, not drive time (the doc's v1 default; time is a later swap).
+- **Connector metric is drive time** (duration), with distance computed and shown alongside.
+  Switch the optimization target with `INTERSTATE_METRIC=distance`.
 - **Mainline geometry is schematic** — an OSRM A→B trace per Interstate, not a surveyed centerline.
-  Mainline *lengths* are the reference values from the challenge table; only connectors are routed
-  for the optimization.
-- Termini are geocoded at **city/junction level** — fine for connectors that run hundreds of miles,
-  but not surveyed terminus coordinates. The residual `[verify]` list from the challenge doc
-  (I-22, I-26, I-39, I-76 W/E, I-86 East, I-87 NC, I-99, I-2, I-14) is approximate.
+  Mainline *lengths* are the reference values from the challenge table; mainline *time* is the
+  routed duration of that schematic trace. Only connectors are routed for the optimization.
+- Termini come from `scripts/interstate_termini.csv`. The residual `[verify]` set from the
+  challenge doc (I-22, I-26, I-39, I-76 W/E, I-86 W/E, I-87 NC, I-99, I-2, I-14) is now **pinned to
+  OSM-verified junction coordinates** (e.g. I-86's east end updated to its current 2026 signed end
+  at Vestal, NY Exit 67); the rest are geocoded at city/junction level via Nominatim.
 - Routing uses the shared **OSRM public demo**; a self-hosted OSRM (the Optitrek stack) would be the
   production source.
 

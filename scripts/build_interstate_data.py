@@ -46,6 +46,11 @@ UA = "maxwellhowegis-interstate-challenge/1.0 (mhowe.gis@gmail.com)"
 M_PER_MI = 1609.344
 TABLE_TILE = 46  # union of two tiles <= ~92 coords, under the demo's table cap
 
+# Connector metric the solvers minimize: "duration" (drive time) or "distance".
+# Distance is still computed and reported either way; only the objective changes.
+METRIC = os.environ.get("INTERSTATE_METRIC", "duration").lower()
+assert METRIC in ("duration", "distance"), "INTERSTATE_METRIC must be duration|distance"
+
 os.makedirs(CACHE, exist_ok=True)
 os.makedirs(OUTDIR, exist_ok=True)
 
@@ -91,6 +96,13 @@ def haversine_mi(a, b):
 
 # ----------------------------- 1. load seed -----------------------------
 def load_edges():
+    def end(row, k):
+        d = {"name": row[f"{k}_name"], "query": row[f"{k}_query"]}
+        lat, lon = row.get(f"{k}_lat", ""), row.get(f"{k}_lon", "")
+        if lat.strip() and lon.strip():  # explicit pinned coordinate overrides geocoding
+            d["lat"], d["lon"], d["pinned"] = float(lat), float(lon), True
+        return d
+
     edges = []
     with open(SEED, newline="") as f:
         for row in csv.DictReader(f):
@@ -102,8 +114,8 @@ def load_edges():
                     "axis": row["axis"],
                     "group": row["group"],
                     "approx_mi": float(row["approx_mi"]),
-                    "a": {"name": row["a_name"], "query": row["a_query"]},
-                    "b": {"name": row["b_name"], "query": row["b_query"]},
+                    "a": end(row, "a"),
+                    "b": end(row, "b"),
                 }
             )
     return edges
@@ -113,8 +125,12 @@ def load_edges():
 def geocode_all(edges):
     cache = load_cache("geocode.json")
     n_new = 0
+    n_pinned = 0
     for e in edges:
         for end in ("a", "b"):
+            if e[end].get("pinned"):  # coordinate pinned in the seed; skip geocoding
+                n_pinned += 1
+                continue
             q = e[end]["query"]
             if q not in cache:
                 params = urllib.parse.urlencode(
@@ -128,20 +144,21 @@ def geocode_all(edges):
                 save_cache("geocode.json", cache)
                 time.sleep(1.1)  # Nominatim courtesy limit
             e[end]["lon"], e[end]["lat"] = cache[q]
-    print(f"   geocoded {len(edges) * 2} termini ({n_new} new, rest cached)")
+    print(f"   resolved {len(edges) * 2} termini ({n_pinned} pinned, {n_new} geocoded, rest cached)")
 
 
 # ----------------- 3. connector matrix (OSRM /table) --------------------
 def build_matrix(coords):
-    """Full NxN driving-distance matrix (miles). Tiled /table, haversine
-    fallback for any cell OSRM can't return."""
+    """Full NxN driving distance (miles) AND duration (minutes) matrices.
+    Tiled OSRM /table; haversine fallback for any cell OSRM can't return."""
     n = len(coords)
     cache = load_cache("connector_matrix.json")
-    if cache.get("n") == n:
-        print("   connector matrix loaded from cache")
-        return cache["M"], cache.get("fallbacks", 0)
+    if cache.get("n") == n and "T" in cache:
+        print("   connector matrix (distance + duration) loaded from cache")
+        return cache["M"], cache["T"], cache.get("fallbacks", 0)
 
-    M = [[0.0] * n for _ in range(n)]
+    M = [[0.0] * n for _ in range(n)]  # miles
+    T = [[0.0] * n for _ in range(n)]  # minutes
     fallbacks = 0
     blocks = [list(range(i, min(i + TABLE_TILE, n))) for i in range(0, n, TABLE_TILE)]
     nb = len(blocks)
@@ -156,29 +173,33 @@ def build_matrix(coords):
             dst = ";".join(str(pos[g]) for g in sj)
             url = (
                 f"{OSRM}/table/v1/driving/{cstr}"
-                f"?annotations=distance&sources={src}&destinations={dst}"
+                f"?annotations=distance,duration&sources={src}&destinations={dst}"
             )
             data = http_get(url)
             ok = bool(data) and data.get("code") == "Ok" and "distances" in data
             for a_i, g in enumerate(si):
                 for b_i, h in enumerate(sj):
-                    val = None
+                    dist = dur = None
                     if ok:
                         try:
-                            val = data["distances"][a_i][b_i]
-                        except (TypeError, IndexError):
-                            val = None
-                    if val is None:
-                        M[g][h] = haversine_mi(coords[g], coords[h]) * 1.2
+                            dist = data["distances"][a_i][b_i]
+                            dur = data["durations"][a_i][b_i]
+                        except (TypeError, IndexError, KeyError):
+                            dist = dur = None
+                    if dist is None:
+                        miles = haversine_mi(coords[g], coords[h]) * 1.2
+                        M[g][h] = miles
+                        T[g][h] = miles / 60.0 * 60.0  # ~60 mph fallback -> minutes
                         if g != h:
                             fallbacks += 1
                     else:
-                        M[g][h] = val / M_PER_MI
+                        M[g][h] = dist / M_PER_MI
+                        T[g][h] = (dur or 0.0) / 60.0
             time.sleep(0.4)
-    save_cache("connector_matrix.json", {"n": n, "M": M, "fallbacks": fallbacks})
+    save_cache("connector_matrix.json", {"n": n, "M": M, "T": T, "fallbacks": fallbacks})
     if fallbacks:
         print(f"   ! {fallbacks} cells used haversine fallback")
-    return M, fallbacks
+    return M, T, fallbacks
 
 
 # ----------------- 4. Version A: locked-order orientation DP -------------
@@ -315,10 +336,12 @@ def route_geom(c1, c2, cache):
     if data and data.get("code") == "Ok":
         g = data["routes"][0]["geometry"]["coordinates"]
         d = data["routes"][0]["distance"] / M_PER_MI
+        t = data["routes"][0]["duration"] / 60.0
     else:
         g = [list(c1), list(c2)]
         d = haversine_mi(c1, c2) * 1.2
-    cache[key] = {"coords": g, "miles": d}
+        t = d  # ~60 mph fallback
+    cache[key] = {"coords": g, "miles": d, "minutes": t}
     save_cache("geometry.json", cache)
     time.sleep(0.25)
     return cache[key]
@@ -326,7 +349,8 @@ def route_geom(c1, c2, cache):
 
 def connector_features(seq, M, gcache):
     feats = []
-    total = 0.0
+    total_mi = 0.0
+    total_min = 0.0
     for i in range(len(seq) - 1):
         a = seq[i]
         b = seq[i + 1]
@@ -335,7 +359,8 @@ def connector_features(seq, M, gcache):
         p1 = [c1["lon"], c1["lat"]]
         p2 = [c2["lon"], c2["lat"]]
         g = route_geom(p1, p2, gcache)
-        total += g["miles"]
+        total_mi += g["miles"]
+        total_min += g["minutes"]
         feats.append(
             {
                 "type": "Feature",
@@ -345,10 +370,11 @@ def connector_features(seq, M, gcache):
                     "from": a["edge"]["label"],
                     "to": b["edge"]["label"],
                     "miles": round(g["miles"], 1),
+                    "minutes": round(g["minutes"], 1),
                 },
             }
         )
-    return feats, total
+    return feats, total_mi, total_min
 
 
 def sequence_summary(seq):
@@ -387,17 +413,19 @@ def main():
         coords.append((e["a"]["lon"], e["a"]["lat"]))
         coords.append((e["b"]["lon"], e["b"]["lat"]))
 
-    print("3. building connector matrix (OSRM /table) ...")
-    M, fallbacks = build_matrix(coords)
+    print("3. building connector matrix (OSRM /table, distance + duration) ...")
+    M, T, fallbacks = build_matrix(coords)
+    obj = T if METRIC == "duration" else M  # the matrix the solvers minimize
+    print(f"   solving on metric: {METRIC} ({'minutes' if METRIC=='duration' else 'miles'})")
 
     fixed_mainline = sum(e["approx_mi"] for e in edges)
 
     print("4. Version A — locked numerical order (orientation DP) ...")
     edges_sorted = sorted(edges, key=lambda e: e["number"])  # stable: ties keep CSV order
-    seq_a, conn_a = solve_version_a(edges_sorted, M)
+    seq_a, conn_a = solve_version_a(edges_sorted, obj)
 
     print("5. Version B — free order + orientation (local search) ...")
-    seq_b, conn_b = solve_version_b(edges, M)
+    seq_b, conn_b = solve_version_b(edges, obj)
 
     # integrity checks
     assert sorted(it["edge"]["id"] for it in seq_a) == sorted(e["id"] for e in edges)
@@ -406,10 +434,13 @@ def main():
 
     print("6. fetching route geometry (mainlines + connectors) ...")
     gcache = load_cache("geometry.json")
-    # mainlines (schematic: OSRM A->B per edge)
+    # mainlines (schematic: OSRM A->B per edge). Mainline length stays the table
+    # reference value; mainline TIME is the routed duration of that schematic trace.
     mainline_feats = []
+    fixed_mainline_min = 0.0
     for e in edges:
         g = route_geom([e["a"]["lon"], e["a"]["lat"]], [e["b"]["lon"], e["b"]["lat"]], gcache)
+        fixed_mainline_min += g["minutes"]
         mainline_feats.append(
             {
                 "type": "Feature",
@@ -422,8 +453,8 @@ def main():
                 },
             }
         )
-    feats_a, geom_conn_a = connector_features(seq_a, M, gcache)
-    feats_b, geom_conn_b = connector_features(seq_b, M, gcache)
+    feats_a, geom_conn_a, geom_conn_a_min = connector_features(seq_a, obj, gcache)
+    feats_b, geom_conn_b, geom_conn_b_min = connector_features(seq_b, obj, gcache)
 
     # ------------------------------ write -------------------------------
     interstates = [
@@ -444,42 +475,62 @@ def main():
     write_json("version_a.geojson", {"type": "FeatureCollection", "features": feats_a})
     write_json("version_b.geojson", {"type": "FeatureCollection", "features": feats_b})
 
-    total_a = fixed_mainline + geom_conn_a
-    total_b = fixed_mainline + geom_conn_b
+    total_a_mi = fixed_mainline + geom_conn_a
+    total_b_mi = fixed_mainline + geom_conn_b
+    total_a_min = fixed_mainline_min + geom_conn_a_min
+    total_b_min = fixed_mainline_min + geom_conn_b_min
+    pct = lambda a, b: round(100 * (a - b) / a, 1) if a else 0
     summary = {
         "build_date": time.strftime("%Y-%m-%d"),
         "routing_source": "OSRM public demo (router.project-osrm.org)",
-        "metric": "distance (driving miles)",
+        "primary_metric": "duration" if METRIC == "duration" else "distance",
+        "metric": "drive time (duration)" if METRIC == "duration" else "distance (driving miles)",
         "matrix_fallback_cells": fallbacks,
         "version_b_solver": "multi-start NN + 2-opt/Or-opt local search",
         "n_interstates": len(edges),
         "fixed_mainline_mi": round(fixed_mainline),
+        "fixed_mainline_min": round(fixed_mainline_min),
         "version_a": {
             "connector_mi": round(geom_conn_a),
-            "total_mi": round(total_a),
+            "connector_min": round(geom_conn_a_min),
+            "total_mi": round(total_a_mi),
+            "total_min": round(total_a_min),
             "sequence": sequence_summary(seq_a),
         },
         "version_b": {
             "connector_mi": round(geom_conn_b),
-            "total_mi": round(total_b),
+            "connector_min": round(geom_conn_b_min),
+            "total_mi": round(total_b_mi),
+            "total_min": round(total_b_min),
             "sequence": sequence_summary(seq_b),
         },
         "connector_delta_mi": round(geom_conn_a - geom_conn_b),
-        "total_delta_mi": round(total_a - total_b),
-        "pct_connector_saved": round(100 * (geom_conn_a - geom_conn_b) / geom_conn_a, 1)
-        if geom_conn_a
-        else 0,
+        "connector_delta_min": round(geom_conn_a_min - geom_conn_b_min),
+        "total_delta_mi": round(total_a_mi - total_b_mi),
+        "total_delta_min": round(total_a_min - total_b_min),
+        "pct_connector_saved": pct(geom_conn_a, geom_conn_b),           # distance %
+        "pct_connector_time_saved": pct(geom_conn_a_min, geom_conn_b_min),  # time %
     }
     write_json("summary.json", summary)
 
+    def hrs(m):
+        return f"{m/60:,.0f} h"
+
     print("\n=== RESULT ===")
-    print(f"  Interstates (edges):     {len(edges)}")
-    print(f"  Fixed mainline:          {fixed_mainline:>8,.0f} mi")
-    print(f"  Version A connectors:    {geom_conn_a:>8,.0f} mi   total {total_a:>9,.0f} mi")
-    print(f"  Version B connectors:    {geom_conn_b:>8,.0f} mi   total {total_b:>9,.0f} mi")
+    print(f"  Interstates (edges):     {len(edges)}   (optimizing on {METRIC})")
+    print(f"  Fixed mainline:          {fixed_mainline:>8,.0f} mi   {hrs(fixed_mainline_min):>9}")
     print(
-        f"  Delta (A - B):           {total_a - total_b:>8,.0f} mi   "
-        f"({summary['pct_connector_saved']}% of connectors)"
+        f"  Version A connectors:    {geom_conn_a:>8,.0f} mi   {hrs(geom_conn_a_min):>9}"
+        f"   total {total_a_mi:>9,.0f} mi / {hrs(total_a_min)}"
+    )
+    print(
+        f"  Version B connectors:    {geom_conn_b:>8,.0f} mi   {hrs(geom_conn_b_min):>9}"
+        f"   total {total_b_mi:>9,.0f} mi / {hrs(total_b_min)}"
+    )
+    print(
+        f"  Delta (A - B):           {total_a_mi - total_b_mi:>8,.0f} mi   "
+        f"{hrs(total_a_min - total_b_min):>9}   "
+        f"(time {summary['pct_connector_time_saved']}% / dist {summary['pct_connector_saved']}% of connectors)"
     )
     print(f"  data -> {os.path.relpath(OUTDIR, ROOT)}/")
 
