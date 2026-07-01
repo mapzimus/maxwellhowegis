@@ -91,6 +91,10 @@
   /* Legend (desktop) */
   .legend { position:absolute; bottom:22px; left:14px; z-index:6; padding:11px 13px; max-width:210px; font-size:12px; }
   .legend h2 { margin:0 0 7px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); }
+  .legend .sec { margin-top:8px; padding-top:7px; border-top:1px solid var(--hair); font-size:10.5px; color:var(--muted); line-height:1.35; }
+  .mode-switch { display:flex; margin:0 0 8px; border:1px solid var(--hair); border-radius:8px; overflow:hidden; }
+  .mode-switch button { flex:1; font-size:11px; font-weight:600; padding:5px 0; border:none; background:#fff; color:var(--muted); cursor:pointer; }
+  .mode-switch button.on { background:var(--anchor); color:#fff; }
   .legend .row { display:flex; align-items:center; gap:8px; margin:3px 0; cursor:pointer; user-select:none; padding:2px 3px; border-radius:6px; }
   .legend .row:hover { background:#f1f5f8; }
   .legend .row.off { opacity:0.38; }
@@ -198,8 +202,12 @@
 </div>
 
 <div class="legend panel">
-  <h2>Appalachian Regions</h2>
+  <h2 id="legend-title">Appalachian Regions</h2>
+  <div class="mode-switch" role="group" aria-label="Map color mode">
+    <button id="mode-regions" class="on">Regions</button><button id="mode-formation">Formation</button>
+  </div>
   <div id="legend-rows"></div>
+  <div class="sec" id="legend-note" style="display:none">Colored by primary formative event — tap a region for its fuller history.</div>
 </div>
 
 <div class="readout panel" id="readout"><i class="ti ti-ruler-2" aria-hidden="true"></i><span id="readout-text">Tap to add points</span></div>
@@ -259,7 +267,25 @@ const OVERLAYS = [
   { id:"states",  label:"State & province outlines", sw:"line:#7a869a", on:false, layers:["state-line"] }
 ];
 
+/* Formation view — regions grouped by their PRIMARY formative event (a simplification;
+   most regions record several orogenies — see each region's card for the fuller story). */
+const OROGENY_OF = { adirondack:"grenville", blue_ridge_n:"grenville", blue_ridge_s:"grenville", newfoundland:"grenville",
+  taconic:"taconic_o", green:"taconic_o", gaspe_maritime:"taconic_o",
+  white:"acadian", ne_upland:"acadian",
+  valley_ridge:"alleghanian", piedmont:"alleghanian",
+  catskill:"plateau_o", allegheny:"plateau_o", cumberland:"plateau_o" };
+const OROGENY_META = {
+  grenville:   { label:"Grenville basement (~1.1 Ga)",        color:"#7B4B94" },
+  taconic_o:   { label:"Taconic orogeny (~450 Ma)",           color:"#C2543F" },
+  acadian:     { label:"Acadian orogeny (~375 Ma)",           color:"#D99A3D" },
+  alleghanian: { label:"Alleghanian orogeny (~300 Ma)",       color:"#4E7FA6" },
+  plateau_o:   { label:"Uplifted plateaus — never folded",    color:"#8FAE6E" }
+};
+const OROGENY_ORDER = ["grenville","taconic_o","acadian","alleghanian","plateau_o"];
+
+let colorMode = "regions"; // "regions" | "formation"
 const fillColorExpr = ["match",["get","region"], ...ORDER.flatMap(k=>[k,COLORS[k]]), "#ccc"];
+const formationColorExpr = ["match",["get","region"], ...ORDER.flatMap(k=>[k,OROGENY_META[OROGENY_OF[k]].color]), "#ccc"];
 
 const map = new maplibregl.Map({ container:"map", style:"https://tiles.openfreemap.org/styles/positron", bounds:HOME_BOUNDS, fitBoundsOptions:{padding:30}, attributionControl:false, hash:false });
 map.addControl(new maplibregl.AttributionControl({ compact:true, customAttribution:"Regions: USGS physiography · Trail: NPS · Basemaps: OpenFreeMap/Esri/USGS/Carto/OSM" }), "bottom-right");
@@ -311,7 +337,11 @@ map.on("load", async () => {
   map.addLayer({ id:"iat-line", type:"line", source:"iat", layout:{"line-join":"round","line-cap":"round"}, paint:{"line-color":"#1f7a99","line-width":["interpolate",["linear"],["zoom"],4,1.3,8,2.6,11,3.4],"line-opacity":0.9,"line-dasharray":[2,1.5]} });
 
   map.addSource("peaks",{ type:"geojson", data:peaks });
-  map.addLayer({ id:"peak-dot", type:"circle", source:"peaks", paint:{"circle-radius":["interpolate",["linear"],["zoom"],4,4,8,7],"circle-color":"#7a3b2e","circle-stroke-color":"#fff","circle-stroke-width":2} });
+  map.addLayer({ id:"peak-dot", type:"circle", source:"peaks", paint:{
+    "circle-radius":["interpolate",["linear"],["zoom"],
+      4, ["interpolate",["linear"],["get","elev_m"], 500,2.5, 1000,4, 2050,6.5],
+      8, ["interpolate",["linear"],["get","elev_m"], 500,4.5, 1000,6.5, 2050,10]],
+    "circle-color":"#7a3b2e","circle-stroke-color":"#fff","circle-stroke-width":2} });
   map.addLayer({ id:"peak-label", type:"symbol", source:"peaks", layout:{ "text-field":["get","name"],"text-font":["Noto Sans Regular"],"text-size":11,"text-offset":[0,1.1],"text-anchor":"top","text-optional":true }, paint:{"text-color":"#5a2d22","text-halo-color":"#fff","text-halo-width":1.6} });
 
   map.addSource("ranges",{ type:"geojson", data:ranges });
@@ -396,9 +426,9 @@ function buildUI(){
   rr.innerHTML=ORDER.map(k=>`<div class="row" data-k="${k}"><span class="bar" style="background:${COLORS[k]}"></span><span>${LABELS[k]}</span></div>`).join("");
   rr.querySelectorAll(".row").forEach(row=>row.addEventListener("click",()=>toggleRegion(row,row.dataset.k)));
 
-  const lr=document.getElementById("legend-rows");
-  lr.innerHTML=ORDER.map(k=>`<div class="row" data-k="${k}"><span class="bar" style="background:${COLORS[k]}"></span><span>${LABELS[k]}</span></div>`).join("");
-  lr.querySelectorAll(".row").forEach(row=>row.addEventListener("click",()=>toggleRegion(row,row.dataset.k)));
+  renderLegend();
+  document.getElementById("mode-regions").addEventListener("click",()=>switchColorMode("regions"));
+  document.getElementById("mode-formation").addEventListener("click",()=>switchColorMode("formation"));
 
   const jump=document.getElementById("jump");
   jump.innerHTML=`<option value="">Select…</option><optgroup label="Regions">${ORDER.map(k=>`<option value="reg:${k}">${LABELS[k]}</option>`).join("")}</optgroup><optgroup label="Named ranges">${rangesData.features.map(f=>`<option value="rng:${f.properties.name}">${f.properties.name}</option>`).join("")}</optgroup>`;
@@ -408,7 +438,29 @@ function buildUI(){
 }
 
 const hiddenRegion=new Set();
-function toggleRegion(row,k){ const rows=document.querySelectorAll(`.row[data-k="${k}"]`); if(hiddenRegion.has(k)){ hiddenRegion.delete(k); rows.forEach(r=>r.classList.remove("off")); } else { hiddenRegion.add(k); rows.forEach(r=>r.classList.add("off")); } const vis=ORDER.filter(p=>!hiddenRegion.has(p)); const f=["in",["get","region"],["literal",vis]]; map.setFilter("region-fill",f); map.setFilter("region-line",f); }
+function applyRegionFilter(){ const vis=ORDER.filter(p=>!hiddenRegion.has(p)); const f=["in",["get","region"],["literal",vis]]; map.setFilter("region-fill",f); map.setFilter("region-line",f); }
+function toggleRegion(row,k){ const rows=document.querySelectorAll(`.row[data-k="${k}"]`); if(hiddenRegion.has(k)){ hiddenRegion.delete(k); rows.forEach(r=>r.classList.remove("off")); } else { hiddenRegion.add(k); rows.forEach(r=>r.classList.add("off")); } applyRegionFilter(); }
+function toggleOrogeny(row,cls){ const members=ORDER.filter(k=>OROGENY_OF[k]===cls); const hiding=!row.classList.contains("off"); members.forEach(k=>{ if(hiding) hiddenRegion.add(k); else hiddenRegion.delete(k); }); row.classList.toggle("off",hiding); applyRegionFilter(); }
+function renderLegend(){
+  const lr=document.getElementById("legend-rows");
+  document.getElementById("legend-title").textContent = colorMode==="formation" ? "How the Range Formed" : "Appalachian Regions";
+  document.getElementById("legend-note").style.display = colorMode==="formation" ? "" : "none";
+  if(colorMode==="formation"){
+    lr.innerHTML=OROGENY_ORDER.map(c=>`<div class="row" data-c="${c}"><span class="bar" style="background:${OROGENY_META[c].color}"></span><span>${OROGENY_META[c].label}</span></div>`).join("");
+    lr.querySelectorAll(".row").forEach(row=>row.addEventListener("click",()=>toggleOrogeny(row,row.dataset.c)));
+  } else {
+    lr.innerHTML=ORDER.map(k=>`<div class="row" data-k="${k}"><span class="bar" style="background:${COLORS[k]}"></span><span>${LABELS[k]}</span></div>`).join("");
+    lr.querySelectorAll(".row").forEach(row=>{ if(hiddenRegion.has(row.dataset.k)) row.classList.add("off"); row.addEventListener("click",()=>toggleRegion(row,row.dataset.k)); });
+  }
+}
+function switchColorMode(mode){
+  colorMode=mode;
+  map.setPaintProperty("region-fill","fill-color", mode==="formation" ? formationColorExpr : fillColorExpr);
+  document.getElementById("mode-regions").classList.toggle("on",mode==="regions");
+  document.getElementById("mode-formation").classList.toggle("on",mode==="formation");
+  hiddenRegion.clear(); applyRegionFilter();
+  renderLegend(); encodeHash();
+}
 function toggleOverlay(id,on){ const o=OVERLAYS.find(x=>x.id===id); if(!o) return; o.layers.forEach(l=>map.setLayoutProperty(l,"visibility",on?"visible":"none")); if(on) activeOverlays.add(id); else activeOverlays.delete(id); encodeHash(); }
 
 function switchBasemap(id){ currentBasemap=id; Object.keys(RASTER_BASEMAPS).forEach(k=>map.setLayoutProperty("bm-"+k,"visibility",k===id?"visible":"none")); document.querySelectorAll(".bm").forEach(el=>el.classList.toggle("sel",el.dataset.bm===id)); const dark=(id==="satellite"||id==="dark"); map.setPaintProperty("region-line","line-color",dark?"#ffffff":"#5a4a3a"); map.setPaintProperty("region-line","line-opacity",dark?0.5:0.55); map.setPaintProperty("region-label","text-color",dark?"#ffffff":"#43342a"); map.setPaintProperty("region-label","text-halo-color",dark?"rgba(0,0,0,0.6)":"rgba(255,255,255,0.9)"); encodeHash(); }
@@ -456,8 +508,9 @@ document.getElementById("btn-share").addEventListener("click",()=>{ encodeHash()
 function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),1800); }
 
 /* ---------- Hash ---------- */
-function encodeHash(){ if(!map.loaded()) return; const c=map.getCenter(); const view=[map.getZoom().toFixed(2),c.lat.toFixed(4),c.lng.toFixed(4),Math.round(map.getBearing()),Math.round(map.getPitch())].join("/"); const p=new URLSearchParams(); p.set("v",view); p.set("b",currentBasemap); p.set("l",[...activeOverlays].join(",")); history.replaceState(null,"","#"+p.toString()); }
-function decodeHash(){ if(!location.hash){ encodeHash(); return; } const p=new URLSearchParams(location.hash.slice(1)); const v=p.get("v"); if(v){ const [z,lat,lng,brg,pitch]=v.split("/").map(Number); map.jumpTo({center:[lng,lat],zoom:z,bearing:brg||0,pitch:pitch||0}); if(pitch>0) toggleTerrain(true,pitch); } if(p.get("b")&&p.get("b")!=="minimal") switchBasemap(p.get("b")); if(p.get("l")!=null){ const want=new Set(p.get("l")?p.get("l").split(","):[]); OVERLAYS.forEach(o=>{ const on=want.has(o.id); const box=document.getElementById("tg-"+o.id); if(box) box.checked=on; toggleOverlay(o.id,on); }); } }
+let uiReady=false;
+function encodeHash(){ if(!uiReady) return; const c=map.getCenter(); const view=[map.getZoom().toFixed(2),c.lat.toFixed(4),c.lng.toFixed(4),Math.round(map.getBearing()),Math.round(map.getPitch())].join("/"); const p=new URLSearchParams(); p.set("v",view); p.set("b",currentBasemap); p.set("l",[...activeOverlays].join(",")); if(colorMode!=="regions") p.set("m",colorMode); history.replaceState(null,"","#"+p.toString()); }
+function decodeHash(){ if(!location.hash){ uiReady=true; encodeHash(); return; } const p=new URLSearchParams(location.hash.slice(1)); const v=p.get("v"); if(v){ const [z,lat,lng,brg,pitch]=v.split("/").map(Number); map.jumpTo({center:[lng,lat],zoom:z,bearing:brg||0,pitch:pitch||0}); if(pitch>0) toggleTerrain(true,pitch); } if(p.get("b")&&p.get("b")!=="minimal") switchBasemap(p.get("b")); if(p.get("l")!=null){ const want=new Set(p.get("l")?p.get("l").split(","):[]); OVERLAYS.forEach(o=>{ const on=want.has(o.id); const box=document.getElementById("tg-"+o.id); if(box) box.checked=on; toggleOverlay(o.id,on); }); } if(p.get("m")==="formation") switchColorMode("formation"); uiReady=true; encodeHash(); }
 </script>
 </body>
 </html>
