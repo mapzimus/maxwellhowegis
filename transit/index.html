@@ -62,6 +62,20 @@
   .towns-bar input { accent-color:var(--t4); margin:0; cursor:pointer; }
   .towns-bar .dot { width:8px; height:8px; border-radius:50%; flex:none; }
   .towns-bar b { margin-left:auto; font-family:"JetBrains Mono",monospace; font-weight:500; color:var(--muted); font-size:10.5px; }
+  .mileage { margin-top:8px; font-family:"JetBrains Mono",monospace; font-size:10px; color:var(--muted); display:flex; flex-wrap:wrap; gap:3px 6px; align-items:center; }
+  .srch { margin-top:9px; position:relative; }
+  .srch input { width:100%; background:var(--panel-2); border:1px solid var(--border); border-radius:8px; color:var(--ink); font-size:12px; padding:7px 9px; outline:none; }
+  .srch input:focus { border-color:var(--indigo); }
+  .srch input::placeholder { color:var(--muted); opacity:0.7; }
+  .srch-results { position:absolute; top:calc(100% + 4px); left:0; right:0; z-index:30; background:var(--panel-2); border:1px solid var(--border); border-radius:9px; overflow:hidden; display:none; box-shadow:var(--shadow); }
+  .srch-results.show { display:block; }
+  .srch-row { display:flex; align-items:center; gap:7px; padding:7px 9px; font-size:12px; cursor:pointer; }
+  .srch-row:hover, .srch-row.top { background:rgba(255,255,255,0.06); }
+  .srch-row .snm { font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .srch-row .sst { color:var(--muted); font-size:10.5px; flex:none; }
+  .srch-row .spop { margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:10px; color:var(--muted); flex:none; }
+  .srch-row .padd { background:transparent; border:1px solid var(--border); color:var(--indigo); border-radius:6px; font-size:12px; line-height:1; padding:3px 7px; flex:none; }
+  .srch-row .padd:hover { border-color:var(--indigo); background:rgba(165,180,252,0.1); }
   .node-list { overflow-y:auto; flex:1; padding:8px 8px 4px; }
   .grp-head { font-family:"JetBrains Mono",monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); padding:10px 8px 5px; display:flex; align-items:center; gap:7px; }
   .grp-head .dot { width:9px; height:9px; border-radius:50%; flex:none; }
@@ -119,7 +133,7 @@
 <div class="title-card panel">
   <div class="label">Fantasy Transit · Spec Tool</div>
   <h1>US Network — Node Editor</h1>
-  <div class="sub">Pick a tier, click the map to drop a node. Switch to <b>Link</b> to connect them. Everything autosaves; Export writes GeoJSON.</div>
+  <div class="sub">Pick a tier, then click the map — or search a town and promote it. <b>Link</b> connects (and records hierarchy); <b>Ctrl+Z</b> undoes. Autosaves; Export writes GeoJSON.</div>
 </div>
 
 <div class="toolbar">
@@ -147,12 +161,17 @@
       <div class="cbadge"><div class="n" style="color:var(--t3)" id="c3">0</div><div class="t">Metro</div></div>
       <div class="cbadge"><div class="n" style="color:var(--t4)" id="c4">0</div><div class="t">Commuter</div></div>
     </div>
-    <label class="towns-bar" title="Every US Census incorporated place — the tier-4 base your commuter rail reaches">
+    <div class="mileage" id="mileage" style="display:none"></div>
+    <label class="towns-bar" title="Every US Census incorporated place — the tier-4 base your commuter rail reaches. Dot size scales with population.">
       <input type="checkbox" id="townsChk" checked />
       <span class="dot" style="background:var(--t4)"></span>
       <span>Tier-4 towns</span>
       <b id="townsCount">…</b>
     </label>
+    <div class="srch">
+      <input id="townSearch" type="search" placeholder="Find a town… (Enter adds top hit)" autocomplete="off" spellcheck="false" />
+      <div class="srch-results" id="srchResults"></div>
+    </div>
   </div>
   <div class="node-list" id="nodeList"></div>
   <div class="sfoot">
@@ -228,17 +247,36 @@ const lines = {};     // id -> L.polyline
  *  context only: canvas-rendered, non-interactive, and kept out of the
  *  editable network (never in state / localStorage / export).
  * ------------------------------------------------------------------ */
+let townsData = [];   // flat {name, st, pop, geoid, lat, lng} for search / promote
+
+function townRadius(pop){
+  if (!pop) return 1.2;
+  if (pop >= 500000) return 3.6;
+  if (pop >= 100000) return 2.8;
+  if (pop >= 25000)  return 2.2;
+  if (pop >= 5000)   return 1.7;
+  return 1.3;
+}
+
 async function loadTowns(){
   try {
-    const r = await fetch('data/towns.geojson', { cache:'force-cache' });
+    const r = await fetch('data/towns.geojson');
     if (!r.ok) return;
     const gj = await r.json();
     townCount = gj.features.length;
+    townsData = gj.features.map(f => ({
+      name:f.properties.name, st:f.properties.st, pop:f.properties.pop || 0,
+      geoid:f.properties.geoid, lng:f.geometry.coordinates[0], lat:f.geometry.coordinates[1]
+    }));
     townsGeo = L.geoJSON(gj, {
       renderer: townsCanvas,
-      pointToLayer: (f, latlng) => L.circleMarker(latlng, {
-        renderer:townsCanvas, radius:1.6, stroke:false, fillColor:TIERS[4].color, fillOpacity:0.5, interactive:false
-      })
+      pointToLayer: (f, latlng) => {
+        const pop = f.properties.pop || 0;
+        return L.circleMarker(latlng, {
+          renderer:townsCanvas, radius:townRadius(pop), stroke:false, fillColor:TIERS[4].color,
+          fillOpacity: pop >= 100000 ? 0.75 : pop >= 25000 ? 0.6 : 0.45, interactive:false
+        });
+      }
     });
     if (townsShown) townsGeo.addTo(map);
     updateTownsUI();
@@ -264,11 +302,28 @@ function fmt(n){ return Number(n).toFixed(4); }
 function nextNodeId(){ return 'n' + (++seq.node); }
 function nextEdgeId(){ return 'e' + (++seq.edge); }
 
+function havMi(a, b){
+  const R = 3958.761, d = Math.PI/180;
+  const s = Math.sin((b.lat-a.lat)*d/2)**2
+          + Math.cos(a.lat*d)*Math.cos(b.lat*d)*Math.sin((b.lng-a.lng)*d/2)**2;
+  return 2*R*Math.asin(Math.sqrt(s));
+}
+
 /* keep the sequence counters ahead of any imported ids */
 function reseed(){
   const num = (arr,pre) => arr.reduce((m,x)=>{ const v=parseInt(String(x.id).replace(pre,''),10); return isNaN(v)?m:Math.max(m,v); },0);
   seq.node = num(state.nodes,'n');
   seq.edge = num(state.edges,'e');
+}
+
+/* ---- undo history (Ctrl/Cmd+Z) ---- */
+const history = [];
+function snapshot(){ history.push(JSON.stringify(state)); if (history.length > 60) history.shift(); }
+function undo(){
+  if (!history.length){ toast('Nothing to undo'); return; }
+  state = JSON.parse(history.pop());
+  reseed(); linkFrom = null; renderAll();
+  toast('Undone');
 }
 
 /* ---- persistence ---- */
@@ -322,6 +377,17 @@ function renderSidebar(){
   [1,2,3,4].forEach(t => $('#c'+t).textContent = counts[t]);
   $('#totalCount').textContent = `· ${state.nodes.length} nodes · ${state.edges.length} links`;
 
+  const miles = {1:0,2:0,3:0,4:0};
+  state.edges.forEach(e => {
+    const a = byId(e.from), b = byId(e.to);
+    if (a && b) miles[e.tier] += havMi(a, b);
+  });
+  const mi = $('#mileage');
+  const parts = [1,2,3,4].filter(t => miles[t] >= 0.5)
+    .map(t => `<span style="color:${TIERS[t].color}">T${t}</span> ${Math.round(miles[t]).toLocaleString()} mi`);
+  mi.innerHTML = parts.join(' <span style="opacity:.4">·</span> ');
+  mi.style.display = parts.length ? 'flex' : 'none';
+
   const list = $('#nodeList');
   if (!state.nodes.length){
     list.innerHTML = '<div class="empty">No nodes yet.<br>Pick a tier above and click the map to drop your first hub.</div>';
@@ -356,6 +422,7 @@ function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','
  * ------------------------------------------------------------------ */
 map.on('click', (ev) => {
   if (mode !== 'add') return;
+  snapshot();
   const n = { id:nextNodeId(), name:defaultName(activeTier), tier:activeTier, lat:+ev.latlng.lat.toFixed(5), lng:+ev.latlng.lng.toFixed(5), parent:null };
   state.nodes.push(n);
   const m = nodeMarker(n); m.addTo(nodeLayer); markers[n.id]=m;
@@ -394,17 +461,26 @@ function highlightLinkFrom(){
 function addEdge(from, to){
   if (state.edges.some(e => (e.from===from&&e.to===to)||(e.from===to&&e.to===from))){ toast('Those nodes are already linked'); return; }
   const a = byId(from), b = byId(to);
+  snapshot();
   const tier = Math.max(a.tier, b.tier);          // edge takes the less-major class
   const e = { id:nextEdgeId(), from, to, tier };
   state.edges.push(e);
   const l = edgeLine(e); if (l){ l.addTo(edgeLayer); lines[e.id]=l; }
+  // linking across tiers records the hierarchy: the minor node becomes a child of the major hub
+  let note = '';
+  if (a.tier !== b.tier){
+    const child = a.tier > b.tier ? a : b, hub = a.tier > b.tier ? b : a;
+    if (!child.parent){ child.parent = hub.id; note = ` (child of ${hub.name})`; }
+  }
   save(); renderSidebar();
-  toast(`Linked ${a.name} ↔ ${b.name}`);
+  toast(`Linked ${a.name} ↔ ${b.name}${note}`);
 }
 
 function deleteNode(id){
+  snapshot();
   state.nodes = state.nodes.filter(n => n.id !== id);
   state.edges = state.edges.filter(e => e.from !== id && e.to !== id);
+  state.nodes.forEach(n => { if (n.parent === id) n.parent = null; });
   if (linkFrom === id){ linkFrom = null; }
   renderAll();
 }
@@ -412,7 +488,7 @@ function deleteNode(id){
 function renameNode(id){
   const n = byId(id); if (!n) return;
   const v = prompt('Node name:', n.name);
-  if (v != null && v.trim()){ n.name = v.trim(); renderAll(); }
+  if (v != null && v.trim()){ snapshot(); n.name = v.trim(); renderAll(); }
 }
 
 /* sidebar row events (delegated) */
@@ -453,7 +529,8 @@ function toGeoJSON(){
   state.nodes.forEach(n => feats.push({
     type:'Feature',
     geometry:{ type:'Point', coordinates:[n.lng, n.lat] },
-    properties:{ kind:'node', id:n.id, name:n.name, tier:n.tier, tierName:TIERS[n.tier].name, parent:n.parent||null }
+    properties:{ kind:'node', id:n.id, name:n.name, tier:n.tier, tierName:TIERS[n.tier].name, parent:n.parent||null,
+                 ...(n.geoid ? { geoid:n.geoid } : {}), ...(n.pop != null ? { pop:n.pop } : {}) }
   }));
   state.edges.forEach(e => {
     const a = byId(e.from), b = byId(e.to); if (!a||!b) return;
@@ -478,7 +555,8 @@ function fromGeoJSON(gj){
     const p = f.properties || {}, g = f.geometry || {};
     if (g.type === 'Point' && p.kind !== 'edge'){
       const [lng,lat] = g.coordinates;
-      nodes.push({ id:p.id||('n'+(nodes.length+1)), name:p.name||'Node', tier:+p.tier||1, lat, lng, parent:p.parent||null });
+      nodes.push({ id:p.id||('n'+(nodes.length+1)), name:p.name||'Node', tier:+p.tier||1, lat, lng, parent:p.parent||null,
+                   geoid:p.geoid||null, pop:(p.pop != null ? +p.pop : null) });
     } else if (g.type === 'LineString' && p.kind !== 'node'){
       if (p.from && p.to) edges.push({ id:p.id||('e'+(edges.length+1)), from:p.from, to:p.to, tier:+p.tier||1 });
     }
@@ -507,11 +585,82 @@ $('#btnCopy').onclick = async () => {
 
 $('#townsChk').addEventListener('change', e => toggleTowns(e.target.checked));
 
+/* ------------------------------------------------------------------ *
+ *  town search — fly to any of the 19k towns, or promote one straight
+ *  into the network as a node at the active tier (exact coords + name,
+ *  carrying geoid/pop for later joins).
+ * ------------------------------------------------------------------ */
+let srchHits = [];
+
+function fmtPop(p){
+  if (!p) return '';
+  return p >= 1e6 ? (p/1e6).toFixed(1)+'M' : p >= 1e3 ? Math.round(p/1e3)+'k' : String(p);
+}
+
+function promoteTown(t){
+  if (state.nodes.some(n => n.geoid && n.geoid === t.geoid)){ toast(`${t.name} is already in the network`); return; }
+  snapshot();
+  const n = { id:nextNodeId(), name:t.name, tier:activeTier, lat:t.lat, lng:t.lng, parent:null, geoid:t.geoid, pop:t.pop || null };
+  state.nodes.push(n);
+  const m = nodeMarker(n); m.addTo(nodeLayer); markers[n.id] = m;
+  renderSidebar(); save();
+  map.flyTo([n.lat, n.lng], Math.max(map.getZoom(), 7));
+  toast(`Added ${t.name}, ${t.st} as ${TIERS[activeTier].name}`);
+  closeSearch();
+}
+
+function closeSearch(){
+  $('#townSearch').value = ''; $('#townSearch').blur(); srchHits = [];
+  $('#srchResults').classList.remove('show'); $('#srchResults').innerHTML = '';
+}
+
+function runSearch(){
+  const box = $('#srchResults');
+  const q = $('#townSearch').value.trim().toLowerCase();
+  if (q.length < 2){ box.classList.remove('show'); box.innerHTML = ''; srchHits = []; return; }
+  if (!townsData.length){
+    box.innerHTML = '<div class="srch-row"><span class="sst">town data still loading…</span></div>';
+    box.classList.add('show'); return;
+  }
+  const starts = [], contains = [];
+  for (const t of townsData){
+    const n = t.name.toLowerCase();
+    if (n.startsWith(q)) starts.push(t);
+    else if (n.includes(q)) contains.push(t);
+  }
+  const byPop = (a, b) => b.pop - a.pop;
+  srchHits = starts.sort(byPop).concat(contains.sort(byPop)).slice(0, 8);
+  if (!srchHits.length){
+    box.innerHTML = '<div class="srch-row"><span class="sst">no towns match</span></div>';
+    box.classList.add('show'); return;
+  }
+  box.innerHTML = srchHits.map((t, i) => `
+    <div class="srch-row${i===0?' top':''}" data-i="${i}" title="Click to fly there">
+      <span class="snm">${escapeHtml(t.name)}</span><span class="sst">${t.st}</span>
+      <span class="spop">${fmtPop(t.pop)}</span>
+      <button class="padd" title="Add as ${TIERS[activeTier].name}">＋</button>
+    </div>`).join('');
+  box.classList.add('show');
+}
+
+$('#townSearch').addEventListener('input', runSearch);
+$('#townSearch').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && srchHits.length){ promoteTown(srchHits[0]); }
+  else if (e.key === 'Escape'){ closeSearch(); e.target.blur(); e.stopPropagation(); }
+});
+$('#srchResults').addEventListener('click', e => {
+  const row = e.target.closest('.srch-row'); if (!row || row.dataset.i == null) return;
+  const t = srchHits[+row.dataset.i]; if (!t) return;
+  if (e.target.classList.contains('padd')){ promoteTown(t); return; }
+  map.flyTo([t.lat, t.lng], 9);
+});
+
 $('#btnImport').onclick = () => { $('#importText').value=''; $('#modal').classList.add('show'); };
 $('#importCancel').onclick = () => $('#modal').classList.remove('show');
 $('#importLoad').onclick = () => {
   try {
     const gj = JSON.parse($('#importText').value);
+    snapshot();
     state = fromGeoJSON(gj); reseed(); linkFrom=null; renderAll(); fitView();
     $('#modal').classList.remove('show');
     toast(`Loaded ${state.nodes.length} nodes · ${state.edges.length} links`);
@@ -535,7 +684,8 @@ $('#btnFit').onclick = fitView;
 
 $('#btnClear').onclick = () => {
   if (!state.nodes.length) return;
-  if (confirm('Clear the entire network? This cannot be undone (export first if you want to keep it).')){
+  if (confirm('Clear the entire network? (Ctrl+Z can bring it back this session; export first to be safe.)')){
+    snapshot();
     state = { name:state.name, nodes:[], edges:[] }; seq={node:0,edge:0}; linkFrom=null; renderAll();
   }
 };
@@ -563,6 +713,7 @@ function setMode(m){
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
   if (['1','2','3','4'].includes(e.key)){ $('#tierSeg').querySelector(`[data-tier="${e.key}"]`).click(); }
+  else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase()==='z'){ e.preventDefault(); undo(); }
   else if (e.key.toLowerCase()==='a') setMode('add');
   else if (e.key.toLowerCase()==='l') setMode('link');
   else if (e.key.toLowerCase()==='d') setMode('delete');
