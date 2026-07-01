@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "name": "US Fantasy Transit Network",
+  "properties": {
+    "generator": "transit/index.html",
+    "schema": "fantasy-transit-v1",
+    "note": "Starter seed — a spine of tier-1 HSR hubs to build from. Open transit/index.html, place/link the rest, then Export over this file.",
+    "nodeCount": 12,
+    "edgeCount": 11
+  },
+  "features": [
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-74.006, 40.7128] }, "properties": { "kind": "node", "id": "n1", "name": "New York", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-71.0589, 42.3601] }, "properties": { "kind": "node", "id": "n2", "name": "Boston", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-77.0369, 38.9072] }, "properties": { "kind": "node", "id": "n3", "name": "Washington DC", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-84.388, 33.749] }, "properties": { "kind": "node", "id": "n4", "name": "Atlanta", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-80.1918, 25.7617] }, "properties": { "kind": "node", "id": "n5", "name": "Miami", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-87.6298, 41.8781] }, "properties": { "kind": "node", "id": "n6", "name": "Chicago", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-96.797, 32.7767] }, "properties": { "kind": "node", "id": "n7", "name": "Dallas", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-95.3698, 29.7604] }, "properties": { "kind": "node", "id": "n8", "name": "Houston", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-104.9903, 39.7392] }, "properties": { "kind": "node", "id": "n9", "name": "Denver", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-118.2437, 34.0522] }, "properties": { "kind": "node", "id": "n10", "name": "Los Angeles", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-122.4194, 37.7749] }, "properties": { "kind": "node", "id": "n11", "name": "San Francisco", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-122.3321, 47.6062] }, "properties": { "kind": "node", "id": "n12", "name": "Seattle", "tier": 1, "tierName": "HSR Hub", "parent": null } },
+
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-71.0589, 42.3601], [-74.006, 40.7128]] }, "properties": { "kind": "edge", "id": "e1", "from": "n2", "to": "n1", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-74.006, 40.7128], [-77.0369, 38.9072]] }, "properties": { "kind": "edge", "id": "e2", "from": "n1", "to": "n3", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-77.0369, 38.9072], [-84.388, 33.749]] }, "properties": { "kind": "edge", "id": "e3", "from": "n3", "to": "n4", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-84.388, 33.749], [-80.1918, 25.7617]] }, "properties": { "kind": "edge", "id": "e4", "from": "n4", "to": "n5", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-77.0369, 38.9072], [-87.6298, 41.8781]] }, "properties": { "kind": "edge", "id": "e5", "from": "n3", "to": "n6", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-87.6298, 41.8781], [-96.797, 32.7767]] }, "properties": { "kind": "edge", "id": "e6", "from": "n6", "to": "n7", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-96.797, 32.7767], [-95.3698, 29.7604]] }, "properties": { "kind": "edge", "id": "e7", "from": "n7", "to": "n8", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-96.797, 32.7767], [-104.9903, 39.7392]] }, "properties": { "kind": "edge", "id": "e8", "from": "n7", "to": "n9", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-104.9903, 39.7392], [-118.2437, 34.0522]] }, "properties": { "kind": "edge", "id": "e9", "from": "n9", "to": "n10", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-118.2437, 34.0522], [-122.4194, 37.7749]] }, "properties": { "kind": "edge", "id": "e10", "from": "n10", "to": "n11", "tier": 1, "tierName": "HSR Hub" } },
+    { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [[-122.4194, 37.7749], [-122.3321, 47.6062]] }, "properties": { "kind": "edge", "id": "e11", "from": "n11", "to": "n12", "tier": 1, "tierName": "HSR Hub" } }
+  ]
+}
