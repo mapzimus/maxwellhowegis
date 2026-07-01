@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>US Fantasy Transit Network — Node Editor</title>
+<meta name="description" content="Click-to-place node editor for a four-tier fantasy transit network across the USA. Drop tier-1 HSR hubs, tier-2 regional connectors, tier-3 metro nodes and tier-4 commuter-rail stops, link them, and export GeoJSON." />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg:#0a0e17; --panel:rgba(22,29,47,0.94); --panel-2:rgba(15,21,35,0.95);
+    --border:#2a3550; --ink:#e8ecf4; --muted:#9aa3b7;
+    --amber:#fbbf24; --indigo:#a5b4fc;
+    --t1:#fbbf24; /* HSR hub          */
+    --t2:#a5b4fc; /* regional hub     */
+    --t3:#34d399; /* metro / subway   */
+    --t4:#38bdf8; /* commuter rail    */
+    --danger:#f87171;
+    --shadow:0 6px 28px rgba(0,0,0,0.45);
+  }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html, body { margin:0; height:100%; font-family:"Inter",system-ui,sans-serif; color:var(--ink); background:var(--bg); overflow:hidden; }
+  #map { position:absolute; inset:0; background:#0a0e17; cursor:crosshair; }
+  #map.mode-select, #map.mode-link, #map.mode-delete { cursor:pointer; }
+  button, input, select { font-family:inherit; }
+  button { cursor:pointer; }
+  .panel { background:var(--panel); border:1px solid var(--border); border-radius:13px; box-shadow:var(--shadow); backdrop-filter:blur(8px); }
+  .leaflet-container { background:#0a0e17; }
+  .leaflet-control-attribution { font-size:10px; background:rgba(10,14,23,0.7)!important; color:var(--muted)!important; }
+  .leaflet-control-attribution a { color:var(--indigo)!important; }
+
+  /* Title card */
+  .title-card { position:absolute; top:14px; left:14px; z-index:600; padding:13px 15px; max-width:320px; }
+  .title-card .label { font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:0.18em; text-transform:uppercase; color:var(--amber); }
+  .title-card h1 { margin:5px 0 0; font-size:17px; font-weight:700; letter-spacing:-0.01em; line-height:1.15; }
+  .title-card .sub { margin:7px 0 0; font-size:11.5px; color:var(--muted); line-height:1.5; }
+
+  /* Toolbar (top-center) */
+  .toolbar { position:absolute; top:14px; left:50%; transform:translateX(-50%); z-index:650; display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:center; max-width:calc(100vw - 28px); }
+  .seg { display:flex; padding:4px; gap:3px; }
+  .seg button { background:transparent; border:1px solid transparent; color:var(--muted); font-size:12px; font-weight:600; padding:7px 11px; border-radius:8px; display:flex; align-items:center; gap:6px; white-space:nowrap; }
+  .seg button:hover { color:var(--ink); }
+  .seg button.on { color:var(--ink); background:rgba(255,255,255,0.07); border-color:var(--border); }
+  .seg .dot { width:10px; height:10px; border-radius:50%; flex:none; box-shadow:0 0 0 2px rgba(0,0,0,0.35); }
+  .seg .kbd { font-family:"JetBrains Mono",monospace; font-size:9px; opacity:0.55; }
+
+  /* Sidebar */
+  .sidebar { position:absolute; top:14px; right:14px; bottom:14px; z-index:640; width:300px; max-width:calc(100vw - 28px); display:flex; flex-direction:column; overflow:hidden; }
+  .sidebar .shead { padding:13px 15px 11px; border-bottom:1px solid var(--border); }
+  .sidebar .shead h2 { margin:0; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:space-between; }
+  .sidebar .shead .counts { margin-top:9px; display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+  .cbadge { text-align:center; border:1px solid var(--border); border-radius:8px; padding:6px 2px; }
+  .cbadge .n { font-family:"JetBrains Mono",monospace; font-size:16px; font-weight:600; line-height:1; }
+  .cbadge .t { font-size:8.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-top:3px; }
+  .node-list { overflow-y:auto; flex:1; padding:8px 8px 4px; }
+  .grp-head { font-family:"JetBrains Mono",monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); padding:10px 8px 5px; display:flex; align-items:center; gap:7px; }
+  .grp-head .dot { width:9px; height:9px; border-radius:50%; flex:none; }
+  .nrow { display:grid; grid-template-columns:1fr auto; gap:8px; padding:7px 8px; border-radius:8px; font-size:12.5px; align-items:center; cursor:pointer; }
+  .nrow:hover { background:rgba(255,255,255,0.05); }
+  .nrow .nm { font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .nrow .co { font-family:"JetBrains Mono",monospace; font-size:9.5px; color:var(--muted); }
+  .nrow .actions { display:flex; gap:4px; opacity:0; transition:opacity .12s; }
+  .nrow:hover .actions { opacity:1; }
+  .nrow .actions button { background:none; border:none; color:var(--muted); font-size:12px; padding:2px 4px; border-radius:5px; }
+  .nrow .actions button:hover { color:var(--ink); background:rgba(255,255,255,0.08); }
+  .nrow .actions button.del:hover { color:var(--danger); }
+  .empty { color:var(--muted); font-size:12px; text-align:center; padding:26px 16px; line-height:1.6; }
+
+  /* Sidebar footer actions */
+  .sfoot { border-top:1px solid var(--border); padding:11px; display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+  .sfoot button { background:var(--panel-2); border:1px solid var(--border); color:var(--ink); font-size:12px; font-weight:600; padding:9px 8px; border-radius:8px; display:flex; align-items:center; justify-content:center; gap:6px; }
+  .sfoot button:hover { border-color:var(--indigo); }
+  .sfoot button.wide { grid-column:1 / -1; }
+  .sfoot button.ghost { background:transparent; color:var(--muted); }
+  .sfoot button.ghost:hover { color:var(--danger); border-color:var(--danger); }
+
+  /* Toast */
+  .toast { position:absolute; bottom:18px; left:50%; transform:translateX(-50%) translateY(20px); z-index:800; background:var(--panel); border:1px solid var(--border); color:var(--ink); padding:10px 16px; border-radius:10px; font-size:12.5px; box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:all .22s; max-width:calc(100vw - 40px); }
+  .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+  /* Modal (import/paste) */
+  .modal-bg { position:absolute; inset:0; z-index:900; background:rgba(5,8,14,0.7); backdrop-filter:blur(3px); display:none; align-items:center; justify-content:center; padding:20px; }
+  .modal-bg.show { display:flex; }
+  .modal { width:560px; max-width:100%; max-height:88vh; display:flex; flex-direction:column; padding:18px; }
+  .modal h3 { margin:0 0 4px; font-size:15px; }
+  .modal p { margin:0 0 12px; font-size:12px; color:var(--muted); line-height:1.55; }
+  .modal textarea { width:100%; flex:1; min-height:220px; background:var(--panel-2); border:1px solid var(--border); border-radius:9px; color:var(--ink); font-family:"JetBrains Mono",monospace; font-size:11.5px; padding:11px; resize:vertical; }
+  .modal .mrow { display:flex; gap:9px; justify-content:flex-end; margin-top:13px; }
+  .modal .mrow button { padding:9px 15px; border-radius:8px; font-size:12.5px; font-weight:600; border:1px solid var(--border); }
+  .modal .mrow .primary { background:var(--indigo); color:#0a0e17; border-color:var(--indigo); }
+  .modal .mrow .cancel { background:transparent; color:var(--muted); }
+
+  /* Marker labels */
+  .node-marker { border-radius:50%; border:2px solid rgba(10,14,23,0.85); box-shadow:0 1px 6px rgba(0,0,0,0.5); }
+  .node-tip { font-family:"Inter",sans-serif !important; font-size:11px; font-weight:600; }
+  .link-hint { position:absolute; bottom:18px; left:14px; z-index:640; font-size:11.5px; color:var(--indigo); background:var(--panel); border:1px solid var(--indigo); border-radius:9px; padding:8px 12px; display:none; }
+  .link-hint.show { display:block; }
+
+  @media (max-width:720px){
+    .sidebar { top:auto; bottom:8px; left:8px; right:8px; width:auto; height:44vh; }
+    .title-card { max-width:calc(100vw - 28px); }
+    .toolbar { top:auto; bottom:calc(44vh + 16px); }
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="title-card panel">
+  <div class="label">Fantasy Transit · Spec Tool</div>
+  <h1>US Network — Node Editor</h1>
+  <div class="sub">Pick a tier, click the map to drop a node. Switch to <b>Link</b> to connect them. Everything autosaves; Export writes GeoJSON.</div>
+</div>
+
+<div class="toolbar">
+  <div class="seg panel" id="tierSeg">
+    <button data-tier="1" class="on"><span class="dot" style="background:var(--t1)"></span>T1 · HSR <span class="kbd">1</span></button>
+    <button data-tier="2"><span class="dot" style="background:var(--t2)"></span>T2 · Regional <span class="kbd">2</span></button>
+    <button data-tier="3"><span class="dot" style="background:var(--t3)"></span>T3 · Metro <span class="kbd">3</span></button>
+    <button data-tier="4"><span class="dot" style="background:var(--t4)"></span>T4 · Commuter <span class="kbd">4</span></button>
+  </div>
+  <div class="seg panel" id="modeSeg">
+    <button data-mode="add" class="on">＋ Add <span class="kbd">A</span></button>
+    <button data-mode="link">⇢ Link <span class="kbd">L</span></button>
+    <button data-mode="delete">✕ Delete <span class="kbd">D</span></button>
+  </div>
+</div>
+
+<div class="link-hint" id="linkHint">Link mode: click a first node, then a second to connect them. <span id="linkFrom"></span></div>
+
+<div class="sidebar panel">
+  <div class="shead">
+    <h2>Network <span style="font-weight:500;color:var(--muted);font-size:11px;" id="totalCount"></span></h2>
+    <div class="counts">
+      <div class="cbadge"><div class="n" style="color:var(--t1)" id="c1">0</div><div class="t">HSR</div></div>
+      <div class="cbadge"><div class="n" style="color:var(--t2)" id="c2">0</div><div class="t">Regional</div></div>
+      <div class="cbadge"><div class="n" style="color:var(--t3)" id="c3">0</div><div class="t">Metro</div></div>
+      <div class="cbadge"><div class="n" style="color:var(--t4)" id="c4">0</div><div class="t">Commuter</div></div>
+    </div>
+  </div>
+  <div class="node-list" id="nodeList"></div>
+  <div class="sfoot">
+    <button id="btnExport">⤓ Export</button>
+    <button id="btnCopy">⧉ Copy JSON</button>
+    <button id="btnImport">⤒ Import</button>
+    <button id="btnFit">⤢ Fit view</button>
+    <button class="ghost wide" id="btnClear">Clear all</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal-bg" id="modal">
+  <div class="modal panel">
+    <h3>Import network GeoJSON</h3>
+    <p>Paste a previously exported <code>network.json</code>, or a FeatureCollection with node/edge features. This replaces the current network.</p>
+    <textarea id="importText" placeholder='{ "type":"FeatureCollection", "features":[ ... ] }' spellcheck="false"></textarea>
+    <div class="mrow">
+      <button class="cancel" id="importCancel">Cancel</button>
+      <button class="primary" id="importLoad">Load network</button>
+    </div>
+  </div>
+</div>
+
+<input type="file" id="fileInput" accept=".json,.geojson,application/json" style="display:none" />
+
+<script>
+/* ------------------------------------------------------------------ *
+ * US Fantasy Transit Network — click-to-place node editor
+ * Reads / writes plain GeoJSON so it round-trips with the repo,
+ * QGIS, GitHub's preview, and Claude Code (transit/data/network.json).
+ * ------------------------------------------------------------------ */
+
+const STORE_KEY = 'fantasy-transit-network-v1';
+
+const TIERS = {
+  1: { name:'HSR Hub',       color:'#fbbf24', radius:9, blurb:'Major-city high-speed-rail hub' },
+  2: { name:'Regional Hub',  color:'#a5b4fc', radius:7, blurb:'Connects HSR hubs to local networks' },
+  3: { name:'Metro / Subway',color:'#34d399', radius:5, blurb:'Hyper-local neighborhood transit' },
+  4: { name:'Commuter Rail', color:'#38bdf8', radius:4, blurb:'Normal-speed rail to every town' },
+};
+
+/* ---- state ---- */
+let state = { name:'US Fantasy Transit Network', nodes:[], edges:[] };
+let seq = { node:0, edge:0 };
+let activeTier = 1;
+let mode = 'add';
+let linkFrom = null;               // node id awaiting a partner in link mode
+
+/* ---- map ---- */
+const map = L.map('map', { zoomControl:true, attributionControl:true, worldCopyJump:true })
+  .setView([39.5, -98.35], 4);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  subdomains:'abcd', maxZoom:19,
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+}).addTo(map);
+
+const edgeLayer = L.layerGroup().addTo(map);
+const nodeLayer = L.layerGroup().addTo(map);
+const markers = {};   // id -> L.circleMarker
+const lines = {};     // id -> L.polyline
+
+/* ---- helpers ---- */
+const $ = s => document.querySelector(s);
+const byId = id => state.nodes.find(n => n.id === id);
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),2200); }
+function fmt(n){ return Number(n).toFixed(4); }
+
+function nextNodeId(){ return 'n' + (++seq.node); }
+function nextEdgeId(){ return 'e' + (++seq.edge); }
+
+/* keep the sequence counters ahead of any imported ids */
+function reseed(){
+  const num = (arr,pre) => arr.reduce((m,x)=>{ const v=parseInt(String(x.id).replace(pre,''),10); return isNaN(v)?m:Math.max(m,v); },0);
+  seq.node = num(state.nodes,'n');
+  seq.edge = num(state.edges,'e');
+}
+
+/* ---- persistence ---- */
+function save(){ try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch(e){} }
+function load(){
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if (raw){ const s = JSON.parse(raw); if (s && s.nodes){ state = { name:s.name||state.name, nodes:s.nodes, edges:s.edges||[] }; } }
+  } catch(e){}
+}
+
+/* ------------------------------------------------------------------ *
+ *  render
+ * ------------------------------------------------------------------ */
+function nodeMarker(n){
+  const t = TIERS[n.tier];
+  const m = L.circleMarker([n.lat, n.lng], {
+    radius:t.radius, color:'#0a0e17', weight:2, fillColor:t.color, fillOpacity:0.95, className:'node-marker'
+  });
+  m.bindTooltip(n.name, { direction:'top', offset:[0,-t.radius-2], className:'node-tip', opacity:0.95 });
+  m.on('click', (ev) => { L.DomEvent.stop(ev); onNodeClick(n.id); });
+  return m;
+}
+
+function edgeLine(e){
+  const a = byId(e.from), b = byId(e.to);
+  if (!a || !b) return null;
+  const t = TIERS[e.tier];
+  const dashed = e.tier >= 3;
+  return L.polyline([[a.lat,a.lng],[b.lat,b.lng]], {
+    color:t.color, weight: e.tier===1?3.5 : e.tier===2?2.5 : 1.8,
+    opacity:0.7, dashArray: dashed ? '4 5' : null
+  });
+}
+
+function renderAll(){
+  edgeLayer.clearLayers(); nodeLayer.clearLayers();
+  for (const k in markers) delete markers[k];
+  for (const k in lines) delete lines[k];
+
+  state.edges.forEach(e => { const l = edgeLine(e); if (l){ l.addTo(edgeLayer); lines[e.id]=l; } });
+  state.nodes.forEach(n => { const m = nodeMarker(n); m.addTo(nodeLayer); markers[n.id]=m; });
+
+  renderSidebar();
+  save();
+}
+
+function renderSidebar(){
+  const counts = {1:0,2:0,3:0,4:0};
+  state.nodes.forEach(n => counts[n.tier]++);
+  [1,2,3,4].forEach(t => $('#c'+t).textContent = counts[t]);
+  $('#totalCount').textContent = `· ${state.nodes.length} nodes · ${state.edges.length} links`;
+
+  const list = $('#nodeList');
+  if (!state.nodes.length){
+    list.innerHTML = '<div class="empty">No nodes yet.<br>Pick a tier above and click the map to drop your first hub.</div>';
+    return;
+  }
+  let html = '';
+  for (const tier of [1,2,3,4]){
+    const group = state.nodes.filter(n => n.tier === +tier);
+    if (!group.length) continue;
+    const t = TIERS[tier];
+    html += `<div class="grp-head"><span class="dot" style="background:${t.color}"></span>${t.name} · ${group.length}</div>`;
+    group.forEach(n => {
+      html += `<div class="nrow" data-id="${n.id}">
+        <div style="overflow:hidden">
+          <div class="nm">${escapeHtml(n.name)}</div>
+          <div class="co">${fmt(n.lat)}, ${fmt(n.lng)}</div>
+        </div>
+        <div class="actions">
+          <button class="ren" title="Rename">✎</button>
+          <button class="del" title="Delete">✕</button>
+        </div>
+      </div>`;
+    });
+  }
+  list.innerHTML = html;
+}
+
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+/* ------------------------------------------------------------------ *
+ *  interactions
+ * ------------------------------------------------------------------ */
+map.on('click', (ev) => {
+  if (mode !== 'add') return;
+  const n = { id:nextNodeId(), name:defaultName(activeTier), tier:activeTier, lat:+ev.latlng.lat.toFixed(5), lng:+ev.latlng.lng.toFixed(5), parent:null };
+  state.nodes.push(n);
+  const m = nodeMarker(n); m.addTo(nodeLayer); markers[n.id]=m;
+  renderSidebar(); save();
+  maybeReverseGeocode(n);   // async, non-blocking city name
+});
+
+function defaultName(tier){
+  const same = state.nodes.filter(n => n.tier === tier).length + 1;
+  return `${TIERS[tier].name.split(' ')[0]} ${same}`;
+}
+
+function onNodeClick(id){
+  if (mode === 'delete'){ deleteNode(id); return; }
+  if (mode === 'link'){
+    if (linkFrom == null){ linkFrom = id; highlightLinkFrom(); }
+    else if (linkFrom === id){ linkFrom = null; highlightLinkFrom(); }
+    else { addEdge(linkFrom, id); linkFrom = null; highlightLinkFrom(); }
+    return;
+  }
+  // add / default mode: clicking a node flies + offers rename
+  const n = byId(id); if (n) map.panTo([n.lat,n.lng]);
+}
+
+function highlightLinkFrom(){
+  const hint = $('#linkHint');
+  Object.values(markers).forEach(m => m.setStyle({ weight:2 }));
+  if (linkFrom != null && markers[linkFrom]){
+    markers[linkFrom].setStyle({ weight:4, color:'#a5b4fc' });
+    $('#linkFrom').textContent = '→ from “' + byId(linkFrom).name + '”';
+  } else {
+    $('#linkFrom').textContent = '';
+  }
+}
+
+function addEdge(from, to){
+  if (state.edges.some(e => (e.from===from&&e.to===to)||(e.from===to&&e.to===from))){ toast('Those nodes are already linked'); return; }
+  const a = byId(from), b = byId(to);
+  const tier = Math.max(a.tier, b.tier);          // edge takes the less-major class
+  const e = { id:nextEdgeId(), from, to, tier };
+  state.edges.push(e);
+  const l = edgeLine(e); if (l){ l.addTo(edgeLayer); lines[e.id]=l; }
+  save(); renderSidebar();
+  toast(`Linked ${a.name} ↔ ${b.name}`);
+}
+
+function deleteNode(id){
+  state.nodes = state.nodes.filter(n => n.id !== id);
+  state.edges = state.edges.filter(e => e.from !== id && e.to !== id);
+  if (linkFrom === id){ linkFrom = null; }
+  renderAll();
+}
+
+function renameNode(id){
+  const n = byId(id); if (!n) return;
+  const v = prompt('Node name:', n.name);
+  if (v != null && v.trim()){ n.name = v.trim(); renderAll(); }
+}
+
+/* sidebar row events (delegated) */
+$('#nodeList').addEventListener('click', (ev) => {
+  const row = ev.target.closest('.nrow'); if (!row) return;
+  const id = row.dataset.id;
+  if (ev.target.classList.contains('del')){ deleteNode(id); return; }
+  if (ev.target.classList.contains('ren')){ renameNode(id); return; }
+  const n = byId(id); if (n){ map.flyTo([n.lat,n.lng], Math.max(map.getZoom(),6)); markers[id]&&markers[id].openTooltip(); }
+});
+
+/* ------------------------------------------------------------------ *
+ *  optional: name a node from the nearest place (Nominatim reverse)
+ *  best-effort only — fails silently offline / on CORS / rate limit.
+ * ------------------------------------------------------------------ */
+async function maybeReverseGeocode(n){
+  try {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${n.lat}&lon=${n.lng}&zoom=10&addressdetails=1`;
+    const r = await fetch(url, { headers:{ 'Accept':'application/json' } });
+    if (!r.ok) return;
+    const j = await r.json();
+    const a = j.address || {};
+    const place = a.city || a.town || a.village || a.county || a.state || j.name;
+    if (place && byId(n.id)){
+      // only overwrite the auto-generated placeholder, never a user's rename
+      if (/^(HSR|Regional|Metro|Commuter)\s\d+$/.test(n.name)){
+        n.name = place; renderAll();
+      }
+    }
+  } catch(e){ /* offline / blocked — keep placeholder name */ }
+}
+
+/* ------------------------------------------------------------------ *
+ *  GeoJSON import / export
+ * ------------------------------------------------------------------ */
+function toGeoJSON(){
+  const feats = [];
+  state.nodes.forEach(n => feats.push({
+    type:'Feature',
+    geometry:{ type:'Point', coordinates:[n.lng, n.lat] },
+    properties:{ kind:'node', id:n.id, name:n.name, tier:n.tier, tierName:TIERS[n.tier].name, parent:n.parent||null }
+  }));
+  state.edges.forEach(e => {
+    const a = byId(e.from), b = byId(e.to); if (!a||!b) return;
+    feats.push({
+      type:'Feature',
+      geometry:{ type:'LineString', coordinates:[[a.lng,a.lat],[b.lng,b.lat]] },
+      properties:{ kind:'edge', id:e.id, from:e.from, to:e.to, tier:e.tier, tierName:TIERS[e.tier].name }
+    });
+  });
+  return {
+    type:'FeatureCollection',
+    name:state.name,
+    properties:{ generator:'transit/index.html', schema:'fantasy-transit-v1', nodeCount:state.nodes.length, edgeCount:state.edges.length },
+    features:feats
+  };
+}
+
+function fromGeoJSON(gj){
+  if (!gj || gj.type !== 'FeatureCollection' || !Array.isArray(gj.features)) throw new Error('Not a FeatureCollection');
+  const nodes = [], edges = [];
+  gj.features.forEach(f => {
+    const p = f.properties || {}, g = f.geometry || {};
+    if (g.type === 'Point' && p.kind !== 'edge'){
+      const [lng,lat] = g.coordinates;
+      nodes.push({ id:p.id||('n'+(nodes.length+1)), name:p.name||'Node', tier:+p.tier||1, lat, lng, parent:p.parent||null });
+    } else if (g.type === 'LineString' && p.kind !== 'node'){
+      if (p.from && p.to) edges.push({ id:p.id||('e'+(edges.length+1)), from:p.from, to:p.to, tier:+p.tier||1 });
+    }
+  });
+  return { name:gj.name || 'US Fantasy Transit Network', nodes, edges };
+}
+
+function download(filename, text){
+  const blob = new Blob([text], { type:'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download=filename; a.click();
+  setTimeout(()=>URL.revokeObjectURL(url), 500);
+}
+
+$('#btnExport').onclick = () => {
+  if (!state.nodes.length){ toast('Nothing to export yet'); return; }
+  download('network.json', JSON.stringify(toGeoJSON(), null, 2));
+  toast('Exported network.json → commit it to transit/data/');
+};
+
+$('#btnCopy').onclick = async () => {
+  const txt = JSON.stringify(toGeoJSON());
+  try { await navigator.clipboard.writeText(txt); toast('GeoJSON copied — paste it into Claude Code'); }
+  catch(e){ /* fallback: open modal with the text selected */ $('#importText').value = txt; $('#modal').classList.add('show'); $('#importText').select(); toast('Copy failed — select & copy from the box'); }
+};
+
+$('#btnImport').onclick = () => { $('#importText').value=''; $('#modal').classList.add('show'); };
+$('#importCancel').onclick = () => $('#modal').classList.remove('show');
+$('#importLoad').onclick = () => {
+  try {
+    const gj = JSON.parse($('#importText').value);
+    state = fromGeoJSON(gj); reseed(); linkFrom=null; renderAll(); fitView();
+    $('#modal').classList.remove('show');
+    toast(`Loaded ${state.nodes.length} nodes · ${state.edges.length} links`);
+  } catch(e){ toast('Could not parse: ' + e.message); }
+};
+
+/* file-drop import via the hidden file input (nice-to-have) */
+$('#importText').addEventListener('dragover', e => e.preventDefault());
+$('#importText').addEventListener('drop', e => {
+  e.preventDefault(); const f = e.dataTransfer.files[0]; if (!f) return;
+  const r = new FileReader(); r.onload = () => { $('#importText').value = r.result; }; r.readAsText(f);
+});
+
+/* ---- other footer actions ---- */
+function fitView(){
+  if (!state.nodes.length){ map.setView([39.5,-98.35],4); return; }
+  const b = L.latLngBounds(state.nodes.map(n => [n.lat,n.lng]));
+  map.fitBounds(b.pad(0.15));
+}
+$('#btnFit').onclick = fitView;
+
+$('#btnClear').onclick = () => {
+  if (!state.nodes.length) return;
+  if (confirm('Clear the entire network? This cannot be undone (export first if you want to keep it).')){
+    state = { name:state.name, nodes:[], edges:[] }; seq={node:0,edge:0}; linkFrom=null; renderAll();
+  }
+};
+
+/* ------------------------------------------------------------------ *
+ *  toolbar: tier + mode
+ * ------------------------------------------------------------------ */
+$('#tierSeg').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  activeTier = +b.dataset.tier;
+  $('#tierSeg').querySelectorAll('button').forEach(x => x.classList.toggle('on', x===b));
+});
+$('#modeSeg').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  setMode(b.dataset.mode);
+});
+function setMode(m){
+  mode = m; linkFrom = null; highlightLinkFrom();
+  $('#modeSeg').querySelectorAll('button').forEach(x => x.classList.toggle('on', x.dataset.mode===m));
+  $('#map').className = 'mode-' + m;
+  $('#linkHint').classList.toggle('show', m==='link');
+}
+
+/* keyboard shortcuts */
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (['1','2','3','4'].includes(e.key)){ $('#tierSeg').querySelector(`[data-tier="${e.key}"]`).click(); }
+  else if (e.key.toLowerCase()==='a') setMode('add');
+  else if (e.key.toLowerCase()==='l') setMode('link');
+  else if (e.key.toLowerCase()==='d') setMode('delete');
+  else if (e.key==='Escape'){ if ($('#modal').classList.contains('show')) $('#modal').classList.remove('show'); else { linkFrom=null; highlightLinkFrom(); } }
+});
+
+/* ------------------------------------------------------------------ *
+ *  boot — try localStorage, else the seed file in data/
+ * ------------------------------------------------------------------ */
+async function boot(){
+  load();
+  if (!state.nodes.length){
+    try {
+      const r = await fetch('data/network.json', { cache:'no-store' });
+      if (r.ok){ const gj = await r.json(); state = fromGeoJSON(gj); }
+    } catch(e){ /* no seed file yet — start empty */ }
+  }
+  reseed(); setMode('add'); renderAll(); fitView();
+}
+boot();
+</script>
+</body>
+</html>
