@@ -56,6 +56,30 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
   (best-effort — falls back to a `Tier N` placeholder offline or when rate-limited; it never
   overwrites a name you set yourself).
 
+## Tier 4 — the "every town" base layer
+
+Tier 4 (normal-speed commuter rail reaching every town) is too large to hand-place, so it's
+**auto-seeded** from the US Census, not drawn node by node. `scripts/build_towns.py` pulls the
+Census **Gazetteer Places (national)** file and writes every **incorporated place** — city, town,
+village, borough — in the 50 states + DC to `transit/data/towns.geojson` as tier-4 GeoJSON points.
+
+- **19,465 towns** (2024 gazetteer): 10,214 cities · 4,306 towns · 3,709 villages · 1,215 boroughs.
+- Rendered in the editor as a faint, canvas-drawn, non-interactive dot layer with a **"Tier-4 towns"
+  toggle** in the sidebar. It's *reference context* — the target set your commuter rail eventually
+  reaches — and is deliberately kept **out of the editable network**: it never enters `network.json`,
+  `localStorage`, or an export. You hand-place only the hubs (tiers 1–3 and any tier-4 rail hubs).
+- Rebuild / re-vintage:
+
+  ```bash
+  python3 scripts/build_towns.py                 # incorporated places, 50 states + DC (default)
+  python3 scripts/build_towns.py --include-cdp    # also add census-designated places (~32k total)
+  python3 scripts/build_towns.py --year 2023      # pin a gazetteer vintage
+  ```
+
+  The raw gazetteer is cached under `scripts/.cache/` (gitignored); only `towns.geojson` is committed.
+  Each town carries `name`, `type`, `st`, `geoid`, `tier:4` — the `geoid` lets us later join Census
+  population and auto-route commuter lines from towns to their nearest regional hub.
+
 ## Data schema (`fantasy-transit-v1`)
 
 A single GeoJSON `FeatureCollection`. **Nodes** are `Point` features, **links** are `LineString`
@@ -81,12 +105,16 @@ made explicit beyond the drawn links.
 ## Stack
 
 Single self-contained `index.html` — Leaflet 1.9 + keyless CARTO dark basemap, no build step, no
-API keys. Matches the rest of the site (plain HTML/CSS/JS).
+API keys. The 19k-point tier-4 town layer is canvas-rendered in its own pane for smooth pan/zoom.
+`scripts/build_towns.py` (Python stdlib only) regenerates the town data. Matches the rest of the
+site (plain HTML/CSS/JS).
 
 ## Status / next steps
 
 - [x] Click-to-place node editor, link/delete modes, GeoJSON import/export, autosave
 - [x] Seed spine of 12 tier-1 HSR hubs (`data/network.json`)
-- [ ] Flesh out tier-2 regional hubs, then tier-3 metro and tier-4 commuter coverage
-- [ ] Auto-route HSR edges along real corridors; compute network stats (reach, coverage)
+- [x] Tier-4 "every town" base layer — 19,465 Census incorporated places (`data/towns.geojson`)
+- [ ] Flesh out tier-2 regional hubs, then tier-3 metro coverage
+- [ ] Auto-route HSR edges along real corridors; auto-connect towns to nearest regional hub
+- [ ] Join Census population to towns; compute network stats (reach, coverage)
 - [ ] Promote to a styled read-only "network map" view and add it to the portfolio gallery

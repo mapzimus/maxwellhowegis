@@ -58,6 +58,10 @@
   .cbadge { text-align:center; border:1px solid var(--border); border-radius:8px; padding:6px 2px; }
   .cbadge .n { font-family:"JetBrains Mono",monospace; font-size:16px; font-weight:600; line-height:1; }
   .cbadge .t { font-size:8.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-top:3px; }
+  .towns-bar { margin-top:10px; display:flex; align-items:center; gap:7px; font-size:11.5px; color:var(--ink); cursor:pointer; user-select:none; }
+  .towns-bar input { accent-color:var(--t4); margin:0; cursor:pointer; }
+  .towns-bar .dot { width:8px; height:8px; border-radius:50%; flex:none; }
+  .towns-bar b { margin-left:auto; font-family:"JetBrains Mono",monospace; font-weight:500; color:var(--muted); font-size:10.5px; }
   .node-list { overflow-y:auto; flex:1; padding:8px 8px 4px; }
   .grp-head { font-family:"JetBrains Mono",monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); padding:10px 8px 5px; display:flex; align-items:center; gap:7px; }
   .grp-head .dot { width:9px; height:9px; border-radius:50%; flex:none; }
@@ -143,6 +147,12 @@
       <div class="cbadge"><div class="n" style="color:var(--t3)" id="c3">0</div><div class="t">Metro</div></div>
       <div class="cbadge"><div class="n" style="color:var(--t4)" id="c4">0</div><div class="t">Commuter</div></div>
     </div>
+    <label class="towns-bar" title="Every US Census incorporated place — the tier-4 base your commuter rail reaches">
+      <input type="checkbox" id="townsChk" checked />
+      <span class="dot" style="background:var(--t4)"></span>
+      <span>Tier-4 towns</span>
+      <b id="townsCount">…</b>
+    </label>
   </div>
   <div class="node-list" id="nodeList"></div>
   <div class="sfoot">
@@ -194,17 +204,56 @@ let mode = 'add';
 let linkFrom = null;               // node id awaiting a partner in link mode
 
 /* ---- map ---- */
-const map = L.map('map', { zoomControl:true, attributionControl:true, worldCopyJump:true })
+const map = L.map('map', { zoomControl:true, attributionControl:true, worldCopyJump:true, preferCanvas:true })
   .setView([39.5, -98.35], 4);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   subdomains:'abcd', maxZoom:19,
-  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a> &middot; towns: US Census'
 }).addTo(map);
+
+/* dedicated pane so the 19k tier-4 town dots sit above tiles but below the network */
+map.createPane('towns'); map.getPane('towns').style.zIndex = 250;
+const townsCanvas = L.canvas({ pane:'towns', padding:0.5 });
+let townsGeo = null, townCount = 0;
+let townsShown = localStorage.getItem(STORE_KEY + ':towns') !== '0';
 
 const edgeLayer = L.layerGroup().addTo(map);
 const nodeLayer = L.layerGroup().addTo(map);
 const markers = {};   // id -> L.circleMarker
 const lines = {};     // id -> L.polyline
+
+/* ------------------------------------------------------------------ *
+ *  tier-4 "every town" base layer — 19,465 US Census incorporated
+ *  places (scripts/build_towns.py → data/towns.geojson). Reference
+ *  context only: canvas-rendered, non-interactive, and kept out of the
+ *  editable network (never in state / localStorage / export).
+ * ------------------------------------------------------------------ */
+async function loadTowns(){
+  try {
+    const r = await fetch('data/towns.geojson', { cache:'force-cache' });
+    if (!r.ok) return;
+    const gj = await r.json();
+    townCount = gj.features.length;
+    townsGeo = L.geoJSON(gj, {
+      renderer: townsCanvas,
+      pointToLayer: (f, latlng) => L.circleMarker(latlng, {
+        renderer:townsCanvas, radius:1.6, stroke:false, fillColor:TIERS[4].color, fillOpacity:0.5, interactive:false
+      })
+    });
+    if (townsShown) townsGeo.addTo(map);
+    updateTownsUI();
+  } catch(e){ /* no towns file / offline — editor still works */ }
+}
+function updateTownsUI(){
+  const chk = $('#townsChk'), lbl = $('#townsCount');
+  if (chk) chk.checked = townsShown;
+  if (lbl) lbl.textContent = townCount ? townCount.toLocaleString() + ' towns' : '—';
+}
+function toggleTowns(on){
+  townsShown = on;
+  localStorage.setItem(STORE_KEY + ':towns', on ? '1' : '0');
+  if (townsGeo){ if (on) townsGeo.addTo(map); else map.removeLayer(townsGeo); }
+}
 
 /* ---- helpers ---- */
 const $ = s => document.querySelector(s);
@@ -456,6 +505,8 @@ $('#btnCopy').onclick = async () => {
   catch(e){ /* fallback: open modal with the text selected */ $('#importText').value = txt; $('#modal').classList.add('show'); $('#importText').select(); toast('Copy failed — select & copy from the box'); }
 };
 
+$('#townsChk').addEventListener('change', e => toggleTowns(e.target.checked));
+
 $('#btnImport').onclick = () => { $('#importText').value=''; $('#modal').classList.add('show'); };
 $('#importCancel').onclick = () => $('#modal').classList.remove('show');
 $('#importLoad').onclick = () => {
@@ -530,6 +581,7 @@ async function boot(){
     } catch(e){ /* no seed file yet — start empty */ }
   }
   reseed(); setMode('add'); renderAll(); fitView();
+  loadTowns();   // async — paints the tier-4 town layer once the network is up
 }
 boot();
 </script>
