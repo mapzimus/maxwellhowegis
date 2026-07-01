@@ -47,14 +47,23 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
 ## Using the editor
 
 - **Pick a tier** (buttons, or keys `1`–`4`), then **click the map** to drop a node.
-- **Link** mode (`L`): click one node, then another, to connect them.
-- **Delete** mode (`D`): click a node to remove it (its links go too).
+- **Search & promote** (sidebar box): type any town name — results are ranked by population.
+  Click a row to fly there; hit `Enter` or the `＋` to **promote** it into the network as a node
+  at the active tier, with its exact Census coordinates, real name, GEOID and population attached.
+  This is the precise way to place tier-2/3 hubs on real cities.
+- **Link** mode (`L`): click one node, then another, to connect them. Linking **across tiers
+  records the hierarchy** — the minor node's `parent` is set to the major hub automatically.
+- **Delete** mode (`D`): click a node to remove it (its links go too, and children are orphaned
+  cleanly).
+- **Undo** — `Ctrl/Cmd+Z` steps back through adds, links, deletes, renames, imports, even Clear all
+  (within the session).
 - **Add** mode (`A`) is the default. In the sidebar, click a row to fly to it, `✎` to rename,
-  `✕` to delete. `Esc` cancels a pending link / closes the import box.
+  `✕` to delete. `Esc` cancels a pending link / closes the import box or search.
+- The sidebar shows live **per-tier route mileage** (great-circle) under the node counts.
 - **Export / Copy JSON / Import / Fit view / Clear all** live in the sidebar footer.
-- New nodes are auto-named from the nearest place via OpenStreetMap's Nominatim reverse geocoder
-  (best-effort — falls back to a `Tier N` placeholder offline or when rate-limited; it never
-  overwrites a name you set yourself).
+- Map-click nodes are auto-named from the nearest place via OpenStreetMap's Nominatim reverse
+  geocoder (best-effort — falls back to a `Tier N` placeholder offline or when rate-limited; it
+  never overwrites a name you set yourself). Promoted nodes already carry their Census name.
 
 ## Tier 4 — the "every town" base layer
 
@@ -64,10 +73,14 @@ Census **Gazetteer Places (national)** file and writes every **incorporated plac
 village, borough — in the 50 states + DC to `transit/data/towns.geojson` as tier-4 GeoJSON points.
 
 - **19,465 towns** (2024 gazetteer): 10,214 cities · 4,306 towns · 3,709 villages · 1,215 boroughs.
-- Rendered in the editor as a faint, canvas-drawn, non-interactive dot layer with a **"Tier-4 towns"
-  toggle** in the sidebar. It's *reference context* — the target set your commuter rail eventually
-  reaches — and is deliberately kept **out of the editable network**: it never enters `network.json`,
-  `localStorage`, or an export. You hand-place only the hubs (tiers 1–3 and any tier-4 rail hubs).
+- Every town is **joined to Census population** (SUB-EST 2024 place-level estimates, 100% match by
+  GEOID) — the `pop` property drives dot size/opacity in the editor and search ranking, and is what
+  a tier-2 candidate cut (e.g. pop ≥ 100k) will run on.
+- Rendered in the editor as a faint, canvas-drawn, non-interactive dot layer (**sized by
+  population**) with a **"Tier-4 towns" toggle** in the sidebar. It's *reference context* — the
+  target set your commuter rail eventually reaches — and is deliberately kept **out of the editable
+  network**: it never enters `network.json`, `localStorage`, or an export. You hand-place only the
+  hubs (tiers 1–3 and any tier-4 rail hubs), or **promote** towns via search.
 - Rebuild / re-vintage:
 
   ```bash
@@ -76,9 +89,10 @@ village, borough — in the 50 states + DC to `transit/data/towns.geojson` as ti
   python3 scripts/build_towns.py --year 2023      # pin a gazetteer vintage
   ```
 
-  The raw gazetteer is cached under `scripts/.cache/` (gitignored); only `towns.geojson` is committed.
-  Each town carries `name`, `type`, `st`, `geoid`, `tier:4` — the `geoid` lets us later join Census
-  population and auto-route commuter lines from towns to their nearest regional hub.
+  The raw gazetteer + estimates files are cached under `scripts/.cache/` (gitignored); only
+  `towns.geojson` is committed. Each town carries `name`, `type`, `st`, `geoid`, `pop`, `tier:4` —
+  enough to auto-route commuter lines from towns to their nearest regional hub later.
+  (`--no-pop` skips the population join.)
 
 ## Data schema (`fantasy-transit-v1`)
 
@@ -114,7 +128,10 @@ site (plain HTML/CSS/JS).
 - [x] Click-to-place node editor, link/delete modes, GeoJSON import/export, autosave
 - [x] Seed spine of 12 tier-1 HSR hubs (`data/network.json`)
 - [x] Tier-4 "every town" base layer — 19,465 Census incorporated places (`data/towns.geojson`)
+- [x] Census population joined to every town (100%); pop-scaled dots
+- [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
+      live per-tier mileage
 - [ ] Flesh out tier-2 regional hubs, then tier-3 metro coverage
 - [ ] Auto-route HSR edges along real corridors; auto-connect towns to nearest regional hub
-- [ ] Join Census population to towns; compute network stats (reach, coverage)
+- [ ] Network stats (reach, coverage: % of towns/population within N mi of the network)
 - [ ] Promote to a styled read-only "network map" view and add it to the portfolio gallery
