@@ -218,6 +218,7 @@ const projects = [
         thumb: "images/projects/appalachians-thumb.png",
         gallery: [
             { src: "images/projects/appalachians/full-range.png", caption: "The entire range, Georgia to Newfoundland — fourteen geologic regions, major peaks, the Appalachian Trail, and the International Appalachian Trail into Canada" },
+            { src: "images/projects/appalachians/formation.png", caption: "Formation view — regions recolored by the orogeny that built them, from Grenville basement (~1.1 Ga) to the Alleghanian collision (~300 Ma)" },
             { src: "images/projects/appalachians/overview.png", caption: "Full interface — basemaps, layer controls, search, and a clickable legend" },
             { src: "images/projects/appalachians/region-card.png", caption: "Tap a region for its geology, formative orogeny, and highest summit" },
             { src: "images/projects/appalachians/mobile.png", caption: "Mobile layout — bottom-sheet detail cards and a touch-friendly toolbar" }

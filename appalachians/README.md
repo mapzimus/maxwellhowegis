@@ -70,6 +70,11 @@ python -m http.server 8001   # from repo root → http://localhost:8001/appalach
 
 ## Features
 
+- **Formation view** — a second legend mode that recolors the 14 regions by their primary
+  formative event (Grenville ~1.1 Ga → Taconic ~450 Ma → Acadian ~375 Ma → Alleghanian
+  ~300 Ma → unfolded plateaus), telling the how-the-range-formed story at a glance; legend
+  rows toggle whole orogeny groups, and the mode persists in share links
+
 - Six keyless basemaps (Minimal / Streets / Satellite / Topo / Relief / Dark)
 - Layers panel: per-layer toggles + opacity, region filtering, jump-to menu
 - Named ranges, notable summits, region labels, state outlines, Appalachian Trail
