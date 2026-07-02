@@ -94,3 +94,111 @@ Validate after running: each file still parses as JSON, `len(features)`
 matches the pre-sync count, and `sorted(features[0]["properties"].keys())`
 is unchanged from before the sync (catches accidental schema drift from
 upstream, independent of this minification step).
+
+---
+
+## 2026-07-02 — `ma-atlas/app.js`: single-burst startup data loading
+
+**Files changed**: `ma-atlas/app.js` (the `map.on("load", ...)` handler,
+~lines 2810–3110).
+
+**What**: The startup handler fired its data fetches in three sequential
+"waves": a 53-item `Promise.all`, then (only after that fully resolved and
+~70 lines of synchronous `enrich*()` processing ran) a second `Promise.all`
+of the `EXTRA_DISTRICT_SOURCES` list (~37 fetches), then a third, single
+`await fetch(SOURCES.maPrivateSchools)`. All three waves hit static,
+hard-coded `SOURCES.*` paths — none of their URLs are derived from another
+wave's *results*, only the in-app `enrich*()`/merge processing after wave 1
+depends on wave-1 *data*. So there was no correctness reason for waves 2
+and 3 to wait on wave 1's network round-trip. The fix restructures the
+handler to kick off all three waves' fetch promises up front (`wave1Promise`,
+`extraDistrictPromise`, `privateSchoolsPromise`), then `await`/destructure
+them in the original order — the destructuring assignment and every
+downstream `enrich*()` call, in the original sequence, are byte-for-byte
+unchanged. Also added explicit `.ok` checks + a tagged `criticalSource`
+error on the two fetches (`academic`, `municipalities`) the app can't
+function without, so a failure surfaces a specific message
+("academic district boundaries" / "municipality boundaries") in the
+existing `#mapLoading` error UI instead of the generic fallback text.
+
+**Why**: Chrome/browsers don't need waves 2 and 3 to be *sequenced* after
+wave 1 — they were only sequenced because of how the `await`s were laid
+out in the source, not because of any real data dependency. On a route-mocked
+local server the first-request-to-last-request-start spread collapsed from
+332 ms (with a clear ~193 ms dead gap at the wave-1→wave-2 boundary) to
+82 ms (largest gap 16 ms — ordinary connection-queueing jitter, not a wave
+boundary); over a real network with non-trivial per-request latency the
+absolute savings are larger (one fewer serialized round-trip category
+before the whole payload is in flight).
+
+**How to re-apply after the next upstream sync**: if the next sync
+overwrites `ma-atlas/app.js` wholesale, reapply by moving the
+`EXTRA_DISTRICT_SOURCES` array declaration and the
+`fetch(SOURCES.maPrivateSchools)...` promise construction to *before* the
+big `Promise.all([...])` literal (assigning each to its own `const
+...Promise` instead of awaiting immediately), then replacing the later
+`await Promise.all(EXTRA_DISTRICT_SOURCES.map(...))` / `await
+fetch(SOURCES.maPrivateSchools)...` call sites with `await
+extraDistrictPromise` / `await privateSchoolsPromise` respectively — i.e.
+"declare and start every fetch first, await in original order later."
+Preserve the `academic`/`municipalities` `.ok`-check + `criticalSource`
+tagging and the matching `err.criticalSource` branch in the outer `catch`
+block. See the Round 4b PR description for the full before/after diff.
+
+---
+
+## 2026-07-02 — Simplify `ma-atlas/data/ma_academic_districts.geojson` + `ma_municipalities.geojson`
+
+**Files changed**:
+- `ma-atlas/data/ma_academic_districts.geojson` (3.92 MB → 3.61 MB, −7.8%)
+- `ma-atlas/data/ma_municipalities.geojson` (1.23 MB → 0.98 MB, −20.0%)
+
+**What**: Ran both files through `mapshaper` with topology-preserving
+Visvalingam simplification at 50% point retention, `keep-shapes` (guarantees
+no polygon collapses to nothing), and 5-decimal coordinate precision:
+
+```bash
+npx -y mapshaper ma-atlas/data/ma_academic_districts.geojson \
+    -simplify 50% keep-shapes \
+    -o ma-atlas/data/ma_academic_districts.geojson precision=0.00001 format=geojson
+
+npx -y mapshaper ma-atlas/data/ma_municipalities.geojson \
+    -simplify 50% keep-shapes \
+    -o ma-atlas/data/ma_municipalities.geojson precision=0.00001 format=geojson
+```
+
+Only `geometry.coordinates` was touched — feature counts (281 districts,
+351 municipalities) and every feature's `properties` dict were verified
+byte-identical before/after (Python comparator matched features on
+`DIST_CODE` / `TOWN_ID` and diffed the full sorted property set; see the
+Round 4b PR description).
+
+**Why**: The task's default starting point (15% retention, the more
+aggressive end) visibly degraded the Boston-area coastline/harbor boundary
+detail on screenshot diff (~6.5% of map-canvas pixels differed at a
+Boston-zoom screenshot, and the loss was visible by eye in cropped
+side-by-side comparisons) — Boston Harbor's many small
+inlets/peninsulas need more vertices than a generic town boundary to read
+cleanly at in-app zoom levels. Retention was raised in steps (15% → 40% →
+50% → 60% → 75%) until the statewide, Boston-zoom, and Lynn-zoom screenshots
+matched the unsimplified original with no visible difference; 50% was the
+lowest retention in the "clean" range, so it was kept for the larger file
+savings. Note the modest savings vs. the ~50-70% estimated in AUDIT.md:
+`ma_academic_districts.geojson` is dominated by non-geometry payload — of
+its pre-simplification 3.92 MB, only ~0.67 MB was `geometry` JSON (the rest
+is ~280 districts × several hundred year-suffixed metric columns in
+`properties`), so simplifying geometry alone cannot approach a 50-70%
+reduction on that file; `ma_municipalities.geojson` is closer to an even
+geometry/property split (~0.65 MB / ~0.67 MB) and saved proportionally more
+(20%).
+
+**How to re-apply after the next upstream sync**: after the next PowerShell
+sync overwrites these two files, re-run the two `mapshaper` commands above
+against the freshly-synced files, then re-validate: feature counts
+unchanged (281 / 351) and every feature's `properties` dict unchanged
+(match on `DIST_CODE` / `TOWN_ID`). If either file's shape has changed
+upstream (new districts/towns, redrawn boundaries), re-run the visual check
+described in the Round 4b PR (statewide + Boston-zoom + Lynn-zoom
+screenshots, before/after) before trusting 50% retention again — a
+materially different source geometry could need a different retention
+level to stay clean.
