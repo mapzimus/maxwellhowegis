@@ -1,119 +1,115 @@
-# Deploying to GitHub Pages
+# Deployment
 
-## Quick Setup (5 minutes)
+This site deploys via **GitHub Actions → GitHub Pages**, not the legacy
+"Deploy from a branch" mode. The two Pages modes are mutually exclusive —
+if you ever see the site *not* pick up a push, check Settings → Pages →
+Source is set to **GitHub Actions**, not **Deploy from a branch**.
 
-### 1. Create a GitHub Repository
+## How it actually works
 
-Go to https://github.com/new and create a new repo:
-- **Name:** `maxwellhowegis.com` (or whatever you prefer)
-- **Visibility:** Public (required for free GitHub Pages)
-- Don't initialize with README — we'll push existing files
+`.github/workflows/pages.yml` runs on every push to `main` (plus manual
+`workflow_dispatch`):
 
-### 2. Push This Folder to GitHub
+1. `actions/checkout@v4` with **`submodules: recursive`** — this is the
+   detail that makes the site buildable at all: `geopuesto`, `bugwars`,
+   `truescale`, and `quabbin` are git submodules (see `.gitmodules`), and
+   without `submodules: recursive` those subpaths would deploy as empty
+   directories.
+2. `actions/configure-pages@v5` configures the Pages environment.
+3. `actions/upload-pages-artifact@v3` uploads the entire checked-out repo
+   root (`path: .`) as the Pages artifact — there's no build step; the
+   artifact *is* the working tree.
+4. `actions/deploy-pages@v4` publishes it.
 
-Open a terminal in this folder and run:
+The job has `contents: read`, `pages: write`, `id-token: write` permissions
+and runs in the `github-pages` environment with `concurrency: { group:
+pages, cancel-in-progress: false }`, so overlapping pushes queue rather
+than race or cancel each other.
+
+To deploy: **push to `main`.** That's it — no manual trigger needed (though
+`workflow_dispatch` is there if you want to re-run a deploy without a new
+commit, e.g. after flipping a submodule pin or a GitHub-side config change).
+
+## Custom domain
+
+`CNAME` at the repo root contains `maxwellhowegis.com`; GitHub Pages reads
+this file on every deploy to (re)configure the custom domain, so it must
+ship in the published artifact (it does — the whole tree is uploaded, this
+file included). DNS is four `A` records at the registrar pointing at
+GitHub Pages' IPs (185.199.108–111.153) plus HTTPS enforced in the repo's
+Pages settings; that part is a one-time setup done outside this repo and
+isn't re-run by the workflow.
+
+## Submodules
+
+Four subpaths are **git submodules** pinned to a commit SHA in this repo's
+tree (`git ls-tree HEAD geopuesto bugwars truescale quabbin` shows the
+pins):
+
+| Path | Source |
+|---|---|
+| `/geopuesto/` | [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) |
+| `/bugwars/` | [`mapzimus/bug-wars`](https://github.com/mapzimus/bug-wars) |
+| `/truescale/` | [`mapzimus/true-scale`](https://github.com/mapzimus/true-scale) |
+| `/quabbin/` | [`mapzimus/quabbin`](https://github.com/mapzimus/quabbin) |
+
+All four **must stay public** — the Pages workflow checks them out with
+the default `GITHUB_TOKEN`, which cannot read private repos. A submodule
+flipped to private silently breaks that subpath on the next deploy (it'll
+check out empty, not fail loudly).
+
+Submodules only publish what's pinned, not what's on their default branch.
+After pushing changes inside a submodule's own repo, bump the pointer here:
 
 ```bash
-git init
-git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/maxwellhowegis.com.git
-git push -u origin main
+git submodule update --remote <path>   # e.g. bugwars, truescale
+git add <path>
+git commit -m "bump <path> submodule"
+git push
 ```
 
-### 3. Enable GitHub Pages
+Until that commit lands, the live site keeps serving the old pinned
+commit even though the submodule's upstream repo has moved on.
 
-1. Go to your repo on GitHub
-2. Settings → Pages (left sidebar)
-3. Under "Source", select **Deploy from a branch**
-4. Branch: `main`, folder: `/ (root)`
-5. Click Save
+## Vendored (non-submodule) directories
 
-Your site will be live at `https://YOUR_USERNAME.github.io/maxwellhowegis.com/` within a few minutes.
+Two directories are **not** submodules — they're plain committed copies,
+manually synced from other private repos:
 
-### 4. Connect Your Custom Domain
+| Path | Synced from |
+|---|---|
+| `/ma-atlas/` | private `mapzimus/ma-education-atlas`, via `deploy/sync_public_maps.ps1` in `lehs-data-dive` |
+| `/Lynn-data-dive/maps/` | private `mapzimus/lehs-data-dive`, same sync script |
 
-1. In your repo's Settings → Pages, enter `maxwellhowegis.com` under "Custom domain"
-2. Check "Enforce HTTPS"
-3. At your domain registrar (wherever you bought the domain), add these DNS records:
+Because these are copies rather than submodule pins, git has no way to
+detect drift from upstream — a sync is just a PowerShell copy + a plain
+commit, and any repo-local fix applied directly to a vendored file (image
+recompression, GeoJSON minification, etc.) will be silently overwritten
+the next time that directory is re-synced unless it's re-applied by hand.
+See `UPSTREAM-NOTES.md` for the log of such fixes and exactly how to
+reapply each one after a resync.
 
-**Option A — A Records (recommended):**
-```
-Type: A    Name: @    Value: 185.199.108.153
-Type: A    Name: @    Value: 185.199.109.153
-Type: A    Name: @    Value: 185.199.110.153
-Type: A    Name: @    Value: 185.199.111.153
-```
+## Gotchas
 
-**Plus a CNAME for www:**
-```
-Type: CNAME    Name: www    Value: YOUR_USERNAME.github.io
-```
-
-DNS propagation takes 1-24 hours. After that, `maxwellhowegis.com` will serve your new portfolio.
-
----
-
-## File Structure
-
-```
-maxwellhowegis.com/
-├── index.html          ← Home page
-├── portfolio.html      ← Full project gallery
-├── mapzimus.html       ← @Mapzimus page
-├── about.html          ← About & skills
-├── tools.html          ← Web tools page
-├── DEPLOY.md           ← This file (delete before deploying if you want)
-├── css/
-│   └── style.css       ← All styles
-├── js/
-│   ├── projects.js     ← Project data (edit this to add/change projects)
-│   └── main.js         ← Shared JS (nav, modals, filters, animations)
-└── images/
-    └── projects/       ← Project screenshots
-        ├── central-campus.png
-        ├── change-analysis.png
-        ├── education.png
-        ├── lynn.png
-        ├── lynnfield.png
-        ├── salem-evacuation.png
-        └── salem-pantry.png
-```
-
-## How to Add a New Project
-
-1. Open `js/projects.js`
-2. Add a new object to the `projects` array:
-
-```js
-{
-    id: 9,  // next available ID
-    title: "Your Project Name",
-    category: "Spatial Analysis",
-    type: "analysis",  // map, analysis, web, remote, or viz
-    tags: ["ArcGIS Pro", "Python"],
-    summary: "One sentence summary.",
-    description: "Full paragraph description.",
-    tools: ["ArcGIS Pro", "Python", "Census ACS"],
-    year: "2025",
-    course: null,  // or "GPH9XX — Course Name"
-    thumb: "images/projects/your-image.png",
-    liveUrl: null,  // or "https://..."
-    repoUrl: null   // or "https://github.com/..."
-}
-```
-
-3. Add a screenshot to `images/projects/`
-4. Commit and push — GitHub Pages auto-deploys
-
-## How to Add a New Tool
-
-Edit `tools.html` directly — add a new `<div class="tool-card">` block following the existing pattern.
-
-## How to Host an Interactive Map
-
-1. Create a folder like `tools/my-map/`
-2. Put your HTML/JS map files inside
-3. Add a card to `tools.html` linking to `tools/my-map/index.html`
-4. Commit and push
+- **`schedule`-triggered workflows get disabled after 60 days of repo
+  inactivity.** `.github/workflows/keep-streamlit-awake.yml` pings the
+  Lynn Data Dive Streamlit app every 6 hours via `cron` to keep it warm.
+  GitHub automatically disables scheduled workflows on a repo with no
+  pushes/commits for 60 days — on a quiet repo the cron will silently stop
+  firing and the Streamlit app will go back to cold-starting for visitors.
+  Any push to `main` resets the clock; if the workflow shows as disabled
+  in the Actions tab, re-enable it manually (Actions → the workflow →
+  "Enable workflow") or just push a commit.
+- **Submodules must be public.** See above — a private submodule doesn't
+  fail the build, it just publishes an empty directory at that path.
+- **No build step.** The uploaded artifact is the raw working tree
+  (`path: .` in the workflow). Anything committed to `main` ships as-is;
+  there's no bundling, minification, or templating to go stale.
+- **Vendored directories aren't self-updating.** `ma-atlas/` and
+  `Lynn-data-dive/maps/` can silently drift from their source repos —
+  nothing in CI checks parity. See `UPSTREAM-NOTES.md`.
+- **`concurrency: cancel-in-progress: false`** means back-to-back pushes to
+  `main` queue their Pages deploys rather than cancel the in-flight one —
+  a deploy triggered by an older commit can finish *after* one triggered by
+  a newer commit if they're close together, briefly serving stale content
+  before the newer deploy catches up.
