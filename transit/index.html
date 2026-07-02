@@ -739,7 +739,8 @@ function runSearch(){
   box.classList.add('show');
 }
 
-$('#townSearch').addEventListener('input', runSearch);
+const debounce=(fn,ms)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms);};};
+$('#townSearch').addEventListener('input', debounce(runSearch, 120));
 $('#townSearch').addEventListener('keydown', e => {
   if (e.key === 'Enter' && srchHits.length){ promoteTown(srchHits[0]); }
   else if (e.key === 'Escape'){ closeSearch(); e.target.blur(); e.stopPropagation(); }

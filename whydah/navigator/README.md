@@ -31,7 +31,7 @@ L log-line · F lead line · H help · Esc take over from the demo
 ## Data & credits
 
 - Coastline: Natural Earth 1:10m (public domain), clipped by `data/build_coastline.py`.
-- Engine: Three.js (MIT), vendored at `vendor/three.module.js`.
+- Engine: Three.js (MIT), vendored at `vendor/three.module.min.js` (r160, minified build).
 - History grounded in the Whydah record: Bellamy's run for Maine, Williams's Block
   Island detour, the *Mary Anne* wine prize, the wreck off Wellfleet, and Cyprian
   Southack's 1717 chart ("where I buried One Hundred & Two Men Drowned").

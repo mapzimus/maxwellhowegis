@@ -9,8 +9,8 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 
 ## 1. Broken things (fix first)
 
-- [ ] **`index.html` is corrupted: 1,103 NUL (`\0`) bytes after `</html>`, and it's the only page with CRLF line endings.** Verified byte-for-byte. Browsers tolerate it, but grep/tooling treat the homepage as binary and it's served as-is. Truncate at `</html>`, re-save as UTF-8/LF, and add a `.gitattributes` with `*.html text eol=lf` to prevent recurrence. *(~5 min)*
-- [ ] **`concord.html` `og:image` points to `images/projects/open-concord-thumb.png`, which doesn't exist** — only the `.svg` exists, and OG images generally must be raster anyway. Export a PNG thumb and fix the path. *(~10 min)*
+- [x] **`index.html` is corrupted: 1,103 NUL (`\0`) bytes after `</html>`, and it's the only page with CRLF line endings.** Verified byte-for-byte. Browsers tolerate it, but grep/tooling treat the homepage as binary and it's served as-is. Truncate at `</html>`, re-save as UTF-8/LF, and add a `.gitattributes` with `*.html text eol=lf` to prevent recurrence. *(~5 min)*
+- [x] **`concord.html` `og:image` points to `images/projects/open-concord-thumb.png`, which doesn't exist** — only the `.svg` exists, and OG images generally must be raster anyway. Export a PNG thumb and fix the path. *(~10 min)*
 - [ ] **17 image references point into the `quabbin/` submodule** (`quabbin/output/*.png/.gif` in `gallery.html`, `quabbin.html`, plus quabbin's `og:image`). The Pages workflow does check out submodules, so prod likely works, but the site is broken for any plain clone and correctness is pinned to the submodule commit. Verify the pinned commit actually contains those paths, or vendor the ~17 display images into `images/`. *(~30 min)*
 
 ## 2. Repo weight (~211 MB → ~100 MB possible)
@@ -18,7 +18,7 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 - [ ] **Delete ~80 orphaned images (~74 MB, ~44% of `images/`).** Referenced by no HTML/JS/CSS: the 19 MB `images/projects/granite-state/image2.png`, all `ev-research/Slide1–17.PNG`, `granite-state/Screenshot 2025-*.png` and `image1/6/7/8…`, `central-campus/Screenshot*.png`, `evacuation/Screenshot*.png`, plus `nsn-banner.png`, `cakemapper-preview.png`, `ideaboard-preview.png`, `bugwars-preview.jpg`, `change-analysis.png`, `gallery/1.png`, and more. Re-run a reference scan before deleting each. *(~1 hr, biggest single win)*
 - [ ] **Recompress the in-use heavyweights (~10–14 MB savings):** `images/projects/lynnfield/CemMap.png` (11.5 MB → ~1 MB at display size), `images/nsn-logo.png` (2 MB for a logo), `images/gallery/q3.png` (2.2 MB), and the camera-roll-named screenshots (`Screenshot 2025-05-30 114936.png`, 3.3 MB). Downscale to display resolution; consider WebP. Rename screenshots to meaningful names while at it. *(~1 hr)*
 - [ ] **`Lynn-data-dive/maps/data/` duplicates `ma-atlas/data/` at 4–5× the size (~13 MB).** e.g. `ma_municipalities.geojson` is 5.1 MB pretty-printed there vs 1.2 MB minified in ma-atlas. Point Lynn at the ma-atlas copies or replace with minified/simplified versions (~7–8 MB saved). Note: README documents these as vendored via a manual PowerShell sync from another repo — decide on one canonical copy. *(~30 min)*
-- [ ] **`whydah/navigator/vendor/three.module.js` is the full 1.27 MB un-minified Three.js dev build.** Swap for the minified build or a pinned CDN import. *(~15 min)*
+- [x] **`whydah/navigator/vendor/three.module.js` is the full 1.27 MB un-minified Three.js dev build.** Swap for the minified build or a pinned CDN import. *(~15 min)*
 - [ ] **After the deletions above, rewrite history to actually shrink clones.** The pack (~169 MB) is as big as the tree, and e.g. `transit/data/towns.geojson` (3.7 MB) is committed 3×. `git filter-repo` (or BFG) to purge deleted large blobs, then force-push. Estimated clone-size reduction: 60–90 MB. **Do this last, deliberately — it rewrites history for anyone with a clone.** *(~1 hr, coordinate first)*
 - [ ] Small cleanups: `whydah/navigator/server.py` + `start-game.bat` are local dev helpers published to the live site (move/ignore); `salem-photo-walk/data/*.geojson` is orphaned — the page inlines all its data — so either fetch it at runtime or delete the dir; audit `whydah/pics/` (3.7 MB) for unreferenced images.
 
@@ -27,9 +27,9 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 - [ ] **ma-atlas: flatten the three-wave fetch waterfall.** `ma-atlas/app.js:2821` fires 53 fetches, a second `Promise.all` of ~15 more only starts at `:3009` after the first fully resolves, then a third await at `:3021`. Merge into one `Promise.allSettled`, or better: lazy-load the ~48 small attribute JSONs per metric group on first selection. *(~2 hr)*
 - [ ] **ma-atlas: simplify the eager polygon payloads.** `data/ma_academic_districts.geojson` (3.9 MB) + `ma_municipalities.geojson` (1.2 MB) load on first paint. Run through mapshaper (topology-preserving simplify + `precision=0.00001`) — typically 50–70% smaller with no visible change. Longer-term: PMTiles (you already built pockettiles for exactly this). *(~1 hr)*
 - [ ] **transit: don't eagerly download 6.6 MB of reference-only geometry.** `transit/index.html:846` unconditionally loads `towns.geojson` (3.7 MB) + `tier4_links.geojson` (2.9 MB) at startup. Gate each behind its existing layer toggle (fetch on first enable). Also consider a compact coordinate-array format for tier4_links instead of full GeoJSON. *(~1 hr)*
-- [ ] **appalachians: `data/appalachian_trail.geojson` stores ~13-decimal coordinates** (nanometer precision). Round to 5–6 decimals (~halves the 389 KB file). *(~10 min)*
+- [x] **appalachians: `data/appalachian_trail.geojson` stores ~13-decimal coordinates** (nanometer precision). Round to 5–6 decimals (~halves the 389 KB file). *(~10 min)*
 - [ ] **transit: `network.json` is fetched with `cache:'no-store'` every visit (703 KB) and can clobber local edits** — `transit/index.html:830,840-843` replaces the localStorage-persisted network with the committed one, toasting only after the fact. Compare versions/timestamps before overwriting, or prompt; drop `no-store` in favor of a version query param. *(~45 min)*
-- [ ] **transit: debounce the town search.** `transit/index.html:742` runs an unthrottled linear scan of 19,465 towns per keystroke. Copy the ~120 ms debounce pattern already in `appalachians/index.html:485`. *(~15 min)*
+- [x] **transit: debounce the town search.** `transit/index.html:742` runs an unthrottled linear scan of 19,465 towns per keystroke. Copy the ~120 ms debounce pattern already in `appalachians/index.html:485`. *(~15 min)*
 
 ## 4. Security & hardening
 
@@ -52,15 +52,15 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 
 - [ ] **Add a default `og:image` + `twitter:card` site-wide.** The homepage — the most-shared URL — has `og:title`/`og:description` but no image; 9 of 15 pages have no `og:*` at all; no Twitter cards anywhere. Best done as part of the shared-partial work in §5. *(~1 hr)*
 - [ ] **Add `robots.txt`, `sitemap.xml` (15 static URLs), and per-page canonical tags** — currently none of the three exist. *(~30 min)*
-- [ ] **Favicon fallbacks:** SVG-only today; add a 32×32 `favicon.ico` and a 180×180 `apple-touch-icon`. *(~15 min)*
-- [ ] **`about.html` heading order skips a level** (`h1 → h3…` with no `h2`) — breaks the screen-reader outline. Other pages are clean; every page has exactly one `h1` and viewport meta (good). Verify the two `alt=""` images in `lynn.html`/`quabbin.html` are truly decorative. Alt coverage is otherwise excellent (119/119 gallery, 38/38 nsn).
+- [x] **Favicon fallbacks:** SVG-only today; add a 32×32 `favicon.ico` and a 180×180 `apple-touch-icon`. *(~15 min)*
+- [x] **`about.html` heading order skips a level** (`h1 → h3…` with no `h2`) — breaks the screen-reader outline. Other pages are clean; every page has exactly one `h1` and viewport meta (good). Verify the two `alt=""` images in `lynn.html`/`quabbin.html` are truly decorative. Alt coverage is otherwise excellent (119/119 gallery, 38/38 nsn).
 
 ## 7. Docs & housekeeping
 
 - [ ] **Rewrite `DEPLOY.md` — it documents the wrong deploy mode.** It says "Deploy from a branch → main /root," but the site actually deploys via the `pages.yml` Actions workflow (mutually exclusive Pages modes). Its file-structure listing also names images that don't exist and omits submodules entirely. Update or fold into README. *(~30 min)*
-- [ ] **Add a root `LICENSE`** — the repo defaults to all-rights-reserved (ma-atlas carries its own; the root has none). MIT or CC-BY is typical for a portfolio.
-- [ ] **Expand `.gitignore`** beyond `scripts/.cache/`: `.DS_Store`, `Thumbs.db`, `__pycache__/`, `*.pyc`, `.venv/`, editor dirs.
-- [ ] **`scripts/requirements.txt` pins only `requests>=2.31`** while three screenshot scripts import `playwright` (undeclared). Add it and pin exact versions. Also fix `scripts/capture_thumbs.py`, which hardcodes `D:\maxwellhowegis\…` — derive from `__file__` like `screenshot_atlas.py` does.
+- [x] **Add a root `LICENSE`** — the repo defaults to all-rights-reserved (ma-atlas carries its own; the root has none). MIT or CC-BY is typical for a portfolio.
+- [x] **Expand `.gitignore`** beyond `scripts/.cache/`: `.DS_Store`, `Thumbs.db`, `__pycache__/`, `*.pyc`, `.venv/`, editor dirs.
+- [x] **`scripts/requirements.txt` pins only `requests>=2.31`** while three screenshot scripts import `playwright` (undeclared). Add it and pin exact versions. Also fix `scripts/capture_thumbs.py`, which hardcodes `D:\maxwellhowegis\…` — derive from `__file__` like `screenshot_atlas.py` does.
 - [ ] **Add short READMEs to `salem-photo-walk/`, `Lynn-data-dive/`, and `games/`** (purpose, data sources, how to run). The four map apps, pockettiles, and whydah/navigator already have good ones.
 - [ ] **Bump stale submodule pins:** `bugwars` and `truescale` haven't been updated since the initial submodule conversion (2026-06-12), unlike geopuesto/quabbin. Check upstream and `git submodule update --remote` if there's anything new.
 - [ ] **Add `.nojekyll`** at root (cheap insurance if the deploy mode ever changes) and note in README that `keep-streamlit-awake.yml`'s cron gets auto-disabled by GitHub after 60 days without commits — a gotcha on a quiet repo.
