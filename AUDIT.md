@@ -5,13 +5,24 @@ The four submodule repos (`geopuesto`, `bug-wars`, `true-scale`, `quabbin`) were
 
 Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML pages, ~150 PNGs, 29 GeoJSON files. Each item below is a checkbox so this file can double as a punch list; items are grouped by theme and roughly ordered by value within each group.
 
+## Status
+
+Campaign rounds 0–5 executed on 2026-07-02. Still open: §1 quabbin submodule
+image verification (blocked this round by scoped git/GitHub access, see
+note); §2 history rewrite (deliberate, round 6, pending owner go-ahead);
+§4 SRI hashes, Nominatim usage policy, and Actions SHA-pinning; §5 gallery
+data-driving, `ma-atlas/app.js` modularization, shared `js/mapkit.js`, and
+mirroring `nsn.html`'s eBay-hotlinked images (now flagged in-place); §7
+sync-automation for the vendored `ma-atlas`/`Lynn-data-dive/maps` dirs, and
+the `bugwars`/`truescale` submodule bump check (also blocked this round).
+
 ---
 
 ## 1. Broken things (fix first)
 
 - [x] **`index.html` is corrupted: 1,103 NUL (`\0`) bytes after `</html>`, and it's the only page with CRLF line endings.** Verified byte-for-byte. Browsers tolerate it, but grep/tooling treat the homepage as binary and it's served as-is. Truncate at `</html>`, re-save as UTF-8/LF, and add a `.gitattributes` with `*.html text eol=lf` to prevent recurrence. *(~5 min)*
 - [x] **`concord.html` `og:image` points to `images/projects/open-concord-thumb.png`, which doesn't exist** — only the `.svg` exists, and OG images generally must be raster anyway. Export a PNG thumb and fix the path. *(~10 min)*
-- [ ] **17 image references point into the `quabbin/` submodule** (`quabbin/output/*.png/.gif` in `gallery.html`, `quabbin.html`, plus quabbin's `og:image`). The Pages workflow does check out submodules, so prod likely works, but the site is broken for any plain clone and correctness is pinned to the submodule commit. Verify the pinned commit actually contains those paths, or vendor the ~17 display images into `images/`. *(~30 min)*
+- [ ] **21 image references point into the `quabbin/` submodule** (`quabbin/output/*.png/.gif` in `gallery.html`, `quabbin.html`, `js/projects.js`, plus quabbin's `og:image`). The Pages workflow does check out submodules, so prod likely works, but the site is broken for any plain clone and correctness is pinned to the submodule commit. Verify the pinned commit actually contains those paths, or vendor the display images into `images/`. *(~30 min)* — **Round 5: could not verify.** This session's git/GitHub access is scoped to `mapzimus/maxwellhowegis` only (`git clone`/`ls-remote` and the GitHub MCP server both return access-denied for `mapzimus/quabbin`), so the submodule couldn't be initialized to check the 21 paths. Still open — re-attempt with unrestricted access to `mapzimus/quabbin`.
 
 ## 2. Repo weight (~211 MB → ~100 MB possible)
 
@@ -44,8 +55,8 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 - [ ] **`gallery.html` (145 KB, 2,095 lines) hand-codes 119 gallery bricks.** No base64 — pure repeated markup. Drive it from a JS data array the way `portfolio.html` uses `js/projects.js` (~10× smaller, no more copy-paste). Images already lazy-load (good). *(~2 hr)*
 - [ ] **`ma-atlas/app.js` is an 11,020-line / 660 KB monolith.** Split into ES modules along its natural seams (data loading, classification/palette, layers, UI, export studio) via `<script type="module">`; lazy-import the export studio. *(~4+ hr, do incrementally)*
 - [ ] **Factor a shared `js/mapkit.js`.** CARTO basemap configs, `toast()`, retrying `fetchJSON`, and Nominatim helpers are re-implemented in appalachians (`:253,302,491,509`), transit (`:234,394,604`), and interstate-challenge (`:143`). ma-atlas already imports shared `../js/main.js`, so the pattern exists. *(~2 hr)*
-- [ ] **Move `nsn.html`'s 255-line inline `<style>` block** (lines 12–266 — the only page with page-specific inline CSS) into a stylesheet; fold the scattered inline `style=` attributes (concord 70, about 23, mapzimus 16…) into shared classes over time.
-- [ ] **`nsn.html` hotlinks 37 `i.ebayimg.com` images + 40 eBay listing links** that expire when listings end — the page will silently rot. Mirror images locally or add graceful fallbacks.
+- [ ] **Move `nsn.html`'s 255-line inline `<style>` block** (lines 12–266 — the only page with page-specific inline CSS) into a stylesheet; fold the scattered inline `style=` attributes (concord 70, about 23, mapzimus 16…) into shared classes over time. — **Round 5: the inline block is done** (moved byte-for-byte to `css/nsn.css`, linked after `css/style.css`; before/after Playwright screenshots pixel-matched, only 11/7.27M differing pixels on desktop from the starfield's own CSS animation, mobile bit-identical). The scattered `style=` attributes on other pages are still open.
+- [ ] **`nsn.html` hotlinks 37 `i.ebayimg.com` images + 40 eBay listing links** that expire when listings end — the page will silently rot. Mirror images locally or add graceful fallbacks. — Round 5: flagged in-place with an HTML comment above the listings grid pointing back here; mirroring itself is still open.
 - [ ] Spot-check `js/main.js` for console errors on the 13 pages that lack the modal markup it wires up.
 
 ## 6. SEO, meta & accessibility
@@ -57,13 +68,13 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 
 ## 7. Docs & housekeeping
 
-- [ ] **Rewrite `DEPLOY.md` — it documents the wrong deploy mode.** It says "Deploy from a branch → main /root," but the site actually deploys via the `pages.yml` Actions workflow (mutually exclusive Pages modes). Its file-structure listing also names images that don't exist and omits submodules entirely. Update or fold into README. *(~30 min)*
+- [x] **Rewrite `DEPLOY.md` — it documents the wrong deploy mode.** It says "Deploy from a branch → main /root," but the site actually deploys via the `pages.yml` Actions workflow (mutually exclusive Pages modes). Its file-structure listing also names images that don't exist and omits submodules entirely. Update or fold into README. *(~30 min)* — Round 5: rewritten to document the Actions/`pages.yml` flow, the custom domain, all four submodules + the two vendored dirs, and a gotchas section; the stale file-structure listing was removed (README already covers structure).
 - [x] **Add a root `LICENSE`** — the repo defaults to all-rights-reserved (ma-atlas carries its own; the root has none). MIT or CC-BY is typical for a portfolio.
 - [x] **Expand `.gitignore`** beyond `scripts/.cache/`: `.DS_Store`, `Thumbs.db`, `__pycache__/`, `*.pyc`, `.venv/`, editor dirs.
 - [x] **`scripts/requirements.txt` pins only `requests>=2.31`** while three screenshot scripts import `playwright` (undeclared). Add it and pin exact versions. Also fix `scripts/capture_thumbs.py`, which hardcodes `D:\maxwellhowegis\…` — derive from `__file__` like `screenshot_atlas.py` does.
-- [ ] **Add short READMEs to `salem-photo-walk/`, `Lynn-data-dive/`, and `games/`** (purpose, data sources, how to run). The four map apps, pockettiles, and whydah/navigator already have good ones.
-- [ ] **Bump stale submodule pins:** `bugwars` and `truescale` haven't been updated since the initial submodule conversion (2026-06-12), unlike geopuesto/quabbin. Check upstream and `git submodule update --remote` if there's anything new.
-- [ ] **Add `.nojekyll`** at root (cheap insurance if the deploy mode ever changes) and note in README that `keep-streamlit-awake.yml`'s cron gets auto-disabled by GitHub after 60 days without commits — a gotcha on a quiet repo.
+- [x] **Add short READMEs to `salem-photo-walk/`, `Lynn-data-dive/`, and `games/`** (purpose, data sources, how to run). The four map apps, pockettiles, and whydah/navigator already have good ones. — Round 5: added, facts checked against each directory's `index.html` before writing.
+- [ ] **Bump stale submodule pins:** `bugwars` and `truescale` haven't been updated since the initial submodule conversion (2026-06-12), unlike geopuesto/quabbin. Check upstream and `git submodule update --remote` if there's anything new. — **Round 5: could not check.** This session's outbound git/GitHub access is scoped to `mapzimus/maxwellhowegis` only — `git ls-remote` against `bug-wars`/`true-scale` returns HTTP 403 from the egress proxy, and the GitHub MCP server also rejects those two repos as "not configured for this session." Left unchanged (`bugwars` @ `07b631b`, `truescale` @ `be52608`); re-run with unrestricted access.
+- [x] **Add `.nojekyll`** at root (cheap insurance if the deploy mode ever changes) and note in README that `keep-streamlit-awake.yml`'s cron gets auto-disabled by GitHub after 60 days without commits — a gotcha on a quiet repo. — `.nojekyll` was added in Round 1; the cron-disable gotcha is now documented in `DEPLOY.md`'s Gotchas section (Round 5).
 - [ ] Consider automating (or CI-checking) the manual PowerShell sync that vendors `ma-atlas/` and `Lynn-data-dive/maps/` from another repo — currently nothing guarantees parity.
 
 ---
