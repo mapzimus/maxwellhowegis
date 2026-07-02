@@ -373,8 +373,8 @@ async function loadT4Web(){
     const segs = gj.features.map(f => f.geometry.coordinates);  // [[lngA,latA],[lngB,latB]]
     webGeo = new BulkCanvas('t4web', (ctx, m, size) => {
       ctx.strokeStyle = TIERS[4].color;
-      ctx.globalAlpha = 0.22;
-      ctx.lineWidth = 0.6;
+      ctx.globalAlpha = 0.32;
+      ctx.lineWidth = 0.75;
       ctx.beginPath();
       for (const s of segs){
         const a = m.latLngToContainerPoint([s[0][1], s[0][0]]);

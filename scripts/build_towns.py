@@ -161,6 +161,10 @@ def build(year, include_cdp, with_pop=True):
             continue
         if geoid_pre in COORD_OVERRIDES:
             lat, lng = COORD_OVERRIDES[geoid_pre]
+        try:
+            sqmi = round(float(c[idx["ALAND_SQMI"]]), 1)
+        except (ValueError, KeyError):
+            sqmi = None
         lsad = c[idx["LSAD"]]
         ptype = "cdp" if is_cdp else LSAD_TYPE.get(lsad, "place")
         name = clean_name(c[idx["NAME"]])
@@ -173,7 +177,8 @@ def build(year, include_cdp, with_pop=True):
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [lng, lat]},
             "properties": {"kind": "town", "name": name, "type": ptype,
-                           "st": st, "geoid": geoid, "tier": 4, "pop": pop},
+                           "st": st, "geoid": geoid, "tier": 4, "pop": pop,
+                           "sqmi": sqmi},
         })
 
     fc = {
