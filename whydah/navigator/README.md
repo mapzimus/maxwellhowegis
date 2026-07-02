@@ -4,7 +4,7 @@ A browser game for the Whydah unit: take the helm of the *Whydah* in February 17
 run her from the Windward Passage to Richmond Island, Maine — navigating the way her
 real crew had to.
 
-**Play:** open `index.html` from any static host, or locally with `python server.py`
+**Play:** open `index.html` from any static host, or locally with `python3 -m http.server`
 (then http://localhost:8000). No build step, no dependencies to install, works offline.
 
 ## What's in the game
