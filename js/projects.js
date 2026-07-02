@@ -16,10 +16,10 @@ const projects = [
         course: "GPH955 — GIS Project Implementation",
         thumb: "images/projects/lynn-thumb.png",
         gallery: [
-            { src: "images/gallery/lynn-lps-study-area.png", caption: "Study area — every Lynn Public Schools site inside the city boundary" },
+            { src: "images/gallery/lynn-lps-study-area.jpg", caption: "Study area — every Lynn Public Schools site inside the city boundary" },
             { src: "images/gallery/lynn-citywide-absenteeism.png", caption: "Citywide absenteeism — each dot a student address, colored by personal absence rate" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 140910.png", caption: "Student address distribution (citywide) — bubble size = students per address" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 141004.png", caption: "Student addresses near LEHS — 1-mile zoom" },
+            { src: "images/projects/lynn/student-distribution-citywide.png", caption: "Student address distribution (citywide) — bubble size = students per address" },
+            { src: "images/projects/lynn/student-distribution-zoomed.jpg", caption: "Student addresses near LEHS — 1-mile zoom" },
             { src: "images/projects/lynn/Screenshot 2025-04-23 141302.png", caption: "Student density grid — counts per 150 m cell" },
             { src: "images/gallery/lynn-kde-heatmap.png", caption: "KDE heatmap of geocoded student addresses" },
             { src: "images/projects/lynn/Screenshot 2025-04-23 141901.png", caption: "Absenteeism hotspots (≥20%) around LEHS" },
@@ -28,7 +28,7 @@ const projects = [
             { src: "images/gallery/lynn-absenteeism-by-grade.png", caption: "Absenteeism by grade level — four-panel small multiples (9–12)" },
             { src: "images/gallery/lynn-absenteeism-by-ethnicity.png", caption: "Absenteeism by ethnicity — six-panel small multiples" },
             { src: "images/gallery/lynn-absenteeism-ml-status.png", caption: "Absenteeism by Multilingual Learner status — ML vs non-ML" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 143128.png", caption: "Absenteeism by SPED status — hexbin comparison" }
+            { src: "images/projects/lynn/absenteeism-sped-status-hexbin.png", caption: "Absenteeism by SPED status — hexbin comparison" }
         ],
         liveUrl: "lynn.html",
         repoUrl: null
@@ -73,17 +73,17 @@ const projects = [
         tools: ["Landsat 8/9", "TerrSet", "PANSHARPEN", "True Color Composites", "Multitemporal Analysis"],
         year: "2024",
         course: "GPH910 — Digital Image Processing",
-        thumb: "images/projects/granite-state-thumb.png",
+        thumb: "images/projects/granite-state-thumb.jpg",
         gallery: [
             { src: "images/projects/granite-state/image1.png", caption: "New Hampshire Fall Foliage — Study Area" },
             { src: "images/projects/granite-state/image5.png", caption: "Concord — True Color Composite" },
-            { src: "images/projects/granite-state/image10.png", caption: "Concord — Multitemporal Change Detection" },
-            { src: "images/projects/granite-state/image14.png", caption: "Manchester — Change Detection" },
-            { src: "images/projects/granite-state/image15.png", caption: "Nashua — Change Detection" },
-            { src: "images/projects/granite-state/Screenshot 2025-05-30 114843.png", caption: "Landsat Imagery Analysis" },
-            { src: "images/projects/granite-state/Screenshot 2025-05-30 114920.png", caption: "Band Composite Comparison" },
-            { src: "images/projects/granite-state/Screenshot 2025-05-30 114936.png", caption: "Pansharpened Imagery" },
-            { src: "images/projects/granite-state/Screenshot 2025-05-30 115012.png", caption: "Urban Expansion Results" }
+            { src: "images/projects/granite-state/image10.jpg", caption: "Concord — Multitemporal Change Detection" },
+            { src: "images/projects/granite-state/image14.jpg", caption: "Manchester — Change Detection" },
+            { src: "images/projects/granite-state/image15.jpg", caption: "Nashua — Change Detection" },
+            { src: "images/projects/granite-state/landsat-imagery-analysis.png", caption: "Landsat Imagery Analysis" },
+            { src: "images/projects/granite-state/band-composite-comparison.jpg", caption: "Band Composite Comparison" },
+            { src: "images/projects/granite-state/pansharpened-imagery.jpg", caption: "Pansharpened Imagery" },
+            { src: "images/projects/granite-state/urban-expansion-results.png", caption: "Urban Expansion Results" }
         ],
         liveUrl: null,
         repoUrl: null
@@ -152,11 +152,11 @@ const projects = [
         tools: ["ArcGIS Pro", "CAD", "UAV / Drone Imagery", "Trimble GPS", "Georeferencing"],
         year: "2024",
         course: "GPH946 — Computer Cartography",
-        thumb: "images/projects/central-campus-thumb.png",
+        thumb: "images/projects/central-campus-thumb.jpg",
         gallery: [
             { src: "images/projects/central-campus/Screenshot 2025-05-30 114432.png", caption: "CAD Utility As-Built Drawing" },
-            { src: "images/projects/central-campus/Screenshot 2025-05-30 114524.png", caption: "Drone Orthomosaic — Central Campus" },
-            { src: "images/projects/central-campus/Screenshot 2025-05-30 114605.png", caption: "Drone Imagery Overlaid in ArcGIS Pro" }
+            { src: "images/projects/central-campus/drone-orthomosaic.jpg", caption: "Drone Orthomosaic — Central Campus" },
+            { src: "images/projects/central-campus/drone-arcgis-overlay.png", caption: "Drone Imagery Overlaid in ArcGIS Pro" }
         ],
         groupProject: true,
         liveUrl: null,
@@ -174,9 +174,9 @@ const projects = [
         tools: ["SQL", "ArcGIS Pro", "Geodatabase Design", "Georeferencing", "OCR"],
         year: "2024",
         course: "GPH952 — Spatial Database Design & Analysis",
-        thumb: "images/projects/lynnfield/CemMap.png",
+        thumb: "images/projects/lynnfield/CemMap.jpg",
         gallery: [
-            { src: "images/projects/lynnfield/CemMap.png", caption: "Lynnfield, MA Cemeteries Overview" },
+            { src: "images/projects/lynnfield/CemMap.jpg", caption: "Lynnfield, MA Cemeteries Overview" },
             { src: "images/projects/lynnfield/Screenshot 2025-05-30 115155.png", caption: "Database and Spatial Features in ArcGIS Pro" }
         ],
         groupProject: true,
@@ -195,9 +195,9 @@ const projects = [
         tools: ["Python", "arcpy", "ArcGIS Pro", "MassGIS", "FEMA Flood Data", "Network Analysis"],
         year: "2024",
         course: "GPH960 — Software Design & Programming in GIS",
-        thumb: "images/projects/evacuation-thumb.png",
+        thumb: "images/projects/evacuation-thumb.jpg",
         gallery: [
-            { src: "images/projects/evacuation/Screenshot 2025-05-30 114045.png", caption: "Flood Zone & Traffic Network Analysis" },
+            { src: "images/projects/evacuation/flood-zone-traffic-network.jpg", caption: "Flood Zone & Traffic Network Analysis" },
             { src: "images/projects/evacuation/Screenshot 2025-05-30 114112.png", caption: "arcpy Evacuation Route Script" }
         ],
         liveUrl: null,
