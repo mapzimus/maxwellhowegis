@@ -1,0 +1,28 @@
+diff --git a/tools.html b/tools.html
+index 29ea6a9..6cc65e8 100644
+--- a/tools.html
++++ b/tools.html
+@@ -80,6 +80,23 @@
+ 
+     <div class="topo-divider"></div>
+ 
++    <section class="section" id="make-a-map">
++        <div class="section-header fade-in">
++            <div class="section-label">// Try it live</div>
++            <h2 class="section-title">Make a Map Right Here</h2>
++            <p class="section-desc">Make your own colored US map — built with my app, <a href="https://tappymaps.com" target="_blank" rel="noopener">Tappymaps</a>. Pick a color, tap states, build a legend, and export a PNG without leaving this page.</p>
++        </div>
++        <div class="embed-frame tall fade-in">
++            <iframe
++                src="https://tappymaps.com/design/make?embed=1"
++                loading="lazy"
++                allow="clipboard-write"
++                title="Tappymaps map maker"></iframe>
++        </div>
++    </section>
++
++    <div class="topo-divider"></div>
++
+     <section class="featured-band parallax-section">
+         <div class="section">
+             <div class="contact-content fade-in">

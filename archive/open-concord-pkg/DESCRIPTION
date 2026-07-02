@@ -1,0 +1,48 @@
+Package: openconcord
+Title: Open Concord — Concord, NH Geospatial Data, Database & Mega Map
+Version: 0.1.0
+Authors@R: person("Max", "Howe", email = "mhowe.gis@gmail.com", role = c("aut", "cre"))
+Description: Acquires every public Concord, New Hampshire dataset (city ArcGIS,
+    federal/state ArcGIS, OpenStreetMap, schools, demographics, biodiversity,
+    knowledge), loads it into PostGIS, and exports a static MapLibre mega map.
+    A {targets} pipeline orchestrates download -> PostGIS -> web export. Every
+    dataset is tagged map+db (spatial, rendered + stored) or db (reference table).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.2)
+Imports:
+    cli,
+    dplyr,
+    glue,
+    httr2,
+    jsonlite,
+    purrr,
+    sf,
+    DBI,
+    RPostgres,
+    arcgislayers,
+    tigris,
+    tidycensus,
+    osmdata,
+    rgbif,
+    educationdata,
+    WikidataQueryServiceR,
+    WikipediR,
+    yaml
+Suggests:
+    targets,
+    tarchetypes,
+    shiny,
+    bslib,
+    leaflet,
+    leaflet.extras,
+    pool,
+    mapgl,
+    duckdb,
+    arrow,
+    rinat,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,150 @@
+# Concord Mega Map & Database — Specification
+
+The goal: one **database** holding *everything* we can find about Concord, NH, and
+one **mega map** that renders every spatial layer on top of it — built up and
+**validated one dataset at a time**.
+
+> **Implementation: R.** This project is the `openconcord` R package + a
+> `{targets}` pipeline writing to **PostGIS**, deployed self-hosted (see
+> [`../DEPLOY.md`](../DEPLOY.md)). Where this spec shows the old `python …`
+> commands, the R equivalents are: `targets::tar_make()` (full pipeline /
+> `run_all.py`), `openconcord::oc_load_*()` (per-group / `--only`), and the
+> `public.catalog` PostGIS table (the live layer index / `build_layer_index.py`).
+
+---
+
+## 1. Two-tier data model  (`target`)
+
+Every dataset in the catalog is tagged with a **`target`** (the `public.catalog`
+PostGIS table; see also the [`LAYER_INDEX.md`](LAYER_INDEX.md) checklist):
+
+| Target | Meaning | Examples |
+|---|---|---|
+| **`map+db`** | Has geometry → renders on the mega map **and** is stored in the DB. | parcels, zoning, utilities, buildings, school districts, businesses, flood zones, EV chargers, notable-people pins |
+| **`db`** | Reference / bulk / narrative data → lives in the DB only, **joined** to map layers but not drawn directly. | ACS tables, CCD enrollment, LODES jobs, EPA FRS table, Wikidata facts, Wikipedia history, PVWatts |
+
+Current split: **165 datasets — 141 `map+db`, 24 `db`-only** (regenerate to refresh).
+
+`db` data reaches the map **through joins**, not as its own layer — e.g. ACS
+income (`db`) joins to census tracts (`map+db`) on `GEOID` to drive a choropleth;
+enrollment (`db`) joins to school points (`map+db`) on `LEAID`.
+
+### Join keys (how `db` connects to `map+db`)
+| Key | Links |
+|---|---|
+| `GEOID` | census tracts/block groups/blocks ↔ ACS, CDC PLACES, EJScreen, school-district polygons |
+| `LEAID` | school points & district polygons ↔ CCD enrollment |
+| Map-Block-Lot (`MBL`) | city parcels ↔ VGSI assessment records |
+| `registry_id` | EPA FRS table ↔ EPA spatial facility points |
+| `w_geocode` (block FIPS) | LODES jobs ↔ census blocks |
+| `wikidata` (Q-id) | notable people / landmarks ↔ Wikidata facts |
+
+---
+
+## 2. Architecture
+
+```
+ openconcord (R) targets::tar_make()  ──►  ┌─────────────┐
+                                           │  PostGIS DB │  ◄── db + map+db  (private/VPS)
+                                           └──────┬──────┘
+                                       DBI/sf │ (live queries)
+                                              ▼
+                          R Shiny app (leaflet)  ──►  Caddy (TLS)  ──► concord.maxwellhowegis.com
+                                                                            ▲ iframe
+                          maxwellhowegis.com/concord/ (GitHub Pages) ───────┘
+       (optional: pg_tileserv/pg_featureserv profile for vector-tile performance)
+```
+
+### Database (recommended: **PostgreSQL + PostGIS**)
+- One schema per group: `city`, `external`, `osm`, `apis`, `schools`, `business`,
+  `knowledge`.
+- `map+db` → spatial tables (`geometry(…,4326)`, GiST index). `db` → plain tables.
+- Load with `ogr2ogr -f PostgreSQL` (GeoJSON) and `\copy` (CSV).
+- A `catalog` table mirrors `layer_index.json` (one row per dataset: group, target,
+  source, scope, validated bool, notes) so the DB is self-describing.
+- Lightweight alternative: **DuckDB + spatial** (file-based, reads GeoJSON/Parquet
+  directly) or **SQLite + SpatiaLite** if you want zero server.
+
+### Mega map — **R Shiny frontend** (`shiny/app.R`, leaflet + sf)
+- The frontend is **R**, hosted on the VPS, querying PostGIS live via `DBI`/`sf`
+  with a `{pool}` connection pool. It reads `public.catalog` and renders every
+  `map+db` layer.
+- Interactivity: layer toggles, click-popups, a **draw toolbar**
+  (`leaflet.extras`) that runs a live `ST_Intersects` count, and **server-side
+  attribute filtering** (re-query a layer with a `WHERE` clause).
+- `db` tables join to their `map+db` host (e.g. ACS income on tracts → choropleth).
+- **Caddy** terminates TLS on `concord.maxwellhowegis.com`; the GitHub Pages page
+  at `/concord/` iframes it. Raw Postgres stays private.
+- **Optional**: `--profile api` (pg_tileserv/pg_featureserv) for vector-tile
+  performance; `oc_export_web()` for an offline PMTiles/Parquet snapshot. Swap
+  leaflet → `{mapgl}` in `app.R` for MapLibre/vector tiles.
+
+---
+
+## 3. Per-dataset validation protocol  ⭐
+
+We add and verify **one dataset at a time**. For each row in
+[`LAYER_INDEX.md`](LAYER_INDEX.md):
+
+1. **Download it** — `python scripts/<script>.py --only <key>` (or the city crawler).
+2. **Load it solo** onto the mega map (hide everything else), or open the table for
+   `db` rows.
+3. **Visually verify** — check, in order:
+   - **Placement** — features sit over Concord (not off in the ocean / null island);
+     correct CRS (everything ships as WGS84 / EPSG:4326).
+   - **Geometry** — right type (point/line/polygon), no obvious corruption, polygons
+     closed, lines connected.
+   - **Count sanity** — feature count is plausible (e.g. ~13k parcels, 2 school
+     districts, 14 public schools across both districts). Wild over/under counts =
+     bad filter or pagination cut-off.
+   - **Attributes** — key fields populated and sensible; join key present and matches
+     its `map+db`/`db` partner.
+   - **Coverage** — for district/region layers, confirm the *intended* extent
+     (e.g. MVSD includes Penacook + Boscawen/Loudon, not just the city).
+4. **Mark it** in `LAYER_INDEX.md`: `[ ]` → `[x]` validated, or `[~]` + a note in the
+   Notes column if something's off.
+5. **Only then** turn on the next layer. This keeps every addition individually
+   trustworthy instead of debugging 165 layers at once.
+
+> Tip: keep a throwaway single-layer viewer (drop a GeoJSON onto
+> [geojson.io](https://geojson.io) or `qgis`) for the quick "does this look right?"
+> pass before wiring it into the full map.
+
+### Known validation gotchas (pre-flagged)
+- **Flaky hosts** (re-run later): FEMA NFHL (500s), SSURGO & NCED (503/timeout),
+  Urban Institute enrollment (slow — has retry).
+- **Empty-but-correct**: `epa_superfund_npl` (0 — no NPL site in Concord),
+  `noaa_weather_alerts` (0 when nothing is active).
+- **Network-gated in sandboxes**: `developer.nrel.gov` (EV/PVWatts).
+- **Substitutions**: PAD-US stands in for NH GRANIT conservation lands (expired TLS);
+  EPA FRS spatial points stand in for the address-only FRS table.
+
+---
+
+## 4. Build / refresh pipeline
+
+```r
+# from open-concord/  (PostGIS + CENSUS_API_KEY env vars set — see DEPLOY.md)
+targets::tar_make()                       # download everything -> PostGIS -> web export
+openconcord::oc_load_schools()            # or run a single group
+openconcord::oc_load_apis(include_keyed = TRUE)   # + key-gated APIs
+# the live layer index is the public.catalog table; oc_export_web() writes the web bundle
+```
+
+Then ETL `data/` → PostGIS, tile `map+db` layers → PMTiles, point MapLibre at them.
+
+---
+
+## 5. Roadmap — derived / analytic layers (next)
+
+These are **computed** from the raw layers (all `map+db`):
+- **Parcel analytics** — value/sqft heatmap (VGSI ↔ parcels), year-built, land-use mix.
+- **Zoning build-out** — developable area, FAR, ADU potential (parcels ∩ zoning ∩ overlays).
+- **Walk/bike accessibility** — isochrones from the road network (OpenRouteService).
+- **School catchment insight** — enrollment density, Concord-SD vs MVSD split within
+  the city (esp. the Penacook boundary).
+- **Environmental burden** — overlay EJScreen / flood / brownfields / heat per block.
+- **3D** — extrude FEMA USA Structures by `HEIGHT` for a 3D city.
+
+See [`ACCOUNTS_NEEDED.md`](ACCOUNTS_NEEDED.md) for the datasets still gated behind a
+free account/key, to be added one by one.

@@ -1,0 +1,1376 @@
+{
+  "total_datasets": 165,
+  "map_db_datasets": 141,
+  "db_only_datasets": 24,
+  "groups": [
+    {
+      "group": "City of Concord ArcGIS",
+      "script": "download_concord.py",
+      "note": "91 distinct queryable vector layers.",
+      "rows": [
+        {
+          "label": "100m USNG Grid (MaxScale=15,000)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "1,000m USNG Grid",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Abandoned Drainage Pipes",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Abandoned Drainage Structures",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Abandoned Hydrants",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Abandoned Mains",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Abandoned Valves",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Addresses",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Aerial Off",
+          "source": "CityGeneral/WasteCollectionCustomers",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Airport",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Aquifer Protection District: Community Water Systems",
+          "source": "Public/PubWebGIS2020",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Bridges",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Buildings",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "City",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "City Facilities",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Community Water Supply Systems",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Conservation",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Construction Linear",
+          "source": "GSDField/UtilityInspection",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Construction Point",
+          "source": "GSDField/UtilityInspection",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Contours",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "CurrentUseAreas",
+          "source": "CityGeneral/CurrentUse",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Drainage Pipes",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Drainage Structures",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Fire Response Districts",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Fittings",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "FittingsCards",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "GreenSpace",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Hidden",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Hydrants",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Interstate Exits",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Labels - 100m USNG Grid (MaxScale=10,000)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Labels - 1,000m USNG Grid",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Leader_Anno100",
+          "source": "CityGeneral/ParcelDimensions",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Leader_Anno200",
+          "source": "CityGeneral/ParcelDimensions",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Leader_Anno50",
+          "source": "CityGeneral/ParcelDimensions",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Lots",
+          "source": "CityGeneral/ParcelDimensions",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Mains",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Map-Block-Lot (All Scales)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Miscline",
+          "source": "CityGeneral/ParcelDimensions",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "National Fire Reporting Zones",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "NE 10m USNG Grid (MaxScale=1,500)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Non-Community Water Systems Non-Transient",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Non-Community Water Systems Transient",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "NW 10m USNG Grid (MaxScale=1,500)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Pavement",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Points",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Police Sector Areas",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "PowerPoles",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Property",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Property Lines (All Scales)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Railroads",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Residential Irrigation",
+          "source": "GSDField/IrrigationInspection",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "School Districts",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "School Route Plowing",
+          "source": "GSDField/SidewalkPlowing",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.City",
+          "source": "CityGeneral/WasteCollectionCustomers",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.Lots",
+          "source": "CityGeneral/WasteCollectionCustomers",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.Pipes",
+          "source": "GSDField/DrainMainJetting",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.Prop_addresses",
+          "source": "CityGeneral/WasteCollectionCustomers",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.SewerServiceConnection",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.SewerServiceLateral",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "sde.GIS.Util_BackFlowInspection",
+          "source": "GSDField/BackflowInspection",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "SE 10m USNG Grid (MaxScale=1,500)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "ServiceFittings",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "ServiceLines",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "ServiceTaps",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Sewer Mains",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Sewer Mains Abandoned",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Sewer Manholes",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Sewer Manholes Abandoned",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Shoreland Protection Zone",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "ShutOff",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Sidewalk Plowing",
+          "source": "GSDField/SidewalkPlowing",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Signs",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "_Special Investment Fee District: Sewer",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "_Special Investment Fee District: Water",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "State Routes",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Station Districts",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Streams",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Street Names",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Street w Sewer Service",
+          "source": "Public/PubWebGIS2020",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Streetlights",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Streets",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Streets w Public Water",
+          "source": "Public/PubWebGIS2020",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Surrounding Towns",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "SW 10m USNG Grid (MaxScale=1,500)",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Town Streets",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Valves",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "VideoLink",
+          "source": "Public/SewerSystemGISBeta",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Voting Wards",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Water Bodies",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "Zoning",
+          "source": "CityGeneral/WaterSystemGIS",
+          "scope": "city",
+          "out": "data/concord_arcgis/",
+          "target": "map+db",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "group": "Federal & State ArcGIS",
+      "script": "download_external.py",
+      "note": "Bbox-clipped to Concord.",
+      "rows": [
+        {
+          "label": "nh_granit_parcels",
+          "source": "NH GRANIT statewide parcel mosaic (verify layer id)",
+          "scope": "bbox",
+          "out": "data/external/nh_granit_parcels.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "fema_flood_zones",
+          "source": "FEMA NFHL Flood Hazard Zones (S_FLD_HAZ_AR)",
+          "scope": "bbox",
+          "out": "data/external/fema_flood_zones.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "fema_flood_boundaries",
+          "source": "FEMA NFHL Flood Hazard Boundaries (S_FLD_HAZ_LN)",
+          "scope": "bbox",
+          "out": "data/external/fema_flood_boundaries.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "fema_base_flood_elevations",
+          "source": "FEMA NFHL Base Flood Elevations (S_BFE)",
+          "scope": "bbox",
+          "out": "data/external/fema_base_flood_elevations.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "fema_firm_panels",
+          "source": "FEMA NFHL FIRM Panel Index (S_FIRM_PAN)",
+          "scope": "bbox",
+          "out": "data/external/fema_firm_panels.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "tiger_roads",
+          "source": "Census TIGERweb roads (all classes / local)",
+          "scope": "bbox",
+          "out": "data/external/tiger_roads.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "tiger_railroads",
+          "source": "Census TIGERweb railroads",
+          "scope": "bbox",
+          "out": "data/external/tiger_railroads.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "tiger_tracts",
+          "source": "Census TIGERweb 2020 census tracts",
+          "scope": "bbox",
+          "out": "data/external/tiger_tracts.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "tiger_block_groups",
+          "source": "Census TIGERweb 2020 block groups",
+          "scope": "bbox",
+          "out": "data/external/tiger_block_groups.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "tiger_blocks",
+          "source": "Census TIGERweb 2020 census blocks",
+          "scope": "bbox",
+          "out": "data/external/tiger_blocks.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nhd_flowlines",
+          "source": "USGS NHD flowlines (streams/rivers, large scale)",
+          "scope": "bbox",
+          "out": "data/external/nhd_flowlines.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nhd_waterbodies",
+          "source": "USGS NHD waterbodies (lakes/ponds, large scale)",
+          "scope": "bbox",
+          "out": "data/external/nhd_waterbodies.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nhd_areas",
+          "source": "USGS NHD areas (wide rivers/wetlands, large scale)",
+          "scope": "bbox",
+          "out": "data/external/nhd_areas.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nhd_points",
+          "source": "USGS NHD points (gages, dams, springs)",
+          "scope": "bbox",
+          "out": "data/external/nhd_points.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nwi_wetlands",
+          "source": "USFWS National Wetlands Inventory",
+          "scope": "bbox",
+          "out": "data/external/nwi_wetlands.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "usa_structures",
+          "source": "FEMA USA Structures \u2014 building footprints WITH height (HEIGHT field, meters)",
+          "scope": "bbox",
+          "out": "data/external/usa_structures.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "padus_conservation_lands",
+          "source": "Protected/conserved & public lands (USGS PAD-US)",
+          "scope": "bbox",
+          "out": "data/external/padus_conservation_lands.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nrhp_historic_points",
+          "source": "National Register of Historic Places \u2014 points (NPS)",
+          "scope": "bbox",
+          "out": "data/external/nrhp_historic_points.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nrhp_historic_districts",
+          "source": "National Register of Historic Places \u2014 polygons/districts (NPS)",
+          "scope": "bbox",
+          "out": "data/external/nrhp_historic_districts.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "epa_superfund_npl",
+          "source": "EPA Superfund National Priorities List sites (FRS SEMS_NPL)",
+          "scope": "bbox",
+          "out": "data/external/epa_superfund_npl.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "epa_brownfields_acres",
+          "source": "EPA Brownfields (FRS ACRES)",
+          "scope": "bbox",
+          "out": "data/external/epa_brownfields_acres.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "epa_tri_facilities",
+          "source": "EPA Toxics Release Inventory facilities (FRS TRI)",
+          "scope": "bbox",
+          "out": "data/external/epa_tri_facilities.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "epa_rcra_facilities",
+          "source": "EPA RCRA hazardous-waste handlers (FRS RCRAINFO)",
+          "scope": "bbox",
+          "out": "data/external/epa_rcra_facilities.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "cdc_places_tracts_poly",
+          "source": "CDC PLACES health measures \u2014 census-tract polygons (wide format)",
+          "scope": "bbox",
+          "out": "data/external/cdc_places_tracts_poly.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "nced_easements",
+          "source": "National Conservation Easement Database (USGS-hosted)",
+          "scope": "bbox",
+          "out": "data/external/nced_easements.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "usace_dams",
+          "source": "USACE National Inventory of Dams (NID)",
+          "scope": "bbox",
+          "out": "data/external/usace_dams.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "faa_obstructions",
+          "source": "FAA Digital Obstacle File (towers/obstructions, height AGL/AMSL)",
+          "scope": "bbox",
+          "out": "data/external/faa_obstructions.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "fcc_broadband_block_groups",
+          "source": "FCC National Broadband Map \u2014 block groups (BDC June 2022)",
+          "scope": "bbox",
+          "out": "data/external/fcc_broadband_block_groups.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "ssurgo_soils",
+          "source": "USDA SSURGO soils \u2014 map-unit polygons (MUKEY)",
+          "scope": "bbox",
+          "out": "data/external/ssurgo_soils.geojson",
+          "target": "map+db",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "group": "OpenStreetMap",
+      "script": "download_osm.py",
+      "note": "Overpass themes.",
+      "rows": [
+        {
+          "label": "roads",
+          "source": "OSM nwr[\"highway\"]",
+          "scope": "bbox",
+          "out": "data/osm/roads.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "buildings",
+          "source": "OSM nwr[\"building\"]",
+          "scope": "bbox",
+          "out": "data/osm/buildings.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "water",
+          "source": "OSM nwr[\"natural\"=\"water\"]",
+          "scope": "bbox",
+          "out": "data/osm/water.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "waterways",
+          "source": "OSM nwr[\"waterway\"]",
+          "scope": "bbox",
+          "out": "data/osm/waterways.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "landuse",
+          "source": "OSM nwr[\"landuse\"]",
+          "scope": "bbox",
+          "out": "data/osm/landuse.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "amenities",
+          "source": "OSM nwr[\"amenity\"]",
+          "scope": "bbox",
+          "out": "data/osm/amenities.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "leisure",
+          "source": "OSM nwr[\"leisure\"]",
+          "scope": "bbox",
+          "out": "data/osm/leisure.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "railways",
+          "source": "OSM nwr[\"railway\"]",
+          "scope": "bbox",
+          "out": "data/osm/railways.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "boundaries",
+          "source": "OSM nwr[\"boundary\"=\"administrative\"]",
+          "scope": "bbox",
+          "out": "data/osm/boundaries.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "power",
+          "source": "OSM nwr[\"power\"]",
+          "scope": "bbox",
+          "out": "data/osm/power.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "shops",
+          "source": "OSM nwr[\"shop\"]",
+          "scope": "bbox",
+          "out": "data/osm/shops.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "addresses",
+          "source": "OSM nwr[\"addr:housenumber\"]",
+          "scope": "bbox",
+          "out": "data/osm/addresses.geojson",
+          "target": "map+db",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "group": "APIs (Census / EPA / USGS / living data)",
+      "script": "download_apis.py",
+      "note": "GeoJSON/CSV to data/apis/.",
+      "rows": [
+        {
+          "label": "census_acs",
+          "source": "key: optional (CENSUS_API_KEY)",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "epa_frs",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "cdc_places",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "usgs_streamgages",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "lodes",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "cat_gtfs",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "nrel_ev",
+          "source": "key: none (DEMO_KEY)",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "tnm_products",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "pvwatts",
+          "source": "key: none (DEMO_KEY)",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "noaa_weather_alerts",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "usgs_earthquakes",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "gbif_species",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "inaturalist",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "wikidata_landmarks",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "wikipedia_nearby",
+          "source": "key: none",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "airnow",
+          "source": "key: AIRNOW_API_KEY",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "purpleair",
+          "source": "key: PURPLEAIR_API_KEY",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "openaq",
+          "source": "key: OPENAQ_API_KEY",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "nasa_firms",
+          "source": "key: FIRMS_MAP_KEY",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "mapillary",
+          "source": "key: MAPILLARY_TOKEN",
+          "scope": "varies",
+          "out": "data/apis/",
+          "target": "db",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "group": "Schools (Concord SD + Merrimack Valley SD)",
+      "script": "download_schools.py",
+      "note": "Both districts serving Concord, incl. Penacook; + surrounding region.",
+      "rows": [
+        {
+          "label": "school_districts",
+          "source": "Census TIGERweb",
+          "scope": "districts",
+          "out": "data/schools/school_districts.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "school_districts_region",
+          "source": "Census TIGERweb",
+          "scope": "region",
+          "out": "data/schools/school_districts_region.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "public_schools_districts",
+          "source": "NCES EDGE",
+          "scope": "districts",
+          "out": "data/schools/public_schools_districts.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "public_schools_region",
+          "source": "NCES EDGE",
+          "scope": "region",
+          "out": "data/schools/public_schools_region.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "private_schools_region",
+          "source": "NCES EDGE (incl. St. Paul's)",
+          "scope": "region",
+          "out": "data/schools/private_schools_region.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "colleges",
+          "source": "NCES IPEDS (NHTI, UNH Law)",
+          "scope": "region",
+          "out": "data/schools/colleges.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "enrollment_districts",
+          "source": "Urban Inst. CCD",
+          "scope": "districts",
+          "out": "data/schools/enrollment_districts.csv",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "enrollment_schools",
+          "source": "Urban Inst. CCD",
+          "scope": "districts",
+          "out": "data/schools/enrollment_schools.csv",
+          "target": "db",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "group": "Businesses",
+      "script": "download_businesses.py",
+      "note": "Every-business POIs.",
+      "rows": [
+        {
+          "label": "osm_businesses",
+          "source": "OpenStreetMap",
+          "scope": "bbox",
+          "out": "data/businesses/osm_businesses.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "overture_places",
+          "source": "Overture Maps (--overture)",
+          "scope": "bbox",
+          "out": "data/businesses/overture_places.geojson",
+          "target": "map+db",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "group": "Knowledge (people / facts / history)",
+      "script": "download_knowledge.py",
+      "note": "Notable inhabitants, Wikidata facts, Wikipedia history.",
+      "rows": [
+        {
+          "label": "notable_people",
+          "source": "Wikipedia + Wikidata",
+          "scope": "city",
+          "out": "data/knowledge/notable_people.geojson",
+          "target": "map+db",
+          "status": "pending"
+        },
+        {
+          "label": "history",
+          "source": "Wikipedia extracts",
+          "scope": "city",
+          "out": "data/knowledge/history.json",
+          "target": "db",
+          "status": "pending"
+        },
+        {
+          "label": "wikidata_facts",
+          "source": "Wikidata Q28249",
+          "scope": "city",
+          "out": "data/knowledge/wikidata_facts.csv",
+          "target": "db",
+          "status": "pending"
+        }
+      ]
+    }
+  ]
+}

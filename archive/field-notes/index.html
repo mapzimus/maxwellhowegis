@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Notes | Maxwell Howe GIS</title>
+    <meta name="description" content="Field Notes — in-progress work, project writeups, and short observations from Maxwell Howe. GIS, cartography, education, research.">
+    <meta property="og:title" content="Field Notes — Maxwell Howe">
+    <meta property="og:description" content="In-progress work, project writeups, and short observations across GIS, cartography, education, and research.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maxwellhowegis.com/field-notes/">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Maxwell Howe</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Projects</a></li>
+            <li><a href="../gallery.html">Map Gallery</a></li>
+            <li><a href="../side-projects.html">Beyond GIS</a></li>
+            <li><a href="./" class="active">Field Notes</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="main-content">
+    <section class="section page-top">
+        <div class="section-header fade-in">
+            <div class="section-label">// Field Notes</div>
+            <h1 class="section-title">Field Notes</h1>
+            <p class="section-desc">
+                In-progress work, project writeups, and short observations. Mixed tone, mixed length, all dated.
+                Use the tags to filter by what you're in the mood for.
+            </p>
+        </div>
+
+        <div class="fn-toolbar fade-in" id="fnToolbar" role="toolbar" aria-label="Filter notes by tag">
+            <!-- Tag filter chips injected by JS -->
+        </div>
+
+        <div class="fn-list fade-in fade-in-stagger" id="fnList">
+            <!-- Field note cards injected by JS -->
+        </div>
+
+        <div class="fn-empty" id="fnEmpty" hidden>
+            <p>No notes match that filter yet.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <p>&copy; 2026 Maxwell Howe</p>
+        <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio.html">Projects</a></li>
+            <li><a href="../gallery.html">Map Gallery</a></li>
+            <li><a href="../side-projects.html">Beyond GIS</a></li>
+            <li><a href="./">Field Notes</a></li>
+            <li><a href="../tools.html">Tools</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../feedback.html">Ideas</a></li>
+            <li><a href="../links.html">Links</a></li>
+            <li><a href="https://github.com/mapzimus" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="../js/fieldnotes.js"></script>
+<script src="../js/main.js"></script>
+<script>
+(function () {
+    const list = document.getElementById('fnList');
+    const toolbar = document.getElementById('fnToolbar');
+    const empty = document.getElementById('fnEmpty');
+
+    if (!list || !Array.isArray(fieldNotes)) return;
+
+    // Newest-first
+    const notes = [...fieldNotes].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    // Collect all tags, preserving first-seen order, with "all" pinned first
+    const seen = new Set();
+    const allTags = [];
+    notes.forEach(n => (n.tags || []).forEach(t => {
+        if (!seen.has(t)) { seen.add(t); allTags.push(t); }
+    }));
+
+    let activeTag = 'all';
+
+    function fmtDate(iso) {
+        if (!iso) return '';
+        const [y, m, d] = iso.split('-').map(Number);
+        const dt = new Date(y, (m || 1) - 1, d || 1);
+        return dt.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+
+    function renderToolbar() {
+        toolbar.innerHTML = '';
+        const tags = ['all', ...allTags];
+        tags.forEach(tag => {
+            const btn = document.createElement('button');
+            btn.className = 'fn-chip' + (tag === activeTag ? ' is-active' : '');
+            btn.type = 'button';
+            btn.textContent = tag === 'all' ? 'all' : '#' + tag;
+            btn.addEventListener('click', () => {
+                activeTag = tag;
+                renderToolbar();
+                renderList();
+            });
+            toolbar.appendChild(btn);
+        });
+    }
+
+    function renderList() {
+        list.innerHTML = '';
+        const visible = notes.filter(n => activeTag === 'all' || (n.tags || []).includes(activeTag));
+
+        if (visible.length === 0) {
+            empty.hidden = false;
+            return;
+        }
+        empty.hidden = true;
+
+        visible.forEach(n => {
+            const card = document.createElement('article');
+            card.className = 'fn-card';
+
+            // Meta row
+            const meta = document.createElement('div');
+            meta.className = 'fn-meta';
+            meta.innerHTML =
+                `<time datetime="${n.date}">${fmtDate(n.date)}</time>` +
+                (n.readingTime ? `<span class="fn-meta-sep">·</span><span>${n.readingTime}</span>` : '');
+            card.appendChild(meta);
+
+            // Title — links to note page if slug exists
+            const h = document.createElement('h2');
+            h.className = 'fn-title';
+            if (n.slug) {
+                const a = document.createElement('a');
+                a.href = n.slug + '/';
+                a.textContent = n.title;
+                h.appendChild(a);
+            } else {
+                h.textContent = n.title;
+            }
+            card.appendChild(h);
+
+            // Tags
+            const tags = document.createElement('div');
+            tags.className = 'fn-tags';
+            (n.tags || []).forEach(t => {
+                const chip = document.createElement('button');
+                chip.className = 'fn-tag';
+                chip.type = 'button';
+                chip.textContent = '#' + t;
+                chip.addEventListener('click', () => {
+                    activeTag = t;
+                    renderToolbar();
+                    renderList();
+                    window.scrollTo({ top: toolbar.offsetTop - 80, behavior: 'smooth' });
+                });
+                tags.appendChild(chip);
+            });
+            card.appendChild(tags);
+
+            // Summary
+            const p = document.createElement('p');
+            p.className = 'fn-summary';
+            p.textContent = n.summary || '';
+            card.appendChild(p);
+
+            // CTA — to note page
+            if (n.slug) {
+                const cta = document.createElement('a');
+                cta.className = 'fn-cta';
+                cta.href = n.slug + '/';
+                cta.textContent = 'Read →';
+                card.appendChild(cta);
+            }
+
+            list.appendChild(card);
+        });
+    }
+
+    renderToolbar();
+    renderList();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Caddy fronts the R Shiny app with TLS. Point APP_DOMAIN's DNS A record at this
+# VPS first, e.g. concord.maxwellhowegis.com. Auto-provisions a Let's Encrypt cert.
+{$APP_DOMAIN} {
+	encode zstd gzip
+	# Shiny needs WebSocket upgrades — Caddy's reverse_proxy handles them by default.
+	reverse_proxy openconcord-shiny:3838
+}
+
+# Optional API (only if you run `docker compose --profile api up -d` and expose it):
+# concord-api.maxwellhowegis.com {
+# 	handle_path /tiles/*    { reverse_proxy openconcord-tileserv:7800 }
+# 	handle_path /features/* { reverse_proxy openconcord-featureserv:9000 }
+# }

@@ -1,0 +1,9 @@
+# R / targets / output artifacts
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+_targets/
+# NAMESPACE is hand-written and committed (regenerate with roxygen2 if you prefer)
+man/
+*.tar.gz

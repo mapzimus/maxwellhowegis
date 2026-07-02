@@ -1,0 +1,158 @@
+# Validation log
+
+Validate **one dataset at a time** (protocol: `MEGA_MAP_SPEC.md` → *Per-dataset
+validation protocol*). For each: load it (`oc_load_*`), view it on the Shiny map,
+check placement / geometry / count / attributes, then set status and, optionally,
+`UPDATE public.catalog SET validated = true WHERE schema_name=… AND table_name=…`.
+
+Status: `[ ]` pending · `[x]` validated · `[~]` issue (note it)
+
+## Schools — `oc_load_schools()`  (start here: small + high-signal)
+
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6)
+**Fixes applied:** `schools.R` — (1) `st_transform(sd, 4326)` after `tigris::school_districts()` call
+(tigris returns NAD83; `st_filter` against WGS84 bbox crashed without this); (2) `enrollment_districts`
+now uses `fips=33` + post-filter (Urban Inst. CCD API returns 0 rows for direct `leaid` filter on NH districts).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | schools.school_districts | map+db | 2 | 2 polygons (Concord SD + MVSD) |  |
+| [x] | schools.school_districts_region | map+db | 18 | — | all NH unified districts in regional bbox |
+| [x] | schools.public_schools_districts | map+db | 14 | 14 (both districts, incl. Penacook) |  |
+| [x] | schools.public_schools_region | map+db | 109 | ~109 |  |
+| [x] | schools.private_schools_region | map+db | 38 | 38 (incl. St. Paul's) |  |
+| [x] | schools.colleges | map+db | 11 | 11 (NHTI, UNH Law) |  |
+| [x] | schools.enrollment_districts | db | 54 rows | Concord SD total 4,037 | 54 = 2 districts × 27 race×sex combos; `SUM WHERE leaid='3302460' AND race=99 AND sex=99` = 4,037 ✅ |
+| [x] | schools.enrollment_schools | db | 378 rows | per-school rows | 14 schools × 27 race×sex combos; Concord SD total = 4,025 (~4,037, <0.3% diff = data vintage) |
+
+## Federal & state ArcGIS — `oc_load_external()`
+
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6). **25/28 layers loaded.**
+**Fixes applied:** `db.R` — added `oc_flatten_list_cols()` (coerces non-geometry list-columns
+to text; `usace_dams` carried an Esri `SE_ANNO_CAD_DATA` blob list-column that crashed
+`RPostgres::dbWriteTable`), called from both `oc_write_layer` + `oc_write_table`.
+`external.R` — wrapped the per-layer body in `tryCatch` so one failed layer skips instead of
+halting the whole group (previously `usace_dams` killed the 3 layers after it).
+`arcgis.R` — added `oc_arc_layer_rest()` REST-pagination fallback (httr2, GeoJSON, offset-paged);
+`oc_arc_layer` now retries through it when arcgislayers errors and a bbox is set. Recovers
+`nwi_wetlands` (3,731), whose FWS MapServer breaks arcgislayers' internal count step.
+
+**HANDOVER geometry-column risk — RESOLVED:** all spatial tables store geometry in a column
+named `geometry` with *real* SRID 4326 (verified via `ST_SRID`); only the column *typmod* is
+generic (`geometry_columns.srid = 0`). `sf::st_read()` (Shiny `get_layer()`) reads real SRID and
+the draw-identify query references `geometry` by name — both match. Generic typmod + no GiST
+index is a non-blocking enhancement (only pg_tileserv / large-layer query speed care).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | external.usa_structures | map+db | 18,576 | 18,576 (has HEIGHT) | exact |
+| [x] | external.padus_conservation_lands | map+db | 261 | 261 | exact |
+| [x] | external.nrhp_historic_points | map+db | 20 | 20 | exact |
+| [x] | external.nrhp_historic_districts | map+db | 11 | polygons | OK |
+| [x] | external.usace_dams | map+db | 16 | 16 | exact; flattened `SE_ANNO_CAD_DATA` |
+| [x] | external.epa_rcra_facilities | map+db | 919 | 919 | exact |
+| [x] | external.epa_tri_facilities | map+db | 22 | 22 | exact |
+| [x] | external.epa_brownfields_acres | map+db | 14 | 14 | exact |
+| [x] | external.epa_superfund_npl | map+db | 0 | 0 (none in Concord) | OK |
+| [x] | external.cdc_places_tracts_poly | map+db | 24 | 24 | exact |
+| [~] | external.faa_obstructions | map+db | 564 | 530 | +34 — FAA DOF ~56-day refresh, not a bug |
+| [x] | external.fcc_broadband_block_groups | map+db | 52 | 52 | exact |
+| [x] | external.tiger_tracts / _block_groups / _blocks | map+db | 24 / 52 / 1077 | 24 / … | OK |
+| [x] | external.tiger_roads / _railroads | map+db | 1665 / 5 | — | OK |
+| [x] | external.nhd_flowlines/_waterbodies/_areas/_points | map+db | 896 / 618 / 11 / 1 | — | OK |
+| [x] | external.nwi_wetlands | map+db | 3,731 | 3,731 | exact; via REST-pagination fallback (arcgislayers count step fails on FWS MapServer). Cols are `Wetlands.*`/`NWI_Wetland_Codes.*` (joined layer) |
+| [~] | external.nced_easements | map+db | 0 | flaky host | layer is now a RasterLayer (NCED unmaintained since Jan 2025) |
+| [~] | external.ssurgo_soils | map+db | 0 | flaky host | USDA host SSL reset — transient, re-run |
+| [~] | external.nh_granit_parcels | map+db | 0 | (verify id) | 404 Service not found — confirm layer id at nhgeodata.unh.edu |
+| [x] | external.fema_flood_zones/_boundaries/_bfe/_firm | map+db | 947 / 2698 / 251 / 35 | flaky host | all loaded OK this run |
+
+## City of Concord — `oc_load_concord()`
+
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6).
+**Fixes applied:**
+- `arcgis.R` `oc_arc_discover()` now returns `url` **and** `name` (from each service's `/layers`
+  metadata) so tables can be named sensibly. (Before: `attr(lyr,"layer_name")` was always NULL →
+  tables would have been named by numeric layer id `0`,`1`,`2`… and dedup-by-name would have
+  collapsed every id-`0` layer into one, destroying most data.)
+- `concord.R` `oc_load_concord()`: name tables by real layer name; rank by preferred-service order
+  (richest first); **dedup shared layers by name *before* downloading** (was: download all 320 then
+  dedup → re-fetched big shared layers repeatedly); per-layer `setTimeLimit(240s)` so a giant/slow
+  layer (Contours = 1,476 pages) skips instead of stalling the whole run.
+- `db.R` `oc_write_layer()`: if the source returns a geometryless `data.frame` (some city layers
+  advertise a geom type but have null geometry), store it as a **`db` reference table** instead of
+  crashing on `st_transform`.
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | city.property | map+db | **13,160** | 13,160 | exact; real name (not numeric id) |
+| [x] | city.* (auto-discovered) | map+db | 106 unique | ~91 layers | names correct (signs, hydrants, valves, mains, sewer_*, drainage_*, powerpoles…); 24+ verified loading; over-match inflates count, deduped by name |
+| [x] | city.shutoff / servicetaps / fittings / servicelines | db | shutoff 10,546 | — | geometryless layers now stored as db tables |
+| [~] | city.contours | map+db | capped | — | 1,476 pages; skipped by 240s per-layer cap (basemap layer, swept in via WaterSystemGIS over-match) |
+| [~] | city.fittingscards | — | 0 | — | ArcGIS "Pagination not supported"; no bbox → no REST fallback. Minor layer |
+| [~] | city.powerpoleanno | — | 0 | — | AnnotationLayer (not vector features) — correct to skip |
+
+## APIs — `oc_load_apis()`  (+ `include_keyed = TRUE` for the rest)
+
+**First validated:** 2026-06-08 (local, R 4.5.2, PostGIS 3.6). **No code fixes needed** — every
+source worked; `oc_flatten_list_cols()` (added for external) auto-handled GBIF `dnaSequenceID`/
+`nucleotideSequence` and NWS `affectedZones` list-columns.
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [~] | apis.acs_tracts | map+db | — | Census key | **Invalid Key** — current CENSUS_API_KEY rejected by api.census.gov (needs activation/reissue). Code OK; re-run `oc_load_census()` once a valid key is set |
+| [x] | apis.usgs_earthquakes | map+db | 111 | 111 | exact |
+| [x] | apis.gbif_species | map+db | 9,000 | ~9,000 | hit limit |
+| [x] | apis.inaturalist | map+db | 3,000 | ~3,000 | exact |
+| [~] | apis.wikidata_landmarks | map+db | 228 | 252 | live-data drift (Wikidata items change); code OK |
+| [x] | apis.wikipedia_articles | map+db | 83 | 83 | exact |
+| [x] | apis.cdc_places | map+db | 1,560 | ~1,560 | |
+| [x] | apis.usgs_streamgages | map+db | 9 | 9 | exact |
+| [x] | apis.noaa_weather_alerts | map+db | 2 | 0+ (varies) | active alerts at run time |
+| [~] | apis.ev_charging_stations | map+db | 0 | NREL reachable | transient DNS fail (`developer.nrel.gov`); re-run |
+| [x] | apis.epa_frs_facilities | db | 2,625 | 2,625 | exact |
+| [x] | apis.lodes_wac_2023 | db | 10,746 | NH blocks | |
+| [ ] | apis.airnow/openaq/purpleair/nasa_firms/mapillary | map+db | — | key-gated | not run (no keys); `include_keyed=TRUE` to attempt |
+
+## Knowledge — `oc_load_knowledge()`
+
+**First validated:** 2026-06-08. Ran clean (exit 0, no code errors). Counts are **below
+HANDOVER** — content/porting gaps, not crashes (see notes).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [~] | knowledge.notable_people | db | 81 | 148 | **porting gap**: docstring says "Wikipedia category + Wikidata" but the body only calls `WikipediR::pages_in_category`; the Wikidata union (people with PoB/PoD = Concord Q28249) was never ported. Plus category drift. |
+| [~] | knowledge.notable_people_pins | map+db | 81 | 148 | mirrors notable_people |
+| [~] | knowledge.history | db | 5 | 6 | one+ of 7 seed pages returned NULL — likely special-char title (en-dash in "NHTI – Concord's Community College"); verify/normalize `oc_history_pages` titles |
+| [x] | knowledge.wikidata_facts | db | 102 | 106 | live Wikidata drift; OK |
+
+## OSM / Business — `oc_load_osm()`, `oc_load_businesses_osm()`, `oc_load_overture()`
+
+**Code validated:** 2026-06-08 (offline synthetic fixtures; live Overpass run attempted).
+**Fix applied:** `osm.R` `oc_osm_combine()` — synthesize an `NA` `name` column when a geometry
+part has none (e.g. unnamed nodes), else `x["name"]` threw "undefined columns selected" and
+crashed the whole group. Also wrapped each theme (`oc_load_osm`) + the combine call
+(`oc_load_businesses_osm`) in `tryCatch` for per-theme resilience.
+**HANDOVER risk #3 (mixed-geometry rbind) — FALSE ALARM:** synthetic test confirms
+`rbind(POINT, LINESTRING, POLYGON)` → a mixed-geometry sf that writes fine to PostGIS (generic
+geometry column).
+
+| ✓ | Layer | Target | Got | Expected | Notes |
+|---|---|---|---|---|---|
+| [x] | oc_osm_combine logic | — | live ✓ | — | missing-`name` fix confirmed with real data; mixed-geom (POINT/LINE/POLYGON in one table) stored fine |
+| [x] | osm.roads / buildings / waterways | map+db | 103,308 / 88,196 / 21,061 | mixed-geom | all mixed POINT/LINE/POLYGON ✓ |
+| [x] | osm.leisure / landuse / amenities / power / shops | map+db | 9,915 / 9,058 / 7,089 / 5,514 / 946 | mixed-geom | ✓ |
+| [~] | osm.railways | map+db | skipped | — | Overpass HTTP 504 (transient); per-theme `tryCatch` handled it — re-run |
+| [~] | business.osm_businesses | map+db | 9,173 | ~644 | **semantic decision**: keeps ALL commercial POIs (docstring: "comprehensive"); HANDOVER 644 implies named-only. Add a named-feature filter to `oc_load_businesses_osm` if 644 is the target |
+| [ ] | business.overture_places | map+db | — | duckdb + S3 | `duckdb` not installed (Suggests); skipped gracefully as designed |
+
+## Frontend smoke-test — `shiny::runApp("shiny", port=3838)`
+
+**2026-06-08:** app launches clean (shiny/leaflet/leaflet.extras/sf/DBI/pool all load), connects to
+PostGIS via `pool` (PG* env vars), and serves HTTP 200 on 127.0.0.1:3838. The `catalog()` query
+returns **75 `map+db` layers across all 7 groups** (+ 8 `db` tables; 431,406 features total), so the
+layer-toggle list populates. **Interactive checks (toggles / click-popups / draw-to-identify /
+attribute filter) still need a human in a browser** — that's the remaining manual step.
+
+> Note: `public.catalog` lists `map+db` layers even when `n_features=0` (failed/empty source layers
+> like the dead external hosts), so a few empty toggles appear. Consider filtering `n_features > 0`
+> in the Shiny `catalog()` query for a cleaner layer list.

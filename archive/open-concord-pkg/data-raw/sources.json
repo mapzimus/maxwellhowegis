@@ -1,0 +1,325 @@
+{
+  "_about": "Machine-readable manifest of Concord, NH GIS data sources. Used by the download_*.py scripts. Edit freely: download_external.py and download_osm.py read this file.",
+  "concord_bbox_wgs84": "-71.668185,43.151772,-71.456903,43.309419",
+  "concord_arcgis_server": "https://gis.concordnh.gov/arc1061/rest/services",
+
+  "external_arcgis": [
+    {
+      "key": "nh_granit_parcels",
+      "title": "NH GRANIT statewide parcel mosaic (verify layer id)",
+      "url": "https://nhgeodata.unh.edu/nhgeodata/rest/services/CAD/ParcelMosiac/MapServer/0",
+      "note": "Server occasionally rate-limits. If this 503s/404s, browse https://nhgeodata.unh.edu/nhgeodata/rest/services and confirm the parcel layer id."
+    },
+    {
+      "key": "fema_flood_zones",
+      "title": "FEMA NFHL Flood Hazard Zones (S_FLD_HAZ_AR)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28"
+    },
+    {
+      "key": "fema_flood_boundaries",
+      "title": "FEMA NFHL Flood Hazard Boundaries (S_FLD_HAZ_LN)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/27"
+    },
+    {
+      "key": "fema_base_flood_elevations",
+      "title": "FEMA NFHL Base Flood Elevations (S_BFE)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/16"
+    },
+    {
+      "key": "fema_firm_panels",
+      "title": "FEMA NFHL FIRM Panel Index (S_FIRM_PAN)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/3"
+    },
+    {
+      "key": "tiger_roads",
+      "title": "Census TIGERweb roads (all classes / local)",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8"
+    },
+    {
+      "key": "tiger_railroads",
+      "title": "Census TIGERweb railroads",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/9"
+    },
+    {
+      "key": "tiger_tracts",
+      "title": "Census TIGERweb 2020 census tracts",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/0"
+    },
+    {
+      "key": "tiger_block_groups",
+      "title": "Census TIGERweb 2020 block groups",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/1"
+    },
+    {
+      "key": "tiger_blocks",
+      "title": "Census TIGERweb 2020 census blocks",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/2"
+    },
+    {
+      "key": "nhd_flowlines",
+      "title": "USGS NHD flowlines (streams/rivers, large scale)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6"
+    },
+    {
+      "key": "nhd_waterbodies",
+      "title": "USGS NHD waterbodies (lakes/ponds, large scale)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12"
+    },
+    {
+      "key": "nhd_areas",
+      "title": "USGS NHD areas (wide rivers/wetlands, large scale)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9"
+    },
+    {
+      "key": "nhd_points",
+      "title": "USGS NHD points (gages, dams, springs)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/0"
+    },
+    {
+      "key": "nwi_wetlands",
+      "title": "USFWS National Wetlands Inventory",
+      "url": "https://www.fws.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0"
+    },
+
+    {
+      "key": "usa_structures",
+      "title": "FEMA USA Structures — building footprints WITH height (HEIGHT field, meters)",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0",
+      "note": "National layer; bbox clip is essential. Has HEIGHT/H_ADJ_ELEV from LiDAR — extrude for 3D."
+    },
+    {
+      "key": "padus_conservation_lands",
+      "title": "Protected/conserved & public lands (USGS PAD-US)",
+      "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/PADUS_Protection_Status_by_GAP_Status_Code/FeatureServer/0",
+      "note": "Substitute for NH GRANIT conservation lands (nhgeodata.unh.edu has an expired TLS cert). National PAD-US, includes all NH conserved/public lands."
+    },
+    {
+      "key": "nrhp_historic_points",
+      "title": "National Register of Historic Places — points (NPS)",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0"
+    },
+    {
+      "key": "nrhp_historic_districts",
+      "title": "National Register of Historic Places — polygons/districts (NPS)",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
+    },
+    {
+      "key": "epa_superfund_npl",
+      "title": "EPA Superfund National Priorities List sites (FRS SEMS_NPL)",
+      "url": "https://geodata.epa.gov/arcgis/rest/services/OEI/FRS_INTERESTS/MapServer/22"
+    },
+    {
+      "key": "epa_brownfields_acres",
+      "title": "EPA Brownfields (FRS ACRES)",
+      "url": "https://geodata.epa.gov/arcgis/rest/services/OEI/FRS_INTERESTS/MapServer/0"
+    },
+    {
+      "key": "epa_tri_facilities",
+      "title": "EPA Toxics Release Inventory facilities (FRS TRI)",
+      "url": "https://geodata.epa.gov/arcgis/rest/services/OEI/FRS_INTERESTS/MapServer/23"
+    },
+    {
+      "key": "epa_rcra_facilities",
+      "title": "EPA RCRA hazardous-waste handlers (FRS RCRAINFO)",
+      "url": "https://geodata.epa.gov/arcgis/rest/services/OEI/FRS_INTERESTS/MapServer/15"
+    },
+    {
+      "key": "cdc_places_tracts_poly",
+      "title": "CDC PLACES health measures — census-tract polygons (wide format)",
+      "url": "https://services3.arcgis.com/ZvidGQkLaDJxRSJ2/arcgis/rest/services/PLACES_LocalData_for_BetterHealth/FeatureServer/3",
+      "note": "Tract polygons with health measures as columns. Complements the long-format download_apis.py cdc_places."
+    },
+    {
+      "key": "nced_easements",
+      "title": "National Conservation Easement Database (USGS-hosted)",
+      "url": "https://umesc-gisdb03.er.usgs.gov/arcgis/rest/services/Monarch/NCED/MapServer/0",
+      "note": "Easement boundary polygons. NCED no longer actively maintained as of Jan 2025."
+    },
+    {
+      "key": "usace_dams",
+      "title": "USACE National Inventory of Dams (NID)",
+      "url": "https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer/0"
+    },
+    {
+      "key": "faa_obstructions",
+      "title": "FAA Digital Obstacle File (towers/obstructions, height AGL/AMSL)",
+      "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services/Digital_Obstacle_File/FeatureServer/0"
+    },
+    {
+      "key": "fcc_broadband_block_groups",
+      "title": "FCC National Broadband Map — block groups (BDC June 2022)",
+      "url": "https://services.arcgis.com/jIL9msH9OI208GCb/arcgis/rest/services/FCC_Broadband_Data_Collection_June_2022/FeatureServer/3"
+    },
+    {
+      "key": "ssurgo_soils",
+      "title": "USDA SSURGO soils — map-unit polygons (MUKEY)",
+      "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/rest/services/soils/ssurgo_for_rsvi/FeatureServer/0",
+      "note": "USDA host returns transient HTTP 503 under load — re-run --only ssurgo_soils if it fails. Authoritative SSURGO map units."
+    }
+  ],
+
+  "osm_queries": [
+    { "theme": "roads",       "selector": "nwr[\"highway\"]" },
+    { "theme": "buildings",   "selector": "nwr[\"building\"]" },
+    { "theme": "water",       "selector": "nwr[\"natural\"=\"water\"]" },
+    { "theme": "waterways",   "selector": "nwr[\"waterway\"]" },
+    { "theme": "landuse",     "selector": "nwr[\"landuse\"]" },
+    { "theme": "amenities",   "selector": "nwr[\"amenity\"]" },
+    { "theme": "leisure",     "selector": "nwr[\"leisure\"]" },
+    { "theme": "railways",    "selector": "nwr[\"railway\"]" },
+    { "theme": "boundaries",  "selector": "nwr[\"boundary\"=\"administrative\"]" },
+    { "theme": "power",       "selector": "nwr[\"power\"]" },
+    { "theme": "shops",       "selector": "nwr[\"shop\"]" },
+    { "theme": "addresses",   "selector": "nwr[\"addr:housenumber\"]" }
+  ],
+
+  "portals_manual": [
+    {
+      "name": "City of Concord Interactive GIS Viewer",
+      "url": "https://www.concordnh.gov/897/Interactive-GIS-Viewer",
+      "note": "Front-end for the gis.concordnh.gov REST server (auto-downloaded by download_concord.py)."
+    },
+    {
+      "name": "City of Concord downloadable PDF maps & data for purchase",
+      "url": "https://www.concordnh.gov/898/Maps-Data-for-Purchase",
+      "note": "Cartographic PDFs and some datasets sold via City Hall, 41 Green St."
+    },
+    {
+      "name": "Vision Government Solutions (VGSI) assessment database",
+      "url": "https://gis.vgsi.com/concordnh/",
+      "note": "Full property/assessment records (tabular). Scrape per-parcel by PID or join to the city Property layer on MAP-BLOCK-LOT. No bulk GeoJSON API; export via per-record pages or request from the Assessing Dept."
+    },
+    {
+      "name": "NH GRANIT / NH Geodata Portal",
+      "url": "https://www.nhgeodata.unh.edu/",
+      "note": "100+ statewide layers: parcels, soils (SSURGO), wetlands, conservation/public lands, land cover, hydrography, roads, trails. Download as Shapefile/GeoJSON/KML/GeoTIFF; also WMS/WFS. REST root: https://nhgeodata.unh.edu/nhgeodata/rest/services"
+    },
+    {
+      "name": "NH GRANIT classic clearinghouse / free data",
+      "url": "https://www.granit.unh.edu/data/downloadfreedata/downloaddata.html",
+      "note": "Town-by-town and statewide bulk shapefile/raster downloads (incl. LiDAR DEM, orthoimagery)."
+    },
+    {
+      "name": "NH DES Geodata Portal",
+      "url": "https://nh-department-of-environmental-services-open-data-nhdes.hub.arcgis.com/",
+      "note": "Environmental layers: wells, contamination/remediation sites, dams, watersheds, wetlands permits."
+    },
+    {
+      "name": "Central NH Regional Planning Commission (CNHRPC)",
+      "url": "https://cnhrpc.org/gis-data/",
+      "note": "Regional transit routes, traffic counts, trails, Concord Pedestrian Master Plan. Contact ctufts@cnhrpc.org for downloads."
+    },
+    {
+      "name": "NHDOT GIS / public REST",
+      "url": "https://maps.dot.nh.gov/",
+      "note": "State roads, transit, traffic, signals, bridges. REST hosts: maps.dot.nh.gov/arcgis_server/rest/services and gis.dot.nh.gov/arcgis_prd/rest/services"
+    },
+    {
+      "name": "US Census data.census.gov / ACS API",
+      "url": "https://www.census.gov/data/developers/data-sets.html",
+      "note": "Demographics/economics joinable to TIGER tracts/blocks/block groups via GEOID."
+    },
+    {
+      "name": "USGS The National Map / 3DEP",
+      "url": "https://apps.nationalmap.gov/downloader/",
+      "note": "Elevation (LiDAR/DEM), NHD hydro bulk, NLCD land cover, NAIP imagery for Merrimack County."
+    },
+    {
+      "name": "FEMA Flood Map Service Center",
+      "url": "https://msc.fema.gov/portal/home",
+      "note": "Authoritative NFHL flood data downloads (the live layers are auto-downloaded by download_external.py)."
+    },
+    {
+      "name": "EPA EJScreen (environmental justice, block group)",
+      "url": "https://www.epa.gov/ejscreen",
+      "note": "Block-group EJ indicators. EPA's ArcGIS host (ejscreen.epa.gov/arcgis) was unreachable during verification, so no confirmed REST layer is wired in — download the geodatabase from the EPA site, or join the EJScreen CSV to tiger_block_groups by GEOID."
+    },
+    {
+      "name": "NH E911 / NG911 address & site-structure points",
+      "url": "https://www.nh.gov/safety/divisions/e911/",
+      "note": "Authoritative NH address points (managed by NH Dept. of Safety). Not published as an open queryable feature service — request from NH DESC or NH GRANIT."
+    },
+    {
+      "name": "NHDOT traffic counts (AADT) & crash data",
+      "url": "https://www.nh.gov/dot/org/operations/highwaydesign/traffic-volume-reports.htm",
+      "note": "AADT lives in NHDOT's TDMS system and crashes in SADES — neither is exposed as a public ArcGIS layer. Use the TDMS reports or request crash extracts from NHDOT Bureau of Highway Design."
+    },
+    {
+      "name": "NH GRANIT native conservation / E911 feature services",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6",
+      "note": "Native NH conserved-lands layer, BUT nhgeodata.unh.edu currently serves an EXPIRED TLS cert — most HTTP clients reject it. PAD-US (padus_conservation_lands) is the wired-in substitute."
+    },
+    {
+      "name": "Overture Maps — Places (every business / POI)",
+      "url": "https://docs.overturemaps.org/guides/places/",
+      "note": "~60M+ conflated POIs, free & redistributable. Downloaded by download_businesses.py --overture (needs `overturemaps` CLI or `duckdb`). Check current release tag at https://docs.overturemaps.org/release/latest/"
+    },
+    {
+      "name": "Foursquare Open Source Places",
+      "url": "https://opensource.foursquare.com/os-places/",
+      "note": "~100M POIs as Apache-2.0 Parquet. DuckDB one-liner: read_parquet('s3://fsq-os-places-us-east-1/release/.../places/parquet/*') with a bbox filter on the lat/long columns."
+    }
+  ],
+
+  "api_sources": [
+    {"key": "census_acs",       "note": "ACS 5-yr tracts -> CSV (join to tiger_tracts). Needs free CENSUS_API_KEY."},
+    {"key": "epa_frs",          "note": "FRS facilities (Merrimack) -> CSV, address-only. Spatial points via epa_* ArcGIS layers."},
+    {"key": "cdc_places",       "note": "PLACES tract health (long format) -> GeoJSON. Keyless."},
+    {"key": "usgs_streamgages", "note": "NWIS active stream sites + latest flow -> GeoJSON. Keyless."},
+    {"key": "lodes",            "note": "LEHD LODES8 NH workplace jobs + crosswalk -> .csv.gz. Keyless."},
+    {"key": "cat_gtfs",         "note": "Concord Area Transit GTFS-Flex feed -> zip + stops GeoJSON. Keyless."},
+    {"key": "nrel_ev",          "note": "AFDC EV chargers (25mi) -> GeoJSON. DEMO_KEY or NREL_API_KEY."},
+    {"key": "tnm_products",     "note": "USGS 3DEP DEM/NAIP/LiDAR download URLs for the bbox -> JSON. Keyless (server flaky)."},
+    {"key": "pvwatts",          "note": "NREL PVWatts solar estimate at city centroid -> JSON. DEMO_KEY."},
+    {"key": "airnow",           "note": "EPA AirNow current AQI -> GeoJSON. Needs AIRNOW_API_KEY."},
+    {"key": "purpleair",        "note": "PurpleAir sensors in bbox -> GeoJSON. Needs PURPLEAIR_API_KEY."}
+  ],
+
+  "living_data_apis": [
+    {"key": "noaa_weather_alerts", "note": "Active NWS alerts for NH -> GeoJSON. Keyless (api.weather.gov)."},
+    {"key": "usgs_earthquakes",    "note": "Quakes M2+ within 100km since 1900 -> GeoJSON. Keyless."},
+    {"key": "gbif_species",        "note": "GBIF species occurrences in bbox -> GeoJSON. Keyless (capped 9k)."},
+    {"key": "inaturalist",         "note": "iNaturalist observations in bbox -> GeoJSON. Keyless."},
+    {"key": "wikidata_landmarks",  "note": "Geotagged Wikidata items in bbox via SPARQL -> GeoJSON. Keyless."},
+    {"key": "wikipedia_nearby",    "note": "Geotagged Wikipedia articles within 10km -> GeoJSON. Keyless."},
+    {"key": "openaq",              "note": "Air-quality monitor locations in bbox -> GeoJSON. Needs OPENAQ_API_KEY (free)."},
+    {"key": "nasa_firms",          "note": "VIIRS active fire/thermal detections (7d) -> GeoJSON. Needs FIRMS_MAP_KEY (free)."},
+    {"key": "mapillary",           "note": "Street-level image points in bbox -> GeoJSON. Needs MAPILLARY_TOKEN (free)."}
+  ],
+
+  "advanced_sources_manual": [
+    {"name": "OpenAddresses", "url": "https://batch.openaddresses.io/data", "note": "Bulk open address points (alternative to locked-down NH E911). Download the NH/US-Northeast run and clip to bbox."},
+    {"name": "Microsoft / Google Open Buildings", "url": "https://github.com/microsoft/USBuildingFootprints", "note": "Footprints to cross-check FEMA USA Structures. MS US footprints by state (GeoJSON) or via Planetary Computer STAC; Google Open Buildings covers other regions."},
+    {"name": "NWS / NWPS river flood gauges (AHPS)", "url": "https://water.noaa.gov/", "note": "Forecast flood points on the Merrimack. The NWPS API bbox filter was unreliable in testing — query by gauge LID, or use the working usgs_streamgages layer for physical gauges."},
+    {"name": "NOAA NCEI climate normals / GHCN", "url": "https://www.ncei.noaa.gov/access/services/data/v1", "note": "Station climate normals & daily records near Concord. Token-free data service; station-point layer."},
+    {"name": "OpenRouteService isochrones / OSRM", "url": "https://openrouteservice.org/dev/", "note": "Derive walk/drive-time isochrones from the road network. Free key. Turns roads into accessibility polygons."},
+    {"name": "Historical maps — Sanborn & USGS topoView", "url": "https://ngmdb.usgs.gov/topoview/", "note": "Georeferenced historic USGS topos and Sanborn fire-insurance maps (LoC) for Concord. Raster/image, not vector."},
+    {"name": "Satellite indices — Microsoft Planetary Computer", "url": "https://planetarycomputer.microsoft.com/", "note": "NDVI/greenness, nighttime lights (VIIRS), Landsat/Sentinel thermal (urban heat) via STAC. Raster analysis."},
+    {"name": "GTFS-Realtime (CAT)", "url": "https://www.transit.land/feeds/f-concordareatransit~nh~us", "note": "Live vehicle positions IF Concord Area Transit publishes an RT feed; static GTFS is handled by download_apis.py cat_gtfs."},
+    {"name": "OpenCellID cell towers", "url": "https://opencellid.org/", "note": "Crowd-sourced cell-tower locations (free API token). FCC ASR is the regulatory alternative."}
+  ],
+
+  "school_sources": [
+    {"key": "concord_school_district", "leaid": "3302460", "note": "Concord School District (SAU 8) — serves most of the city."},
+    {"key": "merrimack_valley_school_district", "leaid": "3304760", "note": "Merrimack Valley School District (SAU 46) — serves Penacook (N. Concord) + Boscawen, Loudon, Salisbury, Webster."},
+    {"key": "district_boundaries", "source": "Census TIGERweb School/MapServer (0 unified, 1 secondary, 2 elementary)", "note": "download_schools.py -> school_districts.geojson (the two) + school_districts_region.geojson."},
+    {"key": "public_schools", "source": "NCES EDGE Public_School_Locations_Current", "note": "Pulled by LEAID (full districts) AND regional bbox."},
+    {"key": "private_schools", "source": "NCES EDGE Private_School_Locations_Current", "note": "Regional bbox; includes St. Paul's School."},
+    {"key": "colleges", "source": "NCES EDGE Postsecondary_School_Locations_Current (IPEDS)", "note": "Regional bbox; includes NHTI and UNH Franklin Pierce School of Law."},
+    {"key": "enrollment", "source": "Urban Institute Education Data API (CCD)", "note": "District + per-school enrollment -> CSV (db tier). API is slow; has retry."}
+  ],
+
+  "knowledge_sources": [
+    {"key": "notable_people", "source": "Wikipedia Category:People from Concord, New Hampshire (+subcats) + Wikidata", "note": "~148 notable inhabitants with bios -> CSV (db) + centroid pins (map+db)."},
+    {"key": "wikidata_facts", "source": "Wikidata Q28249 (Concord, NH)", "note": "All structured statements -> JSON + flattened CSV (db)."},
+    {"key": "history", "source": "Wikipedia full-text extracts", "note": "Concord, Penacook, St. Paul's, NHTI, UNH Law, NH State House, etc. -> history.json (db)."}
+  ],
+
+  "business_layer_sources": [
+    {"source": "OpenStreetMap", "note": "download_businesses.py — comprehensive Overpass union of shop/office/craft/commercial-amenity/tourism/healthcare/fitness. No deps."},
+    {"source": "Overture Places", "note": "download_businesses.py --overture — densest free redistributable POI set."},
+    {"source": "Foursquare OS Places", "note": "Parquet via DuckDB; see portals_manual."},
+    {"source": "Google Places / Yelp", "note": "Most complete for hours/ratings but API-key + ToS forbids storing/redistributing as a standalone layer — enrichment only."},
+    {"source": "NH Secretary of State business registry", "note": "https://quickstart.sos.nh.gov/online/businessinquire — every registered entity (legal name/address/status); not pre-geocoded."}
+  ]
+}

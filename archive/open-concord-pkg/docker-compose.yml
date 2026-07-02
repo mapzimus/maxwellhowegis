@@ -1,0 +1,84 @@
+# Self-hosted Open Concord stack (run on your VPS):
+#   PostGIS (private)  +  Shiny frontend (R)  +  Caddy (TLS).
+#   Optional `api` profile adds pg_tileserv/pg_featureserv for vector-tile
+#   performance or an external API (the Shiny app talks to PostGIS directly and
+#   does not require them).
+#
+#   cp .env.example .env        # set PGPASSWORD, APP_DOMAIN (+ API_DOMAIN for api profile)
+#   docker compose up -d                 # postgis + shiny + caddy
+#   docker compose --profile api up -d   # + tile/feature API
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: openconcord-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: openconcord
+      POSTGRES_USER: ${PGUSER:-openconcord}
+      POSTGRES_PASSWORD: ${PGPASSWORD:?set PGPASSWORD in .env}
+    ports:
+      - "127.0.0.1:5432:5432"          # localhost only; SSH-tunnel for the R ETL
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./inst/sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER:-openconcord} -d openconcord"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # The R Shiny frontend — the map UI itself, in R.
+  shiny:
+    build: .
+    container_name: openconcord-shiny
+    restart: unless-stopped
+    depends_on: { postgis: { condition: service_healthy } }
+    environment:
+      PGHOST: postgis
+      PGPORT: "5432"
+      PGDATABASE: openconcord
+      PGUSER: ${PGUSER:-openconcord}
+      PGPASSWORD: ${PGPASSWORD}
+    expose: ["3838"]
+
+  caddy:
+    image: caddy:2
+    container_name: openconcord-caddy
+    restart: unless-stopped
+    depends_on: [shiny]
+    ports:
+      - "443:443"
+      - "80:80"
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+  # ---- optional: live tile/feature API (docker compose --profile api up -d) ----
+  tileserv:
+    image: pramsey/pg_tileserv:latest
+    container_name: openconcord-tileserv
+    restart: unless-stopped
+    profiles: ["api"]
+    depends_on: { postgis: { condition: service_healthy } }
+    environment:
+      DATABASE_URL: postgres://${PGUSER:-openconcord}:${PGPASSWORD}@postgis:5432/openconcord
+      TS_CORSORIGINS: "*"
+    ports: ["127.0.0.1:7800:7800"]
+  featureserv:
+    image: pramsey/pg_featureserv:latest
+    container_name: openconcord-featureserv
+    restart: unless-stopped
+    profiles: ["api"]
+    depends_on: { postgis: { condition: service_healthy } }
+    environment:
+      DATABASE_URL: postgres://${PGUSER:-openconcord}:${PGPASSWORD}@postgis:5432/openconcord
+      PGFS_SERVER_CORSORIGINS: "*"
+    ports: ["127.0.0.1:9000:9000"]
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:
