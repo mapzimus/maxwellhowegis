@@ -866,7 +866,7 @@ main { flex: 1; }
 
 .skills-group { margin-bottom: 28px; }
 
-.skills-group h3 {
+.skills-group h2 {
     font-size: 14px;
     font-weight: 600;
     color: var(--text-primary);

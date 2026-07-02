@@ -61,6 +61,8 @@ python -m http.server 8001
 
 Editing project data: `js/projects.js` is the source of truth for the gallery cards. See `DEPLOY.md` for the full first-time deploy walkthrough (DNS setup, custom domain pointed at GitHub Pages, etc.).
 
+This repository's code is licensed under the [MIT License](LICENSE); individual content and data files (imagery, GeoJSON, etc.) may carry their own source attribution — see file/dataset headers or the relevant project README for details.
+
 ## Contact
 
 [maxwellhowegis.com/contact.html](https://maxwellhowegis.com/contact.html) · [@mapzimus](https://github.com/mapzimus) · mhowe.gis@gmail.com
