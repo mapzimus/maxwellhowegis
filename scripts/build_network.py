@@ -41,18 +41,27 @@ TOWNS = os.path.join(ROOT, "transit", "data", "towns.geojson")
 OUT_NET = os.path.join(ROOT, "transit", "data", "network.json")
 OUT_WEB = os.path.join(ROOT, "transit", "data", "tier4_links.geojson")
 
-T1_MIN_POP = 300_000
-T1_SPACING_MI = 70
+T1_MIN_POP = 175_000
+T1_SPACING_MI = 60
 T1_KNN = 2                 # extra nearest-neighbor edges per hub on top of the MST
-T2_MIN_POP = 40_000
-T2_SPACING_MI = 45
+T2_MIN_POP = 25_000
+T2_SPACING_MI = 30
 T2_BIG_POP = 100_000       # cities this big become hubs even inside the spacing
                            # radius, as long as they're outside a hub's metro
                            # (T3_RADIUS_MI) — catches Fort Worth, Baltimore, Mesa…
-COVERAGE_MI = 90           # every town ends up within this of a tier-1/2 hub
+COVERAGE_MI = 60           # every town ends up within this of a tier-1/2 hub
 T3_ANCHOR_MIN_POP = 100_000
 T3_SAT_MIN_POP = 15_000
 T3_RADIUS_MI = 18
+
+# urban-core metro: hubs this big get a ring of in-city subway stations,
+# spoked to the hub and loop-connected, sized by population and land area
+CORE_MIN_POP = 150_000
+CORE_RING_FRAC = 0.55      # ring radius as a fraction of the city's land radius
+CORE_RING_MIN_MI = 1.2
+CORE_RING_MAX_MI = 7.0
+COMPASS = ["N","NNE","NE","ENE","E","ESE","SE","SSE",
+           "S","SSW","SW","WSW","W","WNW","NW","NNW"]
 
 TIER_NAME = {1: "HSR Hub", 2: "Regional Hub", 3: "Metro / Subway", 4: "Commuter Rail"}
 
@@ -162,6 +171,7 @@ def main():
     towns = [{
         "name": f["properties"]["name"], "st": f["properties"]["st"],
         "geoid": f["properties"]["geoid"], "pop": f["properties"]["pop"] or 0,
+        "sqmi": f["properties"].get("sqmi") or 0,
         "lng": f["geometry"]["coordinates"][0], "lat": f["geometry"]["coordinates"][1],
     } for f in gj["features"]]
     by_pop = sorted(towns, key=lambda t: -t["pop"])
@@ -227,7 +237,8 @@ def main():
         for t in group:
             n = {"id": f"n{len(nodes)+1}", "name": t["name"], "tier": tier,
                  "lat": round(t["lat"], 5), "lng": round(t["lng"], 5),
-                 "parent": None, "geoid": t["geoid"], "pop": t["pop"], "st": t["st"]}
+                 "parent": None, "geoid": t["geoid"], "pop": t["pop"], "st": t["st"],
+                 "sqmi": t["sqmi"]}
             nodes.append(n)
             node_by_geoid[t["geoid"]] = n
 
@@ -268,22 +279,56 @@ def main():
         add_edge(a, n, 3)
         n["parent"] = a["id"]
 
-    # ---- tier 4 web ---------------------------------------------------------
+    # ---- tier 3 urban core: in-city metro rings around big hubs ------------
+    core_count = 0
+    for h in [n for n in nodes if n["tier"] <= 2 and (n["pop"] or 0) >= CORE_MIN_POP]:
+        r_city = math.sqrt(h["sqmi"] / math.pi) if h.get("sqmi") else 3.0
+        ring = min(CORE_RING_MAX_MI, max(CORE_RING_MIN_MI, CORE_RING_FRAC * r_city))
+        k = min(12, max(4, 2 + round(h["pop"] / 125_000)))
+        stations = []
+        for i in range(k):
+            brg = 360.0 * i / k
+            dlat = (ring / 69.172) * math.cos(math.radians(brg))
+            dlng = (ring / (69.172 * math.cos(math.radians(h["lat"])))) * math.sin(math.radians(brg))
+            n = {"id": f"n{len(nodes)+1}",
+                 "name": f'{h["name"]} Metro {COMPASS[round(brg / 22.5) % 16]}',
+                 "tier": 3, "lat": round(h["lat"] + dlat, 5), "lng": round(h["lng"] + dlng, 5),
+                 "parent": h["id"], "geoid": None, "pop": None, "sqmi": 0}
+            nodes.append(n)
+            stations.append(n)
+            core_count += 1
+            add_edge(h, n, 3)                       # spoke
+        if k >= 6:
+            for i in range(k):                       # orbital loop
+                add_edge(stations[i], stations[(i + 1) % k], 3)
+    print(f"tier 3: +{core_count} urban-core metro stations", file=sys.stderr)
+
+    # ---- tier 4 web: chained branch lines -----------------------------------
+    # Towns connect to the nearest *already-connected* point (network node or
+    # earlier town), processed closest-to-network first — so villages chain
+    # through towns into hubs like real branch lines instead of forming
+    # hub-and-spoke starbursts.
     net_grid = Grid(nodes)
-    web, web_mi, web_max = [], 0.0, 0.0
-    for t in towns:
-        if t["geoid"] in node_by_geoid:
-            continue
-        host, d = net_grid.nearest(t["lat"], t["lng"])
+    rem = [t for t in towns if t["geoid"] not in node_by_geoid]
+    order = sorted(rem, key=lambda t: net_grid.nearest(t["lat"], t["lng"])[1])
+    conn_grid = Grid(nodes)
+    web, web_mi, web_max, chained = [], 0.0, 0.0, 0
+    for t in order:
+        host, d = conn_grid.nearest(t["lat"], t["lng"])
         web_mi += d
         web_max = max(web_max, d)
+        if "id" not in host:
+            chained += 1
         web.append({
             "type": "Feature",
             "geometry": {"type": "LineString",
                          "coordinates": [[round(t["lng"], 5), round(t["lat"], 5)],
-                                         [host["lng"], host["lat"]]]},
-            "properties": {"from": t["geoid"], "to": host["id"], "mi": round(d, 1)},
+                                         [round(host["lng"], 5), round(host["lat"], 5)]]},
+            "properties": {"from": t["geoid"],
+                           "to": host.get("id") or ("t" + host["geoid"]),
+                           "mi": round(d, 1)},
         })
+        conn_grid.add(t)
 
     # ---- stats + write ------------------------------------------------------
     def route_mi(tier):
@@ -296,16 +341,18 @@ def main():
 
     rev = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     stats = {
-        "tier1Hubs": len(t1), "tier2Hubs": len(t2), "tier3Nodes": len(t3),
+        "tier1Hubs": len(t1), "tier2Hubs": len(t2),
+        "tier3Sat": len(t3), "tier3Core": core_count, "tier3Nodes": len(t3) + core_count,
         "tier1Edges": t1_edges, "edges": len(edges),
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
-        "tier4Links": len(web), "tier4Mi": round(web_mi),
+        "tier4Links": len(web), "tier4Chained": chained, "tier4Mi": round(web_mi),
         "tier4MeanMi": round(web_mi / max(len(web), 1), 1), "tier4MaxMi": round(web_max, 1),
     }
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
               "COVERAGE_MI": COVERAGE_MI, "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
-              "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI}
+              "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI,
+              "CORE_MIN_POP": CORE_MIN_POP}
 
     feats = []
     for n in nodes:

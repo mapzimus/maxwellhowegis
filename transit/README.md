@@ -72,12 +72,12 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
 
 | Tier | Rule | Result |
 |---|---|---|
-| **1 — HSR** | pop ≥ 300k, 70 mi spacing; MST + 2-nearest-neighbor HSR mesh | **49 hubs**, 67 lines, 12,918 mi |
-| **2 — Regional** | pop ≥ 40k @ 45 mi spacing, **plus** any 100k+ city outside a metro, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 90 mi of a hub | **372 hubs**, chained to the spine |
-| **3 — Metro** | towns ≥ 15k within 18 mi of a 100k+ anchor | **1,176 metro nodes** |
-| **4 — Commuter web** | every remaining town → nearest network node | **17,881 links** (`data/tier4_links.geojson`, render-only) |
+| **1 — HSR** | pop ≥ 175k, 60 mi spacing; MST + 2-nearest-neighbor HSR mesh | **87 hubs**, 116 lines, 19,747 mi |
+| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub | **616 hubs**, chained to the spine |
+| **3 — Metro** | suburbs ≥ 15k within 18 mi of a 100k+ anchor (**1,177**), **plus urban-core rings**: every 150k+ hub gets 4–12 compass-named in-city stations, spoked to the hub and loop-connected, sized by population and land area (**716**) | **1,893 metro nodes** |
+| **4 — Commuter web** | every remaining town → nearest *already-connected* point, closest-to-network first — towns chain through each other into branch lines (88% of links are town→town) instead of hub starbursts | **17,598 links**, mean 7.2 mi, max 57 mi |
 
-The result is one fully connected graph (1,597 nodes / 1,615 edges) written to
+The result is one fully connected graph (2,596 nodes / 2,991 edges) written to
 `data/network.json` with a `rev` stamp — the editor adopts a newer committed network over stale
 `localStorage` automatically. The commuter web renders as its own toggleable canvas layer.
 The network is still fully hand-editable afterwards: move, rename, relink, delete, promote —
@@ -95,7 +95,7 @@ Tier 4 (normal-speed commuter rail reaching every town) is too large to hand-pla
 Census **Gazetteer Places (national)** file and writes every **incorporated place** — city, town,
 village, borough — in the 50 states + DC to `transit/data/towns.geojson` as tier-4 GeoJSON points.
 
-- **19,465 towns** (2024 gazetteer): 10,214 cities · 4,306 towns · 3,709 villages · 1,215 boroughs.
+- **19,478 towns** (2024 gazetteer): 10,219 cities · 4,306 towns · 3,709 villages · 1,215 boroughs.
 - Every town is **joined to Census population** (SUB-EST 2024 place-level estimates, 100% match by
   GEOID) — the `pop` property drives dot size/opacity in the editor and search ranking, and is what
   a tier-2 candidate cut (e.g. pop ≥ 100k) will run on.
@@ -153,8 +153,8 @@ site (plain HTML/CSS/JS).
 - [x] Census population joined to every town (100%); pop-scaled dots
 - [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
       live per-tier mileage
-- [x] **Auto-generated full network** (`scripts/build_network.py`): 49 HSR + 372 regional +
-      1,176 metro + 17,881-link commuter web, fully connected, every town ≤ 90 mi from a hub
+- [x] **Auto-generated full network** (`scripts/build_network.py`): 87 HSR + 616 regional +
+      1,893 metro (incl. urban-core rings) + 17,598-link chained commuter web, every town ≤ 60 mi from a hub
 - [ ] Hand-tune the generated network (the editor edits it directly)
 - [ ] Auto-route HSR edges along real corridors instead of straight lines
 - [ ] Network stats (reach, coverage: % of population within N mi of each tier)
