@@ -7,14 +7,25 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 
 ## Status
 
-Campaign rounds 0–5 executed on 2026-07-02. Still open: §1 quabbin submodule
-image verification (blocked this round by scoped git/GitHub access, see
-note); §2 history rewrite (deliberate, round 6, pending owner go-ahead);
-§4 SRI hashes, Nominatim usage policy, and Actions SHA-pinning; §5 gallery
-data-driving, `ma-atlas/app.js` modularization, shared `js/mapkit.js`, and
-mirroring `nsn.html`'s eBay-hotlinked images (now flagged in-place); §7
-sync-automation for the vendored `ma-atlas`/`Lynn-data-dive/maps` dirs, and
-the `bugwars`/`truescale` submodule bump check (also blocked this round).
+Campaign complete: rounds 0–6 executed on 2026-07-02. Round 6 rewrote
+`main`'s history (single-branch clone: 202 MB → 80.5 MB), archived the
+unique content of PRs #4/#15/#17/#36/#48 on branch
+`archive-unmerged-content-2026-07-02` (see `archive/README.md` there), and
+closed those PRs plus obsolete #37.
+
+**Owner action needed for the full shrink** — this session's proxy blocks
+ref deletion, so delete these in the GitHub UI (Code → Branches): the 22
+stale branches (`backup-pre-slim-2026-06-13`, `tappymaps-embed`,
+`bugwars-link-update`, all `claude/*`, all `improve/*`) right away, and
+`backup-pre-round6` after verifying the live site for a few days. Keep
+`main` and `archive-unmerged-content-2026-07-02`. Default clones drop to
+~80 MB once they're gone.
+
+Still open (deferred): §1 quabbin submodule image verification and §7
+`bugwars`/`truescale` submodule bumps (need a session with access to those
+repos); §4 SRI hashes, Nominatim usage policy, Actions SHA-pinning; §5
+gallery data-driving, `ma-atlas/app.js` modularization, shared
+`js/mapkit.js`, eBay image mirroring; §7 vendored-dir sync automation.
 
 ---
 
@@ -30,7 +41,7 @@ the `bugwars`/`truescale` submodule bump check (also blocked this round).
 - [x] **Recompress the in-use heavyweights (~10–14 MB savings):** `images/projects/lynnfield/CemMap.png` (11.5 MB → ~1 MB at display size), `images/nsn-logo.png` (2 MB for a logo), `images/gallery/q3.png` (2.2 MB), and the camera-roll-named screenshots (`Screenshot 2025-05-30 114936.png`, 3.3 MB). Downscale to display resolution; consider WebP. Rename screenshots to meaningful names while at it. *(~1 hr)*
 - [x] **`Lynn-data-dive/maps/data/` duplicates `ma-atlas/data/` at 4–5× the size (~13 MB).** e.g. `ma_municipalities.geojson` is 5.1 MB pretty-printed there vs 1.2 MB minified in ma-atlas. Point Lynn at the ma-atlas copies or replace with minified/simplified versions (~7–8 MB saved). Note: README documents these as vendored via a manual PowerShell sync from another repo — decide on one canonical copy. *(~30 min)*
 - [x] **`whydah/navigator/vendor/three.module.js` is the full 1.27 MB un-minified Three.js dev build.** Swap for the minified build or a pinned CDN import. *(~15 min)*
-- [ ] **After the deletions above, rewrite history to actually shrink clones.** The pack (~169 MB) is as big as the tree, and e.g. `transit/data/towns.geojson` (3.7 MB) is committed 3×. `git filter-repo` (or BFG) to purge deleted large blobs, then force-push. Estimated clone-size reduction: 60–90 MB. **Do this last, deliberately — it rewrites history for anyone with a clone.** *(~1 hr, coordinate first)*
+- [x] **After the deletions above, rewrite history to actually shrink clones.** The pack (~169 MB) is as big as the tree, and e.g. `transit/data/towns.geojson` (3.7 MB) is committed 3×. `git filter-repo` (or BFG) to purge deleted large blobs, then force-push. Estimated clone-size reduction: 60–90 MB. **Do this last, deliberately — it rewrites history for anyone with a clone.** *(~1 hr, coordinate first)* — **Round 6:** `git filter-repo --strip-blobs-with-ids` removed 85 superseded blobs >512 KB (175 MB raw) from `main`'s history; one commit ("Add NSN logo and banner images") was pruned as empty since both blobs it introduced were superseded. A single-branch clone of `main` dropped **202 MB → 80.5 MB**. Full default clones stay large until the stale branches are deleted — this session's proxy blocks branch deletion/tag pushes, so the owner must delete them in the GitHub UI (see Status).
 - [x] Small cleanups: `whydah/navigator/server.py` + `start-game.bat` are local dev helpers published to the live site (move/ignore); `salem-photo-walk/data/*.geojson` is orphaned — the page inlines all its data — so either fetch it at runtime or delete the dir; audit `whydah/pics/` (3.7 MB) for unreferenced images. — **Round 2a:** deleted `server.py` + `start-game.bat` (updated `whydah/navigator/README.md` to document `python3 -m http.server` instead), deleted the 3 orphaned `salem-photo-walk/data/*.geojson` files, and audited `whydah/pics/` (found 2 unreferenced files, 0.8 MB, deleted).
 
 ## 3. Performance of the map apps
