@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxwell Howe | GIS Portfolio</title>
     <meta name="description" content="GIS Portfolio of Maxwell Howe — spatial analysis, remote sensing, and cartography.">
+    <meta property="og:url" content="https://maxwellhowegis.com/">
+    <meta property="og:image" content="https://maxwellhowegis.com/images/projects/ma-atlas-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://maxwellhowegis.com/">
     <meta property="og:title" content="Maxwell Howe — GIS Portfolio">
     <meta property="og:description" content="GIS analyst and cartographer. Spatial analysis, remote sensing, and Python/R-based geoprocessing.">
     <meta property="og:type" content="website">
@@ -20,22 +24,7 @@
 <a href="#main-content" class="skip-to-content">Skip to content</a>
 
 <!-- NAV -->
-<nav class="nav">
-    <div class="nav-inner">
-        <a href="index.html" class="nav-logo">Maxwell Howe</a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Projects</a></li>
-            <li><a href="gallery.html">Map Gallery</a></li>
-            <li><a href="side-projects.html">Beyond GIS</a></li>
-            <li><a href="fieldnotes.html">Field Notes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</nav>
+<div id="site-nav"></div>
 
 <!-- HERO — full viewport with animated topo contour canvas -->
 <section class="hero" id="hero">
@@ -155,23 +144,7 @@
 
 </main>
 
-<footer class="footer">
-    <div class="footer-inner">
-        <p>&copy; 2026 Maxwell Howe</p>
-        <ul class="footer-links">
-            <li><a href="portfolio.html">Projects</a></li>
-            <li><a href="gallery.html">Map Gallery</a></li>
-            <li><a href="side-projects.html">Beyond GIS</a></li>
-            <li><a href="fieldnotes.html">Field Notes</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="feedback.html">Ideas</a></li>
-            <li><a href="links.html">Links</a></li>
-            <li><a href="https://github.com/mapzimus" target="_blank">GitHub</a></li>
-        </ul>
-    </div>
-</footer>
+<div id="site-footer"></div>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay">
@@ -183,6 +156,7 @@
 </div>
 
 <script src="js/projects.js"></script>
+<script src="js/partials.js"></script>
 <script src="js/main.js"></script>
 <script src="js/hero-canvas.js"></script>
 <script>

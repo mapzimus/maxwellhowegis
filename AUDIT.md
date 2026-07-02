@@ -40,7 +40,7 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 
 ## 5. Maintainability
 
-- [ ] **Nav/footer are hand-duplicated across all 15 top-level pages and have already drifted.** Nav order differs on `gallery.html`/`side-projects.html`; footer link counts range 4–11 across pages (~500 duplicated lines total). Since `js/main.js` already loads on every page, inject shared nav/footer partials from JS (or adopt a minimal build step). This single change prevents the whole class of drift. *(~2 hr)*
+- [x] **Nav/footer are hand-duplicated across all 15 top-level pages and have already drifted.** Nav order differs on `gallery.html`/`side-projects.html`; footer link counts range 4–11 across pages (~500 duplicated lines total). Since `js/main.js` already loads on every page, inject shared nav/footer partials from JS (or adopt a minimal build step). This single change prevents the whole class of drift. *(~2 hr)*
 - [ ] **`gallery.html` (145 KB, 2,095 lines) hand-codes 119 gallery bricks.** No base64 — pure repeated markup. Drive it from a JS data array the way `portfolio.html` uses `js/projects.js` (~10× smaller, no more copy-paste). Images already lazy-load (good). *(~2 hr)*
 - [ ] **`ma-atlas/app.js` is an 11,020-line / 660 KB monolith.** Split into ES modules along its natural seams (data loading, classification/palette, layers, UI, export studio) via `<script type="module">`; lazy-import the export studio. *(~4+ hr, do incrementally)*
 - [ ] **Factor a shared `js/mapkit.js`.** CARTO basemap configs, `toast()`, retrying `fetchJSON`, and Nominatim helpers are re-implemented in appalachians (`:253,302,491,509`), transit (`:234,394,604`), and interstate-challenge (`:143`). ma-atlas already imports shared `../js/main.js`, so the pattern exists. *(~2 hr)*
@@ -50,8 +50,8 @@ Snapshot at audit time: working tree **211 MB**, git pack **~169 MB**, 34 HTML p
 
 ## 6. SEO, meta & accessibility
 
-- [ ] **Add a default `og:image` + `twitter:card` site-wide.** The homepage — the most-shared URL — has `og:title`/`og:description` but no image; 9 of 15 pages have no `og:*` at all; no Twitter cards anywhere. Best done as part of the shared-partial work in §5. *(~1 hr)*
-- [ ] **Add `robots.txt`, `sitemap.xml` (15 static URLs), and per-page canonical tags** — currently none of the three exist. *(~30 min)*
+- [x] **Add a default `og:image` + `twitter:card` site-wide.** The homepage — the most-shared URL — has `og:title`/`og:description` but no image; 9 of 15 pages have no `og:*` at all; no Twitter cards anywhere. Best done as part of the shared-partial work in §5. *(~1 hr)*
+- [x] **Add `robots.txt`, `sitemap.xml` (15 static URLs), and per-page canonical tags** — currently none of the three exist. *(~30 min)*
 - [x] **Favicon fallbacks:** SVG-only today; add a 32×32 `favicon.ico` and a 180×180 `apple-touch-icon`. *(~15 min)*
 - [x] **`about.html` heading order skips a level** (`h1 → h3…` with no `h2`) — breaks the screen-reader outline. Other pages are clean; every page has exactly one `h1` and viewport meta (good). Verify the two `alt=""` images in `lynn.html`/`quabbin.html` are truly decorative. Alt coverage is otherwise excellent (119/119 gallery, 38/38 nsn).
 
