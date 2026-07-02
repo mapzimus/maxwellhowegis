@@ -72,6 +72,7 @@
   .ly .sw.dot { border-radius:50%; }
   .ly label { flex:1; font-size:12.5px; cursor:pointer; user-select:none; }
   .switch { position:relative; width:36px; height:20px; flex:none; cursor:pointer; }
+  .switch::after { content:""; position:absolute; inset:-10px; }  /* touch halo — 40px effective tap target */
   .switch input { opacity:0; width:0; height:0; position:absolute; }
   .switch .sl { position:absolute; inset:0; background:#cfd7e0; border-radius:20px; transition:.16s; }
   .switch .sl::before { content:""; position:absolute; width:16px; height:16px; left:2px; top:2px; background:#fff; border-radius:50%; transition:.16s; box-shadow:0 1px 2px rgba(0,0,0,.3); }
@@ -190,7 +191,7 @@
   <div class="grp"><h2>Basemap</h2><div class="basemaps" id="basemap-grid"></div></div>
   <div class="grp">
     <h2>Regions</h2>
-    <div class="ly"><span class="sw" style="background:linear-gradient(90deg,#5E8C6A,#D98C5A,#A98BC2)"></span><label for="tg-regions">Show regions</label><span class="switch"><input type="checkbox" id="tg-regions" data-ly="regions" checked><span class="sl"></span></span></div>
+    <div class="ly"><span class="sw" style="background:linear-gradient(90deg,#5E8C6A,#D98C5A,#A98BC2)"></span><label for="tg-regions">Show regions</label><label class="switch"><input type="checkbox" id="tg-regions" data-ly="regions" checked><span class="sl"></span></label></div>
     <div class="ly-opacity"><input type="range" min="0" max="1" step="0.05" value="0.6" id="region-opacity" aria-label="Region opacity"></div>
     <div class="region-rows" id="region-rows"></div>
   </div>
@@ -415,7 +416,7 @@ function buildUI(){
   const ol=document.getElementById("overlay-list");
   ol.innerHTML=OVERLAYS.map(o=>{ let sw; if(o.sw.startsWith("line:")) sw=`<span class="sw line" style="border-top-color:${o.sw.slice(5)}"></span>`; else if(o.sw.startsWith("dot:")) sw=`<span class="sw dot" style="background:${o.sw.slice(4)}"></span>`; else sw=`<span class="sw" style="background:${o.sw}"></span>`;
     const op=o.opacity?`<div class="ly-opacity"><input type="range" min="0" max="1" step="0.05" value="${o.opacity.def}" data-op="${o.id}" aria-label="${o.label} opacity"></div>`:"";
-    return `<div class="ly">${sw}<label for="tg-${o.id}">${o.label}</label><span class="switch"><input type="checkbox" id="tg-${o.id}" data-ly="${o.id}" ${o.on?'checked':''}><span class="sl"></span></span></div>${op}`; }).join("");
+    return `<div class="ly">${sw}<label for="tg-${o.id}">${o.label}</label><label class="switch"><input type="checkbox" id="tg-${o.id}" data-ly="${o.id}" ${o.on?'checked':''}><span class="sl"></span></label></div>${op}`; }).join("");
   ol.querySelectorAll("input[data-ly]").forEach(inp=>inp.addEventListener("change",()=>toggleOverlay(inp.dataset.ly,inp.checked)));
   ol.querySelectorAll("input[data-op]").forEach(inp=>inp.addEventListener("input",()=>{ const o=OVERLAYS.find(x=>x.id===inp.dataset.op); map.setPaintProperty(o.opacity.layer,o.opacity.prop,Number(inp.value)); }));
 
