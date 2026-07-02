@@ -46,6 +46,26 @@ SUFFIXES = [
     "government", "township", "borough", "village", "city", "town",
 ]
 
+# FUNCSTAT codes accepted as real towns. Beyond the usual 'A' (active government):
+# 'N' nonfunctioning legal entity (Washington DC — governed at district level),
+# 'B' partially consolidated (Baton Rouge, Lafayette LA), and 'F' fictitious
+# "(balance)" entities — the Census's records for consolidated cities such as
+# Indianapolis, Nashville-Davidson, Louisville/Jefferson, Athens-Clarke.
+# 'I' (inactive ghost towns) stays excluded. N/B/F records without a population
+# match are skipped as duplicate shells (e.g. 'Louisville city' beside the metro
+# government record that carries the actual population).
+FUNCSTAT_OK = {"A", "N", "B", "F"}
+
+# The gazetteer's internal point sits inside the legal boundary, which for a few
+# water-heavy cities is far from the actual city (San Francisco's includes 185 sq mi
+# of Pacific around the Farallon Islands, putting its point 34 mi offshore).
+# Override the worst (>10 mi error) with downtown coordinates.
+COORD_OVERRIDES = {
+    "0667000": (37.7793, -122.4193),   # San Francisco, CA
+    "2255000": (29.9511, -90.0715),    # New Orleans, LA (Lake Pontchartrain)
+    "4817000": (27.7963, -97.3964),    # Corpus Christi, TX (bay annexations)
+}
+
 
 def gaz_url(year):
     return (f"https://www2.census.gov/geo/docs/maps-data/data/gazetteer/"
@@ -99,11 +119,14 @@ def fetch_pop():
 
 
 def clean_name(name):
+    name = name.strip()
+    if name.endswith(" (balance)"):
+        name = name[: -len(" (balance)")].strip()
     low = name.lower()
     for suf in SUFFIXES:
         if low.endswith(" " + suf):
             return name[: -(len(suf) + 1)].strip()
-    return name.strip()
+    return name
 
 
 def build(year, include_cdp, with_pop=True):
@@ -126,13 +149,18 @@ def build(year, include_cdp, with_pop=True):
         is_cdp = func == "S"
         if is_cdp and not include_cdp:
             continue
-        if func not in ("A", "S"):        # skip inactive / statistical-other
+        if not is_cdp and func not in FUNCSTAT_OK:   # skip inactive ghost towns etc.
             continue
+        geoid_pre = c[idx["GEOID"]]
+        if func in ("N", "B", "F") and with_pop and geoid_pre not in pops:
+            continue                                  # duplicate nonfunctioning shell
         try:
             lat = round(float(c[idx["INTPTLAT"]]), 5)
             lng = round(float(c[idx["INTPTLONG"]]), 5)
         except ValueError:
             continue
+        if geoid_pre in COORD_OVERRIDES:
+            lat, lng = COORD_OVERRIDES[geoid_pre]
         lsad = c[idx["LSAD"]]
         ptype = "cdp" if is_cdp else LSAD_TYPE.get(lsad, "place")
         name = clean_name(c[idx["NAME"]])

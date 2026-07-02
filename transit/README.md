@@ -65,6 +65,29 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
   geocoder (best-effort — falls back to a `Tier N` placeholder offline or when rate-limited; it
   never overwrites a name you set yourself). Promoted nodes already carry their Census name.
 
+## The auto-generated network
+
+`scripts/build_network.py` generates the entire four-tier network from the towns layer in ~2 s
+(pure stdlib, deterministic — tweak the constants at the top and re-run):
+
+| Tier | Rule | Result |
+|---|---|---|
+| **1 — HSR** | pop ≥ 300k, 70 mi spacing; MST + 2-nearest-neighbor HSR mesh | **49 hubs**, 67 lines, 12,918 mi |
+| **2 — Regional** | pop ≥ 40k @ 45 mi spacing, **plus** any 100k+ city outside a metro, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 90 mi of a hub | **372 hubs**, chained to the spine |
+| **3 — Metro** | towns ≥ 15k within 18 mi of a 100k+ anchor | **1,176 metro nodes** |
+| **4 — Commuter web** | every remaining town → nearest network node | **17,881 links** (`data/tier4_links.geojson`, render-only) |
+
+The result is one fully connected graph (1,597 nodes / 1,615 edges) written to
+`data/network.json` with a `rev` stamp — the editor adopts a newer committed network over stale
+`localStorage` automatically. The commuter web renders as its own toggleable canvas layer.
+The network is still fully hand-editable afterwards: move, rename, relink, delete, promote —
+then Export/Copy JSON as usual.
+
+Notable data fixes made for this: consolidated cities (Washington DC, Indianapolis,
+Nashville-Davidson, Louisville/Jefferson, Baton Rouge, Athens, Augusta…) enter via their Census
+"(balance)"/nonfunctioning records, and three water-skewed internal points (San Francisco 34 mi
+offshore near the Farallons, New Orleans, Corpus Christi) are overridden to downtown coordinates.
+
 ## Tier 4 — the "every town" base layer
 
 Tier 4 (normal-speed commuter rail reaching every town) is too large to hand-place, so it's
@@ -126,12 +149,13 @@ site (plain HTML/CSS/JS).
 ## Status / next steps
 
 - [x] Click-to-place node editor, link/delete modes, GeoJSON import/export, autosave
-- [x] Seed spine of 12 tier-1 HSR hubs (`data/network.json`)
-- [x] Tier-4 "every town" base layer — 19,465 Census incorporated places (`data/towns.geojson`)
+- [x] Tier-4 "every town" base layer — 19,478 Census incorporated places (`data/towns.geojson`)
 - [x] Census population joined to every town (100%); pop-scaled dots
 - [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
       live per-tier mileage
-- [ ] Flesh out tier-2 regional hubs, then tier-3 metro coverage
-- [ ] Auto-route HSR edges along real corridors; auto-connect towns to nearest regional hub
-- [ ] Network stats (reach, coverage: % of towns/population within N mi of the network)
+- [x] **Auto-generated full network** (`scripts/build_network.py`): 49 HSR + 372 regional +
+      1,176 metro + 17,881-link commuter web, fully connected, every town ≤ 90 mi from a hub
+- [ ] Hand-tune the generated network (the editor edits it directly)
+- [ ] Auto-route HSR edges along real corridors instead of straight lines
+- [ ] Network stats (reach, coverage: % of population within N mi of each tier)
 - [ ] Promote to a styled read-only "network map" view and add it to the portfolio gallery
