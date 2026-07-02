@@ -239,9 +239,9 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 /* dedicated panes: commuter web under town dots, both under the network */
 map.createPane('t4web'); map.getPane('t4web').style.zIndex = 240;
 map.createPane('towns'); map.getPane('towns').style.zIndex = 250;
-let townsGeo = null, townCount = 0;
+let townsGeo = null, townCount = 0, townsLoadStarted = false;
 let townsShown = localStorage.getItem(STORE_KEY + ':towns') !== '0';
-let webGeo = null, webCount = 0;
+let webGeo = null, webCount = 0, webLoadStarted = false;
 let webShown = localStorage.getItem(STORE_KEY + ':web') !== '0';
 
 /* Bulk canvas layer: draws tens of thousands of static features in a single
@@ -305,9 +305,12 @@ function townRadius(pop){
 }
 
 async function loadTowns(){
+  if (townsLoadStarted) return;   // already fetched (or in flight) — cached, never refetch
+  townsLoadStarted = true;
+  toast('Loading towns…');
   try {
     const r = await fetch('data/towns.geojson');
-    if (!r.ok) return;
+    if (!r.ok) throw new Error('http ' + r.status);
     const gj = await r.json();
     townCount = gj.features.length;
     townsData = gj.features.map(f => ({
@@ -338,7 +341,11 @@ async function loadTowns(){
     });
     if (townsShown) townsGeo.addTo(map);
     updateTownsUI();
-  } catch(e){ /* no towns file / offline — editor still works */ }
+    toast(`Loaded ${townCount.toLocaleString()} towns`);
+  } catch(e){
+    townsLoadStarted = false;   // allow a retry on the next toggle/search
+    toast('Could not load towns');
+  }
 }
 function updateTownsUI(){
   const chk = $('#townsChk'), lbl = $('#townsCount');
@@ -348,15 +355,19 @@ function updateTownsUI(){
 function toggleTowns(on){
   townsShown = on;
   localStorage.setItem(STORE_KEY + ':towns', on ? '1' : '0');
-  if (townsGeo){ if (on) townsGeo.addTo(map); else map.removeLayer(townsGeo); }
+  if (on){ if (townsGeo) townsGeo.addTo(map); else loadTowns(); }   // first enable → fetch; later enables reuse the cached layer
+  else if (townsGeo) map.removeLayer(townsGeo);
 }
 
 /* tier-4 commuter web — every non-network town linked to its nearest network
    node (scripts/build_network.py → data/tier4_links.geojson). Render-only. */
 async function loadT4Web(){
+  if (webLoadStarted) return;   // already fetched (or in flight) — cached, never refetch
+  webLoadStarted = true;
+  toast('Loading commuter web…');
   try {
     const r = await fetch('data/tier4_links.geojson');
-    if (!r.ok) return;
+    if (!r.ok) throw new Error('http ' + r.status);
     const gj = await r.json();
     webCount = gj.features.length;
     const segs = gj.features.map(f => f.geometry.coordinates);  // [[lngA,latA],[lngB,latB]]
@@ -377,15 +388,23 @@ async function loadT4Web(){
       ctx.globalAlpha = 1;
     });
     if (webShown) webGeo.addTo(map);
-    const lbl = $('#webCount');
-    if (lbl) lbl.textContent = webCount.toLocaleString() + ' links';
-    $('#webChk').checked = webShown;
-  } catch(e){ /* no web file yet — editor still works */ }
+    updateWebUI();
+    toast(`Loaded ${webCount.toLocaleString()} commuter links`);
+  } catch(e){
+    webLoadStarted = false;   // allow a retry on the next toggle
+    toast('Could not load commuter web');
+  }
+}
+function updateWebUI(){
+  const chk = $('#webChk'), lbl = $('#webCount');
+  if (chk) chk.checked = webShown;
+  if (lbl) lbl.textContent = webCount ? webCount.toLocaleString() + ' links' : '—';
 }
 function toggleWeb(on){
   webShown = on;
   localStorage.setItem(STORE_KEY + ':web', on ? '1' : '0');
-  if (webGeo){ if (on) webGeo.addTo(map); else map.removeLayer(webGeo); }
+  if (on){ if (webGeo) webGeo.addTo(map); else loadT4Web(); }   // first enable → fetch; later enables reuse the cached layer
+  else if (webGeo) map.removeLayer(webGeo);
 }
 
 /* ---- helpers ---- */
@@ -740,6 +759,9 @@ function runSearch(){
 }
 
 const debounce=(fn,ms)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms);};};
+// search works even with the towns layer toggled off — kick off the (cached)
+// fetch as soon as the user shows intent to search, not just on layer-enable
+$('#townSearch').addEventListener('focus', () => { if (!townsData.length) loadTowns(); });
 $('#townSearch').addEventListener('input', debounce(runSearch, 120));
 $('#townSearch').addEventListener('keydown', e => {
   if (e.key === 'Enter' && srchHits.length){ promoteTown(srchHits[0]); }
@@ -822,13 +844,22 @@ document.addEventListener('keydown', e => {
 
 /* ------------------------------------------------------------------ *
  *  boot — localStorage carries your edits, but a newer committed
- *  network.json (fresh `rev` stamp) takes precedence so regenerated
- *  networks actually reach returning visitors.
+ *  network.json (fresh `rev` stamp) takes precedence *if the visitor
+ *  agrees*: with local edits on the books, a differing `rev` prompts
+ *  a confirm() instead of silently clobbering their work. The `rev`
+ *  their local edits are synced to is persisted alongside the edits
+ *  (STORE_KEY + ':rev'), so the prompt only reappears while a real
+ *  newer publish is pending.
+ *
+ *  No explicit cache-busting here: dropping `cache:'no-store'` in
+ *  favor of normal HTTP caching is the simplest behavior-preserving
+ *  option (see PR description) — staleness is caught by the rev
+ *  check above, not by forcing a network round-trip every visit.
  * ------------------------------------------------------------------ */
 async function boot(){
   let fileState = null, fileRev = null;
   try {
-    const r = await fetch('data/network.json', { cache:'no-store' });
+    const r = await fetch('data/network.json');
     if (r.ok){
       const gj = await r.json();
       fileState = fromGeoJSON(gj);
@@ -837,14 +868,30 @@ async function boot(){
   } catch(e){ /* offline / no seed file */ }
   load();
   const storedRev = localStorage.getItem(STORE_KEY + ':rev');
-  if (fileState && (!state.nodes.length || (fileRev && fileRev !== storedRev))){
-    const hadEdits = state.nodes.length > 0;
-    state = fileState;
-    if (fileRev) localStorage.setItem(STORE_KEY + ':rev', fileRev);
-    if (hadEdits) setTimeout(() => toast('Loaded a newer committed network — local edits replaced'), 600);
+  const hadEdits = state.nodes.length > 0;
+  if (fileState){
+    if (!hadEdits){
+      // nothing local to lose — load the committed network as before
+      state = fileState;
+      if (fileRev) localStorage.setItem(STORE_KEY + ':rev', fileRev);
+    } else if (fileRev && fileRev !== storedRev){
+      // local edits exist AND the committed network moved on — ask first
+      const replace = confirm('A newer network layout was published. Replace your local edits?');
+      if (replace){
+        state = fileState;
+        localStorage.setItem(STORE_KEY + ':rev', fileRev);
+        setTimeout(() => toast('Loaded the newer committed network'), 600);
+      } else {
+        setTimeout(() => toast('Kept your local edits'), 600);
+      }
+    }
   }
   reseed(); setMode('add'); renderAll(); fitView();
-  loadTowns(); loadT4Web();   // async — reference layers paint once the network is up
+  // reference layers: fetch only if their toggle is actually on (default or
+  // restored from localStorage) — an off toggle should cost zero bytes.
+  updateTownsUI(); updateWebUI();
+  if (townsShown) loadTowns();
+  if (webShown) loadT4Web();
 }
 boot();
 </script>
