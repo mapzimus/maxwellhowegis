@@ -2,4 +2,7 @@
 # Only the standard library + requests is used at runtime; requests is
 # optional (urllib is the actual transport). ortools is NOT needed —
 # Version B uses a pure-Python local-search solver.
-requests>=2.31
+requests==2.32.3
+# Needed by the screenshot scripts (capture_thumbs.py, screenshot_atlas.py,
+# screenshot_interstate.py), which drive headless Chromium.
+playwright==1.47.0

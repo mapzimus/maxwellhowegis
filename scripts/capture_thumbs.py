@@ -3,7 +3,8 @@ import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
-OUT = Path(r"D:\maxwellhowegis\images\projects")
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "images" / "projects"
 W, H = 1600, 1000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
@@ -40,7 +41,7 @@ if __name__ == "__main__":
     target = sys.argv[1] if len(sys.argv) > 1 else "all"
     if target in ("geopuesto", "all"):
         capture(
-            "file:///D:/maxwellhowegis/geopuesto/index.html",
+            (ROOT / "geopuesto" / "index.html").as_uri(),
             "geopuesto-thumb.png",
             wait_ms=4000,
             wait_selector=".leaflet-tile-loaded",
@@ -54,7 +55,7 @@ if __name__ == "__main__":
         )
     if target in ("optitrek", "all"):
         capture(
-            "file:///D:/maxwellhowegis/scripts/optitrek_card.html",
+            (ROOT / "scripts" / "optitrek_card.html").as_uri(),
             "optitrek-thumb.png",
             wait_ms=2500,
             wait_selector="circle.route-node",
