@@ -2809,18 +2809,101 @@ map.addControl(new maplibregl.ScaleControl({ maxWidth: 140, unit: "imperial" }),
 
 map.on("load", async () => {
     try {
-        const [academic, munis, maSchools, acs, distAcs, distEdu,
-               distDisc, distOutcomes, acsExtra, distAcsExtra, schoolMetrics,
-               distPostsec, distEL, distEducator, distFinance, acsExtra2, distAcsExtra2,
-               distSped, distAdvanced, distMcasGrades, distSupport, acsExtra3, distAcsExtra3,
-               distEarlyEd, distCte, distDiscDetail, acsExtra4, distAcsExtra4,
-               distGrowth, distMcasLevels, distChoice, distAccount, acsExtra5, distAcsExtra5,
-               distMcasGrades2, distRetention, distGradDetail, distEducator2, acsExtra6, distAcsExtra6,
-               distMcasG10Sci, distDiscGroups, distClassSize, distFinanceDetail, acsExtra7, distAcsExtra7,
-               distAbsenceGroups, distMcasGroups, distApDetail, acsExtra8, distAcsExtra8,
-               maColleges, muniChildcare, muniChildcareExtra] = await Promise.all([
-            fetch(SOURCES.academic).then(r => r.json()),
-            fetch(SOURCES.municipalities).then(r => r.json()),
+        // ── Single-burst data loading ──────────────────────────────────────
+        // All three "waves" below hit static, hard-coded SOURCES.* paths — none
+        // of their URLs are derived from another wave's *results* (only the
+        // in-app enrich()/merge processing after wave 1 depends on wave-1
+        // data, not the fetches themselves). So there's no correctness reason
+        // to wait for wave 1 to fully resolve before starting waves 2 and 3.
+        // We kick off every fetch here, up front, then await/destructure in
+        // the original order below so the downstream processing is untouched.
+        //
+        // ── Parallel-session district side-files ─────────────────────────────
+        // Each Sx session appends its SOURCES key(s) on the line UNDER its own
+        // load-anchor, so concurrent PRs never touch the same line. Every file is
+        // shaped {DIST_CODE:{col:val}} and merges generically here. See AGENTS.md.
+        const EXTRA_DISTRICT_SOURCES = [
+            // ── load:S1:accountability ──
+            "districtAcctDetail",
+            // ── load:S2:vocational ──
+            "districtCteDetail",
+            // ── load:S3:sped ──
+            "districtSpedDetail",
+            // ── load:S4:el ──
+            "districtElDetail",
+            // ── load:S5:progression ──
+            "districtProgression",
+            // ── load:S6:mcas-completeness ──
+            "districtMcasGrades3", "districtMcasGroups2",
+            // ── load:S7:subgroup-outcomes ──
+            "districtPostsecDetail",
+            // ── load:S8:workforce ──
+            "districtEducator3",
+            // ── load:S10:gender ──
+            "districtGender",
+            // ── load:S11:funding-revenue ──
+            "districtFinanceRevenue",
+            // ── load:finance-categories (per-pupil PD / other teaching) ──
+            "districtFinanceCategories",
+            // ── load:transport-spending (per-pupil transportation + food, DESE cnfs-edqq ÷ FTE) ──
+            "districtTransport",
+            // ── load:dropout-annual (single-year grades 9-12 dropout rate, DESE cmm7-ttbg; ≠ cohort dropout_pct) ──
+            "districtDropoutAnnual",
+            // ── load:S12:school-choice-landscape ──
+            "districtChoiceInflow", "districtPrivate",
+            // ── load:S13:climate-safety ──
+            "districtClimateSafety",
+            // ── load:S14:whole-child-facilities ──
+            "districtWholeChild",
+            // Underserved subgroups (feat/underserved-subgroups)
+            "districtMcasGroupsOther",
+            // ── load:earnings-outcomes (post-grad earnings + employment, DESE 9vfm-6vxq) ──
+            "districtEarnings",
+            // Early college + HS-graduate outcomes (feat/early-college-outcomes)
+            "districtEarlyCollege", "districtGradOutcomes",
+            // ── load:feat/sped-assessment ──
+            "districtSpedDynamics",
+            // ── load:teacher-workforce ──
+            "districtTeacherWorkforce",
+            // ── load:crdc-federal (federal CRDC 2020-21 athletics, US ED/OCR via Urban API) ──
+            "districtCrdc",
+            // ── load:seda-national (Stanford SEDA v6.0 national benchmark) ──
+            "districtSeda",
+            // ── load:crdc-equity (federal CRDC 2017-18 gifted access + school policing, US ED/OCR via Urban API) ──
+            "districtCrdcEquity",
+            // ── load:seda-gaps (Stanford SEDA v6.0 national-scale achievement gaps) ──
+            "districtSedaGaps",
+            // ── load:crdc-courses (federal CRDC 2017-18 course access: HS offers Calculus/Physics/Chemistry/Algebra II, US ED/OCR via Urban API) ──
+            "districtCrdcCourses",
+            "districtMobility",
+            // ── load:childcare-deep-dive (infant/toddler, subsidy, Head Start, C3 — muni→district) ──
+            "districtChildcare",
+            // ── load:composite-indices (z-score blends of existing metrics; bake via scripts/bake_composites.py) ──
+            "districtComposites",
+        ];
+        const extraDistrictPromise = Promise.all(EXTRA_DISTRICT_SOURCES.map(k =>
+            fetch(SOURCES[k]).then(r => r.ok ? r.json() : null).catch(() => null)
+        ));
+        // Private schools (NCES PSS) — an independent REFERENCE layer, fetched
+        // separately (small + optional). Falls back to an empty collection on any
+        // error so a missing file never blocks the rest of the map.
+        const privateSchoolsPromise = fetch(SOURCES.maPrivateSchools)
+            .then(r => r.ok ? r.json() : { type: "FeatureCollection", features: [] })
+            .catch(() => ({ type: "FeatureCollection", features: [] }));
+
+        const wave1Promise = Promise.all([
+            // academic + municipalities are the two critical fetches the rest of
+            // the app can't function without — give them an explicit .ok check
+            // and tag the error with which dataset failed, so the outer catch
+            // below can surface a specific message instead of a generic one.
+            fetch(SOURCES.academic).then(r => {
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                return r.json();
+            }).catch(err => { err.criticalSource = "academic district boundaries"; throw err; }),
+            fetch(SOURCES.municipalities).then(r => {
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                return r.json();
+            }).catch(err => { err.criticalSource = "municipality boundaries"; throw err; }),
             fetch(SOURCES.maSchools).then(r => r.json()).catch(() => ({ type: "FeatureCollection", features: [] })),
             fetch(SOURCES.muniAcs).then(r => r.ok ? r.json() : null).catch(() => null),
             fetch(SOURCES.districtAcs).then(r => r.ok ? r.json() : null).catch(() => null),
@@ -2874,6 +2957,17 @@ map.on("load", async () => {
             fetch(SOURCES.muniChildcare).then(r => r.ok ? r.json() : null).catch(() => null),
             fetch(SOURCES.muniChildcareExtra).then(r => r.ok ? r.json() : null).catch(() => null),
         ]);
+
+        const [academic, munis, maSchools, acs, distAcs, distEdu,
+               distDisc, distOutcomes, acsExtra, distAcsExtra, schoolMetrics,
+               distPostsec, distEL, distEducator, distFinance, acsExtra2, distAcsExtra2,
+               distSped, distAdvanced, distMcasGrades, distSupport, acsExtra3, distAcsExtra3,
+               distEarlyEd, distCte, distDiscDetail, acsExtra4, distAcsExtra4,
+               distGrowth, distMcasLevels, distChoice, distAccount, acsExtra5, distAcsExtra5,
+               distMcasGrades2, distRetention, distGradDetail, distEducator2, acsExtra6, distAcsExtra6,
+               distMcasG10Sci, distDiscGroups, distClassSize, distFinanceDetail, acsExtra7, distAcsExtra7,
+               distAbsenceGroups, distMcasGroups, distApDetail, acsExtra8, distAcsExtra8,
+               maColleges, muniChildcare, muniChildcareExtra] = await wave1Promise;
 
         // Compute area + population density for each municipality, and merge
         // optional ACS basics if data/ma_muni_acs.json was loaded.
@@ -2943,84 +3037,18 @@ map.on("load", async () => {
         enrichAcademicDistricts(academic, distApDetail);
         enrichAcademicDistricts(academic, distAcsExtra8);
         enrichMunicipalities(munis, acsExtra8);
-        // ── Parallel-session district side-files ─────────────────────────────
-        // Each Sx session appends its SOURCES key(s) on the line UNDER its own
-        // load-anchor, so concurrent PRs never touch the same line. Every file is
-        // shaped {DIST_CODE:{col:val}} and merges generically here. See AGENTS.md.
-        const EXTRA_DISTRICT_SOURCES = [
-            // ── load:S1:accountability ──
-            "districtAcctDetail",
-            // ── load:S2:vocational ──
-            "districtCteDetail",
-            // ── load:S3:sped ──
-            "districtSpedDetail",
-            // ── load:S4:el ──
-            "districtElDetail",
-            // ── load:S5:progression ──
-            "districtProgression",
-            // ── load:S6:mcas-completeness ──
-            "districtMcasGrades3", "districtMcasGroups2",
-            // ── load:S7:subgroup-outcomes ──
-            "districtPostsecDetail",
-            // ── load:S8:workforce ──
-            "districtEducator3",
-            // ── load:S10:gender ──
-            "districtGender",
-            // ── load:S11:funding-revenue ──
-            "districtFinanceRevenue",
-            // ── load:finance-categories (per-pupil PD / other teaching) ──
-            "districtFinanceCategories",
-            // ── load:transport-spending (per-pupil transportation + food, DESE cnfs-edqq ÷ FTE) ──
-            "districtTransport",
-            // ── load:dropout-annual (single-year grades 9-12 dropout rate, DESE cmm7-ttbg; ≠ cohort dropout_pct) ──
-            "districtDropoutAnnual",
-            // ── load:S12:school-choice-landscape ──
-            "districtChoiceInflow", "districtPrivate",
-            // ── load:S13:climate-safety ──
-            "districtClimateSafety",
-            // ── load:S14:whole-child-facilities ──
-            "districtWholeChild",
-            // Underserved subgroups (feat/underserved-subgroups)
-            "districtMcasGroupsOther",
-            // ── load:earnings-outcomes (post-grad earnings + employment, DESE 9vfm-6vxq) ──
-            "districtEarnings",
-            // Early college + HS-graduate outcomes (feat/early-college-outcomes)
-            "districtEarlyCollege", "districtGradOutcomes",
-            // ── load:feat/sped-assessment ──
-            "districtSpedDynamics",
-            // ── load:teacher-workforce ──
-            "districtTeacherWorkforce",
-            // ── load:crdc-federal (federal CRDC 2020-21 athletics, US ED/OCR via Urban API) ──
-            "districtCrdc",
-            // ── load:seda-national (Stanford SEDA v6.0 national benchmark) ──
-            "districtSeda",
-            // ── load:crdc-equity (federal CRDC 2017-18 gifted access + school policing, US ED/OCR via Urban API) ──
-            "districtCrdcEquity",
-            // ── load:seda-gaps (Stanford SEDA v6.0 national-scale achievement gaps) ──
-            "districtSedaGaps",
-            // ── load:crdc-courses (federal CRDC 2017-18 course access: HS offers Calculus/Physics/Chemistry/Algebra II, US ED/OCR via Urban API) ──
-            "districtCrdcCourses",
-            "districtMobility",
-            // ── load:childcare-deep-dive (infant/toddler, subsidy, Head Start, C3 — muni→district) ──
-            "districtChildcare",
-            // ── load:composite-indices (z-score blends of existing metrics; bake via scripts/bake_composites.py) ──
-            "districtComposites",
-        ];
-        (await Promise.all(EXTRA_DISTRICT_SOURCES.map(k =>
-            fetch(SOURCES[k]).then(r => r.ok ? r.json() : null).catch(() => null)
-        ))).forEach(d => { if (d) enrichAcademicDistricts(academic, d); });
+        // EXTRA_DISTRICT_SOURCES was already fetched in the single burst above
+        // (see extraDistrictPromise); just await + merge the results here.
+        (await extraDistrictPromise).forEach(d => { if (d) enrichAcademicDistricts(academic, d); });
         // Derived (computed in-app, no fetch): diversity index, enrollment
         // trends, and equity gaps — must run after all the enrich() inputs.
         computeDerivedMetrics(academic);
         // Merge per-school metrics onto the schools point layer, keyed by SCHID.
         enrichSchools(maSchools, schoolMetrics);
         SCHOOLS_FC = maSchools;   // global handle for school comparison stats + scatter cloud
-        // Private schools (NCES PSS) — an independent REFERENCE layer, fetched
-        // separately (small + optional). Falls back to an empty collection on any
-        // error so a missing file never blocks the rest of the map.
-        const privateSchools = await fetch(SOURCES.maPrivateSchools)
-            .then(r => r.ok ? r.json() : { type: "FeatureCollection", features: [] })
-            .catch(() => ({ type: "FeatureCollection", features: [] }));
+        // privateSchools was already fetched in the single burst above
+        // (see privateSchoolsPromise); just await it here.
+        const privateSchools = await privateSchoolsPromise;
         state.hasAcs = Boolean(acs && Object.keys(acs).length)
                    && Boolean(distAcs && Object.keys(distAcs).length);
 
@@ -3078,8 +3106,13 @@ map.on("load", async () => {
         document.getElementById("mapLoading").classList.add("hidden");
     } catch (err) {
         console.error("Map load failed:", err);
-        document.getElementById("mapLoading").innerHTML =
-            "<div>Sorry — the map data couldn't load. Please refresh the page, or try again in a moment.</div>";
+        // academic/municipalities fetch failures are tagged with criticalSource
+        // (see wave1Promise above) so we can name the specific dataset that
+        // failed instead of a generic message.
+        const detail = err && err.criticalSource
+            ? `Sorry — the ${err.criticalSource} data couldn't load. Please refresh the page, or try again in a moment.`
+            : "Sorry — the map data couldn't load. Please refresh the page, or try again in a moment.";
+        document.getElementById("mapLoading").innerHTML = `<div>${detail}</div>`;
     }
 });
 
