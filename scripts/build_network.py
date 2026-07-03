@@ -54,6 +54,11 @@ T3_ANCHOR_MIN_POP = 100_000
 T3_SAT_MIN_POP = 15_000
 T3_RADIUS_MI = 18
 
+# tier-4 through-lines: a dead-end chain leaf may close the loop to a nearby
+# point belonging to a *different* hub's tree (best crossing per tree pair),
+# so branch lines weave hub -> towns -> different hub instead of dead-ending
+THRU_MAX_MI = 15
+
 # urban-core metro: hubs this big get a ring of in-city subway stations,
 # spoked to the hub and loop-connected, sized by population and land area
 CORE_MIN_POP = 150_000
@@ -308,17 +313,24 @@ def main():
     # earlier town), processed closest-to-network first — so villages chain
     # through towns into hubs like real branch lines instead of forming
     # hub-and-spoke starbursts.
+    # Every connected point carries `_root`: the tier-1/2 hub its tree hangs
+    # off (a tier-3 node's root is its parent hub; a town inherits its host's).
+    for n in nodes:
+        n["_root"] = n["id"] if n["tier"] <= 2 else (n["parent"] or n["id"])
     net_grid = Grid(nodes)
     rem = [t for t in towns if t["geoid"] not in node_by_geoid]
     order = sorted(rem, key=lambda t: net_grid.nearest(t["lat"], t["lng"])[1])
     conn_grid = Grid(nodes)
     web, web_mi, web_max, chained = [], 0.0, 0.0, 0
+    attached = set()          # towns something later chained onto (not leaves)
     for t in order:
         host, d = conn_grid.nearest(t["lat"], t["lng"])
         web_mi += d
         web_max = max(web_max, d)
         if "id" not in host:
             chained += 1
+            attached.add(host["geoid"])
+        t["_root"] = host["_root"]
         web.append({
             "type": "Feature",
             "geometry": {"type": "LineString",
@@ -329,6 +341,44 @@ def main():
                            "mi": round(d, 1)},
         })
         conn_grid.add(t)
+
+    # through-line closures: each dead-end leaf offers a crossing to the
+    # nearest point of a different hub's tree; keep the shortest crossing per
+    # tree pair so adjacent branches join once instead of forming ladders.
+    cands = []
+    for t in rem:
+        if t["geoid"] in attached:
+            continue
+        best, bd = None, float("inf")
+        for c in conn_grid.within(t["lat"], t["lng"], THRU_MAX_MI):
+            if c is t or c.get("_root") in (None, t["_root"]):
+                continue
+            d = tdist(t, c)
+            if d < bd:
+                best, bd = c, d
+        if best is not None:
+            cands.append((bd, t, best))
+    cands.sort(key=lambda x: x[0])
+    seen_pairs, thru_ct, thru_mi = set(), 0, 0.0
+    for d, t, c in cands:
+        pair = frozenset((t["_root"], c["_root"]))
+        if pair in seen_pairs:
+            continue
+        seen_pairs.add(pair)
+        thru_ct += 1
+        thru_mi += d
+        web.append({
+            "type": "Feature",
+            "geometry": {"type": "LineString",
+                         "coordinates": [[round(t["lng"], 5), round(t["lat"], 5)],
+                                         [round(c["lng"], 5), round(c["lat"], 5)]]},
+            "properties": {"from": t["geoid"],
+                           "to": c.get("id") or ("t" + c["geoid"]),
+                           "mi": round(d, 1), "thru": True},
+        })
+    print(f"tier 4: +{thru_ct} through-line closures (mean "
+          f"{thru_mi / max(thru_ct, 1):.1f} mi) joining adjacent hub trees",
+          file=sys.stderr)
 
     # ---- stats + write ------------------------------------------------------
     def route_mi(tier):
@@ -345,14 +395,15 @@ def main():
         "tier3Sat": len(t3), "tier3Core": core_count, "tier3Nodes": len(t3) + core_count,
         "tier1Edges": t1_edges, "edges": len(edges),
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
-        "tier4Links": len(web), "tier4Chained": chained, "tier4Mi": round(web_mi),
-        "tier4MeanMi": round(web_mi / max(len(web), 1), 1), "tier4MaxMi": round(web_max, 1),
+        "tier4Links": len(web), "tier4Chained": chained, "tier4Thru": thru_ct,
+        "tier4Mi": round(web_mi + thru_mi),
+        "tier4MeanMi": round(web_mi / max(len(rem), 1), 1), "tier4MaxMi": round(web_max, 1),
     }
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
               "COVERAGE_MI": COVERAGE_MI, "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
               "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI,
-              "CORE_MIN_POP": CORE_MIN_POP}
+              "CORE_MIN_POP": CORE_MIN_POP, "THRU_MAX_MI": THRU_MAX_MI}
 
     feats = []
     for n in nodes:
