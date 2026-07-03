@@ -120,10 +120,39 @@
   .link-hint { position:absolute; bottom:18px; left:14px; z-index:640; font-size:11.5px; color:var(--indigo); background:var(--panel); border:1px solid var(--indigo); border-radius:9px; padding:8px 12px; display:none; }
   .link-hint.show { display:block; }
 
+  /* Bottom-sheet handle (mobile only) */
+  .sheet-handle { display:none; align-items:center; justify-content:center; gap:9px; width:100%;
+    min-height:54px; background:transparent; border:none; color:var(--ink); font-size:13px;
+    font-weight:600; border-bottom:1px solid var(--border); }
+  .sheet-handle .chev { transition:transform .28s; font-size:15px; color:var(--muted); }
+  .sheet-handle .hsum { font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--muted); font-weight:500; }
+
   @media (max-width:720px){
-    .sidebar { top:auto; bottom:8px; left:8px; right:8px; width:auto; height:44vh; }
-    .title-card { max-width:calc(100vw - 28px); }
-    .toolbar { top:auto; bottom:calc(44vh + 16px); }
+    .title-card { display:none; }                 /* map first on phones */
+    .toolbar { top:10px; }
+    .seg button { padding:11px 12px; font-size:13px; }
+    .seg .kbd, .seg .tname { display:none; }      /* short labels + no kbd hints on touch */
+    .leaflet-control-zoom { display:none; }       /* pinch-zoom is native */
+
+    /* sidebar becomes a collapsible bottom sheet, collapsed by default */
+    .sidebar { top:auto; bottom:0; left:0; right:0; width:auto; max-width:none; height:60vh;
+      border-radius:16px 16px 0 0; border-bottom:none;
+      transform:translateY(0); transition:transform .28s cubic-bezier(.4,0,.2,1); }
+    .sidebar.collapsed { transform:translateY(calc(100% - 55px)); }
+    .sheet-handle { display:flex; }
+    .sidebar.collapsed .sheet-handle .chev { transform:rotate(180deg); }
+
+    /* comfortable touch targets */
+    .sfoot button { min-height:44px; }
+    .nrow { padding:11px 8px; }
+    .srch input { padding:11px 10px; font-size:13px; }
+    .towns-bar { min-height:32px; }
+
+    .link-hint { bottom:auto; top:112px; left:50%; transform:translateX(-50%); max-width:calc(100vw - 24px); }
+    .toast { bottom:70px; }
+  }
+  @media (hover:none){
+    .nrow .actions { opacity:1; }                 /* rename/delete were hover-only — invisible on touch */
   }
 </style>
 </head>
@@ -138,10 +167,10 @@
 
 <div class="toolbar">
   <div class="seg panel" id="tierSeg">
-    <button data-tier="1" class="on"><span class="dot" style="background:var(--t1)"></span>T1 · HSR <span class="kbd">1</span></button>
-    <button data-tier="2"><span class="dot" style="background:var(--t2)"></span>T2 · Regional <span class="kbd">2</span></button>
-    <button data-tier="3"><span class="dot" style="background:var(--t3)"></span>T3 · Metro <span class="kbd">3</span></button>
-    <button data-tier="4"><span class="dot" style="background:var(--t4)"></span>T4 · Commuter <span class="kbd">4</span></button>
+    <button data-tier="1" class="on"><span class="dot" style="background:var(--t1)"></span>T1<span class="tname"> · HSR</span> <span class="kbd">1</span></button>
+    <button data-tier="2"><span class="dot" style="background:var(--t2)"></span>T2<span class="tname"> · Regional</span> <span class="kbd">2</span></button>
+    <button data-tier="3"><span class="dot" style="background:var(--t3)"></span>T3<span class="tname"> · Metro</span> <span class="kbd">3</span></button>
+    <button data-tier="4"><span class="dot" style="background:var(--t4)"></span>T4<span class="tname"> · Commuter</span> <span class="kbd">4</span></button>
   </div>
   <div class="seg panel" id="modeSeg">
     <button data-mode="add" class="on">＋ Add <span class="kbd">A</span></button>
@@ -152,7 +181,10 @@
 
 <div class="link-hint" id="linkHint">Link mode: click a first node, then a second to connect them. <span id="linkFrom"></span></div>
 
-<div class="sidebar panel">
+<div class="sidebar panel" id="sidebar">
+  <button class="sheet-handle" id="sheetHandle" aria-label="Expand or collapse the network panel">
+    <span class="chev">▾</span><span>Network</span><span class="hsum" id="handleSum"></span>
+  </button>
   <div class="shead">
     <h2>Network <span style="font-weight:500;color:var(--muted);font-size:11px;" id="totalCount"></span></h2>
     <div class="counts">
@@ -512,6 +544,7 @@ function renderSidebar(){
   state.nodes.forEach(n => counts[n.tier]++);
   [1,2,3,4].forEach(t => $('#c'+t).textContent = counts[t]);
   $('#totalCount').textContent = `· ${state.nodes.length} nodes · ${state.edges.length} links`;
+  $('#handleSum').textContent = `${state.nodes.length.toLocaleString()} nodes`;
 
   const miles = {1:0,2:0,3:0,4:0};
   state.edges.forEach(e => {
@@ -633,7 +666,7 @@ $('#nodeList').addEventListener('click', (ev) => {
   const id = row.dataset.id;
   if (ev.target.classList.contains('del')){ deleteNode(id); return; }
   if (ev.target.classList.contains('ren')){ renameNode(id); return; }
-  const n = byId(id); if (n){ map.flyTo([n.lat,n.lng], Math.max(map.getZoom(),6)); markers[id]&&markers[id].openTooltip(); }
+  const n = byId(id); if (n){ map.flyTo([n.lat,n.lng], Math.max(map.getZoom(),6)); markers[id]&&markers[id].openTooltip(); collapseSheetOnMobile(); }
 });
 
 /* ------------------------------------------------------------------ *
@@ -722,6 +755,13 @@ $('#btnCopy').onclick = async () => {
 $('#townsChk').addEventListener('change', e => toggleTowns(e.target.checked));
 $('#webChk').addEventListener('change', e => toggleWeb(e.target.checked));
 
+/* mobile bottom sheet: collapsed by default so the map owns the screen */
+const sheetMq = window.matchMedia('(max-width:720px)');
+if (sheetMq.matches) $('#sidebar').classList.add('collapsed');
+$('#sheetHandle').addEventListener('click', () => $('#sidebar').classList.toggle('collapsed'));
+/* promoting a town or tapping a list row should reveal the map again */
+function collapseSheetOnMobile(){ if (sheetMq.matches) $('#sidebar').classList.add('collapsed'); }
+
 /* ------------------------------------------------------------------ *
  *  town search — fly to any of the 19k towns, or promote one straight
  *  into the network as a node at the active tier (exact coords + name,
@@ -744,6 +784,7 @@ function promoteTown(t){
   map.flyTo([n.lat, n.lng], Math.max(map.getZoom(), 7));
   toast(`Added ${t.name}, ${t.st} as ${TIERS[activeTier].name}`);
   closeSearch();
+  collapseSheetOnMobile();
 }
 
 function closeSearch(){
@@ -794,6 +835,7 @@ $('#srchResults').addEventListener('click', e => {
   const t = srchHits[+row.dataset.i]; if (!t) return;
   if (e.target.classList.contains('padd')){ promoteTown(t); return; }
   map.flyTo([t.lat, t.lng], 9);
+  collapseSheetOnMobile();
 });
 
 $('#btnImport').onclick = () => { $('#importText').value=''; $('#modal').classList.add('show'); };
