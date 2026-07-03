@@ -354,7 +354,11 @@ async function loadT4Web(){
       if (sid == null){ paths.push([c[0], c[1]]); continue; }
       let arr = bySnake.get(sid);
       if (!arr){ arr = [c[0]]; bySnake.set(sid, arr); paths.push(arr); }
-      arr.push(c[1]);
+      // keep each line's longitudes continuous across the antimeridian
+      const prev = arr[arr.length - 1][0];
+      let pt = c[1];
+      if (Math.abs(pt[0] - prev) > 180) pt = [pt[0] + (prev > pt[0] ? 360 : -360), pt[1]];
+      arr.push(pt);
     }
     webCount = bySnake.size || gj.features.length;
     webGeo = new BulkCanvas('t4web', (ctx, m, size) => {
@@ -439,12 +443,19 @@ function nodeMarker(n){
   return m;
 }
 
-function edgeLine(e){
+function edgeLine(e, shift = 0){
   const a = byId(e.from), b = byId(e.to);
   if (!a || !b) return null;
   const t = TIERS[e.tier];
   const dashed = e.tier >= 3;
-  return L.polyline([[a.lat,a.lng],[b.lat,b.lng]], {
+  // antimeridian: draw Pacific crossings the short way (Guam–Honolulu,
+  // Attu–Adak), not the long way around through Europe. shift=0 draws on
+  // the Americas world copy; shift=360 duplicates it on the eastern copy.
+  let aLng = a.lng, bLng = b.lng;
+  if (Math.abs(aLng - bLng) > 180){
+    if (aLng > bLng) aLng -= 360; else bLng -= 360;
+  }
+  return L.polyline([[a.lat,aLng+shift],[b.lat,bLng+shift]], {
     color:t.color, weight: e.tier===1?3.5 : e.tier===2?2.5 : 1.8,
     opacity:0.7, dashArray: dashed ? '4 5' : null
   });
@@ -454,8 +465,21 @@ function renderAll(){
   edgeLayer.clearLayers(); nodeLayer.clearLayers();
   for (const k in markers) delete markers[k];
 
-  state.edges.forEach(e => { if (!tierVisible[e.tier]) return; const l = edgeLine(e); if (l) l.addTo(edgeLayer); });
-  state.nodes.forEach(n => { if (!tierVisible[n.tier]) return; const m = nodeMarker(n); m.addTo(nodeLayer); markers[n.id]=m; });
+  state.edges.forEach(e => {
+    if (!tierVisible[e.tier]) return;
+    const l = edgeLine(e); if (l) l.addTo(edgeLayer);
+    const a = byId(e.from), b = byId(e.to);
+    if (a && b && Math.abs(a.lng - b.lng) > 180){   // dateline crossers exist on both copies
+      const twin = edgeLine(e, 360); if (twin) twin.addTo(edgeLayer);
+    }
+  });
+  state.nodes.forEach(n => {
+    if (!tierVisible[n.tier]) return;
+    const m = nodeMarker(n); m.addTo(nodeLayer); markers[n.id]=m;
+    if (n.lng > 0){                                  // Guam / far Aleutians: ghost on the Americas copy
+      nodeMarker({ ...n, lng: n.lng - 360 }).addTo(nodeLayer);
+    }
+  });
 
   renderSidebar();
 }
