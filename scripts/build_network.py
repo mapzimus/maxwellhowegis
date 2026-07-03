@@ -238,22 +238,25 @@ class Grid:
 
     @staticmethod
     def key(lat, lng):
-        return (math.floor(lat), math.floor(lng))
+        # wrap longitude cells at the antimeridian so Guam (+144°E) measures
+        # 58 cells from Hawaii, not 302 raw cells the long way around
+        return (math.floor(lat), (math.floor(lng) + 180) % 360 - 180)
 
     def add(self, it):
         self.cells[self.key(it["lat"], it["lng"])].append(it)
 
     def _ring(self, base, r):
         by, bx = base
+        w = lambda x: (x + 180) % 360 - 180        # antimeridian wrap
         if r == 0:
             yield base
             return
         for x in range(bx - r, bx + r + 1):
-            yield (by - r, x)
-            yield (by + r, x)
+            yield (by - r, w(x))
+            yield (by + r, w(x))
         for y in range(by - r + 1, by + r):
-            yield (y, bx - r)
-            yield (y, bx + r)
+            yield (y, w(bx - r))
+            yield (y, w(bx + r))
 
     def nearest(self, lat, lng, ok=None):
         base = self.key(lat, lng)
@@ -456,11 +459,19 @@ def main():
     t1_grid = Grid(t1n)
     order = sorted(t2n, key=lambda n: t1_grid.nearest(n["lat"], n["lng"])[1])
     conn_grid = Grid(t1n)
+    conn_list = list(t1n)
     for n in order:
-        host, _ = conn_grid.nearest(n["lat"], n["lng"])
+        host, d = conn_grid.nearest(n["lat"], n["lng"])
+        if d > ISLAND_LINK_MI:
+            # transoceanic link: land at the biggest hub within 15% of the
+            # shortest crossing (Guam -> Honolulu, not the village of Adak)
+            cands = [c for c in conn_list if tdist(n, c) <= 1.15 * d]
+            if cands:
+                host = max(cands, key=lambda c: c["pop"] or 0)
         add_edge(host, n, 2)
         n["parent"] = host["id"]
         conn_grid.add(n)
+        conn_list.append(n)
 
     # ---- tier 3 urban core: radial in-city metro around big hubs -----------
     # L radial lines (by pop) with S chained stops each, land-aware placement;
