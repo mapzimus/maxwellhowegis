@@ -369,27 +369,49 @@ async function loadT4Web(){
     const r = await fetch('data/tier4_links.geojson');
     if (!r.ok) throw new Error('http ' + r.status);
     const gj = await r.json();
-    webCount = gj.features.length;
-    const segs = gj.features.map(f => f.geometry.coordinates);  // [[lngA,latA],[lngB,latB]]
+    // group segments into per-line point sequences (segments arrive in order
+    // per snake id), so each commuter line renders as one smooth curve
+    const paths = [];
+    const bySnake = new Map();
+    for (const f of gj.features){
+      const c = f.geometry.coordinates;
+      const sid = f.properties && f.properties.snake;
+      if (sid == null){ paths.push([c[0], c[1]]); continue; }
+      let arr = bySnake.get(sid);
+      if (!arr){ arr = [c[0]]; bySnake.set(sid, arr); paths.push(arr); }
+      arr.push(c[1]);
+    }
+    webCount = bySnake.size || gj.features.length;
     webGeo = new BulkCanvas('t4web', (ctx, m, size) => {
       ctx.strokeStyle = TIERS[4].color;
-      ctx.globalAlpha = 0.32;
-      ctx.lineWidth = 0.75;
+      ctx.globalAlpha = 0.34;
+      ctx.lineWidth = 0.8;
+      ctx.lineJoin = 'round';
       ctx.beginPath();
-      for (const s of segs){
-        const a = m.latLngToContainerPoint([s[0][1], s[0][0]]);
-        const b = m.latLngToContainerPoint([s[1][1], s[1][0]]);
-        if ((a.x < 0 && b.x < 0) || (a.y < 0 && b.y < 0) ||
-            (a.x > size.x && b.x > size.x) || (a.y > size.y && b.y > size.y)) continue;
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
+      const pad = 60;
+      for (const pts of paths){
+        const P = [];
+        let visible = false;
+        for (const c of pts){
+          const p = m.latLngToContainerPoint([c[1], c[0]]);
+          P.push(p);
+          if (p.x > -pad && p.y > -pad && p.x < size.x + pad && p.y < size.y + pad) visible = true;
+        }
+        if (!visible) continue;
+        ctx.moveTo(P[0].x, P[0].y);
+        if (P.length === 2){ ctx.lineTo(P[1].x, P[1].y); continue; }
+        for (let i = 1; i < P.length - 1; i++){
+          const mx = (P[i].x + P[i+1].x) / 2, my = (P[i].y + P[i+1].y) / 2;
+          ctx.quadraticCurveTo(P[i].x, P[i].y, mx, my);   // smooth through each town
+        }
+        ctx.lineTo(P[P.length-1].x, P[P.length-1].y);
       }
       ctx.stroke();
       ctx.globalAlpha = 1;
     });
     if (webShown) webGeo.addTo(map);
     updateWebUI();
-    toast(`Loaded ${webCount.toLocaleString()} commuter links`);
+    toast(`Loaded ${webCount.toLocaleString()} commuter lines`);
   } catch(e){
     webLoadStarted = false;   // allow a retry on the next toggle
     toast('Could not load commuter web');
@@ -398,7 +420,7 @@ async function loadT4Web(){
 function updateWebUI(){
   const chk = $('#webChk'), lbl = $('#webCount');
   if (chk) chk.checked = webShown;
-  if (lbl) lbl.textContent = webCount ? webCount.toLocaleString() + ' links' : '—';
+  if (lbl) lbl.textContent = webCount ? webCount.toLocaleString() + ' lines' : '—';
 }
 function toggleWeb(on){
   webShown = on;

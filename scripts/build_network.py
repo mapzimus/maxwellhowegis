@@ -52,6 +52,14 @@ T2_BIG_POP = 100_000       # cities this big become hubs even inside the spacing
                            # radius, as long as they're outside a hub's metro
                            # (T3_RADIUS_MI) — catches Fort Worth, Baltimore, Mesa…
 COVERAGE_MI = 60           # every town ends up within this of a tier-1/2 hub
+
+# international extent: Canada gets tier-1/2 hubs (nothing more local), a few
+# northern Mexican metros join tier 1, and island hubs (Honolulu, San Juan)
+# keep a single mainland HSR link instead of the usual kNN redundancy
+MX_T1_MIN_POP = 400_000
+MX_LAT_MIN = 25.0
+MX_T1_MAX = 8
+ISLAND_LINK_MI = 1_000     # hubs whose nearest neighbor is farther get MST only
 T3_ANCHOR_MIN_POP = 100_000
 T3_SAT_MIN_POP = 15_000
 T3_RADIUS_MI = 18
@@ -64,10 +72,11 @@ SNAKE_CLOSE_MI = 12        # a different hub this close ends (closes) the snake
 SNAKE_MAX_LEN = 40         # force-close a runaway snake after this many towns
 
 # urban-core metro: hubs this big get a radial subway network — 4-10 lines
-# with 2-4 stops each (by population), chained outward from the hub, plus an
-# inner loop (and an outer loop for the biggest cities). Station placement is
-# LAND-AWARE: candidates are point-in-polygon tested against Census state
-# boundaries minus Natural Earth lakes; wet stations pull inward or drop.
+# with 2-4 stops each (by population) chained outward from the hub, plus a
+# circle line where there are enough lines to read as one (>= 8). Station
+# placement is LAND-AWARE: candidates are point-in-polygon tested against
+# Census state boundaries minus Natural Earth lakes; wet stations pull inward
+# or drop. Suburb satellites join at their nearest station (line extensions).
 CORE_MIN_POP = 150_000
 CORE_R_FRAC = 0.62         # network radius as a fraction of the city's land radius
 CORE_R_MIN_MI = 1.5
@@ -136,6 +145,48 @@ def _in_polys(recs, lat, lng):
         if inside:
             return True
     return False
+
+
+NE_PLACES_ZIP = ("ne_10m_populated_places_simple.zip",
+                 "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_populated_places_simple.zip")
+
+
+def ne_intl_places():
+    """Canada + Mexico cities from Natural Earth populated places, shaped like
+    town dicts (synthetic geoid, country 'CA'/'MX', pop = pop_max metro scale)."""
+    import struct, urllib.request, zipfile
+    fname, url = NE_PLACES_ZIP
+    path = os.path.join(CACHE, fname)
+    if not os.path.exists(path):
+        print(f"downloading {url}", file=sys.stderr)
+        os.makedirs(CACHE, exist_ok=True)
+        with urllib.request.urlopen(url, timeout=180) as r:
+            data = r.read()
+        with open(path, "wb") as f:
+            f.write(data)
+    z = zipfile.ZipFile(path)
+    data = z.read([n for n in z.namelist() if n.endswith(".dbf")][0])
+    nrec = struct.unpack("<I", data[4:8])[0]
+    hlen, rlen = struct.unpack("<HH", data[8:12])
+    fields, off = [], 32
+    while data[off] != 0x0D:
+        fields.append((data[off:off + 11].split(b"\0")[0].decode("latin-1"), data[off + 16]))
+        off += 32
+    out = []
+    for i in range(nrec):
+        rec = data[hlen + i * rlen: hlen + (i + 1) * rlen]
+        vals, p = {}, 1
+        for name, flen in fields:
+            vals[name] = rec[p:p + flen].decode("utf-8", "replace").strip(); p += flen
+        adm0 = vals.get("adm0name")
+        if adm0 not in ("Canada", "Mexico"):
+            continue
+        cc = "CA" if adm0 == "Canada" else "MX"
+        out.append({"name": vals["name"], "st": "CAN" if cc == "CA" else "MEX", "country": cc,
+                    "geoid": "NE" + (vals.get("ne_id") or str(i)),
+                    "pop": int(float(vals.get("pop_max") or 0)), "sqmi": 0,
+                    "lat": float(vals["latitude"]), "lng": float(vals["longitude"])})
+    return out
 
 
 _LAND = None   # (states, lakes, lakes_na), loaded on first use
@@ -270,14 +321,25 @@ def main():
     towns = [{
         "name": f["properties"]["name"], "st": f["properties"]["st"],
         "geoid": f["properties"]["geoid"], "pop": f["properties"]["pop"] or 0,
-        "sqmi": f["properties"].get("sqmi") or 0,
+        "sqmi": f["properties"].get("sqmi") or 0, "country": "US",
         "lng": f["geometry"]["coordinates"][0], "lat": f["geometry"]["coordinates"][1],
     } for f in gj["features"]]
     by_pop = sorted(towns, key=lambda t: -t["pop"])
+    intl = ne_intl_places()
+    intl_ca = sorted((c for c in intl if c["country"] == "CA"), key=lambda c: -c["pop"])
+    intl_mx = sorted((c for c in intl if c["country"] == "MX"), key=lambda c: -c["pop"])
 
     # ---- tier 1 ----------------------------------------------------------
     t1 = greedy_spacing([t for t in by_pop if t["pop"] >= T1_MIN_POP], T1_SPACING_MI, [])
-    print(f"tier 1: {len(t1)} HSR hubs", file=sys.stderr)
+    ca_t1 = greedy_spacing([c for c in intl_ca if c["pop"] >= T1_MIN_POP], T1_SPACING_MI, t1)
+    # Mexican metros space only against each other — border twins (Tijuana/San
+    # Diego, Juárez/El Paso) are distinct hubs despite their proximity
+    mx_t1 = greedy_spacing(
+        [c for c in intl_mx if c["pop"] >= MX_T1_MIN_POP and c["lat"] >= MX_LAT_MIN],
+        T1_SPACING_MI, [])[:MX_T1_MAX]
+    t1 = t1 + ca_t1 + mx_t1
+    print(f"tier 1: {len(t1)} HSR hubs ({len(ca_t1)} Canadian, {len(mx_t1)} Mexican: "
+          f"{', '.join(c['name'] for c in mx_t1)})", file=sys.stderr)
 
     # ---- tier 2: population picks + coverage fill ------------------------
     hub_geoids = {t["geoid"] for t in t1}
@@ -294,6 +356,17 @@ def main():
             hub_geoids.add(c["geoid"])
             hub_grid.add(c)
     print(f"tier 2: {len(t2)} regional hubs from population cut", file=sys.stderr)
+    ca_t2 = 0
+    for c in intl_ca:
+        if c["pop"] < T2_MIN_POP or c["geoid"] in hub_geoids:
+            continue
+        _, d = hub_grid.nearest(c["lat"], c["lng"])
+        if d >= T2_SPACING_MI:
+            t2.append(c)
+            hub_geoids.add(c["geoid"])
+            hub_grid.add(c)
+            ca_t2 += 1
+    print(f"tier 2: +{ca_t2} Canadian regional hubs", file=sys.stderr)
     dist_to_hub = {}
     for t in towns:
         _, d = hub_grid.nearest(t["lat"], t["lng"])
@@ -316,8 +389,10 @@ def main():
     print(f"tier 2: +{fills} coverage-fill hubs (every town now within "
           f"{COVERAGE_MI} mi of a hub) → {len(t2)} total", file=sys.stderr)
 
-    # ---- tier 3 satellites ------------------------------------------------
-    anchors = t1 + [t for t in t2 if t["pop"] >= T3_ANCHOR_MIN_POP]
+    # ---- tier 3 satellites (US only — Canada/Mexico stop at tier 2) --------
+    anchors = ([t for t in t1 if t.get("country", "US") == "US"]
+               + [t for t in t2 if t.get("country", "US") == "US"
+                  and t["pop"] >= T3_ANCHOR_MIN_POP])
     t3, t3_anchor = [], {}
     for t in by_pop:
         if t["pop"] < T3_SAT_MIN_POP:
@@ -337,7 +412,7 @@ def main():
             n = {"id": f"n{len(nodes)+1}", "name": t["name"], "tier": tier,
                  "lat": round(t["lat"], 5), "lng": round(t["lng"], 5),
                  "parent": None, "geoid": t["geoid"], "pop": t["pop"], "st": t["st"],
-                 "sqmi": t["sqmi"]}
+                 "sqmi": t["sqmi"], "country": t.get("country", "US")}
             nodes.append(n)
             node_by_geoid[t["geoid"]] = n
 
@@ -349,10 +424,25 @@ def main():
     t1n = [node_by_geoid[t["geoid"]] for t in t1]
     seen = set()
     for i, j in mst_edges(t1n):
-        seen.add(frozenset((t1n[i]["id"], t1n[j]["id"])))
-        add_edge(t1n[i], t1n[j], 1)
+        a, b = t1n[i], t1n[j]
+        d = tdist(a, b)
+        if d > ISLAND_LINK_MI:
+            # transoceanic link: land it at the biggest hub within 10% of the
+            # shortest crossing (San Francisco over Santa Rosa, etc.)
+            island = a if min(tdist(a, c) for c in t1n if c is not a) > ISLAND_LINK_MI else b
+            other = b if island is a else a
+            cands = [c for c in t1n if c is not island and tdist(island, c) <= 1.1 * d]
+            best = max(cands, key=lambda c: c["pop"] or 0) if cands else other
+            a, b = island, best
+        k = frozenset((a["id"], b["id"]))
+        if k in seen:
+            continue
+        seen.add(k)
+        add_edge(a, b, 1)
     for a in t1n:                                   # kNN augmentation
         near = sorted((b for b in t1n if b is not a), key=lambda b: tdist(a, b))[:T1_KNN]
+        if near and tdist(a, near[0]) > ISLAND_LINK_MI:
+            continue                                 # island hub: one MST link only
         for b in near:
             k = frozenset((a["id"], b["id"]))
             if k not in seen:
@@ -372,23 +462,19 @@ def main():
         n["parent"] = host["id"]
         conn_grid.add(n)
 
-    for t in t3:
-        n = node_by_geoid[t["geoid"]]
-        a = node_by_geoid[t3_anchor[t["geoid"]]]
-        add_edge(a, n, 3)
-        n["parent"] = a["id"]
-
     # ---- tier 3 urban core: radial in-city metro around big hubs -----------
-    # L radial lines (by pop) with S chained stops each, land-aware placement,
-    # an inner loop, and an outer loop for the biggest systems.
+    # L radial lines (by pop) with S chained stops each, land-aware placement;
+    # a circle line only where there are enough lines to read as one (>= 8).
     core_count = wet_shrunk = wet_dropped = 0
-    for h in [n for n in nodes if n["tier"] <= 2 and (n["pop"] or 0) >= CORE_MIN_POP]:
+    core_by_hub = defaultdict(list)
+    for h in [n for n in nodes if n["tier"] <= 2 and (n["pop"] or 0) >= CORE_MIN_POP
+              and n.get("country", "US") == "US"]:
         r_city = math.sqrt(h["sqmi"] / math.pi) if h.get("sqmi") else 3.0
         radius = min(CORE_R_MAX_MI, max(CORE_R_MIN_MI, CORE_R_FRAC * r_city))
         n_lines = min(10, max(4, 3 + round(h["pop"] / 200_000)))
         n_stops = min(4, max(2, 2 + (h["pop"] or 0) // 400_000))
         rot = (int(h["geoid"]) % 997) / 997 * (360.0 / n_lines)   # per-city star rotation
-        inner_ring, outer_ring = [], []
+        inner_ring = []
         for i in range(n_lines):
             brg = (rot + 360.0 * i / n_lines) % 360.0
             label = COMPASS[round(brg / 22.5) % 16]
@@ -408,8 +494,15 @@ def main():
                 if placed is None:
                     wet_dropped += 1
                     continue
-                # skip stops that shrank onto their predecessor
-                if survivors and hav(placed[0], placed[1], prev["lat"], prev["lng"]) < 0.5:
+                # skip stops that shrank onto the predecessor, the hub, or a
+                # sibling station
+                too_close = hav(placed[0], placed[1], prev["lat"], prev["lng"]) < 0.5 if survivors else False
+                if not too_close:
+                    for other in [h] + core_by_hub[h["id"]]:
+                        if hav(placed[0], placed[1], other["lat"], other["lng"]) < 0.6:
+                            too_close = True
+                            break
+                if too_close:
                     wet_dropped += 1
                     continue
                 n = {"id": f"n{len(nodes)+1}",
@@ -418,20 +511,27 @@ def main():
                      "parent": h["id"], "geoid": None, "pop": None, "sqmi": 0}
                 nodes.append(n)
                 core_count += 1
+                core_by_hub[h["id"]].append(n)
                 add_edge(prev, n, 3)                 # chain outward along the line
                 survivors.append(n)
                 prev = n
             if survivors:
-                inner_ring.append(survivors[0])
-                outer_ring.append(survivors[-1])
-        if len(inner_ring) >= 4:
-            for i in range(len(inner_ring)):         # inner loop
+                inner_ring.append(survivors[len(survivors) // 2])   # mid-line stop
+        # a circle line only where it actually reads as a circle
+        if n_lines >= 8 and len(inner_ring) >= 8:
+            for i in range(len(inner_ring)):
                 add_edge(inner_ring[i], inner_ring[(i + 1) % len(inner_ring)], 3)
-        if n_lines >= 6 and n_stops >= 3 and len(outer_ring) >= 5:
-            for i in range(len(outer_ring)):         # outer loop (big systems)
-                add_edge(outer_ring[i], outer_ring[(i + 1) % len(outer_ring)], 3)
     print(f"tier 3: +{core_count} urban-core metro stations "
           f"({wet_shrunk} pulled inland off water, {wet_dropped} dropped)", file=sys.stderr)
+
+    # satellites join the metro at their nearest station (line extensions),
+    # not by beelining to the hub center
+    for t in t3:
+        n = node_by_geoid[t["geoid"]]
+        a = node_by_geoid[t3_anchor[t["geoid"]]]
+        target = min(core_by_hub.get(a["id"], []) + [a], key=lambda s: tdist(s, n))
+        add_edge(target, n, 3)
+        n["parent"] = a["id"]
 
     # ---- tier 4: snaking commuter lines hub -> towns -> hub -----------------
     # Grow one line at a time: start at the hub nearest an unclaimed town, hop
@@ -446,6 +546,33 @@ def main():
     web, web_mi, web_max = [], 0.0, 0.0
     snakes = closed = dead_ends = 0
     snake_lens = []
+    crossings_fixed = 0
+    second_hub = 0
+
+    def _seg_x(a, b, c, d):
+        """Proper intersection of segments ab and cd (planar, fine locally)."""
+        def cr(o, p, q):
+            return (p["lng"] - o["lng"]) * (q["lat"] - o["lat"]) - (p["lat"] - o["lat"]) * (q["lng"] - o["lng"])
+        d1, d2 = cr(c, d, a), cr(c, d, b)
+        d3, d4 = cr(a, b, c), cr(a, b, d)
+        return ((d1 > 0) != (d2 > 0)) and ((d3 > 0) != (d4 > 0))
+
+    def uncross(path):
+        """2-opt: remove self-crossings by reversing the sub-path between any
+        two crossing segments. Endpoints (the hubs) stay fixed."""
+        fixed = 0
+        for _ in range(6):
+            changed = False
+            n = len(path)
+            for i in range(n - 3):
+                for j in range(i + 2, n - 1):
+                    if _seg_x(path[i], path[i + 1], path[j], path[j + 1]):
+                        path[i + 1:j + 1] = reversed(path[i + 1:j + 1])
+                        changed = True
+                        fixed += 1
+            if not changed:
+                break
+        return fixed
 
     def pid(x):
         return x.get("id") or ("t" + x["geoid"])
@@ -472,31 +599,34 @@ def main():
         snakes += 1
         sid = snakes
         start_hub, _ = hub_grid2.nearest(seed["lat"], seed["lng"])
-        link(start_hub, seed, sid)
+        path = [start_hub, seed]
         visited.add(seed["geoid"])
         cur, length = seed, 1
         while True:
             near_hub, dh = hub_grid2.nearest(cur["lat"], cur["lng"])
-            if dh <= SNAKE_CLOSE_MI and (near_hub is not start_hub or length >= 8):
-                link(cur, near_hub, sid)             # weave closes at another hub
-                closed += 1                          # (or loops home after a long run)
-                break
-            if length >= SNAKE_MAX_LEN:
-                link(cur, near_hub, sid)             # force-close at the nearest hub
-                closed += 1
+            if ((dh <= SNAKE_CLOSE_MI and (near_hub is not start_hub or length >= 8))
+                    or length >= SNAKE_MAX_LEN):
+                path.append(near_hub)                # weave closes at a hub
                 break
             nxt, dn = town_grid.nearest(cur["lat"], cur["lng"], ok=unvisited_ok)
             if nxt is None or dn > SNAKE_STEP_MI:
-                link(cur, near_hub, sid)             # out of towns — every line still
-                closed += 1                          # terminates at a hub
+                path.append(near_hub)                # out of towns — still ends at a hub
                 break
-            link(cur, nxt, sid)
+            path.append(nxt)
             visited.add(nxt["geoid"])
             cur, length = nxt, length + 1
+        closed += 1
+        if path[-1] is not start_hub:
+            second_hub += 1
+        crossings_fixed += uncross(path)
+        for a, b in zip(path, path[1:]):
+            link(a, b, sid)
         snake_lens.append(length)
     mean_len = sum(snake_lens) / max(len(snake_lens), 1)
-    print(f"tier 4: {snakes} snaking lines through {len(rem):,} towns — "
-          f"all terminate at a hub; mean {mean_len:.1f} towns/line", file=sys.stderr)
+    print(f"tier 4: {snakes} snaking lines through {len(rem):,} towns — all end at a "
+          f"hub ({100 * second_hub // max(snakes, 1)}% at a different one); "
+          f"{crossings_fixed} self-crossings unwoven; mean {mean_len:.1f} towns/line",
+          file=sys.stderr)
 
     # ---- stats + write ------------------------------------------------------
     def route_mi(tier):
@@ -509,12 +639,13 @@ def main():
 
     rev = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     stats = {
-        "tier1Hubs": len(t1), "tier2Hubs": len(t2),
+        "tier1Hubs": len(t1), "tier1CA": len(ca_t1), "tier1MX": len(mx_t1),
+        "tier2Hubs": len(t2), "tier2CA": ca_t2,
         "tier3Sat": len(t3), "tier3Core": core_count, "tier3Nodes": len(t3) + core_count,
         "tier1Edges": t1_edges, "edges": len(edges),
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
-        "tier4Links": len(web), "tier4Snakes": snakes, "tier4Closed": closed,
-        "tier4DeadEnds": dead_ends, "tier4Mi": round(web_mi),
+        "tier4Links": len(web), "tier4Snakes": snakes, "tier4SecondHub": second_hub,
+        "tier4CrossingsFixed": crossings_fixed, "tier4Mi": round(web_mi),
         "tier4MeanMi": round(web_mi / max(len(rem), 1), 1), "tier4MaxMi": round(web_max, 1),
     }
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
@@ -530,7 +661,8 @@ def main():
                       "properties": {"kind": "node", "id": n["id"], "name": n["name"],
                                      "tier": n["tier"], "tierName": TIER_NAME[n["tier"]],
                                      "parent": n["parent"], "geoid": n["geoid"],
-                                     "pop": n["pop"]}})
+                                     "pop": n["pop"], "st": n.get("st"),
+                                     "country": n.get("country", "US")}})
     nid = {n["id"]: n for n in nodes}
     for e in edges:
         a, b = nid[e["from"]], nid[e["to"]]
