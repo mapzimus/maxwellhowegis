@@ -3,10 +3,9 @@
 
 Input:  transit/data/towns.geojson  (19,465 Census incorporated places with pop —
         built by scripts/build_towns.py)
-Output: transit/data/network.json         — editable network: tier 1-3 nodes + edges
-        transit/data/tier4_links.geojson  — the "every town" commuter web: one
-                                            LineString from each remaining town to
-                                            its nearest network node (render-only)
+Output: transit/data/network.json — the network: tier 1-3 nodes + edges
+        (tier-4 towns render straight from data/towns.geojson; their
+        connecting lines are deferred)
 
 Algorithm (all straight-line/great-circle, stdlib only):
 
@@ -25,10 +24,9 @@ Algorithm (all straight-line/great-circle, stdlib only):
                          T3_ANCHOR_MIN_POP): every non-hub town with pop >=
                          T3_SAT_MIN_POP within T3_RADIUS_MI becomes a metro node
                          linked to its anchor.
-  Tier 4 (commuter web)  Snaking lines: each leaves the hub nearest an unclaimed
-                         town, hops nearest-unvisited-town to nearest-unvisited-
-                         town, and closes into another hub when one comes near —
-                         every town sits on a hub-to-hub weaving through-route.
+  Tier 4 (town nodes)    Every remaining town is PLOTTED as a node (rendered from
+                         data/towns.geojson) — the connecting lines are deferred
+                         until a routing approach that reads well is chosen.
 
     python3 scripts/build_network.py
 
@@ -41,7 +39,6 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOWNS = os.path.join(ROOT, "transit", "data", "towns.geojson")
 OUT_NET = os.path.join(ROOT, "transit", "data", "network.json")
-OUT_WEB = os.path.join(ROOT, "transit", "data", "tier4_links.geojson")
 
 T1_MIN_POP = 175_000
 T1_SPACING_MI = 60
@@ -63,15 +60,6 @@ ISLAND_LINK_MI = 1_000     # hubs whose nearest neighbor is farther get MST only
 T3_ANCHOR_MIN_POP = 100_000
 T3_SAT_MIN_POP = 15_000
 T3_RADIUS_MI = 18
-
-# tier-4 snakes: commuter lines leave a tier-1/2 hub, hop nearest-unvisited
-# town to nearest-unvisited town, and close into a different hub when one
-# comes within SNAKE_CLOSE_MI; when a line runs out of nearby towns instead,
-# it terminates at the nearest hub — often looping home, which is expected
-# (short out-and-back spurs). Every line ends at a hub either way.
-SNAKE_STEP_MI = 25         # max hop between towns along a snake
-SNAKE_CLOSE_MI = 12        # a different hub this close ends (closes) the snake
-SNAKE_MAX_LEN = 40         # force-close a runaway snake after this many towns
 
 # urban-core metro: hubs this big get a radial subway network — 4-10 lines
 # with 2-4 stops each (by population) chained outward from the hub, plus a
@@ -550,101 +538,6 @@ def main():
         add_edge(target, n, 3)
         n["parent"] = a["id"]
 
-    # ---- tier 4: snaking commuter lines hub -> towns -> hub -----------------
-    # Grow one line at a time: start at the hub nearest an unclaimed town, hop
-    # nearest-unvisited-town to nearest-unvisited-town (<= SNAKE_STEP_MI), and
-    # when a *different* hub comes within SNAKE_CLOSE_MI, close the line into
-    # it. Every town ends up on a weaving through-route with degree <= 2.
-    hubs_n = [n for n in nodes if n["tier"] <= 2]
-    hub_grid2 = Grid(hubs_n)
-    rem = [t for t in towns if t["geoid"] not in node_by_geoid]
-    town_grid = Grid(rem)
-    visited = set()
-    web, web_mi, web_max = [], 0.0, 0.0
-    snakes = closed = dead_ends = 0
-    snake_lens = []
-    crossings_fixed = 0
-    second_hub = 0
-
-    def _seg_x(a, b, c, d):
-        """Proper intersection of segments ab and cd (planar, fine locally)."""
-        def cr(o, p, q):
-            return (p["lng"] - o["lng"]) * (q["lat"] - o["lat"]) - (p["lat"] - o["lat"]) * (q["lng"] - o["lng"])
-        d1, d2 = cr(c, d, a), cr(c, d, b)
-        d3, d4 = cr(a, b, c), cr(a, b, d)
-        return ((d1 > 0) != (d2 > 0)) and ((d3 > 0) != (d4 > 0))
-
-    def uncross(path):
-        """2-opt: remove self-crossings by reversing the sub-path between any
-        two crossing segments. Endpoints (the hubs) stay fixed."""
-        fixed = 0
-        for _ in range(6):
-            changed = False
-            n = len(path)
-            for i in range(n - 3):
-                for j in range(i + 2, n - 1):
-                    if _seg_x(path[i], path[i + 1], path[j], path[j + 1]):
-                        path[i + 1:j + 1] = reversed(path[i + 1:j + 1])
-                        changed = True
-                        fixed += 1
-            if not changed:
-                break
-        return fixed
-
-    def pid(x):
-        return x.get("id") or ("t" + x["geoid"])
-
-    def link(a, b, sid):
-        nonlocal web_mi, web_max
-        d = tdist(a, b)
-        web_mi += d
-        web_max = max(web_max, d)
-        web.append({
-            "type": "Feature",
-            "geometry": {"type": "LineString",
-                         "coordinates": [[round(a["lng"], 5), round(a["lat"], 5)],
-                                         [round(b["lng"], 5), round(b["lat"], 5)]]},
-            "properties": {"from": pid(a), "to": pid(b),
-                           "mi": round(d, 1), "snake": sid},
-        })
-
-    seeds = sorted(rem, key=lambda t: hub_grid2.nearest(t["lat"], t["lng"])[1])
-    unvisited_ok = lambda t: t["geoid"] not in visited
-    for seed in seeds:
-        if seed["geoid"] in visited:
-            continue
-        snakes += 1
-        sid = snakes
-        start_hub, _ = hub_grid2.nearest(seed["lat"], seed["lng"])
-        path = [start_hub, seed]
-        visited.add(seed["geoid"])
-        cur, length = seed, 1
-        while True:
-            near_hub, dh = hub_grid2.nearest(cur["lat"], cur["lng"])
-            if ((dh <= SNAKE_CLOSE_MI and (near_hub is not start_hub or length >= 8))
-                    or length >= SNAKE_MAX_LEN):
-                path.append(near_hub)                # weave closes at a hub
-                break
-            nxt, dn = town_grid.nearest(cur["lat"], cur["lng"], ok=unvisited_ok)
-            if nxt is None or dn > SNAKE_STEP_MI:
-                path.append(near_hub)                # out of towns — still ends at a hub
-                break
-            path.append(nxt)
-            visited.add(nxt["geoid"])
-            cur, length = nxt, length + 1
-        closed += 1
-        if path[-1] is not start_hub:
-            second_hub += 1
-        crossings_fixed += uncross(path)
-        for a, b in zip(path, path[1:]):
-            link(a, b, sid)
-        snake_lens.append(length)
-    mean_len = sum(snake_lens) / max(len(snake_lens), 1)
-    print(f"tier 4: {snakes} snaking lines through {len(rem):,} towns — all end at a "
-          f"hub ({100 * second_hub // max(snakes, 1)}% at a different one); "
-          f"{crossings_fixed} self-crossings unwoven; mean {mean_len:.1f} towns/line",
-          file=sys.stderr)
-
     # ---- stats + write ------------------------------------------------------
     def route_mi(tier):
         tot = 0.0
@@ -654,6 +547,10 @@ def main():
                 tot += tdist(nid[e["from"]], nid[e["to"]])
         return round(tot)
 
+    tier4_towns = sum(1 for t in towns if t["geoid"] not in node_by_geoid)
+    print(f"tier 4: {tier4_towns:,} town nodes plotted (connections deferred — "
+          f"nodes first, lines later)", file=sys.stderr)
+
     rev = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     stats = {
         "tier1Hubs": len(t1), "tier1CA": len(ca_t1), "tier1MX": len(mx_t1),
@@ -661,15 +558,13 @@ def main():
         "tier3Sat": len(t3), "tier3Core": core_count, "tier3Nodes": len(t3) + core_count,
         "tier1Edges": t1_edges, "edges": len(edges),
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
-        "tier4Links": len(web), "tier4Snakes": snakes, "tier4SecondHub": second_hub,
-        "tier4CrossingsFixed": crossings_fixed, "tier4Mi": round(web_mi),
-        "tier4MeanMi": round(web_mi / max(len(web), 1), 1), "tier4MaxMi": round(web_max, 1),
+        "tier4Towns": tier4_towns,
     }
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
               "COVERAGE_MI": COVERAGE_MI, "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
               "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI,
-              "CORE_MIN_POP": CORE_MIN_POP, "SNAKE_STEP_MI": SNAKE_STEP_MI, "SNAKE_CLOSE_MI": SNAKE_CLOSE_MI}
+              "CORE_MIN_POP": CORE_MIN_POP}
 
     feats = []
     for n in nodes:
@@ -698,17 +593,7 @@ def main():
     with open(OUT_NET, "w") as f:
         json.dump(net, f, separators=(",", ":"))
 
-    webfc = {"type": "FeatureCollection", "name": "US Fantasy Transit — Tier 4 Commuter Web",
-             "properties": {"generator": "scripts/build_network.py",
-                            "schema": "fantasy-transit-web-v1", "rev": rev,
-                            "count": len(web), "totalMi": round(web_mi),
-                            "meanMi": stats["tier4MeanMi"], "maxMi": stats["tier4MaxMi"]},
-             "features": web}
-    with open(OUT_WEB, "w") as f:
-        json.dump(webfc, f, separators=(",", ":"))
-
     print(f"wrote {OUT_NET}  ({os.path.getsize(OUT_NET)/1e6:.2f} MB)")
-    print(f"wrote {OUT_WEB}  ({os.path.getsize(OUT_WEB)/1e6:.2f} MB)")
     print(json.dumps(stats, indent=2))
 
 

@@ -29,10 +29,10 @@ the viewer renders the committed results on every visit.
                                                        │
                        scripts/build_network.py ◀──────┘
                           │
-                          ├─▶ data/network.json        (tiers 1-3 + edges)
-                          └─▶ data/tier4_links.geojson (commuter lines)
+                          └─▶ data/network.json (tiers 1-3 + edges)
                                         │
-                                transit/index.html (viewer)
+                                transit/index.html (viewer — tier-4 town
+                                nodes render straight from towns.geojson)
 ```
 
 To change the network, tweak the constants at the top of `scripts/build_network.py` and re-run it
@@ -43,8 +43,8 @@ To change the network, tweak the constants at the top of `scripts/build_network.
 - **T1–T4 buttons** (top) toggle each tier's nodes and lines — a functional legend. Hide metro and
   commuter to see the HSR spine; the sidebar list filters with the map, while the count badges and
   mileage always describe the full network.
-- **Layer checkboxes**: the 33k-town base layer and the commuter-web lines are canvas-rendered,
-  lazy-loaded reference layers; their on/off preference is remembered.
+- **Tier-4 towns layer**: all ~33k town nodes, canvas-rendered and lazy-loaded, sized by
+  population; its on/off preference is remembered (the T4 button drives the same layer).
 - **Search** flies to any of the ~33k towns (`Enter` = top hit, ranked by population). Clicking a
   sidebar row or a map marker flies there too.
 - **Fit view** reframes the lower 48. On phones the panel is a collapsible bottom sheet — tap the
@@ -60,11 +60,11 @@ To change the network, tweak the constants at the top of `scripts/build_network.
 | **1 — HSR** | pop ≥ 175k @ 60 mi spacing; MST + 2-nearest-neighbor mesh. **International**: 12 Canadian metros, 8 northern-Mexico metros (border twins like Tijuana and Ciudad Juárez space only against each other), and island links — Honolulu→Los Angeles, San Juan→Miami, Anchorage→Vancouver — land at the biggest hub within 10% of the shortest crossing | **109 hubs**, 26,666 mi |
 | **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2) | **725 hubs**, chained to the spine |
 | **3 — Metro** | radial urban-core subways: every 150k+ US hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), and a **circle line only where ≥ 8 lines make it read as one**. Station placement is **land-aware** (Census state polygons minus Natural Earth lakes; wet stations pull inland or drop; collisions with the hub or sibling stations drop). Suburbs ≥ 15k within 18 mi (**1,253**) join at their **nearest station** as line extensions, not by beelining to the hub | **3,043 metro nodes** |
-| **4 — Commuter web** | **snaking lines**: each leaves the hub nearest an unclaimed town, hops nearest-unvisited-town to nearest-unvisited-town (≤ 25 mi), and closes into a *different* hub when one comes within 12 mi (or loops home) — every line ends at a hub, every town has degree ≤ 2. Lines are **2-opt uncrossed** (1,200 self-crossings removed) and **render as smooth curves** in the viewer | **2,378 lines / 33,635 segments** (mean segment 7.8 mi), zero dead ends |
+| **4 — Town nodes** | every remaining town is **plotted as a tier-4 node** (rendered straight from `data/towns.geojson`, sized by population). The connecting commuter lines were retired — nodes first; a connection scheme that reads well comes later | **31,257 town nodes** |
 
 The result is one fully connected graph (3,877 nodes / 4,050 edges) written to
-`data/network.json` — the viewer loads it directly on every visit. The commuter web renders as
-its own toggleable canvas layer.
+`data/network.json` — the viewer loads it directly on every visit. The tier-4 town nodes render
+as their own toggleable canvas layer straight from `data/towns.geojson`.
 
 Notable data fixes made for this: consolidated cities (Washington DC, Indianapolis,
 Nashville-Davidson, Louisville/Jefferson, Baton Rouge, Athens, Augusta…) enter via their Census
@@ -88,9 +88,9 @@ village, borough — in the 50 states + DC to `transit/data/towns.geojson` as ti
 - Every town is **joined to Census population** (SUB-EST 2024 place-level estimates, 100% match by
   GEOID) — the `pop` property drives dot size/opacity in the viewer and search ranking, and is what
   a tier-2 candidate cut (e.g. pop ≥ 100k) will run on.
-- Rendered in the viewer as a faint, canvas-drawn, non-interactive dot layer (**sized by
-  population**) with a **"Tier-4 towns" toggle** in the sidebar. It's the reference set the
-  commuter lines thread through; the search box flies to any of them.
+- Rendered in the viewer as a canvas-drawn dot layer (**sized by population**) with a
+  **"Tier-4 towns" toggle** in the sidebar — these are the tier-4 nodes themselves; the
+  search box flies to any of them. Their connecting lines are deferred by design.
 - Rebuild / re-vintage:
 
   ```bash
@@ -141,8 +141,8 @@ site (plain HTML/CSS/JS).
 - [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
       live per-tier mileage
 - [x] **Auto-generated full network** (`scripts/build_network.py`): 109 HSR + 725 regional +
-      3,043 metro (radial land-aware urban-core subways) + 2,378 snaking commuter lines
-      through every remaining town, each ≤ 60 mi from a hub
+      3,043 metro nodes; every town ≤ 60 mi from a hub; 31,257 tier-4 town nodes plotted
+- [ ] Connect the tier-4 town nodes (lines retired pending a scheme that reads well)
 - [ ] Auto-route HSR edges along real corridors instead of straight lines
 - [ ] Network stats (reach, coverage: % of population within N mi of each tier)
 - [x] Promote to a styled read-only "network map" viewer (editing retired)
