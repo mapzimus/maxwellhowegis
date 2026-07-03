@@ -214,12 +214,17 @@ def fetch_pop():
     return pops, mcd_pops
 
 
-def clean_name(name):
+def clean_name(name, is_cdp=False):
     name = name.strip()
     if name.endswith(" (balance)"):
         name = name[: -len(" (balance)")].strip()
     if name.endswith(" CDP"):
         name = name[: -len(" CDP")].strip()
+    if is_cdp:
+        # a CDP's proper name may legitimately end in "City"/"Village"
+        # (Sun City, Grand Canyon Village) — only the " CDP" marker is a
+        # type suffix; stripping further corrupts ~240 real names
+        return name
     low = name.lower()
     for suf in SUFFIXES:
         if low.endswith(" " + suf):
@@ -266,7 +271,7 @@ def build(year, include_cdp, with_pop=True):
             sqmi = None
         lsad = c[idx["LSAD"]]
         ptype = "cdp" if is_cdp else LSAD_TYPE.get(lsad, "place")
-        name = clean_name(c[idx["NAME"]])
+        name = clean_name(c[idx["NAME"]], is_cdp)
         kept[ptype if ptype in kept else "other"] += 1
         geoid = c[idx["GEOID"]]
         pop = pops.get(geoid)
@@ -305,8 +310,10 @@ def build(year, include_cdp, with_pop=True):
             if dup:
                 break
             fl = f["geometry"]["coordinates"]
-            if math.hypot((fl[1] - lat) * 69.0, (fl[0] - lng) * 51.0) < 6.0:
+            if math.hypot((fl[1] - lat) * 69.0, (fl[0] - lng) * 51.0) < 8.0:
                 dup = True                            # city/CDP already covers it
+                                                      # (8 mi: Jonesport ME's CDP
+                                                      # sits 6.6 mi from its MCD)
         if dup:
             continue
         feat = {"type": "Feature",
@@ -326,6 +333,20 @@ def build(year, include_cdp, with_pop=True):
     # HI/PR population backfill from Natural Earth — one-to-one: each NE place
     # populates only its single nearest unfilled CDP, so a big city's figure
     # can't smear across its neighbors.
+    # Guam (absent from the gazetteer): seed its 19 villages — BEFORE the NE
+    # backfill below, so its HI/PR/GU island branch can actually see them
+    # (their pops are hardcoded, so the backfill treats them as filled)
+    for i, (name, pop, lat, lng) in enumerate(GUAM_PLACES, 1):
+        kept["village"] += 1
+        joined += 1
+        feats.append({
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [round(lng, 5), round(lat, 5)]},
+            "properties": {"kind": "town", "name": name, "type": "village",
+                           "st": "GU", "geoid": f"GU{i:03d}", "tier": 4, "pop": pop,
+                           "sqmi": None},
+        })
+
     if with_pop:
         cands = feats            # nationwide: big CDPs (Arlington VA, Metairie,
                                  # Paradise NV...) have no Census estimates
@@ -364,18 +385,6 @@ def build(year, include_cdp, with_pop=True):
                 filled += 1
         print(f"NE population backfill for {filled} estimate-less places (one-to-one)", file=sys.stderr)
 
-    # Guam (absent from the gazetteer): seed its 19 villages
-    for i, (name, pop, lat, lng) in enumerate(GUAM_PLACES, 1):
-        kept["village"] += 1
-        joined += 1
-        feats.append({
-            "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [round(lng, 5), round(lat, 5)]},
-            "properties": {"kind": "town", "name": name, "type": "village",
-                           "st": "GU", "geoid": f"GU{i:03d}", "tier": 4, "pop": pop,
-                           "sqmi": None},
-        })
-
     fc = {
         "type": "FeatureCollection",
         "name": "US Fantasy Transit — Tier 4 Towns",
@@ -386,7 +395,7 @@ def build(year, include_cdp, with_pop=True):
             "sourceUrl": gaz_url(year),
             "definition": ("incorporated places (FUNCSTAT=A)"
                            + (" + census-designated places" if include_cdp else "")
-                           + ", 50 states + DC"),
+                           + ", 50 states + DC + PR + GU"),
             "popSource": POP_URL if with_pop else None,
             "count": len(feats),
         },
