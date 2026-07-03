@@ -75,7 +75,7 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
 | **1 — HSR** | pop ≥ 175k, 60 mi spacing; MST + 2-nearest-neighbor HSR mesh | **87 hubs**, 116 lines, 19,747 mi |
 | **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub | **616 hubs**, chained to the spine |
 | **3 — Metro** | suburbs ≥ 15k within 18 mi of a 100k+ anchor (**1,177**), **plus urban-core rings**: every 150k+ hub gets 4–12 compass-named in-city stations, spoked to the hub and loop-connected, sized by population and land area (**716**) | **1,893 metro nodes** |
-| **4 — Commuter web** | every remaining town → nearest *already-connected* point, closest-to-network first — towns chain through each other into branch lines (88% of links are town→town) instead of hub starbursts | **17,598 links**, mean 7.2 mi, max 57 mi |
+| **4 — Commuter web** | every remaining town → nearest *already-connected* point, closest-to-network first — towns chain through each other into branch lines (88% of links are town→town) instead of hub starbursts. Then **through-line closures**: each dead-end leaf may join the nearest point of a *different* hub's tree (best crossing per tree pair, ≤ 15 mi), so lines weave hub → towns → different hub | **18,419 links** (incl. 821 through-lines), mean 7.2 mi, max 57 mi |
 
 The result is one fully connected graph (2,596 nodes / 2,991 edges) written to
 `data/network.json` with a `rev` stamp — the editor adopts a newer committed network over stale
