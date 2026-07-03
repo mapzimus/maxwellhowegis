@@ -65,8 +65,10 @@ T3_SAT_MIN_POP = 15_000
 T3_RADIUS_MI = 18
 
 # tier-4 snakes: commuter lines leave a tier-1/2 hub, hop nearest-unvisited
-# town to nearest-unvisited town, and close into a *different* hub when one
-# comes near — so every line weaves hub -> towns -> hub instead of branching
+# town to nearest-unvisited town, and close into a different hub when one
+# comes within SNAKE_CLOSE_MI; when a line runs out of nearby towns instead,
+# it terminates at the nearest hub — often looping home, which is expected
+# (short out-and-back spurs). Every line ends at a hub either way.
 SNAKE_STEP_MI = 25         # max hop between towns along a snake
 SNAKE_CLOSE_MI = 12        # a different hub this close ends (closes) the snake
 SNAKE_MAX_LEN = 40         # force-close a runaway snake after this many towns
@@ -464,8 +466,12 @@ def main():
         host, d = conn_grid.nearest(n["lat"], n["lng"])
         if d > ISLAND_LINK_MI:
             # transoceanic link: land at the biggest hub within 15% of the
-            # shortest crossing (Guam -> Honolulu, not the village of Adak)
-            cands = [c for c in conn_list if tdist(n, c) <= 1.15 * d]
+            # shortest crossing to a REAL hub (pop >= 50k) — anchoring the
+            # window on whatever tiny waypoint happens to be nearest (an
+            # Aleutian village) could exclude the major hub entirely
+            d_ref = min((tdist(n, c) for c in conn_list if (c["pop"] or 0) >= 50_000),
+                        default=d)
+            cands = [c for c in conn_list if tdist(n, c) <= 1.15 * max(d, d_ref)]
             if cands:
                 host = max(cands, key=lambda c: c["pop"] or 0)
         add_edge(host, n, 2)
@@ -657,7 +663,7 @@ def main():
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
         "tier4Links": len(web), "tier4Snakes": snakes, "tier4SecondHub": second_hub,
         "tier4CrossingsFixed": crossings_fixed, "tier4Mi": round(web_mi),
-        "tier4MeanMi": round(web_mi / max(len(rem), 1), 1), "tier4MaxMi": round(web_max, 1),
+        "tier4MeanMi": round(web_mi / max(len(web), 1), 1), "tier4MaxMi": round(web_max, 1),
     }
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,

@@ -5,19 +5,22 @@ Source: US Census Bureau Gazetteer Files — Places (national). A single nationa
 tab-delimited file with a name, type, state, GEOID and an internal-point
 (centroid) lat/lng for every incorporated place and CDP in the country.
 
-Default output is every **incorporated place** (FUNCSTAT == 'A') in the 50
-states + DC — 19,465 towns as of the 2024 gazetteer — written as a minified
-GeoJSON FeatureCollection of tier-4 nodes to `transit/data/towns.geojson`.
+Default output is every incorporated place, every CDP (unincorporated
+community), the New England MCD towns, and Guam's villages — ~33k towns as of
+the 2024 vintage — written as a minified GeoJSON FeatureCollection of tier-4
+nodes to `transit/data/towns.geojson`.
 
 Each town is joined to the Census **sub-county population estimates**
 (SUB-EST, place-level SUMLEV 162) by GEOID, adding a `pop` property (latest
 estimate year; null where no estimate exists, e.g. places incorporated after
 the estimates base).
 
-    python3 scripts/build_towns.py                 # incorporated places, 50 states + DC
-    python3 scripts/build_towns.py --include-cdp    # add census-designated places (~32k total)
+    python3 scripts/build_towns.py                 # places + CDPs + New England MCD towns (default)
+    python3 scripts/build_towns.py --no-cdp         # incorporated places only
     python3 scripts/build_towns.py --year 2023      # pin a gazetteer vintage
-    python3 scripts/build_towns.py --no-pop         # skip the population join
+    python3 scripts/build_towns.py --no-pop         # skip the population join (also drops
+                                                    # N/B/F consolidated-city records, which
+                                                    # need populations to dedupe their shells)
 
 The raw gazetteer + estimates files are cached under scripts/.cache/
 (gitignored) so re-runs are offline and fast. Only the derived towns.geojson
@@ -247,8 +250,9 @@ def build(year, include_cdp, with_pop=True):
         if not is_cdp and func not in FUNCSTAT_OK:   # skip inactive ghost towns etc.
             continue
         geoid_pre = c[idx["GEOID"]]
-        if func in ("N", "B", "F") and with_pop and geoid_pre not in pops:
-            continue                                  # duplicate nonfunctioning shell
+        if func in ("N", "B", "F") and (not with_pop or geoid_pre not in pops):
+            continue      # duplicate nonfunctioning shell (needs pops to dedupe,
+                          # so N/B/F records are skipped entirely under --no-pop)
         try:
             lat = round(float(c[idx["INTPTLAT"]]), 5)
             lng = round(float(c[idx["INTPTLONG"]]), 5)
@@ -278,6 +282,7 @@ def build(year, include_cdp, with_pop=True):
 
     # New England towns from the county-subdivisions gazetteer
     ne_added = 0
+    coord_seen = {tuple(f["geometry"]["coordinates"]) for f in feats}
     by_name_st = {}
     for f in feats:
         p = f["properties"]
@@ -295,12 +300,13 @@ def build(year, include_cdp, with_pop=True):
             lat, lng = round(float(c[-2]), 5), round(float(c[-1]), 5)
         except ValueError:
             continue
-        dup = False
+        dup = (lng, lat) in coord_seen                # exact-coordinate collision
         for f in by_name_st.get((name.lower(), c[0]), []):
+            if dup:
+                break
             fl = f["geometry"]["coordinates"]
             if math.hypot((fl[1] - lat) * 69.0, (fl[0] - lng) * 51.0) < 6.0:
                 dup = True                            # city/CDP already covers it
-                break
         if dup:
             continue
         feat = {"type": "Feature",
@@ -309,6 +315,7 @@ def build(year, include_cdp, with_pop=True):
                                "st": c[0], "geoid": geoid, "tier": 4, "pop": pop,
                                "sqmi": None}}
         feats.append(feat)
+        coord_seen.add((lng, lat))
         by_name_st.setdefault((name.lower(), c[0]), []).append(feat)
         kept["town"] += 1
         if pop:
@@ -326,21 +333,29 @@ def build(year, include_cdp, with_pop=True):
         for name_ne, pop_ne, la, lo in sorted(ne_backfill_pops(), key=lambda x: -x[1]):
             if not pop_ne:
                 continue
-            # prefer the CDP whose name matches (e.g. NE "Honolulu" -> "Urban
-            # Honolulu CDP", not whichever neighbor is nearest); if the named
-            # CDP is already filled, this NE row is a duplicate — skip it.
+            # prefer the place whose name MATCHES the NE record ("Honolulu" ->
+            # "Urban Honolulu", exact or exact-with-prefix, never substring —
+            # substring matching smeared big-city populations onto unrelated
+            # neighbors like "West <City>" CDPs). If the named place is already
+            # filled, this NE row duplicates a covered city: skip it. The
+            # nearest-unfilled fallback only applies on the estimate-less
+            # islands (HI/PR/GU), where whole regions lack Census estimates.
+            def name_match(cand):
+                a, b = cand["properties"]["name"].lower(), name_ne.lower()
+                return a == b or a == "urban " + b or a.replace("-", " ") == b.replace("-", " ")
             best, bd, named, named_filled = None, 8.0, None, False
             for f in cands:
                 lng, lat = f["geometry"]["coordinates"]
                 d = math.hypot((la - lat) * 69.0, (lo - lng) * 63.0)
                 if d >= 8.0:
                     continue
-                if name_ne.lower() in f["properties"]["name"].lower():
+                if name_match(f):
                     if f["properties"]["pop"] is not None:
                         named_filled = True
                     elif named is None:
                         named = f
-                if f["properties"]["pop"] is None and d < bd:
+                if (f["properties"]["pop"] is None and d < bd
+                        and f["properties"]["st"] in ("HI", "PR", "GU")):
                     best, bd = f, d
             target = named if named is not None else (None if named_filled else best)
             if target is not None:
