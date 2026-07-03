@@ -371,11 +371,12 @@ def main():
     # ---- tier 1 ----------------------------------------------------------
     t1 = greedy_spacing([t for t in by_pop if t["pop"] >= T1_MIN_POP], T1_SPACING_MI, [])
     ca_t1 = greedy_spacing([c for c in intl_ca if c["pop"] >= T1_MIN_POP], T1_SPACING_MI, t1)
-    # Mexican metros space only against each other — border twins (Tijuana/San
-    # Diego, Juárez/El Paso) are distinct hubs despite their proximity
+    # Mexican metros space against the full hub set — T1_SPACING_MI is a hard
+    # invariant with no exceptions, so border twins (Tijuana/San Diego,
+    # Juárez/El Paso, Matamoros/Brownsville) collapse into their US hub
     mx_t1 = greedy_spacing(
         [c for c in intl_mx if c["pop"] >= MX_T1_MIN_POP and c["lat"] >= MX_LAT_MIN],
-        T1_SPACING_MI, [])[:MX_T1_MAX]
+        T1_SPACING_MI, t1 + ca_t1)[:MX_T1_MAX]
     t1 = t1 + ca_t1 + mx_t1
     print(f"tier 1: {len(t1)} HSR hubs ({len(ca_t1)} Canadian, {len(mx_t1)} Mexican: "
           f"{', '.join(c['name'] for c in mx_t1)})", file=sys.stderr)
