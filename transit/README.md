@@ -59,13 +59,13 @@ To change the network, tweak the constants at the top of `scripts/build_network.
 
 | Tier | Rule | Result |
 |---|---|---|
-| **1 — HSR** | pop ≥ 175k @ 60 mi spacing, connected by a **Gabriel graph** (an edge survives if no third hub sits in the circle with the edge as its diameter — connected by construction, ~4 links per hub, so California triangulates instead of chaining). Edges are water-tested with a coastal tolerance (LA–San Diego hugs the shore; nothing crosses the Great Lakes' middles). **International**: 12 Canadian metros, 5 interior-Mexico metros (Monterrey, Torreón, Mexicali, Chihuahua, Hermosillo — the 60-mi spacing is a hard invariant with no exceptions, so border twins like Tijuana and Ciudad Juárez fold into their US hub), and island links — Honolulu→Los Angeles, San Juan→Miami, Anchorage→Vancouver — land at the biggest hub within 15% of the shortest crossing | **106 hubs · 181 edges**, 39,657 mi |
-| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2). Connected by an **RNG mesh over all tier-1/2 hubs** — the same lens rule as the commuter web, one level up: regionals link their natural neighbors instead of chaining to a parent, dead-ends patch to ≥ 2 links, island clusters keep a single sea link (Guam→Honolulu) | **725 hubs · 1,145 links**, 83,415 mi |
-| **3 — Metro** | radial urban-core subways: every 150k+ US hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), and a **circle line only where ≥ 8 lines make it read as one**. Station placement is **land-aware** (Census state polygons minus Natural Earth lakes; wet stations pull inland or drop; collisions with the hub or sibling stations drop). Suburbs ≥ 15k within 18 mi (**1,253**) join at their **nearest station** as line extensions, not by beelining to the hub | **3,043 metro nodes** |
-| **4 — Commuter web** | every remaining town joins a **relative neighborhood graph** over towns + US hubs + metro satellites (promoted suburbs stay in the web — commuter rail passes through them): an edge survives only if no third point is closer to both endpoints — RNG ⊇ MST and ⊆ Delaunay, so the web reads as planar corridors with interior degree 2–4 and no crossings. Hops cap at 60 mi, longer edges are midpoint-tested against water, isolated clusters bridge back over dry hops ≤ 90 mi, and dead-ends take a second link only where one heads in a genuinely different direction (≥ 45°) — peninsula towns like Little Compton end cleanly instead of growing slivers. **99.7 % of towns connect to ≥ 2 neighbors**; the exceptions are true islands/edges (Catalina, Block Island, Culebra, Provincetown, Alaska bush) | **31,257 towns · 43,284 links** |
+| **1 — HSR** | pop ≥ 175k @ 60 mi spacing, connected by a **Gabriel graph** (an edge survives if no third hub sits in the circle with the edge as its diameter — connected by construction, ~4 links per hub, so California triangulates instead of chaining). Edges are densely water-sampled (every ~8 mi) with a ~12-mi coastal tolerance — LA–San Diego hugs the shore, but nothing crosses a Great Lake, the Great Salt Lake, or an open strait. **International**: 12 Canadian metros, 5 interior-Mexico metros (Monterrey, Torreón, Mexicali, Chihuahua, Hermosillo — the 60-mi spacing is a hard invariant with no exceptions, so border twins like Tijuana and Ciudad Juárez fold into their US hub), and island links — Honolulu→Los Angeles, San Juan→Miami, Anchorage→Vancouver — land at the biggest hub within 15% of the shortest crossing | **106 hubs · 179 edges**, 38,953 mi |
+| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2). Connected by an **RNG mesh over all tier-1/2 hubs** — the same lens rule as the commuter web, one level up: regionals link their natural neighbors instead of chaining to a parent, dead-ends patch to ≥ 2 links, island clusters keep a single sea link (Guam→Honolulu) | **725 hubs · 1,139 links**, 83,386 mi |
+| **3 — Metro** | radial urban-core subways: every 150k+ US hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), and a **circle line only where ≥ 8 lines make it read as one**. Station placement is **land-aware** (Census state polygons minus Natural Earth lakes; wet stations pull inland or drop; collisions with the hub or sibling stations drop). Suburbs ≥ 15k within 18 mi (**1,225**) join at their **nearest station reachable over land** as line extensions — anchor choice and station join are water-gated, so no metro spoke crosses a bay (Redwood City no longer wires to Hayward across San Francisco Bay; bay-locked towns like Bremerton stay tier 4) | **3,013 metro nodes** |
+| **4 — Commuter web** | every remaining town joins a **relative neighborhood graph** over towns + US hubs + metro satellites (promoted suburbs stay in the web — commuter rail passes through them): an edge survives only if no third point is closer to both endpoints — RNG ⊇ MST and ⊆ Delaunay, so the web reads as planar corridors with interior degree 2–4 and no crossings. Hops cap at 60 mi, longer edges are densely water-sampled (every ~6 mi, with river forgiveness), isolated clusters bridge back over dry hops ≤ 90 mi, and dead-ends take a second link only where one heads in a genuinely different direction (≥ 45°) — peninsula towns like Little Compton end cleanly instead of growing slivers. **99.7 % of towns connect to ≥ 2 neighbors**; the exceptions are true islands/edges (Catalina, Block Island, Culebra, Provincetown, Alaska bush) | **31,291 towns · 43,328 links** |
 
-The result is one fully connected graph (3,874 nodes / 4,507 edges) written to
-`data/network.json`, plus the 43,284-link commuter web in `data/tier4_links.geojson` — the
+The result is one fully connected graph (3,844 nodes / 4,469 edges) written to
+`data/network.json`, plus the 43,328-link commuter web in `data/tier4_links.geojson` — the
 viewer loads both directly on every visit. The tier-4 town nodes render as their own toggleable
 canvas layer straight from `data/towns.geojson`, with the commuter web on a second canvas
 layer beneath them.
@@ -82,16 +82,18 @@ Tier 4 (normal-speed commuter rail reaching every town) is too large to hand-pla
 Census **Gazetteer Places (national)** file and writes every **incorporated place** — city, town,
 village, borough — in the 50 states + DC to `transit/data/towns.geojson` as tier-4 GeoJSON points.
 
-- **33,282 towns** (2024 gazetteer): 10,219 cities · 5,271 towns · 3,728 villages · 1,215 boroughs
+- **33,288 towns** (2024 gazetteer): 10,219 cities · 5,277 towns · 3,728 villages · 1,215 boroughs
   · 12,820 CDPs (unincorporated communities, included by default; `--no-cdp` to exclude) · 29 consolidated
   governments and other types · Guam's
   19 villages seeded from the 2020 Census. New England towns come from the **county-subdivisions
   gazetteer** (they're minor civil divisions, not places — New Hampshire alone has 221 MCD towns
   vs. 13 incorporated cities), deduped against same-name places nearby. Big estimate-less places
   (CDPs, HI/PR) get a one-to-one Natural Earth population backfill.
-- Every town is **joined to Census population** (SUB-EST 2024 place-level estimates, 100% match by
-  GEOID) — the `pop` property drives dot size/opacity in the viewer and search ranking, and is what
-  a tier-2 candidate cut (e.g. pop ≥ 100k) will run on.
+- Every **incorporated place** is joined to Census population (SUB-EST 2024 place-level
+  estimates, 100% by GEOID); CDPs mostly lack SUB-EST estimates (the Census file is
+  incorporated-places-only), so overall coverage is ~62% — the biggest estimate-less CDPs get a
+  one-to-one Natural Earth backfill. The `pop` property drives dot size/opacity in the viewer and
+  search ranking, and is what a tier-2 candidate cut (e.g. pop ≥ 100k) runs on.
 - Rendered in the viewer as a canvas-drawn dot layer (**sized by population**) with a
   **"Tier-4 towns" toggle** in the sidebar — these are the tier-4 nodes themselves; the
   search box flies to any of them. Their connecting lines (the commuter web) render on a
@@ -141,13 +143,14 @@ site (plain HTML/CSS/JS).
 ## Status / next steps
 
 - [x] Click-to-place node editor, link/delete modes, GeoJSON import/export, autosave
-- [x] Tier-4 "every town" base layer — 33,282 Census towns (`data/towns.geojson`)
-- [x] Census population joined to every town (100%); pop-scaled dots
+- [x] Tier-4 "every town" base layer — 33,288 Census towns (`data/towns.geojson`)
+- [x] Census population joined to every incorporated place (100%; ~62% overall — CDPs lack
+      SUB-EST estimates); pop-scaled dots
 - [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
       live per-tier mileage
 - [x] **Auto-generated full network** (`scripts/build_network.py`): 106 HSR + 725 regional +
-      3,043 metro nodes; every town ≤ 60 mi from a hub; 31,257 tier-4 town nodes plotted
-- [x] Connect the tier-4 town nodes — relative-neighborhood-graph commuter web, 43,284 links,
+      3,013 metro nodes; every town ≤ 60 mi from a hub; 31,291 tier-4 town nodes plotted
+- [x] Connect the tier-4 town nodes — relative-neighborhood-graph commuter web, 43,328 links,
       99.7 % of towns with ≥ 2 connections (dead-ends only at true islands/edges/peninsulas)
 - [x] Re-mesh tiers 1–2: Gabriel-graph HSR spine (California triangulates), RNG regional mesh
       replacing the old parent chains

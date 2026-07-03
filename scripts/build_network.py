@@ -10,37 +10,55 @@ Output: transit/data/network.json — the network: tier 1-3 nodes + edges
 Algorithm (all straight-line/great-circle, stdlib only):
 
   Tier 1 (HSR hubs)      Cities with pop >= T1_MIN_POP, greedy-picked in population
-                         order with a T1_SPACING_MI exclusion radius. Connected by a
-                         GABRIEL GRAPH (edge survives if no third hub sits in the
-                         circle with the edge as diameter) — connected by
-                         construction and ~4 links per hub, so hub groups
-                         triangulate instead of chaining. Island hubs keep a single
-                         transoceanic link to the biggest mainland hub within 15%
-                         of the shortest crossing.
-  Tier 2 (regional)      Cities with pop >= T2_MIN_POP, spaced T2_SPACING_MI from all
-                         chosen hubs. Then COVERAGE FILL: while any town is farther
-                         than COVERAGE_MI from a tier-1/2 hub, promote the most
-                         populous uncovered town — guaranteeing every town in the
-                         country has a hub within COVERAGE_MI. Connected by an RNG
-                         mesh over all tier-1/2 hubs (same lens rule as tier 4),
-                         water-tested, dead-ends patched to degree >= 2, island
-                         clusters bridged by a single sea link.
-  Tier 3 (metro/subway)  Around anchors (tier-1 hubs + tier-2 hubs with pop >=
-                         T3_ANCHOR_MIN_POP): every non-hub town with pop >=
-                         T3_SAT_MIN_POP within T3_RADIUS_MI becomes a metro node
-                         linked to its anchor.
+                         order with a T1_SPACING_MI exclusion radius (a hard
+                         invariant — no exceptions, even at the Mexican border).
+                         Connected by a GABRIEL GRAPH (edge survives if no third
+                         hub sits in the circle with the edge as diameter) —
+                         connected by construction and ~4 links per hub, so hub
+                         groups triangulate instead of chaining. Island hubs keep
+                         a single transoceanic link to the biggest mainland hub
+                         within 15% of the shortest crossing.
+  Tier 2 (regional)      Cities with pop >= T2_MIN_POP, spaced T2_SPACING_MI from
+                         all chosen hubs — plus any T2_BIG_POP (100k+) city outside
+                         a hub's metro radius (Fort Worth, Baltimore, Mesa…). Then
+                         COVERAGE FILL: while any town is farther than COVERAGE_MI
+                         from a tier-1/2 hub, promote the most populous uncovered
+                         town — guaranteeing every town in the country has a hub
+                         within COVERAGE_MI. Connected by an RNG mesh over all
+                         tier-1/2 hubs (same lens rule as tier 4), water-tested,
+                         dead-ends patched to degree >= 2, island clusters bridged
+                         by a single sea link.
+  Tier 3 (metro/subway)  Two parts. URBAN CORES: every 150k+ (CORE_MIN_POP) US hub
+                         gets a radial subway — 4-10 compass-named lines with 2-4
+                         chained stops each, land-aware placement, plus a circle
+                         line where >= 8 lines make it read as one. SATELLITES:
+                         every non-hub town with pop >= T3_SAT_MIN_POP within
+                         T3_RADIUS_MI of an anchor (tier-1 hubs + 100k+ tier-2s)
+                         joins the metro at its nearest station — anchor choice
+                         and station join both require a DRY overland path, so
+                         no metro spoke crosses a bay; bay-locked towns stay
+                         tier 4.
   Tier 4 (commuter web)  Every remaining town is a node (rendered from
                          data/towns.geojson). Connections are a RELATIVE
-                         NEIGHBORHOOD GRAPH over towns + US tier-1/2 hubs: an
-                         edge survives only if no third point is closer to both
-                         endpoints than they are to each other. RNG ⊇ MST and
-                         ⊆ Delaunay, so the web is planar corridors with
-                         interior degree 2-4 and no crossings. Long edges are
-                         midpoint-tested against water, isolated clusters
-                         bridge back over dry hops, and remaining dead-ends
-                         get a second link where one exists — every town
-                         connects to >= 2 neighbors except islands/edges.
+                         NEIGHBORHOOD GRAPH over towns + US tier-1/2 hubs +
+                         metro satellites: an edge survives only if no third
+                         point is closer to both endpoints than they are to
+                         each other. RNG ⊇ MST and ⊆ Delaunay, so the web is
+                         planar corridors with interior degree 2-4 and no
+                         crossings. Edges are densely water-sampled, isolated
+                         clusters bridge back over dry hops, and dead-ends get
+                         a second link only where one diverges >= 45° — every
+                         town connects to >= 2 neighbors except islands/edges.
                          Written to data/tier4_links.geojson.
+
+  Water testing          Every tier's links are sampled along their length
+                         (T1/T2 every ~8 mi with ~12-mi coastal side-probes;
+                         T3 satellite links every ~3 mi with ~1.5-mi river
+                         forgiveness; T4 every ~6 mi). A sample is dry on US
+                         Census state polygons or Natural Earth world land
+                         (Canada/Mexico), minus the global lake polygons —
+                         so nothing crosses a Great Lake, a bay, or a strait,
+                         and island links happen only by design.
 
     python3 scripts/build_network.py
 
@@ -59,7 +77,7 @@ T1_MIN_POP = 175_000
 T1_SPACING_MI = 60
 T2_MIN_POP = 25_000
 T2_SPACING_MI = 30
-T2_KNN = 8                 # candidate neighbors per hub for the tier-2 RNG
+T2_KNN = 12                # candidate neighbors per hub for the tier-2 RNG
 T2_MAX_LINK_MI = 300       # no single tier-2 hop longer than this (bridges except)
 T2_BIG_POP = 100_000       # cities this big become hubs even inside the spacing
                            # radius, as long as they're outside a hub's metro
@@ -88,7 +106,7 @@ CORE_MIN_POP = 150_000
 # tier-4 commuter web: a relative neighborhood graph over the remaining towns
 # plus the US tier-1/2 hubs. Every town should end up with >= 2 links; only
 # islands and edge-of-nowhere towns are allowed to dangle.
-T4_KNN = 10                # candidate neighbors per point for the RNG lens test
+T4_KNN = 12                # candidate neighbors per point for the RNG lens test
 T4_MAX_LINK_MI = 60        # no single commuter hop longer than this
 T4_WATER_TEST_MI = 12      # edges longer than this get midpoint land tests
 T4_BRIDGE_MI = 90          # max dry hop when reconnecting isolated clusters
@@ -108,6 +126,8 @@ LAND_SOURCES = [
      "https://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip"),
     ("ne_10m_lakes_north_america.zip",
      "https://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes_north_america.zip"),
+    ("ne_50m_land.zip",                     # world land — Canada/Mexico dryness
+     "https://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip"),
 ]
 CACHE = os.path.join(ROOT, "scripts", ".cache")
 
@@ -230,12 +250,27 @@ def _land():
 def in_lake(lat, lng):
     """Lake polygons are global (Natural Earth) — valid in Canada/Mexico too,
     unlike the US-only state polygons behind on_dry_land."""
-    _states, lakes, lakes_na = _land()
+    _states, lakes, lakes_na, _world = _land()
     return _in_polys(lakes, lat, lng) or _in_polys(lakes_na, lat, lng)
 
 
+_NE_MEMO = {}
+
+
+def in_ne_land(lat, lng):
+    """World land test (Natural Earth 50m) — covers Canada/Mexico, where the
+    Census state polygons can't see. Memoized: the big continent rings make
+    each raw test ~ms-scale, and edge sampling revisits the same coast."""
+    key = (round(lat, 2), round(lng, 2))
+    hit = _NE_MEMO.get(key)
+    if hit is None:
+        _states, _lakes, _lakes_na, world = _land()
+        hit = _NE_MEMO[key] = _in_polys(world, lat, lng)
+    return hit
+
+
 def on_dry_land(lat, lng):
-    states, lakes, lakes_na = _land()
+    states, lakes, lakes_na, _world = _land()
     return (_in_polys(states, lat, lng)
             and not _in_polys(lakes, lat, lng)
             and not _in_polys(lakes_na, lat, lng))
@@ -252,33 +287,67 @@ def tdist(a, b):
     return hav(a["lat"], a["lng"], b["lat"], b["lng"])
 
 
+def _dry_point(lat, lng):
+    """Land is land, whatever the country: US Census state polygons first
+    (fine-grained, fast), then Natural Earth world land for Canada/Mexico —
+    minus the global lake polygons either way."""
+    if in_lake(lat, lng):
+        return False
+    return on_dry_land(lat, lng) or in_ne_land(lat, lng)
+
+
 def dry_mid(a, b, skip_mi):
-    """Midpoint (+ quarter points when long) land test for hub-to-hub links.
-    Short hops (<= skip_mi) pass untested — those are bridges. Each sample is
-    probed at the point itself and nudged ~12 mi to either side, so a line
-    hugging a coastline (Los Angeles-San Diego) counts as dry while a true
-    lake/ocean crossing stays wet on all three probes. Lake polygons are
-    authoritative everywhere; open-ocean detection (via the US state
-    polygons) only applies when both endpoints are US, because Canadian and
-    Mexican interiors aren't in the Census shapefile."""
+    """Dense land test for hub-to-hub links: interior samples every ~8 mi
+    (a lake can't hide between test points), each probed at the point itself
+    and nudged ~12 mi to either side, so a line hugging a coastline
+    (Los Angeles-San Diego, Chicago-Milwaukee) counts as dry while a true
+    lake/ocean/strait crossing stays wet on all probes. Short hops
+    (<= skip_mi) pass untested — those are bridges."""
     d = tdist(a, b)
     if d <= skip_mi:
         return True
-    both_us = a.get("country", "US") == "US" and b.get("country", "US") == "US"
     dlng = (b["lng"] - a["lng"] + 180) % 360 - 180
     # unit perpendicular to the segment, in degrees spanning ~12 mi
     coslat = math.cos(math.radians((a["lat"] + b["lat"]) / 2))
     dy, dx = b["lat"] - a["lat"], dlng * coslat
     norm = math.hypot(dx, dy) or 1.0
     plat, plng = (-dx / norm) * (12 / 69.172), (dy / norm) * (12 / 69.172) / max(coslat, 0.2)
-    for f in ((0.5,) if d <= 150 else (0.25, 0.5, 0.75)):
+    n = max(1, int(d / 8))
+    for k in range(1, n + 1):
+        f = k / (n + 1)
         lat = a["lat"] + (b["lat"] - a["lat"]) * f
         lng = (a["lng"] + dlng * f + 180) % 360 - 180
         for nlat, nlng in ((lat, lng), (lat + plat, lng + plng), (lat - plat, lng - plng)):
-            if not in_lake(nlat, nlng) and (not both_us or on_dry_land(nlat, nlng)):
+            if _dry_point(nlat, nlng):
                 break                                # this sample found dry land
         else:
             return False                             # wet on all three probes
+    return True
+
+
+def dry_sat(a, b):
+    """Strict land test for a metro-satellite link (<= 18 mi, both US):
+    samples every ~3 mi with only ~1.5-mi side nudges — wide enough to
+    forgive a river (the Mississippi), far too narrow to forgive a bay
+    (San Francisco Bay, Puget Sound, Mobile Bay)."""
+    d = tdist(a, b)
+    if d <= 2:
+        return True
+    dlng = (b["lng"] - a["lng"] + 180) % 360 - 180
+    coslat = math.cos(math.radians((a["lat"] + b["lat"]) / 2))
+    dy, dx = b["lat"] - a["lat"], dlng * coslat
+    norm = math.hypot(dx, dy) or 1.0
+    plat, plng = (-dx / norm) * (1.5 / 69.172), (dy / norm) * (1.5 / 69.172) / max(coslat, 0.2)
+    n = max(1, int(d / 3))
+    for k in range(1, n + 1):
+        f = k / (n + 1)
+        lat = a["lat"] + (b["lat"] - a["lat"]) * f
+        lng = a["lng"] + dlng * f
+        for nlat, nlng in ((lat, lng), (lat + plat, lng + plng), (lat - plat, lng - plng)):
+            if on_dry_land(nlat, nlng):
+                break
+        else:
+            return False
     return True
 
 
@@ -430,20 +499,30 @@ def main():
           f"{COVERAGE_MI} mi of a hub) → {len(t2)} total", file=sys.stderr)
 
     # ---- tier 3 satellites (US only — Canada/Mexico stop at tier 2) --------
+    # A suburb joins the metro of the nearest anchor it can reach OVER LAND —
+    # pure nearest-distance wired Redwood City into Hayward straight across
+    # San Francisco Bay (and Bremerton into Seattle across Puget Sound…).
+    # Towns with no dry anchor in radius stay tier-4 (the ferry commute).
     anchors = ([t for t in t1 if t.get("country", "US") == "US"]
                + [t for t in t2 if t.get("country", "US") == "US"
                   and t["pop"] >= T3_ANCHOR_MIN_POP])
+    dropped_wet_sat = 0
     t3, t3_anchor = [], {}
     for t in by_pop:
         if t["pop"] < T3_SAT_MIN_POP:
             break
         if t["geoid"] in hub_geoids:
             continue
-        a = min(anchors, key=lambda x: tdist(x, t))
-        if tdist(a, t) <= T3_RADIUS_MI:
+        near = sorted((a for a in anchors if tdist(a, t) <= T3_RADIUS_MI),
+                      key=lambda a: tdist(a, t))
+        a = next((a for a in near if dry_sat(a, t)), None)
+        if a is not None:
             t3.append(t)
             t3_anchor[t["geoid"]] = a["geoid"]
-    print(f"tier 3: {len(t3)} metro nodes around {len(anchors)} anchors", file=sys.stderr)
+        elif near:
+            dropped_wet_sat += 1
+    print(f"tier 3: {len(t3)} metro nodes around {len(anchors)} anchors "
+          f"({dropped_wet_sat} bay-locked towns left to tier 4)", file=sys.stderr)
 
     # ---- assemble nodes ----------------------------------------------------
     nodes, node_by_geoid = [], {}
@@ -497,13 +576,16 @@ def main():
                 continue
             add_edge(t1n[i], t1n[j], 1)
             uf1[find1(i)] = find1(j)
-    # water drops could split the mesh — stitch components back together
-    # with the shortest cross links (rare; a pure-Gabriel graph is connected)
+    # water drops could split the mesh — stitch components back together,
+    # preferring the shortest DRY cross link (rare; a pure-Gabriel graph is
+    # connected); only if every cross pair is wet does the shortest one win
     while True:
         if len({find1(i) for i in mainland1}) <= 1:
             break
-        d, i, j = min((D1[i][j], i, j) for i in mainland1 for j in mainland1
-                      if i < j and find1(i) != find1(j))
+        pairs = sorted((D1[i][j], i, j) for i in mainland1 for j in mainland1
+                       if i < j and find1(i) != find1(j))
+        d, i, j = next(((d, i, j) for d, i, j in pairs
+                        if dry_mid(t1n[i], t1n[j], 60)), pairs[0])
         add_edge(t1n[i], t1n[j], 1)
         uf1[find1(i)] = find1(j)
     for i in sorted(remote1):                        # island links
@@ -688,12 +770,13 @@ def main():
     print(f"tier 3: +{core_count} urban-core metro stations "
           f"({wet_shrunk} pulled inland off water, {wet_dropped} dropped)", file=sys.stderr)
 
-    # satellites join the metro at their nearest station (line extensions),
-    # not by beelining to the hub center
+    # satellites join the metro at their nearest station reachable over land
+    # (line extensions), not by beelining to the hub center — or across a bay
     for t in t3:
         n = node_by_geoid[t["geoid"]]
         a = node_by_geoid[t3_anchor[t["geoid"]]]
-        target = min(core_by_hub.get(a["id"], []) + [a], key=lambda s: tdist(s, n))
+        stations = sorted(core_by_hub.get(a["id"], []) + [a], key=lambda s: tdist(s, n))
+        target = next((s for s in stations if dry_sat(s, n)), stations[0])
         add_edge(target, n, 3)
         n["parent"] = a["id"]
 
@@ -704,8 +787,11 @@ def main():
     # they are to each other — RNG ⊇ MST and ⊆ Delaunay, i.e. planar-looking
     # corridors where interior towns naturally get 2-4 links. Distances use a
     # local equirectangular metric (exact enough under 100 mi, ~10× faster
-    # than haversine); the lens test is exact because every possible blocker
-    # of a kNN edge ranks above that edge in the same sorted kNN list.
+    # than haversine). The BLOCKER test is complete for any candidate edge —
+    # every point closer than the edge partner ranks above it in the same
+    # sorted kNN list — but the candidate set itself is kNN-truncated, so a
+    # rare RNG edge whose partner ranks beyond K is omitted (~0.5% of edges
+    # in the densest metros; they'd only add redundant short local links).
     t4_pts = [t for t in towns if t["geoid"] not in node_by_geoid]
     hub_pts = [n for n in t1n + t2n if n.get("country", "US") == "US"]
     sat_pts = [node_by_geoid[t["geoid"]] for t in t3]   # metro satellites are
@@ -733,15 +819,26 @@ def main():
         nbrs.append([(d2, j) for d2, j in ranked[:T4_KNN] if d2 <= cap2])
 
     def dry_link(i, j, d_mi):
-        """Midpoint (and quarter-point, when long) land test — keeps the web
-        off the Great Lakes and open ocean without a full corridor trace."""
+        """Dense land test (samples every ~6 mi, ~1.5-mi side nudges to
+        forgive rivers) — keeps the web off the Great Lakes and open ocean;
+        a lake can no longer hide between two sample points."""
         if d_mi <= T4_WATER_TEST_MI:
             return True
         dlng = (lngs[j] - lngs[i] + 180) % 360 - 180
-        for f in ((0.5,) if d_mi <= 30 else (0.25, 0.5, 0.75)):
+        coslat = coslats[i]
+        dy, dx = lats[j] - lats[i], dlng * coslat
+        norm = math.hypot(dx, dy) or 1.0
+        plat = (-dx / norm) * (1.5 / 69.172)
+        plng = (dy / norm) * (1.5 / 69.172) / max(coslat, 0.2)
+        n = max(1, int(d_mi / 6))
+        for k in range(1, n + 1):
+            f = k / (n + 1)
             lat = lats[i] + (lats[j] - lats[i]) * f
             lng = (lngs[i] + dlng * f + 180) % 360 - 180
-            if not on_dry_land(lat, lng):
+            for nlat, nlng in ((lat, lng), (lat + plat, lng + plng), (lat - plat, lng - plng)):
+                if on_dry_land(nlat, nlng):
+                    break
+            else:
                 return False
         return True
 

@@ -140,7 +140,7 @@
     <button data-tier="1" class="on" aria-pressed="true" aria-label="Toggle tier 1 · HSR" title="Show / hide HSR"><span class="dot" style="background:var(--t1)"></span>T1<span class="tname"> · HSR</span></button>
     <button data-tier="2" class="on" aria-pressed="true" aria-label="Toggle tier 2 · Regional" title="Show / hide regional"><span class="dot" style="background:var(--t2)"></span>T2<span class="tname"> · Regional</span></button>
     <button data-tier="3" class="on" aria-pressed="true" aria-label="Toggle tier 3 · Metro" title="Show / hide metro"><span class="dot" style="background:var(--t3)"></span>T3<span class="tname"> · Metro</span></button>
-    <button data-tier="4" class="on" aria-pressed="true" aria-label="Toggle tier 4 · Commuter layers" title="Show / hide the commuter towns + lines">​<span class="dot" style="background:var(--t4)"></span>T4<span class="tname"> · Commuter</span></button>
+    <button data-tier="4" class="on" aria-pressed="true" aria-label="Toggle tier 4 · Commuter layers" title="Show / hide the commuter towns + lines"><span class="dot" style="background:var(--t4)"></span>T4<span class="tname"> · Commuter</span></button>
   </div>
 </div>
 
@@ -157,7 +157,7 @@
       <div class="cbadge" title="Tier-4 town nodes (see the Tier-4 towns layer)"><div class="n" style="color:var(--t4)" id="c4">…</div><div class="t">Towns</div></div>
     </div>
     <div class="mileage" id="mileage" style="display:none"></div>
-    <label class="towns-bar" title="Every US Census incorporated place — the tier-4 base your commuter rail reaches. Dot size scales with population.">
+    <label class="towns-bar" title="Every US Census place — incorporated towns and CDPs, plus New England MCD towns. Dot size scales with population.">
       <input type="checkbox" id="townsChk" checked />
       <span class="dot" style="background:var(--t4)"></span>
       <span>Tier-4 towns</span>
@@ -193,10 +193,10 @@
 const STORE_KEY = 'fantasy-transit-network-v1';
 
 const TIERS = {
-  1: { name:'HSR Hub',       color:'#fbbf24', radius:9, blurb:'Major-city high-speed-rail hub' },
-  2: { name:'Regional Hub',  color:'#a5b4fc', radius:7, blurb:'Connects HSR hubs to local networks' },
-  3: { name:'Metro / Subway',color:'#34d399', radius:5, blurb:'Hyper-local neighborhood transit' },
-  4: { name:'Commuter Rail', color:'#38bdf8', radius:4, blurb:'Normal-speed rail to every town' },
+  1: { name:'HSR Hub',       color:'#fbbf24', radius:9 },
+  2: { name:'Regional Hub',  color:'#a5b4fc', radius:7 },
+  3: { name:'Metro / Subway',color:'#34d399', radius:5 },
+  4: { name:'Commuter Rail', color:'#38bdf8', radius:4 },
 };
 
 /* ---- state ---- */
@@ -298,6 +298,11 @@ async function loadTowns(){
       { alpha:0.75, pts: townsData.filter(t => t.pop >= 25000 && t.pop < 100000) },
       { alpha:0.6,  pts: townsData.filter(t => t.pop < 25000) },
     ];
+    // Guam / far-Aleutian towns (lng > 0) also draw on the Americas world
+    // copy, matching the network layer's dateline ghosting
+    buckets.forEach(b => {
+      b.pts = b.pts.concat(b.pts.filter(t => t.lng > 0).map(t => ({ ...t, lng: t.lng - 360 })));
+    });
     townsGeo = new BulkCanvas('towns', (ctx, m, size) => {
       ctx.fillStyle = TIERS[4].color;
       for (const b of buckets){
@@ -359,18 +364,21 @@ async function loadT4Lines(){
     if (!r.ok) throw new Error('http ' + r.status);
     const gj = await r.json();
     lineCount = gj.features.length;
-    lineSegs = new Float64Array(lineCount * 4);
-    gj.features.forEach((f, i) => {
+    const segs = [];
+    gj.features.forEach(f => {
       const [a, b] = f.geometry.coordinates;
-      lineSegs[i*4] = a[1]; lineSegs[i*4+1] = a[0];
-      lineSegs[i*4+2] = b[1]; lineSegs[i*4+3] = b[0];
+      segs.push(a[1], a[0], b[1], b[0]);
+      if (a[0] > 0 || b[0] > 0)                       // dateline ghost (Guam web)
+        segs.push(a[1], a[0] - 360, b[1], b[0] - 360);
     });
+    lineSegs = Float64Array.from(segs);
+    const drawCount = lineSegs.length / 4;
     linesGeo = new BulkCanvas('t4lines', (ctx, m, size) => {
       ctx.strokeStyle = TIERS[4].color;
       ctx.lineWidth = 1;
       ctx.globalAlpha = 0.32;
       ctx.beginPath();
-      for (let i = 0; i < lineCount; i++){
+      for (let i = 0; i < drawCount; i++){
         const p = m.latLngToContainerPoint([lineSegs[i*4], lineSegs[i*4+1]]);
         const q = m.latLngToContainerPoint([lineSegs[i*4+2], lineSegs[i*4+3]]);
         if ((p.x < -40 && q.x < -40) || (p.y < -40 && q.y < -40) ||
@@ -451,8 +459,13 @@ function renderAll(){
   edgeLayer.clearLayers(); nodeLayer.clearLayers();
   for (const k in markers) delete markers[k];
 
+  const tierOf = {};
+  state.nodes.forEach(n => tierOf[n.id] = n.tier);
   state.edges.forEach(e => {
-    if (!tierVisible[e.tier]) return;
+    // an edge needs its own tier AND both endpoint tiers visible — a T1↔T2
+    // link is tier 2, so hiding T1 would otherwise leave it dangling at an
+    // invisible hub marker
+    if (!tierVisible[e.tier] || !tierVisible[tierOf[e.from]] || !tierVisible[tierOf[e.to]]) return;
     const l = edgeLine(e); if (l) l.addTo(edgeLayer);
     const a = byId(e.from), b = byId(e.to);
     if (a && b && Math.abs(a.lng - b.lng) > 180){   // dateline crossers exist on both copies
@@ -605,13 +618,13 @@ const debounce=(fn,ms)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>f
 $('#townSearch').addEventListener('focus', () => { if (!townsData.length) loadTowns(); });
 $('#townSearch').addEventListener('input', debounce(runSearch, 120));
 $('#townSearch').addEventListener('keydown', e => {
-  if (e.key === 'Enter' && srchHits.length){ const t = srchHits[0]; map.flyTo([t.lat, t.lng], 9); closeSearch(); collapseSheetOnMobile(); }
+  if (e.key === 'Enter' && srchHits.length){ const t = srchHits[0]; map.flyTo([t.lat, t.lng], Math.max(map.getZoom(), 9)); closeSearch(); collapseSheetOnMobile(); }
   else if (e.key === 'Escape'){ closeSearch(); e.target.blur(); e.stopPropagation(); }
 });
 $('#srchResults').addEventListener('click', e => {
   const row = e.target.closest('.srch-row'); if (!row || row.dataset.i == null) return;
   const t = srchHits[+row.dataset.i]; if (!t) return;
-  map.flyTo([t.lat, t.lng], 9);
+  map.flyTo([t.lat, t.lng], Math.max(map.getZoom(), 9));
   collapseSheetOnMobile();
 });
 
