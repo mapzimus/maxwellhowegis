@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Auto-generate the full four-tier fantasy transit network from the towns layer.
 
-Input:  transit/data/towns.geojson  (19,465 Census incorporated places with pop —
+Input:  transit/data/towns.geojson  (every US Census town with pop —
         built by scripts/build_towns.py)
 Output: transit/data/network.json — the network: tier 1-3 nodes + edges
-        (tier-4 towns render straight from data/towns.geojson; their
-        connecting lines are deferred)
+        transit/data/tier4_links.geojson — the tier-4 commuter web
+        (tier-4 town nodes render straight from data/towns.geojson)
 
 Algorithm (all straight-line/great-circle, stdlib only):
 
@@ -24,9 +24,18 @@ Algorithm (all straight-line/great-circle, stdlib only):
                          T3_ANCHOR_MIN_POP): every non-hub town with pop >=
                          T3_SAT_MIN_POP within T3_RADIUS_MI becomes a metro node
                          linked to its anchor.
-  Tier 4 (town nodes)    Every remaining town is PLOTTED as a node (rendered from
-                         data/towns.geojson) — the connecting lines are deferred
-                         until a routing approach that reads well is chosen.
+  Tier 4 (commuter web)  Every remaining town is a node (rendered from
+                         data/towns.geojson). Connections are a RELATIVE
+                         NEIGHBORHOOD GRAPH over towns + US tier-1/2 hubs: an
+                         edge survives only if no third point is closer to both
+                         endpoints than they are to each other. RNG ⊇ MST and
+                         ⊆ Delaunay, so the web is planar corridors with
+                         interior degree 2-4 and no crossings. Long edges are
+                         midpoint-tested against water, isolated clusters
+                         bridge back over dry hops, and remaining dead-ends
+                         get a second link where one exists — every town
+                         connects to >= 2 neighbors except islands/edges.
+                         Written to data/tier4_links.geojson.
 
     python3 scripts/build_network.py
 
@@ -39,6 +48,7 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOWNS = os.path.join(ROOT, "transit", "data", "towns.geojson")
 OUT_NET = os.path.join(ROOT, "transit", "data", "network.json")
+OUT_T4 = os.path.join(ROOT, "transit", "data", "tier4_links.geojson")
 
 T1_MIN_POP = 175_000
 T1_SPACING_MI = 60
@@ -68,6 +78,14 @@ T3_RADIUS_MI = 18
 # Census state boundaries minus Natural Earth lakes; wet stations pull inward
 # or drop. Suburb satellites join at their nearest station (line extensions).
 CORE_MIN_POP = 150_000
+
+# tier-4 commuter web: a relative neighborhood graph over the remaining towns
+# plus the US tier-1/2 hubs. Every town should end up with >= 2 links; only
+# islands and edge-of-nowhere towns are allowed to dangle.
+T4_KNN = 10                # candidate neighbors per point for the RNG lens test
+T4_MAX_LINK_MI = 60        # no single commuter hop longer than this
+T4_WATER_TEST_MI = 12      # edges longer than this get midpoint land tests
+T4_BRIDGE_MI = 90          # max dry hop when reconnecting isolated clusters
 CORE_R_FRAC = 0.62         # network radius as a fraction of the city's land radius
 CORE_R_MIN_MI = 1.5
 CORE_R_MAX_MI = 9.0
@@ -538,6 +556,150 @@ def main():
         add_edge(target, n, 3)
         n["parent"] = a["id"]
 
+    # ---- tier 4: the commuter web (relative neighborhood graph) ------------
+    # Points: every un-promoted town + the US tier-1/2 hubs (Canada/Mexico stop
+    # at tier 2, so no commuter lines cross the border). An edge p-q survives
+    # the LENS TEST only if no third point r is closer to both p and q than
+    # they are to each other — RNG ⊇ MST and ⊆ Delaunay, i.e. planar-looking
+    # corridors where interior towns naturally get 2-4 links. Distances use a
+    # local equirectangular metric (exact enough under 100 mi, ~10× faster
+    # than haversine); the lens test is exact because every possible blocker
+    # of a kNN edge ranks above that edge in the same sorted kNN list.
+    t4_pts = [t for t in towns if t["geoid"] not in node_by_geoid]
+    hub_pts = [n for n in t1n + t2n if n.get("country", "US") == "US"]
+    n_t4 = len(t4_pts)
+    pts = t4_pts + hub_pts
+    N = len(pts)
+    lats = [p["lat"] for p in pts]
+    lngs = [p["lng"] for p in pts]
+    coslats = [math.cos(math.radians(la)) for la in lats]
+
+    def t4_d2(i, j):
+        dy = (lats[j] - lats[i]) * 69.172
+        dx = ((lngs[j] - lngs[i] + 180) % 360 - 180) * 69.172 * coslats[i]
+        return dx * dx + dy * dy
+
+    grid4 = Grid([{"lat": lats[i], "lng": lngs[i], "i": i} for i in range(N)])
+    cap2 = float(T4_MAX_LINK_MI) ** 2
+    nbrs = []
+    for i in range(N):
+        for r in (12, 30, T4_MAX_LINK_MI):          # adaptive radius: cheap in
+            cands = grid4.within(lats[i], lngs[i], r)   # dense areas, wide in sparse
+            if len(cands) > T4_KNN or r == T4_MAX_LINK_MI:
+                break
+        ranked = sorted((t4_d2(i, c["i"]), c["i"]) for c in cands if c["i"] != i)
+        nbrs.append([(d2, j) for d2, j in ranked[:T4_KNN] if d2 <= cap2])
+
+    def dry_link(i, j, d_mi):
+        """Midpoint (and quarter-point, when long) land test — keeps the web
+        off the Great Lakes and open ocean without a full corridor trace."""
+        if d_mi <= T4_WATER_TEST_MI:
+            return True
+        dlng = (lngs[j] - lngs[i] + 180) % 360 - 180
+        for f in ((0.5,) if d_mi <= 30 else (0.25, 0.5, 0.75)):
+            lat = lats[i] + (lats[j] - lats[i]) * f
+            lng = (lngs[i] + dlng * f + 180) % 360 - 180
+            if not on_dry_land(lat, lng):
+                return False
+        return True
+
+    parent4 = list(range(N))
+    def find4(x):
+        while parent4[x] != x:
+            parent4[x] = parent4[parent4[x]]
+            x = parent4[x]
+        return x
+
+    t4_links, t4_seen, wet4 = [], set(), 0
+    def add_t4(i, j):
+        t4_links.append((i, j))
+        t4_seen.add((i, j) if i < j else (j, i))
+        parent4[find4(i)] = find4(j)
+
+    for i in range(N):
+        for d2ij, j in nbrs[i]:
+            k = (i, j) if i < j else (j, i)
+            if k in t4_seen:
+                continue
+            blocked = False
+            for d2ir, r in nbrs[i]:                 # sorted: r beyond j can't block
+                if d2ir >= d2ij:
+                    break
+                if t4_d2(r, j) < d2ij:
+                    blocked = True
+                    break
+            if blocked:
+                continue
+            if not dry_link(i, j, hav(lats[i], lngs[i], lats[j], lngs[j])):
+                wet4 += 1
+                continue
+            add_t4(i, j)
+    rng_count = len(t4_links)
+    print(f"tier 4: {rng_count:,} RNG edges over {n_t4:,} towns + {len(hub_pts)} hubs "
+          f"({wet4} dropped in water)", file=sys.stderr)
+
+    # dead-end patching: towns with < 2 links take their next-nearest dry
+    # candidates until they have 2 (hubs are exempt — they have the T1/T2
+    # network; towns with no candidates left are the allowed islands/edges)
+    deg4 = defaultdict(int)
+    for i, j in t4_links:
+        deg4[i] += 1
+        deg4[j] += 1
+    patched = 0
+    for i in range(n_t4):
+        if deg4[i] >= 2:
+            continue
+        for d2ij, j in nbrs[i]:
+            if deg4[i] >= 2:
+                break
+            k = (i, j) if i < j else (j, i)
+            if k in t4_seen:
+                continue
+            if not dry_link(i, j, math.sqrt(d2ij)):
+                continue
+            add_t4(i, j)
+            deg4[i] += 1
+            deg4[j] += 1
+            patched += 1
+
+    # bridge isolated clusters back to the web over the shortest dry hop —
+    # per-island webs (Hawaii, Puerto Rico…) stay separate by design, tied to
+    # the network through their own tier-1/2 hubs instead
+    comps = defaultdict(list)
+    for i in range(N):
+        comps[find4(i)].append(i)
+    main4 = max(comps, key=lambda r: len(comps[r]))
+    bridges = 0
+    merged = True
+    while merged:
+        merged = False
+        for root, members in sorted(comps.items(), key=lambda kv: len(kv[1])):
+            if find4(root) == find4(main4) or find4(members[0]) != root:
+                continue
+            best = None
+            for i in members:
+                q, d = grid4.nearest(lats[i], lngs[i],
+                                     ok=lambda c: find4(c["i"]) != root)
+                if q is not None and (best is None or d < best[0]):
+                    best = (d, i, q["i"])
+            if best and best[0] <= T4_BRIDGE_MI and dry_link(best[1], best[2], best[0]):
+                add_t4(best[1], best[2])
+                deg4[best[1]] += 1
+                deg4[best[2]] += 1
+                bridges += 1
+                merged = True
+        comps = defaultdict(list)
+        for i in range(N):
+            comps[find4(i)].append(i)
+    dead_ends = sum(1 for i in range(n_t4) if deg4[i] == 1)
+    isolated = sum(1 for i in range(n_t4) if deg4[i] == 0)
+    deg2pct = 100.0 * sum(1 for i in range(n_t4) if deg4[i] >= 2) / max(1, n_t4)
+    t4_mi = round(sum(hav(lats[i], lngs[i], lats[j], lngs[j]) for i, j in t4_links))
+    print(f"tier 4: +{patched} dead-end patches, +{bridges} cluster bridges → "
+          f"{len(t4_links):,} links, {t4_mi:,} mi; {deg2pct:.1f}% of towns have "
+          f">= 2 links ({dead_ends} dead ends, {isolated} isolated — islands/edges)",
+          file=sys.stderr)
+
     # ---- stats + write ------------------------------------------------------
     def route_mi(tier):
         tot = 0.0
@@ -547,9 +709,7 @@ def main():
                 tot += tdist(nid[e["from"]], nid[e["to"]])
         return round(tot)
 
-    tier4_towns = sum(1 for t in towns if t["geoid"] not in node_by_geoid)
-    print(f"tier 4: {tier4_towns:,} town nodes plotted (connections deferred — "
-          f"nodes first, lines later)", file=sys.stderr)
+    tier4_towns = n_t4
 
     rev = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     stats = {
@@ -558,13 +718,16 @@ def main():
         "tier3Sat": len(t3), "tier3Core": core_count, "tier3Nodes": len(t3) + core_count,
         "tier1Edges": t1_edges, "edges": len(edges),
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
-        "tier4Towns": tier4_towns,
+        "tier4Towns": tier4_towns, "tier4Links": len(t4_links), "tier4Mi": t4_mi,
+        "tier4Deg2Pct": round(deg2pct, 1),
+        "tier4DeadEnds": dead_ends, "tier4Isolated": isolated,
     }
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
               "COVERAGE_MI": COVERAGE_MI, "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
               "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI,
-              "CORE_MIN_POP": CORE_MIN_POP}
+              "CORE_MIN_POP": CORE_MIN_POP, "T4_KNN": T4_KNN,
+              "T4_MAX_LINK_MI": T4_MAX_LINK_MI, "T4_BRIDGE_MI": T4_BRIDGE_MI}
 
     feats = []
     for n in nodes:
@@ -593,7 +756,23 @@ def main():
     with open(OUT_NET, "w") as f:
         json.dump(net, f, separators=(",", ":"))
 
+    t4_feats = [{"type": "Feature",
+                 "geometry": {"type": "LineString",
+                              "coordinates": [[round(lngs[i], 5), round(lats[i], 5)],
+                                              [round(lngs[j], 5), round(lats[j], 5)]]},
+                 "properties": {"kind": "edge", "tier": 4}}
+                for i, j in t4_links]
+    t4_gj = {"type": "FeatureCollection", "name": "Tier-4 commuter web",
+             "properties": {"generator": "scripts/build_network.py",
+                            "schema": "fantasy-transit-v1", "rev": rev,
+                            "count": len(t4_links), "routeMi": t4_mi,
+                            "deg2Pct": round(deg2pct, 1)},
+             "features": t4_feats}
+    with open(OUT_T4, "w") as f:
+        json.dump(t4_gj, f, separators=(",", ":"))
+
     print(f"wrote {OUT_NET}  ({os.path.getsize(OUT_NET)/1e6:.2f} MB)")
+    print(f"wrote {OUT_T4}  ({os.path.getsize(OUT_T4)/1e6:.2f} MB)")
     print(json.dumps(stats, indent=2))
 
 
