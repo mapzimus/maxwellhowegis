@@ -11,15 +11,20 @@ Algorithm (all straight-line/great-circle, stdlib only):
 
   Tier 1 (HSR hubs)      Cities with pop >= T1_MIN_POP, greedy-picked in population
                          order with a T1_SPACING_MI exclusion radius. Connected by a
-                         minimum spanning tree plus each hub's K nearest neighbors —
-                         a connected, lightly redundant intercity HSR mesh.
+                         GABRIEL GRAPH (edge survives if no third hub sits in the
+                         circle with the edge as diameter) — connected by
+                         construction and ~4 links per hub, so hub groups
+                         triangulate instead of chaining. Island hubs keep a single
+                         transoceanic link to the biggest mainland hub within 15%
+                         of the shortest crossing.
   Tier 2 (regional)      Cities with pop >= T2_MIN_POP, spaced T2_SPACING_MI from all
                          chosen hubs. Then COVERAGE FILL: while any town is farther
                          than COVERAGE_MI from a tier-1/2 hub, promote the most
                          populous uncovered town — guaranteeing every town in the
-                         country has a hub within COVERAGE_MI. Each tier-2 links to
-                         the nearest already-connected node (chains outward from the
-                         tier-1 spine).
+                         country has a hub within COVERAGE_MI. Connected by an RNG
+                         mesh over all tier-1/2 hubs (same lens rule as tier 4),
+                         water-tested, dead-ends patched to degree >= 2, island
+                         clusters bridged by a single sea link.
   Tier 3 (metro/subway)  Around anchors (tier-1 hubs + tier-2 hubs with pop >=
                          T3_ANCHOR_MIN_POP): every non-hub town with pop >=
                          T3_SAT_MIN_POP within T3_RADIUS_MI becomes a metro node
@@ -52,9 +57,10 @@ OUT_T4 = os.path.join(ROOT, "transit", "data", "tier4_links.geojson")
 
 T1_MIN_POP = 175_000
 T1_SPACING_MI = 60
-T1_KNN = 2                 # extra nearest-neighbor edges per hub on top of the MST
 T2_MIN_POP = 25_000
 T2_SPACING_MI = 30
+T2_KNN = 8                 # candidate neighbors per hub for the tier-2 RNG
+T2_MAX_LINK_MI = 300       # no single tier-2 hop longer than this (bridges except)
 T2_BIG_POP = 100_000       # cities this big become hubs even inside the spacing
                            # radius, as long as they're outside a hub's metro
                            # (T3_RADIUS_MI) — catches Fort Worth, Baltimore, Mesa…
@@ -86,6 +92,8 @@ T4_KNN = 10                # candidate neighbors per point for the RNG lens test
 T4_MAX_LINK_MI = 60        # no single commuter hop longer than this
 T4_WATER_TEST_MI = 12      # edges longer than this get midpoint land tests
 T4_BRIDGE_MI = 90          # max dry hop when reconnecting isolated clusters
+T4_PATCH_MIN_DEG = 45      # a patched 2nd link must diverge this much from the
+                           # 1st — peninsula dead-ends end cleanly, no slivers
 CORE_R_FRAC = 0.62         # network radius as a fraction of the city's land radius
 CORE_R_MIN_MI = 1.5
 CORE_R_MAX_MI = 9.0
@@ -200,7 +208,7 @@ def ne_intl_places():
 _LAND = None   # (states, lakes, lakes_na), loaded on first use
 
 
-def on_dry_land(lat, lng):
+def _land():
     global _LAND
     if _LAND is None:
         import urllib.request
@@ -216,7 +224,18 @@ def on_dry_land(lat, lng):
                     f.write(data)
             loaded.append(_load_shp_polys(path))
         _LAND = tuple(loaded)
-    states, lakes, lakes_na = _LAND
+    return _LAND
+
+
+def in_lake(lat, lng):
+    """Lake polygons are global (Natural Earth) — valid in Canada/Mexico too,
+    unlike the US-only state polygons behind on_dry_land."""
+    _states, lakes, lakes_na = _land()
+    return _in_polys(lakes, lat, lng) or _in_polys(lakes_na, lat, lng)
+
+
+def on_dry_land(lat, lng):
+    states, lakes, lakes_na = _land()
     return (_in_polys(states, lat, lng)
             and not _in_polys(lakes, lat, lng)
             and not _in_polys(lakes_na, lat, lng))
@@ -231,6 +250,36 @@ def hav(alat, alng, blat, blng):
 
 def tdist(a, b):
     return hav(a["lat"], a["lng"], b["lat"], b["lng"])
+
+
+def dry_mid(a, b, skip_mi):
+    """Midpoint (+ quarter points when long) land test for hub-to-hub links.
+    Short hops (<= skip_mi) pass untested — those are bridges. Each sample is
+    probed at the point itself and nudged ~12 mi to either side, so a line
+    hugging a coastline (Los Angeles-San Diego) counts as dry while a true
+    lake/ocean crossing stays wet on all three probes. Lake polygons are
+    authoritative everywhere; open-ocean detection (via the US state
+    polygons) only applies when both endpoints are US, because Canadian and
+    Mexican interiors aren't in the Census shapefile."""
+    d = tdist(a, b)
+    if d <= skip_mi:
+        return True
+    both_us = a.get("country", "US") == "US" and b.get("country", "US") == "US"
+    dlng = (b["lng"] - a["lng"] + 180) % 360 - 180
+    # unit perpendicular to the segment, in degrees spanning ~12 mi
+    coslat = math.cos(math.radians((a["lat"] + b["lat"]) / 2))
+    dy, dx = b["lat"] - a["lat"], dlng * coslat
+    norm = math.hypot(dx, dy) or 1.0
+    plat, plng = (-dx / norm) * (12 / 69.172), (dy / norm) * (12 / 69.172) / max(coslat, 0.2)
+    for f in ((0.5,) if d <= 150 else (0.25, 0.5, 0.75)):
+        lat = a["lat"] + (b["lat"] - a["lat"]) * f
+        lng = (a["lng"] + dlng * f + 180) % 360 - 180
+        for nlat, nlng in ((lat, lng), (lat + plat, lng + plng), (lat - plat, lng - plng)):
+            if not in_lake(nlat, nlng) and (not both_us or on_dry_land(nlat, nlng)):
+                break                                # this sample found dry land
+        else:
+            return False                             # wet on all three probes
+    return True
 
 
 class Grid:
@@ -304,27 +353,6 @@ def greedy_spacing(cands, spacing_mi, existing):
             picked.append(c)
             grid.add(c)
     return picked
-
-
-def mst_edges(nodes):
-    """Prim's MST over the complete great-circle graph. Returns index pairs."""
-    n = len(nodes)
-    in_tree = [False] * n
-    best = [float("inf")] * n
-    link = [-1] * n
-    best[0] = 0.0
-    edges = []
-    for _ in range(n):
-        u = min((i for i in range(n) if not in_tree[i]), key=lambda i: best[i])
-        in_tree[u] = True
-        if link[u] >= 0:
-            edges.append((link[u], u))
-        for v in range(n):
-            if not in_tree[v]:
-                d = tdist(nodes[u], nodes[v])
-                if d < best[v]:
-                    best[v], link[v] = d, u
-    return edges
 
 
 def main():
@@ -432,58 +460,170 @@ def main():
     def add_edge(a, b, tier):
         edges.append({"id": f"e{len(edges)+1}", "from": a["id"], "to": b["id"], "tier": tier})
 
+    # ---- tier-1 HSR mesh: a GABRIEL GRAPH over the mainland hubs -----------
+    # An edge p-q survives if no third hub sits inside the circle with p-q as
+    # its diameter. Gabriel ⊇ RNG ⊇ MST — connected by construction, but
+    # meshes richer (~4 links per hub) than the old MST+2NN, so regional hub
+    # groups (California!) triangulate instead of chaining. Island hubs
+    # (Honolulu, Anchorage, San Juan) keep a single transoceanic link to the
+    # biggest mainland hub within 15% of the shortest crossing.
     t1n = [node_by_geoid[t["geoid"]] for t in t1]
-    seen = set()
-    for i, j in mst_edges(t1n):
-        a, b = t1n[i], t1n[j]
-        d = tdist(a, b)
-        if d > ISLAND_LINK_MI:
-            # transoceanic link: land it at the biggest hub within 10% of the
-            # shortest crossing (San Francisco over Santa Rosa, etc.)
-            island = a if min(tdist(a, c) for c in t1n if c is not a) > ISLAND_LINK_MI else b
-            other = b if island is a else a
-            cands = [c for c in t1n if c is not island and tdist(island, c) <= 1.1 * d]
-            best = max(cands, key=lambda c: c["pop"] or 0) if cands else other
-            a, b = island, best
-        k = frozenset((a["id"], b["id"]))
-        if k in seen:
-            continue
-        seen.add(k)
-        add_edge(a, b, 1)
-    for a in t1n:                                   # kNN augmentation
-        near = sorted((b for b in t1n if b is not a), key=lambda b: tdist(a, b))[:T1_KNN]
-        if near and tdist(a, near[0]) > ISLAND_LINK_MI:
-            continue                                 # island hub: one MST link only
-        for b in near:
-            k = frozenset((a["id"], b["id"]))
-            if k not in seen:
-                seen.add(k)
-                add_edge(a, b, 1)
-    t1_edges = len(edges)
+    n1 = len(t1n)
+    D1 = [[0.0] * n1 for _ in range(n1)]
+    for i in range(n1):
+        for j in range(i + 1, n1):
+            D1[i][j] = D1[j][i] = tdist(t1n[i], t1n[j])
+    remote1 = {i for i in range(n1)
+               if min(D1[i][j] for j in range(n1) if j != i) > ISLAND_LINK_MI}
+    mainland1 = [i for i in range(n1) if i not in remote1]
 
-    # tier-2 chain: connect each t2 (closest-to-spine first) to the nearest
-    # already-connected tier-1/2 node
+    uf1 = list(range(n1))
+    def find1(x):
+        while uf1[x] != x:
+            uf1[x] = uf1[uf1[x]]
+            x = uf1[x]
+        return x
+
+    t1_wet = 0
+    for a_pos, i in enumerate(mainland1):
+        for j in mainland1[a_pos + 1:]:
+            d2ij = D1[i][j] * D1[i][j]
+            if any(D1[i][k] ** 2 + D1[j][k] ** 2 < d2ij
+                   for k in mainland1 if k != i and k != j):
+                continue                             # a hub sits in the lens circle
+            if not dry_mid(t1n[i], t1n[j], 60):
+                t1_wet += 1
+                continue
+            add_edge(t1n[i], t1n[j], 1)
+            uf1[find1(i)] = find1(j)
+    # water drops could split the mesh — stitch components back together
+    # with the shortest cross links (rare; a pure-Gabriel graph is connected)
+    while True:
+        if len({find1(i) for i in mainland1}) <= 1:
+            break
+        d, i, j = min((D1[i][j], i, j) for i in mainland1 for j in mainland1
+                      if i < j and find1(i) != find1(j))
+        add_edge(t1n[i], t1n[j], 1)
+        uf1[find1(i)] = find1(j)
+    for i in sorted(remote1):                        # island links
+        d_min = min(D1[i][j] for j in mainland1)
+        cands = [j for j in mainland1
+                 if D1[i][j] <= 1.15 * d_min and (t1n[j]["pop"] or 0) >= 50_000]
+        host = (max(cands, key=lambda j: t1n[j]["pop"] or 0) if cands
+                else min(mainland1, key=lambda j: D1[i][j]))
+        add_edge(t1n[host], t1n[i], 1)
+        uf1[find1(i)] = find1(host)
+    t1_edges = len(edges)
+    print(f"tier 1: {t1_edges} HSR mesh edges — Gabriel graph over {len(mainland1)} "
+          f"mainland hubs ({t1_wet} wet drops) + {len(remote1)} island links",
+          file=sys.stderr)
+
+    # ---- tier-2 mesh: an RNG over ALL hubs (tier 1 + 2) ---------------------
+    # The same lens rule as the tier-4 commuter web, one level up: every
+    # regional hub links to its natural neighbors instead of chaining to a
+    # single parent, so the regional layer reads as degree->=2 corridors too.
+    # A tier-1 hub between two regionals blocks their direct edge — traffic
+    # routes through the spine. Isolated clusters (islands, Alaska bush)
+    # bridge back with a single sea link, transoceanic hops re-pointed to
+    # the biggest hub within 15% (Guam→Honolulu, not Guam→nearest-village).
     t2n = [node_by_geoid[t["geoid"]] for t in t2]
+    pts2 = t1n + t2n
+    N2 = len(pts2)
+    knn2 = []
+    for i in range(N2):
+        ranked = sorted((tdist(pts2[i], pts2[j]), j) for j in range(N2) if j != i)
+        knn2.append([(d, j) for d, j in ranked[:T2_KNN] if d <= T2_MAX_LINK_MI])
+
+    uf2 = list(range(N2))
+    def find2(x):
+        while uf2[x] != x:
+            uf2[x] = uf2[uf2[x]]
+            x = uf2[x]
+        return x
+    for i in range(1, n1):                # the tier-1 layer is one component
+        uf2[find2(0)] = find2(i)
+
+    t2_seen, t2_start, t2_wet = set(), len(edges), 0
+    deg2c = defaultdict(int)
+    def add_t2(i, j):
+        t2_seen.add((i, j) if i < j else (j, i))
+        add_edge(pts2[i], pts2[j], 2)
+        uf2[find2(i)] = find2(j)
+        deg2c[i] += 1
+        deg2c[j] += 1
+
+    for i in range(N2):
+        for dij, j in knn2[i]:
+            if i < n1 and j < n1:
+                continue                             # T1-T1 lives in the HSR mesh
+            k = (i, j) if i < j else (j, i)
+            if k in t2_seen:
+                continue
+            blocked = False
+            for dir_, r in knn2[i]:                  # sorted: r beyond j can't block
+                if dir_ >= dij:
+                    break
+                if tdist(pts2[r], pts2[j]) < dij:
+                    blocked = True
+                    break
+            if blocked:
+                continue
+            if not dry_mid(pts2[i], pts2[j], 40):
+                t2_wet += 1
+                continue
+            add_t2(i, j)
+    rng2 = len(edges) - t2_start
+    # dead-end patching: regionals with < 2 tier-2 links take their
+    # next-nearest dry candidate (islands/edges may still dangle)
+    patched2 = 0
+    for i in range(n1, N2):
+        if deg2c[i] >= 2:
+            continue
+        for dij, j in knn2[i]:
+            if deg2c[i] >= 2:
+                break
+            k = (i, j) if i < j else (j, i)
+            if k in t2_seen:
+                continue
+            if not dry_mid(pts2[i], pts2[j], 40):
+                continue
+            add_t2(i, j)
+            patched2 += 1
+    # bridge isolated clusters back to the network (sea links allowed)
+    bridges2 = 0
+    while True:
+        comps2 = defaultdict(list)
+        for i in range(N2):
+            comps2[find2(i)].append(i)
+        if len(comps2) <= 1:
+            break
+        main2 = find2(0)
+        for root, members in sorted(comps2.items(), key=lambda kv: len(kv[1])):
+            if root == main2 or find2(members[0]) != root:
+                continue
+            d, bi, bj = min((tdist(pts2[i], pts2[j]), i, j)
+                            for i in members for j in range(N2)
+                            if find2(j) != root)
+            if d > ISLAND_LINK_MI:
+                # transoceanic: window anchored on a REAL hub (pop >= 50k) so
+                # a tiny nearest waypoint can't exclude the major hub
+                others = [j for j in range(N2) if find2(j) != root]
+                d_ref = min((tdist(pts2[bi], pts2[j]) for j in others
+                             if (pts2[j]["pop"] or 0) >= 50_000), default=d)
+                cands = [j for j in others
+                         if tdist(pts2[bi], pts2[j]) <= 1.15 * max(d, d_ref)]
+                if cands:
+                    bj = max(cands, key=lambda j: pts2[j]["pop"] or 0)
+            add_t2(bi, bj)
+            bridges2 += 1
+    t2_dead = sum(1 for i in range(n1, N2) if deg2c[i] < 2)
+    print(f"tier 2: {len(edges) - t2_start} mesh links (RNG {rng2}, +{patched2} "
+          f"dead-end patches, +{bridges2} island bridges, {t2_wet} wet drops); "
+          f"{t2_dead} regionals below 2 links (islands/edges)", file=sys.stderr)
     t1_grid = Grid(t1n)
-    order = sorted(t2n, key=lambda n: t1_grid.nearest(n["lat"], n["lng"])[1])
-    conn_grid = Grid(t1n)
-    conn_list = list(t1n)
-    for n in order:
-        host, d = conn_grid.nearest(n["lat"], n["lng"])
-        if d > ISLAND_LINK_MI:
-            # transoceanic link: land at the biggest hub within 15% of the
-            # shortest crossing to a REAL hub (pop >= 50k) — anchoring the
-            # window on whatever tiny waypoint happens to be nearest (an
-            # Aleutian village) could exclude the major hub entirely
-            d_ref = min((tdist(n, c) for c in conn_list if (c["pop"] or 0) >= 50_000),
-                        default=d)
-            cands = [c for c in conn_list if tdist(n, c) <= 1.15 * max(d, d_ref)]
-            if cands:
-                host = max(cands, key=lambda c: c["pop"] or 0)
-        add_edge(host, n, 2)
-        n["parent"] = host["id"]
-        conn_grid.add(n)
-        conn_list.append(n)
+    for nn in t2n:                                   # informational hierarchy
+        host, _ = t1_grid.nearest(nn["lat"], nn["lng"])
+        nn["parent"] = host["id"]
 
     # ---- tier 3 urban core: radial in-city metro around big hubs -----------
     # L radial lines (by pop) with S chained stops each, land-aware placement;
@@ -567,8 +707,9 @@ def main():
     # of a kNN edge ranks above that edge in the same sorted kNN list.
     t4_pts = [t for t in towns if t["geoid"] not in node_by_geoid]
     hub_pts = [n for n in t1n + t2n if n.get("country", "US") == "US"]
-    n_t4 = len(t4_pts)
-    pts = t4_pts + hub_pts
+    sat_pts = [node_by_geoid[t["geoid"]] for t in t3]   # metro satellites are
+    n_t4 = len(t4_pts)                                  # still towns — commuter
+    pts = t4_pts + hub_pts + sat_pts                    # rail passes through them
     N = len(pts)
     lats = [p["lat"] for p in pts]
     lngs = [p["lng"] for p in pts]
@@ -636,15 +777,34 @@ def main():
             add_t4(i, j)
     rng_count = len(t4_links)
     print(f"tier 4: {rng_count:,} RNG edges over {n_t4:,} towns + {len(hub_pts)} hubs "
-          f"({wet4} dropped in water)", file=sys.stderr)
+          f"+ {len(sat_pts)} metro satellites ({wet4} dropped in water)", file=sys.stderr)
 
-    # dead-end patching: towns with < 2 links take their next-nearest dry
-    # candidates until they have 2 (hubs are exempt — they have the T1/T2
-    # network; towns with no candidates left are the allowed islands/edges)
+    # dead-end patching: towns with < 2 links may take their next-nearest dry
+    # candidate — but only one that heads in a genuinely DIFFERENT direction
+    # (>= T4_PATCH_MIN_DEG from every existing link). A peninsula town whose
+    # only other options run nearly parallel to its one link ends cleanly
+    # instead of growing a sliver (hubs/satellites are exempt — they have
+    # their own tier's network; towns with no candidates are islands/edges)
     deg4 = defaultdict(int)
+    adj4 = defaultdict(list)
     for i, j in t4_links:
         deg4[i] += 1
         deg4[j] += 1
+        adj4[i].append(j)
+        adj4[j].append(i)
+
+    def bearing4(i, j):
+        return math.atan2(lats[j] - lats[i],
+                          ((lngs[j] - lngs[i] + 180) % 360 - 180) * coslats[i])
+
+    def diverges(i, j):
+        bj = bearing4(i, j)
+        for e in adj4[i]:
+            a = abs(bj - bearing4(i, e)) % (2 * math.pi)
+            if min(a, 2 * math.pi - a) < math.radians(T4_PATCH_MIN_DEG):
+                return False
+        return True
+
     patched = 0
     for i in range(n_t4):
         if deg4[i] >= 2:
@@ -655,11 +815,15 @@ def main():
             k = (i, j) if i < j else (j, i)
             if k in t4_seen:
                 continue
+            if not diverges(i, j):
+                continue
             if not dry_link(i, j, math.sqrt(d2ij)):
                 continue
             add_t4(i, j)
             deg4[i] += 1
             deg4[j] += 1
+            adj4[i].append(j)
+            adj4[j].append(i)
             patched += 1
 
     # bridge isolated clusters back to the web over the shortest dry hop —
@@ -722,8 +886,9 @@ def main():
         "tier4Deg2Pct": round(deg2pct, 1),
         "tier4DeadEnds": dead_ends, "tier4Isolated": isolated,
     }
-    params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
+    params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
+              "T2_KNN": T2_KNN, "T2_MAX_LINK_MI": T2_MAX_LINK_MI,
               "COVERAGE_MI": COVERAGE_MI, "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
               "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI,
               "CORE_MIN_POP": CORE_MIN_POP, "T4_KNN": T4_KNN,
