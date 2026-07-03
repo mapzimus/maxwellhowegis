@@ -10,10 +10,11 @@ community), the New England MCD towns, and Guam's villages — ~33k towns as of
 the 2024 vintage — written as a minified GeoJSON FeatureCollection of tier-4
 nodes to `transit/data/towns.geojson`.
 
-Each town is joined to the Census **sub-county population estimates**
-(SUB-EST, place-level SUMLEV 162) by GEOID, adding a `pop` property (latest
-estimate year; null where no estimate exists, e.g. places incorporated after
-the estimates base).
+Each incorporated place is joined to the Census **sub-county population
+estimates** (SUB-EST, place-level SUMLEV 162) by GEOID; each CDP is joined to
+its **2020 Census count** (TIGERweb POP100 — SUB-EST covers incorporated
+places only). The `pop` property is null only where neither exists (places
+defined after 2020).
 
     python3 scripts/build_towns.py                 # places + CDPs + New England MCD towns (default)
     python3 scripts/build_towns.py --no-cdp         # incorporated places only
@@ -93,6 +94,44 @@ GUAM_PLACES = [
     ("Piti", 1454, 13.4626, 144.6961), ("Hagåtña", 943, 13.4757, 144.7489),
     ("Umatac", 754, 13.2895, 144.6642),
 ]
+
+
+CDP_POP_URL = ("https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/"
+               "Places_CouSub_ConCity_SubMCD/MapServer/5/query")
+
+
+def fetch_cdp_pops():
+    """GEOID -> 2020 Census population for every CDP, via the public TIGERweb
+    REST layer (the SUB-EST estimates only cover incorporated places, so CDPs
+    — 12.8k towns, including 100k+ suburbs like The Woodlands TX or
+    Arlington VA — would otherwise have no population at all). Cached."""
+    import urllib.parse, urllib.request
+    path = os.path.join(CACHE, "cdp_pop2020.json")
+    if os.path.exists(path):
+        return {k: v for k, v in json.load(open(path)).items()}
+    pops, offset = {}, 0
+    print("fetching CDP 2020 populations from TIGERweb…", file=sys.stderr)
+    while True:
+        qs = urllib.parse.urlencode({
+            "where": "1=1", "outFields": "GEOID,POP100",
+            "returnGeometry": "false", "f": "json",
+            "resultOffset": offset, "resultRecordCount": 2000,
+        })
+        with urllib.request.urlopen(f"{CDP_POP_URL}?{qs}", timeout=180) as r:
+            d = json.load(r)
+        feats = d.get("features", [])
+        for f in feats:
+            a = f["attributes"]
+            if a.get("POP100"):
+                pops[a["GEOID"]] = int(a["POP100"])
+        offset += len(feats)
+        if not d.get("exceededTransferLimit") or not feats:
+            break
+    os.makedirs(CACHE, exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(pops, f)
+    print(f"CDP populations: {len(pops):,} (2020 Census POP100)", file=sys.stderr)
+    return pops
 
 
 def ne_backfill_pops():
@@ -235,6 +274,7 @@ def clean_name(name, is_cdp=False):
 def build(year, include_cdp, with_pop=True):
     text = fetch(year)
     pops, mcd_pops = fetch_pop() if with_pop else ({}, {})
+    cdp_pops = fetch_cdp_pops() if with_pop else {}
     lines = text.splitlines()
     header = [h.strip() for h in lines[0].split("\t")]
     idx = {h: i for i, h in enumerate(header)}
@@ -274,7 +314,10 @@ def build(year, include_cdp, with_pop=True):
         name = clean_name(c[idx["NAME"]], is_cdp)
         kept[ptype if ptype in kept else "other"] += 1
         geoid = c[idx["GEOID"]]
-        pop = pops.get(geoid)
+        # incorporated places: SUB-EST 2024 estimates; CDPs: 2020 Census
+        # POP100 (SUB-EST is incorporated-only, and an unpopulated dot would
+        # also be invisible to the network's tier cuts)
+        pop = cdp_pops.get(geoid) if is_cdp else pops.get(geoid)
         if pop is not None:
             joined += 1
         feats.append({
