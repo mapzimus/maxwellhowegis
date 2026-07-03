@@ -23,13 +23,13 @@ The raw gazetteer + estimates files are cached under scripts/.cache/
 (gitignored) so re-runs are offline and fast. Only the derived towns.geojson
 is committed.
 """
-import argparse, csv, io, json, os, sys, urllib.request, zipfile
+import argparse, csv, io, json, math, os, sys, urllib.request, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "scripts", ".cache")
 OUT = os.path.join(ROOT, "transit", "data", "towns.geojson")
 
-TERRITORIES = {"PR", "VI", "GU", "MP", "AS"}
+TERRITORIES = {"VI", "MP", "AS"}      # PR included; GU seeded manually below
 
 # Census LSAD code -> clean place type
 LSAD_TYPE = {
@@ -44,6 +44,7 @@ SUFFIXES = [
     "metropolitan government", "consolidated government", "unified government",
     "metro government", "city and borough", "municipality", "corporation",
     "government", "township", "borough", "village", "city", "town",
+    "zona urbana", "comunidad",
 ]
 
 # FUNCSTAT codes accepted as real towns. Beyond the usual 'A' (active government):
@@ -66,6 +67,61 @@ COORD_OVERRIDES = {
     "4817000": (27.7963, -97.3964),    # Corpus Christi, TX (bay annexations)
 }
 
+# Hawaii and Puerto Rico have no incorporated places below the county/municipio
+# level — their towns are all CDPs (PR: zonas urbanas + comunidades), so CDPs
+# are included for HI + PR. Populations are backfilled one-to-one from Natural
+# Earth populated places (pop_min ≈ city proper), since the Census sub-county
+# estimates only cover incorporated places.
+NE_PLACES = ("ne_10m_populated_places_simple.zip",
+             "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_populated_places_simple.zip")
+
+# Guam is absent from the national gazetteer entirely. Its 19 villages are
+# every "town" on the island — seeded here with 2020 Census populations and
+# village-center coordinates.
+GUAM_PLACES = [
+    ("Dededo", 44943, 13.5183, 144.8391), ("Yigo", 20539, 13.5360, 144.8880),
+    ("Tamuning", 19685, 13.4880, 144.7810), ("Mangilao", 15476, 13.4543, 144.8032),
+    ("Barrigada", 8875, 13.4708, 144.7999), ("Chalan Pago-Ordot", 7462, 13.4512, 144.7663),
+    ("Yona", 6480, 13.4098, 144.7768), ("Mongmong-Toto-Maite", 6393, 13.4804, 144.7590),
+    ("Santa Rita", 6084, 13.3861, 144.6739), ("Agat", 4515, 13.3839, 144.6577),
+    ("Agana Heights", 3673, 13.4661, 144.7440), ("Talofofo", 3489, 13.3529, 144.7599),
+    ("Sinajana", 2592, 13.4665, 144.7514), ("Inarajan", 2464, 13.2736, 144.7484),
+    ("Asan", 2011, 13.4715, 144.7150), ("Merizo", 1706, 13.2660, 144.6720),
+    ("Piti", 1454, 13.4626, 144.6961), ("Hagåtña", 943, 13.4757, 144.7489),
+    ("Umatac", 754, 13.2895, 144.6642),
+]
+
+
+def ne_island_pops():
+    """[(name, pop, lat, lng)] for Hawaii + Puerto Rico from Natural Earth."""
+    import struct, urllib.request, zipfile
+    fname, url = NE_PLACES
+    path = os.path.join(CACHE, fname)
+    if not os.path.exists(path):
+        print(f"downloading {url}", file=sys.stderr)
+        with urllib.request.urlopen(url, timeout=180) as r:
+            data = r.read()
+        with open(path, "wb") as f:
+            f.write(data)
+    z = zipfile.ZipFile(path)
+    data = z.read([n for n in z.namelist() if n.endswith(".dbf")][0])
+    nrec = struct.unpack("<I", data[4:8])[0]
+    hlen, rlen = struct.unpack("<HH", data[8:12])
+    fields, off = [], 32
+    while data[off] != 0x0D:
+        fields.append((data[off:off + 11].split(b"\0")[0].decode("latin-1"), data[off + 16]))
+        off += 32
+    out = []
+    for i in range(nrec):
+        rec = data[hlen + i * rlen: hlen + (i + 1) * rlen]
+        vals, p = {}, 1
+        for name, flen in fields:
+            vals[name] = rec[p:p + flen].decode("utf-8", "replace").strip(); p += flen
+        if vals.get("adm1name") == "Hawaii" or vals.get("adm0name") == "Puerto Rico":
+            pop = int(float(vals.get("pop_min") or 0)) or int(float(vals.get("pop_max") or 0))
+            out.append((vals["name"], pop, float(vals["latitude"]), float(vals["longitude"])))
+    return out
+
 
 def gaz_url(year):
     return (f"https://www2.census.gov/geo/docs/maps-data/data/gazetteer/"
@@ -85,7 +141,11 @@ def fetch(year):
             f.write(data)
     with zipfile.ZipFile(zpath) as z:
         name = next(n for n in z.namelist() if n.endswith(".txt"))
-        return z.read(name).decode("latin-1")
+        raw = z.read(name)
+        try:
+            return raw.decode("utf-8")
+        except UnicodeDecodeError:
+            return raw.decode("latin-1")
 
 
 POP_URL = ("https://www2.census.gov/programs-surveys/popest/datasets/"
@@ -147,8 +207,8 @@ def build(year, include_cdp, with_pop=True):
         if st in TERRITORIES:
             continue
         is_cdp = func == "S"
-        if is_cdp and not include_cdp:
-            continue
+        if is_cdp and not include_cdp and st not in ("HI", "PR"):
+            continue                       # HI/PR towns are all CDPs
         if not is_cdp and func not in FUNCSTAT_OK:   # skip inactive ghost towns etc.
             continue
         geoid_pre = c[idx["GEOID"]]
@@ -179,6 +239,50 @@ def build(year, include_cdp, with_pop=True):
             "properties": {"kind": "town", "name": name, "type": ptype,
                            "st": st, "geoid": geoid, "tier": 4, "pop": pop,
                            "sqmi": sqmi},
+        })
+
+    # HI/PR population backfill from Natural Earth — one-to-one: each NE place
+    # populates only its single nearest unfilled CDP, so a big city's figure
+    # can't smear across its neighbors.
+    if with_pop:
+        cands = [f for f in feats if f["properties"]["st"] in ("HI", "PR")]
+        filled = 0
+        for name_ne, pop_ne, la, lo in sorted(ne_island_pops(), key=lambda x: -x[1]):
+            if not pop_ne:
+                continue
+            # prefer the CDP whose name matches (e.g. NE "Honolulu" -> "Urban
+            # Honolulu CDP", not whichever neighbor is nearest); if the named
+            # CDP is already filled, this NE row is a duplicate — skip it.
+            best, bd, named, named_filled = None, 8.0, None, False
+            for f in cands:
+                lng, lat = f["geometry"]["coordinates"]
+                d = math.hypot((la - lat) * 69.0, (lo - lng) * 63.0)
+                if d >= 8.0:
+                    continue
+                if name_ne.lower() in f["properties"]["name"].lower():
+                    if f["properties"]["pop"] is not None:
+                        named_filled = True
+                    elif named is None:
+                        named = f
+                if f["properties"]["pop"] is None and d < bd:
+                    best, bd = f, d
+            target = named if named is not None else (None if named_filled else best)
+            if target is not None:
+                target["properties"]["pop"] = pop_ne
+                joined += 1
+                filled += 1
+        print(f"HI/PR: NE population backfill for {filled} CDPs (one-to-one)", file=sys.stderr)
+
+    # Guam (absent from the gazetteer): seed its 19 villages
+    for i, (name, pop, lat, lng) in enumerate(GUAM_PLACES, 1):
+        kept["village"] += 1
+        joined += 1
+        feats.append({
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [round(lng, 5), round(lat, 5)]},
+            "properties": {"kind": "town", "name": name, "type": "village",
+                           "st": "GU", "geoid": f"GU{i:03d}", "tier": 4, "pop": pop,
+                           "sqmi": None},
         })
 
     fc = {
