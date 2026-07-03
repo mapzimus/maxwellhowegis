@@ -92,8 +92,8 @@ GUAM_PLACES = [
 ]
 
 
-def ne_island_pops():
-    """[(name, pop, lat, lng)] for Hawaii + Puerto Rico from Natural Earth."""
+def ne_backfill_pops():
+    """[(name, pop, lat, lng)] for US places from Natural Earth (pop_min)."""
     import struct, urllib.request, zipfile
     fname, url = NE_PLACES
     path = os.path.join(CACHE, fname)
@@ -117,7 +117,7 @@ def ne_island_pops():
         vals, p = {}, 1
         for name, flen in fields:
             vals[name] = rec[p:p + flen].decode("utf-8", "replace").strip(); p += flen
-        if vals.get("adm1name") == "Hawaii" or vals.get("adm0name") == "Puerto Rico":
+        if vals.get("adm0name") in ("United States of America", "United States", "Puerto Rico"):
             pop = int(float(vals.get("pop_min") or 0)) or int(float(vals.get("pop_max") or 0))
             out.append((vals["name"], pop, float(vals["latitude"]), float(vals["longitude"])))
     return out
@@ -151,6 +151,37 @@ def fetch(year):
 POP_URL = ("https://www2.census.gov/programs-surveys/popest/datasets/"
            "2020-2024/cities/totals/sub-est2024.csv")
 
+# New England towns are minor civil divisions, not incorporated places — the
+# places file has only the region's cities + CDPs (New Hampshire: 13 cities,
+# while its 221 towns live in the county-subdivisions file). For these six
+# states the MCD *is* the town, so active MCDs are added as towns, deduped
+# against same-name places nearby.
+COUSUB_STATES = {"CT", "ME", "MA", "NH", "RI", "VT"}
+
+
+def cousub_url(year):
+    return (f"https://www2.census.gov/geo/docs/maps-data/data/gazetteer/"
+            f"{year}_Gazetteer/{year}_Gaz_cousubs_national.zip")
+
+
+def fetch_cousubs(year):
+    os.makedirs(CACHE, exist_ok=True)
+    zpath = os.path.join(CACHE, f"gaz_cousubs_{year}.zip")
+    if not os.path.exists(zpath):
+        url = cousub_url(year)
+        print(f"downloading {url}", file=sys.stderr)
+        with urllib.request.urlopen(url, timeout=120) as r:
+            data = r.read()
+        with open(zpath, "wb") as f:
+            f.write(data)
+    with zipfile.ZipFile(zpath) as z:
+        name = next(n for n in z.namelist() if n.endswith(".txt"))
+        raw = z.read(name)
+        try:
+            return raw.decode("utf-8")
+        except UnicodeDecodeError:
+            return raw.decode("latin-1")
+
 
 def fetch_pop():
     """Return {GEOID: population} from the place-level (SUMLEV 162) rows of
@@ -163,25 +194,29 @@ def fetch_pop():
             data = r.read()
         with open(path, "wb") as f:
             f.write(data)
-    pops = {}
+    pops, mcd_pops = {}, {}
     with open(path, encoding="latin-1", newline="") as f:
         reader = csv.DictReader(f)
         est_col = max(c for c in reader.fieldnames if c.startswith("POPESTIMATE"))
         for row in reader:
-            if row["SUMLEV"] != "162":
-                continue
             try:
-                pops[row["STATE"] + row["PLACE"]] = int(row[est_col])
+                if row["SUMLEV"] == "162":
+                    pops[row["STATE"] + row["PLACE"]] = int(row[est_col])
+                elif row["SUMLEV"] == "061":
+                    mcd_pops[row["STATE"] + row["COUNTY"] + row["COUSUB"]] = int(row[est_col])
             except (ValueError, KeyError):
                 continue
-    print(f"population estimates: {len(pops):,} places ({est_col})", file=sys.stderr)
-    return pops
+    print(f"population estimates: {len(pops):,} places, {len(mcd_pops):,} MCDs "
+          f"({est_col})", file=sys.stderr)
+    return pops, mcd_pops
 
 
 def clean_name(name):
     name = name.strip()
     if name.endswith(" (balance)"):
         name = name[: -len(" (balance)")].strip()
+    if name.endswith(" CDP"):
+        name = name[: -len(" CDP")].strip()
     low = name.lower()
     for suf in SUFFIXES:
         if low.endswith(" " + suf):
@@ -191,7 +226,7 @@ def clean_name(name):
 
 def build(year, include_cdp, with_pop=True):
     text = fetch(year)
-    pops = fetch_pop() if with_pop else {}
+    pops, mcd_pops = fetch_pop() if with_pop else ({}, {})
     lines = text.splitlines()
     header = [h.strip() for h in lines[0].split("\t")]
     idx = {h: i for i, h in enumerate(header)}
@@ -241,13 +276,54 @@ def build(year, include_cdp, with_pop=True):
                            "sqmi": sqmi},
         })
 
+    # New England towns from the county-subdivisions gazetteer
+    ne_added = 0
+    by_name_st = {}
+    for f in feats:
+        p = f["properties"]
+        by_name_st.setdefault((p["name"].lower(), p["st"]), []).append(f)
+    for line in fetch_cousubs(year).splitlines()[1:]:
+        c = [x.strip() for x in line.split("\t")]
+        if len(c) < 10 or c[0] not in COUSUB_STATES or c[4] != "A":
+            continue
+        geoid = c[1]
+        pop = mcd_pops.get(geoid) if with_pop else None
+        if with_pop and not pop:
+            continue                                  # uninhabited grants/gores
+        name = clean_name(c[3])
+        try:
+            lat, lng = round(float(c[-2]), 5), round(float(c[-1]), 5)
+        except ValueError:
+            continue
+        dup = False
+        for f in by_name_st.get((name.lower(), c[0]), []):
+            fl = f["geometry"]["coordinates"]
+            if math.hypot((fl[1] - lat) * 69.0, (fl[0] - lng) * 51.0) < 6.0:
+                dup = True                            # city/CDP already covers it
+                break
+        if dup:
+            continue
+        feat = {"type": "Feature",
+                "geometry": {"type": "Point", "coordinates": [lng, lat]},
+                "properties": {"kind": "town", "name": name, "type": "town",
+                               "st": c[0], "geoid": geoid, "tier": 4, "pop": pop,
+                               "sqmi": None}}
+        feats.append(feat)
+        by_name_st.setdefault((name.lower(), c[0]), []).append(feat)
+        kept["town"] += 1
+        if pop:
+            joined += 1
+        ne_added += 1
+    print(f"New England MCD towns added: {ne_added}", file=sys.stderr)
+
     # HI/PR population backfill from Natural Earth — one-to-one: each NE place
     # populates only its single nearest unfilled CDP, so a big city's figure
     # can't smear across its neighbors.
     if with_pop:
-        cands = [f for f in feats if f["properties"]["st"] in ("HI", "PR")]
+        cands = feats            # nationwide: big CDPs (Arlington VA, Metairie,
+                                 # Paradise NV...) have no Census estimates
         filled = 0
-        for name_ne, pop_ne, la, lo in sorted(ne_island_pops(), key=lambda x: -x[1]):
+        for name_ne, pop_ne, la, lo in sorted(ne_backfill_pops(), key=lambda x: -x[1]):
             if not pop_ne:
                 continue
             # prefer the CDP whose name matches (e.g. NE "Honolulu" -> "Urban
@@ -271,7 +347,7 @@ def build(year, include_cdp, with_pop=True):
                 target["properties"]["pop"] = pop_ne
                 joined += 1
                 filled += 1
-        print(f"HI/PR: NE population backfill for {filled} CDPs (one-to-one)", file=sys.stderr)
+        print(f"NE population backfill for {filled} estimate-less places (one-to-one)", file=sys.stderr)
 
     # Guam (absent from the gazetteer): seed its 19 villages
     for i, (name, pop, lat, lng) in enumerate(GUAM_PLACES, 1):
@@ -315,9 +391,9 @@ def build(year, include_cdp, with_pop=True):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--year", type=int, default=2024)
-    ap.add_argument("--include-cdp", action="store_true",
-                    help="also include census-designated (unincorporated) places")
+    ap.add_argument("--no-cdp", action="store_true",
+                    help="exclude census-designated (unincorporated) places")
     ap.add_argument("--no-pop", action="store_true",
                     help="skip the population-estimates join")
     a = ap.parse_args()
-    build(a.year, a.include_cdp, with_pop=not a.no_pop)
+    build(a.year, include_cdp=not a.no_cdp, with_pop=not a.no_pop)

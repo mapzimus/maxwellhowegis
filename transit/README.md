@@ -73,11 +73,11 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
 | Tier | Rule | Result |
 |---|---|---|
 | **1 — HSR** | pop ≥ 175k @ 60 mi spacing; MST + 2-nearest-neighbor mesh. **International**: 12 Canadian metros, 8 northern-Mexico metros (border twins like Tijuana and Ciudad Juárez space only against each other), and island links — Honolulu→Los Angeles, San Juan→Miami, Anchorage→Vancouver — land at the biggest hub within 10% of the shortest crossing | **109 hubs**, 26,666 mi |
-| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2) | **662 hubs**, chained to the spine |
-| **3 — Metro** | radial urban-core subways: every 150k+ US hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), and a **circle line only where ≥ 8 lines make it read as one**. Station placement is **land-aware** (Census state polygons minus Natural Earth lakes; wet stations pull inland or drop; collisions with the hub or sibling stations drop). Suburbs ≥ 15k within 18 mi (**1,178**) join at their **nearest station** as line extensions, not by beelining to the hub | **2,968 metro nodes** |
-| **4 — Commuter web** | **snaking lines**: each leaves the hub nearest an unclaimed town, hops nearest-unvisited-town to nearest-unvisited-town (≤ 25 mi), and closes into a *different* hub when one comes within 12 mi (or loops home) — every line ends at a hub, every town has degree ≤ 2. Lines are **2-opt uncrossed** (682 self-crossings removed) and **render as smooth curves** in the editor | **1,665 lines**, mean 10.8 towns per line, zero dead ends |
+| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2) | **727 hubs**, chained to the spine |
+| **3 — Metro** | radial urban-core subways: every 150k+ US hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), and a **circle line only where ≥ 8 lines make it read as one**. Station placement is **land-aware** (Census state polygons minus Natural Earth lakes; wet stations pull inland or drop; collisions with the hub or sibling stations drop). Suburbs ≥ 15k within 18 mi (**1,270**) join at their **nearest station** as line extensions, not by beelining to the hub | **3,048 metro nodes** |
+| **4 — Commuter web** | **snaking lines**: each leaves the hub nearest an unclaimed town, hops nearest-unvisited-town to nearest-unvisited-town (≤ 25 mi), and closes into a *different* hub when one comes within 12 mi (or loops home) — every line ends at a hub, every town has degree ≤ 2. Lines are **2-opt uncrossed** (1,220 self-crossings removed) and **render as smooth curves** in the editor | **2,384 lines** through 31,239 towns, mean 13.1 towns per line, zero dead ends |
 
-The result is one fully connected graph (3,739 nodes / 3,912 edges) written to
+The result is one fully connected graph (3,884 nodes / 4,057 edges) written to
 `data/network.json` with a `rev` stamp — the editor adopts a newer committed network over stale
 `localStorage` automatically. The commuter web renders as its own toggleable canvas layer.
 The network is still fully hand-editable afterwards: move, rename, relink, delete, promote —
@@ -95,9 +95,12 @@ Tier 4 (normal-speed commuter rail reaching every town) is too large to hand-pla
 Census **Gazetteer Places (national)** file and writes every **incorporated place** — city, town,
 village, borough — in the 50 states + DC to `transit/data/towns.geojson` as tier-4 GeoJSON points.
 
-- **19,952 towns** (2024 gazetteer): 10,219 cities · 4,306 towns · 3,728 villages · 1,215 boroughs
-  · 455 CDPs — Hawaii and Puerto Rico (which have no incorporated places; NE population backfill)
-  plus Guam's 19 villages seeded from the 2020 Census.
+- **33,283 towns** (2024 gazetteer): 10,219 cities · 5,272 towns · 3,728 villages · 1,215 boroughs
+  · 12,820 CDPs (unincorporated communities, included by default; `--no-cdp` to exclude) · Guam's
+  19 villages seeded from the 2020 Census. New England towns come from the **county-subdivisions
+  gazetteer** (they're minor civil divisions, not places — New Hampshire alone has 221 MCD towns
+  vs. 13 incorporated cities), deduped against same-name places nearby. Big estimate-less places
+  (CDPs, HI/PR) get a one-to-one Natural Earth population backfill.
 - Every town is **joined to Census population** (SUB-EST 2024 place-level estimates, 100% match by
   GEOID) — the `pop` property drives dot size/opacity in the editor and search ranking, and is what
   a tier-2 candidate cut (e.g. pop ≥ 100k) will run on.
