@@ -74,10 +74,10 @@ The editor also **autosaves to `localStorage`** as you work, and on load it fall
 |---|---|---|
 | **1 — HSR** | pop ≥ 175k, 60 mi spacing; MST + 2-nearest-neighbor HSR mesh | **87 hubs**, 116 lines, 19,747 mi |
 | **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub | **616 hubs**, chained to the spine |
-| **3 — Metro** | suburbs ≥ 15k within 18 mi of a 100k+ anchor (**1,177**), **plus urban-core rings**: every 150k+ hub gets 4–12 compass-named in-city stations, spoked to the hub and loop-connected, sized by population and land area (**716**) | **1,893 metro nodes** |
-| **4 — Commuter web** | every remaining town → nearest *already-connected* point, closest-to-network first — towns chain through each other into branch lines (88% of links are town→town) instead of hub starbursts. Then **through-line closures**: each dead-end leaf may join the nearest point of a *different* hub's tree (best crossing per tree pair, ≤ 15 mi), so lines weave hub → towns → different hub | **18,419 links** (incl. 821 through-lines), mean 7.2 mi, max 57 mi |
+| **3 — Metro** | suburbs ≥ 15k within 18 mi of a 100k+ anchor (**1,177**), **plus radial urban-core subways**: every 150k+ hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), an inner loop, and an outer loop for the biggest systems (**1,783**). Station placement is **land-aware** — point-in-polygon tested against Census state boundaries minus Natural Earth lakes, pulled inland or dropped when wet | **2,960 metro nodes** |
+| **4 — Commuter web** | **snaking lines**: each leaves the hub nearest an unclaimed town, hops nearest-unvisited-town to nearest-unvisited-town (≤ 25 mi), and closes into a *different* hub when one comes within 12 mi (or loops home after a long run) — every line terminates at a hub, every town sits on a weaving hub-to-hub through-route with degree ≤ 2 | **1,625 lines / 19,223 segments**, mean 10.8 towns per line, zero dead ends |
 
-The result is one fully connected graph (2,596 nodes / 2,991 edges) written to
+The result is one fully connected graph (3,663 nodes / 4,632 edges) written to
 `data/network.json` with a `rev` stamp — the editor adopts a newer committed network over stale
 `localStorage` automatically. The commuter web renders as its own toggleable canvas layer.
 The network is still fully hand-editable afterwards: move, rename, relink, delete, promote —
@@ -154,7 +154,8 @@ site (plain HTML/CSS/JS).
 - [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
       live per-tier mileage
 - [x] **Auto-generated full network** (`scripts/build_network.py`): 87 HSR + 616 regional +
-      1,893 metro (incl. urban-core rings) + 17,598-link chained commuter web, every town ≤ 60 mi from a hub
+      2,960 metro (radial land-aware urban-core subways) + 1,625 snaking commuter lines
+      through all 17,598 remaining towns, every town ≤ 60 mi from a hub
 - [ ] Hand-tune the generated network (the editor edits it directly)
 - [ ] Auto-route HSR edges along real corridors instead of straight lines
 - [ ] Network stats (reach, coverage: % of population within N mi of each tier)
