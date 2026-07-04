@@ -13,21 +13,28 @@ Algorithm (all straight-line/great-circle, stdlib only):
                          order with a T1_SPACING_MI exclusion radius (a hard
                          invariant — no exceptions, even at the Mexican border).
                          Connected by a GABRIEL GRAPH (edge survives if no third
-                         hub sits in the circle with the edge as diameter) —
-                         connected by construction and ~4 links per hub, so hub
-                         groups triangulate instead of chaining. Island hubs keep
-                         a single transoceanic link to the biggest mainland hub
-                         within 15% of the shortest crossing.
+                         hub sits in the circle with the edge as diameter), then
+                         each hub gains T1_KNN extra nearest dry links and any
+                         leaf (degree < 2) is patched to its nearest dry hub —
+                         crossing-free where possible (fixes Ottawa–Toronto,
+                         which Gabriel blocked via Rochester across Lake Ontario).
+                         Island hubs keep a single transoceanic link to the
+                         biggest mainland hub within 15% of the shortest crossing.
   Tier 2 (regional)      Cities with pop >= T2_MIN_POP, spaced T2_SPACING_MI from
                          all chosen hubs — plus any T2_BIG_POP (100k+) city outside
                          a hub's metro radius (Fort Worth, Baltimore, Mesa…). Then
                          COVERAGE FILL: while any town is farther than COVERAGE_MI
                          from a tier-1/2 hub, promote the most populous uncovered
                          town — guaranteeing every town in the country has a hub
-                         within COVERAGE_MI. Connected by an RNG mesh over all
+                         within COVERAGE_MI. CORRIDOR gap-fill then adds hubs in
+                         sparse regions (a mid-size town far from any hub, or a
+                         smaller very-isolated one) so places like Berlin NH chain
+                         in instead of dangling. Connected by an RNG mesh over all
                          tier-1/2 hubs (same lens rule as tier 4), water-tested,
                          dead-ends patched to degree >= 2, island clusters bridged
-                         by a single sea link.
+                         by a single sea link, then SHORT-LINK fill restores each
+                         hub's obvious near neighbors (Manchester–Nashua, etc.)
+                         where the added link is dry and crosses no existing edge.
   Tier 2b (promoted)     Important cities the spacing rules miss — Salem MA,
                          Concord NH, Nashua NH, Portsmouth NH: pop >= T2B_MIN_POP
                          anywhere, or >= T2B_FAR_MIN_POP when T2B_FAR_MI+ from an
@@ -86,8 +93,10 @@ TOWNS = os.path.join(ROOT, "transit", "data", "towns.geojson")
 OUT_NET = os.path.join(ROOT, "transit", "data", "network.json")
 OUT_T4 = os.path.join(ROOT, "transit", "data", "tier4_links.geojson")
 
-T1_MIN_POP = 175_000
+T1_MIN_POP = 125_000       # HSR spine reaches down to mid-size metros (goes the
+                           # speed of sound — long links are fine)
 T1_SPACING_MI = 60
+T1_KNN = 2                 # extra nearest dry links per hub beyond the Gabriel mesh
 T2_MIN_POP = 25_000
 T2_SPACING_MI = 30
 T2_KNN = 12                # candidate neighbors per hub for the tier-2 RNG
@@ -97,6 +106,23 @@ T2_BIG_POP = 100_000       # cities this big become hubs even inside the spacing
                            # (T2_BIG_EXCL_MI) — catches Fort Worth, Baltimore, Mesa…
 T2_BIG_EXCL_MI = 18
 COVERAGE_MI = 60           # every town ends up within this of a tier-1/2 hub
+
+# corridor gap-fill hubs: populated-but-underserved towns become tier-2 hubs so
+# sparse regions (northern NH/VT/ME) chain into the network instead of hanging
+# off long one-directional tentacles. Two rules, greedy biggest-first with a
+# mutual spacing: a mid-size town far from any hub, OR a smaller town that is
+# very isolated (deep-rural corridors — Plymouth NH, St. Johnsbury VT).
+GAP_A_POP = 10_000
+GAP_A_MI = 20
+GAP_B_POP = 3_500
+GAP_B_MI = 30
+GAP_SPACING_MI = 15
+
+# "keep it clean": links added on top of the base meshes (tier-1 kNN + leaf
+# patch, tier-2 short links) are rejected when they would cross an existing
+# edge, and short links only fill in genuinely-adjacent hubs.
+T2_SHORT_MI = 35           # max length of an added tier-2 "obvious neighbor" link
+T2_SHORT_KNN = 5           # nearest hubs considered per hub for short-link fill
 
 # tier 2b: important cities the spacing rules miss — the Salems, Concords,
 # Nashuas, Portsmouths. Full promotion into tier 2 (tagged sub='2b' and drawn
@@ -387,6 +413,63 @@ def dry_sat(a, b):
     return True
 
 
+def _ccw(ax, ay, bx, by, cx, cy):
+    return (cy - ay) * (bx - ax) - (by - ay) * (cx - ax)
+
+
+def seg_cross(a, b, c, d):
+    """True if segments a-b and c-d properly cross (share interior points),
+    in planar lat/lng. Segments that merely touch at a shared endpoint do NOT
+    count — chaining through a common hub is fine, tangling across one isn't.
+    Skipped (returns False) for links spanning > 8° lng: those are the rare
+    long HSR/island hops where planar crossing tests are meaningless."""
+    if abs(a["lng"] - b["lng"]) > 8 or abs(c["lng"] - d["lng"]) > 8:
+        return False
+    for p, q in ((a, c), (a, d), (b, c), (b, d)):
+        if p is q or (p["lat"] == q["lat"] and p["lng"] == q["lng"]):
+            return False                      # shared endpoint — not a crossing
+    ax, ay, bx, by = a["lng"], a["lat"], b["lng"], b["lat"]
+    cx, cy, dx, dy = c["lng"], c["lat"], d["lng"], d["lat"]
+    d1 = _ccw(cx, cy, dx, dy, ax, ay)
+    d2 = _ccw(cx, cy, dx, dy, bx, by)
+    d3 = _ccw(ax, ay, bx, by, cx, cy)
+    d4 = _ccw(ax, ay, bx, by, dx, dy)
+    return (d1 > 0) != (d2 > 0) and (d3 > 0) != (d4 > 0)
+
+
+class EdgeIndex:
+    """Buckets edges (as node-pair dicts) into the 1-degree cells their bounding
+    box covers, so a candidate link is crossing-tested only against edges that
+    could plausibly intersect it — not the whole graph."""
+    def __init__(self):
+        self.cells = defaultdict(list)
+
+    def add(self, a, b):
+        for cell in self._cells(a, b):
+            self.cells[cell].append((a, b))
+
+    @staticmethod
+    def _cells(a, b):
+        y0, y1 = sorted((math.floor(a["lat"]), math.floor(b["lat"])))
+        x0, x1 = sorted((math.floor(a["lng"]), math.floor(b["lng"])))
+        if x1 - x0 > 8:            # long/antimeridian link — don't index widely
+            return {(math.floor(a["lat"]), math.floor(a["lng"])),
+                    (math.floor(b["lat"]), math.floor(b["lng"]))}
+        return {(y, x) for y in range(y0, y1 + 1) for x in range(x0, x1 + 1)}
+
+    def crosses(self, a, b):
+        seen = set()
+        for cell in self._cells(a, b):
+            for c, d in self.cells.get(cell, ()):
+                key = id(c), id(d)
+                if key in seen:
+                    continue
+                seen.add(key)
+                if seg_cross(a, b, c, d):
+                    return True
+        return False
+
+
 class Grid:
     """1-degree spatial hash. CELL_MIN_MI is the worst-case miles spanned by one
     degree of longitude in the dataset (lat ~71 in north Alaska), used as the
@@ -588,6 +671,33 @@ def main():
             t2b += 1
     print(f"tier 2b: +{t2b} promoted cities (pop >= {T2B_MIN_POP:,}, or "
           f">= {T2B_FAR_MIN_POP:,} beyond {T2B_FAR_MI} mi of HSR)", file=sys.stderr)
+
+    # ---- corridor gap-fill hubs (US) ---------------------------------------
+    # Sparse regions leave hubs stranded on long one-directional tentacles
+    # (Berlin NH points only east into Maine). Fill the gaps: a mid-size town
+    # far from any hub, OR a smaller very-isolated town, becomes a tier-2 hub —
+    # greedy biggest-first, re-checking distance against already-picked hubs so
+    # two towns in the same gap don't both promote. Tagged sub='gap' (rendered
+    # as a normal regional hub) so later passes can chain through them.
+    gap = 0
+    for c in by_pop:
+        if c["pop"] < GAP_B_POP:
+            break
+        if c["geoid"] in hub_geoids:
+            continue
+        _, d = hub_grid.nearest(c["lat"], c["lng"])
+        if d < GAP_SPACING_MI:
+            continue
+        if (c["pop"] >= GAP_A_POP and d >= GAP_A_MI) or \
+           (c["pop"] >= GAP_B_POP and d >= GAP_B_MI):
+            c["sub"] = "gap"
+            t2.append(c)
+            hub_geoids.add(c["geoid"])
+            hub_grid.add(c)
+            gap += 1
+    print(f"corridor: +{gap} gap-fill hubs (pop >= {GAP_A_POP:,} & {GAP_A_MI}mi+ "
+          f"from a hub, or >= {GAP_B_POP:,} & {GAP_B_MI}mi+) → {len(t2)} tier-2 total",
+          file=sys.stderr)
 
     # ---- tier 3 systems: anchors, orphan anchors, satellites ---------------
     # (US only — Canada/Mexico stop at tier 2.) A town is covered by an anchor
@@ -793,10 +903,62 @@ def main():
                 else min(mainland1, key=lambda j: D1[i][j]))
         add_edge(t1n[host], t1n[i], 1)
         uf1[find1(i)] = find1(host)
+
+    # kNN augmentation + leaf patch (keeps the spine from leaving hubs stranded
+    # — Ottawa & Toronto were each degree-1 because their natural link was
+    # Gabriel-blocked by Rochester across Lake Ontario, then the cross-lake
+    # hops died in the water test). Each hub gains up to T1_KNN nearest dry
+    # links that don't cross an existing edge; any hub still below degree 2
+    # takes its nearest dry unconnected hub, crossing-free if possible.
+    id2node = {n["id"]: n for n in nodes}
+    conn1 = set()
+    deg1 = defaultdict(int)
+    idx1 = EdgeIndex()
+    for e in edges:
+        if e["tier"] == 1:
+            conn1.add(frozenset((e["from"], e["to"])))
+            deg1[e["from"]] += 1
+            deg1[e["to"]] += 1
+            idx1.add(id2node[e["from"]], id2node[e["to"]])
+
+    def link1(i, j, allow_cross=False):
+        a, b = t1n[i], t1n[j]
+        key = frozenset((a["id"], b["id"]))
+        if key in conn1 or not dry_mid(a, b, 60):
+            return False
+        if not allow_cross and idx1.crosses(a, b):
+            return False
+        add_edge(a, b, 1)
+        conn1.add(key)
+        deg1[a["id"]] += 1
+        deg1[b["id"]] += 1
+        idx1.add(a, b)
+        uf1[find1(i)] = find1(j)
+        return True
+
+    t1_knn = t1_leaf = 0
+    for i in mainland1:
+        near = sorted((j for j in mainland1 if j != i), key=lambda j: D1[i][j])
+        added = 0
+        for j in near:
+            if added >= T1_KNN:
+                break
+            if D1[i][j] <= T2_MAX_LINK_MI and link1(i, j):
+                added += 1
+                t1_knn += 1
+    for i in mainland1:                                  # leaf patch
+        if deg1[t1n[i]["id"]] >= 2:
+            continue
+        near = sorted((j for j in mainland1 if j != i), key=lambda j: D1[i][j])
+        j = next((j for j in near if link1(i, j)), None)
+        if j is None:                                    # fall back: allow a cross
+            j = next((j for j in near if link1(i, j, allow_cross=True)), None)
+        if j is not None:
+            t1_leaf += 1
     t1_edges = len(edges)
     print(f"tier 1: {t1_edges} HSR mesh edges — Gabriel graph over {len(mainland1)} "
-          f"mainland hubs ({t1_wet} wet drops) + {len(remote1)} island links",
-          file=sys.stderr)
+          f"mainland hubs ({t1_wet} wet drops) + {len(remote1)} island links "
+          f"(+{t1_knn} kNN, +{t1_leaf} leaf patches)", file=sys.stderr)
 
     # ---- tier-2 mesh: an RNG over ALL hubs (tier 1 + 2) ---------------------
     # The same lens rule as the tier-4 commuter web, one level up: every
@@ -898,10 +1060,42 @@ def main():
                     bj = max(cands, key=lambda j: pts2[j]["pop"] or 0)
             add_t2(bi, bj)
             bridges2 += 1
+
+    # short-link fill ("keep it clean"): the RNG lens suppresses the direct link
+    # between two adjacent hubs whenever a third sits between them — so Manchester
+    # and Nashua (16 mi, both major) route through Merrimack instead of linking,
+    # and Grand Rapids reaches 130 mi out but skips Kentwood 6 mi away. Restore
+    # each hub's obvious near neighbors: among its nearest T2_SHORT_KNN, add any
+    # unlinked hub within T2_SHORT_MI that is dry AND does not cross an existing
+    # tier-1/2 edge (crossings are what the RNG was protecting, so we keep them out).
+    idx2 = EdgeIndex()
+    for e in edges:
+        if e["tier"] <= 2:
+            idx2.add(id2node[e["from"]], id2node[e["to"]])
+    short2 = 0
+    for i in range(N2):
+        for dij, j in knn2[i][:T2_SHORT_KNN]:
+            if dij > T2_SHORT_MI or (i < n1 and j < n1):
+                continue
+            if ((i, j) if i < j else (j, i)) in t2_seen:
+                continue
+            a, b = pts2[i], pts2[j]
+            if idx2.crosses(a, b):
+                continue
+            # added links are optional niceties, so hold them to the strict
+            # river-forgiving/bay-rejecting test (US); skipping one never breaks
+            # connectivity — the RNG backbone already guarantees it
+            us = a.get("country", "US") == "US" and b.get("country", "US") == "US"
+            if not (dry_sat(a, b) if us else dry_mid(a, b, 40)):
+                continue
+            add_t2(i, j)
+            idx2.add(a, b)
+            short2 += 1
+
     t2_dead = sum(1 for i in range(n1, N2) if deg2c[i] < 2)
     print(f"tier 2: {len(edges) - t2_start} mesh links (RNG {rng2}, +{patched2} "
-          f"dead-end patches, +{bridges2} island bridges, {t2_wet} wet drops); "
-          f"{t2_dead} regionals below 2 links (islands/edges)", file=sys.stderr)
+          f"dead-end patches, +{bridges2} island bridges, +{short2} short-link fills, "
+          f"{t2_wet} wet drops); {t2_dead} below 2 links (islands/edges)", file=sys.stderr)
     t1_grid = Grid(t1n)
     for nn in t2n:                                   # informational hierarchy
         host, _ = t1_grid.nearest(nn["lat"], nn["lng"])
@@ -1166,7 +1360,8 @@ def main():
     rev = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     stats = {
         "tier1Hubs": len(t1), "tier1CA": len(ca_t1), "tier1MX": len(mx_t1),
-        "tier2Hubs": len(t2), "tier2CA": ca_t2, "tier2bHubs": t2b,
+        "tier2Hubs": len(t2), "tier2CA": ca_t2, "tier2bHubs": t2b, "tier2GapHubs": gap,
+        "tier1Knn": t1_knn, "tier1LeafPatches": t1_leaf, "tier2ShortLinks": short2,
         "tier3Sat": len(t3) - len(orphans), "tier3Core": core_count,
         "tier3Nodes": len(t3) + core_count, "tier3Systems": sys_built,
         "tier3Lines": lines_total, "tier3Rings": rings_total,
@@ -1177,9 +1372,10 @@ def main():
         "tier4Deg2Pct": round(deg2pct, 1),
         "tier4DeadEnds": dead_ends, "tier4Isolated": isolated,
     }
-    params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI,
+    params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI, "T1_KNN": T1_KNN,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
               "T2_KNN": T2_KNN, "T2_MAX_LINK_MI": T2_MAX_LINK_MI,
+              "T2_SHORT_MI": T2_SHORT_MI, "GAP_A_POP": GAP_A_POP, "GAP_B_POP": GAP_B_POP,
               "COVERAGE_MI": COVERAGE_MI, "T2B_MIN_POP": T2B_MIN_POP,
               "T2B_FAR_MIN_POP": T2B_FAR_MIN_POP, "T2B_FAR_MI": T2B_FAR_MI,
               "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
