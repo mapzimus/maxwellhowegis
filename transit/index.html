@@ -132,13 +132,13 @@
 <div class="title-card panel">
   <div class="label">Fantasy Transit · Network Map</div>
   <h1>US Network — Viewer</h1>
-  <div class="sub">The auto-generated four-tier network: an HSR spine, regional hubs, metro systems, and a commuter web linking every town to at least two neighbors. Click <b>T1–T4</b> to show or hide a tier; search flies to any town.</div>
+  <div class="sub">The auto-generated four-tier network: an HSR spine, regional hubs (plus lighter <b>2b</b> promoted cities), gap-driven metro systems, and a commuter web linking every town to at least two neighbors. Click <b>T1–T4</b> to show or hide a tier; search flies to any town.</div>
 </div>
 
 <div class="toolbar">
   <div class="seg panel" id="tierSeg">
     <button data-tier="1" class="on" aria-pressed="true" aria-label="Toggle tier 1 · HSR" title="Show / hide HSR"><span class="dot" style="background:var(--t1)"></span>T1<span class="tname"> · HSR</span></button>
-    <button data-tier="2" class="on" aria-pressed="true" aria-label="Toggle tier 2 · Regional" title="Show / hide regional"><span class="dot" style="background:var(--t2)"></span>T2<span class="tname"> · Regional</span></button>
+    <button data-tier="2" class="on" aria-pressed="true" aria-label="Toggle tier 2 · Regional (includes 2b promoted cities)" title="Show / hide regional — includes the lighter 2b promoted cities"><span class="dot" style="background:var(--t2)"></span><span class="dot" style="background:#cdd6fe;width:7px;height:7px;margin-left:-3px"></span>T2<span class="tname"> · Regional</span></button>
     <button data-tier="3" class="on" aria-pressed="true" aria-label="Toggle tier 3 · Metro" title="Show / hide metro"><span class="dot" style="background:var(--t3)"></span>T3<span class="tname"> · Metro</span></button>
     <button data-tier="4" class="on" aria-pressed="true" aria-label="Toggle tier 4 · Commuter layers" title="Show / hide the commuter towns + lines"><span class="dot" style="background:var(--t4)"></span>T4<span class="tname"> · Commuter</span></button>
   </div>
@@ -198,6 +198,9 @@ const TIERS = {
   3: { name:'Metro / Subway',color:'#34d399', radius:5 },
   4: { name:'Commuter Rail', color:'#38bdf8', radius:4 },
 };
+/* tier 2b: important cities promoted into tier 2 by the generator (sub='2b')
+   — same family as T2 but lighter and smaller so the two waves read apart */
+const T2B = { name:'Regional Hub · 2b', color:'#cdd6fe', radius:5 };
 
 /* ---- state ---- */
 let state = { name:'US Fantasy Transit Network', nodes:[], edges:[] };
@@ -429,10 +432,14 @@ function havMi(a, b){
  * ------------------------------------------------------------------ */
 function nodeMarker(n){
   const t = TIERS[n.tier];
+  const is2b = n.sub === '2b';
+  const radius = is2b ? T2B.radius : t.radius;
   const m = L.circleMarker([n.lat, n.lng], {
-    radius:t.radius, color:'#0a0e17', weight:2, fillColor:t.color, fillOpacity:0.95
+    radius, color:'#0a0e17', weight:2,
+    fillColor: is2b ? T2B.color : t.color, fillOpacity:0.95
   });
-  m.bindTooltip(n.name, { direction:'top', offset:[0,-t.radius-2], className:'node-tip', opacity:0.95 });
+  m.bindTooltip(is2b ? `${n.name} · 2b` : n.name,
+    { direction:'top', offset:[0,-radius-2], className:'node-tip', opacity:0.95 });
   m.on('click', (ev) => { L.DomEvent.stop(ev); map.flyTo([n.lat, n.lng], Math.max(map.getZoom(), 6)); });
   return m;
 }
@@ -449,9 +456,11 @@ function edgeLine(e, shift = 0){
   if (Math.abs(aLng - bLng) > 180){
     if (aLng > bLng) aLng -= 360; else bLng -= 360;
   }
+  const is2b = e.sub === '2b' && e.tier === 2;
   return L.polyline([[a.lat,aLng+shift],[b.lat,bLng+shift]], {
-    color:t.color, weight: e.tier===1?3.5 : e.tier===2?2.5 : 1.8,
-    opacity:0.7, dashArray: dashed ? '4 5' : null
+    color: is2b ? T2B.color : t.color,
+    weight: e.tier===1?3.5 : e.tier===2?(is2b?1.6:2.5) : 1.8,
+    opacity: is2b ? 0.6 : 0.7, dashArray: dashed ? '4 5' : null
   });
 }
 
@@ -509,18 +518,23 @@ function renderSidebar(){
   let html = '';
   for (const tier of [1,2,3,4]){
     if (!tierVisible[tier]) continue;
-    const group = state.nodes.filter(n => n.tier === +tier);
-    if (!group.length) continue;
     const t = TIERS[tier];
-    html += `<div class="grp-head"><span class="dot" style="background:${t.color}"></span>${t.name} · ${group.length}</div>`;
-    group.forEach(n => {
-      html += `<div class="nrow" data-id="${n.id}" role="button" tabindex="0">
-        <div style="overflow:hidden">
-          <div class="nm">${escapeHtml(n.name)}</div>
-          <div class="co">${fmt(n.lat)}, ${fmt(n.lng)}</div>
-        </div>
-      </div>`;
-    });
+    const groups = tier === 2
+      ? [[t.name, t.color, state.nodes.filter(n => n.tier === 2 && n.sub !== '2b')],
+         [T2B.name, T2B.color, state.nodes.filter(n => n.tier === 2 && n.sub === '2b')]]
+      : [[t.name, t.color, state.nodes.filter(n => n.tier === +tier)]];
+    for (const [gname, gcolor, group] of groups){
+      if (!group.length) continue;
+      html += `<div class="grp-head"><span class="dot" style="background:${gcolor}"></span>${gname} · ${group.length}</div>`;
+      group.forEach(n => {
+        html += `<div class="nrow" data-id="${n.id}" role="button" tabindex="0">
+          <div style="overflow:hidden">
+            <div class="nm">${escapeHtml(n.name)}</div>
+            <div class="co">${fmt(n.lat)}, ${fmt(n.lng)}</div>
+          </div>
+        </div>`;
+      });
+    }
   }
   list.innerHTML = html;
 }
@@ -550,10 +564,10 @@ function fromGeoJSON(gj){
     const p = f.properties || {}, g = f.geometry || {};
     if (g.type === 'Point' && p.kind !== 'edge'){
       const [lng,lat] = g.coordinates;
-      nodes.push({ id:p.id||('n'+(nodes.length+1)), name:p.name||'Node', tier:+p.tier||1, lat, lng, parent:p.parent||null,
+      nodes.push({ id:p.id||('n'+(nodes.length+1)), name:p.name||'Node', tier:+p.tier||1, lat, lng, parent:p.parent||null, sub:p.sub||null,
                    geoid:p.geoid||null, pop:(p.pop != null ? +p.pop : null) });
     } else if (g.type === 'LineString' && p.kind !== 'node'){
-      if (p.from && p.to) edges.push({ id:p.id||('e'+(edges.length+1)), from:p.from, to:p.to, tier:+p.tier||1 });
+      if (p.from && p.to) edges.push({ id:p.id||('e'+(edges.length+1)), from:p.from, to:p.to, tier:+p.tier||1, sub:p.sub||null });
     }
   });
   return { name:gj.name || 'US Fantasy Transit Network', nodes, edges };

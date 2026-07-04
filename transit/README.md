@@ -12,6 +12,7 @@ Open [`/transit/`](https://maxwellhowegis.com/transit/) (or `transit/index.html`
 |---|---|---|---|
 | **1 — HSR Hub** | Major-city high-speed-rail hubs | Tier-1 ↔ tier-1, the intercity spine | `#fbbf24` amber |
 | **2 — Regional Hub** | Smaller regional connectors | Bridge tier-1 hubs down to local networks | `#a5b4fc` indigo |
+| **2b — Promoted city** | Important cities the spacing rules miss (Salem MA, Concord NH, Nashua NH, Portsmouth NH…) | Full tier-2 members, tagged `sub:"2b"` and drawn lighter/smaller | `#cdd6fe` pale indigo |
 | **3 — Metro / Subway** | Hyper-local neighborhood transit | Hangs off a tier-2 hub | `#34d399` green |
 | **4 — Commuter Rail** | Normal-speed rail to *every* town | Reaches the towns off tier-2 hubs | `#38bdf8` sky |
 
@@ -60,12 +61,13 @@ To change the network, tweak the constants at the top of `scripts/build_network.
 | Tier | Rule | Result |
 |---|---|---|
 | **1 — HSR** | pop ≥ 175k @ 60 mi spacing, connected by a **Gabriel graph** (an edge survives if no third hub sits in the circle with the edge as its diameter — connected by construction, ~4 links per hub, so California triangulates instead of chaining). Edges are densely water-sampled (every ~8 mi) with a ~12-mi coastal tolerance — LA–San Diego hugs the shore, but nothing crosses a Great Lake, the Great Salt Lake, or an open strait. **International**: 12 Canadian metros, 5 interior-Mexico metros (Monterrey, Torreón, Mexicali, Chihuahua, Hermosillo — the 60-mi spacing is a hard invariant with no exceptions, so border twins like Tijuana and Ciudad Juárez fold into their US hub), and island links — Honolulu→Los Angeles, San Juan→Miami, Anchorage→Vancouver — land at the biggest hub within 15% of the shortest crossing | **106 hubs · 179 edges**, 38,958 mi |
-| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2). Connected by an **RNG mesh over all tier-1/2 hubs** — the same lens rule as the commuter web, one level up: regionals link their natural neighbors instead of chaining to a parent, dead-ends patch to ≥ 2 links, island clusters keep a single sea link (Guam→Honolulu) | **737 hubs · 1,164 links**, 84,867 mi |
-| **3 — Metro** | radial urban-core subways: every 150k+ US hub gets 4–10 compass-named lines with 2–4 chained stops each (by population), and a **circle line only where ≥ 8 lines make it read as one**. Station placement is **land-aware** (Census state polygons minus Natural Earth lakes; wet stations pull inland or drop; collisions with the hub or sibling stations drop). Suburbs ≥ 15k within 18 mi (**1,644**) join at their **nearest station reachable over land** as line extensions — anchor choice and station join are water-gated, so no metro spoke crosses a bay (Redwood City no longer wires to Hayward across San Francisco Bay; bay-locked towns like Bremerton stay tier 4) | **3,426 metro nodes** |
-| **4 — Commuter web** | every remaining town joins a **relative neighborhood graph** over towns + US hubs + metro satellites (promoted suburbs stay in the web — commuter rail passes through them): an edge survives only if no third point is closer to both endpoints — RNG ⊇ MST and ⊆ Delaunay, so the web reads as planar corridors with interior degree 2–4 and no crossings. Hops cap at 60 mi, longer edges are densely water-sampled (every ~6 mi, with river forgiveness), isolated clusters bridge back over dry hops ≤ 90 mi, and dead-ends take a second link only where one heads in a genuinely different direction (≥ 45°) — peninsula towns like Little Compton end cleanly instead of growing slivers. **99.7 % of towns connect to ≥ 2 neighbors**; the exceptions are true islands/edges (Catalina, Block Island, Culebra, Provincetown, Alaska bush) | **30,860 towns · 43,317 links** |
+| **2 — Regional** | pop ≥ 25k @ 30 mi spacing, **plus** any 100k+ city outside a metro, **plus** 42 Canadian regionals, **plus coverage fill**: promote the biggest uncovered town until *every* town is within 60 mi of a hub (Canada/Mexico stop at tier 2). Connected by an **RNG mesh over all tier-1/2 hubs** — the same lens rule as the commuter web, one level up: regionals link their natural neighbors instead of chaining to a parent, dead-ends patch to ≥ 2 links, island clusters keep a single sea link (Guam→Honolulu) | **1,779 hubs (737 core + 1,042 2b) · 2,435 links**, 92,275 mi |
+| **2b — Promoted** | important cities the spacing rules miss: **40k+ anywhere**, or **20k+ when ≥ 40 mi from an HSR hub** (a 3.5 mi mutual spacing keeps inner-core satellites like Somerville and Beverly inside their parent metro). Full tier-2 members — they join the RNG mesh, anchor their own metros when ≥ 35k, and terminate commuter lines — tagged `sub:"2b"` and drawn lighter | **+1,042 hubs** |
+| **3 — Metro** | **gap-driven organic systems** (US, anchors = hubs ≥ 35k; stranded 35k+ towns anchor standalone local systems and stay in the tier-4 web): satellite towns ≥ 10k join the nearest system whose **pop-scaled capture radius** reaches them over a **dry path** (`dry_sat` — 7 bay-locked towns stay tier 4). A **density-scaled, jittered, land-aware hex grid** of infill stations covers each seed city (the anchor plus its 35k+ satellites) — a station only goes where **no real town, hub, or earlier station** is (the gap test), so Manhattan packs ~0.75 mi tight while sprawl spreads to 2.6 mi. Stations chain into lines: a **principal-axis through-line** for small systems ("one line down main street"), **balanced bearing sectors** for big ones, an **orbital ring** at ≥ 8 lines. Build is **points-then-lines**: every node of every tier exists before any line is drawn, then lines fill in tier by tier 1→4 | **1,134 systems** — 1,883 town nodes + 5,694 stations, 1,720 lines, 16 rings |
+| **4 — Commuter web** | every remaining town joins a **relative neighborhood graph** over towns + US hubs + metro satellites (promoted suburbs stay in the web — commuter rail passes through them): an edge survives only if no third point is closer to both endpoints — RNG ⊇ MST and ⊆ Delaunay, so the web reads as planar corridors with interior degree 2–4 and no crossings. Hops cap at 60 mi, longer edges are densely water-sampled (every ~6 mi, with river forgiveness), isolated clusters bridge back over dry hops ≤ 90 mi, and dead-ends take a second link only where one heads in a genuinely different direction (≥ 45°) — peninsula towns like Little Compton end cleanly instead of growing slivers. **99.7 % of towns connect to ≥ 2 neighbors**; the exceptions are true islands/edges (Catalina, Block Island, Culebra, Provincetown, Alaska bush) | **29,579 towns · 43,281 links** |
 
-The result is one fully connected graph (4,269 nodes / 4,907 edges) written to
-`data/network.json`, plus the 43,317-link commuter web in `data/tier4_links.geojson` — the
+The result is one fully connected graph (9,462 nodes / 10,387 edges) written to
+`data/network.json`, plus the 43,281-link commuter web in `data/tier4_links.geojson` — the
 viewer loads both directly on every visit. The tier-4 town nodes render as their own toggleable
 canvas layer straight from `data/towns.geojson`, with the commuter web on a second canvas
 layer beneath them.
@@ -132,7 +134,8 @@ features, distinguished by `properties.kind`:
 ```
 
 `parent` (optional) lets a lower-tier node record which hub it hangs off, if you want the hierarchy
-made explicit beyond the drawn links.
+made explicit beyond the drawn links. `sub` (optional, nodes and edges) marks generator sub-waves —
+currently `"2b"` for promoted cities and their connecting links, which the viewer styles lighter.
 
 ## Stack
 
@@ -149,12 +152,17 @@ site (plain HTML/CSS/JS).
       2020 Census POP100 for CDPs); pop-scaled dots
 - [x] Town search → fly-to / promote-to-node; undo (Ctrl+Z); auto-parent on cross-tier links;
       live per-tier mileage
-- [x] **Auto-generated full network** (`scripts/build_network.py`): 106 HSR + 737 regional +
-      3,426 metro nodes; every town ≤ 60 mi from a hub; 30,860 tier-4 town nodes plotted
-- [x] Connect the tier-4 town nodes — relative-neighborhood-graph commuter web, 43,317 links,
+- [x] **Auto-generated full network** (`scripts/build_network.py`): 106 HSR + 1,779 regional
+      (incl. 1,042 tier-2b promoted cities) + 7,577 metro nodes in 1,134 gap-driven organic
+      systems; every town ≤ 60 mi from a hub; 29,579 tier-4 town nodes plotted
+- [x] Connect the tier-4 town nodes — relative-neighborhood-graph commuter web, 43,281 links,
       99.7 % of towns with ≥ 2 connections (dead-ends only at true islands/edges/peninsulas)
 - [x] Re-mesh tiers 1–2: Gabriel-graph HSR spine (California triangulates), RNG regional mesh
       replacing the old parent chains
+- [x] **Tier 2b**: important cities the spacing rules missed (Salem MA, Concord NH, Nashua NH,
+      Portsmouth NH…) promoted into tier 2, styled lighter
+- [x] **Gap-driven metros**: density-scaled land-aware infill (Manhattan-tight to sprawl-wide),
+      through-lines / bearing-sector lines / orbital rings; points-then-lines build order
 - [ ] Auto-route HSR edges along real corridors instead of straight lines
 - [ ] Network stats (reach, coverage: % of population within N mi of each tier)
 - [x] Promote to a styled read-only "network map" viewer (editing retired)
