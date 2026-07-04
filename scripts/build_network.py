@@ -28,16 +28,25 @@ Algorithm (all straight-line/great-circle, stdlib only):
                          tier-1/2 hubs (same lens rule as tier 4), water-tested,
                          dead-ends patched to degree >= 2, island clusters bridged
                          by a single sea link.
-  Tier 3 (metro/subway)  Two parts. URBAN CORES: every 150k+ (CORE_MIN_POP) US hub
-                         gets a radial subway — 4-10 compass-named lines with 2-4
-                         chained stops each, land-aware placement, plus a circle
-                         line where >= 8 lines make it read as one. SATELLITES:
-                         every non-hub town with pop >= T3_SAT_MIN_POP within
-                         T3_RADIUS_MI of an anchor (tier-1 hubs + 100k+ tier-2s)
-                         joins the metro at its nearest station — anchor choice
-                         and station join both require a DRY overland path, so
-                         no metro spoke crosses a bay; bay-locked towns stay
-                         tier 4.
+  Tier 2b (promoted)     Important cities the spacing rules miss — Salem MA,
+                         Concord NH, Nashua NH, Portsmouth NH: pop >= T2B_MIN_POP
+                         anywhere, or >= T2B_FAR_MIN_POP when T2B_FAR_MI+ from an
+                         HSR hub. Full tier-2 promotion, tagged sub='2b' and
+                         drawn lighter; they join the tier-2 RNG mesh like any
+                         hub and anchor their own metros when >= 35k.
+  Tier 3 (metro/subway)  Gap-driven organic systems (US only; anchors = hubs
+                         >= T3_ANCHOR_MIN_POP; stranded 35k+ towns anchor
+                         standalone local systems and stay in the tier-4 web).
+                         Satellites >= T3_SAT_MIN_POP join the nearest system
+                         whose pop-scaled capture radius reaches them over a
+                         DRY path (dry_sat — bay-locked towns stay tier 4).
+                         A density-scaled jittered land-aware hex grid of infill
+                         stations covers each seed city, thinned by a gap test
+                         (no station where a town, hub, or earlier station
+                         already is). Stations chain into a principal-axis
+                         through-line (small systems), balanced bearing sectors
+                         (big ones), plus an orbital ring at >= T3_RING_MIN
+                         lines.
   Tier 4 (commuter web)  Every remaining town is a node (rendered from
                          data/towns.geojson). Connections are a RELATIVE
                          NEIGHBORHOOD GRAPH over towns + US tier-1/2 hubs +
@@ -62,6 +71,10 @@ Algorithm (all straight-line/great-circle, stdlib only):
 
     python3 scripts/build_network.py
 
+Build order is points-then-lines: every node of every tier is placed first
+(hubs, satellites, infill stations, towns), then lines fill in tier by tier
+1 -> 4, each pass seeing the complete point field.
+
 Deterministic given towns.geojson; tweak the constants below and re-run.
 """
 import json, math, os, sys
@@ -80,9 +93,20 @@ T2_SPACING_MI = 30
 T2_KNN = 12                # candidate neighbors per hub for the tier-2 RNG
 T2_MAX_LINK_MI = 300       # no single tier-2 hop longer than this (bridges except)
 T2_BIG_POP = 100_000       # cities this big become hubs even inside the spacing
-                           # radius, as long as they're outside a hub's metro
-                           # (T3_RADIUS_MI) — catches Fort Worth, Baltimore, Mesa…
+                           # radius, as long as they're outside a hub's core
+                           # (T2_BIG_EXCL_MI) — catches Fort Worth, Baltimore, Mesa…
+T2_BIG_EXCL_MI = 18
 COVERAGE_MI = 60           # every town ends up within this of a tier-1/2 hub
+
+# tier 2b: important cities the spacing rules miss — the Salems, Concords,
+# Nashuas, Portsmouths. Full promotion into tier 2 (tagged sub='2b' and drawn
+# lighter): 40k+ anywhere, or 20k+ when >= T2B_FAR_MI from an HSR hub. A small
+# mutual spacing keeps inner-core satellites (Somerville, Beverly) inside
+# their parent metro instead of splintering it.
+T2B_MIN_POP = 40_000
+T2B_FAR_MIN_POP = 20_000
+T2B_FAR_MI = 40
+T2B_SPACING_MI = 3.5       # Salem MA sits 3.67 mi from Lynn — keep it in
 
 # international extent: Canada gets tier-1/2 hubs (nothing more local), a few
 # northern Mexican metros join tier 1, and island hubs (Honolulu, San Juan)
@@ -91,17 +115,33 @@ MX_T1_MIN_POP = 400_000
 MX_LAT_MIN = 25.0
 MX_T1_MAX = 8
 ISLAND_LINK_MI = 1_000     # hubs whose nearest neighbor is farther get MST only
-T3_ANCHOR_MIN_POP = 100_000
-T3_SAT_MIN_POP = 15_000
-T3_RADIUS_MI = 18
 
-# urban-core metro: hubs this big get a radial subway network — 4-10 lines
-# with 2-4 stops each (by population) chained outward from the hub, plus a
-# circle line where there are enough lines to read as one (>= 8). Station
-# placement is LAND-AWARE: candidates are point-in-polygon tested against
-# Census state boundaries minus Natural Earth lakes; wet stations pull inward
-# or drop. Suburb satellites join at their nearest station (line extensions).
-CORE_MIN_POP = 150_000
+# tier-3 metros: gap-driven urban systems (US only). Anchors are tier-1/2 hubs
+# with pop >= T3_ANCHOR_MIN_POP; 35k+ towns stranded outside every capture
+# radius anchor a standalone local system instead (and stay in the tier-4 web
+# so they keep a through-connection). Big towns reach farther to join a system
+# (T3_REACH), and joining requires a DRY overland path (dry_sat) so bay-locked
+# towns never wire across open water. Infill stations fill a land-aware,
+# density-scaled, jittered hex grid over each seed city, thinned by a gap
+# test — a station only goes where no real town, hub, or already-placed
+# station provides coverage (Manhattan packs tight, sprawl spreads out).
+T3_ANCHOR_MIN_POP = 35_000
+T3_SAT_MIN_POP = 10_000
+T3_CAPTURE = ((2_000_000, 22), (1_000_000, 20), (500_000, 16),
+              (250_000, 14), (100_000, 12), (0, 8))    # (anchor pop floor, mi)
+T3_REACH = ((100_000, 18), (35_000, 12), (0, 0))       # (town pop floor, mi)
+T3_GAP_MI = 1.3            # max gap-test distance; scales down with grid spacing
+T3_CORE_FRAC = 0.8         # infill field radius as fraction of city land radius
+T3_CORE_MIN_MI = 1.2
+T3_CORE_MAX_MI = 13.0      # + 1 mi per 1M pop bonus — a one-point NYC still
+                           # reaches the Bronx; gap/wet tests trim any overshoot
+T3_GRID_MIN_MI = 0.75      # infill grid spacing: density-scaled, NYC-core tight...
+T3_GRID_MAX_MI = 2.6       # ...to exurban sprawl wide
+T3_SEED_MIN_POP = 35_000   # satellites this big grow their own infill field
+T3_SEED_CAP = 300          # max infill per seed (pop / 25k, clamped to 4..this)
+T3_STOPS_PER_LINE = 5      # target stations per line -> line count
+T3_MAX_LINES = 20
+T3_RING_MIN = 8            # sector lines needed before an orbital ring appears
 
 # tier-4 commuter web: a relative neighborhood graph over the remaining towns
 # plus the US tier-1/2 hubs. Every town should end up with >= 2 links; only
@@ -112,10 +152,6 @@ T4_WATER_TEST_MI = 12      # edges longer than this get midpoint land tests
 T4_BRIDGE_MI = 90          # max dry hop when reconnecting isolated clusters
 T4_PATCH_MIN_DEG = 45      # a patched 2nd link must diverge this much from the
                            # 1st — peninsula dead-ends end cleanly, no slivers
-CORE_R_FRAC = 0.62         # network radius as a fraction of the city's land radius
-CORE_R_MIN_MI = 1.5
-CORE_R_MAX_MI = 9.0
-CORE_SHRINKS = (1.0, 0.72, 0.5, 0.32)   # inward retries for wet stations
 COMPASS = ["N","NNE","NE","ENE","E","ESE","SE","SSE",
            "S","SSW","SW","WSW","W","WNW","NW","NNW"]
 
@@ -411,6 +447,40 @@ class Grid:
         return out
 
 
+def hex_pts(r_mi, s_mi):
+    """Offset-grid points (dx, dy in planar miles) covering a disc of radius
+    r_mi at spacing s_mi, sorted innermost-first."""
+    pts, row = [], 0
+    y = -r_mi
+    while y <= r_mi:
+        x = -r_mi + (s_mi / 2 if row % 2 else 0.0)
+        while x <= r_mi:
+            if x * x + y * y <= r_mi * r_mi:
+                pts.append((x, y))
+            x += s_mi
+        y += s_mi * 0.866
+        row += 1
+    pts.sort(key=lambda p: p[0] ** 2 + p[1] ** 2)
+    return pts
+
+
+def pca_axis(pts):
+    """Unit vector of the principal axis of (x, y) points — the direction the
+    cloud is longest in. Falls back to east-west for degenerate clouds."""
+    n = len(pts)
+    mx = sum(p[0] for p in pts) / n
+    my = sum(p[1] for p in pts) / n
+    sxx = sum((p[0] - mx) ** 2 for p in pts)
+    syy = sum((p[1] - my) ** 2 for p in pts)
+    sxy = sum((p[0] - mx) * (p[1] - my) for p in pts)
+    if abs(sxy) < 1e-9:
+        return (1.0, 0.0) if sxx >= syy else (0.0, 1.0)
+    lam = (sxx + syy) / 2 + math.sqrt(((sxx - syy) / 2) ** 2 + sxy ** 2)
+    vx, vy = sxy, lam - sxx
+    norm = math.hypot(vx, vy)
+    return vx / norm, vy / norm
+
+
 def greedy_spacing(cands, spacing_mi, existing):
     """Pick candidates in order, skipping any within spacing_mi of a prior pick
     (or of `existing`). Uses a Grid over picks for speed."""
@@ -460,7 +530,7 @@ def main():
         if c["geoid"] in hub_geoids:
             continue
         _, d = hub_grid.nearest(c["lat"], c["lng"])
-        if d >= T2_SPACING_MI or (c["pop"] >= T2_BIG_POP and d > T3_RADIUS_MI):
+        if d >= T2_SPACING_MI or (c["pop"] >= T2_BIG_POP and d > T2_BIG_EXCL_MI):
             t2.append(c)
             hub_geoids.add(c["geoid"])
             hub_grid.add(c)
@@ -498,42 +568,169 @@ def main():
     print(f"tier 2: +{fills} coverage-fill hubs (every town now within "
           f"{COVERAGE_MI} mi of a hub) → {len(t2)} total", file=sys.stderr)
 
-    # ---- tier 3 satellites (US only — Canada/Mexico stop at tier 2) --------
-    # A suburb joins the metro of the nearest anchor it can reach OVER LAND —
-    # pure nearest-distance wired Redwood City into Hayward straight across
-    # San Francisco Bay (and Bremerton into Seattle across Puget Sound…).
-    # Towns with no dry anchor in radius stay tier-4 (the ferry commute).
-    anchors = ([t for t in t1 if t.get("country", "US") == "US"]
-               + [t for t in t2 if t.get("country", "US") == "US"
-                  and t["pop"] >= T3_ANCHOR_MIN_POP])
-    dropped_wet_sat = 0
-    t3, t3_anchor = [], {}
+    # ---- tier 2b: important cities the spacing rules missed ----------------
+    t1_us_grid = Grid([t for t in t1 if t.get("country", "US") == "US"])
+    t2b = 0
+    for c in by_pop:
+        if c["pop"] < T2B_FAR_MIN_POP:
+            break
+        if c["geoid"] in hub_geoids:
+            continue
+        _, d_hub = hub_grid.nearest(c["lat"], c["lng"])
+        if d_hub < T2B_SPACING_MI:
+            continue
+        _, d_t1 = t1_us_grid.nearest(c["lat"], c["lng"])
+        if c["pop"] >= T2B_MIN_POP or d_t1 >= T2B_FAR_MI:
+            c["sub"] = "2b"
+            t2.append(c)
+            hub_geoids.add(c["geoid"])
+            hub_grid.add(c)
+            t2b += 1
+    print(f"tier 2b: +{t2b} promoted cities (pop >= {T2B_MIN_POP:,}, or "
+          f">= {T2B_FAR_MIN_POP:,} beyond {T2B_FAR_MI} mi of HSR)", file=sys.stderr)
+
+    # ---- tier 3 systems: anchors, orphan anchors, satellites ---------------
+    # (US only — Canada/Mexico stop at tier 2.) A town is covered by an anchor
+    # when their distance is within max(anchor capture radius, town reach) AND
+    # a dry overland path exists (dry_sat) — pure nearest-distance wired
+    # Redwood City into Hayward straight across San Francisco Bay. 35k+ towns
+    # no anchor covers become standalone local-system anchors themselves
+    # (biggest first, so a stranded city absorbs its smaller stranded
+    # neighbors); bay-locked smaller towns stay tier 4 (the ferry commute).
+    def capture_mi(pop):
+        return next(r for floor, r in T3_CAPTURE if pop >= floor)
+
+    def reach_mi(pop):
+        return next(r for floor, r in T3_REACH if pop >= floor)
+
+    anchors = [t for t in t1 + t2
+               if t.get("country", "US") == "US" and t["pop"] >= T3_ANCHOR_MIN_POP]
+    anchor_grid = Grid(list(anchors))
+    wet_locked = 0
+
+    def covering_anchor(t):
+        lim = max(capture_mi(2_000_000), reach_mi(t["pop"]))
+        cands = [(tdist(x, t), x) for x in anchor_grid.within(t["lat"], t["lng"], lim)]
+        cands = [(d, x) for d, x in cands
+                 if d <= max(capture_mi(x["pop"]), reach_mi(t["pop"]))]
+        cands.sort(key=lambda z: z[0])
+        for d, x in cands:
+            if dry_sat(x, t):
+                return x
+        return None if not cands else "wet"
+
+    orphans = []
     for t in by_pop:
-        if t["pop"] < T3_SAT_MIN_POP:
+        if t["pop"] < T3_ANCHOR_MIN_POP:
             break
         if t["geoid"] in hub_geoids:
             continue
-        near = sorted((a for a in anchors if tdist(a, t) <= T3_RADIUS_MI),
-                      key=lambda a: tdist(a, t))
-        a = next((a for a in near if dry_sat(a, t)), None)
-        if a is not None:
-            t3.append(t)
-            t3_anchor[t["geoid"]] = a["geoid"]
-        elif near:
-            dropped_wet_sat += 1
-    print(f"tier 3: {len(t3)} metro nodes around {len(anchors)} anchors "
-          f"({dropped_wet_sat} bay-locked towns left to tier 4)", file=sys.stderr)
+        if covering_anchor(t) in (None, "wet"):
+            orphans.append(t)
+            anchor_grid.add(t)
+    orphan_geoids = {t["geoid"] for t in orphans}
+    systems = {a["geoid"]: {"anchor": a, "sats": []} for a in anchors + orphans}
 
-    # ---- assemble nodes ----------------------------------------------------
+    t3, t3_anchor = list(orphans), {}
+    for t in by_pop:
+        if t["pop"] < T3_SAT_MIN_POP:
+            break
+        if t["geoid"] in hub_geoids or t["geoid"] in orphan_geoids:
+            continue
+        a = covering_anchor(t)
+        if a is None:
+            continue
+        if a == "wet":
+            wet_locked += 1
+            continue
+        t3.append(t)
+        t3_anchor[t["geoid"]] = a["geoid"]
+        systems[a["geoid"]]["sats"].append(t)
+    print(f"tier 3: {len(systems)} systems ({len(orphans)} standalone), "
+          f"{len(t3) - len(orphans)} satellite towns claimed "
+          f"({wet_locked} bay-locked towns left to tier 4)", file=sys.stderr)
+
+    # ---- assemble nodes (all points exist before any line is drawn) --------
     nodes, node_by_geoid = [], {}
     for tier, group in ((1, t1), (2, t2), (3, t3)):
         for t in group:
             n = {"id": f"n{len(nodes)+1}", "name": t["name"], "tier": tier,
                  "lat": round(t["lat"], 5), "lng": round(t["lng"], 5),
                  "parent": None, "geoid": t["geoid"], "pop": t["pop"], "st": t["st"],
-                 "sqmi": t["sqmi"], "country": t.get("country", "US")}
+                 "sqmi": t["sqmi"], "country": t.get("country", "US"),
+                 "sub": t.get("sub")}
             nodes.append(n)
             node_by_geoid[t["geoid"]] = n
+
+    # ---- tier 3 station points ---------------------------------------------
+    # Infill placement per system, biggest anchor first: a land-aware jittered
+    # hex grid covers each seed city (the anchor plus its 35k+ satellites),
+    # thinned by the gap test — stations only go where no real town, hub, or
+    # already-placed station provides coverage. Names come from each station's
+    # bearing off its anchor; lines are drawn later, tier by tier.
+    station_grid = Grid([])
+    core_count = wet_dropped = gap_dropped = 0
+    sys_list = sorted(systems.values(), key=lambda s: -s["anchor"]["pop"])
+    for s in sys_list:
+        a = s["anchor"]
+        a_node = node_by_geoid[a["geoid"]]
+        coslat_a = math.cos(math.radians(a_node["lat"]))
+        brg = lambda p: math.degrees(
+            math.atan2((p["lng"] - a_node["lng"]) * coslat_a,
+                       p["lat"] - a_node["lat"])) % 360.0
+        stations = []
+        for t in s["sats"]:
+            n = node_by_geoid[t["geoid"]]
+            n["parent"] = a_node["id"]
+            stations.append(n)
+        lab_counts = defaultdict(int)
+        for seed in [a] + [t for t in s["sats"] if t["pop"] >= T3_SEED_MIN_POP]:
+            if not seed["sqmi"]:
+                continue
+            r_city = math.sqrt(seed["sqmi"] / math.pi)
+            r_core = min(T3_CORE_MAX_MI,
+                         max(T3_CORE_MIN_MI,
+                             T3_CORE_FRAC * r_city + seed["pop"] / 1_000_000))
+            dens = seed["pop"] / max(seed["sqmi"], 0.1)
+            s_mi = min(T3_GRID_MAX_MI,
+                       max(T3_GRID_MIN_MI, 2.6 - 0.55 * math.log(max(dens, 50) / 1000)))
+            gap_mi = min(T3_GAP_MI, max(0.45, 0.55 * s_mi))
+            cap = min(T3_SEED_CAP, max(4, seed["pop"] // 25_000))
+            coslat = math.cos(math.radians(seed["lat"]))
+            gseed = int(seed["geoid"]) if seed["geoid"].isdigit() else 0
+            placed = 0
+            for i, (dx, dy) in enumerate(hex_pts(r_core, s_mi)):
+                if placed >= cap:
+                    break
+                # deterministic jitter so cores don't read as a dot lattice
+                h = (i * 2654435761 + gseed) & 0xFFFFFFFF
+                dx += (h % 997 / 997 - 0.5) * 0.5 * s_mi
+                dy += (h // 997 % 997 / 997 - 0.5) * 0.5 * s_mi
+                lat = seed["lat"] + dy / 69.172
+                lng = seed["lng"] + dx / (69.172 * coslat)
+                if (town_grid.within(lat, lng, gap_mi)
+                        or station_grid.within(lat, lng, gap_mi)):
+                    gap_dropped += 1
+                    continue
+                if not on_dry_land(lat, lng):
+                    wet_dropped += 1
+                    continue
+                stn = {"lat": round(lat, 5), "lng": round(lng, 5), "synthetic": True}
+                lab = COMPASS[round(brg(stn) / 22.5) % 16]
+                lab_counts[lab] += 1
+                stn.update({"id": f"n{len(nodes) + 1}",
+                            "name": f'{a["name"]} Metro {lab} {lab_counts[lab]}',
+                            "tier": 3, "parent": a_node["id"], "geoid": None,
+                            "pop": None, "st": a_node.get("st"), "sqmi": 0,
+                            "country": "US", "sub": None})
+                nodes.append(stn)
+                stations.append(stn)
+                station_grid.add(stn)
+                core_count += 1
+                placed += 1
+        s["stations"] = stations
+    print(f"tier 3: +{core_count} infill stations placed "
+          f"({gap_dropped} gap-blocked, {wet_dropped} wet)", file=sys.stderr)
 
     # ---- edges -------------------------------------------------------------
     edges = []
@@ -631,6 +828,8 @@ def main():
     def add_t2(i, j):
         t2_seen.add((i, j) if i < j else (j, i))
         add_edge(pts2[i], pts2[j], 2)
+        if pts2[i].get("sub") == "2b" or pts2[j].get("sub") == "2b":
+            edges[-1]["sub"] = "2b"              # 2b links render lighter
         uf2[find2(i)] = find2(j)
         deg2c[i] += 1
         deg2c[j] += 1
@@ -708,77 +907,68 @@ def main():
         host, _ = t1_grid.nearest(nn["lat"], nn["lng"])
         nn["parent"] = host["id"]
 
-    # ---- tier 3 urban core: radial in-city metro around big hubs -----------
-    # L radial lines (by pop) with S chained stops each, land-aware placement;
-    # a circle line only where there are enough lines to read as one (>= 8).
-    core_count = wet_shrunk = wet_dropped = 0
-    core_by_hub = defaultdict(list)
-    for h in [n for n in nodes if n["tier"] <= 2 and (n["pop"] or 0) >= CORE_MIN_POP
-              and n.get("country", "US") == "US"]:
-        r_city = math.sqrt(h["sqmi"] / math.pi) if h.get("sqmi") else 3.0
-        radius = min(CORE_R_MAX_MI, max(CORE_R_MIN_MI, CORE_R_FRAC * r_city))
-        n_lines = min(10, max(4, 3 + round(h["pop"] / 200_000)))
-        n_stops = min(4, max(2, 2 + (h["pop"] or 0) // 400_000))
-        rot = (int(h["geoid"]) % 997) / 997 * (360.0 / n_lines)   # per-city star rotation
-        inner_ring = []
-        for i in range(n_lines):
-            brg = (rot + 360.0 * i / n_lines) % 360.0
-            label = COMPASS[round(brg / 22.5) % 16]
-            prev, survivors = h, []
-            for j in range(1, n_stops + 1):
-                r_j = radius * j / n_stops
-                placed = None
-                for f in CORE_SHRINKS:
-                    r_try = r_j * f
-                    lat = h["lat"] + (r_try / 69.172) * math.cos(math.radians(brg))
-                    lng = h["lng"] + (r_try / (69.172 * math.cos(math.radians(h["lat"])))) * math.sin(math.radians(brg))
-                    if on_dry_land(lat, lng):
-                        placed = (round(lat, 5), round(lng, 5))
-                        if f < 1.0:
-                            wet_shrunk += 1
-                        break
-                if placed is None:
-                    wet_dropped += 1
-                    continue
-                # skip stops that shrank onto the predecessor, the hub, or a
-                # sibling station
-                too_close = hav(placed[0], placed[1], prev["lat"], prev["lng"]) < 0.5 if survivors else False
-                if not too_close:
-                    for other in [h] + core_by_hub[h["id"]]:
-                        if hav(placed[0], placed[1], other["lat"], other["lng"]) < 0.6:
-                            too_close = True
-                            break
-                if too_close:
-                    wet_dropped += 1
-                    continue
-                n = {"id": f"n{len(nodes)+1}",
-                     "name": f'{h["name"]} Metro {label} {len(survivors) + 1}',
-                     "tier": 3, "lat": placed[0], "lng": placed[1],
-                     "parent": h["id"], "geoid": None, "pop": None, "sqmi": 0}
-                nodes.append(n)
-                core_count += 1
-                core_by_hub[h["id"]].append(n)
-                add_edge(prev, n, 3)                 # chain outward along the line
-                survivors.append(n)
-                prev = n
-            if survivors:
-                inner_ring.append(survivors[len(survivors) // 2])   # mid-line stop
-        # a circle line only where it actually reads as a circle
-        if n_lines >= 8 and len(inner_ring) >= 8:
-            for i in range(len(inner_ring)):
-                add_edge(inner_ring[i], inner_ring[(i + 1) % len(inner_ring)], 3)
-    print(f"tier 3: +{core_count} urban-core metro stations "
-          f"({wet_shrunk} pulled inland off water, {wet_dropped} dropped)", file=sys.stderr)
+    # ---- tier 3 lines: chain each system's stations --------------------------
+    # All points already exist — this pass only draws lines. A principal-axis
+    # through-line for small systems, balanced bearing sectors chained outward
+    # for big ones, plus an orbital ring once a system has T3_RING_MIN lines.
+    # (System membership is dry-gated upstream; in-city hops may cross rivers
+    # and harbors the way real subways tunnel under them.)
+    sys_built = lines_total = rings_total = 0
+    for s in sys_list:
+        stations = s["stations"]
+        if not stations:
+            continue
+        sys_built += 1
+        a_node = node_by_geoid[s["anchor"]["geoid"]]
+        coslat = math.cos(math.radians(a_node["lat"]))
+        rel = lambda p: ((p["lng"] - a_node["lng"]) * 69.172 * coslat,
+                         (p["lat"] - a_node["lat"]) * 69.172)
+        brg = lambda p: math.degrees(math.atan2(*rel(p))) % 360.0
+        n_st = len(stations)
+        k = max(1, min(T3_MAX_LINES, round(n_st / T3_STOPS_PER_LINE)))
+        paths = []
+        if k == 1 or n_st <= 7:
+            # one through-line down the city's principal axis
+            xs = [rel(p) for p in stations]
+            ax, ay = pca_axis(xs)
+            proj = sorted(((x * ax + y * ay, p) for (x, y), p in zip(xs, stations)),
+                          key=lambda z: z[0])
+            paths.append([p for t_, p in proj if t_ < 0] + [a_node]
+                         + [p for t_, p in proj if t_ >= 0])
+        else:
+            # contiguous bearing sectors, cut at the largest angular gap and
+            # balanced by count; each sector chains outward by distance
+            srt = sorted(stations, key=brg)
+            bs = [brg(p) for p in srt]
+            gaps = [(bs[(i + 1) % n_st] - bs[i]) % 360 for i in range(n_st)]
+            start = (gaps.index(max(gaps)) + 1) % n_st
+            srt = srt[start:] + srt[:start]
+            base, extra = divmod(n_st, k)
+            idx = 0
+            for li in range(k):
+                size = base + (1 if li < extra else 0)
+                group = sorted(srt[idx:idx + size], key=lambda p: tdist(a_node, p))
+                idx += size
+                if group:
+                    paths.append([a_node] + group)
+        lines_total += len(paths)
+        for p in paths:
+            for j in range(1, len(p)):
+                add_edge(p[j - 1], p[j], 3)
 
-    # satellites join the metro at their nearest station reachable over land
-    # (line extensions), not by beelining to the hub center — or across a bay
-    for t in t3:
-        n = node_by_geoid[t["geoid"]]
-        a = node_by_geoid[t3_anchor[t["geoid"]]]
-        stations = sorted(core_by_hub.get(a["id"], []) + [a], key=lambda s: tdist(s, n))
-        target = next((s for s in stations if dry_sat(s, n)), stations[0])
-        add_edge(target, n, 3)
-        n["parent"] = a["id"]
+        # orbital ring through each line's mid station, in bearing order
+        if len(paths) >= T3_RING_MIN and paths[0][0] is a_node:
+            ring = []
+            for p in paths:
+                sts = p[1:]
+                tgt = 0.5 * tdist(a_node, sts[-1])
+                ring.append(min(sts, key=lambda x: abs(tdist(a_node, x) - tgt)))
+            ring.sort(key=brg)
+            for i in range(len(ring)):
+                add_edge(ring[i], ring[(i + 1) % len(ring)], 3)
+            rings_total += 1
+    print(f"tier 3: {sys_built} systems — {lines_total} lines, "
+          f"{rings_total} rings", file=sys.stderr)
 
     # ---- tier 4: the commuter web (relative neighborhood graph) ------------
     # Points: every un-promoted town + the US tier-1/2 hubs (Canada/Mexico stop
@@ -976,8 +1166,11 @@ def main():
     rev = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     stats = {
         "tier1Hubs": len(t1), "tier1CA": len(ca_t1), "tier1MX": len(mx_t1),
-        "tier2Hubs": len(t2), "tier2CA": ca_t2,
-        "tier3Sat": len(t3), "tier3Core": core_count, "tier3Nodes": len(t3) + core_count,
+        "tier2Hubs": len(t2), "tier2CA": ca_t2, "tier2bHubs": t2b,
+        "tier3Sat": len(t3) - len(orphans), "tier3Core": core_count,
+        "tier3Nodes": len(t3) + core_count, "tier3Systems": sys_built,
+        "tier3Lines": lines_total, "tier3Rings": rings_total,
+        "tier3Standalone": len(orphans),
         "tier1Edges": t1_edges, "edges": len(edges),
         "tier1Mi": route_mi(1), "tier2Mi": route_mi(2), "tier3Mi": route_mi(3),
         "tier4Towns": tier4_towns, "tier4Links": len(t4_links), "tier4Mi": t4_mi,
@@ -987,9 +1180,11 @@ def main():
     params = {"T1_MIN_POP": T1_MIN_POP, "T1_SPACING_MI": T1_SPACING_MI,
               "T2_MIN_POP": T2_MIN_POP, "T2_SPACING_MI": T2_SPACING_MI,
               "T2_KNN": T2_KNN, "T2_MAX_LINK_MI": T2_MAX_LINK_MI,
-              "COVERAGE_MI": COVERAGE_MI, "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
-              "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_RADIUS_MI": T3_RADIUS_MI,
-              "CORE_MIN_POP": CORE_MIN_POP, "T4_KNN": T4_KNN,
+              "COVERAGE_MI": COVERAGE_MI, "T2B_MIN_POP": T2B_MIN_POP,
+              "T2B_FAR_MIN_POP": T2B_FAR_MIN_POP, "T2B_FAR_MI": T2B_FAR_MI,
+              "T3_ANCHOR_MIN_POP": T3_ANCHOR_MIN_POP,
+              "T3_SAT_MIN_POP": T3_SAT_MIN_POP, "T3_GAP_MI": T3_GAP_MI,
+              "T3_STOPS_PER_LINE": T3_STOPS_PER_LINE, "T4_KNN": T4_KNN,
               "T4_MAX_LINK_MI": T4_MAX_LINK_MI, "T4_BRIDGE_MI": T4_BRIDGE_MI}
 
     feats = []
@@ -1000,7 +1195,8 @@ def main():
                                      "tier": n["tier"], "tierName": TIER_NAME[n["tier"]],
                                      "parent": n["parent"], "geoid": n["geoid"],
                                      "pop": n["pop"], "st": n.get("st"),
-                                     "country": n.get("country", "US")}})
+                                     "country": n.get("country", "US"),
+                                     "sub": n.get("sub")}})
     nid = {n["id"]: n for n in nodes}
     for e in edges:
         a, b = nid[e["from"]], nid[e["to"]]
@@ -1009,7 +1205,8 @@ def main():
                                    "coordinates": [[a["lng"], a["lat"]], [b["lng"], b["lat"]]]},
                       "properties": {"kind": "edge", "id": e["id"], "from": e["from"],
                                      "to": e["to"], "tier": e["tier"],
-                                     "tierName": TIER_NAME[e["tier"]]}})
+                                     "tierName": TIER_NAME[e["tier"]],
+                                     "sub": e.get("sub")}})
     net = {"type": "FeatureCollection", "name": "US Fantasy Transit Network",
            "properties": {"generator": "scripts/build_network.py",
                           "schema": "fantasy-transit-v1", "rev": rev,
