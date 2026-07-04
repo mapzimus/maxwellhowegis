@@ -10,8 +10,9 @@ Output: transit/data/network.json — the network: tier 1-3 nodes + edges
 Algorithm (all straight-line/great-circle, stdlib only):
 
   Tier 1 (HSR hubs)      Cities with pop >= T1_MIN_POP, greedy-picked in population
-                         order with a T1_SPACING_MI exclusion radius (a hard
-                         invariant — no exceptions, even at the Mexican border).
+                         order with a T1_SPACING_MI exclusion radius (Mexican
+                         border twins are exempt — they space only against each
+                         other, so Tijuana/San Diego are distinct paired hubs).
                          Connected by a GABRIEL GRAPH (edge survives if no third
                          hub sits in the circle with the edge as diameter), then
                          each hub gains T1_KNN extra nearest dry links and any
@@ -593,12 +594,13 @@ def main():
     # ---- tier 1 ----------------------------------------------------------
     t1 = greedy_spacing([t for t in by_pop if t["pop"] >= T1_MIN_POP], T1_SPACING_MI, [])
     ca_t1 = greedy_spacing([c for c in intl_ca if c["pop"] >= T1_MIN_POP], T1_SPACING_MI, t1)
-    # Mexican metros space against the full hub set — T1_SPACING_MI is a hard
-    # invariant with no exceptions, so border twins (Tijuana/San Diego,
-    # Juárez/El Paso, Matamoros/Brownsville) collapse into their US hub
+    # Mexican metros space only against EACH OTHER, not the US spine — the
+    # border twins (Tijuana/San Diego, Juárez/El Paso, Matamoros/Brownsville)
+    # are distinct HSR hubs despite sitting a few miles from their US
+    # counterpart, so the cross-border pair gets its own high-speed link
     mx_t1 = greedy_spacing(
         [c for c in intl_mx if c["pop"] >= MX_T1_MIN_POP and c["lat"] >= MX_LAT_MIN],
-        T1_SPACING_MI, t1 + ca_t1)[:MX_T1_MAX]
+        T1_SPACING_MI, [])[:MX_T1_MAX]
     t1 = t1 + ca_t1 + mx_t1
     print(f"tier 1: {len(t1)} HSR hubs ({len(ca_t1)} Canadian, {len(mx_t1)} Mexican: "
           f"{', '.join(c['name'] for c in mx_t1)})", file=sys.stderr)
