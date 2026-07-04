@@ -5,3 +5,6 @@
 *.json text eol=lf
 *.geojson text eol=lf
 *.svg text eol=lf
+
+# Actually PNG data despite the .svg extension - don't line-ending-normalize binary bytes
+whydah/pics/backstaff.svg -text

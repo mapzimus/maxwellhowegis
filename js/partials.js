@@ -15,7 +15,7 @@
         { href: 'portfolio.html', label: 'Projects' },
         { href: 'gallery.html', label: 'Map Gallery' },
         { href: 'side-projects.html', label: 'Beyond GIS' },
-        { href: 'fieldnotes.html', label: 'Field Notes' },
+        { href: 'tools.html', label: 'Tools' },
         { href: 'contact.html', label: 'Contact' }
     ];
 
