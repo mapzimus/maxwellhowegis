@@ -202,3 +202,30 @@ described in the Round 4b PR (statewide + Boston-zoom + Lynn-zoom
 screenshots, before/after) before trusting 50% retention again — a
 materially different source geometry could need a different retention
 level to stay clean.
+
+---
+
+## 2026-07-05 — Sync `whydah/` vendored copy to upstream Whydah-Unit @33a39b4
+
+**What**: Copied from `mapzimus/Whydah-Unit` main: `whydah-dashboard.html`,
+`curriculum-guide.html`, `handouts.html`, `unit-at-a-glance.html`,
+`flythrough.html`, `navigator/` (recursive), `pics/` (recursive). This brings
+in the July 2026 curriculum state (confirmed 3-trip schedule, S11 Wreck +
+survivor coda, in-class Synthesis Studio, 12 final-project formats, Boston
+Harbor panel, and the July research-audit fact corrections) plus the June
+navigator improvements (dynamic weather/events/instruments) that had never
+been synced here.
+
+**Deliberate divergence preserved**: `whydah/index.html` is this repo's own
+branded meta-refresh page (anchor favicon + "Navigating Piracy" title) and is
+NOT overwritten from upstream — upstream's plain index.html should not be
+copied over it on future syncs.
+
+**Upstream redirect**: every upstream page now carries a conditional
+`canonical-host redirect` script that bounces `*.github.io` visitors to
+`https://maxwellhowegis.com/whydah/...`. The script ships in this vendored
+copy too but is inert here (hostname check) — do not strip it on sync.
+
+**How to re-sync**: repeat the copy above (everything except
+`whydah/index.html`), then plain commit — Pages deploys via Actions on push
+to main.
