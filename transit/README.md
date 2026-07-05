@@ -45,6 +45,8 @@ To change the network, tweak the constants at the top of `scripts/build_network.
 - **T1–T4 buttons** (top) toggle each tier's nodes and lines — a functional legend. Hide metro and
   commuter to see the HSR spine; the sidebar list filters with the map, while the count badges and
   mileage always describe the full network.
+- **Nodes only** button (top) hides *every* line across all tiers, leaving just the node dots — for
+  judging node placement without line clutter. The preference persists across visits.
 - **Tier-4 towns + lines layers**: all ~33k town nodes (sized by population) and the ~43k-link
   commuter web connecting them, canvas-rendered and lazy-loaded; each layer's on/off preference
   is remembered (the T4 button drives both together).

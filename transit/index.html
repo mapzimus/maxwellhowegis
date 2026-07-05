@@ -47,6 +47,8 @@
   .seg button.on { color:var(--ink); background:rgba(255,255,255,0.07); border-color:var(--border); }
   .seg .dot { width:10px; height:10px; border-radius:50%; flex:none; box-shadow:0 0 0 2px rgba(0,0,0,0.35); }
   .seg button:not(.on) .dot { opacity:.35; }
+  .nodes-glyph { width:11px; height:11px; flex:none; border-radius:2px;
+    background:radial-gradient(currentColor 1.4px, transparent 1.6px) 0 0 / 5px 5px; opacity:.85; }
 
   /* Sidebar */
   .sidebar { position:absolute; top:14px; right:14px; bottom:14px; z-index:640; width:300px; max-width:calc(100vw - 28px); display:flex; flex-direction:column; overflow:hidden; }
@@ -142,6 +144,9 @@
     <button data-tier="3" class="on" aria-pressed="true" aria-label="Toggle tier 3 · Metro" title="Show / hide metro"><span class="dot" style="background:var(--t3)"></span>T3<span class="tname"> · Metro</span></button>
     <button data-tier="4" class="on" aria-pressed="true" aria-label="Toggle tier 4 · Commuter layers" title="Show / hide the commuter towns + lines"><span class="dot" style="background:var(--t4)"></span>T4<span class="tname"> · Commuter</span></button>
   </div>
+  <div class="seg panel" id="viewSeg">
+    <button id="nodesOnlyBtn" aria-pressed="false" aria-label="Nodes-only view — hide every line" title="Hide all lines (across every tier) to study just the node placement"><span class="nodes-glyph"></span>Nodes<span class="tname"> only</span></button>
+  </div>
 </div>
 
 <div class="sidebar panel" id="sidebar">
@@ -222,6 +227,7 @@ let townsGeo = null, townCount = 0, townsLoadStarted = false;
 let townsShown = localStorage.getItem(STORE_KEY + ':towns') !== '0';
 let linesGeo = null, lineCount = 0, linesLoadStarted = false;
 let linesShown = localStorage.getItem(STORE_KEY + ':t4lines') !== '0';
+let nodesOnly = localStorage.getItem(STORE_KEY + ':nodesonly') === '1';   // hide ALL lines, every tier
 
 /* Bulk canvas layer: draws tens of thousands of static features in a single
    pass per view change, instead of one Leaflet layer object per feature
@@ -408,9 +414,32 @@ function updateLinesUI(){
 function toggleLines(on){
   linesShown = on;
   localStorage.setItem(STORE_KEY + ':t4lines', on ? '1' : '0');
-  if (on){ if (linesGeo) linesGeo.addTo(map); else loadT4Lines(); }   // first enable → fetch; later enables reuse the cached layer
+  // in nodes-only view the commuter web stays off the map; we still remember
+  // the preference and restore it when nodes-only is turned back off
+  if (on){ if (nodesOnly){ /* deferred */ } else if (linesGeo) linesGeo.addTo(map); else loadT4Lines(); }
   else if (linesGeo) map.removeLayer(linesGeo);
   syncT4Button();
+}
+
+/* nodes-only view: hide every line (tier 1-3 edges + the tier-4 commuter web)
+   while keeping all node dots, so the node placement can be judged without
+   line clutter — the fix for "hard to pick nodes when the lines are drawn" */
+function applyNodesOnly(){
+  const btn = $('#nodesOnlyBtn');
+  if (btn){ btn.classList.toggle('on', nodesOnly); btn.setAttribute('aria-pressed', String(nodesOnly)); }
+  if (nodesOnly){
+    map.removeLayer(edgeLayer);
+    if (linesGeo) map.removeLayer(linesGeo);
+  } else {
+    edgeLayer.addTo(map);
+    if (linesShown){ if (linesGeo) linesGeo.addTo(map); else if (!linesLoadStarted) loadT4Lines(); }
+  }
+}
+function toggleNodesOnly(){
+  nodesOnly = !nodesOnly;
+  localStorage.setItem(STORE_KEY + ':nodesonly', nodesOnly ? '1' : '0');
+  applyNodesOnly();
+  toast(nodesOnly ? 'Nodes-only view — all lines hidden' : 'Lines shown');
 }
 
 
@@ -575,6 +604,7 @@ function fromGeoJSON(gj){
 
 $('#townsChk').addEventListener('change', e => toggleTowns(e.target.checked));
 $('#linesChk').addEventListener('change', e => toggleLines(e.target.checked));
+$('#nodesOnlyBtn').addEventListener('click', toggleNodesOnly);
 
 /* mobile bottom sheet: collapsed by default so the map owns the screen */
 const sheetMq = window.matchMedia('(max-width:720px)');
@@ -690,7 +720,8 @@ async function boot(){
   // reference layers: fetch only if their toggle is on (default or restored pref)
   updateTownsUI(); updateLinesUI();
   if (townsShown) loadTowns();
-  if (linesShown) loadT4Lines();
+  if (linesShown && !nodesOnly) loadT4Lines();
+  applyNodesOnly();   // enforce nodes-only view if it was left on
 }
 boot();
 </script>
