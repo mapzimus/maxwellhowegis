@@ -129,7 +129,11 @@ body { background: #f4ecd6; margin: 0; }
   padding: 0.7em 1.5em 0;
   border-bottom: 2px solid rgba(201, 165, 95, 0.35);
   box-shadow: 0 3px 14px rgba(0,0,0,0.35);
+  transition: transform 0.28s ease;
+  will-change: transform;
 }
+/* Auto-hide the bar on scroll-down; reveal on scroll-up (driven by JS) */
+.topnav.topnav--hidden { transform: translateY(-100%); }
 .topnav-header {
   display: flex; align-items: baseline; gap: 1.2em;
   padding-bottom: 0.45em;
@@ -3950,6 +3954,25 @@ document.addEventListener('DOMContentLoaded', function() {
       if (navToggle) { navToggle.setAttribute('aria-expanded', 'false'); navToggle.focus(); }
     }
   });
+
+  // ---- Auto-hide the top bar on scroll down; reveal on scroll up ----
+  (function () {
+    let lastY = window.pageYOffset || 0;
+    let ticking = false;
+    function update() {
+      const y = window.pageYOffset || 0;
+      if (header.classList.contains('nav-open') || y <= 8) {
+        header.classList.remove('topnav--hidden');          // never hide at the top or while the menu is open
+      } else if (Math.abs(y - lastY) > 6) {
+        header.classList.toggle('topnav--hidden', y > lastY); // scroll down -> hide, scroll up -> reveal
+      }
+      lastY = y;
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+  })();
 
   // Initial state — from URL hash or default to overview
   const initialId = (window.location.hash || '#overview').slice(1);
