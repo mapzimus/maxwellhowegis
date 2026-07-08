@@ -71,6 +71,69 @@ COORD_OVERRIDES = {
     "4817000": (27.7963, -97.3964),    # Corpus Christi, TX (bay annexations)
 }
 
+# Consolidated / large places put the gazetteer's internal point far from the
+# actual downtown — Anchorage's municipality spans ~1,700 sq mi (mountains and
+# inlet), landing its point ~21 mi from the city. Where Natural Earth has the
+# city center, snap to it when the internal point has drifted 5-40 mi (near
+# enough to be the same city, far enough to be worth fixing).
+NE_SNAP_MIN_MI, NE_SNAP_MAX_MI = 5.0, 40.0
+STATE_ABBR = {
+    "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR",
+    "California": "CA", "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE",
+    "District of Columbia": "DC", "Florida": "FL", "Georgia": "GA", "Hawaii": "HI",
+    "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS",
+    "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD",
+    "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS",
+    "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV",
+    "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY",
+    "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK",
+    "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI",
+    "South Carolina": "SC", "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX",
+    "Utah": "UT", "Vermont": "VT", "Virginia": "VA", "Washington": "WA",
+    "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY", "Puerto Rico": "PR",
+}
+
+
+def _mi(a_lat, a_lng, b_lat, b_lng):
+    d = math.radians
+    s = (math.sin(d(b_lat - a_lat) / 2) ** 2
+         + math.cos(d(a_lat)) * math.cos(d(b_lat)) * math.sin(d(b_lng - a_lng) / 2) ** 2)
+    return 2 * 3958.761 * math.asin(math.sqrt(s))
+
+
+_NE_CENTERS = None
+
+
+def ne_us_centers():
+    """{(name.lower(), state_abbr): (lat, lng)} of US city centers from Natural
+    Earth populated places — the recognized downtown point for major cities."""
+    global _NE_CENTERS
+    if _NE_CENTERS is not None:
+        return _NE_CENTERS
+    import struct, zipfile
+    path = os.path.join(CACHE, NE_PLACES[0])
+    if not os.path.exists(path):
+        ne_backfill_pops()                       # triggers the download
+    z = zipfile.ZipFile(path)
+    data = z.read([n for n in z.namelist() if n.endswith(".dbf")][0])
+    nrec = struct.unpack("<I", data[4:8])[0]
+    hlen, rlen = struct.unpack("<HH", data[8:12])
+    fields, off = [], 32
+    while data[off] != 0x0D:
+        fields.append((data[off:off + 11].split(b"\0")[0].decode("latin-1"), data[off + 16]))
+        off += 32
+    _NE_CENTERS = {}
+    for i in range(nrec):
+        rec = data[hlen + i * rlen: hlen + (i + 1) * rlen]
+        vals, p = {}, 1
+        for name, flen in fields:
+            vals[name] = rec[p:p + flen].decode("utf-8", "replace").strip(); p += flen
+        st = STATE_ABBR.get(vals.get("adm1name"))
+        if st and vals.get("name"):
+            _NE_CENTERS.setdefault((vals["name"].lower(), st),
+                                   (float(vals["latitude"]), float(vals["longitude"])))
+    return _NE_CENTERS
+
 # Hawaii and Puerto Rico have no incorporated places below the county/municipio
 # level — their towns are all CDPs (PR: zonas urbanas + comunidades), so CDPs
 # are included for HI + PR. Populations are backfilled one-to-one from Natural
@@ -280,6 +343,8 @@ def build(year, include_cdp, with_pop=True):
     idx = {h: i for i, h in enumerate(header)}
     feats = []
     joined = 0
+    snapped = 0
+    ne_centers = ne_us_centers()
     kept = {"city": 0, "town": 0, "village": 0, "borough": 0, "cdp": 0, "other": 0}
     for line in lines[1:]:
         c = [x.strip() for x in line.split("\t")]
@@ -312,6 +377,12 @@ def build(year, include_cdp, with_pop=True):
         lsad = c[idx["LSAD"]]
         ptype = "cdp" if is_cdp else LSAD_TYPE.get(lsad, "place")
         name = clean_name(c[idx["NAME"]], is_cdp)
+        # snap drifted consolidated/large places to their NE downtown point
+        if geoid_pre not in COORD_OVERRIDES:
+            center = ne_centers.get((name.lower(), st))
+            if center and NE_SNAP_MIN_MI <= _mi(lat, lng, center[0], center[1]) <= NE_SNAP_MAX_MI:
+                lat, lng = round(center[0], 5), round(center[1], 5)
+                snapped += 1
         kept[ptype if ptype in kept else "other"] += 1
         geoid = c[idx["GEOID"]]
         # incorporated places: SUB-EST 2024 estimates; CDPs: 2020 Census
@@ -372,6 +443,8 @@ def build(year, include_cdp, with_pop=True):
             joined += 1
         ne_added += 1
     print(f"New England MCD towns added: {ne_added}", file=sys.stderr)
+    print(f"downtown snap: {snapped} places moved to their NE city-center "
+          f"(drift {NE_SNAP_MIN_MI:g}-{NE_SNAP_MAX_MI:g} mi)", file=sys.stderr)
 
     # HI/PR population backfill from Natural Earth — one-to-one: each NE place
     # populates only its single nearest unfilled CDP, so a big city's figure

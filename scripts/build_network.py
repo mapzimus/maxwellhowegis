@@ -182,6 +182,33 @@ T4_PATCH_MIN_DEG = 45      # a patched 2nd link must diverge this much from the
 COMPASS = ["N","NNE","NE","ENE","E","ESE","SE","SSE",
            "S","SSW","SW","WSW","W","WNW","NW","NNW"]
 
+# big-city district split: a handful of cities are one Census "place" with a
+# single point, but really several distinct districts (NYC's boroughs, Boston's
+# neighborhoods). The lone hub is replaced with a node per district — the first
+# (tier 1) keeps the HSR-spine role, the rest are tier-2 hubs, and each district
+# >= T3_ANCHOR_MIN_POP anchors its OWN metro. Coordinates are hand-curated
+# (Natural Earth has no boroughs). Add LA / Chicago the same way.
+CITY_SPLITS = {
+    ("New York", "NY"): [
+        {"name": "Manhattan",     "lat": 40.7831, "lng": -73.9712, "pop": 1694251, "sqmi": 22.8,  "tier": 1},
+        {"name": "Brooklyn",      "lat": 40.6782, "lng": -73.9442, "pop": 2736074, "sqmi": 69.4,  "tier": 2},
+        {"name": "Queens",        "lat": 40.7282, "lng": -73.7949, "pop": 2405464, "sqmi": 108.1, "tier": 2},
+        {"name": "The Bronx",     "lat": 40.8448, "lng": -73.8648, "pop": 1472654, "sqmi": 42.1,  "tier": 2},
+        {"name": "Staten Island", "lat": 40.5795, "lng": -74.1502, "pop": 495747,  "sqmi": 58.5,  "tier": 2},
+    ],
+    ("Boston", "MA"): [
+        {"name": "Downtown Boston",  "lat": 42.3554, "lng": -71.0605, "pop": 130000, "sqmi": 5.0, "tier": 1},
+        {"name": "Charlestown",      "lat": 42.3782, "lng": -71.0602, "pop": 18901,  "sqmi": 1.4, "tier": 2},
+        {"name": "East Boston",      "lat": 42.3702, "lng": -71.0389, "pop": 47905,  "sqmi": 4.5, "tier": 2},
+        {"name": "South Boston",     "lat": 42.3331, "lng": -71.0446, "pop": 38181,  "sqmi": 3.5, "tier": 2},
+        {"name": "Dorchester",       "lat": 42.3016, "lng": -71.0676, "pop": 92116,  "sqmi": 6.3, "tier": 2},
+        {"name": "Roxbury",          "lat": 42.3125, "lng": -71.0899, "pop": 59781,  "sqmi": 3.4, "tier": 2},
+        {"name": "Jamaica Plain",    "lat": 42.3097, "lng": -71.1151, "pop": 41000,  "sqmi": 4.4, "tier": 2},
+        {"name": "Allston-Brighton", "lat": 42.3501, "lng": -71.1560, "pop": 69161,  "sqmi": 4.6, "tier": 2},
+        {"name": "Hyde Park",        "lat": 42.2565, "lng": -71.1242, "pop": 35316,  "sqmi": 4.9, "tier": 2},
+    ],
+}
+
 LAND_SOURCES = [
     ("cb_2023_us_state_500k.zip",
      "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_state_500k.zip"),
@@ -700,6 +727,30 @@ def main():
     print(f"corridor: +{gap} gap-fill hubs (pop >= {GAP_A_POP:,} & {GAP_A_MI}mi+ "
           f"from a hub, or >= {GAP_B_POP:,} & {GAP_B_MI}mi+) → {len(t2)} tier-2 total",
           file=sys.stderr)
+
+    # ---- big-city district split -------------------------------------------
+    # Replace a single-point city hub with a node per borough/district. The
+    # original stays in hub_geoids (so it's excluded from satellites and the
+    # tier-4 web) but is dropped from the towns list and its tier so it isn't
+    # drawn; the districts are appended as hubs, bypassing the spacing rules.
+    split_cities = split_nodes = 0
+    for (cname, cst), districts in CITY_SPLITS.items():
+        orig = next((t for t in t1 + t2 if t["name"] == cname and t.get("st") == cst
+                     and t.get("country", "US") == "US"), None)
+        if orig is None:
+            continue
+        (t1 if orig in t1 else t2).remove(orig)
+        towns[:] = [t for t in towns if t["geoid"] != orig["geoid"]]
+        for i, d in enumerate(districts):
+            node = {"name": d["name"], "st": cst, "geoid": f"SPLIT{orig['geoid']}{i}",
+                    "pop": d["pop"], "sqmi": d["sqmi"], "country": "US",
+                    "lat": d["lat"], "lng": d["lng"]}
+            (t1 if d["tier"] == 1 else t2).append(node)
+            hub_geoids.add(node["geoid"])
+            split_nodes += 1
+        split_cities += 1
+    print(f"district split: {split_cities} cities → {split_nodes} borough/district "
+          f"nodes", file=sys.stderr)
 
     # ---- tier 3 systems: anchors, orphan anchors, satellites ---------------
     # (US only — Canada/Mexico stop at tier 2.) A town is covered by an anchor
