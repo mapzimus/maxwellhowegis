@@ -207,6 +207,30 @@ CITY_SPLITS = {
         {"name": "Allston-Brighton", "lat": 42.3501, "lng": -71.1560, "pop": 69161,  "sqmi": 4.6, "tier": 2},
         {"name": "Hyde Park",        "lat": 42.2565, "lng": -71.1242, "pop": 35316,  "sqmi": 4.9, "tier": 2},
     ],
+    ("Los Angeles", "CA"): [
+        {"name": "Downtown LA",    "lat": 34.0407, "lng": -118.2468, "pop": 90000,  "sqmi": 5.8,  "tier": 1},
+        {"name": "Hollywood",      "lat": 34.0928, "lng": -118.3287, "pop": 85000,  "sqmi": 3.5,  "tier": 2},
+        {"name": "Westwood",       "lat": 34.0561, "lng": -118.4426, "pop": 50000,  "sqmi": 3.0,  "tier": 2},
+        {"name": "Venice",         "lat": 33.9850, "lng": -118.4695, "pop": 40000,  "sqmi": 3.2,  "tier": 2},
+        {"name": "South LA",       "lat": 33.9890, "lng": -118.2760, "pop": 95000,  "sqmi": 6.0,  "tier": 2},
+        {"name": "San Pedro",      "lat": 33.7361, "lng": -118.2922, "pop": 80000,  "sqmi": 9.0,  "tier": 2},
+        {"name": "Eagle Rock",     "lat": 34.1397, "lng": -118.2115, "pop": 60000,  "sqmi": 5.0,  "tier": 2},
+        {"name": "Van Nuys",       "lat": 34.1866, "lng": -118.4487, "pop": 110000, "sqmi": 9.0,  "tier": 2},
+        {"name": "Northridge",     "lat": 34.2381, "lng": -118.5301, "pop": 60000,  "sqmi": 9.5,  "tier": 2},
+        {"name": "Sylmar",         "lat": 34.3072, "lng": -118.4470, "pop": 80000,  "sqmi": 12.8, "tier": 2},
+    ],
+    ("Chicago", "IL"): [
+        {"name": "The Loop",       "lat": 41.8786, "lng": -87.6251, "pop": 42000,  "sqmi": 1.6, "tier": 1},
+        {"name": "Lincoln Park",   "lat": 41.9214, "lng": -87.6513, "pop": 67000,  "sqmi": 3.2, "tier": 2},
+        {"name": "Lakeview",       "lat": 41.9401, "lng": -87.6438, "pop": 100000, "sqmi": 3.1, "tier": 2},
+        {"name": "Uptown",         "lat": 41.9660, "lng": -87.6550, "pop": 57000,  "sqmi": 2.4, "tier": 2},
+        {"name": "Logan Square",   "lat": 41.9265, "lng": -87.7085, "pop": 72000,  "sqmi": 3.5, "tier": 2},
+        {"name": "Austin",         "lat": 41.8900, "lng": -87.7600, "pop": 96000,  "sqmi": 7.2, "tier": 2},
+        {"name": "Pilsen",         "lat": 41.8558, "lng": -87.6560, "pop": 35000,  "sqmi": 2.7, "tier": 2},
+        {"name": "Bronzeville",    "lat": 41.8100, "lng": -87.6180, "pop": 43000,  "sqmi": 3.0, "tier": 2},
+        {"name": "Hyde Park",      "lat": 41.7943, "lng": -87.5907, "pop": 53000,  "sqmi": 1.6, "tier": 2},
+        {"name": "South Chicago",  "lat": 41.7400, "lng": -87.5540, "pop": 30000,  "sqmi": 3.0, "tier": 2},
+    ],
 }
 
 LAND_SOURCES = [
