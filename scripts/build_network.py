@@ -187,7 +187,9 @@ COMPASS = ["N","NNE","NE","ENE","E","ESE","SE","SSE",
 # neighborhoods). The lone hub is replaced with a node per district — the first
 # (tier 1) keeps the HSR-spine role, the rest are tier-2 hubs, and each district
 # >= T3_ANCHOR_MIN_POP anchors its OWN metro. Coordinates are hand-curated
-# (Natural Earth has no boroughs). Add LA / Chicago the same way.
+# (Natural Earth has no boroughs). Nine cities split so far: NYC, Boston, LA,
+# Chicago, Philadelphia, San Francisco, Washington DC, Seattle, Houston — add
+# another the same way (one tier-1 core district + the rest tier 2).
 CITY_SPLITS = {
     ("New York", "NY"): [
         {"name": "Manhattan",     "lat": 40.7831, "lng": -73.9712, "pop": 1694251, "sqmi": 22.8,  "tier": 1},
@@ -230,6 +232,67 @@ CITY_SPLITS = {
         {"name": "Bronzeville",    "lat": 41.8100, "lng": -87.6180, "pop": 43000,  "sqmi": 3.0, "tier": 2},
         {"name": "Hyde Park",      "lat": 41.7943, "lng": -87.5907, "pop": 53000,  "sqmi": 1.6, "tier": 2},
         {"name": "South Chicago",  "lat": 41.7400, "lng": -87.5540, "pop": 30000,  "sqmi": 3.0, "tier": 2},
+    ],
+    ("Philadelphia", "PA"): [
+        {"name": "Center City",         "lat": 39.9500, "lng": -75.1650, "pop": 60000,  "sqmi": 4.0,  "tier": 1},
+        {"name": "South Philadelphia",  "lat": 39.9200, "lng": -75.1650, "pop": 130000, "sqmi": 6.5,  "tier": 2},
+        {"name": "North Philadelphia",  "lat": 39.9850, "lng": -75.1550, "pop": 200000, "sqmi": 8.0,  "tier": 2},
+        {"name": "West Philadelphia",   "lat": 39.9600, "lng": -75.2200, "pop": 150000, "sqmi": 7.0,  "tier": 2},
+        {"name": "Fishtown-Kensington", "lat": 39.9750, "lng": -75.1300, "pop": 45000,  "sqmi": 3.0,  "tier": 2},
+        {"name": "Germantown",          "lat": 40.0350, "lng": -75.1750, "pop": 42000,  "sqmi": 3.5,  "tier": 2},
+        {"name": "Roxborough-Manayunk", "lat": 40.0250, "lng": -75.2250, "pop": 40000,  "sqmi": 4.0,  "tier": 2},
+        {"name": "Southwest Philly",    "lat": 39.9200, "lng": -75.2300, "pop": 90000,  "sqmi": 5.0,  "tier": 2},
+        {"name": "Northeast Philly",    "lat": 40.0600, "lng": -75.0500, "pop": 300000, "sqmi": 25.0, "tier": 2},
+        {"name": "Chestnut Hill",       "lat": 40.0730, "lng": -75.2080, "pop": 30000,  "sqmi": 2.5,  "tier": 2},
+    ],
+    ("San Francisco", "CA"): [
+        {"name": "Downtown SF",         "lat": 37.7900, "lng": -122.4020, "pop": 50000, "sqmi": 2.5, "tier": 1},
+        {"name": "Mission District",    "lat": 37.7599, "lng": -122.4148, "pop": 60000, "sqmi": 2.5, "tier": 2},
+        {"name": "The Castro",          "lat": 37.7609, "lng": -122.4350, "pop": 30000, "sqmi": 1.5, "tier": 2},
+        {"name": "Sunset District",     "lat": 37.7510, "lng": -122.4870, "pop": 85000, "sqmi": 4.5, "tier": 2},
+        {"name": "Richmond District",   "lat": 37.7800, "lng": -122.4830, "pop": 80000, "sqmi": 4.0, "tier": 2},
+        {"name": "Marina-Pac Heights",  "lat": 37.7990, "lng": -122.4370, "pop": 45000, "sqmi": 2.5, "tier": 2},
+        {"name": "Bayview-Hunters Pt",  "lat": 37.7300, "lng": -122.3830, "pop": 40000, "sqmi": 3.5, "tier": 2},
+        {"name": "Nob Hill-Chinatown",  "lat": 37.7930, "lng": -122.4160, "pop": 45000, "sqmi": 1.2, "tier": 2},
+        {"name": "Haight-Ashbury",      "lat": 37.7690, "lng": -122.4460, "pop": 35000, "sqmi": 1.5, "tier": 2},
+        {"name": "Excelsior",           "lat": 37.7240, "lng": -122.4260, "pop": 45000, "sqmi": 2.5, "tier": 2},
+    ],
+    ("Washington", "DC"): [
+        {"name": "Downtown DC",         "lat": 38.8990, "lng": -77.0300, "pop": 30000, "sqmi": 2.0, "tier": 1},
+        {"name": "Capitol Hill",        "lat": 38.8870, "lng": -76.9950, "pop": 40000, "sqmi": 2.5, "tier": 2},
+        {"name": "Georgetown",          "lat": 38.9090, "lng": -77.0650, "pop": 30000, "sqmi": 1.8, "tier": 2},
+        {"name": "Adams Morgan-Dupont", "lat": 38.9200, "lng": -77.0430, "pop": 40000, "sqmi": 1.5, "tier": 2},
+        {"name": "Columbia Heights",    "lat": 38.9290, "lng": -77.0330, "pop": 45000, "sqmi": 1.5, "tier": 2},
+        {"name": "Petworth",            "lat": 38.9420, "lng": -77.0230, "pop": 42000, "sqmi": 2.0, "tier": 2},
+        {"name": "Anacostia",           "lat": 38.8630, "lng": -76.9840, "pop": 50000, "sqmi": 4.0, "tier": 2},
+        {"name": "Foggy Bottom",        "lat": 38.8990, "lng": -77.0490, "pop": 25000, "sqmi": 1.2, "tier": 2},
+        {"name": "Brookland",           "lat": 38.9330, "lng": -76.9930, "pop": 45000, "sqmi": 3.0, "tier": 2},
+        {"name": "Navy Yard-Southwest", "lat": 38.8760, "lng": -77.0100, "pop": 30000, "sqmi": 2.0, "tier": 2},
+    ],
+    ("Seattle", "WA"): [
+        {"name": "Downtown Seattle",    "lat": 47.6080, "lng": -122.3350, "pop": 40000, "sqmi": 2.5, "tier": 1},
+        {"name": "Capitol Hill",        "lat": 47.6250, "lng": -122.3200, "pop": 45000, "sqmi": 2.0, "tier": 2},
+        {"name": "Ballard",             "lat": 47.6680, "lng": -122.3840, "pop": 50000, "sqmi": 4.0, "tier": 2},
+        {"name": "Fremont-Wallingford", "lat": 47.6510, "lng": -122.3500, "pop": 42000, "sqmi": 3.0, "tier": 2},
+        {"name": "University District", "lat": 47.6600, "lng": -122.3140, "pop": 50000, "sqmi": 3.0, "tier": 2},
+        {"name": "West Seattle",        "lat": 47.5700, "lng": -122.3870, "pop": 90000, "sqmi": 8.0, "tier": 2},
+        {"name": "Rainier Valley",      "lat": 47.5580, "lng": -122.2870, "pop": 75000, "sqmi": 6.0, "tier": 2},
+        {"name": "Northgate-Lake City", "lat": 47.7080, "lng": -122.3250, "pop": 60000, "sqmi": 6.0, "tier": 2},
+        {"name": "Queen Anne-Magnolia", "lat": 47.6370, "lng": -122.3570, "pop": 45000, "sqmi": 4.0, "tier": 2},
+        {"name": "Georgetown-SODO",     "lat": 47.5460, "lng": -122.3230, "pop": 30000, "sqmi": 4.0, "tier": 2},
+    ],
+    ("Houston", "TX"): [
+        {"name": "Downtown Houston",    "lat": 29.7590, "lng": -95.3650, "pop": 40000,  "sqmi": 4.0,  "tier": 1},
+        {"name": "Midtown-Montrose",    "lat": 29.7420, "lng": -95.3900, "pop": 70000,  "sqmi": 5.0,  "tier": 2},
+        {"name": "The Heights",         "lat": 29.7900, "lng": -95.3980, "pop": 60000,  "sqmi": 6.0,  "tier": 2},
+        {"name": "East End",            "lat": 29.7450, "lng": -95.3300, "pop": 80000,  "sqmi": 8.0,  "tier": 2},
+        {"name": "Third Ward",          "lat": 29.7250, "lng": -95.3620, "pop": 60000,  "sqmi": 6.0,  "tier": 2},
+        {"name": "Sharpstown-Gulfton",  "lat": 29.7050, "lng": -95.5100, "pop": 130000, "sqmi": 12.0, "tier": 2},
+        {"name": "Sunnyside-South Park","lat": 29.6600, "lng": -95.3500, "pop": 70000,  "sqmi": 8.0,  "tier": 2},
+        {"name": "Northside-Aldine",    "lat": 29.8300, "lng": -95.3600, "pop": 90000,  "sqmi": 12.0, "tier": 2},
+        {"name": "Westchase-Memorial",  "lat": 29.7800, "lng": -95.5600, "pop": 110000, "sqmi": 15.0, "tier": 2},
+        {"name": "Kingwood-Northeast",  "lat": 29.9100, "lng": -95.2600, "pop": 90000,  "sqmi": 20.0, "tier": 2},
+        {"name": "Clear Lake",          "lat": 29.5800, "lng": -95.1300, "pop": 90000,  "sqmi": 20.0, "tier": 2},
     ],
 }
 
