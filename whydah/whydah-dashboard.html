@@ -1139,16 +1139,17 @@ body.ribbon-ready #bookmark-ribbon { height: 116px; }
   .salem-callout, .hero-strip, .session-card, .unit-plan-decisions,
   .critique, .caveat, table { background: white !important; box-shadow: none !important; color: black !important; }
   .card *, .person-card *, .week-block * { color: black !important; }
-  .topnav, #bookmark-ribbon, .admin-toggle { display: none !important; }
+  .topnav, #bookmark-ribbon, .admin-toggle, #today-banner { display: none !important; }
   [data-audience="admin"] { display: revert !important; }
   main > section[id] { display: block !important; }
   main > section[id].active > h2 { animation: none !important; }
   .accordion-body[hidden] { display: block !important; }
 }
 </style>
+<script src="day-config.js" defer></script>
 </head>
 <body>
-<a href="day3.html" style="display:block; background:#8C2C1E; color:#F3E8CE; text-align:center; padding:0.85em 1em; font-weight:700; font-size:1.08em; text-decoration:none; letter-spacing:0.02em; border-bottom:2px solid #D8B25A;">📍 TODAY &nbsp;·&nbsp; Day 3: Reading the 1719 World Map — <u>tap here to start</u></a>
+<div id="today-banner"></div>
 <header class="topnav">
   <div class="topnav-header">
     <h1>Navigating Piracy</h1>
@@ -2699,6 +2700,25 @@ The 1734 published version of his chart (<em>The New England Coasting Pilot</em>
 <section id="unit-plan" data-folio="xiii" data-audience="admin">
 <h2>Unit Plan</h2>
 
+<div class="card" style="border:2px solid #8C2C1E; margin-bottom:1em;">
+<h3 style="margin-top:0;">⚠️ Revised calendar (July 11) — the missed Thursday, absorbed</h3>
+<p class="meta">S4 (Thu Jul 9) was missed. Its essentials fold into Mon Jul 13. Day numbers are what students see on banners and pages; session numbers are the curriculum's. The session cards below keep original dates; this table is the operating truth.</p>
+<table style="width:100%; border-collapse:collapse; font-size:0.88em;">
+<thead><tr style="background:#ede1c5; text-align:left;">
+<th style="padding:4px 8px;">Day</th><th style="padding:4px 8px;">Date</th><th style="padding:4px 8px;">Runs</th><th style="padding:4px 8px;">Notes</th></tr></thead>
+<tbody>
+<tr><td style="padding:3px 8px;">D4</td><td style="padding:3px 8px;">Mon Jul 13</td><td style="padding:3px 8px;">Adopt a Ship</td><td style="padding:3px 8px;">S4 essentials (adopt-a-ship, Captain's Log launch) + tightened S5 Atlantic World. Triangle map on paper: students have no Google logins, so My Maps is out. Nav tools + dead reckoning move to the FT2 brief and S14.</td></tr>
+<tr><td style="padding:3px 8px;">D5</td><td style="padding:3px 8px;">Tue Jul 14</td><td style="padding:3px 8px;">The Middle Passage</td><td style="padding:3px 8px;">S6, unchanged.</td></tr>
+<tr><td style="padding:3px 8px;">D6</td><td style="padding:3px 8px;">Wed Jul 15</td><td style="padding:3px 8px;">FT1 Real Pirates + Salem Maritime</td><td style="padding:3px 8px;">confirmed rotation</td></tr>
+<tr><td style="padding:3px 8px;">D7</td><td style="padding:3px 8px;">Thu Jul 16</td><td style="padding:3px 8px;">FT2 Kayaking</td><td style="padding:3px 8px;">plus S4's dead-reckoning brief, pre-paddle</td></tr>
+<tr><td style="padding:3px 8px;">D8&ndash;D11</td><td style="padding:3px 8px;">Jul 20&ndash;23</td><td style="padding:3px 8px;">S9 Vote &middot; S10 Articles &middot; S11 Wreck &middot; FT3 Georges Island</td><td style="padding:3px 8px;">unchanged</td></tr>
+<tr><td style="padding:3px 8px;">D12&ndash;D15</td><td style="padding:3px 8px;">Jul 27&ndash;30</td><td style="padding:3px 8px;">S13 &middot; S14 &middot; S15 &middot; S16 Pitch Day</td><td style="padding:3px 8px;">unchanged</td></tr>
+<tr><td style="padding:3px 8px;">D16&ndash;D19</td><td style="padding:3px 8px;">Aug 3&ndash;6</td><td style="padding:3px 8px;">S17 Synthesis &middot; Build 1 &middot; Build 2 &middot; SHOWCASE</td><td style="padding:3px 8px;">unchanged</td></tr>
+</tbody>
+</table>
+<p class="meta">Cipher league (remaining): #2 D4 &middot; #3 D8 &middot; #4 D9 &middot; #5 D12 &middot; finale D18, revealed at the Showcase.</p>
+</div>
+
 <div id="unit-plan-content">
 
 <div class="unit-plan-decisions">
@@ -3637,6 +3657,27 @@ Full source lists and tier-by-tier findings live alongside this file in <code>re
 <section id="teacher-toolkit" data-folio="xvii" data-audience="admin">
 <h2>Teacher Toolkit</h2>
 <p class="meta">Live maps, GIS apps, and modern-piracy trackers to pull into class &mdash; teacher-facing, kept out of the student tabs.</p>
+
+<div class="card" id="banner-override-panel">
+<h3 style="margin-top:0;">📍 Banner Control</h3>
+<p class="meta">Which day banner shows at the top of the site. Normally leave on Automatic: the banner picks the right day by the date, for everyone, with no clicks. An override here changes <strong>this device only</strong> (handy for the projector). To force a day for every device, edit <code>WHYDAH_FORCE</code> in <code>day-config.js</code> and push.</p>
+<label style="display:flex; align-items:center; gap:.6em; flex-wrap:wrap;">
+<strong>Banner:</strong>
+<select style="padding:.35em .5em; font-size:1em; max-width:100%;"></select>
+</label>
+<p class="meta" data-role="status" style="margin-top:.5em;"></p>
+</div>
+
+<div class="card" id="crew-points-panel">
+<h3 style="margin-top:0;">🏴‍☠️ Crew Points</h3>
+<p class="meta">Points live on this device (the class sees them when you project). Cipher wins, board posts, and mission finishes earn points. Use "Project the board" for the big-screen leaderboard.</p>
+<div data-role="crew-list"></div>
+<div style="display:flex; gap:.5em; margin-top:.7em; flex-wrap:wrap;">
+<input data-role="crew-name" type="text" placeholder="New crew name" style="padding:.35em .5em; flex:1; min-width:10em;">
+<button data-role="add-crew" type="button" style="padding:.35em .9em; cursor:pointer;">Add crew</button>
+<button data-role="project-board" type="button" style="padding:.35em .9em; cursor:pointer; font-weight:700;">Project the board</button>
+</div>
+</div>
 <h3>GIS toolkit - free tools we can pull into class</h3>
 <p class="meta">Beyond MarineTraffic. Each one of these has a teaching use; none of them require a login or a paid account.</p>
 
@@ -3752,7 +3793,12 @@ Full source lists and tier-by-tier findings live alongside this file in <code>re
 (function whydahLogbook(){
   var ADMIN_KEY = 'LEAP4ED';
   var STORAGE_KEY = 'whydah-admin-unlocked-v1';
-  var ADMIN_SECTIONS = ['voyage-journal', 'unit-plan', 'confidence', 'source-links', 'teacher-toolkit'];
+  /* Single source of truth: the data-audience="admin" attribute on each <section>.
+     This script runs after </main>, so the sections are already in the DOM. */
+  var ADMIN_SECTIONS = Array.prototype.map.call(
+    document.querySelectorAll('main > section[data-audience="admin"]'),
+    function (s) { return s.id; }
+  );
 
   function isAdminSection(id) { return ADMIN_SECTIONS.indexOf(id) !== -1; }
   function getUnlocked() {
@@ -3983,7 +4029,10 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('keydown', function(e) {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
     if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
-    const ids = Array.from(sections).map(function(s) { return s.id; });
+    const unlocked = document.body.classList.contains('admin-unlocked');
+    const ids = Array.from(sections)
+      .filter(function(s) { return unlocked || s.getAttribute('data-audience') !== 'admin'; })
+      .map(function(s) { return s.id; });
     const currentIdx = ids.indexOf(document.querySelector('main > section.active')?.id || ids[0]);
     const nextIdx = e.key === 'ArrowRight'
       ? (currentIdx + 1) % ids.length
