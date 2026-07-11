@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Sam &amp; the Whydah — A Choose Your Own Destiny</title>
+  <meta name="description" content="A branching narrative game telling the true-ish story of Samuel 'Black Sam' Bellamy, Prince of Pirates, and his flagship the Whydah." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="sea-bg" aria-hidden="true">
+    <div class="waves"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <main class="stage" id="stage">
+    <!-- Title screen -->
+    <section class="card title-card" id="titleCard">
+      <p class="kicker">A Choose Your Own Destiny</p>
+      <h1 class="game-title">Black Sam<span class="amp">&amp;</span>the Whydah</h1>
+      <p class="subtitle">The true-ish tale of Samuel Bellamy, Prince of Pirates &middot; 1715&ndash;1717<br />Your choices decide how it ends.</p>
+      <div class="title-actions">
+        <button class="btn btn-primary" id="startBtn">Set Sail</button>
+        <button class="btn btn-ghost" id="continueBtn" hidden>Continue Voyage</button>
+        <button class="btn btn-ghost" id="boardBtn">&#9873; Hall of Fame</button>
+      </div>
+      <p class="flourish" aria-hidden="true">&#9875;</p>
+      <p class="hist-note">Based on a real pirate, a real ship, and a real storm.<br />Ten endings. Four mini-games. One very unimpressed seagull.<br />Keyboard sailors: press 1&ndash;9 to pick a choice.</p>
+    </section>
+
+    <!-- Game screen -->
+    <section class="card scene-card" id="sceneCard" hidden>
+      <header class="hud" id="hud" role="group" aria-label="Ship's ledger: plunder, crew, and renown">
+        <div class="stat" title="Plunder — your growing treasure">
+          <span class="stat-icon" aria-hidden="true">&#9863;</span>
+          <span class="stat-label">Plunder</span>
+          <span class="stat-value" id="statGold">0</span>
+        </div>
+        <div class="stat" title="Crew — how much your sailors like sailing with you">
+          <span class="stat-icon" aria-hidden="true">&#9760;</span>
+          <span class="stat-label">Crew</span>
+          <span class="stat-value" id="statCrew">0</span>
+        </div>
+        <div class="stat" title="Renown — how far your legend has traveled">
+          <span class="stat-icon" aria-hidden="true">&#9734;</span>
+          <span class="stat-label">Renown</span>
+          <span class="stat-value" id="statMercy">0</span>
+        </div>
+        <button class="btn btn-tiny mute-btn" id="muteBtn" title="Toggle sound" aria-pressed="false">&#9834; Sound Off</button>
+      </header>
+
+      <div class="scene-body">
+        <div class="scene-art" id="sceneArt" hidden aria-hidden="false"></div>
+        <p class="scene-chapter" id="sceneChapter"></p>
+        <h2 class="scene-title" id="sceneTitle" tabindex="-1" style="outline:none"></h2>
+        <div class="scene-text" id="sceneText"></div>
+        <div class="choices" id="choices" role="group" aria-label="Your choices"></div>
+      </div>
+
+      <footer class="scene-footer">
+        <button class="btn btn-tiny" id="restartBtn" title="Abandon this voyage and begin anew">Start Over</button>
+        <span class="footer-note" id="footerNote" role="status" aria-live="polite"></span>
+      </footer>
+    </section>
+
+    <!-- Hall of Fame / scoreboard -->
+    <section class="card board-card" id="boardCard" hidden>
+      <p class="kicker">Captain's Log</p>
+      <h2 class="board-title" id="boardTitle" tabindex="-1" style="outline:none">Hall of Fame</h2>
+      <div class="board-body" id="boardBody"></div>
+      <footer class="board-footer">
+        <button class="btn btn-primary" id="boardBackBtn">Back to Port</button>
+        <button class="btn btn-tiny" id="boardClearBtn" title="Erase every logged voyage">Clear the Log</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/art.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/minigames.js"></script>
+  <script src="js/story.js"></script>
+  <script src="js/scoreboard.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+</html>
