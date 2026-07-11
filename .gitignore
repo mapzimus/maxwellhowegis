@@ -9,3 +9,6 @@ __pycache__/
 .venv/
 .idea/
 .vscode/
+
+# Local Claude Code session config (machine-specific paths)
+.claude/

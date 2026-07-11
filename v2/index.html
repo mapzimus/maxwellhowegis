@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Maxwell Howe — The Working Atlas</title>
+    <meta name="description" content="Maxwell Howe — GIS analyst, web mapper, and tool builder in Salem, MA. Interactive maps, spatial analysis, client-side tools, games, and live products.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..650&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/config.js"></script>
+    <script src="js/theme.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-nav"></div>
+
+<main id="main">
+    <section class="hero">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="container hero-content">
+            <div class="kicker">The Working Atlas of</div>
+            <h1>Maxwell Howe</h1>
+            <p class="lede">GIS analyst, web mapper, and tool builder in Salem, Massachusetts.
+            I turn spatial data into things people can actually use — interactive atlases,
+            reproducible analysis, classroom tools, and the occasional game about ants.</p>
+            <div class="hero-actions">
+                <a class="btn" href="work.html">Survey the work</a>
+                <a class="btn btn-ghost" href="about.html">About the surveyor</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section-tight">
+            <h2>Currently Building</h2>
+            <div class="building-strip" id="buildingStrip"></div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight">
+            <h2>Featured Plates</h2>
+            <p class="marginalia" style="margin-bottom: var(--space-4);">Three from the flagship shelf — <a href="work.html">see all work →</a></p>
+            <div class="grid grid-wide" id="featuredGrid"></div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight">
+            <h2>The Rest of the Atlas</h2>
+            <div class="grid grid-compact">
+                <a class="plate" href="gallery.html"><div class="plate-body">
+                    <div class="plate-no"><span>Sheet 2</span><span>120 maps</span></div>
+                    <h3>Map Gallery</h3>
+                    <p class="summary">Every map tells on its maker. The full wall, filterable.</p>
+                </div></a>
+                <a class="plate" href="tools.html"><div class="plate-body">
+                    <div class="plate-no"><span>Sheet 3</span><span>22 tools</span></div>
+                    <h3>Tools</h3>
+                    <p class="summary">Standalone client-side utilities — coordinates, GeoJSON, CSVs, palettes.</p>
+                </div></a>
+                <a class="plate" href="play.html"><div class="plate-body">
+                    <div class="plate-no"><span>Sheet 4</span><span>6 games</span></div>
+                    <h3>Play</h3>
+                    <p class="summary">Ant colonies, pirate voyages, and Mercator's lies.</p>
+                </div></a>
+                <a class="plate" href="ventures.html"><div class="plate-body">
+                    <div class="plate-no"><span>Sheet 5</span><span>7 ventures</span></div>
+                    <h3>Ventures</h3>
+                    <p class="summary">TappyMaps, Howe2Math, WhydahStory, and the rest of the constellation.</p>
+                </div></a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/partials.js"></script>
+<script src="js/render.js"></script>
+<script src="js/data/projects.js"></script>
+<script src="js/page-home.js"></script>
+<script src="js/hero-contours.js?v=2"></script>
+</body>
+</html>

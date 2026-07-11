@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Work — Maxwell Howe</title>
+    <meta name="description" content="Interactive map applications, spatial analysis, and GIS projects by Maxwell Howe.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..650&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/config.js"></script>
+    <script src="js/theme.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-nav"></div>
+
+<main id="main">
+    <div class="container">
+        <header class="page-head">
+            <div class="kicker">Sheet 1 · Selected Works</div>
+            <h1>Work</h1>
+            <p class="lede">Interactive map applications, reproducible spatial analysis, and the
+            graduate work it grew from. Every plate below is a real, working thing — click through.</p>
+            <hr class="tick-rule">
+        </header>
+
+        <section class="section-tight" aria-labelledby="flagship-h">
+            <h2 id="flagship-h">Flagship Applications</h2>
+            <p class="marginalia" style="margin-bottom: var(--space-4);">Live · self-built · no frameworks were harmed</p>
+            <div class="grid grid-wide" id="flagshipGrid"></div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight" aria-labelledby="all-h">
+            <h2 id="all-h">All Projects</h2>
+            <div class="filter-bar" id="eraBar" role="group" aria-label="Era filter"></div>
+            <div class="filter-bar" id="typeBar" role="group" aria-label="Category filter"></div>
+            <div class="grid" id="projectGrid"></div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight" aria-labelledby="lab-h">
+            <h2 id="lab-h">The Lab</h2>
+            <p class="marginalia" style="margin-bottom: var(--space-4);">In development · unsurveyed territory · links when they ship</p>
+            <div class="grid grid-compact" id="labGrid"></div>
+        </section>
+    </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/partials.js"></script>
+<script src="js/render.js"></script>
+<script src="js/data/projects.js"></script>
+<script src="js/page-work.js"></script>
+</body>
+</html>

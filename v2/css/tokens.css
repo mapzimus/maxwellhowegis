@@ -1,0 +1,94 @@
+/* ============================================================
+   THE WORKING ATLAS — design tokens
+   Light = "field paper" · Dark = "night chart"
+   Every visual decision lives here; components never use raw hex.
+   ============================================================ */
+
+:root {
+  /* ---- Paper (light) ---- */
+  --paper:        #faf8f3;   /* warm off-white page */
+  --paper-2:      #f3f0e8;   /* recessed panels, wells */
+  --plate:        #fffdf9;   /* card faces — slightly brighter than page */
+  --ink:          #1d1c1a;   /* near-black warm ink */
+  --ink-soft:     #57534a;   /* secondary text */
+  --ink-faint:    #8a8478;   /* metadata, captions */
+  --line:         #d9d3c5;   /* hairlines, neatlines */
+  --line-strong:  #b3aa97;   /* emphasized rules */
+
+  /* ---- Survey accents ---- */
+  --vermilion:       #c53d1c;  /* USGS-contour red-orange — primary accent */
+  --vermilion-deep:  #9e2f13;  /* hover/active */
+  --vermilion-wash:  #f7e5dd;  /* tinted backgrounds */
+  --bathy:           #1e5f8a;  /* bathymetric blue — links, water */
+  --bathy-deep:      #154662;
+  --bathy-wash:      #e2edf4;
+  --moss:            #4a6b3d;  /* live/vegetation green — status:live */
+  --moss-wash:       #e7eee2;
+  --ochre:           #9a6d1b;  /* in-development amber */
+  --ochre-wash:      #f5ecd8;
+
+  /* ---- Type ---- */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  --text-xs:   0.72rem;
+  --text-sm:   0.84rem;
+  --text-base: 1rem;
+  --text-md:   1.14rem;
+  --text-lg:   1.45rem;
+  --text-xl:   2rem;
+  --text-2xl:  2.8rem;
+  --text-hero: clamp(2.6rem, 6vw, 4.4rem);
+
+  /* ---- Space & shape ---- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 14px; --space-4: 22px;
+  --space-5: 34px; --space-6: 52px; --space-7: 84px;
+  --radius-sm: 3px;   /* plates are nearly square-cornered, like print */
+  --radius-md: 6px;
+  --radius-pill: 999px;
+  --measure: 68ch;
+  --container: 1180px;
+
+  /* ---- Elevation (paper casts soft, warm shadows) ---- */
+  --shadow-sm: 0 1px 2px rgba(60, 50, 30, 0.08), 0 2px 8px rgba(60, 50, 30, 0.06);
+  --shadow-md: 0 2px 4px rgba(60, 50, 30, 0.10), 0 10px 28px rgba(60, 50, 30, 0.10);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 0.9, 0.35, 1);
+  --t-fast: 0.15s var(--ease);
+  --t-med:  0.3s var(--ease);
+
+  --z-nav: 100;
+  --z-lightbox: 200;
+
+  color-scheme: light;
+}
+
+/* ============ NIGHT CHART (dark) ============ */
+:root[data-theme="dark"] {
+  --paper:        #12151c;
+  --paper-2:      #0d1016;
+  --plate:        #1a1e27;
+  --ink:          #e9e6de;
+  --ink-soft:     #a8a294;
+  --ink-faint:    #766f61;
+  --line:         #2c3140;
+  --line-strong:  #46506a;
+
+  --vermilion:       #e85c35;
+  --vermilion-deep:  #f07a58;
+  --vermilion-wash:  #33201a;
+  --bathy:           #5ba3d4;
+  --bathy-deep:      #82bce2;
+  --bathy-wash:      #16242f;
+  --moss:            #7fae6d;
+  --moss-wash:       #1c2618;
+  --ochre:           #d0a04a;
+  --ochre-wash:      #2b2312;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5), 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.55), 0 14px 36px rgba(0, 0, 0, 0.45);
+
+  color-scheme: dark;
+}
