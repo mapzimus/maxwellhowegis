@@ -1,4 +1,5 @@
 """Capture project thumbnails at 16:10 (1600x1000) for portfolio site."""
+import os
 import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -12,8 +13,12 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 def capture(url: str, out_name: str, wait_ms: int = 2500, wait_selector: str | None = None, click_text: str | None = None, extra_wait_ms: int = 0):
     out_path = OUT / out_name
     print(f"[capture] {url} -> {out_path}")
+    proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
+    exe = os.environ.get("CHROMIUM_PATH")  # override when the installed browsers don't match the playwright pin
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = p.chromium.launch(executable_path=exe or None,
+                                    proxy={"server": proxy} if proxy else None,
+                                    args=["--no-sandbox"] if os.geteuid() == 0 else [])
         ctx = browser.new_context(viewport={"width": W, "height": H}, device_scale_factor=2, user_agent=UA, locale="en-US")
         page = ctx.new_page()
         page.goto(url, wait_until="networkidle", timeout=60000)
@@ -59,4 +64,12 @@ if __name__ == "__main__":
             "optitrek-thumb.png",
             wait_ms=2500,
             wait_selector="circle.route-node",
+        )
+    if target in ("transit", "all"):
+        # network.json is ~5 MB + a 33k-dot canvas layer — give it time to draw
+        capture(
+            "https://maxwellhowegis.com/transit/",
+            "transit-thumb.png",
+            wait_ms=8000,
+            wait_selector=".leaflet-tile-loaded",
         )
