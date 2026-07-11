@@ -173,4 +173,5 @@ site (plain HTML/CSS/JS).
 - [ ] Auto-route HSR edges along real corridors instead of straight lines
 - [ ] Network stats (reach, coverage: % of population within N mi of each tier)
 - [x] Promote to a styled read-only "network map" viewer (editing retired)
-- [ ] Add it to the portfolio gallery
+- [x] Add it to the portfolio gallery (map-wall brick + tools card; thumb via
+      `scripts/capture_thumbs.py transit`)
