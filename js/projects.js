@@ -389,6 +389,24 @@ const projects = [
         liveUrl: "concord.html",
         repoUrl: "https://github.com/mapzimus/open-concord-nh",
         status: "in development"
+    },
+    {
+        id: 20,
+        era: "current",
+        title: "US Fantasy Transit Network",
+        category: "Web Mapping",
+        type: "map",
+        tags: ["Python", "Census Data", "Gabriel Graph", "RNG", "Leaflet", "GeoJSON", "Network Generation"],
+        summary: "An \"unlimited funds\" transit network for North America, generated end-to-end from Census data — 135 HSR hubs, 2,266 regional connectors, 1,195 organic metro systems, and a commuter web linking all 33,288 towns. Explore it in an interactive network map.",
+        description: "A fantasy four-tier transit network spanning the United States, Canada, and Mexico, generated entirely from Census data by two Python scripts (~20 s, pure stdlib, deterministic). Tier 1 is a high-speed-rail spine connecting 135 major metros via a Gabriel graph with water-aware edges — nothing crosses a Great Lake or open strait. Tier 2 meshes 2,266 regional hubs (including promoted cities and corridor gap-fill) through a relative neighborhood graph. Tier 3 builds 1,195 organic metro/subway systems with density-scaled, land-aware hex-grid infill stations and through-lines, bearing-sector lines, and orbital rings — nine big cities (NYC, Boston, LA, Chicago, Philadelphia, SF, DC, Seattle, Houston) split into borough/district nodes, each anchoring its own metro system. Tier 4 is a commuter web linking all 33,288 Census-derived towns via a relative neighborhood graph, 99.7% with two or more connections. The viewer is a read-only interactive Leaflet map with per-tier visibility toggles, a 33k-town search, canvas-rendered layers, and a mobile-friendly bottom sheet.",
+        tools: ["Python", "US Census Gazetteer", "Gabriel Graph", "Relative Neighborhood Graph", "Leaflet", "Canvas API", "GeoJSON"],
+        year: "2026",
+        thumb: "images/projects/transit-thumb.png",
+        gallery: [
+            { src: "images/projects/transit-thumb.png", caption: "The full four-tier network — HSR spine (amber), regional mesh (indigo), metro systems (green), and commuter web (sky)" }
+        ],
+        liveUrl: "transit/",
+        repoUrl: null
     }
 ];
 
