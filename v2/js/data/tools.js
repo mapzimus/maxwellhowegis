@@ -4,6 +4,81 @@
 window.V2_DATA = window.V2_DATA || {};
 window.V2_DATA.tools = [
   {
+    "slug": "truescale",
+    "kind": "tool",
+    "status": "live",
+    "title": "True Scale",
+    "category": "Full Apps",
+    "type": "tool",
+    "tags": [
+      "Leaflet",
+      "Turf.js",
+      "Mercator",
+      "Map Projections"
+    ],
+    "summary": "Drag any country or state across the map and watch it resize — revealing how much the Mercator projection distorts area. Greenland looks as big as Africa; it is 14× smaller.",
+    "description": "An interactive explainer for Web Mercator area distortion. Pick any country, state, or province and drag it across the map: the shape continuously rescales to show its true relative size at each latitude. Side-by-side comparisons and a latitude grid make the classic distortions vivid — Greenland vs Africa, Alaska vs Brazil, Canada vs the contiguous US.",
+    "tools": [
+      "Leaflet",
+      "Turf.js",
+      "Natural Earth",
+      "OpenStreetMap"
+    ],
+    "year": "2026",
+    "links": {
+      "live": "truescale/",
+      "repo": "https://github.com/mapzimus/true-scale"
+    },
+    "icon": "🌍"
+  },
+  {
+    "slug": "smartpicker",
+    "kind": "tool",
+    "status": "live",
+    "category": "Full Apps",
+    "type": "tool",
+    "icon": "🎯",
+    "title": "SmartPicker",
+    "summary": "Fair, no-fuss cold-calling for the classroom — a smarter popsicle-stick jar that remembers who’s spoken, favors quieter kids, skips absent students, and exports participation records to CSV. Every roster lives in your own browser; nothing is ever uploaded.",
+    "tags": [
+      "Classroom",
+      "Privacy-first",
+      "Single-file"
+    ],
+    "links": {
+      "live": "https://mapzimus.github.io/smartpicker/"
+    }
+  },
+  {
+    "slug": "pockettiles",
+    "kind": "tool",
+    "status": "live",
+    "title": "PocketTiles Studio",
+    "category": "Full Apps",
+    "type": "tool",
+    "tags": [
+      "PMTiles",
+      "MapLibre GL JS",
+      "Vector Tiles",
+      "In-Browser"
+    ],
+    "summary": "Draw or import GeoJSON, bake a PMTiles vector-tile archive entirely in your browser, and share a streaming URL — no tile server, nothing uploaded during tiling.",
+    "description": "PocketTiles Studio turns GeoJSON into a PMTiles v3 vector-tile archive without any server: drawing via Terra Draw, tiling via geojson-vt and vt-pbf, gzip via the browser CompressionStream API, and a custom in-browser PMTiles writer assembling the archive — the novel core of the app. Optionally publish the archive to storage for a shareable streaming map URL.",
+    "tools": [
+      "MapLibre GL JS",
+      "Terra Draw",
+      "geojson-vt",
+      "vt-pbf",
+      "PMTiles",
+      "Supabase"
+    ],
+    "year": "2026",
+    "links": {
+      "live": "pockettiles/"
+    },
+    "icon": "🧳"
+  },
+  {
     "slug": "coordinate-converter",
     "kind": "tool",
     "status": "live",

@@ -129,11 +129,11 @@ for i, g in enumerate(gallery):
 # counts
 checks = [
     (len(pages) == 10, f"pages == 10 (got {len(pages)})"),
-    (len(projects) == 27, f"projects == 27 (got {len(projects)})"),
-    (len(tools) == 22, f"tools == 22 (got {len(tools)})"),
+    (len(projects) == 25, f"projects == 25 (got {len(projects)})"),
+    (len(tools) == 25, f"tools == 25 (got {len(tools)})"),
     (len(gallery) == 120, f"gallery == 120 (got {len(gallery)})"),
-    (len(games) == 6, f"games == 6 (got {len(games)})"),
-    (len(ventures) == 7, f"ventures == 7 (got {len(ventures)})"),
+    (len(games) == 5, f"games == 5 (got {len(games)})"),
+    (len(ventures) == 6, f"ventures == 6 (got {len(ventures)})"),
 ]
 for ok, msg in checks:
     if not ok:

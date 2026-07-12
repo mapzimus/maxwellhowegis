@@ -10,9 +10,9 @@
         { label: 'TappyMaps', href: 'https://tappymaps.com', state: 'live' },
         { label: 'Howe2Math', href: 'https://howe2math.com', state: 'live' },
         { label: 'WhydahStory.com', href: 'https://whydahstory.com', state: 'live' },
+        { label: 'Boston in Motion', href: 'https://mapzimus.github.io/Motion/', state: 'live' },
         { label: 'Optitrek', href: 'https://github.com/mapzimus/optitrek', state: 'dev' },
-        { label: 'Calm Route', href: null, state: 'dev' },
-        { label: 'Boston in Motion', href: null, state: 'dev' }
+        { label: 'Calm Route', href: null, state: 'dev' }
     ];
     document.getElementById('buildingStrip').innerHTML = BUILDING.map(function (b) {
         var inner = '<span class="dot dot-' + b.state + '"></span>' + esc(b.label);

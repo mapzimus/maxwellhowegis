@@ -8,6 +8,7 @@
     var host = document.getElementById('toolSections');
 
     var CAPTIONS = {
+        'Full Apps': 'Complete standalone web apps — bigger than a utility, focused like a tool.',
         'Maps & GIS': 'Coordinates, GeoJSON, geocoding, and other spatial odds and ends.',
         'Data': 'Charts, CSVs, converters, and synthetic data.',
         'Design & Media': 'Palettes, CSS, images, QR codes, markdown.',
@@ -25,7 +26,7 @@
         h += '<section class="section-tight"><h2>' + esc(cat) + '</h2>' +
             '<p class="marginalia" style="margin-bottom: var(--space-4);">' +
             esc(CAPTIONS[cat] || '') + ' · ' + group.length + ' tools</p>' +
-            '<div class="grid">' +
+            '<div class="grid' + (cat === 'Full Apps' ? ' grid-wide' : '') + '">' +
             group.map(function (t) { return R.renderCard(t, {}); }).join('') +
             '</div></section>';
         if (ci < order.length - 1) h += '<hr class="scalebar">';

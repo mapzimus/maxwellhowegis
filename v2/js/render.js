@@ -46,8 +46,7 @@
         }
 
         h += '<div class="plate-body">';
-        h += '<div class="plate-no"><span>' +
-            (opts.plateNo ? 'Plate ' + esc(opts.plateNo) : esc(item.category || item.kind || '')) +
+        h += '<div class="plate-no"><span>' + esc(item.category || item.kind || '') +
             '</span><span>' + esc(item.year || '') + '</span></div>';
         h += '<h3>' + (item.icon ? esc(item.icon) + ' ' : '') + esc(item.title) + '</h3>';
         if (item.summary) h += '<p class="summary">' + esc(item.summary) + '</p>';
@@ -65,21 +64,12 @@
     function renderGrid(el, items, opts) {
         opts = opts || {};
         if (!items.length) {
-            el.innerHTML = '<div class="empty-note">No plates match this filter.</div>';
+            el.innerHTML = '<div class="empty-note">Nothing matches this filter.</div>';
             return;
         }
-        el.innerHTML = items.map(function (it, i) {
-            var o = Object.assign({}, opts);
-            if (opts.numberPlates) o.plateNo = romanize(i + 1);
-            return renderCard(it, o);
+        el.innerHTML = items.map(function (it) {
+            return renderCard(it, opts);
         }).join('');
-    }
-
-    function romanize(n) {
-        var map = [[100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
-        var out = '';
-        map.forEach(function (m) { while (n >= m[0]) { out += m[1]; n -= m[0]; } });
-        return out;
     }
 
     // ---- Filter bar ----

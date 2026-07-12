@@ -10,10 +10,10 @@
     var p = window.V2_DATA.projects.find(function (x) { return x.slug === slug; });
 
     if (!p) {
-        el.innerHTML = '<header class="page-head"><div class="kicker">404 — Off the map</div>' +
-            '<h1>Plate not found</h1>' +
-            '<p class="lede">No project matches this reference. ' +
-            '<a href="work.html">Return to the index of plates</a>.</p></header>';
+        el.innerHTML = '<header class="page-head"><div class="kicker">404</div>' +
+            '<h1>Project not found</h1>' +
+            '<p class="lede">No project matches this link. ' +
+            '<a href="work.html">Back to all work</a>.</p></header>';
         document.title = 'Not found — Maxwell Howe';
         return;
     }
@@ -37,7 +37,7 @@
     ].filter(Boolean).map(esc).join(' · ');
 
     var h = '<header class="page-head">' +
-        '<div class="kicker">' + esc(p.era === 'school' ? 'Grad School Series' : 'Current Series') + '</div>' +
+        '<div class="kicker">' + esc(p.era === 'school' ? 'GIS Case Study' : 'Interactive Map & App') + '</div>' +
         '<h1>' + esc(p.title) + '</h1>' +
         '<div class="marginalia" style="margin-bottom: var(--space-3);">' + marginalia + ' ' + R.badge(p.status) + '</div>' +
         '<hr class="tick-rule"></header>';

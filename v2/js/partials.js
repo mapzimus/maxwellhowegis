@@ -45,7 +45,6 @@
         }).join('');
         return '<header class="nav"><div class="nav-inner">' +
             '<a href="index.html" class="nav-logo">' + MARK + 'Maxwell Howe</a>' +
-            '<span class="nav-coords">42.51°N&thinsp;70.89°W</span>' +
             '<ul class="nav-links" id="navLinks">' + items +
             '<li><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Theme</button></li>' +
             '</ul>' +
@@ -62,7 +61,7 @@
         var year = new Date().getFullYear();
         return '<footer class="footer"><div class="footer-inner">' +
             '<div class="footer-colophon">&copy; ' + year + ' Maxwell Howe · Salem, MA<br>' +
-            'DATUM WGS84 · PLATES HAND-SET · NO FRAMEWORK HARMED</div>' +
+            'Plain HTML, CSS &amp; JavaScript — no frameworks, no build step.</div>' +
             '<ul class="footer-links">' + items + '</ul>' +
             '</div></footer>';
     }

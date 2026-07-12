@@ -985,63 +985,6 @@ window.V2_DATA.projects = [
     }
   },
   {
-    "slug": "truescale",
-    "kind": "project",
-    "era": "current",
-    "status": "live",
-    "title": "True Scale",
-    "category": "Web App",
-    "type": "tool",
-    "tags": [
-      "Leaflet",
-      "Turf.js",
-      "Mercator",
-      "Map Projections"
-    ],
-    "summary": "Drag any country or state across the map and watch it resize — revealing how much the Mercator projection distorts area. Greenland looks as big as Africa; it is 14× smaller.",
-    "description": "An interactive explainer for Web Mercator area distortion. Pick any country, state, or province and drag it across the map: the shape continuously rescales to show its true relative size at each latitude. Side-by-side comparisons and a latitude grid make the classic distortions vivid — Greenland vs Africa, Alaska vs Brazil, Canada vs the contiguous US.",
-    "tools": [
-      "Leaflet",
-      "Turf.js",
-      "Natural Earth",
-      "OpenStreetMap"
-    ],
-    "year": "2026",
-    "links": {
-      "live": "truescale/",
-      "repo": "https://github.com/mapzimus/true-scale"
-    }
-  },
-  {
-    "slug": "pockettiles",
-    "kind": "project",
-    "era": "current",
-    "status": "live",
-    "title": "PocketTiles Studio",
-    "category": "Web App",
-    "type": "tool",
-    "tags": [
-      "PMTiles",
-      "MapLibre GL JS",
-      "Vector Tiles",
-      "In-Browser"
-    ],
-    "summary": "Draw or import GeoJSON, bake a PMTiles vector-tile archive entirely in your browser, and share a streaming URL — no tile server, nothing uploaded during tiling.",
-    "description": "PocketTiles Studio turns GeoJSON into a PMTiles v3 vector-tile archive without any server: drawing via Terra Draw, tiling via geojson-vt and vt-pbf, gzip via the browser CompressionStream API, and a custom in-browser PMTiles writer assembling the archive — the novel core of the app. Optionally publish the archive to storage for a shareable streaming map URL.",
-    "tools": [
-      "MapLibre GL JS",
-      "Terra Draw",
-      "geojson-vt",
-      "vt-pbf",
-      "PMTiles",
-      "Supabase"
-    ],
-    "year": "2026",
-    "links": {
-      "live": "pockettiles/"
-    }
-  },
-  {
     "slug": "salem-photo-walk",
     "kind": "project",
     "era": "current",
@@ -1132,20 +1075,35 @@ window.V2_DATA.projects = [
   },
   {
     "slug": "boston-in-motion",
-    "kind": "lab",
+    "kind": "project",
     "era": "current",
-    "status": "development",
+    "status": "live",
     "title": "Boston in Motion",
     "category": "Web Mapping",
     "type": "map",
     "tags": [
-      "MBTA API",
+      "MBTA V3 API",
       "MapLibre GL JS",
-      "Real-time"
+      "Real-time",
+      "ADS-B",
+      "AIS"
     ],
-    "summary": "A live map of Boston’s entire MBTA rapid transit system — real-time vehicle positions, service alerts, and crowding, polled straight from the MBTA V3 API. No backend.",
+    "summary": "One live map of everything moving through Boston — subway, commuter rail, ~150 bus routes, ferries, Amtrak, aircraft over Logan, harbor traffic via AIS, and Bluebikes fill levels — polled or streamed straight into the browser. No backend at all.",
     "year": "2026",
-    "links": {}
+    "links": {
+      "live": "https://mapzimus.github.io/Motion/",
+      "repo": "https://github.com/mapzimus/Motion"
+    },
+    "description": "A single dark MapLibre map of everything in motion in and around Boston, live. The entire MBTA fleet (~500–900 vehicles) arrives in one /vehicles request every 10 seconds and is classified into layers client-side: subway (with the Silver Line riding alongside, because no Boston rapid-transit map is complete without it), commuter rail, buses, and ferries. Amtrak positions come from the community Amtraker API, aircraft within 30 nm of Logan from airplanes.live ADS-B, live harbor traffic from an aisstream.io WebSocket, Bluebikes station fill from GBFS, and road congestion from TomTom flow tiles. Everything renders in the browser — no backend at all.",
+    "tools": [
+      "MapLibre GL JS",
+      "MBTA V3 API",
+      "Amtraker",
+      "airplanes.live",
+      "aisstream.io",
+      "Bluebikes GBFS",
+      "TomTom"
+    ]
   },
   {
     "slug": "locomonnector",
