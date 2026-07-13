@@ -1,37 +1,22 @@
-# Whydah Navigator
+# First Sail
 
-A browser game for the Whydah unit: take the helm of the *Whydah* in February 1717 and
-run her from the Windward Passage to Richmond Island, Maine — navigating the way her
-real crew had to.
+A browser game for the Whydah unit. Steer the *Whydah* north to Maine, survive what the sea throws at you, and try to beat the storm at the end.
 
-**Play:** open `index.html` from any static host, or locally with `python server.py`
-(then http://localhost:8000). No build step, no dependencies to install, works offline.
+**Play:** open `index.html` on any static host (it is live in the site's Games menu). No build step, no libraries, nothing loaded from the network. Pure Canvas 2D in three files (`index.html`, `game.css`, `game.js`). Runs offline and on Chromebooks.
 
-## What's in the game
+## How it plays
 
-- A 3D sea, ship, and day/night sky (Three.js, vendored in `vendor/`).
-- **Period navigation only** — what was aboard in 1717: compass, backstaff (noon sun),
-  mariner's quadrant (Polaris by night), log-line & sandglass, lead line, Mercator
-  chart, dead reckoning. No octant (1731), no sextant (1759), no chronometer (1761) —
-  so **latitude is findable and longitude is not**, which is the whole lesson.
-- The hidden Gulf Stream bends your reckoning; the chart (M) shows where you *think*
-  you are; landfall reveals the truth.
-- The **Cape Cod temptation**: divert for plunder and the nor'easter wakes — the
-  Wellfleet Bars took the real ship on 26 April 1717 (2 survivors of 146).
-- **Watch the crew sail her** — an autopilot demo that always takes the Cape bait
-  (also at `?demo=1`), records itself as CPU.
-- Local **top-20 log book** (browser localStorage), seeded with P. Williams, Black Sam,
-  and John Julian's historical outcomes.
+- **Steer north.** Left and right only (arrow keys, A/D, or the on-screen buttons). The ship sails itself. You dodge rocks and grab coins and repairs.
+- **A random voyage.** Every run is a different order of encounters: an enemy ship to fight, a **sea serpent**, and lucky or unlucky events. No two runs are the same.
+- **Navigator games for points.** The old instruments are now quick skill games that bank points and do not steer the ship: a sun-sight (backstaff), a depth sounding (lead line), and a speed count (log-line).
+- **The storm.** A hard finale off the coast. Lose it and your score is capped. Beat it and a survivor bonus breaks the cap and lifts your rank.
 
 ## Controls
 
-A/D steer · W/S sail · C camera · T fast time · M chart · B sun/star sight ·
-L log-line · F lead line · H help · Esc take over from the demo
+Arrow keys or A / D to steer. Space, or the fire button, to fire. 🔇 toggles sound (off by default for the classroom).
 
-## Data & credits
+## Notes
 
-- Coastline: Natural Earth 1:10m (public domain), clipped by `data/build_coastline.py`.
-- Engine: Three.js (MIT), vendored at `vendor/three.module.js`.
-- History grounded in the Whydah record: Bellamy's run for Maine, Williams's Block
-  Island detour, the *Mary Anne* wine prize, the wreck off Wellfleet, and Cyprian
-  Southack's 1717 chart ("where I buried One Hundred & Two Men Drowned").
+- Self-contained: no dependencies, no build, no network requests.
+- The history behind it: the real Whydah was sailing north when a nor'easter wrecked her off Cape Cod in April 1717. In the game you get the chance her crew never had.
+- Rebuilt July 2026, replacing the earlier 3D dead-reckoning simulator.
