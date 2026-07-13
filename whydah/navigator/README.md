@@ -6,14 +6,16 @@ A browser game for the Whydah unit. Steer the *Whydah* north to Maine, survive w
 
 ## How it plays
 
-- **Steer north.** Left and right only (arrow keys, A/D, or the on-screen buttons). The ship sails itself. You dodge rocks and grab coins and repairs.
-- **A random voyage.** Every run is a different order of encounters: an enemy ship to fight, a **sea serpent**, and lucky or unlucky events. No two runs are the same.
-- **Navigator games for points.** The old instruments are now quick skill games that bank points and do not steer the ship: a sun-sight (backstaff), a depth sounding (lead line), and a speed count (log-line).
-- **The storm.** A hard finale off the coast. Lose it and your score is capped. Beat it and a survivor bonus breaks the cap and lifts your rank.
+- **Steer north.** Left and right only (arrow keys, A/D, drag, or the on-screen buttons). The ship sails itself. You dodge rocks, grab coins, and follow the Whydah's real route: Windward Passage, Carolina coast, Virginia Capes, Rhode Island, Cape Cod.
+- **A truly random voyage.** Each run draws 4 to 6 events from a pool of 40 (some rare), plus 2 to 3 ship battles, 2 to 3 navigator mini-games, and a **sea serpent**, all in random order. Event cards are tagged **⚓ FROM THE RECORD** (real Whydah history: the Mary Anne's wine, John Julian at the helm, Williams turning for Block Island, equal shares) or **🌀 SEA YARN** (the serpent, the kraken, the glowing sail). The tags teach the unit's confidence tiers.
+- **Ship battles.** Pirate hunter sloops, armed merchant brigs, and a King's man-of-war. Sink them for gold.
+- **Navigator games for points and gold.** Quick skill games that do not steer the ship: a sun-sight (backstaff), a depth sounding (lead line), and a speed count (log-line).
+- **Gold banks between runs.** Spend it in the **Harbor** on six upgrades: Oak Timbers, Bilge Pumps, Chain Shot, Crow's Nest, Weather Helm, Lucky Charm. Your refit ship has a better chance in the storm.
+- **The nor'easter.** The storm that took the real Whydah, April 26, 1717. Lose it and your score is capped. Beat it and a survivor bonus breaks the cap and lifts your rank.
 
 ## Controls
 
-Arrow keys or A / D to steer. Space, or the fire button, to fire. 🔇 toggles sound (off by default for the classroom).
+Arrow keys or A / D to steer, or drag on the sea. Space, or the fire button, to fire. On event choices, tap a button or press ← / →. 🔇 toggles sound (off by default for the classroom). Works on phones and Chromebook touchscreens.
 
 ## Notes
 
