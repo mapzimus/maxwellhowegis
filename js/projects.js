@@ -237,7 +237,7 @@ const projects = [
         description: "A portfolio piece built from my own eBay business, North Shore Nostalgia. The project takes real sales history for used games, strips it down to a privacy-safe public dataset, geocodes destinations only to city and town centers, and maps how far packages have travelled from Salem, Massachusetts. The site is a designed Leaflet flow map with filters, package and mileage stats, longest-journey callouts, and a scheduled GitHub Actions workflow that can pull new eBay orders when API credentials are configured. The raw order data stays private; the public dataset contains only generalized destinations, sale month, game titles, quantities, and approximate city-to-city distance.",
         tools: ["Leaflet", "Python", "Nominatim", "eBay Fulfillment API", "GitHub Actions", "GitHub Pages"],
         year: "2026",
-        thumb: "images/projects/where-games-go-thumb.png",
+        thumb: "images/projects/where-games-go-thumb.png?v=map-1",
         liveUrl: "https://mapzimus.github.io/where-the-games-go/",
         repoUrl: "https://github.com/mapzimus/where-the-games-go"
     },
