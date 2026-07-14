@@ -13,7 +13,7 @@ window.WHYDAH_DAYS = [
   { day: 2,  date: '2026-07-07', title: 'What Is a Map?',             url: 'day2.html' },
   { day: 3,  date: '2026-07-08', title: 'Reading the 1719 World Map', url: 'day3.html' },
   { day: 4,  date: '2026-07-13', title: 'Adopt a Ship',               url: 'day4.html' },
-  { day: 5,  date: '2026-07-14', title: 'The Middle Passage',         url: 'day5.html' },
+  { day: 5,  date: '2026-07-14', title: 'Out of the Machine',            url: 'day5.html' },
   { day: 6,  date: '2026-07-15', title: 'Real Pirates + Salem Maritime', url: 'day6.html', kind: 'trip' },
   { day: 7,  date: '2026-07-16', title: 'Life at Sea: Kayak Day',     url: 'day7.html', kind: 'trip' },
   { day: 8,  date: '2026-07-20', title: 'The Vote',                   url: 'day8.html' },
