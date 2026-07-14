@@ -958,7 +958,7 @@ window.V2_DATA.projects = [
   },
   {
     "slug": "interstate-challenge",
-    "kind": "project",
+    "kind": "fun",
     "era": "current",
     "status": "live",
     "title": "The Sequential Interstate Challenge",
@@ -1012,7 +1012,7 @@ window.V2_DATA.projects = [
   },
   {
     "slug": "concord-war",
-    "kind": "project",
+    "kind": "fun",
     "era": "current",
     "status": "live",
     "title": "Concord Civil War — Scrollytelling Map",
@@ -1106,20 +1106,35 @@ window.V2_DATA.projects = [
     ]
   },
   {
-    "slug": "locomonnector",
-    "kind": "lab",
+    "slug": "where-games-go",
+    "kind": "project",
     "era": "current",
-    "status": "development",
-    "title": "Locomonnector",
-    "category": "Spatial Analysis",
-    "type": "analysis",
+    "status": "live",
+    "title": "Where My eBay Packages Have Travelled",
+    "category": "Web Mapping",
+    "type": "map",
     "tags": [
-      "Python",
-      "Delaunay",
-      "Network Design"
+      "Leaflet",
+      "Geocoding",
+      "Privacy",
+      "eBay API",
+      "GitHub Actions"
     ],
-    "summary": "A fantasy binational (US + Canada) rail network: node classification, Delaunay-pruned trunk edges, a forced Alaska corridor, and self-contained island networks — rendered to an interactive Leaflet map.",
+    "summary": "A public flow map built from 1,002 real North Shore Nostalgia shipments, with city-level geocoding, expanded sales records, and a cumulative month-by-month animation of the network growing from Salem.",
+    "description": "A portfolio piece built from my own eBay business, North Shore Nostalgia. The project takes real sales history for used games, strips it down to a privacy-safe public dataset, geocodes destinations only to city and town centers, and maps how far packages have travelled from Salem, Massachusetts. The designed Leaflet flow map includes filters, a cumulative month-by-month timeline, destination and distance records, busiest periods, repeat-city and long-haul statistics, a longest-journey callout, and a scheduled GitHub Actions workflow that can pull new eBay orders when API credentials are configured. The raw order data stays private; the public dataset contains only generalized destinations, sale month, game titles, quantities, and approximate city-to-city distance.",
+    "tools": [
+      "Leaflet",
+      "Python",
+      "Nominatim",
+      "eBay Fulfillment API",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
     "year": "2026",
-    "links": {}
+    "thumb": "images/projects/where-games-go-thumb.png",
+    "links": {
+      "live": "https://mapzimus.github.io/where-the-games-go/",
+      "repo": "https://github.com/mapzimus/where-the-games-go"
+    }
   }
 ];

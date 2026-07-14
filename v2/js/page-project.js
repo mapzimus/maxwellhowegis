@@ -36,8 +36,12 @@
         p.groupProject ? 'Group project' : null
     ].filter(Boolean).map(esc).join(' · ');
 
+    var kindLabel = p.era === 'school' ? 'GIS Case Study'
+        : p.kind === 'fun' ? 'Map & Experiment'
+        : 'Interactive Map & App';
+
     var h = '<header class="page-head">' +
-        '<div class="kicker">' + esc(p.era === 'school' ? 'GIS Case Study' : 'Interactive Map & App') + '</div>' +
+        '<div class="kicker">' + esc(kindLabel) + '</div>' +
         '<h1>' + esc(p.title) + '</h1>' +
         '<div class="marginalia" style="margin-bottom: var(--space-3);">' + marginalia + ' ' + R.badge(p.status) + '</div>' +
         '<hr class="tick-rule"></header>';
@@ -65,7 +69,9 @@
             }).join('') + '</div></section>';
     }
 
-    h += '<p style="margin-top: var(--space-5);"><a href="work.html">← All work</a></p>';
+    var backHref = p.kind === 'fun' ? 'fun.html' : 'work.html';
+    var backLabel = p.kind === 'fun' ? '← For Fun' : '← All work';
+    h += '<p style="margin-top: var(--space-5);"><a href="' + backHref + '">' + backLabel + '</a></p>';
     el.innerHTML = h;
 
     var figs = document.getElementById('figs');

@@ -8,7 +8,7 @@
         { href: 'work.html', label: 'Work' },
         { href: 'gallery.html', label: 'Gallery' },
         { href: 'tools.html', label: 'Tools' },
-        { href: 'play.html', label: 'Play' },
+        { href: 'fun.html', label: 'For Fun' },
         { href: 'ventures.html', label: 'Ventures' },
         { href: 'about.html', label: 'About' }
     ];
@@ -18,7 +18,7 @@
         { href: 'work.html', label: 'Work' },
         { href: 'gallery.html', label: 'Gallery' },
         { href: 'tools.html', label: 'Tools' },
-        { href: 'play.html', label: 'Play' },
+        { href: 'fun.html', label: 'For Fun' },
         { href: 'ventures.html', label: 'Ventures' },
         { href: 'fieldnotes.html', label: 'Field Notes' },
         { href: 'links.html', label: 'Links' },

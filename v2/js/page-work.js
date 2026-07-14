@@ -12,7 +12,7 @@
 
     // Flagships lead the Interactive Maps & Apps section, in this order.
     var FLAGSHIP_ORDER = ['geopuesto', 'ma-atlas', 'quabbin', 'transit',
-        'appalachians', 'boston-in-motion', 'interstate-challenge'];
+        'appalachians', 'boston-in-motion', 'where-games-go'];
 
     function flagshipRank(p) {
         var i = FLAGSHIP_ORDER.indexOf(p.slug);
