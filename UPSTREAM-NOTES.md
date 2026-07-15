@@ -11,6 +11,26 @@ is the log of such changes.
 
 ---
 
+## 2026-07-15 — Sync `whydah/navigator/` to upstream v8
+
+**Files changed**: `whydah/navigator/game.js`, `game.css`, `README.md`
+(copied verbatim from `mapzimus/Whydah-Unit@main`), `index.html` (synced
+to the upstream structure — adds the v7 pause button — but keeps this
+repo's local head: the github.io-only redirect and the inline SVG
+favicon, instead of upstream's canonical-host redirect that would bounce
+maxwellhowegis.com visitors to whydahstory.com and its `../pics` favicon
+paths that don't exist here).
+
+**Why**: The vendored copy was two major versions stale (v6, before the
+mission campaign). Upstream v7+v8 added the ten-mission campaign,
+resume/port upgrades, mission bosses (incl. the Sharknado), scene
+crossfades, merchants, ship liveries, the suggestion box, and the
+secret-word INSANE unlock. This copy has no automatic parity with
+upstream — re-sync by hand after future Whydah-Unit merges, preserving
+the `index.html` head divergence above.
+
+---
+
 ## 2026-07-02 — Minify `Lynn-data-dive/maps/data/*.geojson`
 
 **Files changed** (all 7 GeoJSON files in the directory):
