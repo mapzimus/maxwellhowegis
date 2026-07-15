@@ -12,6 +12,7 @@
         'Maps & GIS': 'Coordinates, GeoJSON, geocoding, and other spatial odds and ends.',
         'Data': 'Charts, CSVs, converters, and synthetic data.',
         'Design & Media': 'Palettes, CSS, images, QR codes, markdown.',
+        'Teaching': 'Classroom workflow tools — rosters and student work never leave the browser.',
         'Fun & Learning': 'Equations, units, and decision-making by spinning wheel.'
     };
 
