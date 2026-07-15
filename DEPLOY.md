@@ -40,6 +40,14 @@ GitHub Pages' IPs (185.199.108–111.153) plus HTTPS enforced in the repo's
 Pages settings; that part is a one-time setup done outside this repo and
 isn't re-run by the workflow.
 
+## Lynn Data Dive backend
+
+`/lynndata/` is a static GitHub Pages wrapper whose iframe connects to the
+always-on Railway service at
+`https://lehs-data-dive-production.up.railway.app/?embed=true`. The public
+address remains `https://maxwellhowegis.com/lynndata/`; Railway is only the
+backend, so no Railway custom domain or Wix DNS change is required.
+
 ## Submodules
 
 Four subpaths are **git submodules** pinned to a commit SHA in this repo's
@@ -91,15 +99,6 @@ reapply each one after a resync.
 
 ## Gotchas
 
-- **`schedule`-triggered workflows get disabled after 60 days of repo
-  inactivity.** `.github/workflows/keep-streamlit-awake.yml` pings the
-  Lynn Data Dive Streamlit app every 6 hours via `cron` to keep it warm.
-  GitHub automatically disables scheduled workflows on a repo with no
-  pushes/commits for 60 days — on a quiet repo the cron will silently stop
-  firing and the Streamlit app will go back to cold-starting for visitors.
-  Any push to `main` resets the clock; if the workflow shows as disabled
-  in the Actions tab, re-enable it manually (Actions → the workflow →
-  "Enable workflow") or just push a commit.
 - **Submodules must be public.** See above — a private submodule doesn't
   fail the build, it just publishes an empty directory at that path.
 - **No build step.** The uploaded artifact is the raw working tree
