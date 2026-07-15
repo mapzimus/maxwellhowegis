@@ -761,7 +761,7 @@ window.V2_DATA.projects = [
     "year": "2026",
     "thumb": "images/projects/lynn-data-dive-thumb.png",
     "links": {
-      "live": "Lynn-data-dive/"
+      "live": "/lynndata/"
     }
   },
   {
