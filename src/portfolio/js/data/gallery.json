@@ -1,0 +1,2078 @@
+[
+ {
+  "title": "US Fantasy Transit Network",
+  "caption": "An \"unlimited funds\" transit network for North America, generated end-to-end from Census data: a four-tier hierarchy of 135 HSR hubs, 2,266 regional hubs, 1,195 organic metro systems, and a commuter web linking all 33,288 towns to at least two neighbors. Big cities split into boroughs and districts, each anchoring its own metro. Explore the interactive viewer.",
+  "link": "transit/",
+  "src": "images/projects/transit-thumb.png",
+  "alt": "US Fantasy Transit Network — auto-generated four-tier network map viewer",
+  "label": "US Fantasy Transit Network",
+  "overlayTitle": "US Fantasy Transit Network",
+  "overlayText": "Four-tier fantasy transit network generated from Census data — HSR spine, regional mesh, organic metros, and a commuter web reaching all 33,288 towns. Interactive Leaflet viewer.",
+  "tags": [
+   "Python",
+   "Leaflet",
+   "Census Data",
+   "Generative"
+  ],
+  "cta": {
+   "href": "transit/",
+   "text": "Explore the network →"
+  }
+ },
+ {
+  "title": "Veins of the Commonwealth",
+  "caption": "Massachusetts transportation network rendered as a circulatory system — roads, rail, and waterways layered to reveal the structural logic of how the state moves. GPH946 Computer Cartography final project.",
+  "link": null,
+  "src": "images/projects/veins-of-ma.png",
+  "alt": "Veins of the Commonwealth — Massachusetts transportation network",
+  "label": "Veins of the Commonwealth",
+  "overlayTitle": "Veins of the Commonwealth",
+  "overlayText": "MA transportation network as a circulatory system — roads, rail, and waterways layered to reveal how the state moves.",
+  "tags": [
+   "ArcGIS Pro",
+   "Cartography",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Chronic Absenteeism — Lynn Public Schools",
+  "caption": "One of 20 maps from my MS capstone: hexbin grid of student absence rates across Lynn, MA. Geocoded student addresses and correlated distance from school with chronic absenteeism. Built in R.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn-thumb.png",
+  "alt": "Hexbin absenteeism map — Lynn Public Schools",
+  "label": "Chronic Absenteeism — Lynn",
+  "overlayTitle": "Chronic Absenteeism — Lynn Public Schools",
+  "overlayText": "One of 20 maps from my MS capstone. Geocoded student addresses, hexbin grids, KDE heatmaps, and subgroup breakdowns.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Geocoding",
+   "Capstone"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Growth in the Granite State",
+  "caption": "Multitemporal Landsat 8/9 change detection over Concord, NH — magenta and green flag where built surfaces replaced vegetation between captures. Pansharpened to 15m; the final composite from the Growth in the Granite State study.",
+  "link": null,
+  "src": "images/projects/granite-state-thumb.jpg",
+  "alt": "Concord, NH — Landsat multitemporal change detection",
+  "label": "Growth in the Granite State",
+  "overlayTitle": "Growth in the Granite State",
+  "overlayText": "Landsat 8/9 multitemporal change detection over Concord, NH. Pansharpened to 15m resolution.",
+  "tags": [
+   "Landsat 8/9",
+   "TerrSet",
+   "Change Detection"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Pantry: Mapping Food Access",
+  "caption": "Coverage gap analysis for the Salem Pantry — 150,000+ client records spatially analyzed to identify underserved areas and model statewide similarity populations using random forest.",
+  "link": null,
+  "src": "images/projects/salem-pantry-thumb.png",
+  "alt": "Salem Pantry food access map",
+  "label": "Salem Pantry: Food Access",
+  "overlayTitle": "Salem Pantry: Mapping Food Access",
+  "overlayText": "150,000+ client records analyzed. Coverage gaps mapped, statewide similarity modeled via random forest using Census ACS data.",
+  "tags": [
+   "R",
+   "Random Forest",
+   "Census ACS"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Education & Wealth in Massachusetts",
+  "caption": "Bivariate choropleth correlating median household income to educational attainment across Massachusetts municipalities. My first GIS project, built in ArcGIS Pro with Census ACS data.",
+  "link": null,
+  "src": "images/projects/education-thumb.png",
+  "alt": "Education and wealth bivariate map — Massachusetts",
+  "label": "Education & Wealth in MA",
+  "overlayTitle": "Education & Wealth in Massachusetts",
+  "overlayText": "Bivariate choropleth — median household income vs. educational attainment across MA municipalities. First GIS project.",
+  "tags": [
+   "ArcGIS Pro",
+   "Census ACS",
+   "Bivariate"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Emergency Evacuation Routes",
+  "caption": "arcpy-based route planning tool weighting FEMA flood zone data and traffic volume to identify safest and most dangerous evacuation paths from Salem, MA in a sea-rise flood scenario.",
+  "link": null,
+  "src": "images/projects/evacuation-thumb.jpg",
+  "alt": "Salem evacuation route map",
+  "label": "Salem Evacuation Routes",
+  "overlayTitle": "Salem Emergency Evacuation Routes",
+  "overlayText": "arcpy network analysis weighted by FEMA flood zones and traffic volume — safest evacuation paths in a sea-rise scenario.",
+  "tags": [
+   "Python",
+   "arcpy",
+   "Network Analysis",
+   "FEMA"
+  ],
+  "cta": null
+ },
+ {
+  "title": "SSU Central Campus Survey",
+  "caption": "Salem State University central campus mapped by combining CAD utility drawings, drone orthomosaics, and Trimble GPS ground verification — integrating traditional surveying with modern geospatial methods.",
+  "link": null,
+  "src": "images/projects/central-campus-thumb.jpg",
+  "alt": "SSU Central Campus survey map",
+  "label": "SSU Central Campus",
+  "overlayTitle": "SSU Central Campus Survey",
+  "overlayText": "CAD drawings + drone orthomosaics + Trimble GPS ground-truthing combined into a single campus basemap.",
+  "tags": [
+   "UAV",
+   "Trimble GPS",
+   "CAD",
+   "ArcGIS Pro"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Lynnfield Cemetery Spatial Database",
+  "caption": "~4,000 grave cards and ~1,000 lot cards digitized, georeferenced, and linked to a SQL geodatabase for Forest Hill and Willow cemeteries in Lynnfield, MA.",
+  "link": null,
+  "src": "images/projects/lynnfield/CemMap.jpg",
+  "alt": "Lynnfield cemeteries overview map",
+  "label": "Lynnfield Cemetery Database",
+  "overlayTitle": "Lynnfield Cemetery Spatial Database",
+  "overlayText": "4,000+ grave cards digitized into a queryable SQL geodatabase. Historic cemetery maps georeferenced in ArcGIS Pro.",
+  "tags": [
+   "SQL",
+   "Geodatabase",
+   "Georeferencing"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Optimal EV Charging Station Siting",
+  "caption": "GIS-AHP multi-criteria analysis reviewing global EV deployment literature and proposing a spatial methodology for Massachusetts — covering equity, network analysis, and location-allocation models.",
+  "link": null,
+  "src": "images/projects/ev-research.png",
+  "alt": "EV charging station siting research map",
+  "label": "EV Charging Station Siting",
+  "overlayTitle": "Optimal EV Charging Station Siting",
+  "overlayText": "GIS-AHP MCDM framework for MA EV deployment — reviewing global literature and proposing an equity-aware spatial methodology.",
+  "tags": [
+   "GIS-AHP",
+   "MCDM",
+   "Network Analysis"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Colorado Elevation",
+  "caption": "Elevation map of Colorado rendered in ArcGIS Pro — digital elevation model visualized with hillshade and classified color ramp. GPH946 Computer Cartography.",
+  "link": null,
+  "src": "images/gallery/co-elevation.jpg",
+  "alt": "Colorado elevation map",
+  "label": "Colorado Elevation",
+  "overlayTitle": "Colorado Elevation",
+  "overlayText": "DEM visualized with hillshade and classified color ramp. ArcGIS Pro cartography exercise.",
+  "tags": [
+   "ArcGIS Pro",
+   "DEM",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "New Hampshire Population",
+  "caption": "Choropleth map of New Hampshire population by county. GPH946 Computer Cartography — one of six maps built to practice thematic mapping in ArcGIS Pro.",
+  "link": null,
+  "src": "images/gallery/nh-population.jpg",
+  "alt": "New Hampshire population choropleth",
+  "label": "New Hampshire Population",
+  "overlayTitle": "New Hampshire Population",
+  "overlayText": "County-level choropleth. Thematic mapping exercise in ArcGIS Pro — classification, symbology, layout.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "NYC Buildings",
+  "caption": "New York City building footprints rendered by height or type in ArcGIS Pro. GPH946 Computer Cartography — urban density visualization at the building level.",
+  "link": null,
+  "src": "images/gallery/nyc-buildings.jpg",
+  "alt": "New York City building footprints map",
+  "label": "NYC Buildings",
+  "overlayTitle": "NYC Buildings",
+  "overlayText": "Building footprint visualization — urban density rendered at the individual structure level in ArcGIS Pro.",
+  "tags": [
+   "ArcGIS Pro",
+   "Urban Data",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "US Area Codes",
+  "caption": "One of my first real maps — US telephone area codes by region, working through nominal data classification and multi-category legend design.",
+  "link": null,
+  "src": "images/gallery/us-area-codes.jpg",
+  "alt": "United States area codes map",
+  "label": "US Area Codes",
+  "overlayTitle": "US Area Codes",
+  "overlayText": "Early piece — US area codes by region. Where I figured out nominal classification and legend design.",
+  "tags": [
+   "ArcGIS Pro",
+   "Nominal Data",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "US Cities",
+  "caption": "From the very first batch of maps I ever made — US cities with proportional symbols scaled by population, learning graduated point symbology and visual hierarchy.",
+  "link": null,
+  "src": "images/gallery/us-cities.jpg",
+  "alt": "United States cities proportional symbol map",
+  "label": "US Cities",
+  "overlayTitle": "US Cities",
+  "overlayText": "Early piece — US cities with proportional symbols. Learning visual hierarchy and graduated point symbology.",
+  "tags": [
+   "ArcGIS Pro",
+   "Proportional Symbols",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "US States",
+  "caption": "An early reference piece — state-level US choropleth with classified attribute data and a full cartographic layout (north arrow, scale bar, legend — the works).",
+  "link": null,
+  "src": "images/gallery/us-states.jpg",
+  "alt": "United States states choropleth map",
+  "label": "US States",
+  "overlayTitle": "US States",
+  "overlayText": "Early piece — state-level US choropleth with the full cartographic layout.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "US States & Capitals",
+  "caption": "One of my first real maps — US reference map with state capitals, working through layout, typography, and reference map conventions.",
+  "link": null,
+  "src": "images/gallery/us-capitals.jpg",
+  "alt": "US states and capitals reference map",
+  "label": "US States & Capitals",
+  "overlayTitle": "US States & Capitals",
+  "overlayText": "Early piece — US capitals reference map. Layout, type hierarchy, capital placement.",
+  "tags": [
+   "ArcGIS Pro",
+   "Reference Map",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "US States & Capitals — Illustrator Refinement",
+  "caption": "The same GPH946 reference map, lifted out of ArcGIS Pro and finished by hand in Adobe Illustrator — relief-shaded states, labeled oceans and bordering countries, refined typography, and a custom compass mark. The design-side counterpart to the raw GIS export.",
+  "link": null,
+  "src": "images/gallery/us-capitals-illustrator.jpg",
+  "alt": "US states and capitals — Adobe Illustrator refined cartographic version",
+  "label": "US States & Capitals — Illustrator",
+  "overlayTitle": "US States & Capitals — Illustrator Refinement",
+  "overlayText": "The ArcGIS Pro reference map, finished by hand in Adobe Illustrator: relief shading, labeled oceans and neighbors, refined type, and a custom compass mark.",
+  "tags": [
+   "Adobe Illustrator",
+   "Cartographic Design",
+   "GPH946"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Edwards Aquifer — Barton Springs Segment",
+  "caption": "Structural-geologic map of the Barton Springs segment of the Edwards Aquifer, southwest of Austin, Texas — faulted Cretaceous limestone units, the Mount Bonnell and Barton Springs faults, recharge creeks, and spring outlets. Built during my GPH903 introductory GIS coursework.",
+  "link": null,
+  "src": "images/gallery/edwards-aquifer.png",
+  "alt": "Edwards Aquifer Barton Springs segment geologic map near Austin, Texas",
+  "label": "Edwards Aquifer — Barton Springs",
+  "overlayTitle": "Edwards Aquifer — Barton Springs Segment",
+  "overlayText": "Faulted Cretaceous limestone units and recharge features of the Barton Springs segment, southwest of Austin, TX. GPH903 study area.",
+  "tags": [
+   "Geologic Mapping",
+   "Hydrogeology",
+   "GPH903"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Massachusetts EV Charger Locations",
+  "caption": "Current EV charging station distribution across Massachusetts — built for a literature review on optimal siting methodology. Part of the GPH904 GIS Research final project.",
+  "link": null,
+  "src": "images/gallery/ma-chargers.png",
+  "alt": "Massachusetts EV charging station map",
+  "label": "MA EV Charger Locations",
+  "overlayTitle": "Massachusetts EV Charger Locations",
+  "overlayText": "Current station distribution used as baseline for GIS-AHP optimal siting research. GPH904.",
+  "tags": [
+   "ArcGIS Pro",
+   "EV Infrastructure",
+   "GPH904"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Predicted Extreme Heat — Rhode Island",
+  "caption": "Random forest model output predicting extreme heat event risk across Rhode Island — built in R for GPH942 Advanced Geographic Quantitative Methods. Machine learning applied to spatial climate data.",
+  "link": null,
+  "src": "images/gallery/ri-heat-map.png",
+  "alt": "Rhode Island extreme heat risk prediction map",
+  "label": "RI Extreme Heat Prediction",
+  "overlayTitle": "Predicted Extreme Heat — Rhode Island",
+  "overlayText": "Random forest model predicting extreme heat risk statewide. R-based machine learning applied to spatial climate data.",
+  "tags": [
+   "R",
+   "Random Forest",
+   "GPH942"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Optitrek: Olson 2015 vs OR-Tools 2026",
+  "caption": "Same 50 US landmarks, same Google distance matrix Randy Olson used in his viral 2015 ‘optimal road trip’ — but solved with Google OR-Tools’ constraint-based VRP. Result: 2.32 hours saved off 224 driving hours (~1% improvement). 44 of 50 edges agree between the two solvers; the disagreement concentrates in dense Midwest clusters where small re-orderings shave minutes.",
+  "link": null,
+  "src": "images/gallery/optitrek-olson-diff.jpg",
+  "alt": "Side-by-side route comparison — Olson 2015 genetic algorithm vs OR-Tools 2026 VRP solver",
+  "label": "Optitrek: Olson vs OR-Tools",
+  "overlayTitle": "Optitrek: Olson 2015 vs OR-Tools 2026",
+  "overlayText": "Same 50 landmarks, same distance matrix, two different optimizers — OR-Tools’ VRP shaved 2.32 hours off Olson’s genetic-algorithm tour.",
+  "tags": [
+   "Optitrek",
+   "OR-Tools",
+   "Python",
+   "Research"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Optitrek: Four-Way Route Overlay",
+  "caption": "All four Optitrek routing solutions plotted on the same map — Olson 2015, OR-Tools capped, OR-Tools uncapped, and the OSRM-routed variant. Same 50 stops; the divergence between lines is where solver philosophy and routing engine disagree on the right path between two waypoints.",
+  "link": null,
+  "src": "images/gallery/optitrek-route-overlay.png",
+  "alt": "Four routing solutions overlaid on the same 50-stop tour",
+  "label": "Optitrek: Four-Way Overlay",
+  "overlayTitle": "Optitrek: Four-Way Route Overlay",
+  "overlayText": "Four solver/router combinations plotted on the same 50 stops — divergence shows where they disagree.",
+  "tags": [
+   "Optitrek",
+   "Folium",
+   "Routing",
+   "Comparison"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Optitrek: OSRM Western Parks Proof",
+  "caption": "Validation tour for the Optitrek routing pipeline — eight Western US parks (Yellowstone, Bryce, Zion, Grand Canyon, and more) routed against a self-hosted OSRM US extract. 2,800 miles, 59.3 hours of driving across 8 legs. Proof that the self-hosted router returns geometrically correct paths.",
+  "link": null,
+  "src": "images/gallery/optitrek-osrm-proof.png",
+  "alt": "Eight-stop Western US parks loop routed on self-hosted OSRM",
+  "label": "Optitrek: OSRM Proof",
+  "overlayTitle": "Optitrek: OSRM Western Parks Proof",
+  "overlayText": "8-stop western parks loop routed on self-hosted OSRM — 2,800 mi / 59.3 hours. Pipeline validation.",
+  "tags": [
+   "Optitrek",
+   "OSRM",
+   "Self-Hosted",
+   "Routing"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Lynn: KDE Heatmap of Student Addresses",
+  "caption": "Kernel density estimate of geocoded student home addresses around Lynn English High School. Darker = higher relative density. Built in R with ggplot2 over a Stadia Maps basemap. One of 20 maps from my MS capstone.",
+  "link": "lynn.html",
+  "src": "images/gallery/lynn-kde-heatmap.png",
+  "alt": "KDE heatmap of student addresses around Lynn English High School",
+  "label": "Lynn: KDE Heatmap",
+  "overlayTitle": "KDE Heatmap of Student Addresses",
+  "overlayText": "Kernel density of geocoded student home addresses around LEHS — built in R + ggplot2 + Stadia basemap.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "KDE",
+   "Capstone"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism by Ethnicity (Small Multiples)",
+  "caption": "Six-panel small-multiple comparison of absenteeism distribution by self-reported ethnicity (Asian, Black, Hispanic, Indigenous, Multiracial, White) within 3 square miles of Lynn English HS. Same scale, same filter, same basemap across all six panels — only the data changes.",
+  "link": "lynn.html",
+  "src": "images/gallery/lynn-absenteeism-by-ethnicity.png",
+  "alt": "Six-panel small multiples of absenteeism by ethnicity around Lynn English HS",
+  "label": "Lynn: Ethnicity Panels",
+  "overlayTitle": "Absenteeism by Ethnicity — Small Multiples",
+  "overlayText": "Six-panel small multiples — absenteeism distribution by ethnicity within 3 miles of LEHS.",
+  "tags": [
+   "R",
+   "Small Multiples",
+   "Equity",
+   "Capstone"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Citywide Absenteeism",
+  "caption": "Citywide view of mapped absenteeism for Lynn English HS students — each dot is a student address, colored by their personal absence rate (0–100%). Darker reds indicate students missing more school. R + ggmap with Stadia basemap.",
+  "link": "lynn.html",
+  "src": "images/gallery/lynn-citywide-absenteeism.png",
+  "alt": "Citywide absenteeism dot map for Lynn English HS students",
+  "label": "Lynn: Citywide Absenteeism",
+  "overlayTitle": "Citywide Absenteeism — Mapped by Address",
+  "overlayText": "Every LEHS student plotted by home address, colored by personal absence rate. Darker = higher absenteeism.",
+  "tags": [
+   "R",
+   "Dot Map",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism by Grade Level",
+  "caption": "Four-panel small multiples of hexbin absenteeism broken out by grade level (9, 10, 11, 12) — same scale, same filter, same area, only the grade changes. Patterns hold roughly across grades but density shifts subtly between underclassmen and seniors.",
+  "link": "lynn.html",
+  "src": "images/gallery/lynn-absenteeism-by-grade.png",
+  "alt": "Four-panel small multiples of absenteeism hexbins by grade level at LEHS",
+  "label": "Lynn: Grade-Level Panels",
+  "overlayTitle": "Absenteeism by Grade Level (Hexbin)",
+  "overlayText": "Four-panel small multiples — absence rate hexbins by grade (9, 10, 11, 12).",
+  "tags": [
+   "R",
+   "Hexbin",
+   "Small Multiples",
+   "Capstone"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism by Multilingual Learner Status",
+  "caption": "Side-by-side hexbin comparison of absenteeism patterns between Multilingual Learner (ML) and Non-ML students around Lynn English HS. Maps the geographic dimension of the multilingual learner achievement gap.",
+  "link": "lynn.html",
+  "src": "images/gallery/lynn-absenteeism-ml-status.png",
+  "alt": "Side-by-side hexbin map: ML vs non-ML student absenteeism around Lynn English HS",
+  "label": "Lynn: ML vs Non-ML",
+  "overlayTitle": "Absenteeism by ML Status",
+  "overlayText": "Multilingual Learner vs Non-ML absenteeism — the achievement gap rendered geographically.",
+  "tags": [
+   "R",
+   "Hexbin",
+   "Equity",
+   "Capstone"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn Public Schools — Study Area",
+  "caption": "Reference map of every Lynn Public Schools site — elementary, middle, high, charter, vocational, and parochial — inside the Lynn city boundary. Built in ArcGIS Pro using WGS 1984 Web Mercator. The foundation map every other capstone analysis builds on.",
+  "link": "lynn.html",
+  "src": "images/gallery/lynn-lps-study-area.jpg",
+  "alt": "Reference map of all Lynn Public Schools sites within the Lynn city boundary",
+  "label": "Lynn: LPS Study Area",
+  "overlayTitle": "Lynn Public Schools — Study Area",
+  "overlayText": "Reference map of every LPS site within the Lynn city boundary — foundation for the capstone.",
+  "tags": [
+   "ArcGIS Pro",
+   "Reference Map",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Salem Antipodal Ring",
+  "caption": "Every point on this ring around Salem, MA has a matching antipode on the exact opposite side of the globe. Geometric exploration of antipodal correspondence — output from the Geopuesto playground.",
+  "link": null,
+  "src": "images/gallery/salem-antipodal-ring.png",
+  "alt": "Geometric ring showing antipodal correspondence around Salem, MA",
+  "label": "Salem Antipodal Ring",
+  "overlayTitle": "Salem Antipodal Ring",
+  "overlayText": "Antipodal correspondence around Salem, MA — every point on the ring has a matching point on the opposite side of the globe.",
+  "tags": [
+   "Geopuesto",
+   "Geometry",
+   "Playground"
+  ],
+  "cta": null
+ },
+ {
+  "title": "TappyMaps Demo: US Uninsured Rate",
+  "caption": "Choropleth demo from TappyMaps, an interactive cartography tool I’m building — state-level US uninsured rates in 5 quantile bins from 2023 Census data. The map renders as a shareable card.",
+  "link": "tools.html",
+  "src": "images/gallery/tappymaps-uninsured-rate.png",
+  "alt": "TappyMaps choropleth of US uninsured rate by state",
+  "label": "TappyMaps: Uninsured Rate",
+  "overlayTitle": "TappyMaps Demo: US Uninsured Rate",
+  "overlayText": "State-level US uninsured rate, 5 quantile bins, 2023 Census data — rendered as a TappyMaps share card.",
+  "tags": [
+   "TappyMaps",
+   "Choropleth",
+   "Census",
+   "Tool Demo"
+  ],
+  "cta": {
+   "href": "tools.html",
+   "text": "See the tool →"
+  }
+ },
+ {
+  "title": "Granite State: Full Landsat 8/9 False-Color Composite",
+  "caption": "Full-resolution multitemporal Landsat 8/9 false-color composite centered on Concord, NH and its surroundings — a zoomed-out view of the same scene as the closer Concord tiles. Green = healthy vegetation, magenta = developed/disturbed surfaces, the contrast pulling urban edges out of the surrounding forest. Source imagery for the Growth in the Granite State change-detection project.",
+  "link": null,
+  "src": "images/gallery/granite-state-landsat-full.jpg",
+  "alt": "Full-resolution Landsat false-color composite of Concord, New Hampshire and surroundings",
+  "label": "Granite State: Landsat False-Color",
+  "overlayTitle": "Granite State: Full Landsat False-Color Composite",
+  "overlayText": "Multitemporal Landsat 8/9 over greater Concord, NH. Green = vegetation, magenta = developed/disturbed surfaces.",
+  "tags": [
+   "Landsat 8/9",
+   "Remote Sensing",
+   "False Color",
+   "TerrSet"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Pleiades Multispectral: Melbourne Port",
+  "caption": "Pleiades-1 multispectral satellite imagery over the Port of Melbourne — side-by-side comparison of multispectral (left, NIR mapped to red so vegetation/heat lights up crimson) and panchromatic (right). The resolution is fine enough to count individual shipping containers in the yard.",
+  "link": "",
+  "src": "images/gallery/pleiades-melbourne-port.jpg",
+  "alt": "Pleiades multispectral satellite image of the Port of Melbourne shipping yards",
+  "label": "Pleiades: Melbourne Port",
+  "overlayTitle": "Pleiades Multispectral — Melbourne Port",
+  "overlayText": "Multispectral vs panchromatic Pleiades-1 imagery over the Port of Melbourne. Resolution fine enough to count individual shipping containers.",
+  "tags": [
+   "Pleiades-1",
+   "Remote Sensing",
+   "Multispectral"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Pleiades Multispectral: Melbourne Cricket Ground",
+  "caption": "Pleiades-1 multispectral imagery centered on the Melbourne Cricket Ground and surrounding sports precinct. Near-infrared is mapped to the red channel — turf and trees burn bright crimson, hard surfaces stay grey. Side-by-side with the panchromatic band for context.",
+  "link": null,
+  "src": "images/gallery/pleiades-melbourne-stadium.jpg",
+  "alt": "Pleiades multispectral satellite image centered on Melbourne Cricket Ground",
+  "label": "Pleiades: MCG Sports Precinct",
+  "overlayTitle": "Pleiades Multispectral — Melbourne Cricket Ground",
+  "overlayText": "NIR-as-red mapping makes turf and trees burn crimson around the MCG. Multispectral (L) vs panchromatic (R).",
+  "tags": [
+   "Pleiades-1",
+   "Remote Sensing",
+   "NIR Composite"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Pleiades Multispectral: Melbourne Wide View",
+  "caption": "Pleiades-1 multispectral satellite imagery covering the wider Melbourne metropolitan area — Port Phillip Bay, the CBD, and the surrounding suburbs. Multispectral (left) and panchromatic (right) at the same extent for direct comparison.",
+  "link": null,
+  "src": "images/gallery/pleiades-melbourne-overview.jpg",
+  "alt": "Wide Pleiades multispectral satellite view of greater Melbourne and Port Phillip Bay",
+  "label": "Pleiades: Melbourne Wide",
+  "overlayTitle": "Pleiades Multispectral — Melbourne Wide View",
+  "overlayText": "Wide-area Pleiades-1 imagery of Melbourne, Port Phillip Bay, and surrounding suburbs. Multispectral vs panchromatic.",
+  "tags": [
+   "Pleiades-1",
+   "Remote Sensing",
+   "Multispectral"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Pantry: Users per Census Block Group",
+  "caption": "Choropleth of Salem Pantry users aggregated to Census Block Group around Salem, MA. The blue-classed block groups directly adjacent to the pantry carry the bulk of the load.",
+  "link": null,
+  "src": "images/projects/salem-pantry/image10.png",
+  "alt": "Salem Pantry: Users per Census Block Group",
+  "label": "Salem Pantry: Users by CBG",
+  "overlayTitle": "Salem Pantry: Users per Census Block Group",
+  "overlayText": "Pantry users per Census Block Group around Salem, MA.",
+  "tags": [
+   "R",
+   "Choropleth",
+   "Census",
+   "Salem Pantry"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % Without a High School Diploma",
+  "caption": "Town-level Massachusetts choropleth of the percent of population over 25 with no high school diploma. Census ACS data, ArcGIS Pro layout.",
+  "link": null,
+  "src": "images/projects/education/image12.png",
+  "alt": "MA: % Without a High School Diploma",
+  "label": "MA: No HS Diploma",
+  "overlayTitle": "MA: % Without a High School Diploma",
+  "overlayText": "% over 25 without a high school diploma, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "North Concord, NH — Landsat False-Color",
+  "caption": "Tighter Landsat 8/9 false-color NIR over the northern reaches of Concord, NH — the West Concord and Penacook area, extending toward Boscawen and Canterbury. The urban-vegetation interface along the Merrimack is legible at this scale.",
+  "link": null,
+  "src": "images/projects/granite-state/image12.png",
+  "alt": "North Concord, NH (West Concord / Penacook) — Landsat False-Color NIR",
+  "label": "North Concord (False Color)",
+  "overlayTitle": "North Concord, NH — Landsat False-Color",
+  "overlayText": "Tighter Landsat false-color NIR over northern Concord — West Concord / Penacook toward Boscawen and Canterbury.",
+  "tags": [
+   "Landsat 8/9",
+   "False Color NIR",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % with Only High School or GED",
+  "caption": "Town-level Massachusetts choropleth — percent of population over 25 whose highest educational attainment is high school or GED.",
+  "link": null,
+  "src": "images/projects/education/image13.png",
+  "alt": "MA: % with Only High School or GED",
+  "label": "MA: HS / GED Only",
+  "overlayTitle": "MA: % with Only High School or GED",
+  "overlayText": "% over 25 whose highest education is HS / GED, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Manchester, NH — Landsat False-Color NIR",
+  "caption": "Landsat 8/9 false-color NIR composite over Manchester, NH. The grey-magenta contrast pulls the city footprint cleanly out of the forested surroundings.",
+  "link": null,
+  "src": "images/projects/granite-state/image13.png",
+  "alt": "Manchester, NH — Landsat False-Color NIR",
+  "label": "Manchester (False Color)",
+  "overlayTitle": "Manchester, NH — Landsat False-Color NIR",
+  "overlayText": "Landsat false-color NIR composite over Manchester, NH.",
+  "tags": [
+   "Landsat 8/9",
+   "False Color NIR",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % with High School Degree or Higher",
+  "caption": "Town-level Massachusetts choropleth — percent of population over 25 with at least a high school degree. Inverse of the no-HS map.",
+  "link": null,
+  "src": "images/projects/education/image14.png",
+  "alt": "MA: % with High School Degree or Higher",
+  "label": "MA: ≥ HS Degree",
+  "overlayTitle": "MA: % with High School Degree or Higher",
+  "overlayText": "% over 25 with a HS degree or higher, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Manchester, NH — Landsat False-Color NIR (Dense Footprint)",
+  "caption": "Landsat 8/9 false-color NIR composite over Manchester, NH — a compact, densely built footprint with very little remaining vegetation in the core, Lake Massabesic dark on the eastern edge.",
+  "link": null,
+  "src": "images/projects/granite-state/image14.jpg",
+  "alt": "Manchester, NH — Landsat False-Color NIR, dense urban footprint",
+  "label": "Manchester (Dense Footprint)",
+  "overlayTitle": "Manchester, NH — Landsat False-Color NIR (Dense Footprint)",
+  "overlayText": "Landsat false-color NIR over Manchester, NH — dense built core, little remaining vegetation.",
+  "tags": [
+   "Landsat 8/9",
+   "False Color NIR",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % with a Bachelor's Degree or Higher",
+  "caption": "Town-level Massachusetts choropleth — percent of population over 25 with at least a bachelor's degree. Boston metro lights up clearly.",
+  "link": null,
+  "src": "images/projects/education/image15.png",
+  "alt": "MA: % with a Bachelor's Degree or Higher",
+  "label": "MA: ≥ Bachelor's",
+  "overlayTitle": "MA: % with a Bachelor's Degree or Higher",
+  "overlayText": "% over 25 with bachelor's or higher, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % with a Master's Degree or Higher",
+  "caption": "Town-level Massachusetts choropleth — percent of population over 25 with at least a master's degree. Inner-ring suburbs and university towns dominate.",
+  "link": null,
+  "src": "images/projects/education/image16.png",
+  "alt": "MA: % with a Master's Degree or Higher",
+  "label": "MA: ≥ Master's",
+  "overlayTitle": "MA: % with a Master's Degree or Higher",
+  "overlayText": "% over 25 with master's or higher, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Concord, NH — Landsat False-Color (Detail)",
+  "caption": "Tighter Landsat 8/9 false-color NIR over Concord, NH. Individual neighborhoods and undeveloped pockets along the Merrimack are resolvable at this scale.",
+  "link": null,
+  "src": "images/projects/granite-state/image16.png",
+  "alt": "Concord, NH — Landsat False-Color NIR detail",
+  "label": "Concord (Detail)",
+  "overlayTitle": "Concord, NH — Landsat False-Color (Detail)",
+  "overlayText": "Tighter Landsat false-color NIR over Concord, NH — neighborhoods and open pockets resolvable.",
+  "tags": [
+   "Landsat 8/9",
+   "False Color NIR",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % with a Doctorate-Level Degree",
+  "caption": "Town-level Massachusetts choropleth — percent of population over 25 with a doctoral degree (PhD, EdD, etc.). The Boston biotech / academia corridor is unmistakable.",
+  "link": null,
+  "src": "images/projects/education/image17.png",
+  "alt": "MA: % with a Doctorate-Level Degree",
+  "label": "MA: ≥ Doctorate",
+  "overlayTitle": "MA: % with a Doctorate-Level Degree",
+  "overlayText": "% over 25 with a doctoral-level degree, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: % with a PhD",
+  "caption": "Town-level Massachusetts choropleth — percent of population over 25 holding a PhD specifically. Even sharper geographic concentration than the broader doctorate measure.",
+  "link": null,
+  "src": "images/projects/education/image18.png",
+  "alt": "MA: % with a PhD",
+  "label": "MA: PhD",
+  "overlayTitle": "MA: % with a PhD",
+  "overlayText": "% over 25 with a PhD, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Education"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: Median Household Income by Town",
+  "caption": "Town-level Massachusetts choropleth — median household income. Census ACS data, classified into five income bands from under $70k to over $161k.",
+  "link": null,
+  "src": "images/projects/education/image19.png",
+  "alt": "MA: Median Household Income by Town",
+  "label": "MA: Median Income",
+  "overlayTitle": "MA: Median Household Income by Town",
+  "overlayText": "Median household income by MA town, 5-class choropleth.",
+  "tags": [
+   "ArcGIS Pro",
+   "Choropleth",
+   "Census ACS",
+   "Income"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Manchester, NH — Landsat False-Color (Urban Core)",
+  "caption": "Tight Landsat 8/9 false-color NIR composite over Manchester, NH — the city's urban core along the Merrimack River. Magenta = vegetation, grey/green = developed surfaces.",
+  "link": null,
+  "src": "images/projects/granite-state/image15.jpg",
+  "alt": "Manchester, NH — Landsat False-Color NIR, urban core",
+  "label": "Manchester (Urban Core)",
+  "overlayTitle": "Manchester, NH — Landsat False-Color (Urban Core)",
+  "overlayText": "Tight Landsat false-color NIR composite over Manchester's urban core.",
+  "tags": [
+   "Landsat 8/9",
+   "False Color NIR",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: No HS × Median Income (Bivariate)",
+  "caption": "Bivariate choropleth correlating the percent of population without a high school diploma against median household income. Where dark intersects (pink-blue) shows low education / high income inversions worth investigating.",
+  "link": null,
+  "src": "images/projects/education/image21.png",
+  "alt": "MA: No HS × Median Income (Bivariate)",
+  "label": "MA: No HS × Income",
+  "overlayTitle": "MA: No HS × Median Income (Bivariate)",
+  "overlayText": "Bivariate: % no HS × median income, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Bivariate",
+   "Census ACS",
+   "Correlation"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: HS-Only × Median Income (Bivariate)",
+  "caption": "Bivariate choropleth — percent with only a high school education (no further) against median household income.",
+  "link": null,
+  "src": "images/projects/education/image22.png",
+  "alt": "MA: HS-Only × Median Income (Bivariate)",
+  "label": "MA: HS-Only × Income",
+  "overlayTitle": "MA: HS-Only × Median Income (Bivariate)",
+  "overlayText": "Bivariate: % HS-only × median income, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Bivariate",
+   "Census ACS",
+   "Correlation"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: HS-or-Higher × Median Income (Bivariate)",
+  "caption": "Bivariate choropleth — percent with a high school degree or higher against median household income. Dark purple = high-education / high-income towns; pale = low/low.",
+  "link": null,
+  "src": "images/projects/education/image23.png",
+  "alt": "MA: HS-or-Higher × Median Income (Bivariate)",
+  "label": "MA: ≥HS × Income",
+  "overlayTitle": "MA: HS-or-Higher × Median Income (Bivariate)",
+  "overlayText": "Bivariate: % ≥HS × median income, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Bivariate",
+   "Census ACS",
+   "Correlation"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: Bachelor's-or-Higher × Median Income (Bivariate)",
+  "caption": "Bivariate choropleth — percent with a bachelor's degree or higher against median household income. The Boston-suburb corridor (dark purple) jumps out as the high-ed / high-income cluster.",
+  "link": null,
+  "src": "images/projects/education/image24.png",
+  "alt": "MA: Bachelor's-or-Higher × Median Income (Bivariate)",
+  "label": "MA: ≥Bachelor's × Income",
+  "overlayTitle": "MA: Bachelor's-or-Higher × Median Income (Bivariate)",
+  "overlayText": "Bivariate: % ≥bachelor's × median income, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Bivariate",
+   "Census ACS",
+   "Correlation"
+  ],
+  "cta": null
+ },
+ {
+  "title": "MA: PhD × Median Income (Bivariate)",
+  "caption": "Bivariate choropleth — percent with a PhD against median household income. The tightest geographic clustering of any of the bivariate maps in this series.",
+  "link": null,
+  "src": "images/projects/education/image26.png",
+  "alt": "MA: PhD × Median Income (Bivariate)",
+  "label": "MA: PhD × Income",
+  "overlayTitle": "MA: PhD × Median Income (Bivariate)",
+  "overlayText": "Bivariate: % PhD × median income, MA towns.",
+  "tags": [
+   "ArcGIS Pro",
+   "Bivariate",
+   "Census ACS",
+   "Correlation"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Coastal New Hampshire — Landsat 8/9 Natural Color",
+  "caption": "Full-scene Landsat 8/9 natural color over coastal New Hampshire — Atlantic on the right, dense conifer interior on the left. Source imagery for the Growth in the Granite State change-detection study.",
+  "link": null,
+  "src": "images/projects/granite-state/image3.png",
+  "alt": "Coastal New Hampshire — Landsat 8/9 Natural Color",
+  "label": "NH Coast (Natural Color)",
+  "overlayTitle": "Coastal New Hampshire — Landsat 8/9 Natural Color",
+  "overlayText": "Full-scene Landsat 8/9 natural color over coastal NH.",
+  "tags": [
+   "Landsat 8/9",
+   "Natural Color",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Pantry: Pantry-Using Households by Cluster",
+  "caption": "Pantry-using households around Salem clustered by k-means / similar; each color is a distinct cluster of households grouped by proximity and demographic profile. KDE was used as input.",
+  "link": null,
+  "src": "images/projects/salem-pantry/image3.png",
+  "alt": "Salem Pantry: Pantry-Using Households by Cluster",
+  "label": "Salem Pantry: Household Clusters",
+  "overlayTitle": "Salem Pantry: Pantry-Using Households by Cluster",
+  "overlayText": "Pantry-using households around Salem clustered by demographic profile.",
+  "tags": [
+   "R",
+   "Clustering",
+   "KDE",
+   "Salem Pantry"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Southern New Hampshire — Landsat 8/9 (Alt Capture)",
+  "caption": "Alternative-date Landsat 8/9 natural color over southern New Hampshire. Browner tone suggests a later-season capture used for multitemporal comparison.",
+  "link": null,
+  "src": "images/projects/granite-state/image4.png",
+  "alt": "Southern New Hampshire — Landsat 8/9 (Alt Capture)",
+  "label": "Southern NH (Natural Color)",
+  "overlayTitle": "Southern New Hampshire — Landsat 8/9 (Alt Capture)",
+  "overlayText": "Alt-date Landsat 8/9 natural color over southern NH.",
+  "tags": [
+   "Landsat 8/9",
+   "Natural Color",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Nashua, NH — Landsat Natural Color",
+  "caption": "Landsat 8/9 natural-color subset over Nashua, NH — the densest of the three study cities, hard against the Massachusetts border where the Nashua River meets the Merrimack.",
+  "link": null,
+  "src": "images/projects/granite-state/image5.png",
+  "alt": "Nashua, NH — Landsat Natural Color",
+  "label": "Nashua (Natural Color)",
+  "overlayTitle": "Nashua, NH — Landsat Natural Color",
+  "overlayText": "Landsat natural color over Nashua, NH — densest footprint, on the Massachusetts border.",
+  "tags": [
+   "Landsat 8/9",
+   "Natural Color",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Concord, NH — Landsat Natural Color",
+  "caption": "Landsat 8/9 natural-color subset over Concord, NH. State capital with the Merrimack winding through; smaller and greener than Manchester.",
+  "link": null,
+  "src": "images/projects/granite-state/image6.png",
+  "alt": "Concord, NH — Landsat Natural Color",
+  "label": "Concord (Natural Color)",
+  "overlayTitle": "Concord, NH — Landsat Natural Color",
+  "overlayText": "Landsat natural color over Concord, NH.",
+  "tags": [
+   "Landsat 8/9",
+   "Natural Color",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Manchester, NH — Landsat Natural Color",
+  "caption": "Landsat 8/9 natural-color subset over Manchester, NH — the Merrimack splits the dense urban core, Lake Massabesic dark on the eastern edge and the airport just south of downtown.",
+  "link": null,
+  "src": "images/projects/granite-state/image7.png",
+  "alt": "Manchester, NH — Landsat Natural Color",
+  "label": "Manchester (Natural Color)",
+  "overlayTitle": "Manchester, NH — Landsat Natural Color",
+  "overlayText": "Landsat natural color over Manchester, NH — Merrimack through the core, Massabesic to the east.",
+  "tags": [
+   "Landsat 8/9",
+   "Natural Color",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Concord with Surrounding Lakes — Landsat Natural Color",
+  "caption": "Slightly wider Landsat 8/9 natural-color subset over Concord, NH, capturing the chain of small lakes east of the city.",
+  "link": null,
+  "src": "images/projects/granite-state/image8.png",
+  "alt": "Concord with Surrounding Lakes — Landsat Natural Color",
+  "label": "Concord + Lakes",
+  "overlayTitle": "Concord with Surrounding Lakes — Landsat Natural Color",
+  "overlayText": "Wider Landsat natural color around Concord, NH (with lakes).",
+  "tags": [
+   "Landsat 8/9",
+   "Natural Color",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Coastal NH — Landsat False-Color NIR Composite",
+  "caption": "Full-scene Landsat 8/9 false-color composite over coastal NH — near-infrared mapped to red so vegetated areas burn magenta and built-up surfaces stay grey/green. Same scene as the natural-color version, different bands.",
+  "link": null,
+  "src": "images/projects/granite-state/image9.png",
+  "alt": "Coastal NH — Landsat False-Color NIR Composite",
+  "label": "NH Coast (False Color)",
+  "overlayTitle": "Coastal NH — Landsat False-Color NIR Composite",
+  "overlayText": "Full-scene Landsat false-color NIR composite over coastal NH.",
+  "tags": [
+   "Landsat 8/9",
+   "False Color NIR",
+   "Remote Sensing",
+   "Granite State"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Lynn, Massachusetts — Street-Map Poster",
+  "caption": "A minimalist black-and-white street-map poster of Lynn, MA at 1:90,000 — compass rose, scale bar, and graticule coordinates. A personal cartographic piece made for a friend from the city.",
+  "link": null,
+  "src": "images/gallery/layout5.png",
+  "alt": "Minimalist street-map poster of Lynn, Massachusetts",
+  "label": "Lynn — Street-Map Poster",
+  "overlayTitle": "Lynn, Massachusetts — Street-Map Poster",
+  "overlayText": "Minimalist black-and-white street-map poster of Lynn, MA — a personal piece made for a friend from the city.",
+  "tags": [
+   "Cartography",
+   "OpenStreetMap",
+   "Poster"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Pleiades Band 5 — Melbourne",
+  "caption": "Pleiades-1 panchromatic Band 5 over Melbourne in ArcGIS Pro — single-band grayscale view used as the high-resolution reference for pan-sharpening exercises.",
+  "link": null,
+  "src": "images/gallery/q2.png",
+  "alt": "Pleiades Band 5 — Melbourne",
+  "label": "Pleiades: Melbourne Band 5",
+  "overlayTitle": "Pleiades Band 5 — Melbourne",
+  "overlayText": "Pleiades-1 panchromatic single-band view over Melbourne — reference band for pan-sharpening.",
+  "tags": [
+   "Pleiades-1",
+   "Remote Sensing",
+   "Panchromatic"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Melbourne — Road Network on Satellite",
+  "caption": "Melbourne CBD with vector road network overlaid on Pleiades satellite imagery in ArcGIS Pro. Vector-on-raster cartographic integration exercise from the remote sensing coursework.",
+  "link": null,
+  "src": "images/gallery/q3.jpg",
+  "alt": "Melbourne — Road Network on Satellite",
+  "label": "Roads on Satellite — Melbourne",
+  "overlayTitle": "Melbourne — Road Network on Satellite",
+  "overlayText": "Vector road network overlaid on Pleiades imagery for Melbourne. Vector-on-raster integration exercise.",
+  "tags": [
+   "ArcGIS Pro",
+   "Pleiades-1",
+   "Vector + Raster"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Pleiades Overview — Melbourne CBD",
+  "caption": "Pleiades-1 satellite overview of Melbourne's CBD and Yarra River from ArcGIS Pro. Natural-color rendering from the remote sensing coursework, full Melbourne extent.",
+  "link": null,
+  "src": "images/gallery/q5.jpg",
+  "alt": "Pleiades Overview — Melbourne CBD",
+  "label": "Pleiades: Melbourne CBD",
+  "overlayTitle": "Pleiades Overview — Melbourne CBD",
+  "overlayText": "Pleiades-1 natural-color overview of Melbourne CBD and the Yarra River.",
+  "tags": [
+   "Pleiades-1",
+   "Remote Sensing",
+   "Natural Color"
+  ],
+  "cta": null
+ },
+ {
+  "title": "New Hampshire — County Reference Map",
+  "caption": "Reference map of New Hampshire's ten counties with city annotations (Concord, Manchester, Nashua, Portsmouth, Keene, Dover, etc.). Clean cartographic style with hydrography. Early ArcGIS Pro coursework.",
+  "link": null,
+  "src": "images/gallery/screenshot-2023-10-22-141536.png",
+  "alt": "New Hampshire — County Reference Map",
+  "label": "NH Counties Reference",
+  "overlayTitle": "New Hampshire — County Reference Map",
+  "overlayText": "Clean reference map of NH's ten counties with city annotations and hydrography.",
+  "tags": [
+   "ArcGIS Pro",
+   "Reference Map",
+   "New Hampshire"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong — Natural Color Landsat",
+  "caption": "Hong Kong and Pearl River Delta coastline in natural-color Landsat. Working capture from the Spring 2024 remote sensing coursework — band combination exercise.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-26-191909.png",
+  "alt": "Hong Kong — Natural Color Landsat",
+  "label": "Hong Kong Natural Color",
+  "overlayTitle": "Hong Kong — Natural Color Landsat",
+  "overlayText": "Hong Kong / Pearl River Delta coastline in natural-color Landsat. Band combo exercise.",
+  "tags": [
+   "Landsat",
+   "Remote Sensing",
+   "Hong Kong"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong — False Color (NIR as Red)",
+  "caption": "Hong Kong Landsat false-color composite with near-infrared mapped to the red channel. Vegetation burns crimson against blue-black water. Band combination exercise.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-26-192005.png",
+  "alt": "Hong Kong — False Color (NIR as Red)",
+  "label": "Hong Kong NIR False Color",
+  "overlayTitle": "Hong Kong — False Color (NIR as Red)",
+  "overlayText": "Hong Kong Landsat false-color composite — NIR mapped to red, vegetation burns crimson.",
+  "tags": [
+   "Landsat",
+   "NIR Composite",
+   "Hong Kong"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong — Vegetation Band Combination",
+  "caption": "Hong Kong Landsat composite emphasizing vegetation in greens/yellows. Different band combination than the NIR-as-red rendering — same scene, different spectral story.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-26-192445.png",
+  "alt": "Hong Kong — Vegetation Band Combination",
+  "label": "Hong Kong Vegetation Bands",
+  "overlayTitle": "Hong Kong — Vegetation Band Combination",
+  "overlayText": "Hong Kong Landsat composite emphasizing vegetation — same scene, different spectral story.",
+  "tags": [
+   "Landsat",
+   "Remote Sensing",
+   "Band Composite"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong — Alternate NIR Composite",
+  "caption": "Hong Kong Landsat NIR-as-red composite, alternate band combination. Part of the band-stack exploration in the Spring 2024 remote sensing course.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-29-143510.png",
+  "alt": "Hong Kong — Alternate NIR Composite",
+  "label": "Hong Kong Alt NIR",
+  "overlayTitle": "Hong Kong — Alternate NIR Composite",
+  "overlayText": "Alternate NIR-as-red Landsat composite over Hong Kong from the band-stack exploration.",
+  "tags": [
+   "Landsat",
+   "NIR Composite",
+   "Hong Kong"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong — Natural Color",
+  "caption": "Working natural-color view of Hong Kong Landsat imagery in ArcGIS Pro during the band-combination exercise.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-29-143918.png",
+  "alt": "Hong Kong — Natural Color",
+  "label": "Hong Kong Natural Color (2)",
+  "overlayTitle": "Hong Kong — Natural Color",
+  "overlayText": "Working natural-color view of Hong Kong Landsat from the band-combination exercise.",
+  "tags": [
+   "Landsat",
+   "Remote Sensing",
+   "Hong Kong"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong False Color Composite — Final Layout",
+  "caption": "Finished cartographic layout: Hong Kong false-color composite using Landsat 7 ETM+ Bands 2, 3, 4 mapped to B, G, R. North arrow and scale included. Spring 2024 remote sensing.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-29-182145.png",
+  "alt": "Hong Kong False Color Composite — Final Layout",
+  "label": "Hong Kong FCC — Final",
+  "overlayTitle": "Hong Kong False Color Composite",
+  "overlayText": "Finished layout: Hong Kong false-color using Landsat 7 ETM+ Bands 2,3,4 as B,G,R.",
+  "tags": [
+   "Landsat 7 ETM+",
+   "False Color",
+   "Final Layout"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Hong Kong — 3D Draped Terrain",
+  "caption": "Hong Kong false-color Landsat composite draped over a DEM and rendered as 3D terrain in ArcGIS Pro. Same scene as the 2D composite, now with topography.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-02-29-184534.png",
+  "alt": "Hong Kong — 3D Draped Terrain",
+  "label": "Hong Kong 3D Drape",
+  "overlayTitle": "Hong Kong — 3D Draped Terrain",
+  "overlayText": "False-color Landsat draped over a DEM and rendered in 3D. Same scene, with topography.",
+  "tags": [
+   "ArcGIS Pro",
+   "3D",
+   "Terrain"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Africa — February False Color Composite",
+  "caption": "Continental-scale false-color composite of Africa for February — Red &amp; Blue channels = visible red, Green channel = infrared. The Sahara, Sahel, and central African forest belts pop out as distinct spectral regions.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-03-30-153720.png",
+  "alt": "Africa — February False Color Composite",
+  "label": "Africa Feb False Color",
+  "overlayTitle": "Africa — February False Color Composite",
+  "overlayText": "Continental false-color composite of Africa for February — visible red on R/B, infrared on G.",
+  "tags": [
+   "Remote Sensing",
+   "Africa",
+   "False Color"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Africa — NDVI Vegetation Index",
+  "caption": "Continental NDVI (Normalized Difference Vegetation Index) of Africa computed from February imagery (feb_b1, feb_b2). Range −0.66 to +0.99: deep green = dense vegetation, red = bare / desert.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-03-30-154210.png",
+  "alt": "Africa — NDVI Vegetation Index",
+  "label": "Africa NDVI",
+  "overlayTitle": "Africa — NDVI Vegetation Index",
+  "overlayText": "Continental NDVI of Africa from February imagery. Deep green = dense vegetation, red = bare/desert.",
+  "tags": [
+   "NDVI",
+   "Remote Sensing",
+   "Africa"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Cape Ann False Composite",
+  "caption": "Finished cartographic layout: Cape Ann (MA) false-color composite using Landsat 8 ETM+ Bands 3, 4, 5 as B, G, R. The vegetation/water/built-up tri-color contrast pulls the coastal land use into focus.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-04-05-193718.png",
+  "alt": "Cape Ann False Composite",
+  "label": "Cape Ann FCC",
+  "overlayTitle": "Cape Ann False Composite",
+  "overlayText": "Cape Ann (MA) false-color composite — Landsat 8 ETM+ Bands 3,4,5 as B,G,R.",
+  "tags": [
+   "Landsat 8",
+   "False Color",
+   "Cape Ann"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Eastern Massachusetts — Coastal Landsat Mosaic",
+  "caption": "Two Landsat scenes mosaicked and seamlessly edge-matched in GIS into a single wide-extent natural-color image over eastern Massachusetts — Boston metro, the South Shore, Cape Cod, and Buzzards Bay. Subtle clouds drift over the Atlantic.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-04-05-200308.png",
+  "alt": "Eastern Massachusetts — two-scene Landsat mosaic, natural color",
+  "label": "Eastern MA Landsat Mosaic",
+  "overlayTitle": "Eastern Massachusetts — Coastal Landsat Mosaic",
+  "overlayText": "Two Landsat scenes mosaicked and edge-matched in GIS — Boston metro, South Shore, Cape Cod, Buzzards Bay.",
+  "tags": [
+   "Landsat",
+   "Mosaic",
+   "Remote Sensing",
+   "Massachusetts"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Urban Heat Classification — Boston Metro",
+  "caption": "Classified urban heat island analysis over the Boston metro — categorical raster mapping built/impervious surfaces against vegetated cooler zones. Course exercise output.",
+  "link": null,
+  "src": "images/gallery/screenshot-2024-04-28-180432.png",
+  "alt": "Urban Heat Classification — Boston Metro",
+  "label": "Boston UHI Classification",
+  "overlayTitle": "Urban Heat Classification — Boston Metro",
+  "overlayText": "Classified urban heat island analysis — categorical raster over Boston metro built vs vegetated zones.",
+  "tags": [
+   "Classification",
+   "Remote Sensing",
+   "UHI"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Lynn: Student Address Distribution (Citywide)",
+  "caption": "Citywide bubble dot map of LEHS student home addresses. Bubble size = number of students at that address. LEHS marked in blue. R + ggmap with Stadia basemap.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/student-distribution-citywide.png",
+  "alt": "Lynn: Student Address Distribution (Citywide)",
+  "label": "Lynn: Student Distribution",
+  "overlayTitle": "Lynn: Student Address Distribution (Citywide)",
+  "overlayText": "Citywide bubble dot map of LEHS student home addresses.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Student Addresses near LEHS (1-Mile Zoom)",
+  "caption": "1-mile zoom of LEHS student home addresses. Bubble size = students per address. Tight neighborhood detail around the school.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/student-distribution-zoomed.jpg",
+  "alt": "Lynn: Student Addresses near LEHS (1-Mile Zoom)",
+  "label": "Lynn: Near LEHS (1 mi)",
+  "overlayTitle": "Lynn: Student Addresses near LEHS (1-Mile Zoom)",
+  "overlayText": "1-mile zoom of LEHS student home addresses with bubble sizing.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Student Density Grid (150 m cells)",
+  "caption": "Citywide student density rendered as raw counts per 150-meter square grid cell. Easier to compare neighborhoods than a dot map; reveals cluster structure around Central Square.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/Screenshot 2025-04-23 141302.png",
+  "alt": "Lynn: Student Density Grid (150 m cells)",
+  "label": "Lynn: Student Density Grid",
+  "overlayTitle": "Lynn: Student Density Grid (150 m cells)",
+  "overlayText": "Citywide student density — raw counts per 150m grid cell.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism Hotspots (≥20%) around LEHS",
+  "caption": "Square-grid hotspot map filtering for cells with average absence rate at or above 20%. Anchored with Lynn neighborhood landmarks (Central Square, Eastern Ave, Lynnway).",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/Screenshot 2025-04-23 141901.png",
+  "alt": "Lynn: Absenteeism Hotspots (≥20%) around LEHS",
+  "label": "Lynn: Absence Hotspots ≥20%",
+  "overlayTitle": "Lynn: Absenteeism Hotspots (≥20%) around LEHS",
+  "overlayText": "Square-grid hotspot map of ≥20% absence rate cells around LEHS.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism Dot Map (Close to LEHS)",
+  "caption": "Close-up dot map — each LEHS student plotted by home address, colored by personal absence rate (0–100%). Darker = higher absenteeism. The pattern around Central Square is striking.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/Screenshot 2025-04-23 142537.png",
+  "alt": "Lynn: Absenteeism Dot Map (Close to LEHS)",
+  "label": "Lynn: Absence Dots (Close)",
+  "overlayTitle": "Lynn: Absenteeism Dot Map (Close to LEHS)",
+  "overlayText": "Close-up dot map of LEHS students colored by personal absence rate.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism Hotspots (Citywide Hexbin)",
+  "caption": "Citywide hexbin hotspot map of chronic absenteeism — 100-meter hexagons showing only cells with absence rate above 20%. Reveals citywide pattern at a glance.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/Screenshot 2025-04-23 142700.png",
+  "alt": "Lynn: Absenteeism Hotspots (Citywide Hexbin)",
+  "label": "Lynn: Absence Hexbin",
+  "overlayTitle": "Lynn: Absenteeism Hotspots (Citywide Hexbin)",
+  "overlayText": "Citywide hexbin hotspot map filtered to >20% absence rate.",
+  "tags": [
+   "R",
+   "ggplot2",
+   "Capstone",
+   "Lynn"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Lynn: Absenteeism by SPED Status (Hexbin)",
+  "caption": "Side-by-side hexbin comparison of absenteeism patterns between Special Education (SPED) and Non-SPED students around LEHS. Same scale, same area — only the population changes.",
+  "link": "lynn.html",
+  "src": "images/projects/lynn/absenteeism-sped-status-hexbin.png",
+  "alt": "Lynn: Absenteeism by SPED Status (Hexbin)",
+  "label": "Lynn: SPED vs Non-SPED",
+  "overlayTitle": "Lynn: Absenteeism by SPED Status (Hexbin)",
+  "overlayText": "Side-by-side hexbin of absenteeism — SPED vs Non-SPED students.",
+  "tags": [
+   "R",
+   "Hexbin",
+   "Equity",
+   "Capstone"
+  ],
+  "cta": {
+   "href": "lynn.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Salem Pantry: Dominant Access-Point Cluster by Block Group",
+  "caption": "Choropleth showing the dominant cluster assignment of pantry access points per Census Block Group in the Salem area. Visualization output from the spatial similarity model.",
+  "link": null,
+  "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113405.png",
+  "alt": "Salem Pantry: Dominant Access-Point Cluster by Block Group",
+  "label": "Salem Pantry: AP Clusters",
+  "overlayTitle": "Salem Pantry: Dominant Access-Point Cluster by Block Group",
+  "overlayText": "Dominant access-point cluster assignment per CBG around Salem.",
+  "tags": [
+   "R",
+   "Spatial Clustering",
+   "Census",
+   "Salem Pantry"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Quabbin: Locating the Swift River Valley",
+  "caption": "Locator map placing the four lost Swift River Valley towns within Massachusetts. From the Quabbin reproducible-R GIS study.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/01_locator.png",
+  "alt": "Quabbin: Locating the Swift River Valley",
+  "label": "Quabbin: Locator",
+  "overlayTitle": "Quabbin: Locating the Swift River Valley",
+  "overlayText": "The Swift River Valley within Massachusetts.",
+  "tags": [
+   "R",
+   "sf",
+   "Locator"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: The Valley Before the Flood",
+  "caption": "Terrain hillshade of the Swift River Valley before the reservoir — DEM from AWS Terrain Tiles, hillshaded in terra.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/02_dem_hillshade.png",
+  "alt": "Quabbin: The Valley Before the Flood",
+  "label": "Quabbin: Hillshade",
+  "overlayTitle": "Quabbin: The Valley Before the Flood",
+  "overlayText": "DEM hillshade of the valley terrain, rendered in terra.",
+  "tags": [
+   "R",
+   "terra",
+   "Hillshade"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Four Towns Under the Water",
+  "caption": "The four towns drowned by the Quabbin Reservoir — Dana, Enfield, Greenwich and Prescott.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/03_reservoir_towns.png",
+  "alt": "Quabbin: Four Towns Under the Water",
+  "label": "Quabbin: Lost Towns",
+  "overlayTitle": "Quabbin: Four Towns Under the Water",
+  "overlayText": "Dana, Enfield, Greenwich and Prescott, disincorporated in 1938.",
+  "tags": [
+   "R",
+   "sf",
+   "Historical"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Reservoir and Protected Watershed",
+  "caption": "The Quabbin Reservoir with its protected watershed drainage context from the USGS Watershed Boundary Dataset.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/04_watershed.png",
+  "alt": "Quabbin: Reservoir and Protected Watershed",
+  "label": "Quabbin: Watershed",
+  "overlayTitle": "Quabbin: Reservoir and Protected Watershed",
+  "overlayText": "The reservoir and its protected watershed (USGS WBD).",
+  "tags": [
+   "R",
+   "USGS WBD",
+   "Hydrology"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Erased From the Map",
+  "caption": "How the disincorporated town land was carved up among the surrounding municipalities — US Census TIGER boundaries.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/05_erasure.png",
+  "alt": "Quabbin: Erased From the Map",
+  "label": "Quabbin: Erasure",
+  "overlayTitle": "Quabbin: Erased From the Map",
+  "overlayText": "How the former town land is divided among surrounding towns today.",
+  "tags": [
+   "R",
+   "Census TIGER"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Filling in Equal-Area Stages",
+  "caption": "The reservoir filling in equal-area stages to its 1946 full pool, shown as small multiples.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/09_floodfill.png",
+  "alt": "Quabbin: Filling in Equal-Area Stages",
+  "label": "Quabbin: Flood Stages",
+  "overlayTitle": "Quabbin: Filling in Equal-Area Stages",
+  "overlayText": "Small multiples of the reservoir filling to its 1946 full pool.",
+  "tags": [
+   "R",
+   "Small Multiples"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: The Aqueduct to Boston",
+  "caption": "The aqueduct route carrying Quabbin water roughly 105 km east to metropolitan Boston.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/10_aqueduct.png",
+  "alt": "Quabbin: The Aqueduct to Boston",
+  "label": "Quabbin: Aqueduct",
+  "overlayTitle": "Quabbin: The Aqueduct to Boston",
+  "overlayText": "The aqueduct carrying the water ~105 km east to Boston.",
+  "tags": [
+   "R",
+   "sf",
+   "Infrastructure"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: The Drowned Valley in Cross-Section",
+  "caption": "West-to-east cross-section of the drowned valley, the reservoir pool set against the original terrain.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/11_crosssection.png",
+  "alt": "Quabbin: The Drowned Valley in Cross-Section",
+  "label": "Quabbin: Cross-Section",
+  "overlayTitle": "Quabbin: The Drowned Valley in Cross-Section",
+  "overlayText": "A west-to-east elevation profile across the flooded valley.",
+  "tags": [
+   "R",
+   "terra",
+   "Profile"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: The Valley in Three Dimensions",
+  "caption": "Three-dimensional terrain view of the Swift River Valley and reservoir.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/13_terrain3d.png",
+  "alt": "Quabbin: The Valley in Three Dimensions",
+  "label": "Quabbin: 3D Terrain",
+  "overlayTitle": "Quabbin: The Valley in Three Dimensions",
+  "overlayText": "A 3D terrain view of the Swift River Valley.",
+  "tags": [
+   "R",
+   "terra",
+   "3D"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: The Roads the Reservoir Drowned",
+  "caption": "The pre-flood street network of the valley, now beneath the reservoir.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/16_roads.png",
+  "alt": "Quabbin: The Roads the Reservoir Drowned",
+  "label": "Quabbin: Drowned Roads",
+  "overlayTitle": "Quabbin: The Roads the Reservoir Drowned",
+  "overlayText": "The pre-flood street network now beneath the water.",
+  "tags": [
+   "R",
+   "OpenStreetMap",
+   "Historical"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Prescott Peninsula in 1 m LiDAR",
+  "caption": "Prescott Peninsula — the best-preserved imprint of the lost towns, roads and foundations legible in 1 m LiDAR.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/24_prescott_survey.png",
+  "alt": "Quabbin: Prescott Peninsula in 1 m LiDAR",
+  "label": "Quabbin: Prescott LiDAR",
+  "overlayTitle": "Quabbin: Prescott Peninsula in 1 m LiDAR",
+  "overlayText": "Roads and foundations still legible in 1 m LiDAR.",
+  "tags": [
+   "LiDAR",
+   "Hillshade",
+   "R"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Dana — Above the Waterline",
+  "caption": "Dana — town map, LiDAR hillshade, and traced roads and cellar holes that stayed above the waterline.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/24_dana_survey.png",
+  "alt": "Quabbin: Dana — Above the Waterline",
+  "label": "Quabbin: Dana Survey",
+  "overlayTitle": "Quabbin: Dana — Above the Waterline",
+  "overlayText": "Town map, LiDAR hillshade, and traced roads & cellar holes above water.",
+  "tags": [
+   "LiDAR",
+   "R",
+   "Historical"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: Enfield Beneath the Reservoir",
+  "caption": "Enfield — the valley's seat, now almost entirely beneath the Quabbin Reservoir.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/24_enfield_survey.png",
+  "alt": "Quabbin: Enfield Beneath the Reservoir",
+  "label": "Quabbin: Enfield Survey",
+  "overlayTitle": "Quabbin: Enfield Beneath the Reservoir",
+  "overlayText": "The valley seat, now almost entirely underwater.",
+  "tags": [
+   "LiDAR",
+   "R",
+   "Historical"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: 1893 Roads Cross-Referenced to LiDAR",
+  "caption": "Ground-truthing — 1893 USGS topographic roads cross-referenced against the LiDAR-traced network on Prescott Peninsula.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/25_prescott_xref.png",
+  "alt": "Quabbin: 1893 Roads Cross-Referenced to LiDAR",
+  "label": "Quabbin: Ground-Truth",
+  "overlayTitle": "Quabbin: 1893 Roads Cross-Referenced to LiDAR",
+  "overlayText": "1893 USGS roads checked against the LiDAR traces.",
+  "tags": [
+   "LiDAR",
+   "USGS",
+   "R"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Quabbin: The Reservoir Filling (Animation)",
+  "caption": "Animation of the Quabbin Reservoir filling in equal-area stages to its 1946 full pool, generated by the R pipeline via ImageMagick.",
+  "link": "quabbin.html",
+  "src": "quabbin/output/quabbin_floodfill.gif",
+  "alt": "Quabbin: The Reservoir Filling (Animation)",
+  "label": "Quabbin: Animation",
+  "overlayTitle": "Quabbin: The Reservoir Filling (Animation)",
+  "overlayText": "An animation of the reservoir filling to its 1946 full pool.",
+  "tags": [
+   "R",
+   "ImageMagick",
+   "Animation"
+  ],
+  "cta": {
+   "href": "quabbin.html",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "MA Atlas: % High Needs by Town",
+  "caption": "Share of high-needs students by town — one of 380+ metrics mappable in the Massachusetts Education Atlas, Fisher-Jenks natural breaks.",
+  "link": "ma-atlas/",
+  "src": "images/projects/ma-atlas/high-needs.jpg",
+  "alt": "MA Atlas: % High Needs by Town",
+  "label": "Atlas: High Needs",
+  "overlayTitle": "MA Atlas: % High Needs by Town",
+  "overlayText": "One of 380+ mapped metrics, Fisher-Jenks breaks.",
+  "tags": [
+   "MapLibre GL",
+   "Choropleth",
+   "MA DESE"
+  ],
+  "cta": {
+   "href": "ma-atlas/",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "MA Atlas: Four-Year Graduation Rate",
+  "caption": "Four-year cohort graduation rate by Massachusetts town, from the Education Atlas.",
+  "link": "ma-atlas/",
+  "src": "images/projects/ma-atlas/graduation-4yr.jpg",
+  "alt": "MA Atlas: Four-Year Graduation Rate",
+  "label": "Atlas: Graduation",
+  "overlayTitle": "MA Atlas: Four-Year Graduation Rate",
+  "overlayText": "Four-year cohort graduation rate by town.",
+  "tags": [
+   "MapLibre GL",
+   "Choropleth",
+   "MA DESE"
+  ],
+  "cta": {
+   "href": "ma-atlas/",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "MA Atlas: MCAS Grade 10 ELA",
+  "caption": "MCAS Grade 10 English Language Arts — percent meeting or exceeding expectations, by town.",
+  "link": "ma-atlas/",
+  "src": "images/projects/ma-atlas/mcas-gr10-ela.jpg",
+  "alt": "MA Atlas: MCAS Grade 10 ELA",
+  "label": "Atlas: MCAS ELA",
+  "overlayTitle": "MA Atlas: MCAS Grade 10 ELA",
+  "overlayText": "% meeting or exceeding on Grade 10 ELA.",
+  "tags": [
+   "MapLibre GL",
+   "Choropleth",
+   "MA DESE"
+  ],
+  "cta": {
+   "href": "ma-atlas/",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "MA Atlas: Per-Pupil Spending",
+  "caption": "Per-pupil spending by school district, rendered on the Viridis ramp in the Education Atlas.",
+  "link": "ma-atlas/",
+  "src": "images/projects/ma-atlas/per-pupil-spending.jpg",
+  "alt": "MA Atlas: Per-Pupil Spending",
+  "label": "Atlas: Spending",
+  "overlayTitle": "MA Atlas: Per-Pupil Spending",
+  "overlayText": "Per-pupil spending by district (Viridis ramp).",
+  "tags": [
+   "MapLibre GL",
+   "Choropleth",
+   "Finance"
+  ],
+  "cta": {
+   "href": "ma-atlas/",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "MA Atlas: % English Learners",
+  "caption": "Share of English learners by Massachusetts town, from the Education Atlas.",
+  "link": "ma-atlas/",
+  "src": "images/projects/ma-atlas/english-learner.jpg",
+  "alt": "MA Atlas: % English Learners",
+  "label": "Atlas: English Learners",
+  "overlayTitle": "MA Atlas: % English Learners",
+  "overlayText": "Share of English learners by town.",
+  "tags": [
+   "MapLibre GL",
+   "Choropleth",
+   "MA DESE"
+  ],
+  "cta": {
+   "href": "ma-atlas/",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "MA Atlas: % Planning College",
+  "caption": "Share of graduates planning to attend college, rendered on the academic-district polygons that are the Atlas's signature layer.",
+  "link": "ma-atlas/",
+  "src": "images/projects/ma-atlas/college-plans.jpg",
+  "alt": "MA Atlas: % Planning College",
+  "label": "Atlas: College Plans",
+  "overlayTitle": "MA Atlas: % Planning College",
+  "overlayText": "College plans, on the academic-district polygons.",
+  "tags": [
+   "MapLibre GL",
+   "Choropleth",
+   "Districts"
+  ],
+  "cta": {
+   "href": "ma-atlas/",
+   "text": "View full project →"
+  }
+ },
+ {
+  "title": "Salem Pantry: Mobile Distribution Locations",
+  "caption": "Mobile food-distribution locations served by the Salem Pantry across the Salem area.",
+  "link": null,
+  "src": "images/projects/salem-pantry/image2.png",
+  "alt": "Salem Pantry: Mobile Distribution Locations",
+  "label": "Salem Pantry: Mobile Sites",
+  "overlayTitle": "Salem Pantry: Mobile Distribution Locations",
+  "overlayText": "Where the pantry's mobile distributions reach.",
+  "tags": [
+   "R",
+   "Salem Pantry",
+   "Mapping"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Pantry: Households by Cluster",
+  "caption": "Pantry-using households grouped by socioeconomic cluster from the random-forest similarity model.",
+  "link": null,
+  "src": "images/projects/salem-pantry/image8.png",
+  "alt": "Salem Pantry: Households by Cluster",
+  "label": "Salem Pantry: Clusters",
+  "overlayTitle": "Salem Pantry: Households by Cluster",
+  "overlayText": "Pantry households grouped by socioeconomic cluster.",
+  "tags": [
+   "R",
+   "Random Forest",
+   "Census ACS"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Pantry: Coverage Gap Analysis",
+  "caption": "Coverage-gap analysis identifying underserved 'dry zones' in the Salem Pantry's service area.",
+  "link": null,
+  "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113509.png",
+  "alt": "Salem Pantry: Coverage Gap Analysis",
+  "label": "Salem Pantry: Coverage",
+  "overlayTitle": "Salem Pantry: Coverage Gap Analysis",
+  "overlayText": "Underserved 'dry zones' in the pantry's coverage.",
+  "tags": [
+   "R",
+   "Census ACS",
+   "Access"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Granite State: Concord Multitemporal Change",
+  "caption": "Multitemporal change detection over Concord, NH — flagging where built surfaces replaced vegetation between Landsat captures.",
+  "link": null,
+  "src": "images/projects/granite-state/image10.jpg",
+  "alt": "Granite State: Concord Multitemporal Change",
+  "label": "Granite State: Change",
+  "overlayTitle": "Granite State: Concord Multitemporal Change",
+  "overlayText": "Where built surfaces replaced vegetation.",
+  "tags": [
+   "Landsat 8/9",
+   "Change Detection"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Education & Wealth: MA Study Area",
+  "caption": "Study area for the Education & Wealth bivariate mapping project — Massachusetts municipalities.",
+  "link": null,
+  "src": "images/projects/education/image11.png",
+  "alt": "Education & Wealth: MA Study Area",
+  "label": "Edu & Wealth: Study Area",
+  "overlayTitle": "Education & Wealth: MA Study Area",
+  "overlayText": "Massachusetts municipalities — the study units.",
+  "tags": [
+   "ArcGIS Pro",
+   "MassGIS"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Education & Wealth: Median Household Income",
+  "caption": "Median household income by Massachusetts municipality, from the American Community Survey.",
+  "link": null,
+  "src": "images/projects/education/image20.png",
+  "alt": "Education & Wealth: Median Household Income",
+  "label": "Edu & Wealth: Income",
+  "overlayTitle": "Education & Wealth: Median Household Income",
+  "overlayText": "Median household income by municipality (ACS).",
+  "tags": [
+   "ArcGIS Pro",
+   "Census ACS"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Education & Wealth: Master's vs Income",
+  "caption": "Bivariate choropleth correlating share with a master's degree against median household income across MA towns.",
+  "link": null,
+  "src": "images/projects/education/image25.png",
+  "alt": "Education & Wealth: Master's vs Income",
+  "label": "Edu & Wealth: Bivariate",
+  "overlayTitle": "Education & Wealth: Master's vs Income",
+  "overlayText": "Bivariate map of advanced degrees against income.",
+  "tags": [
+   "ArcGIS Pro",
+   "Bivariate"
+  ],
+  "cta": null
+ },
+ {
+  "title": "SSU Campus: CAD Utility As-Built",
+  "caption": "CAD utility as-built drawing of Salem State University's central campus, integrated into GIS.",
+  "link": null,
+  "src": "images/projects/central-campus/Screenshot 2025-05-30 114432.png",
+  "alt": "SSU Campus: CAD Utility As-Built",
+  "label": "SSU: CAD As-Built",
+  "overlayTitle": "SSU Campus: CAD Utility As-Built",
+  "overlayText": "Campus utility as-built drawing in GIS.",
+  "tags": [
+   "CAD",
+   "ArcGIS Pro",
+   "Survey"
+  ],
+  "cta": null
+ },
+ {
+  "title": "SSU Campus: Drone Orthomosaic",
+  "caption": "Drone orthomosaic of Salem State University's central campus, captured by UAV.",
+  "link": null,
+  "src": "images/projects/central-campus/drone-orthomosaic.jpg",
+  "alt": "SSU Campus: Drone Orthomosaic",
+  "label": "SSU: Orthomosaic",
+  "overlayTitle": "SSU Campus: Drone Orthomosaic",
+  "overlayText": "Aerial orthomosaic flown over central campus.",
+  "tags": [
+   "Drone",
+   "Orthomosaic",
+   "UAV"
+  ],
+  "cta": null
+ },
+ {
+  "title": "SSU Campus: Drone + CAD Overlay",
+  "caption": "CAD linework overlaid on the drone orthomosaic and ground-verified with Trimble GPS.",
+  "link": null,
+  "src": "images/projects/central-campus/drone-arcgis-overlay.png",
+  "alt": "SSU Campus: Drone + CAD Overlay",
+  "label": "SSU: Drone Overlay",
+  "overlayTitle": "SSU Campus: Drone + CAD Overlay",
+  "overlayText": "CAD linework draped over the drone imagery.",
+  "tags": [
+   "Drone",
+   "CAD",
+   "Trimble GPS"
+  ],
+  "cta": null
+ },
+ {
+  "title": "Salem Evacuation: Flood Zone & Traffic Network",
+  "caption": "Salem evacuation routing — FEMA flood risk and traffic volumes weighted into the road network with arcpy.",
+  "link": null,
+  "src": "images/projects/evacuation/flood-zone-traffic-network.jpg",
+  "alt": "Salem Evacuation: Flood Zone & Traffic Network",
+  "label": "Salem Evac: Flood Network",
+  "overlayTitle": "Salem Evacuation: Flood Zone & Traffic Network",
+  "overlayText": "FEMA flood zones weighted against the road network.",
+  "tags": [
+   "Python",
+   "arcpy",
+   "FEMA"
+  ],
+  "cta": null
+ }
+]

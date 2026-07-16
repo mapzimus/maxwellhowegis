@@ -1,0 +1,174 @@
+/* ============ COMPONENTS — plates, badges, filters, lightbox, hero ============ */
+
+/* ---- Plate card: the atlas plate. Double neatline frame. ---- */
+.plate {
+  position: relative;
+  display: flex; flex-direction: column;
+  background: var(--plate);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm), inset 0 0 0 4px var(--plate), inset 0 0 0 5px var(--line);
+  padding: 5px; /* room for the inner neatline */
+  transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
+}
+a.plate { text-decoration: none; color: inherit; }
+.plate:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md), inset 0 0 0 4px var(--plate), inset 0 0 0 5px var(--vermilion);
+  border-color: var(--vermilion);
+}
+.plate-body { padding: var(--space-3) var(--space-3) var(--space-3); display: flex; flex-direction: column; flex: 1; }
+
+.plate-figure {
+  margin: 0; overflow: hidden; border-bottom: 1px solid var(--line);
+  aspect-ratio: 16 / 10; background: var(--paper-2);
+}
+.plate-figure picture { display: block; width: 100%; height: 100%; }
+.plate-figure img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform var(--t-med);
+}
+.plate:hover .plate-figure img { transform: scale(1.03); }
+
+.plate-no {
+  font-family: var(--font-mono); font-size: var(--text-xs);
+  color: var(--ink-faint); letter-spacing: 0.1em;
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: var(--space-1); text-transform: uppercase;
+}
+.plate h3 { font-size: var(--text-md); margin-bottom: var(--space-1); }
+.plate .summary { font-size: var(--text-sm); color: var(--ink-soft); flex: 1; margin-bottom: var(--space-3); }
+
+.plate-meta {
+  display: flex; flex-wrap: wrap; gap: var(--space-1);
+  border-top: 1px solid var(--line); padding-top: var(--space-2);
+}
+
+/* ---- Tags & badges ---- */
+.tag {
+  font-family: var(--font-mono); font-size: var(--text-xs);
+  color: var(--ink-soft);
+  background: var(--paper-2); border: 1px solid var(--line);
+  border-radius: var(--radius-sm); padding: 1px 7px;
+  white-space: nowrap;
+}
+
+.badge {
+  font-family: var(--font-mono); font-size: var(--text-xs);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  border-radius: var(--radius-sm); padding: 2px 8px;
+  border: 1px solid;
+}
+.badge-live        { color: var(--moss); background: var(--moss-wash); border-color: var(--moss); }
+.badge-development { color: var(--ochre); background: var(--ochre-wash); border-color: var(--ochre); }
+.badge-archived    { color: var(--ink-faint); background: var(--paper-2); border-color: var(--line-strong); }
+.badge-external    { color: var(--bathy); background: var(--bathy-wash); border-color: var(--bathy); }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono); font-size: var(--text-sm); letter-spacing: 0.03em;
+  padding: 10px 20px; cursor: pointer; text-decoration: none;
+  border-radius: var(--radius-sm); border: 1px solid var(--ink);
+  background: var(--ink); color: var(--paper);
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+}
+.btn:hover { background: var(--vermilion); border-color: var(--vermilion); color: #fff; }
+.btn-ghost { background: transparent; color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: var(--paper); }
+
+/* ---- Filter bar ---- */
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: var(--space-2);
+  align-items: center; margin-bottom: var(--space-4);
+}
+.filter-bar .fb-label {
+  font-family: var(--font-mono); font-size: var(--text-xs);
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint);
+  margin-right: var(--space-1);
+}
+.chip {
+  font-family: var(--font-mono); font-size: var(--text-sm);
+  border: 1px solid var(--line-strong); border-radius: var(--radius-pill);
+  background: var(--plate); color: var(--ink-soft);
+  padding: 4px 14px; cursor: pointer;
+  transition: all var(--t-fast);
+}
+.chip:hover { border-color: var(--vermilion); color: var(--vermilion); }
+.chip[aria-pressed="true"] {
+  background: var(--ink); border-color: var(--ink); color: var(--paper);
+}
+
+/* ---- Gallery brick ---- */
+.brick {
+  position: relative; overflow: hidden; cursor: zoom-in;
+  border: 1px solid var(--line-strong); border-radius: var(--radius-sm);
+  background: var(--plate); box-shadow: var(--shadow-sm);
+  padding: 4px;
+}
+.brick img { width: 100%; border-radius: 1px; }
+.brick figcaption {
+  font-family: var(--font-mono); font-size: var(--text-xs);
+  color: var(--ink-soft); padding: 6px 4px 3px;
+  display: flex; justify-content: space-between; gap: var(--space-2);
+}
+.brick .b-tags { color: var(--ink-faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 45%; }
+.brick:hover { border-color: var(--vermilion); }
+
+/* ---- Lightbox ---- */
+.lightbox {
+  position: fixed; inset: 0; z-index: var(--z-lightbox);
+  display: none; align-items: center; justify-content: center;
+  background: color-mix(in srgb, var(--paper-2) 30%, rgba(10, 8, 4, 0.88));
+  padding: var(--space-4);
+}
+.lightbox.open { display: flex; }
+.lightbox-inner {
+  background: var(--plate); border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm); box-shadow: var(--shadow-md);
+  max-width: min(1100px, 94vw); max-height: 92vh;
+  padding: 6px; display: flex; flex-direction: column;
+}
+.lightbox-inner img { max-height: 70vh; width: auto; max-width: 100%; object-fit: contain; margin: 0 auto; }
+.lightbox-caption { padding: var(--space-3); overflow-y: auto; }
+.lightbox-caption h3 { font-size: var(--text-md); margin-bottom: var(--space-1); }
+.lightbox-caption p { font-size: var(--text-sm); color: var(--ink-soft); margin-bottom: var(--space-2); max-width: none; }
+.lightbox-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  background: var(--plate); border: 1px solid var(--line-strong); border-radius: var(--radius-pill);
+  width: 44px; height: 44px; cursor: pointer; font-size: 1.1rem; color: var(--ink);
+}
+.lightbox-nav:hover { border-color: var(--vermilion); color: var(--vermilion); }
+.lightbox-prev { left: max(var(--space-3), calc((100vw - 1180px) / 2 - 60px)); }
+.lightbox-next { right: max(var(--space-3), calc((100vw - 1180px) / 2 - 60px)); }
+.lightbox-close {
+  position: absolute; top: var(--space-3); right: var(--space-3);
+  background: var(--plate); border: 1px solid var(--line-strong); border-radius: var(--radius-pill);
+  width: 40px; height: 40px; cursor: pointer; font-size: 1rem; color: var(--ink);
+}
+.lightbox-close:hover { border-color: var(--vermilion); color: var(--vermilion); }
+
+/* ---- Hero ---- */
+.hero { position: relative; overflow: hidden; padding: var(--space-7) 0; border-bottom: 1px solid var(--line); }
+.hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-content { position: relative; }
+.hero h1 { font-size: var(--text-hero); font-weight: 500; margin-bottom: var(--space-3); }
+.hero .lede { font-size: var(--text-md); color: var(--ink-soft); max-width: 54ch; }
+.hero-note { color: var(--ink-faint); font-size: var(--text-sm); max-width: 68ch; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-4); }
+
+/* ---- Compass / datum block (about, footer flourish) ---- */
+.datum-block {
+  font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-faint);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: var(--space-3); background: var(--paper-2);
+  line-height: 1.9; letter-spacing: 0.04em;
+}
+.datum-block b { color: var(--ink-soft); font-weight: 600; }
+
+/* ---- Empty state ---- */
+.empty-note {
+  font-family: var(--font-mono); font-size: var(--text-sm); color: var(--ink-faint);
+  border: 1px dashed var(--line-strong); border-radius: var(--radius-sm);
+  padding: var(--space-4); text-align: center;
+}

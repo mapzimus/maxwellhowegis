@@ -3,179 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxwell Howe | GIS Portfolio</title>
-    <meta name="description" content="GIS Portfolio of Maxwell Howe — spatial analysis, remote sensing, and cartography.">
+    <title>Maxwell Howe — Web GIS Developer &amp; Spatial Analyst</title>
+    <meta name="description" content="Web GIS developer and spatial analyst in Salem, Massachusetts. Interactive maps, spatial data products, and reproducible analysis built for people to use.">
+    <link rel="icon" href="/assets/portfolio/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..650&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/portfolio/css/tokens.css">
+    <link rel="stylesheet" href="/assets/portfolio/css/base.css">
+    <link rel="stylesheet" href="/assets/portfolio/css/layout.css">
+    <link rel="stylesheet" href="/assets/portfolio/css/components.css">
+    <link rel="stylesheet" href="/assets/portfolio/css/pages.css">
+    <script src="/assets/portfolio/js/config.js"></script>
+    <script src="/assets/portfolio/js/theme.js"></script>
+    <link rel="canonical" href="https://maxwellhowegis.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maxwell Howe — Web GIS Developer &amp; Spatial Analyst">
+    <meta property="og:description" content="Web GIS developer and spatial analyst in Salem, Massachusetts. Interactive maps, spatial data products, and reproducible analysis built for people to use.">
     <meta property="og:url" content="https://maxwellhowegis.com/">
     <meta property="og:image" content="https://maxwellhowegis.com/images/projects/ma-atlas-preview.png">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://maxwellhowegis.com/">
-    <meta property="og:title" content="Maxwell Howe — GIS Portfolio">
-    <meta property="og:description" content="GIS analyst and cartographer. Spatial analysis, remote sensing, and Python/R-based geoprocessing.">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="icon" href="/favicon.ico" sizes="32x32">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="twitter:title" content="Maxwell Howe — Web GIS Developer &amp; Spatial Analyst">
+    <meta name="twitter:description" content="Web GIS developer and spatial analyst in Salem, Massachusetts. Interactive maps, spatial data products, and reproducible analysis built for people to use.">
+    <meta name="twitter:image" content="https://maxwellhowegis.com/images/projects/ma-atlas-preview.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Maxwell Howe","url":"https://maxwellhowegis.com","jobTitle":"Web GIS Developer and Spatial Analyst","email":"mailto:mhowe.gis@gmail.com","sameAs":["https://github.com/mapzimus","https://www.linkedin.com/in/maxwell-howe-1a88a3298/"]}</script>
 </head>
 <body>
-
-<a href="#main-content" class="skip-to-content">Skip to content</a>
-
-<!-- NAV -->
+<a class="skip-link" href="#main">Skip to content</a>
 <div id="site-nav"></div>
 
-<!-- HERO — full viewport with animated topo contour canvas -->
-<section class="hero" id="hero">
-    <div class="hero-canvas-wrap">
-        <canvas id="heroCanvas"></canvas>
-    </div>
-    <div class="hero-bg"></div>
-    <span class="hero-coord top-left" aria-hidden="true">42.36°N 71.06°W</span>
-    <span class="hero-coord top-right" aria-hidden="true">BOSTON, MA</span>
-    <span class="hero-coord bottom-left" aria-hidden="true">WGS 84 · EPSG:4326</span>
-    <span class="hero-coord bottom-right" aria-hidden="true">© 2026 MH</span>
-    <div class="hero-content">
-        <h1>Maxwell Howe</h1>
-        <p class="hero-subtitle">GIS Professional &middot; Spatial Builder &middot; Translator of Data</p>
-        <div class="hero-actions">
-            <a href="portfolio.html" class="btn btn-primary">View Projects</a>
-            <a href="side-projects.html" class="btn btn-secondary">Beyond GIS</a>
-            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-        </div>
-    </div>
-    <div class="scroll-indicator" aria-hidden="true">
-        <span>Scroll</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-    </div>
-</section>
-
-<main id="main-content">
-
-<div class="topo-divider"></div>
-
-<!-- CURRENTLY BUILDING -->
-<section class="section">
-    <div class="currently-building-callout fade-in">
-        <div class="section-label">// Currently Building</div>
-        <div class="building-pills">
-            <a href="https://tappymaps.com" target="_blank" rel="noopener" class="building-pill status-live">TappyMaps <span class="dot"></span></a>
-            <a href="https://howe2math.com" target="_blank" rel="noopener" class="building-pill status-live">howe2math <span class="dot"></span></a>
-            <span class="building-pill status-dev">OptiTrek — in dev</span>
-            <a href="concord.html" class="building-pill status-dev">Open Concord NH — in dev</a>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT / BIO -->
-<section class="section">
-    <div class="fade-in" style="max-width:720px;">
-        <div class="section-label">// About</div>
-        <p style="color:var(--text-secondary); font-size:17px; line-height:1.75; margin-bottom:16px;">I'm Maxwell Howe — a GIS professional and builder with an MS in Geo-Information Science from Salem State University (2025). I work across spatial analysis, R and Python scripting, and web development to build tools that make geographic data useful — from spatial analysis pipelines to full-stack web applications.</p>
-        <p style="color:var(--text-secondary); font-size:17px; line-height:1.75;">I teach high school math and statistics, which shapes how I approach GIS. Most of this work is translation — turning complex spatial data into something a non-technical audience can actually act on. <a href="about.html" style="color:var(--accent-teal); text-decoration:none;">More about me &rarr;</a></p>
-    </div>
-</section>
-
-<!-- MORE PROJECTS -->
-<section class="section">
-    <div class="section-header fade-in">
-        <div class="section-label">// Post-Graduation Work</div>
-        <h2 class="section-title">Recent Projects</h2>
-    </div>
-    <div class="project-grid fade-in fade-in-stagger" id="recentGrid"></div>
-    <div style="text-align:center; margin-top:40px;" class="fade-in">
-        <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
-    </div>
-</section>
-
-<!-- MS CAPSTONE -->
-<section class="section parallax-section">
-    <div class="featured-project fade-in">
-        <a href="lynn.html" class="featured-project-img">
-            <img src="images/projects/lynn-thumb.png" alt="Hexbin map of absenteeism in Lynn Public Schools">
-            <span class="featured-project-badge">Capstone Project</span>
-        </a>
-        <div class="featured-project-text">
-            <div class="section-label">// MS Capstone</div>
-            <h2>Chronic Absenteeism in Lynn Public Schools</h2>
-            <p>Geocoded student addresses and analyzed the relationship between distance from school and chronic absenteeism in Lynn Public Schools. Built in R with 20 maps and statistical visualizations.</p>
-            <div class="project-tags" style="margin-top:16px;">
-                <span class="project-tag">R</span>
-                <span class="project-tag">Geocoding</span>
-                <span class="project-tag">ggplot2</span>
-                <span class="project-tag">Statistical Analysis</span>
-            </div>
-            <a href="lynn.html" class="btn btn-primary" style="margin-top:24px;">View Full Project &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<div class="topo-divider"></div>
-
-<!-- CONTACT -->
-<section class="contact-band">
-    <div class="section">
-        <div class="contact-content fade-in">
-            <div class="section-label">// Contact</div>
-            <h2>Get in Touch</h2>
-            <p>Open to GIS roles, freelance projects, and collaboration.</p>
-            <div class="contact-links">
-                <a href="mailto:mhowe.gis@gmail.com" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-                    mhowe.gis@gmail.com
-                </a>
-                <a href="https://github.com/mapzimus" target="_blank" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/maxwell-howe-1a88a3298/" target="_blank" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    LinkedIn
-                </a>
-                <a href="https://www.instagram.com/mapzimus" target="_blank" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    Instagram
-                </a>
+<main id="main">
+    <section class="hero">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="container hero-content">
+            <div class="kicker">Web GIS developer &amp; spatial analyst · Salem, MA</div>
+            <h1>Maxwell Howe</h1>
+            <p class="lede">I build web maps and spatial data tools that turn complex information into something people can use.</p>
+            <p class="hero-note">Open to GIS developer, web GIS, and spatial analysis roles across MA, NH, and RI, including hybrid and remote work.</p>
+            <div class="hero-actions">
+                <a class="btn" href="/work/">See the work</a>
+                <a class="btn btn-ghost" href="/about/">About me</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <div class="container">
+        <section class="section-tight now-strip" aria-labelledby="now-heading">
+            <h2 id="now-heading">Now</h2>
+            <div class="building-strip" id="buildingStrip"></div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight">
+            <div class="section-heading-row">
+                <div>
+                    <div class="kicker">Selected work</div>
+                    <h2>Maps, analysis, and working products</h2>
+                </div>
+                <a class="marginalia" href="/work/">All case studies →</a>
+            </div>
+            <div class="grid grid-wide" id="featuredGrid"></div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight lab-callout" aria-labelledby="lab-heading">
+            <div>
+                <div class="kicker">Beyond the portfolio</div>
+                <h2 id="lab-heading">Mapzimus is where the experiments live.</h2>
+                <p>Small browser tools, map ideas, games, fantasy projects, and works in progress have their own home, separate from my professional GIS case studies.</p>
+            </div>
+            <a class="btn btn-ghost" href="https://mapzimus.com" target="_blank" rel="noopener">Visit Mapzimus ↗</a>
+        </section>
+    </div>
 </main>
 
 <div id="site-footer"></div>
-
-<!-- MODAL -->
-<div class="modal-overlay" id="modalOverlay">
-    <div class="modal" id="modal">
-        <button class="modal-close" id="modalClose">&times;</button>
-        <div class="modal-thumb" id="modalThumb"></div>
-        <div class="modal-body" id="modalBody"></div>
-    </div>
-</div>
-
-<script src="js/projects.js?v=cards-3"></script>
-<script src="js/partials.js"></script>
-<script src="js/main.js"></script>
-<script src="js/hero-canvas.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Show first 3 current-era projects using the shared renderer (includes badges, logo handling)
-        renderProjectGrid('recentGrid', 'all', 3, 'current');
-
-        // Staggered animation observer
-        const staggerEls = document.querySelectorAll('.fade-in-stagger');
-        const staggerObs = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    staggerObs.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        staggerEls.forEach(el => staggerObs.observe(el));
-    });
-</script>
+<script src="/assets/portfolio/js/partials.js"></script>
+<script src="/assets/portfolio/js/render.js"></script>
+<script src="/assets/portfolio/js/data/projects.js"></script>
+<script src="/assets/portfolio/js/page-home.js"></script>
+<script src="/assets/portfolio/js/hero-contours.js?v=3"></script>
 </body>
 </html>

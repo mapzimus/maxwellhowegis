@@ -25,6 +25,8 @@ jobs:
         with:
           submodules: recursive
       - uses: actions/configure-pages@v5
+      - name: Build portfolio pages
+        run: node scripts/build_portfolio.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

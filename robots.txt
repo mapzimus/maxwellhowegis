@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /v2/
+Disallow: /src/
 
 Sitemap: https://maxwellhowegis.com/sitemap.xml
