@@ -163,6 +163,24 @@
   }
   function persist() { try { localStorage.setItem("firstsail-save-v3", JSON.stringify(SAVE)); } catch (e) {} }
   loadSave();
+  // Suggestion box → Supabase. Student ideas go to the same project that holds
+  // the class photo uploads, via a SECURITY DEFINER function `submit_suggestion`
+  // that anon may only *call* — it can't read, edit, or delete the suggestions
+  // table any other way. The key below is the PUBLISHABLE (anon) key, public by
+  // design. Mr. Howe reviews the whole list in the Supabase Table Editor. The
+  // localStorage copy stays as an offline fallback if the call ever fails.
+  var SB_URL = "https://segzgdlqqymqlfuahosd.supabase.co";
+  var SB_KEY = "sb_publishable_fBBZAVo-ljKvaBKNVMukmA_TopYb6D8";
+  function sendSuggestion(bodyText, cb) {
+    var rec = { p_body: bodyText.slice(0, 500), p_mode: (SAVE.mode || "hard").slice(0, 20), p_page: "first-sail" };
+    try {
+      fetch(SB_URL + "/rest/v1/rpc/submit_suggestion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "apikey": SB_KEY, "Authorization": "Bearer " + SB_KEY },
+        body: JSON.stringify(rec)
+      }).then(function (r) { cb(r && r.ok); }).catch(function () { cb(false); });
+    } catch (e) { cb(false); }
+  }
   // seen-count is scanned once and cached; invalidated whenever a new tale is logged
   var seenCache = null;
   function invalidateSeenCache() { seenCache = null; }
@@ -3490,20 +3508,24 @@
         if (uiButton(W / 2 - (w - 24) / 6, sy, (w - 24) / 3, 46, "⚓ SET SAIL", { size: 15 })) startRun();
         if (uiButton(W / 2 + w / 2 - 6 - (w - 24) / 3, sy, (w - 24) / 3, 46, "📮 IDEAS", { size: 14, color: "#1f4a5e" })) {
           var sug = null;
-          try { sug = window.prompt("What should we add to First Sail? (your idea goes in the ship's suggestion log)"); } catch (e3) {}
+          try { sug = window.prompt("What should we add to First Sail? Your idea is sent to Mr. Howe's suggestion log."); } catch (e3) {}
           if (sug && sug.trim()) {
+            var idea = sug.trim().slice(0, 500);
+            // keep a local copy so nothing is lost if the network hiccups, then
+            // send it to the class suggestion log on Supabase
             if (!SAVE.suggestions) SAVE.suggestions = [];
-            SAVE.suggestions.push({ t: sug.trim().slice(0, 200), d: new Date().toISOString().slice(0, 10) });
+            SAVE.suggestions.push({ t: idea, d: new Date().toISOString().slice(0, 10) });
             if (SAVE.suggestions.length > 100) SAVE.suggestions.shift();
-            persist(); SFX.good(); msg = "Logged! " + SAVE.suggestions.length + " idea" + (SAVE.suggestions.length === 1 ? "" : "s") + " in the book. 📮";
+            persist();
+            msg = "Sending your idea…";
+            sendSuggestion(idea, function (ok) {
+              if (ok) { SFX.win(); msg = "Idea sent to the crew's log. Thank you! 📮"; }
+              else { SFX.good(); msg = "Saved on this ship — we'll send it when the wind's up. 📮"; }
+            });
           }
         }
         if (SAVE.suggestions && SAVE.suggestions.length) {
-          text(SAVE.suggestions.length + " idea" + (SAVE.suggestions.length === 1 ? "" : "s") + " logged", W / 2 + w / 2 - 6 - (w - 24) / 6, sy + 58, 10, "rgba(244,231,201,.6)", "center");
-          if (uiButton(W / 2 + w / 2 - 40, sy - 26, 34, 22, "✉", { size: 11, color: "#3a4550" })) {
-            var body = SAVE.suggestions.map(function (s2) { return "- (" + s2.d + ") " + s2.t; }).join("\n");
-            try { window.open("mailto:mhowe.gis@gmail.com?subject=" + encodeURIComponent("First Sail suggestions") + "&body=" + encodeURIComponent(body), "_blank"); } catch (e4) {}
-          }
+          text(SAVE.suggestions.length + " idea" + (SAVE.suggestions.length === 1 ? "" : "s") + " sent from this ship", W / 2 + w / 2 - 6 - (w - 24) / 6, sy + 58, 10, "rgba(244,231,201,.6)", "center");
         }
       }
     };
@@ -3737,6 +3759,7 @@
       grantFeat: function (id) { feat(id); },
       setSkin: function (id) { SAVE.skin = id; persist(); return currentSkin().id; },
       suggest: function (txt) { if (!SAVE.suggestions) SAVE.suggestions = []; SAVE.suggestions.push({ t: String(txt).slice(0, 200), d: new Date().toISOString().slice(0, 10) }); persist(); return SAVE.suggestions.length; },
+      suggestSend: function (txt) { sendSuggestion(String(txt), function () {}); },
       newRun: function (fromMission) { startRun(fromMission); flushFade(); },
       buildSeq: function (fromMission) { newGame(fromMission); return G.seq.map(function (b) { return "m" + b.m + ":" + b.kind + (b.ev ? ":" + b.ev.id : "") + (b.which ? ":" + b.which : ""); }); },
       choose: function (i) { if (scene && scene.debugChoose) scene.debugChoose(i); },

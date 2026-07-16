@@ -56,7 +56,7 @@ The old version put breaching sharks everywhere, and playtesters hated it. Now r
 - **No more quick cuts.** Scenes crossfade; sail legs wind down — spawns stop early, leftover coins sweep to the ship, hazards fade, and a LEG CLEAR banner plays you out.
 - **Merchant hails.** Mid-campaign, a trading brig may heave to: repairs, powder, weather gossip, mystery crates, and tea/spice cargo that pays double at your next port (if you live to reach it).
 - **Ship liveries.** Nine unlockable paint schemes earned by feats — win a voyage, beat each boss, witness the ghost light untouched, speak the secret word. Pick yours in the Harbor.
-- **A suggestion box.** The 📮 IDEAS button in the Harbor logs student suggestions (with an ✉ export for the teacher).
+- **A suggestion box.** The 📮 IDEAS button in the Harbor sends student suggestions to the class Supabase project (the same backend the photo gallery uses) via an insert-only RPC — the teacher reviews them all in the Supabase Table Editor. A local copy is kept as an offline fallback.
 - **The secret word.** INSANE mode no longer unlocks by beating EXTREME — a certain word, typed on the title screen, is the only way in.
 - Faster on Chromebooks (particle caps, cheaper whirlpool/sea rendering), and the multiverse traded its brainrot for the Great Meme Reset of 2026.
 
