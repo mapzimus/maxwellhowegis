@@ -242,6 +242,12 @@ function build() {
     ["tools.html", "https://mapzimus.com/tools/"],
     ["side-projects.html", "https://mapzimus.com/experiments/"],
     ["mapzimus.html", "https://mapzimus.com/"],
+    ["games/index.html", "https://mapzimus.com/games/"],
+    ["links.html", "https://mapzimus.com/links/"],
+    ["fieldnotes.html", "https://mapzimus.com/field-notes/"],
+    ["feedback.html", "/contact/"],
+    ["nsn.html", "https://www.ebay.com/str/maxvalueprogames"],
+    ["max/index.html", "/"],
   ]);
   for (const [file, destination] of redirects) {
     write(path.join(repoRoot, file), redirectPage(destination));
@@ -258,12 +264,29 @@ function build() {
     ["play.html", "https://mapzimus.com/play/"],
     ["ventures.html", "/about/"],
     ["links.html", "/about/"],
-    ["fieldnotes.html", "https://mapzimus.com/experiments/"],
+    ["fieldnotes.html", "https://mapzimus.com/field-notes/"],
   ]);
   for (const [file, destination] of v2Redirects) {
     write(path.join(repoRoot, "v2", file), redirectPage(destination));
   }
   write(path.join(repoRoot, "v2", "project.html"), buildCompatibilityPage(projects));
+
+  // Projects demoted to mapzimus keep a working /work/<slug>/ URL as a redirect
+  // stub — the build never deletes old outputs, so without this the last
+  // committed case page would keep deploying.
+  const demoted = projects.filter(
+    (project) => project.kind === "project" && project.visibility === "mapzimus",
+  );
+  for (const project of demoted) {
+    const live = project.links?.live;
+    const destination = live
+      ? (/^https?:\/\//.test(live) ? live : `/${live.replace(/^\//, "")}`)
+      : "https://mapzimus.com/";
+    write(
+      path.join(repoRoot, "work", project.slug, "index.html"),
+      redirectPage(destination, `${project.title} — moved`),
+    );
+  }
 
   const sitemapUrls = new Set([
     `${siteUrl}/`,
@@ -273,6 +296,9 @@ function build() {
     ...caseStudies.map((project) => `${siteUrl}/work/${project.slug}/`),
   ]);
   for (const project of projects) {
+    // Apps that belong to mapzimus stay out of the professional sitemap even
+    // while their files are still hosted here.
+    if (project.visibility === "mapzimus") continue;
     const live = project.links?.live;
     if (live && !/^https?:\/\//.test(live)) {
       const normalized = live.startsWith("/") ? live : `/${live}`;

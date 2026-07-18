@@ -9,7 +9,7 @@
         'appalachians', 'lynn-data-dive', 'tappymaps', 'ebay-packages'
     ];
     var GRADUATE = ['salem-pantry', 'lynn-absenteeism'];
-    var ADDITIONAL = ['optitrek', 'open-concord', 'interstate-challenge', 'salem-photo-walk'];
+    var ADDITIONAL = ['optitrek', 'open-concord', 'salem-photo-walk'];
 
     function ordered(slugs) {
         return slugs.map(function (slug) {
