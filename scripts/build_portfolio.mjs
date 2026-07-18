@@ -240,8 +240,13 @@ function build() {
     ["contact.html", "/contact/"],
     ["gallery.html", "https://mapzimus.com/maps/"],
     ["tools.html", "https://mapzimus.com/tools/"],
-    ["side-projects.html", "https://mapzimus.com/experiments/"],
+    ["side-projects.html", "https://mapzimus.com/lab/"],
     ["mapzimus.html", "https://mapzimus.com/"],
+    ["games/index.html", "https://mapzimus.com/games/"],
+    ["nsn.html", "/work/ebay-packages/"],
+    ["feedback.html", "/contact/"],
+    ["links.html", "/about/"],
+    ["fieldnotes.html", "https://mapzimus.com/field-notes/"],
   ]);
   for (const [file, destination] of redirects) {
     write(path.join(repoRoot, file), redirectPage(destination));
@@ -255,10 +260,10 @@ function build() {
     ["contact.html", "/contact/"],
     ["gallery.html", "https://mapzimus.com/maps/"],
     ["tools.html", "https://mapzimus.com/tools/"],
-    ["play.html", "https://mapzimus.com/play/"],
+    ["play.html", "https://mapzimus.com/games/"],
     ["ventures.html", "/about/"],
     ["links.html", "/about/"],
-    ["fieldnotes.html", "https://mapzimus.com/experiments/"],
+    ["fieldnotes.html", "https://mapzimus.com/field-notes/"],
   ]);
   for (const [file, destination] of v2Redirects) {
     write(path.join(repoRoot, "v2", file), redirectPage(destination));
@@ -273,6 +278,9 @@ function build() {
     ...caseStudies.map((project) => `${siteUrl}/work/${project.slug}/`),
   ]);
   for (const project of projects) {
+    // Demoted apps (visibility "mapzimus") stay hosted but leave the professional sitemap.
+    if (!["featured", "graduate", "additional"].includes(project.tier)) continue;
+    if (project.visibility === "mapzimus") continue;
     const live = project.links?.live;
     if (live && !/^https?:\/\//.test(live)) {
       const normalized = live.startsWith("/") ? live : `/${live}`;
