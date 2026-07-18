@@ -248,6 +248,10 @@ function build() {
     ["feedback.html", "/contact/"],
     ["nsn.html", "https://www.ebay.com/str/maxvalueprogames"],
     ["max/index.html", "/"],
+    // Fun apps evicted to mapzimus.com hosting (lab repo).
+    ["bugwars/index.html", "https://mapzimus.com/bug-wars/"],
+    ["transit/index.html", "https://mapzimus.com/transit/"],
+    ["interstate-challenge/index.html", "https://mapzimus.com/interstate-challenge/"],
   ]);
   for (const [file, destination] of redirects) {
     write(path.join(repoRoot, file), redirectPage(destination));
