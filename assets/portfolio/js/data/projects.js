@@ -993,7 +993,7 @@ window.V2_DATA.projects = [
     "year": "2026",
     "thumb": "images/projects/transit-thumb.png",
     "links": {
-      "live": "transit/"
+      "live": "https://mapzimus.com/transit/"
     }
   },
   {
@@ -1023,7 +1023,7 @@ window.V2_DATA.projects = [
     ],
     "year": "2026",
     "links": {
-      "live": "interstate-challenge/"
+      "live": "https://mapzimus.com/interstate-challenge/"
     }
   },
   {

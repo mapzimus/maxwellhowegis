@@ -993,7 +993,7 @@ window.V2_DATA.projects = [
     "year": "2026",
     "thumb": "images/projects/transit-thumb.png",
     "links": {
-      "live": "transit/"
+      "live": "https://mapzimus.com/transit/"
     }
   },
   {
@@ -1023,7 +1023,40 @@ window.V2_DATA.projects = [
     ],
     "year": "2026",
     "links": {
-      "live": "interstate-challenge/"
+      "live": "https://mapzimus.com/interstate-challenge/"
+    }
+  },
+  {
+    "slug": "pockettiles",
+    "tier": "additional",
+    "visibility": "additional",
+    "kind": "project",
+    "era": "current",
+    "status": "live",
+    "title": "PocketTiles Studio",
+    "category": "Web App",
+    "type": "tool",
+    "role": "I designed and built the whole pipeline — drawing, tiling, compression, and a custom in-browser PMTiles writer.",
+    "outcome": "GeoJSON becomes a shareable, streaming vector-tile map without a tile server — the archive is assembled entirely in the browser.",
+    "tags": [
+      "PMTiles",
+      "MapLibre GL JS",
+      "Vector Tiles",
+      "In-Browser"
+    ],
+    "summary": "Draw or import GeoJSON, bake a PMTiles vector-tile archive entirely in your browser, and share a streaming URL — no tile server, nothing uploaded during tiling.",
+    "description": "PocketTiles Studio turns GeoJSON into a PMTiles v3 vector-tile archive without any server: drawing via Terra Draw, tiling via geojson-vt and vt-pbf, gzip via the browser CompressionStream API, and a custom in-browser PMTiles writer assembling the archive — the novel core of the app. Optionally publish the archive to storage for a shareable streaming map URL.",
+    "tools": [
+      "MapLibre GL JS",
+      "Terra Draw",
+      "geojson-vt",
+      "vt-pbf",
+      "PMTiles",
+      "Supabase"
+    ],
+    "year": "2026",
+    "links": {
+      "live": "pockettiles/"
     }
   },
   {

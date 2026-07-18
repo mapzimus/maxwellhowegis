@@ -1,9 +1,6 @@
 [submodule "geopuesto"]
 	path = geopuesto
 	url = https://github.com/mapzimus/geopuesto.git
-[submodule "bugwars"]
-	path = bugwars
-	url = https://github.com/mapzimus/bug-wars.git
 [submodule "truescale"]
 	path = truescale
 	url = https://github.com/mapzimus/true-scale.git

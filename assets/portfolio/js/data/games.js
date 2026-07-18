@@ -18,7 +18,7 @@ window.V2_DATA.games = [
       "Vanilla JS"
     ],
     "links": {
-      "live": "bugwars/",
+      "live": "https://mapzimus.com/bug-wars/",
       "repo": "https://github.com/mapzimus/bug-wars"
     }
   },
