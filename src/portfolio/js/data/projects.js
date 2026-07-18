@@ -1094,29 +1094,30 @@ window.V2_DATA.projects = [
     "kind": "project",
     "era": "current",
     "status": "live",
-    "title": "Where My eBay Packages Have Travelled",
+    "title": "Where My Ebay Packages Have Travelled",
     "category": "Web Mapping",
     "type": "map",
     "tags": [
-      "Leaflet",
+      "MapLibre",
+      "3D Globe",
       "Python",
       "Geocoding",
       "Privacy"
     ],
-    "summary": "An interactive map built from generalized sales data from my retro-game business, showing where packages travelled from Salem without exposing customer information.",
-    "description": "The project turns several years of real eBay orders into a public geographic story. A Python pipeline groups multi-item orders, generalizes destinations to city level, geocodes each city, calculates approximate great-circle distance, and writes a strict allow-listed public dataset. The Leaflet app adds place and time filters, summary measures, search, and a responsive flow-map interface.",
-    "role": "I designed the privacy model, built the Python data pipeline and tests, and developed the responsive Leaflet map from my own business data.",
-    "outcome": "The public map shows the reach of a small Salem business while automated tests prevent names, addresses, order identifiers, tracking numbers, and other customer data from entering the published dataset.",
+    "summary": "An interactive 3D globe built from 1,009 real North Shore Nostalgia shipments, with city-level geocoding, great-circle journeys, international handoffs, sales records, and a cumulative timeline.",
+    "description": "The project turns several years of real eBay orders from North Shore Nostalgia into a public geographic story. A Python pipeline groups orders, generalizes destinations to city level, geocodes each city, calculates approximate great-circle distance, and writes a strict allow-listed public dataset. The MapLibre globe adds filters, expanded sales statistics, a cumulative timeline, and two-stage eBay International Shipping journeys when the source export includes both the Illinois handoff hub and the true destination. Older hub-only records are labeled honestly instead of guessing where they continued.",
+    "role": "I designed the privacy model, built the Python data pipeline and tests, and developed the responsive MapLibre globe from real data from my own eBay business.",
+    "outcome": "The live map now shows 1,009 packages across 778 destination cities, including recovered international legs, while automated tests prevent names, addresses, order identifiers, tracking numbers, and other customer data from entering the published dataset.",
     "tools": [
       "Python",
-      "Leaflet",
+      "MapLibre GL JS",
       "Nominatim",
       "GeoJSON",
       "pytest",
       "GitHub Actions"
     ],
     "year": "2026",
-    "thumb": "images/projects/ebay-packages-preview.png",
+    "thumb": "images/projects/where-games-go-thumb.png?v=map-4",
     "links": {
       "live": "https://mapzimus.github.io/where-the-games-go/",
       "repo": "https://github.com/mapzimus/where-the-games-go"
