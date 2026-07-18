@@ -233,6 +233,13 @@ function build() {
     );
   }
 
+  // Case pages that once shipped under /work/ and later left the professional tiers.
+  const retiredCaseSlugs = new Map([["interstate-challenge", "https://mapzimus.com/"]]);
+  for (const [slug, destination] of retiredCaseSlugs) {
+    if (caseStudies.some((project) => project.slug === slug)) continue;
+    write(path.join(repoRoot, "work", slug, "index.html"), redirectPage(destination));
+  }
+
   const redirects = new Map([
     ["portfolio.html", "/work/"],
     ["work.html", "/work/"],
