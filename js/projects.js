@@ -20,11 +20,11 @@ const projects = [
             { src: "images/gallery/lynn-citywide-absenteeism.png", caption: "Citywide absenteeism — each dot a student address, colored by personal absence rate" },
             { src: "images/projects/lynn/student-distribution-citywide.png", caption: "Student address distribution (citywide) — bubble size = students per address" },
             { src: "images/projects/lynn/student-distribution-zoomed.jpg", caption: "Student addresses near LEHS — 1-mile zoom" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 141302.png", caption: "Student density grid — counts per 150 m cell" },
+            { src: "images/projects/lynn/lynn-student-density-grid-150m.png", caption: "Student density grid — counts per 150 m cell" },
             { src: "images/gallery/lynn-kde-heatmap.png", caption: "KDE heatmap of geocoded student addresses" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 141901.png", caption: "Absenteeism hotspots (≥20%) around LEHS" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 142700.png", caption: "Citywide absenteeism hotspots — 100 m hexbins above 20%" },
-            { src: "images/projects/lynn/Screenshot 2025-04-23 142537.png", caption: "Close-up dot map — absence rate around Central Square" },
+            { src: "images/projects/lynn/lynn-absenteeism-hotspots-lehs.png", caption: "Absenteeism hotspots (≥20%) around LEHS" },
+            { src: "images/projects/lynn/lynn-absenteeism-hotspots-citywide-hexgrid.png", caption: "Citywide absenteeism hotspots — 100 m hexbins above 20%" },
+            { src: "images/projects/lynn/lynn-absenteeism-dotmap-central-square.png", caption: "Close-up dot map — absence rate around Central Square" },
             { src: "images/gallery/lynn-absenteeism-by-grade.png", caption: "Absenteeism by grade level — four-panel small multiples (9–12)" },
             { src: "images/gallery/lynn-absenteeism-by-ethnicity.png", caption: "Absenteeism by ethnicity — six-panel small multiples" },
             { src: "images/gallery/lynn-absenteeism-ml-status.png", caption: "Absenteeism by Multilingual Learner status — ML vs non-ML" },
@@ -50,12 +50,12 @@ const projects = [
             { src: "images/projects/salem-pantry/image2.png", caption: "Salem Pantry Mobile Locations" },
             { src: "images/projects/salem-pantry/image8.png", caption: "Pantry-using Households by Cluster" },
             { src: "images/projects/salem-pantry/image10.png", caption: "Pantry Users per Census Block Group" },
-            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113405.png", caption: "Spatial Analysis Overview" },
-            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113509.png", caption: "Coverage Analysis" },
-            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113555.png", caption: "Demographic Breakdown" },
-            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113627.png", caption: "Random Forest Results" },
-            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113700.png", caption: "Statewide Similarity Analysis" },
-            { src: "images/projects/salem-pantry/Screenshot 2025-05-30 113723.png", caption: "Final Recommendations" }
+            { src: "images/projects/salem-pantry/pantry-spatial-analysis-overview.png", caption: "Spatial Analysis Overview" },
+            { src: "images/projects/salem-pantry/pantry-coverage-analysis.png", caption: "Coverage Analysis" },
+            { src: "images/projects/salem-pantry/pantry-demographic-breakdown.png", caption: "Demographic Breakdown" },
+            { src: "images/projects/salem-pantry/pantry-random-forest-results.png", caption: "Random Forest Results" },
+            { src: "images/projects/salem-pantry/pantry-statewide-similarity.png", caption: "Statewide Similarity Analysis" },
+            { src: "images/projects/salem-pantry/pantry-final-recommendations.png", caption: "Final Recommendations" }
         ],
         groupProject: true,
         liveUrl: null,
@@ -154,7 +154,7 @@ const projects = [
         course: "GPH946 — Computer Cartography",
         thumb: "images/projects/central-campus-thumb.jpg",
         gallery: [
-            { src: "images/projects/central-campus/Screenshot 2025-05-30 114432.png", caption: "CAD Utility As-Built Drawing" },
+            { src: "images/projects/central-campus/campus-cad-utility-asbuilt.png", caption: "CAD Utility As-Built Drawing" },
             { src: "images/projects/central-campus/drone-orthomosaic.jpg", caption: "Drone Orthomosaic — Central Campus" },
             { src: "images/projects/central-campus/drone-arcgis-overlay.png", caption: "Drone Imagery Overlaid in ArcGIS Pro" }
         ],
@@ -177,7 +177,7 @@ const projects = [
         thumb: "images/projects/lynnfield/CemMap.jpg",
         gallery: [
             { src: "images/projects/lynnfield/CemMap.jpg", caption: "Lynnfield, MA Cemeteries Overview" },
-            { src: "images/projects/lynnfield/Screenshot 2025-05-30 115155.png", caption: "Database and Spatial Features in ArcGIS Pro" }
+            { src: "images/projects/lynnfield/lynnfield-arcgis-spatial-database.png", caption: "Database and Spatial Features in ArcGIS Pro" }
         ],
         groupProject: true,
         liveUrl: null,
@@ -198,7 +198,7 @@ const projects = [
         thumb: "images/projects/evacuation-thumb.jpg",
         gallery: [
             { src: "images/projects/evacuation/flood-zone-traffic-network.jpg", caption: "Flood Zone & Traffic Network Analysis" },
-            { src: "images/projects/evacuation/Screenshot 2025-05-30 114112.png", caption: "arcpy Evacuation Route Script" }
+            { src: "images/projects/evacuation/evacuation-arcpy-route-script.png", caption: "arcpy Evacuation Route Script" }
         ],
         liveUrl: null,
         repoUrl: null

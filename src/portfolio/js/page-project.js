@@ -42,6 +42,9 @@
         '<div class="kicker">' + esc(p.era === 'school' ? 'GIS Case Study' : 'Interactive Map & App') + '</div>' +
         '<h1>' + esc(p.title) + '</h1>' +
         '<div class="marginalia" style="margin-bottom: var(--space-3);">' + marginalia + ' ' + R.badge(p.status) + '</div>' +
+        (p.status === 'development'
+            ? '<p class="marginalia" style="margin-bottom: var(--space-3); font-style: italic;">Active work in progress — this page describes the current state of the build, not a finished product.</p>'
+            : '') +
         '<hr class="tick-rule"></header>';
 
     h += '<div class="detail-head section-tight">';

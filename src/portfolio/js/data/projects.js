@@ -56,7 +56,7 @@ window.V2_DATA.projects = [
         "caption": "Student addresses near LEHS — 1-mile zoom"
       },
       {
-        "src": "images/projects/lynn/Screenshot 2025-04-23 141302.png",
+        "src": "images/projects/lynn/lynn-student-density-grid-150m.png",
         "caption": "Student density grid — counts per 150 m cell"
       },
       {
@@ -64,15 +64,15 @@ window.V2_DATA.projects = [
         "caption": "KDE heatmap of geocoded student addresses"
       },
       {
-        "src": "images/projects/lynn/Screenshot 2025-04-23 141901.png",
+        "src": "images/projects/lynn/lynn-absenteeism-hotspots-lehs.png",
         "caption": "Absenteeism hotspots (≥20%) around LEHS"
       },
       {
-        "src": "images/projects/lynn/Screenshot 2025-04-23 142700.png",
+        "src": "images/projects/lynn/lynn-absenteeism-hotspots-citywide-hexgrid.png",
         "caption": "Citywide absenteeism hotspots — 100 m hexbins above 20%"
       },
       {
-        "src": "images/projects/lynn/Screenshot 2025-04-23 142537.png",
+        "src": "images/projects/lynn/lynn-absenteeism-dotmap-central-square.png",
         "caption": "Close-up dot map — absence rate around Central Square"
       },
       {
@@ -142,27 +142,27 @@ window.V2_DATA.projects = [
         "caption": "Pantry Users per Census Block Group"
       },
       {
-        "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113405.png",
+        "src": "images/projects/salem-pantry/pantry-spatial-analysis-overview.png",
         "caption": "Spatial Analysis Overview"
       },
       {
-        "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113509.png",
+        "src": "images/projects/salem-pantry/pantry-coverage-analysis.png",
         "caption": "Coverage Analysis"
       },
       {
-        "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113555.png",
+        "src": "images/projects/salem-pantry/pantry-demographic-breakdown.png",
         "caption": "Demographic Breakdown"
       },
       {
-        "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113627.png",
+        "src": "images/projects/salem-pantry/pantry-random-forest-results.png",
         "caption": "Random Forest Results"
       },
       {
-        "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113700.png",
+        "src": "images/projects/salem-pantry/pantry-statewide-similarity.png",
         "caption": "Statewide Similarity Analysis"
       },
       {
-        "src": "images/projects/salem-pantry/Screenshot 2025-05-30 113723.png",
+        "src": "images/projects/salem-pantry/pantry-final-recommendations.png",
         "caption": "Final Recommendations"
       }
     ],
@@ -381,7 +381,7 @@ window.V2_DATA.projects = [
     "thumb": "images/projects/central-campus-thumb.jpg",
     "gallery": [
       {
-        "src": "images/projects/central-campus/Screenshot 2025-05-30 114432.png",
+        "src": "images/projects/central-campus/campus-cad-utility-asbuilt.png",
         "caption": "CAD Utility As-Built Drawing"
       },
       {
@@ -426,7 +426,7 @@ window.V2_DATA.projects = [
         "caption": "Lynnfield, MA Cemeteries Overview"
       },
       {
-        "src": "images/projects/lynnfield/Screenshot 2025-05-30 115155.png",
+        "src": "images/projects/lynnfield/lynnfield-arcgis-spatial-database.png",
         "caption": "Database and Spatial Features in ArcGIS Pro"
       }
     ],
@@ -464,7 +464,7 @@ window.V2_DATA.projects = [
         "caption": "Flood Zone & Traffic Network Analysis"
       },
       {
-        "src": "images/projects/evacuation/Screenshot 2025-05-30 114112.png",
+        "src": "images/projects/evacuation/evacuation-arcpy-route-script.png",
         "caption": "arcpy Evacuation Route Script"
       }
     ],
@@ -923,6 +923,8 @@ window.V2_DATA.projects = [
   },
   {
     "slug": "open-concord",
+    "role": "Solo build: I designed the PostGIS schema and layer-tagging model, wrote the {targets} ETL pipeline that acquires and normalizes all 165 layers, built the Shiny/mapgl frontend, and deployed the stack with Docker and Caddy on a self-hosted server.",
+    "outcome": "A working single-city geospatial data platform: 165 live layers queryable through one interface, reproducible end to end from public sources. The {targets} pipeline re-syncs the entire database on demand, and the same architecture generalizes to any municipality with open data endpoints.",
     "tier": "additional",
     "visibility": "additional",
     "kind": "project",

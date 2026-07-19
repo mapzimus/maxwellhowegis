@@ -7,6 +7,7 @@
     var NAV_LINKS = [
         { href: '/work/', label: 'Work', path: '/work/' },
         { href: '/about/', label: 'About', path: '/about/' },
+        { href: '/resume/', label: 'Resume', path: '/resume/' },
         { href: '/contact/', label: 'Contact', path: '/contact/' },
         { href: 'https://mapzimus.com', label: 'Mapzimus ↗', external: true, secondary: true }
     ];
@@ -15,6 +16,7 @@
         { href: '/', label: 'Home' },
         { href: '/work/', label: 'Work' },
         { href: '/about/', label: 'About' },
+        { href: '/resume/', label: 'Resume' },
         { href: '/contact/', label: 'Contact' },
         { href: 'https://mapzimus.com', label: 'Mapzimus', external: true },
         { href: 'https://github.com/mapzimus', label: 'GitHub', external: true }
