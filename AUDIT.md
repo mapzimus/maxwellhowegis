@@ -13,13 +13,21 @@ unique content of PRs #4/#15/#17/#36/#48 on branch
 `archive-unmerged-content-2026-07-02` (see `archive/README.md` there), and
 closed those PRs plus obsolete #37.
 
-**Owner action needed for the full shrink** — this session's proxy blocks
-ref deletion, so delete these in the GitHub UI (Code → Branches): the 22
-stale branches (`backup-pre-slim-2026-06-13`, `tappymaps-embed`,
-`bugwars-link-update`, all `claude/*`, all `improve/*`) right away, and
-`backup-pre-round6` after verifying the live site for a few days. Keep
-`main` and `archive-unmerged-content-2026-07-02`. Default clones drop to
-~80 MB once they're gone.
+**Branch cleanup done (2026-07-18).** 30 stale branches deleted (`git push
+origin --delete`, no proxy restriction this session): the 12 named in the
+original list, `backup-pre-round6` (live site verified stable for 16+
+days), and 17 more `claude/*`/`copilot/*` branches that had accumulated
+since the 2026-07-02 audit — each checked individually first (ahead-count
+vs. `main`, diff inspected for anything post-dating the July 16 v2→root
+promotion) before deletion; all were either pre-rewrite artifacts already
+covered by `archive-unmerged-content-2026-07-02` or superseded by shipped
+work. Two of these were open PRs (#87, #88), closed with an explanatory
+comment before their branches were removed. Remote now holds exactly
+`main`, `archive-unmerged-content-2026-07-02`, and `claude/portfolio-evict-fun-apps`
+(PR #93, open and intentionally gated — left alone). A fresh default clone
+is 223 MB, not the ~80 MB estimated here — real content (the v2 promotion,
+optimized images, the whydah rebuild) grew the repo in the 16 days between
+this audit and the cleanup, which is normal growth, not bloat.
 
 Still open (deferred): §1 quabbin submodule image verification and §7
 `bugwars`/`truescale` submodule bumps (need a session with access to those
