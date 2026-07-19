@@ -1107,7 +1107,7 @@ window.V2_DATA.projects = [
     "summary": "An interactive 3D globe built from 1,009 real North Shore Nostalgia shipments, with city-level geocoding, great-circle journeys, international handoffs, sales records, and a cumulative timeline.",
     "description": "The project turns several years of real eBay orders from North Shore Nostalgia into a public geographic story. A Python pipeline groups orders, generalizes destinations to city level, geocodes each city, calculates approximate great-circle distance, and writes a strict allow-listed public dataset. The MapLibre globe adds filters, expanded sales statistics, a cumulative timeline, and two-stage eBay International Shipping journeys when the source export includes both the Illinois handoff hub and the true destination. Older hub-only records are labeled honestly instead of guessing where they continued.",
     "role": "I designed the privacy model, built the Python data pipeline and tests, and developed the responsive MapLibre globe from real data from my own eBay business.",
-    "outcome": "The live map now shows 1,009 packages across 778 destination cities, including recovered international legs, while automated tests prevent names, addresses, order identifiers, tracking numbers, and other customer data from entering the published dataset.",
+    "outcome": "The live map now shows 1,009 packages across 783 destination cities, including recovered international legs, while automated tests prevent names, addresses, order identifiers, tracking numbers, and other customer data from entering the published dataset.",
     "tools": [
       "Python",
       "MapLibre GL JS",
