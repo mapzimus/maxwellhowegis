@@ -7,7 +7,7 @@
    - To override on THIS DEVICE only: Crew Quarters > Teacher Toolkit > Banner Control.
 */
 
-window.WHYDAH_FORCE = null; /* e.g. 6 forces Day 6 for everyone. null = automatic. */
+window.WHYDAH_FORCE = 9; /* FORCED to Day 9 (Sign the Articles) 2026-07-20: class is running a day ahead of the date grid. Set back to null once dates catch up, or bump as the class advances. */
 
 window.WHYDAH_DAYS = [
   { day: 2,  date: '2026-07-07', title: 'What Is a Map?',             url: 'day2.html' },
