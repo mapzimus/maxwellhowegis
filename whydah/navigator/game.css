@@ -1,4 +1,4 @@
-/* First Sail v2 — voyage roguelite. Self-contained, no external assets. */
+/* Whydah’s Voyage — voyage roguelite. Self-contained, no external assets. */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body {
   height: 100%;
@@ -54,6 +54,18 @@ html, body {
   width: clamp(66px, 17vw, 96px); height: clamp(66px, 17vw, 96px);
   border-color: rgba(224,178,92,.8);
   background: rgba(150,52,40,.5);
+}
+/* the powder-blast button only appears once the meter is charged */
+.btn.blast {
+  width: clamp(50px, 13vw, 74px); height: clamp(50px, 13vw, 74px);
+  border-color: rgba(255,210,74,.9);
+  background: rgba(120,70,180,.5);
+  display: none;
+}
+.btn.blast.ready { display: flex; animation: blastpulse .7s ease-in-out infinite; }
+@keyframes blastpulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,210,74,.6); transform: scale(1); }
+  50% { box-shadow: 0 0 14px 4px rgba(255,210,74,.5); transform: scale(1.06); }
 }
 #top-controls {
   position: fixed;
