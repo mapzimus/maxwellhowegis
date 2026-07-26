@@ -11,6 +11,21 @@ is the log of such changes.
 
 ---
 
+## 2026-07-26 — Retire the `whydah/` vendored copy entirely
+
+**What**: Deleted `whydah/` from this repo. whydahstory.com
+(`mapzimus/Whydah-Unit`) is the only Whydah site from now on; this site
+just links to it (`max/index.html`, `games/README.md`, `README.md`
+updated). `404.html` already forwards any `/whydah/*` deep link to the
+same path on whydahstory.com, which covers student bookmarks.
+
+**Why**: The two-repo "push both" sync kept drifting — the vendored
+`day-config.js` was live-serving a stale forced banner (Day 12, earlier
+Day 9) after upstream had moved on. One canonical site ends that bug
+class permanently.
+
+---
+
 ## 2026-07-15 — Sync `whydah/navigator/` to upstream v8
 
 **Files changed**: `whydah/navigator/game.js`, `game.css`, `README.md`
