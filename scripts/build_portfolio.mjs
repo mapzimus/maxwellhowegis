@@ -187,7 +187,7 @@ function build() {
       source: "work.html",
       output: path.join(repoRoot, "work", "index.html"),
       title: "Work — Maxwell Howe",
-      summary: "Ten selected Web GIS, spatial analysis, and data-product case studies by Maxwell Howe.",
+      summary: "Selected Web GIS, spatial analysis, and data-product case studies by Maxwell Howe.",
       canonical: `${siteUrl}/work/`,
       image: `${siteUrl}/images/projects/ma-atlas-preview.png`,
     },
@@ -214,7 +214,11 @@ function build() {
   }
 
   const caseStudies = projects.filter(
-    (project) => project.kind === "project" && ["featured", "graduate", "additional"].includes(project.tier),
+    (project) =>
+      project.kind === "project" &&
+      ["featured", "graduate", "additional"].includes(project.tier) &&
+      project.visibility !== "unlisted" &&
+      project.visibility !== "mapzimus",
   );
   const projectTemplate = read("project.html");
   for (const project of caseStudies) {
@@ -234,7 +238,11 @@ function build() {
   }
 
   // Case pages that once shipped under /work/ and later left the professional tiers.
-  const retiredCaseSlugs = new Map([["interstate-challenge", "https://mapzimus.com/"]]);
+  const retiredCaseSlugs = new Map([
+    ["interstate-challenge", "https://mapzimus.com/"],
+    ["pockettiles", "/work/"],
+    ["salem-photo-walk", "/work/"],
+  ]);
   for (const [slug, destination] of retiredCaseSlugs) {
     if (caseStudies.some((project) => project.slug === slug)) continue;
     write(path.join(repoRoot, "work", slug, "index.html"), redirectPage(destination));
@@ -285,9 +293,9 @@ function build() {
     ...caseStudies.map((project) => `${siteUrl}/work/${project.slug}/`),
   ]);
   for (const project of projects) {
-    // Demoted apps (visibility "mapzimus") stay hosted but leave the professional sitemap.
+    // Demoted / unlisted apps stay hosted but leave the professional sitemap.
     if (!["featured", "graduate", "additional"].includes(project.tier)) continue;
-    if (project.visibility === "mapzimus") continue;
+    if (project.visibility === "mapzimus" || project.visibility === "unlisted") continue;
     const live = project.links?.live;
     if (live && !/^https?:\/\//.test(live)) {
       const normalized = live.startsWith("/") ? live : `/${live}`;
