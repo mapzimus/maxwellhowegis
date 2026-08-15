@@ -522,6 +522,10 @@ window.V2_DATA.projects = [
       {
         "src": "images/projects/appalachians/mobile.png",
         "caption": "Mobile layout — bottom-sheet detail cards and a touch-friendly toolbar"
+      },
+      {
+        "src": "images/projects/figures/appalachians-live.jpg",
+        "caption": "Live explorer UI — geologic regions, trails, and mobile-ready layer controls"
       }
     ],
     "links": {
@@ -569,79 +573,43 @@ window.V2_DATA.projects = [
       "GDAL"
     ],
     "year": "2026",
-    "thumb": "quabbin/output/08_hero.png",
+    "thumb": "images/projects/quabbin/08_hero.png",
     "gallery": [
       {
-        "src": "quabbin/output/01_locator.png",
+        "src": "images/projects/quabbin/08_hero.png",
+        "caption": "Hero map — Quabbin Reservoir terrain with the four former Swift River Valley towns"
+      },
+      {
+        "src": "images/projects/quabbin/01_locator.png",
         "caption": "Locator — the Swift River Valley within Massachusetts"
       },
       {
-        "src": "quabbin/output/02_dem_hillshade.png",
-        "caption": "Terrain — the valley before the flood, DEM hillshade (terra)"
-      },
-      {
-        "src": "quabbin/output/03_reservoir_towns.png",
+        "src": "images/projects/quabbin/03_reservoir_towns.png",
         "caption": "Four towns under the water — Dana, Enfield, Greenwich & Prescott"
       },
       {
-        "src": "quabbin/output/04_watershed.png",
-        "caption": "The reservoir and its protected watershed (USGS WBD)"
-      },
-      {
-        "src": "quabbin/output/06_town_lifelines.png",
-        "caption": "Four lifelines, one ending — incorporation to 1938 disincorporation"
-      },
-      {
-        "src": "quabbin/output/07_population_decline.png",
+        "src": "images/projects/quabbin/07_population_decline.png",
         "caption": "Four towns, steadily emptying — decennial census, 1900–1920"
       },
       {
-        "src": "quabbin/output/11_crosssection.png",
-        "caption": "The drowned valley in cross-section, west to east"
-      },
-      {
-        "src": "quabbin/output/10_aqueduct.png",
+        "src": "images/projects/quabbin/10_aqueduct.png",
         "caption": "The aqueduct carrying the water ~105 km east to Boston"
       },
       {
-        "src": "quabbin/output/05_erasure.png",
-        "caption": "Erased from the map — how the former town land is divided today"
+        "src": "images/projects/quabbin/14_dana_lidar.jpg",
+        "caption": "Dana Common — 1 m bare-earth LiDAR where streets and cellar holes remain above the pool"
       },
       {
-        "src": "quabbin/output/13_terrain3d.png",
-        "caption": "The Swift River Valley in three dimensions"
+        "src": "images/projects/quabbin/15_prescott_lidar.jpg",
+        "caption": "Prescott Peninsula — LiDAR imprint of the drowned village street plan"
       },
       {
-        "src": "quabbin/output/12_losses.png",
-        "caption": "By the numbers — what the project erased"
+        "src": "images/projects/quabbin/24_prescott_survey.jpg",
+        "caption": "Prescott survey panel — historical street plan ground-truthed against LiDAR relief"
       },
       {
-        "src": "quabbin/output/16_roads.png",
-        "caption": "The roads the reservoir drowned — the pre-flood street network beneath the water"
-      },
-      {
-        "src": "quabbin/output/24_prescott_survey.png",
-        "caption": "Prescott Peninsula — the best-preserved imprint; roads and foundations legible in 1 m LiDAR"
-      },
-      {
-        "src": "quabbin/output/24_dana_survey.png",
-        "caption": "Dana — town map, LiDAR hillshade, and traced roads & cellar holes that stayed above water"
-      },
-      {
-        "src": "quabbin/output/24_enfield_survey.png",
-        "caption": "Enfield — the valley seat, now almost entirely beneath the reservoir"
-      },
-      {
-        "src": "quabbin/output/25_prescott_xref.png",
-        "caption": "Ground-truth — 1893 USGS roads cross-referenced against the LiDAR traces"
-      },
-      {
-        "src": "quabbin/output/09_floodfill.png",
-        "caption": "Filling the reservoir in equal-area stages — schematic synthetic basin (small multiples)"
-      },
-      {
-        "src": "quabbin/output/quabbin_floodfill.gif",
-        "caption": "Animation — the reservoir filling to its 1946 full pool (schematic, not surveyed bathymetry)"
+        "src": "images/projects/quabbin/quabbin_floodfill.gif",
+        "caption": "Animation — schematic reservoir filling to the 1946 full pool"
       }
     ],
     "links": {
@@ -683,6 +651,10 @@ window.V2_DATA.projects = [
     "year": "2026",
     "thumb": "images/projects/ma-atlas-preview.png",
     "gallery": [
+      {
+        "src": "images/projects/figures/ma-atlas-live.jpg",
+        "caption": "Live atlas interface — layer panel, classification controls, and sticky detail panel"
+      },
       {
         "src": "images/projects/ma-atlas/high-needs.jpg",
         "caption": "% High Needs by town — one of 380+ mapped metrics, Fisher-Jenks natural breaks"
@@ -733,7 +705,7 @@ window.V2_DATA.projects = [
       "Real-time APIs"
     ],
     "summary": "Antipodal observation system — click anywhere on Earth and see what's on the exact opposite side. Live weather, recent earthquakes, satellites overhead, internet radio playing right now, ISS position, Mapillary photos, and 15+ more data layers. Plus 'Your Personal Equator' — the great circle of cities exactly equidistant from you and your antipode.",
-    "description": "Geopuesto started as a one-line antipode calculator and grew into a full-screen geographic discovery tool. A map click, coordinate, search, or current location produces the antipode and adds context from public services: reference material, imagery, weather, air quality, daylight, earthquakes, volcanoes, aircraft, vessels, satellites, radio, and street-level photos. The Personal Equator module draws the great circle perpendicular to the antipodal axis and finds cities that are approximately equidistant from the selected point and its antipode.",
+    "description": "Geopuesto started as a one-line antipode calculator and grew into a full-screen geographic discovery tool. A map click, coordinate, search, or current location produces the antipode and adds context from public services: reference material, imagery, weather, air quality, daylight, earthquakes, volcanoes, aircraft, vessels, satellites, radio, and street-level photos. The Personal Equator module draws the great circle perpendicular to the antipodal axis and finds cities that are approximately equidistant from the selected point and its antipode — for Salem, MA that ring samples a 33,000-city dataset down to population centers within 100 km of the equator. A sibling Playground lab exposes the spherical-geometry kernel: two-point orthodromes, polyhedra on the sphere, and curve suites.",
     "tools": [
       "JavaScript",
       "Leaflet",
@@ -752,7 +724,25 @@ window.V2_DATA.projects = [
     "links": {
       "live": "geopuesto/",
       "repo": "https://github.com/mapzimus/geopuesto"
-    }
+    },
+    "gallery": [
+      {
+        "src": "images/projects/figures/geopuesto-overview.jpg",
+        "caption": "Landing view — dual-origin/target globe with quick-pick antipodal city pairs"
+      },
+      {
+        "src": "images/projects/figures/geopuesto-active.jpg",
+        "caption": "Active observation — Wellington selected; origin and antipode coordinates locked with swap controls"
+      },
+      {
+        "src": "images/gallery/salem-antipodal-ring.png",
+        "caption": "Salem's Personal Equator — great-circle ring of cities equidistant from Salem and its Indian Ocean antipode"
+      },
+      {
+        "src": "images/projects/geopuesto-thumb.png",
+        "caption": "Earlier interface state with split origin/target map panels"
+      }
+    ]
   },
   {
     "slug": "lynn-data-dive",
@@ -790,7 +780,21 @@ window.V2_DATA.projects = [
     "thumb": "images/projects/lynn-data-dive-thumb.png",
     "links": {
       "live": "/lynndata/"
-    }
+    },
+    "gallery": [
+      {
+        "src": "images/projects/figures/lynn-data-dive-dashboard.jpg",
+        "caption": "Dashboard home — nested School / District / City entry points with headline enrollment and ELL rates"
+      },
+      {
+        "src": "images/projects/figures/lynn-data-dive-maps.jpg",
+        "caption": "Lynn Maps — municipality choropleth for % English Learner with every Lynn school pinned"
+      },
+      {
+        "src": "images/projects/lynn-data-dive-thumb.png",
+        "caption": "Map explorer with Jenks classification, year animation, and dual-metric comparison controls"
+      }
+    ]
   },
   {
     "slug": "geopuesto-playground",
@@ -851,7 +855,7 @@ window.V2_DATA.projects = [
       "GIS App"
     ],
     "summary": "A web-based GIS application for map design — drag, color, and export custom maps. Includes geography games and a sharing gallery. Live at tappymaps.com.",
-    "description": "TappyMaps is a web-based GIS application built around three pillars: map designer, geography games, and a sharing gallery. The map designer lets users build and style custom maps using geographic data — no desktop GIS software required. Geography games add an educational layer. Finished maps can be exported and shared. Part of the Mapparatus organization umbrella.",
+    "description": "TappyMaps is a browser-native map design and geography-games suite for the United States. The designer lets anyone tap states or counties, build a legend, and export a finished map without desktop GIS software. Companion games — Find the State, Stat Duel, and GeoDraft — turn the same geography into short classroom-friendly challenges. A sharing gallery collects finished cards so maps can travel beyond the editor. Built as an independent product under the Mapparatus umbrella and live at tappymaps.com.",
     "tools": [
       "JavaScript",
       "GeoJSON",
@@ -862,8 +866,20 @@ window.V2_DATA.projects = [
     "thumb": "images/projects/tappymaps-logo.png",
     "gallery": [
       {
+        "src": "images/projects/figures/tappymaps-home.jpg",
+        "caption": "tappymaps.com home — Create a map and Play games entry points over a colored US base"
+      },
+      {
         "src": "images/gallery/tappymaps-uninsured-rate.png",
         "caption": "Demo card — US uninsured rate by state (5 quantile bins, 2023 Census), rendered as a shareable TappyMaps card"
+      },
+      {
+        "src": "images/gallery/us-states.jpg",
+        "caption": "Contiguous United States reference map — labeled states with neatline, north arrow, and scale"
+      },
+      {
+        "src": "images/gallery/us-capitals.jpg",
+        "caption": "US capitals reference map produced with the same cartographic toolkit"
       }
     ],
     "links": {
@@ -915,11 +931,17 @@ window.V2_DATA.projects = [
       {
         "src": "images/gallery/optitrek-osrm-proof.png",
         "caption": "OSRM Western Parks proof — 8 parks, 2,800 mi over 8 legs, routed against a self-hosted US OSRM extract"
+      },
+      {
+        "src": "images/projects/figures/interstate-challenge-live.jpg",
+        "caption": "Sequential Interstate Challenge — interactive A-vs-B map comparing numerical order against the Optitrek-optimized route"
       }
     ],
     "links": {
       "repo": "https://github.com/mapzimus/optitrek"
-    }
+    },
+    "role": "I designed the optimization problem, built the PostGIS + OSRM data layer, implemented the OR-Tools constrained TSP solvers, and published the Sequential Interstate Challenge as the first public test case.",
+    "outcome": "Phase 1 data ingest is live with 466 NPS units in PostGIS. Solver phases are unit-tested, and the Interstate Challenge test case cut connector driving time 86% versus strict numerical order (73,360 minutes down to 10,277)."
   },
   {
     "slug": "open-concord",
@@ -959,11 +981,27 @@ window.V2_DATA.projects = [
       "Caddy"
     ],
     "year": "2025–2026",
-    "thumb": "images/projects/open-concord-thumb.svg",
+    "thumb": "images/projects/open-concord-thumb.png",
     "links": {
       "live": "concord.html",
       "repo": "https://github.com/mapzimus/open-concord-nh"
-    }
+    },
+    "role": "I designed the platform architecture, authored the {targets} ETL for 165 public layers, stood up PostGIS, and built the MapLibre/Shiny explorer used to query and inspect the data.",
+    "outcome": "Concord, NH now has a self-hosted open GIS stack — city, federal, Census, health, environmental, and knowledge layers in one searchable map with attribute inspection and export.",
+    "gallery": [
+      {
+        "src": "images/projects/open-concord-thumb.png",
+        "caption": "Open Concord concept card — 165 layers over PostGIS for Concord, NH"
+      },
+      {
+        "src": "images/projects/figures/open-concord-live.jpg",
+        "caption": "Project write-up — stack overview spanning R, PostGIS, MapLibre, and Shiny"
+      },
+      {
+        "src": "images/projects/figures/open-concord-architecture.jpg",
+        "caption": "Architecture section — system design for the ETL → database → explorer pipeline"
+      }
+    ]
   },
   {
     "slug": "transit",
@@ -1029,7 +1067,7 @@ window.V2_DATA.projects = [
   {
     "slug": "pockettiles",
     "tier": "additional",
-    "visibility": "additional",
+    "visibility": "unlisted",
     "kind": "project",
     "era": "current",
     "status": "live",
@@ -1062,7 +1100,7 @@ window.V2_DATA.projects = [
   {
     "slug": "salem-photo-walk",
     "tier": "additional",
-    "visibility": "additional",
+    "visibility": "unlisted",
     "kind": "project",
     "era": "current",
     "status": "live",
@@ -1107,7 +1145,7 @@ window.V2_DATA.projects = [
     "summary": "A privacy-conscious spatial business analysis of 1,035 real North Shore Nostalgia orders, combining an interactive globe with shipment, console, temporal, and aggregate sales patterns.",
     "description": "The North Shore Nostalgia Sales Atlas converts several years of eBay order history into a public business-geography case study. A Python pipeline groups orders, generalizes destinations to city and town centroids, geocodes each community, calculates estimated great-circle distance, and writes a strict allow-listed dataset. I rendered the route network with Globe Maps, a custom MapLibre mapping skill I authored for three-dimensional route projects; it shaped the projection, atmosphere, style-load sequencing, densified great-circle geometry, antimeridian handling, selection behavior, and testing approach. The dashboard combines platform, destination, period, and title filters with console rankings, temporal playback, international handoffs, and privacy-safe aggregate sales indicators.",
     "role": "I designed the privacy model, authored the Globe Maps skill, built the Python processing and test pipeline, and developed the responsive MapLibre interface from real data from my own eBay business.",
-    "outcome": "The published atlas maps 1,035 orders across 800 destination communities, identifies Nintendo GameCube as the highest-grossing console in the available export and PlayStation 2 as the highest-volume console, and represents recovered international and military-mail destinations without exposing customer information.",
+    "outcome": "The published atlas maps 1,000+ known orders across 800+ destination communities, identifies Nintendo GameCube as the highest-grossing console in the available export and PlayStation 2 as the highest-volume console, and represents recovered international and military-mail destinations without exposing customer information.",
     "tools": [
       "Python",
       "MapLibre GL JS",
@@ -1118,11 +1156,25 @@ window.V2_DATA.projects = [
       "GitHub Actions"
     ],
     "year": "2026",
-    "thumb": "images/projects/where-games-go-thumb.png?v=map-4",
+    "thumb": "images/projects/where-games-go-thumb.png",
     "links": {
       "live": "https://mapzimus.github.io/where-the-games-go/",
       "repo": "https://github.com/mapzimus/where-the-games-go"
-    }
+    },
+    "gallery": [
+      {
+        "src": "images/projects/figures/ebay-packages-globe.jpg",
+        "caption": "Interactive 3D globe — estimated routes from Salem to destination communities and international hubs"
+      },
+      {
+        "src": "images/projects/where-games-go-thumb.png",
+        "caption": "Globe detail — dispatch origin, order destinations, and eBay processing-hub continuations"
+      },
+      {
+        "src": "images/projects/ebay-packages-preview.png",
+        "caption": "Atlas intro — business-geography framing for North Shore Nostalgia sales from Salem, MA"
+      }
+    ]
   },
   {
     "slug": "concord-war",
@@ -1194,7 +1246,7 @@ window.V2_DATA.projects = [
     "tier": "featured",
     "visibility": "featured",
     "role": "I integrated the transit, aircraft, vessel, bike-share, and traffic feeds and designed the client-side MapLibre rendering and update logic.",
-    "outcome": "The result is one live, backend-free view of transportation moving through the Boston region.",
+    "outcome": "The result is one live, backend-free view of transportation moving through the Boston region — routinely 1,000+ vehicles across subway, bus, rail, ferry, Amtrak, and aircraft layers.",
     "kind": "project",
     "era": "current",
     "status": "live",
@@ -1224,6 +1276,16 @@ window.V2_DATA.projects = [
       "aisstream.io",
       "Bluebikes GBFS",
       "TomTom"
+    ],
+    "gallery": [
+      {
+        "src": "images/projects/figures/boston-in-motion-live.jpg",
+        "caption": "Live telemetry map — MBTA lines, ferries, Amtrak, and aircraft with per-layer vehicle counts"
+      },
+      {
+        "src": "images/projects/boston-in-motion-preview.png",
+        "caption": "Layer panel — subway, commuter rail, bus, ferry, Amtrak, ADS-B, AIS, and Bluebikes toggles"
+      }
     ]
   },
   {
