@@ -1,16 +1,5 @@
 // ===== ABOUT — PRODUCTS & TEACHING STRIP =====
-// Four live ventures as cards; the full roster (boards, in-dev work) stays on mapzimus.com.
+// Kept for local preview of ventures data; About no longer mounts a venture strip.
 (function () {
     'use strict';
-    var R = window.V2_RENDER;
-    var ventures = window.V2_DATA.ventures;
-
-    // Teaching-adjacent platforms only — product side projects stay off the About spotlight.
-    var STRIP = ['whydahstory', 'lehsmath'];
-
-    var items = STRIP.map(function (slug) {
-        return ventures.find(function (v) { return v.slug === slug; });
-    }).filter(Boolean);
-
-    R.renderGrid(document.getElementById('ventureStrip'), items, {});
 })();
