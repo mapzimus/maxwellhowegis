@@ -7,19 +7,20 @@
 
     // One active build keeps the homepage current without turning it into a backlog.
     var BUILDING = [
-        { label: 'Finishing Howe2Math for grades 8–11', href: 'https://howe2math.com', state: 'dev' }
+        { label: 'Building Optitrek — NPS road-trip optimizer', href: '/work/optitrek/', state: 'dev' }
     ];
     document.getElementById('buildingStrip').innerHTML = BUILDING.map(function (b) {
         var inner = '<span class="dot dot-' + b.state + '"></span>' + esc(b.label);
         return b.href
-            ? '<a class="building-pill" href="' + esc(b.href) + '" target="_blank" rel="noopener">' + inner + '</a>'
+            ? '<a class="building-pill" href="' + esc(b.href) + '"' +
+                (/^https?:/.test(b.href) ? ' target="_blank" rel="noopener"' : '') + '>' + inner + '</a>'
             : '<span class="building-pill">' + inner + '</span>';
     }).join('');
 
-    // Eight recent projects define the professional portfolio.
+    // Selected recent GIS projects define the professional portfolio.
     var FEATURED = [
         'ma-atlas', 'quabbin', 'boston-in-motion', 'geopuesto',
-        'appalachians', 'lynn-data-dive', 'tappymaps', 'ebay-packages'
+        'appalachians', 'lynn-data-dive', 'ebay-packages'
     ];
     var featured = FEATURED.map(function (s) {
         return all.find(function (p) { return p.slug === s; });

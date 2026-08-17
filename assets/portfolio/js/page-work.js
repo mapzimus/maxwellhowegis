@@ -6,10 +6,10 @@
 
     var FEATURED = [
         'ma-atlas', 'quabbin', 'boston-in-motion', 'geopuesto',
-        'appalachians', 'lynn-data-dive', 'tappymaps', 'ebay-packages'
+        'appalachians', 'lynn-data-dive', 'ebay-packages'
     ];
     var GRADUATE = ['salem-pantry', 'lynn-absenteeism'];
-    var ADDITIONAL = ['optitrek', 'open-concord'];
+    var ADDITIONAL = ['optitrek', 'open-concord', 'tappymaps'];
 
     function ordered(slugs) {
         return slugs.map(function (slug) {

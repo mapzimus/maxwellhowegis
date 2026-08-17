@@ -838,8 +838,7 @@ window.V2_DATA.projects = [
   },
   {
     "slug": "tappymaps",
-    "tier": "featured",
-    "visibility": "featured",
+    "visibility": "additional",
     "role": "I designed and built the browser-native map editor, export workflow, and supporting map games as an independent product.",
     "outcome": "TappyMaps gives non-GIS users a lightweight way to color, label, and export U.S. state and county maps without desktop software.",
     "kind": "project",
@@ -884,7 +883,8 @@ window.V2_DATA.projects = [
     ],
     "links": {
       "live": "https://tappymaps.com"
-    }
+    },
+    "tier": "additional"
   },
   {
     "slug": "optitrek",
