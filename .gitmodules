@@ -10,3 +10,6 @@
 [submodule "quabbin"]
 	path = quabbin
 	url = https://github.com/mapzimus/quabbin.git
+[submodule "lidar-test"]
+	path = lidar-test
+	url = https://github.com/mapzimus/ground-truth.git

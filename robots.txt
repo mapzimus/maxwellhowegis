@@ -3,3 +3,4 @@ Allow: /
 Disallow: /src/
 
 Sitemap: https://maxwellhowegis.com/sitemap.xml
+Sitemap: https://maxwellhowegis.com/lidar-test/sitemap.xml
