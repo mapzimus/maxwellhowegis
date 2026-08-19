@@ -1,0 +1,43 @@
+name: Sync lidar-test submodule
+
+on:
+  repository_dispatch:
+    types: [ground-truth-push]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: sync-lidar-test
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump submodule to latest ground-truth main
+        id: bump
+        run: |
+          git submodule update --init --remote --depth 1 lidar-test
+          if git diff --quiet -- lidar-test; then
+            echo "Already up to date."
+          else
+            sha=$(git -C lidar-test rev-parse --short HEAD)
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -am "Sync lidar-test to ground-truth $sha"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Trigger Pages deploy
+        # Commits made with GITHUB_TOKEN don't fire the push-triggered
+        # pages workflow, so kick it explicitly.
+        if: steps.bump.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml -R "$GITHUB_REPOSITORY"
