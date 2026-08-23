@@ -5,7 +5,7 @@
     var all = window.V2_DATA.projects;
 
     var FEATURED = [
-        'lidar-site-studies', 'ma-atlas', 'quabbin', 'boston-in-motion',
+        'lidar-site-studies', 'ma-atlas', 'quabbin', 'new-england-in-motion',
         'geopuesto', 'appalachians', 'lynn-data-dive', 'ebay-packages'
     ];
     var GRADUATE = ['salem-pantry', 'lynn-absenteeism'];

@@ -1246,49 +1246,59 @@ window.V2_DATA.projects = [
     "links": {}
   },
   {
-    "slug": "boston-in-motion",
+    "slug": "new-england-in-motion",
     "tier": "featured",
     "visibility": "featured",
-    "role": "I integrated the transit, aircraft, vessel, bike-share, and traffic feeds and designed the client-side MapLibre rendering and update logic.",
-    "outcome": "The result is one live, backend-free view of transportation moving through the Boston region — routinely 1,000+ vehicles across subway, bus, rail, ferry, Amtrak, and aircraft layers.",
+    "role": "I built the whole system: the MapLibre frontend and its region filter, the Cloudflare Worker gateway and separate Vercel aircraft relay, the GTFS/GTFS-realtime normalizers for every agency feed, the build-time route-snapshot pipeline, and the geometry checks that keep a bad feed update from shipping.",
+    "outcome": "One live map of movement across all six New England states — live MBTA and regional agency vehicles, estimated Metro-North trains, Amtrak, aircraft, AIS vessels, shared mobility, work zones, incidents, and cameras — filterable to Boston, a single state, or the whole region, with every feature labeled by how much it is actually known.",
     "kind": "project",
     "era": "current",
     "status": "live",
-    "title": "Boston in Motion",
+    "title": "New England in Motion",
     "category": "Web Mapping",
     "type": "map",
     "tags": [
-      "MBTA V3 API",
       "MapLibre GL JS",
+      "GTFS-realtime",
+      "Cloudflare Workers",
       "Real-time",
       "ADS-B",
-      "AIS"
+      "AIS",
+      "New England"
     ],
-    "summary": "One live map of everything moving through Boston — subway, commuter rail, ~150 bus routes, ferries, Amtrak, aircraft over Logan, harbor traffic via AIS, and Bluebikes fill levels — polled or streamed straight into the browser. No backend at all.",
+    "summary": "One live map of transportation moving across all six New England states — transit, Amtrak, ferries, aircraft, harbor vessels, shared bikes and scooters, work zones, incidents, and traffic cameras. Start on Boston, switch to a state, or zoom out to the whole region.",
     "year": "2026",
-    "thumb": "images/projects/boston-in-motion-preview.png",
+    "thumb": "images/projects/new-england-in-motion-preview.jpg",
     "links": {
       "live": "https://mapzimus.github.io/Motion/",
       "repo": "https://github.com/mapzimus/Motion"
     },
-    "description": "A single dark MapLibre map of everything in motion in and around Boston, live. The entire MBTA fleet (~500–900 vehicles) arrives in one /vehicles request every 10 seconds and is classified into layers client-side: subway (with the Silver Line riding alongside, because no Boston rapid-transit map is complete without it), commuter rail, buses, and ferries. Amtrak positions come from the community Amtraker API, aircraft within 30 nm of Logan from airplanes.live ADS-B, live harbor traffic from an aisstream.io WebSocket, Bluebikes station fill from GBFS, and road congestion from TomTom flow tiles. Everything renders in the browser — no backend at all.",
+    "description": "Started as Boston in Motion — one dark MapLibre map of the MBTA fleet, aircraft over Logan, and harbor traffic, rendered entirely in the browser. It now covers Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont, and the interesting work was in what expanding honestly required. Region selection is geographic, not nominal: live points are clipped against generalized 2025 Census TIGERweb boundaries, so \"Boston,\" each state, and \"All New England\" are real spatial filters rather than guesses at agency names. Every feature carries a provenance label — live, estimated, scheduled, or reference — so a published timetable never masquerades as a moving vehicle. Live positions come from the MBTA V3 API every 10 seconds and from regional agency GTFS-realtime feeds (CTtransit, HARTransit, Norwalk, River Valley, RIPTA, Portland METRO, Island Explorer, PVTA, Advance Transit, and Vermont's Swiftly-authorized providers) every 20; Metro-North's New Haven, New Canaan, Danbury, and Waterbury trains are interpolated between MTA trip-update predictions and labeled as estimated, because the MTA publishes predictions rather than train GPS. Around that sit Amtrak (official GTFS for schedules, the Amtraker community API for live trains), ADS-B aircraft from ADSB.lol with adsb.fi failover, AISStream harbor and coastal vessels over a protected WebSocket relay, GBFS shared bikes and scooters, WZDx work zones, 511 and CTroads incidents, public traffic cameras, and congestion tiles. A build-time snapshot adds 1,098 bus, rail, ferry, passenger-boat, and air-service routes assembled from 70 GTFS sources and 85 official-service corridors, 53 on-demand and microtransit service markers, 778 FAA landing facilities, 38 Canadian border crossings, TIGERweb primary roads, and the FRA rail network, so an agency that publishes only a timetable still appears instead of looking dead. Where an intercity GTFS file ships only terminal stops, gaps over 20 km are repaired at build time against a cached OSRM road path, labeled approximate, and never fetched from a visitor's browser. Ferry geometry is audited against the full-resolution GSHHG shoreline and TIGERweb hydrography, with coordinate fingerprints locked by a geometry check so no feed update can quietly restore a route that crosses land. The frontend is still plain HTML, CSS, and JavaScript, but \"no backend at all\" no longer holds: both public ADS-B providers block Cloudflare's shared Worker egress and send no browser CORS headers, so aircraft go through a separate Vercel Function relay with stale-while-revalidate caching, while a TypeScript Cloudflare Worker gateway fronts the agency, 511, camera, and AIS feeds and keeps provider keys out of the page entirely.",
     "tools": [
       "MapLibre GL JS",
+      "Cloudflare Workers",
+      "Vercel Functions",
+      "TypeScript",
+      "GTFS / GTFS-realtime",
       "MBTA V3 API",
+      "MTA GTFS-RT",
       "Amtraker",
-      "airplanes.live",
-      "aisstream.io",
-      "Bluebikes GBFS",
-      "TomTom"
+      "ADSB.lol",
+      "AISStream",
+      "GBFS",
+      "WZDx",
+      "Census TIGERweb",
+      "OSRM",
+      "Vitest"
     ],
     "gallery": [
       {
-        "src": "images/projects/figures/boston-in-motion-live.jpg",
-        "caption": "Live telemetry map — MBTA lines, ferries, Amtrak, and aircraft with per-layer vehicle counts"
+        "src": "images/projects/new-england-in-motion/boston-live.jpg",
+        "caption": "The Boston view — MBTA lines, ferries, Amtrak, and aircraft, the region the map still opens on"
       },
       {
-        "src": "images/projects/boston-in-motion-preview.png",
-        "caption": "Layer panel — subway, commuter rail, bus, ferry, Amtrak, ADS-B, AIS, and Bluebikes toggles"
+        "src": "images/projects/new-england-in-motion/boston-harbor.jpg",
+        "caption": "Rapid transit, commuter rail, and harbor routes over Boston Harbor at closer zoom"
       }
     ]
   },

@@ -141,9 +141,20 @@ function redirectPage(destination, title = "Page moved") {
 </html>\n`;
 }
 
+// Case pages that once shipped under /work/ and later left the professional
+// tiers or were renamed. Each keeps a redirect stub and a ?id= route.
+const retiredCaseSlugs = new Map([
+  ["interstate-challenge", "https://mapzimus.com/"],
+  ["open-concord", "/work/"],
+  ["boston-in-motion", "/work/new-england-in-motion/"],
+  ["pockettiles", "/work/"],
+  ["salem-photo-walk", "/work/"],
+]);
+
 function buildCompatibilityPage(projects) {
-  const routes = Object.fromEntries(
-    projects.map((project) => {
+  const routes = Object.fromEntries([
+    ...retiredCaseSlugs,
+    ...projects.map((project) => {
       if (["featured", "graduate", "additional"].includes(project.tier)) {
         return [project.slug, `/work/${project.slug}/`];
       }
@@ -153,7 +164,7 @@ function buildCompatibilityPage(projects) {
       const live = project.links?.live;
       return [project.slug, live && !/^https?:\/\//.test(live) ? `/${live.replace(/^\//, "")}` : (live || "/work/")];
     }),
-  );
+  ]);
   const encoded = JSON.stringify(routes).replaceAll("<", "\\u003c");
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -237,13 +248,6 @@ function build() {
     );
   }
 
-  // Case pages that once shipped under /work/ and later left the professional tiers.
-  const retiredCaseSlugs = new Map([
-    ["interstate-challenge", "https://mapzimus.com/"],
-    ["open-concord", "/work/"],
-    ["pockettiles", "/work/"],
-    ["salem-photo-walk", "/work/"],
-  ]);
   for (const [slug, destination] of retiredCaseSlugs) {
     if (caseStudies.some((project) => project.slug === slug)) continue;
     write(path.join(repoRoot, "work", slug, "index.html"), redirectPage(destination));
