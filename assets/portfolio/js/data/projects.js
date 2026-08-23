@@ -8,6 +8,70 @@
 window.V2_DATA = window.V2_DATA || {};
 window.V2_DATA.projects = [
   {
+    "slug": "lidar-site-studies",
+    "tier": "featured",
+    "visibility": "featured",
+    "kind": "project",
+    "era": "current",
+    "status": "live",
+    "title": "Lidar Site Studies",
+    "category": "Terrain Intelligence",
+    "type": "map",
+    "tags": [
+      "Lidar",
+      "Terrain Analysis",
+      "GDAL / WhiteboxTools",
+      "Earthwork Modeling",
+      "MassGIS",
+      "Site Selection"
+    ],
+    "summary": "Planning-level terrain intelligence for wooded Massachusetts land \u2014 four public-data case studies that show what bare-earth lidar reveals under the canopy, and what that changes about siting, drainage, access, and earthwork cost.",
+    "description": "A camera sees treetops; lidar sees the ground. On wooded parcels that gap decides the budget, because a surface reconstructed from photographs counts the canopy as dirt. Lidar Site Studies is a four-part demonstration built entirely from public Massachusetts lidar, imagery, parcel records, and mapped wetlands, run through one repeatable screen: bare-earth DTM and canopy-surface DSM hillshades, a canopy height model, flow accumulation and a terrain wetness screen, slope and roughness, viewsheds, access-grade road profiles, and cut/fill earthwork against a conceptual pad. Devens compares the modeled ground against the campus that was actually built there, and shows the canopy hiding $5.6M of earthwork that never existed. Middleborough takes flat-looking wooded land and finds terrain wetness the mapped wetland layers miss, leaving 175 of 441 acres through the screen. Hopkinton places the same 16.3-acre pad three ways on one parcel and prices each \u2014 the same building lands $2.5M apart on terrain alone, and the ranking holds across the full $10\u2013$40/yd\u00b3 unit-cost range. The I-495 corridor study runs every vacant parcel over ten acres within a mile of the highway across nine towns through the same screen: 54 in, 14 out, before anyone flies anything. The site publishes its method, sources, and limits alongside the results, states plainly that these are planning-level comparisons rather than surveys, delineations, or engineering products, and ships a dependency-free validation script and the scoring code that grades the depression and wetness screens against state vernal pool and DEP wetland data.",
+    "tools": [
+      "MassGIS Lidar",
+      "GDAL",
+      "WhiteboxTools",
+      "Python",
+      "Leaflet",
+      "GeoJSON",
+      "Vanilla JS"
+    ],
+    "year": "2026",
+    "thumb": "images/projects/lidar-site-studies-thumb.jpg",
+    "links": {
+      "live": "lidar-test/",
+      "repo": "https://github.com/mapzimus/ground-truth"
+    },
+    "role": "I scoped the service concept, assembled the public lidar and parcel data, built the terrain pipeline (hillshades, canopy height, wetness and depression screens, viewsheds, access profiles, cut/fill), ran the four case studies, and designed and wrote the site that presents them.",
+    "outcome": "Four studies that turn terrain into a decision: a canopy-driven $5.6M earthwork error caught at Devens, 441 acres screened down to 175 at Middleborough, a $2.5M pad-siting spread at Hopkinton, and a 54-parcel corridor list cut to 14 \u2014 all reproducible from free public data.",
+    "gallery": [
+      {
+        "src": "images/projects/lidar-site-studies/canopy-surface.jpg",
+        "caption": "Treetop surface \u2014 roughly what a camera reconstructs when leaves hide the ground"
+      },
+      {
+        "src": "images/projects/lidar-site-studies/bare-earth.jpg",
+        "caption": "Bare-earth lidar of the same parcel \u2014 the ridge, the drainage, and the buildable ground appear"
+      },
+      {
+        "src": "images/projects/lidar-site-studies/devens.jpg",
+        "caption": "Devens \u2014 canopy height model over the parcel later built as the Commonwealth Fusion campus"
+      },
+      {
+        "src": "images/projects/lidar-site-studies/middleborough.jpg",
+        "caption": "Middleborough \u2014 terrain wetness against mapped wetlands; 175 of 441 acres survive the screen"
+      },
+      {
+        "src": "images/projects/lidar-site-studies/hopkinton-pads.jpg",
+        "caption": "Hopkinton \u2014 three candidate pads for one building, each priced by modeled earthwork"
+      },
+      {
+        "src": "images/projects/lidar-site-studies/i495-corridor.jpg",
+        "caption": "I-495 corridor \u2014 54 screened parcels across nine towns, 14 worth deeper diligence"
+      }
+    ]
+  },
+  {
     "slug": "lynn-absenteeism",
     "tier": "graduate",
     "visibility": "featured",
@@ -942,66 +1006,6 @@ window.V2_DATA.projects = [
     },
     "role": "I designed the optimization problem, built the PostGIS + OSRM data layer, implemented the OR-Tools constrained TSP solvers, and published the Sequential Interstate Challenge as the first public test case.",
     "outcome": "Phase 1 data ingest is live with 466 NPS units in PostGIS. Solver phases are unit-tested, and the Interstate Challenge test case cut connector driving time 86% versus strict numerical order (73,360 minutes down to 10,277)."
-  },
-  {
-    "slug": "open-concord",
-    "tier": "additional",
-    "visibility": "additional",
-    "kind": "project",
-    "era": "current",
-    "status": "development",
-    "title": "Open Concord, NH",
-    "category": "GIS Data Platform",
-    "type": "map",
-    "tags": [
-      "R",
-      "PostGIS",
-      "MapLibre GL",
-      "Shiny",
-      "targets",
-      "ETL Pipeline",
-      "165 Layers"
-    ],
-    "summary": "Full-stack R + PostGIS geospatial data platform for Concord, NH — 165 layers from city ArcGIS, federal, OSM, Census, CDC, EPA, biodiversity, and knowledge APIs, explored through a rich interactive Shiny map.",
-    "description": "A complete, self-hosted GIS data platform for Concord, NH built entirely in R. A {targets} ETL pipeline acquires every public dataset — city ArcGIS (~91 layers: parcels, zoning, roads, utilities), federal/state ArcGIS, OpenStreetMap, US Census ACS 2023, CDC PLACES health indicators, EPA FRS, USGS streamgages, GBIF biodiversity, and Wikidata/Wikipedia — loading each into PostGIS tagged as map+db or db. The R Shiny frontend (bslib + mapgl) queries PostGIS live with four panels: a searchable layer accordion, a thematic choropleth picker (ACS income/population/rent, CDC mental health), analysis tools (Nominatim geocoder, SQL filter, draw-to-measure, GeoJSON/CSV export), and a Knowledge tab with Wikidata facts and notable people. Click any feature → right-panel inspector with full attributes and Wikipedia links.",
-    "tools": [
-      "R",
-      "PostGIS",
-      "Shiny",
-      "bslib",
-      "mapgl",
-      "MapLibre GL",
-      "targets",
-      "sf",
-      "arcgislayers",
-      "tidycensus",
-      "osmdata",
-      "httr2",
-      "Docker",
-      "Caddy"
-    ],
-    "year": "2025–2026",
-    "thumb": "images/projects/open-concord-thumb.png",
-    "links": {
-      "live": "concord.html",
-      "repo": "https://github.com/mapzimus/open-concord-nh"
-    },
-    "role": "I designed the platform architecture, authored the {targets} ETL for 165 public layers, stood up PostGIS, and built the MapLibre/Shiny explorer used to query and inspect the data.",
-    "outcome": "Concord, NH now has a self-hosted open GIS stack — city, federal, Census, health, environmental, and knowledge layers in one searchable map with attribute inspection and export.",
-    "gallery": [
-      {
-        "src": "images/projects/open-concord-thumb.png",
-        "caption": "Open Concord concept card — 165 layers over PostGIS for Concord, NH"
-      },
-      {
-        "src": "images/projects/figures/open-concord-live.jpg",
-        "caption": "Project write-up — stack overview spanning R, PostGIS, MapLibre, and Shiny"
-      },
-      {
-        "src": "images/projects/figures/open-concord-architecture.jpg",
-        "caption": "Architecture section — system design for the ETL → database → explorer pipeline"
-      }
-    ]
   },
   {
     "slug": "transit",

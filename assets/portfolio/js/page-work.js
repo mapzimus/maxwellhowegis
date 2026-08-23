@@ -5,11 +5,11 @@
     var all = window.V2_DATA.projects;
 
     var FEATURED = [
-        'ma-atlas', 'quabbin', 'boston-in-motion', 'geopuesto',
-        'appalachians', 'lynn-data-dive', 'ebay-packages'
+        'lidar-site-studies', 'ma-atlas', 'quabbin', 'boston-in-motion',
+        'geopuesto', 'appalachians', 'lynn-data-dive', 'ebay-packages'
     ];
     var GRADUATE = ['salem-pantry', 'lynn-absenteeism'];
-    var ADDITIONAL = ['optitrek', 'open-concord', 'tappymaps'];
+    var ADDITIONAL = ['optitrek', 'tappymaps'];
 
     function ordered(slugs) {
         return slugs.map(function (slug) {

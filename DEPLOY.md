@@ -12,7 +12,8 @@ Source is set to **GitHub Actions**, not **Deploy from a branch**.
 
 1. `actions/checkout@v4` with **`submodules: recursive`** — this is the
    detail that makes the site buildable at all: `geopuesto`, `bugwars`,
-   `truescale`, and `quabbin` are git submodules (see `.gitmodules`), and
+   `truescale`, `quabbin`, and `lidar-test` are git submodules (see
+   `.gitmodules`), and
    without `submodules: recursive` those subpaths would deploy as empty
    directories.
 2. `actions/configure-pages@v5` configures the Pages environment.
@@ -50,9 +51,9 @@ backend, so no Railway custom domain or Wix DNS change is required.
 
 ## Submodules
 
-Four subpaths are **git submodules** pinned to a commit SHA in this repo's
-tree (`git ls-tree HEAD geopuesto bugwars truescale quabbin` shows the
-pins):
+Five subpaths are **git submodules** pinned to a commit SHA in this repo's
+tree (`git ls-tree HEAD geopuesto bugwars truescale quabbin lidar-test`
+shows the pins):
 
 | Path | Source |
 |---|---|
@@ -60,8 +61,9 @@ pins):
 | `/bugwars/` | [`mapzimus/bug-wars`](https://github.com/mapzimus/bug-wars) |
 | `/truescale/` | [`mapzimus/true-scale`](https://github.com/mapzimus/true-scale) |
 | `/quabbin/` | [`mapzimus/quabbin`](https://github.com/mapzimus/quabbin) |
+| `/lidar-test/` | [`mapzimus/ground-truth`](https://github.com/mapzimus/ground-truth) — auto-bumped hourly by `.github/workflows/sync-lidar-test.yml` |
 
-All four **must stay public** — the Pages workflow checks them out with
+All five **must stay public** — the Pages workflow checks them out with
 the default `GITHUB_TOKEN`, which cannot read private repos. A submodule
 flipped to private silently breaks that subpath on the next deploy (it'll
 check out empty, not fail loudly).

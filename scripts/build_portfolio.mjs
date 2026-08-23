@@ -240,6 +240,7 @@ function build() {
   // Case pages that once shipped under /work/ and later left the professional tiers.
   const retiredCaseSlugs = new Map([
     ["interstate-challenge", "https://mapzimus.com/"],
+    ["open-concord", "/work/"],
     ["pockettiles", "/work/"],
     ["salem-photo-walk", "/work/"],
   ]);
@@ -250,6 +251,7 @@ function build() {
 
   const redirects = new Map([
     ["portfolio.html", "/work/"],
+    ["concord.html", "/work/"],
     ["work.html", "/work/"],
     ["about.html", "/about/"],
     ["contact.html", "/contact/"],
@@ -309,7 +311,10 @@ ${[...sitemapUrls].sort().map((url) => `  <url><loc>${escapeXml(url)}</loc></url
   write(path.join(repoRoot, "sitemap.xml"), sitemap);
   write(
     path.join(repoRoot, "robots.txt"),
-    `User-agent: *\nAllow: /\nDisallow: /src/\n\nSitemap: ${siteUrl}/sitemap.xml\n`,
+    `User-agent: *\nAllow: /\nDisallow: /src/\n\n` +
+      `Sitemap: ${siteUrl}/sitemap.xml\n` +
+      // The lidar-test submodule ships its own sitemap alongside the portfolio's.
+      `Sitemap: ${siteUrl}/lidar-test/sitemap.xml\n`,
   );
 
   console.log(`Built portfolio: ${pages.length} primary pages, ${caseStudies.length} case studies.`);
