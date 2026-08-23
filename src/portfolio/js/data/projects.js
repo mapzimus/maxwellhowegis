@@ -1293,12 +1293,16 @@ window.V2_DATA.projects = [
     ],
     "gallery": [
       {
-        "src": "images/projects/new-england-in-motion/boston-live.jpg",
-        "caption": "The Boston view — MBTA lines, ferries, Amtrak, and aircraft, the region the map still opens on"
+        "src": "images/projects/new-england-in-motion/all-new-england.jpg",
+        "caption": "All New England — 2,688 live vehicles against 1,287 scheduled routes and 37,303 stops, clipped to Census boundaries"
       },
       {
-        "src": "images/projects/new-england-in-motion/boston-harbor.jpg",
-        "caption": "Rapid transit, commuter rail, and harbor routes over Boston Harbor at closer zoom"
+        "src": "images/projects/new-england-in-motion/maine.jpg",
+        "caption": "Maine — 140 scheduled routes carrying 11 live vehicles: rural service stays on the map instead of looking dead"
+      },
+      {
+        "src": "images/projects/new-england-in-motion/connecticut.jpg",
+        "caption": "Connecticut — Metro-North branches drawn from MTA trip updates and labeled estimated, with Long Island Sound ferries"
       }
     ]
   },
