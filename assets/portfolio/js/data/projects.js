@@ -536,8 +536,8 @@ window.V2_DATA.projects = [
   },
   {
     "slug": "appalachians",
-    "tier": "featured",
-    "visibility": "featured",
+    "tier": "additional",
+    "visibility": "additional",
     "role": "I assembled and simplified the physiographic, trail, summit, and geology data, then designed and built the mobile-first MapLibre application.",
     "outcome": "The finished explorer connects the range's physical geography with its geology in one keyless, shareable web map.",
     "kind": "project",
@@ -1146,10 +1146,10 @@ window.V2_DATA.projects = [
       "Geocoding",
       "Privacy"
     ],
-    "summary": "A privacy-conscious spatial business analysis of 1,035 real North Shore Nostalgia orders, combining an interactive globe with shipment, console, temporal, and aggregate sales patterns.",
-    "description": "The North Shore Nostalgia Sales Atlas converts several years of eBay order history into a public business-geography case study. A Python pipeline groups orders, generalizes destinations to city and town centroids, geocodes each community, calculates estimated great-circle distance, and writes a strict allow-listed dataset. I rendered the route network with Globe Maps, a custom MapLibre mapping skill I authored for three-dimensional route projects; it shaped the projection, atmosphere, style-load sequencing, densified great-circle geometry, antimeridian handling, selection behavior, and testing approach. The dashboard combines platform, destination, period, and title filters with console rankings, temporal playback, international handoffs, and privacy-safe aggregate sales indicators.",
+    "summary": "A privacy-conscious spatial business analysis of 1,120 real North Shore Nostalgia orders — 871 destination communities across 63 states and regions and nine countries — combining an interactive globe with shipment, console, temporal, and aggregate sales patterns.",
+    "description": "The North Shore Nostalgia Sales Atlas converts several years of eBay order history into a public business-geography case study. A Python pipeline groups orders, generalizes destinations to city and town centroids, geocodes each community, calculates estimated great-circle distance, and writes a strict allow-listed dataset. I rendered the route network with Globe Maps, a custom MapLibre mapping skill I authored for three-dimensional route projects; it shaped the projection, atmosphere, style-load sequencing, densified great-circle geometry, antimeridian handling, selection behavior, and testing approach. The dashboard combines platform, destination, period, and title filters with console rankings, temporal playback, international handoffs, and privacy-safe aggregate sales indicators. A scheduled GitHub Actions workflow refreshes the atlas every six hours through the eBay Fulfillment API's read-only scope: it pulls the rolling order window, generalizes it, runs the privacy tests, and commits only the public JSON and the geocoding cache — and fails visibly rather than reporting a misleading success when credentials are missing. The dataset carries its own coverage metadata beside the headline totals, so a known export gap is stated on the page instead of being papered over; coverage is currently continuous from March 2023 through August 20, 2026. Military mail needs separate handling because eBay records overseas APO/FPO destinations as domestic US addresses — those are matched privately and published only as a broad destination, with the postal code and unit address never entering the public file.",
     "role": "I designed the privacy model, authored the Globe Maps skill, built the Python processing and test pipeline, and developed the responsive MapLibre interface from real data from my own eBay business.",
-    "outcome": "The published atlas maps 1,000+ known orders across 800+ destination communities, identifies Nintendo GameCube as the highest-grossing console in the available export and PlayStation 2 as the highest-volume console, and represents recovered international and military-mail destinations without exposing customer information.",
+    "outcome": "The published atlas maps 1,120 orders reaching 871 communities across 63 states and regions and nine countries, roughly 1.36 million estimated route miles, with continuous coverage from March 2023 through August 2026. It reads Nintendo GameCube as the highest-grossing console and PlayStation 2 as the highest-volume at 388 games, Florida as the top spending state at 10.9 percent, and Canada as the leading international market — none of it exposing customer information.",
     "tools": [
       "Python",
       "MapLibre GL JS",

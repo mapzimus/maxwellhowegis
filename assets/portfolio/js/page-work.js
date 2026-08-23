@@ -6,10 +6,10 @@
 
     var FEATURED = [
         'lidar-site-studies', 'ma-atlas', 'quabbin', 'new-england-in-motion',
-        'geopuesto', 'appalachians', 'lynn-data-dive', 'ebay-packages'
+        'geopuesto', 'lynn-data-dive', 'ebay-packages'
     ];
     var GRADUATE = ['salem-pantry', 'lynn-absenteeism'];
-    var ADDITIONAL = ['optitrek', 'tappymaps'];
+    var ADDITIONAL = ['appalachians', 'optitrek', 'tappymaps'];
 
     function ordered(slugs) {
         return slugs.map(function (slug) {
