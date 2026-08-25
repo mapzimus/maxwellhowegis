@@ -7,7 +7,7 @@
 
     // One active build keeps the homepage current without turning it into a backlog.
     var BUILDING = [
-        { label: 'Building Optitrek — NPS road-trip optimizer', href: '/work/optitrek/', state: 'dev' }
+        { label: 'Building a Massachusetts housing-suitability model — Phase 2', href: 'https://github.com/mapzimus/predicting-housing-crisis', state: 'dev' }
     ];
     document.getElementById('buildingStrip').innerHTML = BUILDING.map(function (b) {
         var inner = '<span class="dot dot-' + b.state + '"></span>' + esc(b.label);
