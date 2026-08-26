@@ -19,8 +19,8 @@
 
     // Selected recent GIS projects define the professional portfolio.
     var FEATURED = [
-        'lidar-site-studies', 'ma-atlas', 'quabbin', 'new-england-in-motion',
-        'geopuesto', 'lynn-data-dive', 'ebay-packages'
+        'african-urbanization', 'lidar-site-studies', 'ma-atlas', 'quabbin',
+        'new-england-in-motion', 'geopuesto', 'lynn-data-dive', 'ebay-packages'
     ];
     var featured = FEATURED.map(function (s) {
         return all.find(function (p) { return p.slug === s; });

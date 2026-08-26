@@ -8,6 +8,71 @@
 window.V2_DATA = window.V2_DATA || {};
 window.V2_DATA.projects = [
   {
+    "slug": "african-urbanization",
+    "tier": "featured",
+    "visibility": "featured",
+    "kind": "project",
+    "era": "current",
+    "status": "live",
+    "title": "The Century of Africa",
+    "category": "Scrollytelling Map",
+    "type": "map",
+    "tags": [
+      "MapLibre GL JS",
+      "Scrollytelling",
+      "GeoJSON",
+      "UN WPP",
+      "GHSL",
+      "Python",
+      "Kinshasa",
+      "Africa"
+    ],
+    "summary": "A scroll-driven MapLibre tour of Africa's population century: UN projections to 2100, megacities rising past every Western peer, the corridors they will need, and Kinshasa's growth on the ground from GHSL satellite epochs.",
+    "description": "Between now and 2100, most of the world's population growth happens on one continent. The Century of Africa is a four-chapter scrollytelling globe with no backend and no tiles — index.html and app.js drive MapLibre over about 2 MB of committed GeoJSON. Chapter 1 steps a country choropleth from 2025 to 2100 to growth multiple, with an SVG regional-totals chart and computed overtaking years (the year an African country's population passes a Western peer on the UN medium variant). Chapter 2 animates every African agglomeration of a million or more by 2050 as proportional circles against New York, Tokyo, Paris, and London on the same scale, with 2100 outlooks drawn as hollow rings and flagged as academic projections. Chapter 3 layers existing Natural Earth rail and roads, financed lines (China's SGR/BRI railways versus the Lobito Corridor, plus the AU Trans-African Highway network), and a gravity model over the top-30 2050 cities sketching demanded corridors. Chapter 4 drops to Kinshasa: GHSL built-up epochs 1975–2030 stacked as growth-vintage rings over the Malebo Pool, with OSM river and roads. A five-script Python pipeline assembles the layers from Natural Earth, UN WPP/WUP, curated corridor projects, JRC GHS-BUILT-S, and Overpass — and the story states its honesty notes up front: medium-variant paths, schematic corridor geometry, and model-derived built footprints.",
+    "tools": [
+      "MapLibre GL JS",
+      "Vanilla JS",
+      "GeoJSON",
+      "Python",
+      "shapely",
+      "rasterio",
+      "Natural Earth",
+      "UN WPP / WUP",
+      "JRC GHSL",
+      "OpenStreetMap"
+    ],
+    "year": "2026",
+    "thumb": "images/projects/african-urbanization-thumb.jpg",
+    "links": {
+      "live": "https://mapzimus.com/lab/african-urbanization/",
+      "repo": "https://github.com/mapzimus/lab/tree/main/src/lab/african-urbanization"
+    },
+    "role": "I scoped the four-chapter story, built the Python data pipeline (countries, cities, corridors, Kinshasa GHSL and OSM context), designed the MapLibre globe layers and scroll-driven camera, and wrote the narrative copy and honesty notes that ship with the piece.",
+    "outcome": "A self-contained scrollytelling map that walks from continental population change to megacity growth, infrastructure geopolitics, and street-level Kinshasa fabric — live at mapzimus.com/lab with every layer reproducible from open sources.",
+    "gallery": [
+      {
+        "src": "images/projects/african-urbanization/00-hero.jpg",
+        "caption": "Opening frame — The Century of Africa on a dark MapLibre globe"
+      },
+      {
+        "src": "images/projects/african-urbanization/01-population-2025.jpg",
+        "caption": "2025 choropleth — Africa holds 1.55 billion people, about one in five alive today"
+      },
+      {
+        "src": "images/projects/african-urbanization/02-megacities-2050.jpg",
+        "caption": "2050 megacities — Cairo, Luanda, Lagos, and Dar es Salaam against New York and Tokyo"
+      },
+      {
+        "src": "images/projects/african-urbanization/03-corridors.jpg",
+        "caption": "Financed corridors — China-backed SGR/BRI lines, Lobito, and the AU highway network"
+      },
+      {
+        "src": "images/projects/african-urbanization/04-kinshasa.jpg",
+        "caption": "Kinshasa 2020 — GHSL built-up footprint stacked as growth-vintage rings over the Malebo Pool"
+      }
+    ]
+  },
+  {
     "slug": "lidar-site-studies",
     "tier": "featured",
     "visibility": "featured",
