@@ -1,10 +1,12 @@
 // ===== V2 PROJECT DATA =====
-// Unified schema — see v2/js/render.js for the card renderer.
-// kind: "project" (full card + detail page) | "lab" (in-dev strip on work.html)
+// Unified schema — see js/render.js for the card renderer.
+// kind: "project" (full card + detail page) | "lab" (creative / in-progress)
 // era:  "current" (post-grad, self-directed) | "school" (Salem State MS GIS, 2023-2025)
+// tier + order: professional curation (featured / graduate / additional). Home and Work
+// derive grids from these fields — do not hardcode slug lists in page controllers.
+// visibility: featured | additional | unlisted | mapzimus | archive | lab
+// blurb: optional short card copy; summary stays the full case-study lede.
 // Paths are SITE-ROOT-relative; render.js resolves them via V2.asset().
-// NOTE: course codes for lynn-absenteeism (GPH945) and education-wealth (GPH903)
-// were corrected from v1 per the F: course archive.
 window.V2_DATA = window.V2_DATA || {};
 window.V2_DATA.projects = [
   {
@@ -70,7 +72,9 @@ window.V2_DATA.projects = [
         "src": "images/projects/african-urbanization/04-kinshasa.jpg",
         "caption": "Kinshasa 2020 — GHSL built-up footprint stacked as growth-vintage rings over the Malebo Pool"
       }
-    ]
+    ],
+    "order": 10,
+    "blurb": "Scroll-driven MapLibre tour of Africa's population century — megacities, corridors, and Kinshasa from GHSL epochs."
   },
   {
     "slug": "lidar-site-studies",
@@ -90,8 +94,8 @@ window.V2_DATA.projects = [
       "MassGIS",
       "Site Selection"
     ],
-    "summary": "Planning-level terrain intelligence for wooded Massachusetts land \u2014 four public-data case studies that show what bare-earth lidar reveals under the canopy, and what that changes about siting, drainage, access, and earthwork cost.",
-    "description": "A camera sees treetops; lidar sees the ground. On wooded parcels that gap decides the budget, because a surface reconstructed from photographs counts the canopy as dirt. Lidar Site Studies is a four-part demonstration built entirely from public Massachusetts lidar, imagery, parcel records, and mapped wetlands, run through one repeatable screen: bare-earth DTM and canopy-surface DSM hillshades, a canopy height model, flow accumulation and a terrain wetness screen, slope and roughness, viewsheds, access-grade road profiles, and cut/fill earthwork against a conceptual pad. Devens compares the modeled ground against the campus that was actually built there, and shows the canopy hiding $5.6M of earthwork that never existed. Middleborough takes flat-looking wooded land and finds terrain wetness the mapped wetland layers miss, leaving 175 of 441 acres through the screen. Hopkinton places the same 16.3-acre pad three ways on one parcel and prices each \u2014 the same building lands $2.5M apart on terrain alone, and the ranking holds across the full $10\u2013$40/yd\u00b3 unit-cost range. The I-495 corridor study runs every vacant parcel over ten acres within a mile of the highway across nine towns through the same screen: 54 in, 14 out, before anyone flies anything. The site publishes its method, sources, and limits alongside the results, states plainly that these are planning-level comparisons rather than surveys, delineations, or engineering products, and ships a dependency-free validation script and the scoring code that grades the depression and wetness screens against state vernal pool and DEP wetland data.",
+    "summary": "Planning-level terrain intelligence for wooded Massachusetts land — four public-data case studies that show what bare-earth lidar reveals under the canopy, and what that changes about siting, drainage, access, and earthwork cost.",
+    "description": "A camera sees treetops; lidar sees the ground. On wooded parcels that gap decides the budget, because a surface reconstructed from photographs counts the canopy as dirt. Lidar Site Studies is a four-part demonstration built entirely from public Massachusetts lidar, imagery, parcel records, and mapped wetlands, run through one repeatable screen: bare-earth DTM and canopy-surface DSM hillshades, a canopy height model, flow accumulation and a terrain wetness screen, slope and roughness, viewsheds, access-grade road profiles, and cut/fill earthwork against a conceptual pad. Devens compares the modeled ground against the campus that was actually built there, and shows the canopy hiding $5.6M of earthwork that never existed. Middleborough takes flat-looking wooded land and finds terrain wetness the mapped wetland layers miss, leaving 175 of 441 acres through the screen. Hopkinton places the same 16.3-acre pad three ways on one parcel and prices each — the same building lands $2.5M apart on terrain alone, and the ranking holds across the full $10–$40/yd³ unit-cost range. The I-495 corridor study runs every vacant parcel over ten acres within a mile of the highway across nine towns through the same screen: 54 in, 14 out, before anyone flies anything. The site publishes its method, sources, and limits alongside the results, states plainly that these are planning-level comparisons rather than surveys, delineations, or engineering products, and ships a dependency-free validation script and the scoring code that grades the depression and wetness screens against state vernal pool and DEP wetland data.",
     "tools": [
       "MassGIS Lidar",
       "GDAL",
@@ -108,33 +112,35 @@ window.V2_DATA.projects = [
       "repo": "https://github.com/mapzimus/ground-truth"
     },
     "role": "I scoped the service concept, assembled the public lidar and parcel data, built the terrain pipeline (hillshades, canopy height, wetness and depression screens, viewsheds, access profiles, cut/fill), ran the four case studies, and designed and wrote the site that presents them.",
-    "outcome": "Four studies that turn terrain into a decision: a canopy-driven $5.6M earthwork error caught at Devens, 441 acres screened down to 175 at Middleborough, a $2.5M pad-siting spread at Hopkinton, and a 54-parcel corridor list cut to 14 \u2014 all reproducible from free public data.",
+    "outcome": "Four studies that turn terrain into a decision: a canopy-driven $5.6M earthwork error caught at Devens, 441 acres screened down to 175 at Middleborough, a $2.5M pad-siting spread at Hopkinton, and a 54-parcel corridor list cut to 14 — all reproducible from free public data.",
     "gallery": [
       {
         "src": "images/projects/lidar-site-studies/canopy-surface.jpg",
-        "caption": "Treetop surface \u2014 roughly what a camera reconstructs when leaves hide the ground"
+        "caption": "Treetop surface — roughly what a camera reconstructs when leaves hide the ground"
       },
       {
         "src": "images/projects/lidar-site-studies/bare-earth.jpg",
-        "caption": "Bare-earth lidar of the same parcel \u2014 the ridge, the drainage, and the buildable ground appear"
+        "caption": "Bare-earth lidar of the same parcel — the ridge, the drainage, and the buildable ground appear"
       },
       {
         "src": "images/projects/lidar-site-studies/devens.jpg",
-        "caption": "Devens \u2014 canopy height model over the parcel later built as the Commonwealth Fusion campus"
+        "caption": "Devens — canopy height model over the parcel later built as the Commonwealth Fusion campus"
       },
       {
         "src": "images/projects/lidar-site-studies/middleborough.jpg",
-        "caption": "Middleborough \u2014 terrain wetness against mapped wetlands; 175 of 441 acres survive the screen"
+        "caption": "Middleborough — terrain wetness against mapped wetlands; 175 of 441 acres survive the screen"
       },
       {
         "src": "images/projects/lidar-site-studies/hopkinton-pads.jpg",
-        "caption": "Hopkinton \u2014 three candidate pads for one building, each priced by modeled earthwork"
+        "caption": "Hopkinton — three candidate pads for one building, each priced by modeled earthwork"
       },
       {
         "src": "images/projects/lidar-site-studies/i495-corridor.jpg",
-        "caption": "I-495 corridor \u2014 54 screened parcels across nine towns, 14 worth deeper diligence"
+        "caption": "I-495 corridor — 54 screened parcels across nine towns, 14 worth deeper diligence"
       }
-    ]
+    ],
+    "order": 20,
+    "blurb": "Four public-data case studies on what bare-earth lidar reveals under canopy — and what that changes about siting and earthwork cost."
   },
   {
     "slug": "lynn-absenteeism",
@@ -223,7 +229,8 @@ window.V2_DATA.projects = [
     ],
     "links": {
       "live": "lynn.html"
-    }
+    },
+    "order": 10
   },
   {
     "slug": "salem-pantry",
@@ -295,7 +302,8 @@ window.V2_DATA.projects = [
         "caption": "Final Recommendations"
       }
     ],
-    "links": {}
+    "links": {},
+    "order": 20
   },
   {
     "slug": "granite-state",
@@ -359,7 +367,8 @@ window.V2_DATA.projects = [
         "caption": "Urban Expansion Results"
       }
     ],
-    "links": {}
+    "links": {},
+    "visibility": "archive"
   },
   {
     "slug": "ev-charging",
@@ -421,7 +430,8 @@ window.V2_DATA.projects = [
         "caption": "Conclusions"
       }
     ],
-    "links": {}
+    "links": {},
+    "visibility": "archive"
   },
   {
     "slug": "education-wealth",
@@ -480,7 +490,8 @@ window.V2_DATA.projects = [
         "caption": "Scatter Plot — % Bachelor's vs. Income"
       }
     ],
-    "links": {}
+    "links": {},
+    "visibility": "archive"
   },
   {
     "slug": "central-campus",
@@ -522,7 +533,8 @@ window.V2_DATA.projects = [
         "caption": "Drone Imagery Overlaid in ArcGIS Pro"
       }
     ],
-    "links": {}
+    "links": {},
+    "visibility": "archive"
   },
   {
     "slug": "lynnfield-cemetery",
@@ -559,7 +571,8 @@ window.V2_DATA.projects = [
         "caption": "Database and Spatial Features in ArcGIS Pro"
       }
     ],
-    "links": {}
+    "links": {},
+    "visibility": "archive"
   },
   {
     "slug": "evacuation-routes",
@@ -597,7 +610,8 @@ window.V2_DATA.projects = [
         "caption": "arcpy Evacuation Route Script"
       }
     ],
-    "links": {}
+    "links": {},
+    "visibility": "archive"
   },
   {
     "slug": "appalachians",
@@ -659,7 +673,8 @@ window.V2_DATA.projects = [
     ],
     "links": {
       "live": "appalachians/"
-    }
+    },
+    "order": 10
   },
   {
     "slug": "quabbin",
@@ -744,7 +759,9 @@ window.V2_DATA.projects = [
     "links": {
       "live": "quabbin.html",
       "repo": "https://github.com/mapzimus/maxwellhowegis/tree/main/quabbin"
-    }
+    },
+    "order": 40,
+    "blurb": "Reproducible R GIS study of the Quabbin Reservoir and four lost Swift River Valley towns, with a LiDAR imprint explorer of the drowned villages."
   },
   {
     "slug": "ma-atlas",
@@ -812,7 +829,9 @@ window.V2_DATA.projects = [
     "links": {
       "live": "ma-atlas/",
       "repo": "https://github.com/mapzimus/maxwellhowegis"
-    }
+    },
+    "order": 30,
+    "blurb": "Statewide interactive map of every public school and district in Massachusetts — 40+ metrics with ArcGIS-style controls."
   },
   {
     "slug": "geopuesto",
@@ -871,7 +890,9 @@ window.V2_DATA.projects = [
         "src": "images/projects/geopuesto-thumb.png",
         "caption": "Earlier interface state with split origin/target map panels"
       }
-    ]
+    ],
+    "order": 60,
+    "blurb": "Antipodal observation system — click anywhere on Earth and see what's on the opposite side, with weather, quakes, radio, and more."
   },
   {
     "slug": "lynn-data-dive",
@@ -923,7 +944,9 @@ window.V2_DATA.projects = [
         "src": "images/projects/lynn-data-dive-thumb.png",
         "caption": "Map explorer with Jenks classification, year animation, and dual-metric comparison controls"
       }
-    ]
+    ],
+    "order": 70,
+    "blurb": "Public dashboard of every dataset touching Lynn English High School and the 26 MA Gateway Cities — maps, outcomes, and correlations."
   },
   {
     "slug": "geopuesto-playground",
@@ -1013,7 +1036,8 @@ window.V2_DATA.projects = [
     "links": {
       "live": "https://tappymaps.com"
     },
-    "tier": "additional"
+    "tier": "additional",
+    "order": 30
   },
   {
     "slug": "optitrek",
@@ -1070,7 +1094,8 @@ window.V2_DATA.projects = [
       "repo": "https://github.com/mapzimus/optitrek"
     },
     "role": "I designed the optimization problem, built the PostGIS + OSRM data layer, implemented the OR-Tools constrained TSP solvers, and published the Sequential Interstate Challenge as the first public test case.",
-    "outcome": "Phase 1 data ingest is live with 466 NPS units in PostGIS. Solver phases are unit-tested, and the Interstate Challenge test case cut connector driving time 86% versus strict numerical order (73,360 minutes down to 10,277)."
+    "outcome": "Phase 1 data ingest is live with 466 NPS units in PostGIS. Solver phases are unit-tested, and the Interstate Challenge test case cut connector driving time 86% versus strict numerical order (73,360 minutes down to 10,277).",
+    "order": 20
   },
   {
     "slug": "transit",
@@ -1243,7 +1268,9 @@ window.V2_DATA.projects = [
         "src": "images/projects/ebay-packages-preview.png",
         "caption": "Atlas intro — business-geography framing for North Shore Nostalgia sales from Salem, MA"
       }
-    ]
+    ],
+    "order": 80,
+    "blurb": "Privacy-conscious spatial analysis of 1,120 North Shore Nostalgia orders across 871 communities, with an interactive globe."
   },
   {
     "slug": "concord-war",
@@ -1291,7 +1318,8 @@ window.V2_DATA.projects = [
     ],
     "summary": "A safer-route picker for anxious drivers in Massachusetts — scores OSRM route alternatives 0–100 on five years of crash history, winter/ice risk, and live construction, with the math shown.",
     "year": "2026",
-    "links": {}
+    "links": {},
+    "visibility": "lab"
   },
   {
     "slug": "gis-jobs-atlas",
@@ -1308,7 +1336,8 @@ window.V2_DATA.projects = [
     ],
     "summary": "Scrapes U.S. geospatial job postings, traces each back to its real source on the employer’s own site, scores it for trustworthiness, and maps it all on an interactive USA map.",
     "year": "2026",
-    "links": {}
+    "links": {},
+    "visibility": "lab"
   },
   {
     "slug": "new-england-in-motion",
@@ -1369,7 +1398,9 @@ window.V2_DATA.projects = [
         "src": "images/projects/new-england-in-motion/connecticut.jpg",
         "caption": "Connecticut — Metro-North branches drawn from MTA trip updates and labeled estimated, with Long Island Sound ferries"
       }
-    ]
+    ],
+    "order": 50,
+    "blurb": "Live map of transportation across all six New England states — transit, rail, vessels, aircraft, bikes, and traffic cameras."
   },
   {
     "slug": "locomonnector",
@@ -1386,6 +1417,7 @@ window.V2_DATA.projects = [
     ],
     "summary": "A fantasy binational (US + Canada) rail network: node classification, Delaunay-pruned trunk edges, a forced Alaska corridor, and self-contained island networks — rendered to an interactive Leaflet map.",
     "year": "2026",
-    "links": {}
+    "links": {},
+    "visibility": "lab"
   }
 ];

@@ -41,7 +41,7 @@
     var h = '<header class="page-head">' +
         '<div class="kicker">' + esc(p.era === 'school' ? 'GIS Case Study' : 'Interactive Map & App') + '</div>' +
         '<h1>' + esc(p.title) + '</h1>' +
-        '<div class="marginalia" style="margin-bottom: var(--space-3);">' + marginalia + ' ' + R.badge(p.status) + '</div>' +
+        '<div class="detail-meta marginalia">' + marginalia + ' ' + R.badge(p.status) + '</div>' +
         '<hr class="tick-rule"></header>';
 
     h += '<div class="detail-head section-tight">';
@@ -69,7 +69,7 @@
             }).join('') + '</div></section>';
     }
 
-    h += '<p style="margin-top: var(--space-5);"><a href="/work/">← All work</a></p>';
+    h += '<p class="back-link"><a href="/work/">← All work</a></p>';
     el.innerHTML = h;
 
     var figs = document.getElementById('figs');
