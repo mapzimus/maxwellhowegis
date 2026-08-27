@@ -24,10 +24,10 @@
         '<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">' +
         '<circle cx="13" cy="13" r="11.5" fill="none" stroke="currentColor" stroke-width="1"/>' +
         '<circle cx="13" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.45"/>' +
-        '<path d="M13 2.5 L15 13 L13 23.5 L11 13 Z" fill="#c53d1c"/>' +
-        '<path d="M2.5 13 L13 11 L23.5 13 L13 15 Z" fill="currentColor" opacity="0.55"/>' +
-        '<circle cx="13" cy="13" r="1.4" fill="currentColor"/>' +
-        '</svg>';
+            '<path d="M13 2.5 L15 13 L13 23.5 L11 13 Z" fill="var(--vermilion)"/>' +
+            '<path d="M2.5 13 L13 11 L23.5 13 L13 15 Z" fill="currentColor" opacity="0.55"/>' +
+            '<circle cx="13" cy="13" r="1.4" fill="currentColor"/>' +
+            '</svg>';
 
     var pathname = window.location.pathname;
 

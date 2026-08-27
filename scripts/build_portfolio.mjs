@@ -55,7 +55,7 @@ function description(value) {
 }
 
 function absoluteImage(project) {
-  if (!project?.thumb) return `${siteUrl}/images/projects/ma-atlas-preview.png`;
+  if (!project?.thumb) return `${siteUrl}/images/projects/african-urbanization-thumb.jpg`;
   if (/^https?:\/\//.test(project.thumb)) return project.thumb;
   return `${siteUrl}/${project.thumb.replace(/^\//, "")}`;
 }
@@ -192,7 +192,7 @@ function build() {
       title: "Maxwell Howe — Web GIS Developer & Spatial Analyst",
       summary: "Web GIS developer and spatial analyst in Salem, Massachusetts. Interactive maps, spatial data products, and reproducible analysis built for people to use.",
       canonical: `${siteUrl}/`,
-      image: `${siteUrl}/images/projects/ma-atlas-preview.png`,
+      image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
     },
     {
       source: "work.html",
@@ -200,7 +200,7 @@ function build() {
       title: "Work — Maxwell Howe",
       summary: "Selected Web GIS, spatial analysis, and data-product case studies by Maxwell Howe.",
       canonical: `${siteUrl}/work/`,
-      image: `${siteUrl}/images/projects/ma-atlas-preview.png`,
+      image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
     },
     {
       source: "about.html",
@@ -208,7 +208,7 @@ function build() {
       title: "About — Maxwell Howe",
       summary: "Maxwell Howe is a Web GIS developer, spatial analyst, and math educator in Salem, Massachusetts.",
       canonical: `${siteUrl}/about/`,
-      image: `${siteUrl}/images/projects/ma-atlas-preview.png`,
+      image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
     },
     {
       source: "contact.html",
@@ -216,7 +216,7 @@ function build() {
       title: "Contact — Maxwell Howe",
       summary: "Contact Maxwell Howe about Web GIS, spatial analysis, mapping, and geospatial development work.",
       canonical: `${siteUrl}/contact/`,
-      image: `${siteUrl}/images/projects/ma-atlas-preview.png`,
+      image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
     },
   ];
 

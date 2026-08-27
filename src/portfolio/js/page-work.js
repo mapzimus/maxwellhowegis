@@ -1,34 +1,20 @@
 // ===== CURATED WORK PAGE =====
+// Grids are derived from tier + order in projects.js — edit data, not this file.
 (function () {
     'use strict';
     var R = window.V2_RENDER;
-    var all = window.V2_DATA.projects;
-
-    var FEATURED = [
-        'african-urbanization', 'lidar-site-studies', 'ma-atlas', 'quabbin',
-        'new-england-in-motion', 'geopuesto', 'lynn-data-dive', 'ebay-packages'
-    ];
-    var GRADUATE = ['salem-pantry', 'lynn-absenteeism'];
-    var ADDITIONAL = ['appalachians', 'optitrek', 'tappymaps'];
-
-    function ordered(slugs) {
-        return slugs.map(function (slug) {
-            return all.find(function (project) { return project.slug === slug; });
-        }).filter(Boolean);
-    }
 
     function caseStudyUrl(project) {
         return '/work/' + encodeURIComponent(project.slug) + '/';
     }
 
-    R.renderGrid(document.getElementById('featuredWorkGrid'), ordered(FEATURED), {
+    R.renderGrid(document.getElementById('featuredWorkGrid'), R.curated('featured'), {
         hrefFn: caseStudyUrl
     });
-    R.renderGrid(document.getElementById('graduateGrid'), ordered(GRADUATE), {
+    R.renderGrid(document.getElementById('graduateGrid'), R.curated('graduate'), {
         hrefFn: caseStudyUrl
     });
-    R.renderGrid(document.getElementById('additionalGrid'), ordered(ADDITIONAL), {
-        hrefFn: caseStudyUrl,
-        showThumb: false
+    R.renderGrid(document.getElementById('additionalGrid'), R.curated('additional'), {
+        hrefFn: caseStudyUrl
     });
 })();

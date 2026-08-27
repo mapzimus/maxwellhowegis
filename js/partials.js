@@ -1,55 +1,41 @@
 // ===== SHARED NAV + FOOTER PARTIALS =====
-// Injects the site-wide nav and footer into <div id="site-nav"></div> and
-// <div id="site-footer"></div> placeholders. Loaded at the end of <body>
-// BEFORE js/main.js, so it runs synchronously during parse: the placeholders
-// already exist, and main.js's DOMContentLoaded wiring (hamburger toggle,
-// active-link highlighting) finds the injected DOM afterwards.
-//
-// Edit the nav/footer in ONE place here — never per-page.
-
+// Used by legacy writeups (lynn.html, quabbin.html) that still load the
+// dark chrome in css/style.css. Keep the IA aligned with the professional
+// portfolio so these pages don't advertise retired routes.
 (function () {
     'use strict';
 
     var NAV_LINKS = [
-        { href: 'about.html', label: 'About' },
-        { href: 'portfolio.html', label: 'Projects' },
-        { href: 'gallery.html', label: 'Map Gallery' },
-        { href: 'side-projects.html', label: 'Beyond GIS' },
-        { href: 'tools.html', label: 'Tools' },
-        { href: 'contact.html', label: 'Contact' }
+        { href: '/work/', label: 'Work' },
+        { href: '/about/', label: 'About' },
+        { href: '/contact/', label: 'Contact' }
     ];
 
     var FOOTER_LINKS = [
-        { href: 'index.html', label: 'Home' },
-        { href: 'portfolio.html', label: 'Projects' },
-        { href: 'gallery.html', label: 'Map Gallery' },
-        { href: 'side-projects.html', label: 'Beyond GIS' },
-        { href: 'fieldnotes.html', label: 'Field Notes' },
-        { href: 'tools.html', label: 'Tools' },
-        { href: 'about.html', label: 'About' },
-        { href: 'contact.html', label: 'Contact' },
-        { href: 'feedback.html', label: 'Ideas' },
-        { href: 'links.html', label: 'Links' },
+        { href: '/', label: 'Home' },
+        { href: '/work/', label: 'Work' },
+        { href: '/about/', label: 'About' },
+        { href: '/contact/', label: 'Contact' },
+        { href: 'https://mapzimus.com', label: 'Mapzimus', external: true },
         { href: 'https://github.com/mapzimus', label: 'GitHub', external: true }
     ];
 
-    // Current page for active-link highlighting ('' or '/' -> index.html)
-    var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    var pathname = window.location.pathname;
 
     function navHTML() {
         var items = NAV_LINKS.map(function (l) {
-            var active = l.href === currentPage
+            var active = pathname === l.href || (l.href !== '/' && pathname.indexOf(l.href) === 0)
                 ? ' class="active" aria-current="page"'
                 : '';
             return '            <li><a href="' + l.href + '"' + active + '>' + l.label + '</a></li>';
         }).join('\n');
         return '<nav class="nav">\n' +
             '    <div class="nav-inner">\n' +
-            '        <a href="index.html" class="nav-logo">Maxwell Howe</a>\n' +
+            '        <a href="/" class="nav-logo">Maxwell Howe</a>\n' +
             '        <ul class="nav-links" id="navLinks">\n' +
             items + '\n' +
             '        </ul>\n' +
-            '        <button class="nav-hamburger" id="hamburger" aria-label="Menu">\n' +
+            '        <button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">\n' +
             '            <span></span><span></span><span></span>\n' +
             '        </button>\n' +
             '    </div>\n' +
@@ -61,9 +47,10 @@
             var attrs = l.external ? ' target="_blank" rel="noopener"' : '';
             return '            <li><a href="' + l.href + '"' + attrs + '>' + l.label + '</a></li>';
         }).join('\n');
+        var year = new Date().getFullYear();
         return '<footer class="footer">\n' +
             '    <div class="footer-inner">\n' +
-            '        <p>&copy; 2026 Maxwell Howe</p>\n' +
+            '        <p>&copy; ' + year + ' Maxwell Howe · Salem, MA</p>\n' +
             '        <ul class="footer-links">\n' +
             items + '\n' +
             '        </ul>\n' +

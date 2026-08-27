@@ -11,10 +11,22 @@
     }
 
     var STATUS_LABEL = { live: 'Live', development: 'In Dev', archived: 'Archived' };
+    var HIDDEN = { unlisted: 1, mapzimus: 1, archive: 1, lab: 1 };
 
     function badge(status) {
         if (!status || !STATUS_LABEL[status]) return '';
         return '<span class="badge badge-' + status + '">' + STATUS_LABEL[status] + '</span>';
+    }
+
+    // Professional grids: tier + order in projects.js, excluding demoted visibility.
+    function curated(tier) {
+        return (window.V2_DATA.projects || [])
+            .filter(function (p) {
+                return p.tier === tier && !HIDDEN[p.visibility];
+            })
+            .sort(function (a, b) {
+                return (a.order || 999) - (b.order || 999);
+            });
     }
 
     // Primary link for a card: live > writeup > repo
@@ -25,8 +37,21 @@
 
     function isExternal(url) { return /^https?:\/\//.test(url || ''); }
 
+    function cardCopy(item) {
+        var text = item.blurb || item.summary || '';
+        if (text.length <= 180) return text;
+        var cut = text.slice(0, 177);
+        var lastSpace = cut.lastIndexOf(' ');
+        if (lastSpace > 120) cut = cut.slice(0, lastSpace);
+        return cut.replace(/[.,;:\s]+$/, '') + '…';
+    }
+
+    function padPlateNo(n) {
+        return String(n).padStart(2, '0');
+    }
+
     // ---- Plate card ----
-    // opts: { plateNo, showThumb (default true), hrefFn(item) → override link }
+    // opts: { plateNo, numberPlates, showThumb (default true), hrefFn(item) → override link }
     function renderCard(item, opts) {
         opts = opts || {};
         // hrefFn gives a v2-internal link (used as-is); data links are
@@ -34,7 +59,7 @@
         var ownHref = opts.hrefFn && opts.hrefFn(item);
         var href = ownHref || primaryLink(item);
         var resolved = ownHref ? ownHref : (href ? window.V2.asset(href) : null);
-        var ext = isExternal(href);
+        var ext = !ownHref && isExternal(href);
         var tag = resolved ? 'a' : 'div';
 
         var h = '<' + tag + ' class="plate"' +
@@ -56,15 +81,22 @@
         }
 
         h += '<div class="plate-body">';
-        h += '<div class="plate-no"><span>' + esc(item.category || item.kind || '') +
+        h += '<div class="plate-no"><span>' +
+            (opts.numberPlates && opts.plateNo != null
+                ? 'Pl. ' + padPlateNo(opts.plateNo)
+                : esc(item.category || item.kind || '')) +
             '</span><span>' + esc(item.year || '') + '</span></div>';
+        if (opts.numberPlates && opts.plateNo != null && item.category) {
+            h += '<div class="plate-category">' + esc(item.category) + '</div>';
+        }
         h += '<h3>' + (item.icon ? esc(item.icon) + ' ' : '') + esc(item.title) + '</h3>';
-        if (item.summary) h += '<p class="summary">' + esc(item.summary) + '</p>';
+        var copy = cardCopy(item);
+        if (copy) h += '<p class="summary">' + esc(copy) + '</p>';
 
         h += '<div class="plate-meta">';
         h += badge(item.status);
         if (ext) h += '<span class="badge badge-external">↗ External</span>';
-        (item.tags || []).slice(0, 4).forEach(function (t) {
+        (item.tags || []).slice(0, 3).forEach(function (t) {
             h += '<span class="tag">' + esc(t) + '</span>';
         });
         h += '</div></div></' + tag + '>';
@@ -77,8 +109,10 @@
             el.innerHTML = '<div class="empty-note">Nothing matches this filter.</div>';
             return;
         }
-        el.innerHTML = items.map(function (it) {
-            return renderCard(it, opts);
+        el.innerHTML = items.map(function (it, i) {
+            var cardOpts = Object.assign({}, opts);
+            if (opts.numberPlates) cardOpts.plateNo = i + 1;
+            return renderCard(it, cardOpts);
         }).join('');
     }
 
@@ -161,6 +195,7 @@
     window.V2_RENDER = {
         esc: esc,
         badge: badge,
+        curated: curated,
         renderCard: renderCard,
         renderGrid: renderGrid,
         renderFilterBar: renderFilterBar,
