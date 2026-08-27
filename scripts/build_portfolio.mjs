@@ -91,7 +91,7 @@ function structuredData({ title, summary, canonical, project }) {
   return JSON.stringify(data).replaceAll("<", "\\u003c");
 }
 
-function promoteHtml(html, { title, summary, canonical, image, project, slug }) {
+function promoteHtml(html, { title, summary, canonical, image, project, slug, assetBust }) {
   let out = html
     .replace(/\s*<meta name="robots"[^>]*>/gi, "")
     .replace(/<title>.*?<\/title>/is, `<title>${escapeHtml(title)}</title>`)
@@ -102,6 +102,12 @@ function promoteHtml(html, { title, summary, canonical, image, project, slug }) 
     .replaceAll('href="favicon.svg"', 'href="/assets/portfolio/favicon.svg"')
     .replaceAll('href="css/', 'href="/assets/portfolio/css/')
     .replaceAll('src="js/', 'src="/assets/portfolio/js/');
+
+  if (assetBust) {
+    out = out
+      .replace(/href="(\/assets\/portfolio\/css\/[^"?]+\.css)"/g, `href="$1?v=${assetBust}"`)
+      .replace(/src="(\/assets\/portfolio\/js\/[^"?]+\.js)"/g, `src="$1?v=${assetBust}"`);
+  }
 
   if (slug) {
     out = out.replace("<body>", `<body data-project-slug="${escapeHtml(slug)}">`);
@@ -177,6 +183,7 @@ document.getElementById('message').innerHTML='This project moved to <a href="'+t
 
 function build() {
   const projects = loadProjects();
+  const assetBust = Math.floor(fs.statSync(path.join(sourceRoot, "js", "render.js")).mtimeMs).toString(36);
 
   assertInsideRepo(assetRoot);
   if (fs.existsSync(assetRoot)) fs.rmSync(assetRoot, { recursive: true, force: true });
@@ -193,6 +200,7 @@ function build() {
       summary: "Web GIS developer and spatial analyst in Salem, Massachusetts. Interactive maps, spatial data products, and reproducible analysis built for people to use.",
       canonical: `${siteUrl}/`,
       image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
+      assetBust,
     },
     {
       source: "work.html",
@@ -201,6 +209,7 @@ function build() {
       summary: "Selected Web GIS, spatial analysis, and data-product case studies by Maxwell Howe.",
       canonical: `${siteUrl}/work/`,
       image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
+      assetBust,
     },
     {
       source: "about.html",
@@ -209,6 +218,7 @@ function build() {
       summary: "Maxwell Howe is a Web GIS developer, spatial analyst, and math educator in Salem, Massachusetts.",
       canonical: `${siteUrl}/about/`,
       image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
+      assetBust,
     },
     {
       source: "contact.html",
@@ -217,6 +227,7 @@ function build() {
       summary: "Contact Maxwell Howe about Web GIS, spatial analysis, mapping, and geospatial development work.",
       canonical: `${siteUrl}/contact/`,
       image: `${siteUrl}/images/projects/african-urbanization-thumb.jpg`,
+      assetBust,
     },
   ];
 
@@ -244,6 +255,7 @@ function build() {
         image: absoluteImage(project),
         project,
         slug: project.slug,
+        assetBust,
       }),
     );
   }

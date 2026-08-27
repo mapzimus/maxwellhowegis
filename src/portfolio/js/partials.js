@@ -43,9 +43,8 @@
         }).join('');
         return '<header class="nav"><div class="nav-inner">' +
             '<a href="/" class="nav-logo">' + MARK + 'Maxwell Howe</a>' +
-            '<ul class="nav-links" id="navLinks">' + items +
-            '<li><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Theme</button></li>' +
-            '</ul>' +
+            '<ul class="nav-links" id="navLinks">' + items + '</ul>' +
+            '<button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Theme</button>' +
             '<button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">' +
             '<span></span><span></span><span></span></button>' +
             '</div></header>';
