@@ -1,0 +1,114 @@
+# Cookbook backend for maxwellhowegis.com/cookbook/ (an unlisted page).
+#
+# Open an issue whose title or body contains a recipe URL (cookbook/index.html
+# does this for you), and this workflow fetches the page, extracts the
+# structured Recipe data most recipe sites embed for Google, writes it to
+# cookbook/recipes/<slug>.json, rebuilds cookbook/index.json, commits, kicks
+# the Pages deploy, and closes the issue with a link.
+#
+# This repo is public, so an issue only counts when it was opened by the repo
+# owner or a collaborator; anyone else's issue is left alone.
+#
+# It can also be run by hand from the Actions tab ("Run workflow", paste a
+# URL), which saves the recipe without an issue.
+name: Save recipe
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Recipe URL to save
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+# Serialize runs so two saves never race each other on the push.
+concurrency:
+  group: cookbook-save
+  cancel-in-progress: false
+
+jobs:
+  save:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.issue.author_association)
+        && (contains(github.event.issue.title, 'http') || contains(github.event.issue.body, 'http')))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and parse the recipe
+        id: save
+        env:
+          # Passed as env vars (not interpolated into the script) so issue
+          # text can't inject shell commands.
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body || inputs.url }}
+        run: python3 cookbook/save_recipe.py
+
+      - name: Commit and push
+        id: commit
+        if: steps.save.outputs.slug != ''
+        env:
+          RECIPE_NAME: ${{ steps.save.outputs.name }}
+          SOURCE_URL: ${{ steps.save.outputs.source }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cookbook/
+          if git diff --cached --quiet; then
+            echo "Recipe already saved and unchanged; nothing to commit."
+          else
+            git commit -m "Cookbook: save \"$RECIPE_NAME\"" -m "Source: $SOURCE_URL"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger Pages deploy
+        # Commits made with GITHUB_TOKEN don't fire the push-triggered
+        # pages workflow, so kick it explicitly (same as sync-lidar-test.yml).
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml -R "$GITHUB_REPOSITORY"
+
+      - name: Close the issue with a link
+        if: github.event_name == 'issues' && steps.save.outputs.slug != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          RECIPE_NAME: ${{ steps.save.outputs.name }}
+          SLUG: ${{ steps.save.outputs.slug }}
+        run: |
+          gh issue edit "$ISSUE" --title "🍳 $RECIPE_NAME"
+          gh issue comment "$ISSUE" --body "Saved **$RECIPE_NAME** to the cookbook: https://maxwellhowegis.com/cookbook/#$SLUG
+
+          It can take a minute or two for GitHub Pages to publish the update."
+          gh issue close "$ISSUE" --reason completed
+
+      - name: Report a failure on the issue
+        if: github.event_name == 'issues' && (failure() || steps.save.outputs.slug == '')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          REASON: ${{ steps.save.outputs.error }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue comment "$ISSUE" --body "Couldn't save this recipe. ${REASON:-Something went wrong while fetching or parsing the page.}
+
+          Not every site publishes structured recipe data, and some block automated fetches. Run log: $RUN_URL"
+
+      - name: Fail the manual run if nothing was saved
+        if: github.event_name != 'issues' && steps.save.outputs.slug == ''
+        env:
+          REASON: ${{ steps.save.outputs.error }}
+        run: |
+          echo "::error::${REASON:-Something went wrong while fetching or parsing the page.}"
+          exit 1
