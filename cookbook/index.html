@@ -1391,27 +1391,48 @@
           return el("li", {}, kids);
         }
 
-        Promise.all(allSlugs().filter(unique).map(function (s) { return loadRecipe(s).catch(function () { return null; }); })).then(function (full) {
-          var planned = allSlugs().filter(unique);
+        // Every planned meal, duplicates included: three nights of the same dinner
+        // is three lots of groceries and three lots of cooking.
+        var occurrences = allSlugs(), uniques = occurrences.filter(unique), repeatOf = {};
+        occurrences.forEach(function (s) { repeatOf[s] = (repeatOf[s] || 0) + 1; });
+        Promise.all(uniques.map(function (s) { return loadRecipe(s).catch(function () { return null; }); })).then(function (full) {
           var frag = document.createDocumentFragment();
           var prepTotal = 0, cookTotal = 0, anyEst = false, missing = 0;
-          full.forEach(function (r, idx) {
+          var bySlug = {};
+          uniques.forEach(function (s, i) { bySlug[s] = full[i]; });
+
+          // Each day's line stays one batch: what you cook that night.
+          uniques.forEach(function (slug) {
+            var r = bySlug[slug];
+            if (!r) missing++;
             var cost = r ? recipeCost(r) : { total: 0, unknown: 0 };
             var t = r ? timeInfo(r) : null;
-            if (t) { prepTotal += t.prep; cookTotal += t.cook; anyEst = anyEst || t.estimated; }
-            if (!r) missing++;
-            (slotMeta[planned[idx]] || []).forEach(function (m) {
+            (slotMeta[slug] || []).forEach(function (m) {
               m.textContent = t ? "⏱ " + (t.estimated ? "~" : "") + fmtMin(t.total) + " (prep " + fmtMin(t.prep) + ", cook " + fmtMin(t.cook) + ") · 🛒 ~" + money(cost.total) : "Couldn't load this recipe.";
             });
           });
 
-          var groups = groupIngredients(full.filter(Boolean), planned.filter(function (s, i) { return full[i]; }));
+          // The totals and the list run over occurrences.
+          var occRecipes = [], occSlugs = [];
+          occurrences.forEach(function (s) { if (bySlug[s]) { occRecipes.push(bySlug[s]); occSlugs.push(s); } });
+          occRecipes.forEach(function (r) {
+            var t = timeInfo(r);
+            prepTotal += t.prep; cookTotal += t.cook; anyEst = anyEst || t.estimated;
+          });
+
+          var groups = groupIngredients(occRecipes, occSlugs);
           var total = 0, unknown = 0;
           groups.forEach(function (g) { total += g.price; unknown += g.unknown; });
           var staples = groups.filter(function (g) { return g.staple; });
           var buy = groups.filter(function (g) { return !g.staple; });
 
-          if (!planned.length) frag.appendChild(el("p", { class: "meta", text: "Plan some meals and their ingredients show up here, merged and grouped by aisle." }));
+          function fromLine(g) {
+            return g.recipes.map(function (s) {
+              var name = (known[s] && known[s].name) || s;
+              return repeatOf[s] > 1 ? name + " ×" + repeatOf[s] : name;
+            }).join(" · ");
+          }
+          if (!uniques.length) frag.appendChild(el("p", { class: "meta", text: "Plan some meals and their ingredients show up here, merged and grouped by aisle." }));
           AISLES.forEach(function (aisle) {
             var rows = buy.filter(function (g) { return g.aisle === aisle; });
             if (!rows.length) return;
@@ -1419,7 +1440,7 @@
             frag.appendChild(el("ul", {}, rows.map(function (g) {
               return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length,
                 kind: g.unknown === g.lines.length ? "unknown" : g.set ? "set" : "est",
-                from: g.recipes.map(function (s) { return (known[s] && known[s].name) || s; }).join(" · ") });
+                from: fromLine(g) });
             })));
           });
           if (staples.length) {
@@ -1427,7 +1448,7 @@
             det.appendChild(el("summary", { text: staples.length + " staple" + (staples.length === 1 ? "" : "s") + " you probably already have" }));
             det.appendChild(el("ul", {}, staples.map(function (g) {
               return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length, kind: "pantry",
-                from: g.recipes.map(function (s) { return (known[s] && known[s].name) || s; }).join(" · ") });
+                from: fromLine(g) });
             })));
             frag.appendChild(det);
           }
