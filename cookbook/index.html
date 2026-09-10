@@ -254,14 +254,20 @@
   var tokenBad = false;
 
   // ---------- helpers ----------
+  // Never stringify null/undefined into visible text ("null") via textContent or +.
+  function str(value) { return value == null ? "" : String(value); }
   function el(tag, attrs, children) {
     var node = document.createElement(tag);
     if (attrs) Object.keys(attrs).forEach(function (k) {
-      if (k === "text") node.textContent = attrs[k];
+      if (k === "text") node.textContent = str(attrs[k]);
       else if (k === "class") node.className = attrs[k];
-      else if (attrs[k] != null) node.setAttribute(k, attrs[k]);
+      else if (attrs[k] == null) return;
+      else node.setAttribute(k, attrs[k] === true ? "" : attrs[k]);
     });
-    (children || []).forEach(function (c) { if (c) node.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    (children || []).forEach(function (c) {
+      if (c == null || c === false) return;
+      node.appendChild(typeof c === "string" || typeof c === "number" ? document.createTextNode(str(c)) : c);
+    });
     return node;
   }
   function status(msg, isError, extra) {
@@ -347,7 +353,10 @@
       throw e;
     });
   }
-  function pretty(obj) { return JSON.stringify(obj, null, 1) + "\n"; }
+  function pretty(obj) {
+    // Drop JSON nulls so empty fields never surface as the literal word "null" in data or UI.
+    return JSON.stringify(obj, function (_k, v) { return v === null ? undefined : v; }, 1) + "\n";
+  }
 
   // ---------- recipes ----------
   var indexCache = null, recipeCache = {};
@@ -366,7 +375,7 @@
     return recipeCache[slug];
   }
   function indexEntry(r) {
-    return { slug: r.slug, name: r.name, site: r.site || null, source: r.source || null, image: r.image || null,
+    return { slug: r.slug, name: r.name || r.slug, site: r.site || null, source: r.source || null, image: r.image || null,
       prepTime: r.prepTime || null, cookTime: r.cookTime || null, totalTime: r.totalTime || null, savedAt: r.savedAt || null };
   }
   function sortIndex(items) {
@@ -376,21 +385,57 @@
     return transact(function (index) {
       var newIndex = sortIndex(index.filter(function (r) { return r.slug !== recipe.slug; }).concat([indexEntry(recipe)]));
       return {
-        message: "Cookbook: " + verb + " \"" + recipe.name + "\"",
+        message: "Cookbook: " + verb + " \"" + (recipe.name || recipe.slug) + "\"",
         changes: [{ path: "recipes/" + recipe.slug + ".json", content: pretty(recipe) }, { path: "index.json", content: pretty(newIndex) }],
         index: newIndex
       };
     }).then(function (newIndex) { indexCache = newIndex; recipeCache[recipe.slug] = Promise.resolve(recipe); });
   }
   function deleteRecipe(recipe) {
-    return transact(function (index) {
-      var newIndex = index.filter(function (r) { return r.slug !== recipe.slug; });
-      return {
-        message: "Cookbook: delete \"" + recipe.name + "\"",
-        changes: [{ path: "recipes/" + recipe.slug + ".json", content: null }, { path: "index.json", content: pretty(newIndex) }],
-        index: newIndex
-      };
-    }).then(function (newIndex) { indexCache = newIndex; delete recipeCache[recipe.slug]; });
+    return readJSON(PLAN_FILE).catch(function () { return null; }).then(function (raw) {
+      return transact(function (index) {
+        var newIndex = index.filter(function (r) { return r.slug !== recipe.slug; });
+        var changes = [
+          { path: "recipes/" + recipe.slug + ".json", content: null },
+          { path: "index.json", content: pretty(newIndex) }
+        ];
+        // Clear this recipe out of the shared week so slots don't go blank/"null".
+        if (raw && Array.isArray(raw.days)) {
+          var days = normalizePlan(raw.days);
+          var changed = false;
+          days.forEach(function (day) {
+            day.forEach(function (m) {
+              if (m.slug === recipe.slug) { m.slug = ""; changed = true; }
+            });
+          });
+          if (changed) {
+            changes.push({
+              path: PLAN_FILE,
+              content: pretty({
+                days: days,
+                checked: plainObject(raw.checked),
+                extras: Array.isArray(raw.extras) ? raw.extras : [],
+                updatedAt: nowISO()
+              })
+            });
+          }
+        }
+        return {
+          message: "Cookbook: delete \"" + (recipe.name || recipe.slug) + "\"",
+          changes: changes,
+          index: newIndex
+        };
+      });
+    }).then(function (newIndex) {
+      indexCache = newIndex;
+      delete recipeCache[recipe.slug];
+      if (shared && Array.isArray(shared.days)) {
+        shared.days = normalizePlan(shared.days);
+        shared.days.forEach(function (day) {
+          day.forEach(function (m) { if (m.slug === recipe.slug) m.slug = ""; });
+        });
+      }
+    });
   }
   function loadError(e) {
     return location.protocol === "file:"
@@ -1009,7 +1054,7 @@
       if (unlocked()) {
         var del = el("button", { class: "btn danger", type: "button", text: "Delete" });
         del.addEventListener("click", function () {
-          if (!confirm("Delete “" + r.name + "” from the cookbook? This can't be undone.")) return;
+          if (!confirm("Delete “" + (r.name || r.slug) + "” from the cookbook? This can't be undone.")) return;
           del.disabled = true; del.textContent = "Deleting…";
           deleteRecipe(r).then(function () { location.hash = ""; })
             .catch(function (e) { del.disabled = false; del.textContent = "Delete"; alert("Couldn't delete: " + e.message); });
@@ -1075,7 +1120,7 @@
       var err = el("p", { class: "err", hidden: "" });
       var save = el("button", { class: "btn primary", type: "submit", text: existing ? "Save changes" : "Add to cookbook" });
       form.append(
-        el("h2", { text: existing ? "Edit “" + existing.name + "”" : "Write your own recipe" }),
+        el("h2", { text: existing ? "Edit “" + (existing.name || existing.slug) + "”" : "Write your own recipe" }),
         field("Name", "name", existing && existing.name, { required: true, placeholder: "Tuesday tacos" }),
         el("div", { class: "grid" }, [
           field("Prep time", "prep", existing && existing.prepTime, { placeholder: "15 min" }),
@@ -1142,7 +1187,13 @@
   var KINDS = { dinner: "Dinner", breakfast: "Breakfast", lunch: "Lunch", dessert: "Dessert" };
   var EXTRA_KINDS = ["breakfast", "lunch", "dessert"];
   var KIND_CODE = { breakfast: "b", lunch: "l", dessert: "s" }, CODE_KIND = { b: "breakfast", l: "lunch", s: "dessert" };
-  function validSlug(s) { return typeof s === "string" && /^[a-z0-9-]+$/.test(s) ? s : null; }
+  // Empty slots are "" (not null) so JSON and UI never show the word "null".
+  function validSlug(s) {
+    if (typeof s !== "string") return "";
+    s = s.trim();
+    if (!s || s === "null" || s === "undefined" || s === "none") return "";
+    return /^[a-z0-9-]+$/.test(s) ? s : "";
+  }
   // Old plans were 7 slugs (dinner only); new ones are 7 lists of {kind, slug}.
   function normalizePlan(raw) {
     var days = [];
@@ -1150,7 +1201,7 @@
       var d = raw && raw[i], meals = [];
       if (Array.isArray(d)) d.forEach(function (m) { if (m && KINDS[m.kind]) meals.push({ kind: m.kind, slug: validSlug(m.slug) }); });
       else meals.push({ kind: "dinner", slug: validSlug(d) });
-      var dinner = meals.filter(function (m) { return m.kind === "dinner"; })[0] || { kind: "dinner", slug: null };
+      var dinner = meals.filter(function (m) { return m.kind === "dinner"; })[0] || { kind: "dinner", slug: "" };
       days.push([dinner].concat(meals.filter(function (m) { return m.kind !== "dinner"; })));
     }
     return days;
@@ -1170,7 +1221,7 @@
   }
   function encodePlan(plan) {
     return plan.map(function (day) {
-      return day.map(function (m) { return m.kind === "dinner" ? (m.slug || "") : KIND_CODE[m.kind] + ":" + (m.slug || ""); }).join("+");
+      return day.map(function (m) { return m.kind === "dinner" ? str(m.slug) : KIND_CODE[m.kind] + ":" + str(m.slug); }).join("+");
     }).join(",");
   }
   function unique(v, i, arr) { return arr.indexOf(v) === i; }
@@ -1185,7 +1236,13 @@
       // A link that carries a plan wins, and becomes the plan from here on.
       var linked = planFromHash(location.hash);
       var plan = normalizePlan(linked || shared.days || load(PLAN_KEY, []));
-      plan.forEach(function (day) { day.forEach(function (m) { if (m.slug && !known[m.slug]) m.slug = null; }); });
+      var scrubbed = false;
+      plan.forEach(function (day) {
+        day.forEach(function (m) {
+          if (m.slug && !known[m.slug]) { m.slug = ""; scrubbed = true; }
+          if (m.slug == null) { m.slug = ""; scrubbed = true; }
+        });
+      });
       var checked = sharedLoaded ? shared.checked : plainObject(load(CHECK_KEY, {}));
       var extras = sharedLoaded ? shared.extras : (load(EXTRA_KEY, []) || []).filter(function (x) { return x && x.id && x.text; });
       var adding = {}, focusDay = -1;
@@ -1198,6 +1255,7 @@
       function savePlan() {
         shared.days = plan; store(PLAN_KEY, plan); queuePlanSave();
       }
+      if (scrubbed) savePlan();
       function setChecked(key, on) {
         if (on) checked[key] = 1; else delete checked[key];
         shared.checked = checked; store(CHECK_KEY, checked);
@@ -1207,7 +1265,7 @@
       function pick(exclude, allowRepeat) {
         var pool = recipes.filter(function (r) { return exclude.indexOf(r.slug) < 0; });
         if (!pool.length && allowRepeat) pool = recipes;
-        return pool.length ? pool[Math.floor(Math.random() * pool.length)].slug : null;
+        return pool.length ? pool[Math.floor(Math.random() * pool.length)].slug : "";
       }
       if (linked) { history.replaceState(null, "", location.pathname + location.search + "#week"); savePlan(); }
 
@@ -1234,13 +1292,15 @@
           day.forEach(function (m, j) {
             var kindName = KINDS[m.kind];
             var select = el("select", { "aria-label": DAYS[i] + " " + kindName.toLowerCase() });
-            select.appendChild(el("option", { value: "", text: m.kind === "dinner" ? "— nothing planned —" : "— pick a recipe —" }));
+            var blank = el("option", { value: "", text: m.kind === "dinner" ? "— nothing planned —" : "— pick a recipe —" });
+            if (!m.slug) blank.selected = true;
+            select.appendChild(blank);
             byName.forEach(function (r) {
-              var opt = el("option", { value: r.slug, text: r.name || r.slug });
+              var opt = el("option", { value: r.slug, text: r.name || r.slug || "Untitled recipe" });
               if (r.slug === m.slug) opt.selected = true;
               select.appendChild(opt);
             });
-            select.addEventListener("change", function () { m.slug = select.value || null; savePlan(); render(); });
+            select.addEventListener("change", function () { m.slug = validSlug(select.value); savePlan(); render(); });
             var swap = el("button", { class: "iconbtn", type: "button", title: "Swap for a different recipe", "aria-label": "Swap " + DAYS[i] + " " + kindName.toLowerCase(), text: "🔀" });
             swap.addEventListener("click", function () {
               var other = pick(allSlugs(), true);
@@ -1264,7 +1324,7 @@
           if (adding[i]) {
             EXTRA_KINDS.forEach(function (kind) {
               var chip = el("button", { class: "chip", type: "button", text: KINDS[kind] });
-              chip.addEventListener("click", function () { adding[i] = false; focusDay = i; day.push({ kind: kind, slug: null }); savePlan(); render(); });
+              chip.addEventListener("click", function () { adding[i] = false; focusDay = i; day.push({ kind: kind, slug: "" }); savePlan(); render(); });
               addRow.appendChild(chip);
             });
             var cancel = el("button", { class: "chip muted", type: "button", text: "Cancel" });
@@ -1359,7 +1419,7 @@
             frag.appendChild(el("ul", {}, rows.map(function (g) {
               return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length,
                 kind: g.unknown === g.lines.length ? "unknown" : g.set ? "set" : "est",
-                from: g.recipes.map(function (s) { return (known[s] || {}).name || s; }).join(" · ") });
+                from: g.recipes.map(function (s) { return (known[s] && known[s].name) || s; }).join(" · ") });
             })));
           });
           if (staples.length) {
@@ -1367,7 +1427,7 @@
             det.appendChild(el("summary", { text: staples.length + " staple" + (staples.length === 1 ? "" : "s") + " you probably already have" }));
             det.appendChild(el("ul", {}, staples.map(function (g) {
               return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length, kind: "pantry",
-                from: g.recipes.map(function (s) { return (known[s] || {}).name || s; }).join(" · ") });
+                from: g.recipes.map(function (s) { return (known[s] && known[s].name) || s; }).join(" · ") });
             })));
             frag.appendChild(det);
           }
