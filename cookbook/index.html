@@ -129,12 +129,22 @@
   .stat .v { font-size: 1.35rem; font-weight: 700; line-height: 1.2; margin: 2px 0; font-variant-numeric: tabular-nums; }
   .stat .s { font-size: .78rem; color: var(--muted); }
   .week { display: flex; flex-direction: column; gap: 8px; margin: 0 0 24px; }
-  .slot { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px 8px 14px; }
-  .slot .day { width: 2.6em; font-weight: 700; color: var(--muted); font-size: .85rem; flex: none; }
-  .slot select { flex: 1 1 200px; min-width: 0; padding: 8px 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; font-size: .95rem; font-family: var(--sans); }
-  .slot.empty select { color: var(--muted); }
-  .slot .open { font-size: .82rem; white-space: nowrap; text-decoration: none; }
-  .slot .slotmeta { flex-basis: 100%; color: var(--muted); font-size: .78rem; padding-left: calc(2.6em + 10px); min-height: 1em; }
+  .slot { display: flex; align-items: flex-start; gap: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px 8px 14px; }
+  .slot .day { width: 2.6em; font-weight: 700; color: var(--muted); font-size: .85rem; flex: none; padding-top: 9px; }
+  .slot .meals { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+  .mealrow { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; }
+  .mealrow .kind { flex: none; width: 5em; font-size: .72rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .mealrow select { flex: 1 1 160px; min-width: 0; padding: 8px 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; font-size: .95rem; font-family: var(--sans); }
+  .mealrow.empty select { color: var(--muted); }
+  .mealrow .open { font-size: .82rem; white-space: nowrap; text-decoration: none; }
+  .mealrow .slotmeta { flex-basis: 100%; color: var(--muted); font-size: .78rem; padding-left: calc(5em + 8px); min-height: 1em; }
+  .addmeal { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 2px 0 0 calc(5em + 8px); }
+  .addmeal .plus { border: 1px dashed var(--border); background: none; color: var(--muted); border-radius: 8px; padding: 4px 10px; font-size: .78rem; cursor: pointer; font-family: var(--sans); }
+  .addmeal .plus:hover { border-color: var(--accent); color: var(--accent); }
+  .addmeal .chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 999px; padding: 4px 12px; font-size: .8rem; cursor: pointer; font-family: var(--sans); }
+  .addmeal .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .addmeal .chip.muted { color: var(--muted); border-style: dashed; }
+  @media (max-width: 480px) { .mealrow .slotmeta, .addmeal { padding-left: 0; } }
   .iconbtn { cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; padding: 7px 10px; font-size: .9rem; font-family: var(--sans); flex: none; }
   .iconbtn:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -976,15 +986,45 @@
   }
 
   // ---------- week planner + shopping list ----------
-  // The plan (7 slugs) lives in localStorage and is mirrored into the URL
-  // (#week=a,b,,c) so the link can be sent to another device. Checked-off
-  // shopping items stay in this browser only.
+  // The plan lives in localStorage and is mirrored into the URL so the link can
+  // be sent to another device: #week=<mon>,<tue>,…  where each day is its meals
+  // joined by "+": a bare slug is dinner, "b:slug" breakfast, "l:slug" lunch,
+  // "s:slug" dessert. Checked-off shopping items stay in this browser only.
   var DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-  function planFromHash(hash) {   // "#week=a,b,,c" -> ["a","b",null,"c"]; plain "#week" -> null (use the saved plan)
-    var m = /^#week=(.*)$/.exec(hash);
-    return m ? m[1].split(",").map(function (s) { return /^[a-z0-9-]+$/.test(s) ? s : null; }) : null;
+  var KINDS = { dinner: "Dinner", breakfast: "Breakfast", lunch: "Lunch", dessert: "Dessert" };
+  var EXTRA_KINDS = ["breakfast", "lunch", "dessert"];
+  var KIND_CODE = { breakfast: "b", lunch: "l", dessert: "s" }, CODE_KIND = { b: "breakfast", l: "lunch", s: "dessert" };
+  function validSlug(s) { return typeof s === "string" && /^[a-z0-9-]+$/.test(s) ? s : null; }
+  // Old saved plans were 7 slugs (dinner only); new ones are 7 lists of {kind, slug}, dinner first.
+  function normalizePlan(raw) {
+    var days = [];
+    for (var i = 0; i < 7; i++) {
+      var d = raw && raw[i], meals = [];
+      if (Array.isArray(d)) d.forEach(function (m) { if (m && KINDS[m.kind]) meals.push({ kind: m.kind, slug: validSlug(m.slug) }); });
+      else meals.push({ kind: "dinner", slug: validSlug(d) });
+      var dinner = meals.filter(function (m) { return m.kind === "dinner"; })[0] || { kind: "dinner", slug: null };
+      days.push([dinner].concat(meals.filter(function (m) { return m.kind !== "dinner"; })));
+    }
+    return days;
   }
-  function sevenSlots(plan) { var out = []; for (var i = 0; i < 7; i++) out.push((plan && plan[i]) || null); return out; }
+  function planFromHash(hash) {   // "#week=a,b+l:c,,d" -> plan; plain "#week" -> null (use the saved plan)
+    var m = /^#week=(.*)$/.exec(hash);
+    if (!m) return null;
+    return normalizePlan(m[1].split(",").map(function (day) {
+      var meals = [];
+      day.split("+").forEach(function (item, i) {
+        var k = /^([a-z]):(.*)$/.exec(item);
+        if (k) { if (CODE_KIND[k[1]]) meals.push({ kind: CODE_KIND[k[1]], slug: k[2] }); }
+        else if (i === 0) meals.push({ kind: "dinner", slug: item });
+      });
+      return meals;
+    }));
+  }
+  function encodePlan(plan) {
+    return plan.map(function (day) {
+      return day.map(function (m) { return m.kind === "dinner" ? (m.slug || "") : KIND_CODE[m.kind] + ":" + (m.slug || ""); }).join("+");
+    }).join(",");
+  }
   function unique(v, i, arr) { return arr.indexOf(v) === i; }
 
   function showWeek() {
@@ -993,14 +1033,21 @@
       var known = {};
       recipes.forEach(function (r) { known[r.slug] = r; });
       var byName = recipes.slice().sort(function (a, b) { return String(a.name || a.slug).localeCompare(String(b.name || b.slug)); });
-      var plan = sevenSlots(planFromHash(location.hash) || load(PLAN_KEY, [])).map(function (s) { return s && known[s] ? s : null; });
+      var plan = normalizePlan(planFromHash(location.hash) || load(PLAN_KEY, []));
+      plan.forEach(function (day) { day.forEach(function (m) { if (m.slug && !known[m.slug]) m.slug = null; }); });
       var checked = load(CHECK_KEY, {});
       if (typeof checked !== "object" || Array.isArray(checked)) checked = {};
+      var adding = {}, focusDay = -1;   // which day has the meal-type chips open; which day's newest row gets focus
 
+      function allSlugs() {
+        var out = [];
+        plan.forEach(function (day) { day.forEach(function (m) { if (m.slug) out.push(m.slug); }); });
+        return out;
+      }
       function persist() {
         store(PLAN_KEY, plan);
-        var enc = plan.map(function (s) { return s || ""; }).join(",");
-        history.replaceState(null, "", location.pathname + location.search + (plan.some(Boolean) ? "#week=" + enc : "#week"));
+        var any = allSlugs().length > 0 || plan.some(function (d) { return d.length > 1; });
+        history.replaceState(null, "", location.pathname + location.search + (any ? "#week=" + encodePlan(plan) : "#week"));
       }
       function pick(exclude, allowRepeat) {
         var pool = recipes.filter(function (r) { return exclude.indexOf(r.slug) < 0; });
@@ -1012,48 +1059,76 @@
         persist();
         var suggest = el("button", { class: "btn primary", type: "button", text: "🎲 Suggest a week" });
         suggest.addEventListener("click", function () {
-          for (var i = 0; i < 7; i++) if (!plan[i]) plan[i] = pick(plan.filter(Boolean), false);
+          plan.forEach(function (day) { if (!day[0].slug) day[0].slug = pick(allSlugs(), false); });
           render();
         });
         var clear = el("button", { class: "btn", type: "button", text: "Clear week" });
-        clear.addEventListener("click", function () { plan = sevenSlots([]); render(); });
+        clear.addEventListener("click", function () { plan = normalizePlan([]); render(); });
 
         var week = el("div", { class: "week" }), slotMeta = {};
-        plan.forEach(function (slug, i) {
-          var select = el("select", { "aria-label": DAYS[i] + " dinner" });
-          select.appendChild(el("option", { value: "", text: "— nothing planned —" }));
-          byName.forEach(function (r) {
-            var opt = el("option", { value: r.slug, text: r.name || r.slug });
-            if (r.slug === slug) opt.selected = true;
-            select.appendChild(opt);
+        plan.forEach(function (day, i) {
+          var meals = el("div", { class: "meals" });
+          day.forEach(function (m, j) {
+            var kindName = KINDS[m.kind];
+            var select = el("select", { "aria-label": DAYS[i] + " " + kindName.toLowerCase() });
+            select.appendChild(el("option", { value: "", text: m.kind === "dinner" ? "— nothing planned —" : "— pick a recipe —" }));
+            byName.forEach(function (r) {
+              var opt = el("option", { value: r.slug, text: r.name || r.slug });
+              if (r.slug === m.slug) opt.selected = true;
+              select.appendChild(opt);
+            });
+            select.addEventListener("change", function () { m.slug = select.value || null; render(); });
+            var swap = el("button", { class: "iconbtn", type: "button", title: "Swap for a different recipe", "aria-label": "Swap " + DAYS[i] + " " + kindName.toLowerCase(), text: "🔀" });
+            swap.addEventListener("click", function () {
+              var other = pick(allSlugs(), true);
+              if (other) m.slug = other;
+              render();
+            });
+            var remove = null;
+            if (m.kind !== "dinner") {
+              remove = el("button", { class: "iconbtn", type: "button", title: "Remove this " + kindName.toLowerCase(), "aria-label": "Remove " + DAYS[i] + " " + kindName.toLowerCase(), text: "×" });
+              remove.addEventListener("click", function () { day.splice(j, 1); render(); });
+            }
+            var meta = m.slug ? el("span", { class: "slotmeta", text: "…" }) : null;
+            if (m.slug) (slotMeta[m.slug] = slotMeta[m.slug] || []).push(meta);
+            meals.appendChild(el("div", { class: "mealrow" + (m.slug ? "" : " empty") }, [
+              el("span", { class: "kind", text: kindName }), select, swap, remove,
+              m.slug ? el("a", { class: "open", href: "#" + encodeURIComponent(m.slug), text: "Open →" }) : null,
+              meta
+            ]));
           });
-          select.addEventListener("change", function () { plan[i] = select.value || null; render(); });
-          var swap = el("button", { class: "iconbtn", type: "button", title: "Swap for a different recipe", "aria-label": "Swap " + DAYS[i], text: "🔀" });
-          swap.addEventListener("click", function () {
-            var other = pick(plan.filter(Boolean), true);
-            if (other) plan[i] = other;
-            render();
-          });
-          var meta = slug ? el("span", { class: "slotmeta", text: "…" }) : null;
-          if (slug) (slotMeta[slug] = slotMeta[slug] || []).push(meta);
-          week.appendChild(el("div", { class: "slot" + (slug ? "" : " empty") }, [
-            el("span", { class: "day", text: DAYS[i] }), select, swap,
-            slug ? el("a", { class: "open", href: "#" + encodeURIComponent(slug), text: "Open →" }) : null,
-            meta
-          ]));
+          var addRow = el("div", { class: "addmeal" });
+          if (adding[i]) {
+            EXTRA_KINDS.forEach(function (kind) {
+              var chip = el("button", { class: "chip", type: "button", text: KINDS[kind] });
+              chip.addEventListener("click", function () { adding[i] = false; focusDay = i; day.push({ kind: kind, slug: null }); render(); });
+              addRow.appendChild(chip);
+            });
+            var cancel = el("button", { class: "chip muted", type: "button", text: "Cancel" });
+            cancel.addEventListener("click", function () { adding[i] = false; render(); });
+            addRow.appendChild(cancel);
+          } else {
+            var plus = el("button", { class: "plus", type: "button", title: "Add breakfast, lunch or dessert to this day", text: "+ Add meal" });
+            plus.addEventListener("click", function () { adding[i] = true; render(); });
+            addRow.appendChild(plus);
+          }
+          meals.appendChild(addRow);
+          week.appendChild(el("div", { class: "slot" }, [el("span", { class: "day", text: DAYS[i] }), meals]));
         });
 
         var stats = el("div", { class: "stats" });
-        var nights = plan.filter(Boolean).length;
+        var nights = plan.filter(function (d) { return d[0].slug; }).length;
+        var extras = allSlugs().length - nights;
+        var extrasNote = extras ? "+ " + extras + " other meal" + (extras === 1 ? "" : "s") : null;
         function tile(k, v, sub) { return el("div", { class: "stat" }, [el("div", { class: "k", text: k }), el("div", { class: "v", text: v }), sub ? el("div", { class: "s", text: sub }) : null]); }
-        stats.replaceChildren(tile("Groceries", "…"), tile("Kitchen time", "…"), tile("Dinners planned", nights + " of 7"));
+        stats.replaceChildren(tile("Groceries", "…"), tile("Kitchen time", "…"), tile("Dinners planned", nights + " of 7", extrasNote));
         var shopping = el("section", { class: "panel shopping" });
         var uncheck = el("button", { class: "small", type: "button", text: "Uncheck all" });
         uncheck.addEventListener("click", function () { checked = {}; store(CHECK_KEY, checked); render(); });
         shopping.appendChild(el("h3", {}, ["Shopping list", uncheck]));
-        var planned = plan.filter(Boolean).filter(unique);
+        var planned = allSlugs().filter(unique);
         if (!planned.length) {
-          shopping.appendChild(el("p", { class: "meta", text: "Plan some dinners and their ingredients show up here, with a rough price." }));
+          shopping.appendChild(el("p", { class: "meta", text: "Plan some meals and their ingredients show up here, with a rough price." }));
         } else {
           var holder = el("p", { class: "meta", text: "Loading ingredients…" });
           shopping.appendChild(holder);
@@ -1112,20 +1187,26 @@
             ]));
             frag.appendChild(el("p", { class: "foot", text: "Prices are rough guesses from typical US supermarket prices. Tap any price to set your own; it's remembered for that ingredient." }));
             holder.replaceWith(frag);
+            var mealsCount = nights + extras;
             stats.replaceChildren(
-              tile("Groceries", "~" + money(weekCost), (unpricedNote ? unpricedNote + " · " : "") + "~" + money(nights ? weekCost / nights : 0) + " a night"),
+              tile("Groceries", "~" + money(weekCost), (unpricedNote ? unpricedNote + " · " : "") + "~" + money(mealsCount ? weekCost / mealsCount : 0) + (extras ? " a meal" : " a night")),
               tile("Kitchen time", (anyEst ? "~" : "") + fmtMin(prepTotal + cookTotal), "prep " + fmtMin(prepTotal) + " · cook " + fmtMin(cookTotal)),
-              tile("Dinners planned", nights + " of 7", planned.length < nights ? "a recipe repeats; its groceries are listed once" : null)
+              tile("Dinners planned", nights + " of 7", extrasNote || (planned.length < mealsCount ? "a recipe repeats; its groceries are listed once" : null))
             );
           });
         }
 
         view.replaceChildren(
-          el("div", { class: "weekhead" }, [el("h2", { text: "Dinners this week" }), el("div", { class: "actions" }, [suggest, clear])]),
+          el("div", { class: "weekhead" }, [el("h2", { text: "Meals this week" }), el("div", { class: "actions" }, [suggest, clear])]),
           planned.length ? stats : null,
           recipes.length ? week : el("p", { class: "status", text: "Save a few recipes first, then plan the week here." }),
           shopping
         );
+        if (focusDay >= 0) {
+          var rows = week.children[focusDay] && week.children[focusDay].querySelectorAll(".mealrow select");
+          if (rows && rows.length) rows[rows.length - 1].focus();
+          focusDay = -1;
+        }
       }
       render();
     }).catch(function (e) { status(loadError(e), true); });
