@@ -135,7 +135,7 @@
   .mealrow { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; }
   .mealrow .kind { flex: none; width: 5em; font-size: .72rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
   .mealrow select { flex: 1 1 160px; min-width: 0; padding: 8px 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; font-size: .95rem; font-family: var(--sans); }
-  .mealrow.empty select { color: var(--muted); }
+  .mealrow.blank select { color: var(--muted); }
   .mealrow .open { font-size: .82rem; white-space: nowrap; text-decoration: none; }
   .mealrow .slotmeta { flex-basis: 100%; color: var(--muted); font-size: .78rem; padding-left: calc(5em + 8px); min-height: 1em; }
   .addmeal { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 2px 0 0 calc(5em + 8px); }
@@ -1091,7 +1091,7 @@
             }
             var meta = m.slug ? el("span", { class: "slotmeta", text: "…" }) : null;
             if (m.slug) (slotMeta[m.slug] = slotMeta[m.slug] || []).push(meta);
-            meals.appendChild(el("div", { class: "mealrow" + (m.slug ? "" : " empty") }, [
+            meals.appendChild(el("div", { class: "mealrow" + (m.slug ? "" : " blank") }, [
               el("span", { class: "kind", text: kindName }), select, swap, remove,
               m.slug ? el("a", { class: "open", href: "#" + encodeURIComponent(m.slug), text: "Open →" }) : null,
               meta
