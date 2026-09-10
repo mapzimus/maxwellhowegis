@@ -123,8 +123,11 @@
   .weekhead { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 0 0 10px; }
   .weekhead h2 { font-size: 1.3rem; margin: 0; }
   .weekhead .actions { display: flex; gap: 8px; flex-wrap: wrap; }
-  .summary { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: .88rem; margin: 0 0 14px; }
-  .summary b { color: var(--text); font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 0 0 16px; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; box-shadow: var(--shadow); }
+  .stat .k { font-size: .74rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .stat .v { font-size: 1.35rem; font-weight: 700; line-height: 1.2; margin: 2px 0; font-variant-numeric: tabular-nums; }
+  .stat .s { font-size: .78rem; color: var(--muted); }
   .week { display: flex; flex-direction: column; gap: 8px; margin: 0 0 24px; }
   .slot { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px 8px 14px; }
   .slot .day { width: 2.6em; font-weight: 700; color: var(--muted); font-size: .85rem; flex: none; }
@@ -142,17 +145,20 @@
   .shopping h4 { margin: 16px 0 4px; font-size: .92rem; display: flex; justify-content: space-between; gap: 10px; }
   .shopping h4 a { color: inherit; text-decoration: none; }
   .shopping h4 a:hover { color: var(--accent); }
-  .shopping h4 .sub { font-weight: 400; color: var(--muted); font-size: .82rem; white-space: nowrap; }
+  .shopping h4 .sub { font-weight: 600; color: var(--muted); font-size: .82rem; white-space: nowrap; min-width: 5.5em; text-align: right; font-variant-numeric: tabular-nums; }
   .shopping ul { list-style: none; margin: 0; padding: 0; }
   .shopping li { display: flex; align-items: flex-start; gap: 8px; }
   .shopping label { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; cursor: pointer; flex: 1 1 auto; min-width: 0; }
   .shopping input { margin: 4px 0 0; flex: none; accent-color: var(--accent); }
   .shopping label.done span { text-decoration: line-through; color: var(--muted); }
-  .price { flex: none; margin-left: auto; padding: 5px 0 5px 8px; color: var(--muted); font-size: .82rem; white-space: nowrap; cursor: pointer; border: 0; background: none; font-family: var(--sans); font-variant-numeric: tabular-nums; }
+  .price { flex: none; margin-left: auto; min-width: 5.5em; text-align: right; padding: 5px 0 5px 8px; color: var(--muted); font-size: .82rem; white-space: nowrap; cursor: pointer; border: 0; background: none; font-family: var(--sans); font-variant-numeric: tabular-nums; }
   .price:hover { color: var(--accent); }
   .price.set { color: var(--text); font-weight: 600; }
   .price.unknown { opacity: .75; }
-  .shopping .foot { color: var(--muted); font-size: .8rem; margin: 14px 0 0; }
+  .shopping .total { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-top: 2px solid var(--border); margin-top: 16px; padding-top: 10px; font-weight: 700; font-size: 1.05rem; }
+  .shopping .total b { font-variant-numeric: tabular-nums; font-size: 1.2rem; }
+  .shopping .total .n { font-weight: 400; color: var(--muted); font-size: .8rem; }
+  .shopping .foot { color: var(--muted); font-size: .8rem; margin: 10px 0 0; }
 
   footer.app { margin-top: 30px; color: var(--muted); font-size: .8rem; text-align: center; }
 
@@ -1037,7 +1043,10 @@
           ]));
         });
 
-        var summary = el("p", { class: "summary" });
+        var stats = el("div", { class: "stats" });
+        var nights = plan.filter(Boolean).length;
+        function tile(k, v, sub) { return el("div", { class: "stat" }, [el("div", { class: "k", text: k }), el("div", { class: "v", text: v }), sub ? el("div", { class: "s", text: sub }) : null]); }
+        stats.replaceChildren(tile("Groceries", "…"), tile("Kitchen time", "…"), tile("Dinners planned", nights + " of 7"));
         var shopping = el("section", { class: "panel shopping" });
         var uncheck = el("button", { class: "small", type: "button", text: "Uncheck all" });
         uncheck.addEventListener("click", function () { checked = {}; store(CHECK_KEY, checked); render(); });
@@ -1096,18 +1105,24 @@
               });
               frag.appendChild(list);
             });
-            frag.appendChild(el("p", { class: "foot", text: "Prices are rough guesses from typical US supermarket prices" + (weekUnknown ? "; " + weekUnknown + " item" + (weekUnknown === 1 ? "" : "s") + " couldn't be guessed" : "") + ". Tap any price to set your own; it's remembered for that ingredient." }));
+            var unpricedNote = weekUnknown ? weekUnknown + " item" + (weekUnknown === 1 ? "" : "s") + " not priced" : "";
+            frag.appendChild(el("div", { class: "total" }, [
+              el("span", {}, ["Total for the week", unpricedNote ? el("span", { class: "n", text: " · " + unpricedNote }) : null]),
+              el("b", { text: "~" + money(weekCost) })
+            ]));
+            frag.appendChild(el("p", { class: "foot", text: "Prices are rough guesses from typical US supermarket prices. Tap any price to set your own; it's remembered for that ingredient." }));
             holder.replaceWith(frag);
-            summary.replaceChildren(
-              el("span", {}, ["Kitchen time ", el("b", { text: (anyEst ? "~" : "") + fmtMin(prepTotal + cookTotal) }), " (prep " + fmtMin(prepTotal) + ", cook " + fmtMin(cookTotal) + ")"]),
-              el("span", {}, ["Groceries ", el("b", { text: "~" + money(weekCost) }), weekUnknown ? " + " + weekUnknown + " unpriced" : ""])
+            stats.replaceChildren(
+              tile("Groceries", "~" + money(weekCost), (unpricedNote ? unpricedNote + " · " : "") + "~" + money(nights ? weekCost / nights : 0) + " a night"),
+              tile("Kitchen time", (anyEst ? "~" : "") + fmtMin(prepTotal + cookTotal), "prep " + fmtMin(prepTotal) + " · cook " + fmtMin(cookTotal)),
+              tile("Dinners planned", nights + " of 7", planned.length < nights ? "a recipe repeats; its groceries are listed once" : null)
             );
           });
         }
 
         view.replaceChildren(
           el("div", { class: "weekhead" }, [el("h2", { text: "Dinners this week" }), el("div", { class: "actions" }, [suggest, clear])]),
-          planned.length ? summary : null,
+          planned.length ? stats : null,
           recipes.length ? week : el("p", { class: "status", text: "Save a few recipes first, then plan the week here." }),
           shopping
         );
