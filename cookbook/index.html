@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Cookbook</title>
-<meta name="description" content="Save recipes from a link or write your own, plan the week's dinners, and shop from one list with a rough grocery estimate.">
+<meta name="description" content="Save recipes from a link or write your own, plan the week's meals, and shop from one list with a rough grocery estimate.">
 <style>
   :root {
     --bg:#f6f7f9; --surface:#ffffff; --surface-2:#f0f2f5; --border:#d9dee5;
@@ -152,10 +152,18 @@
   .shopping h3 { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
   .shopping h3 .small { font-size: .8rem; font-weight: 400; color: var(--muted); cursor: pointer; background: none; border: 0; padding: 0; font-family: var(--sans); }
   .shopping h3 .small:hover { color: var(--accent); }
-  .shopping h4 { margin: 16px 0 4px; font-size: .92rem; display: flex; justify-content: space-between; gap: 10px; }
-  .shopping h4 a { color: inherit; text-decoration: none; }
-  .shopping h4 a:hover { color: var(--accent); }
-  .shopping h4 .sub { font-weight: 600; color: var(--muted); font-size: .82rem; white-space: nowrap; min-width: 5.5em; text-align: right; font-variant-numeric: tabular-nums; }
+  .shopping h4.aisle { margin: 18px 0 2px; font-size: .76rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .07em; }
+  .shopping h4.aisle:first-of-type { margin-top: 8px; }
+  .shopping .from { display: block; color: var(--muted); font-size: .74rem; margin-top: 1px; }
+  .shopping details { margin: 18px 0 0; }
+  .shopping summary { cursor: pointer; color: var(--muted); font-size: .84rem; padding: 4px 0; }
+  .shopping summary:hover { color: var(--accent); }
+  .shopping .remove { flex: none; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 1.1rem; line-height: 1; padding: 4px 2px 4px 6px; font-family: var(--sans); }
+  .shopping .remove:hover { color: var(--danger); }
+  .shopping .additem { display: flex; gap: 8px; margin: 16px 0 0; }
+  .shopping .additem input { flex: 1 1 auto; min-width: 0; padding: 9px 11px; border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; font-size: .9rem; font-family: var(--sans); }
+  .shopping .additem input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+  .planhint { color: var(--muted); font-size: .8rem; margin: 0 0 12px; }
   .shopping ul { list-style: none; margin: 0; padding: 0; }
   .shopping li { display: flex; align-items: flex-start; gap: 8px; }
   .shopping label { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; cursor: pointer; flex: 1 1 auto; min-width: 0; }
@@ -186,7 +194,7 @@
   <header class="app">
     <div>
       <h1>Cookbook</h1>
-      <p>Save a recipe from a link or write your own. Plan the week&rsquo;s dinners and shop from one list.</p>
+      <p>Save a recipe from a link or write your own. Plan the week&rsquo;s meals and shop from one list, shared between us.</p>
     </div>
     <div class="hdr-actions">
       <button class="theme-toggle" id="lockBtn" type="button">&#128274; Unlock editing</button>
@@ -241,7 +249,7 @@
   var OWNER = "mapzimus", REPO = "cookbook", BRANCH = "main";
   var API = "https://api.github.com/repos/" + OWNER + "/" + REPO;
   var RAW = "https://raw.githubusercontent.com/" + OWNER + "/" + REPO + "/" + BRANCH + "/";
-  var TOKEN_KEY = "cookbook-token", PLAN_KEY = "cookbook-plan", CHECK_KEY = "cookbook-checked", PRICE_KEY = "cookbook-prices";
+  var TOKEN_KEY = "cookbook-token", PLAN_KEY = "cookbook-plan", CHECK_KEY = "cookbook-checked", PRICE_KEY = "cookbook-prices", EXTRA_KEY = "cookbook-extras";
   var view = document.getElementById("view");
   var tokenBad = false;
 
@@ -419,7 +427,7 @@
   // ---------- grocery prices ----------
   // Typical US supermarket prices, 2026-ish: per pound, per cup, per item, per package. Rough on purpose.
   var PRICES = [
-    // meat & fish
+    ["#Meat & seafood", null],
     ["chicken breast|boneless skinless chicken", { lb: 4.5, each: 2.5 }],
     ["chicken thigh|chicken leg|drumstick", { lb: 3.5, each: 1.2 }],
     ["chicken wing", { lb: 3.5, each: 0.5 }],
@@ -461,7 +469,7 @@
     ["tofu", { lb: 3, pack: 2.5, each: 2.5 }],
     ["tempeh", { pack: 3.5 }],
     ["egg white|egg yolk|egg", { each: 0.35, cup: 1.4 }],
-    // dairy
+    ["#Dairy & eggs", null],
     ["unsalted butter|salted butter|butter", { lb: 5, cup: 2.5, each: 1.25 }],
     ["heavy cream|whipping cream|double cream|thickened cream", { cup: 1.5, pack: 3 }],
     ["half and half|half-and-half|light cream|single cream", { cup: 0.8, pack: 3 }],
@@ -480,7 +488,7 @@
     ["cheese", { lb: 6.5, cup: 1.7, pack: 4 }],
     ["cream", { cup: 1.5, pack: 3 }],
     ["ice cream", { cup: 1, pack: 5 }],
-    // produce
+    ["#Produce", null],
     ["green onion|scallion|spring onion", { each: 0.15, pack: 1, cup: 0.6 }],
     ["red onion|yellow onion|white onion|sweet onion|onion", { each: 0.7, lb: 1.2, cup: 0.6 }],
     ["shallot", { each: 0.6, lb: 4 }],
@@ -549,7 +557,7 @@
     ["caper", { cup: 6, pack: 3 }],
     ["edamame", { cup: 1.5, pack: 3 }],
     ["seaweed|nori", { pack: 3, each: 0.3 }],
-    // pantry & dry goods
+    ["#Pantry", null],
     ["all purpose flour|all-purpose flour|plain flour|bread flour|whole wheat flour|flour", { cup: 0.25, lb: 0.8, pantry: true }],
     ["cornstarch|corn starch|cornflour|arrowroot", { cup: 0.8, pantry: true }],
     ["baking soda|baking powder|bicarbonate|cream of tartar|yeast", { cup: 1.5, pack: 1.5, pantry: true }],
@@ -633,21 +641,40 @@
     ["frozen berr|frozen fruit", { pack: 4, cup: 1.5 }],
     ["veggie burger|plant based|beyond|impossible", { each: 2.5, pack: 6, lb: 9 }]
   ];
+  // Shopping-list sections, in the order you walk a store. A "#Name" row above
+  // sets the aisle for everything under it; these few sit somewhere else.
+  var AISLES = ["Produce", "Meat & seafood", "Dairy & eggs", "Bakery", "Frozen", "Pantry", "Other"];
+  var AISLE_OVERRIDES = [
+    [/frozen|ice cream|tater tot|french fries|hash brown/, "Frozen"],
+    [/tortilla|pita|naan|flatbread|bun|dinner roll|slider|baguette|ciabatta|sourdough|french bread|bread|puff pastry|phyllo|filo|pie crust|pizza dough|crescent|biscuit dough|wonton|dumpling wrapper/, "Bakery"],
+    [/canned|tomato paste|crushed tomato|diced tomato|whole tomato|tomato sauce|tomato puree|passata|fire roasted|coconut milk|coconut cream|olive$|^olive|pickle|gherkin|cornichon|caper|artichoke|seaweed|nori|sun dried|sun-dried|condensed soup|cream of mushroom/, "Pantry"],
+    [/^egg/, "Dairy & eggs"]
+  ];
+  function aisleFor(key, section) {
+    for (var i = 0; i < AISLE_OVERRIDES.length; i++) if (AISLE_OVERRIDES[i][0].test(key)) return AISLE_OVERRIDES[i][1];
+    return section;
+  }
   var PRICE_INDEX = [];
-  PRICES.forEach(function (row) {
-    var kws = row[0].split("|");
-    var entry = { key: kws[0], price: row[1] };
-    kws.forEach(function (kw) {
-      PRICE_INDEX.push({ kw: kw, entry: entry, re: new RegExp("(^|[^a-z])" + escapeRe(kw) + "(?:es|s|ies)?(?![a-z])") });
+  (function () {
+    var section = "Other";
+    PRICES.forEach(function (row) {
+      if (row[0].charAt(0) === "#") { section = row[0].slice(1); return; }
+      var kws = row[0].split("|");
+      var entry = { key: kws[0], price: row[1], aisle: aisleFor(kws[0], section) };
+      kws.forEach(function (kw) {
+        PRICE_INDEX.push({ kw: kw, entry: entry, re: new RegExp("(^|[^a-z])" + escapeRe(kw) + "(?:es|s|ies)?(?![a-z])") });
+      });
     });
-  });
-  function matchPrice(name) {
+  })();
+  // The matched record, not just the entry: the keyword that matched is what the
+  // shopping list calls the item, so "gouda" never shows up as "cheddar".
+  function matchIngredient(name) {
     var best = null;
     for (var i = 0; i < PRICE_INDEX.length; i++) {
       var p = PRICE_INDEX[i];
       if (p.re.test(name) && (!best || p.kw.length > best.kw.length)) best = p;
     }
-    return best ? best.entry : null;
+    return best;
   }
 
   var FRAC = { "½": 0.5, "⅓": 1 / 3, "⅔": 2 / 3, "¼": 0.25, "¾": 0.75, "⅛": 0.125, "⅜": 0.375, "⅝": 0.625, "⅞": 0.875 };
@@ -717,6 +744,64 @@
     for (var i = 0; i < routes.length; i++) { var k = routes[i][0]; if (price[k] != null) return q * routes[i][1] * price[k]; }
     return null;
   }
+  function trimNum(n) { return String(Math.round(n * 100) / 100); }
+  function fmtFrac(n) {
+    var whole = Math.floor(n + 1e-9), eighths = Math.round((n - whole) * 8);
+    if (eighths === 8) { whole++; eighths = 0; }
+    var f = ["", "1/8", "1/4", "3/8", "1/2", "5/8", "3/4", "7/8"][eighths];
+    return whole ? whole + (f ? " " + f : "") : (f || "0");
+  }
+  function fmtQty(dim, amt) {
+    if (dim === "w") return amt >= 1 ? trimNum(amt) + " lb" : Math.max(1, Math.round(amt * 16)) + " oz";
+    if (dim === "v") {
+      if (amt >= 0.25) return fmtFrac(amt) + (amt > 1 ? " cups" : " cup");
+      if (amt * 16 >= 1) return trimNum(amt * 16) + " tbsp";
+      return Math.max(1, Math.round(amt * 48)) + " tsp";
+    }
+    if (dim === "pack") return trimNum(amt) + " pkg";
+    return trimNum(amt) + " \u00d7";
+  }
+  // Several lines of the same ingredient, added up: "2 lb", "1 1/2 cups", "3 ×".
+  function describeQty(parts) {
+    var sums = {}, any = false;
+    parts.forEach(function (p) { if (p.amount == null) return; sums[p.dim] = (sums[p.dim] || 0) + p.amount; any = true; });
+    if (!any) return "";
+    return ["w", "v", "each", "pack"].filter(function (d) { return sums[d]; })
+      .map(function (d) { return fmtQty(d, sums[d]); }).join(" + ");
+  }
+  // Every planned recipe's ingredients, merged into one row per thing to buy.
+  // Two entries only merge when they came from the same price-table entry AND
+  // end in the same word, so "onion" joins "yellow onion" but not "green onion".
+  function groupIngredients(recipes, slugs) {
+    var groups = [], byKey = {};
+    recipes.forEach(function (r, idx) {
+      ((r && r.ingredients) || []).forEach(function (line) {
+        var p = parseIngredient(line), m = matchIngredient(p.name);
+        var kw = m ? m.kw : (p.name || String(line).toLowerCase());
+        var gkey = (m ? m.entry.key : "?") + "|" + kw.split(" ").pop();
+        var g = byKey[gkey];
+        if (!g) { g = byKey[gkey] = { label: kw, aisle: m ? m.entry.aisle : "Other", parts: [], lines: [], recipes: [] }; groups.push(g); }
+        if (kw.length < g.label.length) g.label = kw;   // "onion", not "yellow onion", once they merge
+        g.parts.push(p); g.lines.push(line);
+        if (g.recipes.indexOf(slugs[idx]) < 0) g.recipes.push(slugs[idx]);
+      });
+    });
+    groups.forEach(function (g) {
+      var total = 0, unknown = 0, set = false, allPantry = true;
+      g.lines.forEach(function (line) {
+        var pl = priceLine(line);
+        g.priceKey = pl.key;
+        if (pl.kind === "set") set = true;
+        if (pl.kind !== "pantry") allPantry = false;
+        if (pl.price == null) unknown++; else total += pl.price;
+      });
+      g.price = total; g.unknown = unknown; g.set = set; g.staple = allPantry && !set;
+      g.qty = describeQty(g.parts);
+      g.text = g.qty ? g.qty + " " + g.label : g.label;
+    });
+    return groups;
+  }
+
   var repoPrices = {}, localPrices = load(PRICE_KEY, {}), pendingPrices = {}, priceTimer = null;
   if (typeof localPrices !== "object" || Array.isArray(localPrices)) localPrices = {};
   function overrides() { return Object.assign({}, repoPrices, localPrices); }
@@ -726,7 +811,8 @@
   }
   // Priced line: {key, price, kind: "est" | "set" | "pantry" | "unknown"}
   function priceLine(line) {
-    var p = parseIngredient(line), entry = matchPrice(p.name), key = entry ? entry.key : (p.name || line.toLowerCase());
+    var p = parseIngredient(line), m = matchIngredient(p.name), entry = m ? m.entry : null;
+    var key = entry ? entry.key : (p.name || line.toLowerCase());
     var ov = overrides()[key];
     if (typeof ov === "number") return { key: key, price: ov, kind: "set" };
     if (!entry) return { key: key, price: null, kind: "unknown" };
@@ -765,6 +851,67 @@
     return { total: total, unknown: unknown };
   }
 
+  // ---------- the shared plan ----------
+  // The week's meals, the checked-off shopping items and any extra items live in
+  // plan.json in the data repo, so both phones see the same list. Anyone with the
+  // link can read it; only an unlocked device writes. A locked device keeps its
+  // own copy in this browser instead.
+  var PLAN_FILE = "plan.json";
+  var shared = { days: null, checked: {}, extras: [], updatedAt: null };
+  var sharedLoaded = false, planTimer = null, planSaving = false;
+  var checkDelta = {}, extraDelta = {};
+  function plainObject(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : {}; }
+  function readPlanDoc(doc) {
+    return { days: Array.isArray(doc.days) ? doc.days : null, checked: plainObject(doc.checked),
+      extras: Array.isArray(doc.extras) ? doc.extras.filter(function (x) { return x && x.id && x.text; }) : [],
+      updatedAt: typeof doc.updatedAt === "string" ? doc.updatedAt : null };
+  }
+  function loadSharedPlan() {
+    return readJSON(PLAN_FILE).then(function (d) {
+      shared = readPlanDoc(plainObject(d)); sharedLoaded = true;
+    }).catch(function () {
+      shared = { days: null, checked: {}, extras: [], updatedAt: null }; sharedLoaded = false;
+    });
+  }
+  function queuePlanSave() {
+    if (!unlocked()) return;   // locked: it's already in localStorage, nothing to push
+    planSaving = true;
+    clearTimeout(planTimer);
+    planTimer = setTimeout(flushPlan, 1200);
+  }
+  // Re-read before writing and replay only what changed here, so one of us
+  // checking things off in the store doesn't wipe the other's edits.
+  function flushPlan() {
+    var days = shared.days, cd = checkDelta, ed = extraDelta;
+    checkDelta = {}; extraDelta = {};
+    readJSON(PLAN_FILE).catch(function () { return {}; }).then(function (raw) {
+      var fresh = readPlanDoc(plainObject(raw));
+      Object.keys(cd).forEach(function (k) { if (cd[k]) fresh.checked[k] = 1; else delete fresh.checked[k]; });
+      Object.keys(ed).forEach(function (id) {
+        fresh.extras = fresh.extras.filter(function (x) { return x.id !== id; });
+        if (ed[id]) fresh.extras.push(ed[id]);
+      });
+      var doc = { days: days, checked: fresh.checked, extras: fresh.extras, updatedAt: nowISO() };
+      return commit("Cookbook: update the week", [{ path: PLAN_FILE, content: pretty(doc) }]).then(function () {
+        shared.checked = doc.checked; shared.extras = doc.extras; shared.updatedAt = doc.updatedAt;
+        sharedLoaded = true;
+      });
+    }).catch(function (e) {
+      showBanner("Couldn't save the week to the cookbook (" + e.message + "). It's kept on this device for now.");
+    }).then(function () { planSaving = false; });
+  }
+  // Someone else may have changed the plan while this tab sat in the background.
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden || planSaving || !/^#week(=|$)/.test(location.hash)) return;
+    var was = shared.updatedAt;
+    readJSON(PLAN_FILE).then(function (raw) {
+      var fresh = readPlanDoc(plainObject(raw));
+      if (!fresh.updatedAt || fresh.updatedAt === was) return;
+      shared = fresh; sharedLoaded = true;
+      route();
+    }).catch(function () {});
+  });
+
   // ---------- lock state ----------
   var lockBtn = document.getElementById("lockBtn"), addLocked = document.getElementById("addLocked"), addForm = document.getElementById("addForm");
   var dlg = document.getElementById("unlockDlg"), tokenInput = document.getElementById("tokenInput"), unlockErr = document.getElementById("unlockErr");
@@ -793,7 +940,8 @@
         if (!info.permissions || !info.permissions.push) throw new Error("That token can't write to the cookbook. It needs Contents: read and write on " + OWNER + "/" + REPO + ".");
         try { localStorage.setItem(TOKEN_KEY, t); } catch (e) { throw new Error("This browser won't store the token (private mode?)."); }
         tokenBad = false; indexCache = null; recipeCache = {};
-        dlg.close(); renderLock(); route();
+        dlg.close(); renderLock();
+        loadSharedPlan().then(route, route);
       })
       .catch(function (e) { unlockErr.textContent = e.message; unlockErr.hidden = false; })
       .then(function () { go.disabled = false; });
@@ -986,16 +1134,16 @@
   }
 
   // ---------- week planner + shopping list ----------
-  // The plan lives in localStorage and is mirrored into the URL so the link can
-  // be sent to another device: #week=<mon>,<tue>,…  where each day is its meals
-  // joined by "+": a bare slug is dinner, "b:slug" breakfast, "l:slug" lunch,
-  // "s:slug" dessert. Checked-off shopping items stay in this browser only.
+  // A plan is 7 days, each a list of meals with dinner first. It lives in
+  // plan.json (see above) and can also be handed to someone as a link:
+  // #week=<mon>,<tue>,… where a day is its meals joined by "+", a bare slug is
+  // dinner and "b:"/"l:"/"s:" prefix breakfast, lunch and dessert.
   var DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   var KINDS = { dinner: "Dinner", breakfast: "Breakfast", lunch: "Lunch", dessert: "Dessert" };
   var EXTRA_KINDS = ["breakfast", "lunch", "dessert"];
   var KIND_CODE = { breakfast: "b", lunch: "l", dessert: "s" }, CODE_KIND = { b: "breakfast", l: "lunch", s: "dessert" };
   function validSlug(s) { return typeof s === "string" && /^[a-z0-9-]+$/.test(s) ? s : null; }
-  // Old saved plans were 7 slugs (dinner only); new ones are 7 lists of {kind, slug}, dinner first.
+  // Old plans were 7 slugs (dinner only); new ones are 7 lists of {kind, slug}.
   function normalizePlan(raw) {
     var days = [];
     for (var i = 0; i < 7; i++) {
@@ -1007,7 +1155,7 @@
     }
     return days;
   }
-  function planFromHash(hash) {   // "#week=a,b+l:c,,d" -> plan; plain "#week" -> null (use the saved plan)
+  function planFromHash(hash) {
     var m = /^#week=(.*)$/.exec(hash);
     if (!m) return null;
     return normalizePlan(m[1].split(",").map(function (day) {
@@ -1033,37 +1181,52 @@
       var known = {};
       recipes.forEach(function (r) { known[r.slug] = r; });
       var byName = recipes.slice().sort(function (a, b) { return String(a.name || a.slug).localeCompare(String(b.name || b.slug)); });
-      var plan = normalizePlan(planFromHash(location.hash) || load(PLAN_KEY, []));
+
+      // A link that carries a plan wins, and becomes the plan from here on.
+      var linked = planFromHash(location.hash);
+      var plan = normalizePlan(linked || shared.days || load(PLAN_KEY, []));
       plan.forEach(function (day) { day.forEach(function (m) { if (m.slug && !known[m.slug]) m.slug = null; }); });
-      var checked = load(CHECK_KEY, {});
-      if (typeof checked !== "object" || Array.isArray(checked)) checked = {};
-      var adding = {}, focusDay = -1;   // which day has the meal-type chips open; which day's newest row gets focus
+      var checked = sharedLoaded ? shared.checked : plainObject(load(CHECK_KEY, {}));
+      var extras = sharedLoaded ? shared.extras : (load(EXTRA_KEY, []) || []).filter(function (x) { return x && x.id && x.text; });
+      var adding = {}, focusDay = -1;
 
       function allSlugs() {
         var out = [];
         plan.forEach(function (day) { day.forEach(function (m) { if (m.slug) out.push(m.slug); }); });
         return out;
       }
-      function persist() {
-        store(PLAN_KEY, plan);
-        var any = allSlugs().length > 0 || plan.some(function (d) { return d.length > 1; });
-        history.replaceState(null, "", location.pathname + location.search + (any ? "#week=" + encodePlan(plan) : "#week"));
+      function savePlan() {
+        shared.days = plan; store(PLAN_KEY, plan); queuePlanSave();
       }
+      function setChecked(key, on) {
+        if (on) checked[key] = 1; else delete checked[key];
+        shared.checked = checked; store(CHECK_KEY, checked);
+        checkDelta[key] = on ? 1 : 0; queuePlanSave();
+      }
+      function saveExtras() { shared.extras = extras; store(EXTRA_KEY, extras); queuePlanSave(); }
       function pick(exclude, allowRepeat) {
         var pool = recipes.filter(function (r) { return exclude.indexOf(r.slug) < 0; });
         if (!pool.length && allowRepeat) pool = recipes;
         return pool.length ? pool[Math.floor(Math.random() * pool.length)].slug : null;
       }
+      if (linked) { history.replaceState(null, "", location.pathname + location.search + "#week"); savePlan(); }
 
       function render() {
-        persist();
+        // Fills the nights you haven't chosen yourself and leaves the rest alone.
         var suggest = el("button", { class: "btn primary", type: "button", text: "🎲 Suggest a week" });
         suggest.addEventListener("click", function () {
           plan.forEach(function (day) { if (!day[0].slug) day[0].slug = pick(allSlugs(), false); });
-          render();
+          savePlan(); render();
         });
         var clear = el("button", { class: "btn", type: "button", text: "Clear week" });
-        clear.addEventListener("click", function () { plan = normalizePlan([]); render(); });
+        clear.addEventListener("click", function () { plan = normalizePlan([]); savePlan(); render(); });
+        var copy = el("button", { class: "btn", type: "button", text: "🔗 Copy link" });
+        copy.addEventListener("click", function () {
+          var url = location.origin + location.pathname + "#week=" + encodePlan(plan);
+          function done() { copy.textContent = "✓ Copied"; setTimeout(function () { copy.textContent = "🔗 Copy link"; }, 1600); }
+          if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { prompt("Copy this link:", url); });
+          else prompt("Copy this link:", url);
+        });
 
         var week = el("div", { class: "week" }), slotMeta = {};
         plan.forEach(function (day, i) {
@@ -1077,17 +1240,17 @@
               if (r.slug === m.slug) opt.selected = true;
               select.appendChild(opt);
             });
-            select.addEventListener("change", function () { m.slug = select.value || null; render(); });
+            select.addEventListener("change", function () { m.slug = select.value || null; savePlan(); render(); });
             var swap = el("button", { class: "iconbtn", type: "button", title: "Swap for a different recipe", "aria-label": "Swap " + DAYS[i] + " " + kindName.toLowerCase(), text: "🔀" });
             swap.addEventListener("click", function () {
               var other = pick(allSlugs(), true);
               if (other) m.slug = other;
-              render();
+              savePlan(); render();
             });
             var remove = null;
             if (m.kind !== "dinner") {
               remove = el("button", { class: "iconbtn", type: "button", title: "Remove this " + kindName.toLowerCase(), "aria-label": "Remove " + DAYS[i] + " " + kindName.toLowerCase(), text: "×" });
-              remove.addEventListener("click", function () { day.splice(j, 1); render(); });
+              remove.addEventListener("click", function () { day.splice(j, 1); savePlan(); render(); });
             }
             var meta = m.slug ? el("span", { class: "slotmeta", text: "…" }) : null;
             if (m.slug) (slotMeta[m.slug] = slotMeta[m.slug] || []).push(meta);
@@ -1101,7 +1264,7 @@
           if (adding[i]) {
             EXTRA_KINDS.forEach(function (kind) {
               var chip = el("button", { class: "chip", type: "button", text: KINDS[kind] });
-              chip.addEventListener("click", function () { adding[i] = false; focusDay = i; day.push({ kind: kind, slug: null }); render(); });
+              chip.addEventListener("click", function () { adding[i] = false; focusDay = i; day.push({ kind: kind, slug: null }); savePlan(); render(); });
               addRow.appendChild(chip);
             });
             var cancel = el("button", { class: "chip muted", type: "button", text: "Cancel" });
@@ -1118,87 +1281,147 @@
 
         var stats = el("div", { class: "stats" });
         var nights = plan.filter(function (d) { return d[0].slug; }).length;
-        var extras = allSlugs().length - nights;
-        var extrasNote = extras ? "+ " + extras + " other meal" + (extras === 1 ? "" : "s") : null;
+        var extraMeals = allSlugs().length - nights;
+        var extrasNote = extraMeals ? "+ " + extraMeals + " other meal" + (extraMeals === 1 ? "" : "s") : null;
         function tile(k, v, sub) { return el("div", { class: "stat" }, [el("div", { class: "k", text: k }), el("div", { class: "v", text: v }), sub ? el("div", { class: "s", text: sub }) : null]); }
         stats.replaceChildren(tile("Groceries", "…"), tile("Kitchen time", "…"), tile("Dinners planned", nights + " of 7", extrasNote));
+
         var shopping = el("section", { class: "panel shopping" });
         var uncheck = el("button", { class: "small", type: "button", text: "Uncheck all" });
-        uncheck.addEventListener("click", function () { checked = {}; store(CHECK_KEY, checked); render(); });
+        uncheck.addEventListener("click", function () {
+          Object.keys(checked).forEach(function (k) { delete checked[k]; checkDelta[k] = 0; });
+          shared.checked = checked; store(CHECK_KEY, checked); queuePlanSave(); render();
+        });
         shopping.appendChild(el("h3", {}, ["Shopping list", uncheck]));
-        var planned = allSlugs().filter(unique);
-        if (!planned.length) {
-          shopping.appendChild(el("p", { class: "meta", text: "Plan some meals and their ingredients show up here, with a rough price." }));
-        } else {
-          var holder = el("p", { class: "meta", text: "Loading ingredients…" });
-          shopping.appendChild(holder);
-          Promise.all(planned.map(function (s) { return loadRecipe(s).catch(function () { return null; }); })).then(function (full) {
-            var frag = document.createDocumentFragment();
-            var weekCost = 0, weekUnknown = 0, prepTotal = 0, cookTotal = 0, anyEst = false;
-            full.forEach(function (r, idx) {
-              var slug = planned[idx];
-              var cost = r ? recipeCost(r) : { total: 0, unknown: 0 };
-              var t = r ? timeInfo(r) : null;
-              if (t) { prepTotal += t.prep; cookTotal += t.cook; anyEst = anyEst || t.estimated; }
-              weekCost += cost.total; weekUnknown += cost.unknown;
-              (slotMeta[slug] || []).forEach(function (m) {
-                m.textContent = t ? "⏱ " + (t.estimated ? "~" : "") + fmtMin(t.total) + " (prep " + fmtMin(t.prep) + ", cook " + fmtMin(t.cook) + ") · 🛒 ~" + money(cost.total) : "Couldn't load this recipe.";
-              });
-              var subtotal = el("span", { class: "sub", text: "~" + money(cost.total) + (cost.unknown ? " + " + cost.unknown + " unpriced" : "") });
-              frag.appendChild(el("h4", {}, [el("a", { href: "#" + encodeURIComponent(slug), text: (r && r.name) || known[slug].name || slug }), subtotal]));
-              var list = el("ul");
-              var ingredients = (r && r.ingredients) || [];
-              if (!ingredients.length) list.appendChild(el("li", { class: "meta", text: r ? "No ingredient list for this recipe." : "Couldn't load this recipe." }));
-              ingredients.forEach(function (ing) {
-                var key = slug + "|" + ing;
-                var box = el("input", { type: "checkbox" });
-                box.checked = !!checked[key];
-                var label = el("label", { class: box.checked ? "done" : "" }, [box, el("span", { text: ing })]);
-                box.addEventListener("change", function () {
-                  if (box.checked) checked[key] = 1; else delete checked[key];
-                  store(CHECK_KEY, checked);
-                  label.classList.toggle("done", box.checked);
-                });
-                var pl = priceLine(ing);
-                var priceBtn = el("button", { class: "price " + (pl.kind === "set" ? "set" : pl.kind === "unknown" ? "unknown" : ""), type: "button",
-                  text: pl.kind === "unknown" ? "$?" : pl.kind === "pantry" ? "pantry" : (pl.kind === "set" ? "" : "~") + money(pl.price),
-                  title: pl.kind === "unknown" ? "No price guess for this. Tap to set what it costs."
-                    : pl.kind === "pantry" ? "Counted as $0: something you probably have. Tap to set a price if you need to buy it."
-                    : pl.kind === "set" ? "Your price for “" + pl.key + "”. Tap to change it, or clear it to go back to the estimate."
-                    : "Rough estimate for “" + pl.key + "”. Tap to set what it costs at your store." });
-                priceBtn.addEventListener("click", function () {
-                  var cur = pl.kind === "set" ? String(pl.price) : "";
-                  var ans = prompt("What does “" + pl.key + "” cost at your store? Leave empty to use the estimate.", cur);
-                  if (ans === null) return;
-                  ans = ans.replace(/[$,\s]/g, "");
-                  if (ans === "") setPrice(pl.key, null);
-                  else if (isFinite(+ans) && +ans >= 0) setPrice(pl.key, Math.round(+ans * 100) / 100);
-                  else return;
-                  render();
-                });
-                list.appendChild(el("li", {}, [label, priceBtn]));
-              });
-              frag.appendChild(list);
-            });
-            var unpricedNote = weekUnknown ? weekUnknown + " item" + (weekUnknown === 1 ? "" : "s") + " not priced" : "";
-            frag.appendChild(el("div", { class: "total" }, [
-              el("span", {}, ["Total for the week", unpricedNote ? el("span", { class: "n", text: " · " + unpricedNote }) : null]),
-              el("b", { text: "~" + money(weekCost) })
-            ]));
-            frag.appendChild(el("p", { class: "foot", text: "Prices are rough guesses from typical US supermarket prices. Tap any price to set your own; it's remembered for that ingredient." }));
-            holder.replaceWith(frag);
-            var mealsCount = nights + extras;
-            stats.replaceChildren(
-              tile("Groceries", "~" + money(weekCost), (unpricedNote ? unpricedNote + " · " : "") + "~" + money(mealsCount ? weekCost / mealsCount : 0) + (extras ? " a meal" : " a night")),
-              tile("Kitchen time", (anyEst ? "~" : "") + fmtMin(prepTotal + cookTotal), "prep " + fmtMin(prepTotal) + " · cook " + fmtMin(cookTotal)),
-              tile("Dinners planned", nights + " of 7", extrasNote || (planned.length < mealsCount ? "a recipe repeats; its groceries are listed once" : null))
-            );
+        var holder = el("p", { class: "meta", text: "Loading ingredients…" });
+        shopping.appendChild(holder);
+
+        // One row per thing to buy: check it off, or tap the price to correct it.
+        function itemRow(o) {
+          var box = el("input", { type: "checkbox" });
+          box.checked = !!checked[o.key];
+          var label = el("label", { class: box.checked ? "done" : "" }, [box,
+            el("span", {}, [o.text, o.from ? el("span", { class: "from", text: o.from }) : null])]);
+          box.addEventListener("change", function () { setChecked(o.key, box.checked); label.classList.toggle("done", box.checked); });
+          var price = el("button", { class: "price " + (o.kind === "set" ? "set" : o.kind === "unknown" ? "unknown" : ""), type: "button",
+            text: o.kind === "unknown" ? "$?" : o.kind === "pantry" ? "pantry" : (o.kind === "set" ? "" : "~") + money(o.price),
+            title: o.kind === "unknown" ? "No price guess for this. Tap to set what it costs."
+              : o.kind === "pantry" ? "Counted as $0: something you probably have. Tap to set a price if you need to buy it."
+              : o.kind === "set" ? "Your price for “" + o.priceKey + "”. Tap to change it, or clear it to go back to the estimate."
+              : "Rough estimate for “" + o.priceKey + "”. Tap to set what it costs at your store." });
+          price.addEventListener("click", function () {
+            var cur = o.kind === "set" ? String(o.unit == null ? o.price : o.unit) : "";
+            var q = o.times > 1
+              ? "What does one “" + o.priceKey + "” cost at your store? It's on the list " + o.times + " times. Leave empty to use the estimate."
+              : "What does “" + o.priceKey + "” cost at your store? Leave empty to use the estimate.";
+            var ans = prompt(q, cur);
+            if (ans === null) return;
+            ans = ans.replace(/[$,\s]/g, "");
+            if (ans === "") setPrice(o.priceKey, null);
+            else if (isFinite(+ans) && +ans >= 0) setPrice(o.priceKey, Math.round(+ans * 100) / 100);
+            else return;
+            render();
           });
+          var kids = [label, price];
+          if (o.onRemove) {
+            var rm = el("button", { class: "remove", type: "button", title: "Remove this item", "aria-label": "Remove " + o.text, text: "×" });
+            rm.addEventListener("click", o.onRemove);
+            kids.push(rm);
+          }
+          return el("li", {}, kids);
         }
 
+        Promise.all(allSlugs().filter(unique).map(function (s) { return loadRecipe(s).catch(function () { return null; }); })).then(function (full) {
+          var planned = allSlugs().filter(unique);
+          var frag = document.createDocumentFragment();
+          var prepTotal = 0, cookTotal = 0, anyEst = false, missing = 0;
+          full.forEach(function (r, idx) {
+            var cost = r ? recipeCost(r) : { total: 0, unknown: 0 };
+            var t = r ? timeInfo(r) : null;
+            if (t) { prepTotal += t.prep; cookTotal += t.cook; anyEst = anyEst || t.estimated; }
+            if (!r) missing++;
+            (slotMeta[planned[idx]] || []).forEach(function (m) {
+              m.textContent = t ? "⏱ " + (t.estimated ? "~" : "") + fmtMin(t.total) + " (prep " + fmtMin(t.prep) + ", cook " + fmtMin(t.cook) + ") · 🛒 ~" + money(cost.total) : "Couldn't load this recipe.";
+            });
+          });
+
+          var groups = groupIngredients(full.filter(Boolean), planned.filter(function (s, i) { return full[i]; }));
+          var total = 0, unknown = 0;
+          groups.forEach(function (g) { total += g.price; unknown += g.unknown; });
+          var staples = groups.filter(function (g) { return g.staple; });
+          var buy = groups.filter(function (g) { return !g.staple; });
+
+          if (!planned.length) frag.appendChild(el("p", { class: "meta", text: "Plan some meals and their ingredients show up here, merged and grouped by aisle." }));
+          AISLES.forEach(function (aisle) {
+            var rows = buy.filter(function (g) { return g.aisle === aisle; });
+            if (!rows.length) return;
+            frag.appendChild(el("h4", { class: "aisle", text: aisle }));
+            frag.appendChild(el("ul", {}, rows.map(function (g) {
+              return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length,
+                kind: g.unknown === g.lines.length ? "unknown" : g.set ? "set" : "est",
+                from: g.recipes.map(function (s) { return (known[s] || {}).name || s; }).join(" · ") });
+            })));
+          });
+          if (staples.length) {
+            var det = el("details");
+            det.appendChild(el("summary", { text: staples.length + " staple" + (staples.length === 1 ? "" : "s") + " you probably already have" }));
+            det.appendChild(el("ul", {}, staples.map(function (g) {
+              return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length, kind: "pantry",
+                from: g.recipes.map(function (s) { return (known[s] || {}).name || s; }).join(" · ") });
+            })));
+            frag.appendChild(det);
+          }
+
+          // Milk, paper towels, anything that isn't in a recipe.
+          if (extras.length) {
+            frag.appendChild(el("h4", { class: "aisle", text: "Also on the list" }));
+            frag.appendChild(el("ul", {}, extras.map(function (x) {
+              var pl = priceLine(x.text);
+              if (pl.price != null) { total += pl.price; } else { unknown++; }
+              return itemRow({ key: "extra:" + x.id, text: x.text, priceKey: pl.key, price: pl.price || 0, times: 1,
+                kind: pl.kind === "set" ? "set" : pl.price == null ? "unknown" : pl.kind,
+                onRemove: function () {
+                  extras = extras.filter(function (y) { return y.id !== x.id; });
+                  extraDelta[x.id] = null; saveExtras();
+                  if (checked["extra:" + x.id]) setChecked("extra:" + x.id, false);
+                  render();
+                } });
+            })));
+          }
+          var addForm = el("form", { class: "additem" });
+          var addInput = el("input", { type: "text", placeholder: "Add an item — milk, paper towels…", "aria-label": "Add a shopping item" });
+          addForm.append(addInput, el("button", { class: "btn", type: "submit", text: "Add" }));
+          addForm.addEventListener("submit", function (ev) {
+            ev.preventDefault();
+            var text = addInput.value.trim();
+            if (!text) return;
+            var item = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), text: text };
+            extras.push(item); extraDelta[item.id] = item; saveExtras();
+            render();
+          });
+          frag.appendChild(addForm);
+
+          if (missing) frag.appendChild(el("p", { class: "foot", text: missing + " planned recipe" + (missing === 1 ? "" : "s") + " couldn't be loaded, so nothing from " + (missing === 1 ? "it is" : "them are") + " on this list." }));
+          var unpriced = unknown ? unknown + " item" + (unknown === 1 ? "" : "s") + " not priced" : "";
+          frag.appendChild(el("div", { class: "total" }, [
+            el("span", {}, ["Total for the week", unpriced ? el("span", { class: "n", text: " · " + unpriced }) : null]),
+            el("b", { text: "~" + money(total) })
+          ]));
+          frag.appendChild(el("p", { class: "foot", text: "Same ingredient from two recipes is added up into one line. Prices are rough guesses from typical US supermarket prices — tap any to set your own." }));
+          holder.replaceWith(frag);
+
+          var mealsCount = nights + extraMeals;
+          stats.replaceChildren(
+            tile("Groceries", "~" + money(total), (unpriced ? unpriced + " · " : "") + "~" + money(mealsCount ? total / mealsCount : 0) + (extraMeals ? " a meal" : " a night")),
+            tile("Kitchen time", (anyEst ? "~" : "") + fmtMin(prepTotal + cookTotal), "prep " + fmtMin(prepTotal) + " · cook " + fmtMin(cookTotal)),
+            tile("Dinners planned", nights + " of 7", extrasNote)
+          );
+        });
+
         view.replaceChildren(
-          el("div", { class: "weekhead" }, [el("h2", { text: "Meals this week" }), el("div", { class: "actions" }, [suggest, clear])]),
-          planned.length ? stats : null,
+          el("div", { class: "weekhead" }, [el("h2", { text: "Meals this week" }), el("div", { class: "actions" }, [suggest, clear, copy])]),
+          unlocked() ? null : el("p", { class: "planhint", text: "🔒 Viewing only: changes to the plan and list stay on this device. Unlock editing to share them." }),
+          stats,
           recipes.length ? week : el("p", { class: "status", text: "Save a few recipes first, then plan the week here." }),
           shopping
         );
@@ -1231,7 +1454,7 @@
   }
   window.addEventListener("hashchange", route);
   renderLock();
-  loadPrices().then(route, route);
+  Promise.all([loadPrices(), loadSharedPlan()]).then(route, route);
 
   // ---------- save from a link ----------
   var form = document.getElementById("addForm"), input = document.getElementById("urlInput"), hint = document.getElementById("addHint"), saveBtn = document.getElementById("saveLinkBtn");
