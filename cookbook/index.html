@@ -733,7 +733,7 @@
     for (var i = 0; i < AISLE_OVERRIDES.length; i++) if (AISLE_OVERRIDES[i][0].test(key)) return AISLE_OVERRIDES[i][1];
     return section;
   }
-  var PRICE_INDEX = [], STAPLE_KEYS = [];
+  var PRICE_INDEX = [], STAPLE_KEYS = [], ENTRY_BY_KEY = {};
   (function () {
     var section = "Other";
     PRICES.forEach(function (row) {
@@ -741,6 +741,7 @@
       var kws = row[0].split("|");
       var entry = { key: kws[0], price: row[1], aisle: aisleFor(kws[0], section) };
       if (row[1] && row[1].pantry) STAPLE_KEYS.push(entry.key);
+      ENTRY_BY_KEY[entry.key] = entry;
       kws.forEach(function (kw) {
         PRICE_INDEX.push({ kw: kw, entry: entry, re: new RegExp("(^|[^a-z])" + escapeRe(kw) + "(?:es|s|ies)?(?![a-z])") });
       });
@@ -1588,6 +1589,23 @@
           var total = w.total, unknown = w.unknown;
           var staples = w.groups.filter(function (g) { return g.staple; });
           var buy = w.groups.filter(function (g) { return !g.staple; });
+          // Switched off in the pantry means "we ran out": it goes on the list even
+          // when nothing planned this week calls for it. Skip any a recipe covers.
+          var covered = {};
+          w.groups.forEach(function (g) { covered[g.priceKey] = 1; covered[g.label] = 1; });
+          pantryDoc().need.forEach(function (k) {
+            if (covered[k]) return;
+            var entry = ENTRY_BY_KEY[k], ov = overrides()[k];
+            var est = entry ? estimateCost(entry.price, { dim: "pack", amount: 1 }) : null;
+            var known = typeof ov === "number" ? ov : est;
+            buy.push({
+              label: k, text: k, priceKey: k, aisle: entry ? entry.aisle : "Other",
+              lines: [k], recipes: [], ranOut: true,
+              price: known == null ? 0 : (typeof ov === "number" ? ov : Math.max(0.05, Math.round(known * 20) / 20)),
+              unknown: known == null ? 1 : 0, set: typeof ov === "number", staple: false
+            });
+            if (known == null) unknown++; else total += (typeof ov === "number" ? ov : Math.max(0.05, Math.round(known * 20) / 20));
+          });
           function fromLine(g) {
             return g.recipes.map(function (s) {
               var name = (known[s] && known[s].name) || s;
@@ -1608,6 +1626,16 @@
             if (!rows.length) return;
             frag.appendChild(el("h4", { class: "aisle", text: aisle }));
             frag.appendChild(el("ul", {}, rows.map(function (g) {
+              if (g.ranOut) {
+                return itemRow({ key: "pantry:" + g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: 1,
+                  kind: g.unknown ? "unknown" : g.set ? "set" : "est",
+                  from: "ran out — a staple you keep in",
+                  onRemove: function () {
+                    var pan = pantryDoc();
+                    pan.need = pan.need.filter(function (x) { return x !== g.label; });
+                    savePantry(pan); render();
+                  } });
+              }
               return itemRow({ key: g.label, text: g.text, priceKey: g.priceKey, price: g.price, times: g.lines.length,
                 kind: g.unknown === g.lines.length ? "unknown" : g.set ? "set" : "est",
                 from: fromLine(g), onHave: alwaysHave(g.priceKey) });
@@ -1715,12 +1743,12 @@
       });
       wrap.appendChild(addForm);
 
-      wrap.appendChild(el("h3", { text: "Staples assumed in" }));
-      wrap.appendChild(el("p", { class: "note", text: "These are counted as free by default. Switch one off and it goes back on the shopping list with a price." }));
+      wrap.appendChild(el("h3", { text: "Staples we keep in" }));
+      wrap.appendChild(el("p", { class: "note", text: "Counted as free, so they stay off the shopping list. Switch one off when you run out and it goes on the list to buy, whether or not anything planned this week calls for it." }));
       var stapleChips = el("div", { class: "chips" });
       STAPLE_KEYS.slice().sort().forEach(function (k) {
         var off = p.need.indexOf(k) >= 0;
-        var chip = el("button", { class: "chip" + (off ? " off" : " on"), type: "button", title: off ? "Off: “" + k + "” goes on the shopping list" : "On: “" + k + "” is assumed in", text: k });
+        var chip = el("button", { class: "chip" + (off ? " off" : " on"), type: "button", title: off ? "Ran out: “" + k + "” is on the shopping list" : "In: “" + k + "” is assumed in and stays off the list", text: k });
         chip.addEventListener("click", function () {
           if (off) p.need = p.need.filter(function (x) { return x !== k; });
           else p.need.push(k);
