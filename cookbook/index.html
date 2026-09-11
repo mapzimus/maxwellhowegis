@@ -173,15 +173,23 @@
   .tolist { margin: 18px 0 0; text-align: center; }
   .chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 12px; }
   .chips.filters { margin: -4px 0 16px; }
-  .chips .chip { border: 1px solid var(--border); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 5px 13px; font-size: .82rem; cursor: pointer; font-family: var(--sans); display: inline-flex; align-items: center; gap: 6px; }
+  .chips .chip { border: 1px solid var(--border); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 0; font-size: .82rem; cursor: pointer; font-family: var(--sans); display: inline-flex; align-items: stretch; overflow: hidden; }
   .chips .chip:hover { border-color: var(--accent); color: var(--accent); }
-  .chips .chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
-  .chips .chip.off { text-decoration: line-through; opacity: .65; }
-  .chips .chip .x { font-size: 1rem; line-height: 1; opacity: .8; }
+  .chips .chip.on { color: var(--text); }
+  /* Ran out is the exception and the one worth spotting, so it is the loud one. */
+  .chips .chip.off { background: color-mix(in srgb, var(--danger) 12%, var(--surface)); border-color: var(--danger); color: var(--danger); font-weight: 600; }
+  .chips .chip.off .name::after { content: " · ran out"; font-weight: 400; opacity: .85; }
+  .chips button, .chips .chip > button { border: 0; background: none; color: inherit; font: inherit; cursor: pointer; padding: 5px 13px; font-family: var(--sans); }
+  .chips .chip .name { padding-right: 6px; }
+  .chips .chip .x { padding: 5px 10px 5px 4px; font-size: 1rem; line-height: 1.2; opacity: .7; }
+  .chips .chip .x:hover { opacity: 1; color: var(--danger); background: color-mix(in srgb, var(--danger) 14%, transparent); }
+  .chips.filters .chip { padding: 5px 13px; }
+  .chips.filters .chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
   .pantry h3 { margin: 22px 0 4px; font-size: 1.05rem; }
   .pantry h3:first-child { margin-top: 0; }
   .pantry .note { font-size: .8rem; color: var(--muted); margin: 0 0 10px; }
-  .pantry .additem { margin: 0 0 6px; }
+  .pantry .additem { margin: 0 0 14px; }
+  .pantry .note .small { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: inherit; text-decoration: underline; }
   .shopping ul { list-style: none; margin: 0; padding: 0; }
   .shopping li { display: flex; align-items: flex-start; gap: 8px; }
   .shopping label { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; cursor: pointer; flex: 1 1 auto; min-width: 0; }
@@ -891,11 +899,15 @@
       .catch(function () { repoPrices = {}; });
   }
   // What this household always has, and which built-in staples it doesn't keep in.
-  var pantryHave = {}, pantryNeed = {};
+  // Until you edit the pantry, the built-in staples apply. The moment you do,
+  // your list is the whole list and the built-in guesses stop.
+  var pantryHave = {}, pantryNeed = {}, pantryCustom = false;
   function refreshPantry() {
     var p = shared.pantry || plainObject(load(PANTRY_KEY, {}));
+    var have = p.have || [];
+    pantryCustom = have.length > 0;
     pantryHave = {}; pantryNeed = {};
-    (p.have || []).forEach(function (k) { pantryHave[String(k).toLowerCase()] = 1; });
+    have.forEach(function (k) { pantryHave[String(k).toLowerCase()] = 1; });
     (p.need || []).forEach(function (k) { pantryNeed[String(k).toLowerCase()] = 1; });
   }
   // Priced line: {key, price, kind: "est" | "set" | "pantry" | "unknown"}
@@ -904,11 +916,12 @@
     var key = entry ? entry.key : (p.name || line.toLowerCase());
     var ov = overrides()[key];
     if (typeof ov === "number") return { key: key, price: ov, kind: "set" };
-    if (pantryHave[key] || (m && pantryHave[m.kw])) return { key: key, price: 0, kind: "pantry" };
+    var ranOut = !!(pantryNeed[key] || (m && pantryNeed[m.kw]));
+    if (!ranOut && (pantryHave[key] || (m && pantryHave[m.kw]))) return { key: key, price: 0, kind: "pantry" };
     if (!entry) return { key: key, price: null, kind: "unknown" };
     var est = estimateCost(entry.price, p);
     if (est == null) return { key: key, price: null, kind: "unknown" };
-    if (entry.price.pantry && !pantryNeed[key] && (p.dim == null || est < 0.5)) return { key: key, price: 0, kind: "pantry" };
+    if (!pantryCustom && !ranOut && entry.price.pantry && (p.dim == null || est < 0.5)) return { key: key, price: 0, kind: "pantry" };
     return { key: key, price: Math.max(0.05, Math.round(est * 20) / 20), kind: "est" };
   }
   function setPrice(key, value) {   // number, or null to go back to the estimate
@@ -1707,6 +1720,11 @@
     var p = shared.pantry || {};
     return { have: (p.have || []).slice(), need: (p.need || []).slice() };
   }
+  // The staples you keep in: your own list once you've touched it, the
+  // built-in one until then.
+  function staplesList(p) {
+    return (p.have.length ? p.have.slice() : STAPLE_KEYS.slice()).sort();
+  }
   function savePantry(p) {
     shared.pantry = { have: p.have.slice(), need: p.need.slice() };
     store(PANTRY_KEY, shared.pantry);
@@ -1715,48 +1733,68 @@
   function showPantry() {
     document.title = "Pantry · Cookbook";
     function render() {
-      var p = pantryDoc();
+      var p = pantryDoc(), list = staplesList(p), usingDefaults = !p.have.length;
+      // Any edit takes ownership of the list, so the built-ins stop applying
+      // silently behind it.
+      function edit(change) {
+        var next = { have: usingDefaults ? STAPLE_KEYS.slice().sort() : p.have.slice(), need: p.need.slice() };
+        change(next);
+        savePantry(next); render();
+      }
+
       var wrap = el("section", { class: "panel pantry" });
-      wrap.appendChild(el("h3", { text: "We always have" }));
-      wrap.appendChild(el("p", { class: "note", text: "Anything here is treated as a staple: it still shows under the staples fold on the shopping list, but it never costs you anything." }));
-      var haveChips = el("div", { class: "chips" });
-      if (!p.have.length) haveChips.appendChild(el("p", { class: "meta", text: "Nothing yet. Add the things you never need to buy." }));
-      p.have.forEach(function (k) {
-        var chip = el("button", { class: "chip on", type: "button", title: "Remove “" + k + "”" }, [k, el("span", { class: "x", text: "×" })]);
-        chip.addEventListener("click", function () {
-          p.have = p.have.filter(function (x) { return x !== k; });
-          savePantry(p); render();
-        });
-        haveChips.appendChild(chip);
-      });
-      wrap.appendChild(haveChips);
+      wrap.appendChild(el("h3", { text: "Staples we keep in" }));
+      wrap.appendChild(el("p", { class: "note", text: "Counted as free, so they stay off the shopping list. Tap one when you run out and it goes on the list to buy. Use × to drop something you don't keep at all." }));
+
       var addForm = el("form", { class: "additem" });
-      var addInput = el("input", { type: "text", placeholder: "Add something — soy sauce, rice…", "aria-label": "Add a pantry item" });
+      var addInput = el("input", { type: "text", placeholder: "Add a staple — soy sauce, rice…", "aria-label": "Add a staple" });
       addForm.append(addInput, el("button", { class: "btn", type: "submit", text: "Add" }));
       addForm.addEventListener("submit", function (ev) {
         ev.preventDefault();
         var text = addInput.value.trim().toLowerCase();
         if (!text) return;
-        if (p.have.indexOf(text) < 0) p.have.push(text);
-        p.need = p.need.filter(function (k) { return k !== text; });
-        savePantry(p); render();
+        edit(function (next) {
+          if (next.have.indexOf(text) < 0) next.have.push(text);
+          next.need = next.need.filter(function (k) { return k !== text; });
+        });
       });
       wrap.appendChild(addForm);
 
-      wrap.appendChild(el("h3", { text: "Staples we keep in" }));
-      wrap.appendChild(el("p", { class: "note", text: "Counted as free, so they stay off the shopping list. Switch one off when you run out and it goes on the list to buy, whether or not anything planned this week calls for it." }));
-      var stapleChips = el("div", { class: "chips" });
-      STAPLE_KEYS.slice().sort().forEach(function (k) {
+      var chips = el("div", { class: "chips" });
+      if (!list.length) chips.appendChild(el("p", { class: "meta", text: "No staples. Add the things you never need to buy." }));
+      list.forEach(function (k) {
         var off = p.need.indexOf(k) >= 0;
-        var chip = el("button", { class: "chip" + (off ? " off" : " on"), type: "button", title: off ? "Ran out: “" + k + "” is on the shopping list" : "In: “" + k + "” is assumed in and stays off the list", text: k });
-        chip.addEventListener("click", function () {
-          if (off) p.need = p.need.filter(function (x) { return x !== k; });
-          else p.need.push(k);
-          savePantry(p); render();
+        var name = el("button", { class: "name", type: "button", text: k,
+          title: off ? "Ran out: “" + k + "” is on the shopping list. Tap to say you have it again." : "Kept in: “" + k + "” stays off the list. Tap when you run out." });
+        name.addEventListener("click", function () {
+          edit(function (next) {
+            if (off) next.need = next.need.filter(function (x) { return x !== k; });
+            else if (next.need.indexOf(k) < 0) next.need.push(k);
+          });
         });
-        stapleChips.appendChild(chip);
+        var drop = el("button", { class: "x", type: "button", "aria-label": "Remove " + k + " from the staples", title: "We don't keep “" + k + "” in at all", text: "×" });
+        drop.addEventListener("click", function () {
+          edit(function (next) {
+            next.have = next.have.filter(function (x) { return x !== k; });
+            next.need = next.need.filter(function (x) { return x !== k; });
+          });
+        });
+        chips.appendChild(el("span", { class: "chip" + (off ? " off" : " on") }, [name, drop]));
       });
-      wrap.appendChild(stapleChips);
+      wrap.appendChild(chips);
+
+      var foot = el("p", { class: "note" });
+      if (usingDefaults) foot.textContent = "These are the defaults. Add, drop or tap one and the list becomes yours to keep.";
+      else {
+        foot.append(list.length + " staple" + (list.length === 1 ? "" : "s") + ", yours. ");
+        var reset = el("button", { class: "small", type: "button", text: "Back to the defaults" });
+        reset.addEventListener("click", function () {
+          if (!confirm("Throw away your staples list and go back to the built-in one?")) return;
+          savePantry({ have: [], need: [] }); render();
+        });
+        foot.appendChild(reset);
+      }
+      wrap.appendChild(foot);
 
       show(
         el("div", { class: "weekhead" }, [el("h2", { text: "Pantry" }), el("div", { class: "actions" }, [el("a", { class: "btn", href: "#shopping", text: "🛒 Shopping list →" })])]),
