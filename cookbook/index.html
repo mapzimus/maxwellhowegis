@@ -311,6 +311,7 @@
   function load(key, fallback) {
     try { var v = JSON.parse(localStorage.getItem(key)); return v === null || v === undefined ? fallback : v; } catch (e) { return fallback; }
   }
+  function hasStored(key) { try { return localStorage.getItem(key) != null; } catch (e) { return false; } }
   function token() { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; } }
   function unlocked() { return !!token() && !tokenBad; }
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
@@ -451,12 +452,16 @@
             });
           });
           if (changed) {
+            // Keep checked / extras / pantry from the live plan — dropping pantry
+            // here used to wipe the household staples list on a recipe delete.
+            var keep = readPlanDoc(plainObject(raw));
             changes.push({
               path: PLAN_FILE,
               content: pretty({
                 days: days,
-                checked: plainObject(raw.checked),
-                extras: Array.isArray(raw.extras) ? raw.extras : [],
+                checked: keep.checked,
+                extras: keep.extras,
+                pantry: keep.pantry,
                 updatedAt: nowISO()
               })
             });
@@ -903,7 +908,10 @@
   // your list is the whole list and the built-in guesses stop.
   var pantryHave = {}, pantryNeed = {}, pantryCustom = false;
   function refreshPantry() {
-    var p = shared.pantry || plainObject(load(PANTRY_KEY, {}));
+    // Locked devices keep pantry edits on this browser; don't let a shared
+    // reload overwrite them just because the remote plan also loaded.
+    var p = (!unlocked() && hasStored(PANTRY_KEY)) ? plainObject(load(PANTRY_KEY, {}))
+          : (shared.pantry || plainObject(load(PANTRY_KEY, {})));
     var have = p.have || [];
     pantryCustom = have.length > 0;
     pantryHave = {}; pantryNeed = {};
@@ -1006,6 +1014,10 @@
         sharedLoaded = true;
       });
     }).catch(function (e) {
+      // Put the deltas back so a later retry (or a meal-only save) doesn't
+      // re-read the server and quietly drop checkoffs / extras from this device.
+      Object.keys(cd).forEach(function (k) { checkDelta[k] = cd[k]; });
+      Object.keys(ed).forEach(function (id) { extraDelta[id] = ed[id]; });
       showBanner("Couldn't save the week to the cookbook (" + e.message + "). It's kept on this device for now.");
     }).then(function () { planSaving = false; });
   }
@@ -1340,7 +1352,14 @@
   // The planner, the shopping list and the pantry all read and write the same plan.
   function readPlan(known) {
     var linked = planFromHash(location.hash);
-    var plan = normalizePlan(linked || shared.days || load(PLAN_KEY, []));
+    // Viewing-only edits stay on this device. Once localStorage has a copy,
+    // prefer it over the shared plan so a reload doesn't throw those away.
+    var localDays = hasStored(PLAN_KEY) ? load(PLAN_KEY, []) : null;
+    var plan = normalizePlan(linked
+      || (!unlocked() && localDays ? localDays : null)
+      || shared.days
+      || localDays
+      || []);
     var scrubbed = false;
     plan.forEach(function (day) {
       day.forEach(function (m) {
@@ -1348,10 +1367,14 @@
         if (m.slug == null) { m.slug = ""; scrubbed = true; }
       });
     });
+    var useLocalChecks = !unlocked() && hasStored(CHECK_KEY);
+    var useLocalExtras = !unlocked() && hasStored(EXTRA_KEY);
     return {
       plan: plan, linked: !!linked, scrubbed: scrubbed,
-      checked: sharedLoaded ? shared.checked : plainObject(load(CHECK_KEY, {})),
-      extras: sharedLoaded ? shared.extras : (load(EXTRA_KEY, []) || []).filter(function (x) { return x && x.id && x.text; })
+      checked: useLocalChecks ? plainObject(load(CHECK_KEY, {}))
+             : sharedLoaded ? shared.checked : plainObject(load(CHECK_KEY, {})),
+      extras: useLocalExtras ? (load(EXTRA_KEY, []) || []).filter(function (x) { return x && x.id && x.text; })
+            : sharedLoaded ? shared.extras : (load(EXTRA_KEY, []) || []).filter(function (x) { return x && x.id && x.text; })
     };
   }
   function savePlanDays(plan) { shared.days = plan; store(PLAN_KEY, plan); queuePlanSave(); }
@@ -1421,11 +1444,21 @@
         // Fills the dinners you haven't chosen yourself, from meals only.
         var suggest = el("button", { class: "btn primary", type: "button", text: "🎲 Suggest a week" });
         suggest.addEventListener("click", function () {
+          var before = allSlugs().filter(Boolean).length;
           plan.forEach(function (day) { if (!day[0].slug) day[0].slug = pick("dinner", allSlugs(), false); });
+          var after = allSlugs().filter(Boolean).length;
           savePlan(); render();
+          if (after === before) {
+            showBanner(before ? "Every dinner is already filled." : "No meal recipes to suggest yet. Save a few dinners first.");
+          } else {
+            showBanner("");
+          }
         });
         var clear = el("button", { class: "btn", type: "button", text: "Clear week" });
-        clear.addEventListener("click", function () { plan = normalizePlan([]); savePlan(); render(); });
+        clear.addEventListener("click", function () {
+          if (!confirm("Clear every meal this week? Shopping checkoffs stay put.")) return;
+          plan = normalizePlan([]); savePlan(); render();
+        });
         var copy = el("button", { class: "btn", type: "button", text: "🔗 Copy link" });
         copy.addEventListener("click", function () {
           var url = location.origin + location.pathname + "#week=" + encodePlan(plan);
