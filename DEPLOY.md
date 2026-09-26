@@ -11,7 +11,7 @@ Source is set to **GitHub Actions**, not **Deploy from a branch**.
 `workflow_dispatch`):
 
 1. `actions/checkout@v4` with **`submodules: recursive`** — this is the
-   detail that makes the site buildable at all: `geopuesto`, `bugwars`,
+   detail that makes the site buildable at all: `geopuesto`,
    `truescale`, `quabbin`, and `lidar-test` are git submodules (see
    `.gitmodules`), and
    without `submodules: recursive` those subpaths would deploy as empty
@@ -51,19 +51,18 @@ backend, so no Railway custom domain or Wix DNS change is required.
 
 ## Submodules
 
-Five subpaths are **git submodules** pinned to a commit SHA in this repo's
-tree (`git ls-tree HEAD geopuesto bugwars truescale quabbin lidar-test`
+Four subpaths are **git submodules** pinned to a commit SHA in this repo's
+tree (`git ls-tree HEAD geopuesto truescale quabbin lidar-test`
 shows the pins):
 
 | Path | Source |
 |---|---|
 | `/geopuesto/` | [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) |
-| `/bugwars/` | [`mapzimus/bug-wars`](https://github.com/mapzimus/bug-wars) |
 | `/truescale/` | [`mapzimus/true-scale`](https://github.com/mapzimus/true-scale) |
 | `/quabbin/` | [`mapzimus/quabbin`](https://github.com/mapzimus/quabbin) |
 | `/lidar-test/` | [`mapzimus/ground-truth`](https://github.com/mapzimus/ground-truth) — auto-bumped hourly by `.github/workflows/sync-lidar-test.yml` |
 
-All five **must stay public** — the Pages workflow checks them out with
+All four **must stay public** — the Pages workflow checks them out with
 the default `GITHUB_TOKEN`, which cannot read private repos. A submodule
 flipped to private silently breaks that subpath on the next deploy (it'll
 check out empty, not fail loudly).
@@ -72,7 +71,7 @@ Submodules only publish what's pinned, not what's on their default branch.
 After pushing changes inside a submodule's own repo, bump the pointer here:
 
 ```bash
-git submodule update --remote <path>   # e.g. bugwars, truescale
+git submodule update --remote <path>   # e.g. truescale
 git add <path>
 git commit -m "bump <path> submodule"
 git push

@@ -26,7 +26,6 @@ All submodules must be **public** — the Pages workflow checks them out with th
 | Path | How it's served | Source |
 |---|---|---|
 | `/geopuesto/` | git submodule | [`mapzimus/geopuesto`](https://github.com/mapzimus/geopuesto) |
-| `/bugwars/` | git submodule | [`mapzimus/bug-wars`](https://github.com/mapzimus/bug-wars) |
 | `/truescale/` | git submodule | [`mapzimus/true-scale`](https://github.com/mapzimus/true-scale) |
 | `/quabbin/` | git submodule | [`mapzimus/quabbin`](https://github.com/mapzimus/quabbin) |
 | `/lidar-test/` | git submodule (auto-bumped hourly) | [`mapzimus/ground-truth`](https://github.com/mapzimus/ground-truth) |
