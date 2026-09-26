@@ -1,9 +1,8 @@
 # Games Suite
 
-A landing page linking the standalone browser games — real-time strategy,
-navigation, geography, and party physics, each installable-free and
-running fully client-side. Live entries: **Bug Wars** (`/bugwars/`, an
-Age-of-Empires-style RTS commanding an ant or bee colony), **Whydah:
+A landing page linking the standalone browser games — navigation,
+geography, and party physics, each installable-free and running fully
+client-side. Live entries: **Whydah:
 First Sail** ([whydahstory.com/navigator/](https://whydahstory.com/navigator/),
 plotting Black Sam Bellamy's 1717
 voyage from the Caribbean to Maine), **Flip Game**
@@ -15,8 +14,7 @@ map designer with built-in geography games). The page itself is a single
 icon, live/external status, stack pills) rendered into the grid, matching
 the portfolio's shared nav/CSS tokens.
 
-**Data sources:** none — this is a static links page. Bug Wars is a same-site
-git submodule (`/bugwars/`, from `mapzimus/bug-wars`); the Whydah navigator
+**Data sources:** none — this is a static links page. The Whydah navigator
 lives on whydahstory.com (`mapzimus/Whydah-Unit` — the vendored `/whydah/`
 copy here is retired); Flip Game and
 TappyMaps are externally hosted and linked out to.

@@ -101,7 +101,7 @@ def main():
         else:
             f = ROOT / it["src"]
             if not f.exists():
-                kind = "WARN (submodule)" if it["src"].startswith(("quabbin/", "geopuesto/", "bugwars/", "truescale/")) else "MISSING"
+                kind = "WARN (submodule)" if it["src"].startswith(("quabbin/", "geopuesto/", "truescale/")) else "MISSING"
                 problems.append(f"[{i}] {it['title']!r} {kind}: {it['src']}")
     for msg in problems:
         print("  " + msg)

@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 V2 = ROOT / "v2"
-SUBMODULE_PREFIXES = ("quabbin/", "geopuesto/", "bugwars/", "truescale/")
+SUBMODULE_PREFIXES = ("quabbin/", "geopuesto/", "truescale/")
 
 errors, warnings = [], []
 externals = set()
