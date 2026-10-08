@@ -51,7 +51,56 @@ function escapeXml(value) {
 
 function description(value) {
   const clean = String(value ?? "").replace(/\s+/g, " ").trim();
-  return clean.length > 180 ? `${clean.slice(0, 177).trim()}…` : clean;
+  if (clean.length <= 160) return clean;
+  const cut = clean.slice(0, 157);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${(lastSpace > 100 ? cut.slice(0, lastSpace) : cut).replace(/[.,;:—\s]+$/, "")}…`;
+}
+
+// Runs the page's own browser render scripts against a minimal DOM stub so
+// crawlers that don't execute JavaScript (Bing, link unfurlers, AI crawlers)
+// still get headings, copy, and internal links. The same scripts re-render
+// identically in the browser, so the prerendered markup is only a baseline.
+function prerender(html, { pathname, slug }) {
+  const scripts = [...html.matchAll(/<script src="js\/([^"?]+)[^"]*"><\/script>/g)]
+    .map((match) => match[1])
+    .filter((file) => !["theme.js", "hero-contours.js"].includes(file));
+  const slots = new Map();
+  const element = (id) => {
+    if (!slots.has(id)) {
+      slots.set(id, {
+        id,
+        innerHTML: "",
+        outerHTML: "",
+        classList: { add() {}, remove() {}, toggle() {}, contains: () => false },
+        setAttribute() {},
+        getAttribute: () => null,
+        addEventListener() {},
+        querySelectorAll: () => [],
+      });
+    }
+    return slots.get(id);
+  };
+  const document = {
+    title: "",
+    getElementById: element,
+    body: { getAttribute: (name) => (name === "data-project-slug" ? slug ?? null : null) },
+    addEventListener() {},
+  };
+  const window = { location: { pathname, search: "" }, document };
+  const context = vm.createContext({ window, document, URLSearchParams, console });
+  for (const file of scripts) {
+    vm.runInContext(read(path.join("js", file)), context, { filename: file });
+  }
+
+  let out = html;
+  for (const [id, slot] of slots) {
+    const markup = slot.outerHTML || slot.innerHTML;
+    if (!markup) continue;
+    const pattern = new RegExp(`(<div\\b[^>]*\\bid="${id}"[^>]*>)(?:\\s*<!--[\\s\\S]*?-->\\s*)?(</div>)`);
+    out = out.replace(pattern, (_, open, close) => `${open}${markup}${close}`);
+  }
+  return out;
 }
 
 function absoluteImage(project) {
@@ -92,7 +141,7 @@ function structuredData({ title, summary, canonical, project }) {
 }
 
 function promoteHtml(html, { title, summary, canonical, image, project, slug, assetBust }) {
-  let out = html
+  let out = prerender(html, { pathname: new URL(canonical).pathname, slug })
     .replace(/\s*<meta name="robots"[^>]*>/gi, "")
     .replace(/<title>.*?<\/title>/is, `<title>${escapeHtml(title)}</title>`)
     .replace(
@@ -245,7 +294,7 @@ function build() {
   const projectTemplate = read("project.html");
   for (const project of caseStudies) {
     const canonical = `${siteUrl}/work/${project.slug}/`;
-    const summary = description(project.summary);
+    const summary = description(project.metaDescription || project.summary);
     write(
       path.join(repoRoot, "work", project.slug, "index.html"),
       promoteHtml(projectTemplate, {
