@@ -250,11 +250,11 @@ const GEO = {
 };
 
 const RASTER_BASEMAPS = {
-  streets:   { label:"Streets",   icon:"ti-road",         tiles:["https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"], attribution:"© OpenStreetMap contributors © CARTO" },
+  streets:   { label:"Streets",   icon:"ti-road",         tiles:["https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"], attribution:"Esri, HERE, Garmin, USGS, © OpenStreetMap contributors" },
   satellite: { label:"Satellite", icon:"ti-satellite",    tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"], attribution:"Esri, Maxar, Earthstar Geographics" },
   topo:      { label:"Topo",      icon:"ti-mountain",      tiles:["https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}"], attribution:"USGS The National Map" },
   relief:    { label:"Relief",    icon:"ti-mountain-off",  tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}"], attribution:"Esri, NASA, NGA, USGS" },
-  dark:      { label:"Dark",      icon:"ti-moon",          tiles:["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"], attribution:"© OpenStreetMap contributors © CARTO" }
+  dark:      { label:"Dark",      icon:"ti-moon",          tiles:["https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"], maxzoom:16, attribution:"Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors" }
 };
 const BASEMAP_IDS = ["minimal", ...Object.keys(RASTER_BASEMAPS)];
 
@@ -315,7 +315,7 @@ map.on("load", async () => {
   for (const f of peaks.features){ const p=f.properties; peaksByName[p.name]=p; if(!peaksByRegion[p.region]||p.elev_m>peaksByRegion[p.region].elev_m) peaksByRegion[p.region]=p; }
 
   for (const [id,b] of Object.entries(RASTER_BASEMAPS)){
-    map.addSource("bm-"+id,{ type:"raster", tiles:b.tiles, tileSize:256, attribution:b.attribution });
+    map.addSource("bm-"+id,{ type:"raster", tiles:b.tiles, tileSize:256, attribution:b.attribution, ...(b.maxzoom ? {maxzoom:b.maxzoom} : {}) });
     map.addLayer({ id:"bm-"+id, type:"raster", source:"bm-"+id, layout:{visibility:"none"}, paint:{"raster-opacity":1} });
   }
   map.addSource("dem",{ type:"raster-dem", tiles:["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"], encoding:"terrarium", tileSize:256, maxzoom:13 });

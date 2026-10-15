@@ -147,8 +147,12 @@ L.control.zoom({ position: "topright" }).remove();
 map.zoomControl.setPosition("topright");
 
 const baseAtt = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-const positron = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", { attribution: baseAtt + ' &copy; <a href="https://carto.com/attributions">CARTO</a>', subdomains:"abcd", maxZoom: 20 });
-const voyager  = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", { attribution: baseAtt + ' &copy; <a href="https://carto.com/attributions">CARTO</a>', subdomains:"abcd", maxZoom: 20 });
+const esriAtt  = "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, " + baseAtt;
+const positron = L.layerGroup([
+  L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", { attribution: esriAtt, maxNativeZoom: 16, maxZoom: 20 }),
+  L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", { maxNativeZoom: 16, maxZoom: 20 })
+]);
+const voyager  = L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", { attribution: esriAtt, maxNativeZoom: 19, maxZoom: 20 });
 const esriImg  = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", { attribution: "Imagery &copy; Esri, Maxar, Earthstar Geographics", maxZoom: 20 });
 const esriLab  = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}", { maxZoom: 20, pane: "overlayPane" });
 const satellite = L.layerGroup([esriImg, esriLab]);
@@ -260,7 +264,7 @@ const anchorMarker = L.marker([COLLINS.lat, COLLINS.lon], { icon: pinIcon({cat:"
   .addTo(anchorLayer);
 
 /* ---------- layer control ---------- */
-const baseLayers = { "Carto Light": positron, "Carto Voyager": voyager, "Satellite (scouting)": satellite, "OpenStreetMap": osm };
+const baseLayers = { "Light Gray": positron, "Streets": voyager, "Satellite (scouting)": satellite, "OpenStreetMap": osm };
 const overlays = {
   "<b>15-min walk-shed</b>": walkShed,
   "Commuter rail (active)": railLayer,

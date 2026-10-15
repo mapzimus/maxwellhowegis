@@ -136,12 +136,12 @@
   const hm  = min => { const h = Math.floor(min / 60), m = Math.round(min % 60); return h ? `${h}h ${m}m` : `${m}m`; };
   const days = min => (min / 60 / 8).toFixed(1);                    // driving-days @ 8 h/day
 
-  // ---- basemap: keyless CARTO dark raster ----
+  // ---- basemap: keyless Esri dark gray canvas raster ----
   const style = {
     version: 8,
-    sources: { dark: { type:"raster", tileSize:256,
-      tiles:["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"],
-      attribution:"© OpenStreetMap contributors © CARTO · routing © OSRM" } },
+    sources: { dark: { type:"raster", tileSize:256, maxzoom:16,
+      tiles:["https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"],
+      attribution:"Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors · routing © OSRM" } },
     layers: [{ id:"bg", type:"background", paint:{"background-color":"#0a0e17"} },
              { id:"dark", type:"raster", source:"dark", paint:{"raster-opacity":0.55, "raster-brightness-max":0.85} }]
   };
