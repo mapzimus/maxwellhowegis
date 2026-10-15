@@ -3844,26 +3844,20 @@ function addLayers() {
     if (!map.getSource("dark-tiles")) {
         map.addSource("dark-tiles", {
             type: "raster", tileSize: 256,
-            tiles: [
-                "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-                "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-                "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-            ],
-            attribution: "© OpenStreetMap contributors, © CARTO",
+            tiles: ["https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"],
+            maxzoom: 16,
+            attribution: "Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors",
         });
     }
-    // Muted light-gray base WITHOUT labels (CARTO light_nolabels, keyless) — the
+    // Muted light-gray base WITHOUT labels (Esri Light Gray Canvas, keyless) — the
     // textbook "make the choropleth pop" backdrop: just enough geography (coast,
     // major roads) while our own labels and the data colors carry the map.
     if (!map.getSource("lightgray-tiles")) {
         map.addSource("lightgray-tiles", {
             type: "raster", tileSize: 256,
-            tiles: [
-                "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-                "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-                "https://c.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
-            ],
-            attribution: "© OpenStreetMap contributors, © CARTO",
+            tiles: ["https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"],
+            maxzoom: 16,
+            attribution: "Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors",
         });
     }
     // Esri boundaries + place-names reference, shown ONLY over satellite imagery

@@ -763,7 +763,7 @@ window.V2_DATA.projects = [
     ],
     "links": {
       "live": "quabbin.html",
-      "repo": "https://github.com/mapzimus/maxwellhowegis/tree/main/quabbin"
+      "repo": "https://github.com/mapzimus/quabbin"
     },
     "order": 40,
     "blurb": "Reproducible R GIS study of the Quabbin Reservoir and four lost Swift River Valley towns, with a LiDAR imprint explorer of the drowned villages."
