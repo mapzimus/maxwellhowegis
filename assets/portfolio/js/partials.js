@@ -26,8 +26,7 @@
         { href: 'https://www.linkedin.com/in/maxwell-howe-1a88a3298/', label: 'LinkedIn', external: true },
         { href: 'https://www.instagram.com/mapzimus/', label: 'Instagram', external: true },
         { href: 'https://www.tiktok.com/@mapzimus', label: 'TikTok', external: true },
-        { href: 'https://www.youtube.com/@mapzimus', label: 'YouTube', external: true },
-        { href: 'https://bsky.app/profile/mapzimus.bsky.social', label: 'Bluesky', external: true }
+        { href: 'https://www.youtube.com/@mapzimus', label: 'YouTube', external: true }
     ];
 
     // Compass-rose mark (inline SVG, currentColor-aware)
