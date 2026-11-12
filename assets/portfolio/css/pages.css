@@ -51,3 +51,126 @@
 @media (min-width: 900px) { .about-grid { grid-template-columns: 5fr 3fr; } }
 .about-grid .datum-block { margin-bottom: var(--space-4); }
 .skill-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+/* ---- home: new-this-fall features ---- */
+.feature-pair { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
+@media (min-width: 820px) { .feature-pair { grid-template-columns: 1fr 1fr; } }
+.feature {
+  display: grid; grid-template-rows: auto 1fr; text-decoration: none; color: var(--ink);
+  background: var(--plate); border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); overflow: hidden;
+  transition: border-color var(--t-fast), transform var(--t-fast);
+}
+.feature:hover { border-color: var(--vermilion); color: var(--ink); transform: translateY(-2px); }
+.feature-media { display: grid; gap: 2px; background: var(--line); aspect-ratio: 16 / 9; overflow: hidden; }
+.feature-media.three { grid-template-columns: repeat(3, 1fr); }
+.feature-media.four { grid-template-columns: repeat(4, 1fr); }
+.feature-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; min-width: 0; min-height: 0; }
+.feature-body { padding: var(--space-4); }
+.feature-body h3 { font-size: var(--text-lg); margin-bottom: var(--space-1); }
+.feature-body p { color: var(--ink-soft); margin: 0; }
+
+/* ---- 30 day maps ---- */
+.day-grid {
+  display: grid; gap: 4px; list-style: none; margin: 0; padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+}
+.day-cell {
+  display: block; min-height: 64px; padding: 6px 8px; text-decoration: none;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--paper-2); color: var(--ink-faint);
+  font-family: var(--font-mono); font-size: var(--text-xs); line-height: 1.35;
+}
+.day-cell b { display: block; font-size: var(--text-sm); font-weight: 500; }
+a.day-cell { background: var(--plate); color: var(--ink); border-color: var(--line-strong); }
+a.day-cell b { color: var(--vermilion); }
+a.day-cell:hover { border-color: var(--vermilion); color: var(--ink); }
+.day-key { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-faint); margin-top: var(--space-2); }
+
+.map-entry { padding: var(--space-5) 0; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.map-entry figure { margin: 0 0 var(--space-3); }
+.map-entry figure a { display: block; border: 1px solid var(--line-strong); box-shadow: var(--shadow-sm); background: var(--plate); padding: 4px; }
+.map-entry img { display: block; width: 100%; height: auto; }
+.map-entry.portrait figure { max-width: 720px; }
+.map-entry h2 { margin-bottom: var(--space-2); }
+.map-entry p { max-width: var(--measure); }
+.map-credit { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-faint); }
+
+/* ---- drives: videos + chart ---- */
+.video-grid { display: grid; gap: var(--space-4); grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+.video-card { margin: 0; }
+.video-card video {
+  display: block; width: 100%; aspect-ratio: 9 / 16; background: #000;
+  border: 1px solid var(--line-strong); border-radius: var(--radius-sm);
+}
+.video-card figcaption { padding-top: var(--space-2); font-size: var(--text-sm); color: var(--ink-soft); }
+.video-card figcaption b { display: block; color: var(--ink); font-weight: 600; }
+
+.chart { background: var(--plate); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); padding: var(--space-4); position: relative; }
+.chart h3 { font-size: var(--text-md); margin-bottom: 2px; }
+.chart-sub { font-size: var(--text-sm); color: var(--ink-soft); margin-bottom: var(--space-3); }
+.bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.bar-row {
+  display: grid; grid-template-columns: 9.5rem 1fr; gap: var(--space-2); align-items: center;
+  padding: 3px 0; font-size: var(--text-sm); border-radius: var(--radius-sm);
+}
+.bar-row:hover, .bar-row:focus { background: var(--paper-2); outline: none; }
+.bar-label { color: var(--ink); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-track { display: flex; align-items: center; gap: 6px; border-left: 1px solid var(--line-strong); min-width: 0; }
+.bar-fill { height: 14px; background: var(--bathy); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bar-val { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-soft); white-space: nowrap; }
+.chart-tip {
+  position: absolute; pointer-events: none; z-index: 5; display: none;
+  background: var(--ink); color: var(--paper); font-size: var(--text-xs); font-family: var(--font-mono);
+  padding: 6px 10px; border-radius: var(--radius-sm); line-height: 1.5; white-space: nowrap;
+}
+.chart details { margin-top: var(--space-3); font-size: var(--text-sm); }
+.chart summary { cursor: pointer; font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-soft); }
+.chart table { border-collapse: collapse; margin-top: var(--space-2); width: 100%; }
+.chart th, .chart td { text-align: right; padding: 3px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.chart th:first-child, .chart td:first-child { text-align: left; }
+@media (max-width: 560px) { .bar-row { grid-template-columns: 6.5rem 1fr; } }
+
+/* ---- social row ---- */
+.social-row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); list-style: none; margin: var(--space-4) 0 0; padding: 0; font-family: var(--font-mono); font-size: var(--text-sm); }
+
+/* ---- resume ---- */
+.resume { max-width: 860px; margin: 0 auto; padding-bottom: var(--space-6); }
+.resume-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-4) 0; }
+.resume-sheet { background: var(--plate); border: 1px solid var(--line-strong); box-shadow: var(--shadow-sm); padding: var(--space-5); border-radius: var(--radius-sm); }
+.resume-sheet h1 { font-size: var(--text-xl); margin-bottom: 2px; }
+.resume-sheet section { padding: 0; margin: 0; }
+.resume-sheet p { max-width: none; }
+.resume-contact { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-soft); margin-bottom: var(--space-3); }
+.resume-sheet h2 {
+  font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--vermilion); border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 3px; margin: var(--space-4) 0 var(--space-2);
+}
+.resume-sheet p, .resume-sheet li { font-size: var(--text-sm); line-height: 1.5; }
+.resume-sheet ul { margin: 4px 0 0; padding-left: 1.1rem; }
+.r-item { margin-bottom: var(--space-3); break-inside: avoid; }
+.r-head { display: flex; justify-content: space-between; gap: var(--space-3); align-items: baseline; flex-wrap: wrap; }
+.r-head b { font-size: var(--text-sm); }
+.r-head span { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-faint); white-space: nowrap; }
+.r-org { font-size: var(--text-sm); color: var(--ink-soft); }
+.r-skills { display: grid; grid-template-columns: 9rem 1fr; gap: 4px var(--space-3); font-size: var(--text-sm); margin: 0; }
+.r-skills dt { font-weight: 600; }
+.r-skills dd { margin: 0; color: var(--ink-soft); }
+@media (max-width: 560px) { .r-skills { grid-template-columns: 1fr; } .resume-sheet { padding: var(--space-4); } }
+
+@media print {
+  @page { size: letter; margin: 0.45in 0.55in; }
+  .nav, .footer, .skip-link, .resume-actions, .resume .page-head { display: none !important; }
+  html, body { background: #fff !important; color: #000 !important; }
+  .resume { max-width: none; padding: 0; }
+  .resume-sheet { border: 0; box-shadow: none; padding: 0; background: #fff; }
+  .resume-sheet h1 { font-size: 18pt; }
+  .resume-sheet section { padding: 0 !important; margin: 0 !important; }
+  .resume-sheet ul { margin-top: 1pt; }
+  .resume-sheet p, .resume-sheet li, .r-org, .r-head b, .r-skills { font-size: 8.6pt; line-height: 1.28; }
+  .resume-contact, .r-head span { font-size: 8pt; color: #333; }
+  .resume-sheet h2 { font-size: 8pt; margin: 7pt 0 3pt; color: #9e2f13; border-color: #999; }
+  .r-item { margin-bottom: 4pt; }
+  .resume-sheet a { color: inherit; text-decoration: none; }
+}

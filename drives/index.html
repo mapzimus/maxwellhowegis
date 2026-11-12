@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal Drives — Maxwell Howe</title>
+    <meta name="description" content="Routing videos by Maxwell Howe: the shortest drive to every Chick-fil-A, NHL arena, and Salem, solved on a self-hosted OSRM server and animated in Python.">
+    <link rel="icon" href="/assets/portfolio/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..650&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/portfolio/css/tokens.css?v=mw4bcfr0">
+    <link rel="stylesheet" href="/assets/portfolio/css/base.css?v=mw4bcfr0">
+    <link rel="stylesheet" href="/assets/portfolio/css/layout.css?v=mw4bcfr0">
+    <link rel="stylesheet" href="/assets/portfolio/css/components.css?v=mw4bcfr0">
+    <link rel="stylesheet" href="/assets/portfolio/css/pages.css?v=mw4bcfr0">
+    <script src="/assets/portfolio/js/config.js?v=mw4bcfr0"></script>
+    <script src="/assets/portfolio/js/theme.js?v=mw4bcfr0"></script>
+    <link rel="canonical" href="https://maxwellhowegis.com/drives/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Optimal Drives — Maxwell Howe">
+    <meta property="og:description" content="Routing videos by Maxwell Howe: the shortest drive to every Chick-fil-A, NHL arena, and Salem, solved on a self-hosted OSRM server and animated in Python.">
+    <meta property="og:url" content="https://maxwellhowegis.com/drives/">
+    <meta property="og:image" content="https://maxwellhowegis.com/videos/drives/shoprite.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Optimal Drives — Maxwell Howe">
+    <meta name="twitter:description" content="Routing videos by Maxwell Howe: the shortest drive to every Chick-fil-A, NHL arena, and Salem, solved on a self-hosted OSRM server and animated in Python.">
+    <meta name="twitter:image" content="https://maxwellhowegis.com/videos/drives/shoprite.jpg">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Maxwell Howe","url":"https://maxwellhowegis.com","jobTitle":"GIS Analyst and Web Map Developer","email":"mailto:mhowe.gis@gmail.com","sameAs":["https://github.com/mapzimus","https://www.linkedin.com/in/maxwell-howe-1a88a3298/","https://www.instagram.com/mapzimus/","https://www.tiktok.com/@mapzimus","https://www.youtube.com/@mapzimus","https://bsky.app/profile/mapzimus.bsky.social"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-nav"><header class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.45"/><path d="M13 2.5 L15 13 L13 23.5 L11 13 Z" fill="var(--vermilion)"/><path d="M2.5 13 L13 11 L23.5 13 L13 15 Z" fill="currentColor" opacity="0.55"/><circle cx="13" cy="13" r="1.4" fill="currentColor"/></svg>Maxwell Howe</a><ul class="nav-links" id="navLinks"><li><a href="/work/">Work</a></li><li><a href="/30-day-maps/">30 Day Maps</a></li><li><a href="/drives/" class=" active" aria-current="page">Drives</a></li><li><a href="/resume/">Résumé</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Theme</button><button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></div></header></div>
+
+<main id="main">
+    <div class="container">
+        <header class="page-head">
+            <div class="kicker">Routing videos · @mapzimus</div>
+            <h1>Optimal Drives</h1>
+            <p class="lede">What’s the shortest drive that hits every Chick-fil-A? Every NHL arena? Every town named Salem? I run a routing engine on my own computer, solve the route, and animate it as a one-minute video.</p>
+            <hr class="tick-rule">
+        </header>
+
+        <section class="section-tight" aria-labelledby="watch-h">
+            <h2 id="watch-h">Six of them</h2>
+            <p class="section-intro">There are more than 30 so far. Most ideas now come from viewer comments.</p>
+            <div class="video-grid">
+                <figure class="video-card">
+                    <video controls preload="none" playsinline poster="/videos/drives/shoprite.jpg" src="/videos/drives/shoprite.mp4"></video>
+                    <figcaption><b>Every ShopRite</b>275 stores in 6 states. 56 hours, 2,389 miles.</figcaption>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="none" playsinline poster="/videos/drives/white-castle.jpg" src="/videos/drives/white-castle.mp4"></video>
+                    <figcaption><b>Every White Castle</b>336 restaurants in 15 states, one route.</figcaption>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="none" playsinline poster="/videos/drives/spirit-halloween.jpg" src="/videos/drives/spirit-halloween.mp4"></video>
+                    <figcaption><b>Every Spirit Halloween</b>All 1,497 stores of the 2026 season, Bangor to Anchorage. 801 hours.</figcaption>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="none" playsinline poster="/videos/drives/smallest-towns.jpg" src="/videos/drives/smallest-towns.mp4"></video>
+                    <figcaption><b>The smallest town in every state</b>52 towns with 4,024 people between them.</figcaption>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="none" playsinline poster="/videos/drives/airports.jpg" src="/videos/drives/airports.mp4"></video>
+                    <figcaption><b>Can you reach an airport in an hour?</b>Drive time to the nearest passenger airport, every road in the lower 48.</figcaption>
+                </figure>
+                <figure class="video-card">
+                    <video controls preload="none" playsinline poster="/videos/drives/hospitals.jpg" src="/videos/drives/hospitals.mp4"></video>
+                    <figcaption><b>How far is your nearest ER?</b>Every emergency room in the lower 48, in 15-minute drive-time bands.</figcaption>
+                </figure>
+            </div>
+            <ul class="social-row">
+                <li><a href="https://www.tiktok.com/@mapzimus" target="_blank" rel="noopener">TikTok ↗</a></li>
+                <li><a href="https://www.instagram.com/mapzimus/" target="_blank" rel="noopener">Instagram ↗</a></li>
+                <li><a href="https://www.youtube.com/@mapzimus" target="_blank" rel="noopener">YouTube ↗</a></li>
+            </ul>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight" aria-labelledby="chart-h">
+            <h2 id="chart-h">How long each one takes</h2>
+            <div class="chart" id="driveChart">
+                <h3>Hours of driving on the shortest route to every stop</h3>
+                <p class="chart-sub">15 tours, longest first. Driving time only: no sleep, gas, or food.</p>
+                <ol class="bars">
+                    <li class="bar-row" tabindex="0" data-tip="Chick-fil-A|984 hours of driving|49,079 miles|3,415 restaurants"><span class="bar-label">Chick-fil-A</span><span class="bar-track"><span class="bar-fill" style="width:82.0%"></span><span class="bar-val">984 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Spirit Halloween|801 hours of driving|miles not recorded|1,497 stores"><span class="bar-label">Spirit Halloween</span><span class="bar-track"><span class="bar-fill" style="width:66.8%"></span><span class="bar-val">801 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Culver’s|484 hours of driving|25,874 miles|1,079 restaurants"><span class="bar-label">Culver’s</span><span class="bar-track"><span class="bar-fill" style="width:40.3%"></span><span class="bar-val">484 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="A&W|464 hours of driving|26,035 miles|386 restaurants"><span class="bar-label">A&W</span><span class="bar-track"><span class="bar-fill" style="width:38.7%"></span><span class="bar-val">464 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Tesla stores|331 hours of driving|18,260 miles|330 stores"><span class="bar-label">Tesla stores</span><span class="bar-track"><span class="bar-fill" style="width:27.6%"></span><span class="bar-val">331 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Apple Stores|322 hours of driving|17,677 miles|269 stores"><span class="bar-label">Apple Stores</span><span class="bar-track"><span class="bar-fill" style="width:26.8%"></span><span class="bar-val">322 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Every Salem|293 hours of driving|16,371 miles|162 Salems"><span class="bar-label">Every Salem</span><span class="bar-track"><span class="bar-fill" style="width:24.4%"></span><span class="bar-val">293 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Big 5 venues|205 hours of driving|12,405 miles|135 venues, 154 teams"><span class="bar-label">Big 5 venues</span><span class="bar-track"><span class="bar-fill" style="width:17.1%"></span><span class="bar-val">205 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="NHL arenas|162 hours of driving|10,002 miles|32 arenas"><span class="bar-label">NHL arenas</span><span class="bar-track"><span class="bar-fill" style="width:13.5%"></span><span class="bar-val">162 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="NBA arenas|146 hours of driving|9,189 miles|30 arenas"><span class="bar-label">NBA arenas</span><span class="bar-track"><span class="bar-fill" style="width:12.2%"></span><span class="bar-val">146 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Buc-ee’s|106.6 hours of driving|6,555 miles|57 stores"><span class="bar-label">Buc-ee’s</span><span class="bar-track"><span class="bar-fill" style="width:8.9%"></span><span class="bar-val">106.6 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="ShopRite|56 hours of driving|2,389 miles|275 stores"><span class="bar-label">ShopRite</span><span class="bar-track"><span class="bar-fill" style="width:4.7%"></span><span class="bar-val">56 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="Route 66 towns|49.1 hours of driving|2,472 miles|279 towns"><span class="bar-label">Route 66 towns</span><span class="bar-track"><span class="bar-fill" style="width:4.1%"></span><span class="bar-val">49.1 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="I-90 towns|46.8 hours of driving|3,090 miles|Seattle to Boston"><span class="bar-label">I-90 towns</span><span class="bar-track"><span class="bar-fill" style="width:3.9%"></span><span class="bar-val">46.8 h</span></span></li>
+                    <li class="bar-row" tabindex="0" data-tip="MA roast beef|11.3 hours of driving|456 miles|92 shops"><span class="bar-label">MA roast beef</span><span class="bar-track"><span class="bar-fill" style="width:0.9%"></span><span class="bar-val">11.3 h</span></span></li>
+                </ol>
+                <div class="chart-tip" id="chartTip" role="status"></div>
+                <details>
+                    <summary>Show as a table</summary>
+                    <table>
+                        <thead><tr><th>Tour</th><th>Hours</th><th>Miles</th><th>Stops</th></tr></thead>
+                        <tbody><tr><td>Chick-fil-A</td><td>984</td><td>49,079</td><td>3,415 restaurants</td></tr><tr><td>Spirit Halloween</td><td>801</td><td>—</td><td>1,497 stores</td></tr><tr><td>Culver’s</td><td>484</td><td>25,874</td><td>1,079 restaurants</td></tr><tr><td>A&W</td><td>464</td><td>26,035</td><td>386 restaurants</td></tr><tr><td>Tesla stores</td><td>331</td><td>18,260</td><td>330 stores</td></tr><tr><td>Apple Stores</td><td>322</td><td>17,677</td><td>269 stores</td></tr><tr><td>Every Salem</td><td>293</td><td>16,371</td><td>162 Salems</td></tr><tr><td>Big 5 venues</td><td>205</td><td>12,405</td><td>135 venues, 154 teams</td></tr><tr><td>NHL arenas</td><td>162</td><td>10,002</td><td>32 arenas</td></tr><tr><td>NBA arenas</td><td>146</td><td>9,189</td><td>30 arenas</td></tr><tr><td>Buc-ee’s</td><td>106.6</td><td>6,555</td><td>57 stores</td></tr><tr><td>ShopRite</td><td>56</td><td>2,389</td><td>275 stores</td></tr><tr><td>Route 66 towns</td><td>49.1</td><td>2,472</td><td>279 towns</td></tr><tr><td>I-90 towns</td><td>46.8</td><td>3,090</td><td>Seattle to Boston</td></tr><tr><td>MA roast beef</td><td>11.3</td><td>456</td><td>92 shops</td></tr></tbody>
+                    </table>
+                </details>
+            </div>
+        </section>
+
+        <hr class="scalebar">
+
+        <section class="section-tight" aria-labelledby="how-h">
+            <h2 id="how-h">How they’re made</h2>
+            <p>Each video starts with a count: what qualifies as a stop and what gets left out. Locations come from store locators, OpenStreetMap, and the Census geocoder, cross-checked against each other. A self-hosted <a href="https://project-osrm.org/" target="_blank" rel="noopener">OSRM</a> server builds the drive-time matrix between every pair of stops, and the LKH solver finds the visiting order. Hawaii and Puerto Rico go by plane. Alaska goes by the Alaska Highway.</p>
+            <p>The animation is Python drawing frame by frame, encoded with ffmpeg. The 3D ones use three.js rendered through headless Chrome. The drive-time maps (airports, ERs, nearest coast) skip the tour and color every road by its travel time to the closest destination.</p>
+            <p>The routing side also shows up in <a href="/work/optitrek/">Optitrek</a>, a road-trip optimizer for national parks.</p>
+        </section>
+    </div>
+</main>
+
+<div id="site-footer"><footer class="footer"><div class="footer-inner"><div class="footer-colophon">&copy; 2026 Maxwell Howe · Salem, MA<br>GIS analyst and web map developer.</div><ul class="footer-links"><li><a href="/">Home</a></li><li><a href="/work/">Work</a></li><li><a href="/30-day-maps/">30 Day Maps</a></li><li><a href="/drives/">Drives</a></li><li><a href="/resume/">Résumé</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://mapzimus.com" target="_blank" rel="noopener">Mapzimus</a></li><li><a href="https://github.com/mapzimus" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/maxwell-howe-1a88a3298/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.instagram.com/mapzimus/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@mapzimus" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.youtube.com/@mapzimus" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://bsky.app/profile/mapzimus.bsky.social" target="_blank" rel="noopener">Bluesky</a></li></ul></div></footer></div>
+<script src="/assets/portfolio/js/partials.js?v=mw4bcfr0"></script>
+<script>
+(function(){var c=document.getElementById('driveChart'),t=document.getElementById('chartTip');if(!c||!t)return;
+function show(r){var p=r.getAttribute('data-tip').split('|');t.textContent='';p.forEach(function(s,i){var d=document.createElement(i?'div':'b');d.textContent=s;t.appendChild(d);});
+t.style.display='block';var cr=c.getBoundingClientRect(),rr=r.getBoundingClientRect();
+t.style.top=(rr.bottom-cr.top+4)+'px';t.style.left=Math.max(8,Math.min(rr.left-cr.left+170,cr.width-t.offsetWidth-8))+'px';}
+c.querySelectorAll('.bar-row').forEach(function(r){r.addEventListener('mouseenter',function(){show(r);});r.addEventListener('focus',function(){show(r);});
+r.addEventListener('mouseleave',function(){t.style.display='none';});r.addEventListener('blur',function(){t.style.display='none';});});})();
+</script>
+</body>
+</html>
