@@ -138,7 +138,6 @@ function structuredData({ title, summary, canonical, project }) {
           "https://www.instagram.com/mapzimus/",
           "https://www.tiktok.com/@mapzimus",
           "https://www.youtube.com/@mapzimus",
-          "https://bsky.app/profile/mapzimus.bsky.social",
         ],
       };
   return JSON.stringify(data).replaceAll("<", "\\u003c");
