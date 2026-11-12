@@ -6,6 +6,9 @@
 
     var NAV_LINKS = [
         { href: '/work/', label: 'Work', path: '/work/' },
+        { href: '/30-day-maps/', label: '30 Day Maps', path: '/30-day-maps/' },
+        { href: '/drives/', label: 'Drives', path: '/drives/' },
+        { href: '/resume/', label: 'Résumé', path: '/resume/' },
         { href: '/about/', label: 'About', path: '/about/' },
         { href: '/contact/', label: 'Contact', path: '/contact/' }
     ];
@@ -13,10 +16,18 @@
     var FOOTER_LINKS = [
         { href: '/', label: 'Home' },
         { href: '/work/', label: 'Work' },
+        { href: '/30-day-maps/', label: '30 Day Maps' },
+        { href: '/drives/', label: 'Drives' },
+        { href: '/resume/', label: 'Résumé' },
         { href: '/about/', label: 'About' },
         { href: '/contact/', label: 'Contact' },
         { href: 'https://mapzimus.com', label: 'Mapzimus', external: true },
-        { href: 'https://github.com/mapzimus', label: 'GitHub', external: true }
+        { href: 'https://github.com/mapzimus', label: 'GitHub', external: true },
+        { href: 'https://www.linkedin.com/in/maxwell-howe-1a88a3298/', label: 'LinkedIn', external: true },
+        { href: 'https://www.instagram.com/mapzimus/', label: 'Instagram', external: true },
+        { href: 'https://www.tiktok.com/@mapzimus', label: 'TikTok', external: true },
+        { href: 'https://www.youtube.com/@mapzimus', label: 'YouTube', external: true },
+        { href: 'https://bsky.app/profile/mapzimus.bsky.social', label: 'Bluesky', external: true }
     ];
 
     // Compass-rose mark (inline SVG, currentColor-aware)
@@ -58,7 +69,7 @@
         var year = new Date().getFullYear();
         return '<footer class="footer"><div class="footer-inner">' +
             '<div class="footer-colophon">&copy; ' + year + ' Maxwell Howe · Salem, MA<br>' +
-            'Web GIS developer and spatial analyst.</div>' +
+            'GIS analyst and web map developer.</div>' +
             '<ul class="footer-links">' + items + '</ul>' +
             '</div></footer>';
     }
