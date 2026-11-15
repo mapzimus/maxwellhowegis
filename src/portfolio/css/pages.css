@@ -160,18 +160,20 @@ a.day-cell:hover { border-color: var(--vermilion); color: var(--ink); }
 @media (max-width: 560px) { .r-skills { grid-template-columns: 1fr; } .resume-sheet { padding: var(--space-4); } }
 
 @media print {
-  @page { size: letter; margin: 0.45in 0.55in; }
+  @page { size: letter; margin: 0.36in 0.55in; }
+  main, .container { padding: 0 !important; margin: 0 !important; max-width: none !important; }
   .nav, .footer, .skip-link, .resume-actions, .resume .page-head { display: none !important; }
   html, body { background: #fff !important; color: #000 !important; }
   .resume { max-width: none; padding: 0; }
   .resume-sheet { border: 0; box-shadow: none; padding: 0; background: #fff; }
-  .resume-sheet h1 { font-size: 18pt; }
+  .resume-sheet h1 { font-size: 17pt; }
+  .resume-contact { margin-bottom: 4pt; }
   .resume-sheet section { padding: 0 !important; margin: 0 !important; }
   .resume-sheet ul { margin-top: 1pt; }
-  .resume-sheet p, .resume-sheet li, .r-org, .r-head b, .r-skills { font-size: 8.6pt; line-height: 1.28; }
+  .resume-sheet p, .resume-sheet li, .r-org, .r-head b, .r-skills { font-size: 8.3pt; line-height: 1.24; }
   .resume-contact, .r-head span { font-size: 8pt; color: #333; }
-  .resume-sheet h2 { font-size: 8pt; margin: 7pt 0 3pt; color: #9e2f13; border-color: #999; }
-  .r-item { margin-bottom: 4pt; }
+  .resume-sheet h2 { font-size: 8pt; margin: 5pt 0 2pt; color: #9e2f13; border-color: #999; }
+  .r-item { margin-bottom: 2.5pt; }
   .resume-sheet a { color: inherit; text-decoration: none; }
 }
 
