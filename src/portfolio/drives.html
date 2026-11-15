@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optimal Drives — Maxwell Howe</title>
-    <meta name="description" content="Routing videos by Maxwell Howe: the shortest drive to every Chick-fil-A, NHL arena, and Salem, solved on a self-hosted OSRM server and animated in Python.">
+    <meta name="description" content="Routing videos by Maxwell Howe: the shortest drive to every McDonald’s, Massachusetts town, and UK pub, solved on a self-hosted OSRM server and animated in Python.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -28,37 +28,51 @@
         <header class="page-head">
             <div class="kicker">Routing videos · @mapzimus</div>
             <h1>Optimal Drives</h1>
-            <p class="lede">What’s the shortest drive that hits every Chick-fil-A? Every NHL arena? Every town named Salem? I run a routing engine on my own computer, solve the route, and animate it as a one-minute video.</p>
+            <p class="lede">This started as a side project called <a href="/work/optitrek/">Optitrek</a>. I wanted to rebuild Randal Olson’s 2015 “optimal US road trip” with my own routing engine instead of the Google Maps API, so I set up OSRM on my computer.</p>
+            <p class="lede">Once that was running I could ask it anything. What’s the shortest drive to every McDonald’s? Every town in Massachusetts? Every pub in the UK? Now I solve the route and animate it as a one-minute video.</p>
             <hr class="tick-rule">
         </header>
 
         <section class="section-tight" aria-labelledby="watch-h">
-            <h2 id="watch-h">Six of them</h2>
-            <p class="section-intro">There are more than 30 so far. Most ideas now come from viewer comments.</p>
+            <h2 id="watch-h">Six to start with</h2>
+            <p class="section-intro">There are about 50 so far. Most ideas now come from viewer comments. These play from YouTube.</p>
             <div class="video-grid">
                 <figure class="video-card">
-                    <video controls preload="none" playsinline poster="/videos/drives/shoprite.jpg" src="/videos/drives/shoprite.mp4"></video>
-                    <figcaption><b>Every ShopRite</b>275 stores in 6 states. 56 hours, 2,389 miles.</figcaption>
+                    <a class="yt" href="https://www.youtube.com/shorts/yzAUh9qFGXE" data-id="yzAUh9qFGXE" target="_blank" rel="noopener" aria-label="Play: Every McDonald’s in the USA"><img src="/images/drives/mcdonalds.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true">▶</span></a>
+                    <figcaption><b>Every McDonald’s in the USA</b>Every location in the country, one route.</figcaption>
                 </figure>
                 <figure class="video-card">
-                    <video controls preload="none" playsinline poster="/videos/drives/white-castle.jpg" src="/videos/drives/white-castle.mp4"></video>
-                    <figcaption><b>Every White Castle</b>336 restaurants in 15 states, one route.</figcaption>
+                    <a class="yt" href="https://www.youtube.com/shorts/9h4Zo7l5ALw" data-id="9h4Zo7l5ALw" target="_blank" rel="noopener" aria-label="Play: Every pub in the UK"><img src="/images/drives/uk-pubs.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true">▶</span></a>
+                    <figcaption><b>Every pub in the UK</b>One drive to all of them.</figcaption>
                 </figure>
                 <figure class="video-card">
-                    <video controls preload="none" playsinline poster="/videos/drives/spirit-halloween.jpg" src="/videos/drives/spirit-halloween.mp4"></video>
-                    <figcaption><b>Every Spirit Halloween</b>All 1,497 stores of the 2026 season, Bangor to Anchorage. 801 hours.</figcaption>
+                    <a class="yt" href="https://www.youtube.com/shorts/4DAv63nkHiA" data-id="4DAv63nkHiA" target="_blank" rel="noopener" aria-label="Play: Can you draw the US with roads?"><img src="/images/drives/state-lines.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true">▶</span></a>
+                    <figcaption><b>Can you draw the US with roads?</b>Every state line, driven as closely as roads allow.</figcaption>
                 </figure>
                 <figure class="video-card">
-                    <video controls preload="none" playsinline poster="/videos/drives/smallest-towns.jpg" src="/videos/drives/smallest-towns.mp4"></video>
-                    <figcaption><b>The smallest town in every state</b>52 towns with 4,024 people between them.</figcaption>
+                    <a class="yt" href="https://www.youtube.com/shorts/AIykwHpeaww" data-id="AIykwHpeaww" target="_blank" rel="noopener" aria-label="Play: Every town in Massachusetts"><img src="/images/drives/ma-towns.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true">▶</span></a>
+                    <figcaption><b>Every town in Massachusetts</b>All 351, in one route.</figcaption>
                 </figure>
+                <figure class="video-card">
+                    <a class="yt" href="https://www.youtube.com/shorts/Erut505t1-k" data-id="Erut505t1-k" target="_blank" rel="noopener" aria-label="Play: Every interstate, in number order"><img src="/images/drives/interstates.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true">▶</span></a>
+                    <figcaption><b>Every interstate, in number order</b>The video version of the first Optitrek test case.</figcaption>
+                </figure>
+                <figure class="video-card">
+                    <a class="yt" href="https://www.youtube.com/shorts/Wg7K_tre4lI" data-id="Wg7K_tre4lI" target="_blank" rel="noopener" aria-label="Play: Which NFL stadium is closest to you?"><img src="/images/drives/nfl.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true">▶</span></a>
+                    <figcaption><b>Which NFL stadium is closest to you?</b>Every road colored by its nearest stadium by drive time.</figcaption>
+                </figure>
+            </div>
+
+            <h3 class="sub-h">Drive-time maps</h3>
+            <p class="section-intro">No route here. Every road is colored by how long it takes to reach the nearest one.</p>
+            <div class="video-grid">
                 <figure class="video-card">
                     <video controls preload="none" playsinline poster="/videos/drives/airports.jpg" src="/videos/drives/airports.mp4"></video>
-                    <figcaption><b>Can you reach an airport in an hour?</b>Drive time to the nearest passenger airport, every road in the lower 48.</figcaption>
+                    <figcaption><b>Can you reach an airport in an hour?</b>Every passenger airport in the lower 48.</figcaption>
                 </figure>
                 <figure class="video-card">
                     <video controls preload="none" playsinline poster="/videos/drives/hospitals.jpg" src="/videos/drives/hospitals.mp4"></video>
-                    <figcaption><b>How far is your nearest ER?</b>Every emergency room in the lower 48, in 15-minute drive-time bands.</figcaption>
+                    <figcaption><b>How far is your nearest ER?</b>Every emergency room in the lower 48, in 15-minute bands.</figcaption>
                 </figure>
             </div>
             <ul class="social-row">
@@ -109,7 +123,7 @@
             <h2 id="how-h">How they’re made</h2>
             <p>Each video starts with a count: what qualifies as a stop and what gets left out. Locations come from store locators, OpenStreetMap, and the Census geocoder, cross-checked against each other. A self-hosted <a href="https://project-osrm.org/" target="_blank" rel="noopener">OSRM</a> server builds the drive-time matrix between every pair of stops, and the LKH solver finds the visiting order. Hawaii and Puerto Rico go by plane. Alaska goes by the Alaska Highway.</p>
             <p>The animation is Python drawing frame by frame, encoded with ffmpeg. The 3D ones use three.js rendered through headless Chrome. The drive-time maps (airports, ERs, nearest coast) skip the tour and color every road by its travel time to the closest destination.</p>
-            <p>The routing side also shows up in <a href="/work/optitrek/">Optitrek</a>, a road-trip optimizer for national parks.</p>
+            <p>Optitrek itself is still going. Its first published result is the <a href="/interstate-challenge/">Sequential Interstate Challenge</a>: letting the solver pick the order and direction of every two-digit interstate cut the connecting drive time by 86 percent compared with going in number order.</p>
         </section>
     </div>
 </main>
@@ -123,6 +137,7 @@ t.style.display='block';var cr=c.getBoundingClientRect(),rr=r.getBoundingClientR
 t.style.top=(rr.bottom-cr.top+4)+'px';t.style.left=Math.max(8,Math.min(rr.left-cr.left+170,cr.width-t.offsetWidth-8))+'px';}
 c.querySelectorAll('.bar-row').forEach(function(r){r.addEventListener('mouseenter',function(){show(r);});r.addEventListener('focus',function(){show(r);});
 r.addEventListener('mouseleave',function(){t.style.display='none';});r.addEventListener('blur',function(){t.style.display='none';});});})();
+document.querySelectorAll('a.yt').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+a.getAttribute('data-id')+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=a.getAttribute('aria-label');f.className='yt-frame';a.parentNode.replaceChild(f,a);});});
 </script>
 </body>
 </html>
