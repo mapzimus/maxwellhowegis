@@ -294,9 +294,9 @@ function build() {
       source: "drives.html",
       output: path.join(repoRoot, "drives", "index.html"),
       title: "Optimal Drives — Maxwell Howe",
-      summary: "Routing videos by Maxwell Howe: the shortest drive to every Chick-fil-A, NHL arena, and Salem, solved on a self-hosted OSRM server and animated in Python.",
+      summary: "Routing videos by Maxwell Howe: the shortest drive to every McDonald’s, Massachusetts town, and UK pub, solved on a self-hosted OSRM server and animated in Python.",
       canonical: `${siteUrl}/drives/`,
-      image: `${siteUrl}/videos/drives/shoprite.jpg`,
+      image: `${siteUrl}/images/drives/mcdonalds.jpg`,
       assetBust,
     },
     {
