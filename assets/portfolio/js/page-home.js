@@ -6,7 +6,7 @@
 
     // What is actually on the desk this month. Keep it to two or three.
     var BUILDING = [
-        { label: '30 Day Map Challenge: 11 of 30 done', href: '/30-day-maps/', state: 'live' },
+        { label: '30 Day Map Challenge: 19 of 30 done', href: '/30-day-maps/', state: 'live' },
         { label: 'Optimal Drives: about 50 routing videos', href: '/drives/', state: 'live' },
         { label: 'Teaching stats at Lynn English, year four', href: '/about/', state: 'dev' }
     ];
