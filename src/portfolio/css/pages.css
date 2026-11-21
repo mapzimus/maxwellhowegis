@@ -85,6 +85,7 @@
 a.day-cell { background: var(--plate); color: var(--ink); border-color: var(--line-strong); }
 a.day-cell b { color: var(--vermilion); }
 a.day-cell:hover { border-color: var(--vermilion); color: var(--ink); }
+.day-cell.skipped, .day-cell.skipped b { text-decoration: line-through; text-decoration-thickness: 1.5px; }
 .day-key { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-faint); margin-top: var(--space-2); }
 
 .map-entry { padding: var(--space-5) 0; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
