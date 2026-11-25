@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>30 Day Map Challenge 2026 — Maxwell Howe</title>
-    <meta name="description" content="Maxwell Howe’s maps for the 2026 30 Day Map Challenge: lighthouses, rivers, town charters, shipwrecks, foliage, railroads, pizza, a fantasy T map, traffic lights, sunsets, the drowned Quabbin towns, cows, snowfall, street names, and place names across New England.">
+    <meta name="description" content="Maxwell Howe’s maps for the 2026 30 Day Map Challenge: lighthouses, rivers, town charters, shipwrecks, foliage, railroads, pizza, a fantasy T map, traffic lights, sunsets, the drowned Quabbin towns, cows, snowfall, street names, drive times, and place names across New England.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -28,7 +28,7 @@
         <header class="page-head">
             <div class="kicker">November 2026 · in progress</div>
             <h1>30 Day Map Challenge</h1>
-            <p class="lede">One map a day for November, each on a set theme. I’m keeping mine in New England. 19 of 30 are finished as of November 20, and I skipped Days 10 and 16. Click any map for the full-size version.</p>
+            <p class="lede">One map a day for November, each on a set theme. I’m keeping mine in New England. 20 of 30 are on this page, and I skipped Days 10 and 16. Click any map for the full-size version.</p>
             <hr class="tick-rule">
         </header>
 
@@ -58,7 +58,7 @@
                 <li><a class="day-cell" href="#day-21"><b>21</b>OpenStreetMap</a></li>
                 <li><span class="day-cell"><b>22</b>Projections</span></li>
                 <li><span class="day-cell"><b>23</b>Senses: Taste</span></li>
-                <li><span class="day-cell"><b>24</b>Network</span></li>
+                <li><a class="day-cell" href="#day-24"><b>24</b>Network</a></li>
                 <li><span class="day-cell"><b>25</b>Is this a map?</span></li>
                 <li><span class="day-cell"><b>26</b>Water</span></li>
                 <li><span class="day-cell"><b>27</b>New tool</span></li>
@@ -80,8 +80,8 @@
             <div class="kicker">Day 2 · Lines</div>
             <h2>New England’s Rivers and Where They Drain</h2>
             <figure><a href="/images/30-day-maps/day02-full.webp"><img src="/images/30-day-maps/day02.webp" alt="Map: New England’s Rivers and Where They Drain" loading="lazy" decoding="async"></a></figure>
-            <p>Every stream of Strahler order 3 and up, colored by the river system it belongs to. The 12 biggest networks get a color each, and about 130 small coastal streams share one pale blue. Line width follows stream order. The Saint John and Champlain networks cross into Canada before they reach the sea.</p>
-            <p class="map-credit">Data: NHDPlus V2.1 (U.S. EPA and USGS), Terrain Tiles, Natural Earth, US Census Bureau<br>Made with: RustGIS, Python, Illustrator</p>
+            <p>Every stream of Strahler order 3 and up, colored by the river system it belongs to. The biggest networks get a color each, and everything else that reaches the Atlantic, the Hudson included, shares one pale blue. Line width follows stream order. The Saint John, Champlain and St. Francis networks cross into Canada before they reach the sea.</p>
+            <p class="map-credit">Data: NHDPlus V2.1 (U.S. EPA and USGS), Terrain Tiles, Natural Earth, US Census Bureau, OpenStreetMap contributors (ODbL)<br>Made with: RustGIS, Python, Illustrator</p>
         </article>
 
         <article class="map-entry" id="day-03">
@@ -89,7 +89,7 @@
             <h2>New England’s Towns and the Year Each Began</h2>
             <figure><a href="/images/30-day-maps/day03-full.webp"><img src="/images/30-day-maps/day03.webp" alt="Map: New England’s Towns and the Year Each Began" loading="lazy" decoding="async"></a></figure>
             <p>1,522 towns and cities colored by the year each was first chartered or incorporated. Blue towns came before the Revolution and red ones after. Gold is 1760 to 1789, when most of Vermont was chartered. The 81 grey areas are townships and gores that never incorporated. A commenter caught Providence showing its 1832 city charter, so I checked every date against a second source and fixed the ones using the wrong definition.</p>
-            <p class="map-credit">Data: US Census TIGER/Line 2025, Wikipedia municipality lists (CC BY-SA), Vermont charter records<br>Made with: Python, Illustrator</p>
+            <p class="map-credit">Data: US Census TIGER/Line 2025, Wikipedia municipality lists (CC BY-SA), Vermont charter records, OpenStreetMap contributors (ODbL)<br>Made with: Python, Illustrator</p>
         </article>
 
         <article class="map-entry" id="day-04">
@@ -128,8 +128,8 @@
             <div class="kicker">Day 8 · Utopia</div>
             <h2>Boston’s Rapid Transit</h2>
             <figure><a href="/images/30-day-maps/day08-full.webp"><img src="/images/30-day-maps/day08.webp" alt="Map: Boston’s Rapid Transit" loading="lazy" decoding="async"></a></figure>
-            <p>My fantasy Boston subway map, drawn like the posters on station walls. A four-track tunnel I call The BIGGER Dig joins North Station and South Station at a new Boston Central. The map has 8 rapid transit lines, 227 stops, 11 commuter rail lines and 14 ferry routes, about 140 new miles in all. My rough total is $125 billion, five times what the original Big Dig cost in 2026 dollars. It is a fan map and has nothing to do with the MBTA.</p>
-            <p class="map-credit">Data: MBTA V3 API, OpenStreetMap contributors (ODbL), US Census TIGER/Line<br>Made with: Python (matplotlib, geopandas), Illustrator</p>
+            <p>My fantasy Boston subway map, drawn like the posters on station walls. A four-track tunnel I call The BIGGER Dig joins North Station and South Station at a new Boston Central. The map has 8 rapid transit lines, more than 220 stops, 11 commuter rail lines and 14 ferry routes. NERTA is an agency I made up. This is a fan map and has nothing to do with the MBTA.</p>
+            <p class="map-credit">Data: MBTA V3 API, OpenStreetMap contributors (ODbL), US Census TIGER/Line<br>Made with: Python (matplotlib, geopandas)</p>
         </article>
 
         <article class="map-entry portrait" id="day-09">
@@ -166,10 +166,10 @@
 
         <article class="map-entry portrait" id="day-14">
             <div class="kicker">Day 14 · Borgesian map</div>
-            <h2>Every Building in New England</h2>
-            <figure><a href="/images/30-day-maps/day14-full.webp"><img src="/images/30-day-maps/day14.webp" alt="Map: Every Building in New England" loading="lazy" decoding="async"></a></figure>
-            <p>5,411,008 building footprints, and all of them are on the page. Each 260 meter square is shaded by the share of it covered by roofs. The inset is downtown Boston at full detail. The theme comes from Borges’s one-paragraph story about a map drawn at the same size as the empire.</p>
-            <p class="map-credit">Data: Building footprints © Microsoft (ODbL)<br>Made with: Python (datashader, geopandas)</p>
+            <h2>The Buildings of New England</h2>
+            <figure><a href="/images/30-day-maps/day14-full.webp"><img src="/images/30-day-maps/day14.webp" alt="Map: The Buildings of New England" loading="lazy" decoding="async"></a></figure>
+            <p>5,349,211 building footprints. Each 285-foot square is shaded by the share of it covered by roofs. They were traced from images taken about 2012 to 2020, so newer buildings are missing. An earlier version said 5,411,008, which counted some buildings twice and a few thousand outside New England. The inset is downtown Boston at full detail. The theme comes from Borges’s one-paragraph story about a map drawn at the same size as the empire.</p>
+            <p class="map-credit">Data: US Building Footprints v2 © Microsoft (ODbL)<br>Made with: Python (geopandas, shapely)</p>
         </article>
 
         <article class="map-entry portrait" id="day-15">
@@ -216,8 +216,16 @@
             <div class="kicker">Day 21 · OpenStreetMap</div>
             <h2>Every Street Suffix in New England</h2>
             <figure><a href="/images/30-day-maps/day21-full.webp"><img src="/images/30-day-maps/day21.webp" alt="Poster: Every Street Suffix in New England, with a box chart of street endings, a state-by-state table, and ten unusual towns" loading="lazy" decoding="async"></a></figure>
-            <p>All 338,291 named streets in New England’s OpenStreetMap, sorted by the last word of the name. Road is first with 99,329, then Street, Lane, Drive, Way and Avenue, which together make up 87% of them. The rest is the fun part: 37 streets end in Rotary, 36 of them in Massachusetts, and at least 342 Maine streets are still named Fire Road plus a number. Counts are checked against the US Census Bureau’s 2024 road list.</p>
-            <p class="map-credit">Data: OpenStreetMap contributors (ODbL), extract of November 17, 2026; US Census Bureau TIGER/Line 2024<br>Made with: Python (pyosmium, geopandas, matplotlib)</p>
+            <p>All 345,768 named streets in New England’s OpenStreetMap, sorted by the last word of the name. Road is first with 102,515, then Street, Lane, Drive, Avenue and Way, which together make up 86% of them. The rest is the fun part: 49 streets end in Rotary, 48 of them in Massachusetts, and at least 371 Maine streets are still named Fire Road plus a number. Counts are checked against the US Census Bureau’s 2024 road list.</p>
+            <p class="map-credit">Data: OpenStreetMap contributors (ODbL), extract of November 17, 2026; US Census Bureau TIGER/Line 2024; NH Department of Transportation<br>Made with: Python (pyosmium, geopandas, matplotlib)</p>
+        </article>
+
+        <article class="map-entry portrait" id="day-24">
+            <div class="kicker">Day 24 · Network</div>
+            <h2>Drive Time from Boston</h2>
+            <figure><a href="/images/30-day-maps/day24-full.webp"><img src="/images/30-day-maps/day24.webp" alt="Map: Drive Time from Boston" loading="lazy" decoding="async"></a></figure>
+            <p>How long it takes to drive from the Massachusetts State House to every part of New England, with no traffic. One color for every 15 minutes, and 66 cities and towns listed in order. Provincetown (2 h 23) is a longer drive than Portland, Maine (1 h 49). Madawaska, Maine is 7 h 23. The listed times were compared with a second routing engine, which puts 26 of 67 in a different 15-minute band, so read them as estimates.</p>
+            <p class="map-credit">Data: OpenStreetMap contributors (ODbL), US Census Bureau, Natural Earth<br>Made with: Python (geopandas, matplotlib), OSRM, Valhalla</p>
         </article>
 
         <section class="section-tight">
