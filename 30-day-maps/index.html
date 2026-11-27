@@ -39,7 +39,7 @@
         <header class="page-head">
             <div class="kicker">November 2026 · in progress</div>
             <h1>30 Day Map Challenge</h1>
-            <p class="lede">One map a day for November, each on a set theme. I’m keeping mine in New England. 20 of 30 are on this page, and I skipped Days 10 and 16. Click any map for the full-size version.</p>
+            <p class="lede">One map a day for November, each on a set theme. I’m keeping mine in New England. 24 of 30 are on this page, and I skipped Days 10 and 16. Click any map for the full-size version.</p>
             <hr class="tick-rule">
         </header>
 
@@ -67,12 +67,12 @@
                 <li><a class="day-cell" href="#day-19"><b>19</b>Senses: Smell</a></li>
                 <li><a class="day-cell" href="#day-20"><b>20</b>Hexagons</a></li>
                 <li><a class="day-cell" href="#day-21"><b>21</b>OpenStreetMap</a></li>
-                <li><span class="day-cell"><b>22</b>Projections</span></li>
+                <li><a class="day-cell" href="#day-22"><b>22</b>Projections</a></li>
                 <li><span class="day-cell"><b>23</b>Senses: Taste</span></li>
                 <li><a class="day-cell" href="#day-24"><b>24</b>Network</a></li>
-                <li><span class="day-cell"><b>25</b>Is this a map?</span></li>
-                <li><span class="day-cell"><b>26</b>Water</span></li>
-                <li><span class="day-cell"><b>27</b>New tool</span></li>
+                <li><a class="day-cell" href="#day-25"><b>25</b>Is this a map?</a></li>
+                <li><a class="day-cell" href="#day-26"><b>26</b>Water</a></li>
+                <li><a class="day-cell" href="#day-27"><b>27</b>New tool</a></li>
                 <li><span class="day-cell"><b>28</b>Senses: Feeling</span></li>
                 <li><span class="day-cell"><b>29</b>Raster</span></li>
                 <li><span class="day-cell"><b>30</b>Pen &amp; paper</span></li></ol>
@@ -84,7 +84,7 @@
             <h2>Massachusetts Lighthouses, by Age</h2>
             <figure><a href="/images/30-day-maps/day01-full.webp"><img src="/images/30-day-maps/day01.webp" alt="Map: Massachusetts Lighthouses, by Age" loading="lazy" decoding="async"></a></figure>
             <p>Every standing lighthouse tower on the Massachusetts coast, Cape Ann to Nantucket, colored by the year it was built. Four in five went up after the Lighthouse Board formed in 1852. The glow around each light is how far it reaches.</p>
-            <p class="map-credit">Data: OpenStreetMap contributors (ODbL), USCG Light List<br>Made with: QGIS, Illustrator</p>
+            <p class="map-credit">Data: OpenStreetMap contributors (ODbL), USCG Light List, Wikipedia, NOAA NCEI Coastal Relief Model<br>Made with: QGIS, Illustrator</p>
         </article>
 
         <article class="map-entry" id="day-02">
@@ -155,7 +155,7 @@
             <div class="kicker">Day 11 · Senses: Sound</div>
             <h2>New England Places Everybody Pronounces Wrong</h2>
             <figure><a href="/images/30-day-maps/day11-full.webp"><img src="/images/30-day-maps/day11.webp" alt="Map: New England Places Everybody Pronounces Wrong" loading="lazy" decoding="async"></a></figure>
-            <p>175 towns, rivers, lakes and mountains spelled the way locals say them: WUUS-ter, GLOS-ter, LEM-in-ster. Capitals mark the stressed syllable and the worst offenders are numbered. Every pronunciation has two sources.</p>
+            <p>179 towns, rivers, lakes and mountains spelled the way locals say them: WUUS-ter, GLOS-ter, LEM-in-ster. Capitals mark the stressed syllable and the worst offenders are numbered. Every pronunciation has two sources.</p>
             <p class="map-credit">Data: Wikipedia IPA, local news and town sources, US Census Bureau, OpenStreetMap<br>Made with: Python (geopandas, matplotlib)</p>
         </article>
 
@@ -231,12 +231,68 @@
             <p class="map-credit">Data: OpenStreetMap contributors (ODbL), extract of November 17, 2026; US Census Bureau TIGER/Line 2024; NH Department of Transportation<br>Made with: Python (pyosmium, geopandas, matplotlib)</p>
         </article>
 
+        <article class="map-entry portrait" id="day-22">
+            <div class="kicker">Day 22 · Projections</div>
+            <h2>Row in a Straight Line to Australia</h2>
+            <figure><a href="/images/30-day-maps/day22-full.webp"><img src="/images/30-day-maps/day22.webp" alt="Map: the first panel of an eight-panel strip following a straight line from Maine to Australia" loading="lazy" decoding="async"></a></figure>
+            <p>Push off from Portland Head Light in Cape Elizabeth, Maine, point the bow at 117° and row in a perfectly straight line. The next land is Australia, 13,886 miles away. The globe is rotated so the whole great circle runs flat across eight panels, with the seafloor under the boat. The closest calls are about 3½ miles off the Cape of Good Hope and 2 miles off Kerguelen. Click the map for the full eight-panel strip.</p>
+            <p class="map-credit">Data: NOAA ETOPO1, checked against GEBCO 2020; Natural Earth, geoBoundaries, US Census Bureau<br>Made with: Python (numba, pyproj, cartopy, matplotlib)</p>
+        </article>
+
         <article class="map-entry portrait" id="day-24">
             <div class="kicker">Day 24 · Network</div>
             <h2>Drive Time from Boston</h2>
             <figure><a href="/images/30-day-maps/day24-full.webp"><img src="/images/30-day-maps/day24.webp" alt="Map: Drive Time from Boston" loading="lazy" decoding="async"></a></figure>
             <p>How long it takes to drive from the Massachusetts State House to every part of New England, with no traffic. One color for every 15 minutes, and 66 cities and towns listed in order. Provincetown (2 h 23) is a longer drive than Portland, Maine (1 h 49). Madawaska, Maine is 7 h 23. The listed times were compared with a second routing engine, which puts 26 of 67 in a different 15-minute band, so read them as estimates.</p>
             <p class="map-credit">Data: OpenStreetMap contributors (ODbL), US Census Bureau, Natural Earth<br>Made with: Python (geopandas, matplotlib), OSRM, Valhalla</p>
+        </article>
+
+        <article class="map-entry portrait" id="day-25">
+            <div class="kicker">Day 25 · Is this a map?</div>
+            <h2>The Presidential Range</h2>
+            <figure><a href="/images/30-day-maps/day25-full.webp"><img src="/images/30-day-maps/day25.webp" alt="Ink-wash style side view of layered mountain ridges around Mount Washington under a red sun" loading="lazy" decoding="async"></a></figure>
+            <p>A side view of the mountains around Mount Washington, New Hampshire, drawn to look like an ink painting. The land is cut into 44 slices, each about a third of a mile wide, and each line is the top of one slice. Light lines are far away and dark lines are close. The red line runs through Mount Washington, 6,288 feet. Heights are drawn four times taller than real, and the red sun is only decoration.</p>
+            <p class="map-credit">Data: USGS 3D Elevation Program; OpenStreetMap contributors (ODbL)<br>Made with: Python (rasterio, NumPy, SciPy, Pillow), Illustrator</p>
+        </article>
+
+        <article class="map-entry portrait" id="day-26">
+            <div class="kicker">Day 26 · Water</div>
+            <h2>New England, Drawn Only in Its Water</h2>
+            <figure><a href="/images/30-day-maps/day26-full.webp"><img src="/images/30-day-maps/day26.webp" alt="Map: New England made only of rivers, lakes and wetlands, with no coastline or borders" loading="lazy" decoding="async"></a></figure>
+            <p>Rivers, streams, lakes, ponds, bogs and marshes, with the coast, borders and place names left off. The shape still reads, and each of the six states gets its own sheet below. A heavier line carries more water; the Connecticut River averages 17,400 cubic feet a second at Thompsonville, Connecticut. Streams that drain less than about a square mile and a half are left out.</p>
+            <p class="map-credit">Data: NHDPlus V2.1 (U.S. EPA and USGS), USGS National Water Information System<br>Made with: Python</p>
+            <ul class="map-set">
+                <li><a href="/images/30-day-maps/day26-maine-full.webp"><img src="/images/30-day-maps/day26-maine.webp" alt="Map: the water of Maine, drawn without borders" width="576" height="720" loading="lazy" decoding="async"><span>Maine</span></a></li>
+                <li><a href="/images/30-day-maps/day26-new-hampshire-full.webp"><img src="/images/30-day-maps/day26-new-hampshire.webp" alt="Map: the water of New Hampshire, drawn without borders" width="576" height="720" loading="lazy" decoding="async"><span>New Hampshire</span></a></li>
+                <li><a href="/images/30-day-maps/day26-vermont-full.webp"><img src="/images/30-day-maps/day26-vermont.webp" alt="Map: the water of Vermont, drawn without borders" width="576" height="720" loading="lazy" decoding="async"><span>Vermont</span></a></li>
+                <li><a href="/images/30-day-maps/day26-massachusetts-full.webp"><img src="/images/30-day-maps/day26-massachusetts.webp" alt="Map: the water of Massachusetts, drawn without borders" width="576" height="720" loading="lazy" decoding="async"><span>Massachusetts</span></a></li>
+                <li><a href="/images/30-day-maps/day26-connecticut-full.webp"><img src="/images/30-day-maps/day26-connecticut.webp" alt="Map: the water of Connecticut, drawn without borders" width="576" height="720" loading="lazy" decoding="async"><span>Connecticut</span></a></li>
+                <li><a href="/images/30-day-maps/day26-rhode-island-full.webp"><img src="/images/30-day-maps/day26-rhode-island.webp" alt="Map: the water of Rhode Island, drawn without borders" width="576" height="720" loading="lazy" decoding="async"><span>Rhode Island</span></a></li>
+            </ul>
+        </article>
+
+        <article class="map-entry portrait" id="day-27">
+            <div class="kicker">Day 27 · New tool</div>
+            <h2>Massachusetts Buildings by the Year They Were Built</h2>
+            <figure><a href="/images/30-day-maps/day27-full.webp"><img src="/images/30-day-maps/day27.webp" alt="Map: every building in Boston colored by the year it was built" loading="lazy" decoding="async"></a></figure>
+            <p>Every building in 15 Massachusetts places, 238,307 in all, colored by the year it was built. The darker the color, the older the building. Boston is above and the other 14 are below. My new tool was Lonboard, a Python library that draws millions of shapes at once; I explored the data with it, then drew the final sheets in Python. Town records often say 1900 when the real year is unknown, so some older buildings hide in the 1900–1939 color.</p>
+            <p class="map-credit">Data: MassGIS property tax parcels and assessor records (2026); building outlines © Microsoft (ODbL); streets © OpenStreetMap contributors (ODbL); US Census Bureau TIGER/Line<br>Made with: Python, Lonboard</p>
+            <ul class="map-set">
+                <li><a href="/images/30-day-maps/day27-cambridge-full.webp"><img src="/images/30-day-maps/day27-cambridge.webp" alt="Map: buildings in Cambridge colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Cambridge</span></a></li>
+                <li><a href="/images/30-day-maps/day27-worcester-full.webp"><img src="/images/30-day-maps/day27-worcester.webp" alt="Map: buildings in Worcester colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Worcester</span></a></li>
+                <li><a href="/images/30-day-maps/day27-springfield-full.webp"><img src="/images/30-day-maps/day27-springfield.webp" alt="Map: buildings in Springfield colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Springfield</span></a></li>
+                <li><a href="/images/30-day-maps/day27-quincy-full.webp"><img src="/images/30-day-maps/day27-quincy.webp" alt="Map: buildings in Quincy colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Quincy</span></a></li>
+                <li><a href="/images/30-day-maps/day27-newbedford-full.webp"><img src="/images/30-day-maps/day27-newbedford.webp" alt="Map: buildings in New Bedford colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>New Bedford</span></a></li>
+                <li><a href="/images/30-day-maps/day27-salem-full.webp"><img src="/images/30-day-maps/day27-salem.webp" alt="Map: buildings in Salem colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Salem</span></a></li>
+                <li><a href="/images/30-day-maps/day27-newburyport-full.webp"><img src="/images/30-day-maps/day27-newburyport.webp" alt="Map: buildings in Newburyport colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Newburyport</span></a></li>
+                <li><a href="/images/30-day-maps/day27-marblehead-full.webp"><img src="/images/30-day-maps/day27-marblehead.webp" alt="Map: buildings in Marblehead colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Marblehead</span></a></li>
+                <li><a href="/images/30-day-maps/day27-ipswich-full.webp"><img src="/images/30-day-maps/day27-ipswich.webp" alt="Map: buildings in Ipswich colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Ipswich</span></a></li>
+                <li><a href="/images/30-day-maps/day27-rockport-full.webp"><img src="/images/30-day-maps/day27-rockport.webp" alt="Map: buildings in Rockport colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Rockport</span></a></li>
+                <li><a href="/images/30-day-maps/day27-hingham-full.webp"><img src="/images/30-day-maps/day27-hingham.webp" alt="Map: buildings in Hingham colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Hingham</span></a></li>
+                <li><a href="/images/30-day-maps/day27-concord-full.webp"><img src="/images/30-day-maps/day27-concord.webp" alt="Map: buildings in Concord colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Concord</span></a></li>
+                <li><a href="/images/30-day-maps/day27-nantucket-full.webp"><img src="/images/30-day-maps/day27-nantucket.webp" alt="Map: buildings in Nantucket colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Nantucket</span></a></li>
+                <li><a href="/images/30-day-maps/day27-provincetown-full.webp"><img src="/images/30-day-maps/day27-provincetown.webp" alt="Map: buildings in Provincetown colored by the year built" width="576" height="720" loading="lazy" decoding="async"><span>Provincetown</span></a></li>
+            </ul>
         </article>
 
         <section class="section-tight">
